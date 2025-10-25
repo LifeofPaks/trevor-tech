@@ -66,7 +66,7 @@ const Footer = () => {
               {services.map((item) => (
                 <li key={item}>
                   <a
-                    href="#"
+                    href="#services"
                     className="text-sm text-gray-600 hover:text-[#0695c8] transition-colors"
                   >
                     {item}
@@ -83,7 +83,7 @@ const Footer = () => {
               {resources.map((item) => (
                 <li key={item}>
                   <a
-                    href="#"
+                    href="#about"
                     className="text-sm text-gray-600 hover:text-[#0695c8] transition-colors"
                   >
                     {item}
@@ -100,7 +100,7 @@ const Footer = () => {
               {support.map((item) => (
                 <li key={item}>
                   <a
-                    href="#"
+                    href="#about"
                     className="text-sm text-gray-600 hover:text-[#0695c8] transition-colors"
                   >
                     {item}
