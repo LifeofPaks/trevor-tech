@@ -146,7 +146,7 @@ const About = () => {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold !px-8 !py-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
+            className="inline-flex items-center gap-2 bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-8 !py-3 rounded-full  font-medium transition-all duration-300 shadow-md hover:shadow-lg"
           >
             Contact Us Now
             <svg
