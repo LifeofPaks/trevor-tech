@@ -3,6 +3,7 @@ import { FaLocationDot, FaClock, FaWifi, FaGear } from "react-icons/fa6";
 import LocationImage from "../../assets/location-image.png";
 import { Link } from "react-router-dom";
 import BuyModal from "../buyModal/BuyModal";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const features = [
   {
@@ -63,18 +64,17 @@ const LocationSection = () => {
                 </ul>
 
                 <div className="flex items-center gap-4 !mt-8 justify-center lg:justify-start ">
-                  <Link to="/demo" className="cursor-pointer">
-                    <button className="w-[150px] border border-gray-800 text-gray-800 !px-6 !py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">
-                      View Demo
-                    </button>
-                  </Link>
-
                   <button
                     onClick={handleOpen}
                     className="w-[150px] bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-6 !py-3 rounded-lg font-medium transition duration-300"
                   >
-                    Buy Now
+                    Try It Free
                   </button>
+                  <Link to="/demo" className="cursor-pointer">
+                    <button className=" flex items-center  gap-1  text-gray-800 !px-6 !py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">
+                      View Demo <HiArrowLongRight />
+                    </button>
+                  </Link>
                 </div>
               </div>
 
