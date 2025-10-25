@@ -84,25 +84,88 @@ const About = () => {
           </p>
         </div>
 
-        {/* What We Do */}
         <div className="!mb-18">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-700 !mb-12">
             What We Do
           </h2>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white/70 backdrop-blur-md !p-6 rounded-xl border border-amber-100 hover:border-amber-400 hover:shadow-amber-200 hover:shadow-lg transition-all duration-300"
-              >
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  {service.desc}
-                </p>
-              </div>
-            ))}
+            {services.map((service, index) => {
+              // Assign a unique color theme per card
+              const colorThemes = [
+                {
+                  bg: "bg-blue-100",
+                  text: "text-blue-600",
+                  hoverBg: "group-hover:bg-blue-600",
+                  hoverText: "group-hover:text-white",
+                },
+                {
+                  bg: "bg-green-100",
+                  text: "text-green-600",
+                  hoverBg: "group-hover:bg-green-600",
+                  hoverText: "group-hover:text-white",
+                },
+                {
+                  bg: "bg-amber-100",
+                  text: "text-amber-600",
+                  hoverBg: "group-hover:bg-amber-600",
+                  hoverText: "group-hover:text-white",
+                },
+                {
+                  bg: "bg-purple-100",
+                  text: "text-purple-600",
+                  hoverBg: "group-hover:bg-purple-600",
+                  hoverText: "group-hover:text-white",
+                },
+                {
+                  bg: "bg-rose-100",
+                  text: "text-rose-600",
+                  hoverBg: "group-hover:bg-rose-600",
+                  hoverText: "group-hover:text-white",
+                },
+                {
+                  bg: "bg-teal-100",
+                  text: "text-teal-600",
+                  hoverBg: "group-hover:bg-teal-600",
+                  hoverText: "group-hover:text-white",
+                },
+              ];
+
+              const theme = colorThemes[index % colorThemes.length];
+              const icons = [
+                <IoShieldCheckmark size={24} />,
+                <IoLockClosed size={24} />,
+                <IoCheckmarkCircle size={24} />,
+                <IoHeadset size={24} />,
+                <IoShieldCheckmark size={24} />,
+                <IoCheckmarkCircle size={24} />,
+              ];
+
+              return (
+                <div
+                  key={index}
+                  className="group bg-white/70 backdrop-blur-md !p-6 rounded-2xl border border-amber-100 hover:border-amber-400 hover:shadow-amber-200 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                >
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+
+                  {/* Icon */}
+                  <div
+                    className={`flex items-center justify-center w-12 h-12 rounded-xl mb-4 transition-all duration-300 ${theme.bg} ${theme.text} ${theme.hoverBg} ${theme.hoverText}`}
+                  >
+                    {icons[index]}
+                  </div>
+
+                  {/* Text content */}
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-amber-700 transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                    {service.desc}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
 
