@@ -5,21 +5,19 @@ import Hero from '../../components/hero/Hero'
 import Services from '../../components/servicesSection/Services'
 import About from '../../components/about/About'
 import FAQSection from '../../components/faq/FAQSection'
+import Testimonial from "../../components/testimonial/Testimonial";
 
 const LandingPage = () => {
   return (
-      <div className='min-h-screen bg-amber-50 relative overflow-x-hidden'>
-
-              
-          <Navbarr />
-          <Hero />
-      <About/>
+    <div className="min-h-screen bg-amber-50 relative overflow-x-hidden">
+      <Navbarr />
+      <Hero />
+      <About />
       <Services />
       <FAQSection />
-      
-
+      <Testimonial />
     </div>
-  )
+  );
 }
 
 export default LandingPage
