@@ -4,6 +4,7 @@ import Navbarr from '../../components/navbar/Navbarr'
 import Hero from '../../components/hero/Hero'
 import Services from '../../components/servicesSection/Services'
 import About from '../../components/about/About'
+import FAQSection from '../../components/faq/FAQSection'
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
           <Hero />
       <About/>
       <Services />
+      <FAQSection />
       
 
     </div>
