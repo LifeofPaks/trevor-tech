@@ -28,17 +28,17 @@ const Footer = () => {
   const resources = [
     "How It Works",
     "Success Stories",
-    "Privacy Policy",
-    "Terms of Service",
-    "Refund Policy",
-    "EULA",
+    // "Privacy Policy",
+    // "Terms of Service",
+    // "Refund Policy",
+    // "EULA",
   ];
 
   const support = [
     "Contact Us",
-    "Live Chat",
+    // "Live Chat",
     "Support Center",
-    "My Account",
+    // "My Account",
     "FAQs",
   ];
 
