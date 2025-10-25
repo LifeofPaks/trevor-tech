@@ -1,26 +1,35 @@
-import React from 'react'
+import React from "react";
+import HeroImage from "../../assets/hero-image.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <div className="mt-[10rem]! px-[5rem]! max-w-[1400px] !mx-auto ">
-          <div className='flex items-center justify-between'>
-              <div>
-                  
-        <h1 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-extrabold text-gray-800 leading-tight">
-          Ultimate Digital Shield: Hack, Track, and Recover – Your Secret Weapon
-          Against Betrayal and Loss
-        </h1>
-        <p className='!mt-4 text-gray-600 text-[1rem] md:text-[1.125rem] lg:text-[1.25rem]'>
-          Empower yourself with cutting-edge tools to spy on social media, hack
-          devices, reclaim stolen crypto, track locations, and erase digital
-          footprints – all ethically and discreetly, with expert support for
-          total peace of mind.
-        </p>
-              </div>
-              <img src="" alt="hero-image" />
+      <div className="flex items-center justify-between gap-[1rem]">
+        <div>
+          <h1 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-extrabold text-gray-800 leading-tight">
+            Ultimate Digital Shield: Hack, Track, and Recover – Your Secret
+            Weapon Against Betrayal and Loss
+          </h1>
+          <p className="!mt-4 text-gray-600 text-[1rem] md:text-[1.125rem] lg:text-[1.25rem]">
+            Empower yourself with cutting-edge tools to spy on social media,
+            hack devices, reclaim stolen crypto, track locations, and erase
+            digital footprints – all ethically and discreetly, with expert
+            support for total peace of mind.
+          </p>
+
+          <div>
+            <Link to="/demo" className="cursor-pointer">
+              <button className="!mt-6 bg-red-500 text-white !px-6 !py-3 rounded-lg font-medium hover:bg-red-600 transition duration-300">
+                View Demo
+              </button>
+            </Link>
+          </div>
+        </div>
+        <img src={HeroImage} alt="hero-image" className="w-[600px]" />
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

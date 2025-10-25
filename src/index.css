@@ -12,6 +12,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
 .logo-font {
   font-family: "Audiowide", cursive;
 }
