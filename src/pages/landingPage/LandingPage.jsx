@@ -14,8 +14,8 @@ const LandingPage = () => {
       <Hero />
       <About />
       <Services />
-      <FAQSection />
       <Testimonial />
+      <FAQSection />
     </div>
   );
 }

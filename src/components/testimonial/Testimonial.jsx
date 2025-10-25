@@ -1,6 +1,5 @@
 import React from "react";
 import { Star } from "lucide-react";
-import { div } from "framer-motion/client";
 
 const testimonials = [
   {
@@ -33,52 +32,82 @@ const testimonials = [
     review:
       "I can’t thank Trevor Tech enough. My photos and documents were restored with amazing care and precision.",
   },
+  {
+    name: "Michael Chen",
+    image: "https://randomuser.me/api/portraits/men/64.jpg",
+    review:
+      "Their team went above and beyond to recover critical files. The process was smooth and stress-free.",
+  },
+  {
+    name: "Aisha Bello",
+    image: "https://randomuser.me/api/portraits/women/70.jpg",
+    review:
+      "Excellent experience! They communicated clearly, worked fast, and handled my data with great care.",
+  },
+  {
+    name: "Robert Evans",
+    image: "https://randomuser.me/api/portraits/men/74.jpg",
+    review:
+      "I was amazed by how fast they recovered everything. Totally worth it — real professionals!",
+  },
+  {
+    name: "Emily Davis",
+    image: "https://randomuser.me/api/portraits/women/32.jpg",
+    review:
+      "I’ve recommended Trevor Tech to my colleagues. Their data recovery service is simply outstanding.",
+  },
 ];
 
 const Testimonial = () => {
-    return (
-      <div className="text-center bg-white !mt-20 !py-16 px-4" id="testimonial">
-        <div className="max-w-6xl !mx-auto ">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 !mb-10">
-            What Our Clients Say
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((client, index) => (
-              <div
-                key={index}
-                className="bg-white/70 backdrop-blur-md border border-amber-100 rounded-xl !p-6 shadow-sm hover:shadow-md hover:border-amber-300 transition-all duration-300"
-              >
-                <div className="flex flex-col items-center text-center">
-                  <img
-                    src={client.image}
-                    alt={client.name}
-                    className="w-16 h-16 rounded-full mb-3 border-2 border-amber-200 object-cover"
-                  />
-                  <h3 className="text-lg font-semibold text-gray-800 !mb-1">
-                    {client.name}
-                  </h3>
+  return (
+    <div className="text-center bg-white !py-16 !px-[2rem]" id="testimonial">
+      <div className="max-w-6xl !mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 !mb-2">
+          What Our Clients Say
+        </h2>
+        <p className="text-gray-500 text-base sm:text-lg !mb-10">
+          Hear from the people who’ve trusted{" "}
+          <span className="text-amber-600 font-semibold">Trevor Tech</span> to
+          recover what matters most.
+        </p>
 
-                  {/* Stars */}
-                  <div className="flex justify-center !mb-3">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-4 h-4 text-amber-500 fill-amber-500"
-                      />
-                    ))}
-                  </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((client, index) => (
+            <div
+              key={index}
+              className="bg-white/70 backdrop-blur-md border border-amber-100 rounded-xl !p-6 shadow-sm hover:shadow-md hover:border-amber-300 transition-all duration-300"
+            >
+              <div className="flex flex-col items-center text-center">
+                <img
+                  src={client.image}
+                  alt={client.name}
+                  className="w-16 h-16 rounded-full mb-3 border-2 border-amber-200 object-cover"
+                />
+                <h3 className="text-lg font-semibold text-gray-800 !mb-1">
+                  {client.name}
+                </h3>
 
-                  {/* Review */}
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    “{client.review}”
-                  </p>
+                {/* Stars */}
+                <div className="flex justify-center !mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="w-4 h-4 text-amber-500 fill-amber-500"
+                    />
+                  ))}
                 </div>
+
+                {/* Review */}
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  “{client.review}”
+                </p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Testimonial;
