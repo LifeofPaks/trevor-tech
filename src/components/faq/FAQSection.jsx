@@ -32,7 +32,7 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="max-w-3xl !mx-auto !mt-20 !pb-20 !px-3" id="faq">
+    <div className="max-w-3xl !mx-auto !mt-20 !pb-20 !px-[2rem]" id="faq">
       <div className="text-center !mb-12 lg:mb-16">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-700 !mb-3">
           Frequently Asked Questions
