@@ -54,7 +54,7 @@ const Hero = () => {
 
             <button
               onClick={handleOpen}
-              className="w-[150px] bg-red-500 text-white !px-6 !py-3 rounded-lg font-medium hover:bg-red-600 transition duration-300"
+              className="w-[150px] bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-6 !py-3 rounded-lg font-medium transition duration-300"
             >
               Buy Now
             </button>
@@ -80,9 +80,7 @@ const Hero = () => {
             width: 380,
           }}
         >
-          <Typography
-            className="text-gray-800 !font-bold !mb-4 tracking-wide"
-          >
+          <Typography className="text-gray-800 !font-bold !mb-4 tracking-wide">
             Contact Us to Purchase
           </Typography>
 
@@ -106,7 +104,7 @@ const Hero = () => {
               href="https://t.me/YourTelegramUsername"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 w-full justify-center bg-blue-500 hover:bg-blue-600 text-white !py-3 rounded-lg font-medium transition duration-300"
+              className="flex items-center gap-3 w-full justify-center !bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !py-3 rounded-lg font-medium transition duration-300"
             >
               <FaTelegramPlane className="text-[20px]" />
               Message on Telegram
@@ -115,8 +113,8 @@ const Hero = () => {
 
           <IconButton
             onClick={handleClose}
-                      sx={{ position: "absolute", top: 10, right: 10 }}
-                      className="w-[30px] h-[30px] bg-white/50 hover:bg-white/70 backdrop-blur-md"
+            sx={{ position: "absolute", top: 10, right: 10 }}
+            className="w-[30px] h-[30px] bg-white/50 hover:bg-white/70 backdrop-blur-md"
           >
             <span className="text-[15px]">✕</span>
           </IconButton>
