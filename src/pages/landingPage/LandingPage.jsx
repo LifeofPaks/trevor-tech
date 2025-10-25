@@ -6,6 +6,7 @@ import Services from '../../components/servicesSection/Services'
 import About from '../../components/about/About'
 import FAQSection from '../../components/faq/FAQSection'
 import Testimonial from "../../components/testimonial/Testimonial";
+import Footer from "../../components/footer/Footer";
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <Services />
       <Testimonial />
       <FAQSection />
+      <Footer/>
     </div>
   );
 }
