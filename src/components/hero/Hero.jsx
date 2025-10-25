@@ -82,13 +82,12 @@ const Hero = () => {
           }}
         >
           <Typography
-            variant="h6"
-            className="text-gray-800 font-bold !mb-4 tracking-wide"
+            className="text-gray-800 !font-bold !mb-4 tracking-wide"
           >
             Contact Us to Purchase
           </Typography>
 
-          <Typography className="text-gray-600 !mb-6 text-sm">
+          <Typography className="text-gray-700 !mb-6 text-sm">
             Reach out via email or Telegram — our support team will assist you
             quickly.
           </Typography>
