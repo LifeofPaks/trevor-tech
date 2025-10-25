@@ -19,6 +19,9 @@ const Navbarr = () => {
             <a href="#services">Services</a>
           </li>
           <li>
+            <a href="#testimonial">Testimonail</a>
+          </li>
+          <li>
             <a href="#faq">FAQ</a>
           </li>
         </ul>
