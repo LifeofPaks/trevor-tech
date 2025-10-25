@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   IoLockClosed,
   IoShieldCheckmark,
@@ -9,8 +9,13 @@ import {
   IoSchool,
   IoAlertCircle,
 } from "react-icons/io5";
+import BuyModal from "../buyModal/BuyModal";
 
 const About = () => {
+    const [open, setOpen] = useState(false);
+      
+        const handleOpen = () => setOpen(true);
+        const handleClose = () => setOpen(false);
   const services = [
     {
       title: "Recover Stolen & Scammed Crypto",
@@ -74,122 +79,125 @@ const About = () => {
   ];
 
   return (
-    <section
-      id="about"
-      className="bg-gradient-to-b from-amber-50 via-white to-gray-50 !py-20 lg:!py-28 relative overflow-hidden"
-    >
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-amber-100/30 rounded-full blur-3xl opacity-30 pointer-events-none"></div>
+    <>
+      <section
+        id="about"
+        className="bg-gradient-to-b from-amber-50 via-white to-gray-50 !py-20 lg:!py-28 relative overflow-hidden"
+      >
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-amber-100/30 rounded-full blur-3xl opacity-30 pointer-events-none"></div>
 
-      <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
-        {/* Header */}
-        <div className="text-center !mb-20">
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-700">
-            Your Trusted Digital Recovery & Surveillance Experts
-          </h1>
-          <p className="!mt-6 max-w-3xl !mx-auto text-base sm:text-lg text-gray-700 leading-relaxed">
-            We are a{" "}
-            <span className="font-semibold text-gray-900">
-              professional, discreet team
-            </span>{" "}
-            specializing in ethical digital access, recovery, and protection
-            services. With over a decade of experience in cybersecurity,
-            blockchain forensics, and remote monitoring, we help you regain
-            control — whether it's recovering stolen cryptocurrency, securing
-            hacked accounts, or protecting loved ones.
-          </p>
-        </div>
-
-        {/* Services */}
-        <div className="!mb-18">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-700 !mb-12">
-            What We Do
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white/80 !p-6 rounded-2xl border border-amber-100 hover:border-amber-400 shadow-md hover:shadow-lg"
-              >
-                <div
-                  className={`flex items-center justify-center w-12 h-12 rounded-xl mb-4 ${service.color}`}
-                >
-                  {service.icon}
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  {service.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Why Choose Us */}
-        <div className="max-w-4xl !mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 !mb-10">
-            Why Choose Us?
-          </h2>
-
-          <ul className="grid sm:grid-cols-2 gap-4 text-left">
-            {whyChooseUs.map((item, index) => (
-              <li
-                key={index}
-                className="flex items-center gap-4 bg-white/80 rounded-xl border border-gray-100 hover:border-amber-200 shadow-sm hover:shadow-md !p-4 min-h-[80px]"
-              >
-                <div
-                  className={`flex items-center justify-center w-10 h-10 rounded-full flex-shrink-0 ${item.color}`}
-                >
-                  {item.icon}
-                </div>
-                <p className="text-sm sm:text-base text-gray-700 font-medium leading-snug">
-                  {item.text}
-                </p>
-              </li>
-            ))}
-          </ul>
-
-          {/* Quote */}
-          <div className="!mt-12 relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-100/80 to-amber-50/80 shadow-md border border-amber-200">
-            <p className="relative text-lg sm:text-xl font-semibold text-amber-800 italic text-center !py-6 !px-4">
-              “We don’t just recover data — we recover trust.”
+        <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
+          {/* Header */}
+          <div className="text-center !mb-20">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-700">
+              Your Trusted Digital Recovery & Surveillance Experts
+            </h1>
+            <p className="!mt-6 max-w-3xl !mx-auto text-base sm:text-lg text-gray-700 leading-relaxed">
+              We are a{" "}
+              <span className="font-semibold text-gray-900">
+                professional, discreet team
+              </span>{" "}
+              specializing in ethical digital access, recovery, and protection
+              services. With over a decade of experience in cybersecurity,
+              blockchain forensics, and remote monitoring, we help you regain
+              control — whether it's recovering stolen cryptocurrency, securing
+              hacked accounts, or protecting loved ones.
             </p>
           </div>
-        </div>
 
-        {/* CTA */}
-        <div className="!mt-20 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 !mb-3">
-            Ready to Take Back Control?
-          </h2>
-          <p className="text-lg text-gray-600 !mb-8">
-            Our experts are standing by 24/7 to help you recover and secure your
-            digital world.
-          </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-8 !py-3 rounded-full font-medium shadow-md hover:shadow-lg"
-          >
-            Contact Us Now
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Services */}
+          <div className="!mb-18">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-700 !mb-12">
+              What We Do
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-white/80 !p-6 rounded-2xl border border-amber-100 hover:border-amber-400 shadow-md hover:shadow-lg"
+                >
+                  <div
+                    className={`flex items-center justify-center w-12 h-12 rounded-xl mb-4 ${service.color}`}
+                  >
+                    {service.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                    {service.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Why Choose Us */}
+          <div className="max-w-4xl !mx-auto text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 !mb-10">
+              Why Choose Us?
+            </h2>
+
+            <ul className="grid sm:grid-cols-2 gap-4 text-left">
+              {whyChooseUs.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-4 bg-white/80 rounded-xl border border-gray-100 hover:border-amber-200 shadow-sm hover:shadow-md !p-4 min-h-[80px]"
+                >
+                  <div
+                    className={`flex items-center justify-center w-10 h-10 rounded-full flex-shrink-0 ${item.color}`}
+                  >
+                    {item.icon}
+                  </div>
+                  <p className="text-sm sm:text-base text-gray-700 font-medium leading-snug">
+                    {item.text}
+                  </p>
+                </li>
+              ))}
+            </ul>
+
+            {/* Quote */}
+            <div className="!mt-12 relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-100/80 to-amber-50/80 shadow-md border border-amber-200">
+              <p className="relative text-lg sm:text-xl font-semibold text-amber-800 italic text-center !py-6 !px-4">
+                “We don’t just recover data — we recover trust.”
+              </p>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="!mt-20 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 !mb-3">
+              Ready to Take Back Control?
+            </h2>
+            <p className="text-lg text-gray-600 !mb-8">
+              Our experts are standing by 24/7 to help you recover and secure
+              your digital world.
+            </p>
+            <a
+              onClick={handleOpen}
+              className="cursor-pointer inline-flex items-center gap-2 bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-8 !py-3 rounded-full font-medium shadow-md hover:shadow-lg"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </a>
+              Contact Us Now
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <BuyModal handleClose={handleClose} open={open} />
+    </>
   );
 };
 
