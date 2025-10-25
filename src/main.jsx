@@ -5,10 +5,15 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import theme from "./config/theme.js";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <App />
-    <ToastContainer />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+      <ToastContainer />
+    </ThemeProvider>
   </BrowserRouter>
 );
