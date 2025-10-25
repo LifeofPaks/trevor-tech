@@ -43,7 +43,7 @@ const PhoneSection = () => {
     ];
   return (
     <div>
-      <h1 className="w-full text-center font-extrabold text-[2rem]" id='services'>
+      <h1 className="w-full text-center font-extrabold text-[2rem]" >
         Phone & Social Media Surveillance
       </h1>
       <p className="w-full text-center lg:w-[850px] !mx-auto text-gray-600 !mt-4 text-[1.1rem]">

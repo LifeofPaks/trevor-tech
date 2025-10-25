@@ -19,7 +19,7 @@ const Navbarr = () => {
             <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#contact">Contact Us</a>
+            <a href="#faq">FAQ</a>
           </li>
         </ul>
       </div>

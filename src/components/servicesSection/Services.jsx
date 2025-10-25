@@ -5,11 +5,11 @@ import LocationSection from "./LocationSection";
 
 const Services = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="services">
       <div className="lg:!p-[5rem] !p-[2rem] max-w-[1400px] !mx-auto">
-              <PhoneSection />
-              <GallerySection />
-              <LocationSection />
+        <PhoneSection />
+        <GallerySection />
+        <LocationSection />
       </div>
     </div>
   );
