@@ -72,7 +72,6 @@ const Hero = () => {
         />
       </div>
 
-      {/* ===================== MUI MODAL ===================== */}
       <Modal open={open} onClose={handleClose}>
         <Box
           className="absolute top-1/2 left-1/2 bg-white/30 backdrop-blur-lg shadow-2xl rounded-2xl !p-8 text-center border border-white/40"
@@ -88,7 +87,7 @@ const Hero = () => {
           </Typography>
 
           <Typography className="text-gray-700 !mb-6 text-sm">
-            Reach out via email or Telegram — our support team will assist you
+            Reach out via email or Telegram, our support team will assist you
             quickly.
           </Typography>
 
