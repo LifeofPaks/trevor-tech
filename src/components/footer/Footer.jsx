@@ -13,6 +13,13 @@ import {
 } from "react-icons/fa";
 import Logo from "../logo/Logo";
 import BuyModal from "../buyModal/BuyModal";
+import Image1 from "../../assets/visa.svg";
+import Image2 from "../../assets/mastercard.svg";
+import Image3 from "../../assets/paypal.svg";
+import Image4 from "../../assets/discover.svg";
+import Image5 from "../../assets/direct.svg";
+import Image7 from "../../assets/giro.svg";
+
 
 const Footer = () => {
     const [open, setOpen] = useState(false);
@@ -161,12 +168,13 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6 text-xs text-gray-500">
             {/* Payment Icons */}
             <div className="flex items-center !space-x-3 order-2 lg:order-1">
-              <FaCcPaypal className="text-xl text-blue-600" />
-              <FaCcVisa className="text-xl" />
-              <FaCcMastercard className="text-xl text-red-600" />
-              <FaCcDiscover className="text-xl text-orange-600" />
-              <FaCcAmex className="text-xl text-blue-800" />
-              <FaBitcoin className="text-xl text-yellow-500" />
+              <img src={Image1} alt="payment image" className="w-[60px]"/>
+              <img src={Image2} alt="payment image" className="w-[60px]"/>
+              <img src={Image3} alt="payment image"className="w-[60px]" />
+              <img src={Image4} alt="payment image" className="w-[60px]"/>
+              <img src={Image5} alt="payment image" className="w-[60px]"/>
+              <img src={Image7} alt="payment image"className="w-[60px]" />
+              <FaBitcoin className="text-xl text-yellow-500" size={25}/>
             </div>
 
             {/* Legal Links */}
