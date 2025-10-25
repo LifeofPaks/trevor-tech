@@ -1,6 +1,10 @@
 import React from "react";
 import HeroImage from "../../assets/hero-image.png";
 import { Link } from "react-router-dom";
+import { FaApple } from "react-icons/fa";
+import { IoLogoAndroid } from "react-icons/io";
+import { FaWindows } from "react-icons/fa";
+import { SiMacos } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -20,8 +24,19 @@ const Hero = () => {
 
           <div className="!mt-6">
             <p className="text-[12px] font-bold">Available on</p>
-                      <div className="!mt-2">
-                          <div></div>
+            <div className="flex items-center gap-2 !mt-2 text-gray-800 text-[24px]">
+              <div>
+                <FaApple />
+              </div>
+              <div>
+                <IoLogoAndroid />
+              </div>
+              <div>
+                <FaWindows />
+              </div>
+              <div>
+                <SiMacos className="text-[30px]" />
+              </div>
             </div>
           </div>
 
