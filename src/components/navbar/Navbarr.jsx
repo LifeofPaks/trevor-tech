@@ -16,28 +16,33 @@ const Navbarr = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 text-[14px] font-medium text-gray-800">
           <li>
-            <a href="#" className="hover:text-blue-600 transition">
+            <a href="#" className="hover:text-[#0695c8] transition">
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="hover:text-blue-600 transition">
+            <a href="#about" className="hover:text-[#0695c8] transition">
               About
             </a>
           </li>
           <li>
-            <a href="#services" className="hover:text-blue-600 transition">
+            <a href="#services" className="hover:text-[#0695c8] transition">
               Services
             </a>
           </li>
           <li>
-            <a href="#testimonial" className="hover:text-blue-600 transition">
+            <a href="#testimonial" className="hover:text-[#0695c8] transition">
               Testimonial
             </a>
           </li>
           <li>
-            <a href="#faq" className="hover:text-blue-600 transition">
+            <a href="#faq" className="hover:text-[#0695c8] transition">
               FAQ
+            </a>
+          </li>
+          <li>
+            <a href="/demo" className="hover:text-[#0695c8] transition">
+              View Demo
             </a>
           </li>
         </ul>
