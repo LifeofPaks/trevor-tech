@@ -17,7 +17,7 @@ const Hero = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="!mt-32 lg:!px-20 !px-8 max-w-[1400px] mx-auto !pb-12 relative">
+    <div className="!mt-[15rem] lg:!px-20 !px-8 max-w-[1400px] mx-auto !pb-12 relative">
       {/* Floating Sparkle */}
       <motion.div
         className="absolute top-0 left-10 text-primary/20 hidden lg:block"
@@ -59,7 +59,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="relative inline-block">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight text-center lg:text-left">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground leading-[1.6] text-center lg:text-left">
               Ultimate Digital Shield: Hack, Track, and Recover – Your{" "}
               <span className="relative inline-block">
                 Secret Weapon
