@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GiImperialCrown } from "react-icons/gi";
 import { FiMenu, FiX } from "react-icons/fi";
 import Logo from "../logo/Logo";
+import { Link } from "react-router-dom";
 
 const Navbarr = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,9 +42,9 @@ const Navbarr = () => {
             </a>
           </li>
           <li>
-            <a href="/demo" className="hover:text-[#0695c8] transition">
+            <Link to="/demo" className="hover:text-[#0695c8] transition">
               View Demo
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -112,13 +113,13 @@ const Navbarr = () => {
             </a>
           </li>
           <li>
-            <a
-              href="/demo"
+            <Link
+              to="/demo"
               onClick={toggleMenu}
               className="hover:text-[#0695c8]"
             >
               View Demo
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
