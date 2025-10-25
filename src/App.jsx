@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/landingPage/LandingPage";
 
 function App() {
   return (
     <>
-      <h1 className="text-red-600">Hello Paks</h1>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
     </>
   );
 }
+
 
 export default App;
