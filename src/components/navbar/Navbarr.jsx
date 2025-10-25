@@ -56,10 +56,10 @@ const Navbarr = () => {
         </button>
       </div>
 
-      {/* Mobile Side Menu */}
+      {/* Mobile Side Menu (now slides in from the LEFT) */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 max-w-[300px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 left-0 h-full w-3/4 max-w-[300px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
         } md:hidden z-40`}
       >
         <div className="flex justify-between items-center !p-5 border-b border-gray-200">
@@ -71,7 +71,7 @@ const Navbarr = () => {
 
         <ul className="flex flex-col gap-6 !p-6 text-gray-800 text-[15px] font-medium">
           <li>
-            <a href="#" onClick={toggleMenu} className="hover:text-blue-600">
+            <a href="#" onClick={toggleMenu} className="hover:text-[#0695c8]">
               Home
             </a>
           </li>
@@ -79,7 +79,7 @@ const Navbarr = () => {
             <a
               href="#about"
               onClick={toggleMenu}
-              className="hover:text-blue-600"
+              className="hover:text-[#0695c8]"
             >
               About
             </a>
@@ -88,7 +88,7 @@ const Navbarr = () => {
             <a
               href="#services"
               onClick={toggleMenu}
-              className="hover:text-blue-600"
+              className="hover:text-[#0695c8]"
             >
               Services
             </a>
@@ -97,14 +97,27 @@ const Navbarr = () => {
             <a
               href="#testimonial"
               onClick={toggleMenu}
-              className="hover:text-blue-600"
+              className="hover:text-[#0695c8]"
             >
               Testimonial
             </a>
           </li>
           <li>
-            <a href="#faq" onClick={toggleMenu} className="hover:text-blue-600">
+            <a
+              href="#faq"
+              onClick={toggleMenu}
+              className="hover:text-[#0695c8]"
+            >
               FAQ
+            </a>
+          </li>
+          <li>
+            <a
+              href="/demo"
+              onClick={toggleMenu}
+              className="hover:text-[#0695c8]"
+            >
+              View Demo
             </a>
           </li>
         </ul>
