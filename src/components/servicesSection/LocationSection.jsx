@@ -68,7 +68,7 @@ const LocationSection = () => {
                     onClick={handleOpen}
                     className="w-[150px] bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-6 !py-3 rounded-lg font-medium transition duration-300"
                   >
-                    Try It Free
+                    Try It Now
                   </button>
                   <Link to="/demo" className="cursor-pointer">
                     <button className=" flex items-center  gap-1  text-gray-800 !px-6 !py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">

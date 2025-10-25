@@ -57,7 +57,7 @@ const Hero = () => {
               onClick={handleOpen}
               className="w-[150px] bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-6 !py-3 rounded-lg font-medium transition duration-300"
             >
-              Buy Now
+              Try it Now
             </button>
           </div>
         </div>
