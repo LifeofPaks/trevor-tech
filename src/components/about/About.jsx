@@ -168,31 +168,49 @@ const About = () => {
             })}
           </div>
         </div>
-
         {/* Why Choose Us */}
         <div className="max-w-4xl !mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 !mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 !mb-10">
             Why Choose Us?
           </h2>
-          <ul className="!space-y-4 text-left sm:text-center">
-            {whyChooseUs.map((item, index) => (
-              <li
-                key={index}
-                className="flex sm:justify-center items-center gap-3 bg-white/60 backdrop-blur-md rounded-lg !px-4 !py-3 border border-gray-100 hover:bg-amber-50 transition-all"
-              >
-                <div className="flex items-center justify-center w-8 h-8 bg-green-100 rounded-full text-green-600">
-                  {item.icon}
-                </div>
-                <p className="text-sm sm:text-base text-gray-700 font-medium">
-                  {item.text}
-                </p>
-              </li>
-            ))}
+
+          <ul className="grid sm:grid-cols-2 gap-4 text-left">
+            {whyChooseUs.map((item, index) => {
+              // Different icon colors for better visual rhythm
+              const colors = [
+                "bg-green-100 text-green-600",
+                "bg-blue-100 text-blue-600",
+                "bg-amber-100 text-amber-600",
+                "bg-purple-100 text-purple-600",
+                "bg-rose-100 text-rose-600",
+              ];
+              const color = colors[index % colors.length];
+
+              return (
+                <li
+                  key={index}
+                  className="flex items-center gap-4 bg-white/70 backdrop-blur-md rounded-xl border border-gray-100 hover:border-amber-200 hover:shadow-md transition-all duration-300 !p-4 min-h-[80px]"
+                >
+                  {/* Icon Circle */}
+                  <div
+                    className={`flex items-center justify-center w-10 h-10 rounded-full flex-shrink-0 ${color} transition-all duration-300`}
+                  >
+                    {item.icon}
+                  </div>
+
+                  {/* Text */}
+                  <p className="text-sm sm:text-base text-gray-700 font-medium leading-snug">
+                    {item.text}
+                  </p>
+                </li>
+              );
+            })}
           </ul>
 
           {/* Quote */}
-          <div className="!mt-10 !p-6 bg-gradient-to-r from-amber-100 to-amber-50 rounded-xl shadow-sm border border-amber-200">
-            <p className="text-lg font-semibold text-amber-800 italic text-center">
+          <div className="!mt-12 relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-100/80 to-amber-50/80 shadow-md border border-amber-200">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,200,100,0.25),transparent_60%)]" />
+            <p className="relative text-lg sm:text-xl font-semibold text-amber-800 italic text-center !py-6 !px-4">
               “We don’t just recover data — we recover trust.”
             </p>
           </div>
