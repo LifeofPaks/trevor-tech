@@ -38,7 +38,7 @@ const LocationSection = () => {
               <h2 className="font-extrabold text-3xl sm:text-4xl text-gray-900">
                 Live GPS Tracking
               </h2>
-              <p className="m!t-4 text-gray-600 text-base sm:text-lg leading-relaxed">
+              <p className="!mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">
                 Track real-time location of any device with street-level
                 accuracy using GPS, Wi-Fi, and cell towers. View live movement
                 on a map, get geofence alerts, and export complete route history
@@ -50,7 +50,26 @@ const LocationSection = () => {
             <div className="!mt-10 flex flex-col-reverse lg:flex-row items-center gap-12">
               {/* Left side - icons list */}
               <div className="flex-1 w-full">
-                <ul className="!space-y-6">
+                <div className="text-center lg:text-left !mb-10">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Start Tracking Instantly
+                  </h3>
+                  <p className="text-gray-600 text-sm mt-1 leading-relaxed">
+                    Experience how our GPS system keeps you connected to your
+                    devices in real time. Click{" "}
+                    <span className="font-semibold text-gray-800">
+                      “Try It Now”
+                    </span>{" "}
+                    to activate live tracking instantly or
+                    <span className="font-semibold text-gray-800">
+                      {" "}
+                      “View Demo”
+                    </span>{" "}
+                    to explore how location updates and alerts appear within the
+                    dashboard interface.
+                  </p>
+                </div>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {features.map((f, i) => (
                     <li key={i} className="flex items-center gap-4">
                       <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-white shadow-sm flex items-center justify-center border border-gray-100">
