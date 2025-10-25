@@ -19,7 +19,7 @@ const Hero = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="!mt-[10rem] lg:!px-[5rem] !px-[2rem] max-w-[1400px] !mx-auto">
+    <div className="!mt-[10rem] lg:!px-[5rem] !px-[2rem] max-w-[1400px] !mx-auto !pb-[3rem]">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-[2rem]">
         {/* Left section */}
         <div className="flex-1">

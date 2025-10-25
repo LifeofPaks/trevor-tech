@@ -1,5 +1,5 @@
 import React from "react";
-import CryptoImage from "../../assets/crypto-image.jpg";
+import CryptoImage from "../../assets/crypto-image.png";
 import { IoCheckmarkDone } from "react-icons/io5";
 
 const features = [
@@ -32,7 +32,7 @@ const features = [
 
 const GallerySection = () => {
   return (
-    <section id="services" className="!pt-20">
+    <section className="!pt-20">
       <div className="max-w-7xl !mx-auto lg:!px-6">
         <div className="flex flex-col-reverse lg:flex-row items-start gap-10 lg:gap-16">
           {/* Left - content */}
@@ -78,7 +78,7 @@ const GallerySection = () => {
             <img
               src={CryptoImage}
               alt="cryptocurrency illustration"
-              className="w-full h-auto rounded-xl object-cover shadow-lg"
+              className="w-full h-[500px] rounded-xl object-cover "
               loading="lazy"
             />
           </div>
