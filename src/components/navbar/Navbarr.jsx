@@ -1,33 +1,119 @@
-import React from 'react'
+import React, { useState } from "react";
 import { GiImperialCrown } from "react-icons/gi";
-import Logo from '../logo/Logo';
-
+import { FiMenu, FiX } from "react-icons/fi";
+import Logo from "../logo/Logo";
 
 const Navbarr = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
-    <nav className=" w-full flex justify-center mx-auto!">
-      <div className="flex items-center justify-between text-gray-800 !px-12 !py-4 w-[1000px] fixed top-4 left-0 right-0 mx-auto! z-50 bg-white/50 backdrop-blur-md shadow-lg rounded-2xl">
+    <nav className="w-full fixed top-0 left-0 z-50">
+      <div className="flex items-center justify-between w-full lg:max-w-[1000px] !mx-auto bg-white/50 backdrop-blur-md shadow-lg lg:rounded-2xl !px-12 !py-4 lg:!mt-4">
         <Logo />
-        <ul className="flex items-center gap-8 text-[14px] font-medium">
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex items-center gap-8 text-[14px] font-medium text-gray-800">
           <li>
-            <a href="#">Home</a>
+            <a href="#" className="hover:text-blue-600 transition">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about" className="hover:text-blue-600 transition">
+              About
+            </a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#services" className="hover:text-blue-600 transition">
+              Services
+            </a>
           </li>
           <li>
-            <a href="#testimonial">Testimonail</a>
+            <a href="#testimonial" className="hover:text-blue-600 transition">
+              Testimonial
+            </a>
           </li>
           <li>
-            <a href="#faq">FAQ</a>
+            <a href="#faq" className="hover:text-blue-600 transition">
+              FAQ
+            </a>
+          </li>
+        </ul>
+
+        {/* Hamburger Icon (Mobile Only) */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden text-gray-800 text-2xl focus:outline-none"
+        >
+          {isOpen ? <FiX /> : <FiMenu />}
+        </button>
+      </div>
+
+      {/* Mobile Side Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-3/4 max-w-[300px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } md:hidden z-40`}
+      >
+        <div className="flex justify-between items-center !p-5 border-b border-gray-200">
+          <Logo />
+          <button onClick={toggleMenu} className="text-2xl text-gray-800">
+            <FiX />
+          </button>
+        </div>
+
+        <ul className="flex flex-col gap-6 !p-6 text-gray-800 text-[15px] font-medium">
+          <li>
+            <a href="#" onClick={toggleMenu} className="hover:text-blue-600">
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              onClick={toggleMenu}
+              className="hover:text-blue-600"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#services"
+              onClick={toggleMenu}
+              className="hover:text-blue-600"
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="#testimonial"
+              onClick={toggleMenu}
+              className="hover:text-blue-600"
+            >
+              Testimonial
+            </a>
+          </li>
+          <li>
+            <a href="#faq" onClick={toggleMenu} className="hover:text-blue-600">
+              FAQ
+            </a>
           </li>
         </ul>
       </div>
+
+      {/* Background Overlay when menu is open */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm md:hidden"
+          onClick={toggleMenu}
+        ></div>
+      )}
     </nav>
   );
-}
+};
 
-export default Navbarr
+export default Navbarr;
