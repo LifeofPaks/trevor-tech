@@ -1,138 +1,69 @@
 import React, { useState } from "react";
-import { GiImperialCrown } from "react-icons/gi";
-import { FiMenu, FiX } from "react-icons/fi";
+import {
+  FiMenu,
+  FiX,
+  FiHome,
+  FiSettings,
+  FiUser,
+  FiHelpCircle,
+} from "react-icons/fi";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../logo/Logo";
-import { Link } from "react-router-dom";
 
-const DemoNavbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const DemoSidebar = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const location = useLocation();
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleSidebar = () => setIsOpen(!isOpen);
+
+  const links = [
+    { to: "/demo/dashboard", label: "Dashboard", icon: <FiHome /> },
+    { to: "/demo/profile", label: "Profile", icon: <FiUser /> },
+    { to: "/demo/settings", label: "Settings", icon: <FiSettings /> },
+    { to: "/demo/help", label: "Help", icon: <FiHelpCircle /> },
+  ];
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50">
-      <div className="flex items-center justify-between w-full lg:max-w-[1000px] !mx-auto bg-white/50 backdrop-blur-md shadow-lg lg:rounded-2xl !px-12 !py-4 lg:!mt-4">
-        <Logo />
-
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-8 text-[14px] font-medium text-gray-800">
-          <li>
-            <Link to="/demo/dashboard" className="hover:text-[#0695c8] transition">
-              Dashboard
-            </Link>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-[#0695c8] transition">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#services" className="hover:text-[#0695c8] transition">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#testimonial" className="hover:text-[#0695c8] transition">
-              Testimonial
-            </a>
-          </li>
-          <li>
-            <a href="#faq" className="hover:text-[#0695c8] transition">
-              FAQ
-            </a>
-          </li>
-          <li>
-            <a href="/demo" className="hover:text-[#0695c8] transition">
-              View Demo
-            </a>
-          </li>
-        </ul>
-
-        {/* Hamburger Icon (Mobile Only) */}
-        <button
-          onClick={toggleMenu}
-          className="md:hidden text-gray-800 text-2xl focus:outline-none"
-        >
-          {isOpen ? <FiX /> : <FiMenu />}
-        </button>
-      </div>
-
-      {/* Mobile Side Menu (now slides in from the LEFT) */}
-      <div
-        className={`fixed top-0 left-0 h-full w-3/4 max-w-[300px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:hidden z-40`}
+    <>
+      {/* Sidebar (Desktop + Collapsible) */}
+      <aside
+        className={`fixed top-0 left-0 h-full bg-white shadow-lg transition-all duration-300 z-50
+        ${isOpen ? "w-64" : "w-20"}`}
       >
-        <div className="flex justify-between items-center !p-5 border-b border-gray-200">
-          <Logo />
-          <button onClick={toggleMenu} className="text-2xl text-gray-800">
-            <FiX />
-          </button>
+        {/* Header */}
+        <div className="flex items-center justify-between !px-4 !py-4 border-b border-gray-200">
+          <div className="flex items-center gap-2">
+            <Logo />
+         
+          </div>
+     
         </div>
 
-        <ul className="flex flex-col gap-6 !p-6 text-gray-800 text-[15px] font-medium">
-          <li>
-            <a href="#" onClick={toggleMenu} className="hover:text-[#0695c8]">
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#about"
-              onClick={toggleMenu}
-              className="hover:text-[#0695c8]"
+        {/* Navigation Links */}
+        <nav className="!mt-6 flex flex-col gap-2 !px-3">
+          {links.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className={`flex items-center gap-3 !px-3 !py-2 rounded-lg transition-colors
+              ${
+                location.pathname === link.to
+                  ? "bg-[#0695c8] text-white"
+                  : "text-gray-700 hover:bg-gray-100"
+              }`}
             >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#services"
-              onClick={toggleMenu}
-              className="hover:text-[#0695c8]"
-            >
-              Services
-            </a>
-          </li>
-          <li>
-            <a
-              href="#testimonial"
-              onClick={toggleMenu}
-              className="hover:text-[#0695c8]"
-            >
-              Testimonial
-            </a>
-          </li>
-          <li>
-            <a
-              href="#faq"
-              onClick={toggleMenu}
-              className="hover:text-[#0695c8]"
-            >
-              FAQ
-            </a>
-          </li>
-          <li>
-            <a
-              href="/demo"
-              onClick={toggleMenu}
-              className="hover:text-[#0695c8]"
-            >
-              View Demo
-            </a>
-          </li>
-        </ul>
-      </div>
+              <span className="text-lg">{link.icon}</span>
+              {isOpen && (
+                <span className="text-sm font-medium">{link.label}</span>
+              )}
+            </Link>
+          ))}
+        </nav>
+      </aside>
 
-      {/* Background Overlay when menu is open */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/40 backdrop-blur-sm md:hidden"
-          onClick={toggleMenu}
-        ></div>
-      )}
-    </nav>
+   
+    </>
   );
 };
 
-export default DemoNavbar;
+export default DemoSidebar;
