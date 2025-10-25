@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GiImperialCrown } from "react-icons/gi";
 import { FiMenu, FiX } from "react-icons/fi";
 import Logo from "../logo/Logo";
+import { Link } from "react-router-dom";
 
 const DemoNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +17,9 @@ const DemoNavbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 text-[14px] font-medium text-gray-800">
           <li>
-            <a href="#" className="hover:text-[#0695c8] transition">
-              Home
-            </a>
+            <Link to="/demo/dashboard" className="hover:text-[#0695c8] transition">
+              Dashboard
+            </Link>
           </li>
           <li>
             <a href="#about" className="hover:text-[#0695c8] transition">
