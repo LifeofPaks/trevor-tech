@@ -65,7 +65,7 @@ const Hero = () => {
         <motion.img
           src={HeroImage}
           alt="hero-image"
-          className="w-[600px]"
+          className="w-[600px]  rounded-xl object-cover shadow-lg"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
