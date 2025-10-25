@@ -77,7 +77,7 @@ const Hero = () => {
           className="absolute top-1/2 left-1/2 bg-white/30 backdrop-blur-lg shadow-2xl rounded-2xl !p-8 text-center border border-white/40"
           sx={{
             transform: "translate(-50%, -50%)",
-            width: 350,
+            width: 380,
           }}
         >
           <Typography
@@ -86,7 +86,7 @@ const Hero = () => {
             Contact Us to Purchase
           </Typography>
 
-          <Typography className="text-gray-700 !mb-6 text-sm">
+          <Typography className="text-gray-700 !mb-6 text-[13px]">
             Reach out via email or Telegram, our support team will assist you
             quickly.
           </Typography>
