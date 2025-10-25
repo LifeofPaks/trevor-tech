@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Navbarr from '../../components/navbar/Navbarr'
+import Hero from '../../components/hero/Hero'
 
 const LandingPage = () => {
   return (
-      <div className='w-full min-h-screen bg-amber-100 relative overflow-x-hidden'>
+      <div className='min-h-screen bg-amber-50 relative overflow-x-hidden'>
 
               
-          <Navbarr/>
+          <Navbarr />
+          <Hero/>
 
     </div>
   )
