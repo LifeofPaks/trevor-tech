@@ -1,17 +1,22 @@
 import React from 'react'
 import Logo1 from "../../assets/logo-1.png";
 import Logo3 from "../../assets/logo-3.png";
+import Logo4 from "../../assets/logo-4.png";
 import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
     <Link to="/" className="flex items-center flex-col">
-      <div className="flex items-center -mb-[5px]!">
-        <img src={Logo3} alt="logo-image" className="w-[40px]" />
+      <div className="flex items-center -mb-[10px]!">
+        {/* <img src={Logo3} alt="logo-image" className="w-[40px]" />
+         */}
+        <h1 className="font-extrabold text-[2rem] text-gray-800 rotate-[12deg]">
+          T
+        </h1>
         <img
-          src={Logo1}
+          src={Logo4}
           alt="logo-image"
-          className="w-[25px] -ml-[14px]! rotate-[180deg] !mt-2"
+          className="w-[21px] -ml-[8px]! rotate-[180deg] !mt-3"
         />
       </div>
 
