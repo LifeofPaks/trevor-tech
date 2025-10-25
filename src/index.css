@@ -14,8 +14,6 @@ body {
 
 button {
   cursor: pointer;
-  outline: none;
-  border: none;
 }
 
 .logo-font {

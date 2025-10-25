@@ -18,12 +18,18 @@ const Hero = () => {
             support for total peace of mind.
           </p>
 
-          <div>
+          <div className="flex items-center gap-4 !mt-6">
             <Link to="/demo" className="cursor-pointer">
-              <button className="!mt-6 bg-red-500 text-white !px-6 !py-3 rounded-lg font-medium hover:bg-red-600 transition duration-300">
+
+            <button className="w-[150px]  border border-gray-800 text-gray-800 !px-6 !py-3 rounded-lg font-medium  transition duration-300">
                 View Demo
               </button>
             </Link>
+
+              <button className=" w-[150px]  bg-red-500 text-white !px-6 !py-3 rounded-lg font-medium hover:bg-red-600 transition duration-300">
+
+              Buy Now
+            </button>
           </div>
         </div>
         <img src={HeroImage} alt="hero-image" className="w-[600px]" />
