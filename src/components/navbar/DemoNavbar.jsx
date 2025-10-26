@@ -47,12 +47,13 @@ import { FaYoutube, FaTiktok } from "react-icons/fa";
 import { RiMovie2Line } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../logo/Logo";
+import DemoLogo from "../logo/DemoLogo";
 
 const DemoSidebar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [showDeviceModal, setShowDeviceModal] = useState(false);
-  const [selectedDevice, setSelectedDevice] = useState("John's Galaxy S24");
+  const [selectedDevice, setSelectedDevice] = useState("Zion's Galaxy S24");
   const [openSubmenus, setOpenSubmenus] = useState([
     "Social Networks",
     "Video Apps",
@@ -84,25 +85,25 @@ const DemoSidebar = () => {
 
   const devices = [
     {
-      name: "John's Galaxy S24",
+      name: "Zion's Galaxy S24",
       status: "In Use",
       color: "bg-green-500",
       battery: "20%",
     },
     {
-      name: "John's iPhone 16",
+      name: "Zion's iPhone 16",
       status: "Offline",
       color: "bg-gray-500",
       battery: null,
     },
     {
-      name: "John's iPhone 14",
+      name: "Zion's iPhone 14",
       status: "Offline",
       color: "bg-gray-500",
       battery: null,
     },
     {
-      name: "John's iCloud",
+      name: "Zion's iCloud",
       status: "Available",
       color: "bg-blue-500",
       battery: null,
@@ -318,7 +319,7 @@ const menuItems = [
       {/* Mobile Topbar */}
       {isMobile && !isOpen && (
         <div className="fixed top-0 left-0 right-0 flex items-center justify-between !px-4 !py-3 bg-[#0a0f2c] text-white shadow-lg z-50">
-          <Logo />
+          <DemoLogo />
           <button onClick={toggleSidebar} className="text-2xl">
             <FiMenu />
           </button>
@@ -339,7 +340,7 @@ const menuItems = [
       >
         {/* Header */}
         <div className="flex items-center justify-between !px-5 !py-4 border-b border-gray-800">
-          <Logo />
+          <DemoLogo />
           {isMobile && (
             <button
               onClick={toggleSidebar}
@@ -366,7 +367,7 @@ const menuItems = [
           {/* Device Popup Modal */}
           {showDeviceModal && (
             <div
-              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center !p-4"
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-start justify-center !p-4"
               onClick={() => setShowDeviceModal(false)}
             >
               <div
