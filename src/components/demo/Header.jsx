@@ -216,7 +216,7 @@ const Header = () => {
                   className="flex items-center gap-1.5 !px-3 !py-2 rounded-full hover:bg-gray-100 transition-all text-sm font-medium text-gray-700"
                 >
                   <FiGlobe className="text-lg" />
-                  <span>{language}</span>
+                  <span className="text-[13px]">{language}</span>
                   <FiChevronDown
                     className={`text-xs transition-transform ${
                       openDropdown === "Language" ? "rotate-180" : ""
