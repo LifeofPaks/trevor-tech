@@ -127,17 +127,31 @@ const Header = () => {
           <div className="flex items-center gap-2">
             {/* Desktop Icons */}
             <div className="hidden md:flex items-center gap-1">
+              {/* Home Dropdown */}
               <Dropdown title="Home">
                 {{
                   icon: <FiHome className="text-xl text-gray-700" />,
                   items: [
-                    { title: "Dashboard", icon: <FiHome /> },
-                    { title: "Reports", icon: <FiGlobe /> },
-                    { title: "Settings", icon: <FiSettings /> },
+                    {
+                      title: "Dashboard",
+                      icon: <FiHome />,
+                      desc: "View all stats",
+                    },
+                    {
+                      title: "Reports",
+                      icon: <FiGlobe />,
+                      desc: "Analytics & insights",
+                    },
+                    {
+                      title: "Settings",
+                      icon: <FiSettings />,
+                      desc: "Customize app",
+                    },
                   ],
                 }}
               </Dropdown>
 
+              {/* Notifications Dropdown */}
               <Dropdown title="Notifications">
                 {{
                   icon: <FiBell className="text-xl text-gray-700" />,
@@ -146,27 +160,41 @@ const Header = () => {
                     {
                       title: "New message from John",
                       subtitle: "2 min ago",
-                      icon: <FiMessageSquare />,
+                      icon: (
+                        <div className="w-9 h-9 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                          J
+                        </div>
+                      ),
+                      unread: true,
                     },
                     {
                       title: "Location updated",
                       subtitle: "5 min ago",
-                      icon: <FiMapPin />,
+                      icon: (
+                        <div className="w-9 h-9 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center">
+                          <FiMapPin className="text-white text-xs" />
+                        </div>
+                      ),
                     },
                     {
                       title: "Battery low",
                       subtitle: "10 min ago",
-                      icon: <FiBattery />,
+                      icon: (
+                        <div className="w-9 h-9 bg-gradient-to-br from-red-400 to-rose-500 rounded-full flex items-center justify-center">
+                          <FiBattery className="text-white text-xs" />
+                        </div>
+                      ),
                     },
                   ],
                   footer: (
-                    <button className="w-full text-center text-sm text-[#0695c8] font-medium">
-                      View All
+                    <button className="w-full text-center !py-2.5 text-sm font-semibold text-[#0695c8] hover:bg-blue-50 rounded-b-xl transition-all">
+                      View All Notifications
                     </button>
                   ),
                 }}
               </Dropdown>
 
+              {/* Messages Dropdown */}
               <Dropdown title="Messages">
                 {{
                   icon: <FiMessageSquare className="text-xl text-gray-700" />,
@@ -176,39 +204,60 @@ const Header = () => {
                       title: "Sarah",
                       subtitle: "Hey, are you free?",
                       icon: (
-                        <div className="w-8 h-8 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full" />
+                        <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                          S
+                        </div>
                       ),
+                      time: "2m",
+                      unread: true,
                     },
                     {
                       title: "Team",
                       subtitle: "Meeting at 3 PM",
                       icon: (
-                        <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full" />
+                        <div className="w-9 h-9 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                          T
+                        </div>
                       ),
+                      time: "1h",
                     },
                   ],
                   footer: (
-                    <button className="w-full text-center text-sm text-[#0695c8] font-medium">
+                    <button className="w-full text-center !py-2.5 text-sm font-semibold text-[#0695c8] hover:bg-blue-50 rounded-b-xl transition-all">
                       See All Messages
                     </button>
                   ),
                 }}
               </Dropdown>
 
+              {/* Profile Dropdown */}
               <Dropdown title="Profile">
                 {{
                   icon: (
-                    <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-[#0695c8] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-[#0695c8] rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
                       Z
                     </div>
                   ),
                   items: [
-                    { title: "My Account", icon: <FiUser /> },
-                    { title: "Billing", icon: <FiCreditCard /> },
-                    { title: "Support", icon: <FiHelpCircle /> },
+                    {
+                      title: "My Account",
+                      icon: <FiUser />,
+                      desc: "Edit profile",
+                    },
+                    {
+                      title: "Billing",
+                      icon: <FiCreditCard />,
+                      desc: "Manage subscription",
+                    },
+                    {
+                      title: "Support",
+                      icon: <FiHelpCircle />,
+                      desc: "Get help",
+                    },
                   ],
                   footer: (
-                    <button className="w-full text-center text-sm text-red-600 font-medium">
+                    <button className="w-full text-center !py-2.5 text-sm font-semibold text-red-600 hover:bg-red-50 rounded-b-xl transition-all flex items-center justify-center gap-2">
+                      <FiLogOut className="text-sm" />
                       Logout
                     </button>
                   ),
@@ -219,25 +268,28 @@ const Header = () => {
               <div className="relative !ml-2" ref={dropdownRef}>
                 <button
                   onClick={() => toggleDropdown("Language")}
-                  className="flex items-center gap-1.5 !px-3 !py-2 rounded-full hover:bg-gray-100 transition-all text-sm font-medium text-gray-700"
+                  className="flex items-center gap-1.5 !px-3 !py-2 rounded-full hover:bg-gray-100 transition-all text-sm font-medium text-gray-700 group"
                 >
-                  <FiGlobe className="text-lg" />
+                  <FiGlobe className="text-lg text-gray-600 group-hover:text-[#0695c8] transition" />
                   <span className="text-[13px]">{language}</span>
                   <FiChevronDown
-                    className={`text-xs transition-transform ${
-                      openDropdown === "Language" ? "rotate-180" : ""
+                    className={`text-xs transition-transform duration-200 ${
+                      openDropdown === "Language"
+                        ? "rotate-180 text-[#0695c8]"
+                        : "text-gray-500"
                     }`}
                   />
                 </button>
 
                 {openDropdown === "Language" && (
-                  <div className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden z-50">
-                    <div className="!p-3 border-b border-gray-100">
-                      <p className="font-semibold text-gray-800 text-[12px]">
+                  <div className="absolute right-0 mt-2 w-64 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50 ring-1 ring-black/5 ">
+                    <div className="!p-4 border-b border-gray-100">
+                      <p className="font-bold text-gray-800 text-sm flex items-center gap-2">
+                        <FiGlobe className="text-[#0695c8]" />
                         Select Language
                       </p>
                     </div>
-                    <div className="max-h-64 overflow-y-auto !p-2 scrollbar-hide">
+                    <div className="max-h-64 overflow-y-auto !p-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-hide ">
                       {languages.map((lang) => (
                         <button
                           key={lang.code}
@@ -245,19 +297,31 @@ const Header = () => {
                             setLanguage(lang.label);
                             setOpenDropdown(null);
                           }}
-                          className={`w-full text-left !px-3 !py-2.5 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 text-sm ${
+                          className={`w-full text-left !px-4 !py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all flex items-center gap-3 text-sm group ${
                             language === lang.label
-                              ? "bg-blue-50 text-[#0695c8] font-medium"
+                              ? "bg-gradient-to-r from-blue-50 to-cyan-50 text-[#0695c8] font-semibold"
                               : "text-gray-700"
                           }`}
                         >
-                          <span className="text-[12px]">{lang.flag}</span>
-                          <span className="text-[10px]">{lang.label}</span>
+                          <span className="text-[13px]">{lang.flag}</span>
+                          <div className="flex-1">
+                            <p className="font-medium text-[11px]">
+                              {lang.label}
+                            </p>
+                            <p className="text-[10px] text-gray-500">
+                              {lang.native}
+                            </p>
+                          </div>
                           {language === lang.label && (
-                            <FiCheck className="ml-auto text-[#0695c8]" />
+                            <FiCheck className="text-[#0695c8] group-hover:scale-110 transition-transform" />
                           )}
                         </button>
                       ))}
+                    </div>
+                    <div className="border-t border-gray-100 !p-3 bg-gray-50">
+                      <p className="text-[10px] text-gray-500 text-center">
+                        More languages coming soon
+                      </p>
                     </div>
                   </div>
                 )}
