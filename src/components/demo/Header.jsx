@@ -199,7 +199,7 @@ const Header = () => {
                 {{
                   icon: (
                     <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-[#0695c8] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                      J
+                      Z
                     </div>
                   ),
                   items: [
@@ -269,8 +269,8 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden !p-2 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95  !mr-10"
             >
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-white font-bold">
-                z
+              <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-[#0695c8] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                Z
               </div>
             </button>
           </div>
@@ -443,8 +443,8 @@ const Header = () => {
               {/* Account */}
               <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm !space-y-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-white font-bold">
-                    z
+                  <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-[#0695c8] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    Z
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Zion Ethan</p>
