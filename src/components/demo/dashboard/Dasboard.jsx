@@ -159,18 +159,25 @@ const Dashboard = () => {
         ].map((item, i) => (
           <div
             key={i}
-            className="group relative bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl !p-2 sm:!p-3 shadow-sm hover:shadow-xl transition-all duration-300 border border-white/50 cursor-pointer"
+            className="group sm:rounded-2xl !p-2 sm:!p-3 transition-all duration-300 cursor-pointer flex flex-col items-center hover:scale-105"
           >
-            <div
-              className={`w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto !mb-1 sm:!mb-2 bg-gradient-to-br ${item.color} rounded-lg sm:rounded-xl flex items-center justify-center text-white text-base sm:text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform`}
-            >
-              {item.icon}
+            {/* Icon Container */}
+            <div className="relative bg-white/90 backdrop-blur-md rounded-full p-1 sm:!p-2 shadow-md flex items-center justify-center">
+              <div
+                className={`relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto bg-gradient-to-br ${item.color} rounded-full flex items-center justify-center text-white text-base sm:text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform`}
+              >
+                {item.icon}
+
+                {/* Notification Badge — now on top of the icon */}
+                {item.count > 0 && (
+                  <span className="absolute -top-1 -right-1 sm:-top-1.5 sm:-right-1.5 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 bg-red-500 text-white text-[8px] sm:text-xs rounded-full flex items-center justify-center font-bold animate-pulse">
+                    {item.count}
+                  </span>
+                )}
+              </div>
             </div>
-            {item.count > 0 && (
-              <span className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 bg-red-500 text-white text-[8px] sm:text-xs rounded-full flex items-center justify-center font-bold animate-pulse">
-                {item.count}
-              </span>
-            )}
+
+            {/* Label */}
             <p className="text-center text-[9px] sm:text-[10px] md:text-xs font-medium text-slate-700 !mt-0.5 sm:!mt-1 line-clamp-2">
               {item.label}
             </p>
@@ -295,7 +302,7 @@ const Dashboard = () => {
                   color: "from-red-500 to-gray-800",
                   icon: <SiNetflix className="text-white" />,
                 },
-            
+
                 {
                   label: "Pinterest",
                   color: "from-rose-400 to-rose-600",
@@ -334,16 +341,14 @@ const Dashboard = () => {
                       <p className="!ml-14 text-[9px] sm:text-[10px] md:text-xs text-slate-600 origin-top-left rotate-45 whitespace-nowrap">
                         {app.label}
                       </p>
-                        <p className="text-[8px] sm:text-[9px] text-slate-500 !mt-12">
-                          {(randomHeight / 20).toFixed(1)}h
-                        </p>
-                      </div>
+                      <p className="text-[8px] sm:text-[9px] text-slate-500 !mt-12">
+                        {(randomHeight / 20).toFixed(1)}h
+                      </p>
+                    </div>
                   </div>
                 );
               })}
             </div>
-
-
           </div>
         </div>
 
