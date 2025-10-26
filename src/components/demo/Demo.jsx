@@ -10,7 +10,7 @@ const DemoPage = () => {
       <DemoNavbar />
 
       {/* Main content */}
-      <main className="flex-1 !ml-0 md:ml-64 pt-4 px-4 md:px-8 lg:px-16">
+      <main className="flex-1 !ml-0 md:ml-64 !pt-4 !px-4 md:!px-8 lg:!px-16">
         <Header/>
         <Outlet />
       </main>

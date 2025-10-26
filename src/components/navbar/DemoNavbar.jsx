@@ -52,7 +52,7 @@ const DemoSidebar = () => {
       <aside
         className={`fixed top-0 left-0 h-full bg-white shadow-lg z-50 !transition-transform !duration-300
         ${isMobile ? (isOpen ? "!translate-x-0" : "!-translate-x-full") : ""}
-        !w-64 !pt-6`}
+        !w-64 `}
       >
         {/* Header inside sidebar */}
         <div className="flex items-center justify-between !px-4 !py-4 border-b border-gray-200">
