@@ -453,7 +453,9 @@ const menuItems = [
                     >
                       <span className="flex items-center gap-3">
                         <span className="text-lg">{item.icon}</span>
-                        <span className="font-medium text-[14px]">{item.label}</span>
+                        <span className="font-medium text-[14px]">
+                          {item.label}
+                        </span>
                       </span>
                       <span className="flex items-center gap-2">
                         {item.badge && (
@@ -500,11 +502,19 @@ const menuItems = [
         </nav>
 
         {/* Footer */}
-        <div className="border-t border-gray-800 !p-4">
-          <button className="flex items-center gap-3 text-gray-400 hover:text-white transition w-full">
-            <FiLogOut />
-            <span>Logout</span>
-          </button>
+        <div className="border-t border-gray-800 !p-4 !mt-auto">
+          <div className="text-center text-xs text-gray-500 !space-y-1">
+            <p className="font-medium text-gray-400">
+              Easier Monitoring with{" "}
+              <span className="text-[#00d4ff] font-semibold">
+                TrevorTech App
+              </span>
+            </p>
+            <div className="flex items-center justify-center gap-2 text-gray-600">
+              <FiSmartphone className="text-[#00d4ff]" />
+              <FiMonitor className="text-[#00d4ff]" />
+            </div>
+          </div>
         </div>
       </aside>
 
