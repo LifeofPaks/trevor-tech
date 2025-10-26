@@ -42,6 +42,13 @@ import {
   FiShield,
   FiActivity,
 } from "react-icons/fi";
+import {
+  FaWhatsapp,
+  FaFacebookF,
+  FaTelegramPlane,
+  FaInstagram,
+} from "react-icons/fa";
+import { SiMessenger, SiLine } from "react-icons/si"; 
 
 import { FaYoutube, FaTiktok } from "react-icons/fa";
 import { RiMovie2Line } from "react-icons/ri";
@@ -264,22 +271,38 @@ const DemoSidebar = () => {
         {
           to: "/demo/social/whatsapp",
           label: t.WhatsApp,
-          icon: <FiMessageSquare />,
+          icon: <FaWhatsapp  />,
         },
         {
           to: "/demo/social/messenger",
           label: t.Messenger,
-          icon: <FiMessageSquare />,
+          icon: <SiMessenger  />,
         },
         {
           to: "/demo/social/instagram",
           label: t.Instagram,
-          icon: <FiInstagram />,
+          icon: <FaInstagram  />,
         },
-        { to: "/demo/social/facebook", label: t.Facebook, icon: <FiGlobe /> },
-        { to: "/demo/social/snapchat", label: t.Snapchat, icon: <FiCamera /> },
-        { to: "/demo/social/line", label: t.LINE, icon: <FiMessageSquare /> },
-        { to: "/demo/social/telegram", label: t.Telegram, icon: <FiSend /> },
+        {
+          to: "/demo/social/facebook",
+          label: t.Facebook,
+          icon: <FaFacebookF  />,
+        },
+        {
+          to: "/demo/social/snapchat",
+          label: t.Snapchat,
+          icon: <FiCamera  />, // no official icon in react-icons
+        },
+        {
+          to: "/demo/social/line",
+          label: t.LINE,
+          icon: <SiLine  />,
+        },
+        {
+          to: "/demo/social/telegram",
+          label: t.Telegram,
+          icon: <FaTelegramPlane  />,
+        },
       ],
     },
     {
