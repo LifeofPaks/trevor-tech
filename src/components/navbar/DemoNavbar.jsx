@@ -38,9 +38,9 @@ import {
   FiClock,
   FiEye,
   FiSend,
-  FiMap,
   FiShield,
   FiActivity,
+  FiMap,
 } from "react-icons/fi";
 import {
   FaWhatsapp,
@@ -178,7 +178,6 @@ const translations = {
     "Easier Monitoring with": "Monitoreo más fácil con",
     "TrevorTech App": "App TrevorTech",
   },
-  // Add more languages as needed
 };
 
 const DemoSidebar = () => {
@@ -196,7 +195,6 @@ const DemoSidebar = () => {
   ]);
   const location = useLocation();
 
-  // Get language from context
   const languageContext = useContext(LanguageContext);
   const language = languageContext?.language || "en";
   const t = translations[language] || translations.en;
@@ -210,11 +208,12 @@ const DemoSidebar = () => {
 
   const toggleSidebar = () => setIsOpen(!isOpen);
 
+  // Only one submenu open at a time
   const toggleSubmenu = (label) => {
     setOpenSubmenus((prev) =>
       prev.includes(label)
-        ? prev.filter((item) => item !== label)
-        : [...prev, label]
+        ? prev.filter((item) => item !== label) // Close if already open
+        : [label] // Open only this one
     );
   };
 
@@ -293,7 +292,7 @@ const DemoSidebar = () => {
         {
           to: "/demo/social/snapchat",
           label: t.Snapchat,
-          icon: <FaSnapchatGhost />, // no official icon in react-icons
+          icon: <FaSnapchatGhost />,
         },
         {
           to: "/demo/social/line",
@@ -673,8 +672,7 @@ const DemoSidebar = () => {
                         >
                           {sub.icon || <div className="w-4 h-4" />}
                           <span className="text-[12px]">
-
-                          {sub.label}
+                            {sub.label}
                           </span>
                         </Link>
                       ))}
