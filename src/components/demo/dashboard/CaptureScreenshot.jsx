@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import { FiCamera } from "react-icons/fi";
 import { IoClose, IoChevronBack, IoChevronForward } from "react-icons/io5";
@@ -36,16 +36,14 @@ const CaptureScreenshot = () => {
 
   const closeModal = () => setOpen(false);
 
-  const prevImage = () => {
+  const prevImage = () =>
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
 
-  const nextImage = () => {
+  const nextImage = () =>
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
 
   // Keyboard navigation
-  React.useEffect(() => {
+  useEffect(() => {
     const handleKeyDown = (e) => {
       if (!open) return;
       if (e.key === "ArrowRight") nextImage();
@@ -69,7 +67,7 @@ const CaptureScreenshot = () => {
           </span>
         </div>
 
-        <div className="grid grid-cols-3 !gap-2 sm:!gap-3">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 sm:gap-3">
           {images.map((img, i) => (
             <div
               key={i}
@@ -94,31 +92,35 @@ const CaptureScreenshot = () => {
 
       {/* Modal */}
       {open && (
-        <div className="fixed h-full inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 transition-all">
+        <div className="fixed h-full inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center px-2 sm:px-6 transition-all duration-300">
+          {/* Close Button */}
           <button
-            className="absolute top-5 right-5 text-white text-3xl hover:text-gray-300"
+            className="absolute top-3 right-3 sm:top-5 sm:right-5 text-white text-3xl sm:text-4xl hover:text-gray-300 z-[60]"
             onClick={closeModal}
           >
             <IoClose />
           </button>
 
+          {/* Prev Button */}
           <button
-            className="absolute left-5 text-white text-4xl hover:text-gray-300"
+            className="absolute left-3 sm:left-5 text-white text-4xl sm:text-5xl !p-3 rounded-full bg-black/50 hover:bg-black/70 backdrop-blur-md transition-all z-[60] flex items-center justify-center"
             onClick={prevImage}
           >
             <IoChevronBack />
           </button>
 
-          <div className="relative max-w-3xl w-full mx-4">
+          {/* Image Container */}
+          <div className="relative max-w-3xl !mx-4 w-full flex justify-center items-center z-[50]">
             <img
               src={images[currentIndex]}
               alt="Large preview"
-              className="w-full h-[95vh] rounded-2xl shadow-lg transition-all duration-500 object-cover"
+              className="w-full max-h-[80vh] object-contain rounded-2xl shadow-lg transition-all duration-500"
             />
           </div>
 
+          {/* Next Button */}
           <button
-            className="absolute right-5 text-white text-4xl hover:text-gray-300"
+            className="absolute right-3 sm:right-5 text-white text-4xl sm:text-5xl !p-3 rounded-full bg-black/50 hover:bg-black/70 backdrop-blur-md transition-all z-[60] flex items-center justify-center"
             onClick={nextImage}
           >
             <IoChevronForward />
