@@ -185,14 +185,7 @@ const DemoSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDeviceModal, setShowDeviceModal] = useState(false);
   const [selectedDevice, setSelectedDevice] = useState("Zion's Galaxy S24");
-  const [openSubmenus, setOpenSubmenus] = useState([
-    "Social Networks",
-    "Video Apps",
-    "Location Tracking",
-    "Phone Data",
-    "Remote Control",
-    "More Features",
-  ]);
+const [openSubmenus, setOpenSubmenus] = useState([]);
   const location = useLocation();
 
   const languageContext = useContext(LanguageContext);
