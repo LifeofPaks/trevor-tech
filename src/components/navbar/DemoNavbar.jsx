@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {
   FiMenu,
   FiX,
@@ -49,6 +49,129 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "../logo/Logo";
 import DemoLogo from "../logo/DemoLogo";
 
+// Language Context from Header
+export const LanguageContext = React.createContext();
+
+const translations = {
+  en: {
+    Logs: "Logs",
+    "Screen Time": "Screen Time",
+    Keylogs: "Keylogs",
+    "Social Networks": "Social Networks",
+    WhatsApp: "WhatsApp",
+    Messenger: "Messenger",
+    Instagram: "Instagram",
+    Facebook: "Facebook",
+    Snapchat: "Snapchat",
+    LINE: "LINE",
+    Telegram: "Telegram",
+    "Social Apps": "Social Apps",
+    "Record Surround": "Record Surround",
+    "Take Photos": "Take Photos",
+    "Record Screen": "Record Screen",
+    Photos: "Photos",
+    "Video Preview": "Video Preview",
+    Keylogger: "Keylogger",
+    "App Calls": "App Calls",
+    "App Audio": "App Audio",
+    "Video Apps": "Video Apps",
+    YouTube: "YouTube",
+    TikTok: "TikTok",
+    ReelShort: "ReelShort",
+    OnlyFans: "OnlyFans",
+    "Phone Data": "Phone Data",
+    Calls: "Calls",
+    "Calls Recording": "Calls Recording",
+    Messages: "Messages",
+    "Browser History": "Browser History",
+    "Track Keywords": "Track Keywords",
+    "Wi-Fi Logger": "Wi-Fi Logger",
+    "App Management": "App Management",
+    Contacts: "Contacts",
+    Calendar: "Calendar",
+    "Remote Control": "Remote Control",
+    "Capture Screenshots": "Capture Screenshots",
+    "Live Screen": "Live Screen",
+    "Record Video": "Record Video",
+    "Location Tracking": "Location Tracking",
+    Locations: "Locations",
+    "Driving Tracking": "Driving Tracking",
+    Geofence: "Geofence",
+    "Dash Cams": "Dash Cams",
+    "More Features": "More Features",
+    Gmail: "Gmail",
+    Outlook: "Outlook",
+    "All Photos": "All Photos",
+    "AI Tools": "AI Tools",
+    "In-App Purchase": "In-App Purchase",
+    "Export Data": "Export Data",
+    "Permissions Check": "Permissions Check",
+    "Select Device": "Select Device",
+    "Add a New Device": "Add a New Device",
+    "Easier Monitoring with": "Easier Monitoring with",
+    "TrevorTech App": "TrevorTech App",
+  },
+  es: {
+    Logs: "Registros",
+    "Screen Time": "Tiempo en Pantalla",
+    Keylogs: "Registros de Teclas",
+    "Social Networks": "Redes Sociales",
+    WhatsApp: "WhatsApp",
+    Messenger: "Messenger",
+    Instagram: "Instagram",
+    Facebook: "Facebook",
+    Snapchat: "Snapchat",
+    LINE: "LINE",
+    Telegram: "Telegram",
+    "Social Apps": "Apps Sociales",
+    "Record Surround": "Grabar Alrededor",
+    "Take Photos": "Tomar Fotos",
+    "Record Screen": "Grabar Pantalla",
+    Photos: "Fotos",
+    "Video Preview": "Vista Previa de Video",
+    Keylogger: "Keylogger",
+    "App Calls": "Llamadas de Apps",
+    "App Audio": "Audio de Apps",
+    "Video Apps": "Apps de Video",
+    YouTube: "YouTube",
+    TikTok: "TikTok",
+    ReelShort: "ReelShort",
+    OnlyFans: "OnlyFans",
+    "Phone Data": "Datos del Teléfono",
+    Calls: "Llamadas",
+    "Calls Recording": "Grabación de Llamadas",
+    Messages: "Mensajes",
+    "Browser History": "Historial del Navegador",
+    "Track Keywords": "Seguimiento de Palabras",
+    "Wi-Fi Logger": "Registro de Wi-Fi",
+    "App Management": "Gestión de Apps",
+    Contacts: "Contactos",
+    Calendar: "Calendario",
+    "Remote Control": "Control Remoto",
+    "Capture Screenshots": "Capturar Pantalla",
+    "Live Screen": "Pantalla en Vivo",
+    "Record Video": "Grabar Video",
+    "Location Tracking": "Seguimiento de Ubicación",
+    Locations: "Ubicaciones",
+    "Driving Tracking": "Seguimiento de Conducción",
+    Geofence: "Geocerca",
+    "Dash Cams": "Cámaras de Tablero",
+    "More Features": "Más Funciones",
+    Gmail: "Gmail",
+    Outlook: "Outlook",
+    "All Photos": "Todas las Fotos",
+    "AI Tools": "Herramientas de IA",
+    "In-App Purchase": "Compra en la App",
+    "Export Data": "Exportar Datos",
+    "Permissions Check": "Verificación de Permisos",
+    "Select Device": "Seleccionar Dispositivo",
+    "Add a New Device": "Agregar Nuevo Dispositivo",
+    "Easier Monitoring with": "Monitoreo más fácil con",
+    "TrevorTech App": "App TrevorTech",
+  },
+  // Add more languages as needed
+};
+
 const DemoSidebar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -63,6 +186,11 @@ const DemoSidebar = () => {
     "More Features",
   ]);
   const location = useLocation();
+
+  // Get language from context
+  const languageContext = useContext(LanguageContext);
+  const language = languageContext?.language || "en";
+  const t = translations[language] || translations.en;
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -110,221 +238,248 @@ const DemoSidebar = () => {
     },
   ];
 
-const menuItems = [
-  {
-    label: "Logs",
-    icon: <FiMonitor />,
-    badge: "HOT",
-    subItems: [
-      {
-        to: "/demo/logs/screen-time",
-        label: "Screen Time",
-        icon: <FiMonitor />,
-      },
-      { to: "/demo/logs/keylogs", label: "Keylogs", icon: <FiMessageSquare /> },
-    ],
-  },
-  {
-    label: "Social Networks",
-    icon: <FiGlobe />,
-    badge: "HOT",
-    subItems: [
-      {
-        to: "/demo/social/whatsapp",
-        label: "WhatsApp",
-        icon: <FiMessageSquare />,
-      },
-      {
-        to: "/demo/social/messenger",
-        label: "Messenger",
-        icon: <FiMessageSquare />,
-      },
-      {
-        to: "/demo/social/instagram",
-        label: "Instagram",
-        icon: <FiInstagram />,
-      },
-      { to: "/demo/social/facebook", label: "Facebook", icon: <FiGlobe /> },
-      { to: "/demo/social/snapchat", label: "Snapchat", icon: <FiCamera /> },
-      { to: "/demo/social/line", label: "LINE", icon: <FiMessageSquare /> },
-      { to: "/demo/social/telegram", label: "Telegram", icon: <FiSend /> },
-    ],
-  },
-  {
-    label: "Social Apps",
-    icon: <FiHeadphones />,
-    badge: "HOT",
-    subItems: [
-      {
-        to: "/demo/social/record-audio",
-        label: "Record Surround",
-        icon: <FiMic />,
-      },
-      {
-        to: "/demo/social/take-photos",
-        label: "Take Photos",
-        icon: <FiCamera />,
-      },
-      {
-        to: "/demo/social/record-screen",
-        label: "Record Screen",
-        icon: <FiMonitor />,
-      },
-      { to: "/demo/social/logs", label: "Logs", icon: <FiMonitor /> },
-      { to: "/demo/social/photos", label: "Photos", icon: <FiImage /> },
-      {
-        to: "/demo/social/video-preview",
-        label: "Video Preview",
-        icon: <FiVideo />,
-      },
-      {
-        to: "/demo/social/keylogger",
-        label: "Keylogger",
-        icon: <FiMessageSquare />,
-      },
-    ],
-  },
-  { label: "App Calls", icon: <FiPhone />, badge: "HOT", subItems: [] },
-  { label: "App Audio", icon: <FiHeadphones />, subItems: [] },
-  {
-    label: "Video Apps",
-    icon: <FiVideo />,
-    subItems: [
-      { to: "/demo/video/youtube", label: "YouTube", icon: <FaYoutube /> },
-      { to: "/demo/video/tiktok", label: "TikTok", icon: <FaTiktok /> },
-      {
-        to: "/demo/video/reelshort",
-        label: "ReelShort",
-        icon: <RiMovie2Line />,
-      },
-      { to: "/demo/video/onlyfans", label: "OnlyFans", icon: <FiLock /> },
-    ],
-  },
-  {
-    label: "Phone Data",
-    icon: <FiSmartphone />,
-    subItems: [
-      { to: "/demo/data/calls", label: "Calls", icon: <FiPhone /> },
-      {
-        to: "/demo/data/call-recording",
-        label: "Calls Recording",
-        icon: <FiMic />,
-      },
-      {
-        to: "/demo/data/messages",
-        label: "Messages",
-        icon: <FiMessageCircle />,
-      },
-      { to: "/demo/data/photos", label: "Photos", icon: <FiImage /> },
-      { to: "/demo/data/browser", label: "Browser History", icon: <FiGlobe /> },
-      {
-        to: "/demo/data/keylogger",
-        label: "Keylogger",
-        icon: <FiMessageSquare />,
-      },
-      {
-        to: "/demo/data/track-keywords",
-        label: "Track Keywords",
-        icon: <FiGlobe />,
-      }, // replaced FiSearch
-      { to: "/demo/data/wifi-logger", label: "Wi-Fi Logger", icon: <FiWifi /> },
-      {
-        to: "/demo/data/app-management",
-        label: "App Management",
-        icon: <FiSettings />,
-      },
-      {
-        to: "/demo/data/video-preview",
-        label: "Video Preview",
-        icon: <FiVideo />,
-      },
-      { to: "/demo/data/contacts", label: "Contacts", icon: <FiUser /> },
-      { to: "/demo/data/calendar", label: "Calendar", icon: <FiCalendar /> },
-    ],
-  },
-  {
-    label: "Remote Control",
-    icon: <FiMonitor />,
-    subItems: [
-      {
-        to: "/demo/remote/record-surround",
-        label: "Record Surround",
-        icon: <FiMic />,
-      },
-      {
-        to: "/demo/remote/capture-screenshots",
-        label: "Capture Screenshots",
-        icon: <FiCamera />,
-      },
-      {
-        to: "/demo/remote/record-screen",
-        label: "Record Screen",
-        icon: <FiMonitor />,
-      },
-      { to: "/demo/remote/live-screen", label: "Live Screen", icon: <FiEye /> },
-      {
-        to: "/demo/remote/take-photos",
-        label: "Take Photos",
-        icon: <FiCamera />,
-      },
-      {
-        to: "/demo/remote/record-video",
-        label: "Record Video",
-        icon: <RiMovie2Line />,
-      }, // replaced FiFilm
-    ],
-  },
-  {
-    label: "Location Tracking",
-    icon: <FiMapPin />,
-    subItems: [
-      { to: "/demo/location/current", label: "Locations", icon: <FiMap /> },
-      {
-        to: "/demo/location/driving",
-        label: "Driving Tracking",
-        icon: <FiTruck />,
-      },
-      { to: "/demo/location/geofence", label: "Geofence", icon: <FiShield /> },
-      { to: "/demo/location/dash-cams", label: "Dash Cams", icon: <FiTruck /> },
-    ],
-  },
-  {
-    label: "More Features",
-    icon: <FiMoreHorizontal />,
-    subItems: [
-      { to: "/demo/more/gmail", label: "Gmail", icon: <FiMail /> },
-      { to: "/demo/more/outlook", label: "Outlook", icon: <FiMail /> },
-      { to: "/demo/more/all-photos", label: "All Photos", icon: <FiImage /> },
-      { to: "/demo/more/ai-tools", label: "AI Tools", icon: <FiZap /> },
-      {
-        to: "/demo/more/in-app-purchase",
-        label: "In-App Purchase",
-        icon: <FiShoppingCart />,
-      },
-      {
-        to: "/demo/more/export-data",
-        label: "Export Data",
-        icon: <FiDownload />,
-      },
-      {
-        to: "/demo/more/permissions-check",
-        label: "Permissions Check",
-        icon: <FiCheckSquare />,
-      },
-    ],
-  },
-];
+  const menuItems = [
+    {
+      label: t.Logs,
+      icon: <FiMonitor />,
+      badge: "HOT",
+      subItems: [
+        {
+          to: "/demo/logs/screen-time",
+          label: t["Screen Time"],
+          icon: <FiMonitor />,
+        },
+        {
+          to: "/demo/logs/keylogs",
+          label: t.Keylogs,
+          icon: <FiMessageSquare />,
+        },
+      ],
+    },
+    {
+      label: t["Social Networks"],
+      icon: <FiGlobe />,
+      badge: "HOT",
+      subItems: [
+        {
+          to: "/demo/social/whatsapp",
+          label: t.WhatsApp,
+          icon: <FiMessageSquare />,
+        },
+        {
+          to: "/demo/social/messenger",
+          label: t.Messenger,
+          icon: <FiMessageSquare />,
+        },
+        {
+          to: "/demo/social/instagram",
+          label: t.Instagram,
+          icon: <FiInstagram />,
+        },
+        { to: "/demo/social/facebook", label: t.Facebook, icon: <FiGlobe /> },
+        { to: "/demo/social/snapchat", label: t.Snapchat, icon: <FiCamera /> },
+        { to: "/demo/social/line", label: t.LINE, icon: <FiMessageSquare /> },
+        { to: "/demo/social/telegram", label: t.Telegram, icon: <FiSend /> },
+      ],
+    },
+    {
+      label: t["Social Apps"],
+      icon: <FiHeadphones />,
+      badge: "HOT",
+      subItems: [
+        {
+          to: "/demo/social/record-audio",
+          label: t["Record Surround"],
+          icon: <FiMic />,
+        },
+        {
+          to: "/demo/social/take-photos",
+          label: t["Take Photos"],
+          icon: <FiCamera />,
+        },
+        {
+          to: "/demo/social/record-screen",
+          label: t["Record Screen"],
+          icon: <FiMonitor />,
+        },
+        { to: "/demo/social/logs", label: t.Logs, icon: <FiMonitor /> },
+        { to: "/demo/social/photos", label: t.Photos, icon: <FiImage /> },
+        {
+          to: "/demo/social/video-preview",
+          label: t["Video Preview"],
+          icon: <FiVideo />,
+        },
+        {
+          to: "/demo/social/keylogger",
+          label: t.Keylogger,
+          icon: <FiMessageSquare />,
+        },
+      ],
+    },
+    { label: t["App Calls"], icon: <FiPhone />, badge: "HOT", subItems: [] },
+    { label: t["App Audio"], icon: <FiHeadphones />, subItems: [] },
+    {
+      label: t["Video Apps"],
+      icon: <FiVideo />,
+      subItems: [
+        { to: "/demo/video/youtube", label: t.YouTube, icon: <FaYoutube /> },
+        { to: "/demo/video/tiktok", label: t.TikTok, icon: <FaTiktok /> },
+        {
+          to: "/demo/video/reelshort",
+          label: t.ReelShort,
+          icon: <RiMovie2Line />,
+        },
+        { to: "/demo/video/onlyfans", label: t.OnlyFans, icon: <FiLock /> },
+      ],
+    },
+    {
+      label: t["Phone Data"],
+      icon: <FiSmartphone />,
+      subItems: [
+        { to: "/demo/data/calls", label: t.Calls, icon: <FiPhone /> },
+        {
+          to: "/demo/data/call-recording",
+          label: t["Calls Recording"],
+          icon: <FiMic />,
+        },
+        {
+          to: "/demo/data/messages",
+          label: t.Messages,
+          icon: <FiMessageCircle />,
+        },
+        { to: "/demo/data/photos", label: t.Photos, icon: <FiImage /> },
+        {
+          to: "/demo/data/browser",
+          label: t["Browser History"],
+          icon: <FiGlobe />,
+        },
+        {
+          to: "/demo/data/keylogger",
+          label: t.Keylogger,
+          icon: <FiMessageSquare />,
+        },
+        {
+          to: "/demo/data/track-keywords",
+          label: t["Track Keywords"],
+          icon: <FiGlobe />,
+        },
+        {
+          to: "/demo/data/wifi-logger",
+          label: t["Wi-Fi Logger"],
+          icon: <FiWifi />,
+        },
+        {
+          to: "/demo/data/app-management",
+          label: t["App Management"],
+          icon: <FiSettings />,
+        },
+        {
+          to: "/demo/data/video-preview",
+          label: t["Video Preview"],
+          icon: <FiVideo />,
+        },
+        { to: "/demo/data/contacts", label: t.Contacts, icon: <FiUser /> },
+        { to: "/demo/data/calendar", label: t.Calendar, icon: <FiCalendar /> },
+      ],
+    },
+    {
+      label: t["Remote Control"],
+      icon: <FiMonitor />,
+      subItems: [
+        {
+          to: "/demo/remote/record-surround",
+          label: t["Record Surround"],
+          icon: <FiMic />,
+        },
+        {
+          to: "/demo/remote/capture-screenshots",
+          label: t["Capture Screenshots"],
+          icon: <FiCamera />,
+        },
+        {
+          to: "/demo/remote/record-screen",
+          label: t["Record Screen"],
+          icon: <FiMonitor />,
+        },
+        {
+          to: "/demo/remote/live-screen",
+          label: t["Live Screen"],
+          icon: <FiEye />,
+        },
+        {
+          to: "/demo/remote/take-photos",
+          label: t["Take Photos"],
+          icon: <FiCamera />,
+        },
+        {
+          to: "/demo/remote/record-video",
+          label: t["Record Video"],
+          icon: <RiMovie2Line />,
+        },
+      ],
+    },
+    {
+      label: t["Location Tracking"],
+      icon: <FiMapPin />,
+      subItems: [
+        { to: "/demo/location/current", label: t.Locations, icon: <FiMap /> },
+        {
+          to: "/demo/location/driving",
+          label: t["Driving Tracking"],
+          icon: <FiTruck />,
+        },
+        {
+          to: "/demo/location/geofence",
+          label: t.Geofence,
+          icon: <FiShield />,
+        },
+        {
+          to: "/demo/location/dash-cams",
+          label: t["Dash Cams"],
+          icon: <FiTruck />,
+        },
+      ],
+    },
+    {
+      label: t["More Features"],
+      icon: <FiMoreHorizontal />,
+      subItems: [
+        { to: "/demo/more/gmail", label: t.Gmail, icon: <FiMail /> },
+        { to: "/demo/more/outlook", label: t.Outlook, icon: <FiMail /> },
+        {
+          to: "/demo/more/all-photos",
+          label: t["All Photos"],
+          icon: <FiImage />,
+        },
+        { to: "/demo/more/ai-tools", label: t["AI Tools"], icon: <FiZap /> },
+        {
+          to: "/demo/more/in-app-purchase",
+          label: t["In-App Purchase"],
+          icon: <FiShoppingCart />,
+        },
+        {
+          to: "/demo/more/export-data",
+          label: t["Export Data"],
+          icon: <FiDownload />,
+        },
+        {
+          to: "/demo/more/permissions-check",
+          label: t["Permissions Check"],
+          icon: <FiCheckSquare />,
+        },
+      ],
+    },
+  ];
+
   return (
     <>
       {/* Mobile Topbar */}
       {isMobile && !isOpen && (
         <div className="fixed top-6 right-2 right-6 flex items-center justify-between z-50">
-          {/* <DemoLogo /> */}
           <button onClick={toggleSidebar} className="text-2xl ">
             <FiMenu className="text-gray-800" />
           </button>
         </div>
-        
       )}
 
       {/* Sidebar */}
@@ -352,7 +507,7 @@ const menuItems = [
           )}
         </div>
 
-        {/* Device Selector - Click to Open Popup */}
+        {/* Device Selector */}
         <div className="!px-4 !mt-4 relative">
           <button
             onClick={() => setShowDeviceModal(true)}
@@ -365,7 +520,7 @@ const menuItems = [
             <FiChevronDown className="text-gray-400" />
           </button>
 
-          {/* Device Popup Modal */}
+          {/* Device Modal */}
           {showDeviceModal && (
             <div
               className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-start justify-center !p-4"
@@ -377,7 +532,7 @@ const menuItems = [
               >
                 <div className="flex items-center justify-between !p-5 border-b border-gray-700">
                   <h3 className="text-sm font-semibold text-white">
-                    Select Device
+                    {t["Select Device"]}
                   </h3>
                   <button
                     onClick={() => setShowDeviceModal(false)}
@@ -421,7 +576,7 @@ const menuItems = [
 
                 <div className="border-t border-gray-700 p-4">
                   <button className="w-full flex items-center justify-center gap-2 !py-3 text-[#00d4ff] hover:text-white font-medium transition text-[12px]">
-                    <FiPlus /> Add a New Device
+                    <FiPlus /> {t["Add a New Device"]}
                   </button>
                 </div>
               </div>
@@ -438,7 +593,6 @@ const menuItems = [
 
               return (
                 <div key={item.label}>
-                  {/* Main Menu Item */}
                   <div
                     className={`group relative ${
                       hasSubItems ? "cursor-pointer" : ""
@@ -476,7 +630,6 @@ const menuItems = [
                     </div>
                   </div>
 
-                  {/* Submenu */}
                   {hasSubItems && isOpen && (
                     <div className="!ml-8 !mt-3 !space-y-1 border-l-1 border-gray-800 !pl-4">
                       {item.subItems.map((sub) => (
@@ -507,9 +660,9 @@ const menuItems = [
         <div className="border-t border-gray-800 !p-4 !mt-auto">
           <div className="text-center text-xs text-gray-500 !space-y-1">
             <p className="font-medium text-gray-400">
-              Easier Monitoring with{" "}
+              {t["Easier Monitoring with"]}{" "}
               <span className="text-[#00d4ff] font-semibold">
-                TrevorTech App
+                {t["TrevorTech App"]}
               </span>
             </p>
             <div className="flex items-center justify-center gap-2 text-gray-600">
@@ -528,7 +681,7 @@ const menuItems = [
         />
       )}
 
-      {/* Desktop Content Push */}
+      {/* Desktop Push */}
       {!isMobile && <div className="w-72" />}
     </>
   );

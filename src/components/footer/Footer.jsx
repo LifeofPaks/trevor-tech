@@ -179,15 +179,15 @@ const Footer = () => {
 
             {/* Legal Links */}
             <div className="flex flex-wrap justify-center gap-3 order-1 lg:order-2 text-center">
-              <a href="#" className="hover:text-blue-600">
+              <a href="#" className="hover:text-[#0695c8]">
                 Privacy Policy
               </a>
               <span>•</span>
-              <a href="#" className="hover:text-blue-600">
+              <a href="#" className="hover:text-[#0695c8]">
                 Cookie Policy
               </a>
               <span>•</span>
-              <a href="#" className="hover:text-blue-600">
+              <a href="#" className="hover:text-[#0695c8]">
                 Terms & Conditions
               </a>
             </div>

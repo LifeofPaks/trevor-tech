@@ -13,6 +13,7 @@ import {
   FiHelpCircle,
   FiChevronDown,
   FiChevronUp,
+  FiCheck,
 } from "react-icons/fi";
 
 // Language Context (to share with Sidebar)
@@ -153,7 +154,7 @@ const Header = () => {
                     },
                   ],
                   footer: (
-                    <button className="w-full text-center text-sm text-blue-600 font-medium">
+                    <button className="w-full text-center text-sm text-[#0695c8] font-medium">
                       View All
                     </button>
                   ),
@@ -181,7 +182,7 @@ const Header = () => {
                     },
                   ],
                   footer: (
-                    <button className="w-full text-center text-sm text-blue-600 font-medium">
+                    <button className="w-full text-center text-sm text-[#0695c8] font-medium">
                       See All Messages
                     </button>
                   ),
@@ -191,7 +192,7 @@ const Header = () => {
               <Dropdown title="Profile">
                 {{
                   icon: (
-                    <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-[#0695c8] rounded-full flex items-center justify-center text-white font-bold text-sm">
                       J
                     </div>
                   ),
@@ -226,11 +227,11 @@ const Header = () => {
                 {openDropdown === "Language" && (
                   <div className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden z-50">
                     <div className="!p-3 border-b border-gray-100">
-                      <p className="font-semibold text-gray-800">
+                      <p className="font-semibold text-gray-800 text-[12px]">
                         Select Language
                       </p>
                     </div>
-                    <div className="max-h-64 overflow-y-auto p-2">
+                    <div className="max-h-64 overflow-y-auto !p-2 scrollbar-hide">
                       {languages.map((lang) => (
                         <button
                           key={lang.code}
@@ -240,14 +241,14 @@ const Header = () => {
                           }}
                           className={`w-full text-left !px-3 !py-2.5 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 text-sm ${
                             language === lang.label
-                              ? "bg-blue-50 text-blue-700 font-medium"
+                              ? "bg-blue-50 text-[#0695c8] font-medium"
                               : "text-gray-700"
                           }`}
                         >
-                          <span className="text-xl">{lang.flag}</span>
-                          <span>{lang.label}</span>
+                          <span className="text-[12px]">{lang.flag}</span>
+                          <span className="text-[10px]">{lang.label}</span>
                           {language === lang.label && (
-                            <FiCheck className="ml-auto text-blue-600" />
+                            <FiCheck className="ml-auto text-[#0695c8]" />
                           )}
                         </button>
                       ))}

@@ -1,10 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import DemoNavbar from "../navbar/DemoNavbar";
-import Header from "./Header";
+import Header, { LanguageContext } from "./Header";
 
 const DemoPage = () => {
   return (
+    <LanguageContext.Provider value={{ language: "en", setLanguage: () => {} }}>
+
     <div className="min-h-screen flex bg-gray-50">
       {/* Sidebar */}
       <DemoNavbar />
@@ -17,6 +19,7 @@ const DemoPage = () => {
         </div>
       </main>
     </div>
+    </LanguageContext.Provider>
   );
 };
 
