@@ -127,29 +127,7 @@ const Header = () => {
           <div className="flex items-center gap-2">
             {/* Desktop Icons */}
             <div className="hidden md:flex items-center gap-1">
-              {/* Home Dropdown */}
-              <Dropdown title="Home">
-                {{
-                  icon: <FiHome className="text-xl text-gray-700" />,
-                  items: [
-                    {
-                      title: "Dashboard",
-                      icon: <FiHome />,
-                      desc: "View all stats",
-                    },
-                    {
-                      title: "Reports",
-                      icon: <FiGlobe />,
-                      desc: "Analytics & insights",
-                    },
-                    {
-                      title: "Settings",
-                      icon: <FiSettings />,
-                      desc: "Customize app",
-                    },
-                  ],
-                }}
-              </Dropdown>
+           
 
               {/* Notifications Dropdown */}
               <Dropdown title="Notifications">
