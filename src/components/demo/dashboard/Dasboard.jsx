@@ -186,7 +186,7 @@ const Dashboard = () => {
       </div>
 
       {/* Main Scrollable Content */}
-      <div className="space-y-6 sm:space-y-8">
+      <div className="!space-y-6 sm:!space-y-8">
         {/* Live Map */}
         <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-5 border border-white/50 overflow-hidden">
           <div className="flex items-center justify-between !mb-3 sm:!mb-4">
@@ -357,7 +357,7 @@ const Dashboard = () => {
           <h3 className="text-base sm:text-lg font-bold text-slate-800 !mb-4 sm:!mb-5">
             Most Used Apps Today
           </h3>
-          <div className="space-y-3 sm:space-y-4 md:space-y-5">
+          <div className="!space-y-3 sm:!space-y-4 md:!space-y-5">
             {[
               {
                 app: "TikTok",
