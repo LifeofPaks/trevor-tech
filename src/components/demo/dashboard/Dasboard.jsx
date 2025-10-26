@@ -295,11 +295,7 @@ const Dashboard = () => {
                   color: "from-red-500 to-gray-800",
                   icon: <SiNetflix className="text-white" />,
                 },
-                {
-                  label: "Telegram",
-                  color: "from-sky-400 to-blue-600",
-                  icon: <FaTelegram className="text-white" />,
-                },
+            
                 {
                   label: "Pinterest",
                   color: "from-rose-400 to-rose-600",
@@ -316,7 +312,6 @@ const Dashboard = () => {
                   icon: <FaTelegram className="text-white" />,
                 },
               ].map((app, i) => {
-                // Generate random heights between 50 and 200px
                 const randomHeight =
                   Math.floor(Math.random() * (200 - 50 + 1)) + 50;
                 return (
@@ -333,25 +328,22 @@ const Dashboard = () => {
                         {app.icon}
                       </div>
                     </div>
-                    <p className="text-[9px] sm:text-[10px] md:text-xs text-slate-600 mt-1.5 sm:mt-2 text-center line-clamp-1">
-                      {app.label}
-                    </p>
-                    <p className="text-[8px] sm:text-[9px] text-slate-500">
-                      {(randomHeight / 20).toFixed(1)}h
-                    </p>
+
+                    {/* Rotated Label */}
+                    <div className="!mt-2 sm:mt-3 flex flex-col items-center justify-center">
+                      <p className="!ml-14 text-[9px] sm:text-[10px] md:text-xs text-slate-600 origin-top-left rotate-45 whitespace-nowrap">
+                        {app.label}
+                      </p>
+                        <p className="text-[8px] sm:text-[9px] text-slate-500 !mt-12">
+                          {(randomHeight / 20).toFixed(1)}h
+                        </p>
+                      </div>
                   </div>
                 );
               })}
             </div>
 
-            {/* Timeline axis */}
-            <div className="flex justify-between text-[9px] sm:text-xs text-slate-500 mt-2 sm:mt-3 pt-2 border-t border-slate-200">
-              <span>00:00</span>
-              <span>06:00</span>
-              <span>12:00</span>
-              <span>18:00</span>
-              <span>24:00</span>
-            </div>
+
           </div>
         </div>
 

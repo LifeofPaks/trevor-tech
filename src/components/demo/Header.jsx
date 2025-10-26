@@ -118,9 +118,7 @@ const Header = () => {
         <div className="flex items-center justify-between !px-4 !py-3 md:!px-6">
           {/* Left: Try Now Button */}
           <div className="flex-1 flex justify-center md:justify-start">
-            <button className="bg-gradient-to-r from-orange-400 to-orange-500 text-white font-semibold !px-6 !py-2.5 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
-              Try Now
-            </button>
+         
           </div>
 
           {/* Right: Icons + Language */}
