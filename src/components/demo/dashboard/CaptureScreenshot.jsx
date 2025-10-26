@@ -94,7 +94,7 @@ const CaptureScreenshot = () => {
 
       {/* Modal */}
       {open && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 transition-all">
+        <div className="fixed h-full inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 transition-all">
           <button
             className="absolute top-5 right-5 text-white text-3xl hover:text-gray-300"
             onClick={closeModal}
