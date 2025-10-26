@@ -10,9 +10,11 @@ const DemoPage = () => {
       <DemoNavbar />
 
       {/* Main content */}
-      <main className="flex-1 !ml-0 md:ml-64 !pt-4 !px-4 md:!px-8 lg:!px-16">
-        <Header/>
-        <Outlet />
+      <main className="flex-1 !ml-0 md:ml-64 ">
+        <Header />
+        <div className="!pt-4 !px-4 md:!px-8 lg:!px-16">
+          <Outlet />
+        </div>
       </main>
     </div>
   );
