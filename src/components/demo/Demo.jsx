@@ -6,19 +6,18 @@ import Header, { LanguageContext } from "./Header";
 const DemoPage = () => {
   return (
     <LanguageContext.Provider value={{ language: "en", setLanguage: () => {} }}>
+      <div className="min-h-screen flex bg-gradient-to-br from-slate-50 via-indigo-50 to-teal-50 ">
+        {/* Sidebar */}
+        <DemoNavbar />
 
-    <div className="min-h-screen flex bg-gray-50">
-      {/* Sidebar */}
-      <DemoNavbar />
-
-      {/* Main content */}
-      <main className="flex-1 !ml-0 md:ml-64 ">
-        <Header />
-        <div className="!pt-4 !px-4 md:!px-8 lg:!px-16">
-          <Outlet />
-        </div>
-      </main>
-    </div>
+        {/* Main content */}
+        <main className="flex-1 !ml-0 md:ml-64 ">
+          <Header />
+          <div className="!pt-4 !px-4 md:!px-8 lg:!px-16">
+            <Outlet />
+          </div>
+        </main>
+      </div>
     </LanguageContext.Provider>
   );
 };
