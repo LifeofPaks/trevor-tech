@@ -12,6 +12,7 @@ import {
   FiMic,
   FiChrome,
   FiFileText,
+  FiMail,
 } from "react-icons/fi";
 import {
   FaWhatsapp,
@@ -21,20 +22,27 @@ import {
   FaTelegramPlane,
   FaYoutube,
   FaTiktok,
+  FaInstagramSquare,
+  FaFacebook,
+  FaSnapchat,
+  FaSpotify,
+  FaTwitter,
+  FaLinkedin,
+  FaPinterest,
+  FaRedditAlien,
+  FaTelegram,
+  FaVideo,
 } from "react-icons/fa";
-import { SiMessenger, SiLine, SiYelp } from "react-icons/si";
+import { SiMessenger, SiLine, SiYelp, SiNetflix } from "react-icons/si";
 
 const Dashboard = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-teal-50 !p-3 sm:!p-4 md:!p-6 lg:!p-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-teal-50 !p-2">
       {/* Header */}
       <header className="!mb-4 sm:!mb-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white font-bold text-base sm:text-lg shadow-lg">
-              T
-            </div>
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-800">
+            <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800">
               Dashboard
             </h1>
           </div>
@@ -42,7 +50,7 @@ const Dashboard = () => {
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
               Demo data. Bind your device to collect actual data.
             </span>
-            <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-sm sm:text-base !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap">
+            <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap">
               Bind My Device
             </button>
           </div>
@@ -229,68 +237,115 @@ const Dashboard = () => {
           </div>
 
           {/* Enhanced Bar Chart */}
-          <div className="h-48 sm:h-56 md:h-64  rounded-xl !p-3 sm:!p-4 flex flex-col">
-            <div className="flex-1 flex items-end justify-between !gap-1.5 sm:!gap-2">
+          <div className="h-64 sm:h-72 md:h-80 rounded-xl !p-3 sm:!p-4 flex flex-col">
+            <div className="flex-1 flex items-end justify-center flex-wrap gap-2 sm:gap-3">
               {[
                 {
                   label: "TikTok",
-                  value: 85,
                   color: "from-pink-500 to-rose-600",
                   icon: <FaTiktok className="text-white" />,
                 },
                 {
                   label: "WhatsApp",
-                  value: 70,
                   color: "from-green-500 to-emerald-600",
                   icon: <FaWhatsapp className="text-white" />,
                 },
                 {
                   label: "YouTube",
-                  value: 165,
                   color: "from-red-500 to-red-600",
                   icon: <FaYoutube className="text-white" />,
                 },
                 {
                   label: "Chrome",
-                  value: 45,
                   color: "from-blue-500 to-indigo-600",
                   icon: <FiChrome className="text-white" />,
                 },
                 {
                   label: "Messenger",
-                  value: 40,
                   color: "from-indigo-500 to-blue-600",
                   icon: <SiMessenger className="text-white" />,
                 },
                 {
-                  label: "Other",
-                  value: 155,
-                  color: "from-gray-400 to-gray-600",
-                  icon: <FiImage className="text-white" />,
+                  label: "Instagram",
+                  color: "from-pink-400 to-purple-600",
+                  icon: <FaInstagramSquare className="text-white" />,
                 },
-              ].map((app, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center flex-1 group cursor-pointer"
-                >
+                {
+                  label: "Facebook",
+                  color: "from-blue-500 to-blue-700",
+                  icon: <FaFacebook className="text-white" />,
+                },
+                {
+                  label: "Snapchat",
+                  color: "from-yellow-400 to-orange-400",
+                  icon: <FaSnapchat className="text-white" />,
+                },
+                {
+                  label: "Spotify",
+                  color: "from-green-400 to-green-600",
+                  icon: <FaSpotify className="text-white" />,
+                },
+                {
+                  label: "Twitter / X",
+                  color: "from-sky-400 to-sky-600",
+                  icon: <FaTwitter className="text-white" />,
+                },
+                {
+                  label: "Netflix",
+                  color: "from-red-500 to-gray-800",
+                  icon: <SiNetflix className="text-white" />,
+                },
+                {
+                  label: "Telegram",
+                  color: "from-sky-400 to-blue-600",
+                  icon: <FaTelegram className="text-white" />,
+                },
+                {
+                  label: "Pinterest",
+                  color: "from-rose-400 to-rose-600",
+                  icon: <FaPinterest className="text-white" />,
+                },
+                {
+                  label: "Reddit",
+                  color: "from-orange-400 to-red-500",
+                  icon: <FaRedditAlien className="text-white" />,
+                },
+                {
+                  label: "Telegram",
+                  color: "from-sky-400 to-blue-600",
+                  icon: <FaTelegram className="text-white" />,
+                },
+              ].map((app, i) => {
+                // Generate random heights between 50 and 200px
+                const randomHeight =
+                  Math.floor(Math.random() * (200 - 50 + 1)) + 50;
+                return (
                   <div
-                    className={`w-full bg-gradient-to-t ${app.color} rounded-t-lg transition-all duration-500 hover:opacity-90 relative flex items-center justify-center`}
-                    style={{ height: `${app.value}px` }}
+                    key={i}
+                    className="flex flex-col items-center cursor-pointer group"
+                    style={{ width: "30px" }}
                   >
-                    <div className="absolute top-2  group-hover:opacity-100 transition-opacity text-xs sm:text-sm">
-                      {app.icon}
+                    <div
+                      className={`w-full bg-gradient-to-t ${app.color} rounded-t-lg transition-all duration-500 hover:opacity-90 relative flex items-center justify-center`}
+                      style={{ height: `${randomHeight}px` }}
+                    >
+                      <div className="absolute top-2 group-hover:opacity-100 transition-opacity text-xs sm:text-sm">
+                        {app.icon}
+                      </div>
                     </div>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-slate-600 mt-1.5 sm:mt-2 text-center line-clamp-1">
+                      {app.label}
+                    </p>
+                    <p className="text-[8px] sm:text-[9px] text-slate-500">
+                      {(randomHeight / 20).toFixed(1)}h
+                    </p>
                   </div>
-                  <p className="text-[9px] sm:text-[10px] md:text-xs text-slate-600 !mt-1.5 sm:!mt-2 text-center line-clamp-1">
-                    {app.label}
-                  </p>
-                  <p className="text-[8px] sm:text-[9px] text-slate-500">
-                    {(app.value / 10).toFixed(1)}h
-                  </p>
-                </div>
-              ))}
+                );
+              })}
             </div>
-            <div className="flex justify-between text-[9px] sm:text-xs text-slate-500 !mt-2 sm:!mt-3 !pt-2 border-t border-slate-200">
+
+            {/* Timeline axis */}
+            <div className="flex justify-between text-[9px] sm:text-xs text-slate-500 mt-2 sm:mt-3 pt-2 border-t border-slate-200">
               <span>00:00</span>
               <span>06:00</span>
               <span>12:00</span>
@@ -341,6 +396,84 @@ const Dashboard = () => {
                 ),
                 color: "from-indigo-500 to-blue-600",
               },
+              {
+                app: "Instagram",
+                time: "58m 34s",
+                icon: (
+                  <FaInstagramSquare className="text-pink-500 text-lg sm:text-xl" />
+                ),
+                color: "from-pink-400 to-purple-600",
+              },
+              {
+                app: "Facebook",
+                time: "50m 42s",
+                icon: (
+                  <FaFacebook className="text-blue-600 text-lg sm:text-xl" />
+                ),
+                color: "from-blue-500 to-blue-700",
+              },
+              {
+                app: "Snapchat",
+                time: "43m 18s",
+                icon: (
+                  <FaSnapchat className="text-yellow-500 text-lg sm:text-xl" />
+                ),
+                color: "from-yellow-400 to-orange-400",
+              },
+              {
+                app: "Spotify",
+                time: "39m 27s",
+                icon: (
+                  <FaSpotify className="text-green-500 text-lg sm:text-xl" />
+                ),
+                color: "from-green-400 to-green-600",
+              },
+              {
+                app: "Twitter / X",
+                time: "32m 11s",
+                icon: (
+                  <FaTwitter className="text-blue-400 text-lg sm:text-xl" />
+                ),
+                color: "from-sky-400 to-sky-600",
+              },
+              {
+                app: "Netflix",
+                time: "28m 04s",
+                icon: <SiNetflix className="text-red-600 text-lg sm:text-xl" />,
+                color: "from-red-500 to-gray-800",
+              },
+              {
+                app: "Telegram",
+                time: "24m 36s",
+                icon: (
+                  <FaTelegram className="text-sky-500 text-lg sm:text-xl" />
+                ),
+                color: "from-sky-400 to-blue-600",
+              },
+              {
+                app: "LinkedIn",
+                time: "21m 12s",
+                icon: (
+                  <FaLinkedin className="text-blue-700 text-lg sm:text-xl" />
+                ),
+                color: "from-blue-600 to-indigo-700",
+              },
+              {
+                app: "Pinterest",
+                time: "18m 54s",
+                icon: (
+                  <FaPinterest className="text-red-500 text-lg sm:text-xl" />
+                ),
+                color: "from-rose-400 to-rose-600",
+              },
+              {
+                app: "Reddit",
+                time: "14m 09s",
+                icon: (
+                  <FaRedditAlien className="text-orange-500 text-lg sm:text-xl" />
+                ),
+                color: "from-orange-400 to-red-500",
+              },
             ].map((app, i) => (
               <div key={i} className="flex items-center !gap-3 sm:!gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg sm:rounded-xl flex items-center justify-center shadow-sm">
@@ -354,7 +487,7 @@ const Dashboard = () => {
                     <div className="flex-1 bg-slate-200 rounded-full h-1.5 sm:h-2">
                       <div
                         className={`h-full rounded-full bg-gradient-to-r ${app.color} transition-all duration-500`}
-                        style={{ width: `${100 - i * 15}%` }}
+                        style={{ width: `${100 - i * 5}%` }}
                       ></div>
                     </div>
                     <span className="text-xs sm:text-sm font-medium text-slate-600 whitespace-nowrap">
