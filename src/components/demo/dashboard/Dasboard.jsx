@@ -49,7 +49,7 @@ const Dashboard = () => {
               Dashboard
             </h1>
           </div>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
+          <div className="flex sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
               Demo data. Bind your device to collect actual data.
             </span>
@@ -189,7 +189,7 @@ const Dashboard = () => {
       </div>
 
       {/* Main Scrollable Content */}
-      <div className="!space-y-6 sm:!space-y-8">
+      <div className="!space-y-10 sm:!space-y-8">
         {/* Live Map */}
         <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-5 border border-white/50 overflow-hidden">
           <div className="flex items-center justify-between !mb-3 sm:!mb-4">
@@ -224,7 +224,7 @@ const Dashboard = () => {
         </div>
 
         {/* Total Screen Time - Enhanced Graph */}
-        <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-6 border border-white/50">
+        <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-6 border border-white/50 ">
           <div className="flex items-center justify-between !mb-3 sm:!mb-4">
             <h3 className="text-base sm:text-lg font-bold text-slate-800">
               Total Screen Time
