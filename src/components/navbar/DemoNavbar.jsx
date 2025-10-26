@@ -2,19 +2,13 @@ import React, { useState, useEffect, useContext } from "react";
 import {
   FiMenu,
   FiX,
-  FiHome,
   FiGlobe,
   FiVideo,
   FiPhone,
   FiMic,
   FiMessageSquare,
-  FiInstagram,
   FiCamera,
-  FiUser,
-  FiSettings,
-  FiHelpCircle,
   FiSmartphone,
-  FiLogOut,
   FiPlus,
   FiChevronRight,
   FiChevronDown,
@@ -31,35 +25,28 @@ import {
   FiDownload,
   FiCheckSquare,
   FiTruck,
-  FiCompass,
-  FiZap,
-  FiTool,
-  FiMessageCircle,
-  FiClock,
-  FiEye,
-  FiSend,
   FiShield,
-  FiActivity,
   FiMap,
+  FiEye,
+  FiSettings,
+  FiUser,
+  FiZap,
 } from "react-icons/fi";
 import {
   FaWhatsapp,
   FaFacebookF,
   FaTelegramPlane,
   FaInstagram,
+  FaSnapchat,
 } from "react-icons/fa";
-import { FaSnapchatGhost } from "react-icons/fa";
-import { SiMessenger, SiLine } from "react-icons/si"; 
-
 import { FaYoutube, FaTiktok } from "react-icons/fa";
-import { RiDashboardLine, RiMovie2Line } from "react-icons/ri";
+import { SiMessenger, SiLine } from "react-icons/si";
+import { RiMovie2Line } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../logo/Logo";
 import DemoLogo from "../logo/DemoLogo";
-import HotImage from "../../assets/hot-badge.png";    
+import HotImage from "../../assets/hot-badge.png";
 import { MdDashboard } from "react-icons/md";
 
-// Language Context from Header
 export const LanguageContext = React.createContext();
 
 const translations = {
@@ -188,7 +175,7 @@ const DemoSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDeviceModal, setShowDeviceModal] = useState(false);
   const [selectedDevice, setSelectedDevice] = useState("Zion's Galaxy S24");
-const [openSubmenus, setOpenSubmenus] = useState([]);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
   const location = useLocation();
 
   const languageContext = useContext(LanguageContext);
@@ -204,16 +191,17 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
 
-  // Only one submenu open at a time
-  const toggleSubmenu = (label) => {
-    setOpenSubmenus((prev) =>
-      prev.includes(label)
-        ? prev.filter((item) => item !== label) // Close if already open
-        : [label] // Open only this one
-    );
+  const handleMenuClick = (label, hasSubItems) => {
+    if (hasSubItems) {
+      setOpenSubmenu((prev) => (prev === label ? null : label));
+    } else {
+      setOpenSubmenu(null); // Close all when clicking non-submenu item
+    }
+    if (isMobile) setIsOpen(false);
+    if (isMobile && hasSubItems) setIsOpen(true);
   };
 
-  const isActive = (path) => location.pathname === path;
+  const isPathActive = (path) => location.pathname === path;
 
   const devices = [
     {
@@ -243,11 +231,7 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
   ];
 
   const menuItems = [
-    {
-      label: t["Dashboard"],
-      icon: <MdDashboard />,
-      to: "/demo/dashboard",
-    },
+    { label: t["Dashboard"], icon: <MdDashboard />, to: "/demo/dashboard" },
     {
       label: t.Logs,
       icon: <FiMonitor />,
@@ -293,13 +277,9 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
         {
           to: "/demo/social/snapchat",
           label: t.Snapchat,
-          icon: <FaSnapchatGhost />,
+          icon: <FaSnapchat />,
         },
-        {
-          to: "/demo/social/line",
-          label: t.LINE,
-          icon: <SiLine />,
-        },
+        { to: "/demo/social/line", label: t.LINE, icon: <SiLine /> },
         {
           to: "/demo/social/telegram",
           label: t.Telegram,
@@ -370,7 +350,7 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
         {
           to: "/demo/data/messages",
           label: t.Messages,
-          icon: <FiMessageCircle />,
+          icon: <FiMessageSquare />,
         },
         { to: "/demo/data/photos", label: t.Photos, icon: <FiImage /> },
         {
@@ -500,8 +480,8 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
     <>
       {/* Mobile Topbar */}
       {isMobile && !isOpen && (
-        <div className="fixed top-6 right-2 right-6 flex items-center justify-between z-50">
-          <button onClick={toggleSidebar} className="text-2xl ">
+        <div className="fixed !top-6 !right-6 !z-50">
+          <button onClick={toggleSidebar} className="!text-2xl">
             <FiMenu className="text-gray-800" />
           </button>
         </div>
@@ -509,23 +489,23 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-full bg-[#0a0f2c] text-gray-300 flex flex-col z-50 transition-transform duration-300 ease-in-out
+        className={`fixed !top-0 !left-0 !h-full bg-[#0a0f2c] text-gray-300 flex flex-col !z-50 transition-transform duration-300 ease-in-out
           ${
             isMobile
               ? isOpen
-                ? "translate-x-0"
-                : "-translate-x-full"
-              : "translate-x-0"
+                ? "!translate-x-0"
+                : "!-translate-x-full"
+              : "!translate-x-0"
           }
-          w-72 shadow-2xl border-r border-gray-800`}
+          !w-72 shadow-2xl !border-r !border-gray-800`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between !px-5 !py-4 border-b border-gray-800">
+        <div className="flex items-center justify-between !px-5 !py-4 !border-b !border-gray-800">
           <DemoLogo />
           {isMobile && (
             <button
               onClick={toggleSidebar}
-              className="text-gray-400 text-xl hover:text-white"
+              className="text-gray-400 !text-xl hover:text-white"
             >
               <FiX />
             </button>
@@ -536,27 +516,26 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
         <div className="!px-4 !mt-4 relative">
           <button
             onClick={() => setShowDeviceModal(true)}
-            className="w-full flex items-center justify-between bg-[#1b254b] hover:bg-[#253065] !px-4 !py-3 rounded-xl text-sm font-medium transition-all duration-200 border border-gray-700"
+            className="w-full flex items-center justify-between bg-[#1b254b] hover:bg-[#253065] !px-4 !py-3 !rounded-xl !text-sm !font-medium transition-all duration-200 !border !border-gray-700"
           >
-            <span className="flex items-center gap-3">
+            <span className="flex items-center !gap-3">
               <FiSmartphone className="text-[#00d4ff]" />
               <span className="text-white">{selectedDevice}</span>
             </span>
             <FiChevronDown className="text-gray-400" />
           </button>
 
-          {/* Device Modal */}
           {showDeviceModal && (
             <div
-              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-start justify-center !p-4"
+              className="fixed !inset-0 bg-black/60 backdrop-blur-sm !z-50 flex items-start justify-center !p-4"
               onClick={() => setShowDeviceModal(false)}
             >
               <div
-                className="bg-[#0a0f2c] rounded-2xl shadow-2xl w-full max-w-md border border-gray-700"
+                className="bg-[#0a0f2c] !rounded-2xl shadow-2xl w-full max-w-md !border !border-gray-700"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="flex items-center justify-between !p-5 border-b border-gray-700">
-                  <h3 className="text-sm font-semibold text-white">
+                <div className="flex items-center justify-between !p-5 !border-b !border-gray-700">
+                  <h3 className="!text-sm !font-semibold text-white">
                     {t["Select Device"]}
                   </h3>
                   <button
@@ -566,8 +545,7 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
                     <FiX />
                   </button>
                 </div>
-
-                <div className="!p-4 space-y-2 max-h-96 overflow-y-auto">
+                <div className="!p-4 !space-y-2 max-h-96 overflow-y-auto">
                   {devices.map((device) => (
                     <div
                       key={device.name}
@@ -575,32 +553,31 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
                         setSelectedDevice(device.name);
                         setShowDeviceModal(false);
                       }}
-                      className="flex items-center justify-between !p-2 rounded-lg hover:bg-[#1b254b] cursor-pointer transition-all"
+                      className="flex items-center justify-between !p-2 !rounded-lg hover:bg-[#1b254b] cursor-pointer transition-all"
                     >
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center !gap-3">
                         <div
-                          className={`w-3 h-3 rounded-full ${device.color}`}
+                          className={`!w-3 !h-3 !rounded-full ${device.color}`}
                         />
                         <div>
-                          <p className="text-white font-medium text-[13px]">
+                          <p className="text-white !font-medium !text-[13px]">
                             {device.name}
                           </p>
-                          <p className="text-xs text-gray-400">
+                          <p className="!text-xs text-gray-400">
                             {device.status}
                           </p>
                         </div>
                       </div>
                       {device.battery && (
-                        <span className="text-xs text-gray-400">
+                        <span className="!text-xs text-gray-400">
                           {device.battery}
                         </span>
                       )}
                     </div>
                   ))}
                 </div>
-
-                <div className="border-t border-gray-700 p-4">
-                  <button className="w-full flex items-center justify-center gap-2 !py-3 text-[#00d4ff] hover:text-white font-medium transition text-[12px]">
+                <div className="!border-t !border-gray-700 !p-4">
+                  <button className="w-full flex items-center justify-center !gap-2 !py-3 text-[#00d4ff] hover:text-white !font-medium transition !text-[12px]">
                     <FiPlus /> {t["Add a New Device"]}
                   </button>
                 </div>
@@ -614,73 +591,81 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
           <div className="!space-y-1">
             {menuItems.map((item) => {
               const hasSubItems = item.subItems && item.subItems.length > 0;
-              const isOpen = openSubmenus.includes(item.label);
+              const isSubmenuOpen = openSubmenu === item.label;
 
               return (
                 <div key={item.label}>
                   <div
-                    className={`group relative ${
-                      hasSubItems ? "cursor-pointer" : ""
-                    }`}
-                    onClick={() => hasSubItems && toggleSubmenu(item.label)}
+                    className={`group ${hasSubItems ? "cursor-pointer" : ""}`}
+                    onClick={() => handleMenuClick(item.label, hasSubItems)}
                   >
                     <div
-                      className={`flex items-center justify-between !px-4 !py-3 rounded-xl transition-all duration-200
+                      className={`flex items-center justify-between !px-4 !py-3 !rounded-xl transition-all duration-200
                         ${
-                          isOpen
-                            ? "bg-gradient-to-r from-[#00d4ff]/20 to-transparent text-white border-l-4 border-[#00d4ff] shadow-lg shadow-[#00d4ff]/20"
+                          hasSubItems
+                            ? "text-gray-400 hover:bg-[#1b254b] hover:text-white"
+                            : isPathActive(item.to)
+                            ? "bg-gradient-to-r from-[#00d4ff]/20 to-transparent text-white !border-l-4 !border-[#00d4ff] shadow-lg shadow-[#00d4ff]/20"
                             : "text-gray-400 hover:bg-[#1b254b] hover:text-white"
                         }`}
                     >
                       <Link
-                        onClick={() => isMobile && setIsOpen(false)}
-                        to={item.to}
-                        className="flex items-center gap-3 cursor-pointer"
+                        to={item.to || "#"}
+                        onClick={(e) => {
+                          if (hasSubItems) e.preventDefault();
+                        }}
+                        className="flex items-center !gap-3 w-full"
                       >
-                        <span className="text-[14px]">{item.icon}</span>
-                        <span className="font-medium text-[12px] flex items-center gap-2">
+                        <span className="!text-[14px]">{item.icon}</span>
+                        <span className="!font-medium !text-[12px] flex items-center !gap-2">
                           {item.label}
                           {item.badge && (
                             <img
                               src={HotImage}
-                              alt="hot image"
-                              className="w-[25px]"
+                              alt="hot"
+                              className="!w-[25px]"
                             />
                           )}
                         </span>
                       </Link>
-                      <span className="flex items-center gap-2">
-                        {hasSubItems && (
-                          <FiChevronRight
-                            className={`transition-transform ${
-                              isOpen ? "rotate-90" : ""
-                            }`}
-                          />
-                        )}
-                      </span>
+                      {hasSubItems && (
+                        <FiChevronRight
+                          className={`!text-sm !transition-transform duration-300 ${
+                            isSubmenuOpen ? "!rotate-90" : ""
+                          }`}
+                        />
+                      )}
                     </div>
                   </div>
 
-                  {hasSubItems && isOpen && (
-                    <div className="!ml-8 !mt-3 !space-y-1 border-l-1 border-gray-800 !pl-4">
-                      {item.subItems.map((sub) => (
-                        <Link
-                          key={sub.to}
-                          to={sub.to}
-                          onClick={() => isMobile && setIsOpen(false)}
-                          className={`flex items-center gap-3 !px-3 !py-2 rounded-lg text-sm transition-all
-                            ${
-                              isActive(sub.to)
-                                ? "bg-[#1b254b] text-[#00d4ff] font-medium"
-                                : "text-gray-500 hover:text-white hover:bg-[#1b254b]/50"
-                            }`}
-                        >
-                          {sub.icon || <div className="w-4 h-4" />}
-                          <span className="text-[12px]">{sub.label}</span>
-                        </Link>
-                      ))}
+                  {/* Animated Submenu */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      isSubmenuOpen ? "!max-h-96" : "!max-h-0"
+                    }`}
+                  >
+                    <div className="!ml-8 !mt-3 !space-y-1 !border-l !border-gray-800 !pl-4">
+                      {item.subItems?.map((sub) => {
+                        const isActive = isPathActive(sub.to);
+                        return (
+                          <Link
+                            key={sub.to}
+                            to={sub.to}
+                            onClick={() => isMobile && setIsOpen(false)}
+                            className={`flex items-center !gap-3 !px-3 !py-2 !rounded-lg !text-sm transition-all
+                              ${
+                                isActive
+                                  ? "bg-gradient-to-r from-[#00d4ff]/20 to-transparent text-white !border-l-4 !border-[#00d4ff] shadow-lg shadow-[#00d4ff]/20 !font-medium"
+                                  : "text-gray-500 hover:text-white hover:bg-[#1b254b]/50"
+                              }`}
+                          >
+                            {sub.icon || <div className="!w-4 !h-4" />}
+                            <span className="!text-[12px]">{sub.label}</span>
+                          </Link>
+                        );
+                      })}
                     </div>
-                  )}
+                  </div>
                 </div>
               );
             })}
@@ -688,15 +673,15 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
         </nav>
 
         {/* Footer */}
-        <div className="border-t border-gray-800 !p-4 !mt-auto">
-          <div className="text-center text-xs text-gray-500 !space-y-1">
-            <p className="font-medium text-gray-400">
+        <div className="!border-t !border-gray-800 !p-4 !mt-auto">
+          <div className="text-center !text-xs text-gray-500 !space-y-1">
+            <p className="!font-medium text-gray-400">
               {t["Easier Monitoring with"]}{" "}
-              <span className="text-[#00d4ff] font-semibold">
+              <span className="text-[#00d4ff] !font-semibold">
                 {t["TrevorTech App"]}
               </span>
             </p>
-            <div className="flex items-center justify-center gap-2 text-gray-600">
+            <div className="flex items-center justify-center !gap-2 text-gray-600">
               <FiSmartphone className="text-[#00d4ff]" />
               <FiMonitor className="text-[#00d4ff]" />
             </div>
@@ -708,12 +693,12 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
       {isMobile && isOpen && (
         <div
           onClick={toggleSidebar}
-          className="fixed inset-0 bg-black/70 backdrop-blur-sm z-40"
+          className="fixed !inset-0 bg-black/70 backdrop-blur-sm !z-40"
         />
       )}
 
       {/* Desktop Push */}
-      {!isMobile && <div className="w-72" />}
+      {!isMobile && <div className="!w-72" />}
     </>
   );
 };
