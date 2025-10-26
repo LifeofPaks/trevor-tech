@@ -318,12 +318,13 @@ const menuItems = [
     <>
       {/* Mobile Topbar */}
       {isMobile && !isOpen && (
-        <div className="fixed top-0 left-0 right-0 flex items-center justify-between !px-4 !py-3 bg-[#0a0f2c] text-white shadow-lg z-50">
-          <DemoLogo />
-          <button onClick={toggleSidebar} className="text-2xl">
-            <FiMenu />
+        <div className="fixed top-6 right-2 right-6 flex items-center justify-between z-50">
+          {/* <DemoLogo /> */}
+          <button onClick={toggleSidebar} className="text-2xl ">
+            <FiMenu className="text-gray-800" />
           </button>
         </div>
+        
       )}
 
       {/* Sidebar */}
