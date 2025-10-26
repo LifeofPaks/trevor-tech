@@ -14,6 +14,12 @@ import {
   FiChevronDown,
   FiChevronUp,
   FiCheck,
+  FiChevronRight,
+  FiLogOut,
+  FiActivity,
+  FiZap,
+  FiCamera,
+  FiMic,
 } from "react-icons/fi";
 
 // Language Context (to share with Sidebar)
@@ -263,44 +269,205 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden !p-2 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95  !mr-10"
             >
-              <FiUser className="text-2xl text-gray-700" />
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-white font-bold">
+                z
+              </div>
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu – clean, white-bg ready */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200 !px-4 !py-3 !space-y-3">
-            <button className="w-full text-left !py-2 font-medium text-gray-800 flex items-center gap-3">
-              <FiHome /> Dashboard
-            </button>
-            <button className="w-full text-left !py-2 font-medium text-gray-800 flex items-center gap-3">
-              <FiBell /> Notifications{" "}
-              <span className="ml-auto bg-red-500 text-white text-xs !px-2 !py-0.5 rounded-full">
-                8
-              </span>
-            </button>
-            <button className="w-full text-left !py-2 font-medium text-gray-800 flex items-center gap-3">
-              <FiMessageSquare /> Messages{" "}
-              <span className="!ml-auto bg-red-500 text-white text-xs !px-2 !py-0.5 rounded-full">
-                3
-              </span>
-            </button>
-            <div className="border-t border-gray-200 !pt-3">
-              <p className="text-sm font-medium text-gray-600 !mb-2">
-                Language
-              </p>
-              <select
-                value={language}
-                onChange={(e) => setLanguage(e.target.value)}
-                className="w-full !px-3 !py-2 border border-gray-300 rounded-lg text-sm"
-              >
-                {languages.map((lang) => (
-                  <option key={lang.code} value={lang.label}>
-                    {lang.flag} {lang.label}
-                  </option>
+          <div className="md:hidden fixed inset-0 z-50 flex items-start justify-center !pt-16 !px-4 overflow-y-auto bg-white">
+            <div
+              className="w-full max-w-md !space-y-5"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Header */}
+              <div className="bg-white/90 backdrop-blur-md border border-gray-200 rounded-3xl !p-5 shadow-lg">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-800">Menu</h3>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="p-2 rounded-full hover:bg-gray-100 transition"
+                  >
+                    <FiX className="text-gray-500" />
+                  </button>
+                </div>
+              </div>
+
+              {/* Dashboard */}
+              <button className="group w-full">
+                <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm hover:shadow-md transition-all duration-200">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="p-2.5 rounded-xl bg-indigo-100 group-hover:bg-indigo-200 transition">
+                        <FiHome className="text-xl text-indigo-600" />
+                      </div>
+                      <div className="text-left">
+                        <p className="font-semibold text-gray-800">Dashboard</p>
+                        <p className="text-xs text-gray-500">View all stats</p>
+                      </div>
+                    </div>
+                    <FiChevronRight className="text-gray-400 group-hover:text-indigo-600 transition" />
+                  </div>
+                </div>
+              </button>
+
+              {/* Notifications – RED badge only */}
+              <button className="group w-full">
+                <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm hover:shadow-md transition-all duration-200">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="p-2.5 rounded-xl bg-red-100 group-hover:bg-red-200 transition">
+                        <FiBell className="text-xl text-red-600" />
+                      </div>
+                      <div className="text-left">
+                        <p className="font-semibold text-gray-800">
+                          Notifications
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          8 pending alerts
+                        </p>
+                      </div>
+                    </div>
+                    <span className="bg-red-500 text-white text-xs !px-3 !py-1 rounded-full font-bold shadow-sm">
+                      8
+                    </span>
+                  </div>
+                </div>
+              </button>
+
+              {/* Messages – PURPLE badge only */}
+              <button className="group w-full">
+                <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm hover:shadow-md transition-all duration-200">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="p-2.5 rounded-xl bg-purple-100 group-hover:bg-purple-200 transition">
+                        <FiMessageSquare className="text-xl text-purple-600" />
+                      </div>
+                      <div className="text-left">
+                        <p className="font-semibold text-gray-800">Messages</p>
+                        <p className="text-xs text-gray-500">3 unread</p>
+                      </div>
+                    </div>
+                    <span className="bg-purple-500 text-white text-xs !px-3 !py-1 rounded-full font-bold shadow-sm">
+                      3
+                    </span>
+                  </div>
+                </div>
+              </button>
+
+              {/* Recent Activity */}
+              <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm">
+                <div className="flex items-center gap-2 !mb-3">
+                  <FiActivity className="text-green-600" />
+                  <p className="font-semibold text-gray-800">Recent Activity</p>
+                </div>
+                <div className="!space-y-2">
+                  {[
+                    {
+                      icon: FiMapPin,
+                      title: "Location Updated",
+                      time: "2 min ago",
+                      desc: "123 Main St",
+                    },
+                    {
+                      icon: FiCamera,
+                      title: "Screenshot Taken",
+                      time: "5 min ago",
+                      desc: "Selfie",
+                    },
+                  ].map((a, i) => (
+                    <div
+                      key={i}
+                      className="flex items-center gap-3 !p-3 bg-gray-50 rounded-xl"
+                    >
+                      <div className="p-2 rounded-lg bg-gray-100">
+                        <a.icon className="text-lg text-gray-600" />
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-sm font-medium text-gray-800">
+                          {a.title}
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          {a.time} • {a.desc}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Quick Actions */}
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { icon: FiCamera, label: "Take Photo", color: "indigo" },
+                  { icon: FiMic, label: "Record Audio", color: "purple" },
+                ].map((a, i) => (
+                  <button
+                    key={i}
+                    className={`flex flex-col items-center gap-2 !p-4 bg-white border border-gray-200 rounded-3xl shadow-sm hover:shadow-md transition-all duration-200`}
+                  >
+                    <a.icon className={`text-xl text-${a.color}-600`} />
+                    <span className="text-xs font-medium text-gray-700">
+                      {a.label}
+                    </span>
+                  </button>
                 ))}
-              </select>
+              </div>
+
+              {/* Language Selector */}
+              <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm">
+                <div className="flex items-center gap-2 !mb-3">
+                  <FiGlobe className="text-indigo-600" />
+                  <p className="font-semibold text-gray-800">Language</p>
+                </div>
+                <select
+                  value={language}
+                  onChange={(e) => setLanguage(e.target.value)}
+                  className="w-full !px-4 !py-3 bg-gray-50 border border-gray-300 rounded-2xl text-sm font-medium text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition"
+                >
+                  {languages.map((l) => (
+                    <option key={l.code} value={l.label}>
+                      {l.flag} {l.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Account */}
+              <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm !space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-white font-bold">
+                    z
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-800">Zion Ethan</p>
+                    <p className="text-xs text-gray-500">zionethan@tech.com</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-2">
+                  <button className="flex-1 flex items-center justify-center gap-2 !py-3 bg-gray-50 rounded-2xl text-gray-700 font-medium hover:bg-gray-100 transition">
+                    <FiSettings className="text-gray-600" />
+                    Settings
+                  </button>
+                  <button className="flex-1 flex items-center justify-center gap-2 !py-3 bg-red-50 rounded-2xl text-red-600 font-medium hover:bg-red-100 transition">
+                    <FiLogOut />
+                    Logout
+                  </button>
+                </div>
+              </div>
+
+              {/* Footer */}
+              <div className="text-center !pt-4 text-xs text-gray-400">
+                © 2025 TrevorTech • v2.4.1
+              </div>
             </div>
           </div>
         )}
