@@ -56,6 +56,7 @@ import { RiMovie2Line } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../logo/Logo";
 import DemoLogo from "../logo/DemoLogo";
+import HotImage from "../../assets/hot-badge.png";    
 
 // Language Context from Header
 export const LanguageContext = React.createContext();
@@ -633,16 +634,18 @@ const DemoSidebar = () => {
                     >
                       <span className="flex items-center gap-3">
                         <span className="text-[14px]">{item.icon}</span>
-                        <span className="font-medium text-[14px]">
+                        <span className="font-medium text-[14px] flex items-center gap-2">
                           {item.label}
+                          {item.badge && (
+                            <img
+                              src={HotImage}
+                              alt="hot image"
+                              className="w-[25px]"
+                            />
+                          )}
                         </span>
                       </span>
                       <span className="flex items-center gap-2">
-                        {item.badge && (
-                          <span className="bg-red-500 text-white text-[8px] !px-2 py-0.5 rounded-full font-bold">
-                            {item.badge}
-                          </span>
-                        )}
                         {hasSubItems && (
                           <FiChevronRight
                             className={`transition-transform ${
