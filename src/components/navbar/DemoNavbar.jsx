@@ -52,17 +52,19 @@ import { FaSnapchatGhost } from "react-icons/fa";
 import { SiMessenger, SiLine } from "react-icons/si"; 
 
 import { FaYoutube, FaTiktok } from "react-icons/fa";
-import { RiMovie2Line } from "react-icons/ri";
+import { RiDashboardLine, RiMovie2Line } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../logo/Logo";
 import DemoLogo from "../logo/DemoLogo";
 import HotImage from "../../assets/hot-badge.png";    
+import { MdDashboard } from "react-icons/md";
 
 // Language Context from Header
 export const LanguageContext = React.createContext();
 
 const translations = {
   en: {
+    Dashboard: "Dashboard",
     Logs: "Logs",
     "Screen Time": "Screen Time",
     Keylogs: "Keylogs",
@@ -121,6 +123,7 @@ const translations = {
     "TrevorTech App": "TrevorTech App",
   },
   es: {
+    Dashboard: "Panel Principal",
     Logs: "Registros",
     "Screen Time": "Tiempo en Pantalla",
     Keylogs: "Registros de Teclas",
@@ -240,6 +243,11 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
   ];
 
   const menuItems = [
+    {
+      label: t["Dashboard"],
+      icon: <MdDashboard />,
+      to: "/demo/dashboard",
+    },
     {
       label: t.Logs,
       icon: <FiMonitor />,
@@ -624,7 +632,11 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
                             : "text-gray-400 hover:bg-[#1b254b] hover:text-white"
                         }`}
                     >
-                      <span className="flex items-center gap-3">
+                      <Link
+                        onClick={() => isMobile && setIsOpen(false)}
+                        to={item.to}
+                        className="flex items-center gap-3 cursor-pointer"
+                      >
                         <span className="text-[14px]">{item.icon}</span>
                         <span className="font-medium text-[12px] flex items-center gap-2">
                           {item.label}
@@ -636,7 +648,7 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
                             />
                           )}
                         </span>
-                      </span>
+                      </Link>
                       <span className="flex items-center gap-2">
                         {hasSubItems && (
                           <FiChevronRight
@@ -664,9 +676,7 @@ const [openSubmenus, setOpenSubmenus] = useState([]);
                             }`}
                         >
                           {sub.icon || <div className="w-4 h-4" />}
-                          <span className="text-[12px]">
-                            {sub.label}
-                          </span>
+                          <span className="text-[12px]">{sub.label}</span>
                         </Link>
                       ))}
                     </div>
