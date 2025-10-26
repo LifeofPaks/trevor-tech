@@ -32,8 +32,11 @@ import {
   FaRedditAlien,
   FaTelegram,
   FaVideo,
+  FaAngleRight,
 } from "react-icons/fa";
 import { SiMessenger, SiLine, SiYelp, SiNetflix } from "react-icons/si";
+import CaptureScreenshot from "./CaptureScreenshot";
+import DemoFooter from "../DemoFooter";
 
 const Dashboard = () => {
   return (
@@ -505,7 +508,7 @@ const Dashboard = () => {
               <h4 className="text-sm sm:text-base font-bold text-slate-700 flex items-center !gap-2">
                 Most Contacts (7 days)
               </h4>
-              <span className="text-xs text-gray-500">&gt;</span>
+              <span className="textmds text-gray-500"><FaAngleRight /></span>
             </div>
             {[
               {
@@ -564,7 +567,7 @@ const Dashboard = () => {
               <h4 className="text-sm sm:text-base font-bold text-slate-700 flex items-center !gap-2">
                 Most Calls (7 days)
               </h4>
-              <span className="text-xs text-gray-500">&gt;</span>
+              <span className="textmds text-gray-500"><FaAngleRight /></span>
             </div>
             {[
               {
@@ -625,7 +628,7 @@ const Dashboard = () => {
               <FiClock className="text-secondary" />
               Latest Keylogs
             </h3>
-            <span className="text-xs text-gray-500">&gt;</span>
+            <span className="textmds text-gray-500"><FaAngleRight /></span>
           </div>
           <div className="space-y-2 sm:space-y-3">
             {[
@@ -688,37 +691,10 @@ const Dashboard = () => {
         </div>
 
         {/* Capture Screenshots */}
-        <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-5 border border-white/50">
-          <div className="flex items-center justify-between !mb-3 sm:!mb-4">
-            <h3 className="text-base sm:text-lg font-bold text-slate-800">
-              Capture Screenshots
-            </h3>
-            <span className="text-xs text-gray-500">&gt;</span>
-          </div>
-          <div className="grid grid-cols-3 !gap-2 sm:!gap-3">
-            {Array.from({ length: 9 }).map((_, i) => (
-              <div key={i} className="relative group cursor-pointer">
-                <div className="aspect-square bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg sm:rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-shadow">
-                  <img
-                    src={`https://source.unsplash.com/random/300x300?screenshot,mobile,${i}`}
-                    alt={`Screenshot ${i + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {i === 0 && (
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg sm:rounded-xl">
-                    <FiCamera className="text-white text-xl sm:text-2xl" />
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        <CaptureScreenshot/>
 
         {/* Footer */}
-        <div className="text-center !py-6 sm:!py-8 text-[10px] sm:text-xs text-slate-500">
-          Copyright © 2025 ClevGuard.org. All rights reserved.
-        </div>
+      <DemoFooter/>
       </div>
     </div>
   );
