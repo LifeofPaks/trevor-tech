@@ -428,7 +428,7 @@ const menuItems = [
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 overflow-y-auto !mt-6 !px-3 pb-20">
+        <nav className="flex-1 overflow-y-auto !mt-6 !px-3 !pb-10 scrollbar-hide">
           <div className="!space-y-1">
             {menuItems.map((item) => {
               const hasSubItems = item.subItems && item.subItems.length > 0;
@@ -452,7 +452,7 @@ const menuItems = [
                         }`}
                     >
                       <span className="flex items-center gap-3">
-                        <span className="text-lg">{item.icon}</span>
+                        <span className="text-[14px]">{item.icon}</span>
                         <span className="font-medium text-[14px]">
                           {item.label}
                         </span>
@@ -476,7 +476,7 @@ const menuItems = [
 
                   {/* Submenu */}
                   {hasSubItems && isOpen && (
-                    <div className="!ml-8 !mt-1 !space-y-1 border-l-2 border-gray-700 !pl-4">
+                    <div className="!ml-8 !mt-3 !space-y-1 border-l-1 border-gray-800 !pl-4">
                       {item.subItems.map((sub) => (
                         <Link
                           key={sub.to}
