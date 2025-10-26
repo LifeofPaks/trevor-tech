@@ -634,7 +634,7 @@ const DemoSidebar = () => {
                     >
                       <span className="flex items-center gap-3">
                         <span className="text-[14px]">{item.icon}</span>
-                        <span className="font-medium text-[14px] flex items-center gap-2">
+                        <span className="font-medium text-[12px] flex items-center gap-2">
                           {item.label}
                           {item.badge && (
                             <img
@@ -672,7 +672,10 @@ const DemoSidebar = () => {
                             }`}
                         >
                           {sub.icon || <div className="w-4 h-4" />}
+                          <span className="text-[12px]">
+
                           {sub.label}
+                          </span>
                         </Link>
                       ))}
                     </div>
