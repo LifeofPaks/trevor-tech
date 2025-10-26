@@ -327,8 +327,7 @@ const Dashboard = () => {
                 return (
                   <div
                     key={i}
-                    className="flex flex-col items-center cursor-pointer group"
-                    style={{ width: "30px" }}
+                    className="flex flex-col items-center cursor-pointer group lg:w-[30px] w-[20px]"
                   >
                     <div
                       className={`w-full bg-gradient-to-t ${app.color} rounded-t-lg transition-all duration-500 hover:opacity-90 relative flex items-center justify-center`}
