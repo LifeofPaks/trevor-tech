@@ -4,7 +4,6 @@ import {
   FiBell,
   FiMessageSquare,
   FiGlobe,
-  FiMenu,
   FiX,
   FiSettings,
   FiMapPin,
@@ -13,6 +12,7 @@ import {
   FiCreditCard,
   FiHelpCircle,
   FiChevronDown,
+  FiChevronUp,
 } from "react-icons/fi";
 
 // Language Context (to share with Sidebar)
@@ -260,13 +260,9 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden !p-2 rounded-full hover:bg-gray-100"
+              className="md:hidden !p-2 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95  !mr-10"
             >
-              {mobileMenuOpen ? (
-                <FiX className="text-xl" />
-              ) : (
-                <FiMenu className="text-xl" />
-              )}
+              <FiUser className="text-2xl text-gray-700" />
             </button>
           </div>
         </div>
@@ -290,7 +286,9 @@ const Header = () => {
               </span>
             </button>
             <div className="border-t border-gray-200 !pt-3">
-              <p className="text-sm font-medium text-gray-600 !mb-2">Language</p>
+              <p className="text-sm font-medium text-gray-600 !mb-2">
+                Language
+              </p>
               <select
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
