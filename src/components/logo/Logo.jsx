@@ -3,6 +3,7 @@ import Logo1 from "../../assets/logo-1.png";
 import Logo3 from "../../assets/logo-3.png";
 import Logo4 from "../../assets/logo-4.png";
 import { Link } from 'react-router-dom';
+import { IoLogoBitbucket } from "react-icons/io5";
 
 const Logo = () => {
   return (
@@ -13,11 +14,9 @@ const Logo = () => {
         <h1 className="font-extrabold text-[2rem] text-gray-800 rotate-[12deg]">
           T
         </h1>
-        <img
-          src={Logo4}
-          alt="logo-image"
-          className="w-[21px] -ml-[8px]! rotate-[180deg] !mt-3"
-        />
+        <div className="w-[21px] -ml-[8px]!  !mt-3">
+                 <IoLogoBitbucket className="text-gray-800 rotate-[180deg]" />
+               </div>
       </div>
 
       <div className=" logo-font text-[10px]">

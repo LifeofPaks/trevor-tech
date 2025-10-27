@@ -37,6 +37,7 @@ import {
 import { SiMessenger, SiLine, SiYelp, SiNetflix } from "react-icons/si";
 import CaptureScreenshot from "./CaptureScreenshot";
 import DemoFooter from "../DemoFooter";
+import { IoLogoBitbucket } from "react-icons/io5";
 
 const Dashboard = () => {
   return (
@@ -45,8 +46,9 @@ const Dashboard = () => {
       <header className="!mb-4 sm:!mb-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
-            <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800">
-              Dashboard
+            <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
+              Dashboard{" "}
+              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
             </h1>
           </div>
           <div className="flex sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
@@ -507,7 +509,9 @@ const Dashboard = () => {
               <h4 className="text-sm sm:text-base font-bold text-slate-700 flex items-center !gap-2">
                 Most Contacts (7 days)
               </h4>
-              <span className="textmds text-gray-500"><FaAngleRight /></span>
+              <span className="textmds text-gray-500">
+                <FaAngleRight />
+              </span>
             </div>
             {[
               {
@@ -566,7 +570,9 @@ const Dashboard = () => {
               <h4 className="text-sm sm:text-base font-bold text-slate-700 flex items-center !gap-2">
                 Most Calls (7 days)
               </h4>
-              <span className="textmds text-gray-500"><FaAngleRight /></span>
+              <span className="textmds text-gray-500">
+                <FaAngleRight />
+              </span>
             </div>
             {[
               {
@@ -627,7 +633,9 @@ const Dashboard = () => {
               <FiClock className="text-secondary" />
               Latest Keylogs
             </h3>
-            <span className="textmds text-gray-500"><FaAngleRight /></span>
+            <span className="textmds text-gray-500">
+              <FaAngleRight />
+            </span>
           </div>
           <div className="space-y-2 sm:space-y-3">
             {[
@@ -690,7 +698,7 @@ const Dashboard = () => {
         </div>
 
         {/* Capture Screenshots */}
-        <CaptureScreenshot/>
+        <CaptureScreenshot />
       </div>
     </div>
   );
