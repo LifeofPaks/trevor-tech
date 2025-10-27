@@ -195,7 +195,8 @@ Website Block
                           fontWeight: 600,
                           borderRadius: "999px",
                           px: 3,
-                          minWidth: "auto",
+                            minWidth: "auto",
+                          fontSize: "0.675rem",
                           boxShadow: "0 2px 8px rgba(16,197,129,0.3)",
                           "&:hover": {
                             backgroundColor: "#059669",
