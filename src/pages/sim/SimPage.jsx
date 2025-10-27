@@ -9,6 +9,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { FiMail, FiMapPin } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 // New Jersey Locations
 const locations = [
@@ -280,19 +281,9 @@ const SimPage = () => {
                 </Box>
               ))}
             </Stack>
-            <Button
-              variant="text"
-              fullWidth
-              sx={{
-                mt: 3,
-                color: "#0695c8",
-                fontWeight: 600,
-                textTransform: "none",
-                "&:hover": { backgroundColor: "#f0f9ff" },
-              }}
-            >
+            <Link to="/demo/general/gps" className="text-[#0695c8] !mt-4 !block !font-medium">
               All Locations
-            </Button>
+            </Link>
           </Paper>
         </Box>
       </Box>
