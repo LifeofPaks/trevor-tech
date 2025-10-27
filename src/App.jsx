@@ -15,6 +15,7 @@ import WifiPage from "./pages/wifi/WifiPage";
 import Keywords from "./pages/keywords/Keywords";
 import AppsPage from "./pages/appsPage/AppsPage";
 import BookmarksPage from "./pages/bookmarks/BookmarksPage";
+import HistoryPage from "./pages/history/HistoryPage";
 
 
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="general/keywords" element={<Keywords />} />
           <Route path="general/apps" element={<AppsPage />} />
           <Route path="general/bookmarks" element={<BookmarksPage />} />
+          <Route path="general/history" element={<HistoryPage />} />
         </Route>
       </Routes>
 
