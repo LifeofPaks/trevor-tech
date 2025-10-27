@@ -169,8 +169,7 @@ const Gps = () => {
                 }}
                 className="!rounded-xl !overflow-x-auto !w-full"
               >
-                <Table
-                >
+                <Table>
                   <TableHead>
                     <TableRow
                       sx={{
@@ -181,24 +180,27 @@ const Gps = () => {
                       }}
                     >
                       {[
-                        "Latitude",
-                        "Longitude",
-                        "Accuracy",
-                        "Map View",
-                        "Address",
-                        "Location Time",
-                      ].map((header) => (
+                        { label: "Latitude", hideOnMobile: true },
+                        { label: "Longitude", hideOnMobile: true },
+                        { label: "Accuracy", hideOnMobile: true },
+                        { label: "Map View", hideOnMobile: false },
+                        { label: "Address", hideOnMobile: false },
+                        { label: "Location Time", hideOnMobile: false },
+                      ].map(({ label, hideOnMobile }) => (
                         <TableCell
-                          key={header}
+                          key={label}
                           sx={{
                             fontWeight: 600,
                             color: "#374151",
                             fontSize: { xs: "0.75rem", sm: "0.875rem" },
                             py: { xs: 1, sm: 2 },
                             whiteSpace: "nowrap",
+                            display: hideOnMobile
+                              ? { xs: "none", sm: "table-cell" }
+                              : "table-cell",
                           }}
                         >
-                          {header}
+                          {label}
                         </TableCell>
                       ))}
                     </TableRow>
@@ -215,33 +217,43 @@ const Gps = () => {
                         }}
                         className="transition-all"
                       >
+                        {/* Latitude */}
                         <TableCell
                           sx={{
                             fontFamily: "monospace",
                             fontSize: { xs: "0.75rem", sm: "0.875rem" },
                             whiteSpace: "nowrap",
+                            display: { xs: "none", sm: "table-cell" },
                           }}
                         >
                           {row.lat}
                         </TableCell>
+
+                        {/* Longitude */}
                         <TableCell
                           sx={{
                             fontFamily: "monospace",
                             fontSize: { xs: "0.75rem", sm: "0.875rem" },
                             whiteSpace: "nowrap",
+                            display: { xs: "none", sm: "table-cell" },
                           }}
                         >
                           {row.lng}
                         </TableCell>
+
+                        {/* Accuracy */}
                         <TableCell
                           sx={{
                             color: "#0695c8",
                             fontWeight: 500,
                             whiteSpace: "nowrap",
+                            display: { xs: "none", sm: "table-cell" },
                           }}
                         >
                           {row.accuracy}
                         </TableCell>
+
+                        {/* Map View */}
                         <TableCell sx={{ whiteSpace: "nowrap" }}>
                           <Button
                             size="small"
@@ -261,6 +273,8 @@ const Gps = () => {
                             View
                           </Button>
                         </TableCell>
+
+                        {/* Address */}
                         <TableCell
                           sx={{
                             maxWidth: { xs: 180, sm: 300 },
@@ -271,6 +285,8 @@ const Gps = () => {
                         >
                           {row.address}
                         </TableCell>
+
+                        {/* Location Time */}
                         <TableCell
                           sx={{
                             fontFamily: "monospace",
