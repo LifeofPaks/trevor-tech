@@ -3,8 +3,7 @@ import LandingPage from "./pages/landingPage/LandingPage";
 import DemoPage from "./pages/demo/DemoPage";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import DashboardPage from "./pages/demo/DashboardPage";
-import LogsPage from "./pages/demo/LogsPage";
-import ScreenTimePage from "./pages/demo/ScreenTimePage";
+import MessagesPage from "./pages/messages/MessagesPage";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
           {/* Redirect /demo → /demo/dashboard */}
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
-          <Route path="logs/screen-time" element={<ScreenTimePage />} />
+          <Route path="general/messages" element={<MessagesPage />} />
         </Route>
       </Routes>
 
