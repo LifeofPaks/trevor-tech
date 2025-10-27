@@ -415,7 +415,6 @@ const DemoSidebar = () => {
     {
       label: t["Screen Captures"],
       icon: <FiCamera />,
-      badge: "HOT",
       subItems: [
         {
           to: "/demo/captures/screenshots",
@@ -428,7 +427,6 @@ const DemoSidebar = () => {
     {
       label: t.Controls,
       icon: <FiSettings />,
-      badge: "HOT",
       subItems: [
         {
           to: "/demo/controls/geofence",
