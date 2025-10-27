@@ -211,6 +211,7 @@ const WifiBlockPage = () => {
                           textTransform: "none",
                           fontWeight: 600,
                           borderRadius: "999px",
+                          fontSize:"0.675rem",
                           px: 3,
                           minWidth: "auto",
                           boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
