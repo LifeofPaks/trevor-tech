@@ -655,13 +655,13 @@ const DemoSidebar = () => {
           <div className="text-center !text-xs text-gray-500 !space-y-1">
             <p className="!font-medium text-gray-400">
               {t["Easier Monitoring with"]}{" "}
-              <span className="text-[#00d4ff] !font-semibold">
+              <span className=" !font-semibold">
                 {t["TrevorTech App"]}
               </span>
             </p>
-            <div className="flex items-center justify-center !gap-2 text-gray-600">
-              <FiSmartphone className="text-[#00d4ff]" />
-              <FiMonitor className="text-[#00d4ff]" />
+            <div className="flex items-center justify-center !gap-2 text-gray-400">
+              <FiSmartphone className="" />
+              <FiMonitor className="" />
             </div>
           </div>
         </div>
