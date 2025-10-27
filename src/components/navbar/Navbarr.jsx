@@ -42,7 +42,10 @@ const Navbarr = () => {
             </a>
           </li>
           <li>
-            <Link to="/demo" className="hover:text-[#0695c8] transition">
+            <Link
+              to="/demo"
+              className="hover:bg-[#097fa9] bg-[#0695c8] transition text-white !px-4 !py-3.5 rounded-md border  hover:text-white"
+            >
               View Demo
             </Link>
           </li>
