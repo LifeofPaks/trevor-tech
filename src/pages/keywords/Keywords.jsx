@@ -22,6 +22,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { FiPlus } from "react-icons/fi";
+import { IoLogoBitbucket } from "react-icons/io5";
 
 // Sample Data
 const detectedKeywords = [
@@ -71,167 +72,274 @@ const Keywords = () => {
   };
 
   return (
-    <Box className="!p-6 !bg-gray-50 !min-h-screen">
-      {/* Tabs */}
-      <Box sx={{ borderBottom: 1, borderColor: "divider", mb: 4 }}>
-        <Tabs
-          value={tab}
-          onChange={(e, v) => setTab(v)}
-          sx={{
-            "& .MuiTab-root": {
-              textTransform: "none",
-              fontWeight: 600,
-              fontSize: "1rem",
-              color: "#6b7280",
-            },
-            "& .Mui-selected": {
-              color: "#0695c8 !important",
-            },
-            "& .MuiTabs-indicator": {
-              backgroundColor: "#0695c8",
-              height: 3,
-              borderRadius: "2px",
-            },
-          }}
-        >
-          <Tab label="Tracking Rules"  />
-          <Tab label="Keywords Detected"  />
-        </Tabs>
-      </Box>
-
-      {/* Tab Content */}
-      {tab === 0 ? (
-        /* === Tracking Rules === */
-        <Box
-          className={
-            isMobile
-              ? "!space-y-6"
-              : "!grid !grid-cols-1 md:!grid-cols-2 !gap-6"
-          }
-        >
-          {/* Add Rule */}
-          <Paper
-            elevation={0}
+    <>
+      <header className="!mb-4 sm:!mb-6 !px-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
+          <div className="flex items-center !gap-2 sm:!gap-3">
+            <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
+              Keywords Alert
+              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+            </h1>
+          </div>
+          <div className="flex sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
+            <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
+              Demo data. Bind your device to collect actual data.
+            </span>
+            <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap">
+              Bind My Device
+            </button>
+          </div>
+        </div>
+      </header>
+      <Box className="!p-6 !bg-gray-50 !min-h-screen">
+        {/* Tabs */}
+        <Box sx={{ borderBottom: 1, borderColor: "divider", mb: 4 }}>
+          <Tabs
+            value={tab}
+            onChange={(e, v) => setTab(v)}
             sx={{
-              borderRadius: "16px",
-              border: "1px solid #e5e7eb",
-              p: 4,
-              height: "fit-content",
+              "& .MuiTab-root": {
+                textTransform: "none",
+                fontWeight: 600,
+                fontSize: "1rem",
+                color: "#6b7280",
+              },
+              "& .Mui-selected": {
+                color: "#0695c8 !important",
+              },
+              "& .MuiTabs-indicator": {
+                backgroundColor: "#0695c8",
+                height: 3,
+                borderRadius: "2px",
+              },
             }}
           >
-            <Typography
-              variant="h6"
-              className="!font-bold !text-gray-800 !mb-4 !text-[14px]"
+            <Tab label="Tracking Rules" />
+            <Tab label="Keywords Detected" />
+          </Tabs>
+        </Box>
+
+        {/* Tab Content */}
+        {tab === 0 ? (
+          /* === Tracking Rules === */
+          <Box
+            className={
+              isMobile
+                ? "!space-y-6"
+                : "!grid !grid-cols-1 md:!grid-cols-2 !gap-6"
+            }
+          >
+            {/* Add Rule */}
+            <Paper
+              elevation={0}
+              sx={{
+                borderRadius: "16px",
+                border: "1px solid #e5e7eb",
+                p: 4,
+                height: "fit-content",
+              }}
             >
-              Add Rule
-            </Typography>
-            <Stack spacing={3}>
-              <TextField
-                label="Word or Phrase"
-                placeholder="Word or Phrase"
-                value={keyword}
-                onChange={(e) => setKeyword(e.target.value)}
-                fullWidth
-                variant="outlined"
-                size="small"
-                sx={{
-                  "& .MuiOutlinedInput-root": {
-                    borderRadius: "12px",
-                    backgroundColor: "#f9fafb",
-                  },
-                }}
-              />
-
-              <FormControl fullWidth size="small">
-                <InputLabel>Select Features</InputLabel>
-                <Select
-                  value={selectedFeature}
-                  onChange={(e) => setSelectedFeature(e.target.value)}
-                  label="Select Features"
-                  sx={{
-                    borderRadius: "12px",
-                    backgroundColor: "#f9fafb",
-                  }}
-                >
-                  {features.map((f) => (
-                    <MenuItem key={f} value={f}>
-                      {f}
-                    </MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-
-              <FormControl fullWidth size="small">
-                <InputLabel>Notification Type</InputLabel>
-                <Select
-                  value={notificationType}
-                  onChange={(e) => setNotificationType(e.target.value)}
-                  label="Notification Type"
-                  sx={{
-                    borderRadius: "12px",
-                    backgroundColor: "#f9fafb",
-                  }}
-                >
-                  {notificationTypes.map((n) => (
-                    <MenuItem key={n} value={n}>
-                      {n}
-                    </MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-
-              <Button
-                variant="contained"
-                onClick={handleAddRule}
-                startIcon={<FiPlus />}
-                sx={{
-                  backgroundColor: "#0695c8",
-                  borderRadius: "999px",
-                  textTransform: "none",
-                  fontWeight: 600,
-                  py: 1.5,
-                  "&:hover": {
-                    backgroundColor: "#057aa3",
-                    transform: "translateY(-1px)",
-                    boxShadow: "0 8px 16px rgba(6,149,200,0.3)",
-                  },
-                }}
+              <Typography
+                variant="h6"
+                className="!font-bold !text-gray-800 !mb-4 !text-[14px]"
               >
-                Add
-              </Button>
-            </Stack>
-          </Paper>
+                Add Rule
+              </Typography>
+              <Stack spacing={3}>
+                <TextField
+                  label="Word or Phrase"
+                  placeholder="Word or Phrase"
+                  value={keyword}
+                  onChange={(e) => setKeyword(e.target.value)}
+                  fullWidth
+                  variant="outlined"
+                  size="small"
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      borderRadius: "12px",
+                      backgroundColor: "#f9fafb",
+                    },
+                  }}
+                />
 
-          {/* Added Rules - No Borders */}
+                <FormControl fullWidth size="small">
+                  <InputLabel>Select Features</InputLabel>
+                  <Select
+                    value={selectedFeature}
+                    onChange={(e) => setSelectedFeature(e.target.value)}
+                    label="Select Features"
+                    sx={{
+                      borderRadius: "12px",
+                      backgroundColor: "#f9fafb",
+                    }}
+                  >
+                    {features.map((f) => (
+                      <MenuItem key={f} value={f}>
+                        {f}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+
+                <FormControl fullWidth size="small">
+                  <InputLabel>Notification Type</InputLabel>
+                  <Select
+                    value={notificationType}
+                    onChange={(e) => setNotificationType(e.target.value)}
+                    label="Notification Type"
+                    sx={{
+                      borderRadius: "12px",
+                      backgroundColor: "#f9fafb",
+                    }}
+                  >
+                    {notificationTypes.map((n) => (
+                      <MenuItem key={n} value={n}>
+                        {n}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+
+                <Button
+                  variant="contained"
+                  onClick={handleAddRule}
+                  startIcon={<FiPlus />}
+                  sx={{
+                    backgroundColor: "#0695c8",
+                    borderRadius: "999px",
+                    textTransform: "none",
+                    fontWeight: 600,
+                    py: 1.5,
+                    "&:hover": {
+                      backgroundColor: "#057aa3",
+                      transform: "translateY(-1px)",
+                      boxShadow: "0 8px 16px rgba(6,149,200,0.3)",
+                    },
+                  }}
+                >
+                  Add
+                </Button>
+              </Stack>
+            </Paper>
+
+            {/* Added Rules - No Borders */}
+            <Paper
+              elevation={0}
+              sx={{
+                borderRadius: "16px",
+                border: "1px solid #e5e7eb",
+                p: 4,
+                overflow: "hidden",
+              }}
+            >
+              <Typography
+                variant="h6"
+                className="!font-bold !text-gray-800 !mb-4 !text-[14px]"
+              >
+                Added Rules
+              </Typography>
+              <TableContainer
+                sx={{ maxHeight: 500 }}
+                className="scrollbar-hide"
+              >
+                <Table stickyHeader size="small">
+                  <TableHead>
+                    <TableRow sx={{ backgroundColor: "#f9fafb" }}>
+                      {["Keywords", "Features", "Notification Type"].map(
+                        (h) => (
+                          <TableCell
+                            key={h}
+                            sx={{
+                              fontWeight: 600,
+                              color: "#374151",
+                              fontSize: "0.8125rem",
+                              py: 2,
+                              pl: 3,
+                              pr: 3,
+                              border: "none", // No border
+                            }}
+                          >
+                            {h}
+                          </TableCell>
+                        )
+                      )}
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {addedRules.map((rule, i) => (
+                      <TableRow
+                        key={i}
+                        hover
+                        sx={{
+                          backgroundColor:
+                            i % 2 === 0 ? "#fdfdfe" : "transparent",
+                          "&:hover": { backgroundColor: "#f0f9ff" },
+                        }}
+                      >
+                        <TableCell
+                          sx={{
+                            pl: 3,
+                            fontWeight: 500,
+                            color: "#1f2937",
+                            fontSize: "0.875rem",
+                            border: "none", // No border
+                            py: 2.5,
+                          }}
+                        >
+                          {rule.keyword}
+                        </TableCell>
+                        <TableCell
+                          sx={{
+                            color: "#4b5563",
+                            fontSize: "0.875rem",
+                            border: "none",
+                            py: 2.5,
+                          }}
+                        >
+                          {rule.feature}
+                        </TableCell>
+                        <TableCell
+                          sx={{
+                            color: "#0695c8",
+                            fontWeight: 500,
+                            fontSize: "0.875rem",
+                            border: "none",
+                            py: 2.5,
+                          }}
+                        >
+                          {rule.notify}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </Paper>
+          </Box>
+        ) : (
+          /* === Keywords Detected - No Borders === */
           <Paper
             elevation={0}
             sx={{
               borderRadius: "16px",
               border: "1px solid #e5e7eb",
-              p: 4,
               overflow: "hidden",
             }}
           >
-            <Typography
-              variant="h6"
-              className="!font-bold !text-gray-800 !mb-4 !text-[14px]"
-            >
-              Added Rules
-            </Typography>
-            <TableContainer sx={{ maxHeight: 500 }} className="scrollbar-hide">
-              <Table stickyHeader size="small">
+            <TableContainer>
+              <Table>
                 <TableHead>
                   <TableRow sx={{ backgroundColor: "#f9fafb" }}>
-                    {["Keywords", "Features", "Notification Type"].map((h) => (
+                    {["Keywords", "Features", "Time"].map((h) => (
                       <TableCell
                         key={h}
                         sx={{
                           fontWeight: 600,
                           color: "#374151",
-                          fontSize: "0.8125rem",
-                          py: 2,
-                          pl: 3,
-                          pr: 3,
+                          fontSize: "0.875rem",
+                          py: 2.5,
+                          pl: h === "Keywords" ? 4 : 3,
+                          pr: h === "Time" ? 4 : 3,
                           border: "none", // No border
                         }}
                       >
@@ -241,7 +349,7 @@ const Keywords = () => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {addedRules.map((rule, i) => (
+                  {detectedKeywords.map((item, i) => (
                     <TableRow
                       key={i}
                       hover
@@ -253,15 +361,15 @@ const Keywords = () => {
                     >
                       <TableCell
                         sx={{
-                          pl: 3,
+                          pl: 4,
                           fontWeight: 500,
                           color: "#1f2937",
                           fontSize: "0.875rem",
-                          border: "none", // No border
+                          border: "none",
                           py: 2.5,
                         }}
                       >
-                        {rule.keyword}
+                        {item.keyword}
                       </TableCell>
                       <TableCell
                         sx={{
@@ -271,18 +379,20 @@ const Keywords = () => {
                           py: 2.5,
                         }}
                       >
-                        {rule.feature}
+                        {item.feature}
                       </TableCell>
                       <TableCell
+                        align="left"
                         sx={{
-                          color: "#0695c8",
-                          fontWeight: 500,
-                          fontSize: "0.875rem",
+                          pr: 4,
+                          fontFamily: "monospace",
+                          color: "#6b7280",
+                          fontSize: "0.8125rem",
                           border: "none",
                           py: 2.5,
                         }}
                       >
-                        {rule.notify}
+                        {item.time}
                       </TableCell>
                     </TableRow>
                   ))}
@@ -290,92 +400,9 @@ const Keywords = () => {
               </Table>
             </TableContainer>
           </Paper>
-        </Box>
-      ) : (
-        /* === Keywords Detected - No Borders === */
-        <Paper
-          elevation={0}
-          sx={{
-            borderRadius: "16px",
-            border: "1px solid #e5e7eb",
-            overflow: "hidden",
-          }}
-        >
-          <TableContainer>
-            <Table>
-              <TableHead>
-                <TableRow sx={{ backgroundColor: "#f9fafb" }}>
-                  {["Keywords", "Features", "Time"].map((h) => (
-                    <TableCell
-                      key={h}
-                      sx={{
-                        fontWeight: 600,
-                        color: "#374151",
-                        fontSize: "0.875rem",
-                        py: 2.5,
-                        pl: h === "Keywords" ? 4 : 3,
-                        pr: h === "Time" ? 4 : 3,
-                        border: "none", // No border
-                      }}
-                    >
-                      {h}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {detectedKeywords.map((item, i) => (
-                  <TableRow
-                    key={i}
-                    hover
-                    sx={{
-                      backgroundColor: i % 2 === 0 ? "#fdfdfe" : "transparent",
-                      "&:hover": { backgroundColor: "#f0f9ff" },
-                    }}
-                  >
-                    <TableCell
-                      sx={{
-                        pl: 4,
-                        fontWeight: 500,
-                        color: "#1f2937",
-                        fontSize: "0.875rem",
-                        border: "none",
-                        py: 2.5,
-                      }}
-                    >
-                      {item.keyword}
-                    </TableCell>
-                    <TableCell
-                      sx={{
-                        color: "#4b5563",
-                        fontSize: "0.875rem",
-                        border: "none",
-                        py: 2.5,
-                      }}
-                    >
-                      {item.feature}
-                    </TableCell>
-                    <TableCell
-                      align="left"
-                      sx={{
-                        pr: 4,
-                        fontFamily: "monospace",
-                        color: "#6b7280",
-                        fontSize: "0.8125rem",
-                        border: "none",
-                        py: 2.5,
-                      }}
-                    >
-                      {item.time}
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </Paper>
-      )}
-    </Box>
+        )}
+      </Box>
+    </>
   );
 };
 
