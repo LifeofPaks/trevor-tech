@@ -22,6 +22,7 @@ import ScreenshotsPage from "./pages/screenshots/ScreenshotsPage";
 import GeofencePage from "./pages/geofence/GeofencePage";
 import WebsiteBlockPage from "./pages/websiteBlock/WebsiteBlockPage";
 import WifiBlockPage from "./pages/wifiBlock/WifiBlockPage";
+import AppBlockPage from "./pages/appBlock/AppBlockPage";
 
 
 
@@ -57,6 +58,7 @@ function App() {
           <Route path="controls/geofence" element={<GeofencePage />} />
           <Route path="controls/website-block" element={<WebsiteBlockPage />} />
           <Route path="controls/wifi-block" element={<WifiBlockPage />} />
+          <Route path="controls/app-block" element={<AppBlockPage />} />
         </Route>
       </Routes>
 
