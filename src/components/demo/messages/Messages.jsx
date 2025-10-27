@@ -173,11 +173,14 @@ const Messages = () => {
             </div>
             <Chip
               label="Last 7 days"
+              size="small"
               sx={{
-                backgroundColor: "#0695c8",
-                color: "white",
-                fontWeight: "medium",
-                fontSize: "11px",
+                backgroundColor: "#e0f2fe",
+                color: "#0695c8",
+                fontWeight: 600,
+                fontSize: "0.75rem",
+                height: 28,
+                borderRadius: "12px",
               }}
             />
             {/* Close button (mobile only) */}
