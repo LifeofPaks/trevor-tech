@@ -234,7 +234,7 @@ const Index = () => {
                 lg: showDetail ? "1fr 1fr" : "1fr",
               },
               gap: 3,
-              height: "calc(100vh - 200px)",
+              // height: "calc(100vh - 200px)",
             }}
           >
             {/* Left Panel: Lists */}
@@ -518,7 +518,7 @@ const Index = () => {
                             display: "flex",
                           }}
                         >
-                          <FiPhone sx={{ color: "white", fontSize: 20 }} />
+                          <FiPhone sx={{ color: "white", fontSize: 20 }} className="!text-white" />
                         </Box>
                         <Box>
                           <Typography
@@ -554,7 +554,7 @@ const Index = () => {
                             display: "flex",
                           }}
                         >
-                          <FiMail sx={{ color: "white", fontSize: 20 }} />
+                          <FiMail sx={{ color: "white", fontSize: 20 }} className="!text-white" />
                         </Box>
                         <Box>
                           <Typography
