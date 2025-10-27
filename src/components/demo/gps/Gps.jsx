@@ -171,7 +171,6 @@ const Gps = () => {
                 component={Paper}
                 elevation={0}
                 sx={{
-                  border: "1px solid #e5e7eb",
                   width: "100%",
                   overflowX: "auto",
                 }}
@@ -199,8 +198,8 @@ const Gps = () => {
                           key={label}
                           sx={{
                             fontWeight: 600,
-                            color: "#374151",
-                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            color: "#515162",
+                            fontSize: { xs: "0.75rem", sm: "0.79rem" },
                             py: { xs: 1, sm: 2 },
                             whiteSpace: "nowrap",
                             display: hideOnMobile
@@ -229,7 +228,7 @@ const Gps = () => {
                         <TableCell
                           sx={{
                             fontFamily: "monospace",
-                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            fontSize: { xs: "0.75rem", sm: "0.775rem" },
                             whiteSpace: "nowrap",
                             display: { xs: "none", sm: "table-cell" },
                           }}
@@ -241,7 +240,7 @@ const Gps = () => {
                         <TableCell
                           sx={{
                             fontFamily: "monospace",
-                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            fontSize: { xs: "0.75rem", sm: "0.775rem" },
                             whiteSpace: "nowrap",
                             display: { xs: "none", sm: "table-cell" },
                           }}
@@ -254,6 +253,7 @@ const Gps = () => {
                           sx={{
                             color: "#0695c8",
                             fontWeight: 500,
+                            fontSize: { xs: "0.75rem", sm: "0.775rem" },
                             whiteSpace: "nowrap",
                             display: { xs: "none", sm: "table-cell" },
                           }}
@@ -273,7 +273,7 @@ const Gps = () => {
                               textTransform: "none",
                               fontWeight: 500,
                               "&:hover": { backgroundColor: "#e0f2fe" },
-                              fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                              fontSize: { xs: "0.75rem", sm: "0.775rem" },
                               minWidth: "auto",
                               px: { xs: 1, sm: 2 },
                             }}
@@ -286,7 +286,7 @@ const Gps = () => {
                         <TableCell
                           sx={{
                             maxWidth: { xs: 180, sm: 300 },
-                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            fontSize: { xs: "0.75rem", sm: "0.775rem" },
                             overflow: "hidden",
                             textOverflow: "ellipsis",
                           }}
@@ -298,7 +298,7 @@ const Gps = () => {
                         <TableCell
                           sx={{
                             fontFamily: "monospace",
-                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            fontSize: { xs: "0.75rem", sm: "0.775rem" },
                             whiteSpace: "nowrap",
                           }}
                         >
