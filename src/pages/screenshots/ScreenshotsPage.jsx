@@ -146,7 +146,7 @@ const ScreenshotsPage = () => {
         {/* Header Filters */}
         <Box className="!mb-6">
           <Stack
-            direction={isMobile ? "column" : "row"}
+            direction={isMobile ? "row" : "row"}
             spacing={2}
             alignItems="center"
             className="!flex-wrap"
