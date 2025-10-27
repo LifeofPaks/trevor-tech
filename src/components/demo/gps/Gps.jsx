@@ -95,25 +95,25 @@ const Gps = () => {
   };
 
     return (
-        <>
-               <header className="!mb-4 sm:!mb-6 !px-4">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
-                      <div className="flex items-center !gap-2 sm:!gap-3">
-                        <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-                         GPS Locations
-                          <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
-                        </h1>
-                      </div>
-                      <div className="flex sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
-                        <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-                          Demo data. Bind your device to collect actual data.
-                        </span>
-                        <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap">
-                          Bind My Device
-                        </button>
-                      </div>
-                    </div>
-                  </header>
+      <>
+        <header className="!mb-4 sm:!mb-6 !px-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
+            <div className="flex items-center !gap-2 sm:!gap-3">
+              <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
+                GPS Locations
+                <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              </h1>
+            </div>
+            <div className="flex sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
+              <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
+                Demo data. Bind your device to collect actual data.
+              </span>
+              <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap">
+                Bind My Device
+              </button>
+            </div>
+          </div>
+        </header>
         <Box className="!p-6 !bg-gray-50 !min-h-screen">
           {/* Tabs + Date Badge */}
           <Box className="!mb-2">
@@ -162,11 +162,24 @@ const Gps = () => {
               <TableContainer
                 component={Paper}
                 elevation={0}
-                sx={{ border: "1px solid #e5e7eb" }}
+                sx={{
+                  border: "1px solid #e5e7eb",
+                  width: "100%",
+                  overflowX: "auto",
+                }}
+                className="!rounded-xl !overflow-x-auto !w-full"
               >
-                <Table>
+                <Table
+                >
                   <TableHead>
-                    <TableRow sx={{ backgroundColor: "#f9fafb" }}>
+                    <TableRow
+                      sx={{
+                        backgroundColor: "#f9fafb",
+                        position: "sticky",
+                        top: 0,
+                        zIndex: 1,
+                      }}
+                    >
                       {[
                         "Latitude",
                         "Longitude",
@@ -180,8 +193,9 @@ const Gps = () => {
                           sx={{
                             fontWeight: 600,
                             color: "#374151",
-                            fontSize: "0.875rem",
-                            py: 2,
+                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            py: { xs: 1, sm: 2 },
+                            whiteSpace: "nowrap",
                           }}
                         >
                           {header}
@@ -189,6 +203,7 @@ const Gps = () => {
                       ))}
                     </TableRow>
                   </TableHead>
+
                   <TableBody>
                     {gpsData.map((row, i) => (
                       <TableRow
@@ -198,21 +213,36 @@ const Gps = () => {
                           "&:nth-of-type(odd)": { backgroundColor: "#f9fafb" },
                           "&:hover": { backgroundColor: "#f0f9ff" },
                         }}
+                        className="transition-all"
                       >
                         <TableCell
-                          sx={{ fontFamily: "monospace", fontSize: "0.875rem" }}
+                          sx={{
+                            fontFamily: "monospace",
+                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            whiteSpace: "nowrap",
+                          }}
                         >
                           {row.lat}
                         </TableCell>
                         <TableCell
-                          sx={{ fontFamily: "monospace", fontSize: "0.875rem" }}
+                          sx={{
+                            fontFamily: "monospace",
+                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            whiteSpace: "nowrap",
+                          }}
                         >
                           {row.lng}
                         </TableCell>
-                        <TableCell sx={{ color: "#0695c8", fontWeight: 500 }}>
+                        <TableCell
+                          sx={{
+                            color: "#0695c8",
+                            fontWeight: 500,
+                            whiteSpace: "nowrap",
+                          }}
+                        >
                           {row.accuracy}
                         </TableCell>
-                        <TableCell>
+                        <TableCell sx={{ whiteSpace: "nowrap" }}>
                           <Button
                             size="small"
                             variant="text"
@@ -223,16 +253,30 @@ const Gps = () => {
                               textTransform: "none",
                               fontWeight: 500,
                               "&:hover": { backgroundColor: "#e0f2fe" },
+                              fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                              minWidth: "auto",
+                              px: { xs: 1, sm: 2 },
                             }}
                           >
                             View
                           </Button>
                         </TableCell>
-                        <TableCell sx={{ maxWidth: 300, fontSize: "0.875rem" }}>
+                        <TableCell
+                          sx={{
+                            maxWidth: { xs: 180, sm: 300 },
+                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                          }}
+                        >
                           {row.address}
                         </TableCell>
                         <TableCell
-                          sx={{ fontFamily: "monospace", fontSize: "0.875rem" }}
+                          sx={{
+                            fontFamily: "monospace",
+                            fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                            whiteSpace: "nowrap",
+                          }}
                         >
                           {row.time}
                         </TableCell>
