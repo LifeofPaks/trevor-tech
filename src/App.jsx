@@ -13,6 +13,7 @@ import PhotosPage from "./pages/photos/PhotosPage";
 import VideosPage from "./pages/videos/VideosPage";
 import WifiPage from "./pages/wifi/WifiPage";
 import Keywords from "./pages/keywords/Keywords";
+import AppsPage from "./pages/appsPage/AppsPage";
 
 
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="general/wifi" element={<WifiPage />} />
           <Route path="general/wifi" element={<WifiPage />} />
           <Route path="general/keywords" element={<Keywords />} />
+          <Route path="general/apps" element={<AppsPage />} />
         </Route>
       </Routes>
 
