@@ -110,13 +110,12 @@ const WifiBlockPage = () => {
             </div>
             <BindPhone />
           </div>
-          <Box className="!p-6 !bg-gray-50 !min-h-screen !mt-6">
+          <Box className="!p-6 !bg-gray-50  !mt-6">
             {/* Table */}
             <Paper
               elevation={0}
               sx={{
                 borderRadius: "16px",
-                border: "1px solid #e5e7eb",
                 overflow: "hidden",
               }}
             >
@@ -133,9 +132,6 @@ const WifiBlockPage = () => {
                   borderBottom: "1px solid #e5e7eb",
                 }}
               >
-                <Typography className="!font-semibold !text-xs !text-gray-600 uppercase tracking-wider">
-                  BSSID
-                </Typography>
                 <Typography className="!font-semibold !text-xs !text-gray-600 uppercase tracking-wider">
                   Title
                 </Typography>
@@ -177,26 +173,18 @@ const WifiBlockPage = () => {
                       "&:last-child": { borderBottom: "none" },
                     }}
                   >
-                    {/* BSSID */}
-                    <Typography className="!text-sm !font-mono !text-gray-700">
-                      {wifi.bssid}
-                    </Typography>
-
                     {/* Title */}
                     <Typography className="!text-sm !font-medium !text-gray-900">
-                      {wifi.title}
+                      {isMobile
+                        ? wifi.title.length > 8
+                          ? wifi.title.slice(0, 8) + "..."
+                          : wifi.title
+                        : wifi.title}
                     </Typography>
 
                     {/* Mobile: Merged Info */}
                     {isMobile ? (
-                      <Box>
-                        <Typography className="!text-xs !text-gray-600">
-                          {wifi.time}
-                        </Typography>
-                        <Typography className="!text-xs !text-gray-500">
-                          {wifi.lat.toFixed(6)}, {wifi.lng.toFixed(6)}
-                        </Typography>
-                      </Box>
+                      <Box></Box>
                     ) : (
                       <>
                         <Typography className="!text-sm !text-gray-600">
@@ -228,8 +216,8 @@ const WifiBlockPage = () => {
                           boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
                           "&:hover": {
                             backgroundColor: wifi.blocked
-                              ?  "#059669"
-                              : "#dc2626"
+                              ? "#059669"
+                              : "#dc2626",
                           },
                         }}
                       >
