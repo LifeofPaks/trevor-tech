@@ -114,7 +114,7 @@ const Gps = () => {
             </div>
           </div>
         </header>
-        <Box className="!p-6 !bg-gray-50 !min-h-screen">
+        <Box className="!p-6 !bg-gray-50 ">
           {/* Tabs + Date Badge */}
           <Box className="!mb-2">
             <Stack

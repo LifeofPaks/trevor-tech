@@ -120,7 +120,7 @@ const CallsPage = () => {
           </div>
         </div>
       </header>
-      <Box className="!p-6 !bg-gray-50 !min-h-screen">
+      <Box className="!p-6 !bg-gray-50 ">
         {/* Header */}
         <Box className="!mb-6">
           <Stack
