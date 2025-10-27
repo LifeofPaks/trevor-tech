@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import DemoNavbar from "../navbar/DemoNavbar";
 import Header, { LanguageContext } from "./Header";
+import DemoFooter from "./DemoFooter";
 
 const DemoPage = () => {
   return (
@@ -16,6 +17,7 @@ const DemoPage = () => {
           <div className="!pt-4 !px-4 md:!px-8 lg:!px-16">
             <Outlet />
           </div>
+        <DemoFooter/>
         </main>
       </div>
     </LanguageContext.Provider>

@@ -691,9 +691,6 @@ const Dashboard = () => {
 
         {/* Capture Screenshots */}
         <CaptureScreenshot/>
-
-        {/* Footer */}
-      <DemoFooter/>
       </div>
     </div>
   );
