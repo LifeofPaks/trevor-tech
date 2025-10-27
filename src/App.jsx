@@ -5,6 +5,7 @@ import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import DashboardPage from "./pages/demo/DashboardPage";
 import MessagesPage from "./pages/messages/MessagesPage";
 import GpsPage from "./pages/gps/GpsPage";
+import KeyLogger from "./pages/keylogger/KeyLogger";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="general/messages" element={<MessagesPage />} />
           <Route path="general/gps" element={<GpsPage />} />
+          <Route path="general/keylogger" element={<KeyLogger />} />
         </Route>
       </Routes>
 
