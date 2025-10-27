@@ -20,6 +20,7 @@ import EmailPage from "./pages/email/EmailPage";
 import SimPage from "./pages/sim/SimPage";
 import ScreenshotsPage from "./pages/screenshots/ScreenshotsPage";
 import GeofencePage from "./pages/geofence/GeofencePage";
+import WebsiteBlockPage from "./pages/websiteBlock/WebsiteBlockPage";
 
 
 
@@ -53,6 +54,7 @@ function App() {
           <Route path="general/sim" element={<SimPage />} />
           <Route path="captures/screenshots" element={<ScreenshotsPage />} />
           <Route path="controls/geofence" element={<GeofencePage />} />
+          <Route path="controls/website-block" element={<WebsiteBlockPage />} />
         </Route>
       </Routes>
 

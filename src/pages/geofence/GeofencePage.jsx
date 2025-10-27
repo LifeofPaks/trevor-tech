@@ -46,8 +46,6 @@ const GeofencePage = () => {
           <Paper
             elevation={0}
             sx={{
-              borderRadius: "16px",
-              border: "1px solid #e5e7eb",
               overflow: "hidden",
               mb: 4,
             }}
