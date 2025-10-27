@@ -6,6 +6,8 @@ import {
   FiChevronRight,
   FiDownload,
 } from "react-icons/fi";
+import { BsCamera2 } from "react-icons/bs";
+import { CameraIcon } from "lucide-react";
 
 const allPhotos = [
   {
@@ -190,13 +192,6 @@ const PhotosPage = () => {
               {/* Download Button */}
               <IconButton
                 className="download-btn !absolute !inset-0 !m-auto !w-14 !h-14 !bg-white !shadow-xl !rounded-full"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleDownload(
-                    photo.url,
-                    `photo-${photo.time.replace(/[: ]/g, "-")}.jpg`
-                  );
-                }}
                 sx={{
                   zIndex: 10,
                   "&:hover": {
@@ -206,7 +201,7 @@ const PhotosPage = () => {
                   },
                 }}
               >
-                <FiDownload className="!text-2xl" />
+                <CameraIcon className="!text-2xl !text-gray-700" />
               </IconButton>
             </Box>
 
@@ -218,7 +213,16 @@ const PhotosPage = () => {
               >
                 {photo.time}
               </Typography>
-              <FiDownload className="!text-gray-400 !text-sm" />
+              <FiDownload
+                className="!text-gray-400 !text-sm"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleDownload(
+                    photo.url,
+                    `photo-${photo.time.replace(/[: ]/g, "-")}.jpg`
+                  );
+                }}
+              />
             </Box>
           </Paper>
         ))}
