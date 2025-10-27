@@ -11,6 +11,7 @@ import ContactsPage from "./pages/contacts/ContactsPage";
 import NotesPage from "./pages/notes/NotesPage";
 import PhotosPage from "./pages/photos/PhotosPage";
 import VideosPage from "./pages/videos/VideosPage";
+import WifiPage from "./pages/wifi/WifiPage";
 
 
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="general/notes" element={<NotesPage />} />
           <Route path="general/photos" element={<PhotosPage />} />
           <Route path="general/videos" element={<VideosPage />} />
+          <Route path="general/wifi" element={<WifiPage />} />
         </Route>
       </Routes>
 
