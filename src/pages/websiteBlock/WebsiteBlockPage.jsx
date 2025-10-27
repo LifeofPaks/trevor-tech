@@ -69,7 +69,7 @@ Website Block
             <BindPhone />
           </div>
         </header>
-        <Box className="!p-6 !bg-gray-50 !min-h-screen">
+        <Box className="!p-6 !bg-gray-50 !min-h-[75vh] !space-y-6">
 
           {/* Main Grid */}
           <Box
