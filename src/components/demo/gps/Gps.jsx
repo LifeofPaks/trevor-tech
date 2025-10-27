@@ -17,6 +17,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { FiChevronLeft, FiChevronRight, FiMapPin, FiCalendar } from "react-icons/fi";
+import { IoLogoBitbucket } from "react-icons/io5";
 
 // Sample GPS Data
 const gpsData = [
@@ -93,196 +94,220 @@ const Gps = () => {
     setView("map");
   };
 
-  return (
-    <Box className="!p-6 !bg-gray-50 !min-h-screen">
-      {/* Tabs + Date Badge */}
-      <Box className="!mb-2">
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <Tabs
-            value={view}
-            onChange={(e, v) => setView(v)}
-            sx={{
-              "& .MuiTab-root": {
-                textTransform: "none",
-                fontWeight: 500,
-                color: "#666",
-                fontSize: "0.9375rem",
-              },
-              "& .Mui-selected": {
-                color: "#0695c8 !important",
-              },
-              "& .MuiTabs-indicator": {
-                backgroundColor: "#0695c8",
-                height: 3,
-              },
-            }}
-          >
-            <Tab label="List View" value="list" />
-            <Tab label="Map View" value="map" />
-          </Tabs>
-
-          {/* Static Date Badge */}
-          <div className="hidden lg:flex items-center !gap-3 bg-gray-50 border border-gray-200 rounded-2xl !px-4 !py-2 hover:shadow-md transition-all cursor-default">
-            <FiCalendar className="text-gray-500 text-lg" />
-            <span className="text-gray-800 font-semibold text-[13px] sm:text-[13px]">
-              October 26, 2025
-            </span>
-          </div>
-        </Stack>
-      </Box>
-
-      {/* Content */}
-      {view === "list" ? (
+    return (
         <>
-          {/* Table */}
-          <TableContainer
-            component={Paper}
-            elevation={0}
-            sx={{ border: "1px solid #e5e7eb" }}
-          >
-            <Table>
-              <TableHead>
-                <TableRow sx={{ backgroundColor: "#f9fafb" }}>
-                  {[
-                    "Latitude",
-                    "Longitude",
-                    "Accuracy",
-                    "Map View",
-                    "Address",
-                    "Location Time",
-                  ].map((header) => (
-                    <TableCell
-                      key={header}
-                      sx={{
-                        fontWeight: 600,
-                        color: "#374151",
-                        fontSize: "0.875rem",
-                        py: 2,
-                      }}
-                    >
-                      {header}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {gpsData.map((row, i) => (
-                  <TableRow
-                    key={i}
-                    hover
-                    sx={{
-                      "&:nth-of-type(odd)": { backgroundColor: "#f9fafb" },
-                      "&:hover": { backgroundColor: "#f0f9ff" },
-                    }}
-                  >
-                    <TableCell
-                      sx={{ fontFamily: "monospace", fontSize: "0.875rem" }}
-                    >
-                      {row.lat}
-                    </TableCell>
-                    <TableCell
-                      sx={{ fontFamily: "monospace", fontSize: "0.875rem" }}
-                    >
-                      {row.lng}
-                    </TableCell>
-                    <TableCell sx={{ color: "#0695c8", fontWeight: 500 }}>
-                      {row.accuracy}
-                    </TableCell>
-                    <TableCell>
-                      <Button
-                        size="small"
-                        variant="text"
-                        startIcon={<FiMapPin />}
-                        onClick={() => handleViewMap(row.lat, row.lng)}
-                        sx={{
-                          color: "#0695c8",
-                          textTransform: "none",
-                          fontWeight: 500,
-                          "&:hover": { backgroundColor: "#e0f2fe" },
-                        }}
-                      >
-                        View
-                      </Button>
-                    </TableCell>
-                    <TableCell sx={{ maxWidth: 300, fontSize: "0.875rem" }}>
-                      {row.address}
-                    </TableCell>
-                    <TableCell
-                      sx={{ fontFamily: "monospace", fontSize: "0.875rem" }}
-                    >
-                      {row.time}
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-
-          {/* Pagination */}
-          <Box className="!mt-6 !flex justify-center">
-            <Stack direction="row" spacing={1} alignItems="center">
-              <IconButton size="small" sx={{ color: "#9ca3af" }}>
-                <FiChevronLeft />
-              </IconButton>
-              <Chip
-                label={page}
-                size="small"
+               <header className="!mb-4 sm:!mb-6 !px-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
+                      <div className="flex items-center !gap-2 sm:!gap-3">
+                        <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
+                         GPS Locations
+                          <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+                        </h1>
+                      </div>
+                      <div className="flex sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
+                        <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
+                          Demo data. Bind your device to collect actual data.
+                        </span>
+                        <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap">
+                          Bind My Device
+                        </button>
+                      </div>
+                    </div>
+                  </header>
+        <Box className="!p-6 !bg-gray-50 !min-h-screen">
+          {/* Tabs + Date Badge */}
+          <Box className="!mb-2">
+            <Stack
+              direction="row"
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <Tabs
+                value={view}
+                onChange={(e, v) => setView(v)}
                 sx={{
-                  backgroundColor: "#0695c8",
-                  color: "white",
-                  fontWeight: "bold",
-                  width: 32,
-                  height: 32,
+                  "& .MuiTab-root": {
+                    textTransform: "none",
+                    fontWeight: 500,
+                    color: "#666",
+                    fontSize: "0.9375rem",
+                  },
+                  "& .Mui-selected": {
+                    color: "#0695c8 !important",
+                  },
+                  "& .MuiTabs-indicator": {
+                    backgroundColor: "#0695c8",
+                    height: 3,
+                  },
                 }}
-              />
-              <IconButton size="small" sx={{ color: "#9ca3af" }}>
-                <FiChevronRight />
-              </IconButton>
+              >
+                <Tab label="List View" value="list" />
+                <Tab label="Map View" value="map" />
+              </Tabs>
+
+              {/* Static Date Badge */}
+              <div className="hidden lg:flex items-center !gap-3 bg-gray-50 border border-gray-200 rounded-2xl !px-4 !py-2 hover:shadow-md transition-all cursor-default">
+                <FiCalendar className="text-gray-500 text-lg" />
+                <span className="text-gray-800 font-semibold text-[13px] sm:text-[13px]">
+                  October 26, 2025
+                </span>
+              </div>
             </Stack>
           </Box>
-        </>
-      ) : (
-        /* Map View */
-        <Box className="!h-full !min-h-96 !rounded-lg !overflow-hidden !border !border-gray-300 relative">
-          <iframe
-            title="Location Map"
-            width="100%"
-            height="600"
-            style={{ border: 0 }}
-            loading="lazy"
-            allowFullScreen
-            src={`https://www.openstreetmap.org/export/embed.html?bbox=${
-              NJ_LNG - 0.1
-            }%2C${NJ_LAT - 0.1}%2C${NJ_LNG + 0.1}%2C${
-              NJ_LAT + 0.1
-            }&layer=mapnik&marker=${NJ_LAT}%2C${NJ_LNG}`}
-          />
 
-          {selectedLocation && (
-            <Box
-              className="!absolute !top-4 !left-4 !bg-white !p-3 !rounded-lg !shadow-lg !z-10 !border !border-gray-200"
-              sx={{ minWidth: 200 }}
-            >
-              <Typography variant="subtitle2" fontWeight="bold" color="#0695c8">
-                Selected Location
-              </Typography>
-              <Typography
-                variant="body2"
-                fontFamily="monospace"
-                fontSize="0.8125rem"
+          {/* Content */}
+          {view === "list" ? (
+            <>
+              {/* Table */}
+              <TableContainer
+                component={Paper}
+                elevation={0}
+                sx={{ border: "1px solid #e5e7eb" }}
               >
-                {selectedLocation.lat}, {selectedLocation.lng}
-              </Typography>
+                <Table>
+                  <TableHead>
+                    <TableRow sx={{ backgroundColor: "#f9fafb" }}>
+                      {[
+                        "Latitude",
+                        "Longitude",
+                        "Accuracy",
+                        "Map View",
+                        "Address",
+                        "Location Time",
+                      ].map((header) => (
+                        <TableCell
+                          key={header}
+                          sx={{
+                            fontWeight: 600,
+                            color: "#374151",
+                            fontSize: "0.875rem",
+                            py: 2,
+                          }}
+                        >
+                          {header}
+                        </TableCell>
+                      ))}
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {gpsData.map((row, i) => (
+                      <TableRow
+                        key={i}
+                        hover
+                        sx={{
+                          "&:nth-of-type(odd)": { backgroundColor: "#f9fafb" },
+                          "&:hover": { backgroundColor: "#f0f9ff" },
+                        }}
+                      >
+                        <TableCell
+                          sx={{ fontFamily: "monospace", fontSize: "0.875rem" }}
+                        >
+                          {row.lat}
+                        </TableCell>
+                        <TableCell
+                          sx={{ fontFamily: "monospace", fontSize: "0.875rem" }}
+                        >
+                          {row.lng}
+                        </TableCell>
+                        <TableCell sx={{ color: "#0695c8", fontWeight: 500 }}>
+                          {row.accuracy}
+                        </TableCell>
+                        <TableCell>
+                          <Button
+                            size="small"
+                            variant="text"
+                            startIcon={<FiMapPin />}
+                            onClick={() => handleViewMap(row.lat, row.lng)}
+                            sx={{
+                              color: "#0695c8",
+                              textTransform: "none",
+                              fontWeight: 500,
+                              "&:hover": { backgroundColor: "#e0f2fe" },
+                            }}
+                          >
+                            View
+                          </Button>
+                        </TableCell>
+                        <TableCell sx={{ maxWidth: 300, fontSize: "0.875rem" }}>
+                          {row.address}
+                        </TableCell>
+                        <TableCell
+                          sx={{ fontFamily: "monospace", fontSize: "0.875rem" }}
+                        >
+                          {row.time}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+
+              {/* Pagination */}
+              <Box className="!mt-6 !flex justify-center">
+                <Stack direction="row" spacing={1} alignItems="center">
+                  <IconButton size="small" sx={{ color: "#9ca3af" }}>
+                    <FiChevronLeft />
+                  </IconButton>
+                  <Chip
+                    label={page}
+                    size="small"
+                    sx={{
+                      backgroundColor: "#0695c8",
+                      color: "white",
+                      fontWeight: "bold",
+                      width: 32,
+                      height: 32,
+                    }}
+                  />
+                  <IconButton size="small" sx={{ color: "#9ca3af" }}>
+                    <FiChevronRight />
+                  </IconButton>
+                </Stack>
+              </Box>
+            </>
+          ) : (
+            /* Map View */
+            <Box className="!h-full !min-h-96 !rounded-lg !overflow-hidden !border !border-gray-300 relative">
+              <iframe
+                title="Location Map"
+                width="100%"
+                height="600"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                src={`https://www.openstreetmap.org/export/embed.html?bbox=${
+                  NJ_LNG - 0.1
+                }%2C${NJ_LAT - 0.1}%2C${NJ_LNG + 0.1}%2C${
+                  NJ_LAT + 0.1
+                }&layer=mapnik&marker=${NJ_LAT}%2C${NJ_LNG}`}
+              />
+
+              {selectedLocation && (
+                <Box
+                  className="!absolute !top-4 !left-4 !bg-white !p-3 !rounded-lg !shadow-lg !z-10 !border !border-gray-200"
+                  sx={{ minWidth: 200 }}
+                >
+                  <Typography
+                    variant="subtitle2"
+                    fontWeight="bold"
+                    color="#0695c8"
+                  >
+                    Selected Location
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    fontFamily="monospace"
+                    fontSize="0.8125rem"
+                  >
+                    {selectedLocation.lat}, {selectedLocation.lng}
+                  </Typography>
+                </Box>
+              )}
             </Box>
           )}
         </Box>
-      )}
-    </Box>
-  );
+      </>
+    );
 };
 
 export default Gps;

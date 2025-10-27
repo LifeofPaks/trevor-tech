@@ -134,7 +134,7 @@ const Messages = () => {
   return (
     <div className="!relative">
       {/* Header */}
-      {/* <header className="!mb-4 sm:!mb-6 !px-4">
+      <header className="!mb-4 sm:!mb-6 !px-4">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
@@ -151,7 +151,7 @@ const Messages = () => {
             </button>
           </div>
         </div>
-      </header> */}
+      </header>
 
       {/* Main Layout */}
       <Box className="flex !h-[calc(100vh-140px)] bg-gray-50 relative overflow-hidden">
