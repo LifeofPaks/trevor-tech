@@ -113,7 +113,9 @@ const KeyLogger = () => {
         {/* Header: Dropdown */}
         <Box className="!mb-6">
           <FormControl size="small" className="lg:max-w-[350px] w-full">
+             <InputLabel>Apps</InputLabel>
             <Select
+              label="Apps"
               value={selectedApp}
               onChange={(e) => {
                 setSelectedApp(e.target.value);
@@ -128,10 +130,6 @@ const KeyLogger = () => {
                 },
                 "&:hover .MuiOutlinedInput-notchedOutline": {
                   borderColor: "#0695c8",
-                },
-                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "#0695c8",
-                  boxShadow: "0 0 0 1px #0695c8",
                 },
                 "& .MuiSelect-select": {
                   py: 1.5,
