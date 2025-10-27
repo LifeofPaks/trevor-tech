@@ -650,7 +650,7 @@ const DemoSidebar = () => {
 
         {/* Footer */}
         <div className="!border-t !border-gray-800 !p-4 !mt-auto">
-          <div className="text-center !text-xs text-gray-500 !space-y-1">
+          <div className="text-center !text-[10px] text-gray-500 !space-y-1">
             <p className="!font-medium text-gray-400">
               {t["Easier Monitoring with"]}{" "}
               <span className=" !font-semibold">
