@@ -224,6 +224,7 @@ const Messages = () => {
             {filteredContacts.map((contact) => (
               <React.Fragment key={contact.id}>
                 <ListItem
+                  className="!cursor-pointer"
                   button
                   selected={selectedContact.id === contact.id}
                   onClick={() => {
