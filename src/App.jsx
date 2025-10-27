@@ -21,6 +21,7 @@ import SimPage from "./pages/sim/SimPage";
 import ScreenshotsPage from "./pages/screenshots/ScreenshotsPage";
 import GeofencePage from "./pages/geofence/GeofencePage";
 import WebsiteBlockPage from "./pages/websiteBlock/WebsiteBlockPage";
+import WifiBlockPage from "./pages/wifiBlock/WifiBlockPage";
 
 
 
@@ -55,6 +56,7 @@ function App() {
           <Route path="captures/screenshots" element={<ScreenshotsPage />} />
           <Route path="controls/geofence" element={<GeofencePage />} />
           <Route path="controls/website-block" element={<WebsiteBlockPage />} />
+          <Route path="controls/wifi-block" element={<WifiBlockPage />} />
         </Route>
       </Routes>
 
