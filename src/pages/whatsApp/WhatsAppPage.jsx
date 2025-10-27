@@ -55,6 +55,7 @@ const theme = createTheme({
 });
 
 // Sample Data
+// Full Chat Data
 const chats = [
   {
     id: 1,
@@ -62,7 +63,23 @@ const chats = [
     avatar: "https://i.pravatar.cc/150?img=15",
     lastMessage: "You should come in tomorrow.",
     time: "2022-01-12 09:35",
-    messages: [],
+    messages: [
+      {
+        text: "Good morning! How are you feeling today?",
+        time: "09:30",
+        incoming: true,
+      },
+      {
+        text: "Better, but still have a headache.",
+        time: "09:32",
+        incoming: false,
+      },
+      {
+        text: "You should come in tomorrow for a check-up.",
+        time: "09:35",
+        incoming: true,
+      },
+    ],
   },
   {
     id: 2,
@@ -71,7 +88,20 @@ const chats = [
     lastMessage:
       "He loves you. of course, he'll forgive you. you just's gotta say you're sorry.",
     time: "2022-01-10 09:34",
-    messages: [],
+    messages: [
+      {
+        text: "I messed up big time with Mark.",
+        time: "09:20",
+        incoming: false,
+      },
+      { text: "What happened?", time: "09:22", incoming: true },
+      { text: "I forgot our anniversary.", time: "09:25", incoming: false },
+      {
+        text: "He loves you. of course, he'll forgive you. you just's gotta say you're sorry.",
+        time: "09:34",
+        incoming: true,
+      },
+    ],
   },
   {
     id: 3,
@@ -82,17 +112,17 @@ const chats = [
     messages: [
       {
         text: "Are you going to get home on time?",
-        time: "2022-01-07 10:30",
+        time: "10:30",
         incoming: true,
       },
       {
         text: "Yes. I'm almost done at the office.",
-        time: "2022-01-07 10:40",
+        time: "10:40",
         incoming: false,
       },
       {
         text: "Then I have a few meetings in the city.",
-        time: "2022-01-07 10:45",
+        time: "10:45",
         incoming: false,
       },
     ],
@@ -103,7 +133,19 @@ const chats = [
     avatar: "https://i.pravatar.cc/150?img=16",
     lastMessage: "I'll be there as soon as I can.",
     time: "2022-01-06 10:41",
-    messages: [],
+    messages: [
+      { text: "Are you coming to the party?", time: "10:30", incoming: true },
+      {
+        text: "Traffic is bad, but I'm on my way.",
+        time: "10:35",
+        incoming: false,
+      },
+      {
+        text: "I'll be there as soon as I can.",
+        time: "10:41",
+        incoming: false,
+      },
+    ],
   },
   {
     id: 5,
@@ -114,24 +156,25 @@ const chats = [
     messages: [
       {
         text: "Nina, Tom said you weren't feeling well. Are you ok?",
-        time: "2022-01-06 08:11",
+        time: "08:11",
         incoming: true,
       },
       {
         text: "No. I won't be able to hang out today.",
-        time: "2022-01-06 08:33",
+        time: "08:33",
         incoming: false,
       },
       {
         text: "Don't worry about it. Feel better soon!",
-        time: "2022-01-06 09:52",
+        time: "09:52",
         incoming: true,
       },
-      { text: "Thanks.", time: "2022-01-06 10:00", incoming: false },
+      { text: "Thanks.", time: "10:00", incoming: false },
     ],
   },
 ];
 
+// Full Contact Data
 const contacts = [
   {
     id: 1,
@@ -147,15 +190,58 @@ const contacts = [
     phone: "3457565667",
     email: "alicia@gmail.com",
   },
-  { id: 3, name: "Andrew", avatar: "https://i.pravatar.cc/150?img=5" },
-  { id: 4, name: "Arya", avatar: "https://i.pravatar.cc/150?img=6" },
-  { id: 5, name: "Alice", avatar: "https://i.pravatar.cc/150?img=7" },
-  { id: 6, name: "Bart", avatar: "https://i.pravatar.cc/150?img=8" },
-  { id: 7, name: "Barry", avatar: "https://i.pravatar.cc/150?img=9" },
-  { id: 8, name: "Brian", avatar: "https://i.pravatar.cc/150?img=10" },
-  { id: 9, name: "Brenda", avatar: "https://i.pravatar.cc/150?img=11" },
+  {
+    id: 3,
+    name: "Andrew",
+    avatar: "https://i.pravatar.cc/150?img=5",
+    phone: "3471122334",
+    email: "andrew@outlook.com",
+  },
+  {
+    id: 4,
+    name: "Arya",
+    avatar: "https://i.pravatar.cc/150?img=6",
+    phone: "3479988776",
+    email: "arya.stark@winterfell.com",
+  },
+  {
+    id: 5,
+    name: "Alice",
+    avatar: "https://i.pravatar.cc/150?img=7",
+    phone: "3472233445",
+    email: "alice.wonderland@tea.com",
+  },
+  {
+    id: 6,
+    name: "Bart",
+    avatar: "https://i.pravatar.cc/150?img=8",
+    phone: "3475566778",
+    email: "bart.simpson@springfield.edu",
+  },
+  {
+    id: 7,
+    name: "Barry",
+    avatar: "https://i.pravatar.cc/150?img=9",
+    phone: "3478899001",
+    email: "barry.allen@centralcity.gov",
+  },
+  {
+    id: 8,
+    name: "Brian",
+    avatar: "https://i.pravatar.cc/150?img=10",
+    phone: "3473344556",
+    email: "brian.griffin@quahog.com",
+  },
+  {
+    id: 9,
+    name: "Brenda",
+    avatar: "https://i.pravatar.cc/150?img=11",
+    phone: "3476677889",
+    email: "brenda.johnson@lawfirm.com",
+  },
 ];
 
+// Call Logs (unchanged)
 const callLogs = [
   {
     id: 1,
@@ -220,7 +306,6 @@ const callLogs = [
     duration: "03:45",
   },
 ];
-
 const Index = () => {
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
