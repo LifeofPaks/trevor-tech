@@ -27,6 +27,7 @@ import {
 } from "react-icons/fi";
 import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
+import { RiCheckDoubleFill } from "react-icons/ri";
 
 // Create custom theme with cyan primary color
 const theme = createTheme({
@@ -654,7 +655,7 @@ const Index = () => {
                               }}
                             >
                               {msg.time}
-                              <FiCheck/>
+                              <RiCheckDoubleFill />
                             </Typography>
                           </Box>
                         </Box>
