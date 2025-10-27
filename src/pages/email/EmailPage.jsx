@@ -124,7 +124,7 @@ const EmailPage = () => {
   const currentEmails = emails.slice(startIndex, startIndex + ROWS_PER_PAGE);
 
   return (
-    <Box className="!p-6 !bg-gray-50 !min-h-screen">
+    <Box className="!p-6 !bg-gray-50 overflow-x-hidden">
       {/* Header */}
       <Box className="!mb-6">
         <Stack
@@ -184,6 +184,7 @@ const EmailPage = () => {
               : "!block"
             : "!grid !grid-cols-1 md:!grid-cols-12 !gap-6"
         }
+        sx={{ width: "100%", maxWidth: "100vw", overflowX: "hidden" }}
       >
         {/* Email List - Larger Left Card */}
         <Paper
@@ -216,6 +217,7 @@ const EmailPage = () => {
                   },
                   transition: "all 0.2s ease",
                 }}
+                className="lg:!w-full w-[85vw]"
               >
                 <Stack direction="row" spacing={2} alignItems="flex-start">
                   <Avatar
