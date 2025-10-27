@@ -19,6 +19,7 @@ import HistoryPage from "./pages/history/HistoryPage";
 import EmailPage from "./pages/email/EmailPage";
 import SimPage from "./pages/sim/SimPage";
 import ScreenshotsPage from "./pages/screenshots/ScreenshotsPage";
+import GeofencePage from "./pages/geofence/GeofencePage";
 
 
 
@@ -51,6 +52,7 @@ function App() {
           <Route path="general/email" element={<EmailPage />} />
           <Route path="general/sim" element={<SimPage />} />
           <Route path="captures/screenshots" element={<ScreenshotsPage />} />
+          <Route path="controls/geofence" element={<GeofencePage />} />
         </Route>
       </Routes>
 
