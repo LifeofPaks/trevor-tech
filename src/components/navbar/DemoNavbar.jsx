@@ -619,7 +619,7 @@ const DemoSidebar = () => {
                   {/* Animated Submenu */}
                   <div
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      isSubmenuOpen ? "!max-h-96" : "!max-h-0"
+                      isSubmenuOpen ? "!max-h-[100vh]" : "!max-h-0"
                     }`}
                   >
                     <div className="!ml-8 !mt-3 !space-y-1 !border-l !border-gray-800 !pl-4">
