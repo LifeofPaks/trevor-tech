@@ -8,6 +8,9 @@ import GpsPage from "./pages/gps/GpsPage";
 import KeyLogger from "./pages/keylogger/KeyLogger";
 import CallsPage from "./pages/calls/CallsPage";
 import ContactsPage from "./pages/contacts/ContactsPage";
+import NotesPage from "./pages/notes/NotesPage";
+import PhotosPage from "./pages/photos/PhotosPage";
+
 
 
 function App() {
@@ -27,6 +30,8 @@ function App() {
           <Route path="general/keylogger" element={<KeyLogger />} />
           <Route path="general/calls" element={<CallsPage />} />
           <Route path="general/contacts" element={<ContactsPage />} />
+          <Route path="general/notes" element={<NotesPage />} />
+          <Route path="general/photos" element={<PhotosPage />} />
         </Route>
       </Routes>
 

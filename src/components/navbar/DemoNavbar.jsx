@@ -299,7 +299,6 @@ const DemoSidebar = () => {
         { to: "/demo/general/keylogger", label: t.Keylogger, icon: <FiKey /> },
         { to: "/demo/general/calls", label: t.Calls, icon: <FiPhoneCall /> },
         { to: "/demo/general/contacts", label: t.Contacts, icon: <FiUsers /> },
-        { to: "/demo/general/events", label: t.Events, icon: <FiEvent /> },
         { to: "/demo/general/notes", label: t.Notes, icon: <FiFileText /> },
         { to: "/demo/general/photos", label: t.Photos, icon: <FiPhoto /> },
         { to: "/demo/general/videos", label: t.Videos, icon: <FiFilm /> },
