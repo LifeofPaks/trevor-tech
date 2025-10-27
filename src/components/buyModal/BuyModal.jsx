@@ -14,7 +14,7 @@ const BuyModal = ({ handleClose, open }) => {
   return (
     <Modal open={open} onClose={handleClose}>
       <Box
-        className="absolute top-1/2 left-1/2 bg-white/30 backdrop-blur-lg shadow-2xl rounded-2xl !p-8 text-center border border-white/40"
+        className="absolute top-1/2 left-1/2 bg-white/50 backdrop-blur-lg shadow-2xl rounded-2xl !p-8 text-center border border-white/40"
         sx={{
           transform: "translate(-50%, -50%)",
           width: 380,
