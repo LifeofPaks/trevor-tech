@@ -24,7 +24,7 @@ import {
   FiPhoneMissed,
   FiMail,
 } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
+import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
 
 // Create custom theme with cyan primary color
@@ -312,7 +312,7 @@ const Index = () => {
           {showDetail && (
             <Box sx={{ mb: 2 }}>
               <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
-                <FiArrowLeft />
+                <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
           )}
