@@ -16,7 +16,6 @@ import {
   Chip,
   Stack,
   IconButton,
-  Divider,
 } from "@mui/material";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
@@ -93,14 +92,14 @@ const KeyLogger = () => {
     <Box className="!p-6 !bg-gray-50 !min-h-screen">
       {/* Header: Dropdown */}
       <Box className="!mb-6">
-        <FormControl  size="small" sx={{ minWidth: 350 }}>
+        <FormControl size="small" sx={{ minWidth: 350 }}>
           <Select
             value={selectedApp}
-            label="App"
             onChange={(e) => {
               setSelectedApp(e.target.value);
               setPage(1);
             }}
+            displayEmpty
             sx={{
               borderRadius: "12px",
               backgroundColor: "#f9fafb",
@@ -108,16 +107,17 @@ const KeyLogger = () => {
                 borderColor: "#d1d5db",
               },
               "&:hover .MuiOutlinedInput-notchedOutline": {
-                borderColor: "#00d4ff",
+                borderColor: "#0695c8",
               },
               "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                borderColor: "#00d4ff",
+                borderColor: "#0695c8",
+                boxShadow: "0 0 0 1px #0695c8",
               },
               "& .MuiSelect-select": {
                 py: 1.5,
                 fontSize: "0.875rem",
+                color: selectedApp === "All" ? "#6b7280" : "#1f2937",
               },
-              
             }}
             MenuProps={{
               PaperProps: {
@@ -126,6 +126,9 @@ const KeyLogger = () => {
                   borderRadius: "12px",
                   boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1)",
                   mt: 1,
+                  "&::-webkit-scrollbar": { display: "none" },
+                  scrollbarWidth: "none",
+                  msOverflowStyle: "none",
                 },
               },
             }}
@@ -139,7 +142,12 @@ const KeyLogger = () => {
                   py: 1,
                   "&.Mui-selected": {
                     backgroundColor: "#e0f2fe",
+                    color: "#0695c8",
+                    fontWeight: 500,
                     "&:hover": { backgroundColor: "#cce7ff" },
+                  },
+                  "&:hover": {
+                    backgroundColor: "#f3f4f6",
                   },
                 }}
               >
@@ -150,14 +158,15 @@ const KeyLogger = () => {
         </FormControl>
       </Box>
 
-      {/* Table */}
+      {/* Table - Borderless */}
       <TableContainer
         component={Paper}
         elevation={0}
         sx={{
-          border: "1px solid #e5e7eb",
           borderRadius: "12px",
           overflow: "hidden",
+          border: "none",
+          boxShadow: "none",
         }}
         className="!rounded-xl"
       >
@@ -171,6 +180,7 @@ const KeyLogger = () => {
                   fontSize: "0.875rem",
                   py: 2,
                   pl: 3,
+                  borderBottom: "none",
                 }}
               >
                 App Name
@@ -181,6 +191,7 @@ const KeyLogger = () => {
                   color: "#374151",
                   fontSize: "0.875rem",
                   py: 2,
+                  borderBottom: "none",
                 }}
               >
                 Logged Text
@@ -193,6 +204,7 @@ const KeyLogger = () => {
                   fontSize: "0.875rem",
                   py: 2,
                   pr: 3,
+                  borderBottom: "none",
                 }}
               >
                 Time
@@ -208,6 +220,7 @@ const KeyLogger = () => {
                   sx={{
                     "&:nth-of-type(odd)": { backgroundColor: "#fdfdfe" },
                     "&:hover": { backgroundColor: "#f0f9ff" },
+                    "&:last-child td": { borderBottom: 0 },
                   }}
                 >
                   <TableCell
@@ -216,6 +229,10 @@ const KeyLogger = () => {
                       color: "#1f2937",
                       pl: 3,
                       fontSize: "0.875rem",
+                      borderBottom:
+                        i < filteredLogs.length - 1
+                          ? "1px solid #f3f4f6"
+                          : "none",
                     }}
                   >
                     {log.app}
@@ -225,6 +242,10 @@ const KeyLogger = () => {
                       color: "#4b5563",
                       fontSize: "0.875rem",
                       maxWidth: 400,
+                      borderBottom:
+                        i < filteredLogs.length - 1
+                          ? "1px solid #f3f4f6"
+                          : "none",
                     }}
                   >
                     {log.text}
@@ -236,6 +257,10 @@ const KeyLogger = () => {
                       color: "#6b7280",
                       pr: 3,
                       fontSize: "0.8125rem",
+                      borderBottom:
+                        i < filteredLogs.length - 1
+                          ? "1px solid #f3f4f6"
+                          : "none",
                     }}
                   >
                     {log.time}
@@ -244,7 +269,7 @@ const KeyLogger = () => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={3} sx={{ py: 8 }}>
+                <TableCell colSpan={3} sx={{ py: 8, borderBottom: "none" }}>
                   <Box className="!text-center">
                     <Typography
                       variant="body1"
@@ -272,7 +297,7 @@ const KeyLogger = () => {
               label={page}
               size="small"
               sx={{
-                backgroundColor: "#00d4ff",
+                backgroundColor: "#0695c8",
                 color: "white",
                 fontWeight: "bold",
                 width: 32,
