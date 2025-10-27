@@ -126,7 +126,7 @@ const EmailPage = () => {
   const currentEmails = emails.slice(startIndex, startIndex + ROWS_PER_PAGE);
 
   return (
-    <>
+    <div>
       <header className="!mb-4 sm:!mb-6 !px-4">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
@@ -138,9 +138,9 @@ const EmailPage = () => {
           <BindPhone />
         </div>
       </header>
-      <Box className="!p-6 !bg-gray-50 overflow-x-hidden">
+      <Box className="  overflow-x-hidden">
         {/* Header */}
-        <Box className="!mb-6">
+        <Box className="!m-6">
           <Stack
             direction="row"
             spacing={2}
@@ -233,7 +233,7 @@ const EmailPage = () => {
                     },
                     transition: "all 0.2s ease",
                   }}
-                  className="lg:!w-full w-[85vw]"
+                  className="lg:!w-full w-[80vw]"
                 >
                   <Stack direction="row" spacing={2} alignItems="flex-start">
                     <Avatar
@@ -419,7 +419,7 @@ const EmailPage = () => {
         )}
 
         {/* Pagination */}
-        <Box className="!flex justify-center !mt-6">
+        <Box className="!flex justify-center !my-6">
           <Stack direction="row" spacing={1} alignItems="center">
             <IconButton
               size="small"
@@ -452,7 +452,7 @@ const EmailPage = () => {
           </Stack>
         </Box>
       </Box>
-    </>
+    </div>
   );
 };
 

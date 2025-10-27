@@ -104,11 +104,11 @@ const AppsPage = () => {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
             <div className="flex items-center !gap-2 sm:!gap-3">
               <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-Installed Apps
+                Installed Apps
                 <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
               </h1>
             </div>
-            <div className="flex sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
               <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
                 Demo data. Bind your device to collect actual data.
               </span>

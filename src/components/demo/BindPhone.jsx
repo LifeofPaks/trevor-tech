@@ -8,7 +8,7 @@ const BindPhone = () => {
           const handleClose = () => setOpen(false);
   return (
     <>
-      <div className="flex sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
         <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
           Demo data. Bind your device to collect actual data.
         </span>
