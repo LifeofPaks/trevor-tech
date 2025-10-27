@@ -8,6 +8,7 @@ import {
 } from "react-icons/fi";
 import { BsCamera2 } from "react-icons/bs";
 import { CameraIcon } from "lucide-react";
+import { FiCamera } from "react-icons/fi";
 
 const allPhotos = [
   {
@@ -201,7 +202,7 @@ const PhotosPage = () => {
                   },
                 }}
               >
-                <CameraIcon className="!text-2xl !text-gray-700" />
+                <FiCamera className="!text-2xl !text-gray-700" />
               </IconButton>
             </Box>
 
