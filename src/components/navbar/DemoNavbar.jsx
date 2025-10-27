@@ -565,7 +565,7 @@ const DemoSidebar = () => {
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 overflow-y-auto !mt-6 !px-3 !pb-10 scrollbar-hide">
+        <nav className="flex-1 overflow-y-auto !mt-6 !px-3 !pb-10 scrollbar-hide demo-sidebar-font">
           <div className="!space-y-1">
             {menuItems.map((item) => {
               const hasSubItems = item.subItems && item.subItems.length > 0;
@@ -578,7 +578,7 @@ const DemoSidebar = () => {
                     onClick={() => handleMenuClick(item.label, hasSubItems)}
                   >
                     <div
-                      className={`flex items-center justify-between !px-4 !py-3 !rounded-xl transition-all duration-200
+                      className={`flex items-center justify-between !px-4 !py-3 !rounded-xl transition-all duration-200 !mb-1
                         ${
                           hasSubItems
                             ? "text-gray-400 hover:bg-[#1b254b] hover:text-white"
@@ -595,7 +595,7 @@ const DemoSidebar = () => {
                         className="flex items-center !gap-3 w-full"
                       >
                         <span className="!text-[14px]">{item.icon}</span>
-                        <span className="!font-medium !text-[12px] flex items-center !gap-2">
+                        <span className="!font-medium !text-[14px] flex items-center !gap-2">
                           {item.label}
                           {item.badge && (
                             <img
@@ -638,7 +638,7 @@ const DemoSidebar = () => {
                               }`}
                           >
                             {sub.icon || <div className="!w-4 !h-4" />}
-                            <span className="!text-[12px]">{sub.label}</span>
+                            <span className="!text-[13px]">{sub.label}</span>
                           </Link>
                         );
                       })}

@@ -20,6 +20,10 @@ button {
   font-family: "Audiowide", cursive;
 }
 
+.demo-sidebar-font{
+font-family: noto-sans,sans-serif;
+}
+
 /* Hide scrollbar for Chrome, Safari, Edge */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
