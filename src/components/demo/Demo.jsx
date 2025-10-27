@@ -14,7 +14,7 @@ const DemoPage = () => {
         {/* Main content */}
         <main className="flex-1 !ml-0 md:ml-64 ">
           <Header />
-          <div className="!pt-4 !px-4 md:!px-8 lg:!px-16">
+          <div className="!pt-4 !px-4 md:!px-8 lg:!px-4">
             <Outlet />
           </div>
         <DemoFooter/>

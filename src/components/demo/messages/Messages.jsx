@@ -134,7 +134,7 @@ const Messages = () => {
   return (
     <div className="!relative">
       {/* Header */}
-      <header className="!mb-4 sm:!mb-6 !px-4">
+      {/* <header className="!mb-4 sm:!mb-6 !px-4">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
@@ -151,7 +151,7 @@ const Messages = () => {
             </button>
           </div>
         </div>
-      </header>
+      </header> */}
 
       {/* Main Layout */}
       <Box className="flex !h-[calc(100vh-140px)] bg-gray-50 relative overflow-hidden">
@@ -321,7 +321,7 @@ const Messages = () => {
               {/* Message Input */}
               <Box className="!p-4 !border-t !border-gray-200">
                 <Stack direction="row" spacing={2} alignItems="center">
-                  <IconButton size="small" onClick={() => setPage(page - 1)}>
+                  <IconButton size="small" sx={{ color: "#9ca3af" }}>
                     <FiChevronLeft />
                   </IconButton>
                   <Chip
@@ -330,10 +330,12 @@ const Messages = () => {
                     sx={{
                       backgroundColor: "#0695c8",
                       color: "white",
-                      fontWeight: "medium",
+                      fontWeight: "bold",
+                      width: 32,
+                      height: 32,
                     }}
                   />
-                  <IconButton size="small" onClick={() => setPage(page + 1)}>
+                  <IconButton size="small" sx={{ color: "#9ca3af" }}>
                     <FiChevronRight />
                   </IconButton>
                   <Box className="!flex-1" />

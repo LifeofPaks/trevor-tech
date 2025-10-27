@@ -4,6 +4,7 @@ import DemoPage from "./pages/demo/DemoPage";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import DashboardPage from "./pages/demo/DashboardPage";
 import MessagesPage from "./pages/messages/MessagesPage";
+import GpsPage from "./pages/gps/GpsPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="general/messages" element={<MessagesPage />} />
+          <Route path="general/gps" element={<GpsPage />} />
         </Route>
       </Routes>
 
