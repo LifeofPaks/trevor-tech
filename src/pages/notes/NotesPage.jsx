@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { FiCalendar, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { IoLogoBitbucket } from "react-icons/io5";
+import BuyModal from "../../components/buyModal/BuyModal";
 
 // Sample Notes Data
 const notes = [
@@ -37,6 +38,10 @@ const notes = [
 
 const NotesPage = () => {
   const [page, setPage] = useState(1);
+         const [open, setOpen] = useState(false);
+
+         const handleOpen = () => setOpen(true);
+         const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -44,7 +49,7 @@ const NotesPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-Notes
+              Notes
               <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
             </h1>
           </div>
@@ -52,7 +57,10 @@ Notes
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
               Demo data. Bind your device to collect actual data.
             </span>
-            <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap">
+            <button
+              onClick={handleOpen}
+               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+            >
               Bind My Device
             </button>
           </div>
@@ -165,6 +173,8 @@ Notes
           </Stack>
         </Box>
       </Box>
+
+      <BuyModal handleClose={handleClose} open={open} />
     </>
   );
 };

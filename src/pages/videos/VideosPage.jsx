@@ -8,6 +8,7 @@ import {
   FiVideo,
 } from "react-icons/fi";
 import { IoLogoBitbucket } from "react-icons/io5";
+import BuyModal from "../../components/buyModal/BuyModal";
 
 const allVideos = [
   {
@@ -62,6 +63,10 @@ const VideosPage = () => {
     startIndex,
     startIndex + VIDEOS_PER_PAGE
   );
+      const [open, setOpen] = useState(false);
+
+      const handleOpen = () => setOpen(true);
+      const handleClose = () => setOpen(false);
 
   const handleDownload = async (url, filename) => {
     try {
@@ -92,7 +97,10 @@ const VideosPage = () => {
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
               Demo data. Bind your device to collect actual data.
             </span>
-            <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap">
+            <button
+              onClick={handleOpen}
+              className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+            >
               Bind My Device
             </button>
           </div>
@@ -278,6 +286,8 @@ const VideosPage = () => {
           </Stack>
         </Box>
       </Box>
+
+      <BuyModal handleClose={handleClose} open={open} />
     </>
   );
 };
