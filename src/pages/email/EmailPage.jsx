@@ -16,6 +16,8 @@ import {
   Divider,
 } from "@mui/material";
 import { FiChevronLeft, FiChevronRight, FiMail } from "react-icons/fi";
+import { IoLogoBitbucket } from "react-icons/io5";
+import BindPhone from "../../components/demo/BindPhone";
 
 // Sample Emails with Profile Pictures
 const emails = [
@@ -124,313 +126,333 @@ const EmailPage = () => {
   const currentEmails = emails.slice(startIndex, startIndex + ROWS_PER_PAGE);
 
   return (
-    <Box className="!p-6 !bg-gray-50 overflow-x-hidden">
-      {/* Header */}
-      <Box className="!mb-6">
-        <Stack
-          direction="row"
-          spacing={2}
-          alignItems="center"
-          className="!flex-wrap"
-        >
-          <FormControl size="small" sx={{ minWidth: 120 }}>
-            <InputLabel>Email source</InputLabel>
-            <Select
-              value={source}
-              onChange={(e) => setSource(e.target.value)}
-              label="Email source"
-              sx={{
-                borderRadius: "12px",
-                backgroundColor: "#fff",
-                "& .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "#d1d5db",
-                },
-              }}
-            >
-              <MenuItem value="All">All</MenuItem>
-              <MenuItem value="Gmail">Gmail</MenuItem>
-              <MenuItem value="Outlook">Outlook</MenuItem>
-            </Select>
-          </FormControl>
-
-          <FormControl size="small" sx={{ minWidth: 120 }}>
-            <InputLabel>Folder</InputLabel>
-            <Select
-              value={folder}
-              onChange={(e) => setFolder(e.target.value)}
-              label="Folder"
-              sx={{
-                borderRadius: "12px",
-                backgroundColor: "#fff",
-                "& .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "#d1d5db",
-                },
-              }}
-            >
-              <MenuItem value="Inbox">Inbox</MenuItem>
-              <MenuItem value="Sent">Sent</MenuItem>
-              <MenuItem value="Spam">Spam</MenuItem>
-            </Select>
-          </FormControl>
-        </Stack>
-      </Box>
-
-      {/* Email Layout */}
-      <Box
-        className={
-          isMobile
-            ? selectedEmail
-              ? "!hidden"
-              : "!block"
-            : "!grid !grid-cols-1 md:!grid-cols-12 !gap-6"
-        }
-        sx={{ width: "100%", maxWidth: "100vw", overflowX: "hidden" }}
-      >
-        {/* Email List - Larger Left Card */}
-        <Paper
-          elevation={0}
-          sx={{
-            borderRadius: "16px",
-            border: "1px solid #e5e7eb",
-            overflow: "hidden",
-            height: isMobile ? "auto" : "calc(100vh - 220px)",
-            display: isMobile && selectedEmail ? "none" : "block",
-            gridColumn: isMobile ? "span 12" : "span 5", // Larger left card
-            "&::-webkit-scrollbar": { display: "none" },
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-          }}
-        >
-          <Stack spacing={0}>
-            {currentEmails.map((email) => (
-              <Box
-                key={email.id}
-                onClick={() => setSelectedEmail(email)}
+    <>
+      <header className="!mb-4 sm:!mb-6 !px-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
+          <div className="flex items-center !gap-2 sm:!gap-3">
+            <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
+              GPS Locations
+              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+            </h1>
+          </div>
+          <BindPhone />
+        </div>
+      </header>
+      <Box className="!p-6 !bg-gray-50 overflow-x-hidden">
+        {/* Header */}
+        <Box className="!mb-6">
+          <Stack
+            direction="row"
+            spacing={2}
+            alignItems="center"
+            className="!flex-wrap"
+          >
+            <FormControl size="small" sx={{ minWidth: 120 }}>
+              <InputLabel>Email source</InputLabel>
+              <Select
+                value={source}
+                onChange={(e) => setSource(e.target.value)}
+                label="Email source"
                 sx={{
-                  p: 3,
-                  borderBottom: "1px solid #f3f4f6",
-                  cursor: "pointer",
-                  backgroundColor:
-                    selectedEmail?.id === email.id ? "#f0f9ff" : "transparent",
-                  "&:hover": {
-                    backgroundColor: "#f0f9ff",
+                  borderRadius: "12px",
+                  backgroundColor: "#fff",
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#d1d5db",
                   },
-                  transition: "all 0.2s ease",
                 }}
-                className="lg:!w-full w-[85vw]"
               >
-                <Stack direction="row" spacing={2} alignItems="flex-start">
-                  <Avatar
-                    src={email.avatar}
-                    alt={email.from}
-                    sx={{
-                      width: 40,
-                      height: 40,
-                      flexShrink: 0,
-                    }}
-                  />
-                  <Box sx={{ flex: 1, minWidth: 0 }}>
-                    <Typography
-                      className="!font-medium !text-gray-900 !text-sm !truncate"
-                      sx={{
-                        fontWeight: selectedEmail?.id === email.id ? 600 : 500,
-                      }}
-                    >
-                      {email.from}
-                    </Typography>
-                    <Typography className="!text-xs !text-gray-500 !mt-0.5">
-                      {email.time}
-                    </Typography>
-                    <Typography className="!font-medium !text-gray-800 !text-sm !mt-1 !truncate">
-                      {email.subject}
-                    </Typography>
-                    <Typography className="!text-xs !text-gray-600 !truncate !mt-1">
-                      {email.preview}
-                    </Typography>
-                  </Box>
-                </Stack>
-              </Box>
-            ))}
-          </Stack>
-        </Paper>
+                <MenuItem value="All">All</MenuItem>
+                <MenuItem value="Gmail">Gmail</MenuItem>
+                <MenuItem value="Outlook">Outlook</MenuItem>
+              </Select>
+            </FormControl>
 
-        {/* Email Preview - Desktop */}
-        {!isMobile && (
+            <FormControl size="small" sx={{ minWidth: 120 }}>
+              <InputLabel>Folder</InputLabel>
+              <Select
+                value={folder}
+                onChange={(e) => setFolder(e.target.value)}
+                label="Folder"
+                sx={{
+                  borderRadius: "12px",
+                  backgroundColor: "#fff",
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#d1d5db",
+                  },
+                }}
+              >
+                <MenuItem value="Inbox">Inbox</MenuItem>
+                <MenuItem value="Sent">Sent</MenuItem>
+                <MenuItem value="Spam">Spam</MenuItem>
+              </Select>
+            </FormControl>
+          </Stack>
+        </Box>
+
+        {/* Email Layout */}
+        <Box
+          className={
+            isMobile
+              ? selectedEmail
+                ? "!hidden"
+                : "!block"
+              : "!grid !grid-cols-1 md:!grid-cols-12 !gap-6"
+          }
+          sx={{ width: "100%", maxWidth: "100vw", overflowX: "hidden" }}
+        >
+          {/* Email List - Larger Left Card */}
           <Paper
             elevation={0}
             sx={{
               borderRadius: "16px",
               border: "1px solid #e5e7eb",
-              p: 4,
-              height: "calc(100vh - 220px)",
-              overflowY: "auto",
-              display: selectedEmail ? "block" : "flex",
-              alignItems: selectedEmail ? "flex-start" : "center",
-              justifyContent: selectedEmail ? "flex-start" : "center",
-              gridColumn: "span 7",
+              overflow: "hidden",
+              height: isMobile ? "auto" : "calc(100vh - 220px)",
+              display: isMobile && selectedEmail ? "none" : "block",
+              gridColumn: isMobile ? "span 12" : "span 5", // Larger left card
               "&::-webkit-scrollbar": { display: "none" },
               scrollbarWidth: "none",
               msOverflowStyle: "none",
             }}
           >
-            {selectedEmail ? (
-              <Box sx={{ width: "100%" }}>
-                <Stack
-                  direction="row"
-                  spacing={2}
-                  alignItems="center"
-                  className="!mb-4"
+            <Stack spacing={0}>
+              {currentEmails.map((email) => (
+                <Box
+                  key={email.id}
+                  onClick={() => setSelectedEmail(email)}
+                  sx={{
+                    p: 3,
+                    borderBottom: "1px solid #f3f4f6",
+                    cursor: "pointer",
+                    backgroundColor:
+                      selectedEmail?.id === email.id
+                        ? "#f0f9ff"
+                        : "transparent",
+                    "&:hover": {
+                      backgroundColor: "#f0f9ff",
+                    },
+                    transition: "all 0.2s ease",
+                  }}
+                  className="lg:!w-full w-[85vw]"
                 >
-                  <FiMail className="!text-xl !text-gray-500" />
-                  <Typography
-                    variant="h6"
-                    className="!font-bold !text-gray-800"
-                  >
-                    {selectedEmail.subject}
-                  </Typography>
-                </Stack>
+                  <Stack direction="row" spacing={2} alignItems="flex-start">
+                    <Avatar
+                      src={email.avatar}
+                      alt={email.from}
+                      sx={{
+                        width: 40,
+                        height: 40,
+                        flexShrink: 0,
+                      }}
+                    />
+                    <Box sx={{ flex: 1, minWidth: 0 }}>
+                      <Typography
+                        className="!font-medium !text-gray-900 !text-sm !truncate"
+                        sx={{
+                          fontWeight:
+                            selectedEmail?.id === email.id ? 600 : 500,
+                        }}
+                      >
+                        {email.from}
+                      </Typography>
+                      <Typography className="!text-xs !text-gray-500 !mt-0.5">
+                        {email.time}
+                      </Typography>
+                      <Typography className="!font-medium !text-gray-800 !text-sm !mt-1 !truncate">
+                        {email.subject}
+                      </Typography>
+                      <Typography className="!text-xs !text-gray-600 !truncate !mt-1">
+                        {email.preview}
+                      </Typography>
+                    </Box>
+                  </Stack>
+                </Box>
+              ))}
+            </Stack>
+          </Paper>
 
-                <Stack spacing={1} className="!mb-6">
-                  <Box className="!flex !justify-between">
-                    <Typography className="!text-sm !text-gray-600">
-                      To:
-                    </Typography>
-                    <Typography className="!text-sm !font-medium">
-                      nina@gmail.com
-                    </Typography>
-                  </Box>
-                  <Box className="!flex !justify-between">
-                    <Typography className="!text-sm !text-gray-600">
-                      From:
-                    </Typography>
-                    <Typography className="!text-sm !font-medium">
-                      {selectedEmail.from}
-                    </Typography>
-                  </Box>
-                  <Box className="!flex !justify-between">
-                    <Typography className="!text-sm !text-gray-600">
-                      Subject:
-                    </Typography>
-                    <Typography className="!text-sm !font-medium">
+          {/* Email Preview - Desktop */}
+          {!isMobile && (
+            <Paper
+              elevation={0}
+              sx={{
+                borderRadius: "16px",
+                border: "1px solid #e5e7eb",
+                p: 4,
+                height: "calc(100vh - 220px)",
+                overflowY: "auto",
+                display: selectedEmail ? "block" : "flex",
+                alignItems: selectedEmail ? "flex-start" : "center",
+                justifyContent: selectedEmail ? "flex-start" : "center",
+                gridColumn: "span 7",
+                "&::-webkit-scrollbar": { display: "none" },
+                scrollbarWidth: "none",
+                msOverflowStyle: "none",
+              }}
+            >
+              {selectedEmail ? (
+                <Box sx={{ width: "100%" }}>
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    alignItems="center"
+                    className="!mb-4"
+                  >
+                    <FiMail className="!text-xl !text-gray-500" />
+                    <Typography
+                      variant="h6"
+                      className="!font-bold !text-gray-800"
+                    >
                       {selectedEmail.subject}
                     </Typography>
-                  </Box>
-                  <Box className="!flex !justify-between">
-                    <Typography className="!text-sm !text-gray-600">
-                      Date:
-                    </Typography>
-                    <Typography className="!text-sm !font-medium">
-                      {selectedEmail.time}
-                    </Typography>
-                  </Box>
-                </Stack>
+                  </Stack>
 
-                <Divider sx={{ my: 3 }} />
+                  <Stack spacing={1} className="!mb-6">
+                    <Box className="!flex !justify-between">
+                      <Typography className="!text-sm !text-gray-600">
+                        To:
+                      </Typography>
+                      <Typography className="!text-sm !font-medium">
+                        nina@gmail.com
+                      </Typography>
+                    </Box>
+                    <Box className="!flex !justify-between">
+                      <Typography className="!text-sm !text-gray-600">
+                        From:
+                      </Typography>
+                      <Typography className="!text-sm !font-medium">
+                        {selectedEmail.from}
+                      </Typography>
+                    </Box>
+                    <Box className="!flex !justify-between">
+                      <Typography className="!text-sm !text-gray-600">
+                        Subject:
+                      </Typography>
+                      <Typography className="!text-sm !font-medium">
+                        {selectedEmail.subject}
+                      </Typography>
+                    </Box>
+                    <Box className="!flex !justify-between">
+                      <Typography className="!text-sm !text-gray-600">
+                        Date:
+                      </Typography>
+                      <Typography className="!text-sm !font-medium">
+                        {selectedEmail.time}
+                      </Typography>
+                    </Box>
+                  </Stack>
 
-                <Typography
-                  component="pre"
-                  className="!text-sm !text-gray-700 !whitespace-pre-wrap !font-sans"
-                  sx={{ fontFamily: "inherit", lineHeight: 1.6 }}
-                >
-                  {selectedEmail.body}
+                  <Divider sx={{ my: 3 }} />
+
+                  <Typography
+                    component="pre"
+                    className="!text-sm !text-gray-700 !whitespace-pre-wrap !font-sans"
+                    sx={{ fontFamily: "inherit", lineHeight: 1.6 }}
+                  >
+                    {selectedEmail.body}
+                  </Typography>
+                </Box>
+              ) : (
+                <Typography className="!text-gray-500 !text-center">
+                  Select an email to preview
+                </Typography>
+              )}
+            </Paper>
+          )}
+        </Box>
+
+        {/* Mobile Email Preview */}
+        {isMobile && selectedEmail && (
+          <Box className="!fixed !inset-0 !bg-white !z-50 !p-6 !overflow-y-auto">
+            <Stack
+              direction="row"
+              spacing={2}
+              alignItems="center"
+              className="!mb-6"
+            >
+              <IconButton onClick={() => setSelectedEmail(null)} size="small">
+                <FiChevronLeft />
+              </IconButton>
+              <Typography
+                variant="h6"
+                className="!font-bold !text-gray-800 !flex-1"
+              >
+                {selectedEmail.subject}
+              </Typography>
+            </Stack>
+
+            <Stack spacing={1} className="!mb-6">
+              <Box className="!flex !justify-between">
+                <Typography className="!text-sm !text-gray-600">To:</Typography>
+                <Typography className="!text-sm !font-medium">
+                  nina@gmail.com
                 </Typography>
               </Box>
-            ) : (
-              <Typography className="!text-gray-500 !text-center">
-                Select an email to preview
-              </Typography>
-            )}
-          </Paper>
-        )}
-      </Box>
+              <Box className="!flex !justify-between">
+                <Typography className="!text-sm !text-gray-600">
+                  From:
+                </Typography>
+                <Typography className="!text-sm !font-medium">
+                  {selectedEmail.from}
+                </Typography>
+              </Box>
+              <Box className="!flex !justify-between">
+                <Typography className="!text-sm !text-gray-600">
+                  Date:
+                </Typography>
+                <Typography className="!text-sm !font-medium">
+                  {selectedEmail.time}
+                </Typography>
+              </Box>
+            </Stack>
 
-      {/* Mobile Email Preview */}
-      {isMobile && selectedEmail && (
-        <Box className="!fixed !inset-0 !bg-white !z-50 !p-6 !overflow-y-auto">
-          <Stack
-            direction="row"
-            spacing={2}
-            alignItems="center"
-            className="!mb-6"
-          >
-            <IconButton onClick={() => setSelectedEmail(null)} size="small">
+            <Divider sx={{ my: 3 }} />
+
+            <Typography
+              component="pre"
+              className="!text-sm !text-gray-700 !whitespace-pre-wrap !font-sans"
+              sx={{ fontFamily: "inherit", lineHeight: 1.6 }}
+            >
+              {selectedEmail.body}
+            </Typography>
+          </Box>
+        )}
+
+        {/* Pagination */}
+        <Box className="!flex justify-center !mt-6">
+          <Stack direction="row" spacing={1} alignItems="center">
+            <IconButton
+              size="small"
+              disabled={page === 1}
+              onClick={() => setPage(page - 1)}
+              sx={{ color: page === 1 ? "#d1d5db" : "#9ca3af" }}
+            >
               <FiChevronLeft />
             </IconButton>
-            <Typography
-              variant="h6"
-              className="!font-bold !text-gray-800 !flex-1"
+            <Chip
+              label={page}
+              size="small"
+              sx={{
+                backgroundColor: "#0695c8",
+                color: "white",
+                fontWeight: "bold",
+                width: 36,
+                height: 36,
+                fontSize: "0.875rem",
+              }}
+            />
+            <IconButton
+              size="small"
+              disabled={page === totalPages}
+              onClick={() => setPage(page + 1)}
+              sx={{ color: page === totalPages ? "#d1d5db" : "#9ca3af" }}
             >
-              {selectedEmail.subject}
-            </Typography>
+              <FiChevronRight />
+            </IconButton>
           </Stack>
-
-          <Stack spacing={1} className="!mb-6">
-            <Box className="!flex !justify-between">
-              <Typography className="!text-sm !text-gray-600">To:</Typography>
-              <Typography className="!text-sm !font-medium">
-                nina@gmail.com
-              </Typography>
-            </Box>
-            <Box className="!flex !justify-between">
-              <Typography className="!text-sm !text-gray-600">From:</Typography>
-              <Typography className="!text-sm !font-medium">
-                {selectedEmail.from}
-              </Typography>
-            </Box>
-            <Box className="!flex !justify-between">
-              <Typography className="!text-sm !text-gray-600">Date:</Typography>
-              <Typography className="!text-sm !font-medium">
-                {selectedEmail.time}
-              </Typography>
-            </Box>
-          </Stack>
-
-          <Divider sx={{ my: 3 }} />
-
-          <Typography
-            component="pre"
-            className="!text-sm !text-gray-700 !whitespace-pre-wrap !font-sans"
-            sx={{ fontFamily: "inherit", lineHeight: 1.6 }}
-          >
-            {selectedEmail.body}
-          </Typography>
         </Box>
-      )}
-
-      {/* Pagination */}
-      <Box className="!flex justify-center !mt-6">
-        <Stack direction="row" spacing={1} alignItems="center">
-          <IconButton
-            size="small"
-            disabled={page === 1}
-            onClick={() => setPage(page - 1)}
-            sx={{ color: page === 1 ? "#d1d5db" : "#9ca3af" }}
-          >
-            <FiChevronLeft />
-          </IconButton>
-          <Chip
-            label={page}
-            size="small"
-            sx={{
-              backgroundColor: "#0695c8",
-              color: "white",
-              fontWeight: "bold",
-              width: 36,
-              height: 36,
-              fontSize: "0.875rem",
-            }}
-          />
-          <IconButton
-            size="small"
-            disabled={page === totalPages}
-            onClick={() => setPage(page + 1)}
-            sx={{ color: page === totalPages ? "#d1d5db" : "#9ca3af" }}
-          >
-            <FiChevronRight />
-          </IconButton>
-        </Stack>
       </Box>
-    </Box>
+    </>
   );
 };
 
