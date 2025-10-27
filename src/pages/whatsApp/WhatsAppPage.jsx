@@ -23,6 +23,7 @@ import {
   FiPhoneIncoming,
   FiPhoneMissed,
   FiMail,
+  FiCheck,
 } from "react-icons/fi";
 import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
@@ -62,7 +63,7 @@ const chats = [
     name: "Dr. Jame's Office",
     avatar: "https://i.pravatar.cc/150?img=15",
     lastMessage: "You should come in tomorrow.",
-    time: "2022-01-12 09:35",
+    time: " 09:35",
     messages: [
       {
         text: "Good morning! How are you feeling today?",
@@ -87,7 +88,7 @@ const chats = [
     avatar: "https://i.pravatar.cc/150?img=12",
     lastMessage:
       "He loves you. of course, he'll forgive you. you just's gotta say you're sorry.",
-    time: "2022-01-10 09:34",
+    time: "09:34",
     messages: [
       {
         text: "I messed up big time with Mark.",
@@ -132,7 +133,7 @@ const chats = [
     name: "Sally, J",
     avatar: "https://i.pravatar.cc/150?img=16",
     lastMessage: "I'll be there as soon as I can.",
-    time: "2022-01-06 10:41",
+    time: "10:41",
     messages: [
       { text: "Are you coming to the party?", time: "10:30", incoming: true },
       {
@@ -152,7 +153,7 @@ const chats = [
     name: "Bob",
     avatar: "https://i.pravatar.cc/150?img=2",
     lastMessage: "Thanks.",
-    time: "2022-01-06 10:00",
+    time: "10:00",
     messages: [
       {
         text: "Nina, Tom said you weren't feeling well. Are you ok?",
@@ -643,6 +644,7 @@ const Index = () => {
                               {msg.text}
                             </Typography>
                             <Typography
+                              className="flex items-center gap-1"
                               sx={{
                                 fontSize: "0.75rem",
                                 mt: 0.5,
@@ -651,7 +653,8 @@ const Index = () => {
                                   : "rgba(255,255,255,0.8)",
                               }}
                             >
-                              {msg.time.split(" ")[1]}
+                              {msg.time}
+                              <FiCheck/>
                             </Typography>
                           </Box>
                         </Box>
