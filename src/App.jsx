@@ -17,6 +17,7 @@ import AppsPage from "./pages/appsPage/AppsPage";
 import BookmarksPage from "./pages/bookmarks/BookmarksPage";
 import HistoryPage from "./pages/history/HistoryPage";
 import EmailPage from "./pages/email/EmailPage";
+import SimPage from "./pages/sim/SimPage";
 
 
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="general/bookmarks" element={<BookmarksPage />} />
           <Route path="general/history" element={<HistoryPage />} />
           <Route path="general/email" element={<EmailPage />} />
+          <Route path="general/sim" element={<SimPage />} />
         </Route>
       </Routes>
 
