@@ -24,7 +24,8 @@ import {
   FiPhoneMissed,
   FiMail,
 } from "react-icons/fi";
-
+import { IoLogoBitbucket } from "react-icons/io5";
+import BindPhone from "../../components/demo/BindPhone";
 
 // Create custom theme with cyan primary color
 const theme = createTheme({
@@ -67,7 +68,8 @@ const chats = [
     id: 2,
     name: "Sarah, T",
     avatar: "https://i.pravatar.cc/150?img=12",
-    lastMessage: "He loves you. of course, he'll forgive you. you just's gotta say you're sorry.",
+    lastMessage:
+      "He loves you. of course, he'll forgive you. you just's gotta say you're sorry.",
     time: "2022-01-10 09:34",
     messages: [],
   },
@@ -78,9 +80,21 @@ const chats = [
     lastMessage: "Then I have a few meetings in the city.",
     time: "2022-01-07 10:45",
     messages: [
-      { text: "Are you going to get home on time?", time: "2022-01-07 10:30", incoming: true },
-      { text: "Yes. I'm almost done at the office.", time: "2022-01-07 10:40", incoming: false },
-      { text: "Then I have a few meetings in the city.", time: "2022-01-07 10:45", incoming: false },
+      {
+        text: "Are you going to get home on time?",
+        time: "2022-01-07 10:30",
+        incoming: true,
+      },
+      {
+        text: "Yes. I'm almost done at the office.",
+        time: "2022-01-07 10:40",
+        incoming: false,
+      },
+      {
+        text: "Then I have a few meetings in the city.",
+        time: "2022-01-07 10:45",
+        incoming: false,
+      },
     ],
   },
   {
@@ -98,17 +112,41 @@ const chats = [
     lastMessage: "Thanks.",
     time: "2022-01-06 10:00",
     messages: [
-      { text: "Nina, Tom said you weren't feeling well. Are you ok?", time: "2022-01-06 08:11", incoming: true },
-      { text: "No. I won't be able to hang out today.", time: "2022-01-06 08:33", incoming: false },
-      { text: "Don't worry about it. Feel better soon!", time: "2022-01-06 09:52", incoming: true },
+      {
+        text: "Nina, Tom said you weren't feeling well. Are you ok?",
+        time: "2022-01-06 08:11",
+        incoming: true,
+      },
+      {
+        text: "No. I won't be able to hang out today.",
+        time: "2022-01-06 08:33",
+        incoming: false,
+      },
+      {
+        text: "Don't worry about it. Feel better soon!",
+        time: "2022-01-06 09:52",
+        incoming: true,
+      },
       { text: "Thanks.", time: "2022-01-06 10:00", incoming: false },
     ],
   },
 ];
 
 const contacts = [
-  { id: 1, name: "Adam", avatar: "https://i.pravatar.cc/150?img=3", phone: "3474652243", email: "adam@gmail.com" },
-  { id: 2, name: "Alicia", avatar: "https://i.pravatar.cc/150?img=4", phone: "3457565667", email: "alicia@gmail.com" },
+  {
+    id: 1,
+    name: "Adam",
+    avatar: "https://i.pravatar.cc/150?img=3",
+    phone: "3474652243",
+    email: "adam@gmail.com",
+  },
+  {
+    id: 2,
+    name: "Alicia",
+    avatar: "https://i.pravatar.cc/150?img=4",
+    phone: "3457565667",
+    email: "alicia@gmail.com",
+  },
   { id: 3, name: "Andrew", avatar: "https://i.pravatar.cc/150?img=5" },
   { id: 4, name: "Arya", avatar: "https://i.pravatar.cc/150?img=6" },
   { id: 5, name: "Alice", avatar: "https://i.pravatar.cc/150?img=7" },
@@ -119,14 +157,68 @@ const contacts = [
 ];
 
 const callLogs = [
-  { id: 1, name: "Adam", avatar: "https://i.pravatar.cc/150?img=3", type: "outgoing", time: "2022-02-10 20:30", duration: "20:30" },
-  { id: 2, name: "Sarah", avatar: "https://i.pravatar.cc/150?img=12", type: "outgoing", time: "2022-02-08 09:45", duration: "09:45" },
-  { id: 3, name: "Jane", avatar: "https://i.pravatar.cc/150?img=13", type: "missed", time: "2022-02-04 18:38" },
-  { id: 4, name: "Arya", avatar: "https://i.pravatar.cc/150?img=6", type: "incoming", time: "2022-01-28 09:30", duration: "05:20" },
-  { id: 5, name: "Alicia", avatar: "https://i.pravatar.cc/150?img=4", type: "outgoing", time: "2022-01-15 17:30", duration: "12:15" },
-  { id: 6, name: "Tom", avatar: "https://i.pravatar.cc/150?img=14", type: "missed", time: "2022-01-11 07:56" },
-  { id: 7, name: "Dr. James", avatar: "https://i.pravatar.cc/150?img=15", type: "outgoing", time: "2022-01-10 15:45", duration: "08:30" },
-  { id: 8, name: "Brenda", avatar: "https://i.pravatar.cc/150?img=11", type: "outgoing", time: "2022-01-01 10:30", duration: "03:45" },
+  {
+    id: 1,
+    name: "Adam",
+    avatar: "https://i.pravatar.cc/150?img=3",
+    type: "outgoing",
+    time: "2022-02-10 20:30",
+    duration: "20:30",
+  },
+  {
+    id: 2,
+    name: "Sarah",
+    avatar: "https://i.pravatar.cc/150?img=12",
+    type: "outgoing",
+    time: "2022-02-08 09:45",
+    duration: "09:45",
+  },
+  {
+    id: 3,
+    name: "Jane",
+    avatar: "https://i.pravatar.cc/150?img=13",
+    type: "missed",
+    time: "2022-02-04 18:38",
+  },
+  {
+    id: 4,
+    name: "Arya",
+    avatar: "https://i.pravatar.cc/150?img=6",
+    type: "incoming",
+    time: "2022-01-28 09:30",
+    duration: "05:20",
+  },
+  {
+    id: 5,
+    name: "Alicia",
+    avatar: "https://i.pravatar.cc/150?img=4",
+    type: "outgoing",
+    time: "2022-01-15 17:30",
+    duration: "12:15",
+  },
+  {
+    id: 6,
+    name: "Tom",
+    avatar: "https://i.pravatar.cc/150?img=14",
+    type: "missed",
+    time: "2022-01-11 07:56",
+  },
+  {
+    id: 7,
+    name: "Dr. James",
+    avatar: "https://i.pravatar.cc/150?img=15",
+    type: "outgoing",
+    time: "2022-01-10 15:45",
+    duration: "08:30",
+  },
+  {
+    id: 8,
+    name: "Brenda",
+    avatar: "https://i.pravatar.cc/150?img=11",
+    type: "outgoing",
+    time: "2022-01-01 10:30",
+    duration: "03:45",
+  },
 ];
 
 const Index = () => {
@@ -145,8 +237,10 @@ const Index = () => {
   };
 
   const getCallIcon = (type) => {
-    if (type === "outgoing") return <FiPhoneCall sx={{ fontSize: 16, color: "#10b981" }} />;
-    if (type === "incoming") return <FiPhoneIncoming sx={{ fontSize: 16, color: "#10b981" }} />;
+    if (type === "outgoing")
+      return <FiPhoneCall sx={{ fontSize: 16, color: "#10b981" }} />;
+    if (type === "incoming")
+      return <FiPhoneIncoming sx={{ fontSize: 16, color: "#10b981" }} />;
     return <FiPhoneMissed sx={{ fontSize: 16, color: "#ef4444" }} />;
   };
 
@@ -164,6 +258,17 @@ const Index = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <header className="!mb-4 sm:!mb-6 !px-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
+          <div className="flex items-center !gap-2 sm:!gap-3">
+            <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
+              WhatsApp
+              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+            </h1>
+          </div>
+          <BindPhone />
+        </div>
+      </header>
       <Box
         sx={{
           minHeight: "100vh",
@@ -172,19 +277,6 @@ const Index = () => {
         }}
       >
         <Box sx={{ maxWidth: 1400, mx: "auto" }}>
-          {/* Header */}
-          <Box sx={{ mb: 3 }}>
-            <Typography
-              variant="h5"
-              sx={{ fontWeight: "bold", color: "primary.main" }}
-            >
-              {selectedChat?.name ||
-                selectedContact?.name ||
-                selectedCall?.name ||
-                "Communication"}
-            </Typography>
-          </Box>
-
           {/* Tabs */}
           {!showDetail && (
             <Tabs
@@ -518,7 +610,10 @@ const Index = () => {
                             display: "flex",
                           }}
                         >
-                          <FiPhone sx={{ color: "white", fontSize: 20 }} className="!text-white" />
+                          <FiPhone
+                            sx={{ color: "white", fontSize: 20 }}
+                            className="!text-white"
+                          />
                         </Box>
                         <Box>
                           <Typography
@@ -554,7 +649,10 @@ const Index = () => {
                             display: "flex",
                           }}
                         >
-                          <FiMail sx={{ color: "white", fontSize: 20 }} className="!text-white" />
+                          <FiMail
+                            sx={{ color: "white", fontSize: 20 }}
+                            className="!text-white"
+                          />
                         </Box>
                         <Box>
                           <Typography
