@@ -34,6 +34,7 @@ import LinkedInPage from "./pages/linkedin/LinkedInPage";
 import ZoomPage from "./pages/zoom/ZoomPage";
 import ViberPage from "./pages/viber/ViberPage";
 import TelegramPage from "./pages/telegram/TelegramPage";
+import LinePage from "./pages/line/LinePage";
 
 
 
@@ -81,6 +82,7 @@ function App() {
           <Route path="social/zoom" element={<ZoomPage />} />
           <Route path="social/viber" element={<ViberPage />} />
           <Route path="social/telegram" element={<TelegramPage />} />
+          <Route path="social/line" element={<LinePage />} />
         </Route>
       </Routes>
 
