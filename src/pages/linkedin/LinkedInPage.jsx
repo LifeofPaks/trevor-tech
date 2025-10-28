@@ -17,6 +17,7 @@ import { FiMessageSquare, FiUsers, FiMail } from "react-icons/fi";
 import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
 import { RiLinkedinFill } from "react-icons/ri";
 import BindPhone from "../../components/demo/BindPhone";
+import { FaLinkedin } from "react-icons/fa";
 
 // LinkedIn Light Mode Theme
 const theme = createTheme({
@@ -284,7 +285,7 @@ const LinkedInPage = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               LinkedIn
-              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              <FaLinkedin className="text-[#0A66C2]" />
             </h1>
           </div>
           <BindPhone />
@@ -312,7 +313,7 @@ const LinkedInPage = () => {
               }}
             >
               <Tab
-                icon={<RiLinkedinFill />}
+                icon={<FaLinkedin />}
                 iconPosition="start"
                 label={isMobile ? "" : "Messages"}
                 value="chat"

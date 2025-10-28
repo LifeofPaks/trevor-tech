@@ -26,6 +26,7 @@ import Image8 from "../../assets/dashboard/screenshots/i-8.webp";
 import Image9 from "../../assets/dashboard/screenshots/i-9.webp";
 import { IoLogoBitbucket } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
+import { RiScreenshot2Fill } from "react-icons/ri";
 
 // Sample Data
 const allItems = [
@@ -135,7 +136,7 @@ const ScreenshotsPage = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               Screen Captures
-              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              <RiScreenshot2Fill className="text-[#0695c8]" />
             </h1>
           </div>
           <BindPhone />
