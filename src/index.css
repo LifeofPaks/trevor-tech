@@ -41,27 +41,27 @@ button {
 
 /* 🌊 Custom Scrollbar */
 .scrollbar-custom {
-  scrollbar-width: thin;              /* For Firefox */
-  scrollbar-color: #0694c881 #f1f5f9;   /* thumb color | track color */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #0694c881 #0a0a1f; /* thumb color | track color */
 }
 
 /* Chrome, Safari, Edge */
 .scrollbar-custom::-webkit-scrollbar {
-  width: 8px;                         /* width of the scrollbar */
+  width: 8px; /* width of the scrollbar */
 }
 
 .scrollbar-custom::-webkit-scrollbar-track {
-  background: #f1f5f9;                /* light gray track */
-  border-radius: 9999px;              /* fully rounded */
+  background: #0a0a1f; /* dark navy track */
+  border-radius: 9999px; /* fully rounded */
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb {
-  background-color: #0694c8a1;          /* your brand blue */
-  border-radius: 9999px;              /* rounded edges */
-  border: 2px solid #f1f5f9;          /* creates a soft outline effect */
+  background-color: #0694c8a1; /* brand blue thumb */
+  border-radius: 9999px; /* rounded edges */
+  border: 2px solid #0a0a1f; /* subtle outline matching the track */
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb:hover {
-  background-color: #0482b098;          /* slightly darker on hover */
+  background-color: #0482b098; /* slightly darker blue on hover */
 }
 
