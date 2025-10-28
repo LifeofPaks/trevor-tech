@@ -17,7 +17,7 @@ import {
   Stack,
   IconButton,
 } from "@mui/material";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight, FiKey } from "react-icons/fi";
 import { IoLogoBitbucket } from "react-icons/io5";
 import BuyModal from "../../components/buyModal/BuyModal";
 
@@ -101,7 +101,7 @@ const KeyLogger = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               KeyLogger
-              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              <FiKey className="text-[#0695c8] " />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">

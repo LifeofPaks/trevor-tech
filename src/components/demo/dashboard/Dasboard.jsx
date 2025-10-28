@@ -40,6 +40,7 @@ import DemoFooter from "../DemoFooter";
 import { IoLogoBitbucket } from "react-icons/io5";
 import { useState } from "react";
 import BuyModal from "../../buyModal/BuyModal";
+import { MdDashboard } from "react-icons/md";
 
 const Dashboard = () => {
     const [open, setOpen] = useState(false);
@@ -54,7 +55,7 @@ const Dashboard = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               Dashboard{" "}
-              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              <MdDashboard className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">

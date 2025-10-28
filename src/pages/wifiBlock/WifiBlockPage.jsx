@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { IoLogoBitbucket } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
+import { MdOutlineWifiPassword } from "react-icons/md";
 
 const WifiBlockPage = () => {
   const theme = useTheme();
@@ -105,7 +106,7 @@ const WifiBlockPage = () => {
             <div className="flex items-center !gap-2 sm:!gap-3">
               <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
                 Wi-Fi Block
-                <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+                <MdOutlineWifiPassword className="text-[#0695c8]" />
               </h1>
             </div>
             <BindPhone />
@@ -211,7 +212,7 @@ const WifiBlockPage = () => {
                           textTransform: "none",
                           fontWeight: 600,
                           borderRadius: "999px",
-                          fontSize:"0.675rem",
+                          fontSize: "0.675rem",
                           px: 3,
                           minWidth: "auto",
                           boxShadow: "0 2px 8px rgba(0,0,0,0.1)",

@@ -11,6 +11,7 @@ import {
 import { FiPhone, FiMail, FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { IoLogoBitbucket } from "react-icons/io5";
 import BuyModal from "../../components/buyModal/BuyModal";
+import { RiContactsBook2Fill } from "react-icons/ri";
 
 // Sample Contacts Data (from screenshots)
 const contacts = [
@@ -100,7 +101,7 @@ const ContactsPage = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               Contacts
-              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              <RiContactsBook2Fill className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">

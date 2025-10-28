@@ -21,7 +21,7 @@ import {
   MdChevronLeft,
   MdChevronRight,
 } from "react-icons/md";
-import { IoLogoBitbucket } from "react-icons/io5";
+import { IoCallSharp, IoLogoBitbucket } from "react-icons/io5";
 import BuyModal from "../../components/buyModal/BuyModal";
 
 // Sample Call Data
@@ -112,7 +112,7 @@ const CallsPage = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               Calls
-              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              <IoCallSharp className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">

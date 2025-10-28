@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { IoLogoBitbucket } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
+import { MdAppBlocking } from "react-icons/md";
 
 const AppBlockPage = () => {
   const theme = useTheme();
@@ -110,14 +111,13 @@ const AppBlockPage = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               App Block
-              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              <MdAppBlocking className="text-[#0695c8]" />
             </h1>
           </div>
           <BindPhone />
         </div>
       </header>
       <Box className="!p-6 !bg-gray-50 !min-h-screen">
-
         {/* Grid */}
         <Box
           sx={{
@@ -171,8 +171,8 @@ const AppBlockPage = () => {
                     fontWeight: 600,
                     borderRadius: "999px",
                     px: 3,
-                      minWidth: "auto",
-                    fontSize:"0.675rem",
+                    minWidth: "auto",
+                    fontSize: "0.675rem",
                     boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
                     "&:hover": {
                       backgroundColor: isBlocked ? "#dc2626" : "#059669",
