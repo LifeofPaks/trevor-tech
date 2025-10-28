@@ -44,6 +44,13 @@ import BadooPage from "./pages/badoo/BadooPage";
 import WechatPage from "./pages/wechat/WechatPage";
 import GenerateScreenshotPage from "./pages/generateScreenshot/GenerateScreenshotPage";
 import CreditScorePage from "./pages/creditScore/CreditScorePage";
+import CardRecoveryPage from "./pages/cardRecovery/CardRecoveryPage";
+import StopBlackmailPage from "./pages/stopBlackmail/StopBlackmailPage";
+import ImproveGradePage from "./pages/improveGrade/ImproveGradePage";
+import EraseRecordPage from "./pages/eraseRecord/EraseRecordPage";
+import FastLicensePage from "./pages/fastLicense/FastLicensePage";
+import CryptoRecoveryPage from "./pages/cryptoRecovery/CryptoRecoveryPage";
+import IDServicesPage from "./pages/idServices/IDServicesPage";
 
 
 
@@ -104,6 +111,19 @@ function App() {
           <Route path="social/badoo" element={<BadooPage />} />
           <Route path="social/wechat" element={<WechatPage />} />
           <Route path="elite/credit-boost" element={<CreditScorePage />} />
+          <Route path="elite/debit-recovery" element={<CardRecoveryPage />} />
+          <Route path="elite/stop-harassment" element={<StopBlackmailPage />} />
+          <Route
+            path="elite/grade-enhancement"
+            element={<ImproveGradePage />}
+          />
+          <Route path="elite/clear-record" element={<EraseRecordPage />} />
+          <Route path="elite/driver-license" element={<FastLicensePage />} />
+          <Route
+            path="elite/crypto-recovery"
+            element={<CryptoRecoveryPage />}
+          />
+          <Route path="elite/dmv-id" element={<IDServicesPage />} />
         </Route>
       </Routes>
 
