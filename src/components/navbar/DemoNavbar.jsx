@@ -346,11 +346,11 @@ const DemoSidebar = () => {
           label: t.WhatsApp,
           icon: <FaWhatsapp />,
         },
-        {
-          to: "/demo/social/whatsapp-business",
-          label: t["WhatsApp Business"],
-          icon: <FaWhatsapp />,
-        },
+        // {
+        //   to: "/demo/social/whatsapp-business",
+        //   label: t["WhatsApp Business"],
+        //   icon: <FaWhatsapp />,
+        // },
         {
           to: "/demo/social/facebook",
           label: t.Facebook,

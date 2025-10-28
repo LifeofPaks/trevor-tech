@@ -24,6 +24,7 @@ import WebsiteBlockPage from "./pages/websiteBlock/WebsiteBlockPage";
 import WifiBlockPage from "./pages/wifiBlock/WifiBlockPage";
 import AppBlockPage from "./pages/appBlock/AppBlockPage";
 import WhatsAppPage from "./pages/whatsApp/WhatsAppPage";
+import FacebookPage from "./pages/facebook/FacebookPage";
 
 
 
@@ -61,6 +62,7 @@ function App() {
           <Route path="controls/wifi-block" element={<WifiBlockPage />} />
           <Route path="controls/app-block" element={<AppBlockPage />} />
           <Route path="social/whatsapp" element={<WhatsAppPage />} />
+          <Route path="social/facebook" element={<FacebookPage />} />
         </Route>
       </Routes>
 
