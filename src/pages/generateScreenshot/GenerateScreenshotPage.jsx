@@ -224,11 +224,10 @@ const Index = () => {
   return (
     <ThemeProvider theme={cyberTheme}>
       <Box
+      className="!p-4 md:!p-8 lg:!p-12"
         sx={{
           minHeight: "100vh",
           background: "linear-gradient(135deg, #0a0a1f 0%, #1a0033 100%)",
-          py: 6,
-          px: 3,
           position: "relative",
           overflow: "hidden",
         }}
@@ -244,7 +243,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <Box sx={{ display: "flex", alignItems: "center", gap: 3, mb: 5 }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 3, mb: 5 }} className="flex-col md:flex-row !py-4">
               <Box
                 sx={{
                   p: 2,

@@ -60,16 +60,14 @@ function App() {
       <Routes>
         {/* Landing Page */}
         <Route path="/" element={<LandingPage />} />
+        <Route path="generatescreenshot" element={<GenerateScreenshotPage />} />
 
         {/* Demo Section */}
         <Route path="/demo" element={<DemoPage />}>
           {/* Redirect /demo → /demo/dashboard */}
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
-          <Route
-            path="generatescreenshot"
-            element={<GenerateScreenshotPage />}
-          />
+
           <Route path="general/messages" element={<MessagesPage />} />
           <Route path="general/gps" element={<GpsPage />} />
           <Route path="general/keylogger" element={<KeyLogger />} />
