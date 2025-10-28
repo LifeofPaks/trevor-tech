@@ -27,6 +27,7 @@ import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
 import { SiFacebook } from "react-icons/si"; // Facebook Messenger icon
 import { RiCheckDoubleFill } from "react-icons/ri";
 import BindPhone from "../../components/demo/BindPhone";
+import { FaFacebookMessenger } from "react-icons/fa6";
 
 // Facebook Blue Theme
 const theme = createTheme({
@@ -304,7 +305,7 @@ const FacebookPage = () => {
               }}
             >
               <Tab
-                icon={<FiMessageSquare />}
+                icon={<FaFacebookMessenger />}
                 iconPosition="start"
                 label={isMobile ? "" : "Chat"}
                 value="chat"
