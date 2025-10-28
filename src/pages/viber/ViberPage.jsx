@@ -338,7 +338,7 @@ const ViberPage = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               Viber
-              <FaViber className="text-[#7B4B94] rotate-[180deg]" />
+              <FaViber className="text-[#7B4B94]" />
             </h1>
           </div>
           <BindPhone />

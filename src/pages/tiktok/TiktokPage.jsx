@@ -273,7 +273,7 @@ const TiktokPage = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               TikTok
-              <IoLogoBitbucket className="text-[#00f2ea] rotate-[180deg]" />
+              <SiTiktok className="text-[#ff0050]" />
             </h1>
           </div>
           <BindPhone />
