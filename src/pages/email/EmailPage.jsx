@@ -18,6 +18,7 @@ import {
 import { FiChevronLeft, FiChevronRight, FiMail } from "react-icons/fi";
 import { IoLogoBitbucket } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
+import { MdEmail } from "react-icons/md";
 
 // Sample Emails with Profile Pictures
 const emails = [
@@ -131,8 +132,8 @@ const EmailPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-Email History
-              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              Email History
+              <MdEmail className="text-[#0695c8]" />
             </h1>
           </div>
           <BindPhone />
