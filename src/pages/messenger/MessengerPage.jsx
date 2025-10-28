@@ -288,8 +288,6 @@ const FacebookPage = () => {
 
       <Box
         sx={{
-          minHeight: "100vh",
-          bgcolor: "background.default",
           p: { xs: 2, sm: 3, md: 4 },
         }}
       >
@@ -407,7 +405,13 @@ const FacebookPage = () => {
 
               {/* Contacts List */}
               {tab === "contacts" && (
-                <Stack>
+                <Stack
+                  className="scrollbar-hide"
+                  sx={{
+                    maxHeight: "70vh", // ensure scrolling still works
+                    overflowY: "auto",
+                  }}
+                >
                   {Object.keys(groupContactsByLetter())
                     .sort()
                     .map((letter) => (
@@ -425,6 +429,7 @@ const FacebookPage = () => {
                         </Box>
                         {groupContactsByLetter()[letter].map((contact) => (
                           <Box
+                            className="scrollbar-hide"
                             key={contact.id}
                             sx={{
                               p: 2,
