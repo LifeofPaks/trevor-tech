@@ -282,7 +282,7 @@ const DemoSidebar = () => {
 
   const menuItems = [
     { label: t["Dashboard"], icon: <MdDashboard />, to: "/demo/dashboard" },
-    { label: t["Generate"], icon: <MdDashboard />, to: "/demo/generatescreenshot" },
+    // { label: t["Generate"], icon: <MdDashboard />, to: "/demo/generatescreenshot" },
 
     {
       label: t["General Features"],
