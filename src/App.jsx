@@ -30,6 +30,7 @@ import InstagramPage from "./pages/instagram/InstagramPage";
 import XPage from "./pages/x/XPage";
 import TiktokPage from "./pages/tiktok/TiktokPage";
 import SnapchatPage from "./pages/snapchat/SnapchatPage";
+import LinkedInPage from "./pages/linkedin/LinkedInPage";
 
 
 
@@ -73,6 +74,7 @@ function App() {
           <Route path="social/x" element={<XPage />} />
           <Route path="social/tiktok" element={<TiktokPage />} />
           <Route path="social/snapchat" element={<SnapchatPage />} />
+          <Route path="social/linkedin" element={<LinkedInPage />} />
         </Route>
       </Routes>
 
