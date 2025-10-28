@@ -41,6 +41,9 @@ const theme = createTheme({
       paper: "#ffffff",
     },
   },
+  typography: {
+    fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
+  },
   components: {
     MuiTab: {
       styleOverrides: {

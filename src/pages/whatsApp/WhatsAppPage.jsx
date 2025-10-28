@@ -43,6 +43,9 @@ const theme = createTheme({
       dark: "#9ee6db",
     },
   },
+  typography: {
+    fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
+  },
   components: {
     MuiTab: {
       styleOverrides: {
