@@ -37,6 +37,11 @@ import TelegramPage from "./pages/telegram/TelegramPage";
 import LinePage from "./pages/line/LinePage";
 import KakaoTalkPage from "./pages/kakaoTalk/KakaoTalkPage";
 import SkypePage from "./pages/skype/SkypePage";
+import ImoPage from "./pages/imo/ImoPage";
+import DiscordPage from "./pages/discord/DiscordPage";
+import TinderPage from "./pages/tinder/TinderPage";
+import BadooPage from "./pages/badoo/BadooPage";
+import WechatPage from "./pages/wechat/WechatPage";
 
 
 
@@ -87,6 +92,11 @@ function App() {
           <Route path="social/line" element={<LinePage />} />
           <Route path="social/kakaotalk" element={<KakaoTalkPage />} />
           <Route path="social/skype" element={<SkypePage />} />
+          <Route path="social/imo" element={<ImoPage />} />
+          <Route path="social/discord" element={<DiscordPage />} />
+          <Route path="social/tinder" element={<TinderPage />} />
+          <Route path="social/badoo" element={<BadooPage />} />
+          <Route path="social/wechat" element={<WechatPage />} />
         </Route>
       </Routes>
 

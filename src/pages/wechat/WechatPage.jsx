@@ -26,20 +26,20 @@ import {
 import { IoArrowBackCircle } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
 import { RiCheckDoubleFill } from "react-icons/ri";
-import { BsChatText } from "react-icons/bs";
+import { SiWechat } from "react-icons/si";
 
-// imo Light Mode Theme (Green + Blue)
+// WeChat Light Mode Theme (Green)
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#00D084", // imo Green
-      light: "#33E0A1",
-      dark: "#00A66B",
+      main: "#07C160", // WeChat Green
+      light: "#34D881",
+      dark: "#05A050",
     },
     secondary: {
-      main: "#1DA1F2", // imo Blue accent
-      light: "#4DB8FF",
-      dark: "#0D8BD9",
+      main: "#F5F5F5",
+      light: "#FFFFFF",
+      dark: "#E0E0E0",
     },
     success: { main: "#10B981" }, // incoming
     error: { main: "#EF4444" }, // missed
@@ -58,7 +58,7 @@ const theme = createTheme({
           fontSize: "0.9375rem",
           color: "#6B7280",
           "&.Mui-selected": {
-            color: "#00D084",
+            color: "#07C160",
           },
         },
       },
@@ -70,176 +70,164 @@ const theme = createTheme({
 const chats = [
   {
     id: 1,
-    name: "Aryan Patel",
-    avatar: "https://i.pravatar.cc/150?img=16",
-    lastMessage: "I left my keys in your car",
-    time: "03:20",
+    name: "Li Wei",
+    avatar: "https://i.pravatar.cc/150?img=64",
+    lastMessage: "我在你楼下",
+    time: "03:30",
     messages: [
-      { text: "You still up?", time: "03:05", incoming: true },
-      { text: "Yeah. Can’t sleep", time: "03:06", incoming: false },
-      { text: "I left my keys in your car", time: "03:20", incoming: false },
+      { text: "你睡了吗？", time: "03:15", incoming: true },
+      { text: "还没", time: "03:16", incoming: false },
+      { text: "我在你楼下", time: "03:30", incoming: false },
     ],
   },
   {
     id: 2,
-    name: "Rohan Mehta",
-    avatar: "https://i.pravatar.cc/150?img=17",
-    lastMessage: "She didn’t notice",
-    time: "02:15",
+    name: "Zhang Hao",
+    avatar: "https://i.pravatar.cc/150?img=65",
+    lastMessage: "她完全不知道",
+    time: "02:10",
     messages: [
-      { text: "That was too close", time: "02:00", incoming: true },
-      { text: "But we’re safe", time: "02:01", incoming: false },
-      { text: "She didn’t notice", time: "02:15", incoming: false },
+      { text: "刚才太险了", time: "01:55", incoming: true },
+      { text: "但我们安全了", time: "01:56", incoming: false },
+      { text: "她完全不知道", time: "02:10", incoming: false },
     ],
   },
   {
     id: 3,
-    name: "Vikram Singh",
-    avatar: "https://i.pravatar.cc/150?img=18",
-    lastMessage: "Send the video again",
-    time: "01:30",
+    name: "Wang Jun",
+    avatar: "https://i.pravatar.cc/150?img=66",
+    lastMessage: "再发一次照片",
+    time: "01:20",
     messages: [
-      { text: "You deleted it?", time: "01:15", incoming: true },
-      { text: "Had to. Too risky", time: "01:16", incoming: false },
-      { text: "Send the video again", time: "01:30", incoming: false },
+      { text: "你删了？", time: "01:05", incoming: true },
+      { text: "必须删，太危险", time: "01:06", incoming: false },
+      { text: "再发一次照片", time: "01:20", incoming: false },
     ],
   },
   {
     id: 4,
-    name: "Arjun Desai",
-    avatar: "https://i.pravatar.cc/150?img=19",
-    lastMessage: "I’m in your apartment",
-    time: "00:45",
+    name: "Chen Ming",
+    avatar: "https://i.pravatar.cc/150?img=67",
+    lastMessage: "我在你房间",
+    time: "00:35",
     messages: [
-      { text: "You home?", time: "00:30", incoming: true },
-      { text: "She’s out. Door’s open", time: "00:31", incoming: false },
-      { text: "I’m in your apartment", time: "00:45", incoming: false },
+      { text: "你在家吗？", time: "00:20", incoming: true },
+      { text: "她睡了，门没锁", time: "00:21", incoming: false },
+      { text: "我在你房间", time: "00:35", incoming: false },
     ],
   },
   {
     id: 5,
-    name: "Neil Sharma",
-    avatar: "https://i.pravatar.cc/150?img=20",
-    lastMessage: "I’m addicted to you",
-    time: "04:10",
+    name: "Liu Yang",
+    avatar: "https://i.pravatar.cc/150?img=68",
+    lastMessage: "我为你着迷",
+    time: "04:00",
     messages: [
-      {
-        text: "I can’t stop thinking about you",
-        time: "03:55",
-        incoming: true,
-      },
-      { text: "Same. Every second", time: "03:56", incoming: false },
-      { text: "I’m addicted to you", time: "04:10", incoming: false },
+      { text: "我一刻都离不开你", time: "03:45", incoming: true },
+      { text: "我也是", time: "03:46", incoming: false },
+      { text: "我为你着迷", time: "04:00", incoming: false },
     ],
   },
   {
     id: 6,
-    name: "Karan Reddy",
-    avatar: "https://i.pravatar.cc/150?img=21",
-    lastMessage: "I told her I was at work",
-    time: "22:40",
+    name: "Zhao Kai",
+    avatar: "https://i.pravatar.cc/150?img=69",
+    lastMessage: "我说我在加班",
+    time: "22:50",
     messages: [
-      { text: "Where are you?", time: "22:20", incoming: true },
-      { text: "Work. Late shift", time: "22:21", incoming: false },
-      { text: "Liar", time: "22:22", incoming: true },
-      { text: "I told her I was at work", time: "22:40", incoming: false },
+      { text: "你在哪？", time: "22:30", incoming: true },
+      { text: "加班，不能接电话", time: "22:31", incoming: false },
+      { text: "骗子", time: "22:32", incoming: true },
+      { text: "我说我在加班", time: "22:50", incoming: false },
     ],
   },
   {
     id: 7,
-    name: "Dev Kapoor",
-    avatar: "https://i.pravatar.cc/150?img=22",
-    lastMessage: "This is getting out of control",
-    time: "21:05",
+    name: "Xu Lei",
+    avatar: "https://i.pravatar.cc/150?img=70",
+    lastMessage: "我们不能再这样了",
+    time: "21:15",
     messages: [
-      { text: "We said last time was the last", time: "20:50", incoming: true },
-      { text: "I know", time: "20:51", incoming: false },
-      { text: "Then why am I here?", time: "20:52", incoming: true },
-      {
-        text: "This is getting out of control",
-        time: "21:05",
-        incoming: false,
-      },
+      { text: "我们说好这是最后一次", time: "21:00", incoming: true },
+      { text: "我知道", time: "21:01", incoming: false },
+      { text: "那我为什么还在这？", time: "21:02", incoming: true },
+      { text: "我们不能再这样了", time: "21:15", incoming: false },
     ],
   },
   {
     id: 8,
-    name: "Siddharth Rao",
-    avatar: "https://i.pravatar.cc/150?img=23",
-    lastMessage: "I dream about you every night",
-    time: "05:00",
+    name: "Sun Tao",
+    avatar: "https://i.pravatar.cc/150?img=71",
+    lastMessage: "我每晚都梦到你",
+    time: "05:05",
     messages: [
-      { text: "You sleeping?", time: "04:45", incoming: true },
-      { text: "No. You?", time: "04:46", incoming: false },
-      { text: "Thinking of you", time: "04:47", incoming: true },
-      { text: "I dream about you every night", time: "05:00", incoming: false },
+      { text: "你睡了吗？", time: "04:50", incoming: true },
+      { text: "没，你呢？", time: "04:51", incoming: false },
+      { text: "在想你", time: "04:52", incoming: true },
+      { text: "我每晚都梦到你", time: "05:05", incoming: false },
     ],
   },
   {
     id: 9,
-    name: "Yash Malhotra",
-    avatar: "https://i.pravatar.cc/150?img=24",
-    lastMessage: "Delete after reading",
-    time: "02:25",
+    name: "Ma Bo",
+    avatar: "https://i.pravatar.cc/150?img=72",
+    lastMessage: "看完就删",
+    time: "02:30",
     messages: [
-      {
-        text: "I can’t stop replaying last night",
-        time: "02:10",
-        incoming: true,
-      },
-      { text: "That thing you did...", time: "02:11", incoming: false },
-      { text: "Shh. Don’t type it", time: "02:12", incoming: true },
-      { text: "Delete after reading", time: "02:25", incoming: false },
+      { text: "昨晚的事我停不下来", time: "02:15", incoming: true },
+      { text: "你做的那个...", time: "02:16", incoming: false },
+      { text: "嘘，别打出来", time: "02:17", incoming: true },
+      { text: "看完就删", time: "02:30", incoming: false },
     ],
   },
   {
     id: 10,
-    name: "Rishi Gupta",
-    avatar: "https://i.pravatar.cc/150?img=25",
-    lastMessage: "I’m falling for you",
-    time: "01:40",
+    name: "Feng Rui",
+    avatar: "https://i.pravatar.cc/150?img=73",
+    lastMessage: "我爱上你了",
+    time: "01:45",
     messages: [
-      { text: "This is getting dangerous", time: "01:25", incoming: true },
-      { text: "I know", time: "01:26", incoming: false },
-      { text: "But I don’t want to stop", time: "01:27", incoming: true },
-      { text: "I’m falling for you", time: "01:40", incoming: false },
+      { text: "这越来越严重了", time: "01:30", incoming: true },
+      { text: "我知道", time: "01:31", incoming: false },
+      { text: "但我不想停", time: "01:32", incoming: true },
+      { text: "我爱上你了", time: "01:45", incoming: false },
     ],
   },
   {
     id: 11,
-    name: "Aadi Nair",
-    avatar: "https://i.pravatar.cc/150?img=26",
-    lastMessage: "Your scent is on my shirt",
-    time: "06:15",
+    name: "Deng Yu",
+    avatar: "https://i.pravatar.cc/150?img=74",
+    lastMessage: "你的味道还在",
+    time: "06:00",
     messages: [
-      { text: "I can still smell you", time: "05:55", incoming: true },
-      { text: "Good", time: "05:56", incoming: false },
-      { text: "Your scent is on my shirt", time: "06:15", incoming: false },
+      { text: "我还能闻到你", time: "05:40", incoming: true },
+      { text: "很好", time: "05:41", incoming: false },
+      { text: "你的味道还在", time: "06:00", incoming: false },
     ],
   },
   {
     id: 12,
-    name: "Vivan Joshi",
-    avatar: "https://i.pravatar.cc/150?img=27",
-    lastMessage: "I lied to her for you",
-    time: "23:10",
+    name: "Hu Jie",
+    avatar: "https://i.pravatar.cc/150?img=75",
+    lastMessage: "我为你在她面前撒谎",
+    time: "23:00",
     messages: [
-      { text: "She asked where I was", time: "22:55", incoming: true },
-      { text: "What’d you say?", time: "22:56", incoming: false },
-      { text: "With you", time: "22:57", incoming: true },
-      { text: "I lied to her for you", time: "23:10", incoming: false },
+      { text: "她问我去哪了", time: "22:45", incoming: true },
+      { text: "你怎么说？", time: "22:46", incoming: false },
+      { text: "跟你在一起", time: "22:47", incoming: true },
+      { text: "我为你在她面前撒谎", time: "23:00", incoming: false },
     ],
   },
 ];
 
-// === Contacts (imo uses "Contacts") ===
+// === Contacts (WeChat uses "Contacts") ===
 const contacts = [
   ...chats.map((c) => ({
     id: c.id,
     name: c.name,
     avatar: c.avatar,
-    phone: `+91 98${String(100 + c.id).padStart(3, "0")} 12345`,
-    email: `${c.name.split(" ")[0].toLowerCase()}@imo.im`,
+    phone: `+86 1${String(380 + c.id).padStart(2, "0")}0 1234567`,
+    email: `${c.name.split(" ")[0].toLowerCase()}@wechat.com`,
   })),
 ];
 
@@ -247,53 +235,53 @@ const contacts = [
 const callLogs = [
   {
     id: 1,
-    name: "Aryan Patel",
-    avatar: "https://i.pravatar.cc/150?img=16",
+    name: "Li Wei",
+    avatar: "https://i.pravatar.cc/150?img=64",
     type: "outgoing",
     time: "2025-10-28 23:55",
-    duration: "18:50",
+    duration: "18:30",
   },
   {
     id: 2,
-    name: "Rohan Mehta",
-    avatar: "https://i.pravatar.cc/150?img=17",
+    name: "Zhang Hao",
+    avatar: "https://i.pravatar.cc/150?img=65",
     type: "incoming",
-    time: "2025-10-28 22:35",
-    duration: "13:20",
+    time: "2025-10-28 22:40",
+    duration: "14:20",
   },
   {
     id: 3,
-    name: "Vikram Singh",
-    avatar: "https://i.pravatar.cc/150?img=18",
+    name: "Wang Jun",
+    avatar: "https://i.pravatar.cc/150?img=66",
     type: "missed",
-    time: "2025-10-28 21:15",
+    time: "2025-10-28 21:20",
   },
   {
     id: 4,
-    name: "Arjun Desai",
-    avatar: "https://i.pravatar.cc/150?img=19",
+    name: "Chen Ming",
+    avatar: "https://i.pravatar.cc/150?img=67",
     type: "outgoing",
-    time: "2025-10-27 20:50",
-    duration: "35:10",
+    time: "2025-10-27 20:55",
+    duration: "37:10",
   },
   {
     id: 5,
-    name: "Neil Sharma",
-    avatar: "https://i.pravatar.cc/150?img=20",
+    name: "Liu Yang",
+    avatar: "https://i.pravatar.cc/150?img=68",
     type: "incoming",
-    time: "2025-10-27 19:25",
-    duration: "29:40",
+    time: "2025-10-27 19:30",
+    duration: "31:45",
   },
   {
     id: 6,
-    name: "Aadi Nair",
-    avatar: "https://i.pravatar.cc/150?img=26",
+    name: "Deng Yu",
+    avatar: "https://i.pravatar.cc/150?img=74",
     type: "missed",
     time: "2025-10-27 18:00",
   },
 ];
 
-const ImoPage = () => {
+const WechatPage = () => {
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -342,8 +330,8 @@ const ImoPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Imo
-              <BsChatText className="text-[#00D084] text-xl" />
+              WeChat
+              <SiWechat className="text-[#07C160]" />
             </h1>
           </div>
           <BindPhone />
@@ -352,6 +340,7 @@ const ImoPage = () => {
 
       <Box
         sx={{
+          minHeight: "100vh",
           bgcolor: "#fafafa",
           p: { xs: 2, sm: 3, md: 4 },
         }}
@@ -368,7 +357,7 @@ const ImoPage = () => {
               }}
             >
               <Tab
-                icon={<BsChatText className="text-[#00D084]" />}
+                icon={<SiWechat />}
                 iconPosition="start"
                 label={isMobile ? "" : "Chats"}
                 value="chat"
@@ -636,7 +625,7 @@ const ImoPage = () => {
                           <Box
                             sx={{
                               maxWidth: "70%",
-                              bgcolor: msg.incoming ? "#f3f4f6" : "#00D084",
+                              bgcolor: msg.incoming ? "#f3f4f6" : "#07C160",
                               color: msg.incoming ? "#000" : "#fff",
                               borderRadius: "18px",
                               px: 3,
@@ -688,7 +677,7 @@ const ImoPage = () => {
                       <Paper
                         elevation={0}
                         sx={{
-                          bgcolor: "#D4F7E8",
+                          bgcolor: "#C8E6C9",
                           borderRadius: 3,
                           p: 2.5,
                           width: "100%",
@@ -700,7 +689,7 @@ const ImoPage = () => {
                       >
                         <Box
                           sx={{
-                            bgcolor: "#00D084",
+                            bgcolor: "#07C160",
                             borderRadius: "50%",
                             p: 1.2,
                             display: "flex",
@@ -730,7 +719,7 @@ const ImoPage = () => {
                       <Paper
                         elevation={0}
                         sx={{
-                          bgcolor: "#B3E8D4",
+                          bgcolor: "#A5D6A7",
                           borderRadius: 3,
                           p: 2.5,
                           width: "100%",
@@ -742,7 +731,7 @@ const ImoPage = () => {
                       >
                         <Box
                           sx={{
-                            bgcolor: "#00D084",
+                            bgcolor: "#07C160",
                             borderRadius: "50%",
                             p: 1.2,
                             display: "flex",
@@ -834,4 +823,4 @@ const ImoPage = () => {
   );
 };
 
-export default ImoPage;
+export default WechatPage;

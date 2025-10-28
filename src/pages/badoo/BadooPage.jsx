@@ -26,20 +26,20 @@ import {
 import { IoArrowBackCircle } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
 import { RiCheckDoubleFill } from "react-icons/ri";
-import { BsChatText } from "react-icons/bs";
+import { SiBadoo } from "react-icons/si";
 
-// imo Light Mode Theme (Green + Blue)
+// Badoo Light Mode Theme (Purple + Pink)
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#00D084", // imo Green
-      light: "#33E0A1",
-      dark: "#00A66B",
+      main: "#9C27B0", // Badoo Purple
+      light: "#BA68C8",
+      dark: "#7B1FA2",
     },
     secondary: {
-      main: "#1DA1F2", // imo Blue accent
-      light: "#4DB8FF",
-      dark: "#0D8BD9",
+      main: "#E91E63", // Badoo Pink accent
+      light: "#FF6090",
+      dark: "#C2185B",
     },
     success: { main: "#10B981" }, // incoming
     error: { main: "#EF4444" }, // missed
@@ -58,7 +58,7 @@ const theme = createTheme({
           fontSize: "0.9375rem",
           color: "#6B7280",
           "&.Mui-selected": {
-            color: "#00D084",
+            color: "#9C27B0",
           },
         },
       },
@@ -66,180 +66,181 @@ const theme = createTheme({
   },
 });
 
-// === Cheating Drama Chats (12 Total) – Young Men Only ===
+// === Cheating Drama DMs (12 Total) – Young Men Only ===
 const chats = [
   {
     id: 1,
-    name: "Aryan Patel",
-    avatar: "https://i.pravatar.cc/150?img=16",
-    lastMessage: "I left my keys in your car",
-    time: "03:20",
+    name: "Diego Morales",
+    avatar: "https://i.pravatar.cc/150?img=52",
+    lastMessage: "I’m in your neighborhood",
+    time: "03:40",
     messages: [
-      { text: "You still up?", time: "03:05", incoming: true },
-      { text: "Yeah. Can’t sleep", time: "03:06", incoming: false },
-      { text: "I left my keys in your car", time: "03:20", incoming: false },
+      { text: "You awake?", time: "03:25", incoming: true },
+      { text: "Yeah. Can’t sleep", time: "03:26", incoming: false },
+      { text: "I’m in your neighborhood", time: "03:40", incoming: false },
     ],
   },
   {
     id: 2,
-    name: "Rohan Mehta",
-    avatar: "https://i.pravatar.cc/150?img=17",
-    lastMessage: "She didn’t notice",
-    time: "02:15",
+    name: "Rafael Ortiz",
+    avatar: "https://i.pravatar.cc/150?img=53",
+    lastMessage: "She has no idea",
+    time: "02:05",
     messages: [
-      { text: "That was too close", time: "02:00", incoming: true },
-      { text: "But we’re safe", time: "02:01", incoming: false },
-      { text: "She didn’t notice", time: "02:15", incoming: false },
+      { text: "That was too close", time: "01:50", incoming: true },
+      { text: "But we made it", time: "01:51", incoming: false },
+      { text: "She has no idea", time: "02:05", incoming: false },
     ],
   },
   {
     id: 3,
-    name: "Vikram Singh",
-    avatar: "https://i.pravatar.cc/150?img=18",
-    lastMessage: "Send the video again",
-    time: "01:30",
+    name: "Santiago Vega",
+    avatar: "https://i.pravatar.cc/150?img=54",
+    lastMessage: "Send the photo again",
+    time: "01:15",
     messages: [
-      { text: "You deleted it?", time: "01:15", incoming: true },
-      { text: "Had to. Too risky", time: "01:16", incoming: false },
-      { text: "Send the video again", time: "01:30", incoming: false },
+      { text: "You deleted it?", time: "01:00", incoming: true },
+      { text: "Had to. Too dangerous", time: "01:01", incoming: false },
+      { text: "Send the photo again", time: "01:15", incoming: false },
     ],
   },
   {
     id: 4,
-    name: "Arjun Desai",
-    avatar: "https://i.pravatar.cc/150?img=19",
-    lastMessage: "I’m in your apartment",
-    time: "00:45",
+    name: "Mateo Herrera",
+    avatar: "https://i.pravatar.cc/150?img=55",
+    lastMessage: "I’m at your door",
+    time: "00:30",
     messages: [
-      { text: "You home?", time: "00:30", incoming: true },
-      { text: "She’s out. Door’s open", time: "00:31", incoming: false },
-      { text: "I’m in your apartment", time: "00:45", incoming: false },
+      { text: "You home?", time: "00:15", incoming: true },
+      { text: "She’s asleep. Door’s open", time: "00:16", incoming: false },
+      { text: "I’m at your door", time: "00:30", incoming: false },
     ],
   },
   {
     id: 5,
-    name: "Neil Sharma",
-    avatar: "https://i.pravatar.cc/150?img=20",
-    lastMessage: "I’m addicted to you",
-    time: "04:10",
+    name: "Alejandro Ruiz",
+    avatar: "https://i.pravatar.cc/150?img=56",
+    lastMessage: "I’m obsessed with you",
+    time: "04:05",
     messages: [
       {
         text: "I can’t stop thinking about you",
-        time: "03:55",
+        time: "03:50",
         incoming: true,
       },
-      { text: "Same. Every second", time: "03:56", incoming: false },
-      { text: "I’m addicted to you", time: "04:10", incoming: false },
+      { text: "Same. Every second", time: "03:51", incoming: false },
+      { text: "I’m obsessed with you", time: "04:05", incoming: false },
     ],
   },
   {
     id: 6,
-    name: "Karan Reddy",
-    avatar: "https://i.pravatar.cc/150?img=21",
-    lastMessage: "I told her I was at work",
-    time: "22:40",
+    name: "Gabriel Castro",
+    avatar: "https://i.pravatar.cc/150?img=57",
+    lastMessage: "I told her I was out with friends",
+    time: "22:45",
     messages: [
-      { text: "Where are you?", time: "22:20", incoming: true },
-      { text: "Work. Late shift", time: "22:21", incoming: false },
-      { text: "Liar", time: "22:22", incoming: true },
-      { text: "I told her I was at work", time: "22:40", incoming: false },
-    ],
-  },
-  {
-    id: 7,
-    name: "Dev Kapoor",
-    avatar: "https://i.pravatar.cc/150?img=22",
-    lastMessage: "This is getting out of control",
-    time: "21:05",
-    messages: [
-      { text: "We said last time was the last", time: "20:50", incoming: true },
-      { text: "I know", time: "20:51", incoming: false },
-      { text: "Then why am I here?", time: "20:52", incoming: true },
+      { text: "Where are you?", time: "22:25", incoming: true },
+      { text: "With friends. Late night", time: "22:26", incoming: false },
+      { text: "Liar", time: "22:27", incoming: true },
       {
-        text: "This is getting out of control",
-        time: "21:05",
+        text: "I told her I was out with friends",
+        time: "22:45",
         incoming: false,
       },
     ],
   },
   {
-    id: 8,
-    name: "Siddharth Rao",
-    avatar: "https://i.pravatar.cc/150?img=23",
-    lastMessage: "I dream about you every night",
-    time: "05:00",
+    id: 7,
+    name: "Javier Silva",
+    avatar: "https://i.pravatar.cc/150?img=58",
+    lastMessage: "This can’t keep going",
+    time: "21:00",
     messages: [
-      { text: "You sleeping?", time: "04:45", incoming: true },
-      { text: "No. You?", time: "04:46", incoming: false },
-      { text: "Thinking of you", time: "04:47", incoming: true },
-      { text: "I dream about you every night", time: "05:00", incoming: false },
+      { text: "We said last time was final", time: "20:45", incoming: true },
+      { text: "I know", time: "20:46", incoming: false },
+      { text: "Then why am I here?", time: "20:47", incoming: true },
+      { text: "This can’t keep going", time: "21:00", incoming: false },
+    ],
+  },
+  {
+    id: 8,
+    name: "Carlos Navarro",
+    avatar: "https://i.pravatar.cc/150?img=59",
+    lastMessage: "I dream about you every night",
+    time: "05:10",
+    messages: [
+      { text: "You sleeping?", time: "04:55", incoming: true },
+      { text: "No. You?", time: "04:56", incoming: false },
+      { text: "Thinking of you", time: "04:57", incoming: true },
+      { text: "I dream about you every night", time: "05:10", incoming: false },
     ],
   },
   {
     id: 9,
-    name: "Yash Malhotra",
-    avatar: "https://i.pravatar.cc/150?img=24",
+    name: "Luis Mendoza",
+    avatar: "https://i.pravatar.cc/150?img=60",
     lastMessage: "Delete after reading",
-    time: "02:25",
+    time: "02:20",
     messages: [
       {
         text: "I can’t stop replaying last night",
-        time: "02:10",
+        time: "02:05",
         incoming: true,
       },
-      { text: "That thing you did...", time: "02:11", incoming: false },
-      { text: "Shh. Don’t type it", time: "02:12", incoming: true },
-      { text: "Delete after reading", time: "02:25", incoming: false },
+      { text: "That thing you did...", time: "02:06", incoming: false },
+      { text: "Shh. Don’t type it", time: "02:07", incoming: true },
+      { text: "Delete after reading", time: "02:20", incoming: false },
     ],
   },
   {
     id: 10,
-    name: "Rishi Gupta",
-    avatar: "https://i.pravatar.cc/150?img=25",
+    name: "Felipe Torres",
+    avatar: "https://i.pravatar.cc/150?img=61",
     lastMessage: "I’m falling for you",
-    time: "01:40",
+    time: "01:35",
     messages: [
-      { text: "This is getting dangerous", time: "01:25", incoming: true },
-      { text: "I know", time: "01:26", incoming: false },
-      { text: "But I don’t want to stop", time: "01:27", incoming: true },
-      { text: "I’m falling for you", time: "01:40", incoming: false },
+      { text: "This is getting serious", time: "01:20", incoming: true },
+      { text: "I know", time: "01:21", incoming: false },
+      { text: "But I don’t want to stop", time: "01:22", incoming: true },
+      { text: "I’m falling for you", time: "01:35", incoming: false },
     ],
   },
   {
     id: 11,
-    name: "Aadi Nair",
-    avatar: "https://i.pravatar.cc/150?img=26",
+    name: "Andrés Gomez",
+    avatar: "https://i.pravatar.cc/150?img=62",
     lastMessage: "Your scent is on my shirt",
-    time: "06:15",
+    time: "06:20",
     messages: [
-      { text: "I can still smell you", time: "05:55", incoming: true },
-      { text: "Good", time: "05:56", incoming: false },
-      { text: "Your scent is on my shirt", time: "06:15", incoming: false },
+      { text: "I can still smell you", time: "06:00", incoming: true },
+      { text: "Good", time: "06:01", incoming: false },
+      { text: "Your scent is on my shirt", time: "06:20", incoming: false },
     ],
   },
   {
     id: 12,
-    name: "Vivan Joshi",
-    avatar: "https://i.pravatar.cc/150?img=27",
+    name: "Marco Rivera",
+    avatar: "https://i.pravatar.cc/150?img=63",
     lastMessage: "I lied to her for you",
-    time: "23:10",
+    time: "23:15",
     messages: [
-      { text: "She asked where I was", time: "22:55", incoming: true },
-      { text: "What’d you say?", time: "22:56", incoming: false },
-      { text: "With you", time: "22:57", incoming: true },
-      { text: "I lied to her for you", time: "23:10", incoming: false },
+      { text: "She asked where I was", time: "23:00", incoming: true },
+      { text: "What’d you say?", time: "23:01", incoming: false },
+      { text: "With you", time: "23:02", incoming: true },
+      { text: "I lied to her for you", time: "23:15", incoming: false },
     ],
   },
 ];
 
-// === Contacts (imo uses "Contacts") ===
-const contacts = [
+// === People Nearby (Badoo uses "People Nearby") ===
+const peopleNearby = [
   ...chats.map((c) => ({
     id: c.id,
     name: c.name,
     avatar: c.avatar,
-    phone: `+91 98${String(100 + c.id).padStart(3, "0")} 12345`,
-    email: `${c.name.split(" ")[0].toLowerCase()}@imo.im`,
+    distance: `${Math.floor(Math.random() * 5) + 1} km away`,
+    phone: `+34 6${String(100 + c.id).padStart(3, "0")} 12345`,
+    email: `${c.name.split(" ")[0].toLowerCase()}@badoo.com`,
   })),
 ];
 
@@ -247,64 +248,64 @@ const contacts = [
 const callLogs = [
   {
     id: 1,
-    name: "Aryan Patel",
-    avatar: "https://i.pravatar.cc/150?img=16",
+    name: "Diego Morales",
+    avatar: "https://i.pravatar.cc/150?img=52",
     type: "outgoing",
     time: "2025-10-28 23:55",
-    duration: "18:50",
+    duration: "20:40",
   },
   {
     id: 2,
-    name: "Rohan Mehta",
-    avatar: "https://i.pravatar.cc/150?img=17",
+    name: "Rafael Ortiz",
+    avatar: "https://i.pravatar.cc/150?img=53",
     type: "incoming",
     time: "2025-10-28 22:35",
-    duration: "13:20",
+    duration: "12:50",
   },
   {
     id: 3,
-    name: "Vikram Singh",
-    avatar: "https://i.pravatar.cc/150?img=18",
+    name: "Santiago Vega",
+    avatar: "https://i.pravatar.cc/150?img=54",
     type: "missed",
     time: "2025-10-28 21:15",
   },
   {
     id: 4,
-    name: "Arjun Desai",
-    avatar: "https://i.pravatar.cc/150?img=19",
+    name: "Mateo Herrera",
+    avatar: "https://i.pravatar.cc/150?img=55",
     type: "outgoing",
     time: "2025-10-27 20:50",
-    duration: "35:10",
+    duration: "36:30",
   },
   {
     id: 5,
-    name: "Neil Sharma",
-    avatar: "https://i.pravatar.cc/150?img=20",
+    name: "Alejandro Ruiz",
+    avatar: "https://i.pravatar.cc/150?img=56",
     type: "incoming",
     time: "2025-10-27 19:25",
-    duration: "29:40",
+    duration: "30:10",
   },
   {
     id: 6,
-    name: "Aadi Nair",
-    avatar: "https://i.pravatar.cc/150?img=26",
+    name: "Andrés Gomez",
+    avatar: "https://i.pravatar.cc/150?img=62",
     type: "missed",
     time: "2025-10-27 18:00",
   },
 ];
 
-const ImoPage = () => {
+const BadooPage = () => {
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
   const [tab, setTab] = useState("chat");
   const [selectedChat, setSelectedChat] = useState(null);
-  const [selectedContact, setSelectedContact] = useState(null);
+  const [selectedPerson, setSelectedPerson] = useState(null);
   const [selectedCall, setSelectedCall] = useState(null);
 
   const handleBack = () => {
     setSelectedChat(null);
-    setSelectedContact(null);
+    setSelectedPerson(null);
     setSelectedCall(null);
   };
 
@@ -324,17 +325,17 @@ const ImoPage = () => {
     );
   };
 
-  const groupContactsByLetter = () => {
+  const groupPeopleByLetter = () => {
     const grouped = {};
-    contacts.forEach((c) => {
-      const letter = c.name[0].toUpperCase();
+    peopleNearby.forEach((p) => {
+      const letter = p.name[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
-      grouped[letter].push(c);
+      grouped[letter].push(p);
     });
     return grouped;
   };
 
-  const showDetail = selectedChat || selectedContact || selectedCall;
+  const showDetail = selectedChat || selectedPerson || selectedCall;
 
   return (
     <ThemeProvider theme={theme}>
@@ -342,8 +343,8 @@ const ImoPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Imo
-              <BsChatText className="text-[#00D084] text-xl" />
+              Badoo
+              <SiBadoo className="text-[#9C27B0]" />
             </h1>
           </div>
           <BindPhone />
@@ -352,6 +353,7 @@ const ImoPage = () => {
 
       <Box
         sx={{
+          minHeight: "100vh",
           bgcolor: "#fafafa",
           p: { xs: 2, sm: 3, md: 4 },
         }}
@@ -368,7 +370,7 @@ const ImoPage = () => {
               }}
             >
               <Tab
-                icon={<BsChatText className="text-[#00D084]" />}
+                icon={<SiBadoo />}
                 iconPosition="start"
                 label={isMobile ? "" : "Chats"}
                 value="chat"
@@ -376,8 +378,8 @@ const ImoPage = () => {
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Contacts"}
-                value="contacts"
+                label={isMobile ? "" : "People Nearby"}
+                value="people"
               />
               <Tab
                 icon={<FiPhone />}
@@ -416,7 +418,7 @@ const ImoPage = () => {
                 overflow: "hidden",
                 display: showDetail && isMobile ? "none" : "block",
                 height: "100%",
-                maxHeight: "80vh",
+                maxHeight: "80vh O",
                 overflowY: "auto",
                 bgcolor: "background.paper",
                 "&::-webkit-scrollbar": { display: "none" },
@@ -472,10 +474,10 @@ const ImoPage = () => {
                 </Stack>
               )}
 
-              {/* Contacts List */}
-              {tab === "contacts" && (
+              {/* People Nearby List */}
+              {tab === "people" && (
                 <Stack>
-                  {Object.keys(groupContactsByLetter())
+                  {Object.keys(groupPeopleByLetter())
                     .sort()
                     .map((letter) => (
                       <Box key={letter}>
@@ -490,16 +492,16 @@ const ImoPage = () => {
                             {letter}
                           </Typography>
                         </Box>
-                        {groupContactsByLetter()[letter].map((contact) => (
+                        {groupPeopleByLetter()[letter].map((person) => (
                           <Box
-                            key={contact.id}
+                            key={person.id}
                             sx={{
                               p: 2,
                               cursor: "pointer",
                               "&:hover": { bgcolor: "rgba(0,0,0,0.02)" },
                               transition: "background 0.2s",
                             }}
-                            onClick={() => setSelectedContact(contact)}
+                            onClick={() => setSelectedPerson(person)}
                           >
                             <Stack
                               direction="row"
@@ -507,14 +509,24 @@ const ImoPage = () => {
                               alignItems="center"
                             >
                               <Avatar
-                                src={contact.avatar}
+                                src={person.avatar}
                                 sx={{ width: 48, height: 48 }}
                               />
-                              <Typography
-                                sx={{ fontWeight: 500, color: "#1f2937" }}
-                              >
-                                {contact.name}
-                              </Typography>
+                              <Box sx={{ flex: 1 }}>
+                                <Typography
+                                  sx={{ fontWeight: 500, color: "#1f2937" }}
+                                >
+                                  {person.name}
+                                </Typography>
+                                <Typography
+                                  sx={{
+                                    fontSize: "0.8125rem",
+                                    color: "#9C27B0",
+                                  }}
+                                >
+                                  {person.distance}
+                                </Typography>
+                              </Box>
                             </Stack>
                           </Box>
                         ))}
@@ -636,7 +648,7 @@ const ImoPage = () => {
                           <Box
                             sx={{
                               maxWidth: "70%",
-                              bgcolor: msg.incoming ? "#f3f4f6" : "#00D084",
+                              bgcolor: msg.incoming ? "#f3f4f6" : "#9C27B0",
                               color: msg.incoming ? "#000" : "#fff",
                               borderRadius: "18px",
                               px: 3,
@@ -670,25 +682,28 @@ const ImoPage = () => {
                   </Stack>
                 )}
 
-                {/* Contact Detail */}
-                {selectedContact && (
+                {/* Person Detail */}
+                {selectedPerson && (
                   <Stack spacing={4} alignItems="center">
                     <Avatar
-                      src={selectedContact.avatar}
+                      src={selectedPerson.avatar}
                       sx={{ width: 120, height: 120 }}
                     />
                     <Typography
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedContact.name}
+                      {selectedPerson.name}
+                    </Typography>
+                    <Typography sx={{ fontSize: "1rem", color: "#9C27B0" }}>
+                      {selectedPerson.distance}
                     </Typography>
 
-                    {selectedContact.phone && (
+                    {selectedPerson.phone && (
                       <Paper
                         elevation={0}
                         sx={{
-                          bgcolor: "#D4F7E8",
+                          bgcolor: "#E1BEE7",
                           borderRadius: 3,
                           p: 2.5,
                           width: "100%",
@@ -700,7 +715,7 @@ const ImoPage = () => {
                       >
                         <Box
                           sx={{
-                            bgcolor: "#00D084",
+                            bgcolor: "#9C27B0",
                             borderRadius: "50%",
                             p: 1.2,
                             display: "flex",
@@ -720,17 +735,17 @@ const ImoPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {selectedContact.phone}
+                            {selectedPerson.phone}
                           </Typography>
                         </Box>
                       </Paper>
                     )}
 
-                    {selectedContact.email && (
+                    {selectedPerson.email && (
                       <Paper
                         elevation={0}
                         sx={{
-                          bgcolor: "#B3E8D4",
+                          bgcolor: "#F3E5F5",
                           borderRadius: 3,
                           p: 2.5,
                           width: "100%",
@@ -742,7 +757,7 @@ const ImoPage = () => {
                       >
                         <Box
                           sx={{
-                            bgcolor: "#00D084",
+                            bgcolor: "#9C27B0",
                             borderRadius: "50%",
                             p: 1.2,
                             display: "flex",
@@ -762,7 +777,7 @@ const ImoPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {selectedContact.email}
+                            {selectedPerson.email}
                           </Typography>
                         </Box>
                       </Paper>
@@ -834,4 +849,4 @@ const ImoPage = () => {
   );
 };
 
-export default ImoPage;
+export default BadooPage;

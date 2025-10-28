@@ -26,20 +26,20 @@ import {
 import { IoArrowBackCircle } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
 import { RiCheckDoubleFill } from "react-icons/ri";
-import { BsChatText } from "react-icons/bs";
+import { SiDiscord } from "react-icons/si";
 
-// imo Light Mode Theme (Green + Blue)
+// Discord Light Mode Theme (Blurple)
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#00D084", // imo Green
-      light: "#33E0A1",
-      dark: "#00A66B",
+      main: "#5865F2", // Discord Blurple
+      light: "#738ADB",
+      dark: "#4752C4",
     },
     secondary: {
-      main: "#1DA1F2", // imo Blue accent
-      light: "#4DB8FF",
-      dark: "#0D8BD9",
+      main: "#F2F3F5",
+      light: "#FFFFFF",
+      dark: "#E3E5E8",
     },
     success: { main: "#10B981" }, // incoming
     error: { main: "#EF4444" }, // missed
@@ -58,7 +58,7 @@ const theme = createTheme({
           fontSize: "0.9375rem",
           color: "#6B7280",
           "&.Mui-selected": {
-            color: "#00D084",
+            color: "#5865F2",
           },
         },
       },
@@ -66,180 +66,192 @@ const theme = createTheme({
   },
 });
 
-// === Cheating Drama Chats (12 Total) – Young Men Only ===
+// === Cheating Drama DMs (12 Total) – Young Men Only ===
 const chats = [
   {
     id: 1,
-    name: "Aryan Patel",
-    avatar: "https://i.pravatar.cc/150?img=16",
-    lastMessage: "I left my keys in your car",
-    time: "03:20",
+    name: "Luka Voss",
+    avatar: "https://i.pravatar.cc/150?img=28",
+    lastMessage: "I left my hoodie at your place",
+    time: "03:15",
+    status: "online",
     messages: [
-      { text: "You still up?", time: "03:05", incoming: true },
-      { text: "Yeah. Can’t sleep", time: "03:06", incoming: false },
-      { text: "I left my keys in your car", time: "03:20", incoming: false },
-    ],
-  },
-  {
-    id: 2,
-    name: "Rohan Mehta",
-    avatar: "https://i.pravatar.cc/150?img=17",
-    lastMessage: "She didn’t notice",
-    time: "02:15",
-    messages: [
-      { text: "That was too close", time: "02:00", incoming: true },
-      { text: "But we’re safe", time: "02:01", incoming: false },
-      { text: "She didn’t notice", time: "02:15", incoming: false },
-    ],
-  },
-  {
-    id: 3,
-    name: "Vikram Singh",
-    avatar: "https://i.pravatar.cc/150?img=18",
-    lastMessage: "Send the video again",
-    time: "01:30",
-    messages: [
-      { text: "You deleted it?", time: "01:15", incoming: true },
-      { text: "Had to. Too risky", time: "01:16", incoming: false },
-      { text: "Send the video again", time: "01:30", incoming: false },
-    ],
-  },
-  {
-    id: 4,
-    name: "Arjun Desai",
-    avatar: "https://i.pravatar.cc/150?img=19",
-    lastMessage: "I’m in your apartment",
-    time: "00:45",
-    messages: [
-      { text: "You home?", time: "00:30", incoming: true },
-      { text: "She’s out. Door’s open", time: "00:31", incoming: false },
-      { text: "I’m in your apartment", time: "00:45", incoming: false },
-    ],
-  },
-  {
-    id: 5,
-    name: "Neil Sharma",
-    avatar: "https://i.pravatar.cc/150?img=20",
-    lastMessage: "I’m addicted to you",
-    time: "04:10",
-    messages: [
+      { text: "you still up?", time: "03:00", incoming: true },
+      { text: "yeah. can't sleep", time: "03:01", incoming: false },
       {
-        text: "I can’t stop thinking about you",
-        time: "03:55",
-        incoming: true,
-      },
-      { text: "Same. Every second", time: "03:56", incoming: false },
-      { text: "I’m addicted to you", time: "04:10", incoming: false },
-    ],
-  },
-  {
-    id: 6,
-    name: "Karan Reddy",
-    avatar: "https://i.pravatar.cc/150?img=21",
-    lastMessage: "I told her I was at work",
-    time: "22:40",
-    messages: [
-      { text: "Where are you?", time: "22:20", incoming: true },
-      { text: "Work. Late shift", time: "22:21", incoming: false },
-      { text: "Liar", time: "22:22", incoming: true },
-      { text: "I told her I was at work", time: "22:40", incoming: false },
-    ],
-  },
-  {
-    id: 7,
-    name: "Dev Kapoor",
-    avatar: "https://i.pravatar.cc/150?img=22",
-    lastMessage: "This is getting out of control",
-    time: "21:05",
-    messages: [
-      { text: "We said last time was the last", time: "20:50", incoming: true },
-      { text: "I know", time: "20:51", incoming: false },
-      { text: "Then why am I here?", time: "20:52", incoming: true },
-      {
-        text: "This is getting out of control",
-        time: "21:05",
+        text: "I left my hoodie at your place",
+        time: "03:15",
         incoming: false,
       },
     ],
   },
   {
-    id: 8,
-    name: "Siddharth Rao",
-    avatar: "https://i.pravatar.cc/150?img=23",
-    lastMessage: "I dream about you every night",
-    time: "05:00",
+    id: 2,
+    name: "Cade Wilder",
+    avatar: "https://i.pravatar.cc/150?img=29",
+    lastMessage: "she didn't see the notifs",
+    time: "02:30",
+    status: "idle",
     messages: [
-      { text: "You sleeping?", time: "04:45", incoming: true },
-      { text: "No. You?", time: "04:46", incoming: false },
-      { text: "Thinking of you", time: "04:47", incoming: true },
-      { text: "I dream about you every night", time: "05:00", incoming: false },
+      { text: "that was too close", time: "02:15", incoming: true },
+      { text: "but we're good", time: "02:16", incoming: false },
+      { text: "she didn't see the notifs", time: "02:30", incoming: false },
+    ],
+  },
+  {
+    id: 3,
+    name: "Jace Holt",
+    avatar: "https://i.pravatar.cc/150?img=30",
+    lastMessage: "send the clip again",
+    time: "01:45",
+    status: "online",
+    messages: [
+      { text: "you deleted it?", time: "01:30", incoming: true },
+      { text: "had to. too risky", time: "01:31", incoming: false },
+      { text: "send the clip again", time: "01:45", incoming: false },
+    ],
+  },
+  {
+    id: 4,
+    name: "Knox Reed",
+    avatar: "https://i.pravatar.cc/150?img=31",
+    lastMessage: "i'm in your room rn",
+    time: "00:50",
+    status: "dnd",
+    messages: [
+      { text: "you home?", time: "00:35", incoming: true },
+      { text: "she's out. door's open", time: "00:36", incoming: false },
+      { text: "i'm in your room rn", time: "00:50", incoming: false },
+    ],
+  },
+  {
+    id: 5,
+    name: "Ryder Kane",
+    avatar: "https://i.pravatar.cc/150?img=32",
+    lastMessage: "i'm addicted to you",
+    time: "04:20",
+    status: "online",
+    messages: [
+      {
+        text: "i can't stop thinking about you",
+        time: "04:05",
+        incoming: true,
+      },
+      { text: "same. every second", time: "04:06", incoming: false },
+      { text: "i'm addicted to you", time: "04:20", incoming: false },
+    ],
+  },
+  {
+    id: 6,
+    name: "Zeke Ford",
+    avatar: "https://i.pravatar.cc/150?img=33",
+    lastMessage: "told her i was gaming",
+    time: "22:55",
+    status: "idle",
+    messages: [
+      { text: "where are you?", time: "22:35", incoming: true },
+      { text: "gaming. late session", time: "22:36", incoming: false },
+      { text: "liar", time: "22:37", incoming: true },
+      { text: "told her i was gaming", time: "22:55", incoming: false },
+    ],
+  },
+  {
+    id: 7,
+    name: "Milo Grey",
+    avatar: "https://i.pravatar.cc/150?img=34",
+    lastMessage: "this is getting dangerous",
+    time: "21:10",
+    status: "online",
+    messages: [
+      { text: "we said last time was the last", time: "20:55", incoming: true },
+      { text: "i know", time: "20:56", incoming: false },
+      { text: "then why am i here?", time: "20:57", incoming: true },
+      { text: "this is getting dangerous", time: "21:10", incoming: false },
+    ],
+  },
+  {
+    id: 8,
+    name: "Asher Dean",
+    avatar: "https://i.pravatar.cc/150?img=35",
+    lastMessage: "i dream about you every night",
+    time: "05:30",
+    status: "idle",
+    messages: [
+      { text: "you sleeping?", time: "05:15", incoming: true },
+      { text: "no. you?", time: "05:16", incoming: false },
+      { text: "thinking of you", time: "05:17", incoming: true },
+      { text: "i dream about you every night", time: "05:30", incoming: false },
     ],
   },
   {
     id: 9,
-    name: "Yash Malhotra",
-    avatar: "https://i.pravatar.cc/150?img=24",
-    lastMessage: "Delete after reading",
-    time: "02:25",
+    name: "Beck Hale",
+    avatar: "https://i.pravatar.cc/150?img=36",
+    lastMessage: "delete after reading",
+    time: "02:40",
+    status: "dnd",
     messages: [
       {
-        text: "I can’t stop replaying last night",
-        time: "02:10",
+        text: "i can't stop replaying last night",
+        time: "02:25",
         incoming: true,
       },
-      { text: "That thing you did...", time: "02:11", incoming: false },
-      { text: "Shh. Don’t type it", time: "02:12", incoming: true },
-      { text: "Delete after reading", time: "02:25", incoming: false },
+      { text: "that thing you did...", time: "02:26", incoming: false },
+      { text: "shh. don't type it", time: "02:27", incoming: true },
+      { text: "delete after reading", time: "02:40", incoming: false },
     ],
   },
   {
     id: 10,
-    name: "Rishi Gupta",
-    avatar: "https://i.pravatar.cc/150?img=25",
-    lastMessage: "I’m falling for you",
-    time: "01:40",
+    name: "Tate Moss",
+    avatar: "https://i.pravatar.cc/150?img=37",
+    lastMessage: "i'm falling for you",
+    time: "01:55",
+    status: "online",
     messages: [
-      { text: "This is getting dangerous", time: "01:25", incoming: true },
-      { text: "I know", time: "01:26", incoming: false },
-      { text: "But I don’t want to stop", time: "01:27", incoming: true },
-      { text: "I’m falling for you", time: "01:40", incoming: false },
+      { text: "this is getting serious", time: "01:40", incoming: true },
+      { text: "i know", time: "01:41", incoming: false },
+      { text: "but i don't want to stop", time: "01:42", incoming: true },
+      { text: "i'm falling for you", time: "01:55", incoming: false },
     ],
   },
   {
     id: 11,
-    name: "Aadi Nair",
-    avatar: "https://i.pravatar.cc/150?img=26",
-    lastMessage: "Your scent is on my shirt",
-    time: "06:15",
+    name: "Rhys Vale",
+    avatar: "https://i.pravatar.cc/150?img=38",
+    lastMessage: "your scent is on my pillow",
+    time: "06:45",
+    status: "idle",
     messages: [
-      { text: "I can still smell you", time: "05:55", incoming: true },
-      { text: "Good", time: "05:56", incoming: false },
-      { text: "Your scent is on my shirt", time: "06:15", incoming: false },
+      { text: "i can still smell you", time: "06:25", incoming: true },
+      { text: "good", time: "06:26", incoming: false },
+      { text: "your scent is on my pillow", time: "06:45", incoming: false },
     ],
   },
   {
     id: 12,
-    name: "Vivan Joshi",
-    avatar: "https://i.pravatar.cc/150?img=27",
-    lastMessage: "I lied to her for you",
-    time: "23:10",
+    name: "Dax Noir",
+    avatar: "https://i.pravatar.cc/150?img=39",
+    lastMessage: "i lied to her for you",
+    time: "23:20",
+    status: "dnd",
     messages: [
-      { text: "She asked where I was", time: "22:55", incoming: true },
-      { text: "What’d you say?", time: "22:56", incoming: false },
-      { text: "With you", time: "22:57", incoming: true },
-      { text: "I lied to her for you", time: "23:10", incoming: false },
+      { text: "she asked where i was", time: "23:05", incoming: true },
+      { text: "what'd you say?", time: "23:06", incoming: false },
+      { text: "with you", time: "23:07", incoming: true },
+      { text: "i lied to her for you", time: "23:20", incoming: false },
     ],
   },
 ];
 
-// === Contacts (imo uses "Contacts") ===
-const contacts = [
+// === Friends (Discord uses "Friends") ===
+const friends = [
   ...chats.map((c) => ({
     id: c.id,
     name: c.name,
     avatar: c.avatar,
-    phone: `+91 98${String(100 + c.id).padStart(3, "0")} 12345`,
-    email: `${c.name.split(" ")[0].toLowerCase()}@imo.im`,
+    status: c.status,
+    tag: `#${String(1000 + c.id).padStart(4, "0")}`,
   })),
 ];
 
@@ -247,64 +259,64 @@ const contacts = [
 const callLogs = [
   {
     id: 1,
-    name: "Aryan Patel",
-    avatar: "https://i.pravatar.cc/150?img=16",
+    name: "Luka Voss",
+    avatar: "https://i.pravatar.cc/150?img=28",
     type: "outgoing",
     time: "2025-10-28 23:55",
-    duration: "18:50",
+    duration: "22:15",
   },
   {
     id: 2,
-    name: "Rohan Mehta",
-    avatar: "https://i.pravatar.cc/150?img=17",
+    name: "Cade Wilder",
+    avatar: "https://i.pravatar.cc/150?img=29",
     type: "incoming",
-    time: "2025-10-28 22:35",
-    duration: "13:20",
+    time: "2025-10-28 22:40",
+    duration: "16:30",
   },
   {
     id: 3,
-    name: "Vikram Singh",
-    avatar: "https://i.pravatar.cc/150?img=18",
+    name: "Jace Holt",
+    avatar: "https://i.pravatar.cc/150?img=30",
     type: "missed",
-    time: "2025-10-28 21:15",
+    time: "2025-10-28 21:20",
   },
   {
     id: 4,
-    name: "Arjun Desai",
-    avatar: "https://i.pravatar.cc/150?img=19",
+    name: "Knox Reed",
+    avatar: "https://i.pravatar.cc/150?img=31",
     type: "outgoing",
-    time: "2025-10-27 20:50",
-    duration: "35:10",
+    time: "2025-10-27 20:55",
+    duration: "41:20",
   },
   {
     id: 5,
-    name: "Neil Sharma",
-    avatar: "https://i.pravatar.cc/150?img=20",
+    name: "Ryder Kane",
+    avatar: "https://i.pravatar.cc/150?img=32",
     type: "incoming",
-    time: "2025-10-27 19:25",
-    duration: "29:40",
+    time: "2025-10-27 19:30",
+    duration: "33:10",
   },
   {
     id: 6,
-    name: "Aadi Nair",
-    avatar: "https://i.pravatar.cc/150?img=26",
+    name: "Rhys Vale",
+    avatar: "https://i.pravatar.cc/150?img=38",
     type: "missed",
     time: "2025-10-27 18:00",
   },
 ];
 
-const ImoPage = () => {
+const DiscordPage = () => {
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
   const [tab, setTab] = useState("chat");
   const [selectedChat, setSelectedChat] = useState(null);
-  const [selectedContact, setSelectedContact] = useState(null);
+  const [selectedFriend, setSelectedFriend] = useState(null);
   const [selectedCall, setSelectedCall] = useState(null);
 
   const handleBack = () => {
     setSelectedChat(null);
-    setSelectedContact(null);
+    setSelectedFriend(null);
     setSelectedCall(null);
   };
 
@@ -324,17 +336,42 @@ const ImoPage = () => {
     );
   };
 
-  const groupContactsByLetter = () => {
+  const getStatusDot = (status) => {
+    const color =
+      status === "online"
+        ? "#3BA55C"
+        : status === "idle"
+        ? "#FAA61A"
+        : status === "dnd"
+        ? "#ED4245"
+        : "#747F8D";
+    return (
+      <Box
+        sx={{
+          width: 10,
+          height: 10,
+          bgcolor: color,
+          borderRadius: "50%",
+          border: "2px solid #F2F3F5",
+          position: "absolute",
+          bottom: 0,
+          right: 0,
+        }}
+      />
+    );
+  };
+
+  const groupFriendsByLetter = () => {
     const grouped = {};
-    contacts.forEach((c) => {
-      const letter = c.name[0].toUpperCase();
+    friends.forEach((f) => {
+      const letter = f.name[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
-      grouped[letter].push(c);
+      grouped[letter].push(f);
     });
     return grouped;
   };
 
-  const showDetail = selectedChat || selectedContact || selectedCall;
+  const showDetail = selectedChat || selectedFriend || selectedCall;
 
   return (
     <ThemeProvider theme={theme}>
@@ -342,8 +379,8 @@ const ImoPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Imo
-              <BsChatText className="text-[#00D084] text-xl" />
+              Discord
+              <SiDiscord className="text-[#5865F2]" />
             </h1>
           </div>
           <BindPhone />
@@ -352,7 +389,8 @@ const ImoPage = () => {
 
       <Box
         sx={{
-          bgcolor: "#fafafa",
+          minHeight: "100vh",
+          bgcolor: "#F2F3F5",
           p: { xs: 2, sm: 3, md: 4 },
         }}
       >
@@ -368,16 +406,16 @@ const ImoPage = () => {
               }}
             >
               <Tab
-                icon={<BsChatText className="text-[#00D084]" />}
+                icon={<SiDiscord />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chats"}
+                label={isMobile ? "" : "DMs"}
                 value="chat"
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Contacts"}
-                value="contacts"
+                label={isMobile ? "" : "Friends"}
+                value="friends"
               />
               <Tab
                 icon={<FiPhone />}
@@ -418,13 +456,13 @@ const ImoPage = () => {
                 height: "100%",
                 maxHeight: "80vh",
                 overflowY: "auto",
-                bgcolor: "background.paper",
+                bgcolor: "#FFFFFF",
                 "&::-webkit-scrollbar": { display: "none" },
                 scrollbarWidth: "none",
               }}
               className="scrollbar-hide"
             >
-              {/* Chat List */}
+              {/* DM List */}
               {tab === "chat" && (
                 <Stack>
                   {chats.map((chat) => (
@@ -433,26 +471,29 @@ const ImoPage = () => {
                       sx={{
                         p: 2,
                         cursor: "pointer",
-                        "&:hover": { bgcolor: "rgba(0,0,0,0.02)" },
+                        "&:hover": { bgcolor: "#F2F3F5" },
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedChat(chat)}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
-                        <Avatar
-                          src={chat.avatar}
-                          sx={{ width: 48, height: 48 }}
-                        />
+                        <Box sx={{ position: "relative" }}>
+                          <Avatar
+                            src={chat.avatar}
+                            sx={{ width: 48, height: 48 }}
+                          />
+                          {getStatusDot(chat.status)}
+                        </Box>
                         <Box sx={{ flex: 1, minWidth: 0 }}>
                           <Typography
-                            sx={{ fontWeight: 600, color: "#1f2937" }}
+                            sx={{ fontWeight: 600, color: "#2C2F33" }}
                           >
                             {chat.name}
                           </Typography>
                           <Typography
                             sx={{
                               fontSize: "0.875rem",
-                              color: "#6b7280",
+                              color: "#99AAB5",
                               overflow: "hidden",
                               textOverflow: "ellipsis",
                               whiteSpace: "nowrap",
@@ -462,7 +503,7 @@ const ImoPage = () => {
                           </Typography>
                         </Box>
                         <Typography
-                          sx={{ fontSize: "0.75rem", color: "#9ca3af" }}
+                          sx={{ fontSize: "0.75rem", color: "#99AAB5" }}
                         >
                           {chat.time}
                         </Typography>
@@ -472,49 +513,63 @@ const ImoPage = () => {
                 </Stack>
               )}
 
-              {/* Contacts List */}
-              {tab === "contacts" && (
+              {/* Friends List */}
+              {tab === "friends" && (
                 <Stack>
-                  {Object.keys(groupContactsByLetter())
+                  {Object.keys(groupFriendsByLetter())
                     .sort()
                     .map((letter) => (
                       <Box key={letter}>
-                        <Box sx={{ px: 2, py: 1, bgcolor: "#f3f4f6" }}>
+                        <Box sx={{ px: 2, py: 1, bgcolor: "#F2F3F5" }}>
                           <Typography
                             sx={{
                               fontSize: "0.75rem",
                               fontWeight: 700,
-                              color: "#6b7280",
+                              color: "#99AAB5",
                             }}
                           >
                             {letter}
                           </Typography>
                         </Box>
-                        {groupContactsByLetter()[letter].map((contact) => (
+                        {groupFriendsByLetter()[letter].map((friend) => (
                           <Box
-                            key={contact.id}
+                            key={friend.id}
                             sx={{
                               p: 2,
                               cursor: "pointer",
-                              "&:hover": { bgcolor: "rgba(0,0,0,0.02)" },
+                              "&:hover": { bgcolor: "#F2F3F5" },
                               transition: "background 0.2s",
                             }}
-                            onClick={() => setSelectedContact(contact)}
+                            onClick={() => setSelectedFriend(friend)}
                           >
                             <Stack
                               direction="row"
                               spacing={2}
                               alignItems="center"
                             >
-                              <Avatar
-                                src={contact.avatar}
-                                sx={{ width: 48, height: 48 }}
-                              />
-                              <Typography
-                                sx={{ fontWeight: 500, color: "#1f2937" }}
-                              >
-                                {contact.name}
-                              </Typography>
+                              <Box sx={{ position: "relative" }}>
+                                <Avatar
+                                  src={friend.avatar}
+                                  sx={{ width: 48, height: 48 }}
+                                />
+                                {getStatusDot(friend.status)}
+                              </Box>
+                              <Box sx={{ flex: 1 }}>
+                                <Typography
+                                  sx={{ fontWeight: 600, color: "#2C2F33" }}
+                                >
+                                  {friend.name}
+                                </Typography>
+                                <Typography
+                                  sx={{
+                                    fontSize: "0.8125rem",
+                                    color: "#99AAB5",
+                                  }}
+                                >
+                                  {friend.name.split(" ")[0]}#
+                                  {friend.tag.slice(1)}
+                                </Typography>
+                              </Box>
                             </Stack>
                           </Box>
                         ))}
@@ -532,7 +587,7 @@ const ImoPage = () => {
                       sx={{
                         p: 2,
                         cursor: "pointer",
-                        "&:hover": { bgcolor: "rgba(0,0,0,0.02)" },
+                        "&:hover": { bgcolor: "#F2F3F5" },
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedCall(call)}
@@ -562,7 +617,7 @@ const ImoPage = () => {
                         </Box>
                         <Box sx={{ flex: 1 }}>
                           <Typography
-                            sx={{ fontWeight: 600, color: "#1f2937" }}
+                            sx={{ fontWeight: 600, color: "#2C2F33" }}
                           >
                             {call.name}
                           </Typography>
@@ -582,7 +637,7 @@ const ImoPage = () => {
                           </Typography>
                         </Box>
                         <Typography
-                          sx={{ fontSize: "0.75rem", color: "#9ca3af" }}
+                          sx={{ fontSize: "0.75rem", color: "#99AAB5" }}
                         >
                           {call.time.split(" ")[1].slice(0, 5)}
                         </Typography>
@@ -603,20 +658,23 @@ const ImoPage = () => {
                   height: "100%",
                   maxHeight: "80vh",
                   overflowY: "auto",
-                  bgcolor: "background.paper",
+                  bgcolor: "#FFFFFF",
                 }}
               >
-                {/* Chat Detail */}
+                {/* DM Detail */}
                 {selectedChat && (
                   <Stack spacing={3}>
                     <Stack direction="row" spacing={2} alignItems="center">
-                      <Avatar
-                        src={selectedChat.avatar}
-                        sx={{ width: 64, height: 64 }}
-                      />
+                      <Box sx={{ position: "relative" }}>
+                        <Avatar
+                          src={selectedChat.avatar}
+                          sx={{ width: 64, height: 64 }}
+                        />
+                        {getStatusDot(selectedChat.status)}
+                      </Box>
                       <Typography
                         variant="h5"
-                        sx={{ fontWeight: 700, color: "#1f2937" }}
+                        sx={{ fontWeight: 700, color: "#2C2F33" }}
                       >
                         {selectedChat.name}
                       </Typography>
@@ -636,8 +694,8 @@ const ImoPage = () => {
                           <Box
                             sx={{
                               maxWidth: "70%",
-                              bgcolor: msg.incoming ? "#f3f4f6" : "#00D084",
-                              color: msg.incoming ? "#000" : "#fff",
+                              bgcolor: msg.incoming ? "#F2F3F5" : "#5865F2",
+                              color: msg.incoming ? "#2C2F33" : "#FFFFFF",
                               borderRadius: "18px",
                               px: 3,
                               py: 1.5,
@@ -656,7 +714,7 @@ const ImoPage = () => {
                                 fontSize: "0.75rem",
                                 mt: 0.5,
                                 color: msg.incoming
-                                  ? "#6b7280"
+                                  ? "#99AAB5"
                                   : "rgba(255,255,255,0.8)",
                               }}
                             >
@@ -670,103 +728,26 @@ const ImoPage = () => {
                   </Stack>
                 )}
 
-                {/* Contact Detail */}
-                {selectedContact && (
+                {/* Friend Detail */}
+                {selectedFriend && (
                   <Stack spacing={4} alignItems="center">
-                    <Avatar
-                      src={selectedContact.avatar}
-                      sx={{ width: 120, height: 120 }}
-                    />
+                    <Box sx={{ position: "relative" }}>
+                      <Avatar
+                        src={selectedFriend.avatar}
+                        sx={{ width: 120, height: 120 }}
+                      />
+                      {getStatusDot(selectedFriend.status)}
+                    </Box>
                     <Typography
                       variant="h4"
-                      sx={{ fontWeight: 700, color: "#1f2937" }}
+                      sx={{ fontWeight: 700, color: "#2C2F33" }}
                     >
-                      {selectedContact.name}
+                      {selectedFriend.name}
                     </Typography>
-
-                    {selectedContact.phone && (
-                      <Paper
-                        elevation={0}
-                        sx={{
-                          bgcolor: "#D4F7E8",
-                          borderRadius: 3,
-                          p: 2.5,
-                          width: "100%",
-                          maxWidth: 360,
-                          display: "flex",
-                          alignItems: "center",
-                          gap: 2,
-                        }}
-                      >
-                        <Box
-                          sx={{
-                            bgcolor: "#00D084",
-                            borderRadius: "50%",
-                            p: 1.2,
-                            display: "flex",
-                          }}
-                        >
-                          <FiPhone
-                            className="!text-white"
-                            style={{ fontSize: 22 }}
-                          />
-                        </Box>
-                        <Box sx={{ textAlign: "left" }}>
-                          <Typography
-                            sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
-                          >
-                            Phone
-                          </Typography>
-                          <Typography
-                            sx={{ fontWeight: 600, color: "#1f2937" }}
-                          >
-                            {selectedContact.phone}
-                          </Typography>
-                        </Box>
-                      </Paper>
-                    )}
-
-                    {selectedContact.email && (
-                      <Paper
-                        elevation={0}
-                        sx={{
-                          bgcolor: "#B3E8D4",
-                          borderRadius: 3,
-                          p: 2.5,
-                          width: "100%",
-                          maxWidth: 360,
-                          display: "flex",
-                          alignItems: "center",
-                          gap: 2,
-                        }}
-                      >
-                        <Box
-                          sx={{
-                            bgcolor: "#00D084",
-                            borderRadius: "50%",
-                            p: 1.2,
-                            display: "flex",
-                          }}
-                        >
-                          <FiMail
-                            className="!text-white"
-                            style={{ fontSize: 22 }}
-                          />
-                        </Box>
-                        <Box sx={{ textAlign: "left" }}>
-                          <Typography
-                            sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
-                          >
-                            Email
-                          </Typography>
-                          <Typography
-                            sx={{ fontWeight: 600, color: "#1f2937" }}
-                          >
-                            {selectedContact.email}
-                          </Typography>
-                        </Box>
-                      </Paper>
-                    )}
+                    <Typography sx={{ fontSize: "1rem", color: "#99AAB5" }}>
+                      {selectedFriend.name.split(" ")[0]}#
+                      {selectedFriend.tag.slice(1)}
+                    </Typography>
                   </Stack>
                 )}
 
@@ -779,14 +760,14 @@ const ImoPage = () => {
                     />
                     <Typography
                       variant="h4"
-                      sx={{ fontWeight: 700, color: "#1f2937" }}
+                      sx={{ fontWeight: 700, color: "#2C2F33" }}
                     >
                       {selectedCall.name}
                     </Typography>
                     <Paper
                       elevation={0}
                       sx={{
-                        bgcolor: "#f9fafb",
+                        bgcolor: "#F2F3F5",
                         borderRadius: 3,
                         p: 3,
                         width: "100%",
@@ -797,14 +778,14 @@ const ImoPage = () => {
                         sx={{
                           fontSize: "1.125rem",
                           fontFamily: "monospace",
-                          color: "#1f2937",
+                          color: "#2C2F33",
                         }}
                       >
                         {new Date(selectedCall.time).toLocaleString()}
                       </Typography>
                       {selectedCall.duration && (
                         <Typography
-                          sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
+                          sx={{ fontSize: "0.875rem", color: "#99AAB5", mt: 1 }}
                         >
                           {selectedCall.duration} •{" "}
                           {selectedCall.type.charAt(0).toUpperCase() +
@@ -834,4 +815,4 @@ const ImoPage = () => {
   );
 };
 
-export default ImoPage;
+export default DiscordPage;
