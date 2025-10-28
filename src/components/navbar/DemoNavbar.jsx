@@ -85,6 +85,7 @@ export const LanguageContext = React.createContext();
 const translations = {
   en: {
     Dashboard: "Dashboard",
+    Generate: "Generate Screenshot",
     "General Features": "General Features",
     "Text Messages": "Text Messages",
     "GPS Locations": "GPS Locations",
@@ -150,6 +151,7 @@ const translations = {
   },
   es: {
     Dashboard: "Panel Principal",
+    Generate: "Generate Screenshot",
     "General Features": "Funciones Generales",
     "Text Messages": "Mensajes de Texto",
     "GPS Locations": "Ubicaciones GPS",
@@ -280,6 +282,7 @@ const DemoSidebar = () => {
 
   const menuItems = [
     { label: t["Dashboard"], icon: <MdDashboard />, to: "/demo/dashboard" },
+    { label: t["Generate"], icon: <MdDashboard />, to: "/demo/generatescreenshot" },
 
     {
       label: t["General Features"],

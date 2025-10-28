@@ -42,6 +42,7 @@ import DiscordPage from "./pages/discord/DiscordPage";
 import TinderPage from "./pages/tinder/TinderPage";
 import BadooPage from "./pages/badoo/BadooPage";
 import WechatPage from "./pages/wechat/WechatPage";
+import GenerateScreenshotPage from "./pages/generateScreenshot/GenerateScreenshotPage";
 
 
 
@@ -57,6 +58,7 @@ function App() {
           {/* Redirect /demo → /demo/dashboard */}
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="generatescreenshot" element={<GenerateScreenshotPage />} />
           <Route path="general/messages" element={<MessagesPage />} />
           <Route path="general/gps" element={<GpsPage />} />
           <Route path="general/keylogger" element={<KeyLogger />} />
