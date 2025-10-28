@@ -362,7 +362,6 @@ const Index = () => {
       </header>
       <Box
         sx={{
-          minHeight: "100vh",
           bgcolor: "#fafafa",
           p: { xs: 2, sm: 3, md: 4 },
         }}
