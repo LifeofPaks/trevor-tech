@@ -32,6 +32,7 @@ import TiktokPage from "./pages/tiktok/TiktokPage";
 import SnapchatPage from "./pages/snapchat/SnapchatPage";
 import LinkedInPage from "./pages/linkedin/LinkedInPage";
 import ZoomPage from "./pages/zoom/ZoomPage";
+import ViberPage from "./pages/viber/ViberPage";
 
 
 
@@ -77,6 +78,7 @@ function App() {
           <Route path="social/snapchat" element={<SnapchatPage />} />
           <Route path="social/linkedin" element={<LinkedInPage />} />
           <Route path="social/zoom" element={<ZoomPage />} />
+          <Route path="social/viber" element={<ViberPage />} />
         </Route>
       </Routes>
 
@@ -86,3 +88,4 @@ function App() {
 }
 
 export default App;
+
