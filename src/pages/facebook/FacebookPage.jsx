@@ -32,7 +32,7 @@ import BindPhone from "../../components/demo/BindPhone";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#0695c8",
+      main: "#1877f2",
       light: "#0695c8",
       dark: "#1877f2",
     },
@@ -216,7 +216,6 @@ Facebook
                         p: 2,
                         cursor: "pointer",
                         "&:hover": { bgcolor: "#f5f6f7" },
-                        borderBottom: "1px solid #e4e6eb",
                       }}
                       onClick={() => setSelectedContact(contacts[0])}
                     >
