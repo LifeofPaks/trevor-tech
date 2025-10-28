@@ -284,7 +284,7 @@ const LinkedInPage = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               LinkedIn
-              <IoLogoBitbucket className="text-[#0A66C2] rotate-[180deg]" />
+              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
             </h1>
           </div>
           <BindPhone />
