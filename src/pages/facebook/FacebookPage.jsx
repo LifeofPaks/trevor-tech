@@ -211,7 +211,7 @@ const FacebookPage = () => {
               }}
             >
               <Tab
-                icon={<FiMessageSquare />}
+                icon={<FaSquareFacebook />}
                 iconPosition="start"
                 label={isMobile ? "" : "Notifications"}
                 value="notifications"
