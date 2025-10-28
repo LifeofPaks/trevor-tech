@@ -289,6 +289,7 @@ const FacebookPage = () => {
       <Box
         sx={{
           p: { xs: 2, sm: 3, md: 4 },
+          bgcolor: "background.default",
         }}
       >
         <Box sx={{ maxWidth: 1400, mx: "auto" }}>

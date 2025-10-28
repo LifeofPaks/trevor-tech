@@ -26,6 +26,7 @@ import AppBlockPage from "./pages/appBlock/AppBlockPage";
 import WhatsAppPage from "./pages/whatsApp/WhatsAppPage";
 import FacebookPage from "./pages/facebook/FacebookPage";
 import MessengerPage from "./pages/messenger/MessengerPage";
+import InstagramPage from "./pages/instagram/InstagramPage";
 
 
 
@@ -65,6 +66,7 @@ function App() {
           <Route path="social/whatsapp" element={<WhatsAppPage />} />
           <Route path="social/facebook" element={<FacebookPage />} />
           <Route path="social/messenger" element={<MessengerPage />} />
+          <Route path="social/instagram" element={<InstagramPage />} />
         </Route>
       </Routes>
 
