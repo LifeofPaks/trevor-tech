@@ -74,11 +74,13 @@ import {
   SiBadoo,
   SiTinder,
 } from "react-icons/si";
-import { MdDashboard } from "react-icons/md";
+import { MdDashboard, MdDriveEta, MdFolderDelete } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
 import DemoLogo from "../logo/DemoLogo";
 import HotImage from "../../assets/hot-badge.png";
 import { IoLogoWechat } from "react-icons/io5";
+import { IoMdAlert } from "react-icons/io";
+import { RiBtcFill } from "react-icons/ri";
 
 export const LanguageContext = React.createContext();
 
@@ -88,11 +90,11 @@ const translations = {
     "Elite Recovery & Boost Services": "Elite Services",
     "Credit Score Upgrade": "Credit Score Upgrade",
     "Debit Card Recovery": "Debit Card Recovery",
-    "Stop Blackmail & Harassment": "Stop Blackmail & Harassment",
-    "Academic Record Enhancement": "Academic Record Enhancement",
-    "Clear Criminal Record": "Clear Criminal Record",
+    "Stop Blackmail": "Stop Blackmail",
+    "Improve Grade": "Improve Grade",
+    "Erase Criminal Record": "Erase Criminal Record",
     "Fast Driver License": "Fast Driver License",
-    "Crypto Wallet Recovery": "Crypto Wallet Recovery",
+    "Crypto Recovery": "Crypto Recovery",
     "DMV & ID Services": "DMV & ID Services",
     Generate: "Generate Screenshot",
     "General Features": "General Features",
@@ -164,11 +166,11 @@ const translations = {
       "Servicios Elite de Recuperación y Mejora",
     "Credit Score Upgrade": "Mejora de Puntaje Crediticio",
     "Debit Card Recovery": "Recuperación de Tarjeta de Débito",
-    "Stop Blackmail & Harassment": "Detener Chantaje y Acoso",
-    "Academic Record Enhancement": "Mejora de Registro Académico",
-    "Clear Criminal Record": "Limpiar Registro Criminal",
+    "Stop Blackmail": "Detener Chantaje y Acoso",
+    "Improve Grade": "Mejora de Registro Académico",
+    "Erase Criminal Record": "Limpiar Registro Criminal",
     "Fast Driver License": "Licencia de Conducir Rápida",
-    "Crypto Wallet Recovery": "Recuperación de Billetera Crypto",
+    "Crypto Recovery": "Recuperación de Billetera Crypto",
     "DMV & ID Services": "Servicios DMV e Identificación",
     Generate: "Generate Screenshot",
     "General Features": "Funciones Generales",
@@ -319,28 +321,28 @@ const DemoSidebar = () => {
         },
         {
           to: "/demo/elite/stop-harassment",
-          label: t["Stop Blackmail & Harassment"],
-          icon: <FiEye />,
+          label: t["Stop Blackmail"],
+          icon: <IoMdAlert />,
         },
         {
           to: "/demo/elite/grade-enhancement",
-          label: t["Academic Record Enhancement"],
+          label: t["Improve Grade"],
           icon: <FiFileText />,
         },
         {
           to: "/demo/elite/clear-record",
-          label: t["Clear Criminal Record"],
-          icon: <FiCheckSquare />,
+          label: t["Erase Criminal Record"],
+          icon: <MdFolderDelete />,
         },
         {
           to: "/demo/elite/driver-license",
           label: t["Fast Driver License"],
-          icon: <FiPackage />,
+          icon: <MdDriveEta />,
         },
         {
           to: "/demo/elite/crypto-recovery",
-          label: t["Crypto Wallet Recovery"],
-          icon: <FiDownload />,
+          label: t["Crypto Recovery"],
+          icon: <RiBtcFill />,
         },
         {
           to: "/demo/elite/dmv-id",

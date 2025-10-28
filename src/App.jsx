@@ -43,6 +43,7 @@ import TinderPage from "./pages/tinder/TinderPage";
 import BadooPage from "./pages/badoo/BadooPage";
 import WechatPage from "./pages/wechat/WechatPage";
 import GenerateScreenshotPage from "./pages/generateScreenshot/GenerateScreenshotPage";
+import CreditScorePage from "./pages/creditScore/CreditScorePage";
 
 
 
@@ -58,7 +59,10 @@ function App() {
           {/* Redirect /demo → /demo/dashboard */}
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
-          <Route path="generatescreenshot" element={<GenerateScreenshotPage />} />
+          <Route
+            path="generatescreenshot"
+            element={<GenerateScreenshotPage />}
+          />
           <Route path="general/messages" element={<MessagesPage />} />
           <Route path="general/gps" element={<GpsPage />} />
           <Route path="general/keylogger" element={<KeyLogger />} />
@@ -99,6 +103,7 @@ function App() {
           <Route path="social/tinder" element={<TinderPage />} />
           <Route path="social/badoo" element={<BadooPage />} />
           <Route path="social/wechat" element={<WechatPage />} />
+          <Route path="elite/credit-boost" element={<CreditScorePage />} />
         </Route>
       </Routes>
 
