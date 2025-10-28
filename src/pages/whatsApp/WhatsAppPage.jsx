@@ -25,17 +25,18 @@ import {
   FiMail,
   FiCheck,
 } from "react-icons/fi";
-import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
+import { IoArrowBackCircle, IoLogoBitbucket, IoLogoWhatsapp } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
-import { RiCheckDoubleFill } from "react-icons/ri";
+import { RiCheckDoubleFill, RiWhatsappFill } from "react-icons/ri";
+import { BsWhatsapp } from "react-icons/bs";
 
 // Create custom theme with cyan primary color
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#0695c8",
+      main: "#066a5e",
       light: "#38b2d6",
-      dark: "#05728f",
+      dark: "#066a5e",
     },
     secondary: {
       main: "#c7f7f0",
@@ -378,7 +379,7 @@ const Index = () => {
               }}
             >
               <Tab
-                icon={<FiMessageSquare />}
+                icon={<RiWhatsappFill />}
                 iconPosition="start"
                 label={isMobile ? "" : "Chat"}
                 value="chat"
@@ -633,7 +634,7 @@ const Index = () => {
                           <Box
                             sx={{
                               maxWidth: "70%",
-                              bgcolor: msg.incoming ? "#f3f4f6" : "#0695c8",
+                              bgcolor: msg.incoming ? "#f3f4f6" : "#066a5e",
                               color: msg.incoming ? "#000" : "#fff",
                               borderRadius: "18px",
                               px: 3,

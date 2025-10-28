@@ -227,12 +227,12 @@ Facebook
                         <Avatar
                           sx={{
                             bgcolor: "primary.dark",
-                            width: 40,
-                            height: 40,
+                            width: 30,
+                            height: 30,
                           }}
                         >
                           <FaFacebookF
-                            style={{ color: "white", fontSize: 18 }}
+                            style={{ color: "white", fontSize: 15 }}
                           />
                         </Avatar>
                         <Box sx={{ flex: 1 }}>
