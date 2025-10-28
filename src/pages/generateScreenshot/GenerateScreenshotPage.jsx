@@ -119,14 +119,14 @@ const cyberTheme = createTheme({
   palette: {
     mode: "dark",
     primary: { main: "#00ffff" },
-    background: { default: "#0a0a1f", paper: "rgba(20, 20, 40, 0.7)" },
+    background: { default: "#0a0a1f", paper: "rgba(20, 20, 40)" },
   },
   components: {
     MuiCard: {
       styleOverrides: {
         root: {
           backdropFilter: "blur(16px)",
-          border: "1px solid rgba(0, 255, 255, 0.2)",
+          border: "1px solid rgba(0, 255, 255)",
           borderRadius: 16,
         },
       },
@@ -358,7 +358,14 @@ const Index = () => {
                           }}
                         >
                           {Object.entries(appTemplates).map(([k, v]) => (
-                            <MenuItem key={k} value={k} sx={{ color: "#fff" }}>
+                            <MenuItem
+                              key={k}
+                              value={k}
+                              sx={{
+                                color: "#fff",
+                                bgcolor: " rgb(21, 18, 45)",
+                              }}
+                            >
                               {v.name}
                             </MenuItem>
                           ))}
