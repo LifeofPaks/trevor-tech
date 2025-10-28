@@ -23,18 +23,18 @@ import {
   FiPhoneMissed,
   FiMail,
 } from "react-icons/fi";
-import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
+import { IoArrowBackCircle } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
 import { RiCheckDoubleFill } from "react-icons/ri";
-import { FaViber } from "react-icons/fa";
+import { SiTelegram } from "react-icons/si";
 
-// Viber Light Mode Theme
+// Telegram Light Mode Theme
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#7B4B94",
-      light: "#9F6BB2",
-      dark: "#5A336B",
+      main: "#229ED9", // Telegram blue
+      light: "#4FB3F6",
+      dark: "#1C7BB0",
     },
     secondary: {
       main: "#F5F5F5",
@@ -44,6 +44,7 @@ const theme = createTheme({
     success: { main: "#10B981" }, // incoming
     error: { main: "#EF4444" }, // missed
     info: { main: "#0B5CFF" }, // outgoing
+    grey: { 700: "#374151" },
   },
   typography: {
     fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
@@ -57,7 +58,7 @@ const theme = createTheme({
           fontSize: "0.9375rem",
           color: "#6B7280",
           "&.Mui-selected": {
-            color: "#7B4B94",
+            color: "#229ED9",
           },
         },
       },
@@ -65,241 +66,271 @@ const theme = createTheme({
   },
 });
 
-// === Cheating Drama Chats (8 Total) – Young Men Only ===
+// === Cheating Drama Chats (12 Total) – Young Men Only ===
 const chats = [
   {
     id: 1,
-    name: "Alex Rivera",
-    avatar: "https://i.pravatar.cc/150?img=32",
-    lastMessage: "I can't stop thinking about you",
-    time: "00:45",
+    name: "Jake Morrison",
+    avatar: "https://i.pravatar.cc/150?img=38",
+    lastMessage: "I left my hoodie at your place",
+    time: "03:12",
     messages: [
-      { text: "You're still awake?", time: "00:30", incoming: true },
+      { text: "You still up?", time: "02:50", incoming: true },
+      { text: "Yeah... can't sleep", time: "02:51", incoming: false },
+      { text: "Thinking about earlier?", time: "02:52", incoming: true },
+      { text: "Every second", time: "02:53", incoming: false },
       {
-        text: "Can't sleep. Thinking about last night",
-        time: "00:31",
-        incoming: false,
-      },
-      { text: "Same. I miss your touch", time: "00:32", incoming: true },
-      {
-        text: "I can't stop thinking about you",
-        time: "00:45",
+        text: "I left my hoodie at your place",
+        time: "03:12",
         incoming: false,
       },
     ],
   },
   {
     id: 2,
-    name: "Liam Park",
-    avatar: "https://i.pravatar.cc/150?img=33",
-    lastMessage: "Delete this chat",
-    time: "23:20",
+    name: "Tyler Reed",
+    avatar: "https://i.pravatar.cc/150?img=39",
+    lastMessage: "She has no idea",
+    time: "01:47",
     messages: [
-      { text: "That hotel was perfect", time: "23:00", incoming: true },
-      { text: "We have to do it again", time: "23:01", incoming: false },
-      { text: "Next week?", time: "23:02", incoming: true },
-      { text: "Delete this chat", time: "23:20", incoming: false },
+      { text: "That was close today", time: "01:30", incoming: true },
+      {
+        text: "Too close. My heart was racing",
+        time: "01:31",
+        incoming: false,
+      },
+      { text: "But worth it", time: "01:32", incoming: true },
+      { text: "Every time", time: "01:33", incoming: false },
+      { text: "She has no idea", time: "01:47", incoming: false },
     ],
   },
   {
     id: 3,
-    name: "Ethan Brooks",
-    avatar: "https://i.pravatar.cc/150?img=30",
-    lastMessage: "She's asleep",
-    time: "22:15",
+    name: "Caleb Holt",
+    avatar: "https://i.pravatar.cc/150?img=40",
+    lastMessage: "Send it again, I deleted it",
+    time: "00:28",
     messages: [
-      { text: "Can you talk?", time: "22:00", incoming: true },
-      { text: "She's asleep", time: "22:01", incoming: false },
-      { text: "I wish I was with you", time: "22:02", incoming: true },
-      { text: "Same. This is torture", time: "22:15", incoming: false },
+      { text: "You looked insane tonight", time: "00:10", incoming: true },
+      {
+        text: "You weren't supposed to see that",
+        time: "00:11",
+        incoming: false,
+      },
+      { text: "Too late. Save it", time: "00:12", incoming: true },
+      { text: "Send it again, I deleted it", time: "00:28", incoming: false },
     ],
   },
   {
     id: 4,
-    name: "Noah Lee",
-    avatar: "https://i.pravatar.cc/150?img=31",
-    lastMessage: "Send the pic",
-    time: "21:40",
+    name: "Logan Pierce",
+    avatar: "https://i.pravatar.cc/150?img=41",
+    lastMessage: "Door’s unlocked. Come in quiet",
+    time: "23:55",
     messages: [
-      { text: "What are you wearing?", time: "21:30", incoming: true },
-      { text: "Nothing you haven't seen", time: "21:31", incoming: false },
-      { text: "Send the pic", time: "21:32", incoming: true },
-      { text: "Deleting in 10...", time: "21:40", incoming: false },
+      { text: "You home?", time: "23:40", incoming: true },
+      { text: "Yeah. She’s asleep", time: "23:41", incoming: false },
+      { text: "On my way", time: "23:42", incoming: true },
+      {
+        text: "Door’s unlocked. Come in quiet",
+        time: "23:55",
+        incoming: false,
+      },
     ],
   },
   {
     id: 5,
-    name: "Dylan Kim",
-    avatar: "https://i.pravatar.cc/150?img=35",
-    lastMessage: "I love you",
-    time: "02:25",
+    name: "Austin Grey",
+    avatar: "https://i.pravatar.cc/150?img=42",
+    lastMessage: "I’m addicted to you",
+    time: "02:30",
     messages: [
-      { text: "I shouldn't say this", time: "02:10", incoming: true },
-      { text: "Say it", time: "02:11", incoming: false },
-      { text: "I love you", time: "02:12", incoming: true },
-      { text: "I love you more", time: "02:25", incoming: false },
+      { text: "I shouldn’t be here", time: "02:00", incoming: true },
+      { text: "Then why are you?", time: "02:01", incoming: false },
+      { text: "Because I can’t stay away", time: "02:02", incoming: true },
+      { text: "Good", time: "02:03", incoming: false },
+      { text: "I’m addicted to you", time: "02:30", incoming: false },
     ],
   },
   {
     id: 6,
-    name: "Carter Lee",
-    avatar: "https://i.pravatar.cc/150?img=34",
-    lastMessage: "Room 707",
-    time: "19:55",
+    name: "Brandon Cole",
+    avatar: "https://i.pravatar.cc/150?img=43",
+    lastMessage: "I told her I was at the gym",
+    time: "22:10",
     messages: [
-      { text: "Same hotel?", time: "19:40", incoming: true },
-      { text: "Room 707", time: "19:41", incoming: false },
-      { text: "I'll be there at 8", time: "19:42", incoming: true },
-      { text: "Door's open", time: "19:55", incoming: false },
+      { text: "Where are you?", time: "21:50", incoming: true },
+      { text: "Gym. Late session", time: "21:51", incoming: false },
+      { text: "Liar", time: "21:52", incoming: true },
+      { text: "You know why", time: "21:53", incoming: false },
+      { text: "I told her I was at the gym", time: "22:10", incoming: false },
     ],
   },
   {
     id: 7,
-    name: "Mason Wu",
-    avatar: "https://i.pravatar.cc/150?img=36",
-    lastMessage: "No one will know",
-    time: "18:35",
+    name: "Evan Shaw",
+    avatar: "https://i.pravatar.cc/150?img=44",
+    lastMessage: "This can’t keep happening",
+    time: "20:45",
     messages: [
-      { text: "We have to be careful", time: "18:20", incoming: true },
-      { text: "I know. But I can't stop", time: "18:21", incoming: false },
-      { text: "Just one more time", time: "18:22", incoming: true },
-      { text: "No one will know", time: "18:35", incoming: false },
+      { text: "We said last time was the last", time: "20:30", incoming: true },
+      { text: "I know", time: "20:31", incoming: false },
+      {
+        text: "Then why am I pulling into your driveway?",
+        time: "20:32",
+        incoming: true,
+      },
+      { text: "This can’t keep happening", time: "20:45", incoming: false },
     ],
   },
   {
     id: 8,
-    name: "Ryan Chen",
-    avatar: "https://i.pravatar.cc/150?img=37",
-    lastMessage: "You're my secret",
-    time: "01:20",
+    name: "Gavin Knox",
+    avatar: "https://i.pravatar.cc/150?img=45",
+    lastMessage: "I dream about you every night",
+    time: "03:05",
+    messages: [
+      { text: "Are you asleep?", time: "02:55", incoming: true },
+      { text: "No. You?", time: "02:56", incoming: false },
+      { text: "Wide awake. Thinking of you", time: "02:57", incoming: true },
+      { text: "I dream about you every night", time: "03:05", incoming: false },
+    ],
+  },
+  {
+    id: 9,
+    name: "Hunter Blake",
+    avatar: "https://i.pravatar.cc/150?img=46",
+    lastMessage: "Delete after reading",
+    time: "01:15",
     messages: [
       {
-        text: "I told my girlfriend I was working late",
+        text: "I can’t stop replaying last night",
         time: "01:00",
         incoming: true,
       },
-      { text: "I told my boyfriend the same", time: "01:01", incoming: false },
-      { text: "This is so wrong", time: "01:02", incoming: true },
-      { text: "But you're my secret", time: "01:20", incoming: false },
+      { text: "Same. That thing you did...", time: "01:01", incoming: false },
+      { text: "Shh. Don’t type it", time: "01:02", incoming: true },
+      { text: "Delete after reading", time: "01:15", incoming: false },
+    ],
+  },
+  {
+    id: 10,
+    name: "Jordan Miles",
+    avatar: "https://i.pravatar.cc/150?img=47",
+    lastMessage: "I’m falling for you",
+    time: "00:05",
+    messages: [
+      { text: "This is getting dangerous", time: "23:50", incoming: true },
+      { text: "I know", time: "23:51", incoming: false },
+      { text: "But I don’t want to stop", time: "23:52", incoming: true },
+      { text: "I’m falling for you", time: "00:05", incoming: false },
+    ],
+  },
+  {
+    id: 11,
+    name: "Kyle Vance",
+    avatar: "https://i.pravatar.cc/150?img=48",
+    lastMessage: "Your scent is still on my sheets",
+    time: "04:20",
+    messages: [
+      { text: "I can still taste you", time: "04:00", incoming: true },
+      { text: "Stop. I’m getting hard again", time: "04:01", incoming: false },
+      { text: "Good", time: "04:02", incoming: true },
+      {
+        text: "Your scent is still on my sheets",
+        time: "04:20",
+        incoming: false,
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: "Mason Hale",
+    avatar: "https://i.pravatar.cc/150?img=49",
+    lastMessage: "I lied to her for you",
+    time: "21:30",
+    messages: [
+      { text: "She asked where I was", time: "21:15", incoming: true },
+      { text: "What’d you say?", time: "21:16", incoming: false },
+      { text: "With you", time: "21:17", incoming: true },
+      { text: "I lied to her for you", time: "21:30", incoming: false },
     ],
   },
 ];
 
-// === Contacts (Young Men Only) ===
-const contacts = [
-  {
-    id: 1,
-    name: "Alex Rivera",
-    avatar: "https://i.pravatar.cc/150?img=32",
-    phone: "+1 555-1001",
-    email: "alex@viber.com",
-  },
-  {
-    id: 2,
-    name: "Liam Park",
-    avatar: "https://i.pravatar.cc/150?img=33",
-    phone: "+1 555-1002",
-    email: "liam@viber.com",
-  },
-  {
-    id: 3,
-    name: "Ethan Brooks",
-    avatar: "https://i.pravatar.cc/150?img=30",
-    phone: "+1 555-1003",
-    email: "ethan@viber.com",
-  },
-  {
-    id: 4,
-    name: "Noah Lee",
-    avatar: "https://i.pravatar.cc/150?img=31",
-    phone: "+1 555-1004",
-    email: "noah@viber.com",
-  },
-  {
-    id: 5,
-    name: "Dylan Kim",
-    avatar: "https://i.pravatar.cc/150?img=35",
-    phone: "+1 555-1005",
-    email: "dylan@viber.com",
-  },
-  {
-    id: 6,
-    name: "Carter Lee",
-    avatar: "https://i.pravatar.cc/150?img=34",
-    phone: "+1 555-1006",
-    email: "carter@viber.com",
-  },
-  {
-    id: 7,
-    name: "Mason Wu",
-    avatar: "https://i.pravatar.cc/150?img=36",
-    phone: "+1 555-1007",
-    email: "mason@viber.com",
-  },
-  {
-    id: 8,
-    name: "Ryan Chen",
-    avatar: "https://i.pravatar.cc/150?img=37",
-    phone: "+1 555-1008",
-    email: "ryan@viber.com",
-  },
+// === Friends (Contacts) ===
+const friends = [
+  ...chats.map((c) => ({
+    id: c.id,
+    name: c.name,
+    avatar: c.avatar,
+    phone: `+1 555-${1000 + c.id}`,
+    email: `${c.name.split(" ")[0].toLowerCase()}@telegram.com`,
+  })),
 ];
 
 // === Call Logs ===
 const callLogs = [
   {
     id: 1,
-    name: "Alex Rivera",
-    avatar: "https://i.pravatar.cc/150?img=32",
+    name: "Jake Morrison",
+    avatar: "https://i.pravatar.cc/150?img=38",
     type: "outgoing",
     time: "2025-10-28 23:30",
-    duration: "18:20",
+    duration: "22:15",
   },
   {
     id: 2,
-    name: "Liam Park",
-    avatar: "https://i.pravatar.cc/150?img=33",
+    name: "Tyler Reed",
+    avatar: "https://i.pravatar.cc/150?img=39",
     type: "incoming",
-    time: "2025-10-28 22:15",
-    duration: "09:45",
+    time: "2025-10-28 22:10",
+    duration: "14:30",
   },
   {
     id: 3,
-    name: "Ethan Brooks",
-    avatar: "https://i.pravatar.cc/150?img=30",
+    name: "Caleb Holt",
+    avatar: "https://i.pravatar.cc/150?img=40",
     type: "missed",
-    time: "2025-10-28 21:00",
+    time: "2025-10-28 21:05",
   },
   {
     id: 4,
-    name: "Noah Lee",
-    avatar: "https://i.pravatar.cc/150?img=31",
+    name: "Logan Pierce",
+    avatar: "https://i.pravatar.cc/150?img=41",
     type: "outgoing",
-    time: "2025-10-27 20:30",
-    duration: "25:10",
+    time: "2025-10-27 20:45",
+    duration: "38:20",
   },
   {
     id: 5,
-    name: "Dylan Kim",
-    avatar: "https://i.pravatar.cc/150?img=35",
+    name: "Austin Grey",
+    avatar: "https://i.pravatar.cc/150?img=42",
     type: "incoming",
-    time: "2025-10-27 19:00",
-    duration: "32:00",
+    time: "2025-10-27 19:20",
+    duration: "27:10",
+  },
+  {
+    id: 6,
+    name: "Kyle Vance",
+    avatar: "https://i.pravatar.cc/150?img=48",
+    type: "missed",
+    time: "2025-10-27 18:00",
   },
 ];
 
-const ViberPage = () => {
+const TelegramPage = () => {
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
   const [tab, setTab] = useState("chat");
   const [selectedChat, setSelectedChat] = useState(null);
-  const [selectedContact, setSelectedContact] = useState(null);
+  const [selectedFriend, setSelectedFriend] = useState(null);
   const [selectedCall, setSelectedCall] = useState(null);
 
   const handleBack = () => {
     setSelectedChat(null);
-    setSelectedContact(null);
+    setSelectedFriend(null);
     setSelectedCall(null);
   };
 
@@ -309,7 +340,7 @@ const ViberPage = () => {
         ? "#10B981"
         : type === "outgoing"
         ? "#0B5CFF"
-        : "#EF4444"; // missed
+        : "#EF4444";
     return (
       <Box sx={{ color: iconColor }}>
         {type === "outgoing" && <FiPhoneCall style={{ fontSize: 16 }} />}
@@ -319,17 +350,17 @@ const ViberPage = () => {
     );
   };
 
-  const groupContactsByLetter = () => {
+  const groupFriendsByLetter = () => {
     const grouped = {};
-    contacts.forEach((c) => {
-      const letter = c.name[0].toUpperCase();
+    friends.forEach((f) => {
+      const letter = f.name[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
-      grouped[letter].push(c);
+      grouped[letter].push(f);
     });
     return grouped;
   };
 
-  const showDetail = selectedChat || selectedContact || selectedCall;
+  const showDetail = selectedChat || selectedFriend || selectedCall;
 
   return (
     <ThemeProvider theme={theme}>
@@ -337,8 +368,8 @@ const ViberPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Viber
-              <FaViber className="text-[#7B4B94] rotate-[180deg]" />
+              Telegram
+              <SiTelegram className="text-[#229ED9]" />
             </h1>
           </div>
           <BindPhone />
@@ -363,22 +394,22 @@ const ViberPage = () => {
               }}
             >
               <Tab
-                icon={<FaViber />}
+                icon={<SiTelegram />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chat"}
+                label={isMobile ? "" : "Chats"}
                 value="chat"
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Contacts"}
-                value="contacts"
+                label={isMobile ? "" : "Friends"}
+                value="friends"
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Call Log"}
-                value="call-log"
+                label={isMobile ? "" : "Calls"}
+                value="calls"
               />
             </Tabs>
           )}
@@ -467,10 +498,10 @@ const ViberPage = () => {
                 </Stack>
               )}
 
-              {/* Contacts List */}
-              {tab === "contacts" && (
+              {/* Friends List */}
+              {tab === "friends" && (
                 <Stack>
-                  {Object.keys(groupContactsByLetter())
+                  {Object.keys(groupFriendsByLetter())
                     .sort()
                     .map((letter) => (
                       <Box key={letter}>
@@ -485,16 +516,16 @@ const ViberPage = () => {
                             {letter}
                           </Typography>
                         </Box>
-                        {groupContactsByLetter()[letter].map((contact) => (
+                        {groupFriendsByLetter()[letter].map((friend) => (
                           <Box
-                            key={contact.id}
+                            key={friend.id}
                             sx={{
                               p: 2,
                               cursor: "pointer",
                               "&:hover": { bgcolor: "rgba(0,0,0,0.02)" },
                               transition: "background 0.2s",
                             }}
-                            onClick={() => setSelectedContact(contact)}
+                            onClick={() => setSelectedFriend(friend)}
                           >
                             <Stack
                               direction="row"
@@ -502,13 +533,13 @@ const ViberPage = () => {
                               alignItems="center"
                             >
                               <Avatar
-                                src={contact.avatar}
+                                src={friend.avatar}
                                 sx={{ width: 48, height: 48 }}
                               />
                               <Typography
                                 sx={{ fontWeight: 500, color: "#1f2937" }}
                               >
-                                {contact.name}
+                                {friend.name}
                               </Typography>
                             </Stack>
                           </Box>
@@ -519,7 +550,7 @@ const ViberPage = () => {
               )}
 
               {/* Call Log */}
-              {tab === "call-log" && (
+              {tab === "calls" && (
                 <Stack>
                   {callLogs.map((call) => (
                     <Box
@@ -579,7 +610,7 @@ const ViberPage = () => {
                         <Typography
                           sx={{ fontSize: "0.75rem", color: "#9ca3af" }}
                         >
-                          {call.time.split(" ")[1]}
+                          {call.time.split(" ")[1].slice(0, 5)}
                         </Typography>
                       </Stack>
                     </Box>
@@ -631,7 +662,7 @@ const ViberPage = () => {
                           <Box
                             sx={{
                               maxWidth: "70%",
-                              bgcolor: msg.incoming ? "#f3f4f6" : "#7B4B94",
+                              bgcolor: msg.incoming ? "#f3f4f6" : "#229ED9",
                               color: msg.incoming ? "#000" : "#fff",
                               borderRadius: "18px",
                               px: 3,
@@ -656,7 +687,7 @@ const ViberPage = () => {
                               }}
                             >
                               {msg.time}
-                              <RiCheckDoubleFill />
+                              {!msg.incoming && <RiCheckDoubleFill />}
                             </Typography>
                           </Box>
                         </Box>
@@ -665,25 +696,25 @@ const ViberPage = () => {
                   </Stack>
                 )}
 
-                {/* Contact Detail */}
-                {selectedContact && (
+                {/* Friend Detail */}
+                {selectedFriend && (
                   <Stack spacing={4} alignItems="center">
                     <Avatar
-                      src={selectedContact.avatar}
+                      src={selectedFriend.avatar}
                       sx={{ width: 120, height: 120 }}
                     />
                     <Typography
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedContact.name}
+                      {selectedFriend.name}
                     </Typography>
 
-                    {selectedContact.phone && (
+                    {selectedFriend.phone && (
                       <Paper
                         elevation={0}
                         sx={{
-                          bgcolor: "#e9d5ff",
+                          bgcolor: "#DBEAFE",
                           borderRadius: 3,
                           p: 2.5,
                           width: "100%",
@@ -695,7 +726,7 @@ const ViberPage = () => {
                       >
                         <Box
                           sx={{
-                            bgcolor: "#7B4B94",
+                            bgcolor: "#229ED9",
                             borderRadius: "50%",
                             p: 1.2,
                             display: "flex",
@@ -715,17 +746,17 @@ const ViberPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {selectedContact.phone}
+                            {selectedFriend.phone}
                           </Typography>
                         </Box>
                       </Paper>
                     )}
 
-                    {selectedContact.email && (
+                    {selectedFriend.email && (
                       <Paper
                         elevation={0}
                         sx={{
-                          bgcolor: "#dbeafe",
+                          bgcolor: "#E0E7FF",
                           borderRadius: 3,
                           p: 2.5,
                           width: "100%",
@@ -737,7 +768,7 @@ const ViberPage = () => {
                       >
                         <Box
                           sx={{
-                            bgcolor: "#7B4B94",
+                            bgcolor: "#229ED9",
                             borderRadius: "50%",
                             p: 1.2,
                             display: "flex",
@@ -757,7 +788,7 @@ const ViberPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {selectedContact.email}
+                            {selectedFriend.email}
                           </Typography>
                         </Box>
                       </Paper>
@@ -795,7 +826,7 @@ const ViberPage = () => {
                           color: "#1f2937",
                         }}
                       >
-                        {selectedCall.time}
+                        {new Date(selectedCall.time).toLocaleString()}
                       </Typography>
                       {selectedCall.duration && (
                         <Typography
@@ -829,4 +860,4 @@ const ViberPage = () => {
   );
 };
 
-export default ViberPage;
+export default TelegramPage;

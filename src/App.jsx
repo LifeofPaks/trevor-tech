@@ -33,6 +33,7 @@ import SnapchatPage from "./pages/snapchat/SnapchatPage";
 import LinkedInPage from "./pages/linkedin/LinkedInPage";
 import ZoomPage from "./pages/zoom/ZoomPage";
 import ViberPage from "./pages/viber/ViberPage";
+import TelegramPage from "./pages/telegram/TelegramPage";
 
 
 
@@ -79,6 +80,7 @@ function App() {
           <Route path="social/linkedin" element={<LinkedInPage />} />
           <Route path="social/zoom" element={<ZoomPage />} />
           <Route path="social/viber" element={<ViberPage />} />
+          <Route path="social/telegram" element={<TelegramPage />} />
         </Route>
       </Routes>
 
