@@ -13,6 +13,7 @@ import {
   FiChrome,
   FiFileText,
   FiMail,
+  FiKey,
 } from "react-icons/fi";
 import {
   FaWhatsapp,
@@ -41,6 +42,7 @@ import { IoLogoBitbucket } from "react-icons/io5";
 import { useState } from "react";
 import BuyModal from "../../buyModal/BuyModal";
 import { MdDashboard } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
     const [open, setOpen] = useState(false);
@@ -54,8 +56,7 @@ const Dashboard = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Dashboard{" "}
-              <MdDashboard className="text-[#0695c8]" />
+              Dashboard <MdDashboard className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
@@ -80,96 +81,112 @@ const Dashboard = () => {
             label: "Calls",
             count: 3,
             color: "from-teal-400 to-cyan-500",
+            to: "/demo/general/calls",
           },
           {
             icon: <FiMessageSquare />,
             label: "Messages",
             count: 15,
             color: "from-indigo-400 to-blue-500",
+            to: "/demo/general/messages",
           },
           {
             icon: <FaWhatsapp />,
             label: "WhatsApp",
             count: 7,
             color: "from-green-400 to-emerald-500",
+            to: "/demo/social/whatsapp",
           },
           {
             icon: <SiMessenger />,
             label: "Messenger",
             count: 4,
             color: "from-blue-500 to-indigo-600",
+            to: "/demo/social/messenger",
           },
           {
             icon: <FaInstagram />,
             label: "Instagram",
             count: 12,
             color: "from-pink-400 to-rose-500",
+            to: "/demo/social/instagram",
           },
           {
             icon: <FaFacebookF />,
             label: "Facebook",
             count: 8,
             color: "from-blue-600 to-blue-800",
+            to: "/demo/social/facebook",
           },
           {
             icon: <FaSnapchatGhost />,
             label: "Snapchat",
             count: 5,
             color: "from-yellow-400 to-amber-500",
+            to: "/demo/social/snapchat",
           },
           {
             icon: <SiLine />,
             label: "LINE",
             count: 2,
             color: "from-green-500 to-lime-600",
+            to: "/demo/social/line",
           },
           {
             icon: <FaTelegramPlane />,
             label: "Telegram",
             count: 6,
             color: "from-sky-400 to-cyan-600",
+            to: "/demo/social/telegram",
           },
           {
             icon: <FiSmartphone />,
             label: "Screenshots",
             count: 0,
             color: "from-purple-400 to-violet-500",
+            to: "/demo/captures/screenshots",
           },
           {
             icon: <FiMonitor />,
             label: "Live Screen",
             count: 0,
             color: "from-red-400 to-rose-500",
+            to: "/demo/captures/screenshots",
           },
           {
             icon: <FiMic />,
             label: "Record",
             count: 0,
             color: "from-orange-400 to-red-500",
+            to: "/demo/captures/screenshots",
           },
           {
             icon: <FiCamera />,
             label: "Photos",
             count: 0,
             color: "from-teal-400 to-cyan-500",
+            to: "/demo/general/photos",
           },
           {
             icon: <FiVideo />,
             label: "Videos",
             count: 0,
             color: "from-indigo-400 to-blue-500",
+            to: "/demo/general/videos",
           },
           {
             icon: <FiImage />,
             label: "Gallery",
             count: 19,
             color: "from-amber-400 to-orange-500",
+            to: "/demo/general/photos",
           },
           {
-            icon: <FiClock />,
+            icon: <FiKey />,
             label: "Keylogger",
             count: 4,
             color: "from-purple-400 to-violet-500",
+            to: "/demo/general/keylogger",
           },
         ].map((item, i) => (
           <div
@@ -177,7 +194,7 @@ const Dashboard = () => {
             className="group sm:rounded-2xl !p-2 sm:!p-3 transition-all duration-300 cursor-pointer flex flex-col items-center hover:scale-105"
           >
             {/* Icon Container */}
-            <div className="relative bg-white/90 backdrop-blur-md rounded-full p-1 sm:!p-2 shadow-md flex items-center justify-center">
+            <Link to={item.to} className="relative bg-white/90 backdrop-blur-md rounded-full p-1 sm:!p-2 shadow-md flex items-center justify-center">
               <div
                 className={`relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto bg-gradient-to-br ${item.color} rounded-full flex items-center justify-center text-white text-base sm:text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform`}
               >
@@ -190,7 +207,7 @@ const Dashboard = () => {
                   </span>
                 )}
               </div>
-            </div>
+            </Link>
 
             {/* Label */}
             <p className="text-center text-[9px] sm:text-[10px] md:text-xs font-medium text-slate-700 !mt-0.5 sm:!mt-1 line-clamp-2">
