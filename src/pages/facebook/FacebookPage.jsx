@@ -23,6 +23,7 @@ import {
 import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa";
 import BindPhone from "../../components/demo/BindPhone";
+import { FaSquareFacebook } from "react-icons/fa6";
 
 // Facebook Blue Theme
 const theme = createTheme({
@@ -182,7 +183,7 @@ const FacebookPage = () => {
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               Facebook
-              <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+              <FaSquareFacebook className="text-[#1877f2]" />
             </h1>
           </div>
           <BindPhone />

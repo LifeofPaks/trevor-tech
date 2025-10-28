@@ -14,6 +14,7 @@ import {
 import { FiCopy, FiTrash2, FiPlus } from "react-icons/fi";
 import { IoLogoBitbucket } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
+import { FaLocationDot } from "react-icons/fa6";
 
 const GeofencePage = () => {
   const [tab, setTab] = useState(1); // 0 = Allowed, 1 = Restricted
@@ -29,13 +30,12 @@ const GeofencePage = () => {
 
     return (
       <>
-        {" "}
         <header className="!mb-4 sm:!mb-6 !px-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
             <div className="flex items-center !gap-2 sm:!gap-3">
               <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
                 GPS Locations
-                <IoLogoBitbucket className="text-[#0695c8] rotate-[180deg]" />
+                <FaLocationDot className="text-[#0695c8]" />
               </h1>
             </div>
             <BindPhone />
