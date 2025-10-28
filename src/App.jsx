@@ -36,6 +36,7 @@ import ViberPage from "./pages/viber/ViberPage";
 import TelegramPage from "./pages/telegram/TelegramPage";
 import LinePage from "./pages/line/LinePage";
 import KakaoTalkPage from "./pages/kakaoTalk/KakaoTalkPage";
+import SkypePage from "./pages/skype/SkypePage";
 
 
 
@@ -85,6 +86,7 @@ function App() {
           <Route path="social/telegram" element={<TelegramPage />} />
           <Route path="social/line" element={<LinePage />} />
           <Route path="social/kakaotalk" element={<KakaoTalkPage />} />
+          <Route path="social/skype" element={<SkypePage />} />
         </Route>
       </Routes>
 
