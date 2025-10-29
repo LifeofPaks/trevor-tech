@@ -184,7 +184,7 @@ const Navbarr = () => {
               className="fixed top-0 left-0 h-full w-80 max-w-[90%] bg-gradient-to-br from-[#0a0a1f]/98 to-[#1a0033]/98 backdrop-blur-2xl border-r border-cyan-500/40 shadow-2xl z-50 md:hidden"
             >
               <div className="flex justify-between items-center !p-6 border-b border-cyan-800/50">
-                <Logo />
+                <DemoLogo />
                 <button
                   onClick={toggleMenu}
                   className="text-cyan-300 hover:text-cyan-100 transition"
