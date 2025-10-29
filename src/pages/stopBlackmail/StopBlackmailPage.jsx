@@ -301,7 +301,7 @@ const StopBlackmailPage = () => {
 
             {/* Central Progress Ring */}
             <motion.div
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80"
+              className="absolute lg:top-1/2 top-150 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80"
               initial={{ scale: 0 }}
               animate={heroInView ? { scale: 1 } : {}}
               transition={{ delay: 1.2, type: "spring" }}
@@ -353,10 +353,11 @@ const StopBlackmailPage = () => {
               </div>
             </motion.div>
           </div>
+          
 
           {/* CTA */}
           <motion.div
-            className="text-center !mt-32"
+            className="text-center lg:!mt-32 !mt-100"
             initial={{ opacity: 0 }}
             animate={heroInView ? { opacity: 1 } : {}}
             transition={{ delay: 1.5 }}
@@ -482,7 +483,7 @@ const StopBlackmailPage = () => {
             animate={globeInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            <strong className="text-cyan-100">{erased.toLocaleString()}</strong>{" "}
+            <strong className="text-cyan-100">All</strong>{" "}
             private files, videos, messages, and doxxing records permanently
             deleted from{" "}
             <strong className="text-cyan-100">47+ platforms</strong>, including
