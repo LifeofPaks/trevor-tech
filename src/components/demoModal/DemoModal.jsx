@@ -1,133 +1,113 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FiX } from "react-icons/fi";
-import { Box, IconButton, Typography } from "@mui/material";
+import { Modal } from "@mui/material";
 
 const DemoModal = ({
   openDemoModal,
   onCloseDemoModal,
-  handleOpenDemoModal, // This will open Buy Modal
+  handleOpenDemoModal, // Opens Buy Modal
 }) => {
-  if (!openDemoModal) return null;
-
   return (
-    <Box
-      sx={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        bgcolor: "rgba(0, 0, 0, 0.7)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        zIndex: 50,
-        backdropFilter: "blur(8px)",
-      }}
-      onClick={onCloseDemoModal}
-    >
-      <motion.div
-        initial={{ scale: 0.9, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0.9, opacity: 0 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        onClick={(e) => e.stopPropagation()}
-        style={{
-          background: "linear-gradient(135deg, #0a0a1f 0%, #1a0033 100%)",
-          borderRadius: "1.5rem",
-          padding: "2rem",
-          maxWidth: "500px",
-          width: "90%",
-          position: "relative",
-          border: "1px solid rgba(0, 186, 255, 0.3)",
-          boxShadow: "0 0 60px rgba(0, 186, 255, 0.3)",
-        }}
-      >
-        <IconButton
-          onClick={onCloseDemoModal}
-          sx={{
-            position: "absolute",
-            top: 16,
-            right: 16,
-            color: "#00ffff",
-            bgcolor: "rgba(0, 255, 255, 0.1)",
-            "&:hover": { bgcolor: "rgba(0, 255, 255, 0.2)" },
-          }}
-        >
-          <FiX size={20} />
-        </IconButton>
-
+    <AnimatePresence>
+      <Modal open={openDemoModal} onClose={onCloseDemoModal}>
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          <Typography
-            variant="h5"
-            sx={{
-              fontWeight: 800,
-              background: "linear-gradient(90deg, #00ffff, #ff00ff)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              textAlign: "center",
-              mb: 2,
-            }}
-          >
-            Remote Spy & Control
-          </Typography>
-        </motion.div>
-
-        <motion.div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          style={{ backdropFilter: "blur(12px)" }}
+          onClick={onCloseDemoModal}
         >
-          <Typography
-            variant="body1"
-            sx={{
-              color: "rgba(255, 255, 255, 0.85)",
-              textAlign: "center",
-              mb: 3,
-              lineHeight: 1.6,
-              fontSize: "1rem",
-            }}
-          >
-            Remotely access{" "}
-            <strong>any Android, iPhone, tablet, or computer</strong>. View{" "}
-            <strong>messages, calls, GPS, photos, apps, and keystrokes</strong>.{" "}
-            <strong>No physical access needed</strong>.
-          </Typography>
-        </motion.div>
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f]/90 via-[#0f0f2a]/80 to-[#1a0033]/90" />
 
-        <motion.div
-          className="flex flex-col sm:flex-row items-center gap-4 !mt-8 justify-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <Link
-            to="/demo"
-            className="w-full sm:w-auto"
-            onClick={onCloseDemoModal}
-          >
-            <button className="w-full sm:w-auto min-w-[150px] border !border-gray-500 hover:bg-gray-100 text-gray-500 font-medium rounded-lg !px-6 !py-3 transition duration-300">
-              View Demo
-            </button>
-          </Link>
-          <button
-            onClick={() => {
-              handleOpenDemoModal(); // Opens Buy Modal
-              onCloseDemoModal(); // Closes Demo Modal
+          {/* Modal Card */}
+          <motion.div
+            className="relative bg-white/5 backdrop-blur-xl border border-cyan-500/40 rounded-3xl !p-8 max-w-md w-full shadow-2xl"
+            initial={{ scale: 0.85, opacity: 0, y: 20 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            exit={{ scale: 0.85, opacity: 0, y: 20 }}
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              boxShadow:
+                "0 0 60px rgba(0, 255, 255, 0.3), 0 0 120px rgba(0, 255, 255, 0.15)",
             }}
-            className="w-full sm:w-auto min-w-[150px] bg-[#0BA6DF] hover:bg-[#0695c8] text-white font-medium rounded-lg !px-6 !py-3 transition duration-300"
           >
-            Try it Now
-          </button>
+            {/* Close Button */}
+            <motion.button
+              onClick={onCloseDemoModal}
+              className="absolute top-4 right-4 w-10 h-10 bg-cyan-500/20 hover:bg-cyan-500/40 backdrop-blur-sm rounded-full flex items-center justify-center border border-cyan-400/50 transition-all duration-300 group"
+              whileHover={{ scale: 1.1, rotate: 90 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FiX className="w-5 h-5 text-cyan-300 group-hover:text-white drop-shadow-glow" />
+            </motion.button>
+
+            {/* Title */}
+            <motion.h5
+              className="text-2xl sm:text-3xl font-extrabold text-center bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              Remote Spy & Control
+            </motion.h5>
+
+            {/* Description */}
+            <motion.p
+              className="text-center text-cyan-200/85 text-sm sm:text-base leading-relaxed !mb-8 font-light"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              Remotely access{" "}
+              <strong>any Android, iPhone, tablet, or computer</strong>. View{" "}
+              <strong>
+                messages, calls, GPS, photos, apps, and keystrokes
+              </strong>
+              . <strong>No physical access needed</strong>.
+            </motion.p>
+
+            {/* Buttons */}
+            <motion.div
+              className="flex flex-col sm:flex-row items-center !gap-4 justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+            >
+              <Link
+                to="/demo"
+                className="w-full sm:w-auto"
+                onClick={onCloseDemoModal}
+              >
+                <motion.button
+                  className="w-full sm:w-auto min-w-[140px] border !border-cyan-500/60 hover:bg-cyan-900/30 text-cyan-300 backdrop-blur-sm font-semibold !px-6 !py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:text-cyan-100"
+                  whileHover={{ boxShadow: "0 0 20px rgba(0, 255, 255, 0.4)" }}
+                >
+                  View Demo
+                </motion.button>
+              </Link>
+
+              <motion.button
+                onClick={() => {
+                  handleOpenDemoModal();
+                  onCloseDemoModal();
+                }}
+                className="w-full sm:w-auto min-w-[140px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-6 !py-3 rounded-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+                whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Try it Now
+              </motion.button>
+            </motion.div>
+          </motion.div>
         </motion.div>
-      </motion.div>
-    </Box>
+      </Modal>
+    </AnimatePresence>
   );
 };
 
