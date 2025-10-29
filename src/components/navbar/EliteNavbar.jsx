@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { GiImperialCrown } from "react-icons/gi";
 import {
   FiMenu,
@@ -11,9 +12,10 @@ import {
 import { IoMdAlert } from "react-icons/io";
 import { MdFolderDelete } from "react-icons/md";
 import { RiBtcFill } from "react-icons/ri";
+import { Home } from "lucide-react";
 import Logo from "../logo/Logo";
 import { Link } from "react-router-dom";
-import { Home } from "lucide-react";
+import DemoLogo from "../logo/DemoLogo";
 
 const EliteNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,126 +57,182 @@ const EliteNavbar = () => {
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50">
-      <div className="flex items-center justify-between w-full lg:max-w-[1000px] !mx-auto bg-white/50 backdrop-blur-md shadow-lg lg:rounded-2xl !px-12 !py-4 lg:!mt-4">
-        <div className="flex items-center gap-10">
-          <Logo />
+      {/* Main Navbar */}
+      <div className="flex items-center justify-between w-full lg:max-w-[1000px] !mx-auto bg-gradient-to-r from-[#0a0a1f]/80 to-[#1a0033]/80 backdrop-blur-xl border border-cyan-500/30 shadow-2xl lg:rounded-2xl !px-8 !py-4 lg:!mt-4">
+        <div className="flex items-center !gap-10">
+          <DemoLogo />
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-8 text-[14px] font-medium text-gray-800 relative">
-          <Link
-            to="/"
-            className="hidden md:inline-block text-[14px] font-medium text-gray-800 hover:text-[#0695c8] transition"
-          >
-            Home
-          </Link>
+        <ul className="hidden md:flex items-center !gap-8 text-sm font-medium relative">
+          <li>
+            <Link
+              to="/"
+              className="flex items-center !gap-2 text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:glow"
+            >
+              <span>Home</span>
+            </Link>
+          </li>
+
           {/* Elite Services Dropdown */}
           <li
-            className="relative cursor-pointer flex items-center gap-1 hover:text-[#0695c8] transition"
+            className="relative cursor-pointer"
             onMouseEnter={() => setEliteOpen(true)}
             onMouseLeave={() => setEliteOpen(false)}
           >
-            <span>Elite Services</span>
-            <FiChevronDown
-              className={`text-sm transition-transform duration-300 ${
-                eliteOpen ? "rotate-180 text-[#0695c8]" : ""
-              }`}
-            />
-            {eliteOpen && (
-              <ul className="absolute top-full left-0 text-gray-800 bg-white/95 backdrop-blur-md shadow-lg rounded-xl min-w-[250px] !py-3 transition-all duration-300 ease-in-out">
-                {eliteLinks.map((item, i) => (
-                  <li key={i} className="!cursor-pointer">
-                    <Link
-                      to={item.to}
-                      className="flex items-center gap-3 !px-5 !py-2.5 hover:bg-[#0695c810] hover:text-[#0695c8] transition rounded-lg"
+            <div className="flex items-center !gap-1 text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:glow">
+              <span>Elite Services</span>
+              <FiChevronDown
+                className={`text-sm transition-transform duration-300 ${
+                  eliteOpen ? "rotate-180 text-cyan-100" : ""
+                }`}
+              />
+            </div>
+
+            <AnimatePresence>
+              {eliteOpen && (
+                <motion.ul
+                  initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                  transition={{ duration: 0.25, ease: "easeOut" }}
+                  className="absolute top-full left-0 !mt-3 w-64 bg-gradient-to-br from-[#0f0f2a]/95 to-[#2a0055]/95 backdrop-blur-xl border border-cyan-500/40 rounded-xl shadow-2xl overflow-hidden z-50"
+                >
+                  {eliteLinks.map((item, i) => (
+                    <motion.li
+                      key={i}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: i * 0.05 }}
                     >
-                      {item.icon}
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
+                      <Link
+                        to={item.to}
+                        className="flex items-center !gap-3 !px-5 !py-3 text-cyan-200 hover:bg-cyan-900/30 hover:text-cyan-100 transition-all duration-300 border-b border-cyan-800/30 last:border-b-0"
+                      >
+                        <span className="text-cyan-400">{item.icon}</span>
+                        <span className="text-sm font-medium">
+                          {item.label}
+                        </span>
+                      </Link>
+                    </motion.li>
+                  ))}
+                </motion.ul>
+              )}
+            </AnimatePresence>
           </li>
         </ul>
 
-        {/* Hamburger Icon (Mobile Only) */}
+        {/* Mobile Hamburger */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-800 text-2xl focus:outline-none"
+          className="md:hidden text-cyan-300 text-2xl focus:outline-none hover:text-cyan-100 transition"
         >
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
       </div>
 
       {/* Mobile Side Menu */}
-      <div
-        className={`fixed top-0 left-0 h-full w-3/4 max-w-[300px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:hidden z-40`}
-      >
-        <div className="flex justify-between items-center !p-5 border-b border-gray-200">
-          <Logo />
-          <button onClick={toggleMenu} className="text-2xl text-gray-800">
-            <FiX />
-          </button>
-        </div>
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            {/* Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={toggleMenu}
+              className="fixed inset-0 bg-black/70 backdrop-blur-md z-40 md:hidden"
+            />
 
-        <ul className="flex flex-col gap-6 !p-6 text-gray-800 text-[15px] font-medium">
-          <li>
-            <Link to="/" onClick={toggleMenu} className="hover:text-[#0695c8]">
-              Home
-            </Link>
-          </li>
-
-          {/* Mobile Elite Dropdown */}
-          <li>
-            <button
-              onClick={toggleMobileElite}
-              className="w-full flex items-center justify-between hover:text-[#0695c8] transition"
+            {/* Sidebar */}
+            <motion.div
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              className="fixed top-0 left-0 h-full w-80 max-w-[90%] bg-gradient-to-br from-[#0a0a1f]/98 to-[#1a0033]/98 backdrop-blur-2xl border-r border-cyan-500/40 shadow-2xl z-50 md:hidden"
             >
-              <span>Elite Services</span>
-              <FiChevronDown
-                className={`text-sm transition-transform duration-300 ${
-                  mobileEliteOpen ? "rotate-180 text-[#0695c8]" : ""
-                }`}
-              />
-            </button>
+              <div className="flex justify-between items-center !p-6 border-b border-cyan-800/50">
+                <Logo />
+                <button
+                  onClick={toggleMenu}
+                  className="text-cyan-300 hover:text-cyan-100 transition"
+                >
+                  <FiX size={24} />
+                </button>
+              </div>
 
-            <div
-              className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                mobileEliteOpen ? "max-h-[500px] !mt-3" : "max-h-0"
-              }`}
-            >
-              <ul className="flex flex-col gap-3 !pl-4">
-                {eliteLinks.map((item, i) => (
-                  <li key={i}>
-                    <Link
-                      to={item.to}
-                      onClick={() => {
-                        toggleMenu();
-                        setMobileEliteOpen(false);
-                      }}
-                      className="flex items-center gap-3 !py-1.5 hover:text-[#0695c8] transition"
-                    >
-                      {item.icon}
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
+              <ul className="flex flex-col !gap-5 !p-6 text-cyan-200">
+                <li>
+                  <Link
+                    to="/"
+                    onClick={toggleMenu}
+                    className="flex items-center !gap-2 !py-2 text-cyan-300 hover:text-cyan-100 transition hover:glow"
+                  >
+                    <span>Home</span>
+                  </Link>
+                </li>
+
+                {/* Mobile Elite Dropdown */}
+                <li>
+                  <button
+                    onClick={toggleMobileElite}
+                    className="w-full flex items-center justify-between !py-2 text-cyan-300 hover:text-cyan-100 transition"
+                  >
+                    <span>Elite Services</span>
+                    <FiChevronDown
+                      className={`transition-transform duration-300 ${
+                        mobileEliteOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+
+                  <AnimatePresence>
+                    {mobileEliteOpen && (
+                      <motion.ul
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden !pl-4 !mt-3 space-y-2"
+                      >
+                        {eliteLinks.map((item, i) => (
+                          <motion.li
+                            key={i}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: i * 0.05 }}
+                          >
+                            <Link
+                              to={item.to}
+                              onClick={() => {
+                                toggleMenu();
+                                setMobileEliteOpen(false);
+                              }}
+                              className="flex items-center !gap-3 !py-2 text-cyan-400 hover:text-cyan-100 transition"
+                            >
+                              {item.icon}
+                              <span className="text-sm">{item.label}</span>
+                            </Link>
+                          </motion.li>
+                        ))}
+                      </motion.ul>
+                    )}
+                  </AnimatePresence>
+                </li>
               </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
 
-      {/* Background Overlay */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/40 backdrop-blur-sm md:hidden"
-          onClick={toggleMenu}
-        ></div>
-      )}
+      {/* Glow Effect */}
+      <style jsx>{`
+        .hover\\:glow:hover {
+          text-shadow: 0 0 10px rgba(0, 255, 255, 0.6),
+            0 0 20px rgba(0, 255, 255, 0.4);
+        }
+      `}</style>
     </nav>
   );
 };

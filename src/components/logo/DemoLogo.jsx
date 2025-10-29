@@ -19,7 +19,7 @@ const DemoLogo = () => {
         </div>
       </div>
 
-      <div className=" logo-font text-[10px]">
+      <div className=" logo-font text-[10px] text-white">
         Trevor <span className="text-red-400 -ml-[3px]!">Tech</span>
       </div>
     </Link>
