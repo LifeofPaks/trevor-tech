@@ -4,7 +4,13 @@ import {
   FiTrash2,
   FiDownload,
   FiMessageSquare,
-  FiZap,
+  FiSearch,
+  FiCamera,
+  FiSend,
+  FiMic,
+  FiPaperclip,
+  FiEdit2,
+  FiMoreVertical,
 } from "react-icons/fi";
 import {
   Box,
@@ -20,131 +26,163 @@ import {
   CardHeader,
   Divider,
   IconButton,
+  Avatar,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Badge,
   createTheme,
   ThemeProvider,
 } from "@mui/material";
 import whatsappBg from "../../assets/whatsapp-bg.jpeg";
 import { motion, AnimatePresence } from "framer-motion";
 
-// === App Templates ===
+// -------------------------------------------------
+// App Templates (unchanged except for statusBar removed)
+// -------------------------------------------------
 const appTemplates = {
-  viber: {
-    name: "Viber",
-    primary: "#7B68EE",
-    bg: "#f8f9fa",
-    bubble: { sent: "#7B68EE", received: "#e9ecef" },
-    text: { sent: "#fff", received: "#000" },
-    header: "#7B68EE",
+  whatsapp: {
+    name: "WhatsApp",
+    primary: "#25D366",
+    bg: "#ece5dd",
+    header: "#075e54",
     headerText: "#fff",
+    bubble: { sent: "#dcf8c6", received: "#ffffff" },
+    text: { sent: "#000", received: "#000" },
+    hasBackground: true,
+    tabBar: "#f0f2f5",
+    tabIcons: true,
+    contactList: true,
+    showTime: true,
+    showStatus: true,
+    showAvatar: true,
+    showUnread: true,
+  },
+  instagram: {
+    name: "Instagram",
+    primary: "#E4405F",
+    bg: "#fafafa",
+    header: "#fff",
+    headerText: "#000",
+    bubble: { sent: "#E4405F", received: "#f0f0f0" },
+    text: { sent: "#fff", received: "#000" },
+    hasBackground: false,
+    tabBar: "#fff",
+    borderBottom: "1px solid #dbdbdb",
+    contactList: true,
+    showTime: true,
+    showStatus: false,
+    showAvatar: true,
+    showUnread: true,
+    dmHeader: true,
+    stories: true,
+  },
+  twitter: {
+    name: "Twitter",
+    primary: "#1DA1F2",
+    bg: "#fff",
+    header: "#fff",
+    headerText: "#000",
+    bubble: { sent: "#1DA1F2", received: "#f7f9f9" },
+    text: { sent: "#fff", received: "#000" },
+    hasBackground: false,
+    tabBar: "#fff",
+    borderBottom: "1px solid #e6ecf0",
+    contactList: true,
+    showTime: true,
+    showStatus: false,
+    showAvatar: true,
+    showUnread: true,
+    dmHeader: true,
+  },
+  snapchat: {
+    name: "Snapchat",
+    primary: "#FFFC00",
+    bg: "#fff",
+    header: "#FFFC00",
+    headerText: "#000",
+    bubble: { sent: "#FFFC00", received: "#f0f0f0" },
+    text: { sent: "#000", received: "#000" },
+    hasBackground: false,
+    tabBar: "#fff",
+    contactList: true,
+    showTime: false,
+    showStatus: true,
+    showAvatar: true,
+    showUnread: false,
+    snapStyle: true,
+  },
+  messenger: {
+    name: "Messenger",
+    primary: "#0084FF",
+    bg: "#fff",
+    header: "#0084FF",
+    headerText: "#fff",
+    bubble: { sent: "#0084FF", received: "#e4e6eb" },
+    text: { sent: "#fff", received: "#000" },
+    hasBackground: false,
+    tabBar: "#fff",
+    contactList: true,
+    showTime: true,
+    showStatus: false,
+    showAvatar: true,
+    showUnread: true,
+    activeStatus: true,
   },
   telegram: {
     name: "Telegram",
     primary: "#229ED9",
     bg: "#f0f2f5",
-    bubble: { sent: "#229ED9", received: "#ffffff" },
-    text: { sent: "#fff", received: "#000" },
     header: "#229ED9",
     headerText: "#fff",
-  },
-  whatsapp: {
-    name: "WhatsApp",
-    primary: "#25D366",
-    bg: "#ece5dd",
-    bubble: { sent: "#dcf8c6", received: "#ffffff" },
-    text: { sent: "#000", received: "#000" },
-    header: "#075e54",
-    headerText: "#fff",
-    hasBackground: true,
+    bubble: { sent: "#229ED9", received: "#ffffff" },
+    text: { sent: "#fff", received: "#000" },
+    hasBackground: false,
+    tabBar: "#f0f2f5",
+    contactList: true,
+    showTime: true,
+    showStatus: true,
+    showAvatar: true,
+    showUnread: true,
   },
   discord: {
     name: "Discord",
     primary: "#5865F2",
     bg: "#36393f",
-    bubble: { sent: "#5865F2", received: "#2f3136" },
-    text: { sent: "#fff", received: "#dcddde" },
     header: "#2c2f33",
     headerText: "#fff",
-  },
-  imo: {
-    name: "imo",
-    primary: "#00D084",
-    bg: "#fafafa",
-    bubble: { sent: "#00D084", received: "#f3f4f6" },
-    text: { sent: "#fff", received: "#000" },
-    header: "#00D084",
-    headerText: "#fff",
-  },
-  badoo: {
-    name: "Badoo",
-    primary: "#9C27B0",
-    bg: "#fafafa",
-    bubble: { sent: "#9C27B0", received: "#f3f4f6" },
-    text: { sent: "#fff", received: "#000" },
-    header: "#9C27B0",
-    headerText: "#fff",
-  },
-  wechat: {
-    name: "WeChat",
-    primary: "#07C160",
-    bg: "#fafafa",
-    bubble: { sent: "#07C160", received: "#f3f4f6" },
-    text: { sent: "#fff", received: "#000" },
-    header: "#07C160",
-    headerText: "#fff",
-  },
-  imessage: {
-    name: "iMessage",
-    primary: "#007AFF",
-    bg: "#f2f2f7",
-    bubble: { sent: "#007AFF", received: "#e5e5ea" },
-    text: { sent: "#fff", received: "#000" },
-    header: "#f2f2f7",
-    headerText: "#000",
-    showTail: true,
-  },
-  email: {
-    name: "Email",
-    primary: "#1a73e8",
-    bg: "#ffffff",
-    bubble: { sent: "#e8f0fe", received: "#f5f5f5" },
-    text: { sent: "#1a73e8", received: "#000" },
-    header: "#ffffff",
-    headerText: "#000",
-    isEmail: true,
+    bubble: { sent: "#5865F2", received: "#2f3136" },
+    text: { sent: "#fff", received: "#dcddde" },
+    hasBackground: false,
+    tabBar: "#23272a",
+    contactList: true,
+    showTime: true,
+    showStatus: true,
+    showAvatar: true,
+    showUnread: true,
+    dmSidebar: true,
   },
 };
 
-// === Cyber Theme ===
+// -------------------------------------------------
+// Cyber Theme
+// -------------------------------------------------
 const cyberTheme = createTheme({
   palette: {
     mode: "dark",
     primary: { main: "#00ffff" },
     background: { default: "#0a0a1f", paper: "rgba(20, 20, 40)" },
   },
-  components: {
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          backdropFilter: "blur(16px)",
-          border: "1px solid rgba(0, 255, 255)",
-          borderRadius: 16,
-        },
-      },
-    },
-    MuiTextField: {
-      styleOverrides: {
-        root: {
-          "& .MuiOutlinedInput-root": {
-            borderRadius: 12,
-            background: "rgba(255,255,255,0.05)",
-          },
-        },
-      },
-    },
-  },
 });
 
-// === Floating Particles ===
+// -------------------------------------------------
+// Floating Particles
+// -------------------------------------------------
 const Particles = () => (
   <Box
     sx={{
@@ -154,24 +192,24 @@ const Particles = () => (
       pointerEvents: "none",
     }}
   >
-    {[...Array(8)].map((_, i) => (
+    {[...Array(10)].map((_, i) => (
       <motion.div
         key={i}
         initial={{ x: Math.random() * 100 + "%", y: -50 }}
         animate={{ y: "120vh" }}
         transition={{
-          duration: 12 + Math.random() * 8,
+          duration: 15 + Math.random() * 10,
           repeat: Infinity,
           ease: "linear",
           delay: Math.random() * 5,
         }}
         style={{
           position: "absolute",
-          width: 3,
-          height: 3,
+          width: 4,
+          height: 4,
           borderRadius: "50%",
           background: "linear-gradient(45deg, #00ffff, #ff00ff)",
-          filter: "blur(1.5px)",
+          filter: "blur(2px)",
           left: `${Math.random() * 100}%`,
         }}
       />
@@ -179,17 +217,124 @@ const Particles = () => (
   </Box>
 );
 
+// -------------------------------------------------
+// Main Component
+// -------------------------------------------------
 const Index = () => {
   const previewRef = useRef(null);
+  const [view, setView] = useState("contacts"); // contacts | chat
   const [selectedApp, setSelectedApp] = useState("whatsapp");
   const app = appTemplates[selectedApp];
-  const [sender, setSender] = useState("Alex");
-  const [recipient, setRecipient] = useState("Jordan");
-  const [messages, setMessages] = useState([
-    { text: "Hey, you up?", time: new Date(), sender: false },
-    { text: "Yeah, can't sleep", time: new Date(), sender: true },
+  const [selectedContact, setSelectedContact] = useState(null);
+  const [sender, setSender] = useState("You");
+  const [messages, setMessages] = useState([]);
+
+  // ---- Contacts Management ----
+  const [contacts, setContacts] = useState([
+    {
+      id: 1,
+      name: "Rey Campaign",
+      message: "EL NINO: Sticker",
+      time: "08:40",
+      unread: 4,
+      online: true,
+    },
+    {
+      id: 2,
+      name: "Gone Girl",
+      message: "Photo",
+      time: "08:33",
+      unread: 0,
+      online: true,
+    },
+    {
+      id: 3,
+      name: "Big Philly",
+      message: "Voice call",
+      time: "07:23",
+      unread: 0,
+      online: false,
+    },
+    {
+      id: 4,
+      name: "MicroAgents Employees",
+      message: "Hercules Yomi: Done",
+      time: "Yesterday",
+      unread: 0,
+      online: false,
+    },
+    {
+      id: 5,
+      name: "+234 907 109 7324",
+      message: "You deleted this message.",
+      time: "Yesterday",
+      unread: 0,
+      online: false,
+    },
+    {
+      id: 6,
+      name: "+234 803 949 3808",
+      message: "Hi Paks Good evening...",
+      time: "Yesterday",
+      unread: 0,
+      online: false,
+    },
+    {
+      id: 7,
+      name: "Kid Bro",
+      message: "Ok",
+      time: "Yesterday",
+      unread: 0,
+      online: true,
+    },
   ]);
 
+  const [modalOpen, setModalOpen] = useState(false);
+  const [editingContact, setEditingContact] = useState(null);
+  const [formName, setFormName] = useState("");
+
+  const openModal = (contact = null) => {
+    setEditingContact(contact);
+    setFormName(contact?.name || "");
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+    setEditingContact(null);
+    setFormName("");
+  };
+
+  const saveContact = () => {
+    if (!formName.trim()) return;
+    if (editingContact) {
+      setContacts((prev) =>
+        prev.map((c) =>
+          c.id === editingContact.id ? { ...c, name: formName } : c
+        )
+      );
+    } else {
+      const newId = Math.max(...contacts.map((c) => c.id), 0) + 1;
+      const avatarSeed = formName.replace(/\s+/g, "").toLowerCase();
+      setContacts((prev) => [
+        ...prev,
+        {
+          id: newId,
+          name: formName,
+          message: "Hey!",
+          time: "Now",
+          unread: 0,
+          online: Math.random() > 0.5,
+        },
+      ]);
+    }
+    closeModal();
+  };
+
+  const deleteContact = (id) => {
+    setContacts((prev) => prev.filter((c) => c.id !== id));
+  };
+
+  // ---- Chat Logic ----
   const formatTime = (date) => {
     const h = date.getHours().toString().padStart(2, "0");
     const m = date.getMinutes().toString().padStart(2, "0");
@@ -198,12 +343,14 @@ const Index = () => {
 
   const addMessage = () =>
     setMessages([...messages, { text: "", time: new Date(), sender: true }]);
+
   const updateMessage = (i, field, value) => {
     const updated = [...messages];
     updated[i][field] = value;
     if (field === "text" && value) updated[i].time = new Date();
     setMessages(updated);
   };
+
   const deleteMessage = (i) =>
     setMessages(messages.filter((_, idx) => idx !== i));
 
@@ -216,15 +363,21 @@ const Index = () => {
       useCORS: true,
     });
     const link = document.createElement("a");
-    link.download = `${app.name}-screenshot.png`;
+    link.download = `${app.name}-chat.png`;
     link.href = canvas.toDataURL();
     link.click();
   };
 
+  const openChat = (contact) => {
+    setSelectedContact(contact);
+    setView("chat");
+    setMessages([{ text: contact.message, time: new Date(), sender: false }]);
+  };
+
+  // -------------------------------------------------
   return (
     <ThemeProvider theme={cyberTheme}>
       <Box
-      className="!p-4 md:!p-8 lg:!p-12"
         sx={{
           minHeight: "100vh",
           background: "linear-gradient(135deg, #0a0a1f 0%, #1a0033 100%)",
@@ -235,22 +388,34 @@ const Index = () => {
         <Particles />
 
         <Box
-          sx={{ maxWidth: 1600, mx: "auto", position: "relative", zIndex: 10 }}
+          sx={{
+            maxWidth: 1600,
+            mx: "auto",
+            p: 4,
+            position: "relative",
+            zIndex: 10,
+          }}
         >
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
           >
-            <Box sx={{ display: "flex", alignItems: "center", gap: 3, mb: 5 }} className="flex-col md:flex-row !py-4">
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: 3,
+                mb: 6,
+                flexWrap: "wrap",
+              }}
+            >
               <Box
                 sx={{
                   p: 2,
                   borderRadius: 4,
                   bgcolor: "rgba(0, 255, 255, 0.15)",
                   backdropFilter: "blur(10px)",
-                  boxShadow: "0 0 30px rgba(0,255,255,0.4)",
                 }}
               >
                 <FiMessageSquare
@@ -271,420 +436,323 @@ const Index = () => {
                 </Typography>
                 <Typography
                   variant="body1"
-                  sx={{ color: "rgba(255,255,255,0.7)", mt: 1 }}
+                  sx={{ color: "rgba(255,255,255,0.7)" }}
                 >
-                  Forge hyper-realistic chat screenshots in real-time
+                  Customize & download hyper-realistic screenshots
                 </Typography>
               </Box>
             </Box>
           </motion.div>
 
-          <Box
-            sx={{
-              display: "grid",
-              gridTemplateColumns: { xs: "1fr", lg: "1fr 1fr" },
-              gap: 5,
-            }}
-          >
-            {/* Left: Controls */}
+          {/* App Selector */}
+          <motion.div whileHover={{ scale: 1.02 }}>
+            <FormControl sx={{ minWidth: 200, mb: 4 }}>
+              <InputLabel sx={{ color: "#00ffff" }}>App</InputLabel>
+              <Select
+                value={selectedApp}
+                label="App"
+                onChange={(e) => {
+                  setSelectedApp(e.target.value);
+                  if (view === "chat") setView("contacts");
+                }}
+                sx={{
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#00ffff",
+                    borderWidth: 2,
+                  },
+                  "&:hover .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#ff00ff",
+                  },
+                  "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#ff00ff",
+                  },
+                }}
+              >
+                {Object.entries(appTemplates).map(([k, v]) => (
+                  <MenuItem key={k} value={k} sx={{ color: "#fff" }}>
+                    {v.name}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </motion.div>
+
+          {/* ==== CONTACT LIST VIEW ==== */}
+          {view === "contacts" && (
             <motion.div
-              whileHover={{ scale: 1.005 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
               style={{ perspective: 1000 }}
             >
+              <Box
+                sx={{
+                  width: 380,
+                  height: 720,
+                  borderRadius: "2.5rem",
+                  overflow: "hidden",
+                  boxShadow:
+                    "0 30px 80px rgba(0,0,0,0.5), 0 0 60px rgba(0,255,255,0.4)",
+                  bgcolor: app.bg,
+                  border: "2px solid rgba(0,255,255,0.3)",
+                  mx: "auto",
+                  position: "relative",
+                }}
+              >
+                {/* Header */}
+                <Box
+                  sx={{
+                    height: 60,
+                    bgcolor: app.header,
+                    color: app.headerText,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    px: 3,
+                    borderBottom: app.borderBottom || "none",
+                  }}
+                >
+                  <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                    {app.dmHeader ? "Messages" : "Chats"}
+                  </Typography>
+                  <Box sx={{ display: "flex", gap: 2 }}>
+                    {app.name === "Instagram" ? (
+                      <>
+                        <FiCamera />
+                        <FiPlus />
+                      </>
+                    ) : (
+                      <FiSearch />
+                    )}
+                    <IconButton onClick={() => openModal()} size="small">
+                      <FiPlus />
+                    </IconButton>
+                  </Box>
+                </Box>
+
+                {/* Contact List */}
+                <List sx={{ bgcolor: app.bg, flex: 1, overflowY: "auto" }}>
+                  <AnimatePresence>
+                    {contacts.map((contact) => {
+                      const seed = contact.name
+                        .replace(/\s+/g, "")
+                        .toLowerCase();
+                      return (
+                        <motion.div
+                          key={contact.id}
+                          initial={{ opacity: 0, x: -50 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          exit={{ opacity: 0, x: 50 }}
+                          whileHover={{
+                            backgroundColor: "rgba(0,255,255,0.05)",
+                          }}
+                          onClick={() => openChat(contact)}
+                          style={{ cursor: "pointer" }}
+                        >
+                          <ListItem
+                            secondaryAction={
+                              <Box sx={{ display: "flex", gap: 0.5 }}>
+                                <IconButton
+                                  size="small"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    openModal(contact);
+                                  }}
+                                >
+                                  <FiEdit2 />
+                                </IconButton>
+                                <IconButton
+                                  size="small"
+                                  color="error"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    deleteContact(contact.id);
+                                  }}
+                                >
+                                  <FiTrash2 />
+                                </IconButton>
+                              </Box>
+                            }
+                          >
+                            <ListItemAvatar>
+                              <Avatar
+                                src={`https://i.pravatar.cc/150?u=${seed}`}
+                              />
+                            </ListItemAvatar>
+                            <ListItemText
+                              primary={
+                                <Typography
+                                  sx={{
+                                    fontWeight: contact.unread ? 600 : 400,
+                                  }}
+                                >
+                                  {contact.name}
+                                </Typography>
+                              }
+                              secondary={
+                                <Typography
+                                  sx={{
+                                    fontSize: "0.85rem",
+                                    color: "#666",
+                                    whiteSpace: "nowrap",
+                                    overflow: "hidden",
+                                    textOverflow: "ellipsis",
+                                  }}
+                                >
+                                  {contact.message}
+                                </Typography>
+                              }
+                            />
+                            <Box sx={{ textAlign: "right" }}>
+                              <Typography
+                                sx={{ fontSize: "0.75rem", color: "#888" }}
+                              >
+                                {contact.time}
+                              </Typography>
+                              {contact.unread > 0 && (
+                                <Badge
+                                  badgeContent={contact.unread}
+                                  color="primary"
+                                  sx={{ mt: 0.5 }}
+                                />
+                              )}
+                              {contact.online && (
+                                <Box
+                                  sx={{
+                                    width: 10,
+                                    height: 10,
+                                    bgcolor: "#4caf50",
+                                    borderRadius: "50%",
+                                    mt: 0.5,
+                                    mx: "auto",
+                                  }}
+                                />
+                              )}
+                            </Box>
+                          </ListItem>
+                        </motion.div>
+                      );
+                    })}
+                  </AnimatePresence>
+                </List>
+
+                {/* Tab Bar */}
+                {app.tabIcons && (
+                  <Box
+                    sx={{
+                      height: 60,
+                      bgcolor: app.tabBar,
+                      borderTop: "1px solid #ddd",
+                      display: "flex",
+                      justifyContent: "space-around",
+                      alignItems: "center",
+                    }}
+                  >
+                    <FiMessageSquare color="#25D366" />
+                    <FiSearch />
+                    <FiPlus />
+                    <FiMoreVertical />
+                  </Box>
+                )}
+              </Box>
+            </motion.div>
+          )}
+
+          {/* ==== CHAT GENERATOR VIEW ==== */}
+          {view === "chat" && (
+            <Box
+              sx={{
+                display: "grid",
+                gridTemplateColumns: { xs: "1fr", lg: "1fr 1fr" },
+                gap: 5,
+              }}
+            >
+              {/* Controls */}
               <Card
                 sx={{
-                  background: "rgba(15, 15, 35, 0.8)",
+                  background: "rgba(15,15,35,0.8)",
                   backdropFilter: "blur(20px)",
                   border: "1px solid rgba(0,255,255,0.3)",
-                  boxShadow: "0 0 40px rgba(0,255,255,0.3)",
                 }}
               >
                 <CardHeader
-                  sx={{
-                    background:
-                      "linear-gradient(135deg, #1a1a3d 0%, #2a1a5d 100%)",
-                    color: "#fff",
-                    pb: 3,
-                  }}
-                  title={
-                    <Typography
-                      variant="h5"
-                      fontWeight={800}
-                      sx={{ textShadow: "0 0 15px rgba(0,255,255,0.8)" }}
-                    >
-                      Customize
-                    </Typography>
-                  }
-                  subheader={
-                    <Typography
-                      sx={{
-                        color: "rgba(255,255,255,0.8)",
-                        fontStyle: "italic",
-                        fontSize: "0.75rem",
-                      }}
-                    >
-                      Live • Animated • Ultra-Real
-                    </Typography>
-                  }
+                  title="Customize"
+                  sx={{ bgcolor: "rgba(20,20,50,0.8)", color: "#00ffff" }}
                 />
-                <CardContent sx={{ p: 4 }}>
+                <CardContent>
                   <Box
-                    sx={{ display: "flex", flexDirection: "column", gap: 3.5 }}
+                    sx={{ display: "flex", flexDirection: "column", gap: 3 }}
                   >
-                    {/* App Selector */}
-                    <motion.div whileHover={{ scale: 1.02 }}>
-                      <FormControl fullWidth>
-                        <InputLabel sx={{ color: "#00ffff", fontWeight: 600 }}>
-                          App
-                        </InputLabel>
-                        <Select
-                          value={selectedApp}
-                          label="App"
-                          onChange={(e) => setSelectedApp(e.target.value)}
-                          sx={{
-                            height: 60,
-                            "& .MuiOutlinedInput-notchedOutline": {
-                              borderColor: "#00ffff",
-                              borderWidth: 2,
-                            },
-                            "&:hover .MuiOutlinedInput-notchedOutline": {
-                              borderColor: "#ff00ff",
-                            },
-                            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                              borderColor: "#ff00ff",
-                              boxShadow: "0 0 15px rgba(255,0,255,0.5)",
-                            },
-                          }}
-                        >
-                          {Object.entries(appTemplates).map(([k, v]) => (
-                            <MenuItem
-                              key={k}
-                              value={k}
-                              sx={{
-                                color: "#fff",
-                                bgcolor: " rgb(21, 18, 45)",
-                              }}
-                            >
-                              {v.name}
-                            </MenuItem>
-                          ))}
-                        </Select>
-                      </FormControl>
-                    </motion.div>
-
-                    {/* Names */}
-                    {!app.isEmail ? (
-                      <Box
-                        sx={{
-                          display: "grid",
-                          gridTemplateColumns: "1fr 1fr",
-                          gap: 2,
-                        }}
-                      >
-                        {[
-                          { l: "You", v: sender, s: setSender },
-                          { l: "Recipient", v: recipient, s: setRecipient },
-                        ].map((f, i) => (
-                          <motion.div key={i} whileHover={{ y: -3 }}>
-                            <TextField
-                              label={f.l}
-                              value={f.v}
-                              onChange={(e) => f.s(e.target.value)}
-                              fullWidth
-                              sx={{
-                                "& .MuiOutlinedInput-root": {
-                                  background: "rgba(255,255,255,0.05)",
-                                  borderRadius: 3,
-                                },
-                                "&:hover .MuiOutlinedInput-root": {
-                                  borderColor: "#00ffff",
-                                },
-                                "&.Mui-focused .MuiOutlinedInput-root": {
-                                  borderColor: "#ff00ff",
-                                  boxShadow: "0 0 12px rgba(255,0,255,0.4)",
-                                },
-                                "& .MuiInputLabel-root.Mui-focused": {
-                                  color: "#ff00ff",
-                                },
-                              }}
-                            />
-                          </motion.div>
-                        ))}
-                      </Box>
-                    ) : (
-                      <Box
-                        sx={{
-                          gap: 2,
-                          display: "flex",
-                          flexDirection: "column",
-                        }}
-                      >
-                        {[
-                          { l: "From", v: sender, s: setSender },
-                          { l: "To", v: recipient, s: setRecipient },
-                          {
-                            l: "Subject",
-                            v: "Hey, check this out",
-                            s: () => {},
-                          },
-                        ].map((f, i) => (
-                          <motion.div key={i} whileHover={{ y: -3 }}>
-                            <TextField
-                              label={f.l}
-                              value={f.v}
-                              onChange={(e) => f.s(e.target.value)}
-                              fullWidth
-                              sx={{
-                                "& .MuiOutlinedInput-root": {
-                                  background: "rgba(255,255,255,0.05)",
-                                  borderRadius: 3,
-                                },
-                                "&:hover .MuiOutlinedInput-root": {
-                                  borderColor: "#00ffff",
-                                },
-                                "&.Mui-focused .MuiOutlinedInput-root": {
-                                  borderColor: "#ff00ff",
-                                  boxShadow: "0 0 12px rgba(255,0,255,0.4)",
-                                },
-                                "& .MuiInputLabel-root.Mui-focused": {
-                                  color: "#ff00ff",
-                                },
-                              }}
-                            />
-                          </motion.div>
-                        ))}
-                      </Box>
-                    )}
-
-                    <Divider sx={{ borderColor: "rgba(0,255,255,0.3)" }} />
-
-                    {/* Messages */}
-                    <Box>
-                      <Box
-                        sx={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                          alignItems: "center",
-                          mb: 2,
-                        }}
-                      >
-                        <Typography
-                          variant="h6"
-                          sx={{
-                            color: "#00ffff",
-                            textShadow: "0 0 10px rgba(0,255,255,0.6)",
-                            fontWeight: 700,
-                          }}
-                        >
-                          {app.isEmail ? "Email Body" : "Messages"}
-                        </Typography>
-                        <motion.div
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          <Button
-                            variant="outlined"
-                            size="small"
-                            startIcon={<FiPlus />}
-                            onClick={addMessage}
-                            sx={{
-                              borderColor: "#00ffff",
-                              color: "#00ffff",
-                              fontWeight: 600,
-                              "&:hover": {
-                                borderColor: "#ff00ff",
-                                color: "#ff00ff",
-                                background: "rgba(255,0,255,0.1)",
-                              },
-                            }}
-                          >
-                            Add {app.isEmail ? "Paragraph" : "Message"}
-                          </Button>
-                        </motion.div>
-                      </Box>
-
-                      <Box
-                        sx={{ maxHeight: 420, overflowY: "auto", pr: 1 }}
-                        className="scrollbar-custom"
-                      >
-                        <AnimatePresence>
-                          {messages.map((msg, i) => (
-                            <motion.div
-                              key={i}
-                              initial={{ opacity: 0, x: -60, scale: 0.9 }}
-                              animate={{ opacity: 1, x: 0, scale: 1 }}
-                              exit={{ opacity: 0, x: 60, scale: 0.9 }}
-                              transition={{ duration: 0.3 }}
-                              whileHover={{
-                                y: -5,
-                                boxShadow: "0 10px 25px rgba(0,255,255,0.2)",
-                              }}
-                            >
-                              <Card
-                                sx={{
-                                  mb: 2,
-                                  background: "rgba(30,30,60,0.6)",
-                                  border: "1px solid rgba(0,255,255,0.2)",
-                                  borderRadius: 3,
-                                }}
-                              >
-                                <CardContent sx={{ p: 2.5 }}>
-                                  <Box sx={{ display: "flex", gap: 1.5 }}>
-                                    <TextField
-                                      multiline
-                                      minRows={2}
-                                      maxRows={5}
-                                      value={msg.text}
-                                      onChange={(e) =>
-                                        updateMessage(i, "text", e.target.value)
-                                      }
-                                      placeholder={
-                                        app.isEmail ? "Type..." : "Message..."
-                                      }
-                                      fullWidth
-                                      size="small"
-                                      sx={{
-                                        "& .MuiOutlinedInput-root": {
-                                          background: "rgba(255,255,255,0.05)",
-                                        },
-                                      }}
-                                    />
-                                    <Box
-                                      sx={{
-                                        display: "flex",
-                                        flexDirection: "column",
-                                        gap: 1,
-                                      }}
-                                    >
-                                      {!app.isEmail && (
-                                        <motion.div whileHover={{ scale: 1.1 }}>
-                                          <Button
-                                            variant={
-                                              msg.sender
-                                                ? "contained"
-                                                : "outlined"
-                                            }
-                                            size="small"
-                                            onClick={() =>
-                                              updateMessage(
-                                                i,
-                                                "sender",
-                                                !msg.sender
-                                              )
-                                            }
-                                            sx={{
-                                              minWidth: 68,
-                                              background: msg.sender
-                                                ? "linear-gradient(45deg, #ff00ff, #00ffff)"
-                                                : "transparent",
-                                              borderColor: msg.sender
-                                                ? "transparent"
-                                                : "#00ffff",
-                                              color: msg.sender
-                                                ? "#fff"
-                                                : "#00ffff",
-                                              "&:hover": {
-                                                background: msg.sender
-                                                  ? "linear-gradient(45deg, #ff00ff, #00ffff)"
-                                                  : "rgba(0,255,255,0.1)",
-                                              },
-                                            }}
-                                          >
-                                            {msg.sender ? "You" : "Other"}
-                                          </Button>
-                                        </motion.div>
-                                      )}
-                                      <motion.div
-                                        whileHover={{ scale: 1.2 }}
-                                        whileTap={{ scale: 0.9 }}
-                                      >
-                                        <IconButton
-                                          color="error"
-                                          size="small"
-                                          onClick={() => deleteMessage(i)}
-                                        >
-                                          <FiTrash2 />
-                                        </IconButton>
-                                      </motion.div>
-                                    </Box>
-                                  </Box>
-                                  {msg.text && (
-                                    <Typography
-                                      sx={{
-                                        display: "block",
-                                        textAlign: "right",
-                                        mt: 1,
-                                        color: "#00ffff",
-                                        fontFamily: "monospace",
-                                        fontSize: "0.75rem",
-                                      }}
-                                    >
-                                      {formatTime(msg.time)}
-                                    </Typography>
-                                  )}
-                                </CardContent>
-                              </Card>
-                            </motion.div>
-                          ))}
-                        </AnimatePresence>
-                      </Box>
-                    </Box>
-
-                    {/* Holographic Download */}
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
+                    <TextField
+                      label="Your Name"
+                      value={sender}
+                      onChange={(e) => setSender(e.target.value)}
+                      fullWidth
+                    />
+                    <Box
+                      sx={{ display: "flex", justifyContent: "space-between" }}
                     >
+                      <Button startIcon={<FiPlus />} onClick={addMessage}>
+                        Add Message
+                      </Button>
                       <Button
-                        variant="contained"
-                        size="large"
-                        fullWidth
                         startIcon={<FiDownload />}
                         onClick={downloadScreenshot}
-                        sx={{
-                          height: 68,
-                          fontSize: "1.25rem",
-                          fontWeight: 700,
-                          background:
-                            "linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff)",
-                          backgroundSize: "200%",
-                          color: "#fff",
-                          borderRadius: 4,
-                          boxShadow:
-                            "0 0 40px rgba(0,255,255,0.7), 0 0 80px rgba(255,0,255,0.5)",
-                          animation: "pulse 2s infinite",
-                          "&:hover": {
-                            backgroundPosition: "100%",
-                            boxShadow: "0 0 50px rgba(0,255,255,0.9)",
-                          },
-                          "@keyframes pulse": {
-                            "0%,100%": {
-                              boxShadow: "0 0 40px rgba(0,255,255,0.7)",
-                            },
-                            "50%": { boxShadow: "0 0 60px rgba(0,255,255,1)" },
-                          },
-                        }}
+                        variant="contained"
                       >
-                        Download PNG
+                        Download
                       </Button>
-                    </motion.div>
+                    </Box>
+                    <Box sx={{ maxHeight: 400, overflowY: "auto" }}>
+                      <AnimatePresence>
+                        {messages.map((msg, i) => (
+                          <motion.div
+                            key={i}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                          >
+                            <Card sx={{ mb: 2, p: 2 }}>
+                              <TextField
+                                multiline
+                                fullWidth
+                                value={msg.text}
+                                onChange={(e) =>
+                                  updateMessage(i, "text", e.target.value)
+                                }
+                              />
+                              <Box
+                                sx={{
+                                  display: "flex",
+                                  justifyContent: "space-between",
+                                  mt: 1,
+                                }}
+                              >
+                                <Button
+                                  size="small"
+                                  onClick={() =>
+                                    updateMessage(i, "sender", !msg.sender)
+                                  }
+                                >
+                                  {msg.sender ? "You" : selectedContact?.name}
+                                </Button>
+                                <IconButton
+                                  size="small"
+                                  onClick={() => deleteMessage(i)}
+                                >
+                                  <FiTrash2 />
+                                </IconButton>
+                              </Box>
+                            </Card>
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </Box>
                   </Box>
                 </CardContent>
               </Card>
-            </motion.div>
 
-            {/* Right: Preview */}
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "flex-start",
-              }}
-            >
-              <motion.div
-                whileHover={{ scale: 1.02, rotateX: 5, rotateY: 5 }}
-                style={{ perspective: 1000 }}
-              >
+              {/* Preview */}
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <Box
                   ref={previewRef}
                   sx={{
@@ -692,65 +760,35 @@ const Index = () => {
                     height: 720,
                     borderRadius: "2.5rem",
                     overflow: "hidden",
-                    boxShadow:
-                      "0 30px 80px rgba(0,0,0,0.5), 0 0 60px rgba(0,255,255,0.4)",
+                    boxShadow: "0 0 60px rgba(0,255,255,0.5)",
                     bgcolor: app.bg,
-                    border: "2px solid rgba(0,255,255,0.3)",
                   }}
                 >
-                  {/* Header */}
+                  {/* Chat Header */}
                   <Box
                     sx={{
                       height: 60,
+                      bgcolor: app.header,
+                      color: app.headerText,
                       display: "flex",
                       alignItems: "center",
                       px: 2,
-                      bgcolor: app.header,
-                      color: app.headerText,
-                      borderBottom: app.isEmail ? "1px solid #ddd" : "none",
+                      gap: 2,
                     }}
                   >
-                    {app.isEmail ? (
-                      <Box sx={{ width: "100%" }}>
-                        <Typography
-                          sx={{ fontSize: "0.9rem", fontWeight: 600 }}
-                        >
-                          {sender}
-                        </Typography>
-                        <Typography sx={{ fontSize: "0.75rem", opacity: 0.8 }}>
-                          to {recipient}
-                        </Typography>
-                      </Box>
-                    ) : (
-                      <Box
-                        sx={{ display: "flex", alignItems: "center", gap: 1.5 }}
-                      >
-                        <Box
-                          sx={{
-                            width: 36,
-                            height: 36,
-                            borderRadius: "50%",
-                            bgcolor: "rgba(255,255,255,0.3)",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          {recipient[0]?.toUpperCase()}
-                        </Box>
-                        <Box>
-                          <Typography sx={{ fontSize: "1rem" }}>
-                            {recipient}
-                          </Typography>
-                          <Typography
-                            sx={{ fontSize: "0.75rem", opacity: 0.8 }}
-                          >
-                            online
-                          </Typography>
-                        </Box>
-                      </Box>
-                    )}
+                    <Avatar
+                      src={`https://i.pravatar.cc/150?u=${selectedContact?.name
+                        .replace(/\s+/g, "")
+                        .toLowerCase()}`}
+                    />
+                    <Box>
+                      <Typography fontWeight={600}>
+                        {selectedContact?.name}
+                      </Typography>
+                      <Typography fontSize="0.75rem" sx={{ opacity: 0.8 }}>
+                        online
+                      </Typography>
+                    </Box>
                   </Box>
 
                   {/* Messages */}
@@ -764,121 +802,111 @@ const Index = () => {
                         ? `url(${whatsappBg})`
                         : "none",
                       backgroundSize: "cover",
-                      "&::-webkit-scrollbar": { display: "none" },
                     }}
                   >
-                    {app.isEmail ? (
-                      <Box sx={{ color: "#000", lineHeight: 1.6 }}>
-                        {messages
-                          .filter((m) => m.text)
-                          .map((msg, i) => (
-                            <Typography
-                              key={i}
-                              sx={{ mb: 2, fontSize: "0.95rem" }}
-                            >
-                              {msg.text}
-                            </Typography>
-                          ))}
-                      </Box>
-                    ) : (
-                      messages
-                        .filter((m) => m.text)
-                        .map((msg, i) => (
+                    {messages
+                      .filter((m) => m.text)
+                      .map((msg, i) => (
+                        <Box
+                          key={i}
+                          sx={{
+                            display: "flex",
+                            justifyContent: msg.sender
+                              ? "flex-end"
+                              : "flex-start",
+                            mb: 1.5,
+                          }}
+                        >
                           <Box
-                            key={i}
                             sx={{
-                              display: "flex",
-                              justifyContent: msg.sender
-                                ? "flex-end"
-                                : "flex-start",
-                              mb: 1.5,
+                              maxWidth: "75%",
+                              bgcolor: msg.sender
+                                ? app.bubble.sent
+                                : app.bubble.received,
+                              color: msg.sender
+                                ? app.text.sent
+                                : app.text.received,
+                              borderRadius: "18px",
+                              px: 2.5,
+                              py: 1.2,
                             }}
                           >
-                            <Box
+                            <Typography sx={{ fontSize: "0.925rem" }}>
+                              {msg.text}
+                            </Typography>
+                            <Typography
                               sx={{
-                                maxWidth: "75%",
-                                bgcolor: msg.sender
-                                  ? app.bubble.sent
-                                  : app.bubble.received,
-                                color: msg.sender
-                                  ? app.text.sent
-                                  : app.text.received,
-                                borderRadius: "18px",
-                                px: 2.5,
-                                py: 1.2,
-                                ...(app.showTail && {
-                                  position: "relative",
-                                  "&:after": {
-                                    content: '""',
-                                    position: "absolute",
-                                    bottom: 0,
-                                    [msg.sender ? "right" : "left"]: -6,
-                                    border: "6px solid transparent",
-                                    borderTopColor: msg.sender
-                                      ? app.bubble.sent
-                                      : app.bubble.received,
-                                  },
-                                }),
+                                fontSize: "0.65rem",
+                                opacity: 0.7,
+                                textAlign: "right",
                               }}
                             >
-                              <Typography
-                                sx={{
-                                  fontSize: "0.925rem",
-                                  wordBreak: "break-word",
-                                }}
-                              >
-                                {msg.text}
-                              </Typography>
-                              <Typography
-                                sx={{
-                                  fontSize: "0.65rem",
-                                  mt: 0.5,
-                                  opacity: 0.7,
-                                  textAlign: "right",
-                                }}
-                              >
-                                {formatTime(msg.time)}
-                              </Typography>
-                            </Box>
+                              {formatTime(msg.time)}
+                            </Typography>
                           </Box>
-                        ))
-                    )}
+                        </Box>
+                      ))}
                   </Box>
 
-                  {/* Input Bar */}
-                  {!app.isEmail && (
+                  {/* Input */}
+                  <Box
+                    sx={{
+                      height: 60,
+                      bgcolor: app.bg,
+                      display: "flex",
+                      alignItems: "center",
+                      px: 2,
+                      borderTop: "1px solid #ddd",
+                    }}
+                  >
                     <Box
                       sx={{
-                        height: 60,
+                        flex: 1,
+                        bgcolor: "#fff",
+                        borderRadius: "25px",
+                        height: 40,
+                        px: 2,
                         display: "flex",
                         alignItems: "center",
-                        px: 2,
-                        borderTop: "1px solid rgba(0,0,0,0.1)",
-                        bgcolor: app.bg === "#36393f" ? "#292b2f" : "#f8f9fa",
+                        gap: 1,
                       }}
                     >
-                      <Box
-                        sx={{
-                          flex: 1,
-                          bgcolor: "#fff",
-                          borderRadius: "25px",
-                          height: 40,
-                          px: 2,
-                          display: "flex",
-                          alignItems: "center",
-                          color: "#888",
-                          fontSize: "0.9rem",
-                        }}
-                      >
-                        Type a message...
-                      </Box>
+                      <FiMic />
+                      <span style={{ color: "#888" }}>Type a message...</span>
+                      <FiPaperclip />
                     </Box>
-                  )}
+                    <IconButton sx={{ ml: 1 }}>
+                      <FiSend />
+                    </IconButton>
+                  </Box>
                 </Box>
-              </motion.div>
+              </Box>
             </Box>
-          </Box>
+          )}
         </Box>
+
+        {/* ==== CONTACT MODAL ==== */}
+        <Dialog open={modalOpen} onClose={closeModal} maxWidth="xs" fullWidth>
+          <DialogTitle>
+            {editingContact ? "Edit Contact" : "Add New Contact"}
+          </DialogTitle>
+          <DialogContent>
+            <TextField
+              autoFocus
+              label="Name"
+              fullWidth
+              value={formName}
+              onChange={(e) => setFormName(e.target.value)}
+              sx={{ mt: 1 }}
+            />
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={closeModal}>Cancel</Button>
+            <Button onClick={saveContact} variant="contained" color="primary">
+              {editingContact ? "Save" : "Add"}
+            </Button>
+          </DialogActions>
+        </Dialog>
       </Box>
     </ThemeProvider>
   );
