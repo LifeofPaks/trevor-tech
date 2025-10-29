@@ -156,11 +156,11 @@ const LocationSection = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/30 via-teal-500/20 to-green-500/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 {/* Glass Image Container */}
-                <div className="relative backdrop-blur-sm bg-white/5 border border-cyan-500/30 rounded-3xl p-2 shadow-2xl">
+                <div className="relative backdrop-blur-sm bg-white/5 border border-cyan-500/30 rounded-3xl !p-2 shadow-2xl">
                   <img
                     src={LocationImage}
                     alt="Live GPS tracking dashboard"
-                    className="relative w-full max-w-lg mx-auto rounded-2xl object-cover shadow-inner"
+                    className="relative w-full max-w-lg !mx-auto rounded-2xl object-cover shadow-inner"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-40 pointer-events-none"></div>
