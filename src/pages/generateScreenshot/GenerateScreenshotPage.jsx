@@ -589,7 +589,7 @@ const Index = () => {
               style={{ perspective: 1000 }}
             >
               <Box
-                className="lg:mt-[-6rem]!"
+                
                 sx={{
                   width: 380,
                   height: 720,
