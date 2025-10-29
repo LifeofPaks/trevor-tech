@@ -48,7 +48,6 @@ const PhoneSection = () => {
 
   return (
     <section className="relative !py-20 lg:!py-28 overflow-hidden">
-
       <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
         {/* Header */}
         <motion.div
@@ -58,7 +57,7 @@ const PhoneSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-green-300 to-teal-300 bg-clip-text text-transparent !mb-4">
+          <h1 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-green-300 to-teal-300 bg-clip-text text-transparent !mb-4">
             Phone & Social Media Surveillance
           </h1>
           <p className="max-w-4xl !mx-auto text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
@@ -105,7 +104,7 @@ const PhoneSection = () => {
               ({ id, Icon, iconBg, iconColor, glow, title, desc }, index) => (
                 <motion.div
                   key={id}
-                  className="flex !gap-5 items-start group"
+                  className="flex !gap-5 items-start group *:!mb-6"
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.15 }}
