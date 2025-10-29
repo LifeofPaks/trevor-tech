@@ -61,7 +61,7 @@ const Hero = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <div className="relative inline-block">
-            <h1 className="text-3xl md:text-4xl lg:text-4xl font-extrabold leading-[60px] text-center lg:text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl font-extrabold lg:leading-[60px] leading-[40px] text-center lg:text-left">
               Ultimate Digital Shield: Hack, Track, and Recover – Your{" "}
               <span className="relative inline-block">
                 <span
@@ -78,12 +78,10 @@ const Hero = () => {
 
           <p className="!mt-8 text-cyan-100/80 text-base md:text-lg lg:text-xl text-center lg:text-left leading-relaxed font-light">
             Empower yourself with cutting-edge tools to{" "}
-            <strong >spy on social media</strong>,{" "}
-            <strong >hack devices</strong>, reclaim{" "}
-            <strong >stolen crypto</strong>, track
-            locations, and erase digital footprints – all{" "}
-            <strong >ethically and discreetly</strong>
-            , with expert support for total peace of mind.
+            <strong>spy on social media</strong>, <strong>hack devices</strong>,
+            reclaim <strong>stolen crypto</strong>, track locations, and erase
+            digital footprints – all <strong>ethically and discreetly</strong>,
+            with expert support for total peace of mind.
           </p>
 
           {/* Platform Icons */}

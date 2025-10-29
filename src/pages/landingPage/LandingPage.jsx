@@ -31,28 +31,24 @@ const LandingPage = () => {
 
           <section
             id="about"
-            className="!pt-20 !px-6 md:!px-10 lg:!px-12 max-w-[1400px] !mx-auto w-full"
           >
             <About />
           </section>
 
           <section
             id="services"
-            className="!pt-20 !px-6 md:!px-10 lg:!px-12 max-w-[1400px] !mx-auto w-full"
           >
             <Services />
           </section>
 
           <section
             id="testimonial"
-            className="!pt-20 !px-6 md:!px-10 lg:!px-12 max-w-[1400px] !mx-auto w-full"
           >
             <Testimonial />
           </section>
 
           <section
             id="faq"
-            className="!pt-20 !px-6 md:!px-10 lg:!px-12 max-w-[1400px] !mx-auto w-full"
           >
             <FAQSection />
           </section>
