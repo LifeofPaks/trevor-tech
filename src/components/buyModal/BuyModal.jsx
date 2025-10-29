@@ -94,7 +94,7 @@ const BuyModal = ({ open, handleClose }) => {
 
             {/* Support Info */}
             <motion.p
-              className="mt-5 text-center text-cyan-300/70 text-xs font-medium"
+              className="!mt-5 text-center text-cyan-300/70 text-xs font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
