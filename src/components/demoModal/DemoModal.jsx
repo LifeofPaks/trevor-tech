@@ -96,8 +96,8 @@ const DemoModal = ({
           >
             Remotely access{" "}
             <strong>any Android, iPhone, tablet, or computer</strong>. View{" "}
-            <strong>messages, calls, GPS, photos, apps, and keystrokes</strong>{" "}
-            —<strong>no physical access needed</strong>.
+            <strong>messages, calls, GPS, photos, apps, and keystrokes</strong>.{" "}
+            <strong>No physical access needed</strong>.
           </Typography>
         </motion.div>
 

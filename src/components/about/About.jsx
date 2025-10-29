@@ -12,6 +12,11 @@ import {
 import { Link } from "react-router-dom";
 import BuyModal from "../buyModal/BuyModal";
 import DemoModal from "../demoModal/DemoModal";
+import { FaFileCircleXmark, FaSchoolLock } from "react-icons/fa6";
+import { GiGraduateCap } from "react-icons/gi";
+import { FaBtc } from "react-icons/fa";
+import { RiBtcFill } from "react-icons/ri";
+import { MdAttachMoney } from "react-icons/md";
 
 const About = () => {
   const [openBuyModal, setOpenBuyModal] = useState(false);
@@ -36,37 +41,37 @@ const About = () => {
     {
       title: "Recover Stolen & Scammed Crypto",
       desc: "Recover lost Bitcoin, Ethereum, USDT, and more from fake platforms, phishing, or stolen wallets. Full blockchain tracing and scammer identification.",
-      icon: <IoCash size={24} />,
-      color: "text-blue-600 bg-blue-100",
-      path: "/crypto-recovery",
+      icon: <RiBtcFill size={24} />,
+      color: "text-amber-600 bg-amber-100",
+      path: "/elite/crypto-recovery",
     },
     {
-      title: "Real-Time Location Tracking",
-      desc: "Track live GPS with street-level accuracy. Set geofence alerts and view full movement history with timestamps.",
-      icon: <IoMap size={24} />,
-      color: "text-amber-600 bg-amber-100",
-      path: "/location-tracking",
+      title: "Academic Grade Enhancement",
+      desc: "Instantly boost university grades, GPAs, and exam scores. Modify transcripts, alter test results, and access full academic records.",
+      icon: <GiGraduateCap size={24} />,
+      color: "text-blue-600 bg-blue-100",
+      path: "/elite/grade-enhancement",
     },
     {
       title: "Credit Score Boost & Card Loading",
       desc: "Instantly improve credit scores (Equifax, TransUnion, Experian). Load debit/prepaid cards and access full financial logs.",
-      icon: <IoCheckmarkCircle size={24} />,
+      icon: <MdAttachMoney size={24} />,
       color: "text-purple-600 bg-purple-100",
-      path: "/credit-boost",
+      path: "/elite/credit-boost",
     },
     {
       title: "Erase Records & Alter Grades",
       desc: "Permanently delete criminal records, change university grades, GPAs, and issue new driver licenses/ID cards in official systems.",
-      icon: <IoSchool size={24} />,
+      icon: <FaFileCircleXmark size={24} />,
       color: "text-rose-600 bg-rose-100",
-      path: "/record-erase",
+      path: "/elite/clear-record",
     },
     {
       title: "Stop Blackmail & Secure Privacy",
       desc: "Identify blackmailers, delete compromising material from devices/cloud, and block future threats — full digital protection.",
       icon: <IoAlertCircle size={24} />,
       color: "text-teal-600 bg-teal-100",
-      path: "/privacy-protection",
+      path: "/elite/stop-harassment",
     },
   ];
 
