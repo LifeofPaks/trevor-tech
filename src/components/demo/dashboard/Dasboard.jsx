@@ -194,7 +194,10 @@ const Dashboard = () => {
             className="group sm:rounded-2xl !p-2 sm:!p-3 transition-all duration-300 cursor-pointer flex flex-col items-center hover:scale-105"
           >
             {/* Icon Container */}
-            <Link to={item.to} className="relative bg-white/90 backdrop-blur-md rounded-full p-1 sm:!p-2 shadow-md flex items-center justify-center">
+            <Link
+              to={item.to}
+              className="relative bg-white/90 backdrop-blur-md rounded-full p-1 sm:!p-2 shadow-md flex items-center justify-center"
+            >
               <div
                 className={`relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto bg-gradient-to-br ${item.color} rounded-full flex items-center justify-center text-white text-base sm:text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform`}
               >
@@ -269,7 +272,7 @@ const Dashboard = () => {
                 Screen Time Today
               </p>
             </div>
-            <div className="bg-gradient-to-r from-accent to-orange-500 text-gray-700 !p-4 sm:!p-5 rounded-xl sm:rounded-2xl text-center">
+            <div className="bg-gradient-to-r from-accent to-[#c8ab06] text-gray-700 !p-4 sm:!p-5 rounded-xl sm:rounded-2xl text-center">
               <p className="text-xl sm:text-2xl md:text-3xl font-bold">17:25</p>
               <p className="text-xs sm:text-sm opacity-90 !mt-1">Last Active</p>
             </div>
@@ -356,7 +359,7 @@ const Dashboard = () => {
                 return (
                   <div
                     key={i}
-                    className="flex flex-col items-center cursor-pointer group lg:w-[30px] w-[20px]"
+                    className="flex flex-col items-center cursor-pointer group lg:w-[30px] w-[15px]"
                   >
                     <div
                       className={`w-full bg-gradient-to-t ${app.color} rounded-t-lg transition-all duration-500 hover:opacity-90 relative flex items-center justify-center`}
