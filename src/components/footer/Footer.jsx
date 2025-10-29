@@ -62,7 +62,9 @@ const Footer = () => {
               </p>
               <button
                 onClick={handleOpen}
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold !px-6 !py-3 rounded-full shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-500/30"
+                className="w-full sm:w-auto min-w-[140px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-8 !py-3 rounded-full shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+                whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
+                whileTap={{ scale: 0.98 }}
               >
                 Get Started
               </button>
