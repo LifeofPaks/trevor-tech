@@ -82,10 +82,10 @@ const LocationSection = () => {
                   ))}
                 </ul>
 
-                <div className="flex items-center gap-4 !mt-8 justify-center lg:justify-start ">
+                <div className="flex lg:flex-row flex-col items-center gap-4 !mt-8 justify-center lg:justify-start ">
                   <button
                     onClick={handleOpen}
-                    className="w-[150px] bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-6 !py-3 rounded-lg font-medium transition duration-300"
+                    className="lg:w-[150px] w-full bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-6 !py-3 rounded-lg font-medium transition duration-300"
                   >
                     Try It Now
                   </button>

@@ -17,7 +17,7 @@ const Hero = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="!mt-[15rem] lg:!px-20 !px-8 max-w-[1400px] !mx-auto !pb-12 relative">
+    <div className="lg:!mt-[15rem] !mt-[10rem] lg:!px-20 !px-8 max-w-[1400px] !mx-auto !pb-12 relative">
       {/* Floating Sparkle */}
       <motion.div
         className="absolute top-0 left-10 text-primary/20 hidden lg:block"
