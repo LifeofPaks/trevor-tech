@@ -233,7 +233,7 @@ const Index = () => {
   const [contacts, setContacts] = useState([
     {
       id: 1,
-      name: "Rey Campaign",
+      name: "Josh",
       message: "EL NINO: Sticker",
       time: "08:40",
       unread: 4,
@@ -241,7 +241,7 @@ const Index = () => {
     },
     {
       id: 2,
-      name: "Gone Girl",
+      name: "Danny",
       message: "Photo",
       time: "08:33",
       unread: 0,
@@ -249,7 +249,7 @@ const Index = () => {
     },
     {
       id: 3,
-      name: "Big Philly",
+      name: "Peter",
       message: "Voice call",
       time: "07:23",
       unread: 0,
@@ -257,7 +257,7 @@ const Index = () => {
     },
     {
       id: 4,
-      name: "MicroAgents Employees",
+      name: "Eliot",
       message: "Hercules Yomi: Done",
       time: "Yesterday",
       unread: 0,
@@ -265,7 +265,7 @@ const Index = () => {
     },
     {
       id: 5,
-      name: "+234 907 109 7324",
+      name: "Andrew",
       message: "You deleted this message.",
       time: "Yesterday",
       unread: 0,
@@ -281,12 +281,21 @@ const Index = () => {
     },
     {
       id: 7,
-      name: "Kid Bro",
+      name: "Anthony",
       message: "Ok",
       time: "Yesterday",
       unread: 0,
       online: true,
     },
+     {
+      id: 7,
+      name: "Anthony",
+      message: "Ok",
+      time: "Yesterday",
+      unread: 0,
+      online: true,
+    },
+     
   ]);
 
   const [modalOpen, setModalOpen] = useState(false);
