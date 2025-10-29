@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaApple, FaWindows } from "react-icons/fa";
 import { IoLogoAndroid } from "react-icons/io";
 import { SiMacos } from "react-icons/si";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Sparkle from "../decorative/Sparkle";
 import Arrow from "../decorative/Arrow";
 import UnderlineSVG from "../decorative/UnderlineSVG";
@@ -17,13 +17,14 @@ const Hero = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="lg:!mt-[15rem] !mt-[10rem] lg:!px-20 !px-8 max-w-[1400px] !mx-auto !pb-12 relative">
-      {/* Floating Sparkle */}
+    <div className="lg:!pt-[15rem] !pt-[10rem] lg:!px-20 !px-8 max-w-[1400px] !mx-auto !pb-20 relative overflow-hidden">
+      {/* Floating Sparkle - Animated & Glowing */}
       <motion.div
-        className="absolute top-0 left-10 text-primary/20 hidden lg:block"
+        className="absolute top-50 left-10 text-cyan-400/30 hidden lg:block"
         animate={{
-          y: [0, -10, 0],
-          rotate: [0, 5, 0],
+          y: [0, -15, 0],
+          rotate: [0, 10, 0],
+          scale: [1, 1.1, 1],
         }}
         transition={{
           duration: 4,
@@ -31,15 +32,16 @@ const Hero = () => {
           ease: "easeInOut",
         }}
       >
-        <Sparkle />
+        <Sparkle className="w-8 h-8 drop-shadow-glow" />
       </motion.div>
 
-      {/* Floating Arrow */}
+      {/* Floating Arrow - Animated & Glowing */}
       <motion.div
-        className="absolute top-32 right-10 text-primary/20 hidden lg:block"
+        className="absolute top-32 right-10 text-pink-400/30 hidden lg:block"
         animate={{
-          x: [0, 10, 0],
-          rotate: [0, -5, 0],
+          x: [0, 15, 0],
+          rotate: [0, -10, 0],
+          scale: [1, 1.15, 1],
         }}
         transition={{
           duration: 5,
@@ -47,117 +49,147 @@ const Hero = () => {
           ease: "easeInOut",
         }}
       >
-        <Arrow />
+        <Arrow className="w-8 h-8 drop-shadow-glow" />
       </motion.div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-        {/* Left section */}
+      <div className="flex flex-col lg:flex-row items-center justify-between !gap-16">
+        {/* Left Section */}
         <motion.div
           className="flex-1"
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <div className="relative inline-block">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground leading-[1.6] text-center lg:text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-center lg:text-left">
               Ultimate Digital Shield: Hack, Track, and Recover – Your{" "}
               <span className="relative inline-block">
-                Secret Weapon
-                <UnderlineSVG className="absolute -bottom-2 left-0 w-full" />
+                <span
+                  className="bg-gradient-to-r from-cyan-400 via-cyan-300 to-pink-400 bg-clip-text text-transparent"
+                  style={{ textShadow: "0 0 20px rgba(0, 255, 255, 0.5)" }}
+                >
+                  Secret Weapon
+                </span>
+                <UnderlineSVG className="absolute -bottom-3 left-0 w-full text-cyan-400" />
               </span>{" "}
               Against Betrayal and Loss
             </h1>
           </div>
 
-          <p className="!mt-6 text-muted-foreground text-base md:text-lg lg:text-xl text-center lg:text-left leading-relaxed">
-            Empower yourself with cutting-edge tools to spy on social media,
-            hack devices, reclaim stolen crypto, track locations, and erase
-            digital footprints – all ethically and discreetly, with expert
-            support for total peace of mind.
+          <p className="!mt-8 text-cyan-100/80 text-base md:text-lg lg:text-xl text-center lg:text-left leading-relaxed font-light">
+            Empower yourself with cutting-edge tools to{" "}
+            <strong className="text-cyan-300">spy on social media</strong>,{" "}
+            <strong className="text-cyan-300">hack devices</strong>, reclaim{" "}
+            <strong className="text-pink-300">stolen crypto</strong>, track
+            locations, and erase digital footprints – all{" "}
+            <strong className="text-green-400">ethically and discreetly</strong>
+            , with expert support for total peace of mind.
           </p>
 
-          <div className="!mt-8 text-center lg:text-left">
-            <p className="text-xs font-bold text-muted-foreground uppercase tracking-wide">
+          {/* Platform Icons */}
+          <div className="!mt-10 text-center lg:text-left">
+            <p className="text-xs font-bold text-cyan-400 uppercase tracking-widest !mb-2">
               Available on
             </p>
             <motion.div
-              className="flex items-center justify-center lg:justify-start gap-4 !mt-3 text-foreground/70 text-2xl"
+              className="flex items-center justify-center lg:justify-start !gap-6 text-3xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, staggerChildren: 0.1 }}
+              transition={{ delay: 0.4 }}
             >
-              <motion.div
-                whileHover={{ scale: 1.2, color: "hsl(var(--foreground))" }}
-                transition={{ type: "spring" }}
-              >
-                <FaApple />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.2, color: "hsl(var(--foreground))" }}
-                transition={{ type: "spring" }}
-              >
-                <IoLogoAndroid />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.2, color: "hsl(var(--foreground))" }}
-                transition={{ type: "spring" }}
-              >
-                <FaWindows />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.2, color: "hsl(var(--foreground))" }}
-                transition={{ type: "spring" }}
-              >
-                <SiMacos className="text-3xl" />
-              </motion.div>
+              {[
+                { Icon: FaApple, color: "text-gray-400", hover: "text-white" },
+                {
+                  Icon: IoLogoAndroid,
+                  color: "text-green-400",
+                  hover: "text-green-300",
+                },
+                {
+                  Icon: FaWindows,
+                  color: "text-blue-400",
+                  hover: "text-blue-300",
+                },
+                { Icon: SiMacos, color: "text-gray-300", hover: "text-white" },
+              ].map(({ Icon, color, hover }, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ scale: 1.3, rotate: 360 }}
+                  transition={{ type: "spring", stiffness: 400 }}
+                  className={`${color} hover:${hover} transition-all duration-300 cursor-pointer drop-shadow-glow`}
+                >
+                  <Icon className={i === 3 ? "text-4xl" : ""} />
+                </motion.div>
+              ))}
             </motion.div>
           </div>
 
-          {/* Buttons */}
+          {/* Action Buttons */}
           <motion.div
-            className="flex flex-col sm:flex-row items-center gap-4 !mt-8 justify-center lg:justify-start"
-            initial={{ opacity: 0, y: 20 }}
+            className="flex flex-col sm:flex-row items-center !gap-5 !mt-12 justify-center lg:justify-start"
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.6 }}
           >
             <Link to="/demo" className="w-full sm:w-auto">
-              <button className="w-full sm:w-auto min-w-[150px] border border-gray-300 hover:bg-gray-100 text-gray-800 font-medium rounded-lg !px-6 !py-3 transition duration-300">
+              <button className="w-full sm:w-auto min-w-[160px] border !border-cyan-500/50 hover:bg-cyan-900/20 text-cyan-300 backdrop-blur-sm font-medium rounded-xl !px-8 !py-4 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30 hover:scale-105">
                 View Demo
               </button>
             </Link>
 
             <button
               onClick={handleOpen}
-              className="w-full sm:w-auto min-w-[150px] bg-[#0BA6DF] hover:bg-[#0695c8] text-white font-medium rounded-lg !px-6 !py-3 transition duration-300"
+              className="w-full sm:w-auto min-w-[160px] bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-xl !px-8 !py-4 transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105"
             >
               Try it Now
             </button>
           </motion.div>
         </motion.div>
 
-        {/* Right section (image) */}
+        {/* Right Section - Hero Image */}
         <motion.div
           className="flex-1 flex justify-center lg:justify-end"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          initial={{ opacity: 0, scale: 0.9, rotateY: 15 }}
+          animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+          transition={{ duration: 0.9, delay: 0.3 }}
         >
           <motion.div
-            className="relative w-full max-w-[600px]"
-            whileHover={{ scale: 1.02 }}
+            className="relative w-full max-w-[600px] group"
+            whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <div className="absolute -inset-4 bg-gradient-to-r from-brand-cyan/20 to-primary/20 rounded-2xl blur-2xl" />
-            <img
-              src={HeroImage}
-              alt="Digital security and monitoring dashboard showcasing hack, track, and recovery tools"
-              className="relative w-full rounded-2xl object-cover shadow-2xl"
-            />
+            {/* Glowing Background Blur */}
+            <div className="absolute -inset-6 bg-gradient-to-r from-cyan-500/30 via-purple-600/20 to-pink-500/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
+
+            {/* Image Container */}
+            <div className="relative backdrop-blur-sm bg-white/5 border border-cyan-500/30 rounded-3xl p-2 shadow-2xl">
+              <img
+                src={HeroImage}
+                alt="Digital security and monitoring dashboard showcasing hack, track, and recovery tools"
+                className="relative w-full rounded-2xl object-cover shadow-inner"
+              />
+              {/* Inner Glow */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-50" />
+            </div>
           </motion.div>
         </motion.div>
       </div>
 
-      <BuyModal handleClose={handleClose} open={open} />
+      {/* Buy Modal */}
+      <AnimatePresence>
+        {open && <BuyModal handleClose={handleClose} open={open} />}
+      </AnimatePresence>
+
+      {/* Custom CSS for Glow */}
+      <style jsx>{`
+        .drop-shadow-glow {
+          filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5))
+            drop-shadow(0 0 20px rgba(0, 255, 255, 0.3));
+        }
+        .text-shadow-glow {
+          text-shadow: 0 0 15px rgba(0, 255, 255, 0.6),
+            0 0 30px rgba(0, 255, 255, 0.4);
+        }
+      `}</style>
     </div>
   );
 };
