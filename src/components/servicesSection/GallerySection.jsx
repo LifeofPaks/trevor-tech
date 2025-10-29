@@ -48,7 +48,7 @@ const features = [
 
 const GallerySection = () => {
   return (
-    <section className="relative !py-20 overflow-hidden">
+    <section className="relative !py-10 overflow-hidden">
       <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
         {/* Header */}
         <motion.div
@@ -143,7 +143,7 @@ const GallerySection = () => {
                 <img
                   src={CryptoImage}
                   alt="Crypto recovery dashboard"
-                  className="relative w-full h-[500px] rounded-2xl object-cover shadow-inner"
+                  className="relative w-full lg:h-[600px] h-[400px] rounded-2xl object-cover shadow-inner"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-40 pointer-events-none"></div>

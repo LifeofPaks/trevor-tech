@@ -17,7 +17,7 @@ const Hero = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="lg:!pt-[15rem] !pt-[10rem] lg:!px-20 !px-8 max-w-[1400px] !mx-auto !pb-20 relative overflow-hidden">
+    <div className="lg:!pt-[15rem] !pt-[10rem] lg:!px-20 !px-8 max-w-[1400px] !mx-auto !pb-5 relative overflow-hidden">
       {/* Floating Sparkle - Animated & Glowing */}
       <motion.div
         className="absolute top-50 left-10 text-cyan-400/30 hidden lg:block"
@@ -161,11 +161,11 @@ const Hero = () => {
             <div className="absolute -inset-6 bg-gradient-to-r from-cyan-500/30 via-purple-600/20 to-pink-500/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
 
             {/* Image Container */}
-            <div className="relative backdrop-blur-sm bg-white/5 border border-cyan-500/30 rounded-3xl p-2 shadow-2xl">
+            <div className="relative backdrop-blur-sm bg-white/5  rounded-3xl p-2 shadow-2xl">
               <img
                 src={HeroImage}
                 alt="Digital security and monitoring dashboard showcasing hack, track, and recovery tools"
-                className="relative w-full rounded-2xl object-cover shadow-inner"
+                className="relative w-full lg:!h-[600px] !h-[400px] rounded-2xl object-cover shadow-inner hidden lg:block"
               />
               {/* Inner Glow */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-50" />
