@@ -211,13 +211,13 @@ const About = () => {
 
             {/* Quote */}
             <motion.div
-              className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 shadow-2xl border border-cyan-500/30 backdrop-blur-xl !mt-16"
+              className="relative overflow-hidden shadow-2xl backdrop-blur-xl !mt-16"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="relative text-base sm:text-2xl font-semibold text-cyan-100 italic text-center !py-8 !px-6 bg-gradient-to-r from-cyan-400 via-white to-pink-400 bg-clip-text text-transparent">
+              <p className="relative text-sm font-semibold text-cyan-100 italic text-center  bg-gradient-to-r from-cyan-400 via-white to-pink-400 bg-clip-text text-transparent">
                 "We don't just recover data — we recover trust."
               </p>
             </motion.div>
