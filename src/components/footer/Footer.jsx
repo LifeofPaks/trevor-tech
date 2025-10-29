@@ -203,7 +203,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center !gap-6 text-xs text-cyan-300/70">
             {/* Payment Icons */}
             <motion.div
-              className="flex items-center !space-x-4 order-2 lg:order-1 flex-wrap justify-center"
+              className="flex items-center !space-x-4 order-2 lg:order-1 flex-wrap justify-center gap-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
