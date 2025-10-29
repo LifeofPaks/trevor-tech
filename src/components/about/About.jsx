@@ -240,7 +240,9 @@ const About = () => {
             </p>
             <button
               onClick={handleOpenBuyModal}
-              className="inline-flex items-center !gap-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white !px-10 !py-4 rounded-full font-semibold shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-500/30"
+              className="w-full flex items-center gap-2 sm:w-auto min-w-[140px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-10 !py-4 rounded-full !mx-auto shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+              whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
+              whileTap={{ scale: 0.98 }}
             >
               Contact Us Now
               <svg
