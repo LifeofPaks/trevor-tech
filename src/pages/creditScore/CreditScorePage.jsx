@@ -765,11 +765,9 @@ const CreditScorePage = () => {
             >
               From <span className=" font-bold">520</span> to{" "}
               <span className="b font-bold">820+</span> in as little as{" "}
-                <span className="font-semibold">24 hours, </span> thousands have unlocked loans, cards, homes, and freedom with our{" "}
-              <strong className="">
-                undetectable system
-              </strong>
-              .
+              <span className="font-semibold">24 hours, </span> thousands have
+              unlocked loans, cards, homes, and freedom with our{" "}
+              <strong className="">undetectable system</strong>.
             </motion.p>
           </motion.div>
 
@@ -819,7 +817,7 @@ const CreditScorePage = () => {
       </section>
 
       {/* CTA */}
-      <section className="relative !py-24 lg:!py-32 ">
+      <section className="relative !py-15 lg:!py-25 bg-gradient-to-b from-transparent via-purple-900/10 to-transparent">
         <div className="max-w-4xl !mx-auto !px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -836,7 +834,7 @@ const CreditScorePage = () => {
             </p>
             <button
               onClick={() => setModalOpen(true)}
-              className="bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white !px-8 !py-4 rounded-full font-bold text-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+              className="bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white !px-6 lg:!px-8 !py-4 rounded-full font-bold lg:text-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
             >
               Contact Us Now
             </button>
