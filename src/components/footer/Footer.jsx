@@ -62,7 +62,7 @@ const Footer = () => {
               </p>
               <button
                 onClick={handleOpen}
-                className="w-full sm:w-auto min-w-[140px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-8 !py-3 rounded-full shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+                className="w-full sm:w-auto max-w-[180px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-8 !py-3 rounded-full shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
                 whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
                 whileTap={{ scale: 0.98 }}
               >
