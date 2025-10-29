@@ -9,49 +9,64 @@ import {
   IoSchool,
   IoAlertCircle,
 } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import BuyModal from "../buyModal/BuyModal";
+import DemoModal from "../demoModal/DemoModal";
 
 const About = () => {
-    const [open, setOpen] = useState(false);
-      
-        const handleOpen = () => setOpen(true);
-        const handleClose = () => setOpen(false);
+  const [openBuyModal, setOpenBuyModal] = useState(false);
+  const [openDemoModal, setOpenDemoModal] = useState(false);
+
+  // Buy Modal Controls
+  const handleOpenBuyModal = () => setOpenBuyModal(true);
+  const handleCloseBuyModal = () => setOpenBuyModal(false);
+
+  // Demo Modal Controls
+  const handleOpenDemoModal = () => setOpenDemoModal(true);
+  const handleCloseDemoModal = () => setOpenDemoModal(false);
+
   const services = [
+    {
+      title: "Spy or hack any device remotely",
+      desc: "Remote spy/hack any Android, iPhone, tablet, or computer. View messages, calls, GPS, photos, apps, and keystrokes — no physical access needed.",
+      icon: <IoLockClosed size={24} />,
+      color: "text-green-600 bg-green-100",
+      modal: true, // triggers Demo Modal
+    },
     {
       title: "Recover Stolen & Scammed Crypto",
       desc: "Recover lost Bitcoin, Ethereum, USDT, and more from fake platforms, phishing, or stolen wallets. Full blockchain tracing and scammer identification.",
       icon: <IoCash size={24} />,
       color: "text-blue-600 bg-blue-100",
-    },
-    {
-      title: "Full Phone & Device Access",
-      desc: "Remote spy/hack any Android, iPhone, tablet, or computer. View messages, calls, GPS, photos, apps, and keystrokes — no physical access needed.",
-      icon: <IoLockClosed size={24} />,
-      color: "text-green-600 bg-green-100",
+      path: "/crypto-recovery",
     },
     {
       title: "Real-Time Location Tracking",
       desc: "Track live GPS with street-level accuracy. Set geofence alerts and view full movement history with timestamps.",
       icon: <IoMap size={24} />,
       color: "text-amber-600 bg-amber-100",
+      path: "/location-tracking",
     },
     {
       title: "Credit Score Boost & Card Loading",
       desc: "Instantly improve credit scores (Equifax, TransUnion, Experian). Load debit/prepaid cards and access full financial logs.",
       icon: <IoCheckmarkCircle size={24} />,
       color: "text-purple-600 bg-purple-100",
+      path: "/credit-boost",
     },
     {
       title: "Erase Records & Alter Grades",
       desc: "Permanently delete criminal records, change university grades, GPAs, and issue new driver licenses/ID cards in official systems.",
       icon: <IoSchool size={24} />,
       color: "text-rose-600 bg-rose-100",
+      path: "/record-erase",
     },
     {
       title: "Stop Blackmail & Secure Privacy",
       desc: "Identify blackmailers, delete compromising material from devices/cloud, and block future threats — full digital protection.",
       icon: <IoAlertCircle size={24} />,
       color: "text-teal-600 bg-teal-100",
+      path: "/privacy-protection",
     },
   ];
 
@@ -112,24 +127,35 @@ const About = () => {
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white/80 !p-6 rounded-2xl border border-amber-100 hover:border-amber-400 shadow-md hover:shadow-lg"
-                >
-                  <div
-                    className={`flex items-center justify-center w-12 h-12 rounded-xl mb-4 ${service.color}`}
-                  >
-                    {service.icon}
+              {services.map((service, index) => {
+                const cardContent = (
+                  <div className="bg-white/80 !p-6 rounded-2xl border border-amber-100 hover:border-amber-400 shadow-md hover:shadow-lg cursor-pointer transition-all">
+                    <div
+                      className={`flex items-center justify-center w-12 h-12 rounded-xl mb-4 ${service.color}`}
+                    >
+                      {service.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      {service.desc}
+                    </p>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    {service.desc}
-                  </p>
-                </div>
-              ))}
+                );
+
+                return (
+                  <div key={index}>
+                    {service.modal ? (
+                      <div onClick={handleOpenDemoModal}>{cardContent}</div>
+                    ) : service.path ? (
+                      <Link to={service.path}>{cardContent}</Link>
+                    ) : (
+                      cardContent
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -174,9 +200,9 @@ const About = () => {
               Our experts are standing by 24/7 to help you recover and secure
               your digital world.
             </p>
-            <a
-              onClick={handleOpen}
-              className="cursor-pointer inline-flex items-center gap-2 bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-8 !py-3 rounded-full font-medium shadow-md hover:shadow-lg"
+            <button
+              onClick={handleOpenBuyModal}
+              className="inline-flex items-center gap-2 bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-8 !py-3 rounded-full font-medium shadow-md hover:shadow-lg transition"
             >
               Contact Us Now
               <svg
@@ -192,11 +218,19 @@ const About = () => {
                   d="M9 5l7 7-7 7"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </section>
-      <BuyModal handleClose={handleClose} open={open} />
+
+      {/* Modals */}
+      <DemoModal
+        openDemoModal={openDemoModal}
+        onCloseDemoModal={handleCloseDemoModal}
+        handleOpenDemoModal={handleOpenBuyModal} // "Try it Now" opens Buy Modal
+      />
+
+      <BuyModal open={openBuyModal} handleClose={handleCloseBuyModal} />
     </>
   );
 };
