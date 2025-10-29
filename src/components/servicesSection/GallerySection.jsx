@@ -49,7 +49,6 @@ const features = [
 const GallerySection = () => {
   return (
     <section className="relative !py-20 lg:!py-28 overflow-hidden">
-
       <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
         {/* Header */}
         <motion.div
@@ -59,7 +58,7 @@ const GallerySection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
+          <h1 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
             Financial & Crypto Recovery Solutions
           </h1>
           <p className="max-w-4xl !mx-auto text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">

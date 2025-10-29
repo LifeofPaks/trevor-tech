@@ -42,7 +42,6 @@ const LocationSection = () => {
   return (
     <>
       <section className="relative !py-20 lg:!py-28 overflow-hidden">
-
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
           {/* Header */}
           <motion.div
@@ -52,7 +51,7 @@ const LocationSection = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
+            <h2 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
               Live GPS Tracking
             </h2>
             <p className="text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
