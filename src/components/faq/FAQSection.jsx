@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 const FAQSection = () => {
@@ -32,52 +33,91 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="max-w-3xl !mx-auto !mt-20 !pb-12 !px-[2rem]" id="faq">
-      <div className="text-center !mb-12 lg:mb-16">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-700 !mb-3">
-          Frequently Asked Questions
-        </h2>
-        <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Got questions? We’ve got answers.
-          <span className="hidden sm:inline">
-            {" "}
-            Here’s everything you need to know about our discreet, powerful, and
-            100% effective services.
-          </span>
-        </p>
-      </div>
-      <div className="!space-y-4">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="bg-white/70 backdrop-blur-md border border-amber-100 rounded-xl overflow-hidden transition-all duration-300"
-          >
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="flex items-center justify-between w-full text-left !px-5 !py-4 font-semibold text-gray-800 hover:text-amber-800"
+    <section className="relative !py-20 lg:!py-28 overflow-hidden" id="faq">
+      {/* Background Glow Orb */}
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-3xl opacity-40 pointer-events-none animate-pulse"></div>
+
+      <div className="max-w-4xl !mx-auto !px-6 lg:!px-10 relative z-10">
+        {/* Header */}
+        <motion.div
+          className="text-center !mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p className="max-w-3xl !mx-auto text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
+            Got questions? We’ve got answers.{" "}
+            <span className="hidden sm:inline">
+              Here’s everything you need to know about our discreet, powerful,
+              and 100% effective services.
+            </span>
+          </p>
+        </motion.div>
+
+        {/* FAQ Accordion */}
+        <div className="!space-y-6">
+          {faqs.map((faq, index) => (
+            <motion.div
+              key={index}
+              className="bg-white/5 backdrop-blur-xl border border-cyan-500/30 rounded-2xl overflow-hidden shadow-2xl hover:shadow-cyan-500/30 transition-all duration-300"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
             >
-              <span>{faq.question}</span>
-              <ChevronDown
-                className={`w-5 h-5 text-amber-600 transform transition-transform duration-300 ${
-                  openIndex === index ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-            <div
-              className={`transition-all duration-500 ease-in-out ${
-                openIndex === index
-                  ? "max-h-40 opacity-100 !px-5 !pb-4"
-                  : "max-h-0 opacity-0 !px-5 !pb-0"
-              } overflow-hidden`}
-            >
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                {faq.answer}
-              </p>
-            </div>
-          </div>
-        ))}
+              {/* Question Button */}
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="flex items-center justify-between w-full text-left !px-6 !py-5 font-bold text-cyan-100 hover:text-cyan-50 transition-all duration-300 group"
+              >
+                <span className="text-base sm:text-lg pr-4">
+                  {faq.question}
+                </span>
+                <motion.div
+                  animate={{ rotate: openIndex === index ? 180 : 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                >
+                  <ChevronDown
+                    className={`w-6 h-6 text-cyan-400 group-hover:text-cyan-300 drop-shadow-glow transition-colors`}
+                  />
+                </motion.div>
+              </button>
+
+              {/* Answer - Smooth Height Animation */}
+              <AnimatePresence initial={false}>
+                {openIndex === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="overflow-hidden"
+                  >
+                    <div className="!px-6 !pb-6 !pt-2">
+                      <p className="text-sm sm:text-base text-cyan-300/80 leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+
+      {/* Glow Filter */}
+      <style jsx>{`
+        .drop-shadow-glow {
+          filter: drop-shadow(0 0 8px currentColor)
+            drop-shadow(0 0 16px currentColor);
+        }
+      `}</style>
+    </section>
   );
 };
 
