@@ -584,6 +584,7 @@ const Index = () => {
                           >
                             <ListItemAvatar>
                               <Avatar
+                                style={{ filter: "blur(2px)" }}
                                 src={`https://i.pravatar.cc/150?u=${seed}`}
                               />
                             </ListItemAvatar>
@@ -786,6 +787,7 @@ const Index = () => {
                     }}
                   >
                     <Avatar
+                      style={{ filter: "blur(2px)" }}
                       src={`https://i.pravatar.cc/150?u=${selectedContact?.name
                         .replace(/\s+/g, "")
                         .toLowerCase()}`}
