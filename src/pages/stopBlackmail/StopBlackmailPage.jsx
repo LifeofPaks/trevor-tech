@@ -214,9 +214,8 @@ const StopBlackmailPage = () => {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              We <strong className="text-red-400">permanently delete</strong>{" "}
-              your private data from{" "}
-              <strong>every server, cloud, and dark web archive</strong> —{" "}
+              We <strong>permanently delete</strong> your private data from{" "}
+              <strong>every server, cloud, and dark web archive</strong>,{" "}
               <em>no recovery possible</em>.
             </motion.p>
           </motion.div>
@@ -383,6 +382,85 @@ const StopBlackmailPage = () => {
               <FiZap className="w-8 h-8 relative z-10 group-hover:animate-pulse" />
             </button>
           </motion.div>
+          {/* JOIN COMMUNITY - OVERLAPPING PROFILES */}
+          <section className="relative !pb-2 lg:!pb-24 !pt-10 overflow-hidden">
+            {/* Background Glow */}
+            <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
+              <motion.div
+                className="flex flex-col items-center justify-center text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                {/* Overlapping Profile Images */}
+                <div className="flex items-center justify-center -space-x-6 !mb-8">
+                  {[
+                    "https://randomuser.me/api/portraits/men/32.jpg",
+                    "https://randomuser.me/api/portraits/women/44.jpg",
+                    "https://randomuser.me/api/portraits/men/56.jpg",
+                    "https://randomuser.me/api/portraits/women/68.jpg",
+                    "https://randomuser.me/api/portraits/men/79.jpg",
+                  ].map((src, i) => (
+                    <motion.div
+                      key={i}
+                      className="relative group"
+                      initial={{
+                        opacity: 0,
+                        scale: 0.8,
+                        x: i % 2 === 0 ? -50 : 50,
+                      }}
+                      whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                      transition={{
+                        delay: i * 0.1,
+                        duration: 0.6,
+                        type: "spring",
+                        stiffness: 120,
+                      }}
+                      viewport={{ once: true }}
+                      whileHover={{ scale: 1.15, z: 50 }}
+                      style={{ zIndex: 5 - i }}
+                    >
+                      {/* Glow Ring */}
+                      <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 rounded-full blur-lg opacity-80 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
+
+                      {/* Profile Image */}
+                      <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-3 border-white/30 shadow-2xl backdrop-blur-sm !ml-[-18px]">
+                        <img
+                          src={src}
+                          alt={`User ${i + 1}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+
+                {/* Text */}
+                <motion.h3
+                  className="text-xl sm:text-xl lg:text-xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.8 }}
+                  viewport={{ once: true }}
+                >
+                  Join <span className="text-cyan-200">12,847+</span> people
+                  people who’ve erased their past.
+                </motion.h3>
+
+                {/* Subtext */}
+                <motion.p
+                  className="mt-3 text-sm sm:text-base text-cyan-300/80 font-light max-w-xl"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ delay: 0.7, duration: 0.8 }}
+                  viewport={{ once: true }}
+                >
+                  Real users. Real results. Real freedom.
+                </motion.p>
+              </motion.div>
+            </div>
+          </section>
         </div>
       </section>
 
@@ -390,12 +468,29 @@ const StopBlackmailPage = () => {
       <section className="relative !py-24" ref={globeRef}>
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 text-center">
           <motion.h2
-            className="text-4xl lg:text-6xl font-extrabold bg-gradient-to-r from-red-400 to-cyan-300 bg-clip-text text-transparent !mb-8"
+            className="text-4xl lg:text-6xl font-extrabold bg-gradient-to-r from-red-400 via-pink-300 to-cyan-300 bg-clip-text text-transparent !mb-3"
             initial={{ opacity: 0, y: 30 }}
-            animate={globeInView ? { opacity: 1, y: 0 } : {}}
+            animate={globeInView ? { opacity: 1, all: 0 } : {}}
+            transition={{ duration: 0.8 }}
           >
             {erased.toLocaleString()}+ Threats Erased Worldwide
           </motion.h2>
+
+          <motion.p
+            className="text-center text-sm sm:text-base lg:text-lg text-cyan-200/90 font-light !mb-12 !pt-8 max-w-4xl !mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={globeInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.3, duration: 0.8 }}
+          >
+            <strong className="text-cyan-100">{erased.toLocaleString()}</strong>{" "}
+            private files, videos, messages, and doxxing records permanently
+            deleted from{" "}
+            <strong className="text-cyan-100">47+ platforms</strong>, including
+            Telegram, Mega, Google Drive, iCloud, and dark web archives.
+            <em className="block mt-2">
+              Real-time tracking. Global reach. Zero recovery.
+            </em>
+          </motion.p>
           <motion.div
             className="relative !h-96"
             style={{ x: globeX, y: globeY }}
@@ -469,9 +564,30 @@ const StopBlackmailPage = () => {
       {/* TESTIMONIALS CAROUSEL */}
       <section className="relative !py-24 overflow-hidden">
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
-          <h2 className="text-4xl lg:text-6xl font-extrabold text-center bg-gradient-to-r from-red-400 to-cyan-300 bg-clip-text text-transparent !mb-16">
+          <motion.h2
+            className="text-4xl lg:text-6xl font-extrabold text-center bg-gradient-to-r from-red-400 via-pink-300 to-cyan-300 bg-clip-text text-transparent !mb-3"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             They Regained Control
-          </h2>
+          </motion.h2>
+
+          <motion.p
+            className="text-center text-sm sm:text-base lg:text-lg text-cyan-200/85 font-light !mb-12 max-w-4xl !mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+          >
+            <strong className="text-cyan-100">12,847+</strong> victims of{" "}
+            <span>sextortion</span>, <span> revenge porn</span>,{" "}
+            <span>deepfakes</span>, <span>doxxing</span>, and{" "}
+            <span>financial blackmail</span>, now live{" "}
+            <strong>100% free</strong> from digital threats.
+            <em className="block mt-2 text-cyan-300/90">
+              Every trace erased. Every platform wiped. Every future protected.
+            </em>
+          </motion.p>
           <motion.div
             className="flex gap-8"
             animate={{ x: [0, -100 * testimonials.length + 100] }}
