@@ -11,6 +11,12 @@ import {
   FiPaperclip,
   FiEdit2,
   FiMoreVertical,
+  FiPhone,
+  FiMail,
+  FiVideo,
+  FiSmile,
+  FiArrowLeft,
+  FiCheck,
 } from "react-icons/fi";
 import {
   Box,
@@ -24,7 +30,6 @@ import {
   Card,
   CardContent,
   CardHeader,
-  Divider,
   IconButton,
   Avatar,
   List,
@@ -38,13 +43,15 @@ import {
   Badge,
   createTheme,
   ThemeProvider,
+  Menu,
 } from "@mui/material";
 import whatsappBg from "../../assets/whatsapp-bg.jpeg";
 import { motion, AnimatePresence } from "framer-motion";
+import { IoCheckmarkDoneOutline } from "react-icons/io5";
 
-// -------------------------------------------------
-// App Templates (unchanged except for statusBar removed)
-// -------------------------------------------------
+/* ------------------------------------------------------------------ */
+/*                         APP TEMPLATES (Updated)                    */
+/* ------------------------------------------------------------------ */
 const appTemplates = {
   whatsapp: {
     name: "WhatsApp",
@@ -62,6 +69,15 @@ const appTemplates = {
     showStatus: true,
     showAvatar: true,
     showUnread: true,
+    showHeaderBack: true,
+    showHeaderCall: true,
+    showHeaderVideo: true,
+    showHeaderMore: true,
+    showInputEmoji: true,
+    showInputAttach: true,
+    showInputMic: true,
+    showInputSend: true,
+    showMessageCheck: true,
   },
   instagram: {
     name: "Instagram",
@@ -81,6 +97,11 @@ const appTemplates = {
     showUnread: true,
     dmHeader: true,
     stories: true,
+    showHeaderBack: true,
+    showHeaderMore: false,
+    showInputSend: true,
+    showInputAttach: true,
+    showInputCamera: true,
   },
   twitter: {
     name: "Twitter",
@@ -99,6 +120,11 @@ const appTemplates = {
     showAvatar: true,
     showUnread: true,
     dmHeader: true,
+    showHeaderBack: true,
+    showHeaderMore: true,
+    showInputSend: true,
+    showInputAttach: false,
+    showInputMic: false,
   },
   snapchat: {
     name: "Snapchat",
@@ -116,6 +142,11 @@ const appTemplates = {
     showAvatar: true,
     showUnread: false,
     snapStyle: true,
+    showHeaderBack: true,
+    showHeaderCamera: true,
+    showHeaderMore: false,
+    showInputSend: true,
+    showInputCamera: true,
   },
   messenger: {
     name: "Messenger",
@@ -133,6 +164,14 @@ const appTemplates = {
     showAvatar: true,
     showUnread: true,
     activeStatus: true,
+    showHeaderBack: true,
+    showHeaderCall: true,
+    showHeaderVideo: true,
+    showHeaderMore: true,
+    showInputEmoji: true,
+    showInputAttach: true,
+    showInputMic: true,
+    showInputSend: true,
   },
   telegram: {
     name: "Telegram",
@@ -149,6 +188,13 @@ const appTemplates = {
     showStatus: true,
     showAvatar: true,
     showUnread: true,
+    showHeaderBack: true,
+    showHeaderCall: true,
+    showHeaderVideo: true,
+    showHeaderMore: true,
+    showInputAttach: true,
+    showInputMic: true,
+    showInputSend: true,
   },
   discord: {
     name: "Discord",
@@ -166,12 +212,60 @@ const appTemplates = {
     showAvatar: true,
     showUnread: true,
     dmSidebar: true,
+    showHeaderBack: false,
+    showHeaderMore: true,
+    showInputSend: true,
+    showInputAttach: true,
+  },
+  sms: {
+    name: "SMS",
+    primary: "#34C759",
+    bg: "#f2f2f7",
+    header: "#fff",
+    headerText: "#000",
+    bubble: { sent: "#34C759", received: "#e5e5ea" },
+    text: { sent: "#fff", received: "#000" },
+    hasBackground: false,
+    tabBar: "#fff",
+    contactList: true,
+    showTime: true,
+    showStatus: false,
+    showAvatar: false,
+    showUnread: true,
+    showHeaderBack: true,
+    showHeaderMore: true,
+    showInputSend: true,
+    showInputAttach: false,
+    showInputMic: false,
+    showMessageCheck: false,
+  },
+  email: {
+    name: "Email",
+    primary: "#007AFF",
+    bg: "#f9f9f9",
+    header: "#fff",
+    headerText: "#000",
+    bubble: { sent: "#007AFF", received: "#e5e5ea" },
+    text: { sent: "#fff", received: "#000" },
+    hasBackground: false,
+    tabBar: "#fff",
+    contactList: true,
+    showTime: true,
+    showStatus: false,
+    showAvatar: true,
+    showUnread: true,
+    showHeaderBack: true,
+    showHeaderMore: true,
+    showInputSend: true,
+    showInputAttach: true,
+    showInputMic: false,
+    showMessageCheck: false,
   },
 };
 
-// -------------------------------------------------
-// Cyber Theme
-// -------------------------------------------------
+/* ------------------------------------------------------------------ */
+/*                           CYBER THEME                              */
+/* ------------------------------------------------------------------ */
 const cyberTheme = createTheme({
   palette: {
     mode: "dark",
@@ -180,9 +274,9 @@ const cyberTheme = createTheme({
   },
 });
 
-// -------------------------------------------------
-// Floating Particles
-// -------------------------------------------------
+/* ------------------------------------------------------------------ */
+/*                         FLOATING PARTICLES                         */
+/* ------------------------------------------------------------------ */
 const Particles = () => (
   <Box
     sx={{
@@ -217,9 +311,9 @@ const Particles = () => (
   </Box>
 );
 
-// -------------------------------------------------
-// Main Component
-// -------------------------------------------------
+/* ------------------------------------------------------------------ */
+/*                              MAIN COMPONENT                        */
+/* ------------------------------------------------------------------ */
 const Index = () => {
   const previewRef = useRef(null);
   const [view, setView] = useState("contacts"); // contacts | chat
@@ -229,7 +323,7 @@ const Index = () => {
   const [sender, setSender] = useState("You");
   const [messages, setMessages] = useState([]);
 
-  // ---- Contacts Management ----
+  /* ------------------- Contacts Management ------------------- */
   const [contacts, setContacts] = useState([
     {
       id: 1,
@@ -274,7 +368,7 @@ const Index = () => {
     {
       id: 6,
       name: "+234 803 949 3808",
-      message: "Hi Paks Good evening...",
+      message: "Hi Paks Good evening…",
       time: "Yesterday",
       unread: 0,
       online: false,
@@ -287,15 +381,6 @@ const Index = () => {
       unread: 0,
       online: true,
     },
-     {
-      id: 7,
-      name: "Anthony",
-      message: "Ok",
-      time: "Yesterday",
-      unread: 0,
-      online: true,
-    },
-     
   ]);
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -312,7 +397,6 @@ const Index = () => {
     setEditingContact(null);
     setFormName("");
   };
-
   const saveContact = () => {
     if (!formName.trim()) return;
     if (editingContact) {
@@ -323,7 +407,6 @@ const Index = () => {
       );
     } else {
       const newId = Math.max(...contacts.map((c) => c.id), 0) + 1;
-      const avatarSeed = formName.replace(/\s+/g, "").toLowerCase();
       setContacts((prev) => [
         ...prev,
         {
@@ -338,12 +421,25 @@ const Index = () => {
     }
     closeModal();
   };
-
   const deleteContact = (id) => {
     setContacts((prev) => prev.filter((c) => c.id !== id));
   };
 
-  // ---- Chat Logic ----
+  /* ------------------- Ellipsis Menu ------------------- */
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [menuContactId, setMenuContactId] = useState(null);
+
+  const handleMenuOpen = (event, id) => {
+    event.stopPropagation();
+    setAnchorEl(event.currentTarget);
+    setMenuContactId(id);
+  };
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    setMenuContactId(null);
+  };
+
+  /* ------------------- Chat Logic ------------------- */
   const formatTime = (date) => {
     const h = date.getHours().toString().padStart(2, "0");
     const m = date.getMinutes().toString().padStart(2, "0");
@@ -383,7 +479,7 @@ const Index = () => {
     setMessages([{ text: contact.message, time: new Date(), sender: false }]);
   };
 
-  // -------------------------------------------------
+  /* ------------------------------------------------------------------ */
   return (
     <ThemeProvider theme={cyberTheme}>
       <Box
@@ -395,7 +491,6 @@ const Index = () => {
         }}
       >
         <Particles />
-
         <Box
           sx={{
             maxWidth: 1600,
@@ -559,35 +654,22 @@ const Index = () => {
                         >
                           <ListItem
                             secondaryAction={
-                              <Box sx={{ display: "flex", gap: 0.5 }}>
-                                <IconButton
-                                  size="small"
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    openModal(contact);
-                                  }}
-                                >
-                                  <FiEdit2 />
-                                </IconButton>
-                                <IconButton
-                                  size="small"
-                                  color="error"
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    deleteContact(contact.id);
-                                  }}
-                                >
-                                  <FiTrash2 />
-                                </IconButton>
-                              </Box>
+                              <IconButton
+                                size="small"
+                                onClick={(e) => handleMenuOpen(e, contact.id)}
+                              >
+                                <FiMoreVertical />
+                              </IconButton>
                             }
                           >
-                            <ListItemAvatar>
-                              <Avatar
-                                style={{ filter: "blur(2px)" }}
-                                src={`https://i.pravatar.cc/150?u=${seed}`}
-                              />
-                            </ListItemAvatar>
+                            {app.showAvatar && (
+                              <ListItemAvatar>
+                                <Avatar
+                                  style={{ filter: "blur(2px)" }}
+                                  src={`https://i.pravatar.cc/150?u=${seed}`}
+                                />
+                              </ListItemAvatar>
+                            )}
                             <ListItemText
                               primary={
                                 <Typography
@@ -613,19 +695,21 @@ const Index = () => {
                               }
                             />
                             <Box sx={{ textAlign: "right" }}>
-                              <Typography
-                                sx={{ fontSize: "0.75rem", color: "#888" }}
-                              >
-                                {contact.time}
-                              </Typography>
-                              {contact.unread > 0 && (
+                              {app.showTime && (
+                                <Typography
+                                  sx={{ fontSize: "0.75rem", color: "#888" }}
+                                >
+                                  {contact.time}
+                                </Typography>
+                              )}
+                              {app.showUnread && contact.unread > 0 && (
                                 <Badge
                                   badgeContent={contact.unread}
                                   color="primary"
                                   sx={{ mt: 0.5 }}
                                 />
                               )}
-                              {contact.online && (
+                              {app.showStatus && contact.online && (
                                 <Box
                                   sx={{
                                     width: 10,
@@ -786,20 +870,35 @@ const Index = () => {
                       gap: 2,
                     }}
                   >
-                    <Avatar
-                      style={{ filter: "blur(2px)" }}
-                      src={`https://i.pravatar.cc/150?u=${selectedContact?.name
-                        .replace(/\s+/g, "")
-                        .toLowerCase()}`}
-                    />
-                    <Box>
+                    {app.showHeaderBack && (
+                      <IconButton
+                        size="small"
+                        onClick={() => setView("contacts")}
+                      >
+                        <FiArrowLeft />
+                      </IconButton>
+                    )}
+                    {app.showAvatar && (
+                      <Avatar
+                        style={{ filter: "blur(2px)" }}
+                        src={`https://i.pravatar.cc/150?u=${selectedContact?.name
+                          .replace(/\s+/g, "")
+                          .toLowerCase()}`}
+                      />
+                    )}
+                    <Box flex={1}>
                       <Typography fontWeight={600}>
                         {selectedContact?.name}
                       </Typography>
-                      <Typography fontSize="0.75rem" sx={{ opacity: 0.8 }}>
-                        online
-                      </Typography>
+                      {app.showStatus && (
+                        <Typography fontSize="0.75rem" sx={{ opacity: 0.8 }}>
+                          online
+                        </Typography>
+                      )}
                     </Box>
+                    {app.showHeaderCall && <FiPhone />}
+                    {app.showHeaderVideo && <FiVideo />}
+                    {app.showHeaderMore && <FiMoreVertical />}
                   </Box>
 
                   {/* Messages */}
@@ -840,20 +939,35 @@ const Index = () => {
                               borderRadius: "18px",
                               px: 2.5,
                               py: 1.2,
+                              position: "relative",
                             }}
                           >
                             <Typography sx={{ fontSize: "0.925rem" }}>
                               {msg.text}
                             </Typography>
-                            <Typography
+                            <Box
                               sx={{
-                                fontSize: "0.65rem",
-                                opacity: 0.7,
-                                textAlign: "right",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "flex-end",
+                                gap: 0.5,
                               }}
                             >
-                              {formatTime(msg.time)}
-                            </Typography>
+                              <Typography
+                                sx={{ fontSize: "0.65rem", opacity: 0.7 }}
+                              >
+                                {formatTime(msg.time)}
+                              </Typography>
+                              {app.showMessageCheck && msg.sender && (
+                                <>
+                                  <FiCheck size={12} />
+                                  <IoCheckmarkDoneOutline
+                                    size={12}
+                                    style={{ marginLeft: -6 }}
+                                  />
+                                </>
+                              )}
+                            </Box>
                           </Box>
                         </Box>
                       ))}
@@ -870,6 +984,7 @@ const Index = () => {
                       borderTop: "1px solid #ddd",
                     }}
                   >
+                    {app.showInputEmoji && <FiSmile />}
                     <Box
                       sx={{
                         flex: 1,
@@ -882,13 +997,16 @@ const Index = () => {
                         gap: 1,
                       }}
                     >
-                      <FiMic />
+                      {app.showInputMic && <FiMic />}
                       <span style={{ color: "#888" }}>Type a message...</span>
-                      <FiPaperclip />
+                      {app.showInputAttach && <FiPaperclip />}
+                      {app.showInputCamera && <FiCamera />}
                     </Box>
-                    <IconButton sx={{ ml: 1 }}>
-                      <FiSend />
-                    </IconButton>
+                    {app.showInputSend && (
+                      <IconButton sx={{ ml: 1 }}>
+                        <FiSend />
+                      </IconButton>
+                    )}
                   </Box>
                 </Box>
               </Box>
@@ -918,6 +1036,34 @@ const Index = () => {
             </Button>
           </DialogActions>
         </Dialog>
+
+        {/* ==== ELLIPSIS MENU ==== */}
+        <Menu
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={handleMenuClose}
+          anchorOrigin={{ vertical: "top", horizontal: "right" }}
+          transformOrigin={{ vertical: "top", horizontal: "right" }}
+        >
+          <MenuItem
+            onClick={() => {
+              const contact = contacts.find((c) => c.id === menuContactId);
+              if (contact) openModal(contact);
+              handleMenuClose();
+            }}
+          >
+            <FiEdit2 style={{ marginRight: 8 }} /> Edit
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              if (menuContactId) deleteContact(menuContactId);
+              handleMenuClose();
+            }}
+            sx={{ color: "error.main" }}
+          >
+            <FiTrash2 style={{ marginRight: 8 }} /> Delete
+          </MenuItem>
+        </Menu>
       </Box>
     </ThemeProvider>
   );
