@@ -1,117 +1,188 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { FaLocationDot, FaClock, FaWifi, FaGear } from "react-icons/fa6";
-import LocationImage from "../../assets/location-image.png";
-import { Link } from "react-router-dom";
-import BuyModal from "../buyModal/BuyModal";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
+import LocationImage from "../../assets/location-image.png";
+import BuyModal from "../buyModal/BuyModal";
 
 const features = [
   {
-    icon: <FaLocationDot className="text-sky-500" size={22} />,
+    icon: <FaLocationDot className="text-cyan-400" size={22} />,
     title: "Track GPS Location",
+    iconBg: "bg-cyan-900/30",
+    glow: "shadow-cyan-500/50",
   },
   {
-    icon: <FaClock className="text-amber-600" size={22} />,
+    icon: <FaClock className="text-teal-400" size={22} />,
     title: "View Location History",
+    iconBg: "bg-teal-900/30",
+    glow: "shadow-teal-500/50",
   },
   {
-    icon: <FaWifi className="text-teal-600" size={22} />,
+    icon: <FaWifi className="text-green-400" size={22} />,
     title: "Wi-Fi Location Tracking",
+    iconBg: "bg-green-900/30",
+    glow: "shadow-green-500/50",
   },
   {
-    icon: <FaGear className="text-rose-600" size={22} />,
+    icon: <FaGear className="text-purple-400" size={22} />,
     title: "Set Up Geofence Alerts",
+    iconBg: "bg-purple-900/30",
+    glow: "shadow-purple-500/50",
   },
 ];
 
 const LocationSection = () => {
-     const [open, setOpen] = useState(false);
-    
-      const handleOpen = () => setOpen(true);
-      const handleClose = () => setOpen(false);
-    return (
-      <>
-        <section className="!pt-20 !pb-10 ">
-          <div className="!max-w-7xl !mx-auto !px-6">
-            {/* Title */}
-            <div className="text-center !max-w-3xl !mx-auto">
-              <h2 className="font-extrabold text-3xl sm:text-4xl text-gray-900">
-                Live GPS Tracking
-              </h2>
-              <p className="!mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">
-                Track real-time location of any device with street-level
-                accuracy using GPS, Wi-Fi, and cell towers. View live movement
-                on a map, get geofence alerts, and export complete route history
-                with timestamps and speed data.
-              </p>
-            </div>
+  const [open, setOpen] = useState(false);
 
-            {/* Content */}
-            <div className="!mt-10 flex flex-col-reverse lg:flex-row items-center gap-12">
-              {/* Left side - icons list */}
-              <div className="flex-1 w-full">
-                <div className="text-center lg:text-left !mb-10">
-                  <h3 className="text-lg font-semibold text-gray-800">
-                    Start Tracking Instantly
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-1 leading-relaxed">
-                    Experience how our GPS system keeps you connected to your
-                    devices in real time. Click{" "}
-                    <span className="font-semibold text-gray-800">
-                      “Try It Now”
-                    </span>{" "}
-                    to activate live tracking instantly or
-                    <span className="font-semibold text-gray-800">
-                      {" "}
-                      “View Demo”
-                    </span>{" "}
-                    to explore how location updates and alerts appear within the
-                    dashboard interface.
-                  </p>
-                </div>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {features.map((f, i) => (
-                    <li key={i} className="flex items-center gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-white shadow-sm flex items-center justify-center border border-gray-100">
-                        {f.icon}
-                      </div>
-                      <p className="text-sm sm:text-base font-semibold text-gray-800">
-                        {f.title}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
-                <div className="flex lg:flex-row flex-col items-center gap-4 !mt-8 justify-center lg:justify-start ">
-                  <button
-                    onClick={handleOpen}
-                    className="lg:w-[150px] w-full bg-[#0BA6DF] hover:!bg-[#0695c8] text-white !px-6 !py-3 rounded-lg font-medium transition duration-300"
+  return (
+    <>
+      <section className="relative !py-20 lg:!py-28 overflow-hidden">
+
+        <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
+          {/* Header */}
+          <motion.div
+            className="text-center !max-w-4xl !mx-auto !mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
+              Live GPS Tracking
+            </h2>
+            <p className="text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
+              Track real-time location of any device with{" "}
+              <span className="text-cyan-300 font-semibold">
+                street-level accuracy
+              </span>{" "}
+              using GPS, Wi-Fi, and cell towers. View live movement on a map,
+              get geofence alerts, and export complete route history with
+              timestamps and speed data.
+            </p>
+          </motion.div>
+
+          {/* Content */}
+          <motion.div
+            className="flex flex-col-reverse lg:flex-row items-center !gap-12 !mt-16"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            {/* Left - Features + CTA */}
+            <motion.div
+              className="flex-1 w-full"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              {/* Subheader */}
+              <div className="text-center lg:text-left !mb-10">
+                <h3 className="text-xl font-bold text-cyan-100 !mb-2">
+                  Start Tracking Instantly
+                </h3>
+                <p className="text-sm sm:text-base text-cyan-300/80 leading-relaxed">
+                  Experience how our GPS system keeps you connected to your
+                  devices in real time. Click{" "}
+                  <span className="font-semibold text-cyan-200">
+                    “Try It Now”
+                  </span>{" "}
+                  to activate live tracking instantly or{" "}
+                  <span className="font-semibold text-cyan-200">
+                    “View Demo”
+                  </span>{" "}
+                  to explore how location updates and alerts appear within the
+                  dashboard interface.
+                </p>
+              </div>
+
+              {/* Features Grid */}
+              <ul className="grid grid-cols-1 md:grid-cols-2 !gap-6">
+                {features.map(({ icon, title, iconBg, glow }, i) => (
+                  <motion.li
+                    key={i}
+                    className="flex items-center !gap-4 group"
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: i * 0.15 }}
+                    viewport={{ once: true }}
                   >
-                    Try It Now
+                    <motion.div
+                      className={`flex-shrink-0 w-12 h-12 ${iconBg} rounded-xl flex items-center justify-center border border-white/20 backdrop-blur-sm shadow-lg group-hover:scale-110 transition-all duration-300`}
+                      whileHover={{ rotate: 360 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                    >
+                      <div className="drop-shadow-glow">{icon}</div>
+                    </motion.div>
+                    <p className="text-base font-semibold text-cyan-100 group-hover:text-cyan-50 transition">
+                      {title}
+                    </p>
+                  </motion.li>
+                ))}
+              </ul>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col lg:flex-row items-center !gap-4 !mt-10 justify-center lg:justify-start">
+                <button
+                  onClick={handleOpen}
+                  className="w-full lg:w-auto min-w-[160px] bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white !px-8 !py-4 rounded-xl font-semibold shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-500/30"
+                >
+                  Try It Now
+                </button>
+                <Link to="/demo" className="w-full lg:w-auto">
+                  <button className="flex items-center !gap-2 w-full lg:w-auto min-w-[160px] border !border-cyan-500/50 hover:bg-cyan-900/20 text-cyan-300 backdrop-blur-sm !px-8 !py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:text-cyan-100">
+                    View Demo <HiArrowLongRight className="text-lg" />
                   </button>
-                  <Link to="/demo" className="cursor-pointer">
-                    <button className=" flex items-center  gap-1  text-gray-800 !px-6 !py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">
-                      View Demo <HiArrowLongRight />
-                    </button>
-                  </Link>
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Right - Image */}
+            <motion.div
+              className="flex-1 w-full"
+              initial={{ opacity: 0, x: 50, scale: 0.95 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative group">
+                {/* Glowing Cyan/Teal Background */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/30 via-teal-500/20 to-green-500/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                {/* Glass Image Container */}
+                <div className="relative backdrop-blur-sm bg-white/5 border border-cyan-500/30 rounded-3xl p-2 shadow-2xl">
+                  <img
+                    src={LocationImage}
+                    alt="Live GPS tracking dashboard"
+                    className="relative w-full max-w-lg mx-auto rounded-2xl object-cover shadow-inner"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-40 pointer-events-none"></div>
                 </div>
               </div>
+            </motion.div>
+          </motion.div>
+        </div>
 
-              {/* Right side - image */}
-              <div className="flex-1 w-full">
-                <img
-                  src={LocationImage}
-                  alt="GPS tracking dashboard illustration"
-                  className="w-full max-w-lg mx-auto rounded-xl shadow-lg object-cover"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Buy Modal */}
         <BuyModal handleClose={handleClose} open={open} />
-      </>
-    );
+
+        {/* Glow Filter */}
+        <style jsx>{`
+          .drop-shadow-glow {
+            filter: drop-shadow(0 0 8px currentColor)
+              drop-shadow(0 0 16px currentColor);
+          }
+        `}</style>
+      </section>
+    </>
+  );
 };
 
 export default LocationSection;
