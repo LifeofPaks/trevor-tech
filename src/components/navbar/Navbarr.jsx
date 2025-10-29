@@ -105,7 +105,7 @@ const Navbarr = () => {
                     >
                       <Link
                         to={item.to}
-                        className="flex items-center !gap-3 !px-5 !py-3 text-cyan-200 hover:bg-cyan-900/30 hover:text-cyan-100 transition-all duration-300 border-b border-cyan-800/30 last:border-b-0"
+                        className="flex items-center !gap-3 !px-5 !py-4 text-cyan-200 hover:bg-cyan-900/30 hover:text-cyan-100 transition-all duration-300 border-b border-cyan-800/30 last:border-b-0"
                       >
                         <span className="text-cyan-400">{item.icon}</span>
                         <span className="text-sm font-medium">
