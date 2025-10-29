@@ -24,16 +24,16 @@ const Navbarr = () => {
   const toggleMobileElite = () => setMobileEliteOpen(!mobileEliteOpen);
 
   const eliteLinks = [
-    { to: "/credit-boost", label: "Credit Score Upgrade", icon: <FiZap /> },
-    { to: "/stop-harassment", label: "Stop Blackmail", icon: <IoMdAlert /> },
-    { to: "/grade-enhancement", label: "Improve Academic Grade", icon: <FiFileText /> },
+    { to: "/elite/credit-boost", label: "Credit Score Upgrade", icon: <FiZap /> },
+    { to: "/elite/stop-harassment", label: "Stop Blackmail", icon: <IoMdAlert /> },
+    { to: "/elite/grade-enhancement", label: "Improve Academic Grade", icon: <FiFileText /> },
     {
-      to: "/clear-record",
+      to: "/elite/clear-record",
       label: "Erase Criminal Record",
       icon: <MdFolderDelete />,
     },
-    { to: "/crypto-recovery", label: "Crypto Recovery", icon: <RiBtcFill /> },
-    { to: "/dmv-id", label: "DMV & ID Services", icon: <FiKey /> },
+    { to: "/elite/crypto-recovery", label: "Crypto Recovery", icon: <RiBtcFill /> },
+    { to: "/elite/dmv-id", label: "DMV & ID Services", icon: <FiKey /> },
   ];
 
   return (
