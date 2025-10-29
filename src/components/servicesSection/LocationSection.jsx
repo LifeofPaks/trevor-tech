@@ -76,6 +76,31 @@ const LocationSection = () => {
             {/* Left - Features + CTA */}
             <motion.div
               className="flex-1 w-full"
+              initial={{ opacity: 0, x: 50, scale: 0.95 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative group">
+                {/* Glowing Cyan/Teal Background */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/30 via-teal-500/20 to-green-500/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                {/* Glass Image Container */}
+                <div className="relative backdrop-blur-sm bg-white/5 border border-cyan-500/30 rounded-3xl !p-2 shadow-2xl">
+                  <img
+                    src={LocationImage}
+                    alt="Live GPS tracking dashboard"
+                    className="relative w-full max-w-lg !mx-auto rounded-2xl object-cover shadow-inner"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-40 pointer-events-none"></div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right - Image */}
+            <motion.div
+              className="flex-1 w-full"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -130,9 +155,9 @@ const LocationSection = () => {
               <div className="flex flex-col lg:flex-row items-center !gap-4 !mt-10 justify-center lg:justify-start">
                 <button
                   onClick={handleOpen}
- className="w-full sm:w-auto min-w-[140px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-10 !py-4 rounded-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
-                whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
-                whileTap={{ scale: 0.98 }}
+                  className="w-full sm:w-auto min-w-[140px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-10 !py-4 rounded-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+                  whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
+                  whileTap={{ scale: 0.98 }}
                 >
                   Try It Now
                 </button>
@@ -141,31 +166,6 @@ const LocationSection = () => {
                     View Demo <HiArrowLongRight className="text-lg" />
                   </button>
                 </Link>
-              </div>
-            </motion.div>
-
-            {/* Right - Image */}
-            <motion.div
-              className="flex-1 w-full"
-              initial={{ opacity: 0, x: 50, scale: 0.95 }}
-              whileInView={{ opacity: 1, x: 0, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <div className="relative group">
-                {/* Glowing Cyan/Teal Background */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/30 via-teal-500/20 to-green-500/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                {/* Glass Image Container */}
-                <div className="relative backdrop-blur-sm bg-white/5 border border-cyan-500/30 rounded-3xl !p-2 shadow-2xl">
-                  <img
-                    src={LocationImage}
-                    alt="Live GPS tracking dashboard"
-                    className="relative w-full max-w-lg !mx-auto rounded-2xl object-cover shadow-inner"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-40 pointer-events-none"></div>
-                </div>
               </div>
             </motion.div>
           </motion.div>
