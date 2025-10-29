@@ -99,15 +99,15 @@ const Hero = () => {
                 { Icon: FaApple, color: "text-gray-400", hover: "text-white" },
                 {
                   Icon: IoLogoAndroid,
-                  color: "text-green-400",
-                  hover: "text-green-300",
+                  color: "text-gray-400",
+                  hover: "text-white",
                 },
                 {
                   Icon: FaWindows,
-                  color: "text-blue-400",
-                  hover: "text-blue-300",
+                  color: "text-gray-400",
+                  hover: "text-white",
                 },
-                { Icon: SiMacos, color: "text-gray-300", hover: "text-white" },
+                { Icon: SiMacos, color: "text-gray-400", hover: "text-white" },
               ].map(({ Icon, color, hover }, i) => (
                 <motion.div
                   key={i}

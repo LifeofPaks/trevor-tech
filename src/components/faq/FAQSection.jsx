@@ -33,7 +33,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="relative !py-20 lg:!py-28 overflow-hidden" id="faq">
+    <section className="relative !py-20 overflow-hidden" id="faq">
       {/* Background Glow Orb */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-3xl opacity-40 pointer-events-none animate-pulse"></div>
 
