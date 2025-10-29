@@ -33,7 +33,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="relative !py-10 overflow-hidden" id="faq">
+    <section className="relative !pt-10 overflow-hidden" id="faq">
       {/* Background Glow Orb */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-3xl opacity-40 pointer-events-none animate-pulse"></div>
 
@@ -74,7 +74,7 @@ const FAQSection = () => {
                 onClick={() => toggleFAQ(index)}
                 className="flex items-center justify-between w-full text-left !px-6 !py-5 font-bold text-cyan-100 hover:text-cyan-50 transition-all duration-300 group"
               >
-                <span className="text-base sm:text-lg pr-4">
+                <span className="text-[14px] sm:text-lg pr-4">
                   {faq.question}
                 </span>
                 <motion.div
