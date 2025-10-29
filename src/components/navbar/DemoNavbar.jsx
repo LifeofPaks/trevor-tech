@@ -304,53 +304,43 @@ const DemoSidebar = () => {
   const menuItems = [
     { label: t["Dashboard"], icon: <MdDashboard />, to: "/demo/dashboard" },
     // { label: t["Generate"], icon: <MdDashboard />, to: "/demo/generatescreenshot" },
-    {
-      label: t["Elite Recovery & Boost Services"],
-      icon: <FiShield />,
-      badge: "HOT",
-      subItems: [
-        {
-          to: "/demo/elite/credit-boost",
-          label: t["Credit Score Upgrade"],
-          icon: <FiZap />,
-        },
-        {
-          to: "/demo/elite/debit-recovery",
-          label: t["Debit Card Recovery"],
-          icon: <FiCreditCard />,
-        },
-        {
-          to: "/demo/elite/stop-harassment",
-          label: t["Stop Blackmail"],
-          icon: <IoMdAlert />,
-        },
-        {
-          to: "/demo/elite/grade-enhancement",
-          label: t["Improve Grade"],
-          icon: <FiFileText />,
-        },
-        {
-          to: "/demo/elite/clear-record",
-          label: t["Erase Criminal Record"],
-          icon: <MdFolderDelete />,
-        },
-        {
-          to: "/demo/elite/driver-license",
-          label: t["Fast Driver License"],
-          icon: <MdDriveEta />,
-        },
-        {
-          to: "/demo/elite/crypto-recovery",
-          label: t["Crypto Recovery"],
-          icon: <RiBtcFill />,
-        },
-        {
-          to: "/demo/elite/dmv-id",
-          label: t["DMV & ID Services"],
-          icon: <FiKey />,
-        },
-      ],
-    },
+    // {
+    //   label: t["Elite Recovery & Boost Services"],
+    //   icon: <FiShield />,
+    //   badge: "HOT",
+    //   subItems: [
+    //     {
+    //       to: "/credit-boost",
+    //       label: t["Credit Score Upgrade"],
+    //       icon: <FiZap />,
+    //     },
+    //     {
+    //       to: "/stop-harassment",
+    //       label: t["Stop Blackmail"],
+    //       icon: <IoMdAlert />,
+    //     },
+    //     {
+    //       to: "/grade-enhancement",
+    //       label: t["Improve Grade"],
+    //       icon: <FiFileText />,
+    //     },
+    //     {
+    //       to: "/clear-record",
+    //       label: t["Erase Criminal Record"],
+    //       icon: <MdFolderDelete />,
+    //     },
+    //     {
+    //       to: "/crypto-recovery",
+    //       label: t["Crypto Recovery"],
+    //       icon: <RiBtcFill />,
+    //     },
+    //     {
+    //       to: "/dmv-id",
+    //       label: t["DMV & ID Services"],
+    //       icon: <FiKey />,
+    //     },
+    //   ],
+    // },
 
     {
       label: t["General Features"],
