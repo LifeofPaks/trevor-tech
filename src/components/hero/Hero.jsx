@@ -161,15 +161,15 @@ const Hero = () => {
             <div className="absolute -inset-6 bg-gradient-to-r from-cyan-500/30 via-purple-600/20 to-pink-500/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
 
             {/* Image Container */}
-            <div className="relative backdrop-blur-sm bg-white/5  rounded-3xl p-2 shadow-2xl">
+
               <img
                 src={HeroImage}
                 alt="Digital security and monitoring dashboard showcasing hack, track, and recovery tools"
-                className="relative w-full lg:!h-[600px] !h-[400px] rounded-2xl object-cover shadow-inner hidden lg:block"
+                className="relative w-full lg:!h-[600px] !h-[400px] rounded-2xl object-cover shadow-inner hidden lg:block opacity-40"
               />
               {/* Inner Glow */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-50" />
-            </div>
+              {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-50" /> */}
+
           </motion.div>
         </motion.div>
       </div>
