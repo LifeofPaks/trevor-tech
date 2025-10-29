@@ -80,7 +80,7 @@ const Testimonial = () => {
           <h2 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
             What Our Clients Say
           </h2>
-          <p className="max-w-4xl !mx-auto text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
+          <p className="max-w-4xl !mx-auto text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
             Hear from the people who’ve trusted{" "}
             <span className="text-cyan-300 font-semibold">Trevor Tech</span> to
             recover what matters most.

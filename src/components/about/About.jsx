@@ -118,7 +118,7 @@ const About = () => {
             <h1 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6">
               Your Trusted Digital Recovery & Surveillance Experts
             </h1>
-            <p className="!mt-8 max-w-4xl !mx-auto text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light">
+            <p className="!mt-8 max-w-4xl !mx-auto text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light">
               We are a professional, discreet team specializing in ethical
               digital access, recovery, and protection services. With over a
               decade of experience in cybersecurity, blockchain forensics, and
@@ -136,7 +136,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-center bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent !mb-16">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent !mb-16">
               What We Do
             </h2>
 
@@ -153,7 +153,7 @@ const About = () => {
                     >
                       <div className="drop-shadow-glow">{service.icon}</div>
                     </div>
-                    <h3 className="text-xl font-semibold text-cyan-100 !mb-2 group-hover:text-cyan-50 transition">
+                    <h3 className="lg:text-xl font-semibold text-cyan-100 !mb-2 group-hover:text-cyan-50 transition">
                       {service.title}
                     </h3>
                     <p className="text-sm text-cyan-300/80 leading-relaxed line-clamp-3">
@@ -185,7 +185,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent !mb-12">
+            <h2 className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent !mb-12">
               Why Choose Us?
             </h2>
 
@@ -202,7 +202,7 @@ const About = () => {
                   >
                     <div className="drop-shadow-glow">{item.icon}</div>
                   </div>
-                  <p className="text-base text-cyan-200 font-medium leading-snug group-hover:text-cyan-100 transition">
+                  <p className="lg:text-base text-cyan-200 font-medium leading-snug group-hover:text-cyan-100 transition">
                     {item.text}
                   </p>
                 </motion.li>
@@ -217,7 +217,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="relative text-xl sm:text-2xl font-semibold text-cyan-100 italic text-center !py-8 !px-6 bg-gradient-to-r from-cyan-400 via-white to-pink-400 bg-clip-text text-transparent">
+              <p className="relative text-base sm:text-2xl font-semibold text-cyan-100 italic text-center !py-8 !px-6 bg-gradient-to-r from-cyan-400 via-white to-pink-400 bg-clip-text text-transparent">
                 "We don't just recover data — we recover trust."
               </p>
             </motion.div>
@@ -231,10 +231,10 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent !mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent !mb-4">
               Ready to Take Back Control?
             </h2>
-            <p className="text-xl text-cyan-300/80 !mb-8">
+            <p className="text-base text-cyan-300/80 !mb-8">
               Our experts are standing by 24/7 to help you recover and secure
               your digital world.
             </p>

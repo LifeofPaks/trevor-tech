@@ -41,7 +41,7 @@ const LocationSection = () => {
 
   return (
     <>
-      <section className="relative !py-20 lg:!py-28 overflow-hidden">
+      <section className="relative !py-10  overflow-hidden">
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
           {/* Header */}
           <motion.div
@@ -54,7 +54,7 @@ const LocationSection = () => {
             <h2 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
               Live GPS Tracking
             </h2>
-            <p className="text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
+            <p className="text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
               Track real-time location of any device with{" "}
               <span className="text-cyan-300 font-semibold">
                 street-level accuracy
@@ -135,7 +135,7 @@ const LocationSection = () => {
                   Try It Now
                 </button>
                 <Link to="/demo" className="w-full lg:w-auto">
-                  <button className="flex items-center !gap-2 w-full lg:w-auto min-w-[160px] border !border-cyan-500/50 hover:bg-cyan-900/20 text-cyan-300 backdrop-blur-sm !px-8 !py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:text-cyan-100">
+                  <button className="flex items-center justify-center !gap-2 w-full lg:w-auto min-w-[160px] border !border-cyan-500/50 hover:bg-cyan-900/20 text-cyan-300 backdrop-blur-sm !px-8 !py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:text-cyan-100">
                     View Demo <HiArrowLongRight className="text-lg" />
                   </button>
                 </Link>

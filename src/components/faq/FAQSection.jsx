@@ -33,7 +33,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="relative !py-20 overflow-hidden" id="faq">
+    <section className="relative !py-10 overflow-hidden" id="faq">
       {/* Background Glow Orb */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-3xl opacity-40 pointer-events-none animate-pulse"></div>
 
@@ -49,7 +49,7 @@ const FAQSection = () => {
           <h2 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="max-w-3xl !mx-auto text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
+          <p className="max-w-3xl !mx-auto text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
             Got questions? We’ve got answers.{" "}
             <span className="hidden sm:inline">
               Here’s everything you need to know about our discreet, powerful,

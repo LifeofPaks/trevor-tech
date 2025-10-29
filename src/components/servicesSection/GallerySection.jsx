@@ -48,7 +48,7 @@ const features = [
 
 const GallerySection = () => {
   return (
-    <section className="relative !py-20 lg:!py-28 overflow-hidden">
+    <section className="relative !py-20 overflow-hidden">
       <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
         {/* Header */}
         <motion.div
@@ -61,7 +61,7 @@ const GallerySection = () => {
           <h1 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
             Financial & Crypto Recovery Solutions
           </h1>
-          <p className="max-w-4xl !mx-auto text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
+          <p className="max-w-4xl !mx-auto text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
             Take back control of{" "}
             <span className="text-cyan-300 font-semibold">
               money, credit, and digital assets
@@ -113,7 +113,7 @@ const GallerySection = () => {
 
                     {/* Text */}
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-cyan-100 group-hover:text-cyan-50 transition !mb-2">
+                      <h3 className="lg:text-xl font-bold text-cyan-100 group-hover:text-cyan-50 transition !mb-2">
                         {title}
                       </h3>
                       <p className="text-sm sm:text-base text-cyan-300/80 leading-relaxed">
