@@ -129,7 +129,7 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => {
                 const cardContent = (
-                  <div className="bg-white/80 !p-6 rounded-2xl border border-amber-100 hover:border-amber-400 shadow-md hover:shadow-lg cursor-pointer transition-all">
+                  <div className="h-[230px] bg-white/80 !p-6 rounded-2xl border border-amber-100 hover:border-amber-400 shadow-md hover:shadow-lg cursor-pointer transition-all">
                     <div
                       className={`flex items-center justify-center w-12 h-12 rounded-xl mb-4 ${service.color}`}
                     >
