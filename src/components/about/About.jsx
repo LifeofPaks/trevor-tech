@@ -115,19 +115,16 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6">
+            <h1 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6">
               Your Trusted Digital Recovery & Surveillance Experts
             </h1>
             <p className="!mt-8 max-w-4xl !mx-auto text-lg sm:text-xl text-cyan-200/80 leading-relaxed font-light">
-              We are a{" "}
-              <span className="font-bold bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent">
-                professional, discreet team
-              </span>{" "}
-              specializing in ethical digital access, recovery, and protection
-              services. With over a decade of experience in cybersecurity,
-              blockchain forensics, and remote monitoring, we help you regain
-              control — whether it's recovering stolen cryptocurrency, securing
-              hacked accounts, or protecting loved ones.
+              We are a professional, discreet team specializing in ethical
+              digital access, recovery, and protection services. With over a
+              decade of experience in cybersecurity, blockchain forensics, and
+              remote monitoring, we help you regain control — whether it's
+              recovering stolen cryptocurrency, securing hacked accounts, or
+              protecting loved ones.
             </p>
           </motion.div>
 
