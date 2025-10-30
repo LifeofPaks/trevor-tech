@@ -624,7 +624,7 @@ export default function IDServicesPage() {
                 whileHover={{ y: -10 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-violet-500/20 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity" />
-                <div className="bg-white/6 backdrop-blur-2xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/60 transition-all h-[340px] flex flex-col items-center text-center">
+                <div className="bg-white/6 backdrop-blur-2xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/60 transition-all h-[300px] flex flex-col items-center text-center">
                   <div className="w-20 h-20 bg-gradient-to-br from-cyan-500/30 to-violet-500/30 rounded-full flex items-center justify-center !mb-4 group-hover:scale-110 transition-transform">
                     <f.icon className="!w-12 !h-12 text-cyan-300 drop-shadow-glow" />
                   </div>
