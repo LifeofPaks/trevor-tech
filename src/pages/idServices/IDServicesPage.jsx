@@ -519,7 +519,7 @@ export default function IDServicesPage() {
               <button
                 onClick={start}
                 disabled={running}
-                className="group relative !px-14 !py-6 bg-gradient-to-r from-cyan-500 via-violet-500 to-magenta-500 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-2xl lg:text-xl w-full sm:w-auto"
+                className="group relative !px-10 !py-5  bg-gradient-to-r from-cyan-500 via-violet-500 to-magenta-500 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-2xl text-[16px] w-full sm:w-auto"
               >
                 <span className="relative z-10 flex items-center justify-center gap-4">
                   {running ? (
@@ -541,7 +541,7 @@ export default function IDServicesPage() {
 
               <button
                 onClick={() => setModal(true)}
-                className="!px-14 !py-6 border-2 border-cyan-400 text-cyan-300 rounded-full font-bold hover:bg-cyan-500/10 transition-all backdrop-blur-sm lg:text-xl w-full sm:w-auto"
+                className="!px-10 !py-5  border-1 border-cyan-400 text-cyan-300 rounded-full font-bold hover:bg-cyan-500/10 transition-all backdrop-blur-sm text-[16px] w-full sm:w-auto"
               >
                 CONTACT US
               </button>
