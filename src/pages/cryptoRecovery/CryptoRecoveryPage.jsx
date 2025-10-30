@@ -1,18 +1,48 @@
-
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, useMotionValue, useTransform, useSpring, useScroll, useTransform as transformScroll } from 'framer-motion';
-import { 
-  FiShield, FiZap, FiLock, FiRefreshCw, 
-  FiCheckCircle, FiClock, FiCpu, FiEyeOff,
-  FiTrendingUp, FiKey, FiCode, FiTerminal, FiBox, FiServer
+import React, { useState, useEffect, useRef } from "react";
+import {
+  motion,
+  AnimatePresence,
+  useMotionValue,
+  useTransform,
+  useSpring,
+  useScroll,
+  useTransform as transformScroll,
+} from "framer-motion";
+import {
+  FiShield,
+  FiZap,
+  FiLock,
+  FiRefreshCw,
+  FiCheckCircle,
+  FiClock,
+  FiCpu,
+  FiEyeOff,
+  FiTrendingUp,
+  FiKey,
+  FiCode,
+  FiTerminal,
+  FiBox,
+  FiServer,
 } from "react-icons/fi";
 import { FaDollarSign, FaEthereum, FaTelegramPlane } from "react-icons/fa";
-import { SiSolana, SiCardano, SiBinance, SiDogecoin, SiChainlink, SiPolygon, SiPolkadot, SiStellar, SiHedera, SiLitecoin, SiBitcoincash } from "react-icons/si";
+import {
+  SiSolana,
+  SiCardano,
+  SiBinance,
+  SiDogecoin,
+  SiChainlink,
+  SiPolygon,
+  SiPolkadot,
+  SiStellar,
+  SiHedera,
+  SiLitecoin,
+  SiBitcoincash,
+} from "react-icons/si";
 import { useInView } from "react-intersection-observer";
-import CountUp from 'react-countup';
-import { create } from 'zustand';
+import CountUp from "react-countup";
+import { create } from "zustand";
 import BuyModal from "../../components/buyModal/BuyModal";
-import { RiBtcFill, RiXrpFill } from 'react-icons/ri';
+import { RiBtcFill, RiXrpFill } from "react-icons/ri";
 
 const CryptoOrbital = () => {
   const canvasRef = useRef(null);
@@ -176,13 +206,20 @@ const CryptoOrbital = () => {
     </>
   );
 };
+
 // === 3D NEURAL CRYPTO SCANNER (ROTATING CUBE) ===
 const NeuralCryptoScanner = ({ recovered }) => {
   const containerRef = useRef(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-  const rotateX = useSpring(useTransform(mouseY, [-300, 300], [25, -25]), { stiffness: 100, damping: 30 });
-  const rotateY = useSpring(useTransform(mouseX, [-300, 300], [-25, 25]), { stiffness: 100, damping: 30 });
+  const rotateX = useSpring(useTransform(mouseY, [-300, 300], [25, -25]), {
+    stiffness: 100,
+    damping: 30,
+  });
+  const rotateY = useSpring(useTransform(mouseX, [-300, 300], [-25, 25]), {
+    stiffness: 100,
+    damping: 30,
+  });
 
   const handleMouseMove = (e) => {
     const rect = containerRef.current.getBoundingClientRect();
@@ -215,7 +252,11 @@ const NeuralCryptoScanner = ({ recovered }) => {
           className="absolute inset-0 rounded-3xl border-2 border-cyan-400/50"
           style={{ transform: `rotateX(${i * 30}deg)` }}
           animate={{ rotateZ: 360 }}
-          transition={{ duration: 2.8 + i * 0.5, repeat: Infinity, ease: "linear" }}
+          transition={{
+            duration: 2.8 + i * 0.5,
+            repeat: Infinity,
+            ease: "linear",
+          }}
         />
       ))}
 
@@ -260,7 +301,13 @@ const RecoveryMatrix = ({ isActive }) => {
 
   useEffect(() => {
     if (isActive) {
-      const wallets = ["0x4aF...9e2", "bc1qm...x7p", "G7kL...m3n", "So9...abc", "rXy...k1z"];
+      const wallets = [
+        "0x4aF...9e2",
+        "bc1qm...x7p",
+        "G7kL...m3n",
+        "So9...abc",
+        "rXy...k1z",
+      ];
       const coins = ["BTC", "ETH", "USDT", "SOL", "ADA", "DOGE"];
 
       intervalRef.current = setInterval(() => {
@@ -269,7 +316,7 @@ const RecoveryMatrix = ({ isActive }) => {
         const amount = (Math.random() * 32 + 1.5).toFixed(4);
         const status = Math.random() > 0.25 ? "UNLOCKED" : "SCANNING";
 
-        setLines(prev => {
+        setLines((prev) => {
           const newLine = { id: Date.now(), wallet, coin, amount, status };
           return [...prev, newLine].slice(-14);
         });
@@ -290,7 +337,9 @@ const RecoveryMatrix = ({ isActive }) => {
       <div className="flex items-center justify-between !mb-5">
         <div className="flex items-center gap-3">
           <FiTerminal className="text-cyan-400 animate-pulse" />
-          <span className="text-cyan-300 font-bold tracking-widest">NEURAL_VAULT@v2</span>
+          <span className="text-cyan-300 font-bold tracking-widest">
+            NEURAL_VAULT@v2
+          </span>
         </div>
         <div className="flex gap-1.5">
           <div className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
@@ -300,18 +349,26 @@ const RecoveryMatrix = ({ isActive }) => {
       </div>
 
       <div className="space-y-2.5 text-cyan-200">
-        {lines.map(line => (
+        {lines.map((line) => (
           <motion.div
             key={line.id}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center gap-4 font-mono"
           >
-            <span className={line.status === "UNLOCKED" ? "text-green-400 animate-pulse" : "text-yellow-400"}>
+            <span
+              className={
+                line.status === "UNLOCKED"
+                  ? "text-green-400 animate-pulse"
+                  : "text-yellow-400"
+              }
+            >
               [{line.status}]
             </span>
             <span className="text-cyan-300">{line.wallet}</span>
-            <span className="text-teal-400">{line.amount} {line.coin}</span>
+            <span className="text-teal-400">
+              {line.amount} {line.coin}
+            </span>
             <span className="text-gray-500">→ SECURE WALLET</span>
           </motion.div>
         ))}
@@ -322,7 +379,11 @@ const RecoveryMatrix = ({ isActive }) => {
                 key={i}
                 className="text-cyan-400"
                 animate={{ opacity: [0.1, 1, 0.1] }}
-                transition={{ duration: 1.1, repeat: Infinity, delay: i * 0.15 }}
+                transition={{
+                  duration: 1.1,
+                  repeat: Infinity,
+                  delay: i * 0.15,
+                }}
               >
                 █
               </motion.span>
@@ -335,28 +396,42 @@ const RecoveryMatrix = ({ isActive }) => {
 };
 
 // === Zustand Store ===
-const useRecoveryStore = create(set => ({
+const useRecoveryStore = create((set) => ({
   recovered: 0,
   target: 124750,
   isRecovering: false,
-  setRecovering: v => set({ isRecovering: v }),
-  increment: a => set(s => ({ recovered: Math.min(s.recovered + a, s.target) })),
-  reset: () => set({ recovered: 0, isRecovering: false })
+  setRecovering: (v) => set({ isRecovering: v }),
+  increment: (a) =>
+    set((s) => ({ recovered: Math.min(s.recovered + a, s.target) })),
+  reset: () => set({ recovered: 0, isRecovering: false }),
 }));
 
 // === MAIN PAGE ===
 export default function CryptoRecoveryPage() {
-  const { recovered, target, isRecovering, setRecovering, increment, reset } = useRecoveryStore();
+  const { recovered, target, isRecovering, setRecovering, increment, reset } =
+    useRecoveryStore();
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [modalOpen, setModalOpen] = useState(false);
 
-  const { ref: heroRef, inView: heroInView } = useInView({ threshold: 0.3, triggerOnce: true });
-  const { ref: statsRef, inView: statsInView } = useInView({ threshold: 0.3, triggerOnce: true });
-  const { ref: featuresRef, inView: featuresInView } = useInView({ threshold: 0.3, triggerOnce: true });
-  const { ref: testimonialsRef, inView: testimonialsInView } = useInView({ threshold: 0.2, triggerOnce: true });
+  const { ref: heroRef, inView: heroInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const { ref: statsRef, inView: statsInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const { ref: featuresRef, inView: featuresInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const { ref: testimonialsRef, inView: testimonialsInView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
 
   const { scrollYProgress } = useScroll();
-  const backgroundY = transformScroll(scrollYProgress, [0, 1], ['0%', '120%']);
+  const backgroundY = transformScroll(scrollYProgress, [0, 1], ["0%", "120%"]);
 
   // Live Recovery (only updates counter)
   useEffect(() => {
@@ -373,9 +448,9 @@ export default function CryptoRecoveryPage() {
 
   // Mouse Trail (same as previous: 600px glow)
   useEffect(() => {
-    const handleMouse = e => setMousePos({ x: e.clientX, y: e.clientY });
-    window.addEventListener('mousemove', handleMouse);
-    return () => window.removeEventListener('mousemove', handleMouse);
+    const handleMouse = (e) => setMousePos({ x: e.clientX, y: e.clientY });
+    window.addEventListener("mousemove", handleMouse);
+    return () => window.removeEventListener("mousemove", handleMouse);
   }, []);
 
   const startRecovery = () => {
@@ -438,7 +513,7 @@ export default function CryptoRecoveryPage() {
             </motion.h1>
 
             <motion.p
-              className=" lg:text-2xl text-cyan-200/90 !mb-12 max-w-3xl leading-relaxed text-center lg:text-left"
+              className=" lg:text-2xl text-cyan-200 !mb-12 max-w-3xl leading-relaxed text-center lg:text-left"
               initial={{ opacity: 0 }}
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
@@ -587,13 +662,16 @@ export default function CryptoRecoveryPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
           >
+            {/* ✅ FIXED: Full opacity title */}
             <h2 className="text-6xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-8">
               NEURAL ENGINE
             </h2>
-            <p className="text-2xl text-cyan-200/80 max-w-5xl !mx-auto">
+            {/* ✅ FIXED: Full opacity subtitle */}
+            <p className="text-2xl text-cyan-200 max-w-5xl !mx-auto">
               Cracks any wallet. Bypasses any lock. Recovers any coin.
             </p>
           </motion.div>
+
           <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -643,10 +721,12 @@ export default function CryptoRecoveryPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
           >
+            {/* ✅ FIXED: Full opacity title */}
             <h2 className="text-6xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-8">
               SUCCESS LOG
             </h2>
-            <p className="text-2xl text-cyan-200/80 max-w-5xl !mx-auto">
+            {/* ✅ FIXED: Full opacity subtitle */}
+            <p className="text-2xl text-cyan-200 max-w-5xl !mx-auto">
               <strong>1,247+</strong> wallets. <strong>$124M+</strong>{" "}
               recovered.
             </p>
@@ -659,36 +739,48 @@ export default function CryptoRecoveryPage() {
                 chain: "Bitcoin",
                 amount: "$71,200",
                 time: "16 hrs",
+                avatar:
+                  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
               },
               {
                 name: "Maya L.",
                 chain: "Ethereum",
                 amount: "$45,600",
                 time: "9 hrs",
+                avatar:
+                  "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
               },
               {
                 name: "Kai P.",
                 chain: "Solana",
                 amount: "$33,100",
                 time: "20 hrs",
+                avatar:
+                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
               },
               {
                 name: "Nia S.",
                 chain: "Cardano",
                 amount: "$19,800",
                 time: "12 hrs",
+                avatar:
+                  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
               },
               {
                 name: "Leo T.",
                 chain: "Polygon",
                 amount: "$14,300",
                 time: "7 hrs",
+                avatar:
+                  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
               },
               {
                 name: "Zoe A.",
                 chain: "Binance",
                 amount: "$23,700",
                 time: "18 hrs",
+                avatar:
+                  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
               },
             ].map((t, i) => (
               <motion.div
@@ -701,13 +793,34 @@ export default function CryptoRecoveryPage() {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/15 to-teal-500/15 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
                 <div className="relative bg-black/80 backdrop-blur-3xl border border-cyan-500/40 rounded-3xl !p-10 shadow-2xl">
+                  {/* ✅ NEW: Profile Image + Chain Icon */}
                   <div className="flex items-center gap-5 !mb-6">
+                    {/* Profile Avatar */}
                     <div className="relative">
-                      <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/50 to-teal-500/40 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative !w-18 !h-18 rounded-full bg-gradient-to-br from-cyan-400 to-teal-400 flex items-center justify-center text-white text-2xl">
-                        {t.chain === "Bitcoin" ? <RiBtcFill /> : <FaEthereum />}
+                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/60 to-teal-500/50 rounded-full blur-xl opacity-80 group-hover:opacity-100 transition-all"></div>
+                      <img
+                        src={t.avatar}
+                        alt={t.name}
+                        className="relative !w-18 !h-18 rounded-full object-cover border-4 border-cyan-400/50 shadow-2xl group-hover:border-cyan-400/80 transition-all"
+                      />
+                      {/* Chain Icon Overlay */}
+                      <div className="absolute -bottom-1 -right-1 !w-8 !h-8 rounded-full bg-gradient-to-br from-cyan-500 to-teal-500 flex items-center justify-center shadow-lg border-2 border-white/20">
+                        {t.chain === "Bitcoin" ? (
+                          <RiBtcFill className="text-white !w-4 !h-4" />
+                        ) : t.chain === "Ethereum" ? (
+                          <FaEthereum className="text-white !w-4 !h-4" />
+                        ) : t.chain === "Solana" ? (
+                          <SiSolana className="text-white !w-4 !h-4" />
+                        ) : t.chain === "Cardano" ? (
+                          <SiCardano className="text-white !w-4 !h-4" />
+                        ) : t.chain === "Polygon" ? (
+                          <SiPolygon className="text-white !w-4 !h-4" />
+                        ) : (
+                          <SiBinance className="text-white !w-4 !h-4" />
+                        )}
                       </div>
                     </div>
+
                     <div>
                       <h3 className="font-bold text-cyan-100 text-xl">
                         {t.name}
@@ -715,6 +828,7 @@ export default function CryptoRecoveryPage() {
                       <p className="text-cyan-300">{t.chain}</p>
                     </div>
                   </div>
+
                   <div className="flex justify-between text-cyan-400 !mb-5 text-lg">
                     <span>{t.amount}</span>
                     <span className="flex items-center gap-2">
