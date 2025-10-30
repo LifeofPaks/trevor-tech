@@ -391,7 +391,7 @@ const ImproveGradePage = () => {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.9 }}
             >
-              Upgrade Your Grades
+              Upgrade Your Academic Grades
             </motion.h1>
             <motion.p
               className="text-lg sm:text-xl lg:text-2xl text-emerald-200/90 font-light !max-w-3xl !mx-auto !mb-16 leading-relaxed"
@@ -576,7 +576,7 @@ const ImproveGradePage = () => {
 
           {/* CTA */}
           <motion.div
-            className="text-center lg:!mt-40 !mt-45"
+            className="text-center lg:!mt-0 !mt-45"
             initial={{ opacity: 0 }}
             animate={heroInView ? { opacity: 1 } : {}}
             transition={{ delay: 1.4 }}
