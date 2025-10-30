@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Navbarr from "../../components/navbar/Navbarr";
 import Hero from "../../components/hero/Hero";
 import Services from "../../components/servicesSection/Services";
@@ -7,6 +7,97 @@ import FAQSection from "../../components/faq/FAQSection";
 import Testimonial from "../../components/testimonial/Testimonial";
 import Footer from "../../components/footer/Footer";
 
+
+const ParticleBackground = () => {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext("2d");
+    let animationFrame;
+
+    // Set canvas size
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    resize();
+    window.addEventListener("resize", resize);
+
+    // Create particles
+    const particles = Array.from({ length: 80 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.7,
+      vy: (Math.random() - 0.5) * 0.7,
+      radius: Math.random() * 2.2 + 1.2,
+      opacity: Math.random() * 0.6 + 0.4,
+      hue: Math.random() * 50 + 170, // Cyan → Teal
+    }));
+
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      particles.forEach((p) => {
+        // Update position
+        p.x += p.vx;
+        p.y += p.vy;
+
+        // Bounce off walls
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+        // Draw particle
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${p.hue}, 100%, 75%, ${p.opacity})`;
+        ctx.fill();
+
+        // Glow
+        ctx.shadowBlur = 20;
+        ctx.shadowColor = `hsla(${p.hue}, 100%, 70%, 0.8)`;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        // Connect nearby particles
+        particles.forEach((other) => {
+          if (p === other) return;
+          const dx = p.x - other.x;
+          const dy = p.y - other.y;
+          const dist = Math.hypot(dx, dy);
+
+          if (dist < 150) {
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(other.x, other.y);
+            ctx.strokeStyle = `hsla(${p.hue}, 100%, 65%, ${0.15 * (1 - dist / 150)})`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        });
+      });
+
+      animationFrame = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="fixed inset-0 pointer-events-none z-0 opacity-10 lg:opacity-40"
+      style={{ mixBlendMode: "screen" }}
+    />
+  );
+};
 const LandingPage = () => {
   return (
     <div
@@ -18,6 +109,7 @@ const LandingPage = () => {
         `,
       }}
     >
+      <ParticleBackground/>
       {/* Main Content Container */}
       <div className="relative z-10">
         {/* Navbar */}

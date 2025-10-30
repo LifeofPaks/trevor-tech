@@ -75,8 +75,8 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <div className="relative inline-block w-[125%]">
-            <h1 className="text-[1.6rem] md:text-4xl lg:text-[3.6rem] font-extrabold lg:leading-[70px] leading-[40px] text-center lg:text-left">
+          <div className="relative inline-block lg:w-[125%]">
+            <h1 className="text-[2.3rem] md:text-4xl lg:text-[3.6rem] font-extrabold lg:leading-[70px] leading-[40px] text-center lg:text-left">
               Ultimate Digital Shield: Your{" "}
               <span className="relative inline-block">
                 <span
