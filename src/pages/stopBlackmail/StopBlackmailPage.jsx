@@ -179,7 +179,7 @@ const StopBlackmailPage = () => {
         {/* Dynamic Orbs */}
         <div className="absolute inset-0 pointer-events-none">
           <motion.div
-            className="absolute top-20 left-20 w-[500px] h-[500px] bg-gradient-to-r from-red-600/40 to-pink-600/30 rounded-full blur-3xl"
+            className="absolute top-20 left-20 w-[500px] h-[500px] bg-gradient-to-r from-red-600/150 to-pink-600/30 rounded-full blur-3xl"
             animate={{ x: [-100, 100, -100], y: [-80, 80, -80] }}
             transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
           />
