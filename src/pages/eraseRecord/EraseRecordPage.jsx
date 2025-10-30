@@ -28,6 +28,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { create } from "zustand";
+import BuyModal from "../../components/buyModal/BuyModal";
 
 // === Particle System for Dynamic Background ===
 const ParticleBackground = () => {
@@ -208,7 +209,7 @@ const DatabaseTerminal = ({ isActive }) => {
 
   return (
     <motion.div
-      className="bg-black/80 backdrop-blur-xl border border-red-800/50 rounded-xl p-4 font-mono text-xs h-64 overflow-hidden"
+      className="bg-black/80 backdrop-blur-xl border border-red-800/50 rounded-xl !p-4 font-mono text-xs h-64 overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
     >
@@ -264,9 +265,9 @@ export default function EraseRecordPage() {
     incrementErased,
     reset,
   } = useEraseStore();
-  const [showModal, setShowModal] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [activeTab, setActiveTab] = useState("fbi");
+  const [modalOpen, setModalOpen] = useState(false);
 
   const { ref: heroRef, inView: heroInView } = useInView({
     threshold: 0.3,
@@ -323,7 +324,7 @@ export default function EraseRecordPage() {
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
         ref={heroRef}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-red-950 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033]" />
 
         <div className="relative z-10 max-w-7xl !mx-auto !px-6 grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Text + CTA */}
@@ -387,7 +388,7 @@ export default function EraseRecordPage() {
               </button>
 
               <button
-                onClick={() => setShowModal(true)}
+                onClick={() => setModalOpen(true)}
                 className="!px-8 !py-4 border-2 border-red-500 text-red-400 rounded-full font-bold hover:bg-red-500/10 transition-all"
               >
                 CONTACT AGENT
@@ -454,49 +455,7 @@ export default function EraseRecordPage() {
           ))}
         </motion.div>
       </section>
-
-      {/* MODAL */}
-      <AnimatePresence>
-        {showModal && (
-          <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center !p-4 bg-black/80 backdrop-blur-2xl"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setShowModal(false)}
-          >
-            <motion.div
-              className="bg-gradient-to-br from-red-900/50 to-black/50 backdrop-blur-2xl border border-red-700/50 rounded-2xl !p-8 max-w-md w-full"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <h3 className="text-2xl font-bold text-yellow-400 !mb-4">
-                SECURE CONTACT
-              </h3>
-              <p className="text-red-300 !mb-6">
-                Your identity is encrypted. Response in &lt;3 minutes.
-              </p>
-
-              <div className="!space-y-3">
-                <a
-                  href="https://t.me/eraserecord_agent"
-                  className="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-cyan-600 to-blue-600 !py-3 rounded-xl font-bold text-white hover:scale-105 transition-transform"
-                >
-                  <FaTelegramPlane /> TELEGRAM (INSTANT)
-                </a>
-                <a
-                  href="mailto:erase@darkrecord.net"
-                  className="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-purple-600 to-pink-600 !py-3 rounded-xl font-bold text-white hover:scale-105 transition-transform"
-                >
-                  ENCRYPTED EMAIL
-                </a>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <BuyModal open={modalOpen} handleClose={() => setModalOpen(false)} />
     </>
   );
 }
