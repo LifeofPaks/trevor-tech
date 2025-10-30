@@ -787,8 +787,7 @@ export default function IDServicesPage() {
                 name: "Lisa K.",
                 state: "New York",
                 time: "2 hrs",
-                avatar:
-                  "https://images.unsplash.com/photo-1580489940920-b3694c5ea1f9?w=150&h=150&fit=crop&crop=face",
+                avatar: "https://randomuser.me/api/portraits/women/68.jpg",
                 desc: "Used it for banking and travel. Accepted everywhere. Amazing support team!",
               },
               {
