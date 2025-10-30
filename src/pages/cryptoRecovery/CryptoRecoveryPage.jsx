@@ -655,7 +655,10 @@ export default function CryptoRecoveryPage() {
       </section>
 
       {/* FEATURES */}
-      <section className="!relative !py-28 lg:!py-44" ref={featuresRef}>
+      <section
+        className="!relative !py-28 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92 "
+        ref={featuresRef}
+      >
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
             className="text-center !mb-24"
@@ -729,7 +732,10 @@ export default function CryptoRecoveryPage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="relative !py-28 lg:!py-44" ref={testimonialsRef}>
+      <section
+        className="relative !py-28 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92"
+        ref={testimonialsRef}
+      >
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
             className="text-center !mb-24"
@@ -806,12 +812,11 @@ export default function CryptoRecoveryPage() {
                 whileHover={{ y: -14, scale: 1.05 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/15 to-teal-500/15 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
-                <div className="bg-white/5 backdrop-blur-xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/50 transition-all group">
-                  {/* ✅ NEW: Profile Image + Chain Icon */}
+                <div className="bg-white/5 backdrop-blur-7xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/50 transition-all group">
                   <div className="flex items-center gap-5 !mb-6">
                     {/* Profile Avatar */}
                     <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/60 to-teal-500/50 rounded-full blur-xl opacity-80 group-hover:opacity-100 transition-all"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/80 to-teal-500/80 rounded-full blur-xl opacity-80 group-hover:opacity-100 transition-all"></div>
                       <img
                         src={t.avatar}
                         alt={t.name}
@@ -860,7 +865,7 @@ export default function CryptoRecoveryPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative !py-28 lg:!py-44 bg-gradient-to-b from-transparent via-[#0f0f2a]/50 to-transparent">
+      <section className="relative !py-28 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92">
         <div className="max-w-5xl !mx-auto !px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 60 }}
