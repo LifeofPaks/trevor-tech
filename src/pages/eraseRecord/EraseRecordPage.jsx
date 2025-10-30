@@ -481,15 +481,15 @@ export default function EraseRecordPage() {
         >
           {[...Array(4)].map((_, i) => (
             <div key={i} className="flex gap-20 whitespace-nowrap">
-              <span className="text-cyan-300 font-bold text-lg">
+              <span className="text-cyan-300 font-bold lg:text-lg">
                 8,921 RECORDS ERASED
               </span>
               <span className="text-teal-400">•</span>
-              <span className="text-green-400 font-bold text-lg">
+              <span className="text-green-400 font-bold lg:text-lg">
                 48HR GUARANTEE
               </span>
               <span className="text-teal-400">•</span>
-              <span className="text-cyan-200 font-bold text-lg">
+              <span className="text-cyan-200 font-bold lg:text-lg">
                 FBI • INTERPOL • NCIC • EUROPOL
               </span>
               <span className="text-teal-400">•</span>
