@@ -665,7 +665,7 @@ export default function CryptoRecoveryPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
           >
-            <h2 className="text-4xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-4">
+            <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-4">
               NEURAL ENGINE
             </h2>
             <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
@@ -718,7 +718,7 @@ export default function CryptoRecoveryPage() {
                   <div className="w-16 h-16 bg-gradient-to-r from-cyan-500/25 to-teal-500/25 rounded-2xl flex items-center justify-center !mb-3 group-hover:scale-110 transition-transform">
                     <f.icon className="!w-10 !h-10 text-cyan-300 drop-shadow-glow" />
                   </div>
-                  <h3 className="text-3xl font-bold text-cyan-100 !mb-2">
+                  <h3 className="lg:text-2xl text-xl font-bold text-cyan-100 !mb-2">
                     {f.title}
                   </h3>
                   <p className="text-cyan-200/80 text-lg leading-relaxed">
@@ -733,21 +733,19 @@ export default function CryptoRecoveryPage() {
 
       {/* TESTIMONIALS */}
       <section
-        className="relative !py-28 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92"
+        className="relative !py-12 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92"
         ref={testimonialsRef}
       >
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
-            className="text-center !mb-24"
+            className="text-center lg:!mb-24 !mb-12"
             initial={{ opacity: 0, y: 60 }}
             animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
           >
-            {/* ✅ FIXED: Full opacity title */}
-            <h2 className="text-6xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-8">
+            <h2 className="text-4xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-3">
               SUCCESS LOG
             </h2>
-            {/* ✅ FIXED: Full opacity subtitle */}
-            <p className="text-2xl text-cyan-200 max-w-5xl !mx-auto">
+            <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
               <strong>1,247+</strong> wallets. <strong>$124M+</strong>{" "}
               recovered.
             </p>
@@ -871,22 +869,22 @@ export default function CryptoRecoveryPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative !py-28 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92">
+      <section className="relative !py-12 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92">
         <div className="max-w-5xl !mx-auto !px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-6xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-8">
+            <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-2">
               UNLOCK NOW
             </h2>
-            <p className="text-3xl text-cyan-200/80 !mb-14">
+            <p className="lg:text-3xl text-cyan-200/80 !mb-14">
               Your funds are waiting.
             </p>
             <button
               onClick={() => setModalOpen(true)}
-              className="bg-gradient-to-r from-cyan-500 via-teal-500 to-green-500 hover:from-cyan-400 hover:via-teal-400 hover:to-green-400 text-white !px-20 !py-7 rounded-full font-bold text-3xl shadow-2xl hover:shadow-cyan-500/80 transition-all transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+              className="bg-gradient-to-r from-cyan-500 via-teal-500 to-green-500 hover:from-cyan-400 hover:via-teal-400 hover:to-green-400 text-white !px-8 !py-4  lg:!px-12 lg:!py-6 rounded-full font-bold lg:text-xl shadow-2xl hover:shadow-cyan-500/80 transition-all transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
             >
               CONTACT TEAM
             </button>
