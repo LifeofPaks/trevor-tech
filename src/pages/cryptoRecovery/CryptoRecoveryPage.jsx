@@ -166,7 +166,7 @@ const CryptoOrbital = () => {
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-0 opacity-55"
+        className="fixed inset-0 pointer-events-none z-0 lg:opacity-45 opacity-12"
       />
 
       {/* Floating Crypto Icons (9 total) */}
@@ -194,7 +194,7 @@ const CryptoOrbital = () => {
                   }}
                 >
                   <Icon
-                    className="w-full h-full text-cyan-300 opacity-15 drop-shadow-glow"
+                    className="w-full h-full text-cyan-300 opacity-10 drop-shadow-glow"
                     style={{ filter: "drop-shadow(0 0 14px currentColor)" }}
                   />
                 </motion.div>
