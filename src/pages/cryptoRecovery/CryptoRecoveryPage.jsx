@@ -529,7 +529,7 @@ export default function CryptoRecoveryPage() {
 
       {/* MARQUEE – SCROLLING COIN LIST */}
       <section
-        className="bg-black/70 backdrop-blur-3xl border-y border-cyan-500/30 !py-7 overflow-hidden"
+        className="backdrop-blur-3xl  !py-7 overflow-hidden"
         ref={statsRef}
       >
         <motion.div
@@ -594,6 +594,7 @@ export default function CryptoRecoveryPage() {
               Cracks any wallet. Bypasses any lock. Recovers any coin.
             </p>
           </motion.div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -635,6 +636,7 @@ export default function CryptoRecoveryPage() {
 
       {/* TESTIMONIALS */}
       <section className="relative !py-28 lg:!py-44" ref={testimonialsRef}>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
             className="text-center !mb-24"
@@ -731,6 +733,7 @@ export default function CryptoRecoveryPage() {
 
       {/* FINAL CTA */}
       <section className="relative !py-28 lg:!py-44 bg-gradient-to-b from-transparent via-[#0f0f2a]/50 to-transparent">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
         <div className="max-w-5xl !mx-auto !px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 60 }}
