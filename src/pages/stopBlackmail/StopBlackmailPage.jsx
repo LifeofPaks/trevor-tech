@@ -697,7 +697,7 @@ const StopBlackmailPage = () => {
       </section>
 
       {/* TESTIMONIALS CAROUSEL */}
-      <section className="relative !py-24 overflow-hidden">
+      <section className="relative !py-18 overflow-hidden">
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.h2
             className="text-4xl lg:text-6xl font-extrabold text-center bg-gradient-to-r from-red-400 via-pink-300 to-cyan-300 bg-clip-text text-transparent !mb-3"
@@ -760,7 +760,7 @@ const StopBlackmailPage = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative !py-24 ">
+      <section className="relative !py-18 ">
         <div className="max-w-4xl !mx-auto !px-6 text-center">
           <motion.h2
             className="text-4xl lg:text-6xl font-extrabold bg-gradient-to-r from-red-400 to-cyan-300 bg-clip-text text-transparent !mb-3"
