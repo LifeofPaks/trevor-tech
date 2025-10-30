@@ -498,11 +498,7 @@ const StopBlackmailPage = () => {
               y: globeY,
               perspective: 1000,
             }}
-            animate={{ rotateY: globeInView ? 360 : 0 }}
-            transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
           >
-            {/* Holographic Orb Background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-pink-500/15 to-teal-500/20 rounded-full blur-3xl animate-pulse"></div>
 
             {/* 3D Globe Container */}
             <motion.div
@@ -526,24 +522,13 @@ const StopBlackmailPage = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/30 to-pink-400/30 blur-xl animate-pulse"></div>
 
               {/* Globe Surface */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-brModification from-[#0f1a2e] via-[#1a0033] to-[#0a0a1f] backdrop-blur-xl border border-cyan-400/50 shadow-2xl flex items-center justify-center overflow-hidden">
+              <div className="absolute inset-0 rounded-full  flex items-center justify-center overflow-hidden">
                 {/* Realistic Globe Icon (Centered + Scaled) */}
                 <BsGlobeAsiaAustralia
                   className="w-48 h-48 sm:w-60 sm:h-60 text-cyan-300 drop-shadow-2xl"
                   style={{
                     filter:
-                      "drop-shadow(0 0 20px rgba(0, 255, 255, 0.6)) drop-shadow(0 0 40px rgba(255, 0, 100, 0.4))",
-                  }}
-                />
-
-                {/* Rotating Inner Ring (Orbit Effect) */}
-                <motion.div
-                  className="absolute inset-0 rounded-full border border-cyan-400/30"
-                  animate={{ rotate: globeInView ? -360 : 0 }}
-                  transition={{
-                    duration: 30,
-                    repeat: Infinity,
-                    ease: "linear",
+                      "drop-shadow(0 0 20px rgba(0, 255, 255, 0.2)) drop-shadow(0 0 20px rgba(255, 0, 100, 0.2))",
                   }}
                 />
               </div>
