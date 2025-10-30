@@ -23,11 +23,12 @@ import {
   FiEyeOff,
   FiAlertTriangle,
 } from "react-icons/fi";
-import { FaTelegramPlane } from "react-icons/fa";
+import { FaGlobeAmericas, FaTelegramPlane } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { create } from "zustand";
 import BuyModal from "../../components/buyModal/BuyModal";
+import { BsGlobeCentralSouthAsia } from "react-icons/bs";
 
 // === Particle Background (Cyan/Teal) ===
 const ParticleBackground = () => {
@@ -105,22 +106,34 @@ const ParticleBackground = () => {
 };
 
 // === 3D Interactive Globe (Cyan Glow) ===
-const DynamicGlobe = ({ erasedCount }) => {
-  const globeRef = useRef(null);
+
+const DynamicGlobe = ({ erasedCount = 0 }) => {
+  const globeRef = useRef<HTMLDivElement>(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const rotateX = useSpring(useTransform(mouseY, [-400, 400], [20, -20]), {
-    stiffness: 120,
-    damping: 35,
-  });
-  const rotateY = useSpring(useTransform(mouseX, [-400, 400], [-20, 20]), {
-    stiffness: 120,
-    damping: 35,
-  });
+  // Mouse tilt (interactive)
+  const rotateX = useSpring(
+    useTransform(mouseY, [-400, 400], [20, -20]),
+    { stiffness: 120, damping: 35 }
+  );
+  const rotateY = useSpring(
+    useTransform(mouseX, [-400, 400], [-20, 20]),
+    { stiffness: 120, damping: 35 }
+  );
+
+  // Auto slow rotation (always on)
+  const autoRotate = useSpring(0, { stiffness: 50, damping: 30 });
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      autoRotate.set(autoRotate.get() + 360);
+    }, 32000); // 32s full rotation
+    return () => clearInterval(interval);
+  }, [autoRotate]);
 
   const handleMouseMove = (e) => {
-    const rect = globeRef.current.getBoundingClientRect();
+    const rect = globeRef.current?.getBoundingClientRect();
+    if (!rect) return;
     mouseX.set(e.clientX - rect.left - rect.width / 2);
     mouseY.set(e.clientY - rect.top - rect.height / 2);
   };
@@ -128,39 +141,88 @@ const DynamicGlobe = ({ erasedCount }) => {
   return (
     <motion.div
       ref={globeRef}
-      className="relative w-96 h-96 cursor-grab active:cursor-grabbing"
-      style={{ rotateX, rotateY, perspective: 1200 }}
+      className="relative w-96 h-96 cursor-grab active:cursor-grabbing select-none"
+      style={{
+        rotateX,
+        rotateY: useTransform([rotateY, autoRotate], ([y, a]) => y + a),
+        perspective: 1200,
+      }}
       onMouseMove={handleMouseMove}
       whileHover={{ scale: 1.06 }}
+      whileTap={{ scale: 1.02 }}
     >
+      {/* GLOW BACKGROUND */}
       <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-600/40 via-teal-600/30 to-purple-600/20 blur-3xl opacity-70" />
-      <div className="absolute inset-6 rounded-full bg-gradient-to-t from-[#0a0a1f]/90 via-[#0f0f2a]/80 to-[#1a0033]/70 backdrop-blur-3xl border border-cyan-500/50 shadow-2xl">
-        <FiGlobe className="w-full h-full text-cyan-400 opacity-25" />
-      </div>
 
-      {/* Erased Nodes (Pulsing Cyan) */}
-      {Array.from({ length: Math.min(erasedCount / 80, 45) }).map((_, i) => {
-        const angle = (i / 45) * Math.PI * 2;
-        const radius = 140 + Math.random() * 60;
-        const x = 192 + Math.cos(angle) * radius;
-        const y = 192 + Math.sin(angle) * radius;
+      {/* ORBITAL RING (SCANNING EFFECT) */}
+      {[0, 1].map((i) => (
+        <motion.div
+          key={i}
+          className="absolute inset-0 rounded-full border border-cyan-400/40"
+          style={{
+            transform: `rotateX(${i * 45}deg)`,
+            opacity: 0.5 + i * 0.3,
+          }}
+          animate={{ rotateZ: 360 }}
+          transition={{
+            duration: 3 + i * 1.5,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+        />
+      ))}
 
-        return (
-          <motion.div
-            key={i}
-            className="absolute w-4 h-4 bg-cyan-400 rounded-full"
-            style={{
-              left: x,
-              top: y,
-              boxShadow:
-                "0 0 24px rgba(0, 255, 255, 0.9), 0 0 48px rgba(0, 255, 255, 0.6)",
-            }}
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: [0, 1.8, 0], opacity: [0, 1, 0] }}
-            transition={{ duration: 1.8, repeat: Infinity, delay: i * 0.08 }}
-          />
-        );
-      })}
+      {/* CORE GLOBE */}
+      <motion.div
+        className="absolute inset-6 rounded-full bg-gradient-to-t from-[#0a0a1f]/90 via-[#0f0f2a]/80 to-[#1a0033]/70 backdrop-blur-3xl border border-cyan-500/50 shadow-2xl overflow-hidden"
+        animate={{ rotateY: 360 }}
+        transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-full" />
+        <FaGlobeAmericas className="w-full h-full text-cyan-400 opacity-25" />
+      </motion.div>
+
+      {/* PULSING ERASED NODES (CIRCLES) */}
+      {Array.from({ length: Math.min(Math.floor(erasedCount / 80), 45) }).map(
+        (_, i) => {
+          const angle = (i / 45) * Math.PI * 2;
+          const radius = 140 + (i % 3) * 25 + Math.random() * 30;
+          const x = 192 + Math.cos(angle) * radius;
+          const y = 192 + Math.sin(angle) * radius;
+
+          return (
+            <motion.div
+              key={i}
+              className="absolute w-4 h-4 bg-cyan-400 rounded-full"
+              style={{
+                left: x,
+                top: y,
+                boxShadow: `
+                0 0 20px rgba(0, 255, 255, 0.9),
+                0 0 40px rgba(0, 255, 255, 0.6),
+                0 0 80px rgba(6, 182, 212, 0.4)
+              `,
+              }}
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{
+                scale: [0, 1.6, 0],
+                opacity: [0, 1, 0],
+                boxShadow: [
+                  `0 0 20px rgba(0,255,255,0.9), 0 0 40px rgba(0,255,255,0.6), 0 0 80px rgba(6,182,212,0.4)`,
+                  `0 0 30px rgba(0,255,255,1), 0 0 60px rgba(0,255,255,0.8), 0 0 120px rgba(6,182,212,0.7)`,
+                  `0 0 20px rgba(0,255,255,0.9), 0 0 40px rgba(0,255,255,0.6), 0 0 80px rgba(6,182,212,0.4)`,
+                ],
+              }}
+              transition={{
+                duration: 1.8,
+                repeat: Infinity,
+                delay: i * 0.08,
+                ease: "easeInOut",
+              }}
+            />
+          );
+        }
+      )}
     </motion.div>
   );
 };
