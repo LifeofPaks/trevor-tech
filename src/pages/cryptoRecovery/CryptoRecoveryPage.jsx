@@ -604,7 +604,7 @@ export default function CryptoRecoveryPage() {
 
       {/* MARQUEE – SCROLLING COIN LIST */}
       <section
-        className="backdrop-blur-3xl  !py-7 overflow-hidden"
+        className="backdrop-blur-3xl  lg:!py-7 !py-3 overflow-hidden"
         ref={statsRef}
       >
         <motion.div
@@ -640,11 +640,11 @@ export default function CryptoRecoveryPage() {
                   className="flex items-center gap-3 !px-6 !py-2 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-full border border-cyan-500/30 backdrop-blur-sm"
                 >
                   {coin.Icon ? (
-                    <coin.Icon className="w-6 h-6 text-cyan-300 drop-shadow-glow" />
+                    <coin.Icon className="lg:w-6 lg:h-6 text-cyan-300 drop-shadow-glow" />
                   ) : (
                     <div className="w-6 h-6 rounded-full bg-gradient-to-br from-cyan-400 to-teal-400" />
                   )}
-                  <span className="text-cyan-200 font-bold text-xl tracking-wider">
+                  <span className="text-cyan-200 font-bold lg:text-xl tracking-wider">
                     {coin.name}
                   </span>
                 </div>
@@ -714,7 +714,7 @@ export default function CryptoRecoveryPage() {
                 transition={{ delay: i * 0.16 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/15 to-teal-500/15 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity" />
-                <div className="bg-white/5 backdrop-blur-xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/50 transition-all group h-[300px]">
+                <div className="bg-white/5 !backdrop-blur-sm border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/50 transition-all group h-[300px]">
                   <div className="w-16 h-16 bg-gradient-to-r from-cyan-500/25 to-teal-500/25 rounded-2xl flex items-center justify-center !mb-3 group-hover:scale-110 transition-transform">
                     <f.icon className="!w-10 !h-10 text-cyan-300 drop-shadow-glow" />
                   </div>
@@ -762,6 +762,7 @@ export default function CryptoRecoveryPage() {
                 time: "16 hrs",
                 avatar:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+                desc: "Recovered my lost Bitcoin wallet in record time, absolutely grateful!",
               },
               {
                 name: "Maya L.",
@@ -769,6 +770,7 @@ export default function CryptoRecoveryPage() {
                 amount: "$45,600",
                 time: "9 hrs",
                 avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+                desc: "Quick, transparent, and professional recovery. I got my ETH back safely!",
               },
               {
                 name: "Kai P.",
@@ -777,6 +779,7 @@ export default function CryptoRecoveryPage() {
                 time: "20 hrs",
                 avatar:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+                desc: "I thought my SOL was gone forever, they proved me wrong!",
               },
               {
                 name: "Nia S.",
@@ -785,6 +788,7 @@ export default function CryptoRecoveryPage() {
                 time: "12 hrs",
                 avatar:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+                desc: "Simple process, constant updates, and full ADA recovery. Highly recommend!",
               },
               {
                 name: "Leo T.",
@@ -793,6 +797,7 @@ export default function CryptoRecoveryPage() {
                 time: "7 hrs",
                 avatar:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+                desc: "Recovered my MATIC faster than expected, excellent support throughout.",
               },
               {
                 name: "Zoe A.",
@@ -801,6 +806,7 @@ export default function CryptoRecoveryPage() {
                 time: "18 hrs",
                 avatar:
                   "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+                desc: "Lost access to my BNB wallet, fully restored within a day. Impressive!",
               },
             ].map((t, i) => (
               <motion.div
@@ -854,8 +860,8 @@ export default function CryptoRecoveryPage() {
                       <FiClock /> {t.time}
                     </span>
                   </div>
-                  <p className="text-cyan-200/90 italic text-lg leading-relaxed">
-                    "Fully recovered. No seed."
+                  <p className="text-cyan-200/90 italic  leading-relaxed">
+                    {t.desc}
                   </p>
                 </div>
               </motion.div>
