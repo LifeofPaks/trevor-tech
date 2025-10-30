@@ -234,8 +234,8 @@ const ImproveGradePage = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               Watch your transcript{" "}
-              <span className="text-emerald-300 font-bold">transform live</span>{" "}
-              — from failing to <strong className="text-lime-300">A+</strong> in
+              <span className="text-emerald-300 font-bold">transform live, </span>{" "}
+              from failing to <strong className="text-lime-300">A+</strong> in
               any university, worldwide. <strong>100% undetectable</strong>.
             </motion.p>
           </motion.div>
@@ -510,8 +510,8 @@ const ImproveGradePage = () => {
               animate={featuresInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              We connect directly to <strong>any university portal</strong> —
-              Blackboard, Canvas, Moodle, SAP — and update your grades in real
+              We connect directly to <strong>any university portal</strong>, 
+              Blackboard, Canvas, Moodle, SAP  and update your grades in real
               time.{" "}
               <span className="inline-block px-3 py-1 mx-1 bg-white/5 shadow-lg">
                 <span className="bg-gradient-to-r from-emerald-300 to-lime-300 bg-clip-text text-transparent font-semibold">
@@ -601,7 +601,7 @@ const ImproveGradePage = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
             >
               Students from <strong>190+ countries</strong> have upgraded to
-              A/A+ — unlocking scholarships, jobs, visas, and dreams.
+              A/A+,  unlocking scholarships, jobs, visas, and dreams.
             </motion.p>
           </motion.div>
 
