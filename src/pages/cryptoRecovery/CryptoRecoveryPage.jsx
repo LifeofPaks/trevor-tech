@@ -42,7 +42,7 @@ import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { create } from "zustand";
 import BuyModal from "../../components/buyModal/BuyModal";
-import { RiBtcFill, RiXrpFill } from "react-icons/ri";
+import { RiBitCoinFill, RiBtcFill, RiXrpFill } from "react-icons/ri";
 
 const CryptoOrbital = () => {
   const canvasRef = useRef(null);
@@ -242,7 +242,7 @@ const NeuralCryptoScanner = ({ recovered }) => {
         transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl" />
-        <FiBox className="!w-full !h-full text-cyan-300 opacity-20 p-8" />
+        <RiBtcFill className="!w-full !h-full text-cyan-300 opacity-20 p-8" />
       </motion.div>
 
       {/* Scanning Rings */}
