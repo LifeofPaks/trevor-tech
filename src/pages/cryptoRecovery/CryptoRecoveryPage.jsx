@@ -430,19 +430,19 @@ export default function CryptoRecoveryPage() {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.8 }}
             >
-              <div>
+              <div className='flex items-center justify-center flex-col'>
                 <p className="text-6xl font-black text-cyan-300">
                   $<CountUp end={recovered} duration={0.6} separator="," />
                 </p>
                 <p className="text-cyan-200 !mt-2 text-lg">RECOVERED</p>
               </div>
-              <div>
+<div className='flex items-center justify-center flex-col'>
                 <p className="text-6xl font-black text-teal-400">
                   <CountUp end={Math.floor(recovered / 800)} duration={0.6} />K
                 </p>
                 <p className="text-cyan-200 !mt-2 text-lg">WALLETS</p>
               </div>
-              <div>
+<div className='flex items-center justify-center flex-col'>
                 <p className="text-6xl font-black text-green-400 flex items-center gap-3">
                   100% <FiCheckCircle />
                 </p>
