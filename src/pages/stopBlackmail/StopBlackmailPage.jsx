@@ -21,6 +21,7 @@ import { FaEnvelope, FaTelegramPlane } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { useMouse } from "react-use";
 import BuyModal from "../../components/buyModal/BuyModal";
+import { BsGlobeAsiaAustralia } from "react-icons/bs";
 
 
 
@@ -353,7 +354,6 @@ const StopBlackmailPage = () => {
               </div>
             </motion.div>
           </div>
-          
 
           {/* CTA */}
           <motion.div
@@ -476,48 +476,117 @@ const StopBlackmailPage = () => {
           >
             {erased.toLocaleString()}+ Threats Erased Worldwide
           </motion.h2>
-
           <motion.p
             className="text-center text-sm sm:text-base lg:text-lg text-cyan-200/90 font-light !mb-12 !pt-8 max-w-4xl !mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={globeInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            <strong className="text-cyan-100">All</strong>{" "}
-            private files, videos, messages, and doxxing records permanently
-            deleted from{" "}
+            <strong className="text-cyan-100">All</strong> private files,
+            videos, messages, and doxxing records permanently deleted from{" "}
             <strong className="text-cyan-100">47+ platforms</strong>, including
             Telegram, Mega, Google Drive, iCloud, and dark web archives.
             <em className="block mt-2">
               Real-time tracking. Global reach. Zero recovery.
             </em>
           </motion.p>
+
           <motion.div
-            className="relative !h-96"
-            style={{ x: globeX, y: globeY }}
-            animate={{ rotate: globeInView ? 360 : 0 }}
+            className="relative !h-80 sm:!h-96 w-full flex items-center justify-center"
+            style={{
+              x: globeX,
+              y: globeY,
+              perspective: 1000,
+            }}
+            animate={{ rotateY: globeInView ? 360 : 0 }}
             transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute inset-8 bg-white/5 backdrop-blur-xl rounded-full border border-cyan-400/40"></div>
-            {[...Array(12)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-3 h-3 bg-red-400 rounded-full"
-                style={{
-                  top: `${20 + ((i * 30) % 70)}%`,
-                  left: `${20 + ((i * 40) % 70)}%`,
-                }}
-                animate={{ scale: [1, 1.5, 1], opacity: [0.6, 1, 0.6] }}
-                transition={{ duration: 2, repeat: Infinity, delay: i * 0.2 }}
-              />
-            ))}
+            {/* Holographic Orb Background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-pink-500/15 to-teal-500/20 rounded-full blur-3xl animate-pulse"></div>
+
+            {/* 3D Globe Container */}
+            <motion.div
+              className="relative w-64 h-64 sm:w-80 sm:h-80"
+              style={{
+                transformStyle: "preserve-3d",
+                rotateX: useTransform(
+                  mouseY,
+                  [0, window.innerHeight],
+                  [-10, 10]
+                ),
+                rotateY: useTransform(
+                  mouseX,
+                  [0, window.innerWidth],
+                  [-15, 15]
+                ),
+              }}
+              whileHover={{ scale: 1.05 }}
+            >
+              {/* Outer Glow Ring */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/30 to-pink-400/30 blur-xl animate-pulse"></div>
+
+              {/* Globe Surface */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-brModification from-[#0f1a2e] via-[#1a0033] to-[#0a0a1f] backdrop-blur-xl border border-cyan-400/50 shadow-2xl flex items-center justify-center overflow-hidden">
+                {/* Realistic Globe Icon (Centered + Scaled) */}
+                <BsGlobeAsiaAustralia
+                  className="w-48 h-48 sm:w-60 sm:h-60 text-cyan-300 drop-shadow-2xl"
+                  style={{
+                    filter:
+                      "drop-shadow(0 0 20px rgba(0, 255, 255, 0.6)) drop-shadow(0 0 40px rgba(255, 0, 100, 0.4))",
+                  }}
+                />
+
+                {/* Rotating Inner Ring (Orbit Effect) */}
+                <motion.div
+                  className="absolute inset-0 rounded-full border border-cyan-400/30"
+                  animate={{ rotate: globeInView ? -360 : 0 }}
+                  transition={{
+                    duration: 30,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                />
+              </div>
+
+              {/* Threat Nodes — Pulsing Red Dots on Globe */}
+              {[
+                { top: "28%", left: "32%", delay: 0 }, // Australia
+                { top: "35%", left: "48%", delay: 0.3 }, // China
+                { top: "38%", left: "22%", delay: 0.6 }, // India
+                { top: "30%", left: "65%", delay: 0.9 }, // Japan
+                { top: "45%", left: "40%", delay: 1.2 }, // Indonesia
+                { top: "25%", left: "55%", delay: 1.5 }, // Korea
+                { top: "40%", left: "30%", delay: 1.8 }, // SE Asia
+                { top: "32%", left: "42%", delay: 2.1 }, // Philippines
+              ].map((node, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute w-3 h-3 bg-red-500 rounded-full shadow-lg"
+                  style={{
+                    top: node.top,
+                    left: node.left,
+                    boxShadow: "0 0 12px #ff0066, 0 0 20px #ff0066",
+                  }}
+                  animate={{
+                    scale: [1, 1.8, 1],
+                    opacity: [0.7, 1, 0.7],
+                  }}
+                  transition={{
+                    duration: 1.8,
+                    repeat: Infinity,
+                    delay: node.delay,
+                  }}
+                >
+                  <div className="absolute inset-0 rounded-full bg-red-400 blur-md animate-ping"></div>
+                </motion.div>
+              ))}
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* FEATURES — 3D FLIP CARDS */}
-      <section className="relative !py-24" ref={featuresRef}>
+      <section className="relative !pb-15" ref={featuresRef}>
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <div className="grid grid-cols-1 md:grid-cols-3 !gap-8">
             {[
