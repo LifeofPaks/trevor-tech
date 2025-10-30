@@ -166,7 +166,7 @@ const NeuralCryptoScanner = ({ recovered }) => {
   return (
     <motion.div
       ref={containerRef}
-      className="relative !w-96 !h-96 cursor-grab active:cursor-grabbing"
+      className="relative lg:!w-96 lg:!h-96 w-76 h-76 cursor-grab active:cursor-grabbing lg:my-0 !my-10"
       style={{ rotateX, rotateY, perspective: 1600 }}
       onMouseMove={handleMouseMove}
       whileHover={{ scale: 1.08 }}
