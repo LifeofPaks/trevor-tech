@@ -655,24 +655,21 @@ export default function CryptoRecoveryPage() {
       </section>
 
       {/* FEATURES */}
-      <section className="relative !py-28 lg:!py-44" ref={featuresRef}>
+      <section className="!relative !py-28 lg:!py-44" ref={featuresRef}>
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
             className="text-center !mb-24"
             initial={{ opacity: 0, y: 60 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
           >
-            {/* ✅ FIXED: Full opacity title */}
+            <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
             <h2 className="text-6xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-8">
               NEURAL ENGINE
             </h2>
-            {/* ✅ FIXED: Full opacity subtitle */}
             <p className="text-2xl text-cyan-200 max-w-5xl !mx-auto">
               Cracks any wallet. Bypasses any lock. Recovers any coin.
             </p>
           </motion.div>
-
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -747,8 +744,7 @@ export default function CryptoRecoveryPage() {
                 chain: "Ethereum",
                 amount: "$45,600",
                 time: "9 hrs",
-                avatar:
-                  "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+                avatar: "https://randomuser.me/api/portraits/men/32.jpg",
               },
               {
                 name: "Kai P.",
