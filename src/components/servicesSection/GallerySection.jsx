@@ -143,7 +143,7 @@ const GallerySection = () => {
                 <img
                   src={CryptoImage}
                   alt="Crypto recovery dashboard"
-                  className="relative w-full lg:h-[600px] h-[400px] rounded-2xl object-cover shadow-inner"
+                  className="relative w-full lg:h-[500px] h-[400px] rounded-2xl object-cover shadow-inner"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-40 pointer-events-none"></div>
