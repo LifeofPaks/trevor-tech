@@ -215,7 +215,7 @@ const DatabaseTerminal = ({ isActive }) => {
 
   return (
     <motion.div
-      className="bg-[#0a0a1f]/80 backdrop-blur-2xl border border-cyan-500/40 rounded-2xl !p-5 font-mono text-xs h-72 overflow-hidden shadow-2xl"
+      className="bg-[#0a0a1f]/80 backdrop-blur-2xl border border-cyan-500/40 rounded-2xl !p-5 font-mono text-xs h-72 overflow-hidden shadow-2xl !mb-5"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -347,7 +347,7 @@ export default function EraseRecordPage() {
 
       {/* HERO */}
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden lg:!pt-[6rem] !pt-[4rem]"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden lg:!pt-[6rem] !pt-[10rem]"
         ref={heroRef}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033]" />
@@ -374,7 +374,7 @@ export default function EraseRecordPage() {
             transition={{ duration: 0.9 }}
           >
             <motion.h1
-              className="text-5xl lg:text-[3rem] font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-6 leading-tight"
+              className="text-center lg:text-left text-4xl lg:text-[3rem] font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-6 leading-tight"
               initial={{ opacity: 0, y: 40 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
@@ -385,7 +385,7 @@ export default function EraseRecordPage() {
             </motion.h1>
 
             <motion.p
-              className="text-lg lg:text-xl text-cyan-200/90 !mb-10 max-w-2xl leading-relaxed"
+              className=" lg:text-xl text-cyan-200/90 !mb-10 max-w-2xl leading-relaxed text-center lg:text-left"
               initial={{ opacity: 0 }}
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
@@ -398,8 +398,28 @@ export default function EraseRecordPage() {
               . No logs. No recovery.
             </motion.p>
 
+            {/* Stats */}
             <motion.div
-              className="flex flex-wrap gap-5"
+              className="grid grid-cols-2 gap-8 text-left"
+              initial={{ opacity: 0 }}
+              animate={heroInView ? { opacity: 1 } : {}}
+              transition={{ delay: 0.8 }}
+            >
+              <div>
+                <p className="lg:text-6xl text-5xl font-black text-cyan-300 ">
+                  <CountUp end={erasedFiles} duration={0.6} separator="," />
+                </p>
+                <p className="text-cyan-200 mt-1">FILES DELETED</p>
+              </div>
+              <div>
+                <p className="lg:text-6xl text-5xl font-black text-green-400 flex items-center gap-2">
+                  100% <FiCheckCircle />
+                </p>
+                <p className="text-cyan-200 !mt-1">SUCCESS RATE</p>
+              </div>
+            </motion.div>
+            <motion.div
+              className="flex lg:flex-row flex-col gap-5 !mt-12 "
               initial={{ opacity: 0, y: 30 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6 }}
@@ -409,7 +429,7 @@ export default function EraseRecordPage() {
                 disabled={isErasing}
                 className="group relative !px-10 !py-5 bg-gradient-to-r from-cyan-500 to-teal-600 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-xl"
               >
-                <span className="relative z-10 flex items-center gap-3 text-lg">
+                <span className="relative z-10 flex items-center justify-center gap-3 text-lg">
                   {isErasing ? (
                     <>
                       ERASING LIVE <FiZap className="animate-pulse" />
@@ -433,27 +453,6 @@ export default function EraseRecordPage() {
               >
                 CONTACT AGENT
               </button>
-            </motion.div>
-
-            {/* Stats */}
-            <motion.div
-              className="!mt-12 grid grid-cols-2 gap-8 text-left"
-              initial={{ opacity: 0 }}
-              animate={heroInView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.8 }}
-            >
-              <div>
-                <p className="text-6xl font-black text-cyan-300">
-                  <CountUp end={erasedFiles} duration={0.6} separator="," />
-                </p>
-                <p className="text-cyan-200 mt-1">FILES DELETED</p>
-              </div>
-              <div>
-                <p className="text-6xl font-black text-green-400 flex items-center gap-2">
-                  100% <FiCheckCircle />
-                </p>
-                <p className="text-cyan-200 !mt-1">SUCCESS RATE</p>
-              </div>
             </motion.div>
           </motion.div>
 
