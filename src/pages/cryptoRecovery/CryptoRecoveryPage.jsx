@@ -742,7 +742,7 @@ export default function CryptoRecoveryPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
           >
-            <h2 className="text-4xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-3">
+            <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-3">
               SUCCESS LOG
             </h2>
             <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
