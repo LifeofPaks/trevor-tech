@@ -19,10 +19,11 @@ import {
   FiTrash2,
 } from "react-icons/fi";
 import { FaEnvelope, FaTelegramPlane } from "react-icons/fa";
-import { BsGlobeAsiaAustralia } from "react-icons/bs";
+import { BsGlobeAsiaAustralia, BsInstagram, BsMessenger, BsSnapchat, BsWhatsapp } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
 import { useMouse } from "react-use";
 import BuyModal from "../../components/buyModal/BuyModal";
+import { Mail } from "lucide-react";
 
 // === TESTIMONIALS ===
 const testimonials = [
@@ -122,12 +123,12 @@ const NebulaParticles = () => {
   // Orbiting threat icons
   useEffect(() => {
     const icons = [
-      { Icon: FiSmartphone, hue: 0 },
-      { Icon: FiAlertTriangle, hue: 30 },
+      { Icon: BsWhatsapp, hue: 0 },
+      { Icon: BsInstagram, hue: 30 },
       { Icon: FaTelegramPlane, hue: 200 },
-      { Icon: FiEyeOff, hue: 280 },
-      { Icon: FiLock, hue: 160 },
-      { Icon: FiTrash2, hue: 320 },
+      { Icon: Mail, hue: 280 },
+      { Icon: BsSnapchat, hue: 160 },
+      { Icon: BsMessenger, hue: 320 },
     ];
     const orbs = Array.from({ length: 5 }, (_, i) => ({
       radius: 180 + i * 110,
@@ -203,7 +204,7 @@ const NebulaParticles = () => {
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-0 opacity-60"
+        className="fixed inset-0 pointer-events-none z-0 opacity-40"
       />
 
       {/* Orbiting threat icons */}
@@ -231,9 +232,9 @@ const NebulaParticles = () => {
                   }}
                 >
                   <Icon
-                    className={`w-full h-full ${
-                      p.icon.hue < 100 ? "text-red-400" : "text-cyan-400"
-                    } opacity-30 drop-shadow-glow`}
+                    className={`w-8 h-8 ${
+                       "text-cyan-400"
+                    } opacity-15 drop-shadow-glow`}
                     style={{ filter: "drop-shadow(0 0 20px currentColor)" }}
                   />
                 </motion.div>
