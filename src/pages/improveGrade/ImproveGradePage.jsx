@@ -17,10 +17,11 @@ import {
   FiAward,
   FiClock,
 } from "react-icons/fi";
-import { FaEnvelope, FaTelegramPlane } from "react-icons/fa";
+import { FaBookReader, FaEnvelope, FaTelegramPlane, FaUserGraduate } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { useMouse } from "react-use";
 import BuyModal from "../../components/buyModal/BuyModal";
+import { GiGraduateCap } from "react-icons/gi";
 
 // === 12 Real-Looking University Testimonials ===
 const testimonials = [
@@ -147,9 +148,9 @@ const NebulaParticles = () => {
       { Icon: FiGlobe, hue: 150 },
       { Icon: FiAward, hue: 160 },
       { Icon: FiTrendingUp, hue: 140 },
-      { Icon: FiShield, hue: 170 },
-      { Icon: FiZap, hue: 130 },
-      { Icon: FiLock, hue: 155 },
+      { Icon: GiGraduateCap, hue: 170 },
+      { Icon: FaUserGraduate, hue: 130 },
+      { Icon: FaBookReader, hue: 155 },
     ];
     const orbs = Array.from({ length: 6 }, (_, i) => ({
       radius: 220 + i * 90,
@@ -224,7 +225,7 @@ const NebulaParticles = () => {
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-0 opacity-70"
+        className="fixed inset-0 pointer-events-none z-0 lg:opacity-20 opacity-8"
       />
 
       {/* Orbiting university icons */}
@@ -252,7 +253,7 @@ const NebulaParticles = () => {
                   }}
                 >
                   <Icon
-                    className="w-full h-full text-emerald-400 opacity-40 drop-shadow-glow"
+                    className="w-10 h-10 text-emerald-400 lg:opacity-10 opacity-7 drop-shadow-glow"
                     style={{ filter: "drop-shadow(0 0 24px currentColor)" }}
                   />
                 </motion.div>
