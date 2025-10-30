@@ -244,7 +244,7 @@ const ImproveGradePage = () => {
           <div className="relative !max-w-5xl !mx-auto !h-96">
             {/* Left: Live Transcript Card */}
             <motion.div
-              className="absolute top-0 left-10 w-80 h-96 bg-gradient-to-br from-emerald-600/80 to-lime-600/80 backdrop-blur-xl rounded-2xl border border-emerald-400/60 shadow-2xl overflow-hidden"
+              className="absolute top-0 left-30 lg:left-10 w-80 h-96 bg-gradient-to-br from-emerald-600/80 to-lime-600/80 backdrop-blur-xl rounded-2xl border border-emerald-400/60 shadow-2xl overflow-hidden"
               initial={{ x: -350, y: 80, rotate: -25 }}
               animate={heroInView ? { x: -100, y: -20, rotate: -12 } : {}}
               transition={{
@@ -339,7 +339,7 @@ const ImproveGradePage = () => {
 
             {/* Central Grade Orb */}
             <motion.div
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72"
+              className="absolute top-130 lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72"
               initial={{ scale: 0, opacity: 0 }}
               animate={heroInView ? { scale: 1, opacity: 1 } : {}}
               transition={{ delay: 1, type: "spring", stiffness: 100 }}
@@ -385,7 +385,7 @@ const ImproveGradePage = () => {
 
           {/* CTA */}
           <motion.div
-            className="text-center !mt-10"
+            className="text-center lg:!mt-10 !mt-80"
             initial={{ opacity: 0, y: 30 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 1.2, duration: 0.8 }}
