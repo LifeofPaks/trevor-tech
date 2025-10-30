@@ -497,7 +497,7 @@ const StopBlackmailPage = () => {
 
           {/* CTA */}
           <motion.div
-            className="text-center lg:!mt-36 !mt-24"
+            className="text-center lg:!mt-36 !mt-104"
             initial={{ opacity: 0 }}
             animate={heroInView ? { opacity: 1 } : {}}
             transition={{ delay: 1.6 }}
