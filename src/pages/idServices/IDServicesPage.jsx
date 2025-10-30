@@ -718,8 +718,8 @@ export default function IDServicesPage() {
                 whileHover={{ y: -14, scale: 1.04 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/15 to-violet-500/15 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
-                <div className="bg-white/6 backdrop-blur-2xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/60 transition-all flex flex-col items-center text-center">
-                  <div className="relative !w-24 !h-24 !mb-6">
+                <div className="bg-white/6 backdrop-blur-2xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/60 transition-all flex flex-col items-center text-center h-[310px]">
+                  <div className="relative !w-24 !h-24 !mb-3">
                     <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-violet-400 rounded-full blur-xl opacity-70" />
                     <img
                       src={t.avatar}
@@ -736,9 +736,9 @@ export default function IDServicesPage() {
                   <h3 className="font-bold text-cyan-100 text-xl !mb-1">
                     {t.name}
                   </h3>
-                  <p className="text-cyan-300 !mb-4">{t.state}</p>
+                  <p className="text-cyan-300 !mb-2">{t.state}</p>
 
-                  <div className="flex justify-between w-full text-cyan-400 !mb-4 text-sm">
+                  <div className="flex justify-between w-full text-cyan-400 !mb-2 text-sm">
                     <span className="flex items-center gap-2">
                       <FiClock /> {t.time}
                     </span>
