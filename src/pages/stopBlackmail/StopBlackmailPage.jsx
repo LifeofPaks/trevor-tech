@@ -499,7 +499,6 @@ const StopBlackmailPage = () => {
               perspective: 1000,
             }}
           >
-
             {/* 3D Globe Container */}
             <motion.div
               className="relative w-64 h-64 sm:w-80 sm:h-80"
@@ -643,35 +642,52 @@ const StopBlackmailPage = () => {
               Every trace erased. Every platform wiped. Every future protected.
             </em>
           </motion.p>
-          <motion.div
-            className="flex gap-8"
-            animate={{ x: [0, -100 * testimonials.length + 100] }}
-            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-            whileHover={{ animationPlayState: "paused" }}
-          >
-            {[...testimonials, ...testimonials].map((t, i) => (
-              <div
-                key={i}
-                className="min-w-[320px] bg-white/5 backdrop-blur-xl border border-red-500/30 rounded-2xl !p-6"
-              >
-                <div className="flex items-center gap-4 mb-4">
-                  <img
-                    src={t.img}
-                    alt=""
-                    className="w-12 h-12 rounded-full border-2 border-red-400"
-                  />
-                  <div>
-                    <p className="font-bold text-cyan-100">{t.name}</p>
-                    <p className="text-xs text-red-300">{t.type}</p>
+
+          {/* ==== INFINITE CAROUSEL WITH FADE EDGES ==== */}
+          <div className="relative overflow-hidden">
+            {/* Fade masks – left & right */}
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0e0e2b] to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0e0e2b] to-transparent z-10" />
+
+            {/* Sliding container */}
+            <motion.div
+              className="flex gap-8"
+              animate={{ x: [0, -100 * testimonials.length + 100] }}
+              transition={{
+                duration: 40,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+              style={{ willChange: "transform" }}
+              whileHover={{ animationPlayState: "paused" }}
+            >
+              {/* Duplicate the array twice for a seamless loop */}
+              {[...testimonials, ...testimonials].map((t, i) => (
+                <div
+                  key={i}
+                  className="min-w-[320px] h-[200px] bg-white/5 backdrop-blur-xl border border-cyan-500/30 rounded-2xl !p-6 hover:scale-[1.02] transition-transform duration-300"
+                >
+                  <div className="flex items-center gap-4 mb-4">
+                    <img
+                      src={t.img}
+                      alt={t.name}
+                      className="w-12 h-12 rounded-full border-2 border-cyan-400"
+                    />
+                    <div>
+                      <p className="font-bold text-cyan-100">{t.name}</p>
+                      <p className="text-xs text-cyan-300/70">{t.type}</p>
+                    </div>
                   </div>
+                  <p className="text-sm text-cyan-200/90 italic !mt-3">
+                    “{t.text}”
+                  </p>
+                  <p className="text-xs text-green-400 mt-3 flex items-center gap-1">
+                    <FiCheckCircle /> Removed in {t.time}
+                  </p>
                 </div>
-                <p className="text-sm text-cyan-200/90 italic">“{t.text}”</p>
-                <p className="text-xs text-green-400 mt-3 flex items-center gap-1">
-                  <FiCheckCircle /> Removed in {t.time}
-                </p>
-              </div>
-            ))}
-          </motion.div>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </section>
 
