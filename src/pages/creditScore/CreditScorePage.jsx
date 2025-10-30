@@ -1,5 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useEffect, useRef } from "react";
+import {
+  motion,
+  AnimatePresence,
+  useMotionValue,
+  useTransform,
+  useSpring,
+} from "framer-motion";
 import {
   FiX,
   FiTrendingUp,
@@ -11,104 +17,10 @@ import {
 } from "react-icons/fi";
 import { FaEnvelope, FaTelegramPlane } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
+import { useMouse } from "react-use";
+import BuyModal from "../../components/buyModal/BuyModal";
 
-// Embedded BuyModal (from your theme)
-const BuyModal = ({ open, handleClose }) => {
-  return (
-    <AnimatePresence>
-      {open && (
-        <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          style={{ backdropFilter: "blur(12px)" }}
-          onClick={handleClose}
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f]/90 via-[#0f0f2a]/80 to-[#1a0033]/90" />
 
-          <motion.div
-            className="relative bg-white/5 backdrop-blur-xl border border-cyan-500/40 rounded-3xl !p-8 max-w-sm w-full shadow-2xl"
-            initial={{ scale: 0.85, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.85, opacity: 0, y: -20 }}
-            transition={{ type: "spring", stiffness: 320, damping: 30 }}
-            onClick={(e) => e.stopPropagation()}
-            style={{
-              boxShadow:
-                "0 0 70px rgba(0, 255, 255, 0.35), 0 0 140px rgba(0, 255, 255, 0.2)",
-            }}
-          >
-            <motion.button
-              onClick={handleClose}
-              className="absolute top-4 right-4 w-10 h-10 bg-cyan-500/20 hover:bg-cyan-500/40 backdrop-blur-sm rounded-full flex items-center justify-center border border-cyan-400/50 transition-all duration-300 group"
-              whileHover={{ scale: 1.1, rotate: 90 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FiX className="w-5 h-5 text-cyan-300 group-hover:text-white drop-shadow-glow" />
-            </motion.button>
-
-            <motion.h6
-              className="text-xl sm:text-2xl font-extrabold text-center bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-3"
-              initial={{ opacity: 0, y: -15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.15 }}
-            >
-              Contact Us to Purchase
-            </motion.h6>
-
-            <motion.p
-              className="text-center text-cyan-200/80 text-sm leading-relaxed !mb-6 font-light"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.25 }}
-            >
-              Our team will activate your access <strong>instantly</strong>{" "}
-              after payment.
-            </motion.p>
-
-            <motion.div
-              className="flex flex-col !gap-3"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.35 }}
-            >
-              <a
-                href="mailto:support@spycontrol.io"
-                className="flex items-center justify-center !gap-3 w-full bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500 text-white !py-3.5 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/40"
-              >
-                <FaEnvelope size={19} className="drop-shadow-glow" />
-                Email Support
-              </a>
-
-              <a
-                href="https://t.me/spycontrol_support"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center !gap-3 w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white !py-3.5 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-blue-500/50 transform hover:scale-105 backdrop-blur-sm border border-blue-400/40"
-              >
-                <FaTelegramPlane size={19} className="drop-shadow-glow" />
-                Message on Telegram
-              </a>
-            </motion.div>
-
-            <motion.p
-              className="!mt-5 text-center text-cyan-300/70 text-xs font-medium"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              Response within{" "}
-              <strong className="text-cyan-200">5 minutes</strong> • 24/7
-              Support
-            </motion.p>
-          </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-};
 
 // 12 Real Testimonials with Images
 const testimonials = [
@@ -210,29 +122,173 @@ const testimonials = [
   },
 ];
 
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- NEBULA PARTICLES ----------------------- */
+/* ------------------------------------------------------------------ */
+const NebulaParticles = () => {
+  const canvasRef = useRef(null);
+  const [creditOrbs, setCreditOrbs] = useState([]);
+
+  // Orbiting credit icons
+  useEffect(() => {
+    const icons = [
+      { Icon: FiTrendingUp, hue: 180 },
+      { Icon: FiShield, hue: 160 },
+      { Icon: FiZap, hue: 200 },
+      { Icon: FiLock, hue: 140 },
+      { Icon: FiCheckCircle, hue: 120 },
+      { Icon: FiClock, hue: 220 },
+    ];
+    const orbs = Array.from({ length: 5 }, (_, i) => ({
+      radius: 200 + i * 100,
+      speed: 0.0006 + i * 0.00025,
+      particles: Array.from({ length: 3 }, () => ({
+        angle: Math.random() * Math.PI * 2,
+        icon: icons[Math.floor(Math.random() * icons.length)],
+      })),
+    }));
+    setCreditOrbs(orbs);
+  }, []);
+
+  // Particle field
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    let raf,
+      t = 0;
+
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    resize();
+    window.addEventListener("resize", resize);
+
+    const particles = Array.from({ length: 180 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.35,
+      vy: (Math.random() - 0.5) * 0.35,
+      r: Math.random() * 1.6 + 0.9,
+      hue: 160 + Math.random() * 80,
+      pulse: Math.random() * Math.PI * 2,
+    }));
+
+    const draw = () => {
+      ctx.fillStyle = "rgba(10, 10, 31, 0.08)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+        const pulse = 0.7 + 0.3 * Math.sin(t * 0.018 + p.pulse);
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r * pulse, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${p.hue},100%,75%,${pulse})`;
+        ctx.fill();
+
+        ctx.shadowBlur = 20;
+        ctx.shadowColor = `hsla(${p.hue},100%,70%,0.6)`;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      });
+
+      t += 1;
+      raf = requestAnimationFrame(draw);
+    };
+    draw();
+
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
+
+  return (
+    <>
+      <canvas
+        ref={canvasRef}
+        className="fixed inset-0 pointer-events-none z-0 opacity-65"
+      />
+
+      {/* Orbiting icons */}
+      {creditOrbs.length > 0 && (
+        <div className="fixed inset-0 pointer-events-none z-10">
+          {creditOrbs.map((orb, oi) =>
+            orb.particles.map((p, pi) => {
+              const Icon = p.icon.Icon;
+              const angle = p.angle + performance.now() * 0.001 * orb.speed;
+              const x =
+                window.innerWidth / 2 + Math.cos(angle) * orb.radius - 28;
+              const y =
+                window.innerHeight / 2 + Math.sin(angle) * orb.radius - 28;
+
+              return (
+                <motion.div
+                  key={`${oi}-${pi}`}
+                  className="absolute !w-14 !h-14"
+                  style={{ left: x, top: y }}
+                  animate={{ rotate: 360 }}
+                  transition={{
+                    duration: 35,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                >
+                  <Icon
+                    className="w-full h-full text-cyan-400 opacity-35 drop-shadow-glow"
+                    style={{ filter: "drop-shadow(0 0 22px currentColor)" }}
+                  />
+                </motion.div>
+              );
+            })
+          )}
+        </div>
+      )}
+    </>
+  );
+};
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------ MAIN PAGE -------------------------- */
+/* ------------------------------------------------------------------ */
 const CreditScorePage = () => {
   const [score, setScore] = useState(520);
   const [targetScore] = useState(780);
   const [isUpgrading, setIsUpgrading] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const [confetti, setConfetti] = useState(false);
 
-  // Real-time Score Upgrade
+  const mouse = useMouse();
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  const smoothX = useSpring(mouseX, { stiffness: 130, damping: 30 });
+  const smoothY = useSpring(mouseY, { stiffness: 130, damping: 30 });
+
+  // Live Score Upgrade
   useEffect(() => {
     if (isUpgrading && score < targetScore) {
       const timer = setTimeout(() => {
-        setScore((prev) =>
-          Math.min(prev + Math.floor(Math.random() * 10) + 5, targetScore)
-        );
-      }, 90);
+        const inc = Math.floor(Math.random() * 12) + 6;
+        const newScore = Math.min(score + inc, targetScore);
+        setScore(newScore);
+        if (newScore >= targetScore && !confetti) {
+          setConfetti(true);
+          setTimeout(() => setConfetti(false), 3500);
+        }
+      }, 85);
       return () => clearTimeout(timer);
     } else if (score >= targetScore) {
       setIsUpgrading(false);
     }
-  }, [score, isUpgrading, targetScore]);
+  }, [score, isUpgrading, targetScore, confetti]);
 
-  const startUpgrade = () => {
-    setIsUpgrading(true);
-  };
+  const startUpgrade = () => setIsUpgrading(true);
 
   const { ref: heroRef, inView: heroInView } = useInView({
     threshold: 0.2,
@@ -251,38 +307,54 @@ const CreditScorePage = () => {
     triggerOnce: true,
   });
 
+  useEffect(() => {
+    mouseX.set(mouse.elX);
+    mouseY.set(mouse.elY);
+  }, [mouse.elX, mouse.elY, mouseX, mouseY]);
+
   return (
     <>
-      {/* HERO SECTION — ULTRA RICH & DETAILED */}
-      <section className="relative !pt-32 !pb-5 lg:!pt-58 overflow-hidden bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033]">
-        {/* Animated Background Orbs */}
-        <div className="absolute inset-0 pointer-events-none">
-          <motion.div
-            className="absolute top-10 left-10 w-96 h-96 bg-gradient-to-r from-cyan-500/30 to-teal-500/20 rounded-full blur-3xl opacity-60"
-            animate={{ x: [0, 100, 0], y: [0, -80, 0] }}
-            transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-purple-500/30 to-pink-500/20 rounded-full blur-3xl opacity-50"
-            animate={{ x: [0, -120, 0], y: [0, 60, 0] }}
-            transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-3xl opacity-40"
-            animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
-            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-          />
-        </div>
+      <NebulaParticles />
+
+      {/* GLOWING CURSOR TRAIL */}
+      <motion.div
+        className="fixed !w-[700px] !h-[700px] rounded-full pointer-events-none z-50 mix-blend-screen"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(0,255,255,0.3) 0%, transparent 70%)",
+          left: smoothX - 350,
+          top: smoothY - 350,
+        }}
+        animate={{ scale: isUpgrading ? 1.8 : 1 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      />
+
+      {/* HERO */}
+      <section className="relative !pt-28 !pb-20 lg:!pt-40 lg:!pb-32 overflow-hidden bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033]">
+        {/* Parallax Orbs */}
+        <motion.div
+          className="absolute inset-0 opacity-45"
+          style={{
+            y: useTransform(smoothY, [0, window.innerHeight], [-140, 140]),
+          }}
+        >
+          <div className="absolute top-16 left-12 !w-[650px] !h-[650px] bg-gradient-to-r from-cyan-500/22 to-teal-500/14 rounded-full blur-3xl" />
+          <div className="absolute bottom-28 right-16 !w-[600px] !h-[600px] bg-gradient-to-r from-purple-500/20 to-pink-500/12 rounded-full blur-3xl" />
+        </motion.div>
 
         {/* Holographic Data Lines */}
-        <div className="absolute inset-0 opacity-20 pointer-events-none">
-          {[...Array(6)].map((_, i) => (
+        <div className="absolute inset-0 opacity-25 pointer-events-none">
+          {[...Array(7)].map((_, i) => (
             <motion.div
               key={i}
               className="absolute h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent"
-              style={{ top: `${15 + i * 15}%`, width: "100%" }}
+              style={{ top: `${12 + i * 14}%`, width: "100%" }}
               animate={{ x: ["-100%", "100%"] }}
-              transition={{ duration: 8 + i, repeat: Infinity, ease: "linear" }}
+              transition={{
+                duration: 9 + i * 0.8,
+                repeat: Infinity,
+                ease: "linear",
+              }}
             />
           ))}
         </div>
@@ -293,49 +365,47 @@ const CreditScorePage = () => {
         >
           <motion.div
             className="text-center !max-w-5xl !mx-auto"
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 70 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
+            transition="duration: 1"
           >
             <motion.h1
-              className="text-4xl sm:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6"
-              initial={{ opacity: 0, y: 30 }}
+              className="text-5xl sm:text-6xl lg:text-8xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6 leading-tight"
+              initial={{ opacity: 0, y: 40 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.2, duration: 0.8 }}
+              transition={{ delay: 0.2, duration: 0.9 }}
             >
               Skyrocket Your Credit Score
             </motion.h1>
             <motion.p
-              className="text-sm sm:text-2xl text-cyan-200/80 leading-relaxed font-light !max-w-3xl !mx-auto lg:!mb-16 !mb-30"
-              initial={{ opacity: 0, y: 20 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.4, duration: 0.8 }}
+              className="text-lg sm:text-xl lg:text-2xl text-cyan-200/90 font-light !max-w-3xl !mx-auto !mb-16 leading-relaxed"
+              initial={{ opacity: 0 }}
+              animate={heroInView ? { opacity: 1 } : {}}
+              transition={{ delay: 0.5, duration: 0.8 }}
             >
               Watch your score{" "}
-              <span className="text-cyan-300 font-bold">
-                explode in real time
-              </span>{" "}
+              <strong className="text-cyan-300">explode in real time</strong>{" "}
               with our elite, encrypted, and <strong>100% undetectable</strong>{" "}
               credit repair system.
             </motion.p>
           </motion.div>
 
-          {/* Floating Credit Cards + Score Orb */}
-          <div className="relative !max-w-5xl !mx-auto !h-96">
-            {/* Floating Credit Card 1 */}
+          {/* Floating Cards + Score Orb */}
+          <div className="relative !max-w-5xl !mx-auto !h-[500px] lg:!h-[600px]">
+            {/* Credit Card 1 */}
             <motion.div
-              className="absolute top-0 left-10 w-80 h-52 bg-gradient-to-br from-cyan-600/80 to-teal-600/80 backdrop-blur-xl rounded-2xl border border-cyan-400/60 shadow-2xl overflow-hidden"
-              initial={{ x: -300, y: 100, rotate: -30 }}
-              animate={heroInView ? { x: -80, y: -40, rotate: -15 } : {}}
-              transition={{
-                type: "spring",
-                stiffness: 80,
-                damping: 20,
-                delay: 0.6,
+              className="absolute top-0 left-8 lg:left-16 w-80 h-52 bg-gradient-to-br from-cyan-600/85 to-teal-600/85 backdrop-blur-2xl rounded-2xl border border-cyan-400/70 shadow-2xl overflow-hidden"
+              style={{
+                rotateX: useTransform(smoothY, [-300, 300], [20, -20]),
+                rotateY: useTransform(smoothX, [-300, 300], [-20, 20]),
+                transformPerspective: 1300,
               }}
-              whileHover={{ rotate: -10, scale: 1.05 }}
+              initial={{ x: -400, y: 120, rotate: -35 }}
+              animate={heroInView ? { x: -100, y: -50, rotate: -15 } : {}}
+              transition={{ type: "spring", stiffness: 90, delay: 0.6 }}
+              whileHover={{ scale: 1.06 }}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div className="relative !p-6 text-white">
                 <div className="flex justify-between items-start">
                   <div>
@@ -349,20 +419,20 @@ const CreditScorePage = () => {
               </div>
             </motion.div>
 
-            {/* Floating Credit Card 2 */}
+            {/* Credit Card 2 */}
             <motion.div
-              className="absolute top-10 right-10 w-72 h-48 bg-gradient-to-br from-purple-600/80 to-pink-600/80 backdrop-blur-xl rounded-2xl border border-purple-400/60 shadow-2xl overflow-hidden"
-              initial={{ x: 300, y: -100, rotate: 30 }}
-              animate={heroInView ? { x: 80, y: -60, rotate: 15 } : {}}
-              transition={{
-                type: "spring",
-                stiffness: 80,
-                damping: 20,
-                delay: 0.8,
+              className="absolute top-8 right-8 lg:right-16 w-72 h-48 bg-gradient-to-br from-purple-600/85 to-pink-600/85 backdrop-blur-2xl rounded-2xl border border-purple-400/70 shadow-2xl overflow-hidden"
+              style={{
+                rotateX: useTransform(smoothY, [-300, 300], [-16, 16]),
+                rotateY: useTransform(smoothX, [-300, 300], [16, -16]),
+                transformPerspective: 1300,
               }}
-              whileHover={{ rotate: 20, scale: 1.05 }}
+              initial={{ x: 400, y: -120, rotate: 35 }}
+              animate={heroInView ? { x: 100, y: -70, rotate: 15 } : {}}
+              transition={{ type: "spring", stiffness: 90, delay: 0.8 }}
+              whileHover={{ scale: 1.06 }}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div className="relative !p-6 text-white">
                 <div className="flex justify-between items-start">
                   <div>
@@ -376,69 +446,67 @@ const CreditScorePage = () => {
               </div>
             </motion.div>
 
-            {/* Central Score Orb */}
+            {/* Score Orb */}
             <motion.div
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72"
-              initial={{ scale: 0, opacity: 0 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 !w-80 !h-80"
+              initial={{ scale: 0.7, opacity: 0 }}
               animate={heroInView ? { scale: 1, opacity: 1 } : {}}
-              transition={{ delay: 1, type: "spring", stiffness: 100 }}
+              transition={{ delay: 1.1, type: "spring" }}
             >
               <div className="relative w-full h-full">
-                {/* Outer Glow Rings */}
-                <div className="absolute inset-0 bg-cyan-500/30 rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute inset-4 bg-cyan-400/20 rounded-full blur-2xl animate-pulse animation-delay-1000"></div>
+                <div className="absolute inset-0 bg-cyan-500/35 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute inset-6 bg-cyan-400/25 rounded-full blur-2xl animate-pulse animation-delay-1200"></div>
 
-                {/* Orb Core */}
                 <motion.div
-                  className="absolute inset-8 bg-white/10 backdrop-blur-2xl rounded-full border border-cyan-400/60 shadow-2xl flex items-center justify-center"
+                  className="absolute inset-10 bg-white/12 backdrop-blur-2xl rounded-full border border-cyan-400/70 shadow-2xl flex items-center justify-center"
                   animate={{ rotate: 360 }}
                   transition={{
-                    duration: 20,
+                    duration: 22,
                     repeat: Infinity,
                     ease: "linear",
                   }}
                 >
                   <motion.div
                     className="text-center"
-                    animate={{ scale: isUpgrading ? [1, 1.1, 1] : 1 }}
+                    animate={{ scale: isUpgrading ? [1, 1.12, 1] : 1 }}
                     transition={{
                       repeat: isUpgrading ? Infinity : 0,
-                      duration: 0.6,
+                      duration: 0.55,
                     }}
                   >
                     <motion.p
-                      className="text-6xl sm:text-7xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent"
+                      className="text-7xl lg:text-8xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent"
                       key={score}
-                      initial={{ opacity: 0, y: 20 }}
+                      initial={{ opacity: 0, y: 25 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3 }}
+                      transition={{ duration: 0.32 }}
                     >
                       {score}
                     </motion.p>
-                    <p className="text-cyan-300/80 text-lg font-medium !mt-2">
+                    <p className="text-cyan-300/85 text-lg font-medium !mt-2">
                       Live Score
                     </p>
                   </motion.div>
                 </motion.div>
 
-                {/* Floating Particles */}
-                {[...Array(8)].map((_, i) => (
+                {/* Orbiting Particles */}
+                {[...Array(10)].map((_, i) => (
                   <motion.div
                     key={i}
-                    className="absolute w-2 h-2 bg-cyan-400 rounded-full"
+                    className="absolute !w-2 !h-2 bg-cyan-400 rounded-full"
                     style={{
-                      top: `${20 + i * 10}%`,
-                      left: `${20 + (i % 2 === 0 ? 30 : -30)}%`,
+                      top: `${18 + i * 8}%`,
+                      left: `${i % 2 === 0 ? 15 : 65}%`,
                     }}
                     animate={{
-                      y: [0, -30, 0],
+                      y: [0, -35, 0],
                       opacity: [0.6, 1, 0.6],
                     }}
                     transition={{
-                      duration: 2 + i * 0.3,
+                      duration: 2.2 + i * 0.25,
                       repeat: Infinity,
                       ease: "easeInOut",
-                      delay: i * 0.2,
+                      delay: i * 0.18,
                     }}
                   />
                 ))}
@@ -446,17 +514,17 @@ const CreditScorePage = () => {
             </motion.div>
           </div>
 
-          {/* CTA Button */}
+          {/* CTA */}
           <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 30 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 1.2, duration: 0.8 }}
+            className="text-center lg:!mt-6 !mt-5"
+            initial={{ opacity: 0 }}
+            animate={heroInView ? { opacity: 1 } : {}}
+            transition={{ delay: 1.4 }}
           >
             <button
               onClick={startUpgrade}
               disabled={isUpgrading || score >= targetScore}
-              className="relative inline-flex items-center !gap-4 bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white lg:!px-12 lg:!py-6 !py-4 !px-8 rounded-full font-bold lg:text-2xl shadow-2xl hover:shadow-cyan-500/80 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50 disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden group"
+              className="group relative inline-flex items-center justify-center !gap-5 bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white lg:!px-16 lg:!py-6 !px-6 !py-4 rounded-full font-bold lg:text-2xl shadow-2xl hover:shadow-cyan-500/80 transition-all duration-300 transform hover:scale-110 backdrop-blur-sm border border-cyan-400/60 disabled:opacity-50 overflow-hidden"
             >
               <span className="relative z-10">
                 {isUpgrading
@@ -466,98 +534,78 @@ const CreditScorePage = () => {
                   : "Start Upgrade Now"}
               </span>
               <motion.div
-                className="absolute inset-0 bg-white/20"
-                initial={{ x: "-100%" }}
-                whileHover={{ x: "100%" }}
-                transition={{ duration: 0.6 }}
+                className="absolute inset-0 bg-white/25"
+                animate={isUpgrading ? { x: ["-100%", "100%"] } : {}}
+                transition={{ repeat: Infinity, duration: 1.3 }}
               />
-              <FiZap className="w-7 h-7 relative z-10 group-hover:animate-pulse" />
+              <FiZap className="w-8 h-8 relative z-10 group-hover:animate-pulse" />
             </button>
           </motion.div>
-          {/* JOIN COMMUNITY - OVERLAPPING PROFILES */}
-          <section className="relative !pb-2 lg:!pb-24 !pt-10 overflow-hidden">
-            {/* Background Glow */}
-            <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
-              <motion.div
-                className="flex flex-col items-center justify-center text-center"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                {/* Overlapping Profile Images */}
-                <div className="flex items-center justify-center -space-x-6 !mb-8">
-                  {[
-                    "https://randomuser.me/api/portraits/men/32.jpg",
-                    "https://randomuser.me/api/portraits/women/44.jpg",
-                    "https://randomuser.me/api/portraits/men/56.jpg",
-                    "https://randomuser.me/api/portraits/women/68.jpg",
-                    "https://randomuser.me/api/portraits/men/79.jpg",
-                  ].map((src, i) => (
-                    <motion.div
-                      key={i}
-                      className="relative group"
-                      initial={{
-                        opacity: 0,
-                        scale: 0.8,
-                        x: i % 2 === 0 ? -50 : 50,
-                      }}
-                      whileInView={{ opacity: 1, scale: 1, x: 0 }}
-                      transition={{
-                        delay: i * 0.1,
-                        duration: 0.6,
-                        type: "spring",
-                        stiffness: 120,
-                      }}
-                      viewport={{ once: true }}
-                      whileHover={{ scale: 1.15, z: 50 }}
-                      style={{ zIndex: 5 - i }}
-                    >
-                      {/* Glow Ring */}
-                      <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 rounded-full blur-lg opacity-80 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
 
-                      {/* Profile Image */}
-                      <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-3 border-white/30 shadow-2xl backdrop-blur-sm !ml-[-18px]">
-                        <img
-                          src={src}
-                          alt={`User ${i + 1}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-
-                {/* Text */}
-                <motion.h3
-                  className="text-xl sm:text-xl lg:text-xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent"
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.8 }}
-                  viewport={{ once: true }}
+          {/* COMMUNITY OVERLAP */}
+          <motion.div
+            className="flex flex-col items-center justify-center text-center !mt-20"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center justify-center -space-x-6 !mb-8">
+              {[
+                "https://randomuser.me/api/portraits/men/32.jpg",
+                "https://randomuser.me/api/portraits/women/44.jpg",
+                "https://randomuser.me/api/portraits/men/56.jpg",
+                "https://randomuser.me/api/portraits/women/68.jpg",
+                "https://randomuser.me/api/portraits/men/79.jpg",
+              ].map((src, i) => (
+                <motion.div
+                  key={i}
+                  className="relative group"
+                  initial={{
+                    opacity: 0,
+                    scale: 0.8,
+                    x: i % 2 === 0 ? -50 : 50,
+                  }}
+                  whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                  transition={{ delay: i * 0.1, duration: 0.6, type: "spring" }}
+                  whileHover={{ scale: 1.2, zIndex: 50 }}
+                  style={{ zIndex: 5 - i }}
                 >
-                  Join <span className="text-cyan-200">47,821+</span> people
-                  who’ve transformed their credit.
-                </motion.h3>
-
-                {/* Subtext */}
-                <motion.p
-                  className="mt-3 text-sm sm:text-base text-cyan-300/80 font-light max-w-xl"
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ delay: 0.7, duration: 0.8 }}
-                  viewport={{ once: true }}
-                >
-                  Real users. Real results. Real freedom.
-                </motion.p>
-              </motion.div>
+                  <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 via-teal-400 to-green-400 rounded-full blur-lg opacity-80 group-hover:opacity-100 transition-opacity animate-pulse"></div>
+                  <div className="relative !w-14 !h-14 sm:!w-16 sm:!h-16 rounded-full overflow-hidden border-3 border-white/30 shadow-2xl backdrop-blur-sm">
+                    <img
+                      src={src}
+                      alt="user"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </motion.div>
+              ))}
             </div>
-          </section>
+
+            <motion.h3
+              className="text-xl sm:text-2xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+            >
+              Join <span className="text-cyan-200">47,821+</span> who
+              transformed their credit.
+            </motion.h3>
+            <motion.p
+              className="mt-3 text-sm sm:text-base text-cyan-300/80 font-light max-w-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
+            >
+              Real users. Real results. Real freedom.
+            </motion.p>
+          </motion.div>
         </div>
       </section>
 
-      {/* Features */}
-      <section className="relative !py-15 lg:!py-20" ref={featuresRef}>
+      {/* FEATURES */}
+      <section className="relative !py-24" ref={featuresRef}>
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
             className="text-center"
@@ -565,41 +613,40 @@ const CreditScorePage = () => {
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            {/* Main Title */}
             <motion.h2
-              className="text-3xl sm:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6"
               initial={{ opacity: 0, y: 15 }}
               animate={featuresInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.1, duration: 0.8 }}
+              transition={{ delay: 0.1 }}
             >
               Elite Credit Repair System
             </motion.h2>
-
-            {/* Detailed Subtitle — Hero Style */}
             <motion.p
-              className="text-sm sm:text-lg lg:text-xl text-cyan-200/80 leading-relaxed font-light !max-w-4xl !mx-auto !mb-16"
+              className="text-base sm:text-lg lg:text-xl text-cyan-200/85 leading-relaxed font-light !max-w-4xl !mx-auto !mb-16"
               initial={{ opacity: 0, y: 20 }}
               animate={featuresInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.3, duration: 0.8 }}
+              transition={{ delay: 0.3 }}
             >
               Watch your score{" "}
-              <span className="font-bold">skyrocket in real time</span> with our{" "}
-              <span className="inline-block px-3 py-1 mx-1 bg-white/5  shadow-lg">
+              <strong className="font-bold">skyrocket in real time</strong> with
+              our{" "}
+              <span className="inline-block px-3 py-1 mx-1 bg-white/6 shadow-lg">
                 <span className="bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent font-semibold">
                   undetectable
                 </span>
               </span>{" "}
               AI-powered system that connects directly to{" "}
               <strong>Equifax</strong>, <strong>TransUnion</strong>, and{" "}
-              <strong>Experian</strong>, no logs, no traces, no risk.
+              <strong>Experian</strong>.
             </motion.p>
           </motion.div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 !gap-10">
             {[
               {
                 icon: FiTrendingUp,
                 title: "Real-Time Boost",
-                desc: "Watch your score rise live — no delays, no waiting.",
+                desc: "Watch your score rise live — no delays.",
               },
               {
                 icon: FiLock,
@@ -629,19 +676,19 @@ const CreditScorePage = () => {
             ].map((feat, i) => (
               <motion.div
                 key={i}
-                className="bg-white/5 backdrop-blur-xl border border-cyan-500/30 rounded-2xl !p-8 shadow-xl hover:shadow-cyan-500/40 transition-all duration-300 group"
+                className="bg-white/6 backdrop-blur-2xl border border-cyan-500/40 rounded-2xl !p-8 shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 group"
                 initial={{ opacity: 0, y: 40 }}
                 animate={featuresInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: i * 0.15, duration: 0.6 }}
-                whileHover={{ y: -10 }}
+                transition={{ delay: i * 0.14, duration: 0.6 }}
+                whileHover={{ y: -12 }}
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-500/25 to-teal-500/25 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                   <feat.icon className="w-9 h-9 text-cyan-300 drop-shadow-glow" />
                 </div>
-                <h3 className="lg:text-2xl text-xl font-bold text-cyan-100 !mb-3">
+                <h3 className="text-xl lg:text-2xl font-bold text-cyan-100 !mb-3">
                   {feat.title}
                 </h3>
-                <p className="text-cyan-300/80 text-base leading-relaxed">
+                <p className="text-cyan-300/85 text-base leading-relaxed">
                   {feat.desc}
                 </p>
               </motion.div>
@@ -650,9 +697,9 @@ const CreditScorePage = () => {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* HOW IT WORKS */}
       <section
-        className="relative !py-10 lg:!py-15 bg-gradient-to-b from-transparent via-purple-900/10 to-transparent"
+        className="relative !py-20 bg-gradient-to-b from-transparent via-purple-900/12 to-transparent"
         ref={howRef}
       >
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
@@ -662,40 +709,23 @@ const CreditScorePage = () => {
             animate={howInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            {/* Main Title */}
             <motion.h2
-              className="text-3xl sm:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-6"
               initial={{ opacity: 0, y: 15 }}
               animate={howInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.1, duration: 0.8 }}
+              transition={{ delay: 0.1 }}
             >
               How It Works
             </motion.h2>
-
-            {/* Detailed Subtitle — Unified Cyan-Teal Gradient */}
             <motion.p
-              className="text-sm sm:text-lg lg:text-xl leading-relaxed font-light !max-w-4xl !mx-auto !mb-8"
+              className="text-base sm:text-lg lg:text-xl leading-relaxed font-light !max-w-4xl !mx-auto !mb-12 text-cyan-200/85"
               initial={{ opacity: 0, y: 20 }}
               animate={howInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.3, duration: 0.8 }}
+              transition={{ delay: 0.3 }}
             >
-              <span className="text-cyan-200/80">
-                Secure payment triggers instant access to our{" "}
-                <span className="inline-block px-3 py-1 mx-1 ">
-                  <span className="bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent font-semibold">
-                    encrypted
-                  </span>
-                </span>{" "}
-                backend. We connect to all three major bureaus and{" "}
-                <span className="bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent font-bold">
-                  begin live optimization
-                </span>
-                , you watch your score rise in real time,{" "}
-                <strong className="bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent">
-                  no delays, no traces
-                </strong>
-                .
-              </span>
+              Secure payment → instant access to our <strong>encrypted</strong>{" "}
+              backend → <strong>live optimization</strong> across all three
+              bureaus. <em>No delays, no traces.</em>
             </motion.p>
           </motion.div>
 
@@ -724,21 +754,21 @@ const CreditScorePage = () => {
                 animate={howInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: i * 0.2, duration: 0.6 }}
               >
-                <div className="text-6xl font-extrabold bg-gradient-to-r from-cyan-300 to-pink-300 bg-clip-text text-transparent !mb-4">
+                <div className="text-7xl font-extrabold bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent !mb-4">
                   {s.step}
                 </div>
-                <h3 className="lg:text-2xl text-xl font-bold text-cyan-100 !mb-3">
+                <h3 className="text-xl lg:text-2xl font-bold text-cyan-100 !mb-3">
                   {s.title}
                 </h3>
-                <p className="text-cyan-300/80">{s.desc}</p>
+                <p className="text-cyan-300/85">{s.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Testimonials - 12 Rich Cards */}
-      <section className="relative !py-10 lg:!py-25" ref={testimonialsRef}>
+      {/* TESTIMONIALS */}
+      <section className="relative !py-24" ref={testimonialsRef}>
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
             className="text-center"
@@ -746,28 +776,22 @@ const CreditScorePage = () => {
             animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            {/* Main Title */}
             <motion.h2
-              className="text-3xl sm:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-6"
               initial={{ opacity: 0, y: 15 }}
               animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.1, duration: 0.8 }}
+              transition={{ delay: 0.1 }}
             >
               Real People. Real Results.
             </motion.h2>
-
-            {/* Detailed Subtitle — Unified Cyan-Teal Gradient */}
             <motion.p
-              className="text-sm sm:text-lg lg:text-xl text-cyan-200/80 leading-relaxed font-light !max-w-4xl !mx-auto !mb-16"
+              className="text-base sm:text-lg lg:text-xl text-cyan-200/85 leading-relaxed font-light !max-w-4xl !mx-auto !mb-16"
               initial={{ opacity: 0, y: 20 }}
               animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.3, duration: 0.8 }}
+              transition={{ delay: 0.3 }}
             >
-              From <span className=" font-bold">520</span> to{" "}
-              <span className="b font-bold">820+</span> in as little as{" "}
-              <span className="font-semibold">24 hours, </span> thousands have
-              unlocked loans, cards, homes, and freedom with our{" "}
-              <strong className="">undetectable system</strong>.
+              From <strong>520</strong> to <strong>820+</strong> in as little as{" "}
+              <strong>24 hours</strong>.
             </motion.p>
           </motion.div>
 
@@ -775,19 +799,19 @@ const CreditScorePage = () => {
             {testimonials.map((t, i) => (
               <motion.div
                 key={i}
-                className="bg-white/5 backdrop-blur-xl border border-cyan-500/30 rounded-2xl !p-6 shadow-2xl hover:shadow-cyan-500/40 transition-all duration-300 group"
+                className="bg-white/6 backdrop-blur-2xl border border-cyan-500/40 rounded-2xl !p-6 shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 group"
                 initial={{ opacity: 0, y: 40 }}
                 animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: i * 0.1, duration: 0.6 }}
-                whileHover={{ y: -8, scale: 1.02 }}
+                whileHover={{ y: -10, scale: 1.025 }}
               >
                 <div className="flex items-center !gap-4 !mb-5">
                   <motion.div className="relative" whileHover={{ scale: 1.1 }}>
-                    <div className="absolute -inset-2 bg-gradient-to-r from-cyan-500/40 via-teal-500/30 to-green-500/30 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="absolute -inset-2 bg-gradient-to-r from-cyan-500/45 via-teal-500/35 to-green-500/35 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition-opacity"></div>
                     <img
                       src={t.img}
                       alt={t.name}
-                      className="relative w-14 h-14 rounded-full object-cover border-2 border-cyan-400/60"
+                      className="relative w-14 h-14 rounded-full object-cover border-2 border-cyan-400/70"
                     />
                   </motion.div>
                   <div>
@@ -816,8 +840,8 @@ const CreditScorePage = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative !py-15 lg:!py-25 bg-gradient-to-b from-transparent via-purple-900/10 to-transparent">
+      {/* FINAL CTA */}
+      <section className="relative !py-24 bg-gradient-to-b from-transparent via-purple-900/12 to-transparent">
         <div className="max-w-4xl !mx-auto !px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -825,16 +849,16 @@ const CreditScorePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl sm:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6">
               Your Financial Freedom Starts Now
             </h2>
-            <p className="lg:text-xl text-cyan-200/80 !mb-10">
+            <p className="text-lg lg:text-xl text-cyan-200/85 !mb-10">
               Join <strong>47,821+</strong> people who’ve transformed their
               credit.
             </p>
             <button
               onClick={() => setModalOpen(true)}
-              className="bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white !px-6 lg:!px-8 !py-4 rounded-full font-bold lg:text-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+              className="bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white !px-8 lg:!px-12 !py-5 rounded-full font-bold text-xl lg:text-2xl shadow-lg hover:shadow-cyan-500/70 transition-all duration-300 transform hover:scale-110 backdrop-blur-sm border border-cyan-400/60"
             >
               Contact Us Now
             </button>
@@ -842,17 +866,44 @@ const CreditScorePage = () => {
         </div>
       </section>
 
-      {/* Modal */}
       <BuyModal open={modalOpen} handleClose={() => setModalOpen(false)} />
 
-      {/* Glow Filter */}
+      {/* CONFETTI ON MAX SCORE */}
+      <AnimatePresence>
+        {confetti && (
+          <motion.div
+            className="fixed inset-0 pointer-events-none z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            {[...Array(70)].map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute !w-2 !h-2 rounded-full"
+                style={{
+                  background: i % 2 === 0 ? "#00ffff" : "#00ff88",
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                }}
+                animate={{ y: [0, -1300], opacity: [1, 0], rotate: [0, 360] }}
+                transition={{
+                  duration: 2.8 + Math.random() * 1,
+                  delay: Math.random() * 0.7,
+                }}
+              />
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <style jsx>{`
         .drop-shadow-glow {
-          filter: drop-shadow(0 0 8px currentColor)
-            drop-shadow(0 0 16px currentColor);
+          filter: drop-shadow(0 0 22px currentColor)
+            drop-shadow(0 0 44px currentColor);
         }
-        .animation-delay-1000 {
-          animation-delay: 1s;
+        .animation-delay-1200 {
+          animation-delay: 1.2s;
         }
       `}</style>
     </>
