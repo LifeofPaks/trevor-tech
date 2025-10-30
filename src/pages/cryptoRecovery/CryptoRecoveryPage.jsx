@@ -656,19 +656,19 @@ export default function CryptoRecoveryPage() {
 
       {/* FEATURES */}
       <section
-        className="!relative !py-28 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92 "
+        className="!relative !py-15 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92 "
         ref={featuresRef}
       >
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
-            className="text-center !mb-24"
+            className="text-center lg:!mb-24 !mb-10"
             initial={{ opacity: 0, y: 60 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
           >
-            <h2 className="text-6xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-8">
+            <h2 className="text-4xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-4">
               NEURAL ENGINE
             </h2>
-            <p className="text-2xl text-cyan-200 max-w-5xl !mx-auto">
+            <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
               Cracks any wallet. Bypasses any lock. Recovers any coin.
             </p>
           </motion.div>
