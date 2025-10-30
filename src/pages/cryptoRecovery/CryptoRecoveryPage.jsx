@@ -6,13 +6,13 @@ import {
   FiCheckCircle, FiClock, FiCpu, FiEyeOff,
   FiTrendingUp, FiKey, FiCode, FiTerminal, FiBox, FiServer
 } from "react-icons/fi";
-import { FaEthereum, FaTelegramPlane } from "react-icons/fa";
-import { SiSolana, SiCardano, SiBinance, SiDogecoin } from "react-icons/si";
+import { FaDollarSign, FaEthereum, FaTelegramPlane } from "react-icons/fa";
+import { SiSolana, SiCardano, SiBinance, SiDogecoin, SiChainlink, SiPolygon, SiPolkadot, SiStellar, SiHedera, SiLitecoin, SiBitcoincash } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
 import CountUp from 'react-countup';
 import { create } from 'zustand';
 import BuyModal from "../../components/buyModal/BuyModal";
-import { RiBtcFill } from 'react-icons/ri';
+import { RiBtcFill, RiXrpFill } from 'react-icons/ri';
 
 // === QUANTUM ORBITAL CRYPTO BACKGROUND (FIXED) ===
 const CryptoOrbital = () => {
@@ -430,19 +430,19 @@ export default function CryptoRecoveryPage() {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.8 }}
             >
-              <div className='flex items-center justify-center flex-col'>
+              <div className="flex items-center justify-center flex-col">
                 <p className="text-6xl font-black text-cyan-300">
                   $<CountUp end={recovered} duration={0.6} separator="," />
                 </p>
                 <p className="text-cyan-200 !mt-2 text-lg">RECOVERED</p>
               </div>
-<div className='flex items-center justify-center flex-col'>
+              <div className="flex items-center justify-center flex-col">
                 <p className="text-6xl font-black text-teal-400">
                   <CountUp end={Math.floor(recovered / 800)} duration={0.6} />K
                 </p>
                 <p className="text-cyan-200 !mt-2 text-lg">WALLETS</p>
               </div>
-<div className='flex items-center justify-center flex-col'>
+              <div className="flex items-center justify-center flex-col">
                 <p className="text-6xl font-black text-green-400 flex items-center gap-3">
                   100% <FiCheckCircle />
                 </p>
@@ -500,30 +500,53 @@ export default function CryptoRecoveryPage() {
         </div>
       </section>
 
-      {/* MARQUEE */}
+      {/* MARQUEE – SCROLLING COIN LIST */}
       <section
         className="bg-black/70 backdrop-blur-3xl border-y border-cyan-500/30 !py-7 overflow-hidden"
         ref={statsRef}
       >
         <motion.div
-          className="flex gap-40"
-          animate={{ x: [0, -3600] }}
-          transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
+          className="flex gap-12"
+          animate={{ x: [0, -1000] }}
+          transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
         >
-          {[...Array(7)].map((_, i) => (
-            <div key={i} className="flex gap-40 whitespace-nowrap">
-              <span className="text-cyan-300 font-bold text-2xl">
-                $124,750+ RECOVERED
-              </span>
-              <span className="text-teal-400 text-2xl">•</span>
-              <span className="text-green-400 font-bold text-2xl">
-                NEURAL ACTIVE
-              </span>
-              <span className="text-teal-400 text-2xl">•</span>
-              <span className="text-cyan-200 font-bold text-2xl">
-                NO SEED • NO TRACE
-              </span>
-              <span className="text-teal-400 text-2xl">•</span>
+          {/* Duplicate the list a few times so the marquee never has a gap */}
+          {[...Array(3)].map((_, repeatIdx) => (
+            <div
+              key={repeatIdx}
+              className="flex gap-12 items-center whitespace-nowrap"
+            >
+              {[
+                { Icon: RiBtcFill, name: "BTC" },
+                { Icon: FaEthereum, name: "ETH" },
+                { Icon: SiSolana, name: "SOL" },
+                { Icon: SiCardano, name: "ADA" },
+                { Icon: SiBinance, name: "BNB" },
+                { Icon: SiDogecoin, name: "DOGE" },
+                { Icon: RiXrpFill, name: "XRP" },
+                { Icon: FaDollarSign, name: "USDT" },
+                { Icon: SiPolygon, name: "MATIC" },
+                { Icon: SiChainlink, name: "LINK" },
+                { Icon: SiPolkadot, name: "DOT" },
+                { Icon: SiLitecoin, name: "LTC" },
+                { Icon: SiBitcoincash, name: "BCH" },
+                { Icon: SiStellar, name: "XLM" },
+                { Icon: SiHedera, name: "HBAR" },
+              ].map((coin, i) => (
+                <div
+                  key={`${repeatIdx}-${i}`}
+                  className="flex items-center gap-3 !px-6 !py-2 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-full border border-cyan-500/30 backdrop-blur-sm"
+                >
+                  {coin.Icon ? (
+                    <coin.Icon className="w-6 h-6 text-cyan-300 drop-shadow-glow" />
+                  ) : (
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-br from-cyan-400 to-teal-400" />
+                  )}
+                  <span className="text-cyan-200 font-bold text-xl tracking-wider">
+                    {coin.name}
+                  </span>
+                </div>
+              ))}
             </div>
           ))}
         </motion.div>
