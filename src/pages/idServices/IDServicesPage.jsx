@@ -606,7 +606,7 @@ export default function IDServicesPage() {
                 onClick={() => setModalOpen(true)}
                 className="!px-14 !py-6 border-2 border-indigo-400 text-indigo-300 rounded-full font-bold hover:bg-indigo-500/10 transition-all backdrop-blur-sm lg:text-xl w-full lg:w-auto"
               >
-                CONTACT SUPPORT
+                CONTACT US
               </button>
             </motion.div>
           </motion.div>
