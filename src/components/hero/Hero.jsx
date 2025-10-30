@@ -52,7 +52,7 @@ const Hero = () => {
         <Arrow className="w-8 h-8 drop-shadow-glow" />
       </motion.div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-between !gap-16">
+      <div className="flex flex-col lg:flex-row items-start justify-between !gap-16 !mb-8">
         {/* Left Section */}
         <motion.div
           className="flex-1"
@@ -60,9 +60,9 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <div className="relative inline-block">
-            <h1 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] font-extrabold lg:leading-[60px] leading-[40px] text-center lg:text-left">
-              Ultimate Digital Shield: Hack, Track, and Recover – Your{" "}
+          <div className="relative inline-block w-[125%]">
+            <h1 className="text-[1.6rem] md:text-4xl lg:text-[3.6rem] font-extrabold lg:leading-[70px] leading-[40px] text-center lg:text-left">
+              Ultimate Digital Shield:  Your{" "}
               <span className="relative inline-block">
                 <span
                   className="bg-gradient-to-r from-cyan-400 via-cyan-300 to-pink-400 bg-clip-text text-transparent"
@@ -165,7 +165,7 @@ const Hero = () => {
               <img
                 src={HeroImage}
                 alt="Digital security and monitoring dashboard showcasing hack, track, and recovery tools"
-                className="relative w-full lg:!h-[600px] !h-[400px] rounded-2xl object-cover shadow-inner hidden lg:block opacity-40"
+                className="relative w-full lg:!h-[500px] !h-[400px] rounded-2xl object-cover shadow-inner hidden lg:block opacity-40"
               />
               {/* Inner Glow */}
               {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-50" /> */}
