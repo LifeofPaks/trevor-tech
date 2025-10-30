@@ -72,3 +72,22 @@ button {
   }
 }
 
+    /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+          width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+          background: rgba(10, 10, 31, 0.9);
+          border-radius: 6px;
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        }
+        ::-webkit-scrollbar-thumb {
+          background: linear-gradient(180deg, #00ffff, #ff00ff);
+          border-radius: 6px;
+          box-shadow: 0 0 12px rgba(0, 255, 255, 0.7);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: linear-gradient(180deg, #00cccc, #cc00cc);
+        }
+
+

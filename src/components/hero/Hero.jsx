@@ -20,7 +20,7 @@ const Hero = () => {
     <div className="lg:!pt-[15rem] !pt-[10rem] lg:!px-20 !px-8 max-w-[1400px] !mx-auto !pb-5 relative overflow-hidden">
       {/* Floating Sparkle - Animated & Glowing */}
       <motion.div
-        className="absolute top-50 left-10 text-cyan-400/30 hidden lg:block"
+        className="absolute top-50 left-10 text-cyan-400/50 hidden lg:block"
         animate={{
           y: [0, -15, 0],
           rotate: [0, 10, 0],
@@ -33,6 +33,21 @@ const Hero = () => {
         }}
       >
         <Sparkle className="w-8 h-8 drop-shadow-glow" />
+      </motion.div>
+      <motion.div
+        className="absolute top-180 right-10 text-cyan-400/30 hidden lg:block"
+        animate={{
+          y: [0, -15, 0],
+          rotate: [0, 10, 0],
+          scale: [1, 1.1, 1],
+        }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      >
+        <Sparkle className="w-12 h-12 drop-shadow-glow" />
       </motion.div>
 
       {/* Floating Arrow - Animated & Glowing */}
@@ -62,7 +77,7 @@ const Hero = () => {
         >
           <div className="relative inline-block w-[125%]">
             <h1 className="text-[1.6rem] md:text-4xl lg:text-[3.6rem] font-extrabold lg:leading-[70px] leading-[40px] text-center lg:text-left">
-              Ultimate Digital Shield:  Your{" "}
+              Ultimate Digital Shield: Your{" "}
               <span className="relative inline-block">
                 <span
                   className="bg-gradient-to-r from-cyan-400 via-cyan-300 to-pink-400 bg-clip-text text-transparent"
@@ -162,14 +177,13 @@ const Hero = () => {
 
             {/* Image Container */}
 
-              <img
-                src={HeroImage}
-                alt="Digital security and monitoring dashboard showcasing hack, track, and recovery tools"
-                className="relative w-full lg:!h-[500px] !h-[400px] rounded-2xl object-cover shadow-inner hidden lg:block opacity-40"
-              />
-              {/* Inner Glow */}
-              {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-50" /> */}
-
+            <img
+              src={HeroImage}
+              alt="Digital security and monitoring dashboard showcasing hack, track, and recovery tools"
+              className="relative w-full lg:!h-[500px] !h-[400px] rounded-2xl object-cover shadow-inner hidden lg:block opacity-40"
+            />
+            {/* Inner Glow */}
+            {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-50" /> */}
           </motion.div>
         </motion.div>
       </div>
