@@ -241,7 +241,7 @@ const NebulaParticles = () => {
                   }}
                 >
                   <Icon
-                    className="w-full h-full text-cyan-400 lg:opacity-10 opacity-7 drop-shadow-glow"
+                    className="w-10 h-10 text-cyan-400 lg:opacity-10 opacity-7 drop-shadow-glow"
                     style={{ filter: "drop-shadow(0 0 22px currentColor)" }}
                   />
                 </motion.div>
