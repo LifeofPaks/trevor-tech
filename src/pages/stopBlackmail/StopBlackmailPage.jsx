@@ -775,7 +775,7 @@ const StopBlackmailPage = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative !py-24 bg-gradient-to-t from-[#0a0a1f] to-[#1a0033]">
+      <section className="relative !py-24 ">
         <div className="max-w-4xl !mx-auto !px-6 text-center">
           <motion.h2
             className="text-4xl lg:text-6xl font-extrabold bg-gradient-to-r from-red-400 to-cyan-300 bg-clip-text text-transparent !mb-3"
