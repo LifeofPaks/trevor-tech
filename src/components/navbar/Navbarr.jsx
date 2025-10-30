@@ -57,7 +57,7 @@ const Navbarr = () => {
   return (
     <nav className="w-full fixed top-0 left-0 z-50">
       {/* Main Navbar Container */}
-      <div className="flex items-center justify-between w-full lg:max-w-[1100px] !mx-auto bg-gradient-to-r from-[#0a0a1f]/80 to-[#1a0033]/80 backdrop-blur-xl border border-cyan-500/30 shadow-2xl lg:rounded-full !px-8 !py-4 lg:!mt-4">
+      <div className="flex items-center justify-between w-full lg:max-w-[1100px] !mx-auto bg-gradient-to-r from-[#0a0a1f]/80 to-[#1a0033]/80 backdrop-blur-xl lg:border border-cyan-500/30 shadow-2xl lg:rounded-full !px-8 !py-4 lg:!mt-4">
         <DemoLogo />
 
         {/* Desktop Menu */}
