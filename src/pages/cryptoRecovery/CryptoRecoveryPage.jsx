@@ -14,11 +14,11 @@ import { create } from 'zustand';
 import BuyModal from "../../components/buyModal/BuyModal";
 import { RiBtcFill, RiXrpFill } from 'react-icons/ri';
 
-// === QUANTUM ORBITAL CRYPTO BACKGROUND (FIXED) ===
 const CryptoOrbital = () => {
   const canvasRef = useRef(null);
   const [orbData, setOrbData] = useState([]);
 
+  // === Generate orbital data for floating icons ===
   useEffect(() => {
     const coins = [
       { Icon: RiBtcFill, hue: 25 },
@@ -42,24 +42,114 @@ const CryptoOrbital = () => {
     setOrbData(orbs);
   }, []);
 
-  // ← Paste the lightweight particle useEffect here → (from above)
+  // === LIGHTWEIGHT + DENSE PARTICLE FIELD ===
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    let animationFrame;
+    let time = 0;
+
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    resize();
+    window.addEventListener("resize", resize);
+
+    // 100 particles → dense but fast
+    const particles = Array.from({ length: 100 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.9,
+      vy: (Math.random() - 0.5) * 0.9,
+      radius: Math.random() * 2.2 + 1.8,
+      hue: 160 + Math.random() * 45, // Cyan → Teal → Green
+      pulsePhase: Math.random() * Math.PI * 2,
+    }));
+
+    const animate = () => {
+      // Stronger trail
+      ctx.fillStyle = "rgba(10, 10, 31, 0.09)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        // Bounce
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+        // Strong pulse
+        const pulse = 0.75 + 0.25 * Math.sin(time * 0.025 + p.pulsePhase);
+
+        // Draw particle
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius * pulse, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${p.hue}, 100%, 78%, ${pulse * 0.9})`;
+        ctx.fill();
+
+        // Strong glow
+        ctx.shadowBlur = 28;
+        ctx.shadowColor = `hsla(${p.hue}, 100%, 75%, 0.9)`;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        // Connect to nearby
+        particles.forEach((other) => {
+          if (other === p) return;
+          const dx = p.x - other.x;
+          const dy = p.y - other.y;
+          const dist = Math.hypot(dx, dy);
+
+          if (dist < 180) {
+            const opacity = (1 - dist / 180) * 0.28;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(other.x, other.y);
+            ctx.strokeStyle = `hsla(${
+              (p.hue + other.hue) / 2
+            }, 100%, 68%, ${opacity})`;
+            ctx.lineWidth = 1.2;
+            ctx.stroke();
+          }
+        });
+      });
+
+      time += 1;
+      animationFrame = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
 
   return (
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-0 opacity-60"
+        className="fixed inset-0 pointer-events-none z-0 opacity-75"
       />
 
-      {/* Optional: Floating icons */}
+      {/* Floating Crypto Icons (9 total) */}
       {orbData.length > 0 && (
         <div className="fixed inset-0 pointer-events-none z-10">
           {orbData.map((orb, orbIdx) =>
             orb.particles.map((p, idx) => {
               const Icon = p.coin.Icon;
               const angle = p.angle + performance.now() * 0.001 * orb.speed;
-              const x = (window.innerWidth / 2) + Math.cos(angle) * orb.radius - 16;
-              const y = (window.innerHeight / 2) + Math.sin(angle) * orb.radius - 16;
+              const x =
+                window.innerWidth / 2 + Math.cos(angle) * orb.radius - 16;
+              const y =
+                window.innerHeight / 2 + Math.sin(angle) * orb.radius - 16;
 
               return (
                 <motion.div
@@ -67,11 +157,15 @@ const CryptoOrbital = () => {
                   className="absolute !w-8 !h-8"
                   style={{ left: x, top: y }}
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                 >
                   <Icon
-                    className="w-full h-full text-cyan-300 opacity-70 drop-shadow-glow"
-                    style={{ filter: 'drop-shadow(0 0 12px currentColor)' }}
+                    className="w-full h-full text-cyan-300 opacity-80 drop-shadow-glow"
+                    style={{ filter: "drop-shadow(0 0 14px currentColor)" }}
                   />
                 </motion.div>
               );
