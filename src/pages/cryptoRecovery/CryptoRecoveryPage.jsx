@@ -19,24 +19,21 @@ const CryptoOrbital = () => {
   const canvasRef = useRef(null);
   const [orbData, setOrbData] = useState([]);
 
-  // -----------------------------------------------------------------
-  // 1. Build the orbital data once (radius, speed, particles…)
-  // -----------------------------------------------------------------
   useEffect(() => {
     const coins = [
-      { Icon: RiBtcFill,   hue: 25 },
-      { Icon: FaEthereum,  hue: 200 },
-      { Icon: SiSolana,    hue: 140 },
-      { Icon: SiCardano,   hue: 170 },
-      { Icon: SiBinance,   hue: 50 },
-      { Icon: SiDogecoin,  hue: 60 },
+      { Icon: RiBtcFill, hue: 25 },
+      { Icon: FaEthereum, hue: 200 },
+      { Icon: SiSolana, hue: 140 },
+      { Icon: SiCardano, hue: 170 },
+      { Icon: SiBinance, hue: 50 },
+      { Icon: SiDogecoin, hue: 60 },
     ];
 
-    const orbs = Array.from({ length: 6 }, (_, i) => ({
-      radius: 120 + i * 90,
-      speed: 0.0015 + i * 0.0004,
-      hue: 160 + i * 12,
-      particles: Array.from({ length: 7 }, () => ({
+    const orbs = Array.from({ length: 3 }, (_, i) => ({
+      radius: 180 + i * 120,
+      speed: 0.0012 + i * 0.0003,
+      hue: 160 + i * 15,
+      particles: Array.from({ length: 3 }, () => ({
         angle: Math.random() * Math.PI * 2,
         coin: coins[Math.floor(Math.random() * coins.length)],
       })),
@@ -45,69 +42,8 @@ const CryptoOrbital = () => {
     setOrbData(orbs);
   }, []);
 
-  // -----------------------------------------------------------------
-  // 2. Canvas – only the faint orbital lines
-  // -----------------------------------------------------------------
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    let animationFrame;
-    let time = 0;
+  // ← Paste the lightweight particle useEffect here → (from above)
 
-    const resize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-    resize();
-    window.addEventListener('resize', resize);
-
-    const draw = () => {
-      ctx.fillStyle = 'rgba(10,10,31,0.03)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      const cx = canvas.width / 2;
-      const cy = canvas.height / 2;
-
-      orbData.forEach(orb => {
-        // faint orbit line
-        ctx.strokeStyle = `hsla(${orb.hue},100%,70%,0.1)`;
-        ctx.lineWidth = 1;
-        ctx.setLineDash([8, 16]);
-        ctx.beginPath();
-        ctx.arc(cx, cy, orb.radius, 0, Math.PI * 2);
-        ctx.stroke();
-        ctx.setLineDash([]);
-
-        // connection from centre to each particle
-        orb.particles.forEach((p) => {
-          const a = p.angle + time * orb.speed;
-          const x = cx + Math.cos(a) * orb.radius;
-          const y = cy + Math.sin(a) * orb.radius;
-
-          ctx.beginPath();
-          ctx.moveTo(cx, cy);
-          ctx.lineTo(x, y);
-          ctx.strokeStyle = `hsla(${orb.hue},100%,60%,0.15)`;
-          ctx.stroke();
-        });
-      });
-
-      time += 1;
-      animationFrame = requestAnimationFrame(draw);
-    };
-
-    draw();
-
-    return () => {
-      cancelAnimationFrame(animationFrame);
-      window.removeEventListener('resize', resize);
-    };
-  }, [orbData]);
-
-  // -----------------------------------------------------------------
-  // 3. Render the moving coin icons as React components
-  // -----------------------------------------------------------------
   return (
     <>
       <canvas
@@ -115,40 +51,37 @@ const CryptoOrbital = () => {
         className="fixed inset-0 pointer-events-none z-0 opacity-60"
       />
 
-      {/* Floating coin icons */}
-      {orbData.map((orb, orbIdx) =>
-        orb.particles.map((p, idx) => {
-          const Icon = p.coin.Icon;
-          const angle = p.angle + performance.now() * 0.001 * orb.speed;
-          const radius = orb.radius;
-          const cx = typeof window !== 'undefined' ? window.innerWidth / 2 : 0;
-          const cy = typeof window !== 'undefined' ? window.innerHeight / 2 : 0;
-          const x = cx + Math.cos(angle) * radius - 16; // 32px icon / 2
-          const y = cy + Math.sin(angle) * radius - 16;
+      {/* Optional: Floating icons */}
+      {orbData.length > 0 && (
+        <div className="fixed inset-0 pointer-events-none z-10">
+          {orbData.map((orb, orbIdx) =>
+            orb.particles.map((p, idx) => {
+              const Icon = p.coin.Icon;
+              const angle = p.angle + performance.now() * 0.001 * orb.speed;
+              const x = (window.innerWidth / 2) + Math.cos(angle) * orb.radius - 16;
+              const y = (window.innerHeight / 2) + Math.sin(angle) * orb.radius - 16;
 
-          return (
-            <motion.div
-              key={`${orbIdx}-${idx}`}
-              className="absolute !w-8 !h-8"
-              style={{ left: x, top: y }}
-              animate={{ rotate: performance.now() * 0.0003 }}
-            >
-              <Icon
-                className="w-full h-full"
-                style={{
-                  color: `hsl(${p.coin.hue},100%,70%)`,
-                  filter: 'drop-shadow(0 0 8px currentColor)',
-                  opacity: 0.85,
-                }}
-              />
-            </motion.div>
-          );
-        })
+              return (
+                <motion.div
+                  key={`${orbIdx}-${idx}`}
+                  className="absolute !w-8 !h-8"
+                  style={{ left: x, top: y }}
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                >
+                  <Icon
+                    className="w-full h-full text-cyan-300 opacity-70 drop-shadow-glow"
+                    style={{ filter: 'drop-shadow(0 0 12px currentColor)' }}
+                  />
+                </motion.div>
+              );
+            })
+          )}
+        </div>
       )}
     </>
   );
 };
-
 // === 3D NEURAL CRYPTO SCANNER (ROTATING CUBE) ===
 const NeuralCryptoScanner = ({ recovered }) => {
   const containerRef = useRef(null);
