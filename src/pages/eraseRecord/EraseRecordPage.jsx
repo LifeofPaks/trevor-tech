@@ -471,7 +471,7 @@ export default function EraseRecordPage() {
 
       {/* MARQUEE */}
       <section
-        className="bg-[#0a0a1f]/60 backdrop-blur-xl border-y border-cyan-500/30 !py-5 overflow-hidden"
+        className=" !py-5 overflow-hidden"
         ref={statsRef}
       >
         <motion.div

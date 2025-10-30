@@ -662,7 +662,6 @@ export default function CryptoRecoveryPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
             <h2 className="text-6xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-8">
               NEURAL ENGINE
             </h2>
@@ -711,7 +710,6 @@ export default function CryptoRecoveryPage() {
 
       {/* TESTIMONIALS */}
       <section className="relative !py-28 lg:!py-44" ref={testimonialsRef}>
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
             className="text-center !mb-24"
@@ -843,7 +841,6 @@ export default function CryptoRecoveryPage() {
 
       {/* FINAL CTA */}
       <section className="relative !py-28 lg:!py-44 bg-gradient-to-b from-transparent via-[#0f0f2a]/50 to-transparent">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
         <div className="max-w-5xl !mx-auto !px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 60 }}
