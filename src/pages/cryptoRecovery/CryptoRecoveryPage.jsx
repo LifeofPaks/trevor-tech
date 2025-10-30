@@ -675,13 +675,33 @@ export default function CryptoRecoveryPage() {
               {
                 icon: FiKey,
                 title: "Seedless",
-                desc: "Rebuild from zero data.",
+                desc: "Securely recover accounts from minimal data using verified owner checks and guided restoration.",
               },
-              { icon: FiCode, title: "Neural Force", desc: "15M+ keys/sec." },
-              { icon: FiEyeOff, title: "Ghost Mode", desc: "Zero trace." },
-              { icon: RiBtcFill, title: "All Chains", desc: "200+ supported." },
-              { icon: FiZap, title: "Instant", desc: "Funds in seconds." },
-              { icon: FiShield, title: "Quantum Safe", desc: "Future-proof." },
+              {
+                icon: FiCode,
+                title: "Neural Force",
+                desc: "High-performance recovery assistance using ML-driven heuristics to suggest valid recovery paths.",
+              },
+              {
+                icon: FiEyeOff,
+                title: "Ghost Mode",
+                desc: "Discreet monitoring with explicit consent, end-to-end encryption, and a tamper-proof audit trail.",
+              },
+              {
+                icon: RiBtcFill,
+                title: "All Chains",
+                desc: "Interoperable support across 200+ blockchains and tokens for compliant wallet management and recovery.",
+              },
+              {
+                icon: FiZap,
+                title: "Instant",
+                desc: "Fast, compliant transfers and settlement options to move funds securely in seconds where supported.",
+              },
+              {
+                icon: FiShield,
+                title: "Quantum Safe",
+                desc: "Post-quantum cryptographic safeguards and migration paths to protect assets against future threats.",
+              },
             ].map((f, i) => (
               <motion.div
                 key={i}
@@ -691,11 +711,11 @@ export default function CryptoRecoveryPage() {
                 transition={{ delay: i * 0.16 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/15 to-teal-500/15 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity" />
-                <div className="relative bg-black/80 backdrop-blur-3xl border border-cyan-500/40 rounded-3xl !p-12 shadow-2xl group-hover:shadow-cyan-500/60 transition-all">
-                  <div className="w-24 h-24 bg-gradient-to-r from-cyan-500/25 to-teal-500/25 rounded-2xl flex items-center justify-center !mb-8 group-hover:scale-110 transition-transform">
-                    <f.icon className="!w-14 !h-14 text-cyan-300 drop-shadow-glow" />
+                <div className="bg-white/5 backdrop-blur-xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/50 transition-all group h-[300px]">
+                  <div className="w-16 h-16 bg-gradient-to-r from-cyan-500/25 to-teal-500/25 rounded-2xl flex items-center justify-center !mb-3 group-hover:scale-110 transition-transform">
+                    <f.icon className="!w-10 !h-10 text-cyan-300 drop-shadow-glow" />
                   </div>
-                  <h3 className="text-3xl font-bold text-cyan-100 !mb-5">
+                  <h3 className="text-3xl font-bold text-cyan-100 !mb-2">
                     {f.title}
                   </h3>
                   <p className="text-cyan-200/80 text-lg leading-relaxed">
@@ -786,7 +806,7 @@ export default function CryptoRecoveryPage() {
                 whileHover={{ y: -14, scale: 1.05 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/15 to-teal-500/15 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
-                <div className="relative bg-black/80 backdrop-blur-3xl border border-cyan-500/40 rounded-3xl !p-10 shadow-2xl">
+                <div className="bg-white/5 backdrop-blur-xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/50 transition-all group">
                   {/* ✅ NEW: Profile Image + Chain Icon */}
                   <div className="flex items-center gap-5 !mb-6">
                     {/* Profile Avatar */}
