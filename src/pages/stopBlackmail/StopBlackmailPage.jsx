@@ -204,7 +204,7 @@ const NebulaParticles = () => {
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-0 opacity-40"
+        className="fixed inset-0 pointer-events-none z-0 lg:opacity-40 opacity-20"
       />
 
       {/* Orbiting threat icons */}
@@ -232,9 +232,7 @@ const NebulaParticles = () => {
                   }}
                 >
                   <Icon
-                    className={`w-8 h-8 ${
-                       "text-cyan-400"
-                    } opacity-15 drop-shadow-glow`}
+                    className={`w-8 h-8 ${"text-cyan-400"} opacity-15 drop-shadow-glow`}
                     style={{ filter: "drop-shadow(0 0 20px currentColor)" }}
                   />
                 </motion.div>
@@ -304,19 +302,6 @@ const StopBlackmailPage = () => {
   return (
     <>
       <NebulaParticles />
-
-      {/* GLOWING CURSOR TRAIL */}
-      <motion.div
-        className="fixed !w-[600px] !h-[600px] rounded-full pointer-events-none z-50 mix-blend-screen"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(255,0,100,0.28) 0%, transparent 70%)",
-          left: smoothX - 300,
-          top: smoothY - 300,
-        }}
-        animate={{ scale: isRemoving ? 1.7 : 1 }}
-        transition={{ type: "spring", stiffness: 300 }}
-      />
 
       {/* HERO */}
       <section className="relative !pt-28 !pb-20 lg:!pt-40 lg:!pb-28 overflow-hidden bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033]">
