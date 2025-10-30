@@ -425,7 +425,7 @@ export default function CryptoRecoveryPage() {
 
             {/* Live Stats */}
             <motion.div
-              className="grid grid-cols-3 gap-10 text-left"
+              className="flex items-center flex-col lg:flex-row justify-center lg:justify-between gap-12 w-full"
               initial={{ opacity: 0 }}
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.8 }}
