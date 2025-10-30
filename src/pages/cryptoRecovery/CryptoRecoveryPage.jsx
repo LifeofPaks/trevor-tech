@@ -560,9 +560,9 @@ export default function CryptoRecoveryPage() {
               <button
                 onClick={startRecovery}
                 disabled={isRecovering}
-                className="group relative !px-14 !py-6 bg-gradient-to-r from-cyan-500 via-teal-500 to-green-500 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-2xl lg:text-xl w-full lg:w-auto"
+                className="group relative !px-10 !py-5 bg-gradient-to-r from-cyan-500 via-teal-500 to-green-500 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-2xl lg:text-xl w-full lg:w-auto"
               >
-                <span className="relative z-10 flex items-center justify-center gap-4">
+                <span className="relative z-10 flex items-center justify-center gap-4 text-[16px]">
                   {isRecovering ? (
                     <>
                       SCANNING LIVE <FiCpu className="animate-spin" />
@@ -582,7 +582,7 @@ export default function CryptoRecoveryPage() {
 
               <button
                 onClick={() => setModalOpen(true)}
-                className="!px-14 !py-6 border-2 border-cyan-400 text-cyan-300 rounded-full font-bold hover:bg-cyan-500/10 transition-all backdrop-blur-sm lg:text-xl w-full lg:w-auto"
+                className="!px-10 !py-5 border-1 text-[16px] border-cyan-400 text-cyan-300 rounded-full font-bold hover:bg-cyan-500/10 transition-all backdrop-blur-sm w-full lg:w-auto"
               >
                 CONTACT OPS
               </button>
