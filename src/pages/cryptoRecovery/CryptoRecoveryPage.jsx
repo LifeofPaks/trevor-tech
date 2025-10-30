@@ -330,7 +330,7 @@ const RecoveryMatrix = ({ isActive }) => {
 
   return (
     <motion.div
-      className="bg-black/85 backdrop-blur-3xl border border-cyan-500/40 rounded-2xl !p-6 font-mono text-xs !h-86 overflow-hidden shadow-2xl min-w-[300px] !mb-10"
+      className="bg-black/85 backdrop-blur-3xl border border-cyan-500/40 rounded-2xl !p-6 font-mono text-xs !h-80 overflow-hidden shadow-2xl min-w-[330px] !mb-10"
       initial={{ opacity: 0, scale: 0.94 }}
       animate={{ opacity: 1, scale: 1 }}
     >
