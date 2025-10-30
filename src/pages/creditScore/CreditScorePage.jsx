@@ -213,7 +213,7 @@ const NebulaParticles = () => {
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-0 opacity-65"
+        className="fixed inset-0 pointer-events-none z-0 lg:opacity-35 opacity-10"
       />
 
       {/* Orbiting icons */}
@@ -241,7 +241,7 @@ const NebulaParticles = () => {
                   }}
                 >
                   <Icon
-                    className="w-full h-full text-cyan-400 opacity-35 drop-shadow-glow"
+                    className="w-full h-full text-cyan-400 lg:opacity-10 opacity-7 drop-shadow-glow"
                     style={{ filter: "drop-shadow(0 0 22px currentColor)" }}
                   />
                 </motion.div>
@@ -378,7 +378,7 @@ const CreditScorePage = () => {
               Skyrocket Your Credit Score
             </motion.h1>
             <motion.p
-              className="text-lg sm:text-xl lg:text-2xl text-cyan-200/90 font-light !max-w-3xl !mx-auto !mb-16 leading-relaxed"
+              className="text-lg sm:text-xl lg:text-2xl text-cyan-200/90 font-light !max-w-3xl !mx-auto !mb-20 leading-relaxed"
               initial={{ opacity: 0 }}
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5, duration: 0.8 }}
@@ -448,7 +448,7 @@ const CreditScorePage = () => {
 
             {/* Score Orb */}
             <motion.div
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 !w-80 !h-80"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 !w-80 !h-80 !mt-20 lg:!mt-0"
               initial={{ scale: 0.7, opacity: 0 }}
               animate={heroInView ? { scale: 1, opacity: 1 } : {}}
               transition={{ delay: 1.1, type: "spring" }}
@@ -544,7 +544,7 @@ const CreditScorePage = () => {
 
           {/* COMMUNITY OVERLAP */}
           <motion.div
-            className="flex flex-col items-center justify-center text-center !mt-20"
+            className="flex flex-col items-center justify-center text-center lg:!mt-20 !mt-10"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -630,8 +630,8 @@ const CreditScorePage = () => {
               Watch your score{" "}
               <strong className="font-bold">skyrocket in real time</strong> with
               our{" "}
-              <span className="inline-block px-3 py-1 mx-1 bg-white/6 shadow-lg">
-                <span className="bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent font-semibold">
+              <span className="inline-block px-3 py-1 mx-1 ">
+                <span className=" font-semibold">
                   undetectable
                 </span>
               </span>{" "}
