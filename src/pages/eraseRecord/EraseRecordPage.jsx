@@ -277,7 +277,7 @@ const DatabaseTerminal = ({ isActive }) => {
 
   return (
     <motion.div
-      className="bg-[#0a0a1f]/80 backdrop-blur-2xl border border-cyan-500/40 rounded-2xl !p-5 font-mono text-xs h-72 overflow-hidden shadow-2xl !mb-5"
+      className="bg-[#0a0a1f]/80 backdrop-blur-2xl border border-cyan-500/40 rounded-2xl !p-5 font-mono text-xs h-72 overflow-hidden shadow-2xl !mb-5 w-[350px]"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}

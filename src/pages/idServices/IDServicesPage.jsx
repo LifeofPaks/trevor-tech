@@ -295,7 +295,7 @@ const VerificationMatrix = ({ active }) => {
 
   return (
     <motion.div
-      className="bg-black/85 backdrop-blur-3xl border border-cyan-500/35 rounded-2xl !p-6 font-mono text-xs !h-80 overflow-hidden shadow-2xl min-w-[340px] !mb-10"
+      className="bg-black/85 backdrop-blur-3xl border border-cyan-500/35 rounded-2xl !p-6 font-mono text-xs !h-80 overflow-hidden shadow-2xl w-[350px] !mb-10"
       initial={{ opacity: 0, scale: 0.94 }}
       animate={{ opacity: 1, scale: 1 }}
     >
@@ -443,7 +443,7 @@ export default function IDServicesPage() {
       {/* HERO – SPLIT SCREEN */}
       <section
         ref={heroR}
-        className="relative min-h-screen flex items-center justify-center overflow-hidden lg:!pt-20 !pt-24"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden lg:!pt-20 !pt-45"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#1a0033] opacity-94" />
 
