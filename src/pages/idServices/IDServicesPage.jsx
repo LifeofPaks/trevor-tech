@@ -12,68 +12,59 @@ import {
   FiShield,
   FiZap,
   FiLock,
-  FiRefreshCw,
   FiCheckCircle,
   FiClock,
   FiCpu,
-  FiEyeOff,
-  FiTrendingUp,
-  FiKey,
-  FiCode,
-  FiTerminal,
-  FiBox,
-  FiServer,
+  FiGlobe,
+  FiTruck,
+  FiAward,
+  FiUserCheck,
+  FiFileText,
   FiMail,
   FiPhone,
   FiMapPin,
-  FiAward,
-  FiGlobe,
-  FiCreditCard,
-  FiUserCheck,
-  FiFileText,
-  FiTruck,
 } from "react-icons/fi";
-import { FaIdCard, FaRegIdBadge, FaTelegramPlane } from "react-icons/fa";
+import { FaIdCard } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { create } from "zustand";
 import BuyModal from "../../components/buyModal/BuyModal";
 
-const IDOrbital = () => {
+/* ------------------------------------------------------------------ */
+/* -------------------------- NEBULA PARTICLES ----------------------- */
+/* ------------------------------------------------------------------ */
+const NebulaBackground = () => {
   const canvasRef = useRef(null);
-  const [orbData, setOrbData] = useState([]);
+  const [orbs, setOrbs] = useState([]);
 
-  // Generate orbital data for floating icons
+  // floating icons (orbits)
   useEffect(() => {
     const icons = [
-      { Icon: FaIdCard, hue: 190 },
-      { Icon: FiShield, hue: 120 },
-      { Icon: FiUserCheck, hue: 80 },
-      { Icon: FiFileText, hue: 220 },
-      { Icon: FiAward, hue: 45 },
-      { Icon: FiCreditCard, hue: 160 },
+      { Icon: FaIdCard, hue: 210 },
+      { Icon: FiShield, hue: 170 },
+      { Icon: FiUserCheck, hue: 130 },
+      { Icon: FiFileText, hue: 250 },
+      { Icon: FiAward, hue: 60 },
+      { Icon: FiGlobe, hue: 190 },
     ];
-
-    const orbs = Array.from({ length: 4 }, (_, i) => ({
-      radius: 160 + i * 100,
-      speed: 0.001 + i * 0.0004,
-      hue: 180 + i * 20,
-      particles: Array.from({ length: 4 }, () => ({
+    const data = Array.from({ length: 5 }, (_, i) => ({
+      radius: 140 + i * 90,
+      speed: 0.0008 + i * 0.0003,
+      particles: Array.from({ length: 5 }, () => ({
         angle: Math.random() * Math.PI * 2,
         icon: icons[Math.floor(Math.random() * icons.length)],
       })),
     }));
-
-    setOrbData(orbs);
+    setOrbs(data);
   }, []);
 
-  // Enhanced particle field - smoother, more elegant
+  // particle field
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
-    let animationFrame;
-    let time = 0;
+    let raf,
+      t = 0;
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -82,91 +73,45 @@ const IDOrbital = () => {
     resize();
     window.addEventListener("resize", resize);
 
-    const particles = Array.from({ length: 120 }, () => ({
+    const particles = Array.from({ length: 140 }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.6,
-      vy: (Math.random() - 0.5) * 0.6,
-      radius: Math.random() * 1.8 + 1.2,
-      hue: 180 + Math.random() * 60, // Royal blue → emerald
-      pulsePhase: Math.random() * Math.PI * 2,
-      trail: [],
+      vx: (Math.random() - 0.5) * 0.5,
+      vy: (Math.random() - 0.5) * 0.5,
+      r: Math.random() * 1.6 + 1,
+      hue: 200 + Math.random() * 60,
+      pulse: Math.random() * Math.PI * 2,
     }));
 
-    const animate = () => {
-      // Soft fade trail
-      ctx.fillStyle = "rgba(5, 10, 30, 0.07)";
+    const draw = () => {
+      ctx.fillStyle = "rgba(6, 8, 28, 0.06)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      const cx = canvas.width / 2;
-      const cy = canvas.height / 2;
-
       particles.forEach((p) => {
-        // Update trail
-        p.trail.push({ x: p.x, y: p.y });
-        if (p.trail.length > 12) p.trail.shift();
-
         p.x += p.vx;
         p.y += p.vy;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
-        // Bounce with damping
-        if (p.x < 0 || p.x > canvas.width) p.vx *= -0.98;
-        if (p.y < 0 || p.y > canvas.height) p.vy *= -0.98;
-
-        // Gentle pulse
-        const pulse = 0.8 + 0.2 * Math.sin(time * 0.02 + p.pulsePhase);
-
-        // Draw trail
-        ctx.strokeStyle = `hsla(${p.hue}, 100%, 70%, 0.15)`;
-        ctx.lineWidth = 1.5;
+        const pulse = 0.7 + 0.3 * Math.sin(t * 0.018 + p.pulse);
         ctx.beginPath();
-        p.trail.forEach((point, i) => {
-          if (i === 0) ctx.moveTo(point.x, point.y);
-          else ctx.lineTo(point.x, point.y);
-        });
-        ctx.stroke();
-
-        // Draw particle
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius * pulse, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${p.hue}, 100%, 82%, ${pulse})`;
+        ctx.arc(p.x, p.y, p.r * pulse, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${p.hue},100%,80%,${pulse})`;
         ctx.fill();
 
-        // Glow
-        ctx.shadowBlur = 22;
-        ctx.shadowColor = `hsla(${p.hue}, 100%, 75%, 0.8)`;
+        ctx.shadowBlur = 20;
+        ctx.shadowColor = `hsla(${p.hue},100%,75%,0.7)`;
         ctx.fill();
         ctx.shadowBlur = 0;
-
-        // Connect nearby
-        particles.forEach((other) => {
-          if (other === p) return;
-          const dx = p.x - other.x;
-          const dy = p.y - other.y;
-          const dist = Math.hypot(dx, dy);
-
-          if (dist < 160) {
-            const opacity = (1 - dist / 160) * 0.22;
-            ctx.beginPath();
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(other.x, other.y);
-            ctx.strokeStyle = `hsla(${
-              (p.hue + other.hue) / 2
-            }, 100%, 72%, ${opacity})`;
-            ctx.lineWidth = 1;
-            ctx.stroke();
-          }
-        });
       });
 
-      time += 1;
-      animationFrame = requestAnimationFrame(animate);
+      t += 1;
+      raf = requestAnimationFrame(draw);
     };
-
-    animate();
+    draw();
 
     return () => {
-      cancelAnimationFrame(animationFrame);
+      cancelAnimationFrame(raf);
       window.removeEventListener("resize", resize);
     };
   }, []);
@@ -175,37 +120,33 @@ const IDOrbital = () => {
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-0 opacity-60"
+        className="fixed inset-0 pointer-events-none z-0 opacity-65"
       />
-
-      {/* Floating ID Icons */}
-      {orbData.length > 0 && (
+      {/* orbiting icons */}
+      {orbs.length > 0 && (
         <div className="fixed inset-0 pointer-events-none z-10">
-          {orbData.map((orb, orbIdx) =>
-            orb.particles.map((p, idx) => {
+          {orbs.map((orb, oi) =>
+            orb.particles.map((p, pi) => {
               const Icon = p.icon.Icon;
               const angle = p.angle + performance.now() * 0.001 * orb.speed;
               const x =
-                window.innerWidth / 2 + Math.cos(angle) * orb.radius - 20;
+                window.innerWidth / 2 + Math.cos(angle) * orb.radius - 22;
               const y =
-                window.innerHeight / 2 + Math.sin(angle) * orb.radius - 20;
+                window.innerHeight / 2 + Math.sin(angle) * orb.radius - 22;
 
               return (
                 <motion.div
-                  key={`${orbIdx}-${idx}`}
-                  className="absolute !w-10 !h-10"
+                  key={`${oi}-${pi}`}
+                  className="absolute !w-11 !h-11"
                   style={{ left: x, top: y }}
                   animate={{ rotate: 360 }}
                   transition={{
-                    duration: 24,
+                    duration: 28,
                     repeat: Infinity,
                     ease: "linear",
                   }}
                 >
-                  <Icon
-                    className="w-full h-full text-indigo-300 opacity-20 drop-shadow-glow"
-                    style={{ filter: "drop-shadow(0 0 16px currentColor)" }}
-                  />
+                  <Icon className="w-full h-full text-cyan-300 opacity-25 drop-shadow-glow" />
                 </motion.div>
               );
             })
@@ -216,68 +157,68 @@ const IDOrbital = () => {
   );
 };
 
-// 3D Animated ID Card
-const AnimatedIDCard = ({ verified }) => {
-  const containerRef = useRef(null);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-  const rotateX = useSpring(useTransform(mouseY, [-250, 250], [18, -18]), {
-    stiffness: 120,
-    damping: 28,
+/* ------------------------------------------------------------------ */
+/* --------------------------- 3D ID CARD ---------------------------- */
+/* ------------------------------------------------------------------ */
+const HoloIDCard = ({ verified }) => {
+  const ref = useRef(null);
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
+  const rx = useSpring(useTransform(my, [-300, 300], [22, -22]), {
+    stiffness: 110,
+    damping: 30,
   });
-  const rotateY = useSpring(useTransform(mouseX, [-250, 250], [-18, 18]), {
-    stiffness: 120,
-    damping: 28,
+  const ry = useSpring(useTransform(mx, [-300, 300], [-22, 22]), {
+    stiffness: 110,
+    damping: 30,
   });
 
-  const handleMouseMove = (e) => {
-    const rect = containerRef.current.getBoundingClientRect();
-    mouseX.set(e.clientX - rect.left - rect.width / 2);
-    mouseY.set(e.clientY - rect.top - rect.height / 2);
+  const onMove = (e) => {
+    const r = ref.current.getBoundingClientRect();
+    mx.set(e.clientX - r.left - r.width / 2);
+    my.set(e.clientY - r.top - r.height / 2);
   };
 
   return (
     <motion.div
-      ref={containerRef}
+      ref={ref}
       className="relative lg:!w-96 lg:!h-60 w-80 h-52 cursor-grab active:cursor-grabbing !my-12 lg:!my-0"
-      style={{ rotateX, rotateY, perspective: 1400 }}
-      onMouseMove={handleMouseMove}
-      whileHover={{ scale: 1.06 }}
+      style={{ rotateX: rx, rotateY: ry, perspective: 1500 }}
+      onMouseMove={onMove}
+      whileHover={{ scale: 1.07 }}
     >
-      {/* Card Base */}
+      {/* Glass base */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-indigo-900/90 via-purple-900/80 to-pink-900/70 backdrop-blur-3xl rounded-3xl border border-indigo-400/50 shadow-2xl overflow-hidden"
+        className="absolute inset-0 bg-gradient-to-br from-cyan-900/80 via-violet-900/70 to-magenta-900/60 backdrop-blur-3xl rounded-3xl border border-cyan-400/40 shadow-2xl overflow-hidden"
         animate={{ rotateY: 360 }}
-        transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
       >
-        {/* Holographic Overlay */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-0 !w-32 !h-32 bg-gradient-to-br from-cyan-400 to-pink-400 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-0 right-0 !w-40 !h-40 bg-gradient-to-tl from-purple-400 to-indigo-400 rounded-full blur-3xl animate-pulse" />
-        </div>
-
-        {/* Card Content */}
+        {/* Holo strip */}
+        <motion.div
+          className="absolute inset-x-0 top-0 h-12 bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent"
+          animate={{ x: ["-100%", "100%"] }}
+          transition={{ repeat: Infinity, duration: 2.4, ease: "linear" }}
+        />
+        {/* Content */}
         <div className="relative !p-8 flex items-center justify-between h-full">
           <div>
             <div className="flex items-center gap-3 !mb-4">
-              <FaIdCard className="text-cyan-300 !w-10 !h-10 drop-shadow-glow" />
+              <FaIdCard className="text-cyan-300 !w-11 !h-11 drop-shadow-glow" />
               <span className="text-cyan-100 font-black text-2xl tracking-widest">
-                GOV-ID
+                ID-HOLO
               </span>
             </div>
-            <div className="space-y-2">
-              <p className="text-indigo-200 font-medium">JOHN A. DOE</p>
-              <p className="text-cyan-300 text-sm">DOB: 03/15/1987</p>
-              <p className="text-cyan-300 text-sm">ISS: 10/30/2025</p>
-            </div>
+            <p className="text-cyan-200 font-medium">JANE A. SMITH</p>
+            <p className="text-cyan-300 text-sm">DOB: 07/22/1992</p>
+            <p className="text-cyan-300 text-sm">ISS: 10/30/2025</p>
           </div>
 
           <div className="text-right">
             <div className="relative !w-24 !h-24 mx-auto !mb-4">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-400 to-purple-400 rounded-full blur-xl opacity-70" />
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-violet-400 rounded-full blur-xl opacity-70" />
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
-                alt="ID Photo"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face"
+                alt="photo"
                 className="relative !w-full !h-full rounded-full object-cover border-4 border-cyan-300/60 shadow-2xl"
               />
               {verified && (
@@ -285,35 +226,35 @@ const AnimatedIDCard = ({ verified }) => {
                   className="absolute -bottom-1 -right-1 !w-10 !h-10 bg-gradient-to-br from-green-400 to-emerald-400 rounded-full flex items-center justify-center shadow-lg border-2 border-white"
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  transition={{ delay: 0.5 }}
+                  transition={{ delay: 0.6 }}
                 >
                   <FiCheckCircle className="text-white !w-6 !h-6" />
                 </motion.div>
               )}
             </div>
-            <p className="text-cyan-200 font-bold text-lg">DL# A1234567</p>
+            <p className="text-cyan-200 font-bold text-lg">DL# B9876543</p>
           </div>
         </div>
 
         {/* Chip */}
-        <div className="absolute bottom-6 left-8 !w-12 !h-8 bg-gradient-to-r from-yellow-400 to-amber-400 rounded-md shadow-lg flex items-center justify-center">
+        <div className="absolute bottom-6 left-8 !w-12 !h-8 bg-gradient-to-r from-amber-400 to-yellow-400 rounded-md shadow-lg flex items-center justify-center">
           <div className="grid grid-cols-3 gap-0.5">
             {[...Array(9)].map((_, i) => (
-              <div key={i} className=" !w-1 !h-1 bg-amber-600 rounded-sm" />
+              <div key={i} className="!w-1 !h-1 bg-amber-600 rounded-sm" />
             ))}
           </div>
         </div>
       </motion.div>
 
-      {/* Verification Rings */}
+      {/* Scanning rings */}
       {[0, 1].map((i) => (
         <motion.div
           key={i}
-          className="absolute inset-0 rounded-3xl border-2 border-cyan-400/40"
-          style={{ transform: `rotateX(${i * 25}deg)` }}
+          className="absolute inset-0 rounded-3xl border-2 border-cyan-400/30"
+          style={{ transform: `rotateX(${i * 30}deg)` }}
           animate={{ rotateZ: 360 }}
           transition={{
-            duration: 3 + i * 0.6,
+            duration: 2.8 + i * 0.5,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -323,92 +264,93 @@ const AnimatedIDCard = ({ verified }) => {
   );
 };
 
-// Live Verification Matrix
-const VerificationMatrix = ({ isActive }) => {
-  const [lines, setLines] = useState([]);
-  const intervalRef = useRef();
+/* ------------------------------------------------------------------ */
+/* -------------------------- VERIFICATION MATRIX -------------------- */
+/* ------------------------------------------------------------------ */
+const VerificationMatrix = ({ active }) => {
+  const [rows, setRows] = useState([]);
+  const iv = useRef();
 
   useEffect(() => {
-    if (isActive) {
+    if (active) {
       const states = ["CA", "TX", "NY", "FL", "IL", "PA", "OH", "GA"];
       const types = ["DL", "ID", "PASS", "REALID"];
-
-      intervalRef.current = setInterval(() => {
+      iv.current = setInterval(() => {
         const state = states[Math.floor(Math.random() * states.length)];
         const type = types[Math.floor(Math.random() * types.length)];
-        const id = Math.random().toString(36).substr(2, 8).toUpperCase();
-        const status = Math.random() > 0.2 ? "VERIFIED" : "PROCESSING";
+        const num = Math.random().toString(36).substr(2, 7).toUpperCase();
+        const status = Math.random() > 0.22 ? "VERIFIED" : "SCANNING";
 
-        setLines((prev) => {
-          const newLine = { id: Date.now(), state, type, idNum: id, status };
-          return [...prev, newLine].slice(-12);
+        setRows((prev) => {
+          const n = { id: Date.now(), state, type, num, status };
+          return [...prev, n].slice(-13);
         });
-      }, 620);
+      }, 580);
     } else {
-      clearInterval(intervalRef.current);
-      setLines([]);
+      clearInterval(iv.current);
+      setRows([]);
     }
-    return () => clearInterval(intervalRef.current);
-  }, [isActive]);
+    return () => clearInterval(iv.current);
+  }, [active]);
 
   return (
     <motion.div
-      className="bg-black/90 backdrop-blur-3xl border border-indigo-500/40 rounded-2xl !p-6 font-mono text-xs !h-80 overflow-hidden shadow-2xl min-w-[340px] !mb-10"
+      className="bg-black/85 backdrop-blur-3xl border border-cyan-500/35 rounded-2xl !p-6 font-mono text-xs !h-80 overflow-hidden shadow-2xl min-w-[340px] !mb-10"
       initial={{ opacity: 0, scale: 0.94 }}
       animate={{ opacity: 1, scale: 1 }}
     >
       <div className="flex items-center justify-between !mb-5">
         <div className="flex items-center gap-3">
-          <FiTerminal className="text-indigo-400 animate-pulse" />
-          <span className="text-indigo-300 font-bold tracking-widest">
-            ID_VERIFIER@v9
+          <FiCpu className="text-cyan-400 animate-pulse" />
+          <span className="text-cyan-300 font-bold tracking-widest">
+            ID_SCAN@v12
           </span>
         </div>
         <div className="flex gap-1.5">
-          <div className="w-2.5 h-2.5 rounded-full bg-indigo-400 animate-ping" />
-          <div className="w-2.5 h-2.5 rounded-full bg-purple-400" />
-          <div className="w-2.5 h-2.5 rounded-full bg-pink-400" />
+          <div className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
+          <div className="w-2.5 h-2.5 rounded-full bg-violet-400" />
+          <div className="w-2.5 h-2.5 rounded-full bg-magenta-400" />
         </div>
       </div>
 
-      <div className="space-y-2.5 text-indigo-200">
-        {lines.map((line) => (
+      <div className="space-y-2.5 text-cyan-200">
+        {rows.map((r) => (
           <motion.div
-            key={line.id}
+            key={r.id}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center gap-4 font-mono"
           >
             <span
               className={
-                line.status === "VERIFIED"
+                r.status === "VERIFIED"
                   ? "text-green-400 animate-pulse"
                   : "text-yellow-400"
               }
             >
-              [{line.status}]
+              [{r.status}]
             </span>
-            <span className="text-indigo-300">
-              {line.state}-{line.type}
+            <span className="text-cyan-300">
+              {r.state}-{r.type}
             </span>
-            <span className="text-purple-400">{line.idNum}</span>
-            <span className="text-gray-500">→ DMV SECURE</span>
+            <span className="text-violet-400">{r.num}</span>
+            <span className="text-gray-500">DMV</span>
           </motion.div>
         ))}
-        {isActive && (
+        {active && (
           <div className="flex gap-1.5">
-            {[...Array(5)].map((_, i) => (
+            {[...Array(4)].map((_, i) => (
               <motion.span
                 key={i}
-                className="text-indigo-400"
+                className="text-cyan-400"
                 animate={{ opacity: [0.2, 1, 0.2] }}
                 transition={{
-                  duration: 1.2,
+                  duration: 1.1,
                   repeat: Infinity,
-                  delay: i * 0.14,
+                  delay: i * 0.15,
                 }}
               >
-                ▊
+                block
               </motion.span>
             ))}
           </div>
@@ -418,272 +360,225 @@ const VerificationMatrix = ({ isActive }) => {
   );
 };
 
-// Zustand Store
+/* ------------------------------------------------------------------ */
+/* ------------------------------- STORE ----------------------------- */
+/* ------------------------------------------------------------------ */
 const useIDStore = create((set) => ({
   verified: 0,
   target: 98750,
-  isVerifying: false,
-  setVerifying: (v) => set({ isVerifying: v }),
-  increment: (a) =>
-    set((s) => ({ verified: Math.min(s.verified + a, s.target) })),
-  reset: () => set({ verified: 0, isVerifying: false }),
+  running: false,
+  setRunning: (v) => set({ running: v }),
+  inc: (a) => set((s) => ({ verified: Math.min(s.verified + a, s.target) })),
+  reset: () => set({ verified: 0, running: false }),
 }));
 
-// MAIN PAGE
+/* ------------------------------------------------------------------ */
+/* ------------------------------ MAIN PAGE -------------------------- */
+/* ------------------------------------------------------------------ */
 export default function IDServicesPage() {
-  const { verified, target, isVerifying, setVerifying, increment, reset } =
-    useIDStore();
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [modalOpen, setModalOpen] = useState(false);
+  const { verified, target, running, setRunning, inc, reset } = useIDStore();
+  const [mouse, setMouse] = useState({ x: 0, y: 0 });
+  const [modal, setModal] = useState(false);
 
-  const { ref: heroRef, inView: heroInView } = useInView({
+  const { ref: heroR, inView: heroV } = useInView({
     threshold: 0.3,
     triggerOnce: true,
   });
-  const { ref: statsRef, inView: statsInView } = useInView({
+  const { ref: statsR, inView: statsV } = useInView({
     threshold: 0.3,
     triggerOnce: true,
   });
-  const { ref: featuresRef, inView: featuresInView } = useInView({
+  const { ref: featR, inView: featV } = useInView({
     threshold: 0.3,
     triggerOnce: true,
   });
-  const { ref: testimonialsRef, inView: testimonialsInView } = useInView({
+  const { ref: testR, inView: testV } = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
 
   const { scrollYProgress } = useScroll();
-  const backgroundY = transformScroll(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const bgY = transformScroll(scrollYProgress, [0, 1], ["0%", "90%"]);
 
-  // Live Verification
+  // live counter
   useEffect(() => {
-    if (isVerifying && verified < target) {
-      const timer = setTimeout(() => {
-        const burst = Math.floor(Math.random() * 11000) + 5000;
-        increment(burst);
-      }, 140);
-      return () => clearTimeout(timer);
-    } else if (verified >= target) {
-      setVerifying(false);
-    }
-  }, [verified, isVerifying, target, increment, setVerifying]);
+    if (running && verified < target) {
+      const id = setTimeout(
+        () => inc(Math.floor(Math.random() * 12000) + 4800),
+        150
+      );
+      return () => clearTimeout(id);
+    } else if (verified >= target) setRunning(false);
+  }, [verified, running, target, inc, setRunning]);
 
-  // Mouse Trail
+  // mouse trail
   useEffect(() => {
-    const handleMouse = (e) => setMousePos({ x: e.clientX, y: e.clientY });
-    window.addEventListener("mousemove", handleMouse);
-    return () => window.removeEventListener("mousemove", handleMouse);
+    const onMove = (e) => setMouse({ x: e.clientX, y: e.clientY });
+    window.addEventListener("mousemove", onMove);
+    return () => window.removeEventListener("mousemove", onMove);
   }, []);
 
-  const startVerification = () => {
+  const start = () => {
     reset();
-    setVerifying(true);
+    setRunning(true);
   };
 
   return (
     <>
-      <IDOrbital />
+      <NebulaBackground />
 
-      {/* GLOWING MOUSE TRAIL */}
+      {/* GLOW TRAIL */}
       <motion.div
-        className="fixed !w-[500px] !h-[500px] rounded-full pointer-events-none z-50 mix-blend-screen"
+        className="fixed !w-[520px] !h-[520px] rounded-full pointer-events-none z-50 mix-blend-screen"
         style={{
           background:
-            "radial-gradient(circle, rgba(100,100,255,0.35) 0%, transparent 68%)",
-          left: mousePos.x - 250,
-          top: mousePos.y - 250,
+            "radial-gradient(circle, rgba(0,255,255,0.33) 0%, transparent 70%)",
+          left: mouse.x - 260,
+          top: mouse.y - 260,
         }}
-        animate={{ scale: isVerifying ? 1.6 : 1 }}
-        transition={{ type: "spring", stiffness: 300 }}
+        animate={{ scale: running ? 1.55 : 1 }}
+        transition={{ type: "spring", stiffness: 280 }}
       />
 
-      {/* HERO */}
+      {/* HERO – SPLIT SCREEN */}
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden lg:!pt-[5rem] !pt-[8rem]"
-        ref={heroRef}
+        ref={heroR}
+        className="relative min-h-screen flex items-center justify-center overflow-hidden lg:!pt-20 !pt-24"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#050a1e] via-[#0a0f2f] to-[#1a0033] opacity-95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#1a0033] opacity-94" />
 
-        {/* Parallax Orbs */}
-        <motion.div
-          className="absolute inset-0 opacity-35"
-          style={{ y: backgroundY }}
-        >
-          <div className="absolute top-28 left-28 !w-[700px] !h-[700px] bg-gradient-to-r from-indigo-600/25 to-purple-600/15 rounded-full blur-3xl" />
-          <div className="absolute bottom-40 right-40 !w-[650px] !h-[650px] bg-gradient-to-r from-pink-600/20 to-indigo-600/12 rounded-full blur-3xl" />
+        <motion.div className="absolute inset-0 opacity-30" style={{ y: bgY }}>
+          <div className="absolute top-20 left-20 !w-[720px] !h-[720px] bg-gradient-to-r from-cyan-600/20 to-violet-600/12 rounded-full blur-3xl" />
+          <div className="absolute bottom-32 right-32 !w-[680px] !h-[680px] bg-gradient-to-r from-magenta-600/18 to-cyan-600/10 rounded-full blur-3xl" />
         </motion.div>
 
-        <div className="relative z-10 max-w-7xl !mx-auto !px-6 grid lg:grid-cols-12 gap-12 items-center">
-          {/* LEFT: HERO TEXT */}
+        <div className="relative z-10 max-w-7xl !mx-auto !px-6 grid lg:grid-cols-2 gap-16 items-center">
+          {/* LEFT – TEXT + STATS */}
           <motion.div
-            className="lg:col-span-7"
-            initial={{ opacity: 0, x: -140 }}
-            animate={heroInView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, x: -180 }}
+            animate={heroV ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1.1 }}
           >
             <motion.h1
-              className="text-center lg:text-left text-5xl lg:text-8xl font-black bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent !mb-8 leading-none tracking-tighter"
-              initial={{ opacity: 0, y: 50 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : {}}
+              className="text-center lg:text-left text-5xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-violet-300 to-magenta-300 bg-clip-text text-transparent !mb-8 leading-none tracking-tighter"
+              initial={{ opacity: 0, y: 60 }}
+              animate={heroV ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
               GOV-ID
               <br />
-              <span className="text-5xl lg:text-7xl text-indigo-200">
-                VERIFIED
+              <span className="text-5xl lg:text-7xl text-cyan-200">
+                INSTANT
               </span>
             </motion.h1>
 
             <motion.p
-              className="lg:text-2xl text-indigo-200 !mb-12 max-w-3xl leading-relaxed text-center lg:text-left"
+              className="lg:text-2xl text-cyan-200 !mb-12 max-w-3xl leading-relaxed text-center lg:text-left"
               initial={{ opacity: 0 }}
-              animate={heroInView ? { opacity: 1 } : {}}
+              animate={heroV ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              Instant DMV-approved ID verification.{" "}
-              <strong className="text-purple-300">REAL ID compliant</strong>.
-              Same-day digital delivery. 100% secure, encrypted, and compliant.
+              DMV-approved **REAL ID** in minutes. Digital + physical delivery,
+              end-to-end encrypted.
             </motion.p>
 
-            {/* Live Stats */}
+            {/* Stats */}
             <motion.div
-              className="flex items-center flex-col lg:flex-row justify-center lg:justify-between gap-12 w-full"
+              className="flex flex-col lg:flex-row justify-center lg:justify-start gap-12 !mb-12"
               initial={{ opacity: 0 }}
-              animate={heroInView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.8 }}
+              animate={heroV ? { opacity: 1 } : {}}
+              transition={{ delay: 0.7 }}
             >
-              <div className="flex items-center justify-center flex-col">
-                <p className="text-6xl font-black text-indigo-300">
+              <div className="text-center">
+                <p className="text-6xl font-black text-cyan-300">
                   <CountUp end={verified} duration={0.6} separator="," />
                 </p>
-                <p className="text-indigo-200 !mt-2 text-lg">VERIFIED</p>
+                <p className="text-cyan-200 !mt-2 text-lg">VERIFIED</p>
               </div>
-              <div className="flex items-center justify-center flex-col">
-                <p className="text-6xl font-black text-purple-400">
-                  <CountUp end={Math.floor(verified / 600)} duration={0.6} />K
+              <div className="text-center">
+                <p className="text-6xl font-black text-violet-400">
+                  <CountUp end={Math.floor(verified / 620)} duration={0.6} />K
                 </p>
-                <p className="text-indigo-200 !mt-2 text-lg">USERS</p>
+                <p className="text-cyan-200 !mt-2 text-lg">USERS</p>
               </div>
-              <div className="flex items-center justify-center flex-col">
-                <p className="text-6xl font-black text-pink-400 flex items-center gap-3">
+              <div className="text-center">
+                <p className="text-6xl font-black text-magenta-400 flex items-center justify-center gap-3">
                   100% <FiCheckCircle />
                 </p>
-                <p className="text-indigo-200 !mt-2 text-lg">COMPLIANT</p>
+                <p className="text-cyan-200 !mt-2 text-lg">COMPLIANT</p>
               </div>
             </motion.div>
 
+            {/* Buttons */}
             <motion.div
-              className="flex flex-wrap lg:gap-8 gap-4 !mt-16"
+              className="flex flex-col sm:flex-row gap-6 !mt-10"
               initial={{ opacity: 0, y: 50 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : {}}
+              animate={heroV ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6 }}
             >
               <button
-                onClick={startVerification}
-                disabled={isVerifying}
-                className="group relative !px-14 !py-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-2xl lg:text-xl w-full lg:w-auto"
+                onClick={start}
+                disabled={running}
+                className="group relative !px-14 !py-6 bg-gradient-to-r from-cyan-500 via-violet-500 to-magenta-500 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-2xl lg:text-xl w-full sm:w-auto"
               >
                 <span className="relative z-10 flex items-center justify-center gap-4">
-                  {isVerifying ? (
+                  {running ? (
                     <>
-                      VERIFYING LIVE <FiCpu className="animate-spin" />
+                      VERIFYING <FiCpu className="animate-spin" />
                     </>
                   ) : (
                     <>
-                      START VERIFICATION <FiCpu />
+                      START SCAN <FiCpu />
                     </>
                   )}
                 </span>
                 <motion.div
-                  className="absolute inset-0 bg-white/40"
-                  animate={isVerifying ? { x: ["-100%", "100%"] } : {}}
-                  transition={{ repeat: Infinity, duration: 1.3 }}
+                  className="absolute inset-0 bg-white/35"
+                  animate={running ? { x: ["-100%", "100%"] } : {}}
+                  transition={{ repeat: Infinity, duration: 1.4 }}
                 />
               </button>
 
               <button
-                onClick={() => setModalOpen(true)}
-                className="!px-14 !py-6 border-2 border-indigo-400 text-indigo-300 rounded-full font-bold hover:bg-indigo-500/10 transition-all backdrop-blur-sm lg:text-xl w-full lg:w-auto"
+                onClick={() => setModal(true)}
+                className="!px-14 !py-6 border-2 border-cyan-400 text-cyan-300 rounded-full font-bold hover:bg-cyan-500/10 transition-all backdrop-blur-sm lg:text-xl w-full sm:w-auto"
               >
                 CONTACT US
               </button>
             </motion.div>
           </motion.div>
 
-          {/* RIGHT: 3D CARD + MATRIX */}
+          {/* RIGHT – CARD + MATRIX */}
           <motion.div
-            className="lg:col-span-5 flex flex-col items-center gap-12"
-            initial={{ opacity: 0, x: 140 }}
-            animate={heroInView ? { opacity: 1, x: 0 } : {}}
+            className="flex flex-col items-center gap-12"
+            initial={{ opacity: 0, x: 180 }}
+            animate={heroV ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1.1 }}
           >
-            <AnimatedIDCard verified={verified > 50000} />
-            <VerificationMatrix isActive={isVerifying} />
+            <HoloIDCard verified={verified > 50000} />
+            <VerificationMatrix active={running} />
           </motion.div>
         </div>
       </section>
 
-      {/* MARQUEE – STATE LIST */}
-      <section
-        className="backdrop-blur-3xl lg:!py-8 !py-4 overflow-hidden"
-        ref={statsRef}
-      >
-        <motion.div
-          className="flex gap-16"
-          animate={{ x: [0, -1200] }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        >
-          {[...Array(3)].map((_, repeatIdx) => (
-            <div
-              key={repeatIdx}
-              className="flex gap-16 items-center whitespace-nowrap"
-            >
-              {[
-                { name: "CALIFORNIA", flag: "CA" },
-                { name: "TEXAS", flag: "TX" },
-                { name: "NEW YORK", flag: "NY" },
-                { name: "FLORIDA", flag: "FL" },
-                { name: "ILLINOIS", flag: "IL" },
-                { name: "PENNSYLVANIA", flag: "PA" },
-                { name: "OHIO", flag: "OH" },
-                { name: "GEORGIA", flag: "GA" },
-                { name: "MICHIGAN", flag: "MI" },
-                { name: "NORTH CAROLINA", flag: "NC" },
-              ].map((state, i) => (
-                <div
-                  key={`${repeatIdx}-${i}`}
-                  className="flex items-center gap-3 !px-6 !py-2 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-full border border-indigo-500/30 backdrop-blur-sm"
-                >
-                  <div className="lg:!w-7 lg:!h-7 !w-6 !h-6 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 flex items-center justify-center text-white font-bold text-xs">
-                    {state.flag}
-                  </div>
-                  <span className="text-indigo-200 font-bold lg:text-xl tracking-wider">
-                    {state.name}
-                  </span>
-                </div>
-              ))}
-            </div>
-          ))}
-        </motion.div>
-      </section>
 
-      {/* FEATURES */}
+
+      {/* FEATURES – ORB STYLE */}
       <section
-        className="!relative !py-20 lg:!py-48 bg-gradient-to-br from-[#050a1e] via-[#0a0f2f] to-[#1a0033] opacity-94"
-        ref={featuresRef}
+        ref={featR}
+        className="!relative !py-20 lg:!py-48 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#1a0033] opacity-94"
       >
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
-            className="text-center lg:!mb-28 !mb-12"
+            className="text-center lg:!mb-32 !mb-16"
             initial={{ opacity: 0, y: 60 }}
-            animate={featuresInView ? { opacity: 1, y: 0 } : {}}
+            animate={featV ? { opacity: 1, y: 0 } : {}}
           >
-            <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent lg:!mb-8 !mb-4">
-              VERIFICATION ENGINE
+            <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-violet-300 to-magenta-300 bg-clip-text text-transparent lg:!mb-8 !mb-4">
+              HOLO ENGINE
             </h2>
-            <p className="lg:text-2xl text-indigo-200 max-w-5xl !mx-auto">
-              DMV-integrated. REAL ID ready. Instant digital delivery.
+            <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
+              DMV-integrated, quantum-safe, instant-issue.
             </p>
           </motion.div>
 
@@ -691,51 +586,52 @@ export default function IDServicesPage() {
             {[
               {
                 icon: FiShield,
-                title: "REAL ID Compliant",
-                desc: "Meets all federal standards with encrypted biometric verification and secure chip integration.",
+                title: "REAL ID Ready",
+                desc: "Federal compliance with biometric chip & encrypted storage.",
               },
               {
                 icon: FiZap,
-                title: "Same-Day Issue",
-                desc: "Digital ID delivered in under 2 hours. Physical card shipped overnight via secure courier.",
+                title: "2-Hour Digital",
+                desc: "Receive a wallet-ready digital ID instantly after verification.",
               },
               {
                 icon: FiLock,
-                title: "Bank-Grade Security",
-                desc: "End-to-end encryption, zero-knowledge proofs, and tamper-proof digital signatures.",
+                title: "Zero-Knowledge",
+                desc: "Your data never leaves your device; proofs only.",
               },
               {
                 icon: FiGlobe,
-                title: "50 States",
-                desc: "Full coverage across all U.S. states and territories with local DMV integration.",
+                title: "All 50 States",
+                desc: "Seamless DMV integration coast-to-coast.",
               },
               {
                 icon: FiTruck,
-                title: "Express Delivery",
-                desc: "Free overnight shipping with tracking. International options available.",
+                title: "Overnight Card",
+                desc: "Physical card shipped free with live tracking.",
               },
               {
                 icon: FiAward,
-                title: "Lifetime Validity",
-                desc: "One-time verification. Use forever across all platforms and institutions.",
+                title: "Lifetime Access",
+                desc: "One verification – use everywhere, forever.",
               },
             ].map((f, i) => (
               <motion.div
                 key={i}
                 className="relative group"
                 initial={{ opacity: 0, y: 70 }}
-                animate={featuresInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: i * 0.15 }}
+                animate={featV ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: i * 0.14 }}
+                whileHover={{ y: -10 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/15 to-purple-500/15 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity" />
-                <div className="bg-white/5 !backdrop-blur-sm border border-indigo-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-indigo-500/50 transition-all group h-[320px]">
-                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-500/25 to-purple-500/25 rounded-2xl flex items-center justify-center !mb-3 group-hover:scale-110 transition-transform">
-                    <f.icon className="!w-10 !h-10 text-indigo-300 drop-shadow-glow" />
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-violet-500/20 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity" />
+                <div className="bg-white/6 backdrop-blur-2xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/60 transition-all h-[340px] flex flex-col items-center text-center">
+                  <div className="w-20 h-20 bg-gradient-to-br from-cyan-500/30 to-violet-500/30 rounded-full flex items-center justify-center !mb-4 group-hover:scale-110 transition-transform">
+                    <f.icon className="!w-12 !h-12 text-cyan-300 drop-shadow-glow" />
                   </div>
-                  <h3 className="lg:text-2xl text-xl font-bold text-indigo-100 !mb-2">
+                  <h3 className="lg:text-2xl text-xl font-bold text-cyan-100 !mb-2">
                     {f.title}
                   </h3>
-                  <p className="text-indigo-200/80 text-lg leading-relaxed">
+                  <p className="text-cyan-200/80 text-lg leading-relaxed flex-1">
                     {f.desc}
                   </p>
                 </div>
@@ -745,23 +641,22 @@ export default function IDServicesPage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* TESTIMONIALS – CIRCULAR AVATARS */}
       <section
-        className="relative !py-16 lg:!py-48 bg-gradient-to-br from-[#050a1e] via-[#0a0f2f] to-[#1a0033] opacity-94"
-        ref={testimonialsRef}
+        ref={testR}
+        className="relative !py-16 lg:!py-48 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#1a0033] opacity-94"
       >
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
           <motion.div
-            className="text-center lg:!mb-28 !mb-14"
+            className="text-center lg:!mb-32 !mb-16"
             initial={{ opacity: 0, y: 60 }}
-            animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
+            animate={testV ? { opacity: 1, y: 0 } : {}}
           >
-            <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent lg:!mb-8 !mb-3">
-              VERIFIED USERS
+            <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-violet-300 to-magenta-300 bg-clip-text text-transparent lg:!mb-8 !mb-3">
+              USER LOG
             </h2>
-            <p className="lg:text-2xl text-indigo-200 max-w-5xl !mx-auto">
-              <strong>98,750+</strong> IDs issued. <strong>100%</strong>{" "}
-              approval rate.
+            <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
+              <strong>98,750+</strong> IDs • <strong>100%</strong> success
             </p>
           </motion.div>
 
@@ -773,7 +668,7 @@ export default function IDServicesPage() {
                 time: "1.5 hrs",
                 avatar:
                   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
-                desc: "Got my REAL ID in under 2 hours! Digital version worked instantly at the airport.",
+                desc: "Digital ID worked at TSA instantly!",
               },
               {
                 name: "James T.",
@@ -781,21 +676,21 @@ export default function IDServicesPage() {
                 time: "45 min",
                 avatar:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-                desc: "Fastest service ever. Physical card arrived next morning. Highly recommend!",
+                desc: "Physical card arrived next morning – flawless.",
               },
               {
                 name: "Lisa K.",
                 state: "New York",
                 time: "2 hrs",
                 avatar: "https://randomuser.me/api/portraits/women/68.jpg",
-                desc: "Used it for banking and travel. Accepted everywhere. Amazing support team!",
+                desc: "Used for banking & travel – accepted everywhere.",
               },
               {
                 name: "Mike R.",
                 state: "Florida",
                 time: "1 hr",
                 avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-                desc: "Renewed my DL seamlessly. No lines, no hassle. Digital ID is a game changer.",
+                desc: "Renewed DL without leaving home.",
               },
               {
                 name: "Emma L.",
@@ -803,7 +698,7 @@ export default function IDServicesPage() {
                 time: "90 min",
                 avatar:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-                desc: "Perfect for remote verification. Used it to open a brokerage account instantly.",
+                desc: "Instant brokerage verification.",
               },
               {
                 name: "David P.",
@@ -811,43 +706,39 @@ export default function IDServicesPage() {
                 time: "2.5 hrs",
                 avatar:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-                desc: "International shipping was fast and secure. Digital ID works globally!",
+                desc: "International shipping was fast & secure.",
               },
             ].map((t, i) => (
               <motion.div
                 key={i}
                 className="relative group"
                 initial={{ opacity: 0, y: 60 }}
-                animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: i * 0.12 }}
-                whileHover={{ y: -12, scale: 1.04 }}
+                animate={testV ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: i * 0.11 }}
+                whileHover={{ y: -14, scale: 1.04 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/15 to-purple-500/15 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
-                <div className="bg-white/5 backdrop-blur-7xl border border-indigo-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-indigo-500/50 transition-all group">
-                  <div className="flex items-center gap-5 !mb-6">
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/80 to-purple-500/80 rounded-full blur-xl opacity-80 group-hover:opacity-100 transition-all"></div>
-                      <img
-                        src={t.avatar}
-                        alt={t.name}
-                        className="relative !w-18 !h-18 rounded-full object-cover border-4 border-indigo-400/50 shadow-2xl group-hover:border-indigo-400/80 transition-all"
-                      />
-                      <div className="absolute -bottom-1 -right-1 !w-8 !h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg border-2 border-white/20">
-                        <span className="text-white text-xs font-bold">
-                          {t.state.slice(0, 2)}
-                        </span>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h3 className="font-bold text-indigo-100 text-xl">
-                        {t.name}
-                      </h3>
-                      <p className="text-indigo-300">{t.state}</p>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/15 to-violet-500/15 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
+                <div className="bg-white/6 backdrop-blur-2xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/60 transition-all flex flex-col items-center text-center">
+                  <div className="relative !w-24 !h-24 !mb-6">
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-violet-400 rounded-full blur-xl opacity-70" />
+                    <img
+                      src={t.avatar}
+                      alt={t.name}
+                      className="relative !w-full !h-full rounded-full object-cover border-4 border-cyan-300/60 shadow-2xl"
+                    />
+                    <div className="absolute -bottom-1 -right-1 !w-9 !h-9 rounded-full bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center shadow-lg border-2 border-white/20">
+                      <span className="text-white text-xs font-bold">
+                        {t.state.slice(0, 2)}
+                      </span>
                     </div>
                   </div>
 
-                  <div className="flex justify-between text-indigo-400 !mb-5 text-lg">
+                  <h3 className="font-bold text-cyan-100 text-xl !mb-1">
+                    {t.name}
+                  </h3>
+                  <p className="text-cyan-300 !mb-4">{t.state}</p>
+
+                  <div className="flex justify-between w-full text-cyan-400 !mb-4 text-sm">
                     <span className="flex items-center gap-2">
                       <FiClock /> {t.time}
                     </span>
@@ -855,7 +746,8 @@ export default function IDServicesPage() {
                       <FiCheckCircle className="text-green-400" /> Verified
                     </span>
                   </div>
-                  <p className="text-indigo-200/90 italic leading-relaxed">
+
+                  <p className="text-cyan-200/90 italic leading-relaxed">
                     {t.desc}
                   </p>
                 </div>
@@ -866,22 +758,22 @@ export default function IDServicesPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative !py-16 lg:!py-48 bg-gradient-to-br from-[#050a1e] via-[#0a0f2f] to-[#1a0033] opacity-94">
+      <section className="relative !py-16 lg:!py-48 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#1a0033] opacity-94">
         <div className="max-w-5xl !mx-auto !px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent lg:!mb-8 !mb-2">
-              GET VERIFIED NOW
+            <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-violet-300 to-magenta-300 bg-clip-text text-transparent lg:!mb-8 !mb-2">
+              GET YOUR ID NOW
             </h2>
-            <p className="lg:text-3xl text-indigo-200/80 !mb-14">
-              Your official ID is ready in minutes.
+            <p className="lg:text-3xl text-cyan-200/80 !mb-14">
+              Digital in minutes • Physical overnight.
             </p>
             <button
-              onClick={() => setModalOpen(true)}
-              className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-400 hover:via-purple-400 hover:to-pink-400 text-white !px-8 !py-4 lg:!px-12 lg:!py-6 rounded-full font-bold lg:text-xl shadow-2xl hover:shadow-indigo-500/80 transition-all transform hover:scale-105 backdrop-blur-sm border border-indigo-400/50"
+              onClick={() => setModal(true)}
+              className="bg-gradient-to-r from-cyan-500 via-violet-500 to-magenta-500 hover:from-cyan-400 hover:via-violet-400 hover:to-magenta-400 text-white !px-8 !py-4 lg:!px-12 lg:!py-6 rounded-full font-bold lg:text-xl shadow-2xl hover:shadow-cyan-500/80 transition-all transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
             >
               START VERIFICATION
             </button>
@@ -889,13 +781,14 @@ export default function IDServicesPage() {
         </div>
       </section>
 
+      <BuyModal open={modal} handleClose={() => setModal(false)} />
+
       <style jsx>{`
         .drop-shadow-glow {
-          filter: drop-shadow(0 0 18px currentColor)
-            drop-shadow(0 0 36px currentColor);
+          filter: drop-shadow(0 0 20px currentColor)
+            drop-shadow(0 0 40px currentColor);
         }
       `}</style>
-      <BuyModal open={modalOpen} handleClose={() => setModalOpen(false)} />
     </>
   );
 }
