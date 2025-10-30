@@ -146,7 +146,7 @@ const NebulaBackground = () => {
                     ease: "linear",
                   }}
                 >
-                  <Icon className="w-full h-full text-cyan-300 opacity-25 drop-shadow-glow" />
+                  <Icon className="w-full h-full text-cyan-300 opacity-7 drop-shadow-glow" />
                 </motion.div>
               );
             })
