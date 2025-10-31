@@ -73,7 +73,10 @@ const BuyModal = ({ open, handleClose }) => {
             >
               {/* Email */}
               <a
-                href="mailto:support@spycontrol.io"
+                href="mailto:trevortechx@outlook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()} 
                 className="flex items-center justify-center !gap-3 w-full bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500 text-white !py-3.5 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/40"
               >
                 <FaEnvelope size={19} className="drop-shadow-glow" />
@@ -82,7 +85,7 @@ const BuyModal = ({ open, handleClose }) => {
 
               {/* Telegram */}
               <a
-                href="https://t.me/spycontrol_support"
+                href="https://t.me/trevortechx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center !gap-3 w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white !py-3.5 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-blue-500/50 transform hover:scale-105 backdrop-blur-sm border border-blue-400/40"
