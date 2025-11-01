@@ -126,6 +126,8 @@ const LanguageSwitcher = () => {
             style: {
               background:
                 "linear-gradient(180deg, rgba(15, 15, 42, 0.95) 0%, rgba(42, 0, 85, 0.95) 100%)",
+              border: "1px solid rgba(34, 211, 238, 0.5)",
+              borderRadius:12,
               maxHeight: 300,
               width: 240, // Ensure dropdown height is limited
               scrollbarWidth: "none", // Firefox
