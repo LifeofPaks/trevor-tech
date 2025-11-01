@@ -7,22 +7,18 @@ const StyledSelect = styled(Select)(({ theme }) => ({
     padding: "8px 32px 8px 12px",
     color: "#CFF9FF", // cyan-300
     fontWeight: 500,
-    fontSize: "0.875rem",
+    fontSize: "0.675rem",
     display: "flex",
     alignItems: "center",
     background:
       "linear-gradient(90deg, rgba(10, 10, 31, 0.8) 0%, rgba(26, 0, 51, 0.8) 100%) !important",
-    border: "1px solid rgba(34, 211, 238, 0.3)", // cyan-500/30
-    borderRadius: "12px",
+    border: "1px solid rgba(34, 211, 238, 0.5)", // cyan-500/30
     backdropFilter: "blur(10px)",
-    boxShadow: "0 4px 6px rgba(0, 255, 255, 0.2)",
     transition: "all 0.3s ease",
     "&:hover": {
       background:
         "linear-gradient(90deg, rgba(10, 10, 31, 0.9) 0%, rgba(26, 0, 51, 0.9) 100%) !important",
       borderColor: "rgba(34, 211, 238, 0.5)",
-      boxShadow:
-        "0 0 10px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.4)", // hover:glow
     },
   },
   "& .MuiSvgIcon-root": {
@@ -54,7 +50,7 @@ const StyledSelect = styled(Select)(({ theme }) => ({
 
 const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
   color: "#CFF9FF", // cyan-300
-  fontSize: "0.875rem", // Corrected from 0.6575rem to match select font size
+  fontSize: "0.675rem", // Corrected from 0.6575rem to match select font size
   padding: "12px 16px",
   display: "flex",
   alignItems: "center",
