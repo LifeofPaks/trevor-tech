@@ -100,8 +100,8 @@ const LanguageSwitcher = () => {
     <div
       style={{
         position: "fixed",
-        top: 10,
-        right: 10,
+        top: 40,
+        right: 20,
         zIndex: 1000,
         direction:
           i18n.language === "ar" || i18n.language === "ur" ? "rtl" : "ltr",
