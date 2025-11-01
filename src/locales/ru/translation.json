@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "Galaxy S24 Зиона",
+      "status": "Используется",
+      "battery": "20%"
+    },
+    {
+      "name": "iPhone 16 Зиона",
+      "status": "Офлайн",
+      "battery": null
+    },
+    {
+      "name": "iPhone 14 Зиона",
+      "status": "Офлайн",
+      "battery": null
+    },
+    {
+      "name": "iCloud Зиона",
+      "status": "Доступен",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "Панель управления",
+    "General Features": "Общие функции",
+    "Text Messages": "Текстовые сообщения",
+    "GPS Locations": "Местоположение GPS",
+    "Keylogger": "Кейлоггер",
+    "Calls": "Звонки",
+    "Contacts": "Контакты",
+    "Notes": "Заметки",
+    "Photos": "Фотографии",
+    "Videos": "Видео",
+    "Wi-Fi Networks": "Сети Wi-Fi",
+    "Keyword Alerts": "Оповещения по ключевым словам",
+    "Installed Apps": "Установленные приложения",
+    "Bookmarks": "Закладки",
+    "Browser History": "История браузера",
+    "Email": "Электронная почта",
+    "SIM Card": "SIM-карта",
+    "Social Networks": "Социальные сети",
+    "WhatsApp": "WhatsApp",
+    "Facebook": "Facebook",
+    "Facebook Messenger": "Facebook Messenger",
+    "Instagram": "Instagram",
+    "X": "X",
+    "TikTok": "TikTok",
+    "Snapchat": "Snapchat",
+    "LinkedIn": "LinkedIn",
+    "Zoom": "Zoom",
+    "Viber": "Viber",
+    "Telegram": "Telegram",
+    "LINE": "LINE",
+    "KakaoTalk": "KakaoTalk",
+    "Skype": "Skype",
+    "IMO": "IMO",
+    "Discord": "Discord",
+    "Tinder": "Tinder",
+    "Badoo": "Badoo",
+    "WeChat": "WeChat",
+    "Screen Captures": "Снимки экрана",
+    "Screenshots": "Скриншоты",
+    "Controls": "Управление",
+    "Geo-Fencing": "Геозонирование",
+    "Website Block": "Блокировка веб-сайтов",
+    "Wi-Fi Block": "Блокировка Wi-Fi",
+    "App Block": "Блокировка приложений",
+    "Elite Services": "Элитные услуги",
+    "Credit Score Upgrade": "Повышение кредитного рейтинга",
+    "Stop Blackmail": "Остановить шантаж",
+    "Improve Academic Grade": "Улучшить академическую оценку",
+    "Erase Criminal Record": "Стереть уголовное досье",
+    "Crypto Recovery": "Восстановление криптовалюты",
+    "DMV & ID Services": "Услуги DMV и удостоверений",
+    "Home": "Главная",
+    "About": "О нас",
+    "Testimonial": "Отзыв",
+    "FAQ": "Часто задаваемые вопросы",
+    "View Demo": "Посмотреть демо"
+  }
+}

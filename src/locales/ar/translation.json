@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "جالكسي S24 لزيون",
+      "status": "قيد الاستخدام",
+      "battery": "20%"
+    },
+    {
+      "name": "آيفون 16 لزيون",
+      "status": "غير متصل",
+      "battery": null
+    },
+    {
+      "name": "آيفون 14 لزيون",
+      "status": "غير متصل",
+      "battery": null
+    },
+    {
+      "name": "آيكلاود لزيون",
+      "status": "متاح",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "لوحة التحكم",
+    "General Features": "الميزات العامة",
+    "Text Messages": "الرسائل النصية",
+    "GPS Locations": "مواقع GPS",
+    "Keylogger": "مسجل المفاتيح",
+    "Calls": "المكالمات",
+    "Contacts": "جهات الاتصال",
+    "Notes": "الملاحظات",
+    "Photos": "الصور",
+    "Videos": "الفيديوهات",
+    "Wi-Fi Networks": "شبكات الواي-فاي",
+    "Keyword Alerts": "تنبيهات الكلمات المفتاحية",
+    "Installed Apps": "التطبيقات المثبتة",
+    "Bookmarks": "الإشارات المرجعية",
+    "Browser History": "سجل المتصفح",
+    "Email": "البريد الإلكتروني",
+    "SIM Card": "بطاقة SIM",
+    "Social Networks": "الشبكات الاجتماعية",
+    "WhatsApp": "واتساب",
+    "Facebook": "فيسبوك",
+    "Facebook Messenger": "فيسبوك ماسنجر",
+    "Instagram": "إنستغرام",
+    "X": "إكس",
+    "TikTok": "تيك توك",
+    "Snapchat": "سناب شات",
+    "LinkedIn": "لينكدإن",
+    "Zoom": "زوم",
+    "Viber": "فايبر",
+    "Telegram": "تيليغرام",
+    "LINE": "لاين",
+    "KakaoTalk": "كاكاو توك",
+    "Skype": "سكايب",
+    "IMO": "إيمو",
+    "Discord": "ديسكورد",
+    "Tinder": "تيندر",
+    "Badoo": "بادو",
+    "WeChat": "وي شات",
+    "Screen Captures": "لقطات الشاشة",
+    "Screenshots": "لقطات الشاشة",
+    "Controls": "الضوابط",
+    "Geo-Fencing": "التقييد الجغرافي",
+    "Website Block": "حظر المواقع",
+    "Wi-Fi Block": "حظر الواي-فاي",
+    "App Block": "حظر التطبيقات",
+    "Elite Services": "الخدمات النخبوية",
+    "Credit Score Upgrade": "ترقية درجة الائتمان",
+    "Stop Blackmail": "إيقاف الابتزاز",
+    "Improve Academic Grade": "تحسين الدرجة الأكاديمية",
+    "Erase Criminal Record": "محو السجل الجنائي",
+    "Crypto Recovery": "استعادة العملات المشفرة",
+    "DMV & ID Services": "خدمات DMV والهوية",
+    "Home": "الرئيسية",
+    "About": "حول",
+    "Testimonial": "شهادة",
+    "FAQ": "الأسئلة الشائعة",
+    "View Demo": "عرض التجريبي"
+  }
+}

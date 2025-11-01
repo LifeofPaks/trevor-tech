@@ -90,4 +90,6 @@ button {
           background: linear-gradient(180deg, #00cccc, #cc00cc);
         }
 
-
+html[dir="rtl"] {
+  direction: rtl;
+}

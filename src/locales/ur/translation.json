@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "زیون کا گلیکسی S24",
+      "status": "استعمال میں",
+      "battery": "20%"
+    },
+    {
+      "name": "زیون کا آئی فون 16",
+      "status": "آف لائن",
+      "battery": null
+    },
+    {
+      "name": "زیون کا آئی فون 14",
+      "status": "آف لائن",
+      "battery": null
+    },
+    {
+      "name": "زیون کا آئی کلاؤڈ",
+      "status": "دستیاب",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "ڈیش بورڈ",
+    "General Features": "عمومی خصوصیات",
+    "Text Messages": "ٹیکسٹ پیغامات",
+    "GPS Locations": "جی پی ایس مقامات",
+    "Keylogger": "کی لاگر",
+    "Calls": "کالیں",
+    "Contacts": "رابطے",
+    "Notes": "نوٹس",
+    "Photos": "تصاویر",
+    "Videos": "ویڈیوز",
+    "Wi-Fi Networks": "وائی فائی نیٹ ورکس",
+    "Keyword Alerts": "کلیدی الفاظ کے انتباہات",
+    "Installed Apps": "انسٹال کردہ ایپس",
+    "Bookmarks": "بک مارکس",
+    "Browser History": "براؤزر کی تاریخ",
+    "Email": "ای میل",
+    "SIM Card": "سم کارڈ",
+    "Social Networks": "سوشل نیٹ ورکس",
+    "WhatsApp": "واٹس ایپ",
+    "Facebook": "فیس بک",
+    "Facebook Messenger": "فیس بک میسنجر",
+    "Instagram": "انسٹاگرام",
+    "X": "ایکس",
+    "TikTok": "ٹک ٹاک",
+    "Snapchat": "سنیپ چیٹ",
+    "LinkedIn": "لنکڈ ان",
+    "Zoom": "زوم",
+    "Viber": "وائبر",
+    "Telegram": "ٹیلی گرام",
+    "LINE": "لائن",
+    "KakaoTalk": "کاکاؤ ٹاک",
+    "Skype": "اسکائپ",
+    "IMO": "آئی ایم او",
+    "Discord": "ڈسکورڈ",
+    "Tinder": "ٹنڈر",
+    "Badoo": "بیڈو",
+    "WeChat": "وی چیٹ",
+    "Screen Captures": "اسکرین کیپچرز",
+    "Screenshots": "اسکرین شاٹس",
+    "Controls": "کنٹرولز",
+    "Geo-Fencing": "جیو فینسنگ",
+    "Website Block": "ویب سائٹ بلاک",
+    "Wi-Fi Block": "وائی فائی بلاک",
+    "App Block": "ایپ بلاک",
+    "Elite Services": "ایلیٹ سروسز",
+    "Credit Score Upgrade": "کریڈٹ سکور اپ گریڈ",
+    "Stop Blackmail": "بلیک میل روکیں",
+    "Improve Academic Grade": "تعلیمی گریڈ بہتر کریں",
+    "Erase Criminal Record": "جرائم کا ریکارڈ مٹائیں",
+    "Crypto Recovery": "کرپٹو کی وصولی",
+    "DMV & ID Services": "ڈی ایم وی اور شناختی خدمات",
+    "Home": "ہوم",
+    "About": "ہمارے بارے میں",
+    "Testimonial": "تعریف",
+    "FAQ": "عمومی سوالات",
+    "View Demo": "ڈیمو دیکھیں"
+  }
+}

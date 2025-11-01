@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "জায়নের গ্যালাক্সি S24",
+      "status": "ব্যবহারে",
+      "battery": "20%"
+    },
+    {
+      "name": "জায়নের আইফোন 16",
+      "status": "অফলাইন",
+      "battery": null
+    },
+    {
+      "name": "জায়নের আইফোন 14",
+      "status": "অফলাইন",
+      "battery": null
+    },
+    {
+      "name": "জায়নের আইক্লাউড",
+      "status": "উপলব্ধ",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "ড্যাশবোর্ড",
+    "General Features": "সাধারণ বৈশিষ্ট্য",
+    "Text Messages": "টেক্সট মেসেজ",
+    "GPS Locations": "জিপিএস অবস্থান",
+    "Keylogger": "কিলগার",
+    "Calls": "কল",
+    "Contacts": "পরিচিতি",
+    "Notes": "নোট",
+    "Photos": "ছবি",
+    "Videos": "ভিডিও",
+    "Wi-Fi Networks": "ওয়াই-ফাই নেটওয়ার্ক",
+    "Keyword Alerts": "কীওয়ার্ড সতর্কতা",
+    "Installed Apps": "ইনস্টল করা অ্যাপ",
+    "Bookmarks": "বুকমার্ক",
+    "Browser History": "ব্রাউজার ইতিহাস",
+    "Email": "ইমেল",
+    "SIM Card": "সিম কার্ড",
+    "Social Networks": "সামাজিক নেটওয়ার্ক",
+    "WhatsApp": "হোয়াটসঅ্যাপ",
+    "Facebook": "ফেসবুক",
+    "Facebook Messenger": "ফেসবুক মেসেঞ্জার",
+    "Instagram": "ইনস্টাগ্রাম",
+    "X": "এক্স",
+    "TikTok": "টিকটক",
+    "Snapchat": "স্ন্যাপচ্যাট",
+    "LinkedIn": "লিঙ্কডইন",
+    "Zoom": "জুম",
+    "Viber": "ভাইবার",
+    "Telegram": "টেলিগ্রাম",
+    "LINE": "লাইন",
+    "KakaoTalk": "কাকাওটক",
+    "Skype": "স্কাইপ",
+    "IMO": "আইএমও",
+    "Discord": "ডিসকর্ড",
+    "Tinder": "টিন্ডার",
+    "Badoo": "বাডু",
+    "WeChat": "উইচ্যাট",
+    "Screen Captures": "স্ক্রিন ক্যাপচার",
+    "Screenshots": "স্ক্রিনশট",
+    "Controls": "নিয়ন্ত্রণ",
+    "Geo-Fencing": "জিও-ফেন্সিং",
+    "Website Block": "ওয়েবসাইট ব্লক",
+    "Wi-Fi Block": "ওয়াই-ফাই ব্লক",
+    "App Block": "অ্যাপ ব্লক",
+    "Elite Services": "এলিট পরিষেবা",
+    "Credit Score Upgrade": "ক্রেডিট স্কোর আপগ্রেড",
+    "Stop Blackmail": "ব্ল্যাকমেল বন্ধ করুন",
+    "Improve Academic Grade": "শিক্ষাগত গ্রেড উন্নত করুন",
+    "Erase Criminal Record": "অপরাধী রেকর্ড মুছুন",
+    "Crypto Recovery": "ক্রিপ্টো পুনরুদ্ধার",
+    "DMV & ID Services": "ডিএমভি এবং আইডি পরিষেবা",
+    "Home": "হোম",
+    "About": "সম্পর্কে",
+    "Testimonial": "প্রশংসাপত্র",
+    "FAQ": "প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+    "View Demo": "ডেমো দেখুন"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "Zion'un Galaxy S24",
+      "status": "Kullanımda",
+      "battery": "20%"
+    },
+    {
+      "name": "Zion'un iPhone 16",
+      "status": "Çevrimdışı",
+      "battery": null
+    },
+    {
+      "name": "Zion'un iPhone 14",
+      "status": "Çevrimdışı",
+      "battery": null
+    },
+    {
+      "name": "Zion'un iCloud",
+      "status": "Kullanılabilir",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "Gösterge Paneli",
+    "General Features": "Genel Özellikler",
+    "Text Messages": "Metin Mesajları",
+    "GPS Locations": "GPS Konumları",
+    "Keylogger": "Tuş Kaydedici",
+    "Calls": "Aramalar",
+    "Contacts": "Kişiler",
+    "Notes": "Notlar",
+    "Photos": "Fotoğraflar",
+    "Videos": "Videolar",
+    "Wi-Fi Networks": "Wi-Fi Ağları",
+    "Keyword Alerts": "Anahtar Kelime Uyarıları",
+    "Installed Apps": "Yüklü Uygulamalar",
+    "Bookmarks": "Yer İmleri",
+    "Browser History": "Tarayıcı Geçmişi",
+    "Email": "E-posta",
+    "SIM Card": "SIM Kart",
+    "Social Networks": "Sosyal Ağlar",
+    "WhatsApp": "WhatsApp",
+    "Facebook": "Facebook",
+    "Facebook Messenger": "Facebook Messenger",
+    "Instagram": "Instagram",
+    "X": "X",
+    "TikTok": "TikTok",
+    "Snapchat": "Snapchat",
+    "LinkedIn": "LinkedIn",
+    "Zoom": "Zoom",
+    "Viber": "Viber",
+    "Telegram": "Telegram",
+    "LINE": "LINE",
+    "KakaoTalk": "KakaoTalk",
+    "Skype": "Skype",
+    "IMO": "IMO",
+    "Discord": "Discord",
+    "Tinder": "Tinder",
+    "Badoo": "Badoo",
+    "WeChat": "WeChat",
+    "Screen Captures": "Ekran Görüntüleri",
+    "Screenshots": "Ekran Görüntüleri",
+    "Controls": "Kontroller",
+    "Geo-Fencing": "Coğrafi Sınırlandırma",
+    "Website Block": "Web Sitesi Engelleme",
+    "Wi-Fi Block": "Wi-Fi Engelleme",
+    "App Block": "Uygulama Engelleme",
+    "Elite Services": "Elit Hizmetler",
+    "Credit Score Upgrade": "Kredi Puanı Yükseltme",
+    "Stop Blackmail": "Şantajı Durdur",
+    "Improve Academic Grade": "Akademik Notu Geliştir",
+    "Erase Criminal Record": "Suç Kaydını Sil",
+    "Crypto Recovery": "Kripto Kurtarma",
+    "DMV & ID Services": "DMV ve Kimlik Hizmetleri",
+    "Home": "Ana Sayfa",
+    "About": "Hakkında",
+    "Testimonial": "Referans",
+    "FAQ": "Sıkça Sorulan Sorular",
+    "View Demo": "Demoyu Görüntüle"
+  }
+}

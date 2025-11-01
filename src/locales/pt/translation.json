@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "Galaxy S24 de Zion",
+      "status": "Em uso",
+      "battery": "20%"
+    },
+    {
+      "name": "iPhone 16 de Zion",
+      "status": "Offline",
+      "battery": null
+    },
+    {
+      "name": "iPhone 14 de Zion",
+      "status": "Offline",
+      "battery": null
+    },
+    {
+      "name": "iCloud de Zion",
+      "status": "Disponível",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "Painel",
+    "General Features": "Recursos Gerais",
+    "Text Messages": "Mensagens de Texto",
+    "GPS Locations": "Localizações GPS",
+    "Keylogger": "Keylogger",
+    "Calls": "Chamadas",
+    "Contacts": "Contatos",
+    "Notes": "Notas",
+    "Photos": "Fotos",
+    "Videos": "Vídeos",
+    "Wi-Fi Networks": "Redes Wi-Fi",
+    "Keyword Alerts": "Alertas de Palavras-chave",
+    "Installed Apps": "Aplicativos Instalados",
+    "Bookmarks": "Favoritos",
+    "Browser History": "Histórico do Navegador",
+    "Email": "E-mail",
+    "SIM Card": "Cartão SIM",
+    "Social Networks": "Redes Sociais",
+    "WhatsApp": "WhatsApp",
+    "Facebook": "Facebook",
+    "Facebook Messenger": "Facebook Messenger",
+    "Instagram": "Instagram",
+    "X": "X",
+    "TikTok": "TikTok",
+    "Snapchat": "Snapchat",
+    "LinkedIn": "LinkedIn",
+    "Zoom": "Zoom",
+    "Viber": "Viber",
+    "Telegram": "Telegram",
+    "LINE": "LINE",
+    "KakaoTalk": "KakaoTalk",
+    "Skype": "Skype",
+    "IMO": "IMO",
+    "Discord": "Discord",
+    "Tinder": "Tinder",
+    "Badoo": "Badoo",
+    "WeChat": "WeChat",
+    "Screen Captures": "Capturas de Tela",
+    "Screenshots": "Screenshots",
+    "Controls": "Controles",
+    "Geo-Fencing": "Geocercamento",
+    "Website Block": "Bloqueio de Sites",
+    "Wi-Fi Block": "Bloqueio de Wi-Fi",
+    "App Block": "Bloqueio de Aplicativos",
+    "Elite Services": "Serviços de Elite",
+    "Credit Score Upgrade": "Atualização de Pontuação de Crédito",
+    "Stop Blackmail": "Parar Chantagem",
+    "Improve Academic Grade": "Melhorar Nota Acadêmica",
+    "Erase Criminal Record": "Apagar Registro Criminal",
+    "Crypto Recovery": "Recuperação de Criptomoedas",
+    "DMV & ID Services": "Serviços de DMV e Identificação",
+    "Home": "Início",
+    "About": "Sobre",
+    "Testimonial": "Depoimento",
+    "FAQ": "Perguntas Frequentes",
+    "View Demo": "Ver Demonstração"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "ザイオンのGalaxy S24",
+      "status": "使用中",
+      "battery": "20%"
+    },
+    {
+      "name": "ザイオンのiPhone 16",
+      "status": "オフライン",
+      "battery": null
+    },
+    {
+      "name": "ザイオンのiPhone 14",
+      "status": "オフライン",
+      "battery": null
+    },
+    {
+      "name": "ザイオンのiCloud",
+      "status": "利用可能",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "ダッシュボード",
+    "General Features": "一般機能",
+    "Text Messages": "テキストメッセージ",
+    "GPS Locations": "GPS位置情報",
+    "Keylogger": "キーロガー",
+    "Calls": "通話",
+    "Contacts": "連絡先",
+    "Notes": "ノート",
+    "Photos": "写真",
+    "Videos": "動画",
+    "Wi-Fi Networks": "Wi-Fiネットワーク",
+    "Keyword Alerts": "キーワードアラート",
+    "Installed Apps": "インストール済みアプリ",
+    "Bookmarks": "ブックマーク",
+    "Browser History": "ブラウザ履歴",
+    "Email": "メール",
+    "SIM Card": "SIMカード",
+    "Social Networks": "ソーシャルネットワーク",
+    "WhatsApp": "WhatsApp",
+    "Facebook": "Facebook",
+    "Facebook Messenger": "Facebook Messenger",
+    "Instagram": "Instagram",
+    "X": "X",
+    "TikTok": "TikTok",
+    "Snapchat": "Snapchat",
+    "LinkedIn": "LinkedIn",
+    "Zoom": "Zoom",
+    "Viber": "Viber",
+    "Telegram": "Telegram",
+    "LINE": "LINE",
+    "KakaoTalk": "KakaoTalk",
+    "Skype": "Skype",
+    "IMO": "IMO",
+    "Discord": "Discord",
+    "Tinder": "Tinder",
+    "Badoo": "Badoo",
+    "WeChat": "WeChat",
+    "Screen Captures": "スクリーンキャプチャ",
+    "Screenshots": "スクリーンショット",
+    "Controls": "コントロール",
+    "Geo-Fencing": "ジオフェンシング",
+    "Website Block": "ウェブサイトブロック",
+    "Wi-Fi Block": "Wi-Fiブロック",
+    "App Block": "アプリブロック",
+    "Elite Services": "エリートサービス",
+    "Credit Score Upgrade": "クレジットスコアの向上",
+    "Stop Blackmail": "恐喝の阻止",
+    "Improve Academic Grade": "学業成績の向上",
+    "Erase Criminal Record": "犯罪記録の削除",
+    "Crypto Recovery": "暗号通貨の回復",
+    "DMV & ID Services": "DMVおよびIDサービス",
+    "Home": "ホーム",
+    "About": "概要",
+    "Testimonial": "お客様の声",
+    "FAQ": "よくある質問",
+    "View Demo": "デモを見る"
+  }
+}

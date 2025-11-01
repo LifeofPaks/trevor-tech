@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "ज़ायन का गैलेक्सी S24",
+      "status": "उपयोग में",
+      "battery": "20%"
+    },
+    {
+      "name": "ज़ायन का iPhone 16",
+      "status": "ऑफ़लाइन",
+      "battery": null
+    },
+    {
+      "name": "ज़ायन का iPhone 14",
+      "status": "ऑफ़लाइन",
+      "battery": null
+    },
+    {
+      "name": "ज़ायन का iCloud",
+      "status": "उपलब्ध",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "डैशबोर्ड",
+    "General Features": "सामान्य विशेषताएँ",
+    "Text Messages": "टेक्स्ट संदेश",
+    "GPS Locations": "जीपीएस स्थान",
+    "Keylogger": "कीलॉगर",
+    "Calls": "कॉल",
+    "Contacts": "संपर्क",
+    "Notes": "नोट्स",
+    "Photos": "फोटो",
+    "Videos": "वीडियो",
+    "Wi-Fi Networks": "वाई-फाई नेटवर्क",
+    "Keyword Alerts": "कीवर्ड अलर्ट",
+    "Installed Apps": "स्थापित ऐप्स",
+    "Bookmarks": "बुकमार्क",
+    "Browser History": "ब्राउज़र इतिहास",
+    "Email": "ईमेल",
+    "SIM Card": "सिम कार्ड",
+    "Social Networks": "सोशल नेटवर्क",
+    "WhatsApp": "व्हाट्सएप",
+    "Facebook": "फेसबुक",
+    "Facebook Messenger": "फेसबुक मैसेंजर",
+    "Instagram": "इंस्टाग्राम",
+    "X": "X",
+    "TikTok": "टिकटॉक",
+    "Snapchat": "स्नैपचैट",
+    "LinkedIn": "लिंक्डइन",
+    "Zoom": "ज़ूम",
+    "Viber": "वाइबर",
+    "Telegram": "टेलीग्राम",
+    "LINE": "लाइन",
+    "KakaoTalk": "काकाओटॉक",
+    "Skype": "स्काइप",
+    "IMO": "आईएमओ",
+    "Discord": "डिस्कॉर्ड",
+    "Tinder": "टिंडर",
+    "Badoo": "बडू",
+    "WeChat": "वीचैट",
+    "Screen Captures": "स्क्रीन कैप्चर",
+    "Screenshots": "स्क्रीनशॉट",
+    "Controls": "नियंत्रण",
+    "Geo-Fencing": "जियो-फेंसिंग",
+    "Website Block": "वेबसाइट ब्लॉक",
+    "Wi-Fi Block": "वाई-फाई ब्लॉक",
+    "App Block": "ऐप ब्लॉक",
+    "Elite Services": "एलिट सेवाएँ",
+    "Credit Score Upgrade": "क्रेडिट स्कोर अपग्रेड",
+    "Stop Blackmail": "ब्लैकमेल रोकें",
+    "Improve Academic Grade": "शैक्षणिक ग्रेड सुधारें",
+    "Erase Criminal Record": "आपराधिक रिकॉर्ड मिटाएँ",
+    "Crypto Recovery": "क्रिप्टो रिकवरी",
+    "DMV & ID Services": "DMV और ID सेवाएँ",
+    "Home": "होम",
+    "About": "हमारे बारे में",
+    "Testimonial": "प्रशंसापत्र",
+    "FAQ": "अक्सर पूछे जाने वाले प्रश्न",
+    "View Demo": "डेमो देखें"
+  }
+}

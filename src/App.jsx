@@ -52,12 +52,14 @@ import FastLicensePage from "./pages/fastLicense/FastLicensePage";
 import CryptoRecoveryPage from "./pages/cryptoRecovery/CryptoRecoveryPage";
 import IDServicesPage from "./pages/idServices/IDServicesPage";
 import ElitePage from "./pages/elite/ElitePage";
+import LanguageSwitcher from "./languageSwitcher/LanguageSwitcher";
 
 
 
 function App() {
   return (
     <>
+      <LanguageSwitcher />
       <Routes>
         {/* Landing Page */}
         <Route path="/" element={<LandingPage />} />

@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "자이언의 갤럭시 S24",
+      "status": "사용 중",
+      "battery": "20%"
+    },
+    {
+      "name": "자이언의 아이폰 16",
+      "status": "오프라인",
+      "battery": null
+    },
+    {
+      "name": "자이언의 아이폰 14",
+      "status": "오프라인",
+      "battery": null
+    },
+    {
+      "name": "자이언의 아이클라우드",
+      "status": "사용 가능",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "대시보드",
+    "General Features": "일반 기능",
+    "Text Messages": "텍스트 메시지",
+    "GPS Locations": "GPS 위치",
+    "Keylogger": "키로거",
+    "Calls": "통화",
+    "Contacts": "연락처",
+    "Notes": "노트",
+    "Photos": "사진",
+    "Videos": "비디오",
+    "Wi-Fi Networks": "Wi-Fi 네트워크",
+    "Keyword Alerts": "키워드 알림",
+    "Installed Apps": "설치된 앱",
+    "Bookmarks": "북마크",
+    "Browser History": "브라우저 기록",
+    "Email": "이메일",
+    "SIM Card": "SIM 카드",
+    "Social Networks": "소셜 네트워크",
+    "WhatsApp": "왓츠앱",
+    "Facebook": "페이스북",
+    "Facebook Messenger": "페이스북 메신저",
+    "Instagram": "인스타그램",
+    "X": "X",
+    "TikTok": "틱톡",
+    "Snapchat": "스냅챗",
+    "LinkedIn": "링크드인",
+    "Zoom": "줌",
+    "Viber": "바이버",
+    "Telegram": "텔레그램",
+    "LINE": "라인",
+    "KakaoTalk": "카카오톡",
+    "Skype": "스카이프",
+    "IMO": "IMO",
+    "Discord": "디스코드",
+    "Tinder": "틴더",
+    "Badoo": "바도",
+    "WeChat": "위챗",
+    "Screen Captures": "화면 캡처",
+    "Screenshots": "스크린샷",
+    "Controls": "제어",
+    "Geo-Fencing": "지오펜싱",
+    "Website Block": "웹사이트 차단",
+    "Wi-Fi Block": "Wi-Fi 차단",
+    "App Block": "앱 차단",
+    "Elite Services": "엘리트 서비스",
+    "Credit Score Upgrade": "신용 점수 업그레이드",
+    "Stop Blackmail": "협박 중지",
+    "Improve Academic Grade": "학업 성적 향상",
+    "Erase Criminal Record": "범죄 기록 삭제",
+    "Crypto Recovery": "암호화폐 복구",
+    "DMV & ID Services": "DMV 및 ID 서비스",
+    "Home": "홈",
+    "About": "소개",
+    "Testimonial": "증언",
+    "FAQ": "자주 묻는 질문",
+    "View Demo": "데모 보기"
+  }
+}

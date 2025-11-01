@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "Galaxy S24 de Zion",
+      "status": "En cours d'utilisation",
+      "battery": "20%"
+    },
+    {
+      "name": "iPhone 16 de Zion",
+      "status": "Hors ligne",
+      "battery": null
+    },
+    {
+      "name": "iPhone 14 de Zion",
+      "status": "Hors ligne",
+      "battery": null
+    },
+    {
+      "name": "iCloud de Zion",
+      "status": "Disponible",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "Tableau de bord",
+    "General Features": "Fonctionnalités générales",
+    "Text Messages": "Messages texte",
+    "GPS Locations": "Localisations GPS",
+    "Keylogger": "Enregistreur de touches",
+    "Calls": "Appels",
+    "Contacts": "Contacts",
+    "Notes": "Notes",
+    "Photos": "Photos",
+    "Videos": "Vidéos",
+    "Wi-Fi Networks": "Réseaux Wi-Fi",
+    "Keyword Alerts": "Alertes de mots-clés",
+    "Installed Apps": "Applications installées",
+    "Bookmarks": "Favoris",
+    "Browser History": "Historique du navigateur",
+    "Email": "E-mail",
+    "SIM Card": "Carte SIM",
+    "Social Networks": "Réseaux sociaux",
+    "WhatsApp": "WhatsApp",
+    "Facebook": "Facebook",
+    "Facebook Messenger": "Facebook Messenger",
+    "Instagram": "Instagram",
+    "X": "X",
+    "TikTok": "TikTok",
+    "Snapchat": "Snapchat",
+    "LinkedIn": "LinkedIn",
+    "Zoom": "Zoom",
+    "Viber": "Viber",
+    "Telegram": "Telegram",
+    "LINE": "LINE",
+    "KakaoTalk": "KakaoTalk",
+    "Skype": "Skype",
+    "IMO": "IMO",
+    "Discord": "Discord",
+    "Tinder": "Tinder",
+    "Badoo": "Badoo",
+    "WeChat": "WeChat",
+    "Screen Captures": "Captures d'écran",
+    "Screenshots": "Captures d'écran",
+    "Controls": "Contrôles",
+    "Geo-Fencing": "Géo-clôture",
+    "Website Block": "Blocage de sites web",
+    "Wi-Fi Block": "Blocage Wi-Fi",
+    "App Block": "Blocage d'applications",
+    "Elite Services": "Services d'élite",
+    "Credit Score Upgrade": "Amélioration du score de crédit",
+    "Stop Blackmail": "Arrêter le chantage",
+    "Improve Academic Grade": "Améliorer les notes académiques",
+    "Erase Criminal Record": "Effacer le casier judiciaire",
+    "Crypto Recovery": "Récupération de cryptomonnaies",
+    "DMV & ID Services": "Services DMV et d'identification",
+    "Home": "Accueil",
+    "About": "À propos",
+    "Testimonial": "Témoignage",
+    "FAQ": "Questions fréquentes",
+    "View Demo": "Voir la démo"
+  }
+}

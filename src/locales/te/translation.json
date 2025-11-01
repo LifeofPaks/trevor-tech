@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "జియోన్ గెలాక్సీ S24",
+      "status": "ఉపయోగంలో",
+      "battery": "20%"
+    },
+    {
+      "name": "జియోన్ ఐఫోన్ 16",
+      "status": "ఆఫ్‌లైన్",
+      "battery": null
+    },
+    {
+      "name": "జియోన్ ఐఫోన్ 14",
+      "status": "ఆఫ్‌లైన్",
+      "battery": null
+    },
+    {
+      "name": "జియోన్ ఐక్లౌడ్",
+      "status": "అందుబాటులో",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "డాష్‌బోర్డ్",
+    "General Features": "సాధారణ లక్షణాలు",
+    "Text Messages": "టెక్స్ట్ సందేశాలు",
+    "GPS Locations": "GPS స్థానాలు",
+    "Keylogger": "కీలాగర్",
+    "Calls": "కాల్స్",
+    "Contacts": "కాంటాక్ట్స్",
+    "Notes": "నోట్స్",
+    "Photos": "ఫోటోలు",
+    "Videos": "వీడియోలు",
+    "Wi-Fi Networks": "వై-ఫై నెట్‌వర్క్‌లు",
+    "Keyword Alerts": "కీవర్డ్ హెచ్చరికలు",
+    "Installed Apps": "ఇన్‌స్టాల్ చేసిన యాప్‌లు",
+    "Bookmarks": "బుక్‌మార్క్‌లు",
+    "Browser History": "బ్రౌజర్ హిస్టరీ",
+    "Email": "ఇమెయిల్",
+    "SIM Card": "సిమ్ కార్డ్",
+    "Social Networks": "సామాజిక నెట్‌వర్క్‌లు",
+    "WhatsApp": "వాట్సాప్",
+    "Facebook": "ఫేస్‌బుక్",
+    "Facebook Messenger": "ఫేస్‌బుక్ మెసెంజర్",
+    "Instagram": "ఇన్‌స్టాగ్రామ్",
+    "X": "ఎక్స్",
+    "TikTok": "టిక్‌టాక్",
+    "Snapchat": "స్నాప్‌చాట్",
+    "LinkedIn": "లింక్డ్‌ఇన్",
+    "Zoom": "జూమ్",
+    "Viber": "వైబర్",
+    "Telegram": "టెలిగ్రామ్",
+    "LINE": "లైన్",
+    "KakaoTalk": "కాకావోటాక్",
+    "Skype": "స్కైప్",
+    "IMO": "ఐఎమ్ఓ",
+    "Discord": "డిస్కార్డ్",
+    "Tinder": "టిండర్",
+    "Badoo": "బడూ",
+    "WeChat": "వీచాట్",
+    "Screen Captures": "స్క్రీన్ క్యాప్చర్స్",
+    "Screenshots": "స్క్రీన్‌షాట్స్",
+    "Controls": "నియంత్రణలు",
+    "Geo-Fencing": "జియో-ఫెన్సింగ్",
+    "Website Block": "వెబ్‌సైట్ బ్లాక్",
+    "Wi-Fi Block": "వై-ఫై బ్లాక్",
+    "App Block": "యాప్ బ్లాక్",
+    "Elite Services": "ఎలైట్ సేవలు",
+    "Credit Score Upgrade": "క్రెడిట్ స్కోర్ అప్‌గ్రేడ్",
+    "Stop Blackmail": "బ్లాక్‌మెయిల్ ఆపండి",
+    "Improve Academic Grade": "అకడమిక్ గ్రేడ్ మెరుగుపరచండి",
+    "Erase Criminal Record": "క్రిమినల్ రికార్డ్ తొలగించండి",
+    "Crypto Recovery": "క్రిప్టో రికవరీ",
+    "DMV & ID Services": "DMV మరియు ID సేవలు",
+    "Home": "హోమ్",
+    "About": "గురించి",
+    "Testimonial": "సిఫారసు",
+    "FAQ": "తరచుగా అడిగే ప్రశ్నలు",
+    "View Demo": "డెమో చూడండి"
+  }
+}

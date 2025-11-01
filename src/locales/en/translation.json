@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "Zion's Galaxy S24",
+      "status": "In Use",
+      "battery": "20%"
+    },
+    {
+      "name": "Zion's iPhone 16",
+      "status": "Offline",
+      "battery": null
+    },
+    {
+      "name": "Zion's iPhone 14",
+      "status": "Offline",
+      "battery": null
+    },
+    {
+      "name": "Zion's iCloud",
+      "status": "Available",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "Dashboard",
+    "General Features": "General Features",
+    "Text Messages": "Text Messages",
+    "GPS Locations": "GPS Locations",
+    "Keylogger": "Keylogger",
+    "Calls": "Calls",
+    "Contacts": "Contacts",
+    "Notes": "Notes",
+    "Photos": "Photos",
+    "Videos": "Videos",
+    "Wi-Fi Networks": "Wi-Fi Networks",
+    "Keyword Alerts": "Keyword Alerts",
+    "Installed Apps": "Installed Apps",
+    "Bookmarks": "Bookmarks",
+    "Browser History": "Browser History",
+    "Email": "Email",
+    "SIM Card": "SIM Card",
+    "Social Networks": "Social Networks",
+    "WhatsApp": "WhatsApp",
+    "Facebook": "Facebook",
+    "Facebook Messenger": "Facebook Messenger",
+    "Instagram": "Instagram",
+    "X": "X",
+    "TikTok": "TikTok",
+    "Snapchat": "Snapchat",
+    "LinkedIn": "LinkedIn",
+    "Zoom": "Zoom",
+    "Viber": "Viber",
+    "Telegram": "Telegram",
+    "LINE": "LINE",
+    "KakaoTalk": "KakaoTalk",
+    "Skype": "Skype",
+    "IMO": "IMO",
+    "Discord": "Discord",
+    "Tinder": "Tinder",
+    "Badoo": "Badoo",
+    "WeChat": "WeChat",
+    "Screen Captures": "Screen Captures",
+    "Screenshots": "Screenshots",
+    "Controls": "Controls",
+    "Geo-Fencing": "Geo-Fencing",
+    "Website Block": "Website Block",
+    "Wi-Fi Block": "Wi-Fi Block",
+    "App Block": "App Block",
+    "Elite Services": "Elite Services",
+    "Credit Score Upgrade": "Credit Score Upgrade",
+    "Stop Blackmail": "Stop Blackmail",
+    "Improve Academic Grade": "Improve Academic Grade",
+    "Erase Criminal Record": "Erase Criminal Record",
+    "Crypto Recovery": "Crypto Recovery",
+    "DMV & ID Services": "DMV & ID Services",
+    "Home": "Home",
+    "About": "About",
+    "Testimonial": "Testimonial",
+    "FAQ": "FAQ",
+    "View Demo": "View Demo"
+  }
+}

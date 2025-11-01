@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "Zions Galaxy S24",
+      "status": "In Benutzung",
+      "battery": "20%"
+    },
+    {
+      "name": "Zions iPhone 16",
+      "status": "Offline",
+      "battery": null
+    },
+    {
+      "name": "Zions iPhone 14",
+      "status": "Offline",
+      "battery": null
+    },
+    {
+      "name": "Zions iCloud",
+      "status": "Verfügbar",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "Armaturenbrett",
+    "General Features": "Allgemeine Funktionen",
+    "Text Messages": "Textnachrichten",
+    "GPS Locations": "GPS-Standorte",
+    "Keylogger": "Keylogger",
+    "Calls": "Anrufe",
+    "Contacts": "Kontakte",
+    "Notes": "Notizen",
+    "Photos": "Fotos",
+    "Videos": "Videos",
+    "Wi-Fi Networks": "Wi-Fi-Netzwerke",
+    "Keyword Alerts": "Schlüsselwort-Warnungen",
+    "Installed Apps": "Installierte Apps",
+    "Bookmarks": "Lesezeichen",
+    "Browser History": "Browser-Verlauf",
+    "Email": "E-Mail",
+    "SIM Card": "SIM-Karte",
+    "Social Networks": "Soziale Netzwerke",
+    "WhatsApp": "WhatsApp",
+    "Facebook": "Facebook",
+    "Facebook Messenger": "Facebook Messenger",
+    "Instagram": "Instagram",
+    "X": "X",
+    "TikTok": "TikTok",
+    "Snapchat": "Snapchat",
+    "LinkedIn": "LinkedIn",
+    "Zoom": "Zoom",
+    "Viber": "Viber",
+    "Telegram": "Telegram",
+    "LINE": "LINE",
+    "KakaoTalk": "KakaoTalk",
+    "Skype": "Skype",
+    "IMO": "IMO",
+    "Discord": "Discord",
+    "Tinder": "Tinder",
+    "Badoo": "Badoo",
+    "WeChat": "WeChat",
+    "Screen Captures": "Bildschirmaufnahmen",
+    "Screenshots": "Screenshots",
+    "Controls": "Steuerungen",
+    "Geo-Fencing": "Geofencing",
+    "Website Block": "Website-Sperre",
+    "Wi-Fi Block": "Wi-Fi-Sperre",
+    "App Block": "App-Sperre",
+    "Elite Services": "Elite-Dienste",
+    "Credit Score Upgrade": "Kreditscore-Verbesserung",
+    "Stop Blackmail": "Erpressung stoppen",
+    "Improve Academic Grade": "Akademische Note verbessern",
+    "Erase Criminal Record": "Strafregister löschen",
+    "Crypto Recovery": "Krypto-Wiederherstellung",
+    "DMV & ID Services": "DMV- und ID-Dienste",
+    "Home": "Startseite",
+    "About": "Über uns",
+    "Testimonial": "Kundenmeinung",
+    "FAQ": "Häufig gestellte Fragen",
+    "View Demo": "Demo ansehen"
+  }
+}

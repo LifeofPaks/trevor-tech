@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "Galaxy S24 milik Zion",
+      "status": "Sedang Digunakan",
+      "battery": "20%"
+    },
+    {
+      "name": "iPhone 16 milik Zion",
+      "status": "Luring",
+      "battery": null
+    },
+    {
+      "name": "iPhone 14 milik Zion",
+      "status": "Luring",
+      "battery": null
+    },
+    {
+      "name": "iCloud milik Zion",
+      "status": "Tersedia",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "Dasbor",
+    "General Features": "Fitur Umum",
+    "Text Messages": "Pesan Teks",
+    "GPS Locations": "Lokasi GPS",
+    "Keylogger": "Perekam Tombol",
+    "Calls": "Panggilan",
+    "Contacts": "Kontak",
+    "Notes": "Catatan",
+    "Photos": "Foto",
+    "Videos": "Video",
+    "Wi-Fi Networks": "Jaringan Wi-Fi",
+    "Keyword Alerts": "Peringatan Kata Kunci",
+    "Installed Apps": "Aplikasi Terpasang",
+    "Bookmarks": "Penanda",
+    "Browser History": "Riwayat Peramban",
+    "Email": "Email",
+    "SIM Card": "Kartu SIM",
+    "Social Networks": "Jaringan Sosial",
+    "WhatsApp": "WhatsApp",
+    "Facebook": "Facebook",
+    "Facebook Messenger": "Facebook Messenger",
+    "Instagram": "Instagram",
+    "X": "X",
+    "TikTok": "TikTok",
+    "Snapchat": "Snapchat",
+    "LinkedIn": "LinkedIn",
+    "Zoom": "Zoom",
+    "Viber": "Viber",
+    "Telegram": "Telegram",
+    "LINE": "LINE",
+    "KakaoTalk": "KakaoTalk",
+    "Skype": "Skype",
+    "IMO": "IMO",
+    "Discord": "Discord",
+    "Tinder": "Tinder",
+    "Badoo": "Badoo",
+    "WeChat": "WeChat",
+    "Screen Captures": "Tangkapan Layar",
+    "Screenshots": "Cuplikan Layar",
+    "Controls": "Kontrol",
+    "Geo-Fencing": "Pagar Geo",
+    "Website Block": "Blokir Situs Web",
+    "Wi-Fi Block": "Blokir Wi-Fi",
+    "App Block": "Blokir Aplikasi",
+    "Elite Services": "Layanan Elit",
+    "Credit Score Upgrade": "Peningkatan Skor Kredit",
+    "Stop Blackmail": "Hentikan Pemerasan",
+    "Improve Academic Grade": "Tingkatkan Nilai Akademik",
+    "Erase Criminal Record": "Hapus Catatan Kriminal",
+    "Crypto Recovery": "Pemulihan Kripto",
+    "DMV & ID Services": "Layanan DMV dan Identitas",
+    "Home": "Beranda",
+    "About": "Tentang",
+    "Testimonial": "Testimoni",
+    "FAQ": "Pertanyaan Umum",
+    "View Demo": "Lihat Demo"
+  }
+}

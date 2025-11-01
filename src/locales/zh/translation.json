@@ -1,0 +1,82 @@
+{
+  "devices": [
+    {
+      "name": "Zion的Galaxy S24",
+      "status": "使用中",
+      "battery": "20%"
+    },
+    {
+      "name": "Zion的iPhone 16",
+      "status": "离线",
+      "battery": null
+    },
+    {
+      "name": "Zion的iPhone 14",
+      "status": "离线",
+      "battery": null
+    },
+    {
+      "name": "Zion的iCloud",
+      "status": "可用",
+      "battery": null
+    }
+  ],
+  "menuItems": {
+    "Dashboard": "仪表板",
+    "General Features": "通用功能",
+    "Text Messages": "文本消息",
+    "GPS Locations": "GPS位置",
+    "Keylogger": "键盘记录器",
+    "Calls": "通话",
+    "Contacts": "联系人",
+    "Notes": "笔记",
+    "Photos": "照片",
+    "Videos": "视频",
+    "Wi-Fi Networks": "Wi-Fi网络",
+    "Keyword Alerts": "关键字警报",
+    "Installed Apps": "已安装应用",
+    "Bookmarks": "书签",
+    "Browser History": "浏览器历史",
+    "Email": "电子邮件",
+    "SIM Card": "SIM卡",
+    "Social Networks": "社交网络",
+    "WhatsApp": "WhatsApp",
+    "Facebook": "Facebook",
+    "Facebook Messenger": "Facebook Messenger",
+    "Instagram": "Instagram",
+    "X": "X",
+    "TikTok": "抖音",
+    "Snapchat": "Snapchat",
+    "LinkedIn": "LinkedIn",
+    "Zoom": "Zoom",
+    "Viber": "Viber",
+    "Telegram": "Telegram",
+    "LINE": "LINE",
+    "KakaoTalk": "KakaoTalk",
+    "Skype": "Skype",
+    "IMO": "IMO",
+    "Discord": "Discord",
+    "Tinder": "Tinder",
+    "Badoo": "Badoo",
+    "WeChat": "微信",
+    "Screen Captures": "屏幕截图",
+    "Screenshots": "截图",
+    "Controls": "控制",
+    "Geo-Fencing": "地理围栏",
+    "Website Block": "网站屏蔽",
+    "Wi-Fi Block": "Wi-Fi屏蔽",
+    "App Block": "应用屏蔽",
+    "Elite Services": "精英服务",
+    "Credit Score Upgrade": "信用评分提升",
+    "Stop Blackmail": "停止敲诈",
+    "Improve Academic Grade": "提高学术成绩",
+    "Erase Criminal Record": "清除犯罪记录",
+    "Crypto Recovery": "加密货币恢复",
+    "DMV & ID Services": "DMV与身份服务",
+    "Home": "首页",
+    "About": "关于",
+    "Testimonial": "推荐",
+    "FAQ": "常见问题",
+    "View Demo": "查看演示"
+  }
+}
