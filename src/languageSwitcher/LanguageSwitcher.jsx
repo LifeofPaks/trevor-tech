@@ -11,14 +11,15 @@ const StyledSelect = styled(Select)(({ theme }) => ({
     display: "flex",
     alignItems: "center",
     background:
-      "linear-gradient(90deg, rgba(10, 10, 31, 0.8) 0%, rgba(26, 0, 51, 0.8) 100%)",
+      "linear-gradient(90deg, rgba(10, 10, 31, 0.8) 0%, rgba(26, 0, 51, 0.8) 100%) !important",
     border: "1px solid rgba(34, 211, 238, 0.3)", // cyan-500/30
+    borderRadius: "12px",
     backdropFilter: "blur(10px)",
     boxShadow: "0 4px 6px rgba(0, 255, 255, 0.2)",
     transition: "all 0.3s ease",
     "&:hover": {
       background:
-        "linear-gradient(90deg, rgba(10, 10, 31, 0.9) 0%, rgba(26, 0, 51, 0.9) 100%)",
+        "linear-gradient(90deg, rgba(10, 10, 31, 0.9) 0%, rgba(26, 0, 51, 0.9) 100%) !important",
       borderColor: "rgba(34, 211, 238, 0.5)",
       boxShadow:
         "0 0 10px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.4)", // hover:glow
@@ -28,22 +29,32 @@ const StyledSelect = styled(Select)(({ theme }) => ({
     // Dropdown arrow
     color: "#CFF9FF", // cyan-300
     right: 8,
+    transition: "transform 0.3s ease", // Smooth rotation transition
+    "&.MuiSelect-iconOpen": {
+      transform: "rotate(180deg)", // Rotate arrow when open
+    },
   },
   "& .MuiPaper-root": {
     // Dropdown menu
     background:
-      "linear-gradient(180deg, rgba(15, 15, 42, 0.95) 0%, rgba(42, 0, 85, 0.95) 100%)",
+      "linear-gradient(180deg, rgba(15, 15, 42, 0.95) 0%, rgba(42, 0, 85, 0.95) 100%) !important",
     border: "1px solid rgba(34, 211, 238, 0.4)",
     borderRadius: "12px",
     backdropFilter: "blur(12px)",
     boxShadow: "0 8px 16px rgba(0, 255, 255, 0.3)",
     marginTop: "8px",
+    maxHeight: "300px", // Limit dropdown height for scroll
+    overflowY: "auto", // Enable scrolling
+    scrollbarWidth: "none", // Hide scrollbar for Firefox
+    "&::-webkit-scrollbar": {
+      display: "none", // Hide scrollbar for Chrome/Safari
+    },
   },
 }));
 
 const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
   color: "#CFF9FF", // cyan-300
-  fontSize: "0.6575rem",
+  fontSize: "0.875rem", // Corrected from 0.6575rem to match select font size
   padding: "12px 16px",
   display: "flex",
   alignItems: "center",
@@ -113,6 +124,17 @@ const LanguageSwitcher = () => {
           ) : (
             "Select Language"
           );
+        }}
+        MenuProps={{
+          PaperProps: {
+            style: {
+              maxHeight: 300, // Ensure dropdown height is limited
+              scrollbarWidth: "none", // Firefox
+              "&::-webkit-scrollbar": {
+                display: "none", // Chrome/Safari
+              },
+            },
+          },
         }}
       >
         {languages.map((lang) => (
