@@ -26,7 +26,7 @@ const DemoModal = ({
 
           {/* Modal Card */}
           <motion.div
-            className="relative bg-white/5 backdrop-blur-xl border border-cyan-500/40 rounded-3xl !p-8 max-w-md w-full shadow-2xl"
+            className="relative bg-white/5 backdrop-blur-xl border border-cyan-500/40 rounded-3xl !p-8 max-w-sm w-full shadow-2xl"
             initial={{ scale: 0.85, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.85, opacity: 0, y: 20 }}
