@@ -97,7 +97,7 @@ const LanguageSwitcher = () => {
 
   return (
     <div
-      className="lg:top-10 top-20 lg:right-2 right-4"
+      className="lg:top-10 top-20 lg:right-2 right-4 overflow-hidden"
       style={{
         position: "fixed",
         zIndex: 1000,
