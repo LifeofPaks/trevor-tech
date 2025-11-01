@@ -30,7 +30,7 @@ const ScrollToTop = () => {
           <motion.button
             onClick={scrollToTop}
             aria-label="Scroll to top"
-            className="fixed bottom-30 right-8 bg-gradient-to-r from-cyan-500 to-teal-600 backdrop-blur-sm border border-cyan-500/40 !p-4 rounded-full shadow-2xl hover:shadow-cyan-500/60 transition-all duration-300 z-50 group"
+            className="fixed bottom-8 right-8 bg-gradient-to-r from-cyan-500 to-teal-600 backdrop-blur-sm border border-cyan-500/40 !p-4 rounded-full shadow-2xl hover:shadow-cyan-500/60 transition-all duration-300 z-50 group"
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}

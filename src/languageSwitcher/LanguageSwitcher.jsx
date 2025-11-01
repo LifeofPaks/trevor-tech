@@ -10,7 +10,7 @@ const StyledSelect = styled(Select)(({ theme }) => ({
     fontSize: "0.67rem",
     display: "flex",
     alignItems: "center",
-    width:105,
+    width: 105,
     background:
       "linear-gradient(90deg, rgba(10, 10, 31, 0.8) 0%, rgba(26, 0, 51, 0.8) 100%) !important",
     border: "1px solid rgba(34, 211, 238, 0.5)",
@@ -97,10 +97,9 @@ const LanguageSwitcher = () => {
 
   return (
     <div
+      className="lg:top-10 top-20 lg:right-2 right-4"
       style={{
         position: "fixed",
-        bottom: 50,
-        right: 10,
         zIndex: 1000,
         direction:
           i18n.language === "ar" || i18n.language === "ur" ? "rtl" : "ltr",
