@@ -7,17 +7,16 @@ const StyledSelect = styled(Select)(({ theme }) => ({
     padding: "8px 32px 8px 12px",
     color: "#1ec9e4", // cyan-300
     fontWeight: 500,
-    fontSize: "0.675rem",
+    fontSize: "0.67rem",
     display: "flex",
     alignItems: "center",
+    width:105,
     background:
       "linear-gradient(90deg, rgba(10, 10, 31, 0.8) 0%, rgba(26, 0, 51, 0.8) 100%) !important",
     border: "1px solid rgba(34, 211, 238, 0.5)",
     backdropFilter: "blur(10px)",
     transition: "all 0.3s ease",
     "&:hover": {
-      background:
-        "linear-gradient(90deg, rgba(10, 10, 31, 0.9) 0%, rgba(26, 0, 51, 0.9) 100%) !important",
       border: "1px solid rgba(34, 211, 238, 0.5)", // cyan-500/30
     },
   },
@@ -100,8 +99,8 @@ const LanguageSwitcher = () => {
     <div
       style={{
         position: "fixed",
-        top: 150,
-        right: 20,
+        bottom: 50,
+        right: 10,
         zIndex: 1000,
         direction:
           i18n.language === "ar" || i18n.language === "ur" ? "rtl" : "ltr",
