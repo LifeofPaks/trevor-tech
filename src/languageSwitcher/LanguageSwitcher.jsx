@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronDown, FiX } from "react-icons/fi";
+import { useLocation } from "react-router-dom";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  const isDemoPage = location.pathname.includes("/demo");
 
   const languages = [
     { code: "en", name: "English", flag: "🇬🇧" },
@@ -50,26 +54,30 @@ const LanguageSwitcher = () => {
         {/* Toggle Button */}
         <button
           onClick={() => setOpen(!open)}
-          className="!flex !items-center !justify-between !gap-2 !px-3 !py-2 !text-cyan-300 !text-[0.8rem] !font-medium w-[140px]
-                     !rounded-xl !border !border-cyan-400/40 
-                     !bg-gradient-to-r !from-[#0a0a1f]/80 !to-[#1a0033]/80 
-                     !backdrop-blur-md !shadow-lg 
-                     hover:!border-cyan-300/70 
-                     !transition-all !duration-300"
+          className={`!flex !items-center !justify-between !gap-2 !px-3 !py-2 !text-[0.8rem] !font-medium w-[140px]
+            !rounded-xl !border !backdrop-blur-md !shadow-lg 
+            !transition-all !duration-300
+            ${
+              isDemoPage
+                ? "!bg-white !border-[#1b254b]/40 !text-[#1b254b]"
+                : "!bg-gradient-to-r !from-[#0a0a1f]/90 !to-[#1b254b]/90 !border-[#2b3a75]/40 !text-[#d0d6f5] hover:!border-[#3d4ea5]/70"
+            }`}
         >
           <span className="!flex !items-center !gap-2">{currentLang.flag}</span>
 
-          <span className="text-[10px]">
-            {" "}
-            {currentLang.name.length > 10
-              ? currentLang.name.slice(0, 10) + "..."
+          <span className="!text-[10px] !truncate !max-w-[70px]">
+            {currentLang.name.length > 15
+              ? currentLang.name.slice(0, 15) + "..."
               : currentLang.name}
           </span>
+
           <motion.span
             animate={{ rotate: open ? 180 : 0 }}
             transition={{ duration: 0.25 }}
           >
-            <FiChevronDown className="!text-cyan-300" />
+            <FiChevronDown
+              className={`!text-[${isDemoPage ? "#1b254b" : "#d0d6f5"}]`}
+            />
           </motion.span>
         </button>
 
@@ -81,19 +89,32 @@ const LanguageSwitcher = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.25 }}
-              className="!absolute !mt-2 !w-60 !right-0 !rounded-2xl 
-                         !overflow-hidden !border !border-cyan-400/40 
-                         !bg-gradient-to-b !from-[#0f0f2a]/95 !to-[#2a0055]/95 
-                         !backdrop-blur-xl !shadow-xl "
+              className={`!absolute !mt-2 !w-60 !right-0 !rounded-2xl 
+                !overflow-hidden !border 
+                ${
+                  isDemoPage
+                    ? "!bg-white !border-[#1b254b]/30 !text-[#1b254b]"
+                    : "!bg-gradient-to-b !from-[#0f0f2a]/95 !to-[#1b254b]/95 !border-[#2b3a75]/40 !text-[#d0d6f5]"
+                } 
+                !backdrop-blur-xl !shadow-xl`}
             >
               {/* Header with close button */}
-              <div className="!flex !items-center !justify-between !px-4 !py-3 !border-b !border-cyan-500/30">
-                <span className="!text-cyan-200 !text-[12px] !font-semibold">
+              <div
+                className={`!flex !items-center !justify-between !px-4 !py-3 !border-b 
+                ${
+                  isDemoPage ? "!border-[#1b254b]/20" : "!border-[#2b3a75]/40"
+                }`}
+              >
+                <span className="!text-[12px] !font-semibold">
                   Select Language
                 </span>
                 <button
                   onClick={() => setOpen(false)}
-                  className="!text-cyan-300 hover:!text-cyan-100 !transition-all"
+                  className={`!transition-all ${
+                    isDemoPage
+                      ? "hover:!text-[#1b254b]/70"
+                      : "hover:!text-[#aab3e5]"
+                  }`}
                 >
                   <FiX className="!w-4 !h-4" />
                 </button>
@@ -106,12 +127,16 @@ const LanguageSwitcher = () => {
                     key={lang.code}
                     onClick={() => changeLanguage(lang.code)}
                     className={`!w-full !text-left !px-4 !py-2 !text-[0.8rem] !flex !items-center !gap-2 
-                                !transition-all !duration-200
-                    ${
-                      i18n.language === lang.code
-                        ? "!bg-cyan-600/40 !text-cyan-50"
-                        : "!text-cyan-200 hover:!bg-cyan-500/30 hover:!text-cyan-50"
-                    }`}
+                      !transition-all !duration-200
+                      ${
+                        i18n.language === lang.code
+                          ? isDemoPage
+                            ? "!bg-[#1b254b]/10 !text-[#1b254b]"
+                            : "!bg-[#2b3a75]/60 !text-white"
+                          : isDemoPage
+                          ? "hover:!bg-[#1b254b]/10 !text-[#1b254b]"
+                          : "hover:!bg-[#2b3a75]/40 !text-[#d0d6f5]"
+                      }`}
                   >
                     {lang.flag} {lang.name}
                   </button>
