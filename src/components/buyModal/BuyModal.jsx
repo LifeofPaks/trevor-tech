@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiX } from "react-icons/fi";
-import { FaEnvelope, FaTelegramPlane } from "react-icons/fa";
+import { FaEnvelope, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { Modal } from "@mui/material";
 
 const BuyModal = ({ open, handleClose }) => {
@@ -76,11 +76,23 @@ const BuyModal = ({ open, handleClose }) => {
                 href="mailto:trevortechx@outlook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()} 
+                onClick={(e) => e.stopPropagation()}
                 className="flex items-center justify-center !gap-3 w-full bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500 text-white !py-3.5 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/40"
               >
                 <FaEnvelope size={19} className="drop-shadow-glow" />
                 Email Support
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/message/KWVL23R3QYRCO1"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="flex items-center justify-center !gap-3 w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white !py-3.5 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/50 transform hover:scale-105 backdrop-blur-sm border border-green-400/40"
+              >
+                <FaWhatsapp size={19} className="drop-shadow-glow" />
+                Chat on WhatsApp
               </a>
 
               {/* Telegram */}
