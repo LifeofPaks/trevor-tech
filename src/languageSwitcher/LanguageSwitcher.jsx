@@ -1,83 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Select, MenuItem, styled } from "@mui/material";
-
-const StyledSelect = styled(Select)(({ theme }) => ({
-  "& .MuiSelect-select": {
-    padding: "8px 32px 8px 12px",
-    color: "#1ec9e4", // cyan-300
-    fontWeight: 500,
-    fontSize: "0.67rem",
-    display: "flex",
-    alignItems: "center",
-    width: 105,
-    background:
-      "linear-gradient(90deg, rgba(10, 10, 31, 0.8) 0%, rgba(26, 0, 51, 0.8) 100%) !important",
-    border: "1px solid rgba(34, 211, 238, 0.5)",
-    backdropFilter: "blur(10px)",
-    transition: "all 0.3s ease",
-    "&:hover": {
-      border: "1px solid rgba(34, 211, 238, 0.5)", // cyan-500/30
-    },
-  },
-  "& .MuiSvgIcon-root": {
-    // Dropdown arrow
-    color: "#1ec9e4", // cyan-300
-    right: 8,
-    transition: "transform 0.3s ease", // Smooth rotation transition
-    "&.MuiSelect-iconOpen": {
-      transform: "rotate(180deg)", // Rotate arrow when open
-    },
-  },
-  "& .MuiPaper-root": {
-    // Dropdown menu
-    background:
-      "linear-gradient(180deg, rgba(15, 15, 42, 0.95) 0%, rgba(42, 0, 85, 0.95) 100%) !important",
-    border: "1px solid rgba(34, 211, 238, 0.4)",
-    borderRadius: "12px",
-    backdropFilter: "blur(12px)",
-    boxShadow: "0 8px 16px rgba(0, 255, 255, 0.3)",
-    marginTop: "8px",
-    maxHeight: "300px", // Limit dropdown height for scroll
-    overflowY: "auto", // Enable scrolling
-    scrollbarWidth: "none", // Hide scrollbar for Firefox
-    "&::-webkit-scrollbar": {
-      display: "none", // Hide scrollbar for Chrome/Safari
-    },
-  },
-}));
-
-const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
-  color: "#CFF9FF", // cyan-300
-  fontSize: "0.775rem", // Corrected from 0.6575rem to match select font size
-  padding: "12px 16px",
-  display: "flex",
-  alignItems: "center",
-  gap: "8px",
-  "&:hover": {
-    background: "rgba(6, 182, 212, 0.3)", // cyan-600/30
-    color: "#E0FFFF", // cyan-100
-    boxShadow: "0 0 10px rgba(0, 255, 255, 0.4)",
-  },
-  "&.Mui-selected": {
-    background: "rgba(6, 182, 212, 0.4)", // cyan-600/40
-    color: "#E0FFFF", // cyan-100
-  },
-}));
+import { motion, AnimatePresence } from "framer-motion";
+import { FiChevronDown, FiX } from "react-icons/fi";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
-
-  const changeLanguage = (event) => {
-    i18n.changeLanguage(event.target.value);
-  };
+  const [open, setOpen] = useState(false);
 
   const languages = [
     { code: "en", name: "English", flag: "🇬🇧" },
     { code: "zh", name: "中文 (Chinese)", flag: "🇨🇳" },
     { code: "hi", name: "हिन्दी (Hindi)", flag: "🇮🇳" },
     { code: "es", name: "Español", flag: "🇪🇸" },
-    { code: "fr", name: "Français ", flag: "🇫🇷" },
+    { code: "fr", name: "Français", flag: "🇫🇷" },
     { code: "ar", name: "العربية", flag: "🇸🇦" },
     { code: "bn", name: "বাংলা (Bengali)", flag: "🇧🇩" },
     { code: "ru", name: "Русский (Russian)", flag: "🇷🇺" },
@@ -85,7 +20,7 @@ const LanguageSwitcher = () => {
     { code: "ur", name: "اردو (Urdu)", flag: "🇵🇰" },
     { code: "id", name: "Bahasa", flag: "🇮🇩" },
     { code: "de", name: "Deutsch", flag: "🇩🇪" },
-    { code: "ja", name: "日本語 ", flag: "🇯🇵" },
+    { code: "ja", name: "日本語", flag: "🇯🇵" },
     { code: "sw", name: "Kiswahili", flag: "🇰🇪" },
     { code: "mr", name: "मराठी (Marathi)", flag: "🇮🇳" },
     { code: "te", name: "తెలుగు (Telugu)", flag: "🇮🇳" },
@@ -95,55 +30,97 @@ const LanguageSwitcher = () => {
     { code: "vi", name: "Tiếng Việt", flag: "🇻🇳" },
   ];
 
+  const currentLang =
+    languages.find((lang) => lang.code === i18n.language) || languages[0];
+
+  const changeLanguage = (langCode) => {
+    i18n.changeLanguage(langCode);
+    setOpen(false);
+  };
+
   return (
     <div
-      className="lg:top-10 top-20 lg:right-2 right-4 overflow-hidden"
+      className="!fixed lg:!top-10 !top-20 !right-5 !z-[1000]"
       style={{
-        position: "fixed",
-        zIndex: 1000,
         direction:
           i18n.language === "ar" || i18n.language === "ur" ? "rtl" : "ltr",
       }}
     >
-      <StyledSelect
-        value={i18n.language}
-        onChange={changeLanguage}
-        displayEmpty
-        renderValue={(selected) => {
-          const selectedLang = languages.find((lang) => lang.code === selected);
-          return selectedLang ? (
-            <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              {selectedLang.flag} {selectedLang.name}
-            </span>
-          ) : (
-            "Select Language"
-          );
-        }}
-        MenuProps={{
-          PaperProps: {
-            style: {
-              background:
-                "linear-gradient(180deg, rgba(15, 15, 42, 0.95) 0%, rgba(42, 0, 85, 0.95) 100%)",
-              border: "1px solid rgba(34, 211, 238, 0.5)",
-              borderRadius:12,
-              maxHeight: 300,
-              width: 240, // Ensure dropdown height is limited
-              scrollbarWidth: "none", // Firefox
-              "&::-webkit-scrollbar": {
-                display: "none", // Chrome/Safari
-              },
-            },
-          },
-        }}
-      >
-        {languages.map((lang) => (
-          <StyledMenuItem key={lang.code} value={lang.code}>
-            <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              {lang.flag} {lang.name}
-            </span>
-          </StyledMenuItem>
-        ))}
-      </StyledSelect>
+      <div className="!relative">
+        {/* Toggle Button */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="!flex !items-center !justify-between !gap-2 !px-3 !py-2 !text-cyan-300 !text-[0.8rem] !font-medium w-[140px]
+                     !rounded-xl !border !border-cyan-400/40 
+                     !bg-gradient-to-r !from-[#0a0a1f]/80 !to-[#1a0033]/80 
+                     !backdrop-blur-md !shadow-lg 
+                     hover:!border-cyan-300/70 
+                     !transition-all !duration-300"
+        >
+          <span className="!flex !items-center !gap-2">{currentLang.flag}</span>
+
+          <span className="text-[10px]">
+            {" "}
+            {currentLang.name.length > 10
+              ? currentLang.name.slice(0, 10) + "..."
+              : currentLang.name}
+          </span>
+          <motion.span
+            animate={{ rotate: open ? 180 : 0 }}
+            transition={{ duration: 0.25 }}
+          >
+            <FiChevronDown className="!text-cyan-300" />
+          </motion.span>
+        </button>
+
+        {/* Dropdown */}
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.25 }}
+              className="!absolute !mt-2 !w-60 !right-0 !rounded-2xl 
+                         !overflow-hidden !border !border-cyan-400/40 
+                         !bg-gradient-to-b !from-[#0f0f2a]/95 !to-[#2a0055]/95 
+                         !backdrop-blur-xl !shadow-xl "
+            >
+              {/* Header with close button */}
+              <div className="!flex !items-center !justify-between !px-4 !py-3 !border-b !border-cyan-500/30">
+                <span className="!text-cyan-200 !text-[12px] !font-semibold">
+                  Select Language
+                </span>
+                <button
+                  onClick={() => setOpen(false)}
+                  className="!text-cyan-300 hover:!text-cyan-100 !transition-all"
+                >
+                  <FiX className="!w-4 !h-4" />
+                </button>
+              </div>
+
+              {/* List */}
+              <div className="!max-h-60 !overflow-y-auto scrollbar-hide">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => changeLanguage(lang.code)}
+                    className={`!w-full !text-left !px-4 !py-2 !text-[0.8rem] !flex !items-center !gap-2 
+                                !transition-all !duration-200
+                    ${
+                      i18n.language === lang.code
+                        ? "!bg-cyan-600/40 !text-cyan-50"
+                        : "!text-cyan-200 hover:!bg-cyan-500/30 hover:!text-cyan-50"
+                    }`}
+                  >
+                    {lang.flag} {lang.name}
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </div>
   );
 };
