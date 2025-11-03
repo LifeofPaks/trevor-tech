@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { GiImperialCrown } from "react-icons/gi";
 import {
   FiMenu,
   FiX,
@@ -12,54 +11,52 @@ import {
 import { IoMdAlert } from "react-icons/io";
 import { MdFolderDelete } from "react-icons/md";
 import { RiBtcFill } from "react-icons/ri";
-import Logo from "../logo/Logo";
 import { Link } from "react-router-dom";
 import DemoLogo from "../logo/DemoLogo";
 import { useTranslation } from "react-i18next";
-
 
 const Navbarr = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [eliteOpen, setEliteOpen] = useState(false);
   const [mobileEliteOpen, setMobileEliteOpen] = useState(false);
+  const { t } = useTranslation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleElite = () => setEliteOpen(!eliteOpen);
   const toggleMobileElite = () => setMobileEliteOpen(!mobileEliteOpen);
-  const {t} = useTranslation()
 
   const eliteLinks = [
     {
       to: "/elite/credit-boost",
-      label: "Credit Score Upgrade",
+      label: t("credit_score_upgrade"),
       icon: <FiZap />,
     },
     {
       to: "/elite/stop-harassment",
-      label: "Stop Blackmail",
+      label: t("stop_blackmail"),
       icon: <IoMdAlert />,
     },
     {
       to: "/elite/grade-enhancement",
-      label: "Improve Academic Grade",
+      label: t("improve_academic_grade"),
       icon: <FiFileText />,
     },
     {
       to: "/elite/clear-record",
-      label: "Erase Criminal Record",
+      label: t("erase_criminal_record"),
       icon: <MdFolderDelete />,
     },
     {
       to: "/elite/crypto-recovery",
-      label: "Crypto Recovery",
+      label: t("crypto_recovery"),
       icon: <RiBtcFill />,
     },
-    { to: "/elite/dmv-id", label: "DMV & ID Services", icon: <FiKey /> },
+    { to: "/elite/dmv-id", label: t("dmv_&_id_services"), icon: <FiKey /> },
   ];
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50">
-      {/* Main Navbar Container */}
+      {/* Navbar Container */}
       <div className="flex items-center justify-between w-full lg:max-w-[1100px] !mx-auto bg-gradient-to-r from-[#0a0a1f]/80 to-[#1a0033]/80 backdrop-blur-xl lg:border border-cyan-500/30 shadow-2xl lg:rounded-full !px-8 !py-4 lg:!mt-4">
         <DemoLogo />
 
@@ -70,7 +67,7 @@ const Navbarr = () => {
               href="#"
               className="text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:glow"
             >
-              Home
+              {t("home")}
             </a>
           </li>
 
@@ -81,7 +78,7 @@ const Navbarr = () => {
             onMouseLeave={() => setEliteOpen(false)}
           >
             <div className="flex items-center !gap-1 text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:glow">
-              <span>Elite Services</span>
+              <span>{t("elite_services")}</span>
               <FiChevronDown
                 className={`text-sm transition-transform duration-300 ${
                   eliteOpen ? "rotate-180 text-cyan-100" : ""
@@ -89,7 +86,6 @@ const Navbarr = () => {
               />
             </div>
 
-            {/* Animated Dropdown */}
             <AnimatePresence>
               {eliteOpen && (
                 <motion.ul
@@ -127,7 +123,7 @@ const Navbarr = () => {
               href="#about"
               className="text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:glow"
             >
-              About
+              {t("about")}
             </a>
           </li>
           <li>
@@ -135,7 +131,7 @@ const Navbarr = () => {
               href="#testimonial"
               className="text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:glow"
             >
-              Testimonial
+              {t("testimonial")}
             </a>
           </li>
           <li>
@@ -143,17 +139,15 @@ const Navbarr = () => {
               href="#faq"
               className="text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:glow"
             >
-              FAQ
+              {t("faq")}
             </a>
           </li>
           <li>
             <Link
               to="/demo"
               className="w-full sm:w-auto min-w-[140px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-6 !py-3 rounded-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
-              whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
-              whileTap={{ scale: 0.98 }}
             >
-              View Demo
+              {t("view_demo")}
             </Link>
           </li>
         </ul>
@@ -205,7 +199,7 @@ const Navbarr = () => {
                     onClick={toggleMenu}
                     className="block !py-2 hover:text-cyan-100 transition hover:glow"
                   >
-                    Home
+                    {t("home")}
                   </a>
                 </li>
 
@@ -215,7 +209,7 @@ const Navbarr = () => {
                     onClick={toggleMobileElite}
                     className="w-full flex items-center justify-between !py-2 text-cyan-300 hover:text-cyan-100 transition"
                   >
-                    <span>Elite Services</span>
+                    <span>{t("elite_services")}</span>
                     <FiChevronDown
                       className={`transition-transform duration-300 ${
                         mobileEliteOpen ? "rotate-180" : ""
@@ -257,8 +251,8 @@ const Navbarr = () => {
                   </AnimatePresence>
                 </li>
 
-                {["About", "Testimonial", "FAQ"].map((text) => (
-                  <li key={text}>
+                {[t("about"), t("testimonial"), t("faq")].map((text, i) => (
+                  <li key={i}>
                     <a
                       href={`#${text.toLowerCase()}`}
                       onClick={toggleMenu}
@@ -274,12 +268,8 @@ const Navbarr = () => {
                     to="/demo"
                     onClick={toggleMenu}
                     className="w-full sm:w-auto min-w-[140px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-6 !py-3 rounded-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
-                    whileHover={{
-                      boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)",
-                    }}
-                    whileTap={{ scale: 0.98 }}
                   >
-                    View Demo
+                    {t("view_demo")}
                   </Link>
                 </li>
               </ul>
@@ -288,7 +278,7 @@ const Navbarr = () => {
         )}
       </AnimatePresence>
 
-      {/* Custom Glow Effect */}
+      {/* Glow Hover Style */}
       <style jsx>{`
         .hover\\:glow:hover {
           text-shadow: 0 0 10px rgba(0, 255, 255, 0.6),
