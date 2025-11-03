@@ -28,23 +28,9 @@ export const LanguageContext = React.createContext();
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [language, setLanguage] = useState("English");
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const dropdownRef = useRef(null);
-
-  const languages = [
-    { code: "en", label: "English", flag: "United States" },
-    { code: "es", label: "Español", flag: "Spain" },
-    { code: "fr", label: "Français", flag: "France" },
-    { code: "de", label: "Deutsch", flag: "Germany" },
-    { code: "it", label: "Italiano", flag: "Italy" },
-    { code: "pt", label: "Português", flag: "Portugal" },
-    { code: "ru", label: "Русский", flag: "Russia" },
-    { code: "zh", label: "中文", flag: "China" },
-    { code: "ja", label: "日本語", flag: "Japan" },
-    { code: "ko", label: "한국어", flag: "South Korea" },
-  ];
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -113,20 +99,16 @@ const Header = () => {
   );
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <>
       <header className="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-40">
         <div className="flex items-center justify-between !px-4 !py-3 md:!px-6">
           {/* Left: Try Now Button */}
-          <div className="flex-1 flex justify-center md:justify-start">
-         
-          </div>
+          <div className="flex-1 flex justify-center md:justify-start"></div>
 
           {/* Right: Icons + Language */}
           <div className="flex items-center gap-2">
             {/* Desktop Icons */}
             <div className="hidden md:flex items-center gap-1">
-           
-
               {/* Notifications Dropdown */}
               <Dropdown title="Notifications">
                 {{
@@ -239,69 +221,7 @@ const Header = () => {
                   ),
                 }}
               </Dropdown>
-
-              {/* Language Selector */}
-              <div className="relative !ml-2" ref={dropdownRef}>
-                <button
-                  onClick={() => toggleDropdown("Language")}
-                  className="flex items-center gap-1.5 !px-3 !py-2 rounded-full hover:bg-gray-100 transition-all text-sm font-medium text-gray-700 group"
-                >
-                  <FiGlobe className="text-lg text-gray-600 group-hover:text-[#0695c8] transition" />
-                  <span className="text-[13px]">{language}</span>
-                  <FiChevronDown
-                    className={`text-xs transition-transform duration-200 ${
-                      openDropdown === "Language"
-                        ? "rotate-180 text-[#0695c8]"
-                        : "text-gray-500"
-                    }`}
-                  />
-                </button>
-
-                {openDropdown === "Language" && (
-                  <div className="absolute right-0 mt-2 w-64 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50 ring-1 ring-black/5 ">
-                    <div className="!p-4 border-b border-gray-100">
-                      <p className="font-bold text-gray-800 text-sm flex items-center gap-2">
-                        <FiGlobe className="text-[#0695c8]" />
-                        Select Language
-                      </p>
-                    </div>
-                    <div className="max-h-64 overflow-y-auto !p-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-hide ">
-                      {languages.map((lang) => (
-                        <button
-                          key={lang.code}
-                          onClick={() => {
-                            setLanguage(lang.label);
-                            setOpenDropdown(null);
-                          }}
-                          className={`w-full text-left !px-4 !py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all flex items-center gap-3 text-sm group ${
-                            language === lang.label
-                              ? "bg-gradient-to-r from-blue-50 to-cyan-50 text-[#0695c8] font-semibold"
-                              : "text-gray-700"
-                          }`}
-                        >
-                          <span className="text-[13px]">{lang.flag}</span>
-                          <div className="flex-1">
-                            <p className="font-medium text-[11px]">
-                              {lang.label}
-                            </p>
-                            <p className="text-[10px] text-gray-500">
-                              {lang.native}
-                            </p>
-                          </div>
-                          {language === lang.label && (
-                            <FiCheck className="text-[#0695c8] group-hover:scale-110 transition-transform" />
-                          )}
-                        </button>
-                      ))}
-                    </div>
-                    <div className="border-t border-gray-100 !p-3 bg-gray-50">
-                      <p className="text-[10px] text-gray-500 text-center">
-                        More languages coming soon
-                      </p>
-                    </div>
-                  </div>
-                )}
-              </div>
+              <div className="w-[140px]"></div>
             </div>
 
             {/* Mobile Menu Button */}
@@ -460,26 +380,6 @@ const Header = () => {
                   </button>
                 ))}
               </div>
-
-              {/* Language Selector */}
-              <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm">
-                <div className="flex items-center gap-2 !mb-3">
-                  <FiGlobe className="text-indigo-600" />
-                  <p className="font-semibold text-gray-800">Language</p>
-                </div>
-                <select
-                  value={language}
-                  onChange={(e) => setLanguage(e.target.value)}
-                  className="w-full !px-4 !py-3 bg-gray-50 border border-gray-300 rounded-2xl text-sm font-medium text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition"
-                >
-                  {languages.map((l) => (
-                    <option key={l.code} value={l.label}>
-                      {l.flag} {l.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
               <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm !space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-[#0695c8] rounded-full flex items-center justify-center text-white font-bold text-sm">
@@ -514,7 +414,7 @@ const Header = () => {
 
       {/* Push content down */}
       <div className="h-16 md:h-20" />
-    </LanguageContext.Provider>
+    </>
   );
 };
 
