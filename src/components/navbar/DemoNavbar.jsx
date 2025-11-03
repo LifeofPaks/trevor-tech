@@ -95,6 +95,9 @@ const DemoSidebar = () => {
 
   const { t, i18n } = useTranslation();
 
+  // Determine if the language is not English
+  const isNotEnglish = i18n.language !== "en";
+
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
@@ -148,7 +151,6 @@ const DemoSidebar = () => {
 
   const menuItems = [
     { label: t("dashboard"), icon: <MdDashboard />, to: "/demo/dashboard" },
-
     {
       label: t("general_features"),
       icon: <FiSmartphone />,
@@ -211,7 +213,6 @@ const DemoSidebar = () => {
         },
       ],
     },
-
     {
       label: t("social_networks"),
       icon: <FiGlobe />,
@@ -278,7 +279,6 @@ const DemoSidebar = () => {
         },
       ],
     },
-
     {
       label: t("screen_captures"),
       icon: <FiCamera />,
@@ -290,7 +290,6 @@ const DemoSidebar = () => {
         },
       ],
     },
-
     {
       label: t("controls"),
       icon: <FiSettings />,
@@ -318,6 +317,13 @@ const DemoSidebar = () => {
       ],
     },
   ];
+
+  // Utility function to get font size class based on language
+  const getFontSizeClass = (defaultSize) => {
+    if (!isNotEnglish) return defaultSize;
+    const sizeNumber = parseInt(defaultSize.replace(/[^0-9]/g, ""));
+    return `${sizeNumber - 2}px`;
+  };
 
   return (
     <>
@@ -348,7 +354,7 @@ const DemoSidebar = () => {
           {isMobile && (
             <button
               onClick={toggleSidebar}
-              className="text-gray-400 !text-xl hover:text-white"
+              className={`text-gray-400 !text-xl hover:text-white`}
             >
               <FiX />
             </button>
@@ -359,7 +365,8 @@ const DemoSidebar = () => {
         <div className="!px-4 !mt-4 relative">
           <button
             onClick={() => setShowDeviceModal(true)}
-            className="w-full flex items-center justify-between bg-[#1b254b] hover:bg-[#253065] !px-4 !py-3 !rounded-xl !text-sm !font-medium transition-all duration-200 !border !border-gray-700"
+            className="w-full flex items-center justify-between bg-[#1b254b] hover:bg-[#253065] !px-4 !py-3 !rounded-xl !font-medium transition-all duration-200 !border !border-gray-700"
+            style={{ fontSize: getFontSizeClass("14px") }}
           >
             <span className="flex items-center !gap-3">
               <FiSmartphone className="text-[#00d4ff]" />
@@ -378,7 +385,10 @@ const DemoSidebar = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="flex items-center justify-between !p-5 !border-b !border-gray-700">
-                  <h3 className="!text-sm !font-semibold text-white">
+                  <h3
+                    className="!font-semibold text-white"
+                    style={{ fontSize: getFontSizeClass("14px") }}
+                  >
                     {t("select_device")}
                   </h3>
                   <button
@@ -405,16 +415,25 @@ const DemoSidebar = () => {
                           className={`!w-3 !h-3 !rounded-full ${device.color}`}
                         />
                         <div>
-                          <p className="text-white !font-medium !text-[13px]">
+                          <p
+                            className="text-white !font-medium"
+                            style={{ fontSize: getFontSizeClass("13px") }}
+                          >
                             {device.name}
                           </p>
-                          <p className="!text-xs text-gray-400">
+                          <p
+                            className="!text-xs text-gray-400"
+                            style={{ fontSize: getFontSizeClass("12px") }}
+                          >
                             {device.status}
                           </p>
                         </div>
                       </div>
                       {device.battery && (
-                        <span className="!text-xs text-gray-400">
+                        <span
+                          className="!text-xs text-gray-400"
+                          style={{ fontSize: getFontSizeClass("12px") }}
+                        >
                           {device.battery}
                         </span>
                       )}
@@ -422,7 +441,10 @@ const DemoSidebar = () => {
                   ))}
                 </div>
                 <div className="!border-t !border-gray-700 !p-4">
-                  <button className="w-full flex items-center justify-center !gap-2 !py-3 text-[#00d4ff] hover:text-white !font-medium transition !text-[12px]">
+                  <button
+                    className="w-full flex items-center justify-center !gap-2 !py-3 text-[#00d4ff] hover:text-white !font-medium transition"
+                    style={{ fontSize: getFontSizeClass("12px") }}
+                  >
                     <FiPlus /> {t("add_a_new_device")}
                   </button>
                 </div>
@@ -462,7 +484,10 @@ const DemoSidebar = () => {
                         className="flex items-center !gap-3 w-full"
                       >
                         <span className="!text-[14px]">{item.icon}</span>
-                        <span className="!font-medium !text-[14px] flex items-center !gap-2">
+                        <span
+                          className="!font-medium flex items-center !gap-2"
+                          style={{ fontSize: getFontSizeClass("14px") }}
+                        >
                           {item.label}
                           {item.badge && (
                             <img
@@ -505,7 +530,11 @@ const DemoSidebar = () => {
                               }`}
                           >
                             {sub.icon || <div className="!w-4 !h-4" />}
-                            <span className="!text-[13px]">{sub.label}</span>
+                            <span
+                              style={{ fontSize: getFontSizeClass("13px") }}
+                            >
+                              {sub.label}
+                            </span>
                           </Link>
                         );
                       })}
@@ -519,8 +548,11 @@ const DemoSidebar = () => {
 
         {/* Footer */}
         <div className="!border-t !border-gray-800 !p-4 !mt-auto">
-          <div className="text-center !text-[10px] text-gray-500 !space-y-1">
-            <p className="!font-medium text-gray-400">
+          <div className="text-center !space-y-1">
+            <p
+              className="!font-medium text-gray-400"
+              style={{ fontSize: getFontSizeClass("10px") }}
+            >
               {t("easier_monitoring_with")}{" "}
               <span className="!font-semibold">{t("trevor_tech_app")}</span>
             </p>

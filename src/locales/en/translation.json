@@ -1,4 +1,5 @@
 {
+  "select_device":"Select Device",
   "zions_galaxy_s24_name": "Zion's Galaxy S24",
   "zions_galaxy_s24_status": "In Use",
   "zions_galaxy_s24_battery": "20%",
@@ -11,6 +12,7 @@
   "zions_icloud_name": "Zion's iCloud",
   "zions_icloud_status": "Available",
   "zions_icloud_battery": "",
+  "add_a_new_device": "Add new device",
   "dashboard": "Dashboard",
   "general_features": "General Features",
   "text_messages": "Text Messages",
@@ -66,5 +68,8 @@
   "about": "About",
   "testimonial": "Testimonial",
   "faq": "FAQ",
-  "view_demo": "View Demo"
+  "view_demo": "View Demo",
+  "trevor_tech_app": "Trevor Tech App",
+  "easier_monitoring_with":"Easier monitoring with"
+
 }
