@@ -175,5 +175,17 @@
     "testimonial_8_review": "J’ai été stupéfait par la rapidité avec laquelle ils ont tout récupéré. Vraiment worth it — de vrais professionnels !",
     "testimonial_9_name": "Emily Davis",
     "testimonial_9_review": "J’ai recommandé Trevor Tech à mes collègues. Leur service de récupération de données est tout simplement exceptionnel."
+  },
+  "fq": {
+    "header_title": "Questions fréquemment posées",
+    "header_description": "Vous avez des questions ? Nous avons les réponses. Voici tout ce que vous devez savoir sur nos services discrets, puissants et 100 % efficaces.",
+    "faq_1_question": "Combien de temps prend la récupération de données ?",
+    "faq_1_answer": "La récupération de données prend généralement entre 24 et 72 heures, selon l’ampleur des dégâts et le volume de données.",
+    "faq_2_question": "Mes données sont-elles confidentielles ?",
+    "faq_2_answer": "Absolument. Nous suivons des politiques strictes de confidentialité et garantissons que vos données sont sécurisées et privées à tout moment.",
+    "faq_3_question": "Proposez-vous des services de récupération d’urgence ?",
+    "faq_3_answer": "Oui, nous proposons des services de récupération d’urgence pour les situations critiques de perte de données avec une analyse le jour même.",
+    "faq_4_question": "De quels types d’appareils récupérez-vous les données ?",
+    "faq_4_answer": "Nous récupérons les données des ordinateurs portables, de bureau, SSD, HDD, systèmes RAID et appareils mobiles."
   }
 }

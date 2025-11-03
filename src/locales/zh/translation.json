@@ -176,5 +176,17 @@
     "testimonial_8_review": "他们的恢复速度让我震惊。完全值得——真正的专业人士！",
     "testimonial_9_name": "Emily Davis",
     "testimonial_9_review": "我已向同事推荐Trevor Tech。他们的数据恢复服务简直出色。"
+  },
+  "fq": {
+    "header_title": "常见问题",
+    "header_description": "有疑问？我们有答案。这里是关于我们谨慎、强大且100%有效的服务的所有信息。",
+    "faq_1_question": "数据恢复需要多长时间？",
+    "faq_1_answer": "数据恢复通常需要24至72小时，具体取决于损坏程度和数据量。",
+    "faq_2_question": "我的数据会保密吗？",
+    "faq_2_answer": "绝对保密。我们遵循严格的保密政策，确保您的数据始终安全且私密。",
+    "faq_3_question": "你们提供紧急恢复服务吗？",
+    "faq_3_answer": "是的，我们为关键数据丢失情况提供紧急恢复服务，并提供当天分析。",
+    "faq_4_question": "你们可以从哪些设备恢复数据？",
+    "faq_4_answer": "我们从笔记本电脑、台式机、SSD、HDD、RAID系统和移动设备中恢复数据。"
   }
 }

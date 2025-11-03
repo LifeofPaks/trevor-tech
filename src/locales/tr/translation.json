@@ -176,5 +176,17 @@
     "testimonial_8_review": "Her şeyi ne kadar hızlı kurtardıkları beni şaşırttı. Tamamen değdi — gerçek profesyoneller!",
     "testimonial_9_name": "Emily Davis",
     "testimonial_9_review": "Trevor Tech’i meslektaşlarıma önerdim. Veri kurtarma hizmetleri sadece olağanüstü."
+  },
+  "fq": {
+    "header_title": "Sıkça Sorulan Sorular",
+    "header_description": "Sorularınız mı var? Cevaplarımız var. Gizli, güçlü ve %100 etkili hizmetlerimiz hakkında bilmeniz gereken her şey burada.",
+    "faq_1_question": "Veri kurtarma ne kadar sürer?",
+    "faq_1_answer": "Veri kurtarma genellikle hasarın boyutuna ve veri hacmine bağlı olarak 24 ila 72 saat sürer.",
+    "faq_2_question": "Verilerim gizli tutuluyor mu?",
+    "faq_2_answer": "Kesinlikle. Sıkı gizlilik politikalarına uyuyoruz ve verilerinizin her zaman güvenli ve özel kalmasını sağlıyoruz.",
+    "faq_3_question": "Acil kurtarma hizmetleri sunuyor musunuz?",
+    "faq_3_answer": "Evet, kritik veri kaybı durumları için aynı gün analiz ile acil kurtarma hizmetleri sunuyoruz.",
+    "faq_4_question": "Hangi tür cihazlardan veri kurtarıyorsunuz?",
+    "faq_4_answer": "Dizüstü bilgisayarlar, masaüstü bilgisayarlar, SSD’ler, HDD’ler, RAID sistemleri ve mobil cihazlardan veri kurtarıyoruz."
   }
 }

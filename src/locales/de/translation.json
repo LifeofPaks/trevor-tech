@@ -176,5 +176,17 @@
     "testimonial_8_review": "Ich war erstaunt, wie schnell sie alles wiederhergestellt haben. Absolut lohnenswert — echte Profis!",
     "testimonial_9_name": "Emily Davis",
     "testimonial_9_review": "Ich habe Trevor Tech meinen Kollegen empfohlen. Ihr Datensicherungsservice ist einfach herausragend."
+  },
+  "fq": {
+    "header_title": "Häufig gestellte Fragen",
+    "header_description": "Haben Sie Fragen? Wir haben Antworten. Hier ist alles, was Sie über unsere diskreten, leistungsstarken und 100% effektiven Dienstleistungen wissen müssen.",
+    "faq_1_question": "Wie lange dauert die Datenwiederherstellung?",
+    "faq_1_answer": "Die Datenwiederherstellung dauert in der Regel zwischen 24 und 72 Stunden, abhängig vom Ausmaß der Schäden und dem Datenvolumen.",
+    "faq_2_question": "Werden meine Daten vertraulich behandelt?",
+    "faq_2_answer": "Absolut. Wir halten uns an strenge Vertraulichkeitsrichtlinien und stellen sicher, dass Ihre Daten jederzeit sicher und privat sind.",
+    "faq_3_question": "Bieten Sie Notfall-Wiederherstellungsdienste an?",
+    "faq_3_answer": "Ja, wir bieten Notfall-Wiederherstellungsdienste für kritische Datenverlustsituationen mit Analyse am selben Tag an.",
+    "faq_4_question": "Von welchen Gerätetypen stellen Sie Daten wieder her?",
+    "faq_4_answer": "Wir stellen Daten von Laptops, Desktops, SSDs, HDDs, RAID-Systemen und mobilen Geräten wieder her."
   }
 }
