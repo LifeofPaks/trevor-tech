@@ -1,12 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import DemoNavbar from "../navbar/DemoNavbar";
-import Header, { LanguageContext } from "./Header";
+import Header from "./Header";
 import DemoFooter from "./DemoFooter";
 
 const DemoPage = () => {
   return (
-    <LanguageContext.Provider value={{ language: "en", setLanguage: () => {} }}>
+    <>
       <div 
       className="min-h-screen flex bg-gradient-to-br from-slate-50 via-indigo-50 to-teal-50 "
       >
@@ -22,7 +22,7 @@ const DemoPage = () => {
           <DemoFooter />
         </main>
       </div>
-    </LanguageContext.Provider>
+    </>
   );
 };
 

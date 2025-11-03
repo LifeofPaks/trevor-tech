@@ -21,14 +21,12 @@ import {
   FiCamera,
   FiMic,
 } from "react-icons/fi";
-
-// Language Context (to share with Sidebar)
-export const LanguageContext = React.createContext();
+import useDropdownStore from "../../store/useDropdownStore";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
+  const { openDropdown, setOpenDropdown } = useDropdownStore();
 
   const dropdownRef = useRef(null);
 
