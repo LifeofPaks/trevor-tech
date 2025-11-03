@@ -60,8 +60,7 @@ const BuyModal = ({ open, handleClose }) => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.25 }}
             >
-              Our team will activate your access <strong>instantly</strong>{" "}
-              after payment.
+              Our team will activate your access instantly after payment.
             </motion.p>
 
             {/* CTA Buttons */}
