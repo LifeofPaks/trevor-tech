@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronDown, FiX } from "react-icons/fi";
 import { useLocation } from "react-router-dom";
+import { CiGlobe } from "react-icons/ci";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -96,8 +97,11 @@ const LanguageSwitcher = () => {
                   isDemoPage ? "!border-[#1b254b]/20" : "!border-[#2b3a75]/40"
                 }`}
               >
-                <span className="!text-[12px] !font-semibold text-gray-500">
-                  Select Language
+                <span
+                  className={`!text-[12px] !font-semibold  flex items-center gap-1
+                ${isDemoPage ? "text-gray-500" : "text-white"}`}
+                >
+                  <CiGlobe /> Select Language
                 </span>
                 <button
                   onClick={() => setOpen(false)}
