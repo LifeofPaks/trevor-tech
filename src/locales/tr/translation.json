@@ -224,5 +224,13 @@
     "description": "Herhangi bir Android, iPhone, tablet veya bilgisayara uzaktan erişin. Mesajları, aramaları, GPS'i, fotoğrafları, uygulamaları ve tuş vuruşlarını görüntüleyin. Fiziksel erişim gerekmez.",
     "button_view_demo": "Demoyu Görüntüle",
     "button_try_now": "Şimdi Dene"
+  },
+  "bm": {
+    "title": "Satın Almak İçin Bize Ulaşın",
+    "subtitle": "Ekibimiz, ödeme sonrasında erişiminizi anında etkinleştirecektir.",
+    "button_email_support": "E-posta Desteği",
+    "button_whatsapp_chat": "WhatsApp'ta Sohbet",
+    "button_telegram_message": "Telegram'da Mesaj Gönder",
+    "support_info": "5 dakika içinde yanıt • 24/7 Destek"
   }
 }

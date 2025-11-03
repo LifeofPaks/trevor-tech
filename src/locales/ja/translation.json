@@ -225,5 +225,13 @@
     "description": "任意のAndroid、iPhone、タブレット、またはコンピュータにリモートでアクセスします。メッセージ、通話、GPS、写真、アプリ、キーストロークを表示します。物理的なアクセスは不要です。",
     "button_view_demo": "デモを見る",
     "button_try_now": "今すぐ試す"
+  },
+  "bm": {
+    "title": "購入のためにご連絡ください",
+    "subtitle": "私たちのチームは支払い後すぐにアクセスを有効化します。",
+    "button_email_support": "メールサポート",
+    "button_whatsapp_chat": "WhatsAppでチャット",
+    "button_telegram_message": "Telegramでメッセージ",
+    "support_info": "5分以内に返信 • 24時間年中無休のサポート"
   }
 }

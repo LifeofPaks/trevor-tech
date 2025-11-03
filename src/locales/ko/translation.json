@@ -224,5 +224,13 @@
     "description": "모든 Android, iPhone, 태블릿 또는 컴퓨터에 원격으로 액세스하세요. 메시지, 통화, GPS, 사진, 앱 및 키 입력을 확인하세요. 물리적 액세스가 필요하지 않습니다.",
     "button_view_demo": "데모 보기",
     "button_try_now": "지금 사용해보기"
+  },
+  "bm": {
+    "title": "구매를 위해 문의하기",
+    "subtitle": "저희 팀은 결제 후 즉시 액세스를 활성화할 것입니다.",
+    "button_email_support": "이메일 지원",
+    "button_whatsapp_chat": "WhatsApp에서 채팅",
+    "button_telegram_message": "Telegram에서 메시지 보내기",
+    "support_info": "5분 이내 응답 • 24/7 지원"
   }
 }

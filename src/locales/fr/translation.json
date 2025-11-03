@@ -223,5 +223,13 @@
     "description": "Accédez à distance à n'importe quel Android, iPhone, tablette ou ordinateur. Consultez les messages, appels, GPS, photos, applications et frappes au clavier. Aucun accès physique requis.",
     "button_view_demo": "Voir la Démo",
     "button_try_now": "Essayez Maintenant"
+  },
+  "bm": {
+    "title": "Contactez-nous pour Acheter",
+    "subtitle": "Notre équipe activera votre accès immédiatement après le paiement.",
+    "button_email_support": "Support par Email",
+    "button_whatsapp_chat": "Discuter sur WhatsApp",
+    "button_telegram_message": "Message sur Telegram",
+    "support_info": "Réponse en 5 minutes • Support 24/7"
   }
 }

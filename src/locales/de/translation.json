@@ -218,10 +218,19 @@
     "disclaimer_ethical_legal": "ausschließlich für ethische und legale Nutzung",
     "copyright": "© {{year}} TrevorTech. Alle Rechte vorbehalten.",
     "copyright_company": "TrevorTech"
-  }, "dm": {
-      "title": "Fernüberwachung und -steuerung",
-      "description": "Greifen Sie aus der Ferne auf jedes Android, iPhone, Tablet oder Computer zu. Sehen Sie sich Nachrichten, Anrufe, GPS, Fotos, Apps und Tastatureingaben an. Kein physischer Zugriff erforderlich.",
-      "button_view_demo": "Demo Ansehen",
-      "button_try_now": "Jetzt Ausprobieren"
-    }
+  },
+  "dm": {
+    "title": "Fernüberwachung und -steuerung",
+    "description": "Greifen Sie aus der Ferne auf jedes Android, iPhone, Tablet oder Computer zu. Sehen Sie sich Nachrichten, Anrufe, GPS, Fotos, Apps und Tastatureingaben an. Kein physischer Zugriff erforderlich.",
+    "button_view_demo": "Demo Ansehen",
+    "button_try_now": "Jetzt Ausprobieren"
+  },
+  "bm": {
+    "title": "Kontaktieren Sie uns zum Kauf",
+    "subtitle": "Unser Team aktiviert Ihren Zugang sofort nach der Zahlung.",
+    "button_email_support": "E-Mail-Support",
+    "button_whatsapp_chat": "Chatten auf WhatsApp",
+    "button_telegram_message": "Nachricht auf Telegram",
+    "support_info": "Antwort innerhalb von 5 Minuten • 24/7 Support"
+  }
 }

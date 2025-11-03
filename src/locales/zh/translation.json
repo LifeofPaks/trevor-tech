@@ -224,5 +224,13 @@
     "description": "远程访问任何Android、iPhone、平板电脑或计算机。查看消息、电话、GPS、照片、应用程序和按键记录。无需物理访问。",
     "button_view_demo": "查看演示",
     "button_try_now": "立即尝试"
+  },
+  "bm": {
+    "title": "联系我们以购买",
+    "subtitle": "我们的团队将在付款后立即激活您的访问权限。",
+    "button_email_support": "电子邮件支持",
+    "button_whatsapp_chat": "在WhatsApp上聊天",
+    "button_telegram_message": "在Telegram上发送消息",
+    "support_info": "5分钟内响应 • 24/7支持"
   }
 }

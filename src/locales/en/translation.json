@@ -230,5 +230,13 @@
     "description": "Remotely access any Android, iPhone, tablet, or computer. View messages, calls, GPS, photos, apps, and keystrokes. No physical access needed.",
     "button_view_demo": "View Demo",
     "button_try_now": "Try it Now"
+  },
+  "bm": {
+    "title": "Contact Us to Purchase",
+    "subtitle": "Our team will activate your access instantly after payment.",
+    "button_email_support": "Email Support",
+    "button_whatsapp_chat": "Chat on WhatsApp",
+    "button_telegram_message": "Message on Telegram",
+    "support_info": "Response within 5 minutes • 24/7 Support"
   }
 }

@@ -224,5 +224,13 @@
     "description": "Acesse remotamente qualquer Android, iPhone, tablet ou computador. Visualize mensagens, chamadas, GPS, fotos, aplicativos e teclas digitadas. Não é necessário acesso físico.",
     "button_view_demo": "Ver Demonstração",
     "button_try_now": "Experimente Agora"
+  },
+  "bm": {
+    "title": "Entre em Contato para Comprar",
+    "subtitle": "Nossa equipe ativará seu acesso imediatamente após o pagamento.",
+    "button_email_support": "Suporte por Email",
+    "button_whatsapp_chat": "Conversar no WhatsApp",
+    "button_telegram_message": "Mensagem no Telegram",
+    "support_info": "Resposta em 5 minutos • Suporte 24/7"
   }
 }
