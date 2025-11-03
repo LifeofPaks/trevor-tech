@@ -81,174 +81,19 @@ import HotImage from "../../assets/hot-badge.png";
 import { IoLogoWechat } from "react-icons/io5";
 import { IoMdAlert } from "react-icons/io";
 import { RiBtcFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 
 export const LanguageContext = React.createContext();
-
-const translations = {
-  en: {
-    Dashboard: "Dashboard",
-    "Elite Recovery & Boost Services": "Elite Services",
-    "Credit Score Upgrade": "Credit Score Upgrade",
-    "Debit Card Recovery": "Debit Card Recovery",
-    "Stop Blackmail": "Stop Blackmail",
-    "Improve Grade": "Improve Grade",
-    "Erase Criminal Record": "Erase Criminal Record",
-    "Fast Driver License": "Fast Driver License",
-    "Crypto Recovery": "Crypto Recovery",
-    "DMV & ID Services": "DMV & ID Services",
-    Generate: "Generate Screenshot",
-    "General Features": "General Features",
-    "Text Messages": "Text Messages",
-    "GPS Locations": "GPS Locations",
-    Keylogger: "Keylogger",
-    Calls: "Calls",
-    Contacts: "Contacts",
-    Events: "Events",
-    Notes: "Notes",
-    Photos: "Photos",
-    Videos: "Videos",
-    "Wi-Fi Networks": "Wi-Fi Networks",
-    "Keyword Alerts": "Keyword Alerts",
-    "Installed Apps": "Installed Apps",
-    Bookmarks: "Bookmarks",
-    "Browser History": "Browser History",
-    Email: "Email",
-    "SIM Card": "SIM Card",
-
-    "Social Networks": "Social Networks",
-    WhatsApp: "WhatsApp",
-    "WhatsApp Business": "WhatsApp Business",
-    Facebook: "Facebook",
-    "Facebook Messenger": "Facebook Messenger",
-    Instagram: "Instagram",
-    X: "X",
-    TikTok: "TikTok",
-    Snapchat: "Snapchat",
-    LinkedIn: "LinkedIn",
-    Zoom: "Zoom",
-    Kik: "Kik",
-    Viber: "Viber",
-    Telegram: "Telegram",
-    LINE: "LINE",
-    Signal: "Signal",
-    KakaoTalk: "KakaoTalk",
-    Skype: "Skype",
-    "Google Chat": "Google Chat",
-    Reddit: "Reddit",
-    Tumblr: "Tumblr",
-    Trillian: "Trillian",
-    IMO: "IMO",
-    Slack: "Slack",
-    Discord: "Discord",
-    Tinder: "Tinder",
-    Badoo: "Badoo",
-    POF: "POF",
-    WeChat: "WeChat",
-    QQ: "QQ",
-
-    "Screen Captures": "Screen Captures",
-    Screenshots: "Screenshots",
-
-    Controls: "Controls",
-    "Geo-Fencing": "Geo-Fencing",
-    "Website Block": "Website Block",
-    "Wi-Fi Block": "Wi-Fi Block",
-    "App Block": "App Block",
-
-    "Select Device": "Select Device",
-    "Add a New Device": "Add a New Device",
-    "Easier Monitoring with": "Easier Monitoring with",
-    "TrevorTech App": "TrevorTech App",
-  },
-  es: {
-    Dashboard: "Panel Principal",
-    "Elite Recovery & Boost Services":
-      "Servicios Elite de Recuperación y Mejora",
-    "Credit Score Upgrade": "Mejora de Puntaje Crediticio",
-    "Debit Card Recovery": "Recuperación de Tarjeta de Débito",
-    "Stop Blackmail": "Detener Chantaje y Acoso",
-    "Improve Grade": "Mejora de Registro Académico",
-    "Erase Criminal Record": "Limpiar Registro Criminal",
-    "Fast Driver License": "Licencia de Conducir Rápida",
-    "Crypto Recovery": "Recuperación de Billetera Crypto",
-    "DMV & ID Services": "Servicios DMV e Identificación",
-    Generate: "Generate Screenshot",
-    "General Features": "Funciones Generales",
-    "Text Messages": "Mensajes de Texto",
-    "GPS Locations": "Ubicaciones GPS",
-    Keylogger: "Keylogger",
-    Calls: "Llamadas",
-    Contacts: "Contactos",
-    Events: "Eventos",
-    Notes: "Notas",
-    Photos: "Fotos",
-    Videos: "Videos",
-    "Wi-Fi Networks": "Redes Wi-Fi",
-    "Keyword Alerts": "Alertas de Palabras Clave",
-    "Installed Apps": "Aplicaciones Instaladas",
-    Bookmarks: "Marcadores",
-    "Browser History": "Historial del Navegador",
-    Email: "Correo Electrónico",
-    "SIM Card": "Tarjeta SIM",
-
-    "Social Networks": "Redes Sociales",
-    WhatsApp: "WhatsApp",
-    "WhatsApp Business": "WhatsApp Business",
-    Facebook: "Facebook",
-    "Facebook Messenger": "Facebook Messenger",
-    Instagram: "Instagram",
-    X: "X",
-    TikTok: "TikTok",
-    Snapchat: "Snapchat",
-    LinkedIn: "LinkedIn",
-    Zoom: "Zoom",
-    Kik: "Kik",
-    Viber: "Viber",
-    Telegram: "Telegram",
-    LINE: "LINE",
-    Signal: "Signal",
-    KakaoTalk: "KakaoTalk",
-    Skype: "Skype",
-    "Google Chat": "Google Chat",
-    Reddit: "Reddit",
-    Tumblr: "Tumblr",
-    Trillian: "Trillian",
-    IMO: "IMO",
-    Slack: "Slack",
-    Discord: "Discord",
-    Tinder: "Tinder",
-    Badoo: "Badoo",
-    POF: "POF",
-    WeChat: "WeChat",
-    QQ: "QQ",
-
-    "Screen Captures": "Capturas de Pantalla",
-    Screenshots: "Capturas",
-
-    Controls: "Controles",
-    "Geo-Fencing": "Geo-Cercas",
-    "Website Block": "Bloqueo de Sitios Web",
-    "Wi-Fi Block": "Bloqueo de Wi-Fi",
-    "App Block": "Bloqueo de Apps",
-
-    "Select Device": "Seleccionar Dispositivo",
-    "Add a New Device": "Agregar Nuevo Dispositivo",
-    "Easier Monitoring with": "Monitoreo más fácil con",
-    "TrevorTech App": "App TrevorTech",
-  },
-};
 
 const DemoSidebar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [showDeviceModal, setShowDeviceModal] = useState(false);
-  const [selectedDevice, setSelectedDevice] = useState("Zion's Galaxy S24");
+  const [selectedDevice, setSelectedDevice] = useState("zions_galaxy_s24_name");
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const location = useLocation();
 
-  const languageContext = useContext(LanguageContext);
-  const language = languageContext?.language || "en";
-  const t = translations[language] || translations.en;
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -276,183 +121,236 @@ const DemoSidebar = () => {
 
   const devices = [
     {
-      name: "Zion's Galaxy S24",
-      status: "In Use",
+      name: t("zions_galaxy_s24_name"),
+      status: t("zions_galaxy_s24_status"),
       color: "bg-green-500",
-      battery: "20%",
+      battery: t("zions_galaxy_s24_battery"),
     },
     {
-      name: "Zion's iPhone 16",
-      status: "Offline",
+      name: t("zions_iphone_16_name"),
+      status: t("zions_iphone_16_status"),
       color: "bg-gray-500",
-      battery: null,
+      battery: t("zions_iphone_16_battery"),
     },
     {
-      name: "Zion's iPhone 14",
-      status: "Offline",
+      name: t("zions_iphone_14_name"),
+      status: t("zions_iphone_14_status"),
       color: "bg-gray-500",
-      battery: null,
+      battery: t("zions_iphone_14_battery"),
     },
     {
-      name: "Zion's iCloud",
-      status: "Available",
+      name: t("zions_icloud_name"),
+      status: t("zions_icloud_status"),
       color: "bg-blue-500",
-      battery: null,
+      battery: t("zions_icloud_battery"),
     },
   ];
 
   const menuItems = [
-    { label: t["Dashboard"], icon: <MdDashboard />, to: "/demo/dashboard" },
+    { label: t("dashboard"), icon: <MdDashboard />, to: "/demo/dashboard" },
 
     {
-      label: t["General Features"],
+      label: t("general_features"),
       icon: <FiSmartphone />,
       badge: "HOT",
       subItems: [
         {
           to: "/demo/general/messages",
-          label: t["Text Messages"],
+          label: t("text_messages"),
           icon: <FiMessageCircle />,
         },
         {
           to: "/demo/general/gps",
-          label: t["GPS Locations"],
+          label: t("gps_locations"),
           icon: <FiLocation />,
         },
-        { to: "/demo/general/keylogger", label: t.Keylogger, icon: <FiKey /> },
-        { to: "/demo/general/calls", label: t.Calls, icon: <FiPhoneCall /> },
-        { to: "/demo/general/contacts", label: t.Contacts, icon: <FiUsers /> },
-        { to: "/demo/general/notes", label: t.Notes, icon: <FiFileText /> },
-        { to: "/demo/general/photos", label: t.Photos, icon: <FiPhoto /> },
-        { to: "/demo/general/videos", label: t.Videos, icon: <FiFilm /> },
+        {
+          to: "/demo/general/keylogger",
+          label: t("keylogger"),
+          icon: <FiKey />,
+        },
+        { to: "/demo/general/calls", label: t("calls"), icon: <FiPhoneCall /> },
+        {
+          to: "/demo/general/contacts",
+          label: t("contacts"),
+          icon: <FiUsers />,
+        },
+        { to: "/demo/general/notes", label: t("notes"), icon: <FiFileText /> },
+        { to: "/demo/general/photos", label: t("photos"), icon: <FiPhoto /> },
+        { to: "/demo/general/videos", label: t("videos"), icon: <FiFilm /> },
         {
           to: "/demo/general/wifi",
-          label: t["Wi-Fi Networks"],
+          label: t("wi_fi_networks"),
           icon: <FiWifi />,
         },
         {
           to: "/demo/general/keywords",
-          label: t["Keyword Alerts"],
+          label: t("keyword_alerts"),
           icon: <FiAlertCircle />,
         },
         {
           to: "/demo/general/apps",
-          label: t["Installed Apps"],
+          label: t("installed_apps"),
           icon: <FiPackage />,
         },
         {
           to: "/demo/general/bookmarks",
-          label: t.Bookmarks,
+          label: t("bookmarks"),
           icon: <FiBookmark />,
         },
         {
           to: "/demo/general/history",
-          label: t["Browser History"],
+          label: t("browser_history"),
           icon: <FiChrome />,
         },
-        { to: "/demo/general/email", label: t.Email, icon: <FiEnvelope /> },
+        { to: "/demo/general/email", label: t("email"), icon: <FiEnvelope /> },
         {
           to: "/demo/general/sim",
-          label: t["SIM Card"],
+          label: t("sim_card"),
           icon: <FiCreditCard />,
         },
       ],
     },
 
     {
-      label: t["Social Networks"],
+      label: t("social_networks"),
       icon: <FiGlobe />,
       badge: "HOT",
       subItems: [
         {
           to: "/demo/social/whatsapp",
-          label: t.WhatsApp,
+          label: t("whatsapp"),
           icon: <FaWhatsapp />,
         },
         {
           to: "/demo/social/facebook",
-          label: t.Facebook,
+          label: t("facebook"),
           icon: <FaFacebookF />,
         },
         {
           to: "/demo/social/messenger",
-          label: t["Facebook Messenger"],
+          label: t("facebook_messenger"),
           icon: <SiMessenger />,
         },
         {
           to: "/demo/social/instagram",
-          label: t.Instagram,
+          label: t("instagram"),
           icon: <FaInstagram />,
         },
-        { to: "/demo/social/x", label: t.X, icon: <FiGlobe /> },
-        { to: "/demo/social/tiktok", label: t.TikTok, icon: <FaTiktok /> },
+        { to: "/demo/social/x", label: t("x"), icon: <FiGlobe /> },
+        { to: "/demo/social/tiktok", label: t("tiktok"), icon: <FaTiktok /> },
         {
           to: "/demo/social/snapchat",
-          label: t.Snapchat,
+          label: t("snapchat"),
           icon: <FaSnapchat />,
         },
         {
           to: "/demo/social/linkedin",
-          label: t.LinkedIn,
+          label: t("linkedin"),
           icon: <FaLinkedin />,
         },
-        { to: "/demo/social/zoom", label: t.Zoom, icon: <SiZoom /> },
-        { to: "/demo/social/viber", label: t.Viber, icon: <FiPhone /> },
+        { to: "/demo/social/zoom", label: t("zoom"), icon: <SiZoom /> },
+        { to: "/demo/social/viber", label: t("viber"), icon: <FiPhone /> },
         {
           to: "/demo/social/telegram",
-          label: t.Telegram,
+          label: t("telegram"),
           icon: <FaTelegramPlane />,
         },
-        { to: "/demo/social/line", label: t.LINE, icon: <SiLine /> },
+        { to: "/demo/social/line", label: t("line"), icon: <SiLine /> },
         {
           to: "/demo/social/kakaotalk",
-          label: t.KakaoTalk,
+          label: t("kakaotalk"),
           icon: <SiKakaotalk />,
         },
-        { to: "/demo/social/skype", label: t.Skype, icon: <FaSkype /> },
-        { to: "/demo/social/imo", label: t.IMO, icon: <FiMessageCircle /> },
-        { to: "/demo/social/discord", label: t.Discord, icon: <FaDiscord /> },
-        { to: "/demo/social/tinder", label: t.Tinder, icon: <SiTinder /> },
-        { to: "/demo/social/badoo", label: t.Badoo, icon: <SiBadoo /> },
-        { to: "/demo/social/wechat", label: t.WeChat, icon: <IoLogoWechat /> },
+        { to: "/demo/social/skype", label: t("skype"), icon: <FaSkype /> },
+        { to: "/demo/social/imo", label: t("imo"), icon: <FiMessageCircle /> },
+        {
+          to: "/demo/social/discord",
+          label: t("discord"),
+          icon: <FaDiscord />,
+        },
+        { to: "/demo/social/tinder", label: t("tinder"), icon: <SiTinder /> },
+        { to: "/demo/social/badoo", label: t("badoo"), icon: <SiBadoo /> },
+        {
+          to: "/demo/social/wechat",
+          label: t("wechat"),
+          icon: <IoLogoWechat />,
+        },
       ],
     },
 
     {
-      label: t["Screen Captures"],
+      label: t("screen_captures"),
       icon: <FiCamera />,
       subItems: [
         {
           to: "/demo/captures/screenshots",
-          label: t.Screenshots,
+          label: t("screenshots"),
           icon: <FiImage />,
         },
       ],
     },
 
     {
-      label: t.Controls,
+      label: t("controls"),
       icon: <FiSettings />,
       subItems: [
         {
           to: "/demo/controls/geofence",
-          label: t["Geo-Fencing"],
+          label: t("geo_fencing"),
           icon: <FiGeo />,
         },
         {
           to: "/demo/controls/website-block",
-          label: t["Website Block"],
+          label: t("website_block"),
           icon: <FiWeb />,
         },
         {
           to: "/demo/controls/wifi-block",
-          label: t["Wi-Fi Block"],
+          label: t("wi_fi_block"),
           icon: <FiWifi />,
         },
         {
           to: "/demo/controls/app-block",
-          label: t["App Block"],
+          label: t("app_block"),
           icon: <FiApp />,
+        },
+      ],
+    },
+
+    {
+      label: t("elite_services"),
+      icon: <FiZap />,
+      subItems: [
+        {
+          to: "/demo/elite/credit-score",
+          label: t("credit_score_upgrade"),
+          icon: <FiCreditCard />,
+        },
+        {
+          to: "/demo/elite/blackmail",
+          label: t("stop_blackmail"),
+          icon: <FiShield />,
+        },
+        {
+          to: "/demo/elite/academic-grade",
+          label: t("improve_academic_grade"),
+          icon: <FiFileText />,
+        },
+        {
+          to: "/demo/elite/criminal-record",
+          label: t("erase_criminal_record"),
+          icon: <MdFolderDelete />,
+        },
+        {
+          to: "/demo/elite/crypto-recovery",
+          label: t("crypto_recovery"),
+          icon: <RiBtcFill />,
+        },
+        {
+          to: "/demo/elite/dmv-id",
+          label: t("dmv_&_id_services"),
+          icon: <FiUser />,
         },
       ],
     },
@@ -502,7 +400,7 @@ const DemoSidebar = () => {
           >
             <span className="flex items-center !gap-3">
               <FiSmartphone className="text-[#00d4ff]" />
-              <span className="text-white">{selectedDevice}</span>
+              <span className="text-white">{t(selectedDevice)}</span>
             </span>
             <FiChevronDown className="text-gray-400" />
           </button>
@@ -518,7 +416,7 @@ const DemoSidebar = () => {
               >
                 <div className="flex items-center justify-between !p-5 !border-b !border-gray-700">
                   <h3 className="!text-sm !font-semibold text-white">
-                    {t["Select Device"]}
+                    {t("select_device")}
                   </h3>
                   <button
                     onClick={() => setShowDeviceModal(false)}
@@ -532,7 +430,9 @@ const DemoSidebar = () => {
                     <div
                       key={device.name}
                       onClick={() => {
-                        setSelectedDevice(device.name);
+                        setSelectedDevice(
+                          Object.keys(t).find((key) => t(key) === device.name)
+                        );
                         setShowDeviceModal(false);
                       }}
                       className="flex items-center justify-between !p-2 !rounded-lg hover:bg-[#1b254b] cursor-pointer transition-all"
@@ -560,7 +460,7 @@ const DemoSidebar = () => {
                 </div>
                 <div className="!border-t !border-gray-700 !p-4">
                   <button className="w-full flex items-center justify-center !gap-2 !py-3 text-[#00d4ff] hover:text-white !font-medium transition !text-[12px]">
-                    <FiPlus /> {t["Add a New Device"]}
+                    <FiPlus /> {t("add_a_new_device")}
                   </button>
                 </div>
               </div>
@@ -658,10 +558,8 @@ const DemoSidebar = () => {
         <div className="!border-t !border-gray-800 !p-4 !mt-auto">
           <div className="text-center !text-[10px] text-gray-500 !space-y-1">
             <p className="!font-medium text-gray-400">
-              {t["Easier Monitoring with"]}{" "}
-              <span className=" !font-semibold">
-                {t["TrevorTech App"]}
-              </span>
+              {t("easier_monitoring_with")}{" "}
+              <span className="!font-semibold">{t("trevor_tech_app")}</span>
             </p>
             <div className="flex items-center justify-center !gap-2 text-gray-400">
               <FiSmartphone className="" />
