@@ -66,5 +66,18 @@
   "about": "Über uns",
   "testimonial": "Kundenmeinung",
   "faq": "Häufig gestellte Fragen",
-  "view_demo": "Demo ansehen"
+  "view_demo": "Demo ansehen",
+  "home_page": {
+    "hero_title": "Ultimativer Digitaler Schild: Dein ",
+    "hero_title_secret_weapon": "Geheimwaffe",
+    "betrayal": " gegen Verrat und Verlust",
+    "hero_subtitle": "Stärke dich mit modernsten Werkzeugen, um <1>Social Media auszuspionieren</1>, <1>Geräte zu hacken</1>, <1>gestohlene Kryptowährungen</1> zurückzuholen, Standorte zu verfolgen und digitale Spuren zu löschen – alles <1>ethisch und diskret</1>, mit Expertenbegleitung für völlige Ruhe.",
+    "hero_subtitle_spy": "Social Media auszuspionieren",
+    "hero_subtitle_hack": "Geräte zu hacken",
+    "hero_subtitle_crypto": "gestohlene Kryptowährungen",
+    "hero_subtitle_ethically": "ethisch und diskret",
+    "available_on": "Verfügbar auf",
+    "view_demo": "Demo ansehen",
+    "try_it_now": "Jetzt ausprobieren"
+  }
 }

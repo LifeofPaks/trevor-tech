@@ -67,5 +67,18 @@
   "about": "Hakkında",
   "testimonial": "Referans",
   "faq": "Sıkça Sorulan Sorular",
-  "view_demo": "Demoyu Görüntüle"
+  "view_demo": "Demoyu Görüntüle",
+  "home_page": {
+    "hero_title": "Nihai Dijital Kalkan: Sizin ",
+    "hero_title_secret_weapon": "Gizli Silahınız",
+    "betrayal": " İhanet ve Kayba Karşı",
+    "hero_subtitle": "<1>Sosyal medyayı gözetlemek</1>, <1>cihazları hacklemek</1>, <1>çalınan kripto para birimlerini</1> kurtarmak, konumları izlemek ve dijital izleri silmek için en son teknoloji araçlarla kendinizi güçlendirin—tümü <1>etik ve gizli</1> bir şekilde, tam bir gönül rahatlığı için uzman rehberliği eşliğinde.",
+    "hero_subtitle_spy": "Sosyal medyayı gözetlemek",
+    "hero_subtitle_hack": "cihazları hacklemek",
+    "hero_subtitle_crypto": "çalınan kripto para birimleri",
+    "hero_subtitle_ethically": "etik ve gizli",
+    "available_on": "Şurada Mevcut",
+    "view_demo": "Demoyu Görüntüle",
+    "try_it_now": "Şimdi Dene"
+  }
 }

@@ -67,5 +67,18 @@
   "about": "Sobre",
   "testimonial": "Depoimento",
   "faq": "Perguntas Frequentes",
-  "view_demo": "Ver Demonstração"
+  "view_demo": "Ver Demonstração",
+  "home_page": {
+    "hero_title": "Escudo Digital Supremo: Sua ",
+    "hero_title_secret_weapon": "Arma Secreta",
+    "betrayal": " Contra a Traição e a Perda",
+    "hero_subtitle": "Capacite-se com ferramentas de ponta para <1>espionar mídias sociais</1>, <1>hackear dispositivos</1>, recuperar <1>criptomoedas roubadas</1>, rastrear locais e apagar rastros digitais—tudo <1>eticamente e discretamente</1>, com orientação especializada para total tranquilidade.",
+    "hero_subtitle_spy": "espionar mídias sociais",
+    "hero_subtitle_hack": "hackear dispositivos",
+    "hero_subtitle_crypto": "criptomoedas roubadas",
+    "hero_subtitle_ethically": "eticamente e discretamente",
+    "available_on": "Disponível em",
+    "view_demo": "Ver Demonstração",
+    "try_it_now": "Experimente Agora"
+  }
 }

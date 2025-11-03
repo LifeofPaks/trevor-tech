@@ -67,5 +67,18 @@
   "about": "소개",
   "testimonial": "증언",
   "faq": "자주 묻는 질문",
-  "view_demo": "데모 보기"
+  "view_demo": "데모 보기",
+  "home_page": {
+    "hero_title": "궁극의 디지털 방패: 당신의 ",
+    "hero_title_secret_weapon": "비밀 무기",
+    "betrayal": " 배신과 손실에 맞서는",
+    "hero_subtitle": "<1>소셜 미디어 염탐</1>, <1>기기 해킹</1>, <1>도난당한 암호화폐</1> 회수, 위치 추적 및 디지털 흔적 삭제를 위한 최첨단 도구로 자신을 강화하세요. 모든 것은 완벽한 마음의 평화를 위한 전문가의 지도와 함께 <1>윤리적이고 신중하게</1> 이루어집니다.",
+    "hero_subtitle_spy": "소셜 미디어 염탐",
+    "hero_subtitle_hack": "기기 해킹",
+    "hero_subtitle_crypto": "도난당한 암호화폐",
+    "hero_subtitle_ethically": "윤리적이고 신중하게",
+    "available_on": "사용 가능",
+    "view_demo": "데모 보기",
+    "try_it_now": "지금 사용해보기"
+  }
 }

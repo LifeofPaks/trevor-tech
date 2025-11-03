@@ -73,10 +73,22 @@
   "easier_monitoring_with":"Easier monitoring with",
 
 
-  "home_page":{
-    "hero_title":"",
-    "hero_subtitle":""
 
+
+  "home_page": {
+    "hero_title": "Ultimate Digital Shield: Your ",
+    "hero_title_secret_weapon": "Secret Weapon",
+    "betrayal": " Against Betrayal and Loss",
+    "hero_subtitle": "Empower yourself with cutting-edge tools to <1>spy on social media</1>, <1>hack devices</1>, reclaim <1>stolen crypto</1>, track locations, and erase digital footprints – all <1>ethically and discreetly</1>, with expert support for total peace of mind.",
+    "hero_subtitle_spy": "spy on social media",
+    "hero_subtitle_hack": "hack devices",
+    "hero_subtitle_crypto": "stolen crypto",
+    "hero_subtitle_ethically": "ethically and discreetly",
+    "available_on": "Available on",
+    "view_demo": "View Demo",
+    "try_it_now": "Try it Now"
   }
+
+
 
 }

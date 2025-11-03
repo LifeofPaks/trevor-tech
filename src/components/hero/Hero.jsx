@@ -10,6 +10,7 @@ import UnderlineSVG from "../decorative/UnderlineSVG";
 import BuyModal from "../buyModal/BuyModal";
 import HeroImage from "../../assets/hero-image.png";
 import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 const Hero = () => {
   const [open, setOpen] = useState(false);
@@ -79,32 +80,32 @@ const Hero = () => {
         >
           <div className="relative inline-block lg:w-[125%]">
             <h1 className="text-[2.3rem] md:text-4xl lg:text-[3.6rem] font-extrabold lg:leading-[70px] leading-[40px] text-center lg:text-left">
-              Ultimate Digital Shield: Your{" "}
+              {t("home_page.hero_title")}
               <span className="relative inline-block">
                 <span
                   className="bg-gradient-to-r from-cyan-400 via-cyan-300 to-pink-400 bg-clip-text text-transparent"
                   style={{ textShadow: "0 0 20px rgba(0, 255, 255, 0.5)" }}
                 >
-                  Secret Weapon
+                  {t("home_page.hero_title_secret_weapon")}
                 </span>
                 <UnderlineSVG className="absolute -bottom-3 left-0 w-full text-cyan-400" />
               </span>{" "}
-              Against Betrayal and Loss
+              {t("home_page.betrayal")}
             </h1>
           </div>
 
           <p className="!mt-8 text-cyan-100/80 text-[14px] md:text-lg lg:text-xl text-center lg:text-left leading-relaxed font-light">
-            Empower yourself with cutting-edge tools to{" "}
-            <strong>spy on social media</strong>, <strong>hack devices</strong>,
-            reclaim <strong>stolen crypto</strong>, track locations, and erase
-            digital footprints – all <strong>ethically and discreetly</strong>,
-            with expert support for total peace of mind.
+            <Trans
+              i18nKey="home_page.hero_subtitle"
+              components={{
+                1: <strong />,
+              }}
+            />
           </p>
-
           {/* Platform Icons */}
           <div className="!mt-10 text-center lg:text-left">
             <p className="text-xs font-bold text-cyan-400 uppercase tracking-widest !mb-2">
-              Available on
+              {t("home_page.available_on")}
             </p>
             <motion.div
               className="flex items-center justify-center lg:justify-start !gap-6 text-3xl"
@@ -147,7 +148,7 @@ const Hero = () => {
           >
             <Link to="/demo" className="w-full sm:w-auto">
               <button className="w-full sm:w-auto min-w-[160px] border !border-cyan-500/50 hover:bg-cyan-900/20 text-cyan-300 backdrop-blur-sm font-medium rounded-xl !px-8 !py-4 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30 hover:scale-105">
-                View Demo
+                {t("home_page.view_demo")}
               </button>
             </Link>
 
@@ -157,7 +158,7 @@ const Hero = () => {
               whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
               whileTap={{ scale: 0.98 }}
             >
-              Try it Now
+              {t("home_page.try_it_now")}
             </button>
           </motion.div>
         </motion.div>

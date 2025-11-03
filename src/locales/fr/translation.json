@@ -66,5 +66,18 @@
   "about": "À propos",
   "testimonial": "Témoignage",
   "faq": "Questions fréquentes",
-  "view_demo": "Voir la démo"
+  "view_demo": "Voir la démo",
+  "home_page": {
+    "hero_title": "Bouclier numérique ultime : votre ",
+    "hero_title_secret_weapon": "Arme Secrète",
+    "betrayal": " contre la trahison et la perte",
+    "hero_subtitle": "Donnez-vous les moyens avec des outils de pointe pour <1>surveiller les réseaux sociaux</1>, <1>pirater des appareils</1>, récupérer des <1>cryptos volées</1>, suivre des emplacements et effacer les traces numériques — tout cela <1>de façon éthique et discrète</1>, avec un accompagnement expert pour une tranquillité totale.",
+    "hero_subtitle_spy": "surveiller les réseaux sociaux",
+    "hero_subtitle_hack": "pirater des appareils",
+    "hero_subtitle_crypto": "cryptos volées",
+    "hero_subtitle_ethically": "de façon éthique et discrète",
+    "available_on": "Disponible sur",
+    "view_demo": "Voir la démo",
+    "try_it_now": "Essayez maintenant"
+  }
 }

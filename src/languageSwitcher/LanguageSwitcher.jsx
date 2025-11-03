@@ -17,11 +17,11 @@ const LanguageSwitcher = () => {
     { code: "zh", name: "中文 (Chinese)", flag: "🇨🇳" },
     { code: "es", name: "Español", flag: "🇪🇸" },
     { code: "fr", name: "Français", flag: "🇫🇷" },
-    { code: "ar", name: "العربية", flag: "🇸🇦" },
+    { code: "ar", name: "العربية (Arabic)", flag: "🇸🇦" },
     { code: "ru", name: "Русский (Russian)", flag: "🇷🇺" },
     { code: "pt", name: "Português", flag: "🇵🇹" },
     { code: "de", name: "Deutsch", flag: "🇩🇪" },
-    { code: "ja", name: "日本語", flag: "🇯🇵" },
+    { code: "ja", name: "日本語 (Japn)", flag: "🇯🇵" },
     { code: "tr", name: "Türkçe (Turkish)", flag: "🇹🇷" },
     { code: "ko", name: "한국어 (Korean)", flag: "🇰🇷" },
   ];

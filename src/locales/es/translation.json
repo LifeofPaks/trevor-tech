@@ -66,5 +66,18 @@
   "about": "Acerca de",
   "testimonial": "Testimonio",
   "faq": "Preguntas Frecuentes",
-  "view_demo": "Ver Demostración"
+  "view_demo": "Ver Demostración",
+  "home_page": {
+    "hero_title": "Escudo Digital Definitivo: Tu ",
+    "hero_title_secret_weapon": "Arma Secreta",
+    "betrayal": " contra la traición y la pérdida",
+    "hero_subtitle": "Empodérate con herramientas de vanguardia para <1>espiar redes sociales</1>, <1>piratear dispositivos</1>, recuperar <1>cripto robada</1>, rastrear ubicaciones y borrar huellas digitales – todo <1>de forma ética y discreta</1>, con soporte experto para una paz mental total.",
+    "hero_subtitle_spy": "espiar redes sociales",
+    "hero_subtitle_hack": "piratear dispositivos",
+    "hero_subtitle_crypto": "cripto robada",
+    "hero_subtitle_ethically": "de forma ética y discreta",
+    "available_on": "Disponible en",
+    "view_demo": "Ver demo",
+    "try_it_now": "Pruébalo ahora"
+  }
 }

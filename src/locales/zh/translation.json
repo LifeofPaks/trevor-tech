@@ -67,5 +67,18 @@
   "about": "关于",
   "testimonial": "推荐",
   "faq": "常见问题",
-  "view_demo": "查看演示"
+  "view_demo": "查看演示",
+  "home_page": {
+    "hero_title": "终极数字之盾：您的 ",
+    "hero_title_secret_weapon": "秘密武器",
+    "betrayal": " 对抗背叛与损失",
+    "hero_subtitle": "使用尖端工具武装自己，以<1>监控社交媒体</1>、<1>破解设备</1>、追回<1>被盗加密货币</1>、追踪位置并清除数字痕迹——所有操作<1>合乎道德且谨慎地</1>进行，并有专家指导，让您完全安心。",
+    "hero_subtitle_spy": "监控社交媒体",
+    "hero_subtitle_hack": "破解设备",
+    "hero_subtitle_crypto": "被盗加密货币",
+    "hero_subtitle_ethically": "合乎道德且谨慎地",
+    "available_on": "适用于",
+    "view_demo": "查看演示",
+    "try_it_now": "立即试用"
+  }
 }

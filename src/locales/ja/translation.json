@@ -67,5 +67,18 @@
   "about": "概要",
   "testimonial": "お客様の声",
   "faq": "よくある質問",
-  "view_demo": "デモを見る"
+  "view_demo": "デモを見る",
+  "home_page": {
+    "hero_title": "究極のデジタルシールド：あなたの ",
+    "hero_title_secret_weapon": "秘密兵器",
+    "betrayal": " 裏切りと損失に対する",
+    "hero_subtitle": "最先端のツールで自分自身を強化し、<1>ソーシャルメディアをスパイ</1>し、<1>デバイスをハック</1>し、<1>盗まれた暗号通貨</1>を回収し、位置を追跡し、デジタルの痕跡を消去します—すべて<1>倫理的かつ_慎重に</1>、完全な安心のための専門家の指導付きで。",
+    "hero_subtitle_spy": "ソーシャルメディアをスパイ",
+    "hero_subtitle_hack": "デバイスをハック",
+    "hero_subtitle_crypto": "盗まれた暗号通貨",
+    "hero_subtitle_ethically": "倫理的かつ_慎重に",
+    "available_on": "で利用可能",
+    "view_demo": "デモを見る",
+    "try_it_now": "今すぐ試す"
+  }
 }
