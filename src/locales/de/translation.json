@@ -135,5 +135,22 @@
     "feature_stop_blackmail_desc": "Identifizieren Sie Erpresser, entfernen Sie kompromittierendes Material von Geräten/Cloud, blockieren Sie zukünftige Kontakte und löschen Sie Spuren online für vollständigen Schutz und Seelenfrieden.",
     "feature_driving_records_title": "Fahrtenbücher und ID-Dienste",
     "feature_driving_records_desc": "Rufen Sie Fahrtenbücher ab und greifen Sie auf Registrierungsdetails zu. (Hinweis: Beachten Sie lokale Gesetze und nutzen Sie nur legale Dienste.)"
+  },
+
+  "gps": {
+    "header_title": "Live-GPS-Tracking",
+    "header_description": "Verfolgen Sie den Echtzeit-Standort jedes Geräts mit Straßengenauigkeit mithilfe von GPS, Wi-Fi und Mobilfunkmasten. Sehen Sie die Live-Bewegung auf einer Karte, erhalten Sie Geofence-Benachrichtigungen und exportieren Sie den vollständigen Routenverlauf mit Zeitstempeln und Geschwindigkeitsdaten.",
+    "header_accuracy": "Straßengenauigkeit",
+    "image_alt": "Dashboard für Live-GPS-Tracking",
+    "feature_gps_track_title": "GPS-Standort verfolgen",
+    "feature_location_history_title": "Standortverlauf anzeigen",
+    "feature_wifi_track_title": "Wi-Fi-Standortverfolgung",
+    "feature_geofence_alerts_title": "Geofence-Benachrichtigungen einrichten",
+    "subheader_title": "Sofort mit dem Tracking beginnen",
+    "subheader_description": "Erleben Sie, wie unser GPS-System Sie in Echtzeit mit Ihren Geräten verbunden hält. Klicken Sie auf “Jetzt ausprobieren”, um das Live-Tracking sofort zu aktivieren, oder auf “Demo ansehen”, um zu erkunden, wie Standortaktualisierungen und Benachrichtigungen in der Dashboard-Oberfläche angezeigt werden.",
+    "subheader_try_now": "Jetzt ausprobieren",
+    "subheader_view_demo": "Demo ansehen",
+    "button_try_now": "Jetzt ausprobieren",
+    "button_view_demo": "Demo ansehen"
   }
 }

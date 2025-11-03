@@ -136,5 +136,21 @@
     "feature_stop_blackmail_desc": "识别敲诈者，从设备/云端移除不利材料，阻止未来联系，并在线擦除痕迹以提供全面保护和安心。",
     "feature_driving_records_title": "驾驶记录与身份证服务",
     "feature_driving_records_desc": "提取驾驶记录并访问注册详情。（注意：遵守当地法律，仅使用合法服务。）"
-  }
+  },
+ "gps": {
+      "header_title": "实时GPS追踪",
+      "header_description": "使用GPS、Wi-Fi和蜂窝塔追踪任何设备的实时位置，精确到街道级别。在地图上查看实时移动，获取地理围栏警报，并导出包含时间戳和速度数据的完整路线历史。",
+      "header_accuracy": "街道级别精确度",
+      "image_alt": "实时GPS追踪仪表板",
+      "feature_gps_track_title": "追踪GPS位置",
+      "feature_location_history_title": "查看位置历史",
+      "feature_wifi_track_title": "Wi-Fi位置追踪",
+      "feature_geofence_alerts_title": "设置地理围栏警报",
+      "subheader_title": "立即开始追踪",
+      "subheader_description": "体验我们的GPS系统如何实时连接您的设备。点击“立即尝试”以即时激活实时追踪，或点击“查看演示”以了解位置更新和警报如何在仪表板界面中显示。",
+      "subheader_try_now": "立即尝试",
+      "subheader_view_demo": "查看演示",
+      "button_try_now": "立即尝试",
+      "button_view_demo": "查看演示"
+    }
 }

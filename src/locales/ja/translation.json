@@ -136,5 +136,21 @@
     "feature_stop_blackmail_desc": "恐喝者を特定し、デバイス/クラウドから妥協する素材を削除し、将来の接触をブロックし、完全な保護と安心のためにオンラインの痕跡を消去。",
     "feature_driving_records_title": "運転記録とIDサービス",
     "feature_driving_records_desc": "運転記録を取得し、登録詳細にアクセス。（注意：現地の法律を遵守し、合法的なサービスのみを使用。）"
+  },
+  "gps": {
+    "header_title": "ライブGPSトラッキング",
+    "header_description": "GPS、Wi-Fi、セルタワーを使用して、任意のデバイスのリアルタイムの位置をストリートレベルの精度で追跡。マップ上でライブの移動を確認し、ジオフェンスアラートを受け取り、タイムスタンプと速度データを含む完全なルート履歴をエクスポート。",
+    "header_accuracy": "ストリートレベルの精度",
+    "image_alt": "ライブGPSトラッキングダッシュボード",
+    "feature_gps_track_title": "GPS位置の追跡",
+    "feature_location_history_title": "位置履歴の表示",
+    "feature_wifi_track_title": "Wi-Fi位置トラッキング",
+    "feature_geofence_alerts_title": "ジオフェンスアラートの設定",
+    "subheader_title": "即座にトラッキング開始",
+    "subheader_description": "私たちのGPSシステムがデバイスとリアルタイムでどのように接続を保つかを体験してください。「今すぐ試す」をクリックしてライブトラッキングを即座に有効にするか、「デモを見る」をクリックして、位置更新とアラートがダッシュボードインターフェースにどのように表示されるかを確認。",
+    "subheader_try_now": "今すぐ試す",
+    "subheader_view_demo": "デモを見る",
+    "button_try_now": "今すぐ試す",
+    "button_view_demo": "デモを見る"
   }
 }

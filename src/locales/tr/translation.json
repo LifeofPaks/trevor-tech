@@ -136,5 +136,21 @@
     "feature_stop_blackmail_desc": "Şantajcıları tanımlayın, cihazlardan/buluttan compromize edici materyali kaldırın, gelecekteki iletişimi engelleyin ve tam koruma ve huzur için çevrimiçi izleri silin.",
     "feature_driving_records_title": "Sürüş Kayıtları ve Kimlik Hizmetleri",
     "feature_driving_records_desc": "Sürüş kayıtlarını çekin ve kayıt detaylarına erişin. (Not: Yerel yasalara uyun ve yalnızca yasal hizmetleri kullanın.)"
+  },
+  "gps": {
+    "header_title": "Canlı GPS Takibi",
+    "header_description": "GPS, Wi-Fi ve cep kulelerini kullanarak herhangi bir cihazın gerçek zamanlı konumunu sokak seviyesinde doğrulukla takip edin. Haritada canlı hareketi görün, coğrafi çit uyarıları alın ve zaman damgaları ile hız verileri içeren tam rota geçmişini dışa aktarın.",
+    "header_accuracy": "sokak seviyesinde doğruluk",
+    "image_alt": "Canlı GPS takibi paneli",
+    "feature_gps_track_title": "GPS Konumunu Takip Et",
+    "feature_location_history_title": "Konum Geçmişini Görüntüle",
+    "feature_wifi_track_title": "Wi-Fi Konum Takibi",
+    "feature_geofence_alerts_title": "Coğrafi Çit Uyarıları Kur",
+    "subheader_title": "Anında Takibe Başla",
+    "subheader_description": "GPS sistemimizin cihazlarınızla gerçek zamanlı olarak nasıl bağlantıda tuttuğunu deneyimleyin. Canlı takibi anında etkinleştirmek için “Şimdi Dene”ye tıklayın veya konum güncellemeleri ve uyarıların kontrol paneli arayüzünde nasıl göründüğünü keşfetmek için “Demoyu Görüntüle”ye tıklayın.",
+    "subheader_try_now": "Şimdi Dene",
+    "subheader_view_demo": "Demoyu Görüntüle",
+    "button_try_now": "Şimdi Dene",
+    "button_view_demo": "Demoyu Görüntüle"
   }
 }

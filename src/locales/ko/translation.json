@@ -136,5 +136,21 @@
     "feature_stop_blackmail_desc": "협박자를 식별하고, 장치/클라우드에서 타협된 자료를 제거하며, 향후 연락을 차단하고, 완전한 보호와 마음의 평화를 위해 온라인 흔적을 지우세요.",
     "feature_driving_records_title": "운전 기록 및 신분 서비스",
     "feature_driving_records_desc": "운전 기록을 가져오고 등록 세부 정보에 접근. (주의: 현지 법률을 준수하고 합법적인 서비스만 사용.)"
+  },
+  "gps": {
+    "header_title": "실시간 GPS 추적",
+    "header_description": "GPS, Wi-Fi, 셀 타워를 사용하여 모든 기기의 실시간 위치를 거리 수준의 정확도로 추적하세요. 지도에서 실시간 이동을 확인하고, 지오펜스 경고를 받으며, 타임스탬프와 속도 데이터가 포함된 전체 경로 기록을 내보내세요.",
+    "header_accuracy": "거리 수준의 정확도",
+    "image_alt": "실시간 GPS 추적 대시보드",
+    "feature_gps_track_title": "GPS 위치 추적",
+    "feature_location_history_title": "위치 기록 보기",
+    "feature_wifi_track_title": "Wi-Fi 위치 추적",
+    "feature_geofence_alerts_title": "지오펜스 경고 설정",
+    "subheader_title": "즉시 추적 시작",
+    "subheader_description": "저희 GPS 시스템이 실시간으로 기기와 어떻게 연결되는지 경험해보세요. 실시간 추적을 즉시 활성화하려면 “지금 시도”를 클릭하거나, 위치 업데이트와 경고가 대시보드 인터페이스에 어떻게 표시되는지 알아보려면 “데모 보기”를 클릭하세요.",
+    "subheader_try_now": "지금 시도",
+    "subheader_view_demo": "데모 보기",
+    "button_try_now": "지금 시도",
+    "button_view_demo": "데모 보기"
   }
 }

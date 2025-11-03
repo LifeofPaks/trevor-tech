@@ -135,5 +135,21 @@
     "feature_stop_blackmail_desc": "Identifique a los chantajistas, elimine material comprometedor de dispositivos/nube, bloquee contactos futuros y borre rastros en línea para una protección total y tranquilidad.",
     "feature_driving_records_title": "Registros de conducción y servicios de identificación",
     "feature_driving_records_desc": "Obtenga registros de conducción y acceda a detalles de registro. (Nota: siga las leyes locales y utilice solo servicios legales.)"
+  },
+  "gps": {
+    "header_title": "Seguimiento GPS en vivo",
+    "header_description": "Rastree la ubicación en tiempo real de cualquier dispositivo con precisión a nivel de calle usando GPS, Wi-Fi y torres celulares. Vea el movimiento en vivo en un mapa, reciba alertas de geovallas y exporte el historial completo de rutas con marcas de tiempo y datos de velocidad.",
+    "header_accuracy": "precisión a nivel de calle",
+    "image_alt": "Tablero de seguimiento GPS en vivo",
+    "feature_gps_track_title": "Rastrear ubicación GPS",
+    "feature_location_history_title": "Ver historial de ubicaciones",
+    "feature_wifi_track_title": "Seguimiento de ubicación por Wi-Fi",
+    "feature_geofence_alerts_title": "Configurar alertas de geovallas",
+    "subheader_title": "Comience a rastrear al instante",
+    "subheader_description": "Experimente cómo nuestro sistema GPS lo mantiene conectado con sus dispositivos en tiempo real. Haga clic en “Pruébelo ahora” para activar el seguimiento en vivo al instante o en “Ver demostración” para explorar cómo aparecen las actualizaciones de ubicación y las alertas en la interfaz del tablero.",
+    "subheader_try_now": "Pruébelo ahora",
+    "subheader_view_demo": "Ver demostración",
+    "button_try_now": "Pruébelo ahora",
+    "button_view_demo": "Ver demostración"
   }
 }

@@ -5,35 +5,37 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import LocationImage from "../../assets/location-image.png";
 import BuyModal from "../buyModal/BuyModal";
+import { useTranslation } from "react-i18next";
 
 const features = [
   {
     icon: <FaLocationDot className="text-cyan-400" size={22} />,
-    title: "Track GPS Location",
+    title: "gps.feature_gps_track_title",
     iconBg: "bg-cyan-900/30",
     glow: "shadow-cyan-500/50",
   },
   {
     icon: <FaClock className="text-teal-400" size={22} />,
-    title: "View Location History",
+    title: "gps.feature_location_history_title",
     iconBg: "bg-teal-900/30",
     glow: "shadow-teal-500/50",
   },
   {
     icon: <FaWifi className="text-green-400" size={22} />,
-    title: "Wi-Fi Location Tracking",
+    title: "gps.feature_wifi_track_title",
     iconBg: "bg-green-900/30",
     glow: "shadow-green-500/50",
   },
   {
     icon: <FaGear className="text-purple-400" size={22} />,
-    title: "Set Up Geofence Alerts",
+    title: "gps.feature_geofence_alerts_title",
     iconBg: "bg-purple-900/30",
     glow: "shadow-purple-500/50",
   },
 ];
 
 const LocationSection = () => {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -41,7 +43,7 @@ const LocationSection = () => {
 
   return (
     <>
-      <section className="relative !py-10  overflow-hidden">
+      <section className="relative !py-10 overflow-hidden">
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
           {/* Header */}
           <motion.div
@@ -52,16 +54,10 @@ const LocationSection = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
-              Live GPS Tracking
+              {t("gps.header_title")}
             </h2>
             <p className="text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
-              Track real-time location of any device with{" "}
-              <span className="text-cyan-300 font-semibold">
-                street-level accuracy
-              </span>{" "}
-              using GPS, Wi-Fi, and cell towers. View live movement on a map,
-              get geofence alerts, and export complete route history with
-              timestamps and speed data.
+              {t("gps.header_description")}
             </p>
           </motion.div>
 
@@ -89,7 +85,7 @@ const LocationSection = () => {
                 <div className="relative backdrop-blur-sm bg-white/5 border border-cyan-500/30 rounded-3xl !p-2 shadow-2xl">
                   <img
                     src={LocationImage}
-                    alt="Live GPS tracking dashboard"
+                    alt={t("gps.image_alt")}
                     className="relative w-full max-w-lg !mx-auto rounded-2xl object-cover shadow-inner"
                     loading="lazy"
                   />
@@ -109,20 +105,10 @@ const LocationSection = () => {
               {/* Subheader */}
               <div className="text-center lg:text-left !mb-10">
                 <h3 className="text-xl font-bold text-cyan-100 !mb-2">
-                  Start Tracking Instantly
+                  {t("gps.subheader_title")}
                 </h3>
                 <p className="text-sm sm:text-base text-cyan-300/80 leading-relaxed">
-                  Experience how our GPS system keeps you connected to your
-                  devices in real time. Click{" "}
-                  <span className="font-semibold text-cyan-200">
-                    “Try It Now”
-                  </span>{" "}
-                  to activate live tracking instantly or{" "}
-                  <span className="font-semibold text-cyan-200">
-                    “View Demo”
-                  </span>{" "}
-                  to explore how location updates and alerts appear within the
-                  dashboard interface.
+                  {t("gps.subheader_description")}
                 </p>
               </div>
 
@@ -145,7 +131,7 @@ const LocationSection = () => {
                       <div className="drop-shadow-glow">{icon}</div>
                     </motion.div>
                     <p className="text-base font-semibold text-cyan-100 group-hover:text-cyan-50 transition">
-                      {title}
+                      {t(title)}
                     </p>
                   </motion.li>
                 ))}
@@ -159,11 +145,12 @@ const LocationSection = () => {
                   whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  Try It Now
+                  {t("gps.button_try_now")}
                 </button>
                 <Link to="/demo" className="w-full lg:w-auto">
                   <button className="flex items-center justify-center !gap-2 w-full lg:w-auto min-w-[160px] border !border-cyan-500/50 hover:bg-cyan-900/20 text-cyan-300 backdrop-blur-sm !px-8 !py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:text-cyan-100">
-                    View Demo <HiArrowLongRight className="text-lg" />
+                    {t("gps.button_view_demo")}{" "}
+                    <HiArrowLongRight className="text-lg" />
                   </button>
                 </Link>
               </div>

@@ -142,5 +142,21 @@
     "feature_stop_blackmail_desc": "Identify blackmailers, remove compromising material from devices/cloud, block future contact, and erase traces online for full protection and peace of mind.",
     "feature_driving_records_title": "Driving Records & ID Services",
     "feature_driving_records_desc": "Pull driving records and access registration details. (Note: follow local laws and use only legal services.)"
+  },
+  "gps": {
+    "header_title": "Live GPS Tracking",
+    "header_description": "Track real-time location of any device with street-level accuracy using GPS, Wi-Fi, and cell towers. View live movement on a map, get geofence alerts, and export complete route history with timestamps and speed data.",
+    "header_accuracy": "street-level accuracy",
+    "image_alt": "Live GPS tracking dashboard",
+    "feature_gps_track_title": "Track GPS Location",
+    "feature_location_history_title": "View Location History",
+    "feature_wifi_track_title": "Wi-Fi Location Tracking",
+    "feature_geofence_alerts_title": "Set Up Geofence Alerts",
+    "subheader_title": "Start Tracking Instantly",
+    "subheader_description": "Experience how our GPS system keeps you connected to your devices in real time. Click “Try It Now” to activate live tracking instantly or “View Demo” to explore how location updates and alerts appear within the dashboard interface.",
+    "subheader_try_now": "Try It Now",
+    "subheader_view_demo": "View Demo",
+    "button_try_now": "Try It Now",
+    "button_view_demo": "View Demo"
   }
 }

@@ -136,5 +136,21 @@
     "feature_stop_blackmail_desc": "Identifique chantagistas, remova materiais comprometedores de dispositivos/nuvem, bloqueie contatos futuros e apague rastros online para proteção total e tranquilidade.",
     "feature_driving_records_title": "Registros de condução e serviços de identificação",
     "feature_driving_records_desc": "Obtenha registros de condução e acesse detalhes de registro. (Nota: siga as leis locais e use apenas serviços legais.)"
+  },
+  "gps": {
+    "header_title": "Rastreamento GPS ao vivo",
+    "header_description": "Rastreie a localização em tempo real de qualquer dispositivo com precisão ao nível da rua usando GPS, Wi-Fi e torres celulares. Veja o movimento ao vivo em um mapa, receba alertas de geocercas e exporte o histórico completo de rotas com carimbos de data/hora e dados de velocidade.",
+    "header_accuracy": "precisão ao nível da rua",
+    "image_alt": "Painel de rastreamento GPS ao vivo",
+    "feature_gps_track_title": "Rastrear localização GPS",
+    "feature_location_history_title": "Ver histórico de localizações",
+    "feature_wifi_track_title": "Rastreamento de localização por Wi-Fi",
+    "feature_geofence_alerts_title": "Configurar alertas de geocercas",
+    "subheader_title": "Comece a rastrear instantaneamente",
+    "subheader_description": "Experimente como nosso sistema GPS mantém você conectado aos seus dispositivos em tempo real. Clique em “Experimente agora” para ativar o rastreamento ao vivo instantaneamente ou em “Ver demonstração” para explorar como as atualizações de localização e alertas aparecem na interface do painel.",
+    "subheader_try_now": "Experimente agora",
+    "subheader_view_demo": "Ver demonstração",
+    "button_try_now": "Experimente agora",
+    "button_view_demo": "Ver demonstração"
   }
 }

@@ -135,5 +135,21 @@
     "feature_stop_blackmail_desc": "Identifiez les maîtres-chanteurs, supprimez les contenus compromettants des appareils/nuage, bloquez les contacts futurs et effacez les traces en ligne pour une protection totale et une tranquillité d'esprit.",
     "feature_driving_records_title": "Dossiers de conduite et services d'identification",
     "feature_driving_records_desc": "Obtenez les dossiers de conduite et accédez aux détails d'enregistrement. (Note : respectez les lois locales et utilisez uniquement des services légaux.)"
+  },
+  "gps": {
+    "header_title": "Suivi GPS en direct",
+    "header_description": "Suivez la localisation en temps réel de tout appareil avec une précision au niveau de la rue en utilisant le GPS, le Wi-Fi et les tours cellulaires. Visualisez les déplacements en direct sur une carte, recevez des alertes de géorepérage et exportez l'historique complet des trajets avec des horodatages et des données de vitesse.",
+    "header_accuracy": "précision au niveau de la rue",
+    "image_alt": "Tableau de bord de suivi GPS en direct",
+    "feature_gps_track_title": "Suivre la localisation GPS",
+    "feature_location_history_title": "Voir l'historique des localisations",
+    "feature_wifi_track_title": "Suivi de localisation par Wi-Fi",
+    "feature_geofence_alerts_title": "Configurer des alertes de géorepérage",
+    "subheader_title": "Commencer le suivi instantanément",
+    "subheader_description": "Découvrez comment notre système GPS vous connecte à vos appareils en temps réel. Cliquez sur “Essayez maintenant” pour activer le suivi en direct instantanément ou sur “Voir la démo” pour explorer comment les mises à jour de localisation et les alertes apparaissent dans l'interface du tableau de bord.",
+    "subheader_try_now": "Essayez maintenant",
+    "subheader_view_demo": "Voir la démo",
+    "button_try_now": "Essayez maintenant",
+    "button_view_demo": "Voir la démo"
   }
 }
