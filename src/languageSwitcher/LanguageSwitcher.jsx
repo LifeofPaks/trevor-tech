@@ -21,17 +21,11 @@ const LanguageSwitcher = () => {
     { code: "bn", name: "বাংলা (Bengali)", flag: "🇧🇩" },
     { code: "ru", name: "Русский (Russian)", flag: "🇷🇺" },
     { code: "pt", name: "Português", flag: "🇵🇹" },
-    { code: "ur", name: "اردو (Urdu)", flag: "🇵🇰" },
-    { code: "id", name: "Bahasa", flag: "🇮🇩" },
     { code: "de", name: "Deutsch", flag: "🇩🇪" },
     { code: "ja", name: "日本語", flag: "🇯🇵" },
     { code: "sw", name: "Kiswahili", flag: "🇰🇪" },
-    { code: "mr", name: "मराठी (Marathi)", flag: "🇮🇳" },
-    { code: "te", name: "తెలుగు (Telugu)", flag: "🇮🇳" },
     { code: "tr", name: "Türkçe (Turkish)", flag: "🇹🇷" },
-    { code: "ta", name: "தமிழ் (Tamil)", flag: "🇮🇳" },
     { code: "ko", name: "한국어 (Korean)", flag: "🇰🇷" },
-    { code: "vi", name: "Tiếng Việt", flag: "🇻🇳" },
   ];
 
   const currentLang =
