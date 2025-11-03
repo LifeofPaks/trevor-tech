@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import { CiGlobe } from "react-icons/ci";
 
 const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
@@ -58,14 +58,15 @@ const LanguageSwitcher = () => {
             }`}
         >
           <div className="flex items-center gap-1">
+            <span className="!flex !items-center !gap-2">
+              {currentLang.flag}
+            </span>
 
-          <span className="!flex !items-center !gap-2">{currentLang.flag}</span>
-
-          <span className="!text-[12px] !truncate !max-w-[70px] hidden lg:block">
-            {currentLang.name.length > 15
-              ? currentLang.name.slice(0, 15) + "..."
-              : currentLang.name}
-          </span>
+            <span className="!text-[12px] !truncate !max-w-[70px] hidden lg:block">
+              {currentLang.name.length > 15
+                ? currentLang.name.slice(0, 15) + "..."
+                : currentLang.name}
+            </span>
           </div>
 
           <motion.span
@@ -106,7 +107,7 @@ const LanguageSwitcher = () => {
                   className={`!text-[12px] !font-semibold  flex items-center gap-1
                 ${isDemoPage ? "text-gray-500" : "text-white"}`}
                 >
-                  <CiGlobe /> Select Language
+                  <CiGlobe /> {t("select_language")}
                 </span>
                 <button
                   onClick={() => setOpen(false)}
