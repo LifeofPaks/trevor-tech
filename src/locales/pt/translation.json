@@ -108,17 +108,33 @@
     "cta_button": "Contate-nos agora"
   },
   "phone_section": {
-      "header_title": "Vigilância de telefones e redes sociais",
-      "header_description": "Acesso remoto completo a qualquer dispositivo e conversas privadas. Veja cada texto, chamada, foto, vídeo, mensagem excluída e atividade de aplicativo em tempo real — mesmo que o usuário oculte ou apague. Funciona em iPhone, Android, tablets e computadores. Não é necessário acesso físico após a configuração. Exporte logs completos com carimbos de data/hora, mídia e metadados como prova.",
-      "header_devices": "iPhone, Android, tablets e computadores",
-      "image_alt": "Painel de vigilância de telefones",
-      "feature_messages_title": "Ler mensagens e chats sociais",
-      "feature_messages_desc": "Hackeie/espione WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage e qualquer aplicativo de mensagens — veja conversas completas, carimbos de data/hora, nomes de contatos, arquivos de mídia, notas de voz e anexos. Exporte threads de chat como PDF ou capturas de tela.",
-      "feature_calls_title": "Verificar histórico de chamadas",
-      "feature_calls_desc": "Monitore chamadas recebidas, efetuadas e perdidas com detalhes: números, nomes de contatos, datas/horas exatas, durações e tipo de chamada (voz, vídeo, VoIP). Receba alertas para contatos específicos.",
-      "feature_browser_title": "Rastrear histórico de navegação",
-      "feature_browser_desc": "Veja cada site visitado no Chrome, Safari, Firefox ou qualquer navegador (URL completo, título, hora de visita, duração, frequência). Capture o histórico no modo anônimo/privado e exporte relatórios pesquisáveis.",
-      "feature_accounts_title": "Recuperar contas de e-mail e redes sociais hackeadas",
-      "feature_accounts_desc": "Recupere o controle de contas comprometidas do Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter — altere senhas, remova atacantes, recupere e-mails/postagens excluídos e proteja a conta permanentemente."
-    }
+    "header_title": "Vigilância de telefones e redes sociais",
+    "header_description": "Acesso remoto completo a qualquer dispositivo e conversas privadas. Veja cada texto, chamada, foto, vídeo, mensagem excluída e atividade de aplicativo em tempo real — mesmo que o usuário oculte ou apague. Funciona em iPhone, Android, tablets e computadores. Não é necessário acesso físico após a configuração. Exporte logs completos com carimbos de data/hora, mídia e metadados como prova.",
+    "header_devices": "iPhone, Android, tablets e computadores",
+    "image_alt": "Painel de vigilância de telefones",
+    "feature_messages_title": "Ler mensagens e chats sociais",
+    "feature_messages_desc": "Hackeie/espione WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage e qualquer aplicativo de mensagens — veja conversas completas, carimbos de data/hora, nomes de contatos, arquivos de mídia, notas de voz e anexos. Exporte threads de chat como PDF ou capturas de tela.",
+    "feature_calls_title": "Verificar histórico de chamadas",
+    "feature_calls_desc": "Monitore chamadas recebidas, efetuadas e perdidas com detalhes: números, nomes de contatos, datas/horas exatas, durações e tipo de chamada (voz, vídeo, VoIP). Receba alertas para contatos específicos.",
+    "feature_browser_title": "Rastrear histórico de navegação",
+    "feature_browser_desc": "Veja cada site visitado no Chrome, Safari, Firefox ou qualquer navegador (URL completo, título, hora de visita, duração, frequência). Capture o histórico no modo anônimo/privado e exporte relatórios pesquisáveis.",
+    "feature_accounts_title": "Recuperar contas de e-mail e redes sociais hackeadas",
+    "feature_accounts_desc": "Recupere o controle de contas comprometidas do Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter — altere senhas, remova atacantes, recupere e-mails/postagens excluídos e proteja a conta permanentemente."
+  },
+  "crypto": {
+    "header_title": "Soluções de recuperação financeira e de criptomoedas",
+    "header_description": "Recupere o controle sobre dinheiro, crédito e ativos digitais. Recupere criptomoedas fraudadas, melhore pontuações de crédito, carregue cartões de débito e pare com o chantagem financeira. Transparência total em registros bancários, transações e contas ocultas.",
+    "header_assets": "dinheiro, crédito e ativos digitais",
+    "image_alt": "Painel de recuperação de criptomoedas",
+    "feature_crypto_recovery_title": "Recuperar criptomoedas roubadas e fraudadas",
+    "feature_crypto_recovery_desc": "Recupere criptomoedas perdidas, roubadas ou fraudadas de carteiras (Bitcoin, Ethereum, USDT, etc.). Rastreie transações na blockchain e identifique carteiras de fraudadores. Inclui rastreamento de taxa de sucesso.",
+    "feature_credit_boost_title": "Melhorar crédito e carregar cartões",
+    "feature_credit_boost_desc": "Melhore as pontuações de crédito (Equifax, TransUnion, Experian) abordando itens negativos. Carregue cartões de débito/pré-pagos e acesse relatórios de crédito completos e históricos de transações.",
+    "feature_hidden_chats_title": "Chats ocultos e dados privados",
+    "feature_hidden_chats_desc": "Acesse chats ocultos, histórias excluídas, mensagens diretas e álbuns privados nas principais plataformas — veja o histórico de conversas e mídias compartilhadas.",
+    "feature_stop_blackmail_title": "Parar chantagem e remover material comprometedor",
+    "feature_stop_blackmail_desc": "Identifique chantagistas, remova materiais comprometedores de dispositivos/nuvem, bloqueie contatos futuros e apague rastros online para proteção total e tranquilidade.",
+    "feature_driving_records_title": "Registros de condução e serviços de identificação",
+    "feature_driving_records_desc": "Obtenha registros de condução e acesse detalhes de registro. (Nota: siga as leis locais e use apenas serviços legais.)"
+  }
 }

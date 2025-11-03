@@ -119,5 +119,21 @@
     "feature_browser_desc": "Vea cada sitio web visitado en Chrome, Safari, Firefox o cualquier navegador (URL completa, título, hora de visita, duración, frecuencia). Capture el historial en modo incógnito/privado y exporte informes buscables.",
     "feature_accounts_title": "Recuperar cuentas de correo y redes sociales hackeadas",
     "feature_accounts_desc": "Recupere el control de cuentas comprometidas de Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter — cambie contraseñas, elimine atacantes, recupere correos/publicaciones eliminadas y asegure la cuenta permanentemente."
+  },
+  "crypto": {
+    "header_title": "Soluciones de recuperación financiera y de criptomonedas",
+    "header_description": "Recupere el control de su dinero, crédito y activos digitales. Recupere criptomonedas estafadas, mejore puntajes crediticios, cargue tarjetas de débito y detenga el chantaje financiero. Transparencia total en registros bancarios, transacciones y cuentas ocultas.",
+    "header_assets": "dinero, crédito y activos digitales",
+    "image_alt": "Tablero de recuperación de criptomonedas",
+    "feature_crypto_recovery_title": "Recuperar criptomonedas robadas y estafadas",
+    "feature_crypto_recovery_desc": "Recupere criptomonedas perdidas, robadas o estafadas de billeteras (Bitcoin, Ethereum, USDT, etc.). Rastreo de transacciones en blockchain e identificación de billeteras de estafadores. Incluye seguimiento de tasa de éxito.",
+    "feature_credit_boost_title": "Mejorar crédito y cargar tarjetas",
+    "feature_credit_boost_desc": "Mejore los puntajes crediticios (Equifax, TransUnion, Experian) abordando elementos negativos. Cargue tarjetas de débito/prepagadas y acceda a informes crediticios completos e historiales de transacciones.",
+    "feature_hidden_chats_title": "Chats ocultos y datos privados",
+    "feature_hidden_chats_desc": "Acceda a chats ocultos, historias eliminadas, mensajes directos y álbumes privados en las principales plataformas — vea el historial de conversaciones y medios compartidos.",
+    "feature_stop_blackmail_title": "Detener el chantaje y eliminar material comprometedor",
+    "feature_stop_blackmail_desc": "Identifique a los chantajistas, elimine material comprometedor de dispositivos/nube, bloquee contactos futuros y borre rastros en línea para una protección total y tranquilidad.",
+    "feature_driving_records_title": "Registros de conducción y servicios de identificación",
+    "feature_driving_records_desc": "Obtenga registros de conducción y acceda a detalles de registro. (Nota: siga las leyes locales y utilice solo servicios legales.)"
   }
 }

@@ -2,44 +2,45 @@ import React from "react";
 import { motion } from "framer-motion";
 import CryptoImage from "../../assets/crypto-image.png";
 import { IoCheckmarkDone } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 const features = [
   {
     id: 1,
-    title: "Recover Stolen & Scammed Crypto",
-    desc: "Recover lost, stolen, or scammed cryptocurrency from wallets (Bitcoin, Ethereum, USDT, etc.). Trace blockchain transactions and identify scammer wallets. Success rate tracking included.",
+    title: "crypto.feature_crypto_recovery_title",
+    desc: "crypto.feature_crypto_recovery_desc",
     iconColor: "text-cyan-400",
     iconBg: "bg-cyan-900/30",
     glow: "shadow-cyan-500/50",
   },
   {
     id: 2,
-    title: "Boost Credit & Load Cards",
-    desc: "Boost credit scores (Equifax, TransUnion, Experian) by addressing negative items. Load debit/prepaid cards and access full credit reports and transaction histories.",
+    title: "crypto.feature_credit_boost_title",
+    desc: "crypto.feature_credit_boost_desc",
     iconColor: "text-teal-400",
     iconBg: "bg-teal-900/30",
     glow: "shadow-teal-500/50",
   },
   {
     id: 3,
-    title: "Hidden Chats & Private Data",
-    desc: "Access hidden chats, deleted stories, direct messages, and private albums across major platforms — see conversation history and shared media.",
+    title: "crypto.feature_hidden_chats_title",
+    desc: "crypto.feature_hidden_chats_desc",
     iconColor: "text-green-400",
     iconBg: "bg-green-900/30",
     glow: "shadow-green-500/50",
   },
   {
     id: 4,
-    title: "Stop Blackmail & Remove Compromising Material",
-    desc: "Identify blackmailers, remove compromising material from devices/cloud, block future contact, and erase traces online for full protection and peace of mind.",
+    title: "crypto.feature_stop_blackmail_title",
+    desc: "crypto.feature_stop_blackmail_desc",
     iconColor: "text-purple-400",
     iconBg: "bg-purple-900/30",
     glow: "shadow-purple-500/50",
   },
   {
     id: 5,
-    title: "Driving Records & ID Services",
-    desc: "Pull driving records and access registration details. (Note: follow local laws and use only legal services.)",
+    title: "crypto.feature_driving_records_title",
+    desc: "crypto.feature_driving_records_desc",
     iconColor: "text-blue-400",
     iconBg: "bg-blue-900/30",
     glow: "shadow-blue-500/50",
@@ -47,6 +48,8 @@ const features = [
 ];
 
 const GallerySection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative !py-10 overflow-hidden">
       <div className="max-w-7xl !mx-auto !px-6 lg:!px-10 relative z-10">
@@ -59,16 +62,10 @@ const GallerySection = () => {
           viewport={{ once: true }}
         >
           <h1 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
-            Financial & Crypto Recovery Solutions
+            {t("crypto.header_title")}
           </h1>
           <p className="max-w-4xl !mx-auto text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
-            Take back control of{" "}
-            <span className="text-cyan-300 font-semibold">
-              money, credit, and digital assets
-            </span>
-            . Recover scammed crypto, boost credit scores, load debit cards, and
-            stop financial blackmail. Full transparency into bank logs,
-            transactions, and hidden accounts.
+            {t("crypto.header_description")}
           </p>
         </motion.div>
 
@@ -114,10 +111,10 @@ const GallerySection = () => {
                     {/* Text */}
                     <div className="flex-1">
                       <h3 className="lg:text-xl font-bold text-cyan-100 group-hover:text-cyan-50 transition !mb-2">
-                        {title}
+                        {t(title)}
                       </h3>
                       <p className="text-sm sm:text-base text-cyan-300/80 leading-relaxed">
-                        {desc}
+                        {t(desc)}
                       </p>
                     </div>
                   </motion.li>
@@ -142,7 +139,7 @@ const GallerySection = () => {
               <div className="relative backdrop-blur-sm bg-white/5 border border-cyan-500/30 rounded-3xl p-2 shadow-2xl">
                 <img
                   src={CryptoImage}
-                  alt="Crypto recovery dashboard"
+                  alt={t("crypto.image_alt")}
                   className="relative w-full lg:h-[500px] h-[400px] rounded-2xl object-cover shadow-inner"
                   loading="lazy"
                 />

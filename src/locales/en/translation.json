@@ -126,5 +126,21 @@
     "feature_browser_desc": "View every website visited on Chrome, Safari, Firefox, or any browser (full URL, title, visit time, duration, frequency). Capture incognito/private mode history and export searchable reports.",
     "feature_accounts_title": "Recover Hacked Email & Social Accounts",
     "feature_accounts_desc": "Regain control of compromised Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter — change passwords, remove attackers, recover deleted emails/posts, and secure the account permanently."
+  },
+  "crypto": {
+    "header_title": "Financial & Crypto Recovery Solutions",
+    "header_description": "Take back control of money, credit, and digital assets. Recover scammed crypto, boost credit scores, load debit cards, and stop financial blackmail. Full transparency into bank logs, transactions, and hidden accounts.",
+    "header_assets": "money, credit, and digital assets",
+    "image_alt": "Crypto recovery dashboard",
+    "feature_crypto_recovery_title": "Recover Stolen & Scammed Crypto",
+    "feature_crypto_recovery_desc": "Recover lost, stolen, or scammed cryptocurrency from wallets (Bitcoin, Ethereum, USDT, etc.). Trace blockchain transactions and identify scammer wallets. Success rate tracking included.",
+    "feature_credit_boost_title": "Boost Credit & Load Cards",
+    "feature_credit_boost_desc": "Boost credit scores (Equifax, TransUnion, Experian) by addressing negative items. Load debit/prepaid cards and access full credit reports and transaction histories.",
+    "feature_hidden_chats_title": "Hidden Chats & Private Data",
+    "feature_hidden_chats_desc": "Access hidden chats, deleted stories, direct messages, and private albums across major platforms — see conversation history and shared media.",
+    "feature_stop_blackmail_title": "Stop Blackmail & Remove Compromising Material",
+    "feature_stop_blackmail_desc": "Identify blackmailers, remove compromising material from devices/cloud, block future contact, and erase traces online for full protection and peace of mind.",
+    "feature_driving_records_title": "Driving Records & ID Services",
+    "feature_driving_records_desc": "Pull driving records and access registration details. (Note: follow local laws and use only legal services.)"
   }
 }

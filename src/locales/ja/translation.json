@@ -120,5 +120,21 @@
     "feature_browser_desc": "Chrome、Safari、Firefox、または任意のブラウザで訪問したすべてのウェブサイトを閲覧（完全なURL、タイトル、訪問時間、継続時間、頻度）。シークレット/プライベートモードの履歴をキャプチャし、検索可能なレポートをエクスポート。",
     "feature_accounts_title": "ハッキングされたメールおよびソーシャルアカウントの復元",
     "feature_accounts_desc": "侵害されたGmail、Outlook、Yahoo、Instagram、Facebook、Twitterアカウントの制御を取り戻す — パスワードを変更し、攻撃者を削除し、削除されたメール/投稿を復元し、アカウントを恒久的に保護。"
+  },
+  "crypto": {
+    "header_title": "金融および暗号通貨回復ソリューション",
+    "header_description": "お金、クレジット、デジタル資産のコントロールを取り戻す。詐欺された暗号通貨を回復し、クレジットスコアを向上させ、デビットカードをチャージし、財務的な恐喝を阻止。銀行ログ、取引、隠されたアカウントに完全な透明性。",
+    "header_assets": "お金、クレジット、デジタル資産",
+    "image_alt": "暗号通貨回復ダッシュボード",
+    "feature_crypto_recovery_title": "盗まれた＆詐欺された暗号通貨の回復",
+    "feature_crypto_recovery_desc": "ウォレットから失われた、盗まれた、または詐欺された暗号通貨（ビットコイン、イーサリアム、USDTなど）を回復。ブロックチェーン取引を追跡し、詐欺師のウォレットを特定。成功率の追跡が含まれています。",
+    "feature_credit_boost_title": "クレジット向上とカードチャージ",
+    "feature_credit_boost_desc": "ネガティブな項目に対処してクレジットスコア（Equifax、TransUnion、Experian）を向上。デビット/プリペイドカードをチャージし、完全なクレジットレポートと取引履歴にアクセス。",
+    "feature_hidden_chats_title": "隠されたチャットとプライベートデータ",
+    "feature_hidden_chats_desc": "主要プラットフォーム上の隠されたチャット、削除されたストーリー、ダイレクトメッセージ、プライベートアルバムにアクセス — 会話履歴と共有メディアを閲覧。",
+    "feature_stop_blackmail_title": "恐喝の阻止と妥協する素材の削除",
+    "feature_stop_blackmail_desc": "恐喝者を特定し、デバイス/クラウドから妥協する素材を削除し、将来の接触をブロックし、完全な保護と安心のためにオンラインの痕跡を消去。",
+    "feature_driving_records_title": "運転記録とIDサービス",
+    "feature_driving_records_desc": "運転記録を取得し、登録詳細にアクセス。（注意：現地の法律を遵守し、合法的なサービスのみを使用。）"
   }
 }

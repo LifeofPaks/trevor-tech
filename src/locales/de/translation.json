@@ -119,5 +119,21 @@
     "feature_browser_desc": "Sehen Sie jede besuchte Website in Chrome, Safari, Firefox oder jedem Browser (vollständige URL, Titel, Besuchszeit, Dauer, Häufigkeit). Erfassen Sie den Verlauf im Inkognito-/Privatmodus und exportieren Sie durchsuchbare Berichte.",
     "feature_accounts_title": "Wiederherstellung gehackter E-Mail- und Sozialkonten",
     "feature_accounts_desc": "Erlangen Sie die Kontrolle über kompromittierte Gmail-, Outlook-, Yahoo-, Instagram-, Facebook-, Twitter-Konten zurück — ändern Sie Passwörter, entfernen Sie Angreifer, stellen Sie gelöschte E-Mails/Beiträge wieder her und sichern Sie das Konto dauerhaft."
+  },
+  "crypto": {
+    "header_title": "Lösungen für finanzielle und Krypto-Wiederherstellung",
+    "header_description": "Übernehmen Sie wieder die Kontrolle über Geld, Kredit und digitale Vermögenswerte. Stellen Sie betrogene Kryptowährungen wieder her, verbessern Sie Kreditscores, laden Sie Debitkarten auf und stoppen Sie finanzielle Erpressung. Volle Transparenz in Bankprotokollen, Transaktionen und versteckten Konten.",
+    "header_assets": "Geld, Kredit und digitale Vermögenswerte",
+    "image_alt": "Dashboard für Krypto-Wiederherstellung",
+    "feature_crypto_recovery_title": "Wiederherstellung gestohlener und betrogener Kryptowährungen",
+    "feature_crypto_recovery_desc": "Stellen Sie verlorene, gestohlene oder betrogene Kryptowährungen aus Wallets wieder her (Bitcoin, Ethereum, USDT usw.). Verfolgen Sie Blockchain-Transaktionen und identifizieren Sie Betrüger-Wallets. Erfolgsquote-Tracking enthalten.",
+    "feature_credit_boost_title": "Kredit verbessern und Karten aufladen",
+    "feature_credit_boost_desc": "Verbessern Sie Kreditscores (Equifax, TransUnion, Experian) durch Behandlung negativer Einträge. Laden Sie Debit-/Prepaid-Karten auf und greifen Sie auf vollständige Kreditberichte und Transaktionsverläufe zu.",
+    "feature_hidden_chats_title": "Versteckte Chats und private Daten",
+    "feature_hidden_chats_desc": "Greifen Sie auf versteckte Chats, gelöschte Stories, Direktnachrichten und private Alben auf wichtigen Plattformen zu — sehen Sie den Verlauf der Konversationen und geteilte Medien.",
+    "feature_stop_blackmail_title": "Erpressung stoppen und kompromittierendes Material entfernen",
+    "feature_stop_blackmail_desc": "Identifizieren Sie Erpresser, entfernen Sie kompromittierendes Material von Geräten/Cloud, blockieren Sie zukünftige Kontakte und löschen Sie Spuren online für vollständigen Schutz und Seelenfrieden.",
+    "feature_driving_records_title": "Fahrtenbücher und ID-Dienste",
+    "feature_driving_records_desc": "Rufen Sie Fahrtenbücher ab und greifen Sie auf Registrierungsdetails zu. (Hinweis: Beachten Sie lokale Gesetze und nutzen Sie nur legale Dienste.)"
   }
 }

@@ -119,5 +119,21 @@
     "feature_browser_desc": "Consultez chaque site web visité sur Chrome, Safari, Firefox ou tout autre navigateur (URL complète, titre, heure de visite, durée, fréquence). Capturez l'historique en mode incognito/privé et exportez des rapports consultables.",
     "feature_accounts_title": "Récupérer les comptes de messagerie et réseaux sociaux piratés",
     "feature_accounts_desc": "Reprenez le contrôle des comptes compromis Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter — changez les mots de passe, supprimez les attaquants, récupérez les e-mails/publications supprimés et sécurisez le compte de manière permanente."
+  },
+  "crypto": {
+    "header_title": "Solutions de récupération financière et crypto",
+    "header_description": "Reprenez le contrôle de votre argent, de votre crédit et de vos actifs numériques. Récupérez les cryptomonnaies fraudées, améliorez les scores de crédit, chargez les cartes de débit et arrêtez le chantage financier. Transparence totale sur les journaux bancaires, les transactions et les comptes cachés.",
+    "header_assets": "argent, crédit et actifs numériques",
+    "image_alt": "Tableau de bord de récupération crypto",
+    "feature_crypto_recovery_title": "Récupérer les cryptomonnaies volées et fraudées",
+    "feature_crypto_recovery_desc": "Récupérez les cryptomonnaies perdues, volées ou fraudées des portefeuilles (Bitcoin, Ethereum, USDT, etc.). Tracez les transactions blockchain et identifiez les portefeuilles des escrocs. Suivi du taux de succès inclus.",
+    "feature_credit_boost_title": "Améliorer le crédit et charger les cartes",
+    "feature_credit_boost_desc": "Améliorez les scores de crédit (Equifax, TransUnion, Experian) en traitant les éléments négatifs. Chargez les cartes de débit/prépayées et accédez aux rapports de crédit complets et aux historiques de transactions.",
+    "feature_hidden_chats_title": "Chats cachés et données privées",
+    "feature_hidden_chats_desc": "Accédez aux chats cachés, histoires supprimées, messages directs et albums privés sur les principales plateformes — consultez l'historique des conversations et les médias partagés.",
+    "feature_stop_blackmail_title": "Arrêter le chantage et supprimer les contenus compromettants",
+    "feature_stop_blackmail_desc": "Identifiez les maîtres-chanteurs, supprimez les contenus compromettants des appareils/nuage, bloquez les contacts futurs et effacez les traces en ligne pour une protection totale et une tranquillité d'esprit.",
+    "feature_driving_records_title": "Dossiers de conduite et services d'identification",
+    "feature_driving_records_desc": "Obtenez les dossiers de conduite et accédez aux détails d'enregistrement. (Note : respectez les lois locales et utilisez uniquement des services légaux.)"
   }
 }
