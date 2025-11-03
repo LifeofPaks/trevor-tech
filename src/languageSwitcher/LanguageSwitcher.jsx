@@ -50,7 +50,7 @@ const LanguageSwitcher = () => {
             !transition-all !duration-300
             ${
               isDemoPage
-                ? "!bg-white !border-[#1b254b]/40 !text-[#1b254b]"
+                ? "!bg-white !border-gray-100 !text-[#1b254b]"
                 : "!bg-gradient-to-r !from-[#0a0a1f]/90 !to-[#1b254b]/90 !border-[#2b3a75]/40 !text-[#d0d6f5] hover:!border-[#3d4ea5]/70"
             }`}
         >
@@ -84,7 +84,7 @@ const LanguageSwitcher = () => {
                 !overflow-hidden !border 
                 ${
                   isDemoPage
-                    ? "!bg-white !border-[#1b254b]/30 !text-[#1b254b]"
+                    ? "!bg-white !border-gray-100 !text-[#1b254b]"
                     : "!bg-gradient-to-b !from-[#0f0f2a]/95 !to-[#1b254b]/95 !border-[#2b3a75]/40 !text-[#d0d6f5]"
                 } 
                 !backdrop-blur-xl !shadow-xl`}
@@ -96,7 +96,7 @@ const LanguageSwitcher = () => {
                   isDemoPage ? "!border-[#1b254b]/20" : "!border-[#2b3a75]/40"
                 }`}
               >
-                <span className="!text-[12px] !font-semibold">
+                <span className="!text-[12px] !font-semibold text-gray-500">
                   Select Language
                 </span>
                 <button
