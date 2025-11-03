@@ -64,12 +64,9 @@ const DemoModal = ({
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Remotely access{" "}
-              <strong>any Android, iPhone, tablet, or computer</strong>. View{" "}
-              <strong>
-                messages, calls, GPS, photos, apps, and keystrokes
-              </strong>
-              . <strong>No physical access needed</strong>.
+              Remotely access any Android, iPhone, tablet, or computer . View{" "}
+              messages, calls, GPS, photos, apps, and keystrokes . No physical
+              access needed .
             </motion.p>
 
             {/* Buttons */}
