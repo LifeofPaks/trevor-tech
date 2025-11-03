@@ -13,46 +13,51 @@ import { IoMdAlert } from "react-icons/io";
 import { MdFolderDelete } from "react-icons/md";
 import { RiBtcFill } from "react-icons/ri";
 import { Home } from "lucide-react";
-import Logo from "../logo/Logo";
 import { Link } from "react-router-dom";
 import DemoLogo from "../logo/DemoLogo";
+import { useTranslation } from "react-i18next";
 
 const EliteNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [eliteOpen, setEliteOpen] = useState(false);
   const [mobileEliteOpen, setMobileEliteOpen] = useState(false);
+  const { i18n, t } = useTranslation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleElite = () => setEliteOpen(!eliteOpen);
   const toggleMobileElite = () => setMobileEliteOpen(!mobileEliteOpen);
 
+  // 🌍 Language detection for font scaling
+  const isEnglish = i18n.language === "en";
+  const fontClass = isEnglish ? "text-[14px]" : "text-[12px]";
+
   const eliteLinks = [
     {
       to: "/elite/credit-boost",
-      label: "Credit Score Upgrade",
+      label: t("credit_score_upgrade"),
       icon: <FiZap />,
     },
     {
       to: "/elite/stop-harassment",
-      label: "Stop Blackmail",
+      label: t("stop_blackmail"),
       icon: <IoMdAlert />,
     },
     {
       to: "/elite/grade-enhancement",
-      label: "Improve Academic Grade",
+      label: t("improve_academic_grade"),
       icon: <FiFileText />,
     },
     {
       to: "/elite/clear-record",
-      label: "Erase Criminal Record",
+      label: t("erase_criminal_record"),
       icon: <MdFolderDelete />,
     },
     {
       to: "/elite/crypto-recovery",
-      label: "Crypto Recovery",
+      label: t("crypto_recovery"),
       icon: <RiBtcFill />,
     },
-    { to: "/elite/dmv-id", label: "DMV & ID Services", icon: <FiKey /> },
+    { to: "/elite/dmv-id", label: t("dmv_&_id_services"), icon: <FiKey /> },
   ];
 
   return (
@@ -64,13 +69,15 @@ const EliteNavbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center !gap-8 text-sm font-medium relative">
+        <ul
+          className={`hidden md:flex items-center !gap-8 font-medium relative transition-all duration-300 ${fontClass}`}
+        >
           <li>
             <Link
               to="/"
               className="flex items-center !gap-2 text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:glow"
             >
-              <span>Home</span>
+              <span>{t("home")}</span>
             </Link>
           </li>
 
@@ -81,7 +88,7 @@ const EliteNavbar = () => {
             onMouseLeave={() => setEliteOpen(false)}
           >
             <div className="flex items-center !gap-1 text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:glow">
-              <span>Elite Services</span>
+              <span>{t("elite_services")}</span>
               <FiChevronDown
                 className={`text-sm transition-transform duration-300 ${
                   eliteOpen ? "rotate-180 text-cyan-100" : ""
@@ -96,7 +103,7 @@ const EliteNavbar = () => {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: -10, scale: 0.95 }}
                   transition={{ duration: 0.25, ease: "easeOut" }}
-                  className="absolute top-full left-0 !mt-3 w-64 bg-gradient-to-br from-[#0f0f2a]/95 to-[#2a0055]/95 backdrop-blur-xl border border-cyan-500/40 rounded-xl shadow-2xl overflow-hidden z-50"
+                  className={`absolute top-full left-0 !mt-3 w-64 bg-gradient-to-br from-[#0f0f2a]/95 to-[#2a0055]/95 backdrop-blur-xl border border-cyan-500/40 rounded-xl shadow-2xl overflow-hidden z-50 ${fontClass}`}
                 >
                   {eliteLinks.map((item, i) => (
                     <motion.li
@@ -110,9 +117,7 @@ const EliteNavbar = () => {
                         className="flex items-center !gap-3 !px-5 !py-3 text-cyan-200 hover:bg-cyan-900/30 hover:text-cyan-100 transition-all duration-300 border-b border-cyan-800/30 last:border-b-0"
                       >
                         <span className="text-cyan-400">{item.icon}</span>
-                        <span className="text-sm font-medium">
-                          {item.label}
-                        </span>
+                        <span className="font-medium">{item.label}</span>
                       </Link>
                     </motion.li>
                   ))}
@@ -150,7 +155,7 @@ const EliteNavbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed top-0 left-0 h-full w-80 max-w-[90%] bg-gradient-to-br from-[#0a0a1f]/98 to-[#1a0033]/98 backdrop-blur-2xl border-r border-cyan-500/40 shadow-2xl z-50 md:hidden"
+              className={`fixed top-0 left-0 h-full w-80 max-w-[90%] bg-gradient-to-br from-[#0a0a1f]/98 to-[#1a0033]/98 backdrop-blur-2xl border-r border-cyan-500/40 shadow-2xl z-50 md:hidden ${fontClass}`}
             >
               <div className="flex justify-between items-center !p-6 border-b border-cyan-800/50">
                 <DemoLogo />
@@ -169,7 +174,7 @@ const EliteNavbar = () => {
                     onClick={toggleMenu}
                     className="flex items-center !gap-2 !py-2 text-cyan-300 hover:text-cyan-100 transition hover:glow"
                   >
-                    <span>Home</span>
+                    <span> {t("home")}</span>
                   </Link>
                 </li>
 
@@ -179,7 +184,7 @@ const EliteNavbar = () => {
                     onClick={toggleMobileElite}
                     className="w-full flex items-center justify-between !py-2 text-cyan-300 hover:text-cyan-100 transition"
                   >
-                    <span>Elite Services</span>
+                    <span>{t("elite_services")}</span>
                     <FiChevronDown
                       className={`transition-transform duration-300 ${
                         mobileEliteOpen ? "rotate-180" : ""
@@ -194,7 +199,7 @@ const EliteNavbar = () => {
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="overflow-hidden !pl-4 !mt-3 space-y-2"
+                        className={`overflow-hidden !pl-4 !mt-3 space-y-2 ${fontClass}`}
                       >
                         {eliteLinks.map((item, i) => (
                           <motion.li
@@ -212,7 +217,7 @@ const EliteNavbar = () => {
                               className="flex items-center !gap-3 !py-2 text-cyan-400 hover:text-cyan-100 transition"
                             >
                               {item.icon}
-                              <span className="text-sm">{item.label}</span>
+                              <span>{item.label}</span>
                             </Link>
                           </motion.li>
                         ))}
