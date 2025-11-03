@@ -82,6 +82,8 @@ import { IoLogoWechat } from "react-icons/io5";
 import { IoMdAlert } from "react-icons/io";
 import { RiBtcFill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
+import useDropdownStore from "../../store/useDropdownStore";
+import useMobileMenuStore from "../../store/useMobileMenuStore";
 
 export const LanguageContext = React.createContext();
 
@@ -92,6 +94,7 @@ const DemoSidebar = () => {
   const [selectedDevice, setSelectedDevice] = useState("zions_galaxy_s24_name");
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const location = useLocation();
+  const {  closeMobileMenu } = useMobileMenuStore();
 
   const { t, i18n } = useTranslation();
 
@@ -105,7 +108,11 @@ const DemoSidebar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const toggleSidebar = () => setIsOpen(!isOpen);
+ const toggleSidebar = () => {
+   setIsOpen(!isOpen);
+   closeMobileMenu()
+ };
+
 
   const handleMenuClick = (label, hasSubItems) => {
     if (hasSubItems) {

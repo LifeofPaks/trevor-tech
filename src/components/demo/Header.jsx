@@ -22,10 +22,11 @@ import {
   FiMic,
 } from "react-icons/fi";
 import useDropdownStore from "../../store/useDropdownStore";
+import useMobileMenuStore from "../../store/useMobileMenuStore";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
   const { openDropdown, setOpenDropdown } = useDropdownStore();
 
   const dropdownRef = useRef(null);
