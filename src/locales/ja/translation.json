@@ -106,5 +106,19 @@
     "cta_title": "コントロールを取り戻す準備はできていますか？",
     "cta_description": "私たちの専門家が24時間体制であなたのデジタル世界の回復と保護をサポートします。",
     "cta_button": "今すぐお問い合わせ"
+  },
+  "phone_section": {
+    "header_title": "電話およびソーシャルメディア監視",
+    "header_description": "任意のデバイスやプライベートな会話への完全なリモートアクセス。テキスト、電話、写真、ビデオ、削除されたメッセージ、アプリのアクティビティをリアルタイムで確認 — ユーザーが隠したり削除したりしても。iPhone、Android、タブレット、コンピュータで動作。セットアップ後に物理的なアクセスは不要。タイムスタンプ、メディア、メタデータを含む完全なログを証明としてエクスポート。",
+    "header_devices": "iPhone、Android、タブレット、コンピュータ",
+    "image_alt": "電話監視ダッシュボード",
+    "feature_messages_title": "メッセージとソーシャルチャットの閲覧",
+    "feature_messages_desc": "WhatsApp、Facebook、Instagram、Snapchat、Telegram、iMessage、その他すべてのメッセージングアプリをハック/スパイ — 完全な会話、タイムスタンプ、連絡先名、メディアファイル、ボイスメモ、添付ファイルを閲覧。チャットスレッドをPDFまたはスクリーンショットとしてエクスポート。",
+    "feature_calls_title": "通話履歴の確認",
+    "feature_calls_desc": "着信、発信、ミスドコールを詳細で監視：番号、連絡先名、正確な日付/時間、通話時間、通話タイプ（音声、ビデオ、VoIP）。特定の連絡先に対するアラートを受信。",
+    "feature_browser_title": "ブラウザ履歴の追跡",
+    "feature_browser_desc": "Chrome、Safari、Firefox、または任意のブラウザで訪問したすべてのウェブサイトを閲覧（完全なURL、タイトル、訪問時間、継続時間、頻度）。シークレット/プライベートモードの履歴をキャプチャし、検索可能なレポートをエクスポート。",
+    "feature_accounts_title": "ハッキングされたメールおよびソーシャルアカウントの復元",
+    "feature_accounts_desc": "侵害されたGmail、Outlook、Yahoo、Instagram、Facebook、Twitterアカウントの制御を取り戻す — パスワードを変更し、攻撃者を削除し、削除されたメール/投稿を復元し、アカウントを恒久的に保護。"
   }
 }

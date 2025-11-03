@@ -106,5 +106,19 @@
     "cta_title": "Pronto para retomar o controle?",
     "cta_description": "Nossos especialistas estão disponíveis 24/7 para ajudar a recuperar e proteger seu mundo digital.",
     "cta_button": "Contate-nos agora"
-  }
+  },
+  "phone_section": {
+      "header_title": "Vigilância de telefones e redes sociais",
+      "header_description": "Acesso remoto completo a qualquer dispositivo e conversas privadas. Veja cada texto, chamada, foto, vídeo, mensagem excluída e atividade de aplicativo em tempo real — mesmo que o usuário oculte ou apague. Funciona em iPhone, Android, tablets e computadores. Não é necessário acesso físico após a configuração. Exporte logs completos com carimbos de data/hora, mídia e metadados como prova.",
+      "header_devices": "iPhone, Android, tablets e computadores",
+      "image_alt": "Painel de vigilância de telefones",
+      "feature_messages_title": "Ler mensagens e chats sociais",
+      "feature_messages_desc": "Hackeie/espione WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage e qualquer aplicativo de mensagens — veja conversas completas, carimbos de data/hora, nomes de contatos, arquivos de mídia, notas de voz e anexos. Exporte threads de chat como PDF ou capturas de tela.",
+      "feature_calls_title": "Verificar histórico de chamadas",
+      "feature_calls_desc": "Monitore chamadas recebidas, efetuadas e perdidas com detalhes: números, nomes de contatos, datas/horas exatas, durações e tipo de chamada (voz, vídeo, VoIP). Receba alertas para contatos específicos.",
+      "feature_browser_title": "Rastrear histórico de navegação",
+      "feature_browser_desc": "Veja cada site visitado no Chrome, Safari, Firefox ou qualquer navegador (URL completo, título, hora de visita, duração, frequência). Capture o histórico no modo anônimo/privado e exporte relatórios pesquisáveis.",
+      "feature_accounts_title": "Recuperar contas de e-mail e redes sociais hackeadas",
+      "feature_accounts_desc": "Recupere o controle de contas comprometidas do Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter — altere senhas, remova atacantes, recupere e-mails/postagens excluídos e proteja a conta permanentemente."
+    }
 }

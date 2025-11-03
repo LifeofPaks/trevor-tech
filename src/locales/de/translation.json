@@ -105,5 +105,19 @@
     "cta_title": "Bereit, die Kontrolle zurückzugewinnen?",
     "cta_description": "Unsere Experten stehen 24/7 bereit, um Ihnen bei der Wiederherstellung und Sicherung Ihrer digitalen Welt zu helfen.",
     "cta_button": "Kontaktieren Sie uns jetzt"
+  },
+  "phone_section": {
+    "header_title": "Überwachung von Telefonen und sozialen Medien",
+    "header_description": "Vollständiger Fernzugriff auf jedes Gerät und private Gespräche. Sehen Sie jeden Text, Anruf, jedes Foto, Video, gelöschte Nachrichten und App-Aktivitäten in Echtzeit — selbst wenn der Benutzer sie verbirgt oder löscht. Funktioniert auf iPhone, Android, Tablets und Computern. Nach der Einrichtung ist kein physischer Zugriff erforderlich. Exportieren Sie vollständige Protokolle mit Zeitstempeln, Medien und Metadaten als Beweis.",
+    "header_devices": "iPhone, Android, Tablets und Computer",
+    "image_alt": "Dashboard für Telefonüberwachung",
+    "feature_messages_title": "Nachrichten und soziale Chats lesen",
+    "feature_messages_desc": "Hacken/Überwachen Sie WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage und jede Messaging-App — sehen Sie vollständige Gespräche, Zeitstempel, Kontakt Namen, Mediendateien, Sprachnotizen und Anhänge. Exportieren Sie Chat-Threads als PDF oder Screenshots.",
+    "feature_calls_title": "Anrufverlauf überprüfen",
+    "feature_calls_desc": "Überwachen Sie eingehende, ausgehende und verpasste Anrufe mit Details: Nummern, Kontakt Namen, genaue Daten/Zeiten, Dauer und Anruftyp (Sprache, Video, VoIP). Erhalten Sie Benachrichtigungen für bestimmte Kontakte.",
+    "feature_browser_title": "Browser-Verlauf verfolgen",
+    "feature_browser_desc": "Sehen Sie jede besuchte Website in Chrome, Safari, Firefox oder jedem Browser (vollständige URL, Titel, Besuchszeit, Dauer, Häufigkeit). Erfassen Sie den Verlauf im Inkognito-/Privatmodus und exportieren Sie durchsuchbare Berichte.",
+    "feature_accounts_title": "Wiederherstellung gehackter E-Mail- und Sozialkonten",
+    "feature_accounts_desc": "Erlangen Sie die Kontrolle über kompromittierte Gmail-, Outlook-, Yahoo-, Instagram-, Facebook-, Twitter-Konten zurück — ändern Sie Passwörter, entfernen Sie Angreifer, stellen Sie gelöschte E-Mails/Beiträge wieder her und sichern Sie das Konto dauerhaft."
   }
 }

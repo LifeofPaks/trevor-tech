@@ -105,5 +105,19 @@
     "cta_title": "Prêt à reprendre le contrôle ?",
     "cta_description": "Nos experts sont disponibles 24/7 pour vous aider à récupérer et sécuriser votre monde numérique.",
     "cta_button": "Contactez-nous maintenant"
+  },
+  "phone_section": {
+    "header_title": "Surveillance des téléphones et des réseaux sociaux",
+    "header_description": "Accès à distance complet à tout appareil et aux conversations privées. Consultez chaque texto, appel, photo, vidéo, message supprimé et activité d'application en temps réel — même si l'utilisateur le cache ou le supprime. Fonctionne sur iPhone, Android, tablettes et ordinateurs. Aucun accès physique requis après la configuration. Exportez des journaux complets avec horodatages, médias et métadonnées pour preuve.",
+    "header_devices": "iPhone, Android, tablettes et ordinateurs",
+    "image_alt": "Tableau de bord de surveillance téléphonique",
+    "feature_messages_title": "Lire les messages et les discussions sociales",
+    "feature_messages_desc": "Piratez/espionnez WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage et toute application de messagerie — consultez les conversations complètes, les horodatages, les noms des contacts, les fichiers multimédias, les notes vocales et les pièces jointes. Exportez les fils de discussion sous forme de PDF ou de captures d'écran.",
+    "feature_calls_title": "Vérifier l'historique des appels",
+    "feature_calls_desc": "Surveillez les appels entrants, sortants et manqués avec des détails : numéros, noms des contacts, dates/heures exactes, durées et type d'appel (voix, vidéo, VoIP). Recevez des alertes pour des contacts spécifiques.",
+    "feature_browser_title": "Suivre l'historique de navigation",
+    "feature_browser_desc": "Consultez chaque site web visité sur Chrome, Safari, Firefox ou tout autre navigateur (URL complète, titre, heure de visite, durée, fréquence). Capturez l'historique en mode incognito/privé et exportez des rapports consultables.",
+    "feature_accounts_title": "Récupérer les comptes de messagerie et réseaux sociaux piratés",
+    "feature_accounts_desc": "Reprenez le contrôle des comptes compromis Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter — changez les mots de passe, supprimez les attaquants, récupérez les e-mails/publications supprimés et sécurisez le compte de manière permanente."
   }
 }

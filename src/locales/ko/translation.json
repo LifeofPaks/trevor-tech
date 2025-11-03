@@ -106,5 +106,19 @@
     "cta_title": "제어권을 되찾을 준비가 되셨나요?",
     "cta_description": "우리의 전문가들이 24시간 대기하여 디지털 세계를 복구하고 보호할 수 있도록 도와드립니다.",
     "cta_button": "지금 문의하세요"
+  },
+  "phone_section": {
+    "header_title": "전화 및 소셜 미디어 감시",
+    "header_description": "모든 기기와 사적인 대화에 대한 완전한 원격 액세스. 모든 텍스트, 통화, 사진, 비디오, 삭제된 메시지 및 앱 활동을 실시간으로 확인 — 사용자가 숨기거나 삭제하더라도. iPhone, Android, 태블릿, 컴퓨터에서 작동. 설정 후 물리적 액세스가 필요 없습니다. 타임스탬프, 미디어, 메타데이터가 포함된 전체 로그를 증거로 내보내기.",
+    "header_devices": "iPhone, Android, 태블릿, 컴퓨터",
+    "image_alt": "전화 감시 대시보드",
+    "feature_messages_title": "메시지 및 소셜 채팅 읽기",
+    "feature_messages_desc": "WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage 및 모든 메시징 앱을 해킹/감시 — 전체 대화, 타임스탬프, 연락처 이름, 미디어 파일, 음성 메모, 첨부 파일을 확인. 채팅 스레드를 PDF 또는 스크린샷으로 내보내기.",
+    "feature_calls_title": "통화 기록 확인",
+    "feature_calls_desc": "수신, 발신, 부재중 통화를 세부 정보로 모니터링: 번호, 연락처 이름, 정확한 날짜/시간, 통화 시간, 통화 유형(음성, 비디오, VoIP). 특정 연락처에 대한 알림 수신.",
+    "feature_browser_title": "브라우저 기록 추적",
+    "feature_browser_desc": "Chrome, Safari, Firefox 또는 모든 브라우저에서 방문한 모든 웹사이트 확인(전체 URL, 제목, 방문 시간, 지속 시간, 빈도). 시크릿/프라이빗 모드 기록을 캡처하고 검색 가능한 보고서를 내보내기.",
+    "feature_accounts_title": "해킹된 이메일 및 소셜 계정 복구",
+    "feature_accounts_desc": "손상된 Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter 계정의 제어권을 되찾기 — 비밀번호 변경, 공격자 제거, 삭제된 이메일/게시물 복구, 계정을 영구적으로 보호."
   }
 }

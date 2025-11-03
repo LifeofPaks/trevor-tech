@@ -106,5 +106,19 @@
     "cta_title": "Kontrolü geri almaya hazır mısınız?",
     "cta_description": "Uzmanlarımız, dijital dünyanızı kurtarmanıza ve korumanıza yardımcı olmak için 7/24 hazır bekliyor.",
     "cta_button": "Şimdi iletişime geçin"
+  },
+  "phone_section": {
+    "header_title": "Telefon ve Sosyal Medya Gözetimi",
+    "header_description": "Herhangi bir cihaza ve özel konuşmalara tam uzaktan erişim. Her metni, aramayı, fotoğrafı, videoyu, silinmiş mesajları ve uygulama etkinliklerini gerçek zamanlı olarak görün — kullanıcı bunları gizlese veya silse bile. iPhone, Android, tabletler ve bilgisayarlarda çalışır. Kurulumdan sonra fiziksel erişim gerekmez. Zaman damgaları, medya ve meta verilerle tam günlükleri kanıt olarak dışa aktarın.",
+    "header_devices": "iPhone, Android, tabletler ve bilgisayarlar",
+    "image_alt": "Telefon gözetim paneli",
+    "feature_messages_title": "Mesajları ve Sosyal Sohbetleri Oku",
+    "feature_messages_desc": "WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage ve herhangi bir mesajlaşma uygulamasını hackle/gözetle — tam konuşmaları, zaman damgalarını, kişi adlarını, medya dosyalarını, sesli notları ve ekleri gör. Sohbet dizilerini PDF veya ekran görüntüleri olarak dışa aktar.",
+    "feature_calls_title": "Arama Geçmişini Kontrol Et",
+    "feature_calls_desc": "Gelen, giden ve cevapsız aramaları detaylarıyla izle: numaralar, kişi adları, tam tarih/saat, süre ve arama türü (ses, video, VoIP). Belirli kişiler için uyarılar al.",
+    "feature_browser_title": "Tarayıcı Geçmişini Takip Et",
+    "feature_browser_desc": "Chrome, Safari, Firefox veya herhangi bir tarayıcıda ziyaret edilen her web sitesini gör (tam URL, başlık, ziyaret saati, süre, sıklık). Gizli/özel mod geçmişini yakala ve aranabilir raporları dışa aktar.",
+    "feature_accounts_title": "Hacklenmiş E-posta ve Sosyal Hesapları Kurtar",
+    "feature_accounts_desc": "Tehlikeye atılmış Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter hesaplarının kontrolünü geri al — şifreleri değiştir, saldırganları kaldır, silinmiş e-postaları/gönderileri kurtar ve hesabı kalıcı olarak güvenli hale getir."
   }
 }

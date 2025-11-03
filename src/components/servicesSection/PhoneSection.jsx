@@ -5,8 +5,11 @@ import { FaPhone } from "react-icons/fa6";
 import { BsBrowserSafari } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import PhoneSectionImage from "../../assets/phone-section-image.webp";
+import { useTranslation } from "react-i18next";
 
 const PhoneSection = () => {
+  const { t } = useTranslation();
+
   const features = [
     {
       id: 1,
@@ -14,8 +17,8 @@ const PhoneSection = () => {
       iconBg: "bg-green-900/30",
       iconColor: "text-green-400",
       glow: "shadow-green-500/50",
-      title: "Read Messages & Social Chats",
-      desc: `Hack/spy WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage, and any messaging app — view full conversations, timestamps, contact names, media files, voice notes, and attachments. Export chat threads as PDF or screenshots.`,
+      title: t("phone_section.feature_messages_title"),
+      desc: t("phone_section.feature_messages_desc"),
     },
     {
       id: 2,
@@ -23,8 +26,8 @@ const PhoneSection = () => {
       iconBg: "bg-orange-900/30",
       iconColor: "text-orange-400",
       glow: "shadow-orange-500/50",
-      title: "Check Call History",
-      desc: `Monitor incoming, outgoing, and missed calls with details: numbers, contact names, exact dates/times, durations and call type (voice, video, VoIP). Get alerts for specific contacts.`,
+      title: t("phone_section.feature_calls_title"),
+      desc: t("phone_section.feature_calls_desc"),
     },
     {
       id: 3,
@@ -32,8 +35,8 @@ const PhoneSection = () => {
       iconBg: "bg-blue-900/30",
       iconColor: "text-blue-400",
       glow: "shadow-blue-500/50",
-      title: "Track Browser History",
-      desc: `View every website visited on Chrome, Safari, Firefox, or any browser (full URL, title, visit time, duration, frequency). Capture incognito/private mode history and export searchable reports.`,
+      title: t("phone_section.feature_browser_title"),
+      desc: t("phone_section.feature_browser_desc"),
     },
     {
       id: 4,
@@ -41,8 +44,8 @@ const PhoneSection = () => {
       iconBg: "bg-purple-900/30",
       iconColor: "text-purple-400",
       glow: "shadow-purple-500/50",
-      title: "Recover Hacked Email & Social Accounts",
-      desc: `Regain control of compromised Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter — change passwords, remove attackers, recover deleted emails/posts, and secure the account permanently.`,
+      title: t("phone_section.feature_accounts_title"),
+      desc: t("phone_section.feature_accounts_desc"),
     },
   ];
 
@@ -58,17 +61,10 @@ const PhoneSection = () => {
           viewport={{ once: true }}
         >
           <h1 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-green-300 to-teal-300 bg-clip-text text-transparent !mb-4">
-            Phone & Social Media Surveillance
+            {t("phone_section.header_title")}
           </h1>
           <p className="max-w-4xl !mx-auto text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
-            Complete remote access to any device and private conversations. See
-            every text, call, photo, video, deleted message, and app activity in
-            real time — even if the user hides or erases it. Works on{" "}
-            <span className="text-cyan-300 font-semibold">
-              iPhone, Android, tablets, and computers
-            </span>
-            . No physical access needed after setup. Export full logs with
-            timestamps, media, and metadata for proof.
+            {t("phone_section.header_description")}
           </p>
         </motion.div>
 
@@ -92,7 +88,7 @@ const PhoneSection = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/30 via-green-500/20 to-teal-500/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
               <img
                 src={PhoneSectionImage}
-                alt="Phone surveillance dashboard"
+                alt={t("phone_section.image_alt")}
                 className="relative w-full max-w-[500px] rounded-2xl object-cover shadow-2xl border border-cyan-500/30 backdrop-blur-sm"
               />
             </div>

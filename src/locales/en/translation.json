@@ -112,5 +112,19 @@
     "cta_title": "Ready to Take Back Control?",
     "cta_description": "Our experts are standing by 24/7 to help you recover and secure your digital world.",
     "cta_button": "Contact Us Now"
+  },
+  "phone_section": {
+    "header_title": "Phone & Social Media Surveillance",
+    "header_description": "Complete remote access to any device and private conversations. See every text, call, photo, video, deleted message, and app activity in real time — even if the user hides or erases it. Works on iPhone, Android, tablets, and computers. No physical access needed after setup. Export full logs with timestamps, media, and metadata for proof.",
+    "header_devices": "iPhone, Android, tablets, and computers",
+    "image_alt": "Phone surveillance dashboard",
+    "feature_messages_title": "Read Messages & Social Chats",
+    "feature_messages_desc": "Hack/spy WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage, and any messaging app — view full conversations, timestamps, contact names, media files, voice notes, and attachments. Export chat threads as PDF or screenshots.",
+    "feature_calls_title": "Check Call History",
+    "feature_calls_desc": "Monitor incoming, outgoing, and missed calls with details: numbers, contact names, exact dates/times, durations and call type (voice, video, VoIP). Get alerts for specific contacts.",
+    "feature_browser_title": "Track Browser History",
+    "feature_browser_desc": "View every website visited on Chrome, Safari, Firefox, or any browser (full URL, title, visit time, duration, frequency). Capture incognito/private mode history and export searchable reports.",
+    "feature_accounts_title": "Recover Hacked Email & Social Accounts",
+    "feature_accounts_desc": "Regain control of compromised Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter — change passwords, remove attackers, recover deleted emails/posts, and secure the account permanently."
   }
 }
