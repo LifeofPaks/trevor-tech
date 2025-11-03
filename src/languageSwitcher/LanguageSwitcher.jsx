@@ -49,21 +49,24 @@ const LanguageSwitcher = () => {
         <button
           onClick={() => setOpen(!open)}
           className={`!flex !items-center !justify-between !gap-2 !px-3 !py-2 !text-[0.8rem] !font-medium lg:w-[140px] w-[55px]
-            !rounded-xl !border !backdrop-blur-md !shadow-lg 
+            !rounded-xl !border !backdrop-blur-md 
             !transition-all !duration-300
             ${
               isDemoPage
-                ? "!bg-white !border-gray-100 !text-[#1b254b]"
+                ? "!bg-white !border-gray-300 !text-[#1b254b]"
                 : "!bg-gradient-to-r !from-[#0a0a1f]/90 !to-[#1b254b]/90 !border-[#2b3a75]/40 !text-[#d0d6f5] hover:!border-[#3d4ea5]/70"
             }`}
         >
+          <div className="flex items-center gap-1">
+
           <span className="!flex !items-center !gap-2">{currentLang.flag}</span>
 
-          <span className="!text-[10px] !truncate !max-w-[70px] hidden lg:block">
+          <span className="!text-[12px] !truncate !max-w-[70px] hidden lg:block">
             {currentLang.name.length > 15
               ? currentLang.name.slice(0, 15) + "..."
               : currentLang.name}
           </span>
+          </div>
 
           <motion.span
             animate={{ rotate: open ? 180 : 0 }}
