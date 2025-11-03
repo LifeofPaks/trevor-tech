@@ -9,9 +9,11 @@ import Arrow from "../decorative/Arrow";
 import UnderlineSVG from "../decorative/UnderlineSVG";
 import BuyModal from "../buyModal/BuyModal";
 import HeroImage from "../../assets/hero-image.png";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   const [open, setOpen] = useState(false);
+    const { t} = useTranslation();
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
