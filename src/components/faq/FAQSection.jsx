@@ -50,11 +50,8 @@ const FAQSection = () => {
             Frequently Asked Questions
           </h2>
           <p className="max-w-3xl !mx-auto text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
-            Got questions? We’ve got answers.{" "}
-            <span className="hidden sm:inline">
-              Here’s everything you need to know about our discreet, powerful,
+            Got questions? We’ve got answers. Here’s everything you need to know about our discreet, powerful,
               and 100% effective services.
-            </span>
           </p>
         </motion.div>
 
