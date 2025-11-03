@@ -80,5 +80,31 @@
     "available_on": "사용 가능",
     "view_demo": "데모 보기",
     "try_it_now": "지금 사용해보기"
+  },
+  "about_page": {
+    "header_title": "신뢰할 수 있는 디지털 복구 및 감시 전문가",
+    "header_description": "우리는 윤리적인 디지털 접근, 복구 및 보호 서비스를 전문으로 하는 전문적이고 신중한 팀입니다. 사이버 보안, 블록체인 포렌식, 원격 모니터링에서 10년 이상의 경험을 바탕으로, 도난당한 암호화폐 복구, 해킹된 계정 보호, 사랑하는 사람 보호 등 여러분이 다시 제어권을 되찾도록 도와드립니다.",
+    "services_title": "우리가 하는 일",
+    "service_spy_hack_title": "원격으로 모든 기기를 감시하거나 해킹",
+    "service_spy_hack_desc": "안드로이드, 아이폰, 태블릿 또는 컴퓨터를 원격으로 감시/해킹. 메시지, 통화, GPS, 사진, 앱, 키 입력을 확인 — 물리적 접근이 필요 없습니다.",
+    "service_crypto_recovery_title": "도난 및 사기당한 암호화폐 복구",
+    "service_crypto_recovery_desc": "가짜 플랫폼, 피싱 또는 도난당한 지갑에서 잃어버린 비트코인, 이더리움, USDT 등을 복구. 완전한 블록체인 추적 및 사기범 식별.",
+    "service_grade_enhancement_title": "학업 성적 향상",
+    "service_grade_enhancement_desc": "대학 성적, GPA, 시험 점수를 즉시 향상. 성적 증명서를 수정하고, 시험 결과를 변경하며, 전체 학업 기록에 접근.",
+    "service_credit_boost_title": "신용 점수 향상 및 카드 충전",
+    "service_credit_boost_desc": "신용 점수(Equifax, TransUnion, Experian)를 즉시 향상. 직불/선불 카드를 충전하고 전체 재무 로그에 접근.",
+    "service_clear_record_title": "기록 삭제 및 성적 변경",
+    "service_clear_record_desc": "범죄 기록을 영구적으로 삭제하고, 대학 성적, GPA를 변경하며, 공식 시스템에서 새로운 운전면허증/신분증을 발급.",
+    "service_stop_blackmail_title": "협박 중지 및 개인 정보 보호",
+    "service_stop_blackmail_desc": "협박자를 식별하고, 기기/클라우드에서 타협된 자료를 삭제하며, 미래의 위협을 차단 — 완전한 디지털 보호.",
+    "why_choose_us_title": "왜 우리를 선택해야 하나요?",
+    "why_choose_us_discreet": "100% 신중 — 로그 없음, 흔적 없음, 제3자 접근 없음",
+    "why_choose_us_no_physical_access": "물리적 접근 불필요 — 원격 설정 및 실행",
+    "why_choose_us_proven_results": "검증된 결과 — 전 세계적으로 수천 개의 성공 사례",
+    "why_choose_us_support": "24/7 지원 — 라이브 채팅, 이메일, 전화로 다국어 지원",
+    "quote": "우리는 단순히 데이터를 복구하는 것이 아니라 신뢰를 복구합니다.",
+    "cta_title": "제어권을 되찾을 준비가 되셨나요?",
+    "cta_description": "우리의 전문가들이 24시간 대기하여 디지털 세계를 복구하고 보호할 수 있도록 도와드립니다.",
+    "cta_button": "지금 문의하세요"
   }
 }

@@ -79,5 +79,31 @@
     "available_on": "Disponible sur",
     "view_demo": "Voir la démo",
     "try_it_now": "Essayez maintenant"
+  },
+  "about_page": {
+    "header_title": "Vos experts de confiance en récupération et surveillance numérique",
+    "header_description": "Nous sommes une équipe professionnelle et discrète spécialisée dans l'accès numérique éthique, la récupération et les services de protection. Avec plus d'une décennie d'expérience en cybersécurité, en forensique blockchain et en surveillance à distance, nous vous aidons à reprendre le contrôle — que ce soit pour récupérer des cryptomonnaies volées, sécuriser des comptes piratés ou protéger vos proches.",
+    "services_title": "Ce que nous faisons",
+    "service_spy_hack_title": "Espionner ou pirater n'importe quel appareil à distance",
+    "service_spy_hack_desc": "Espionnez/piratez à distance n'importe quel Android, iPhone, tablette ou ordinateur. Consultez les messages, appels, GPS, photos, applications et frappes au clavier — sans accès physique requis.",
+    "service_crypto_recovery_title": "Récupérer des cryptomonnaies volées et escroquées",
+    "service_crypto_recovery_desc": "Récupérez des Bitcoin, Ethereum, USDT et plus encore perdus sur des plateformes frauduleuses, par phishing ou dans des portefeuilles volés. Traçage complet de la blockchain et identification des escrocs.",
+    "service_grade_enhancement_title": "Amélioration des notes académiques",
+    "service_grade_enhancement_desc": "Améliorez instantanément les notes universitaires, les moyennes et les scores d'examens. Modifiez les relevés de notes, changez les résultats d'examens et accédez aux dossiers académiques complets.",
+    "service_credit_boost_title": "Amélioration du score de crédit et chargement de cartes",
+    "service_credit_boost_desc": "Améliorez instantanément les scores de crédit (Equifax, TransUnion, Experian). Chargez des cartes de débit/prépayées et accédez aux journaux financiers complets.",
+    "service_clear_record_title": "Effacer les dossiers et modifier les notes",
+    "service_clear_record_desc": "Supprimez définitivement les casiers judiciaires, modifiez les notes universitaires, les moyennes et émettez de nouveaux permis de conduire/cartes d'identité dans les systèmes officiels.",
+    "service_stop_blackmail_title": "Arrêter le chantage et sécuriser la vie privée",
+    "service_stop_blackmail_desc": "Identifiez les maîtres-chanteurs, supprimez les contenus compromettants des appareils/nuage et bloquez les menaces futures — protection numérique complète.",
+    "why_choose_us_title": "Pourquoi nous choisir ?",
+    "why_choose_us_discreet": "100% Discret – Aucun journal, aucune trace, aucun accès tiers",
+    "why_choose_us_no_physical_access": "Aucun accès physique requis – Configuration et exécution à distance",
+    "why_choose_us_proven_results": "Résultats prouvés – Des milliers de cas réussis dans le monde",
+    "why_choose_us_support": "Support 24/7 – Chat en direct, e-mail, téléphone en plusieurs langues",
+    "quote": "Nous ne récupérons pas seulement des données — nous récupérons la confiance.",
+    "cta_title": "Prêt à reprendre le contrôle ?",
+    "cta_description": "Nos experts sont disponibles 24/7 pour vous aider à récupérer et sécuriser votre monde numérique.",
+    "cta_button": "Contactez-nous maintenant"
   }
 }

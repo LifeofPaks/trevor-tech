@@ -80,5 +80,31 @@
     "available_on": "で利用可能",
     "view_demo": "デモを見る",
     "try_it_now": "今すぐ試す"
+  },
+  "about_page": {
+    "header_title": "信頼できるデジタル回復＆監視の専門家",
+    "header_description": "私たちは、倫理的なデジタルアクセス、回復、保護サービスを専門とするプロフェッショナルで慎重なチームです。サイバーセキュリティ、ブロックチェーンフォレンジック、リモート監視における10年以上の経験を活かし、盗まれた暗号通貨の回復、ハッキングされたアカウントの保護、愛する人の保護など、コントロールを取り戻すお手伝いをします。",
+    "services_title": "私たちが行うこと",
+    "service_spy_hack_title": "リモートで任意のデバイスをスパイまたはハック",
+    "service_spy_hack_desc": "Android、iPhone、タブレット、またはコンピューターをリモートでスパイ/ハック。メッセージ、通話、GPS、写真、アプリ、キーストロークを表示 — 物理的なアクセスは不要です。",
+    "service_crypto_recovery_title": "盗まれた＆詐欺された暗号通貨の回復",
+    "service_crypto_recovery_desc": "偽のプラットフォーム、フィッシング、または盗まれたウォレットから失われたビットコイン、イーサリアム、USDTなどを回復。完全なブロックチェーントレーシングと詐欺師の特定。",
+    "service_grade_enhancement_title": "学業成績の向上",
+    "service_grade_enhancement_desc": "大学の成績、GPA、試験スコアを即座に向上。成績証明書の変更、試験結果の変更、完全な学業記録へのアクセス。",
+    "service_credit_boost_title": "クレジットスコアの向上とカードチャージ",
+    "service_credit_boost_desc": "クレジットスコア（Equifax、TransUnion、Experian）を即座に向上。デビット/プリペイドカードのチャージと完全な財務ログへのアクセス。",
+    "service_clear_record_title": "記録の削除と成績の変更",
+    "service_clear_record_desc": "犯罪記録を永久に削除し、大学の成績、GPAを変更し、公式システムで新しい運転免許証/身分証明書を発行。",
+    "service_stop_blackmail_title": "恐喝の阻止とプライバシーの保護",
+    "service_stop_blackmail_desc": "恐喝者を特定し、デバイス/クラウドから妥協する素材を削除し、将来の脅威をブロック — 完全なデジタル保護。",
+    "why_choose_us_title": "なぜ私たちを選ぶのか？",
+    "why_choose_us_discreet": "100%慎重 — ログなし、痕跡なし、第三者のアクセスなし",
+    "why_choose_us_no_physical_access": "物理的アクセス不要 — リモート設定と実行",
+    "why_choose_us_proven_results": "実証済みの結果 — 世界中で数千の成功事例",
+    "why_choose_us_support": "24/7サポート — ライブチャット、メール、電話で多言語対応",
+    "quote": "私たちはデータだけでなく信頼も回復します。",
+    "cta_title": "コントロールを取り戻す準備はできていますか？",
+    "cta_description": "私たちの専門家が24時間体制であなたのデジタル世界の回復と保護をサポートします。",
+    "cta_button": "今すぐお問い合わせ"
   }
 }

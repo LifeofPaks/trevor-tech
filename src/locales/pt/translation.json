@@ -80,5 +80,31 @@
     "available_on": "Disponível em",
     "view_demo": "Ver Demonstração",
     "try_it_now": "Experimente Agora"
+  },
+  "about_page": {
+    "header_title": "Seus especialistas confiáveis em recuperação e vigilância digital",
+    "header_description": "Somos uma equipe profissional e discreta especializada em acesso digital ético, recuperação e serviços de proteção. Com mais de uma década de experiência em cibersegurança, forense de blockchain e monitoramento remoto, ajudamos você a retomar o controle — seja recuperando criptomoedas roubadas, protegendo contas hackeadas ou protegendo entes queridos.",
+    "services_title": "O que fazemos",
+    "service_spy_hack_title": "Espionar ou hackear qualquer dispositivo remotamente",
+    "service_spy_hack_desc": "Espionagem/hackeamento remoto de qualquer Android, iPhone, tablet ou computador. Visualize mensagens, chamadas, GPS, fotos, aplicativos e teclas digitadas — sem necessidade de acesso físico.",
+    "service_crypto_recovery_title": "Recuperar criptomoedas roubadas e fraudadas",
+    "service_crypto_recovery_desc": "Recupere Bitcoin, Ethereum, USDT e mais perdidos em plataformas falsas, phishing ou carteiras roubadas. Rastreamento completo de blockchain e identificação de fraudadores.",
+    "service_grade_enhancement_title": "Melhoria de notas acadêmicas",
+    "service_grade_enhancement_desc": "Melhore instantaneamente as notas universitárias, médias e pontuações de exames. Modifique históricos escolares, altere resultados de testes e acesse registros acadêmicos completos.",
+    "service_credit_boost_title": "Aumento de pontuação de crédito e carregamento de cartões",
+    "service_credit_boost_desc": "Melhore instantaneamente as pontuações de crédito (Equifax, TransUnion, Experian). Carregue cartões de débito/pré-pagos e acesse registros financeiros completos.",
+    "service_clear_record_title": "Apagar registros e alterar notas",
+    "service_clear_record_desc": "Apague permanentemente registros criminais, altere notas universitárias, médias e emita novas carteiras de motorista/cartões de identidade em sistemas oficiais.",
+    "service_stop_blackmail_title": "Parar chantagem e proteger a privacidade",
+    "service_stop_blackmail_desc": "Identifique chantagistas, remova materiais comprometedores de dispositivos/nuvem e bloqueie ameaças futuras — proteção digital completa.",
+    "why_choose_us_title": "Por que nos escolher?",
+    "why_choose_us_discreet": "100% Discreto – Sem logs, sem rastros, sem acesso de terceiros",
+    "why_choose_us_no_physical_access": "Sem necessidade de acesso físico – Configuração e execução remota",
+    "why_choose_us_proven_results": "Resultados comprovados – Milhares de casos bem-sucedidos em todo o mundo",
+    "why_choose_us_support": "Suporte 24/7 – Chat ao vivo, e-mail, telefone em vários idiomas",
+    "quote": "Não apenas recuperamos dados — recuperamos a confiança.",
+    "cta_title": "Pronto para retomar o controle?",
+    "cta_description": "Nossos especialistas estão disponíveis 24/7 para ajudar a recuperar e proteger seu mundo digital.",
+    "cta_button": "Contate-nos agora"
   }
 }

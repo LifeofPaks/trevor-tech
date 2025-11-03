@@ -79,5 +79,31 @@
     "available_on": "Disponible en",
     "view_demo": "Ver demo",
     "try_it_now": "Pruébalo ahora"
+  },
+  "about_page": {
+    "header_title": "Sus expertos confiables en recuperación y vigilancia digital",
+    "header_description": "Somos un equipo profesional y discreto especializado en acceso digital ético, recuperación y servicios de protección. Con más de una década de experiencia en ciberseguridad, forense de blockchain y monitoreo remoto, le ayudamos a recuperar el control, ya sea recuperando criptomonedas robadas, asegurando cuentas hackeadas o protegiendo a sus seres queridos.",
+    "services_title": "Qué hacemos",
+    "service_spy_hack_title": "Espiar o hackear cualquier dispositivo de forma remota",
+    "service_spy_hack_desc": "Espíe/hackee de forma remota cualquier Android, iPhone, tableta o computadora. Vea mensajes, llamadas, GPS, fotos, aplicaciones y pulsaciones de teclas — sin necesidad de acceso físico.",
+    "service_crypto_recovery_title": "Recuperar criptomonedas robadas y estafadas",
+    "service_crypto_recovery_desc": "Recupere Bitcoin, Ethereum, USDT y más perdidos en plataformas falsas, phishing o billeteras robadas. Rastreo completo de blockchain e identificación de estafadores.",
+    "service_grade_enhancement_title": "Mejora de calificaciones académicas",
+    "service_grade_enhancement_desc": "Mejore instantáneamente las calificaciones universitarias, el GPA y los puntajes de exámenes. Modifique transcripciones, altere resultados de exámenes y acceda a registros académicos completos.",
+    "service_credit_boost_title": "Aumento de puntaje crediticio y carga de tarjetas",
+    "service_credit_boost_desc": "Mejore instantáneamente los puntajes crediticios (Equifax, TransUnion, Experian). Cargue tarjetas de débito/prepagadas y acceda a registros financieros completos.",
+    "service_clear_record_title": "Eliminar registros y alterar calificaciones",
+    "service_clear_record_desc": "Elimine permanentemente antecedentes penales, cambie calificaciones universitarias, GPA y emita nuevas licencias de conducir/tarjetas de identificación en sistemas oficiales.",
+    "service_stop_blackmail_title": "Detener el chantaje y proteger la privacidad",
+    "service_stop_blackmail_desc": "Identifique a los chantajistas, elimine material comprometedor de dispositivos/nube y bloquee amenazas futuras — protección digital completa.",
+    "why_choose_us_title": "¿Por qué elegirnos?",
+    "why_choose_us_discreet": "100% Discreto – Sin registros, sin rastros, sin acceso de terceros",
+    "why_choose_us_no_physical_access": "No se necesita acceso físico – Configuración y ejecución remota",
+    "why_choose_us_proven_results": "Resultados comprobados – Miles de casos exitosos en todo el mundo",
+    "why_choose_us_support": "Soporte 24/7 – Chat en vivo, correo electrónico, teléfono en varios idiomas",
+    "quote": "No solo recuperamos datos — recuperamos la confianza.",
+    "cta_title": "¿Listo para recuperar el control?",
+    "cta_description": "Nuestros expertos están disponibles 24/7 para ayudarlo a recuperar y proteger su mundo digital.",
+    "cta_button": "Contáctenos ahora"
   }
 }

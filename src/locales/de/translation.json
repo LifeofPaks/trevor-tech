@@ -79,5 +79,31 @@
     "available_on": "Verfügbar auf",
     "view_demo": "Demo ansehen",
     "try_it_now": "Jetzt ausprobieren"
+  },
+  "about_page": {
+    "header_title": "Ihre vertrauenswürdigen Experten für digitale Wiederherstellung und Überwachung",
+    "header_description": "Wir sind ein professionelles, diskretes Team, das sich auf ethischen digitalen Zugriff, Wiederherstellung und Schutzdienste spezialisiert hat. Mit über einem Jahrzehnt Erfahrung in Cybersicherheit, Blockchain-Forensik und Fernüberwachung helfen wir Ihnen, die Kontrolle zurückzugewinnen — sei es durch die Wiederherstellung gestohlener Kryptowährungen, die Absicherung gehackter Konten oder den Schutz Ihrer Lieben.",
+    "services_title": "Was wir tun",
+    "service_spy_hack_title": "Fernüberwachung oder Hacking jedes Geräts",
+    "service_spy_hack_desc": "Überwachen/Hacken Sie jedes Android, iPhone, Tablet oder jeden Computer aus der Ferne. Sehen Sie Nachrichten, Anrufe, GPS, Fotos, Apps und Tastenanschläge — kein physischer Zugriff erforderlich.",
+    "service_crypto_recovery_title": "Wiederherstellung gestohlener und betrogener Kryptowährungen",
+    "service_crypto_recovery_desc": "Stellen Sie verlorene Bitcoin, Ethereum, USDT und mehr von gefälschten Plattformen, Phishing oder gestohlenen Wallets wieder her. Vollständige Blockchain-Verfolgung und Identifizierung von Betrügern.",
+    "service_grade_enhancement_title": "Verbesserung akademischer Noten",
+    "service_grade_enhancement_desc": "Verbessern Sie sofort Universitätsnoten, Notendurchschnitt und Prüfungsergebnisse. Ändern Sie Zeugnisse, Testresultate und greifen Sie auf vollständige akademische Aufzeichnungen zu.",
+    "service_credit_boost_title": "Verbesserung der Kreditwürdigkeit und Kartenaufladung",
+    "service_credit_boost_desc": "Verbessern Sie sofort Kreditscores (Equifax, TransUnion, Experian). Laden Sie Debit-/Prepaid-Karten auf und greifen Sie auf vollständige Finanzprotokolle zu.",
+    "service_clear_record_title": "Löschen von Aufzeichnungen und Ändern von Noten",
+    "service_clear_record_desc": "Löschen Sie dauerhaft Strafregister, ändern Sie Universitätsnoten, Notendurchschnitt und stellen Sie neue Führerscheine/Personalausweise in offiziellen Systemen aus.",
+    "service_stop_blackmail_title": "Erpressung stoppen und Privatsphäre sichern",
+    "service_stop_blackmail_desc": "Identifizieren Sie Erpresser, löschen Sie kompromittierendes Material von Geräten/Cloud und blockieren Sie zukünftige Bedrohungen — vollständiger digitaler Schutz.",
+    "why_choose_us_title": "Warum uns wählen?",
+    "why_choose_us_discreet": "100% Diskret – Keine Protokolle, keine Spuren, kein Zugriff Dritter",
+    "why_choose_us_no_physical_access": "Kein physischer Zugriff erforderlich – Fernkonfiguration und -ausführung",
+    "why_choose_us_proven_results": "Bewährte Ergebnisse – Tausende erfolgreicher Fälle weltweit",
+    "why_choose_us_support": "24/7-Support – Live-Chat, E-Mail, Telefon in mehreren Sprachen",
+    "quote": "Wir stellen nicht nur Daten wieder her — wir stellen Vertrauen wieder her.",
+    "cta_title": "Bereit, die Kontrolle zurückzugewinnen?",
+    "cta_description": "Unsere Experten stehen 24/7 bereit, um Ihnen bei der Wiederherstellung und Sicherung Ihrer digitalen Welt zu helfen.",
+    "cta_button": "Kontaktieren Sie uns jetzt"
   }
 }

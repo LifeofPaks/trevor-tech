@@ -80,5 +80,31 @@
     "available_on": "Şurada Mevcut",
     "view_demo": "Demoyu Görüntüle",
     "try_it_now": "Şimdi Dene"
+  },
+  "about_page": {
+    "header_title": "Güvendiğiniz Dijital Kurtarma ve Gözetim Uzmanları",
+    "header_description": "Biz, etik dijital erişim, kurtarma ve koruma hizmetlerinde uzmanlaşmış profesyonel ve gizli bir ekibiz. Siber güvenlik, blockchain adli bilimi ve uzaktan izleme alanında on yılı aşkın deneyimle, çalınan kripto paraları kurtarma, hacklenmiş hesapları koruma veya sevdiklerinizi koruma gibi konularda kontrolü geri almanıza yardımcı oluyoruz.",
+    "services_title": "Neler Yapıyoruz",
+    "service_spy_hack_title": "Herhangi bir cihazı uzaktan izleme veya hackleme",
+    "service_spy_hack_desc": "Herhangi bir Android, iPhone, tablet veya bilgisayarı uzaktan izleyin/hackleyin. Mesajları, aramaları, GPS, fotoğrafları, uygulamaları ve tuş vuruşlarını görün — fiziksel erişim gerekmez.",
+    "service_crypto_recovery_title": "Çalınan ve Dolandırılan Kripto Paraları Kurtarma",
+    "service_crypto_recovery_desc": "Sahte platformlardan, kimlik avı saldırılarından veya çalınan cüzdanlardan kaybolan Bitcoin, Ethereum, USDT ve daha fazlasını kurtarın. Tam blockchain takibi ve dolandırıcıların kimlik tespiti.",
+    "service_grade_enhancement_title": "Akademik Not İyileştirme",
+    "service_grade_enhancement_desc": "Üniversite notlarını, genel not ortalamasını ve sınav puanlarını anında iyileştirin. Transkriptleri değiştirin, sınav sonuçlarını düzenleyin ve tam akademik kayıtlara erişin.",
+    "service_credit_boost_title": "Kredi Puanı İyileştirme ve Kart Yükleme",
+    "service_credit_boost_desc": "Kredi puanlarını (Equifax, TransUnion, Experian) anında iyileştirin. Banka/ön ödemeli kartları yükleyin ve tam finansal kayıtlara erişin.",
+    "service_clear_record_title": "Kayıtları Silme ve Not Değiştirme",
+    "service_clear_record_desc": "Suç kayıtlarını kalıcı olarak silin, üniversite notlarını, genel not ortalamasını değiştirin ve resmi sistemlerde yeni ehliyet/kimlik kartları düzenleyin.",
+    "service_stop_blackmail_title": "Şantajı Durdurma ve Gizliliği Koruma",
+    "service_stop_blackmail_desc": "Şantajcıları tanımlayın, cihazlardan/buluttan compromat materyalleri silin ve gelecekteki tehditleri engelleyin — tam dijital koruma.",
+    "why_choose_us_title": "Neden Bizi Seçmelisiniz?",
+    "why_choose_us_discreet": "%100 Gizli — Kayıt yok, iz yok, üçüncü taraf erişimi yok",
+    "why_choose_us_no_physical_access": "Fiziksel erişim gerekmez — Uzaktan kurulum ve yürütme",
+    "why_choose_us_proven_results": "Kanıtlanmış sonuçlar — Dünya çapında binlerce başarılı vaka",
+    "why_choose_us_support": "7/24 Destek — Canlı sohbet, e-posta, telefon çoklu dilde",
+    "quote": "Sadece verileri değil, güveni de kurtarıyoruz.",
+    "cta_title": "Kontrolü geri almaya hazır mısınız?",
+    "cta_description": "Uzmanlarımız, dijital dünyanızı kurtarmanıza ve korumanıza yardımcı olmak için 7/24 hazır bekliyor.",
+    "cta_button": "Şimdi iletişime geçin"
   }
 }
