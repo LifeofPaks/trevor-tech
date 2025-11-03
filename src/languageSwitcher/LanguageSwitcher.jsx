@@ -46,7 +46,7 @@ const LanguageSwitcher = () => {
         {/* Toggle Button */}
         <button
           onClick={() => setOpen(!open)}
-          className={`!flex !items-center !justify-between !gap-2 !px-3 !py-2 !text-[0.8rem] !font-medium w-[140px]
+          className={`!flex !items-center !justify-between !gap-2 !px-3 !py-2 !text-[0.8rem] !font-medium lg:w-[140px] w-[55px]
             !rounded-xl !border !backdrop-blur-md !shadow-lg 
             !transition-all !duration-300
             ${
@@ -57,7 +57,7 @@ const LanguageSwitcher = () => {
         >
           <span className="!flex !items-center !gap-2">{currentLang.flag}</span>
 
-          <span className="!text-[10px] !truncate !max-w-[70px]">
+          <span className="!text-[10px] !truncate !max-w-[70px] hidden lg:block">
             {currentLang.name.length > 15
               ? currentLang.name.slice(0, 15) + "..."
               : currentLang.name}
