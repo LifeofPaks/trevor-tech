@@ -303,44 +303,6 @@ const DemoSidebar = () => {
 
   const menuItems = [
     { label: t["Dashboard"], icon: <MdDashboard />, to: "/demo/dashboard" },
-    // { label: t["Generate"], icon: <MdDashboard />, to: "/demo/generatescreenshot" },
-    // {
-    //   label: t["Elite Recovery & Boost Services"],
-    //   icon: <FiShield />,
-    //   badge: "HOT",
-    //   subItems: [
-    //     {
-    //       to: "/credit-boost",
-    //       label: t["Credit Score Upgrade"],
-    //       icon: <FiZap />,
-    //     },
-    //     {
-    //       to: "/stop-harassment",
-    //       label: t["Stop Blackmail"],
-    //       icon: <IoMdAlert />,
-    //     },
-    //     {
-    //       to: "/grade-enhancement",
-    //       label: t["Improve Grade"],
-    //       icon: <FiFileText />,
-    //     },
-    //     {
-    //       to: "/clear-record",
-    //       label: t["Erase Criminal Record"],
-    //       icon: <MdFolderDelete />,
-    //     },
-    //     {
-    //       to: "/crypto-recovery",
-    //       label: t["Crypto Recovery"],
-    //       icon: <RiBtcFill />,
-    //     },
-    //     {
-    //       to: "/dmv-id",
-    //       label: t["DMV & ID Services"],
-    //       icon: <FiKey />,
-    //     },
-    //   ],
-    // },
 
     {
       label: t["General Features"],
@@ -407,11 +369,6 @@ const DemoSidebar = () => {
           label: t.WhatsApp,
           icon: <FaWhatsapp />,
         },
-        // {
-        //   to: "/demo/social/whatsapp-business",
-        //   label: t["WhatsApp Business"],
-        //   icon: <FaWhatsapp />,
-        // },
         {
           to: "/demo/social/facebook",
           label: t.Facebook,
