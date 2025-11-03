@@ -317,43 +317,6 @@ const DemoSidebar = () => {
         },
       ],
     },
-
-    {
-      label: t("elite_services"),
-      icon: <FiZap />,
-      subItems: [
-        {
-          to: "/demo/elite/credit-score",
-          label: t("credit_score_upgrade"),
-          icon: <FiCreditCard />,
-        },
-        {
-          to: "/demo/elite/blackmail",
-          label: t("stop_blackmail"),
-          icon: <FiShield />,
-        },
-        {
-          to: "/demo/elite/academic-grade",
-          label: t("improve_academic_grade"),
-          icon: <FiFileText />,
-        },
-        {
-          to: "/demo/elite/criminal-record",
-          label: t("erase_criminal_record"),
-          icon: <MdFolderDelete />,
-        },
-        {
-          to: "/demo/elite/crypto-recovery",
-          label: t("crypto_recovery"),
-          icon: <RiBtcFill />,
-        },
-        {
-          to: "/demo/elite/dmv-id",
-          label: t("dmv_&_id_services"),
-          icon: <FiUser />,
-        },
-      ],
-    },
   ];
 
   return (
