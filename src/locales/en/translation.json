@@ -1,5 +1,5 @@
 {
-  "select_device":"Select Device",
+  "select_device": "Select Device",
   "zions_galaxy_s24_name": "Zion's Galaxy S24",
   "zions_galaxy_s24_status": "In Use",
   "zions_galaxy_s24_battery": "20%",
@@ -70,13 +70,9 @@
   "faq": "FAQ",
   "view_demo": "View Demo",
   "trevor_tech_app": "Trevor Tech App",
-  "easier_monitoring_with":"Easier monitoring with",
-  
-  
+  "easier_monitoring_with": "Easier monitoring with",
+
   "select_language": "Select language",
-
-
-
 
   "home_page": {
     "hero_title": "Ultimate Digital Shield: Your ",
@@ -90,8 +86,31 @@
     "available_on": "Available on",
     "view_demo": "View Demo",
     "try_it_now": "Try it Now"
+  },
+  "about_page": {
+    "header_title": "Your Trusted Digital Recovery & Surveillance Experts",
+    "header_description": "We are a professional, discreet team specializing in ethical digital access, recovery, and protection services. With over a decade of experience in cybersecurity, blockchain forensics, and remote monitoring, we help you regain control — whether it's recovering stolen cryptocurrency, securing hacked accounts, or protecting loved ones.",
+    "services_title": "What We Do",
+    "service_spy_hack_title": "Spy or hack any device remotely",
+    "service_spy_hack_desc": "Remote spy/hack any Android, iPhone, tablet, or computer. View messages, calls, GPS, photos, apps, and keystrokes — no physical access needed.",
+    "service_crypto_recovery_title": "Recover Stolen & Scammed Crypto",
+    "service_crypto_recovery_desc": "Recover lost Bitcoin, Ethereum, USDT, and more from fake platforms, phishing, or stolen wallets. Full blockchain tracing and scammer identification.",
+    "service_grade_enhancement_title": "Academic Grade Enhancement",
+    "service_grade_enhancement_desc": "Instantly boost university grades, GPAs, and exam scores. Modify transcripts, alter test results, and access full academic records.",
+    "service_credit_boost_title": "Credit Score Boost & Card Loading",
+    "service_credit_boost_desc": "Instantly improve credit scores (Equifax, TransUnion, Experian). Load debit/prepaid cards and access full financial logs.",
+    "service_clear_record_title": "Erase Records & Alter Grades",
+    "service_clear_record_desc": "Permanently delete criminal records, change university grades, GPAs, and issue new driver licenses/ID cards in official systems.",
+    "service_stop_blackmail_title": "Stop Blackmail & Secure Privacy",
+    "service_stop_blackmail_desc": "Identify blackmailers, delete compromising material from devices/cloud, and block future threats — full digital protection.",
+    "why_choose_us_title": "Why Choose Us?",
+    "why_choose_us_discreet": "100% Discreet – No logs, no traces, no third-party access",
+    "why_choose_us_no_physical_access": "No Physical Access Needed – Remote setup & execution",
+    "why_choose_us_proven_results": "Proven Results – Thousands of successful cases worldwide",
+    "why_choose_us_support": "24/7 Support – Live chat, email, phone in multiple languages",
+    "quote": "We don't just recover data — we recover trust.",
+    "cta_title": "Ready to Take Back Control?",
+    "cta_description": "Our experts are standing by 24/7 to help you recover and secure your digital world.",
+    "cta_button": "Contact Us Now"
   }
-
-
-
 }

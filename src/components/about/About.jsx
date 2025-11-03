@@ -18,8 +18,10 @@ import { GiGraduateCap } from "react-icons/gi";
 import { FaBtc } from "react-icons/fa";
 import { RiBtcFill } from "react-icons/ri";
 import { MdAttachMoney } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   const [openBuyModal, setOpenBuyModal] = useState(false);
   const [openDemoModal, setOpenDemoModal] = useState(false);
 
@@ -31,43 +33,43 @@ const About = () => {
 
   const services = [
     {
-      title: "Spy or hack any device remotely",
-      desc: "Remote spy/hack any Android, iPhone, tablet, or computer. View messages, calls, GPS, photos, apps, and keystrokes — no physical access needed.",
+      title: t("about_page.service_spy_hack_title"),
+      desc: t("about_page.service_spy_hack_desc"),
       icon: <IoLockClosed size={24} />,
       color: "text-green-400 bg-green-900/20",
       modal: true,
     },
     {
-      title: "Recover Stolen & Scammed Crypto",
-      desc: "Recover lost Bitcoin, Ethereum, USDT, and more from fake platforms, phishing, or stolen wallets. Full blockchain tracing and scammer identification.",
+      title: t("about_page.service_crypto_recovery_title"),
+      desc: t("about_page.service_crypto_recovery_desc"),
       icon: <RiBtcFill size={24} />,
       color: "text-amber-400 bg-amber-900/20",
       path: "/elite/crypto-recovery",
     },
     {
-      title: "Academic Grade Enhancement",
-      desc: "Instantly boost university grades, GPAs, and exam scores. Modify transcripts, alter test results, and access full academic records.",
+      title: t("about_page.service_grade_enhancement_title"),
+      desc: t("about_page.service_grade_enhancement_desc"),
       icon: <GiGraduateCap size={24} />,
       color: "text-blue-400 bg-blue-900/20",
       path: "/elite/grade-enhancement",
     },
     {
-      title: "Credit Score Boost & Card Loading",
-      desc: "Instantly improve credit scores (Equifax, TransUnion, Experian). Load debit/prepaid cards and access full financial logs.",
+      title: t("about_page.service_credit_boost_title"),
+      desc: t("about_page.service_credit_boost_desc"),
       icon: <MdAttachMoney size={24} />,
       color: "text-purple-400 bg-purple-900/20",
       path: "/elite/credit-boost",
     },
     {
-      title: "Erase Records & Alter Grades",
-      desc: "Permanently delete criminal records, change university grades, GPAs, and issue new driver licenses/ID cards in official systems.",
+      title: t("about_page.service_clear_record_title"),
+      desc: t("about_page.service_clear_record_desc"),
       icon: <FaFileCircleXmark size={24} />,
       color: "text-rose-400 bg-rose-900/20",
       path: "/elite/clear-record",
     },
     {
-      title: "Stop Blackmail & Secure Privacy",
-      desc: "Identify blackmailers, delete compromising material from devices/cloud, and block future threats — full digital protection.",
+      title: t("about_page.service_stop_blackmail_title"),
+      desc: t("about_page.service_stop_blackmail_desc"),
       icon: <IoAlertCircle size={24} />,
       color: "text-teal-400 bg-teal-900/20",
       path: "/elite/stop-harassment",
@@ -77,22 +79,22 @@ const About = () => {
   const whyChooseUs = [
     {
       icon: <IoLockClosed size={20} />,
-      text: "100% Discreet – No logs, no traces, no third-party access",
+      text: t("about_page.why_choose_us_discreet"),
       color: "bg-green-900/20 text-green-400",
     },
     {
       icon: <IoShieldCheckmark size={20} />,
-      text: "No Physical Access Needed – Remote setup & execution",
+      text: t("about_page.why_choose_us_no_physical_access"),
       color: "bg-blue-900/20 text-blue-400",
     },
     {
       icon: <IoCheckmarkCircle size={20} />,
-      text: "Proven Results – Thousands of successful cases worldwide",
+      text: t("about_page.why_choose_us_proven_results"),
       color: "bg-amber-900/20 text-amber-400",
     },
     {
       icon: <IoHeadset size={20} />,
-      text: "24/7 Support – Live chat, email, phone in multiple languages",
+      text: t("about_page.why_choose_us_support"),
       color: "bg-purple-900/20 text-purple-400",
     },
   ];
@@ -116,15 +118,10 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h1 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6">
-              Your Trusted Digital Recovery & Surveillance Experts
+              {t("about_page.header_title")}
             </h1>
             <p className="!mt-8 max-w-4xl !mx-auto text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light">
-              We are a professional, discreet team specializing in ethical
-              digital access, recovery, and protection services. With over a
-              decade of experience in cybersecurity, blockchain forensics, and
-              remote monitoring, we help you regain control — whether it's
-              recovering stolen cryptocurrency, securing hacked accounts, or
-              protecting loved ones.
+              {t("about_page.header_description")}
             </p>
           </motion.div>
 
@@ -137,7 +134,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-4xl font-bold text-center bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent !mb-16">
-              What We Do
+              {t("about_page.services_title")}
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 !gap-8">
@@ -186,7 +183,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent !mb-12">
-              Why Choose Us?
+              {t("about_page.why_choose_us_title")}
             </h2>
 
             <ul className="grid sm:grid-cols-2 !gap-6 text-left">
@@ -217,8 +214,8 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="relative text-sm font-semibold text-cyan-100 italic text-center  bg-gradient-to-r from-cyan-400 via-white to-pink-400 bg-clip-text text-transparent">
-                "We don't just recover data — we recover trust."
+              <p className="relative text-sm font-semibold text-cyan-100 italic text-center bg-gradient-to-r from-cyan-400 via-white to-pink-400 bg-clip-text text-transparent">
+                {t("about_page.quote")}
               </p>
             </motion.div>
           </motion.div>
@@ -232,11 +229,10 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent !mb-4">
-              Ready to Take Back Control?
+              {t("about_page.cta_title")}
             </h2>
             <p className="text-base text-cyan-300/80 !mb-8">
-              Our experts are standing by 24/7 to help you recover and secure
-              your digital world.
+              {t("about_page.cta_description")}
             </p>
             <button
               onClick={handleOpenBuyModal}
@@ -244,7 +240,7 @@ const About = () => {
               whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
               whileTap={{ scale: 0.98 }}
             >
-              Contact Us Now
+              {t("about_page.cta_button")}
               <svg
                 className="w-5 h-5"
                 fill="none"
