@@ -36,7 +36,9 @@ const LanguageSwitcher = () => {
 
   return (
     <div
-      className="!fixed lg:!top-10 !top-22 !right-5 !z-[1000]"
+      className={`!fixed ${
+        isDemoPage ? "lg:!top-5" : "lg:!top-10"
+      }  !top-22 !right-5 !z-[1000]`}
       style={{
         direction:
           i18n.language === "ar" || i18n.language === "ur" ? "rtl" : "ltr",
