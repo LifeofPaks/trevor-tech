@@ -23,7 +23,6 @@ const LanguageSwitcher = () => {
     { code: "pt", name: "Português", flag: "🇵🇹" },
     { code: "de", name: "Deutsch", flag: "🇩🇪" },
     { code: "ja", name: "日本語", flag: "🇯🇵" },
-    { code: "sw", name: "Kiswahili", flag: "🇰🇪" },
     { code: "tr", name: "Türkçe (Turkish)", flag: "🇹🇷" },
     { code: "ko", name: "한국어 (Korean)", flag: "🇰🇷" },
   ];
