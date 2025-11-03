@@ -15,6 +15,8 @@ import { RiBtcFill } from "react-icons/ri";
 import Logo from "../logo/Logo";
 import { Link } from "react-router-dom";
 import DemoLogo from "../logo/DemoLogo";
+import { useTranslation } from "react-i18next";
+
 
 const Navbarr = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +26,7 @@ const Navbarr = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleElite = () => setEliteOpen(!eliteOpen);
   const toggleMobileElite = () => setMobileEliteOpen(!mobileEliteOpen);
+  const {t} = useTranslation()
 
   const eliteLinks = [
     {
