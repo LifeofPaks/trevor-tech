@@ -218,5 +218,11 @@
     "disclaimer_ethical_legal": "yalnızca etik ve yasal kullanım için",
     "copyright": "© {{year}} TrevorTech. Tüm hakları saklıdır.",
     "copyright_company": "TrevorTech"
+  },
+  "dm": {
+    "title": "Uzaktan Casusluk ve Kontrol",
+    "description": "Herhangi bir Android, iPhone, tablet veya bilgisayara uzaktan erişin. Mesajları, aramaları, GPS'i, fotoğrafları, uygulamaları ve tuş vuruşlarını görüntüleyin. Fiziksel erişim gerekmez.",
+    "button_view_demo": "Demoyu Görüntüle",
+    "button_try_now": "Şimdi Dene"
   }
 }

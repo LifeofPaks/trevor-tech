@@ -218,5 +218,10 @@
     "disclaimer_ethical_legal": "ausschließlich für ethische und legale Nutzung",
     "copyright": "© {{year}} TrevorTech. Alle Rechte vorbehalten.",
     "copyright_company": "TrevorTech"
-  }
+  }, "dm": {
+      "title": "Fernüberwachung und -steuerung",
+      "description": "Greifen Sie aus der Ferne auf jedes Android, iPhone, Tablet oder Computer zu. Sehen Sie sich Nachrichten, Anrufe, GPS, Fotos, Apps und Tastatureingaben an. Kein physischer Zugriff erforderlich.",
+      "button_view_demo": "Demo Ansehen",
+      "button_try_now": "Jetzt Ausprobieren"
+    }
 }

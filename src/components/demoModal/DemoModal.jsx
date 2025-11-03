@@ -3,12 +3,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FiX } from "react-icons/fi";
 import { Modal } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const DemoModal = ({
   openDemoModal,
   onCloseDemoModal,
   handleOpenDemoModal, // Opens Buy Modal
 }) => {
+  const { t } = useTranslation();
+
   return (
     <AnimatePresence>
       <Modal open={openDemoModal} onClose={onCloseDemoModal}>
@@ -54,7 +57,7 @@ const DemoModal = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Remote Spy & Control
+              {t("dm.title")}
             </motion.h5>
 
             {/* Description */}
@@ -64,28 +67,26 @@ const DemoModal = ({
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Remotely access any Android, iPhone, tablet, or computer . View{" "}
-              messages, calls, GPS, photos, apps, and keystrokes . No physical
-              access needed .
+              {t("dm.description")}
             </motion.p>
 
             {/* Buttons */}
             <motion.div
-              className="flex flex-col sm:flex-row items-center !gap-4 justify-center"
+              className="flex flex-col items-center !gap-4 justify-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
               <Link
                 to="/demo"
-                className="w-full sm:w-auto"
+                className="w-full"
                 onClick={onCloseDemoModal}
               >
                 <motion.button
-                  className="w-full sm:w-auto min-w-[140px] border !border-cyan-500/60 hover:bg-cyan-900/30 text-cyan-300 backdrop-blur-sm font-semibold !px-6 !py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:text-cyan-100"
+                  className="w-full  border !border-cyan-500/60 hover:bg-cyan-900/30 text-cyan-300 backdrop-blur-sm font-semibold !px-6 !py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:text-cyan-100"
                   whileHover={{ boxShadow: "0 0 20px rgba(0, 255, 255, 0.4)" }}
                 >
-                  View Demo
+                  {t("dm.button_view_demo")}
                 </motion.button>
               </Link>
 
@@ -94,11 +95,11 @@ const DemoModal = ({
                   handleOpenDemoModal();
                   onCloseDemoModal();
                 }}
-                className="w-full sm:w-auto min-w-[140px] bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-6 !py-3 rounded-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+                className="w-full  bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white font-semibold !px-6 !py-3 rounded-xl shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
                 whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
                 whileTap={{ scale: 0.98 }}
               >
-                Try it Now
+                {t("dm.button_try_now")}
               </motion.button>
             </motion.div>
           </motion.div>

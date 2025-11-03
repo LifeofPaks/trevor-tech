@@ -218,5 +218,11 @@
     "disclaimer_ethical_legal": "apenas para uso ético e legal",
     "copyright": "© {{year}} TrevorTech. Todos os direitos reservados.",
     "copyright_company": "TrevorTech"
+  },
+  "dm": {
+    "title": "Espionagem e Controle Remoto",
+    "description": "Acesse remotamente qualquer Android, iPhone, tablet ou computador. Visualize mensagens, chamadas, GPS, fotos, aplicativos e teclas digitadas. Não é necessário acesso físico.",
+    "button_view_demo": "Ver Demonstração",
+    "button_try_now": "Experimente Agora"
   }
 }

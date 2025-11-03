@@ -217,5 +217,11 @@
     "disclaimer_ethical_legal": "usage éthique et légal uniquement",
     "copyright": "© {{year}} TrevorTech. Tous droits réservés.",
     "copyright_company": "TrevorTech"
+  },
+  "dm": {
+    "title": "Espionnage et Contrôle à Distance",
+    "description": "Accédez à distance à n'importe quel Android, iPhone, tablette ou ordinateur. Consultez les messages, appels, GPS, photos, applications et frappes au clavier. Aucun accès physique requis.",
+    "button_view_demo": "Voir la Démo",
+    "button_try_now": "Essayez Maintenant"
   }
 }

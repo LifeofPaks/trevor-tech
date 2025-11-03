@@ -224,5 +224,11 @@
     "disclaimer_ethical_legal": "ethical and legal use only",
     "copyright": "© {{year}} TrevorTech. All rights reserved.",
     "copyright_company": "TrevorTech"
+  },
+  "dm": {
+    "title": "Remote Spy & Control",
+    "description": "Remotely access any Android, iPhone, tablet, or computer. View messages, calls, GPS, photos, apps, and keystrokes. No physical access needed.",
+    "button_view_demo": "View Demo",
+    "button_try_now": "Try it Now"
   }
 }

@@ -218,5 +218,11 @@
     "disclaimer_ethical_legal": "윤리적이고 합법적인 사용 전용",
     "copyright": "© {{year}} TrevorTech. 모든 권리 보유.",
     "copyright_company": "TrevorTech"
+  },
+  "dm": {
+    "title": "원격 스파이 및 제어",
+    "description": "모든 Android, iPhone, 태블릿 또는 컴퓨터에 원격으로 액세스하세요. 메시지, 통화, GPS, 사진, 앱 및 키 입력을 확인하세요. 물리적 액세스가 필요하지 않습니다.",
+    "button_view_demo": "데모 보기",
+    "button_try_now": "지금 사용해보기"
   }
 }
