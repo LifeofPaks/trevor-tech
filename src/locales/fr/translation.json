@@ -151,5 +151,29 @@
     "subheader_view_demo": "Voir la démo",
     "button_try_now": "Essayez maintenant",
     "button_view_demo": "Voir la démo"
+  },
+  "tm": {
+    "header_title": "Ce que disent nos clients",
+    "header_description": "Découvrez les témoignages des personnes qui ont fait confiance à Trevor Tech pour récupérer ce qui compte le plus.",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Tech a sauvé les données de mon entreprise après un crash système critique. Leur professionnalisme et leur rapidité étaient inégalés !",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "Service exceptionnel ! Le processus de récupération était transparent, et j’ai récupéré tous mes fichiers en toute sécurité.",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "Je pensais avoir perdu des années de travail, mais Trevor Tech a tout récupéré. Je recommande vivement leur équipe !",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "Support rapide, fiable et amical. Ils m’ont tenu informé tout au long du processus et ont livré parfaitement.",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "Je ne peux pas assez remercier Trevor Tech. Mes photos et documents ont été restaurés avec un soin et une précision remarquables.",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "Leur équipe a dépassé mes attentes pour récupérer des fichiers critiques. Le processus était fluide et sans stress.",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "Excellente expérience ! Ils ont communiqué clairement, travaillé rapidement et manipulé mes données avec grand soin.",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "J’ai été stupéfait par la rapidité avec laquelle ils ont tout récupéré. Vraiment worth it — de vrais professionnels !",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "J’ai recommandé Trevor Tech à mes collègues. Leur service de récupération de données est tout simplement exceptionnel."
   }
 }

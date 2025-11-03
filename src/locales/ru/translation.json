@@ -152,5 +152,29 @@
     "subheader_view_demo": "Посмотреть демо",
     "button_try_now": "Попробовать сейчас",
     "button_view_demo": "Посмотреть демо"
+  },
+  "tm": {
+    "header_title": "Что говорят наши клиенты",
+    "header_description": "Узнайте мнение людей, которые доверились Trevor Tech для восстановления самого важного.",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Tech спасли данные моего бизнеса после критического сбоя системы. Их профессионализм и скорость не имеют равных!",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "Исключительный сервис! Процесс восстановления был прозрачным, и я безопасно получил все файлы обратно.",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "Я думал, что потерял годы работы, но Trevor Tech вернули все. Настоятельно рекомендую их команду!",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "Быстрая, надежная и дружелюбная поддержка. Они держали меня в курсе на протяжении всего процесса и выполнили все идеально.",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "Я не могу достаточно поблагодарить Trevor Tech. Мои фотографии и документы были восстановлены с удивительной заботой и точностью.",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "Их команда сделала все возможное для восстановления критически важных файлов. Процесс был гладким и без стресса.",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "Отличный опыт! Они ясно общались, быстро работали и бережно обращались с моими данными.",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "Я был поражен, как быстро они восстановили все. Полностью оправдано — настоящие профессионалы!",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "Я рекомендовал Trevor Tech своим коллегам. Их услуга восстановления данных просто выдающаяся."
   }
 }

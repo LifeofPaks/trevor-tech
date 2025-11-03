@@ -152,5 +152,29 @@
     "subheader_view_demo": "Ver demonstração",
     "button_try_now": "Experimente agora",
     "button_view_demo": "Ver demonstração"
+  },
+  "tm": {
+    "header_title": "O que nossos clientes dizem",
+    "header_description": "Ouça as pessoas que confiaram na Trevor Tech para recuperar o que mais importa.",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "A Trevor Tech salvou os dados do meu negócio após uma falha crítica do sistema. Seu profissionalismo e rapidez foram incomparáveis!",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "Serviço excepcional! O processo de recuperação foi transparente, e eu recuperei todos os arquivos com segurança.",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "Pensei que tinha perdido anos de trabalho, mas a Trevor Tech recuperou tudo. Recomendo fortemente sua equipe!",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "Suporte rápido, confiável e amigável. Eles me mantiveram atualizado durante todo o processo e entregaram perfeitamente.",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "Não posso agradecer o suficiente à Trevor Tech. Minhas fotos e documentos foram restaurados com cuidado e precisão incríveis.",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "Sua equipe foi além para recuperar arquivos críticos. O processo foi tranquilo e sem estresse.",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "Excelente experiência! Eles se comunicaram claramente, trabalharam rápido e lidaram com meus dados com grande cuidado.",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "Fiquei impressionado com a rapidez com que eles recuperaram tudo. Valeu totalmente a pena — verdadeiros profissionais!",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "Recomendei a Trevor Tech aos meus colegas. Seu serviço de recuperação de dados é simplesmente excepcional."
   }
 }

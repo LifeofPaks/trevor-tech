@@ -152,5 +152,29 @@
     "subheader_view_demo": "Demo ansehen",
     "button_try_now": "Jetzt ausprobieren",
     "button_view_demo": "Demo ansehen"
+  },
+  "tm": {
+    "header_title": "Was unsere Kunden sagen",
+    "header_description": "Hören Sie von den Menschen, die Trevor Tech vertraut haben, um das Wichtigste wiederherzustellen.",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Tech hat meine Geschäftsdaten nach einem kritischen Systemabsturz gerettet. Ihre Professionalität und Geschwindigkeit waren unübertroffen!",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "Außergewöhnlicher Service! Der Wiederherstellungsprozess war transparent, und ich habe jede einzelne Datei sicher zurückbekommen.",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "Ich dachte, ich hätte jahrelange Arbeit verloren, aber Trevor Tech hat alles zurückgebracht. Ich empfehle ihr Team sehr!",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "Schneller, zuverlässiger und freundlicher Support. Sie haben mich während des gesamten Prozesses auf dem Laufenden gehalten und perfekt geliefert.",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "Ich kann Trevor Tech nicht genug danken. Meine Fotos und Dokumente wurden mit erstaunlicher Sorgfalt und Präzision wiederhergestellt.",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "Ihr Team hat alles gegeben, um kritische Dateien wiederherzustellen. Der Prozess war reibungslos und stressfrei.",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "Hervorragende Erfahrung! Sie haben klar kommuniziert, schnell gearbeitet und meine Daten mit großer Sorgfalt behandelt.",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "Ich war erstaunt, wie schnell sie alles wiederhergestellt haben. Absolut lohnenswert — echte Profis!",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "Ich habe Trevor Tech meinen Kollegen empfohlen. Ihr Datensicherungsservice ist einfach herausragend."
   }
 }

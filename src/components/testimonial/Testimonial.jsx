@@ -1,65 +1,59 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "tm.testimonial_1_name",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
-    review:
-      "Trevor Tech saved my business data after a critical system crash. Their professionalism and speed were unmatched!",
+    review: "tm.testimonial_1_review",
   },
   {
-    name: "David Kim",
+    name: "tm.testimonial_2_name",
     image: "https://randomuser.me/api/portraits/men/46.jpg",
-    review:
-      "Exceptional service! The recovery process was transparent, and I got every single file back safely.",
+    review: "tm.testimonial_2_review",
   },
   {
-    name: "Maria Lopez",
+    name: "tm.testimonial_3_name",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
-    review:
-      "I thought I had lost years of work, but Trevor Tech brought it all back. Highly recommend their team!",
+    review: "tm.testimonial_3_review",
   },
   {
-    name: "James Carter",
+    name: "tm.testimonial_4_name",
     image: "https://randomuser.me/api/portraits/men/52.jpg",
-    review:
-      "Fast, reliable, and friendly support. They kept me updated throughout the process and delivered perfectly.",
+    review: "tm.testimonial_4_review",
   },
   {
-    name: "Olivia Brown",
+    name: "tm.testimonial_5_name",
     image: "https://randomuser.me/api/portraits/women/55.jpg",
-    review:
-      "I can’t thank Trevor Tech enough. My photos and documents were restored with amazing care and precision.",
+    review: "tm.testimonial_5_review",
   },
   {
-    name: "Michael Chen",
+    name: "tm.testimonial_6_name",
     image: "https://randomuser.me/api/portraits/men/64.jpg",
-    review:
-      "Their team went above and beyond to recover critical files. The process was smooth and stress-free.",
+    review: "tm.testimonial_6_review",
   },
   {
-    name: "Aisha Bello",
+    name: "tm.testimonial_7_name",
     image: "https://randomuser.me/api/portraits/women/70.jpg",
-    review:
-      "Excellent experience! They communicated clearly, worked fast, and handled my data with great care.",
+    review: "tm.testimonial_7_review",
   },
   {
-    name: "Robert Evans",
+    name: "tm.testimonial_8_name",
     image: "https://randomuser.me/api/portraits/men/74.jpg",
-    review:
-      "I was amazed by how fast they recovered everything. Totally worth it — real professionals!",
+    review: "tm.testimonial_8_review",
   },
   {
-    name: "Emily Davis",
+    name: "tm.testimonial_9_name",
     image: "https://randomuser.me/api/portraits/women/32.jpg",
-    review:
-      "I’ve recommended Trevor Tech to my colleagues. Their data recovery service is simply outstanding.",
+    review: "tm.testimonial_9_review",
   },
 ];
 
 const Testimonial = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       className="relative !py-20 lg:!py-28 overflow-hidden"
@@ -78,12 +72,10 @@ const Testimonial = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-[1.6rem] md:text-4xl lg:text-[2.6rem] max-w-[700px] !mx-auto font-extrabold bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-4">
-            What Our Clients Say
+            {t("tm.header_title")}
           </h2>
           <p className="max-w-4xl !mx-auto text-[14px] sm:text-xl text-cyan-200/80 leading-relaxed font-light !mt-6">
-            Hear from the people who’ve trusted{" "}
-            <span className="text-cyan-300 font-semibold">Trevor Tech</span> to
-            recover what matters most.
+            {t("tm.header_description")}
           </p>
         </motion.div>
 
@@ -109,14 +101,14 @@ const Testimonial = () => {
                   <div className="absolute -inset-2 bg-gradient-to-r from-cyan-500/40 via-teal-500/30 to-green-500/30 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <img
                     src={client.image}
-                    alt={client.name}
+                    alt={t("tm.image_alt", { name: t(client.name) })}
                     className="relative w-16 h-16 rounded-full object-cover border-2 border-cyan-500/50 shadow-lg"
                   />
                 </motion.div>
 
                 {/* Name */}
                 <h3 className="text-lg font-bold text-cyan-100 !mb-1 group-hover:text-cyan-50 transition">
-                  {client.name}
+                  {t(client.name)}
                 </h3>
 
                 {/* Stars */}
@@ -139,7 +131,7 @@ const Testimonial = () => {
 
                 {/* Review */}
                 <p className="text-sm sm:text-base text-cyan-300/80 leading-relaxed italic">
-                  “{client.review}”
+                  “{t(client.review)}”
                 </p>
               </div>
             </motion.div>

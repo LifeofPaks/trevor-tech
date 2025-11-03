@@ -152,5 +152,29 @@
     "subheader_view_demo": "Demoyu Görüntüle",
     "button_try_now": "Şimdi Dene",
     "button_view_demo": "Demoyu Görüntüle"
+  },
+  "tm": {
+    "header_title": "Müşterilerimiz ne diyor",
+    "header_description": "Trevor Tech’e en önemli şeyleri kurtarmak için güvenen insanların yorumlarını dinleyin.",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Tech, kritik bir sistem çökmesinden sonra iş verilerimi kurtardı. Profesyonellikleri ve hızları eşsizdi!",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "Olağanüstü hizmet! Kurtarma süreci şeffaftı ve tüm dosyaları güvenli bir şekilde geri aldım.",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "Yıllarca süren çalışmamı kaybettiğimi düşünmüştüm, ama Trevor Tech hepsini geri getirdi. Ekibini şiddetle tavsiye ederim!",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "Hızlı, güvenilir ve samimi destek. Sürecin her aşamasında beni bilgilendirdiler ve mükemmel bir şekilde teslim ettiler.",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "Trevor Tech’e yeterince teşekkür edemem. Fotoğraflarım ve belgelerim inanılmaz bir özen ve hassasiyetle kurtarıldı.",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "Ekipleri, kritik dosyaları kurtarmak için fazlasıyla çaba gösterdi. Süreç pürüzsüz ve stressizdi.",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "Mükemmel bir deneyim! Açıkça iletişim kurdular, hızlı çalıştılar ve verilerimi büyük bir özenle ele aldılar.",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "Her şeyi ne kadar hızlı kurtardıkları beni şaşırttı. Tamamen değdi — gerçek profesyoneller!",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "Trevor Tech’i meslektaşlarıma önerdim. Veri kurtarma hizmetleri sadece olağanüstü."
   }
 }

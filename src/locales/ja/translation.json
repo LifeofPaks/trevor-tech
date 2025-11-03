@@ -152,5 +152,30 @@
     "subheader_view_demo": "デモを見る",
     "button_try_now": "今すぐ試す",
     "button_view_demo": "デモを見る"
+  },
+
+  "tm": {
+    "header_title": "お客様の声",
+    "header_description": "Trevor Techに最も大切なものを回復することを信頼した人々の声を聞く。",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Techは、重大なシステムクラッシュ後に私のビジネスデータを救いました。彼らのプロフェッショナリズムとスピードは比類のないものでした！",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "卓越したサービス！回復プロセスは透明で、すべてのファイルを安全に取り戻しました。",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "何年もの仕事が失われたと思っていましたが、Trevor Techがすべてを取り戻してくれました。彼らのチームを強くお勧めします！",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "迅速で信頼性が高く、フレンドリーなサポート。プロセス全体で更新情報を提供し、完璧に配信しました。",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "Trevor Techに感謝しきれません。私の写真と文書は驚くべき注意と正確さで復元されました。",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "彼らのチームは重要なファイルを回復するために全力を尽くしました。プロセスはスムーズでストレスフリーでした。",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "素晴らしい体験！彼らは明確にコミュニケーションを取り、迅速に作業し、私のデータを丁寧に扱いました。",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "彼らがどれだけ早くすべてを回復したかに驚きました。完全に価値あり — 本物のプロフェッショナル！",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "同僚にTrevor Techをお勧めしました。彼らのデータ回復サービスは単に優れています。"
   }
 }

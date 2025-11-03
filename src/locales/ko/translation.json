@@ -152,5 +152,29 @@
     "subheader_view_demo": "데모 보기",
     "button_try_now": "지금 시도",
     "button_view_demo": "데모 보기"
+  },
+  "tm": {
+    "header_title": "고객들이 말하는 것",
+    "header_description": "Trevor Tech에 가장 중요한 것을 복구하도록 신뢰한 사람들의 이야기를 들어보세요.",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Tech는 치명적인 시스템 충돌 후 제 비즈니스 데이터를 구했습니다. 그들의 전문성과 속도는 타의 추종을 불허했습니다!",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "탁월한 서비스! 복구 과정이 투명했고, 모든 파일을 안전하게 되돌려 받았습니다.",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "수년간의 작업을 잃었다고 생각했지만, Trevor Tech가 모두 복구해 주었습니다. 그들의 팀을 강력히 추천합니다!",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "빠르고 신뢰할 수 있으며 친절한 지원. 과정 전반에 걸쳐 나를 업데이트해 주었고 완벽하게 전달했습니다.",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "Trevor Tech에 얼마나 감사해야 할지 모릅니다. 제 사진과 문서가 놀라운 주의와 정밀함으로 복구되었습니다.",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "그들의 팀은 중요한 파일을 복구하기 위해 최선을 다했습니다. 과정은 매끄럽고 스트레스 없이 진행되었습니다.",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "훌륭한 경험! 그들은 명확하게 소통하고, 빠르게 일하며, 제 데이터를 큰 주의로 다루었습니다.",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "그들이 얼마나 빨리 모든 것을 복구했는지 놀라웠습니다. 완전히 가치 있었습니다 — 진정한 전문가들!",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "동료들에게 Trevor Tech를 추천했습니다. 그들의 데이터 복구 서비스는 단순히 뛰어납니다."
   }
 }

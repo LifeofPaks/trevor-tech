@@ -151,5 +151,29 @@
     "subheader_view_demo": "ডেমো দেখুন",
     "button_try_now": "এখনই চেষ্টা করুন",
     "button_view_demo": "ডেমো দেখুন"
+  },
+  "tm": {
+    "header_title": "আমাদের ক্লায়েন্টরা কী বলেন",
+    "header_description": "যারা Trevor Tech-এর উপর ভরসা করে তাদের কাছ থেকে শুনুন যারা সবচেয়ে গুরুত্বপূর্ণ জিনিস পুনরুদ্ধার করেছে।",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Tech একটি গুরুত্বপূর্ণ সিস্টেম ক্র্যাশের পর আমার ব্যবসার ডেটা বাঁচিয়েছে। তাদের পেশাদারিত্ব এবং গতি অতুলনীয় ছিল!",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "ব্যতিক্রমী সেবা! পুনরুদ্ধার প্রক্রিয়া স্বচ্ছ ছিল, এবং আমি প্রতিটি ফাইল নিরাপদে ফিরে পেয়েছি।",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "আমি ভেবেছিলাম আমি বছরের পর বছর কাজ হারিয়েছি, কিন্তু Trevor Tech সব ফিরিয়ে এনেছে। তাদের দলকে অত্যন্ত সুপারিশ করি!",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "দ্রুত, নির্ভরযোগ্য এবং বন্ধুত্বপূর্ণ সমর্থন। তারা আমাকে প্রক্রিয়ার মাধ্যমে আপডেট রেখেছে এবং নিখুঁতভাবে ডেলিভার করেছে।",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "আমি Trevor Tech-কে যথেষ্ট ধন্যবাদ দিতে পারি না। আমার ছবি এবং নথিগুলি অসাধারণ যত্ন এবং নির্ভুলতার সাথে পুনরুদ্ধার করা হয়েছে।",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "তাদের দল গুরুত্বপূর্ণ ফাইল পুনরুদ্ধারের জন্য অতিরিক্ত প্রচেষ্টা করেছে। প্রক্রিয়াটি মসৃণ এবং চাপমুক্ত ছিল।",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "চমৎকার অভিজ্ঞতা! তারা পরিষ্কারভাবে যোগাযোগ করেছে, দ্রুত কাজ করেছে এবং আমার ডেটা অত্যন্ত যত্ন সহকারে পরিচালনা করেছে।",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "তারা যে গতিতে সবকিছু পুনরুদ্ধার করেছে তাতে আমি অবাক হয়েছি। সম্পূর্ণভাবে মূল্যবান — প্রকৃত পেশাদার!",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "আমি আমার সহকর্মীদের কাছে Trevor Tech সুপারিশ করেছি। তাদের ডেটা পুনরুদ্ধার পরিষেবা কেবল অসাধারণ।"
   }
 }

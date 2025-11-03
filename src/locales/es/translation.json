@@ -151,5 +151,29 @@
     "subheader_view_demo": "Ver demostración",
     "button_try_now": "Pruébelo ahora",
     "button_view_demo": "Ver demostración"
+  },
+  "tm": {
+    "header_title": "Qué dicen nuestros clientes",
+    "header_description": "Escucha a las personas que han confiado en Trevor Tech para recuperar lo que más importa.",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Tech salvó los datos de mi negocio tras un fallo crítico del sistema. ¡Su profesionalismo y rapidez fueron incomparables!",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "¡Servicio excepcional! El proceso de recuperación fue transparente, y recuperé cada archivo de forma segura.",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "Pensé que había perdido años de trabajo, pero Trevor Tech lo recuperó todo. ¡Recomiendo altamente a su equipo!",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "Soporte rápido, confiable y amigable. Me mantuvieron informado durante todo el proceso y entregaron perfectamente.",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "No puedo agradecer suficiente a Trevor Tech. Mis fotos y documentos fueron restaurados con un cuidado y precisión increíbles.",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "Su equipo hizo un esfuerzo extraordinario para recuperar archivos críticos. El proceso fue fluido y sin estrés.",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "¡Excelente experiencia! Comunicaron claramente, trabajaron rápido y manejaron mis datos con gran cuidado.",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "Me sorprendió lo rápido que recuperaron todo. ¡Totalmente vale la pena, verdaderos profesionales!",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "He recomendado Trevor Tech a mis colegas. Su servicio de recuperación de datos es simplemente excepcional."
   }
 }
