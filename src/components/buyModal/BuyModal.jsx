@@ -113,8 +113,7 @@ const BuyModal = ({ open, handleClose }) => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              Response within{" "}
-              <strong className="text-cyan-200">5 minutes</strong> • 24/7
+              Response within 5 minutes • 24/7
               Support
             </motion.p>
           </motion.div>
