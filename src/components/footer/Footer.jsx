@@ -16,27 +16,33 @@ import Image4 from "../../assets/discover.svg";
 import Image5 from "../../assets/direct.svg";
 import Image7 from "../../assets/giro.svg";
 import DemoLogo from "../logo/DemoLogo";
+import { useTranslation } from "react-i18next";
+
+const services = [
+  "ft.service_crypto_recovery",
+  "ft.service_phone_spy_monitoring",
+  "ft.service_gps_location_tracking",
+  "ft.service_credit_score_boost",
+  "ft.service_grade_record_alteration",
+  "ft.service_blackmail_removal",
+  "ft.service_email_account_recovery",
+  "ft.service_device_cloning",
+];
+
+const resources = ["ft.resource_how_it_works", "ft.resource_success_stories"];
+
+const support = [
+  "ft.support_contact_us",
+  "ft.support_center",
+  "ft.support_faqs",
+];
 
 const Footer = () => {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
-  const services = [
-    "Crypto Recovery",
-    "Phone Spy & Monitoring",
-    "GPS Location Tracking",
-    "Credit Score Boost",
-    "Grade & Record Alteration",
-    "Blackmail Removal",
-    "Email & Account Recovery",
-    "Device Cloning",
-  ];
-
-  const resources = ["How It Works", "Success Stories"];
-
-  const support = ["Contact Us", "Support Center", "FAQs"];
 
   return (
     <>
@@ -57,8 +63,7 @@ const Footer = () => {
             >
               <DemoLogo />
               <p className="text-sm text-cyan-300/80 leading-relaxed !mt-6">
-                Your trusted partner in digital recovery, surveillance, and
-                privacy protection.
+                {t("ft.brand_description")}
               </p>
               <button
                 onClick={handleOpen}
@@ -66,7 +71,7 @@ const Footer = () => {
                 whileHover={{ boxShadow: "0 0 30px rgba(0, 255, 255, 0.6)" }}
                 whileTap={{ scale: 0.98 }}
               >
-                Get Started
+                {t("ft.brand_button")}
               </button>
             </motion.div>
 
@@ -78,7 +83,7 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <h4 className="font-bold text-cyan-100 !mb-5 text-lg">
-                Our Services
+                {t("ft.services_title")}
               </h4>
               <ul className="!space-y-3">
                 {services.map((item, i) => (
@@ -93,7 +98,7 @@ const Footer = () => {
                       href="#services"
                       className="text-sm text-cyan-300 hover:text-cyan-100 transition-colors duration-200 flex items-center group"
                     >
-                      {item}
+                      {t(item)}
                     </a>
                   </motion.li>
                 ))}
@@ -108,7 +113,7 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <h4 className="font-bold text-cyan-100 !mb-5 text-lg">
-                Resources
+                {t("ft.resources_title")}
               </h4>
               <ul className="!space-y-3">
                 {resources.map((item, i) => (
@@ -123,7 +128,7 @@ const Footer = () => {
                       href="#about"
                       className="text-sm text-cyan-300 hover:text-cyan-100 transition-colors duration-200 flex items-center group"
                     >
-                      {item}
+                      {t(item)}
                     </a>
                   </motion.li>
                 ))}
@@ -137,7 +142,9 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h4 className="font-bold text-cyan-100 !mb-5 text-lg">Support</h4>
+              <h4 className="font-bold text-cyan-100 !mb-5 text-lg">
+                {t("ft.support_title")}
+              </h4>
               <ul className="!space-y-3 !mb-8">
                 {support.map((item, i) => (
                   <motion.li
@@ -151,7 +158,7 @@ const Footer = () => {
                       href="#about"
                       className="text-sm text-cyan-300 hover:text-cyan-100 transition-colors duration-200 flex items-center group"
                     >
-                      {item}
+                      {t(item)}
                     </a>
                   </motion.li>
                 ))}
@@ -160,7 +167,7 @@ const Footer = () => {
               {/* Social Icons */}
               <div>
                 <p className="text-sm font-bold text-cyan-100 !mb-4">
-                  Follow Us
+                  {t("ft.social_title")}
                 </p>
                 <div className="flex !space-x-4">
                   {[
@@ -182,7 +189,6 @@ const Footer = () => {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      // transition={{ delay: 0.4 + i * 0.05 }}
                     >
                       <Icon size={16} className="drop-shadow-glow" />
                     </motion.a>
@@ -216,7 +222,7 @@ const Footer = () => {
                   <motion.img
                     key={i}
                     src={img}
-                    alt="payment"
+                    alt={t("ft.payment_alt")}
                     className="w-14 h-auto opacity-70 hover:opacity-100 transition-opacity"
                     whileHover={{ scale: 1.1 }}
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -242,19 +248,18 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              {["Privacy Policy", "Cookie Policy", "Terms & Conditions"].map(
-                (text, i) => (
-                  <React.Fragment key={text}>
-                    {i > 0 && <span className="text-cyan-500">•</span>}
-                    <a
-                      href="#"
-                      className="hover:text-cyan-100 transition-colors"
-                    >
-                      {text}
-                    </a>
-                  </React.Fragment>
-                )
-              )}
+              {[
+                "ft.legal_privacy_policy",
+                "ft.legal_cookie_policy",
+                "ft.legal_terms_conditions",
+              ].map((text, i) => (
+                <React.Fragment key={text}>
+                  {i > 0 && <span className="text-cyan-500">•</span>}
+                  <a href="#" className="hover:text-cyan-100 transition-colors">
+                    {t(text)}
+                  </a>
+                </React.Fragment>
+              ))}
             </motion.div>
           </div>
 
@@ -266,15 +271,17 @@ const Footer = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            <p className="font-bold text-cyan-200 !mb-1">LEGAL DISCLAIMER</p>
-            <p>
-              All services are intended for{" "}
-              <strong>ethical and legal use only</strong>. Installing monitoring
-              software on a device you do not own or have proper authorization
-              to monitor may violate local, state, or federal laws. You take
-              full responsibility for determining that you have the right to
-              monitor the device. We shall not be responsible for any misuse.
+            <p className="font-bold text-cyan-200 !mb-1">
+              {t("ft.disclaimer_title")}
             </p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t("ft.disclaimer_description").replace(
+                  t("ft.disclaimer_ethical_legal"),
+                  `<strong>${t("ft.disclaimer_ethical_legal")}</strong>`
+                ),
+              }}
+            />
           </motion.div>
 
           {/* Copyright */}
@@ -285,9 +292,18 @@ const Footer = () => {
             transition={{ duration: 0.8, delay: 1 }}
             viewport={{ once: true }}
           >
-            © {new Date().getFullYear()}{" "}
-            <span className="font-bold text-cyan-300">TrevorTech</span>. All
-            rights reserved.
+            <span
+              dangerouslySetInnerHTML={{
+                __html: t("ft.copyright", {
+                  year: new Date().getFullYear(),
+                }).replace(
+                  t("ft.copyright_company"),
+                  `<span className="font-bold text-cyan-300">${t(
+                    "ft.copyright_company"
+                  )}</span>`
+                ),
+              }}
+            />
           </motion.div>
         </div>
       </footer>

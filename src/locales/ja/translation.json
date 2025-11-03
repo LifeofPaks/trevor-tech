@@ -189,5 +189,34 @@
     "faq_3_answer": "はい、重要なデータ損失状況に対して、同日分析を行う緊急復旧サービスを提供しています。",
     "faq_4_question": "どの種類のデバイスからデータを復旧できますか？",
     "faq_4_answer": "ラップトップ、デスクトップ、SSD、HDD、RAIDシステム、モバイルデバイスからデータを復旧します。"
-  }
+  },  "ft": {
+      "brand_description": "デジタルリカバリー、監視、プライバシー保護における信頼のパートナー。",
+      "brand_button": "始める",
+      "services_title": "当社のサービス",
+      "service_crypto_recovery": "暗号通貨リカバリー",
+      "service_phone_spy_monitoring": "電話スパイ＆監視",
+      "service_gps_location_tracking": "GPS位置追跡",
+      "service_credit_score_boost": "クレジットスコア向上",
+      "service_grade_record_alteration": "成績＆記録変更",
+      "service_blackmail_removal": "恐喝除去",
+      "service_email_account_recovery": "メール＆アカウントリカバリー",
+      "service_device_cloning": "デバイスクローニング",
+      "resources_title": "リソース",
+      "resource_how_it_works": "仕組み",
+      "resource_success_stories": "成功事例",
+      "support_title": "サポート",
+      "support_contact_us": "お問い合わせ",
+      "support_center": "サポートセンター",
+      "support_faqs": "よくある質問",
+      "social_title": "フォローする",
+      "payment_alt": "支払い",
+      "legal_privacy_policy": "プライバシーポリシー",
+      "legal_cookie_policy": "クッキーポリシー",
+      "legal_terms_conditions": "利用規約",
+      "disclaimer_title": "法的免責事項",
+      "disclaimer_description": "すべてのサービスは倫理的かつ合法的な使用のみを目的としています。所有していない、または適切な許可なく監視ソフトウェアをデバイスにインストールすることは、地方、州、または連邦法に違反する可能性があります。デバイスを監視する権利があるかどうかを判断する責任は完全にあなたにあります。いかなる誤使用についても当社は責任を負いません。",
+      "disclaimer_ethical_legal": "倫理的かつ合法的な使用のみ",
+      "copyright": "© {{year}} TrevorTech。すべての権利を保有。",
+      "copyright_company": "TrevorTech"
+    }
 }
