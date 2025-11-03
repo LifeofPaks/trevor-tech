@@ -17,7 +17,6 @@ const LanguageSwitcher = () => {
     { code: "es", name: "Español", flag: "🇪🇸" },
     { code: "fr", name: "Français", flag: "🇫🇷" },
     { code: "ar", name: "العربية", flag: "🇸🇦" },
-    { code: "bn", name: "বাংলা (Bengali)", flag: "🇧🇩" },
     { code: "ru", name: "Русский (Russian)", flag: "🇷🇺" },
     { code: "pt", name: "Português", flag: "🇵🇹" },
     { code: "de", name: "Deutsch", flag: "🇩🇪" },
