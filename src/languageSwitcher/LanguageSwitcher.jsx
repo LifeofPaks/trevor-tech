@@ -48,7 +48,7 @@ const LanguageSwitcher = () => {
         {/* Toggle Button */}
         <button
           onClick={() => setOpen(!open)}
-          className={`!flex !items-center !justify-between !gap-2 !px-3 !py-2 !text-[0.8rem] !font-medium lg:w-[140px] w-[55px]
+          className={`!flex !items-center !justify-between !gap-2 !px-3 !py-2 !text-[0.8rem] !font-medium lg:w-[140px] 
             !rounded-xl !border !backdrop-blur-md 
             !transition-all !duration-300
             ${
@@ -62,7 +62,7 @@ const LanguageSwitcher = () => {
               {currentLang.flag}
             </span>
 
-            <span className="!text-[12px] !truncate !max-w-[70px] hidden lg:block">
+            <span className="!text-[12px] !truncate !max-w-[70px]">
               {currentLang.name.length > 15
                 ? currentLang.name.slice(0, 15) + "..."
                 : currentLang.name}
@@ -104,7 +104,7 @@ const LanguageSwitcher = () => {
                 }`}
               >
                 <span
-                  className={`!text-[12px] !font-semibold  flex items-center gap-1
+                  className={`!text-[11px] !font-semibold  flex items-center gap-1
                 ${isDemoPage ? "text-gray-500" : "text-white"}`}
                 >
                   <CiGlobe /> {t("select_language")}
