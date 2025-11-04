@@ -30,92 +30,93 @@ import { useInView } from "react-intersection-observer";
 import { useMouse } from "react-use";
 import BuyModal from "../../components/buyModal/BuyModal";
 import { Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // === TESTIMONIALS ===
 const testimonials = [
   {
     name: "Sarah M.",
     img: "https://randomuser.me/api/portraits/women/32.jpg",
-    type: "Sextortion",
-    time: "2 hrs",
-    text: "They had my nudes. Gone in 90 minutes. I cried with relief.",
+    textKey: "be.testimonial_1",
+    typeKey: "be.testimonial_type_1",
+    timeKey: "be.testimonial_time_1",
   },
   {
     name: "James K.",
     img: "https://randomuser.me/api/portraits/men/45.jpg",
-    type: "Financial Threat",
-    time: "4 hrs",
-    text: "Threatened to leak my bank details. All traces erased. Safe now.",
+    textKey: "be.testimonial_2",
+    typeKey: "be.testimonial_type_2",
+    timeKey: "be.testimonial_time_2",
   },
   {
     name: "Aisha R.",
     img: "https://randomuser.me/api/portraits/women/68.jpg",
-    type: "Ex Revenge",
-    time: "1 hr",
-    text: "Ex posted private videos. Deleted from 7 sites in under an hour.",
+    textKey: "be.testimonial_3",
+    typeKey: "be.testimonial_type_3",
+    timeKey: "be.testimonial_time_3",
   },
   {
     name: "Liam P.",
     img: "https://randomuser.me/api/portraits/men/33.jpg",
-    type: "Work Blackmail",
-    time: "3 hrs",
-    text: "Boss threatened to fire me over old photos. All gone. Job saved.",
+    textKey: "be.testimonial_4",
+    typeKey: "be.testimonial_type_4",
+    timeKey: "be.testimonial_time_4",
   },
   {
     name: "Sofia L.",
     img: "https://randomuser.me/api/portraits/women/55.jpg",
-    type: "Doxxing",
-    time: "2.5 hrs",
-    text: "Full doxxing on forums. Wiped clean. No more harassment.",
+    textKey: "be.testimonial_5",
+    typeKey: "be.testimonial_type_5",
+    timeKey: "be.testimonial_time_5",
   },
   {
     name: "Marcus T.",
     img: "https://randomuser.me/api/portraits/men/72.jpg",
-    type: "Crypto Scam",
-    time: "5 hrs",
-    text: "Scammer had my wallet keys. All links severed. Funds safe.",
+    textKey: "be.testimonial_6",
+    typeKey: "be.testimonial_type_6",
+    timeKey: "be.testimonial_time_6",
   },
   {
     name: "Isabella G.",
     img: "https://randomuser.me/api/portraits/women/27.jpg",
-    type: "Stalker",
-    time: "1.5 hrs",
-    text: "Stalker posted my address. Removed from 12 sites. I can sleep again.",
+    textKey: "be.testimonial_7",
+    typeKey: "be.testimonial_type_7",
+    timeKey: "be.testimonial_time_7",
   },
   {
     name: "Raj S.",
-    img: "https://randomuser.me/api/portimonials/men/61.jpg",
-    type: "Cheating Scandal",
-    time: "3 hrs",
-    text: "Affair exposed. All chats, photos, posts — deleted. Marriage saved.",
+    img: "https://randomuser.me/api/portraits/men/61.jpg", // Fixed typo
+    textKey: "be.testimonial_8",
+    typeKey: "be.testimonial_type_8",
+    timeKey: "be.testimonial_time_8",
   },
   {
     name: "Natasha V.",
     img: "https://randomuser.me/api/portraits/women/41.jpg",
-    type: "Deepfake",
-    time: "6 hrs",
-    text: "AI deepfake video of me. Erased from 3 platforms. Nightmare over.",
+    textKey: "be.testimonial_9",
+    typeKey: "be.testimonial_type_9",
+    timeKey: "be.testimonial_time_9",
   },
   {
     name: "Carlos M.",
     img: "https://randomuser.me/api/portraits/men/58.jpg",
-    type: "Hacker",
-    time: "2 hrs",
-    text: "Hacker had my cloud. All backups wiped. No more threats.",
+    textKey: "be.testimonial_10",
+    typeKey: "be.testimonial_type_10",
+    timeKey: "be.testimonial_time_10",
   },
   {
     name: "Yara A.",
     img: "https://randomuser.me/api/portraits/women/79.jpg",
-    type: "Family Threat",
-    time: "1 hr",
-    text: "Threatened to send photos to my parents. All gone. Thank you.",
+    textKey: "be.testimonial_11",
+    typeKey: "be.testimonial_type_11",
+    timeKey: "be.testimonial_time_11",
   },
   {
     name: "Victor H.",
     img: "https://randomuser.me/api/portraits/men/29.jpg",
-    type: "Business Rival",
-    time: "4 hrs",
-    text: "Rival leaked internal docs. All copies destroyed. Deal closed.",
+    textKey: "be.testimonial_12",
+    typeKey: "be.testimonial_type_12",
+    timeKey: "be.testimonial_time_12",
   },
 ];
 
@@ -255,6 +256,7 @@ const NebulaParticles = () => {
 /* ------------------------------ MAIN PAGE -------------------------- */
 /* ------------------------------------------------------------------ */
 const StopBlackmailPage = () => {
+  const { t } = useTranslation();
   const [erased, setErased] = useState(0);
   const [progress, setProgress] = useState(0);
   const [isRemoving, setIsRemoving] = useState(false);
@@ -338,7 +340,7 @@ const StopBlackmailPage = () => {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.9 }}
             >
-              BLACKMAIL ERASED
+              {t("be.hero_title")}
             </motion.h1>
             <motion.p
               className="text-lg sm:text-xl lg:text-2xl text-cyan-200/90 font-light !max-w-3xl !mx-auto !mb-14 leading-relaxed"
@@ -346,8 +348,7 @@ const StopBlackmailPage = () => {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              We permanently delete your private data from every server, cloud,
-              and dark web archive. No recovery possible.
+              {t("be.hero_description")}
             </motion.p>
           </motion.div>
 
@@ -382,14 +383,16 @@ const StopBlackmailPage = () => {
                   <FiAlertTriangle className="w-10 h-10 text-yellow-400 animate-pulse" />
                 </div>
                 <div>
-                  <p className="text-sm opacity-80">THREAT ORIGIN</p>
-                  <p className="text-2xl font-bold">Telegram Sextortion</p>
+                  <p className="text-sm opacity-80">{t("be.threat_origin")}</p>
+                  <p className="text-2xl font-bold">{t("be.threat_type")}</p>
                   <p className="text-xs !mt-2 opacity-70">
-                    7 files • 3 platforms
+                    {t("be.threat_details")}
                   </p>
                 </div>
                 <div className="bg-red-600/30 backdrop-blur-sm rounded-xl !p-4">
-                  <p className="text-sm font-bold text-red-300">EXPOSED</p>
+                  <p className="text-sm font-bold text-red-300">
+                    {t("be.threat_status")}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -419,14 +422,16 @@ const StopBlackmailPage = () => {
               <div className="relative !p-8 h-full flex flex-col justify-between text-white">
                 <FiShield className="w-14 h-14 text-cyan-300 drop-shadow-glow" />
                 <div>
-                  <p className="text-sm opacity-80">REMOVAL STATUS</p>
-                  <p className="text-2xl font-bold">ACTIVE</p>
+                  <p className="text-sm opacity-80">{t("be.removal_status")}</p>
+                  <p className="text-2xl font-bold">{t("be.removal_active")}</p>
                   <p className="text-xs !mt-2 opacity-70">
-                    Scanning 47+ platforms...
+                    {t("be.removal_details")}
                   </p>
                 </div>
                 <div className="bg-cyan-600/30 backdrop-blur-sm rounded-xl !p-4">
-                  <p className="text-sm font-bold text-cyan-300">SECURE</p>
+                  <p className="text-sm font-bold text-cyan-300">
+                    {t("be.removal_secure")}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -481,7 +486,9 @@ const StopBlackmailPage = () => {
                 >
                   {progress}%
                 </motion.p>
-                <p className="text-cyan-300/80 text-lg">Complete</p>
+                <p className="text-cyan-300/80 text-lg">
+                  {t("be.progress_complete")}
+                </p>
               </div>
             </motion.div>
           </div>
@@ -500,10 +507,10 @@ const StopBlackmailPage = () => {
             >
               <span className="relative z-10">
                 {isRemoving
-                  ? "Erasing..."
+                  ? t("be.cta_removing")
                   : progress >= 100
-                  ? "All Gone!"
-                  : "Start Removal"}
+                  ? t("be.cta_removed")
+                  : t("be.cta_start")}
               </span>
               <motion.div
                 className="absolute inset-0 bg-white/30"
@@ -561,7 +568,7 @@ const StopBlackmailPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Join 12,847+ who erased their past.
+              {t("be.community_title")}
             </motion.h3>
             <motion.p
               className="mt-3 text-sm sm:text-base text-cyan-300/80 font-light max-w-xl"
@@ -569,7 +576,7 @@ const StopBlackmailPage = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              Real users. Real results. Real freedom.
+              {t("be.community_description")}
             </motion.p>
           </motion.div>
         </div>
@@ -584,7 +591,7 @@ const StopBlackmailPage = () => {
             animate={globeInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            {erased.toLocaleString()}+ Threats Erased Worldwide
+            {erased.toLocaleString()}+ {t("be.globe_title")}
           </motion.h2>
           <motion.p
             className="text-center text-sm sm:text-base lg:text-lg text-cyan-200/90 font-light !mb-12 !pt-8 max-w-4xl !mx-auto leading-relaxed"
@@ -592,10 +599,7 @@ const StopBlackmailPage = () => {
             animate={globeInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3 }}
           >
-            All private files, videos, messages, and doxxing records permanently
-            deleted from 47+ platforms, including Telegram, Mega, Google Drive,
-            iCloud, and dark web archives. Real-time tracking. Global reach.
-            Zero recovery.
+            {t("be.globe_description")}
           </motion.p>
 
           <motion.div
@@ -658,18 +662,18 @@ const StopBlackmailPage = () => {
             {[
               {
                 icon: FiEyeOff,
-                title: "Zero Trace",
-                desc: "No logs. No metadata. No recovery.",
+                titleKey: "be.feature_1_title",
+                descKey: "be.feature_1_description",
               },
               {
                 icon: FiGlobe,
-                title: "47+ Platforms",
-                desc: "Telegram, Mega, Dark Web, Cloud.",
+                titleKey: "be.feature_2_title",
+                descKey: "be.feature_2_description",
               },
               {
                 icon: FiZap,
-                title: "60-Second Start",
-                desc: "Payment → Removal begins instantly.",
+                titleKey: "be.feature_3_title",
+                descKey: "be.feature_3_description",
               },
             ].map((f, i) => (
               <motion.div
@@ -684,12 +688,12 @@ const StopBlackmailPage = () => {
                 <div className="absolute inset-0 backface-hidden bg-white/5 backdrop-blur-xl border border-red-500/30 rounded-3xl !p-8 flex flex-col items-center justify-center text-center">
                   <f.icon className="w-16 h-16 text-red-300 mb-4 drop-shadow-glow" />
                   <h3 className="text-2xl font-bold text-cyan-100">
-                    {f.title}
+                    {t(f.titleKey)}
                   </h3>
-                  <p className="text-cyan-300/80 mt-2">{f.desc}</p>
+                  <p className="text-cyan-300/80 mt-2">{t(f.descKey)}</p>
                 </div>
                 <div className="absolute inset-0 rotate-y-180 backface-hidden bg-gradient-to-br from-red-600/80 to-pink-600/80 rounded-3xl !p-8 flex items-center justify-center text-white font-bold text-xl">
-                  REMOVED
+                  {t("be.feature_removed")}
                 </div>
               </motion.div>
             ))}
@@ -705,7 +709,7 @@ const StopBlackmailPage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
-            They Regained Control
+            {t("be.testimonials_title")}
           </motion.h2>
           <motion.p
             className="text-center text-sm sm:text-base lg:text-lg text-cyan-200/85 font-light !mb-12 max-w-4xl !mx-auto leading-relaxed"
@@ -713,9 +717,7 @@ const StopBlackmailPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            12,847+ victims of sextortion, revenge porn, deepfakes, doxxing, and
-            financial blackmail, now live 100% free from digital threats. Every
-            trace erased. Every platform wiped.
+            {t("be.testimonials_description")}
           </motion.p>
 
           <div className="relative overflow-hidden">
@@ -728,27 +730,27 @@ const StopBlackmailPage = () => {
               transition={{ duration: 42, repeat: Infinity, ease: "linear" }}
               whileHover={{ animationPlayState: "paused" }}
             >
-              {[...testimonials, ...testimonials].map((t, i) => (
+              {[...testimonials, ...testimonials].map((tm, i) => (
                 <div
                   key={i}
                   className="min-w-[340px] h-[210px] bg-white/5 backdrop-blur-xl border border-cyan-500/30 rounded-2xl !p-6 hover:scale-[1.03] transition-transform duration-300"
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <img
-                      src={t.img}
-                      alt={t.name}
+                      src={tm.img}
+                      alt={tm.name}
                       className="w-12 h-12 rounded-full border-2 border-cyan-400"
                     />
                     <div>
-                      <p className="font-bold text-cyan-100">{t.name}</p>
-                      <p className="text-xs text-cyan-300/70">{t.type}</p>
+                      <p className="font-bold text-cyan-100">{tm.name}</p>
+                      <p className="text-xs text-cyan-300/70">{t(tm.typeKey)}</p>
                     </div>
                   </div>
                   <p className="text-sm text-cyan-200/90 italic !mt-3">
-                    “{t.text}”
+                    “{t(tm.textKey)}”
                   </p>
                   <p className="text-xs text-green-400 mt-3 flex items-center gap-1">
-                    <FiCheckCircle /> Removed in {t.time}
+                    <FiCheckCircle /> {t(tm.timeKey)}
                   </p>
                 </div>
               ))}
@@ -758,23 +760,28 @@ const StopBlackmailPage = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative !py-18 ">
+      <section className="relative !py-18">
         <div className="max-w-4xl !mx-auto !px-6 text-center">
           <motion.h2
             className="text-4xl lg:text-6xl font-extrabold bg-gradient-to-r from-red-400 to-cyan-300 bg-clip-text text-transparent !mb-3"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
-            Your Turn to Be Free
+            {t("be.final_cta_title")}
           </motion.h2>
-          <motion.p className="text-base lg:text-lg text-cyan-200/80 !mb-8">
-            Join 12,847+ people who’ve erased their past.
+          <motion.p
+            className="text-base lg:text-lg text-cyan-200/80 !mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            {t("be.final_cta_description")}
           </motion.p>
           <button
             onClick={() => setModalOpen(true)}
             className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-500 hover:to-pink-500 text-white !px-8 !py-4 lg:!px-12 lg:!py-6 rounded-full font-bold lg:text-2xl shadow-2xl hover:shadow-red-500/80 transition-all duration-300 transform hover:scale-110"
           >
-            Contact Us Now
+            {t("be.final_cta_button")}
           </button>
         </div>
       </section>
