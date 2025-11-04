@@ -18,6 +18,7 @@ import {
 import { FaEnvelope, FaTelegramPlane } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { useMouse } from "react-use";
+import { useTranslation } from "react-i18next";
 import BuyModal from "../../components/buyModal/BuyModal";
 
 // 12 Real Testimonials with Images
@@ -25,98 +26,62 @@ const testimonials = [
   {
     name: "Elena Vasquez",
     img: "https://randomuser.me/api/portraits/women/32.jpg",
-    from: "520",
-    to: "785",
-    time: "48 hrs",
-    text: "From bankrupt to approved for a $250k mortgage. Unreal!",
+    textKey: "cs.testimonial_1",
   },
   {
     name: "Marcus Chen",
     img: "https://randomuser.me/api/portraits/men/45.jpg",
-    from: "480",
-    to: "810",
-    time: "36 hrs",
-    text: "Business loan approved in 2 days. My startup is saved.",
+    textKey: "cs.testimonial_2",
   },
   {
     name: "Aisha Rahman",
     img: "https://randomuser.me/api/portraits/women/68.jpg",
-    from: "505",
-    to: "790",
-    time: "24 hrs",
-    text: "Car loan at 1.9% APR. Never thought it was possible.",
+    textKey: "cs.testimonial_3",
   },
   {
     name: "Liam O’Connor",
     img: "https://randomuser.me/api/portraits/men/33.jpg",
-    from: "530",
-    to: "775",
-    time: "72 hrs",
-    text: "Credit card limits tripled. Paid off all debt.",
+    textKey: "cs.testimonial_4",
   },
   {
     name: "Sofia Patel",
     img: "https://randomuser.me/api/portraits/women/55.jpg",
-    from: "495",
-    to: "805",
-    time: "30 hrs",
-    text: "Rented my dream apartment. Landlord was shocked.",
+    textKey: "cs.testimonial_5",
   },
   {
     name: "Darius King",
     img: "https://randomuser.me/api/portraits/men/72.jpg",
-    from: "510",
-    to: "795",
-    time: "40 hrs",
-    text: "Got a premium Amex. Life changed overnight.",
+    textKey: "cs.testimonial_6",
   },
   {
     name: "Isabella Moreau",
     img: "https://randomuser.me/api/portraits/women/27.jpg",
-    from: "500",
-    to: "780",
-    time: "50 hrs",
-    text: "Student loans refinanced at 2.1%. Saved $18k.",
+    textKey: "cs.testimonial_7",
   },
   {
     name: "Raj Kapoor",
     img: "https://randomuser.me/api/portraits/men/61.jpg",
-    from: "515",
-    to: "800",
-    time: "44 hrs",
-    text: "Crypto trading account unlocked. Made $40k profit.",
+    textKey: "cs.testimonial_8",
   },
   {
     name: "Natasha Volkov",
     img: "https://randomuser.me/api/portraits/women/41.jpg",
-    from: "490",
-    to: "815",
-    time: "28 hrs",
-    text: "Got a job offer after credit cleared. Thank you!",
+    textKey: "cs.testimonial_9",
   },
   {
     name: "Carlos Mendes",
     img: "https://randomuser.me/api/portraits/men/58.jpg",
-    from: "525",
-    to: "770",
-    time: "60 hrs",
-    text: "Bought a Tesla with 0% financing. Insane!",
+    textKey: "cs.testimonial_10",
   },
   {
     name: "Yara Al-Sayed",
     img: "https://randomuser.me/api/portraits/women/79.jpg",
-    from: "485",
-    to: "820",
-    time: "32 hrs",
-    text: "Family visa approved. We’re moving to Canada!",
+    textKey: "cs.testimonial_11",
   },
   {
     name: "Victor Huang",
     img: "https://randomuser.me/api/portraits/men/29.jpg",
-    from: "535",
-    to: "790",
-    time: "54 hrs",
-    text: "Investors funded my app. Credit was the key.",
+    textKey: "cs.testimonial_12",
   },
 ];
 
@@ -255,6 +220,8 @@ const NebulaParticles = () => {
 /* ------------------------------ MAIN PAGE -------------------------- */
 /* ------------------------------------------------------------------ */
 const CreditScorePage = () => {
+  const { t } = useTranslation();
+  const { t: tt } = useTranslation(); // Separate t function for testimonials
   const [score, setScore] = useState(520);
   const [targetScore] = useState(780);
   const [isUpgrading, setIsUpgrading] = useState(false);
@@ -364,7 +331,7 @@ const CreditScorePage = () => {
             className="text-center !max-w-5xl !mx-auto"
             initial={{ opacity: 0, y: 70 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition="duration: 1"
+            transition={{ duration: 1 }}
           >
             <motion.h1
               className="text-5xl sm:text-6xl lg:text-8xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6 leading-tight"
@@ -372,7 +339,7 @@ const CreditScorePage = () => {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.9 }}
             >
-              Skyrocket Your Credit Score
+              {t("cs.hero_title")}
             </motion.h1>
             <motion.p
               className="text-lg sm:text-xl lg:text-2xl text-cyan-200/90 font-light !max-w-3xl !mx-auto !mb-20 leading-relaxed"
@@ -380,7 +347,7 @@ const CreditScorePage = () => {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              Watch your scor explode in real time with our elite, encrypted, and 100% undetectable credit repair system.
+              {t("cs.hero_description")}
             </motion.p>
           </motion.div>
 
@@ -403,13 +370,17 @@ const CreditScorePage = () => {
               <div className="relative !p-6 text-white">
                 <div className="flex justify-between items-start">
                   <div>
-                    <p className="text-xs opacity-80">CREDIT SCORE</p>
-                    <p className="text-3xl font-bold">780</p>
+                    <p className="text-xs opacity-80">{t("cs.card_1_label")}</p>
+                    <p className="text-3xl font-bold">
+                      {t("cs.card_1_number")}
+                    </p>
                   </div>
                   <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-400 rounded-full blur-md"></div>
                 </div>
-                <p className="text-xs !mt-8 opacity-70">•••• •••• •••• 4242</p>
-                <p className="text-sm !mt-2">ELITE MEMBER</p>
+                <p className="text-xs !mt-8 opacity-70">
+                  {t("cs.card_1_masked")}
+                </p>
+                <p className="text-sm !mt-2">{t("cs.card_1_status")}</p>
               </div>
             </motion.div>
 
@@ -430,13 +401,17 @@ const CreditScorePage = () => {
               <div className="relative !p-6 text-white">
                 <div className="flex justify-between items-start">
                   <div>
-                    <p className="text-xs opacity-80">LIMIT</p>
-                    <p className="text-2xl font-bold">$50,000</p>
+                    <p className="text-xs opacity-80">{t("cs.card_2_label")}</p>
+                    <p className="text-2xl font-bold">
+                      {t("cs.card_2_number")}
+                    </p>
                   </div>
                   <div className="w-10 h-10 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full blur-md"></div>
                 </div>
-                <p className="text-xs !mt-6 opacity-70">•••• •••• •••• 8888</p>
-                <p className="text-sm !mt-1">PLATINUM</p>
+                <p className="text-xs !mt-6 opacity-70">
+                  {t("cs.card_2_masked")}
+                </p>
+                <p className="text-sm !mt-1">{t("cs.card_2_status")}</p>
               </div>
             </motion.div>
 
@@ -478,7 +453,7 @@ const CreditScorePage = () => {
                       {score}
                     </motion.p>
                     <p className="text-cyan-300/85 text-lg font-medium !mt-2">
-                      Live Score
+                      {t("cs.score_orb_label")}
                     </p>
                   </motion.div>
                 </motion.div>
@@ -522,10 +497,10 @@ const CreditScorePage = () => {
             >
               <span className="relative z-10">
                 {isUpgrading
-                  ? "Upgrading Live..."
+                  ? t("cs.hero_cta_upgrading")
                   : score >= targetScore
-                  ? "Max Score Achieved!"
-                  : "Start Upgrade Now"}
+                  ? t("cs.hero_cta_max")
+                  : t("cs.hero_cta_start")}
               </span>
               <motion.div
                 className="absolute inset-0 bg-white/25"
@@ -583,7 +558,7 @@ const CreditScorePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Join 47,821+ who transformed their credit.
+              {t("cs.hero_community_title")}
             </motion.h3>
             <motion.p
               className="mt-3 text-sm sm:text-base text-cyan-300/80 font-light max-w-xl"
@@ -591,7 +566,7 @@ const CreditScorePage = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              Real users. Real results. Real freedom.
+              {t("cs.hero_community_description")}
             </motion.p>
           </motion.div>
         </div>
@@ -612,7 +587,7 @@ const CreditScorePage = () => {
               animate={featuresInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 }}
             >
-              Elite Credit Repair System
+              {t("cs.features_title")}
             </motion.h2>
             <motion.p
               className="text-base sm:text-lg lg:text-xl text-cyan-200/85 leading-relaxed font-light !max-w-4xl !mx-auto !mb-16"
@@ -620,9 +595,7 @@ const CreditScorePage = () => {
               animate={featuresInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              Watch your score skyrocket in real time with our undetectable
-              AI-powered system that connects directly to Equifax, TransUnion,
-              and Experian.
+              {t("cs.features_description")}
             </motion.p>
           </motion.div>
 
@@ -630,33 +603,33 @@ const CreditScorePage = () => {
             {[
               {
                 icon: FiTrendingUp,
-                title: "Real-Time Boost",
-                desc: "Watch your score rise live — no delays.",
+                title: t("cs.feature_1_title"),
+                desc: t("cs.feature_1_description"),
               },
               {
                 icon: FiLock,
-                title: "100% Undetectable",
-                desc: "No logs, no traces. Bureaus never know.",
+                title: t("cs.feature_2_title"),
+                desc: t("cs.feature_2_description"),
               },
               {
                 icon: FiZap,
-                title: "Instant Activation",
-                desc: "Access granted in under 60 seconds.",
+                title: t("cs.feature_3_title"),
+                desc: t("cs.feature_3_description"),
               },
               {
                 icon: FiShield,
-                title: "Bank-Level Encryption",
-                desc: "Your data is never stored or shared.",
+                title: t("cs.feature_4_title"),
+                desc: t("cs.feature_4_description"),
               },
               {
                 icon: FiCheckCircle,
-                title: "Guaranteed Results",
-                desc: "Or your money back. No questions.",
+                title: t("cs.feature_5_title"),
+                desc: t("cs.feature_5_description"),
               },
               {
                 icon: FiClock,
-                title: "24/7 Support",
-                desc: "Live agents in 5+ languages.",
+                title: t("cs.feature_6_title"),
+                desc: t("cs.feature_6_description"),
               },
             ].map((feat, i) => (
               <motion.div
@@ -700,7 +673,7 @@ const CreditScorePage = () => {
               animate={howInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 }}
             >
-              How It Works
+              {t("cs.how_it_works_title")}
             </motion.h2>
             <motion.p
               className="text-base sm:text-lg lg:text-xl leading-relaxed font-light !max-w-4xl !mx-auto !mb-12 text-cyan-200/85"
@@ -708,8 +681,7 @@ const CreditScorePage = () => {
               animate={howInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              Secure payment → instant access to our encrypted backend → live
-              optimization across all three bureaus. No delays, no traces.
+              {t("cs.how_it_works_description")}
             </motion.p>
           </motion.div>
 
@@ -717,18 +689,18 @@ const CreditScorePage = () => {
             {[
               {
                 step: "01",
-                title: "Secure Payment",
-                desc: "Pay via BTC, USDT, or card. Instant activation.",
+                title: t("cs.step_1_title"),
+                desc: t("cs.step_1_description"),
               },
               {
                 step: "02",
-                title: "System Access",
-                desc: "We connect to Equifax, TransUnion, Experian.",
+                title: t("cs.step_2_title"),
+                desc: t("cs.step_2_description"),
               },
               {
                 step: "03",
-                title: "Live Upgrade",
-                desc: "Watch your score climb in real time.",
+                title: t("cs.step_3_title"),
+                desc: t("cs.step_3_description"),
               },
             ].map((s, i) => (
               <motion.div
@@ -766,7 +738,7 @@ const CreditScorePage = () => {
               animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 }}
             >
-              Real People. Real Results.
+              {t("cs.testimonials_title")}
             </motion.h2>
             <motion.p
               className="text-base sm:text-lg lg:text-xl text-cyan-200/85 leading-relaxed font-light !max-w-4xl !mx-auto !mb-16"
@@ -774,12 +746,12 @@ const CreditScorePage = () => {
               animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              From  520 to  820+ in as little as 24 hours.
+              {t("cs.testimonials_description")}
             </motion.p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 !gap-8">
-            {testimonials.map((t, i) => (
+            {testimonials.map((testimonial, i) => (
               <motion.div
                 key={i}
                 className="bg-white/6 backdrop-blur-2xl border border-cyan-500/40 rounded-2xl !p-6 shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 group"
@@ -792,30 +764,26 @@ const CreditScorePage = () => {
                   <motion.div className="relative" whileHover={{ scale: 1.1 }}>
                     <div className="absolute -inset-2 bg-gradient-to-r from-cyan-500/45 via-teal-500/35 to-green-500/35 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition-opacity"></div>
                     <img
-                      src={t.img}
-                      alt={t.name}
+                      src={testimonial.img}
+                      alt={testimonial.name}
                       className="relative w-14 h-14 rounded-full object-cover border-2 border-cyan-400/70"
                     />
                   </motion.div>
                   <div>
-                    <h3 className="font-bold text-cyan-100">{t.name}</h3>
-                    <p className="text-xs text-cyan-300">
-                      +{parseInt(t.to) - parseInt(t.from)} Boost
-                    </p>
+                    <h3 className="font-bold text-cyan-100">
+                      {testimonial.name}
+                    </h3>
+                 
                   </div>
                 </div>
 
-                <div className="flex justify-between text-xs text-cyan-400 !mb-3">
-                  <span>
-                    {t.from} → {t.to}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <FiClock size={12} /> {t.time}
-                  </span>
-                </div>
+           
 
                 <p className="text-sm text-cyan-200/90 italic leading-relaxed">
-                  “{t.text}”
+                  {typeof testimonial.textKey === "string" &&
+                  testimonial.textKey
+                    ? `“${tt(testimonial.textKey)}”`
+                    : `“${tt("cs.testimonial_fallback")}”`}
                 </p>
               </motion.div>
             ))}
@@ -833,17 +801,16 @@ const CreditScorePage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text text-transparent !mb-6">
-              Your Financial Freedom Starts Now
+              {t("cs.final_cta_title")}
             </h2>
             <p className="text-lg lg:text-xl text-cyan-200/85 !mb-10">
-              Join  47,821+ people who’ve transformed their
-              credit.
+              {t("cs.final_cta_description")}
             </p>
             <button
               onClick={() => setModalOpen(true)}
               className="bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white !px-8 lg:!px-12 !py-5 rounded-full font-bold text-xl lg:text-2xl shadow-lg hover:shadow-cyan-500/70 transition-all duration-300 transform hover:scale-110 backdrop-blur-sm border border-cyan-400/60"
             >
-              Contact Us Now
+              {t("cs.final_cta_button")}
             </button>
           </motion.div>
         </div>
