@@ -17,7 +17,12 @@ import {
   FiAward,
   FiClock,
 } from "react-icons/fi";
-import { FaBookReader, FaEnvelope, FaTelegramPlane, FaUserGraduate } from "react-icons/fa";
+import {
+  FaBookReader,
+  FaEnvelope,
+  FaTelegramPlane,
+  FaUserGraduate,
+} from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { useMouse } from "react-use";
 import BuyModal from "../../components/buyModal/BuyModal";
@@ -400,10 +405,8 @@ const ImproveGradePage = () => {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              Watch your transcript{" "}
-              <strong className="text-emerald-300">transform live</strong> —
-              from failing to <strong className="text-lime-300">A+</strong> in
-              any university, worldwide. <strong>100% undetectable</strong>.
+              Watch your transcript transform live — from failing to A+ in any
+              university, worldwide. 100% undetectable .
             </motion.p>
           </motion.div>
 
@@ -654,8 +657,7 @@ const ImproveGradePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Join <span className="text-emerald-200">38,492+</span> students
-              worldwide.
+              Join 38,492+ students worldwide.
             </motion.h3>
             <motion.p
               className="mt-3 text-sm sm:text-base text-emerald-300/80 font-light max-w-xl"
@@ -692,14 +694,9 @@ const ImproveGradePage = () => {
               animate={featuresInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              We connect directly to <strong>any university portal</strong> —
-              Blackboard, Canvas, Moodle, SAP — and update your grades in real
-              time.{" "}
-              <span className="inline-block px-3 py-1 mx-1 bg-white/6 shadow-lg">
-                <span className="bg-gradient-to-r from-emerald-300 to-lime-300 bg-clip-text text-transparent font-semibold">
-                  No logs. No alerts.
-                </span>
-              </span>
+              We connect directly to any university portal — Blackboard, Canvas,
+              Moodle, SAP — and update your grades in real time. No logs. No
+              alerts.
             </motion.p>
           </motion.div>
 
@@ -782,8 +779,8 @@ const ImproveGradePage = () => {
               animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              Students from <strong>190+ countries</strong> have upgraded to
-              A/A+, unlocking scholarships, jobs, visas, and dreams.
+              Students from 190+ countries have upgraded to A/A+, unlocking
+              scholarships, jobs, visas, and dreams.
             </motion.p>
           </motion.div>
 
@@ -843,8 +840,7 @@ const ImproveGradePage = () => {
               Your Degree. Your Future. Now.
             </h2>
             <p className="text-lg lg:text-xl text-emerald-200/88 !mb-10">
-              Join <strong>38,492+</strong> students who’ve secured their
-              future.
+              Join 38,492+ students who’ve secured their future.
             </p>
             <button
               onClick={() => setModalOpen(true)}
