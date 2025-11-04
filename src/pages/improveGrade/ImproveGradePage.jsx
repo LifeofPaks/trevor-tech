@@ -27,116 +27,117 @@ import { useInView } from "react-intersection-observer";
 import { useMouse } from "react-use";
 import BuyModal from "../../components/buyModal/BuyModal";
 import { GiGraduateCap } from "react-icons/gi";
+import { useTranslation } from "react-i18next";
 
 // === 12 Real-Looking University Testimonials ===
 const testimonials = [
   {
     name: "Priya Sharma",
     img: "https://randomuser.me/api/portraits/women/44.jpg",
-    uni: "IIT Delhi",
+    uniKey: "au.testimonial_1_uni",
     from: "C+",
     to: "A+",
-    time: "18 hrs",
-    text: "From failing Algorithms to Dean’s List. My parents cried.",
+    timeKey: "au.testimonial_1_time",
+    textKey: "au.testimonial_1_text",
   },
   {
     name: "Ahmed Al-Mansour",
     img: "https://randomuser.me/api/portraits/men/56.jpg",
-    uni: "KAUST",
+    uniKey: "au.testimonial_2_uni",
     from: "D",
     to: "A",
-    time: "12 hrs",
-    text: "Master’s admission secured. Scholarship unlocked.",
+    timeKey: "au.testimonial_2_time",
+    textKey: "au.testimonial_2_text",
   },
   {
     name: "Sofia Rodriguez",
     img: "https://randomuser.me/api/portraits/women/68.jpg",
-    uni: "Universidad de Buenos Aires",
+    uniKey: "au.testimonial_3_uni",
     from: "F",
     to: "A-",
-    time: "24 hrs",
-    text: "Graduated on time. No more probation.",
+    timeKey: "au.testimonial_3_time",
+    textKey: "au.testimonial_3_text",
   },
   {
     name: "Liam Chen",
     img: "https://randomuser.me/api/portraits/men/33.jpg",
-    uni: "Tsinghua University",
+    uniKey: "au.testimonial_4_uni",
     from: "B-",
     to: "A+",
-    time: "20 hrs",
-    text: "PhD funding approved. Lab access granted.",
+    timeKey: "au.testimonial_4_time",
+    textKey: "au.testimonial_4_text",
   },
   {
     name: "Aisha Khan",
     img: "https://randomuser.me/api/portraits/women/55.jpg",
-    uni: "University of Cape Town",
+    uniKey: "au.testimonial_5_uni",
     from: "F",
     to: "A",
-    time: "16 hrs",
-    text: "Medical school interview passed. Future secured.",
+    timeKey: "au.testimonial_5_time",
+    textKey: "au.testimonial_5_text",
   },
   {
     name: "Mateo Silva",
     img: "https://randomuser.me/api/portraits/men/72.jpg",
-    uni: "UNAM Mexico",
+    uniKey: "au.testimonial_6_uni",
     from: "D+",
     to: "A",
-    time: "22 hrs",
-    text: "Engineering internship at NASA. Dream come true.",
+    timeKey: "au.testimonial_6_time",
+    textKey: "au.testimonial_6_text",
   },
   {
     name: "Elena Petrova",
     img: "https://randomuser.me/api/portraits/women/27.jpg",
-    uni: "Lomonosov Moscow State",
+    uniKey: "au.testimonial_7_uni",
     from: "C",
     to: "A+",
-    time: "14 hrs",
-    text: "Visa renewed. Family proud.",
+    timeKey: "au.testimonial_7_time",
+    textKey: "au.testimonial_7_text",
   },
   {
     name: "Raj Patel",
     img: "https://randomuser.me/api/portraits/men/61.jpg",
-    uni: "University of Toronto",
+    uniKey: "au.testimonial_8_uni",
     from: "B",
     to: "A+",
-    time: "19 hrs",
-    text: "Google offer letter received. $180k starting.",
+    timeKey: "au.testimonial_8_time",
+    textKey: "au.testimonial_8_text",
   },
   {
     name: "Fatima Zahra",
     img: "https://randomuser.me/api/portraits/women/41.jpg",
-    uni: "American University of Beirut",
+    uniKey: "au.testimonial_9_uni",
     from: "F",
     to: "A",
-    time: "15 hrs",
-    text: "Graduated with honors. Parents flew in.",
+    timeKey: "au.testimonial_9_time",
+    textKey: "au.testimonial_9_text",
   },
   {
     name: "Diego Morales",
     img: "https://randomuser.me/api/portraits/men/58.jpg",
-    uni: "USP Brazil",
+    uniKey: "au.testimonial_10_uni",
     from: "D",
     to: "A+",
-    time: "21 hrs",
-    text: "Published in Nature. Career launched.",
+    timeKey: "au.testimonial_10_time",
+    textKey: "au.testimonial_10_text",
   },
   {
     name: "Mei Ling",
     img: "https://randomuser.me/api/portraits/women/79.jpg",
-    uni: "National University of Singapore",
+    uniKey: "au.testimonial_11_uni",
     from: "C+",
     to: "A+",
-    time: "17 hrs",
-    text: "Full scholarship renewed. No more debt.",
+    timeKey: "au.testimonial_11_time",
+    textKey: "au.testimonial_11_text",
   },
   {
     name: "Omar Hassan",
     img: "https://randomuser.me/api/portraits/men/29.jpg",
-    uni: "Cairo University",
+    uniKey: "au.testimonial_12_uni",
     from: "F",
     to: "A",
-    time: "23 hrs",
-    text: "Military exemption approved. Future safe.",
+    timeKey: "au.testimonial_12_time",
+    textKey: "au.testimonial_12_text",
   },
 ];
 
@@ -275,6 +276,7 @@ const NebulaParticles = () => {
 /* ------------------------------ MAIN PAGE -------------------------- */
 /* ------------------------------------------------------------------ */
 const ImproveGradePage = () => {
+  const { t } = useTranslation();
   const [grade, setGrade] = useState("C");
   const [targetGrade] = useState("A+");
   const [isUpgrading, setIsUpgrading] = useState(false);
@@ -397,7 +399,7 @@ const ImproveGradePage = () => {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.9 }}
             >
-              Upgrade Your Academic Grades
+              {t("au.hero_title")}
             </motion.h1>
             <motion.p
               className="text-lg sm:text-xl lg:text-2xl text-emerald-200/90 font-light !max-w-3xl !mx-auto !mb-16 leading-relaxed"
@@ -405,8 +407,7 @@ const ImproveGradePage = () => {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              Watch your transcript transform live — from failing to A+ in any
-              university, worldwide. 100% undetectable .
+              {t("au.hero_description")}
             </motion.p>
           </motion.div>
 
@@ -429,14 +430,18 @@ const ImproveGradePage = () => {
               <div className="relative !p-6 text-white h-full flex flex-col">
                 <div className="flex justify-between items-start">
                   <div>
-                    <p className="text-xs opacity-80">LIVE TRANSCRIPT</p>
-                    <p className="text-2xl font-bold">Harvard University</p>
+                    <p className="text-xs opacity-80">
+                      {t("au.transcript_label")}
+                    </p>
+                    <p className="text-2xl font-bold">
+                      {t("au.transcript_university")}
+                    </p>
                   </div>
                   <FiAward className="w-11 h-11 text-yellow-400 drop-shadow-glow" />
                 </div>
                 <div className="mt-8 space-y-3">
                   <div className="flex justify-between">
-                    <span className="text-sm">CS50</span>
+                    <span className="text-sm">{t("au.course_1")}</span>
                     <motion.span
                       key={grade}
                       className="text-xl font-bold text-lime-300"
@@ -448,12 +453,14 @@ const ImproveGradePage = () => {
                     </motion.span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm">Physics 101</span>
+                    <span className="text-sm">{t("au.course_2")}</span>
                     <span className="text-xl font-bold text-lime-300">A+</span>
                   </div>
                 </div>
                 <div className="mt-auto bg-emerald-600/35 backdrop-blur-sm rounded-xl !p-3">
-                  <p className="text-xs font-bold text-emerald-300">GPA: 4.0</p>
+                  <p className="text-xs font-bold text-emerald-300">
+                    {t("au.gpa")}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -548,7 +555,7 @@ const ImproveGradePage = () => {
                       {grade}
                     </motion.p>
                     <p className="text-emerald-300/88 text-lg font-medium !mt-2">
-                      Live Grade
+                      {t("au.grade_label")}
                     </p>
                   </motion.div>
                 </motion.div>
@@ -592,10 +599,10 @@ const ImproveGradePage = () => {
             >
               <span className="relative z-10">
                 {isUpgrading
-                  ? "Upgrading..."
+                  ? t("au.cta_upgrading")
                   : grade === targetGrade
-                  ? "A+ Achieved!"
-                  : "Start Upgrade"}
+                  ? t("au.cta_upgraded")
+                  : t("au.cta_start")}
               </span>
               <motion.div
                 className="absolute inset-0 bg-white/28"
@@ -657,7 +664,7 @@ const ImproveGradePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Join 38,492+ students worldwide.
+              {t("au.community_title")}
             </motion.h3>
             <motion.p
               className="mt-3 text-sm sm:text-base text-emerald-300/80 font-light max-w-xl"
@@ -665,7 +672,7 @@ const ImproveGradePage = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              Real students. Real universities. Real futures.
+              {t("au.community_description")}
             </motion.p>
           </motion.div>
         </div>
@@ -686,7 +693,7 @@ const ImproveGradePage = () => {
               animate={featuresInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 }}
             >
-              Global Grade System
+              {t("au.features_title")}
             </motion.h2>
             <motion.p
               className="text-base sm:text-lg lg:text-xl text-emerald-200/88 leading-relaxed font-light !max-w-4xl !mx-auto !mb-16"
@@ -694,9 +701,7 @@ const ImproveGradePage = () => {
               animate={featuresInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              We connect directly to any university portal — Blackboard, Canvas,
-              Moodle, SAP — and update your grades in real time. No logs. No
-              alerts.
+              {t("au.features_description")}
             </motion.p>
           </motion.div>
 
@@ -704,33 +709,33 @@ const ImproveGradePage = () => {
             {[
               {
                 icon: FiGlobe,
-                title: "190+ Countries",
-                desc: "Any university. Any system.",
+                title: t("au.feature_1_title"),
+                desc: t("au.feature_1_description"),
               },
               {
                 icon: FiLock,
-                title: "100% Undetectable",
-                desc: "No audit trail. Ever.",
+                title: t("au.feature_2_title"),
+                desc: t("au.feature_2_description"),
               },
               {
                 icon: FiZap,
-                title: "24-Hour Update",
-                desc: "Reflected in portal & transcript.",
+                title: t("au.feature_3_title"),
+                desc: t("au.feature_3_description"),
               },
               {
                 icon: FiShield,
-                title: "Encrypted Access",
-                desc: "Your data never stored.",
+                title: t("au.feature_4_title"),
+                desc: t("au.feature_4_description"),
               },
               {
                 icon: FiCheckCircle,
-                title: "Guaranteed A/A+",
-                desc: "Or full refund.",
+                title: t("au.feature_5_title"),
+                desc: t("au.feature_5_description"),
               },
               {
                 icon: FiClock,
-                title: "24/7 Support",
-                desc: "Live agents in 12 languages.",
+                title: t("au.feature_6_title"),
+                desc: t("au.feature_6_description"),
               },
             ].map((feat, i) => (
               <motion.div
@@ -771,7 +776,7 @@ const ImproveGradePage = () => {
               animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 }}
             >
-              From Failing to First-Class
+              {t("au.testimonials_title")}
             </motion.h2>
             <motion.p
               className="text-base sm:text-lg lg:text-xl text-emerald-200/88 leading-relaxed font-light !max-w-4xl !mx-auto !mb-16"
@@ -779,13 +784,12 @@ const ImproveGradePage = () => {
               animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              Students from 190+ countries have upgraded to A/A+, unlocking
-              scholarships, jobs, visas, and dreams.
+              {t("au.testimonials_description")}
             </motion.p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 !gap-8">
-            {testimonials.map((t, i) => (
+            {testimonials.map((tm, i) => (
               <motion.div
                 key={i}
                 className="bg-white/6 backdrop-blur-2xl border border-emerald-500/45 rounded-2xl !p-6 shadow-2xl hover:shadow-emerald-500/55 transition-all duration-300 group"
@@ -798,28 +802,28 @@ const ImproveGradePage = () => {
                   <motion.div className="relative" whileHover={{ scale: 1.12 }}>
                     <div className="absolute -inset-2 bg-gradient-to-r from-emerald-500/48 via-lime-500/38 to-green-500/38 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition-opacity"></div>
                     <img
-                      src={t.img}
-                      alt={t.name}
+                      src={tm.img}
+                      alt={tm.name}
                       className="relative w-14 h-14 rounded-full object-cover border-2 border-emerald-400/70"
                     />
                   </motion.div>
                   <div>
-                    <h3 className="font-bold text-emerald-100">{t.name}</h3>
-                    <p className="text-xs text-emerald-300">{t.uni}</p>
+                    <h3 className="font-bold text-emerald-100">{tm.name}</h3>
+                    <p className="text-xs text-emerald-300">{t(tm.uniKey)}</p>
                   </div>
                 </div>
 
                 <div className="flex justify-between text-xs text-emerald-400 !mb-3">
                   <span>
-                    {t.from} → {t.to}
+                    {tm.from} → {tm.to}
                   </span>
                   <span className="flex items-center gap-1">
-                    <FiClock size={12} /> {t.time}
+                    <FiClock size={12} /> {t(tm.timeKey)}
                   </span>
                 </div>
 
                 <p className="text-sm text-emerald-200/92 italic leading-relaxed">
-                  “{t.text}”
+                  “{t(tm.textKey)}”
                 </p>
               </motion.div>
             ))}
@@ -837,16 +841,16 @@ const ImproveGradePage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-emerald-300 via-lime-300 to-green-300 bg-clip-text text-transparent !mb-6">
-              Your Degree. Your Future. Now.
+              {t("au.final_cta_title")}
             </h2>
             <p className="text-lg lg:text-xl text-emerald-200/88 !mb-10">
-              Join 38,492+ students who’ve secured their future.
+              {t("au.final_cta_description")}
             </p>
             <button
               onClick={() => setModalOpen(true)}
               className="bg-gradient-to-r from-emerald-500 to-lime-600 hover:from-emerald-400 hover:to-lime-500 text-white !px-8 lg:!px-12 !py-5 rounded-full font-bold text-xl lg:text-2xl shadow-lg hover:shadow-emerald-500/70 transition-all duration-300 transform hover:scale-110 backdrop-blur-sm border border-emerald-400/60"
             >
-              Contact Us Now
+              {t("au.final_cta_button")}
             </button>
           </motion.div>
         </div>
