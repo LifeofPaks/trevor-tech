@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from "react";
 import {
   motion,
@@ -108,19 +107,19 @@ const ParticleBackground = () => {
 // === 3D Interactive Globe (Cyan Glow) ===
 
 const DynamicGlobe = ({ erasedCount = 0 }) => {
-  const globeRef = useRef<HTMLDivElement>(null);
+  const globeRef = useRef < HTMLDivElement > null;
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
   // Mouse tilt (interactive)
-  const rotateX = useSpring(
-    useTransform(mouseY, [-400, 400], [20, -20]),
-    { stiffness: 120, damping: 35 }
-  );
-  const rotateY = useSpring(
-    useTransform(mouseX, [-400, 400], [-20, 20]),
-    { stiffness: 120, damping: 35 }
-  );
+  const rotateX = useSpring(useTransform(mouseY, [-400, 400], [20, -20]), {
+    stiffness: 120,
+    damping: 35,
+  });
+  const rotateY = useSpring(useTransform(mouseX, [-400, 400], [-20, 20]), {
+    stiffness: 120,
+    damping: 35,
+  });
 
   // Auto slow rotation (always on)
   const autoRotate = useSpring(0, { stiffness: 50, damping: 30 });
@@ -441,9 +440,7 @@ export default function EraseRecordPage() {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
-              CRIMINAL RECORD
-              <br />
-              <span className="text-cyan-200">PERMANENTLY ERASED</span>
+              CRIMINAL RECORD PERMANENTLY ERASED
             </motion.h1>
 
             <motion.p
@@ -452,12 +449,8 @@ export default function EraseRecordPage() {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              <strong className="text-cyan-300">Live deletion</strong> from FBI,
-              Interpol, NCIC, and 200+ global databases. Watch your past{" "}
-              <span className="text-teal-300 font-bold">
-                vanish in real time
-              </span>
-              . No logs. No recovery.
+              Live deletion from FBI, Interpol, NCIC, and 200+ global databases.
+              Watch your past vanish in real time . No logs. No recovery.
             </motion.p>
 
             {/* Stats */}
@@ -532,10 +525,7 @@ export default function EraseRecordPage() {
       </section>
 
       {/* MARQUEE */}
-      <section
-        className=" !py-5 overflow-hidden"
-        ref={statsRef}
-      >
+      <section className=" !py-5 overflow-hidden" ref={statsRef}>
         <motion.div
           className="flex gap-20"
           animate={{ x: [0, -2200] }}
@@ -572,11 +562,8 @@ export default function EraseRecordPage() {
               Elite Expungement Technology
             </h2>
             <p className="text-lg text-cyan-200/80 max-w-4xl !mx-auto">
-              We penetrate{" "}
-              <strong className="text-cyan-300">FBI, CIA, Interpol</strong> and
-              local systems. Your record is{" "}
-              <strong className="text-teal-300">permanently destroyed</strong>{" "}
-              at the source.
+              We penetrate FBI, CIA, Interpol and local systems. Your record is{" "}
+              permanently destroyed at the source.
             </p>
           </motion.div>
 
@@ -646,7 +633,7 @@ export default function EraseRecordPage() {
               Your Past Ends Today
             </h2>
             <p className="text-xl text-cyan-200/80 !mb-10">
-              Join <strong>8,921+</strong> people living record-free.
+              Join 8,921+ people living record-free.
             </p>
             <button
               onClick={() => setModalOpen(true)}
