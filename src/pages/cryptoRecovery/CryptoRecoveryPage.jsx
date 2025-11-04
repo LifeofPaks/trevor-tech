@@ -490,7 +490,7 @@ export default function CryptoRecoveryPage() {
             transition={{ duration: 1.2 }}
           >
             <motion.h1
-              className="text-center lg:text-left text-5xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-8 leading-none tracking-tighter"
+              className="text-center lg:text-left text-4xl lg:text-8xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-8 leading-none tracking-tighter"
               initial={{ opacity: 0, y: 60 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
@@ -547,7 +547,7 @@ export default function CryptoRecoveryPage() {
                 disabled={isRecovering}
                 className="group relative !px-10 !py-5 bg-gradient-to-r from-cyan-500 via-teal-500 to-green-500 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-2xl lg:text-xl w-full lg:w-auto"
               >
-                <span className="relative z-10 flex items-center justify-center gap-4 text-[16px]">
+                <span className="relative z-10 flex items-center justify-center gap-4 text-[14px]">
                   {isRecovering ? (
                     <>
                       {t("cr.cta_scanning")} <FiCpu className="animate-spin" />
