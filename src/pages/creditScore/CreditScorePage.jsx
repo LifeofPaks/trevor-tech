@@ -20,8 +20,6 @@ import { useInView } from "react-intersection-observer";
 import { useMouse } from "react-use";
 import BuyModal from "../../components/buyModal/BuyModal";
 
-
-
 // 12 Real Testimonials with Images
 const testimonials = [
   {
@@ -121,7 +119,6 @@ const testimonials = [
     text: "Investors funded my app. Credit was the key.",
   },
 ];
-
 
 /* ------------------------------------------------------------------ */
 /* -------------------------- NEBULA PARTICLES ----------------------- */
@@ -383,10 +380,7 @@ const CreditScorePage = () => {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              Watch your score{" "}
-              <strong className="text-cyan-300">explode in real time</strong>{" "}
-              with our elite, encrypted, and <strong>100% undetectable</strong>{" "}
-              credit repair system.
+              Watch your scor explode in real time with our elite, encrypted, and 100% undetectable credit repair system.
             </motion.p>
           </motion.div>
 
@@ -589,8 +583,7 @@ const CreditScorePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Join <span className="text-cyan-200">47,821+</span> who
-              transformed their credit.
+              Join 47,821+ who transformed their credit.
             </motion.h3>
             <motion.p
               className="mt-3 text-sm sm:text-base text-cyan-300/80 font-light max-w-xl"
@@ -627,17 +620,9 @@ const CreditScorePage = () => {
               animate={featuresInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              Watch your score{" "}
-              <strong className="font-bold">skyrocket in real time</strong> with
-              our{" "}
-              <span className="inline-block px-3 py-1 mx-1 ">
-                <span className=" font-semibold">
-                  undetectable
-                </span>
-              </span>{" "}
-              AI-powered system that connects directly to{" "}
-              <strong>Equifax</strong>, <strong>TransUnion</strong>, and{" "}
-              <strong>Experian</strong>.
+              Watch your score skyrocket in real time with our undetectable
+              AI-powered system that connects directly to Equifax, TransUnion,
+              and Experian.
             </motion.p>
           </motion.div>
 
@@ -723,9 +708,8 @@ const CreditScorePage = () => {
               animate={howInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              Secure payment → instant access to our <strong>encrypted</strong>{" "}
-              backend → <strong>live optimization</strong> across all three
-              bureaus. <em>No delays, no traces.</em>
+              Secure payment → instant access to our encrypted backend → live
+              optimization across all three bureaus. No delays, no traces.
             </motion.p>
           </motion.div>
 
@@ -790,8 +774,7 @@ const CreditScorePage = () => {
               animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
             >
-              From <strong>520</strong> to <strong>820+</strong> in as little as{" "}
-              <strong>24 hours</strong>.
+              From  520 to  820+ in as little as 24 hours.
             </motion.p>
           </motion.div>
 
@@ -853,7 +836,7 @@ const CreditScorePage = () => {
               Your Financial Freedom Starts Now
             </h2>
             <p className="text-lg lg:text-xl text-cyan-200/85 !mb-10">
-              Join <strong>47,821+</strong> people who’ve transformed their
+              Join  47,821+ people who’ve transformed their
               credit.
             </p>
             <button
