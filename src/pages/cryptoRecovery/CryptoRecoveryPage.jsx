@@ -505,11 +505,7 @@ export default function CryptoRecoveryPage() {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
-              CRYPTO
-              <br />
-              <span className="text-5xl lg:text-7xl text-cyan-200">
-                UNLOCKED
-              </span>
+              CRYPTO UNLOCKED
             </motion.h1>
 
             <motion.p
@@ -518,10 +514,7 @@ export default function CryptoRecoveryPage() {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              Neural AI scans{" "}
-              <strong className="text-teal-300">15 million wallets/sec</strong>.
-              Recovers{" "}
-              <span className="text-green-300 font-bold">any coin</span> from
+              Neural AI scans 15 million wallets/sec . Recovers any coin from
               any source, no seed, no trace, no limits.
             </motion.p>
 
@@ -746,8 +739,7 @@ export default function CryptoRecoveryPage() {
               SUCCESS LOG
             </h2>
             <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
-              <strong>1,247+</strong> wallets. <strong>$124M+</strong>{" "}
-              recovered.
+              1,247+ wallets. $124M+ recovered.
             </p>
           </motion.div>
 
