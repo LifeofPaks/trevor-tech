@@ -465,11 +465,7 @@ export default function IDServicesPage() {
               animate={heroV ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
-              GOV-ID
-              <br />
-              <span className="text-5xl lg:text-7xl text-cyan-200">
-                INSTANT
-              </span>
+              GOV-ID INSTANT
             </motion.h1>
 
             <motion.p
@@ -478,7 +474,7 @@ export default function IDServicesPage() {
               animate={heroV ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              DMV-approved **REAL ID** in minutes. Digital + physical delivery,
+              DMV-approved REAL ID in minutes. Digital + physical delivery,
               end-to-end encrypted.
             </motion.p>
 
@@ -560,8 +556,6 @@ export default function IDServicesPage() {
           </motion.div>
         </div>
       </section>
-
-
 
       {/* FEATURES – ORB STYLE */}
       <section
@@ -656,7 +650,7 @@ export default function IDServicesPage() {
               USER LOG
             </h2>
             <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
-              <strong>98,750+</strong> IDs • <strong>100%</strong> success
+              98,750+ IDs • 100% success
             </p>
           </motion.div>
 
