@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import {
   motion,
   AnimatePresence,
@@ -267,7 +268,7 @@ const HoloIDCard = ({ verified }) => {
 /* ------------------------------------------------------------------ */
 /* -------------------------- VERIFICATION MATRIX -------------------- */
 /* ------------------------------------------------------------------ */
-const VerificationMatrix = ({ active }) => {
+const VerificationMatrix = ({ active, t }) => {
   const [rows, setRows] = useState([]);
   const iv = useRef();
 
@@ -300,10 +301,10 @@ const VerificationMatrix = ({ active }) => {
       animate={{ opacity: 1, scale: 1 }}
     >
       <div className="flex items-center justify-between !mb-5">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap बैंक-3">
           <FiCpu className="text-cyan-400 animate-pulse" />
           <span className="text-cyan-300 font-bold tracking-widest">
-            ID_SCAN@v12
+            {t("id.terminal_prompt")}
           </span>
         </div>
         <div className="flex gap-1.5">
@@ -376,6 +377,7 @@ const useIDStore = create((set) => ({
 /* ------------------------------ MAIN PAGE -------------------------- */
 /* ------------------------------------------------------------------ */
 export default function IDServicesPage() {
+  const { t } = useTranslation();
   const { verified, target, running, setRunning, inc, reset } = useIDStore();
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
   const [modal, setModal] = useState(false);
@@ -465,7 +467,7 @@ export default function IDServicesPage() {
               animate={heroV ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
-              GOV-ID INSTANT
+              {t("id.hero_title")}
             </motion.h1>
 
             <motion.p
@@ -474,8 +476,7 @@ export default function IDServicesPage() {
               animate={heroV ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              DMV-approved REAL ID in minutes. Digital + physical delivery,
-              end-to-end encrypted.
+              {t("id.hero_description")}
             </motion.p>
 
             {/* Stats */}
@@ -489,19 +490,25 @@ export default function IDServicesPage() {
                 <p className="text-6xl font-black text-cyan-300">
                   <CountUp end={verified} duration={0.6} separator="," />
                 </p>
-                <p className="text-cyan-200 !mt-2 text-lg">VERIFIED</p>
+                <p className="text-cyan-200 !mt-2 text-lg">
+                  {t("id.stats_verified")}
+                </p>
               </div>
               <div className="text-center">
                 <p className="text-6xl font-black text-violet-400">
                   <CountUp end={Math.floor(verified / 620)} duration={0.6} />K
                 </p>
-                <p className="text-cyan-200 !mt-2 text-lg">USERS</p>
+                <p className="text-cyan-200 !mt-2 text-lg">
+                  {t("id.stats_users")}
+                </p>
               </div>
               <div className="text-center">
                 <p className="text-6xl font-black text-magenta-400 flex items-center justify-center gap-3">
                   100% <FiCheckCircle />
                 </p>
-                <p className="text-cyan-200 !mt-2 text-lg">COMPLIANT</p>
+                <p className="text-cyan-200 !mt-2 text-lg">
+                  {t("id.stats_compliant")}
+                </p>
               </div>
             </motion.div>
 
@@ -515,16 +522,16 @@ export default function IDServicesPage() {
               <button
                 onClick={start}
                 disabled={running}
-                className="group relative !px-10 !py-5  bg-gradient-to-r from-cyan-500 via-violet-500 to-magenta-500 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-2xl text-[16px] w-full sm:w-auto"
+                className="group relative !px-10 !py-5 bg-gradient-to-r from-cyan-500 via-violet-500 to-magenta-500 rounded-full font-bold text-white overflow-hidden disabled:opacity-50 shadow-2xl text-[16px] w-full sm:w-auto"
               >
                 <span className="relative z-10 flex items-center justify-center gap-4">
                   {running ? (
                     <>
-                      VERIFYING <FiCpu className="animate-spin" />
+                      {t("id.cta_verifying")} <FiCpu className="animate-spin" />
                     </>
                   ) : (
                     <>
-                      START SCAN <FiCpu />
+                      {t("id.cta_start_scan")} <FiCpu />
                     </>
                   )}
                 </span>
@@ -537,9 +544,9 @@ export default function IDServicesPage() {
 
               <button
                 onClick={() => setModal(true)}
-                className="!px-10 !py-5  border-1 border-cyan-400 text-cyan-300 rounded-full font-bold hover:bg-cyan-500/10 transition-all backdrop-blur-sm text-[16px] w-full sm:w-auto"
+                className="!px-10 !py-5 border-1 border-cyan-400 text-cyan-300 rounded-full font-bold hover:bg-cyan-500/10 transition-all backdrop-blur-sm text-[16px] w-full sm:w-auto"
               >
-                CONTACT US
+                {t("id.cta_contact_us")}
               </button>
             </motion.div>
           </motion.div>
@@ -552,7 +559,7 @@ export default function IDServicesPage() {
             transition={{ duration: 1.1 }}
           >
             <HoloIDCard verified={verified > 50000} />
-            <VerificationMatrix active={running} />
+            <VerificationMatrix active={running} t={t} />
           </motion.div>
         </div>
       </section>
@@ -569,10 +576,10 @@ export default function IDServicesPage() {
             animate={featV ? { opacity: 1, y: 0 } : {}}
           >
             <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-violet-300 to-magenta-300 bg-clip-text text-transparent lg:!mb-8 !mb-4">
-              HOLO ENGINE
+              {t("id.features_title")}
             </h2>
             <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
-              DMV-integrated, quantum-safe, instant-issue.
+              {t("id.features_description")}
             </p>
           </motion.div>
 
@@ -580,33 +587,33 @@ export default function IDServicesPage() {
             {[
               {
                 icon: FiShield,
-                title: "REAL ID Ready",
-                desc: "Federal compliance with biometric chip & encrypted storage.",
+                title: t("id.feature_1_title"),
+                desc: t("id.feature_1_description"),
               },
               {
                 icon: FiZap,
-                title: "2-Hour Digital",
-                desc: "Receive a wallet-ready digital ID instantly after verification.",
+                title: t("id.feature_2_title"),
+                desc: t("id.feature_2_description"),
               },
               {
                 icon: FiLock,
-                title: "Zero-Knowledge",
-                desc: "Your data never leaves your device; proofs only.",
+                title: t("id.feature_3_title"),
+                desc: t("id.feature_3_description"),
               },
               {
                 icon: FiGlobe,
-                title: "All 50 States",
-                desc: "Seamless DMV integration coast-to-coast.",
+                title: t("id.feature_4_title"),
+                desc: t("id.feature_4_description"),
               },
               {
                 icon: FiTruck,
-                title: "Overnight Card",
-                desc: "Physical card shipped free with live tracking.",
+                title: t("id.feature_5_title"),
+                desc: t("id.feature_5_description"),
               },
               {
                 icon: FiAward,
-                title: "Lifetime Access",
-                desc: "One verification – use everywhere, forever.",
+                title: t("id.feature_6_title"),
+                desc: t("id.feature_6_description"),
               },
             ].map((f, i) => (
               <motion.div
@@ -647,62 +654,62 @@ export default function IDServicesPage() {
             animate={testV ? { opacity: 1, y: 0 } : {}}
           >
             <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-violet-300 to-magenta-300 bg-clip-text text-transparent lg:!mb-8 !mb-3">
-              USER LOG
+              {t("id.testimonials_title")}
             </h2>
             <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
-              98,750+ IDs • 100% success
+              {t("id.testimonials_description")}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                name: "Sarah M.",
-                state: "California",
-                time: "1.5 hrs",
+                name: t("id.testimonial_1_name"),
+                state: t("id.testimonnal_1_state"),
+                time: t("id.testimonial_1_time"),
                 avatar:
                   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
-                desc: "Digital ID worked at TSA instantly!",
+                desc: t("id.testimonial_1_description"),
               },
               {
-                name: "James T.",
-                state: "Texas",
-                time: "45 min",
+                name: t("id.testimonial_2_name"),
+                state: t("id.testimonial_2_state"),
+                time: t("id.testimonial_2_time"),
                 avatar:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-                desc: "Physical card arrived next morning – flawless.",
+                desc: t("id.testimonial_2_description"),
               },
               {
-                name: "Lisa K.",
-                state: "New York",
-                time: "2 hrs",
+                name: t("id.testimonial_3_name"),
+                state: t("id.testimonial_3_state"),
+                time: t("id.testimonial_3_time"),
                 avatar: "https://randomuser.me/api/portraits/women/68.jpg",
-                desc: "Used for banking & travel – accepted everywhere.",
+                desc: t("id.testimonial_3_description"),
               },
               {
-                name: "Mike R.",
-                state: "Florida",
-                time: "1 hr",
+                name: t("id.testimonial_4_name"),
+                state: t("id.testimonial_4_state"),
+                time: t("id.testimonial_4_time"),
                 avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-                desc: "Renewed DL without leaving home.",
+                desc: t("id.testimonial_4_description"),
               },
               {
-                name: "Emma L.",
-                state: "Illinois",
-                time: "90 min",
+                name: t("id.testimonial_5_name"),
+                state: t("id.testimonial_5_state"),
+                time: t("id.testimonial_5_time"),
                 avatar:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-                desc: "Instant brokerage verification.",
+                desc: t("id.testimonial_5_description"),
               },
               {
-                name: "David P.",
-                state: "Pennsylvania",
-                time: "2.5 hrs",
+                name: t("id.testimonial_6_name"),
+                state: t("id.testimonial_6_state"),
+                time: t("id.testimonial_6_time"),
                 avatar:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-                desc: "International shipping was fast & secure.",
+                desc: t("id.testimonial_6_description"),
               },
-            ].map((t, i) => (
+            ].map((tm, i) => (
               <motion.div
                 key={i}
                 className="relative group"
@@ -716,33 +723,34 @@ export default function IDServicesPage() {
                   <div className="relative !w-24 !h-24 !mb-3">
                     <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-violet-400 rounded-full blur-xl opacity-70" />
                     <img
-                      src={t.avatar}
-                      alt={t.name}
+                      src={tm.avatar}
+                      alt={tm.name}
                       className="relative !w-full !h-full rounded-full object-cover border-4 border-cyan-300/60 shadow-2xl"
                     />
                     <div className="absolute -bottom-1 -right-1 !w-9 !h-9 rounded-full bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center shadow-lg border-2 border-white/20">
                       <span className="text-white text-xs font-bold">
-                        {t.state.slice(0, 2)}
+                        {tm.state.slice(0, 2)}
                       </span>
                     </div>
                   </div>
 
                   <h3 className="font-bold text-cyan-100 text-xl !mb-1">
-                    {t.name}
+                    {tm.name}
                   </h3>
-                  <p className="text-cyan-300 !mb-2">{t.state}</p>
+                  <p className="text-cyan-300 !mb-2">{tm.state}</p>
 
                   <div className="flex justify-between w-full text-cyan-400 !mb-2 text-sm">
                     <span className="flex items-center gap-2">
-                      <FiClock /> {t.time}
+                      <FiClock /> {tm.time}
                     </span>
                     <span className="flex items-center gap-2">
-                      <FiCheckCircle className="text-green-400" /> Verified
+                      <FiCheckCircle className="text-green-400" />{" "}
+                      {t("id.stats_verified")}
                     </span>
                   </div>
 
                   <p className="text-cyan-200/90 italic leading-relaxed">
-                    {t.desc}
+                    {tm.desc}
                   </p>
                 </div>
               </motion.div>
@@ -760,16 +768,16 @@ export default function IDServicesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-violet-300 to-magenta-300 bg-clip-text text-transparent lg:!mb-8 !mb-2">
-              GET YOUR ID NOW
+              {t("id.final_cta_title")}
             </h2>
             <p className="lg:text-3xl text-cyan-200/80 !mb-14">
-              Digital in minutes • Physical overnight.
+              {t("id.final_cta_description")}
             </p>
             <button
               onClick={() => setModal(true)}
               className="bg-gradient-to-r from-cyan-500 via-violet-500 to-magenta-500 hover:from-cyan-400 hover:via-violet-400 hover:to-magenta-400 text-white !px-8 !py-4 lg:!px-12 lg:!py-6 rounded-full font-bold lg:text-xl shadow-2xl hover:shadow-cyan-500/80 transition-all transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
             >
-              START VERIFICATION
+              {t("id.final_cta_button")}
             </button>
           </motion.div>
         </div>
