@@ -19,7 +19,13 @@ import {
   FiTrash2,
 } from "react-icons/fi";
 import { FaEnvelope, FaTelegramPlane } from "react-icons/fa";
-import { BsGlobeAsiaAustralia, BsInstagram, BsMessenger, BsSnapchat, BsWhatsapp } from "react-icons/bs";
+import {
+  BsGlobeAsiaAustralia,
+  BsInstagram,
+  BsMessenger,
+  BsSnapchat,
+  BsWhatsapp,
+} from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
 import { useMouse } from "react-use";
 import BuyModal from "../../components/buyModal/BuyModal";
@@ -332,7 +338,7 @@ const StopBlackmailPage = () => {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.9 }}
             >
-              BLACKMAIL <span className="text-cyan-300">ERASED</span>
+              BLACKMAIL ERASED
             </motion.h1>
             <motion.p
               className="text-lg sm:text-xl lg:text-2xl text-cyan-200/90 font-light !max-w-3xl !mx-auto !mb-14 leading-relaxed"
@@ -340,9 +346,8 @@ const StopBlackmailPage = () => {
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              We <strong>permanently delete</strong> your private data from{" "}
-              <strong>every server, cloud, and dark web archive</strong>.{" "}
-              <em>No recovery possible.</em>
+              We permanently delete your private data from every server, cloud,
+              and dark web archive. No recovery possible.
             </motion.p>
           </motion.div>
 
@@ -556,8 +561,7 @@ const StopBlackmailPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Join <span className="text-cyan-200">12,847+</span> who erased
-              their past.
+              Join 12,847+ who erased their past.
             </motion.h3>
             <motion.p
               className="mt-3 text-sm sm:text-base text-cyan-300/80 font-light max-w-xl"
@@ -588,13 +592,10 @@ const StopBlackmailPage = () => {
             animate={globeInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3 }}
           >
-            <strong className="text-cyan-100">All</strong> private files,
-            videos, messages, and doxxing records permanently deleted from{" "}
-            <strong className="text-cyan-100">47+ platforms</strong>, including
-            Telegram, Mega, Google Drive, iCloud, and dark web archives.
-            <em className="block mt-2">
-              Real-time tracking. Global reach. Zero recovery.
-            </em>
+            All private files, videos, messages, and doxxing records permanently
+            deleted from 47+ platforms, including Telegram, Mega, Google Drive,
+            iCloud, and dark web archives. Real-time tracking. Global reach.
+            Zero recovery.
           </motion.p>
 
           <motion.div
@@ -712,12 +713,9 @@ const StopBlackmailPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <strong className="text-cyan-100">12,847+</strong> victims of
-            sextortion, revenge porn, deepfakes, doxxing, and financial
-            blackmail, now live <strong>100% free</strong> from digital threats.
-            <em className="block mt-2 text-cyan-300/90">
-              Every trace erased. Every platform wiped.
-            </em>
+            12,847+ victims of sextortion, revenge porn, deepfakes, doxxing, and
+            financial blackmail, now live 100% free from digital threats. Every
+            trace erased. Every platform wiped.
           </motion.p>
 
           <div className="relative overflow-hidden">
@@ -770,7 +768,7 @@ const StopBlackmailPage = () => {
             Your Turn to Be Free
           </motion.h2>
           <motion.p className="text-base lg:text-lg text-cyan-200/80 !mb-8">
-            Join <strong>12,847+</strong> people who’ve erased their past.
+            Join 12,847+ people who’ve erased their past.
           </motion.p>
           <button
             onClick={() => setModalOpen(true)}
