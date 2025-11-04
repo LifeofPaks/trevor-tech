@@ -6,7 +6,6 @@ import {
   useTransform,
   useSpring,
   useScroll,
-  useTransform as transformScroll,
 } from "framer-motion";
 import {
   FiShield,
@@ -43,7 +42,9 @@ import CountUp from "react-countup";
 import { create } from "zustand";
 import BuyModal from "../../components/buyModal/BuyModal";
 import { RiBitCoinFill, RiBtcFill, RiXrpFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 
+// === Crypto Orbital (Particle Background) ===
 const CryptoOrbital = () => {
   const canvasRef = useRef(null);
   const [orbData, setOrbData] = useState([]);
@@ -207,7 +208,7 @@ const CryptoOrbital = () => {
   );
 };
 
-// === 3D NEURAL CRYPTO SCANNER (ROTATING CUBE) ===
+// === 3D Neural Crypto Scanner (Rotating Cube) ===
 const NeuralCryptoScanner = ({ recovered }) => {
   const containerRef = useRef(null);
   const mouseX = useMotionValue(0);
@@ -235,7 +236,6 @@ const NeuralCryptoScanner = ({ recovered }) => {
       onMouseMove={handleMouseMove}
       whileHover={{ scale: 1.08 }}
     >
-      {/* Core Cube */}
       <motion.div
         className="absolute inset-12 bg-gradient-to-br from-cyan-900/70 via-teal-900/60 to-green-900/50 backdrop-blur-3xl rounded-3xl border border-cyan-400/40 shadow-2xl"
         animate={{ rotateY: 360 }}
@@ -244,8 +244,6 @@ const NeuralCryptoScanner = ({ recovered }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl" />
         <RiBtcFill className="!w-full !h-full text-cyan-300 opacity-20 p-8" />
       </motion.div>
-
-      {/* Scanning Rings */}
       {[0, 1, 2].map((i) => (
         <motion.div
           key={i}
@@ -259,8 +257,6 @@ const NeuralCryptoScanner = ({ recovered }) => {
           }}
         />
       ))}
-
-      {/* Floating Crypto Nodes */}
       {Array.from({ length: Math.min(recovered / 7000, 40) }).map((_, i) => {
         const angle = (i / 40) * Math.PI * 2;
         const radius = 170 + (i % 4) * 25;
@@ -294,8 +290,8 @@ const NeuralCryptoScanner = ({ recovered }) => {
   );
 };
 
-// === LIVE RECOVERY MATRIX (TERMINAL) ===
-const RecoveryMatrix = ({ isActive }) => {
+// === Live Recovery Matrix (Terminal) ===
+const RecoveryMatrix = ({ isActive, t }) => {
   const [lines, setLines] = useState([]);
   const intervalRef = useRef();
 
@@ -338,7 +334,7 @@ const RecoveryMatrix = ({ isActive }) => {
         <div className="flex items-center gap-3">
           <FiTerminal className="text-cyan-400 animate-pulse" />
           <span className="text-cyan-300 font-bold tracking-widest">
-            NEURAL_VAULT@v2
+            {t("cr.terminal_prompt")}
           </span>
         </div>
         <div className="flex gap-1.5">
@@ -347,7 +343,6 @@ const RecoveryMatrix = ({ isActive }) => {
           <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
         </div>
       </div>
-
       <div className="space-y-2.5 text-cyan-200">
         {lines.map((line) => (
           <motion.div
@@ -369,7 +364,9 @@ const RecoveryMatrix = ({ isActive }) => {
             <span className="text-teal-400">
               {line.amount} {line.coin}
             </span>
-            <span className="text-gray-500">→ SECURE WALLET</span>
+            <span className="text-gray-500">
+              {t("cr.terminal_secure_wallet")}
+            </span>
           </motion.div>
         ))}
         {isActive && (
@@ -406,12 +403,13 @@ const useRecoveryStore = create((set) => ({
   reset: () => set({ recovered: 0, isRecovering: false }),
 }));
 
-// === MAIN PAGE ===
+// === Main Component ===
 export default function CryptoRecoveryPage() {
   const { recovered, target, isRecovering, setRecovering, increment, reset } =
     useRecoveryStore();
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [modalOpen, setModalOpen] = useState(false);
+  const { t } = useTranslation();
 
   const { ref: heroRef, inView: heroInView } = useInView({
     threshold: 0.3,
@@ -431,9 +429,9 @@ export default function CryptoRecoveryPage() {
   });
 
   const { scrollYProgress } = useScroll();
-  const backgroundY = transformScroll(scrollYProgress, [0, 1], ["0%", "120%"]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "120%"]);
 
-  // Live Recovery (only updates counter)
+  // Live Recovery
   useEffect(() => {
     if (isRecovering && recovered < target) {
       const timer = setTimeout(() => {
@@ -446,7 +444,7 @@ export default function CryptoRecoveryPage() {
     }
   }, [recovered, isRecovering, target, increment, setRecovering]);
 
-  // Mouse Trail (same as previous: 600px glow)
+  // Mouse Trail
   useEffect(() => {
     const handleMouse = (e) => setMousePos({ x: e.clientX, y: e.clientY });
     window.addEventListener("mousemove", handleMouse);
@@ -461,8 +459,6 @@ export default function CryptoRecoveryPage() {
   return (
     <>
       <CryptoOrbital />
-
-      {/* GLOWING MOUSE TRAIL (600px) */}
       <motion.div
         className="fixed !w-[600px] !h-[600px] rounded-full pointer-events-none z-50 mix-blend-screen"
         style={{
@@ -474,15 +470,11 @@ export default function CryptoRecoveryPage() {
         animate={{ scale: isRecovering ? 1.7 : 1 }}
         transition={{ type: "spring", stiffness: 320 }}
       />
-
-      {/* HERO - ASYMMETRIC LAYOUT */}
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden lg:!pt-[6rem] !pt-[10rem]"
         ref={heroRef}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90" />
-
-        {/* Parallax Orbs */}
         <motion.div
           className="absolute inset-0 opacity-40"
           style={{ y: backgroundY }}
@@ -490,9 +482,7 @@ export default function CryptoRecoveryPage() {
           <div className="absolute top-32 left-32 !w-[650px] !h-[650px] bg-gradient-to-r from-cyan-600/30 to-teal-600/20 rounded-full blur-3xl" />
           <div className="absolute bottom-48 right-48 !w-[600px] !h-[600px] bg-gradient-to-r from-green-600/25 to-cyan-600/15 rounded-full blur-3xl" />
         </motion.div>
-
         <div className="relative z-10 max-w-7xl !mx-auto !px-6 grid lg:grid-cols-12 gap-12 items-center">
-          {/* LEFT: HERO TEXT (COL 7) */}
           <motion.div
             className="lg:col-span-7"
             initial={{ opacity: 0, x: -160 }}
@@ -505,20 +495,16 @@ export default function CryptoRecoveryPage() {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
-              CRYPTO UNLOCKED
+              {t("cr.hero_title")}
             </motion.h1>
-
             <motion.p
-              className=" lg:text-2xl text-cyan-200 !mb-12 max-w-3xl leading-relaxed text-center lg:text-left"
+              className="lg:text-2xl text-cyan-200 !mb-12 max-w-3xl leading-relaxed text-center lg:text-left"
               initial={{ opacity: 0 }}
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              Neural AI scans 15 million wallets/sec . Recovers any coin from
-              any source, no seed, no trace, no limits.
+              {t("cr.hero_description")}
             </motion.p>
-
-            {/* Live Stats */}
             <motion.div
               className="flex items-center flex-col lg:flex-row justify-center lg:justify-between gap-12 w-full"
               initial={{ opacity: 0 }}
@@ -529,23 +515,29 @@ export default function CryptoRecoveryPage() {
                 <p className="text-6xl font-black text-cyan-300">
                   $<CountUp end={recovered} duration={0.6} separator="," />
                 </p>
-                <p className="text-cyan-200 !mt-2 text-lg">RECOVERED</p>
+                <p className="text-cyan-200 !mt-2 text-lg">
+                  {t("cr.stats_recovered")}
+                </p>
               </div>
               <div className="flex items-center justify-center flex-col">
                 <p className="text-6xl font-black text-teal-400">
                   <CountUp end={Math.floor(recovered / 800)} duration={0.6} />K
                 </p>
-                <p className="text-cyan-200 !mt-2 text-lg">WALLETS</p>
+                <p className="text-cyan-200 !mt-2 text-lg">
+                  {t("cr.stats_wallets")}
+                </p>
               </div>
               <div className="flex items-center justify-center flex-col">
                 <p className="text-6xl font-black text-green-400 flex items-center gap-3">
                   100% <FiCheckCircle />
                 </p>
-                <p className="text-cyan-200 !mt-2 text-lg">SUCCESS</p>
+                <p className="text-cyan-200 !mt-2 text-lg">
+                  {t("cr.stats_success")}
+                </p>
               </div>
             </motion.div>
             <motion.div
-              className="flex flex-wrap lg:gap-8 gap-4 !mt-16 "
+              className="flex flex-wrap lg:gap-8 gap-4 !mt-16"
               initial={{ opacity: 0, y: 50 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6 }}
@@ -558,11 +550,11 @@ export default function CryptoRecoveryPage() {
                 <span className="relative z-10 flex items-center justify-center gap-4 text-[16px]">
                   {isRecovering ? (
                     <>
-                      SCANNING LIVE <FiCpu className="animate-spin" />
+                      {t("cr.cta_scanning")} <FiCpu className="animate-spin" />
                     </>
                   ) : (
                     <>
-                      START NEURAL SCAN <FiCpu />
+                      {t("cr.cta_start_scan")} <FiCpu />
                     </>
                   )}
                 </span>
@@ -572,17 +564,14 @@ export default function CryptoRecoveryPage() {
                   transition={{ repeat: Infinity, duration: 1.2 }}
                 />
               </button>
-
               <button
                 onClick={() => setModalOpen(true)}
                 className="!px-10 !py-5 border-1 text-[16px] border-cyan-400 text-cyan-300 rounded-full font-bold hover:bg-cyan-500/10 transition-all backdrop-blur-sm w-full lg:w-auto"
               >
-                CONTACT OPS
+                {t("cr.cta_contact_ops")}
               </button>
             </motion.div>
           </motion.div>
-
-          {/* RIGHT: 3D SCANNER + MATRIX (COL 5) */}
           <motion.div
             className="lg:col-span-5 flex flex-col items-center gap-12"
             initial={{ opacity: 0, x: 160 }}
@@ -590,14 +579,12 @@ export default function CryptoRecoveryPage() {
             transition={{ duration: 1.2 }}
           >
             <NeuralCryptoScanner recovered={recovered} />
-            <RecoveryMatrix isActive={isRecovering} />
+            <RecoveryMatrix isActive={isRecovering} t={t} />
           </motion.div>
         </div>
       </section>
-
-      {/* MARQUEE – SCROLLING COIN LIST */}
       <section
-        className="backdrop-blur-3xl  lg:!py-7 !py-3 overflow-hidden"
+        className="backdrop-blur-3xl lg:!py-7 !py-3 overflow-hidden"
         ref={statsRef}
       >
         <motion.div
@@ -605,7 +592,6 @@ export default function CryptoRecoveryPage() {
           animate={{ x: [0, -1000] }}
           transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
         >
-          {/* Duplicate the list a few times so the marquee never has a gap */}
           {[...Array(3)].map((_, repeatIdx) => (
             <div
               key={repeatIdx}
@@ -646,10 +632,8 @@ export default function CryptoRecoveryPage() {
           ))}
         </motion.div>
       </section>
-
-      {/* FEATURES */}
       <section
-        className="!relative !py-15 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92 "
+        className="!relative !py-15 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92"
         ref={featuresRef}
       >
         <div className="max-w-7xl !mx-auto !px-6 lg:!px-10">
@@ -659,44 +643,43 @@ export default function CryptoRecoveryPage() {
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
           >
             <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-4">
-              NEURAL ENGINE
+              {t("cr.features_title")}
             </h2>
             <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
-              Cracks any wallet. Bypasses any lock. Recovers any coin.
+              {t("cr.features_description")}
             </p>
           </motion.div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
                 icon: FiKey,
-                title: "Seedless",
-                desc: "Securely recover accounts from minimal data using verified owner checks and guided restoration.",
+                title: t("cr.feature_1_title"),
+                desc: t("cr.feature_1_description"),
               },
               {
                 icon: FiCode,
-                title: "Neural Force",
-                desc: "High-performance recovery assistance using ML-driven heuristics to suggest valid recovery paths.",
+                title: t("cr.feature_2_title"),
+                desc: t("cr.feature_2_description"),
               },
               {
                 icon: FiEyeOff,
-                title: "Ghost Mode",
-                desc: "Discreet monitoring with explicit consent, end-to-end encryption, and a tamper-proof audit trail.",
+                title: t("cr.feature_3_title"),
+                desc: t("cr.feature_3_description"),
               },
               {
                 icon: RiBtcFill,
-                title: "All Chains",
-                desc: "Interoperable support across 200+ blockchains and tokens for compliant wallet management and recovery.",
+                title: t("cr.feature_4_title"),
+                desc: t("cr.feature_4_description"),
               },
               {
                 icon: FiZap,
-                title: "Instant",
-                desc: "Fast, compliant transfers and settlement options to move funds securely in seconds where supported.",
+                title: t("cr.feature_5_title"),
+                desc: t("cr.feature_5_description"),
               },
               {
                 icon: FiShield,
-                title: "Quantum Safe",
-                desc: "Post-quantum cryptographic safeguards and migration paths to protect assets against future threats.",
+                title: t("cr.feature_6_title"),
+                desc: t("cr.feature_6_description"),
               },
             ].map((f, i) => (
               <motion.div
@@ -711,10 +694,10 @@ export default function CryptoRecoveryPage() {
                   <div className="w-16 h-16 bg-gradient-to-r from-cyan-500/25 to-teal-500/25 rounded-2xl flex items-center justify-center !mb-3 group-hover:scale-110 transition-transform">
                     <f.icon className="!w-10 !h-10 text-cyan-300 drop-shadow-glow" />
                   </div>
-                  <h3 className="lg:text-2xl text-xl font-bold text-cyan-100 !mb-2">
+                  <h3 className="lg:text-xl text-lg font-bold text-cyan-100 !mb-2">
                     {f.title}
                   </h3>
-                  <p className="text-cyan-200/80 text-lg leading-relaxed">
+                  <p className="text-cyan-200/80 text-[14px] leading-relaxed">
                     {f.desc}
                   </p>
                 </div>
@@ -723,8 +706,6 @@ export default function CryptoRecoveryPage() {
           </div>
         </div>
       </section>
-
-      {/* TESTIMONIALS */}
       <section
         className="relative !py-12 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92"
         ref={testimonialsRef}
@@ -736,69 +717,68 @@ export default function CryptoRecoveryPage() {
             animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
           >
             <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-3">
-              SUCCESS LOG
+              {t("cr.testimonials_title")}
             </h2>
             <p className="lg:text-2xl text-cyan-200 max-w-5xl !mx-auto">
-              1,247+ wallets. $124M+ recovered.
+              {t("cr.testimonials_description")}
             </p>
           </motion.div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                name: "Alex R.",
-                chain: "Bitcoin",
-                amount: "$71,200",
-                time: "16 hrs",
+                name: t("cr.testimonial_1_name"),
+                chain: t("cr.testimonial_1_chain"),
+                amount: t("cr.testimonial_1_amount"),
+                time: t("cr.testimonial_1_time"),
                 avatar:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-                desc: "Recovered my lost Bitcoin wallet in record time, absolutely grateful!",
+                desc: t("cr.testimonial_1_description"),
               },
               {
-                name: "Maya L.",
-                chain: "Ethereum",
-                amount: "$45,600",
-                time: "9 hrs",
+                name: t("cr.testimonial_2_name"),
+                chain: t("cr.testimonial_2_chain"),
+                amount: t("cr.testimonial_2_amount"),
+                time: t("cr.testimonial_2_time"),
                 avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-                desc: "Quick, transparent, and professional recovery. I got my ETH back safely!",
+                desc: t("cr.testimonial_2_description"),
               },
               {
-                name: "Kai P.",
-                chain: "Solana",
-                amount: "$33,100",
-                time: "20 hrs",
+                name: t("cr.testimonial_3_name"),
+                chain: t("cr.testimonial_3_chain"),
+                amount: t("cr.testimonial_3_amount"),
+                time: t("cr.testimonial_3_time"),
                 avatar:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-                desc: "I thought my SOL was gone forever, they proved me wrong!",
+                desc: t("cr.testimonial_3_description"),
               },
               {
-                name: "Nia S.",
-                chain: "Cardano",
-                amount: "$19,800",
-                time: "12 hrs",
+                name: t("cr.testimonial_4_name"),
+                chain: t("cr.testimonial_4_chain"),
+                amount: t("cr.testimonial_4_amount"),
+                time: t("cr.testimonial_4_time"),
                 avatar:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-                desc: "Simple process, constant updates, and full ADA recovery. Highly recommend!",
+                desc: t("cr.testimonial_4_description"),
               },
               {
-                name: "Leo T.",
-                chain: "Polygon",
-                amount: "$14,300",
-                time: "7 hrs",
+                name: t("cr.testimonial_5_name"),
+                chain: t("cr.testimonial_5_chain"),
+                amount: t("cr.testimonial_5_amount"),
+                time: t("cr.testimonial_5_time"),
                 avatar:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-                desc: "Recovered my MATIC faster than expected, excellent support throughout.",
+                desc: t("cr.testimonial_5_description"),
               },
               {
-                name: "Zoe A.",
-                chain: "Binance",
-                amount: "$23,700",
-                time: "18 hrs",
+                name: t("cr.testimonial_6_name"),
+                chain: t("cr.testimonial_6_chain"),
+                amount: t("cr.testimonial_6_amount"),
+                time: t("cr.testimonial_6_time"),
                 avatar:
                   "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
-                desc: "Lost access to my BNB wallet, fully restored within a day. Impressive!",
+                desc: t("cr.testimonial_6_description"),
               },
-            ].map((t, i) => (
+            ].map((tm, i) => (
               <motion.div
                 key={i}
                 className="relative group"
@@ -808,50 +788,46 @@ export default function CryptoRecoveryPage() {
                 whileHover={{ y: -14, scale: 1.05 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/15 to-teal-500/15 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
-                <div className="bg-white/5 backdrop-blur-7xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/50 transition-all group">
+                <div className="bg-white/5 backdrop-blur-7xl border border-cyan-500/30 rounded-2xl !p-8 shadow-2xl hover:shadow-cyan-500/50 transition-all group h-[280px]">
                   <div className="flex items-center gap-5 !mb-6">
-                    {/* Profile Avatar */}
                     <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/80 to-teal-500/80 rounded-full blur-xl opacity-80 group-hover:opacity-100 transition-all"></div>
                       <img
-                        src={t.avatar}
-                        alt={t.name}
+                        src={tm.avatar}
+                        alt={tm.name}
                         className="relative !w-18 !h-18 rounded-full object-cover border-4 border-cyan-400/50 shadow-2xl group-hover:border-cyan-400/80 transition-all"
                       />
-                      {/* Chain Icon Overlay */}
                       <div className="absolute -bottom-1 -right-1 !w-8 !h-8 rounded-full bg-gradient-to-br from-cyan-500 to-teal-500 flex items-center justify-center shadow-lg border-2 border-white/20">
-                        {t.chain === "Bitcoin" ? (
+                        {tm.chain === t("cr.testimonial_1_chain") ? (
                           <RiBtcFill className="text-white !w-4 !h-4" />
-                        ) : t.chain === "Ethereum" ? (
+                        ) : tm.chain === t("cr.testimonial_2_chain") ? (
                           <FaEthereum className="text-white !w-4 !h-4" />
-                        ) : t.chain === "Solana" ? (
+                        ) : tm.chain === t("cr.testimonial_3_chain") ? (
                           <SiSolana className="text-white !w-4 !h-4" />
-                        ) : t.chain === "Cardano" ? (
+                        ) : tm.chain === t("cr.testimonial_4_chain") ? (
                           <SiCardano className="text-white !w-4 !h-4" />
-                        ) : t.chain === "Polygon" ? (
+                        ) : tm.chain === t("cr.testimonial_5_chain") ? (
                           <SiPolygon className="text-white !w-4 !h-4" />
                         ) : (
                           <SiBinance className="text-white !w-4 !h-4" />
                         )}
                       </div>
                     </div>
-
                     <div>
-                      <h3 className="font-bold text-cyan-100 text-xl">
-                        {t.name}
+                      <h3 className="font-bold text-cyan-100 text-lg">
+                        {tm.name}
                       </h3>
-                      <p className="text-cyan-300">{t.chain}</p>
+                      <p className="text-cyan-300 text-[14px]">{tm.chain}</p>
                     </div>
                   </div>
-
-                  <div className="flex justify-between text-cyan-400 !mb-5 text-lg">
-                    <span>{t.amount}</span>
+                  <div className="flex justify-between text-cyan-400 !mb-3 text-[14px]">
+                    <span>{tm.amount}</span>
                     <span className="flex items-center gap-2">
-                      <FiClock /> {t.time}
+                      <FiClock /> {tm.time}
                     </span>
                   </div>
-                  <p className="text-cyan-200/90 italic  leading-relaxed">
-                    {t.desc}
+                  <p className="text-cyan-200/90 italic leading-relaxed text-[14px]">
+                    {tm.desc}
                   </p>
                 </div>
               </motion.div>
@@ -859,8 +835,6 @@ export default function CryptoRecoveryPage() {
           </div>
         </div>
       </section>
-
-      {/* FINAL CTA */}
       <section className="relative !py-12 lg:!py-44 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-92">
         <div className="max-w-5xl !mx-auto !px-6 text-center">
           <motion.div
@@ -869,23 +843,21 @@ export default function CryptoRecoveryPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent lg:!mb-8 !mb-2">
-              UNLOCK NOW
+              {t("cr.final_cta_title")}
             </h2>
             <p className="lg:text-3xl text-cyan-200/80 !mb-14">
-              Your funds are waiting.
+              {t("cr.final_cta_description")}
             </p>
             <button
               onClick={() => setModalOpen(true)}
-              className="bg-gradient-to-r from-cyan-500 via-teal-500 to-green-500 hover:from-cyan-400 hover:via-teal-400 hover:to-green-400 text-white !px-8 !py-4  lg:!px-12 lg:!py-6 rounded-full font-bold lg:text-xl shadow-2xl hover:shadow-cyan-500/80 transition-all transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
+              className="bg-gradient-to-r from-cyan-500 via-teal-500 to-green-500 hover:from-cyan-400 hover:via-teal-400 hover:to-green-400 text-white !px-8 !py-4 lg:!px-12 lg:!py-6 rounded-full font-bold lg:text-xl shadow-2xl hover:shadow-cyan-500/80 transition-all transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
             >
-              CONTACT TEAM
+              {t("cr.final_cta_button")}
             </button>
           </motion.div>
         </div>
       </section>
-
       <BuyModal open={modalOpen} handleClose={() => setModalOpen(false)} />
-
       <style jsx>{`
         .drop-shadow-glow {
           filter: drop-shadow(0 0 16px currentColor)
