@@ -28,6 +28,7 @@ import CountUp from "react-countup";
 import { create } from "zustand";
 import BuyModal from "../../components/buyModal/BuyModal";
 import { BsGlobeCentralSouthAsia } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 // === Particle Background (Cyan/Teal) ===
 const ParticleBackground = () => {
@@ -105,9 +106,8 @@ const ParticleBackground = () => {
 };
 
 // === 3D Interactive Globe (Cyan Glow) ===
-
 const DynamicGlobe = ({ erasedCount = 0 }) => {
-  const globeRef = useRef < HTMLDivElement > null;
+  const globeRef = useRef(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -227,7 +227,7 @@ const DynamicGlobe = ({ erasedCount = 0 }) => {
 };
 
 // === Live Terminal (Cyan/Teal Theme) ===
-const DatabaseTerminal = ({ isActive }) => {
+const DatabaseTerminal = ({ isActive, t }) => {
   const [logs, setLogs] = useState([]);
   const intervalRef = useRef();
 
@@ -288,7 +288,7 @@ const DatabaseTerminal = ({ isActive }) => {
           <div className="w-3 h-3 rounded-full bg-green-400" />
         </div>
         <span className="text-cyan-300 font-semibold">
-          dark_erase_terminal@vault
+          {t("terminal_prompt")}
         </span>
         <FiCpu className="ml-auto text-cyan-400 animate-pulse" />
       </div>
@@ -346,6 +346,7 @@ export default function EraseRecordPage() {
   } = useEraseStore();
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [modalOpen, setModalOpen] = useState(false);
+  const { t } = useTranslation(); // Use "er" namespace for translations
 
   const { ref: heroRef, inView: heroInView } = useInView({
     threshold: 0.3,
@@ -357,10 +358,6 @@ export default function EraseRecordPage() {
   });
   const { ref: featuresRef, inView: featuresInView } = useInView({
     threshold: 0.3,
-    triggerOnce: true,
-  });
-  const { ref: testimonialsRef, inView: testimonialsInView } = useInView({
-    threshold: 0.2,
     triggerOnce: true,
   });
 
@@ -440,17 +437,16 @@ export default function EraseRecordPage() {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
-              CRIMINAL RECORD PERMANENTLY ERASED
+              {t("er.hero_title")}
             </motion.h1>
 
             <motion.p
-              className=" lg:text-xl text-cyan-200/90 !mb-10 max-w-2xl leading-relaxed text-center lg:text-left"
+              className="lg:text-xl text-cyan-200/90 !mb-10 max-w-2xl leading-relaxed text-center lg:text-left"
               initial={{ opacity: 0 }}
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              Live deletion from FBI, Interpol, NCIC, and 200+ global databases.
-              Watch your past vanish in real time . No logs. No recovery.
+              {t("er.hero_description")}
             </motion.p>
 
             {/* Stats */}
@@ -461,20 +457,20 @@ export default function EraseRecordPage() {
               transition={{ delay: 0.8 }}
             >
               <div>
-                <p className="lg:text-6xl text-5xl font-black text-cyan-300 ">
+                <p className="lg:text-6xl text-5xl font-black text-cyan-300">
                   <CountUp end={erasedFiles} duration={0.6} separator="," />
                 </p>
-                <p className="text-cyan-200 mt-1">FILES DELETED</p>
+                <p className="text-cyan-200 mt-1">{t("er.stats_files_deleted")}</p>
               </div>
               <div>
                 <p className="lg:text-6xl text-5xl font-black text-green-400 flex items-center gap-2">
                   100% <FiCheckCircle />
                 </p>
-                <p className="text-cyan-200 !mt-1">SUCCESS RATE</p>
+                <p className="text-cyan-200 !mt-1">{t("er.stats_success_rate")}</p>
               </div>
             </motion.div>
             <motion.div
-              className="flex lg:flex-row flex-col gap-5 !mt-12 "
+              className="flex lg:flex-row flex-col gap-5 !mt-12"
               initial={{ opacity: 0, y: 30 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6 }}
@@ -487,11 +483,11 @@ export default function EraseRecordPage() {
                 <span className="relative z-10 flex items-center justify-center gap-3 text-lg">
                   {isErasing ? (
                     <>
-                      ERASING LIVE <FiZap className="animate-pulse" />
+                      {t("er.cta_erasing")} <FiZap className="animate-pulse" />
                     </>
                   ) : (
                     <>
-                      BEGIN ERASURE <FiZap />
+                      {t("er.cta_begin_erasure")} <FiZap />
                     </>
                   )}
                 </span>
@@ -506,7 +502,7 @@ export default function EraseRecordPage() {
                 onClick={() => setModalOpen(true)}
                 className="!px-10 !py-5 border-2 border-cyan-400 text-cyan-300 rounded-full font-bold hover:bg-cyan-500/10 transition-all backdrop-blur-sm"
               >
-                CONTACT AGENT
+                {t("er.cta_contact_agent")}
               </button>
             </motion.div>
           </motion.div>
@@ -519,13 +515,13 @@ export default function EraseRecordPage() {
             transition={{ duration: 0.9 }}
           >
             <DynamicGlobe erasedCount={erasedFiles} />
-            <DatabaseTerminal isActive={isErasing} />
+            <DatabaseTerminal isActive={isErasing} t={t}/>
           </motion.div>
         </div>
       </section>
 
       {/* MARQUEE */}
-      <section className=" !py-5 overflow-hidden" ref={statsRef}>
+      <section className="!py-5 overflow-hidden" ref={statsRef}>
         <motion.div
           className="flex gap-20"
           animate={{ x: [0, -2200] }}
@@ -534,15 +530,15 @@ export default function EraseRecordPage() {
           {[...Array(4)].map((_, i) => (
             <div key={i} className="flex gap-20 whitespace-nowrap">
               <span className="text-cyan-300 font-bold lg:text-lg">
-                8,921 RECORDS ERASED
+                {t("er.marquee_records_erased")}
               </span>
               <span className="text-teal-400">•</span>
               <span className="text-green-400 font-bold lg:text-lg">
-                48HR GUARANTEE
+                {t("er.marquee_guarantee")}
               </span>
               <span className="text-teal-400">•</span>
               <span className="text-cyan-200 font-bold lg:text-lg">
-                FBI • INTERPOL • NCIC • EUROPOL
+                {t("er.marquee_databases")}
               </span>
               <span className="text-teal-400">•</span>
             </div>
@@ -559,11 +555,10 @@ export default function EraseRecordPage() {
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
           >
             <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-6">
-              Elite Expungement Technology
+              {t("er.features_title")}
             </h2>
             <p className="text-lg text-cyan-200/80 max-w-4xl !mx-auto">
-              We penetrate FBI, CIA, Interpol and local systems. Your record is{" "}
-              permanently destroyed at the source.
+              {t("er.features_description")}
             </p>
           </motion.div>
 
@@ -571,33 +566,33 @@ export default function EraseRecordPage() {
             {[
               {
                 icon: FiGlobe,
-                title: "Global Reach",
-                desc: "200+ databases. Every country. Every court.",
+                title: t("er.feature_1_title"),
+                desc: t("er.feature_1_description"),
               },
               {
                 icon: FiLock,
-                title: "Zero Trace",
-                desc: "No audit logs. No metadata. No recovery.",
+                title: t("er.feature_2_title"),
+                desc: t("er.feature_2_description"),
               },
               {
                 icon: FiZap,
-                title: "48-Hour Wipe",
-                desc: "Complete erasure in under 2 days.",
+                title: t("fer.eature_3_title"),
+                desc: t("er.feature_3_description"),
               },
               {
                 icon: FiShield,
-                title: "Military Encryption",
-                desc: "AES-256 + quantum-resistant keys.",
+                title: t("er.feature_4_title"),
+                desc: t("er.feature_4_description"),
               },
               {
                 icon: FiCpu,
-                title: "AI-Powered",
-                desc: "Auto-detects and removes all linked files.",
+                title: t("er.feature_5_title"),
+                desc: t("er.feature_5_description"),
               },
               {
                 icon: FiEyeOff,
-                title: "Undetectable",
-                desc: "Bypasses all monitoring systems.",
+                title: t("er.feature_6_title"),
+                desc: t("er.feature_6_description"),
               },
             ].map((f, i) => (
               <motion.div
@@ -630,16 +625,16 @@ export default function EraseRecordPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-teal-300 to-green-300 bg-clip-text text-transparent !mb-6">
-              Your Past Ends Today
+              {t("er.final_cta_title")}
             </h2>
             <p className="text-xl text-cyan-200/80 !mb-10">
-              Join 8,921+ people living record-free.
+              {t("er.final_cta_description")}
             </p>
             <button
               onClick={() => setModalOpen(true)}
               className="bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-400 hover:to-teal-500 text-white !px-10 !py-5 rounded-full font-bold text-xl shadow-2xl hover:shadow-cyan-500/70 transition-all transform hover:scale-105 backdrop-blur-sm border border-cyan-400/50"
             >
-              CONTACT US NOW
+              {t("er.final_cta_button")}
             </button>
           </motion.div>
         </div>
