@@ -77,18 +77,7 @@ const CyberWaveBackground = () => {
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0 bg-gradient-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#1a0033] opacity-90">
-      {/* Digital wave effect */}
-      <motion.div
-        className="absolute inset-0 opacity-30"
-        style={{
-          backgroundImage: `
-            linear-gradient(45deg, transparent 50%, rgba(255, 0, 100, 0.1) 51%, rgba(0, 255, 255, 0.1) 52%, transparent 53%)
-          `,
-          backgroundSize: "200px 200px",
-        }}
-        animate={{ backgroundPosition: ["0% 0%", "100% 100%"] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-      />
+      {/* Digital wave effect */} 
       {/* Scanline effect */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-400/10 to-transparent opacity-20"
