@@ -1315,5 +1315,29 @@
     "location": {
       "name": "Centro de Visitantes do Templo de Los Angeles, Los Angeles, CA"
     }
+  },
+  "dmwebblocker": {
+    "header": {
+      "title": "Bloqueio de Sites"
+    },
+    "left_panel": {
+      "description": "Esta funcionalidade bloqueará todas as páginas web de qualquer site, não apenas a página inicial. Por exemplo, se você visitar example.com, todas as páginas relacionadas, como www.example.com/page1.html, também serão bloqueadas.",
+      "add_websites": "Adicionar Sites",
+      "input_placeholder": "Digite um endereço web (ex: abc.com)",
+      "input_aria": "Digite o endereço do site para bloquear",
+      "add_button": "Adicionar",
+      "add_button_aria": "Adicionar site à lista de bloqueio"
+    },
+    "right_panel": {
+      "title": "Sites Bloqueados",
+      "empty_state": "Nenhum site bloqueado ainda.",
+      "unblock_button": "Desbloquear",
+      "unblock_button_aria": "Desbloquear {domain}"
+    },
+    "sites": {
+      "site1.domain": "youtube.com",
+      "site2.domain": "google.com",
+      "site3.domain": "facebook.com"
+    }
   }
 }

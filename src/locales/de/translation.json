@@ -1319,5 +1319,29 @@
     "location": {
       "name": "Besucherzentrum des Los Angeles Tempels, Los Angeles, CA"
     }
+  },
+  "dmwebblocker": {
+    "header": {
+      "title": "Website-Blockierung"
+    },
+    "left_panel": {
+      "description": "Diese Funktion blockiert alle Webseiten eines Websites, nicht nur die Startseite. Wenn Sie beispielsweise example.com besuchen, werden auch alle verbundenen Seiten wie www.example.com/page1.html blockiert.",
+      "add_websites": "Websites hinzufügen",
+      "input_placeholder": "Geben Sie eine Webadresse ein (z.B. abc.com)",
+      "input_aria": "Geben Sie die Adresse der zu blockierenden Website ein",
+      "add_button": "Hinzufügen",
+      "add_button_aria": "Website zur Blockierliste hinzufügen"
+    },
+    "right_panel": {
+      "title": "Blockierte Websites",
+      "empty_state": "Noch keine Websites blockiert.",
+      "unblock_button": "Entsperren",
+      "unblock_button_aria": "Entsperren {domain}"
+    },
+    "sites": {
+      "site1.domain": "youtube.com",
+      "site2.domain": "google.com",
+      "site3.domain": "facebook.com"
+    }
   }
 }

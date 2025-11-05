@@ -1313,5 +1313,29 @@
     "location": {
       "name": "Los Angeles Tapınak Ziyaretçi Merkezi, Los Angeles, CA"
     }
+  },
+  "dmwebblocker": {
+    "header": {
+      "title": "Web Sitesi Engelleme"
+    },
+    "left_panel": {
+      "description": "Bu özellik, bir web sitesindeki tüm sayfaları, yalnızca ana sayfayı değil, engeller. Örneğin, example.com’u ziyaret ederseniz, www.example.com/page1.html gibi ilgili tüm sayfalar da engellenir.",
+      "add_websites": "Web Siteleri Ekle",
+      "input_placeholder": "Bir web adresi girin (ör: abc.com)",
+      "input_aria": "Engellenecek web sitesi adresini girin",
+      "add_button": "Ekle",
+      "add_button_aria": "Web sitesini engelleme listesine ekle"
+    },
+    "right_panel": {
+      "title": "Engellenen Siteler",
+      "empty_state": "Henüz engellenen web sitesi yok.",
+      "unblock_button": "Engeli Kaldır",
+      "unblock_button_aria": "{domain} engelini kaldır"
+    },
+    "sites": {
+      "site1.domain": "youtube.com",
+      "site2.domain": "google.com",
+      "site3.domain": "facebook.com"
+    }
   }
 }

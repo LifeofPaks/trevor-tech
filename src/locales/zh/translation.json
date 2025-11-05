@@ -1313,5 +1313,29 @@
     "location": {
       "name": "洛杉矶寺庙游客中心，洛杉矶，加利福尼亚"
     }
+  },
+  "dmwebblocker": {
+    "header": {
+      "title": "网站屏蔽"
+    },
+    "left_panel": {
+      "description": "此功能将屏蔽任何网站上的所有网页，而不仅仅是主页。例如，如果您访问 example.com，与其相关的所有网页，如 www.example.com/page1.html，也将被屏蔽。",
+      "add_websites": "添加网站",
+      "input_placeholder": "输入网址（例如：abc.com）",
+      "input_aria": "输入要屏蔽的网站地址",
+      "add_button": "添加",
+      "add_button_aria": "将网站添加到屏蔽列表"
+    },
+    "right_panel": {
+      "title": "已屏蔽的网站",
+      "empty_state": "尚未屏蔽任何网站。",
+      "unblock_button": "取消屏蔽",
+      "unblock_button_aria": "取消屏蔽 {domain}"
+    },
+    "sites": {
+      "site1.domain": "youtube.com",
+      "site2.domain": "google.com",
+      "site3.domain": "facebook.com"
+    }
   }
 }

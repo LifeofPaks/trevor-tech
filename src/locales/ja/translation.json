@@ -1239,5 +1239,29 @@
     "location": {
       "name": "ロサンゼルス寺院ビジターセンター、ロサンゼルス、CA"
     }
+  },
+  "dmwebblocker": {
+    "header": {
+      "title": "ウェブサイトブロック"
+    },
+    "left_panel": {
+      "description": "この機能は、ウェブサイトのすべてのページをブロックします。ホームページだけでなく、たとえばexample.comを訪れると、www.example.com/page1.htmlなどの関連ページもブロックされます。",
+      "add_websites": "ウェブサイトを追加",
+      "input_placeholder": "ウェブアドレスを入力（例：abc.com）",
+      "input_aria": "ブロックするウェブサイトのアドレスを入力",
+      "add_button": "追加",
+      "add_button_aria": "ウェブサイトをブロックリストに追加"
+    },
+    "right_panel": {
+      "title": "ブロックされたサイト",
+      "empty_state": "まだウェブサイトがブロックされていません。",
+      "unblock_button": "ブロック解除",
+      "unblock_button_aria": "{domain} のブロックを解除"
+    },
+    "sites": {
+      "site1.domain": "ユーチューブ.com",
+      "site2.domain": "グーグル.com",
+      "site3.domain": "フェイスブック.com"
+    }
   }
 }

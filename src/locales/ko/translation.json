@@ -1314,5 +1314,29 @@
     "location": {
       "name": "로스앤젤레스 템플 방문자 센터, 로스앤젤레스, CA"
     }
+  },
+  "dmwebblocker": {
+    "header": {
+      "title": "웹사이트 차단"
+    },
+    "left_panel": {
+      "description": "이 기능은 웹사이트의 모든 페이지를 차단하며, 홈페이지뿐만 아니라 예를 들어 example.com을 방문하면 www.example.com/page1.html과 같은 관련 페이지도 차단됩니다.",
+      "add_websites": "웹사이트 추가",
+      "input_placeholder": "웹 주소를 입력하세요 (예: abc.com)",
+      "input_aria": "차단할 웹사이트 주소를 입력하세요",
+      "add_button": "추가",
+      "add_button_aria": "웹사이트를 차단 목록에 추가"
+    },
+    "right_panel": {
+      "title": "차단된 사이트",
+      "empty_state": "아직 차단된 웹사이트가 없습니다.",
+      "unblock_button": "차단 해제",
+      "unblock_button_aria": "{domain} 차단 해제"
+    },
+    "sites": {
+      "site1.domain": "유튜브.com",
+      "site2.domain": "구글.com",
+      "site3.domain": "페이스북.com"
+    }
   }
 }

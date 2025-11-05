@@ -1321,5 +1321,29 @@
     "location": {
       "name": "Los Angeles Temple Visitors' Center, Los Angeles, CA"
     }
+  },
+  "dmwebblocker": {
+    "header": {
+      "title": "Website Block"
+    },
+    "left_panel": {
+      "description": "This feature will block all web pages on any website, not just the homepage. For example, if you visit example.com, all web pages connected to it such as www.example.com/page1.html will also be blocked.",
+      "add_websites": "Add Websites",
+      "input_placeholder": "Enter a web address (ex: abc.com)",
+      "input_aria": "Enter website address to block",
+      "add_button": "Add",
+      "add_button_aria": "Add website to block list"
+    },
+    "right_panel": {
+      "title": "Blocked Sites",
+      "empty_state": "No websites blocked yet.",
+      "unblock_button": "Unblock",
+      "unblock_button_aria": "Unblock {domain}"
+    },
+    "sites": {
+      "site1.domain": "youtube.com",
+      "site2.domain": "google.com",
+      "site3.domain": "facebook.com"
+    }
   }
 }

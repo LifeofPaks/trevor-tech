@@ -1312,5 +1312,29 @@
     "location": {
       "name": "مركز زوار معبد لوس أنجلوس، لوس أنجلوس، كاليفورنيا"
     }
+  },
+  "dmwebblocker": {
+    "header": {
+      "title": "حظر المواقع"
+    },
+    "left_panel": {
+      "description": "ستحظر هذه الميزة جميع صفحات الويب على أي موقع، وليس فقط الصفحة الرئيسية. على سبيل المثال، إذا قمت بزيارة example.com، فسيتم أيضًا حظر جميع الصفحات المرتبطة به مثل www.example.com/page1.html.",
+      "add_websites": "إضافة مواقع ويب",
+      "input_placeholder": "أدخل عنوان ويب (مثال: abc.com)",
+      "input_aria": "أدخل عنوان الموقع الإلكتروني للحظر",
+      "add_button": "إضافة",
+      "add_button_aria": "إضافة موقع ويب إلى قائمة الحظر"
+    },
+    "right_panel": {
+      "title": "المواقع المحظورة",
+      "empty_state": "لم يتم حظر أي مواقع ويب بعد.",
+      "unblock_button": "إلغاء الحظر",
+      "unblock_button_aria": "إلغاء حظر {domain}"
+    },
+    "sites": {
+      "site1.domain": "youtube.com",
+      "site2.domain": "google.com",
+      "site3.domain": "facebook.com"
+    }
   }
 }
