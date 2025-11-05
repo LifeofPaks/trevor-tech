@@ -40,15 +40,18 @@ import CaptureScreenshot from "./CaptureScreenshot";
 import DemoFooter from "../DemoFooter";
 import { IoLogoBitbucket } from "react-icons/io5";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import BuyModal from "../../buyModal/BuyModal";
 import { MdDashboard } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
-    const [open, setOpen] = useState(false);
-          
-            const handleOpen = () => setOpen(true);
-            const handleClose = () => setOpen(false);
+  const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-teal-50 !p-2">
       {/* Header */}
@@ -56,18 +59,18 @@ const Dashboard = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Dashboard <MdDashboard className="text-[#0695c8]" />
+              {t("db.header_title")} <MdDashboard className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("db.header_demo_notice")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
             >
-              Bind My Device
+              {t("db.header_bind_button")}
             </button>
           </div>
         </div>
@@ -78,112 +81,112 @@ const Dashboard = () => {
         {[
           {
             icon: <FiPhone />,
-            label: "Calls",
+            label: t("db.quick_actions.calls"),
             count: 3,
             color: "from-teal-400 to-cyan-500",
             to: "/demo/general/calls",
           },
           {
             icon: <FiMessageSquare />,
-            label: "Messages",
+            label: t("db.quick_actions.messages"),
             count: 15,
             color: "from-indigo-400 to-blue-500",
             to: "/demo/general/messages",
           },
           {
             icon: <FaWhatsapp />,
-            label: "WhatsApp",
+            label: t("db.quick_actions.whatsapp"),
             count: 7,
             color: "from-green-400 to-emerald-500",
             to: "/demo/social/whatsapp",
           },
           {
             icon: <SiMessenger />,
-            label: "Messenger",
+            label: t("db.quick_actions.messenger"),
             count: 4,
             color: "from-blue-500 to-indigo-600",
             to: "/demo/social/messenger",
           },
           {
             icon: <FaInstagram />,
-            label: "Instagram",
+            label: t("db.quick_actions.instagram"),
             count: 12,
             color: "from-pink-400 to-rose-500",
             to: "/demo/social/instagram",
           },
           {
             icon: <FaFacebookF />,
-            label: "Facebook",
+            label: t("db.quick_actions.facebook"),
             count: 8,
             color: "from-blue-600 to-blue-800",
             to: "/demo/social/facebook",
           },
           {
             icon: <FaSnapchatGhost />,
-            label: "Snapchat",
+            label: t("db.quick_actions.snapchat"),
             count: 5,
             color: "from-yellow-400 to-amber-500",
             to: "/demo/social/snapchat",
           },
           {
             icon: <SiLine />,
-            label: "LINE",
+            label: t("db.quick_actions.line"),
             count: 2,
             color: "from-green-500 to-lime-600",
             to: "/demo/social/line",
           },
           {
             icon: <FaTelegramPlane />,
-            label: "Telegram",
+            label: t("db.quick_actions.telegram"),
             count: 6,
             color: "from-sky-400 to-cyan-600",
             to: "/demo/social/telegram",
           },
           {
             icon: <FiSmartphone />,
-            label: "Screenshots",
+            label: t("db.quick_actions.screenshots"),
             count: 0,
             color: "from-purple-400 to-violet-500",
             to: "/demo/captures/screenshots",
           },
           {
             icon: <FiMonitor />,
-            label: "Live Screen",
+            label: t("db.quick_actions.live_screen"),
             count: 0,
             color: "from-red-400 to-rose-500",
             to: "/demo/captures/screenshots",
           },
           {
             icon: <FiMic />,
-            label: "Record",
+            label: t("db.quick_actions.record"),
             count: 0,
             color: "from-orange-400 to-red-500",
             to: "/demo/captures/screenshots",
           },
           {
             icon: <FiCamera />,
-            label: "Photos",
+            label: t("db.quick_actions.photos"),
             count: 0,
             color: "from-teal-400 to-cyan-500",
             to: "/demo/general/photos",
           },
           {
             icon: <FiVideo />,
-            label: "Videos",
+            label: t("db.quick_actions.videos"),
             count: 0,
             color: "from-indigo-400 to-blue-500",
             to: "/demo/general/videos",
           },
           {
             icon: <FiImage />,
-            label: "Gallery",
+            label: t("db.quick_actions.gallery"),
             count: 19,
             color: "from-amber-400 to-orange-500",
             to: "/demo/general/photos",
           },
           {
             icon: <FiKey />,
-            label: "Keylogger",
+            label: t("db.quick_actions.keylogger"),
             count: 4,
             color: "from-purple-400 to-violet-500",
             to: "/demo/general/keylogger",
@@ -202,8 +205,7 @@ const Dashboard = () => {
                 className={`relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto bg-gradient-to-br ${item.color} rounded-full flex items-center justify-center text-white text-base sm:text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform`}
               >
                 {item.icon}
-
-                {/* Notification Badge — now on top of the icon */}
+                {/* Notification Badge */}
                 {item.count > 0 && (
                   <span className="absolute -top-1 -right-1 sm:-top-1.5 sm:-right-1.5 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 bg-red-500 text-white text-[8px] sm:text-xs rounded-full flex items-center justify-center font-bold animate-pulse">
                     {item.count}
@@ -211,7 +213,6 @@ const Dashboard = () => {
                 )}
               </div>
             </Link>
-
             {/* Label */}
             <p className="text-center text-[9px] sm:text-[10px] md:text-xs font-medium text-slate-700 !mt-0.5 sm:!mt-1 line-clamp-2">
               {item.label}
@@ -227,15 +228,15 @@ const Dashboard = () => {
           <div className="flex items-center justify-between !mb-3 sm:!mb-4">
             <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
               <FiMapPin className="text-primary" />
-              Live Location
+              {t("db.live_map_title")}
             </h3>
             <span className="text-[10px] sm:text-xs text-green-600 bg-green-100 !px-2 sm:!px-3 !py-1 rounded-full font-medium">
-              Online
+              {t("db.live_map_status_online")}
             </span>
           </div>
           <div className="relative h-64 sm:h-80 md:h-96 lg:h-[28rem] rounded-xl sm:rounded-2xl overflow-hidden shadow-inner">
             <iframe
-              title="Live Map - Newark, NJ"
+              title={t("db.live_map_iframe_title")}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.197!2d-74.1723667!3d40.735657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2535260d8232b%3A0x6b8e3a3f3f3f3f3f!2sNewark%2C%20NJ!5e0!3m2!1sen!2sus!4v1234567890"
               width="100%"
               height="100%"
@@ -249,32 +250,34 @@ const Dashboard = () => {
                 Newark, NJ
               </p>
               <p className="text-xs sm:text-sm text-slate-600">
-                Last updated: 2 min ago
+                {t("db.live_map_last_updated")}
               </p>
             </div>
           </div>
         </div>
 
-        {/* Total Screen Time - Enhanced Graph */}
-        <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-6 border border-white/50 ">
+        {/* Total Screen Time */}
+        <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-6 border border-white/50">
           <div className="flex items-center justify-between !mb-3 sm:!mb-4">
             <h3 className="text-base sm:text-lg font-bold text-slate-800">
-              Total Screen Time
+              {t("db.screen_time_title")}
             </h3>
             <FiTrendingUp className="text-green-600 text-lg sm:text-xl" />
           </div>
           <div className="grid grid-cols-2 !gap-3 sm:!gap-4 !mb-4 sm:!mb-6">
-            <div className="bg-gradient-to-r from-[#0695c8] to-accent  text-gray-700 !p-4 sm:!p-5 rounded-xl sm:rounded-2xl text-center">
+            <div className="bg-gradient-to-r from-[#0695c8] to-accent text-gray-700 !p-4 sm:!p-5 rounded-xl sm:rounded-2xl text-center">
               <p className="text-xl sm:text-2xl md:text-3xl font-bold">
                 13h 43m
               </p>
               <p className="text-xs sm:text-sm opacity-90 !mt-1">
-                Screen Time Today
+                {t("db.screen_time_today")}
               </p>
             </div>
             <div className="bg-gradient-to-r from-accent to-[#c8ab06] text-gray-700 !p-4 sm:!p-5 rounded-xl sm:rounded-2xl text-center">
               <p className="text-xl sm:text-2xl md:text-3xl font-bold">17:25</p>
-              <p className="text-xs sm:text-sm opacity-90 !mt-1">Last Active</p>
+              <p className="text-xs sm:text-sm opacity-90 !mt-1">
+                {t("db.screen_time_last_active")}
+              </p>
             </div>
           </div>
 
@@ -283,73 +286,72 @@ const Dashboard = () => {
             <div className="flex-1 flex items-end justify-center flex-wrap gap-2 sm:gap-3">
               {[
                 {
-                  label: "TikTok",
+                  label: t("db.screen_time_apps.tiktok"),
                   color: "from-pink-500 to-rose-600",
                   icon: <FaTiktok className="text-white" />,
                 },
                 {
-                  label: "WhatsApp",
+                  label: t("db.screen_time_apps.whatsapp"),
                   color: "from-green-500 to-emerald-600",
                   icon: <FaWhatsapp className="text-white" />,
                 },
                 {
-                  label: "YouTube",
+                  label: t("db.screen_time_apps.youtube"),
                   color: "from-red-500 to-red-600",
                   icon: <FaYoutube className="text-white" />,
                 },
                 {
-                  label: "Chrome",
+                  label: t("db.screen_time_apps.chrome"),
                   color: "from-blue-500 to-indigo-600",
                   icon: <FiChrome className="text-white" />,
                 },
                 {
-                  label: "Messenger",
+                  label: t("db.screen_time_apps.messenger"),
                   color: "from-indigo-500 to-blue-600",
                   icon: <SiMessenger className="text-white" />,
                 },
                 {
-                  label: "Instagram",
+                  label: t("db.screen_time_apps.instagram"),
                   color: "from-pink-400 to-purple-600",
                   icon: <FaInstagramSquare className="text-white" />,
                 },
                 {
-                  label: "Facebook",
+                  label: t("db.screen_time_apps.facebook"),
                   color: "from-blue-500 to-blue-700",
                   icon: <FaFacebook className="text-white" />,
                 },
                 {
-                  label: "Snapchat",
+                  label: t("db.screen_time_apps.snapchat"),
                   color: "from-yellow-400 to-orange-400",
                   icon: <FaSnapchat className="text-white" />,
                 },
                 {
-                  label: "Spotify",
+                  label: t("db.screen_time_apps.spotify"),
                   color: "from-green-400 to-green-600",
                   icon: <FaSpotify className="text-white" />,
                 },
                 {
-                  label: "Twitter / X",
+                  label: t("db.screen_time_apps.twitter"),
                   color: "from-sky-400 to-sky-600",
                   icon: <FaTwitter className="text-white" />,
                 },
                 {
-                  label: "Netflix",
+                  label: t("db.screen_time_apps.netflix"),
                   color: "from-red-500 to-gray-800",
                   icon: <SiNetflix className="text-white" />,
                 },
-
                 {
-                  label: "Pinterest",
+                  label: t("db.screen_time_apps.pinterest"),
                   color: "from-rose-400 to-rose-600",
                   icon: <FaPinterest className="text-white" />,
                 },
                 {
-                  label: "Reddit",
+                  label: t("db.screen_time_apps.reddit"),
                   color: "from-orange-400 to-red-500",
                   icon: <FaRedditAlien className="text-white" />,
                 },
                 {
-                  label: "Telegram",
+                  label: t("db.screen_time_apps.telegram"),
                   color: "from-sky-400 to-blue-600",
                   icon: <FaTelegram className="text-white" />,
                 },
@@ -369,8 +371,6 @@ const Dashboard = () => {
                         {app.icon}
                       </div>
                     </div>
-
-                    {/* Rotated Label */}
                     <div className="!mt-2 sm:mt-3 flex flex-col items-center justify-center">
                       <p className="!ml-14 text-[9px] sm:text-[10px] md:text-xs text-slate-600 origin-top-left rotate-45 whitespace-nowrap">
                         {app.label}
@@ -389,18 +389,18 @@ const Dashboard = () => {
         {/* Most Used Apps Today */}
         <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-6 border border-white/50">
           <h3 className="text-base sm:text-lg font-bold text-slate-800 !mb-4 sm:!mb-5">
-            Most Used Apps Today
+            {t("db.most_used_apps_title")}
           </h3>
           <div className="!space-y-3 sm:!space-y-4 md:!space-y-5">
             {[
               {
-                app: "TikTok",
+                app: t("db.most_used_apps.tiktok"),
                 time: "3h 52m 0s",
                 icon: <FaTiktok className="text-pink-600 text-lg sm:text-xl" />,
                 color: "from-pink-500 to-rose-600",
               },
               {
-                app: "WhatsApp",
+                app: t("db.most_used_apps.whatsapp"),
                 time: "2h 51m 0s",
                 icon: (
                   <FaWhatsapp className="text-green-600 text-lg sm:text-xl" />
@@ -408,19 +408,19 @@ const Dashboard = () => {
                 color: "from-green-500 to-emerald-600",
               },
               {
-                app: "YouTube",
+                app: t("db.most_used_apps.youtube"),
                 time: "2h 23m 0s",
                 icon: <FaYoutube className="text-red-600 text-lg sm:text-xl" />,
                 color: "from-red-500 to-red-600",
               },
               {
-                app: "Chrome",
+                app: t("db.most_used_apps.chrome"),
                 time: "1h 21m 11s",
                 icon: <FiChrome className="text-blue-600 text-lg sm:text-xl" />,
                 color: "from-blue-500 to-indigo-600",
               },
               {
-                app: "Messenger",
+                app: t("db.most_used_apps.messenger"),
                 time: "1h 01m 25s",
                 icon: (
                   <SiMessenger className="text-indigo-600 text-lg sm:text-xl" />
@@ -428,7 +428,7 @@ const Dashboard = () => {
                 color: "from-indigo-500 to-blue-600",
               },
               {
-                app: "Instagram",
+                app: t("db.most_used_apps.instagram"),
                 time: "58m 34s",
                 icon: (
                   <FaInstagramSquare className="text-pink-500 text-lg sm:text-xl" />
@@ -436,7 +436,7 @@ const Dashboard = () => {
                 color: "from-pink-400 to-purple-600",
               },
               {
-                app: "Facebook",
+                app: t("db.most_used_apps.facebook"),
                 time: "50m 42s",
                 icon: (
                   <FaFacebook className="text-blue-600 text-lg sm:text-xl" />
@@ -444,7 +444,7 @@ const Dashboard = () => {
                 color: "from-blue-500 to-blue-700",
               },
               {
-                app: "Snapchat",
+                app: t("db.most_used_apps.snapchat"),
                 time: "43m 18s",
                 icon: (
                   <FaSnapchat className="text-yellow-500 text-lg sm:text-xl" />
@@ -452,7 +452,7 @@ const Dashboard = () => {
                 color: "from-yellow-400 to-orange-400",
               },
               {
-                app: "Spotify",
+                app: t("db.most_used_apps.spotify"),
                 time: "39m 27s",
                 icon: (
                   <FaSpotify className="text-green-500 text-lg sm:text-xl" />
@@ -460,7 +460,7 @@ const Dashboard = () => {
                 color: "from-green-400 to-green-600",
               },
               {
-                app: "Twitter / X",
+                app: t("db.most_used_apps.twitter"),
                 time: "32m 11s",
                 icon: (
                   <FaTwitter className="text-blue-400 text-lg sm:text-xl" />
@@ -468,13 +468,13 @@ const Dashboard = () => {
                 color: "from-sky-400 to-sky-600",
               },
               {
-                app: "Netflix",
+                app: t("db.most_used_apps.netflix"),
                 time: "28m 04s",
                 icon: <SiNetflix className="text-red-600 text-lg sm:text-xl" />,
                 color: "from-red-500 to-gray-800",
               },
               {
-                app: "Telegram",
+                app: t("db.most_used_apps.telegram"),
                 time: "24m 36s",
                 icon: (
                   <FaTelegram className="text-sky-500 text-lg sm:text-xl" />
@@ -482,7 +482,7 @@ const Dashboard = () => {
                 color: "from-sky-400 to-blue-600",
               },
               {
-                app: "LinkedIn",
+                app: t("db.most_used_apps.linkedin"),
                 time: "21m 12s",
                 icon: (
                   <FaLinkedin className="text-blue-700 text-lg sm:text-xl" />
@@ -490,7 +490,7 @@ const Dashboard = () => {
                 color: "from-blue-600 to-indigo-700",
               },
               {
-                app: "Pinterest",
+                app: t("db.most_used_apps.pinterest"),
                 time: "18m 54s",
                 icon: (
                   <FaPinterest className="text-red-500 text-lg sm:text-xl" />
@@ -498,7 +498,7 @@ const Dashboard = () => {
                 color: "from-rose-400 to-rose-600",
               },
               {
-                app: "Reddit",
+                app: t("db.most_used_apps.reddit"),
                 time: "14m 09s",
                 icon: (
                   <FaRedditAlien className="text-orange-500 text-lg sm:text-xl" />
@@ -537,9 +537,9 @@ const Dashboard = () => {
           <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-5 border border-white/50">
             <div className="flex items-center justify-between !mb-3 sm:!mb-4">
               <h4 className="text-sm sm:text-base font-bold text-slate-700 flex items-center !gap-2">
-                Most Contacts (7 days)
+                {t("db.most_contacts_title")}
               </h4>
-              <span className="textmds text-gray-500">
+              <span className="text-xs sm:text-sm text-gray-500">
                 <FaAngleRight />
               </span>
             </div>
@@ -598,9 +598,9 @@ const Dashboard = () => {
           <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-5 border border-white/50">
             <div className="flex items-center justify-between !mb-3 sm:!mb-4">
               <h4 className="text-sm sm:text-base font-bold text-slate-700 flex items-center !gap-2">
-                Most Calls (7 days)
+                {t("db.most_calls_title")}
               </h4>
-              <span className="textmds text-gray-500">
+              <span className="text-xs sm:text-sm text-gray-500">
                 <FaAngleRight />
               </span>
             </div>
@@ -661,16 +661,16 @@ const Dashboard = () => {
           <div className="flex items-center justify-between !mb-3 sm:!mb-4">
             <h3 className="text-base sm:text-lg font-bold text-slate-800 flex items-center !gap-2">
               <FiClock className="text-secondary" />
-              Latest Keylogs
+              {t("db.keylogs_title")}
             </h3>
-            <span className="textmds text-gray-500">
+            <span className="text-xs sm:text-sm text-gray-500">
               <FaAngleRight />
             </span>
           </div>
           <div className="space-y-2 sm:space-y-3">
             {[
               {
-                app: "YouTube",
+                app: t("db.keylogs.youtube"),
                 text: "sexy",
                 time: "2024-05-06 00:07:59",
                 icon: (
@@ -678,7 +678,7 @@ const Dashboard = () => {
                 ),
               },
               {
-                app: "Yelp",
+                app: t("db.keylogs.yelp"),
                 text: "cocktail bar",
                 time: "2024-05-03 21:43:23",
                 icon: (
@@ -686,7 +686,7 @@ const Dashboard = () => {
                 ),
               },
               {
-                app: "Chrome",
+                app: t("db.keylogs.chrome"),
                 text: "Should I apologize...",
                 time: "2024-05-02 08:43:25",
                 icon: (
@@ -694,7 +694,7 @@ const Dashboard = () => {
                 ),
               },
               {
-                app: "Memo",
+                app: t("db.keylogs.memo"),
                 text: "Gigi's club, white tig...",
                 time: "2024-05-01 20:29:38",
                 icon: (
