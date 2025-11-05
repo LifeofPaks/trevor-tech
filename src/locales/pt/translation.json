@@ -739,5 +739,9 @@
   "bp": {
     "demo_message": "Dados de demonstração. Vincule seu dispositivo para coletar dados reais.",
     "bind_button": "Vincular meu dispositivo"
+  },
+  "df": {
+    "copyright": "Copyright © {{year}}",
+    "rights_reserved": "Todos os direitos reservados."
   }
 }

@@ -739,5 +739,9 @@
   "bp": {
     "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
     "bind_button": "Mein Gerät binden"
+  },
+  "df": {
+    "copyright": "Copyright © {{year}}",
+    "rights_reserved": "Alle Rechte vorbehalten."
   }
 }

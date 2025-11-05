@@ -740,5 +740,9 @@
   "bp": {
     "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
     "bind_button": "내 기기 연결"
+  },
+  "df": {
+    "copyright": "저작권 © {{year}}",
+    "rights_reserved": "모든 권리 보유."
   }
 }

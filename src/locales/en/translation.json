@@ -743,5 +743,9 @@
   "bp": {
     "demo_message": "Demo data. Bind your device to collect actual data.",
     "bind_button": "Bind My Device"
+  },
+  "df": {
+    "copyright": "Copyright © {{year}}",
+    "rights_reserved": "All rights reserved."
   }
 }

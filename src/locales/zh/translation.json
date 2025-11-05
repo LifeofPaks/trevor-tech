@@ -739,5 +739,9 @@
   "bp": {
     "demo_message": "演示数据。绑定您的设备以收集实际数据。",
     "bind_button": "绑定我的设备"
+  },
+  "df": {
+    "copyright": "版权 © {{year}}",
+    "rights_reserved": "保留所有权利。"
   }
 }

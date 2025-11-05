@@ -740,5 +740,9 @@
   "bp": {
     "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
     "bind_button": "私のデバイスをバインド"
+  },
+  "df": {
+    "copyright": "著作権 © {{year}}",
+    "rights_reserved": "すべての権利を保有。"
   }
 }
