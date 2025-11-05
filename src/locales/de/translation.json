@@ -657,5 +657,8 @@
     "prev_button_aria": "Vorheriger Screenshot",
     "next_button_aria": "Nächster Screenshot",
     "modal_image_alt": "Große Vorschau"
-  }
+  },
+  "easier_monitoring_with": "Einfachere Überwachung mit",
+  "select_device": "Gerät auswählen",
+  "add_device": "Neues Gerät hinzufügen"
 }

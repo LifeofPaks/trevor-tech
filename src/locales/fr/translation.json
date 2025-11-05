@@ -656,5 +656,8 @@
     "prev_button_aria": "Capture d'écran précédente",
     "next_button_aria": "Capture d'écran suivante",
     "modal_image_alt": "Aperçu agrandi"
-  }
+  },
+  "easier_monitoring_with": "Surveillance plus facile avec",
+  "select_device": "Sélectionner un appareil",
+  "add_device": "Ajouter un nouvel appareil"
 }

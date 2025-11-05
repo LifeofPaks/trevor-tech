@@ -657,5 +657,8 @@
     "prev_button_aria": "Önceki ekran görüntüsü",
     "next_button_aria": "Sonraki ekran görüntüsü",
     "modal_image_alt": "Büyük önizleme"
-  }
+  },
+  "easier_monitoring_with": "Daha kolay izleme için",
+  "select_device": "Cihaz seç",
+  "add_device": "Yeni cihaz ekle"
 }

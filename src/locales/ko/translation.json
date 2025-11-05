@@ -651,13 +651,15 @@
     }
   },
 
-    "sc": {
-      "title": "스크린샷 캡처",
-      "image_alt": "스크린샷 {{index}}",
-      "close_button_aria": "스크린샷 모달 닫기",
-      "prev_button_aria": "이전 스크린샷",
-      "next_button_aria": "다음 스크린샷",
-      "modal_image_alt": "큰 미리보기"
-    }
-
+  "sc": {
+    "title": "스크린샷 캡처",
+    "image_alt": "스크린샷 {{index}}",
+    "close_button_aria": "스크린샷 모달 닫기",
+    "prev_button_aria": "이전 스크린샷",
+    "next_button_aria": "다음 스크린샷",
+    "modal_image_alt": "큰 미리보기"
+  },
+  "easier_monitoring_with": "더 쉽게 모니터링하기",
+  "select_device": "기기 선택",
+  "add_device": "새 기기 추가"
 }

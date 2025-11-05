@@ -658,5 +658,8 @@
     "prev_button_aria": "前のスクリーンショット",
     "next_button_aria": "次のスクリーンショット",
     "modal_image_alt": "大きなプレビュー"
-  }
+  },
+  "easier_monitoring_with": "より簡単に監視できます",
+  "select_device": "デバイスを選択",
+  "add_device": "新しいデバイスを追加"
 }

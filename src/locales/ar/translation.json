@@ -656,5 +656,8 @@
     "prev_button_aria": "لقطة الشاشة السابقة",
     "next_button_aria": "لقطة الشاشة التالية",
     "modal_image_alt": "معاينة كبيرة"
-  }
+  },
+  "easier_monitoring_with": "مراقبة أسهل باستخدام",
+  "select_device": "اختر الجهاز",
+  "add_device": "إضافة جهاز جديد"
 }

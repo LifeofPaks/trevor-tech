@@ -657,5 +657,8 @@
     "prev_button_aria": "上一张截图",
     "next_button_aria": "下一张截图",
     "modal_image_alt": "大图预览"
-  }
+  },
+  "easier_monitoring_with": "使用更轻松的监控",
+  "select_device": "选择设备",
+  "add_device": "添加新设备"
 }

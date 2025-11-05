@@ -656,5 +656,8 @@
     "prev_button_aria": "Captura de pantalla anterior",
     "next_button_aria": "Siguiente captura de pantalla",
     "modal_image_alt": "Vista previa grande"
-  }
+  },
+  "easier_monitoring_with": "Supervisión más fácil con",
+    "select_device": "Seleccionar dispositivo",
+    "add_device": "Agregar nuevo dispositivo"
 }
