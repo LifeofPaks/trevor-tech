@@ -928,5 +928,23 @@
         "content": "문턱에 다다를 때 용기가 약해진다."
       }
     ]
+  },
+  "dmphoto": {
+    "header": {
+      "title": "사진",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "최근 7일"
+    },
+    "photo": {
+      "alt": "사진 {{id}}",
+      "download_aria": "사진 다운로드 {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "이전 페이지",
+      "next_button_aria": "다음 페이지"
+    }
   }
 }

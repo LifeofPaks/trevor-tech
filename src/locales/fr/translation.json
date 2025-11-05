@@ -930,5 +930,23 @@
         "content": "Mon courage faiblit juste au moment où j'atteins le seuil."
       }
     ]
+  },
+  "dmphoto": {
+    "header": {
+      "title": "Photos",
+      "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
+      "bind_button": "Connecter mon appareil",
+      "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "7 derniers jours"
+    },
+    "photo": {
+      "alt": "Photo {{id}}",
+      "download_aria": "Télécharger la photo {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Page précédente",
+      "next_button_aria": "Page suivante"
+    }
   }
 }

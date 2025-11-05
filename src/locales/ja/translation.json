@@ -928,5 +928,23 @@
         "content": "しきい値に達すると勇気が衰える。"
       }
     ]
+  },
+  "dmphoto": {
+    "header": {
+      "title": "写真",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "過去7日間"
+    },
+    "photo": {
+      "alt": "写真 {{id}}",
+      "download_aria": "写真をダウンロード {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    }
   }
 }

@@ -926,5 +926,23 @@
         "content": "شجاعتي تتضاءل بمجرد وصولي إلى العتبة."
       }
     ]
+  },
+  "dmphoto": {
+    "header": {
+      "title": "الصور",
+      "demo_message": "بيانات تجريبية. قم بربط جهازك لجمع البيانات الفعلية.",
+      "bind_button": "ربط جهازي",
+      "bind_button_aria": "ربط الجهاز لبدء جمع البيانات",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "آخر 7 أيام"
+    },
+    "photo": {
+      "alt": "صورة {{id}}",
+      "download_aria": "تنزيل الصورة {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "الصفحة السابقة",
+      "next_button_aria": "الصفحة التالية"
+    }
   }
 }

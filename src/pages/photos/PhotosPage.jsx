@@ -6,10 +6,9 @@ import {
   FiChevronRight,
   FiDownload,
 } from "react-icons/fi";
-import { BsCamera2, BsFillImageFill } from "react-icons/bs";
-import { CameraIcon } from "lucide-react";
+import { BsFillImageFill } from "react-icons/bs";
 import { FiCamera } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 import BuyModal from "../../components/buyModal/BuyModal";
 
 const allPhotos = [
@@ -78,6 +77,7 @@ const allPhotos = [
 const PHOTOS_PER_PAGE = 12;
 
 const PhotosPage = () => {
+  const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const totalPages = Math.ceil(allPhotos.length / PHOTOS_PER_PAGE);
   const startIndex = (page - 1) * PHOTOS_PER_PAGE;
@@ -85,10 +85,10 @@ const PhotosPage = () => {
     startIndex,
     startIndex + PHOTOS_PER_PAGE
   );
-      const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-      const handleOpen = () => setOpen(true);
-      const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   const handleDownload = async (url, filename) => {
     try {
@@ -104,211 +104,226 @@ const PhotosPage = () => {
     }
   };
 
-    return (
-      <>
-        <header className="!mb-4 sm:!mb-6 !px-4">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
-            <div className="flex items-center !gap-2 sm:!gap-3">
-              <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-                Photos
-                <BsFillImageFill className="text-[#0695c8] " />
-              </h1>
-            </div>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
-              <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-                Demo data. Bind your device to collect actual data.
-              </span>
-              <button
-                onClick={handleOpen}
-                className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
-              >
-                Bind My Device
-              </button>
-            </div>
+  return (
+    <>
+      <header className="!mb-4 sm:!mb-6 !px-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
+          <div className="flex items-center !gap-2 sm:!gap-3">
+            <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
+              {t("dmphoto.header.title")}{" "}
+              <BsFillImageFill className="text-[#0695c8]" />
+            </h1>
           </div>
-        </header>
-        <Box className="!p-6 !bg-gray-50 !min-h-screen">
-          {/* Header */}
-          <Box className="!mb-8">
-            <Stack
-              direction="row"
-              justifyContent="space-between"
-              alignItems="center"
+          <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
+            <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
+              {t("dmphoto.header.demo_message")}
+            </span>
+            <button
+              onClick={handleOpen}
+              className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dmphoto.header.bind_button_aria")}
             >
-              <Stack direction="row" spacing={2} alignItems="center">
-                <Paper
-                  elevation={0}
-                  className="!flex !items-center !gap-2 !bg-white !border !border-gray-200 !rounded-xl !px-4 !py-2"
-                >
-                  <FiCalendar className="!text-gray-500 !text-sm" />
-                  <Typography className="!text-gray-700 !font-medium !text-sm">
-                    2021-01-01
-                  </Typography>
-                  <Typography className="!text-gray-500 !mx-1">—</Typography>
-                  <Typography className="!text-gray-700 !font-medium !text-sm">
-                    2022-04-30
-                  </Typography>
-                </Paper>
-                <Chip
-                  label="Last 7 days"
-                  size="small"
-                  sx={{
-                    backgroundColor: "#e0f2fe",
-                    color: "#0695c8",
-                    fontWeight: 600,
-                    fontSize: "0.75rem",
-                    height: 28,
-                    borderRadius: "12px",
-                    "& .MuiChip-label": { px: 1.5 },
-                  }}
-                />
-              </Stack>
-            </Stack>
-          </Box>
-
-          {/* ✅ Fixed Responsive Grid */}
-          <Box
-            className="!grid !gap-6 !mb-8"
-            sx={{
-              display: "grid",
-              gridTemplateColumns: {
-                xs: "1fr",
-                sm: "repeat(2, 1fr)",
-                md: "repeat(3, 1fr)",
-                lg: "repeat(4, 1fr)", // ✅ Forces exactly 4 columns on large
-              },
-            }}
+              {t("dmphoto.header.bind_button")}
+            </button>
+          </div>
+        </div>
+      </header>
+      <Box className="!p-6 !bg-gray-50 !min-h-screen">
+        {/* Header */}
+        <Box className="!mb-8">
+          <Stack
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
           >
-            {currentPhotos.map((photo) => (
+            <Stack direction="row" spacing={2} alignItems="center">
               <Paper
-                key={photo.id}
                 elevation={0}
-                sx={{
-                  borderRadius: "24px",
-                  overflow: "hidden",
-                  position: "relative",
-                  transition: "all 0.3s ease",
-                  "&:hover": {
-                    transform: "translateY(-6px)",
-                    boxShadow: "0 20px 40px rgba(0,0,0,0.12)",
-                    "& .download-btn": {
-                      opacity: 1,
-                      transform: "translateY(0)",
-                    },
-                  },
-                  "& .download-btn": {
-                    opacity: 0,
-                    transform: "translateY(10px)",
-                    transition: "all 0.25s ease",
-                  },
-                }}
-                className="!bg-white !cursor-pointer"
+                className="!flex !items-center !gap-2 !bg-white !border !border-gray-200 !rounded-xl !px-4 !py-2"
               >
-                {/* Larger Image */}
-                <Box sx={{ position: "relative", paddingTop: "130%" }}>
-                  <Box
-                    component="img"
-                    src={photo.url}
-                    alt={`Photo ${photo.id}`}
-                    sx={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
-                    loading="lazy"
-                  />
-
-                  {/* Download Button */}
-                  <IconButton
-                    className="download-btn !absolute !inset-0 !m-auto !w-14 !h-14 !bg-white !shadow-xl !rounded-full"
-                    sx={{
-                      zIndex: 10,
-                      "&:hover": {
-                        backgroundColor: "#0695c8",
-                        color: "white",
-                        transform: "scale(1.15)",
-                      },
-                    }}
-                  >
-                    <FiCamera className="!text-2xl !text-gray-700" />
-                  </IconButton>
-                </Box>
-
-                {/* Timestamp */}
-                <Box className="!p-4 !flex !items-center !justify-between">
-                  <Typography
-                    variant="caption"
-                    className="!text-gray-600 !font-mono !text-xs !tracking-tight"
-                  >
-                    {photo.time}
-                  </Typography>
-                  <FiDownload
-                    className="!text-gray-400 !text-sm"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleDownload(
-                        photo.url,
-                        `photo-${photo.time.replace(/[: ]/g, "-")}.jpg`
-                      );
-                    }}
-                  />
-                </Box>
+                <FiCalendar className="!text-gray-500 !text-sm" />
+                <Typography className="!text-gray-700 !font-medium lg:!text-sm !text-[11px]">
+                  {t("dmphoto.header.date_range", {
+                    startDate: "2021-01-01",
+                    endDate: "2022-04-30",
+                  })}
+                </Typography>
               </Paper>
-            ))}
-          </Box>
-
-          {/* Pagination */}
-          <Box className="!flex justify-center">
-            <Stack direction="row" spacing={1} alignItems="center">
-              <IconButton
+              <Chip
+                label={t("dmphoto.header.last_7_days")}
                 size="small"
-                disabled={page === 1}
-                onClick={() => setPage(page - 1)}
-                sx={{ color: page === 1 ? "#d1d5db" : "#9ca3af" }}
-              >
-                <FiChevronLeft />
-              </IconButton>
-
-              {[...Array(totalPages)].map((_, i) => (
-                <Chip
-                  key={i + 1}
-                  label={i + 1}
-                  size="small"
-                  onClick={() => setPage(i + 1)}
-                  sx={{
-                    backgroundColor: page === i + 1 ? "#0695c8" : "#f3f4f6",
-                    color: page === i + 1 ? "white" : "#6b7280",
-                    fontWeight: page === i + 1 ? "bold" : "medium",
-                    minWidth: 44,
-                    height: 44,
-                    borderRadius: "14px",
-                    cursor: "pointer",
-                    fontSize: "0.9375rem",
-                    "&:hover": {
-                      backgroundColor: page === i + 1 ? "#0695c8" : "#e5e7eb",
-                    },
-                  }}
-                />
-              ))}
-
-              <IconButton
-                size="small"
-                disabled={page === totalPages}
-                onClick={() => setPage(page + 1)}
-                sx={{ color: page === totalPages ? "#d1d5db" : "#9ca3af" }}
-              >
-                <FiChevronRight />
-              </IconButton>
+                sx={{
+                  backgroundColor: "#e0f2fe",
+                  color: "#0695c8",
+                  fontWeight: 600,
+                  fontSize: "0.75rem",
+                  height: 28,
+                  borderRadius: "12px",
+                  "& .MuiChip-label": { px: 1.5 },
+                }}
+              />
             </Stack>
-          </Box>
+          </Stack>
         </Box>
 
-        <BuyModal handleClose={handleClose} open={open} />
-      </>
-    );
+        {/* Responsive Grid */}
+        <Box
+          className="!grid !gap-6 !mb-8"
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(3, 1fr)",
+              lg: "repeat(4, 1fr)",
+            },
+          }}
+        >
+          {currentPhotos.map((photo) => (
+            <Paper
+              key={photo.id}
+              elevation={0}
+              sx={{
+                borderRadius: "24px",
+                overflow: "hidden",
+                position: "relative",
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  transform: "translateY(-6px)",
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.12)",
+                  "& .download-btn": {
+                    opacity: 1,
+                    transform: "translateY(0)",
+                  },
+                },
+                "& .download-btn": {
+                  opacity: 0,
+                  transform: "translateY(10px)",
+                  transition: "all 0.25s ease",
+                },
+              }}
+              className="!bg-white !cursor-pointer"
+            >
+              {/* Larger Image */}
+              <Box sx={{ position: "relative", paddingTop: "130%" }}>
+                <Box
+                  component="img"
+                  src={photo.url}
+                  alt={t("dmphoto.photo.alt", { id: photo.id })}
+                  sx={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                  loading="lazy"
+                />
+
+                {/* Download Button */}
+                <IconButton
+                  className="download-btn !absolute !inset-0 !m-auto !w-14 !h-14 !bg-white !shadow-xl !rounded-full"
+                  sx={{
+                    zIndex: 10,
+                    "&:hover": {
+                      backgroundColor: "#0695c8",
+                      color: "white",
+                      transform: "scale(1.15)",
+                    },
+                  }}
+                  aria-label={t("dmphoto.photo.download_aria", {
+                    id: photo.id,
+                  })}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleDownload(
+                      photo.url,
+                      `photo-${photo.time.replace(/[: ]/g, "-")}.jpg`
+                    );
+                  }}
+                >
+                  <FiCamera className="!text-2xl !text-gray-700" />
+                </IconButton>
+              </Box>
+
+              {/* Timestamp */}
+              <Box className="!p-4 !flex !items-center !justify-between">
+                <Typography
+                  variant="caption"
+                  className="!text-gray-600 !font-mono !text-xs !tracking-tight"
+                >
+                  {photo.time}
+                </Typography>
+                <FiDownload
+                  className="!text-gray-400 !text-sm"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleDownload(
+                      photo.url,
+                      `photo-${photo.time.replace(/[: ]/g, "-")}.jpg`
+                    );
+                  }}
+                  aria-label={t("dmphoto.photo.download_aria", {
+                    id: photo.id,
+                  })}
+                />
+              </Box>
+            </Paper>
+          ))}
+        </Box>
+
+        {/* Pagination */}
+        <Box className="!flex justify-center">
+          <Stack direction="row" spacing={1} alignItems="center">
+            <IconButton
+              size="small"
+              disabled={page === 1}
+              onClick={() => setPage(page - 1)}
+              sx={{ color: page === 1 ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmphoto.pagination.prev_button_aria")}
+            >
+              <FiChevronLeft />
+            </IconButton>
+
+            {[...Array(totalPages)].map((_, i) => (
+              <Chip
+                key={i + 1}
+                label={i + 1}
+                size="small"
+                onClick={() => setPage(i + 1)}
+                sx={{
+                  backgroundColor: page === i + 1 ? "#0695c8" : "#f3f4f6",
+                  color: page === i + 1 ? "white" : "#6b7280",
+                  fontWeight: page === i + 1 ? "bold" : "medium",
+                  minWidth: 44,
+                  height: 44,
+                  borderRadius: "14px",
+                  cursor: "pointer",
+                  fontSize: "0.9375rem",
+                  "&:hover": {
+                    backgroundColor: page === i + 1 ? "#0695c8" : "#e5e7eb",
+                  },
+                }}
+              />
+            ))}
+
+            <IconButton
+              size="small"
+              disabled={page === totalPages}
+              onClick={() => setPage(page + 1)}
+              sx={{ color: page === totalPages ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmphoto.pagination.next_button_aria")}
+            >
+              <FiChevronRight />
+            </IconButton>
+          </Stack>
+        </Box>
+      </Box>
+
+      <BuyModal handleClose={handleClose} open={open} />
+    </>
+  );
 };
 
 export default PhotosPage;

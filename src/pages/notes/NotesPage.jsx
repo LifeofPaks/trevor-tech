@@ -83,7 +83,7 @@ const NotesPage = () => {
                 className="!flex !items-center !gap-2 !bg-white !border !border-gray-200 !rounded-xl !px-4 !py-2"
               >
                 <FiCalendar className="!text-gray-500 !text-sm" />
-                <Typography className="!text-gray-700 !font-medium !text-sm">
+                <Typography className="!text-gray-700 !font-medium lg:!text-[13px] !text-[11px]">
                   {t("dnt.header.date_range", {
                     startDate: "2021-01-01",
                     endDate: "2022-04-30",

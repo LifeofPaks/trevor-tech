@@ -935,5 +935,23 @@
         "content": "My courage is waning just as I reach the threshold."
       }
     ]
+  },
+  "dmphoto": {
+    "header": {
+      "title": "Photos",
+      "demo_message": "Demo data. Bind your device to collect actual data.",
+      "bind_button": "Bind My Device",
+      "bind_button_aria": "Bind device to start collecting data",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Last 7 days"
+    },
+    "photo": {
+      "alt": "Photo {{id}}",
+      "download_aria": "Download photo {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Previous page",
+      "next_button_aria": "Next page"
+    }
   }
 }

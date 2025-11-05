@@ -929,5 +929,23 @@
         "content": "Minha coragem está diminuindo justo quando chego ao limiar."
       }
     ]
+  },
+  "dmphoto": {
+    "header": {
+      "title": "Fotos",
+      "demo_message": "Dados de demonstração. Vincule seu dispositivo para coletar dados reais.",
+      "bind_button": "Vincular meu dispositivo",
+      "bind_button_aria": "Vincular dispositivo para começar a coletar dados",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Últimos 7 dias"
+    },
+    "photo": {
+      "alt": "Foto {{id}}",
+      "download_aria": "Baixar foto {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Página anterior",
+      "next_button_aria": "Próxima página"
+    }
   }
 }
