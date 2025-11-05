@@ -901,5 +901,37 @@
       "expand": "Kontaktdetails erweitern",
       "collapse": "Kontaktdetails einklappen"
     }
+  },
+  "dnt": {
+    "header": {
+      "title": "Notizen",
+      "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
+      "bind_button": "Mein Gerät binden",
+      "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Letzte 7 Tage"
+    },
+    "pagination": {
+      "prev_button_aria": "Vorherige Seite",
+      "next_button_aria": "Nächste Seite"
+    },
+    "notes": [
+      {
+        "title": "Schulbedarf abholen",
+        "content": "Bücher im Buchladen und zusätzliches Schreibmaterial kaufen."
+      },
+      {
+        "title": "Geschichtsbericht fertigstellen",
+        "content": "Der einzige Weg, Prokrastination zu besiegen, ist, irgendwo anzufangen."
+      },
+      {
+        "title": "Berühmte Zitate",
+        "content": "Der gegenwärtige Moment ist ein Geschenk. Nimm es an und nutze es weise."
+      },
+      {
+        "title": "Zeit zu beginnen",
+        "content": "Mein Mut schwindet, sobald ich die Schwelle erreiche."
+      }
+    ]
   }
 }

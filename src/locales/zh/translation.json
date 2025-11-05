@@ -895,5 +895,37 @@
       "expand": "展开联系人详情",
       "collapse": "收起联系人详情"
     }
+  },
+  "dnt": {
+    "header": {
+      "title": "笔记",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "最近7天"
+    },
+    "pagination": {
+      "prev_button_aria": "上一页",
+      "next_button_aria": "下一页"
+    },
+    "notes": [
+      {
+        "title": "购买学习用品",
+        "content": "在书店购买书籍和额外的文具。"
+      },
+      {
+        "title": "完成历史报告",
+        "content": "战胜拖延的唯一方法是随便从哪里开始。"
+      },
+      {
+        "title": "名言警句",
+        "content": "当下是一个礼物。接受它并明智地使用。"
+      },
+      {
+        "title": "开始的时候",
+        "content": "我的勇气在到达门槛时正在减弱。"
+      }
+    ]
   }
 }

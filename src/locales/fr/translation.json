@@ -898,5 +898,37 @@
       "expand": "Afficher les détails du contact",
       "collapse": "Masquer les détails du contact"
     }
+  },
+  "dnt": {
+    "header": {
+      "title": "Notes",
+      "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
+      "bind_button": "Connecter mon appareil",
+      "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "7 derniers jours"
+    },
+    "pagination": {
+      "prev_button_aria": "Page précédente",
+      "next_button_aria": "Page suivante"
+    },
+    "notes": [
+      {
+        "title": "Acheter des fournitures scolaires",
+        "content": "Acheter des livres à la librairie et des fournitures supplémentaires."
+      },
+      {
+        "title": "Terminer le rapport d'histoire",
+        "content": "La seule façon de vaincre la procrastination est de commencer n'importe où."
+      },
+      {
+        "title": "Citations célèbres",
+        "content": "L'instant présent est un cadeau. Accueillez-le et utilisez-le judicieusement."
+      },
+      {
+        "title": "Il est temps de commencer",
+        "content": "Mon courage faiblit juste au moment où j'atteins le seuil."
+      }
+    ]
   }
 }

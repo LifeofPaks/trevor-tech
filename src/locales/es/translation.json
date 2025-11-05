@@ -894,5 +894,37 @@
       "expand": "Expandir detalles del contacto",
       "collapse": "Colapsar detalles del contacto"
     }
+  },
+  "dnt": {
+    "header": {
+      "title": "Notas",
+      "demo_message": "Datos de demostración. Vincula tu dispositivo para recopilar datos reales.",
+      "bind_button": "Vincular mi dispositivo",
+      "bind_button_aria": "Vincular dispositivo para comenzar a recopilar datos",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Últimos 7 días"
+    },
+    "pagination": {
+      "prev_button_aria": "Página anterior",
+      "next_button_aria": "Página siguiente"
+    },
+    "notes": [
+      {
+        "title": "Recoger materiales escolares",
+        "content": "Comprar libros en la librería y material de papelería adicional."
+      },
+      {
+        "title": "Terminar informe de historia",
+        "content": "La única forma de vencer la procrastinación es empezar por cualquier lado."
+      },
+      {
+        "title": "Citas famosas",
+        "content": "El momento presente es un regalo. Recíbelo y úsalo sabiamente."
+      },
+      {
+        "title": "Hora de empezar",
+        "content": "Mi valentía disminuye justo cuando llego al umbral."
+      }
+    ]
   }
 }

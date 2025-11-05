@@ -895,5 +895,37 @@
       "expand": "Kişi detaylarını genişlet",
       "collapse": "Kişi detaylarını daralt"
     }
+  },
+  "dnt": {
+    "header": {
+      "title": "Notlar",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Son 7 gün"
+    },
+    "pagination": {
+      "prev_button_aria": "Önceki sayfa",
+      "next_button_aria": "Sonraki sayfa"
+    },
+    "notes": [
+      {
+        "title": "Okul malzemeleri al",
+        "content": "Kitapçıdan kitaplar ve ek kırtasiye malzemeleri al."
+      },
+      {
+        "title": "Tarih raporunu bitir",
+        "content": "Ertelemeyi yenmenin tek yolu herhangi bir yerden başlamak."
+      },
+      {
+        "title": "Ünlü alıntılar",
+        "content": "Şu an bir hediye. Onu al ve akıllıca kullan."
+      },
+      {
+        "title": "Başlama zamanı",
+        "content": "Eşiğe ulaştığımda cesaretim azalıyor."
+      }
+    ]
   }
 }

@@ -896,5 +896,37 @@
       "expand": "연락처 세부 정보 확장",
       "collapse": "연락처 세부 정보 축소"
     }
+  },
+  "dnt": {
+    "header": {
+      "title": "노트",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "최근 7일"
+    },
+    "pagination": {
+      "prev_button_aria": "이전 페이지",
+      "next_button_aria": "다음 페이지"
+    },
+    "notes": [
+      {
+        "title": "학교 물품 구입",
+        "content": "서점에서 책과 추가 문구류를 구입한다."
+      },
+      {
+        "title": "역사 보고서 완성",
+        "content": "미루기를 이기는 유일한 방법은 어디서든 시작하는 것이다."
+      },
+      {
+        "title": "유명한 명언",
+        "content": "현재 순간은 선물이다. 그것을 받아 현명하게 사용하라."
+      },
+      {
+        "title": "시작할 시간",
+        "content": "문턱에 다다를 때 용기가 약해진다."
+      }
+    ]
   }
 }

@@ -896,5 +896,37 @@
       "expand": "連絡先の詳細を展開",
       "collapse": "連絡先の詳細を折りたたむ"
     }
+  },
+  "dnt": {
+    "header": {
+      "title": "ノート",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "過去7日間"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    },
+    "notes": [
+      {
+        "title": "学校のものを買う",
+        "content": "書店で本と追加の文房具を購入する。"
+      },
+      {
+        "title": "歴史レポートを完成させる",
+        "content": "先延ばしを克服する唯一の方法は、どこからでも始めること。"
+      },
+      {
+        "title": "有名な引用",
+        "content": "今この瞬間は贈り物。受け取って賢く使いなさい。"
+      },
+      {
+        "title": "始める時間",
+        "content": "しきい値に達すると勇気が衰える。"
+      }
+    ]
   }
 }

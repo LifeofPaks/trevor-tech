@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import {
   Box,
   Typography,
@@ -9,40 +9,41 @@ import {
   Divider,
 } from "@mui/material";
 import { FiCalendar, FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
-import BuyModal from "../../components/buyModal/BuyModal";
 import { FaNoteSticky } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
+import BuyModal from "../../components/buyModal/BuyModal";
 
 // Sample Notes Data
 const notes = [
   {
-    title: "Pick up school stuff",
-    content: "Buy books at the bookstore and additional stationery.",
+    titleKey: "dnt.notes.0.title",
+    contentKey: "dnt.notes.0.content",
     time: "2022-02-08 09:30",
   },
   {
-    title: "Finish history report",
-    content: "The only way to beat procrastination is to start anywhere.",
+    titleKey: "dnt.notes.1.title",
+    contentKey: "dnt.notes.1.content",
     time: "2022-01-27 18:46",
   },
   {
-    title: "Famous quotes",
-    content: "The present moment is a gift. Receive it and use it wisely.",
+    titleKey: "dnt.notes.2.title",
+    contentKey: "dnt.notes.2.content",
     time: "2022-01-06 10:30",
   },
   {
-    title: "Time to start",
-    content: "My courage is waning just as i reach the threshold.",
+    titleKey: "dnt.notes.3.title",
+    contentKey: "dnt.notes.3.content",
     time: "2022-01-01 09:30",
   },
 ];
 
 const NotesPage = () => {
+  const { t } = useTranslation();
   const [page, setPage] = useState(1);
-         const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-         const handleOpen = () => setOpen(true);
-         const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -50,24 +51,25 @@ const NotesPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Notes
+              {t("dnt.header.title")}{" "}
               <FaNoteSticky className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("dnt.header.demo_message")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dnt.header.bind_button_aria")}
             >
-              Bind My Device
+              {t("dnt.header.bind_button")}
             </button>
           </div>
         </div>
       </header>
-      <Box className="!p-6 !bg-gray-50 ">
+      <Box className="!p-6 !bg-gray-50">
         {/* Header: Date Range + Last 7 days */}
         <Box className="!mb-8">
           <Stack
@@ -78,19 +80,18 @@ const NotesPage = () => {
             <Stack direction="row" spacing={2} alignItems="center">
               <Paper
                 elevation={0}
-                className="!flex !items-center !gap-2 !bg-white !border !border-gray-200 !rounded-xl !px-4 !py-2 "
+                className="!flex !items-center !gap-2 !bg-white !border !border-gray-200 !rounded-xl !px-4 !py-2"
               >
                 <FiCalendar className="!text-gray-500 !text-sm" />
                 <Typography className="!text-gray-700 !font-medium !text-sm">
-                  2021-01-01
-                </Typography>
-                <Typography className="!text-gray-500 !mx-1">—</Typography>
-                <Typography className="!text-gray-700 !font-medium !text-sm">
-                  2022-04-30
+                  {t("dnt.header.date_range", {
+                    startDate: "2021-01-01",
+                    endDate: "2022-04-30",
+                  })}
                 </Typography>
               </Paper>
               <Chip
-                label="Last 7 days"
+                label={t("dnt.header.last_7_days")}
                 size="small"
                 sx={{
                   backgroundColor: "#e0f2fe",
@@ -130,13 +131,13 @@ const NotesPage = () => {
                   className="!font-bold !text-gray-900 !mb-1 !text-[14px]"
                   sx={{ color: "#0695c8" }}
                 >
-                  {note.title}
+                  {t(note.titleKey)}
                 </Typography>
                 <Typography
                   variant="body2"
                   className="!text-gray-600 !mb-3 !leading-relaxed"
                 >
-                  {note.content}
+                  {t(note.contentKey)}
                 </Typography>
                 <Divider className="!my-3" />
                 <Typography
@@ -153,7 +154,11 @@ const NotesPage = () => {
         {/* Pagination */}
         <Box className="!flex justify-center">
           <Stack direction="row" spacing={1} alignItems="center">
-            <IconButton size="small" sx={{ color: "#9ca3af" }}>
+            <IconButton
+              size="small"
+              sx={{ color: "#9ca3af" }}
+              aria-label={t("dnt.pagination.prev_button_aria")}
+            >
               <FiChevronLeft />
             </IconButton>
             <Chip
@@ -168,7 +173,11 @@ const NotesPage = () => {
                 fontSize: "0.875rem",
               }}
             />
-            <IconButton size="small" sx={{ color: "#9ca3af" }}>
+            <IconButton
+              size="small"
+              sx={{ color: "#9ca3af" }}
+              aria-label={t("dnt.pagination.next_button_aria")}
+            >
               <FiChevronRight />
             </IconButton>
           </Stack>
