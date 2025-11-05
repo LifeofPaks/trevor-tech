@@ -10,7 +10,7 @@ import {
   FiKey,
 } from "react-icons/fi";
 import { IoMdAlert } from "react-icons/io";
-import { MdFolderDelete } from "react-icons/md";
+import { MdFolderDelete, MdOutlineAppsOutage } from "react-icons/md";
 import { RiBtcFill } from "react-icons/ri";
 import { Home } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -32,6 +32,16 @@ const EliteNavbar = () => {
   const fontClass = isEnglish ? "text-[14px]" : "text-[12px]";
 
   const eliteLinks = [
+     {
+          to: "/elite/crypto-recovery",
+          label: t("crypto_recovery"),
+          icon: <RiBtcFill />,
+        },
+        {
+          to: "/elite/crypto-recovery",
+          label: t("social_media"),
+          icon: <MdOutlineAppsOutage />,
+        },
     {
       to: "/elite/credit-boost",
       label: t("credit_score_upgrade"),
@@ -51,11 +61,6 @@ const EliteNavbar = () => {
       to: "/elite/clear-record",
       label: t("erase_criminal_record"),
       icon: <MdFolderDelete />,
-    },
-    {
-      to: "/elite/crypto-recovery",
-      label: t("crypto_recovery"),
-      icon: <RiBtcFill />,
     },
     { to: "/elite/dmv-id", label: t("dmv_&_id_services"), icon: <FiKey /> },
   ];

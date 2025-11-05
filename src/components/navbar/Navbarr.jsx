@@ -9,7 +9,7 @@ import {
   FiKey,
 } from "react-icons/fi";
 import { IoMdAlert } from "react-icons/io";
-import { MdFolderDelete } from "react-icons/md";
+import { MdFolderDelete, MdOutlineAppsOutage } from "react-icons/md";
 import { RiBtcFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import DemoLogo from "../logo/DemoLogo";
@@ -31,6 +31,16 @@ const Navbarr = () => {
 
   const eliteLinks = [
     {
+      to: "/elite/crypto-recovery",
+      label: t("crypto_recovery"),
+      icon: <RiBtcFill />,
+    },
+    {
+      to: "/elite/crypto-recovery",
+      label: t("social_media"),
+      icon: <MdOutlineAppsOutage />,
+    },
+    {
       to: "/elite/credit-boost",
       label: t("credit_score_upgrade"),
       icon: <FiZap />,
@@ -50,11 +60,7 @@ const Navbarr = () => {
       label: t("erase_criminal_record"),
       icon: <MdFolderDelete />,
     },
-    {
-      to: "/elite/crypto-recovery",
-      label: t("crypto_recovery"),
-      icon: <RiBtcFill />,
-    },
+
     { to: "/elite/dmv-id", label: t("dmv_&_id_services"), icon: <FiKey /> },
   ];
 

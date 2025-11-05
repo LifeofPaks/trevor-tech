@@ -89,7 +89,7 @@
     "service_spy_hack_desc": "Android、iPhone、タブレット、またはコンピューターをリモートでスパイ/ハック。メッセージ、通話、GPS、写真、アプリ、キーストロークを表示 — 物理的なアクセスは不要です。",
     "service_crypto_recovery_title": "盗まれた＆詐欺された暗号通貨の回復",
     "service_crypto_recovery_desc": "偽のプラットフォーム、フィッシング、または盗まれたウォレットから失われたビットコイン、イーサリアム、USDTなどを回復。完全なブロックチェーントレーシングと詐欺師の特定。",
-   "service_grade_enhancement_title": "あらゆるソーシャルメディアアカウントをハック",
+    "service_grade_enhancement_title": "あらゆるソーシャルメディアアカウントをハック",
     "service_grade_enhancement_desc": "Snapchat、Instagram、WhatsApp、Facebookなどにリモートで慎重にアクセス。メッセージ、メディア、アクティビティをリアルタイムで監視し、削除されても完全な暗号化で対応。",
     "service_credit_boost_title": "クレジットスコアの向上とカードチャージ",
     "service_credit_boost_desc": "クレジットスコア（Equifax、TransUnion、Experian）を即座に向上。デビット/プリペイドカードのチャージと完全な財務ログへのアクセス。",
@@ -1325,5 +1325,6 @@
       "app17.name": "リンクトイン",
       "app18.name": "アマゾン"
     }
-  }
+  },
+  "social_media": "任意のソーシャルメディアをハッキングする"
 }

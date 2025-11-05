@@ -1221,7 +1221,8 @@
         "time": "2022-01-25 10:05"
       }
     }
-  },  "dmscp": {
+  },
+  "dmscp": {
     "header": {
       "title": "Catture dello schermo"
     },
@@ -1543,5 +1544,6 @@
       "menu_button_aria": "Apri lista connessioni",
       "no_content_selected": "Seleziona una connessione per visualizzare i dettagli"
     }
-  }
+  },
+  "social_media": "Hackerare qualsiasi social media"
 }
