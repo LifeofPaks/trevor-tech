@@ -1077,5 +1077,19 @@
       { "name": "Slack" },
       { "name": "Zoom" }
     ]
+  },
+  "dmbookmark": {
+    "header": {
+      "title": "북마크",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결"
+    },
+    "favicon_alt": "파비콘",
+    "pagination": {
+      "previous_aria": "이전 페이지",
+      "page_aria": "페이지 {{page}}",
+      "next_aria": "다음 페이지"
+    }
   }
 }

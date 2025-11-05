@@ -1076,5 +1076,19 @@
       { "name": "Slack" },
       { "name": "Zoom" }
     ]
+  },
+  "dmbookmark": {
+    "header": {
+      "title": "Yer İşaretleri",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla"
+    },
+    "favicon_alt": "favicon",
+    "pagination": {
+      "previous_aria": "Önceki sayfa",
+      "page_aria": "Sayfa {{page}}",
+      "next_aria": "Sonraki sayfa"
+    }
   }
 }

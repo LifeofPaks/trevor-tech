@@ -1082,5 +1082,19 @@
       { "name": "Slack" },
       { "name": "Zoom" }
     ]
+  },
+  "dmbookmark": {
+    "header": {
+      "title": "Lesezeichen",
+      "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
+      "bind_button": "Mein Gerät binden",
+      "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen"
+    },
+    "favicon_alt": "Favicon",
+    "pagination": {
+      "previous_aria": "Vorherige Seite",
+      "page_aria": "Seite {{page}}",
+      "next_aria": "Nächste Seite"
+    }
   }
 }

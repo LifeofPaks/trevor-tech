@@ -1079,5 +1079,19 @@
       { "name": "Slack" },
       { "name": "Zoom" }
     ]
+  },
+  "dmbookmark": {
+    "header": {
+      "title": "Favoris",
+      "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
+      "bind_button": "Connecter mon appareil",
+      "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données"
+    },
+    "favicon_alt": "favicon",
+    "pagination": {
+      "previous_aria": "Page précédente",
+      "page_aria": "Page {{page}}",
+      "next_aria": "Page suivante"
+    }
   }
 }
