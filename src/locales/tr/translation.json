@@ -1169,5 +1169,52 @@
         "body": "Sayın Yatırımcı,\n\nÖzel kripto para yatırım programımıza katılın ve sadece 7 günde %500 getiri elde edin. Başlamak için aşağıya tıklayın:\n\n[Şimdi Yatırım Yap]\n\nBu sınırlı süreli fırsatı kaçırmayın!\n\nKripto Fırsat Ekibi"
       }
     }
+  },
+  "dmsim": {
+    "header": {
+      "title": "SIM Kart"
+    },
+    "sim_card": {
+      "title": "SIM Kart",
+      "operator_label": "Mobil Operatör Adı:",
+      "phone_label": "Telefon numarası:",
+      "mnc_label": "MNC:",
+      "mcc_label": "MCC:",
+      "imei_label": "IMEI:"
+    },
+    "change_email": {
+      "title": "E-posta Değiştir",
+      "notification_text": "Hedef cihaz SIM kartını değiştirdiğinde, kayıtlı e-posta adresinize bir bildirim göndereceğiz. Lütfen kayıtlı e-posta adresinizin geçerli olduğundan emin olun.",
+      "invalid_email_text": "Eğer kayıtlı e-posta adresi geçerli değilse,",
+      "change_button": "değiştirmek için buraya tıklayın.",
+      "change_button_aria": "Kayıtlı e-posta adresini değiştir"
+    },
+    "recent_locations": {
+      "title": "Son Konumlar",
+      "all_locations": "Tüm Konumlar",
+      "all_locations_aria": "Tüm konum geçmişini görüntüle"
+    },
+    "locations": {
+      "loc1": {
+        "address": "5905 Wilshire Bulvarı, Los Angeles, CA 90036, Amerika Birleşik Devletleri",
+        "time": "2022-02-10 22:30"
+      },
+      "loc2": {
+        "address": "Los Angeles, CA 90068, Amerika Birleşik Devletleri",
+        "time": "2022-02-04 05:00"
+      },
+      "loc3": {
+        "address": "2800 E Observatory Yolu, Los Angeles, CA 90027, Amerika Birleşik Devletleri",
+        "time": "2022-02-02 15:45"
+      },
+      "loc4": {
+        "address": "100 Universal City Plaza, Universal City, CA 91608, Amerika Birleşik Devletleri",
+        "time": "2022-01-27 17:20"
+      },
+      "loc5": {
+        "address": "1200 Getty Center Yolu, Los Angeles, CA 90049, Amerika Birleşik Devletleri",
+        "time": "2022-01-25 10:05"
+      }
+    }
   }
 }

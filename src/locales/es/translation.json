@@ -1168,5 +1168,52 @@
         "body": "Estimado Inversor,\n\nÚnete a nuestro exclusivo programa de inversión en criptomonedas y obtén un 500% de retorno en solo 7 días. Haz clic a continuación para comenzar:\n\n[Invertir Ahora]\n\n¡No pierdas esta oportunidad de tiempo limitado!\n\nEquipo de Oportunidad Cripto"
       }
     }
+  },
+  "dmsim": {
+    "header": {
+      "title": "Tarjeta SIM"
+    },
+    "sim_card": {
+      "title": "Tarjeta SIM",
+      "operator_label": "Nombre del operador móvil:",
+      "phone_label": "Número de teléfono:",
+      "mnc_label": "MNC:",
+      "mcc_label": "MCC:",
+      "imei_label": "IMEI:"
+    },
+    "change_email": {
+      "title": "Cambiar Correo Electrónico",
+      "notification_text": "Cuando el dispositivo objetivo cambie de tarjeta SIM, enviaremos una notificación a su dirección de correo electrónico registrada. Asegúrese de que su correo electrónico registrado sea válido.",
+      "invalid_email_text": "Si el correo electrónico registrado no es válido,",
+      "change_button": "haga clic aquí para cambiarlo.",
+      "change_button_aria": "Cambiar la dirección de correo electrónico registrada"
+    },
+    "recent_locations": {
+      "title": "Ubicaciones Recientes",
+      "all_locations": "Todas las Ubicaciones",
+      "all_locations_aria": "Ver todo el historial de ubicaciones"
+    },
+    "locations": {
+      "loc1": {
+        "address": "5905 Wilshire Blvd, Los Ángeles, CA 90036, Estados Unidos",
+        "time": "2022-02-10 22:30"
+      },
+      "loc2": {
+        "address": "Los Ángeles, CA 90068, Estados Unidos",
+        "time": "2022-02-04 05:00"
+      },
+      "loc3": {
+        "address": "2800 E Observatory Rd, Los Ángeles, CA 90027, Estados Unidos",
+        "time": "2022-02-02 15:45"
+      },
+      "loc4": {
+        "address": "100 Universal City Plaza, Universal City, CA 91608, Estados Unidos",
+        "time": "2022-01-27 17:20"
+      },
+      "loc5": {
+        "address": "1200 Getty Center Dr, Los Ángeles, CA 90049, Estados Unidos",
+        "time": "2022-01-25 10:05"
+      }
+    }
   }
 }

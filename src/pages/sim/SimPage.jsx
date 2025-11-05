@@ -9,44 +9,47 @@ import {
   useTheme,
 } from "@mui/material";
 import { FiMail, FiMapPin } from "react-icons/fi";
-import { Link } from "react-router-dom";
-import BindPhone from "../../components/demo/BindPhone";
 import { FaSimCard } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import BindPhone from "../../components/demo/BindPhone";
 
-// New Jersey Locations
+// Locations with translation keys
 const locations = [
   {
-    address: "5905 Wilshire Blvd, Los Angeles, CA 90036, United States",
-    time: "2022-02-10 22:30",
-  },
-  { address: "Los Angeles, CA 90068, United States", time: "2022-02-04 05:00" },
-  {
-    address: "2800 E Observatory Rd, Los Angeles, CA 90027, United States",
-    time: "2022-02-02 15:45",
+    addressKey: "loc1.address",
+    timeKey: "loc1.time",
   },
   {
-    address:
-      "100 Universal City Plaza, Universal City, CA 91608, United States",
-    time: "2022-01-27 17:20",
+    addressKey: "loc2.address",
+    timeKey: "loc2.time",
   },
   {
-    address: "1200 Getty Center Dr, Los Angeles, CA 90049, United States",
-    time: "2022-01-25 10:05",
+    addressKey: "loc3.address",
+    timeKey: "loc3.time",
+  },
+  {
+    addressKey: "loc4.address",
+    timeKey: "loc4.time",
+  },
+  {
+    addressKey: "loc5.address",
+    timeKey: "loc5.time",
   },
 ];
 
 const SimPage = () => {
+  const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <>
       <header className="!mb-4 sm:!mb-6 !px-4">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-centerנתsm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-SIM Card
-              <FaSimCard className="text-[#0695c8]" />
+              {t("dmsim.header.title")} <FaSimCard className="text-[#0695c8]" />
             </h1>
           </div>
           <BindPhone />
@@ -76,12 +79,12 @@ SIM Card
               className="!font-bold !text-gray-800 !mb-4"
               sx={{ color: "#0695c8" }}
             >
-              SIM Card
+              {t("dmsim.sim_card.title")}
             </Typography>
             <Stack spacing={2}>
               <Box className="!flex !justify-between">
                 <Typography className="!text-gray-600">
-                  Mobile Operator Name:
+                  {t("dmsim.sim_card.operator_label")}
                 </Typography>
                 <Typography className="!font-medium !text-gray-900">
                   T-Mobile US
@@ -89,26 +92,32 @@ SIM Card
               </Box>
               <Box className="!flex !justify-between">
                 <Typography className="!text-gray-600">
-                  Phone number:
+                  {t("dmsim.sim_card.phone_label")}
                 </Typography>
                 <Typography className="!font-medium !text-gray-900">
                   262238764
                 </Typography>
               </Box>
               <Box className="!flex !justify-between">
-                <Typography className="!text-gray-600">MNC:</Typography>
+                <Typography className="!text-gray-600">
+                  {t("dmsim.sim_card.mnc_label")}
+                </Typography>
                 <Typography className="!font-medium !text-gray-900">
                   250
                 </Typography>
               </Box>
               <Box className="!flex !justify-between">
-                <Typography className="!text-gray-600">MCC:</Typography>
+                <Typography className="!text-gray-600">
+                  {t("dmsim.sim_card.mcc_label")}
+                </Typography>
                 <Typography className="!font-medium !text-gray-900">
                   310
                 </Typography>
               </Box>
               <Box className="!flex !justify-between">
-                <Typography className="!text-gray-600">IMEI:</Typography>
+                <Typography className="!text-gray-600">
+                  {t("dmsim.sim_card.imei_label")}
+                </Typography>
                 <Typography className="!font-medium !text-gray-900">
                   861956623730200
                 </Typography>
@@ -131,7 +140,7 @@ SIM Card
               className="!font-bold !text-gray-800 !mb-4"
               sx={{ color: "#0695c8" }}
             >
-              Change Email
+              {t("dmsim.change_email.title")}
             </Typography>
             <Stack spacing={3} alignItems="flex-start">
               <Box className="!flex !items-start !gap-3">
@@ -150,13 +159,11 @@ SIM Card
                   <FiMail className="!text-lg !text-sky-600" />
                 </Box>
                 <Typography className="!text-sm !text-gray-700 !leading-relaxed">
-                  When the target device changes SIM cards, we will send a
-                  notification to your registered email address. Please ensure
-                  your registered email is valid.
+                  {t("dmsim.change_email.notification_text")}
                 </Typography>
               </Box>
               <Typography className="!text-sm !text-gray-600">
-                If the registered email is not valid,{" "}
+                {t("dmsim.change_email.invalid_email_text")}{" "}
                 <Button
                   variant="text"
                   size="small"
@@ -171,8 +178,9 @@ SIM Card
                       textDecoration: "underline",
                     },
                   }}
+                  aria-label={t("dmsim.change_email.change_button_aria")}
                 >
-                  click here to change it.
+                  {t("dmsim.change_email.change_button")}
                 </Button>
               </Typography>
             </Stack>
@@ -186,7 +194,7 @@ SIM Card
             className="!font-bold !text-gray-800 !mb-4"
             sx={{ color: "#0695c8" }}
           >
-            Recent Locations
+            {t("dmsim.recent_locations.title")}
           </Typography>
 
           <Box
@@ -268,8 +276,6 @@ SIM Card
                 borderRadius: "16px",
                 border: "1px solid #e5e7eb",
                 p: 4,
-                maxHeight: 400,
-                overflowY: "auto",
                 "&::-webkit-scrollbar": { display: "none" },
                 scrollbarWidth: "none",
               }}
@@ -289,10 +295,10 @@ SIM Card
                     />
                     <Box>
                       <Typography className="!text-sm !font-medium !text-gray-900 !leading-tight">
-                        {loc.address}
+                        {t(`dmsim.locations.${loc.addressKey}`)}
                       </Typography>
                       <Typography className="!text-xs !text-gray-500 !mt-0.5">
-                        {loc.time}
+                        {t(`dmsim.locations.${loc.timeKey}`)}
                       </Typography>
                     </Box>
                   </Box>
@@ -301,8 +307,9 @@ SIM Card
               <Link
                 to="/demo/general/gps"
                 className="text-[#0695c8] !mt-4 !block !font-medium"
+                aria-label={t("dmsim.recent_locations.all_locations_aria")}
               >
-                All Locations
+                {t("dmsim.recent_locations.all_locations")}
               </Link>
             </Paper>
           </Box>

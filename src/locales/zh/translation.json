@@ -1169,5 +1169,52 @@
         "body": "尊敬的投资者，\n\n加入我们的独家加密货币投资计划，7天内获得500%回报！点击以下链接开始：\n\n[立即投资]\n\n不要错过这个限时机会！\n\n加密机会团队"
       }
     }
+  },
+  "dmsim": {
+    "header": {
+      "title": "SIM卡"
+    },
+    "sim_card": {
+      "title": "SIM卡",
+      "operator_label": "移动运营商名称：",
+      "phone_label": "电话号码：",
+      "mnc_label": "MNC：",
+      "mcc_label": "MCC：",
+      "imei_label": "IMEI："
+    },
+    "change_email": {
+      "title": "更改电子邮件",
+      "notification_text": "当目标设备更换SIM卡时，我们将向您的注册电子邮件地址发送通知。请确保您的注册电子邮件有效。",
+      "invalid_email_text": "如果注册的电子邮件无效，",
+      "change_button": "请点击此处更改。",
+      "change_button_aria": "更改注册的电子邮件地址"
+    },
+    "recent_locations": {
+      "title": "最近位置",
+      "all_locations": "所有位置",
+      "all_locations_aria": "查看所有位置历史"
+    },
+    "locations": {
+      "loc1": {
+        "address": "美国加利福尼亚州洛杉矶威尔希尔大道5905号，邮编90036",
+        "time": "2022-02-10 22:30"
+      },
+      "loc2": {
+        "address": "美国加利福尼亚州洛杉矶，邮编90068",
+        "time": "2022-02-04 05:00"
+      },
+      "loc3": {
+        "address": "美国加利福尼亚州洛杉矶东天文台路2800号，邮编90027",
+        "time": "2022-02-02 15:45"
+      },
+      "loc4": {
+        "address": "美国加利福尼亚州环球城市广场100号，邮编91608",
+        "time": "2022-01-27 17:20"
+      },
+      "loc5": {
+        "address": "美国加利福尼亚州洛杉矶盖蒂中心大道1200号，邮编90049",
+        "time": "2022-01-25 10:05"
+      }
+    }
   }
 }

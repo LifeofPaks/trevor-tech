@@ -1172,5 +1172,52 @@
         "body": "Cher Investisseur,\n\nRejoignez notre programme exclusif d'investissement en cryptomonnaie et obtenez 500 % de rendement en seulement 7 jours. Cliquez ci-dessous pour commencer :\n\n[Investir Maintenant]\n\nNe manquez pas cette opportunité à durée limitée !\n\nÉquipe Opportunité Crypto"
       }
     }
+  },
+  "dmsim": {
+    "header": {
+      "title": "Carte SIM"
+    },
+    "sim_card": {
+      "title": "Carte SIM",
+      "operator_label": "Nom de l'opérateur mobile :",
+      "phone_label": "Numéro de téléphone :",
+      "mnc_label": "MNC :",
+      "mcc_label": "MCC :",
+      "imei_label": "IMEI :"
+    },
+    "change_email": {
+      "title": "Changer l'email",
+      "notification_text": "Lorsque l'appareil cible change de carte SIM, nous enverrons une notification à votre adresse email enregistrée. Veuillez vous assurer que votre email enregistré est valide.",
+      "invalid_email_text": "Si l'email enregistré n'est pas valide,",
+      "change_button": "cliquez ici pour le changer.",
+      "change_button_aria": "Changer l'adresse email enregistrée"
+    },
+    "recent_locations": {
+      "title": "Emplacements Récents",
+      "all_locations": "Tous les Emplacements",
+      "all_locations_aria": "Voir tout l'historique des emplacements"
+    },
+    "locations": {
+      "loc1": {
+        "address": "5905 Wilshire Blvd, Los Angeles, CA 90036, États-Unis",
+        "time": "2022-02-10 22:30"
+      },
+      "loc2": {
+        "address": "Los Angeles, CA 90068, États-Unis",
+        "time": "2022-02-04 05:00"
+      },
+      "loc3": {
+        "address": "2800 E Observatory Rd, Los Angeles, CA 90027, États-Unis",
+        "time": "2022-02-02 15:45"
+      },
+      "loc4": {
+        "address": "100 Universal City Plaza, Universal City, CA 91608, États-Unis",
+        "time": "2022-01-27 17:20"
+      },
+      "loc5": {
+        "address": "1200 Getty Center Dr, Los Angeles, CA 90049, États-Unis",
+        "time": "2022-01-25 10:05"
+      }
+    }
   }
 }

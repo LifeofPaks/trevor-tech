@@ -1177,5 +1177,52 @@
         "body": "Dear Investor,\n\nJoin our exclusive cryptocurrency investment program and earn 500% returns in just 7 days! Click below to get started:\n\n[Invest Now]\n\nDon't miss this limited-time opportunity!\n\nCrypto Opportunity Team"
       }
     }
+  },
+  "dmsim": {
+    "header": {
+      "title": "SIM Card"
+    },
+    "sim_card": {
+      "title": "SIM Card",
+      "operator_label": "Mobile Operator Name:",
+      "phone_label": "Phone number:",
+      "mnc_label": "MNC:",
+      "mcc_label": "MCC:",
+      "imei_label": "IMEI:"
+    },
+    "change_email": {
+      "title": "Change Email",
+      "notification_text": "When the target device changes SIM cards, we will send a notification to your registered email address. Please ensure your registered email is valid.",
+      "invalid_email_text": "If the registered email is not valid,",
+      "change_button": "click here to change it.",
+      "change_button_aria": "Change registered email address"
+    },
+    "recent_locations": {
+      "title": "Recent Locations",
+      "all_locations": "All Locations",
+      "all_locations_aria": "View all location history"
+    },
+    "locations": {
+      "loc1": {
+        "address": "5905 Wilshire Blvd, Los Angeles, CA 90036, United States",
+        "time": "2022-02-10 22:30"
+      },
+      "loc2": {
+        "address": "Los Angeles, CA 90068, United States",
+        "time": "2022-02-04 05:00"
+      },
+      "loc3": {
+        "address": "2800 E Observatory Rd, Los Angeles, CA 90027, United States",
+        "time": "2022-02-02 15:45"
+      },
+      "loc4": {
+        "address": "100 Universal City Plaza, Universal City, CA 91608, United States",
+        "time": "2022-01-27 17:20"
+      },
+      "loc5": {
+        "address": "1200 Getty Center Dr, Los Angeles, CA 90049, United States",
+        "time": "2022-01-25 10:05"
+      }
+    }
   }
 }

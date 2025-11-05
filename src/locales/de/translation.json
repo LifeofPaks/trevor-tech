@@ -1175,5 +1175,52 @@
         "body": "Sehr geehrter Investor,\n\nSchließen Sie sich unserem exklusiven Krypto-Investmentprogramm an und erzielen Sie 500% Rendite in nur 7 Tagen. Klicken Sie unten, um zu beginnen:\n\n[Jetzt Investieren]\n\nVerpassen Sie diese zeitlich begrenzte Gelegenheit nicht!\n\nKrypto-Chance-Team"
       }
     }
+  },
+  "dmsim": {
+    "header": {
+      "title": "SIM-Karte"
+    },
+    "sim_card": {
+      "title": "SIM-Karte",
+      "operator_label": "Name des Mobilfunkanbieters:",
+      "phone_label": "Telefonnummer:",
+      "mnc_label": "MNC:",
+      "mcc_label": "MCC:",
+      "imei_label": "IMEI:"
+    },
+    "change_email": {
+      "title": "E-Mail ändern",
+      "notification_text": "Wenn das Zielgerät die SIM-Karte wechselt, senden wir eine Benachrichtigung an Ihre registrierte E-Mail-Adresse. Bitte stellen Sie sicher, dass Ihre registrierte E-Mail-Adresse gültig ist.",
+      "invalid_email_text": "Falls die registrierte E-Mail-Adresse ungültig ist,",
+      "change_button": "klicken Sie hier, um sie zu ändern.",
+      "change_button_aria": "Registrierte E-Mail-Adresse ändern"
+    },
+    "recent_locations": {
+      "title": "Letzte Standorte",
+      "all_locations": "Alle Standorte",
+      "all_locations_aria": "Gesamten Standortverlauf anzeigen"
+    },
+    "locations": {
+      "loc1": {
+        "address": "5905 Wilshire Blvd, Los Angeles, CA 90036, Vereinigte Staaten",
+        "time": "2022-02-10 22:30"
+      },
+      "loc2": {
+        "address": "Los Angeles, CA 90068, Vereinigte Staaten",
+        "time": "2022-02-04 05:00"
+      },
+      "loc3": {
+        "address": "2800 E Observatory Rd, Los Angeles, CA 90027, Vereinigte Staaten",
+        "time": "2022-02-02 15:45"
+      },
+      "loc4": {
+        "address": "100 Universal City Plaza, Universal City, CA 91608, Vereinigte Staaten",
+        "time": "2022-01-27 17:20"
+      },
+      "loc5": {
+        "address": "1200 Getty Center Dr, Los Angeles, CA 90049, Vereinigte Staaten",
+        "time": "2022-01-25 10:05"
+      }
+    }
   }
 }
