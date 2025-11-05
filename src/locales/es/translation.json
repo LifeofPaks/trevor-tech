@@ -1043,5 +1043,37 @@
       "notify_phone": "Notificar al teléfono",
       "notify_both": "Ambos"
     }
+  },
+  "dmapps": {
+    "header": {
+      "title": "Aplicaciones Instaladas",
+      "demo_message": "Datos de demostración. Vincula tu dispositivo para recopilar datos reales.",
+      "bind_button": "Vincular mi dispositivo",
+      "bind_button_aria": "Vincular dispositivo para comenzar a recopilar datos"
+    },
+    "apps": [
+      { "name": "Instagram" },
+      { "name": "LINE" },
+      { "name": "Snapchat" },
+      { "name": "Tinder" },
+      { "name": "Twitter" },
+      { "name": "Viber" },
+      { "name": "WhatsApp" },
+      { "name": "Telegram" },
+      { "name": "Messenger" },
+      { "name": "Discord" },
+      { "name": "WeChat" },
+      { "name": "Reddit" },
+      { "name": "Twitch" },
+      { "name": "LinkedIn" },
+      { "name": "Pinterest" },
+      { "name": "Spotify" },
+      { "name": "YouTube" },
+      { "name": "TikTok" },
+      { "name": "Signal" },
+      { "name": "Gmail" },
+      { "name": "Slack" },
+      { "name": "Zoom" }
+    ]
   }
 }

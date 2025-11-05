@@ -996,54 +996,86 @@
       { "name": "Korman 1102" },
       { "name": "여기 무료 Wi-Fi 없음" }
     ]
-  },"dmkeywords": {
-      "header": {
-        "title": "키워드 경고",
-        "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
-        "bind_button": "내 기기 연결",
-        "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결"
-      },
-      "tabs": {
-        "tracking_rules": "추적 규칙",
-        "keywords_detected": "검출된 키워드"
-      },
-      "add_rule": {
-        "title": "규칙 추가",
-        "word_or_phrase": "단어 또는 구문",
-        "word_or_phrase_placeholder": "단어 또는 구문",
-        "select_features": "기능 선택",
-        "notification_type": "알림 유형",
-        "add_button": "추가",
-        "add_button_aria": "새 키워드 추적 규칙 추가"
-      },
-      "added_rules": {
-        "title": "추가된 규칙",
-        "table": {
-          "keywords": "키워드",
-          "features": "기능",
-          "notification_type": "알림 유형"
-        }
-      },
-      "detected": {
-        "table": {
-          "keywords": "키워드",
-          "features": "기능",
-          "time": "시간"
-        }
-      },
-      "features": {
-        "all": "모두",
-        "snapchat": "Snapchat",
-        "whatsapp": "WhatsApp",
-        "facebook": "Facebook",
-        "messages": "메시지",
-        "kik": "Kik"
-      },
-      "notifications": {
-        "notify_email": "이메일로 알림",
-        "notify_phone": "전화로 알림",
-        "notify_both": "둘 다"
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "키워드 경고",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결"
+    },
+    "tabs": {
+      "tracking_rules": "추적 규칙",
+      "keywords_detected": "검출된 키워드"
+    },
+    "add_rule": {
+      "title": "규칙 추가",
+      "word_or_phrase": "단어 또는 구문",
+      "word_or_phrase_placeholder": "단어 또는 구문",
+      "select_features": "기능 선택",
+      "notification_type": "알림 유형",
+      "add_button": "추가",
+      "add_button_aria": "새 키워드 추적 규칙 추가"
+    },
+    "added_rules": {
+      "title": "추가된 규칙",
+      "table": {
+        "keywords": "키워드",
+        "features": "기능",
+        "notification_type": "알림 유형"
       }
+    },
+    "detected": {
+      "table": {
+        "keywords": "키워드",
+        "features": "기능",
+        "time": "시간"
+      }
+    },
+    "features": {
+      "all": "모두",
+      "snapchat": "Snapchat",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "messages": "메시지",
+      "kik": "Kik"
+    },
+    "notifications": {
+      "notify_email": "이메일로 알림",
+      "notify_phone": "전화로 알림",
+      "notify_both": "둘 다"
     }
-  
+  },
+  "dmapps": {
+    "header": {
+      "title": "설치된 앱",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결"
+    },
+    "apps": [
+      { "name": "Instagram" },
+      { "name": "LINE" },
+      { "name": "Snapchat" },
+      { "name": "Tinder" },
+      { "name": "Twitter" },
+      { "name": "Viber" },
+      { "name": "WhatsApp" },
+      { "name": "Telegram" },
+      { "name": "Messenger" },
+      { "name": "Discord" },
+      { "name": "위챗" },
+      { "name": "Reddit" },
+      { "name": "Twitch" },
+      { "name": "LinkedIn" },
+      { "name": "Pinterest" },
+      { "name": "Spotify" },
+      { "name": "YouTube" },
+      { "name": "TikTok" },
+      { "name": "Signal" },
+      { "name": "Gmail" },
+      { "name": "Slack" },
+      { "name": "Zoom" }
+    ]
+  }
 }

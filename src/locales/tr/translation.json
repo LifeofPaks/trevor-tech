@@ -1044,5 +1044,37 @@
       "notify_phone": "Telefon ile bildir",
       "notify_both": "Her ikisiyle de bildir"
     }
+  },
+  "dmapps": {
+    "header": {
+      "title": "Yüklü Uygulamalar",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla"
+    },
+    "apps": [
+      { "name": "Instagram" },
+      { "name": "LINE" },
+      { "name": "Snapchat" },
+      { "name": "Tinder" },
+      { "name": "Twitter" },
+      { "name": "Viber" },
+      { "name": "WhatsApp" },
+      { "name": "Telegram" },
+      { "name": "Messenger" },
+      { "name": "Discord" },
+      { "name": "WeChat" },
+      { "name": "Reddit" },
+      { "name": "Twitch" },
+      { "name": "LinkedIn" },
+      { "name": "Pinterest" },
+      { "name": "Spotify" },
+      { "name": "YouTube" },
+      { "name": "TikTok" },
+      { "name": "Signal" },
+      { "name": "Gmail" },
+      { "name": "Slack" },
+      { "name": "Zoom" }
+    ]
   }
 }

@@ -1046,5 +1046,37 @@
       "notify_phone": "Уведомить по телефону",
       "notify_both": "Оба"
     }
+  },
+  "dmapps": {
+    "header": {
+      "title": "Установленные Приложения",
+      "demo_message": "Демонстрационные данные. Привяжите устройство для сбора реальных данных.",
+      "bind_button": "Привязать мое устройство",
+      "bind_button_aria": "Привязать устройство для начала сбора данных"
+    },
+    "apps": [
+      { "name": "Instagram" },
+      { "name": "LINE" },
+      { "name": "Snapchat" },
+      { "name": "Tinder" },
+      { "name": "Twitter" },
+      { "name": "Viber" },
+      { "name": "WhatsApp" },
+      { "name": "Telegram" },
+      { "name": "Messenger" },
+      { "name": "Discord" },
+      { "name": "WeChat" },
+      { "name": "Reddit" },
+      { "name": "Twitch" },
+      { "name": "LinkedIn" },
+      { "name": "Pinterest" },
+      { "name": "Spotify" },
+      { "name": "YouTube" },
+      { "name": "TikTok" },
+      { "name": "Signal" },
+      { "name": "Gmail" },
+      { "name": "Slack" },
+      { "name": "Zoom" }
+    ]
   }
 }

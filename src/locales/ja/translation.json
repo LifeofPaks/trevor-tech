@@ -1045,5 +1045,37 @@
       "notify_phone": "電話で通知",
       "notify_both": "両方で通知"
     }
+  },
+  "dmapps": {
+    "header": {
+      "title": "インストール済みアプリ",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド"
+    },
+    "apps": [
+      { "name": "Instagram" },
+      { "name": "LINE" },
+      { "name": "Snapchat" },
+      { "name": "Tinder" },
+      { "name": "Twitter" },
+      { "name": "Viber" },
+      { "name": "WhatsApp" },
+      { "name": "Telegram" },
+      { "name": "Messenger" },
+      { "name": "Discord" },
+      { "name": "WeChat" },
+      { "name": "Reddit" },
+      { "name": "Twitch" },
+      { "name": "LinkedIn" },
+      { "name": "Pinterest" },
+      { "name": "Spotify" },
+      { "name": "YouTube" },
+      { "name": "TikTok" },
+      { "name": "Signal" },
+      { "name": "Gmail" },
+      { "name": "Slack" },
+      { "name": "Zoom" }
+    ]
   }
 }

@@ -1044,5 +1044,37 @@
       "notify_phone": "通知到手机",
       "notify_both": "两者皆通知"
     }
+  },
+  "dmapps": {
+    "header": {
+      "title": "已安装的应用",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据"
+    },
+    "apps": [
+      { "name": "Instagram" },
+      { "name": "LINE" },
+      { "name": "Snapchat" },
+      { "name": "Tinder" },
+      { "name": "Twitter" },
+      { "name": "Viber" },
+      { "name": "WhatsApp" },
+      { "name": "Telegram" },
+      { "name": "Messenger" },
+      { "name": "Discord" },
+      { "name": "微信" },
+      { "name": "Reddit" },
+      { "name": "Twitch" },
+      { "name": "LinkedIn" },
+      { "name": "Pinterest" },
+      { "name": "Spotify" },
+      { "name": "YouTube" },
+      { "name": "TikTok" },
+      { "name": "Signal" },
+      { "name": "Gmail" },
+      { "name": "Slack" },
+      { "name": "Zoom" }
+    ]
   }
 }

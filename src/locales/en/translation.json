@@ -1052,5 +1052,37 @@
       "notify_phone": "Notify to phone",
       "notify_both": "Both"
     }
+  },
+  "dmapps": {
+    "header": {
+      "title": "Installed Apps",
+      "demo_message": "Demo data. Bind your device to collect actual data.",
+      "bind_button": "Bind My Device",
+      "bind_button_aria": "Bind device to start collecting data"
+    },
+    "apps": [
+      { "name": "Instagram" },
+      { "name": "LINE" },
+      { "name": "Snapchat" },
+      { "name": "Tinder" },
+      { "name": "Twitter" },
+      { "name": "Viber" },
+      { "name": "WhatsApp" },
+      { "name": "Telegram" },
+      { "name": "Messenger" },
+      { "name": "Discord" },
+      { "name": "WeChat" },
+      { "name": "Reddit" },
+      { "name": "Twitch" },
+      { "name": "LinkedIn" },
+      { "name": "Pinterest" },
+      { "name": "Spotify" },
+      { "name": "YouTube" },
+      { "name": "TikTok" },
+      { "name": "Signal" },
+      { "name": "Gmail" },
+      { "name": "Slack" },
+      { "name": "Zoom" }
+    ]
   }
 }
