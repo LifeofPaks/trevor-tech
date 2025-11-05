@@ -995,5 +995,54 @@
       { "name": "Korman 1102" },
       { "name": "这里没有免费Wi-Fi" }
     ]
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "关键词警报",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据"
+    },
+    "tabs": {
+      "tracking_rules": "跟踪规则",
+      "keywords_detected": "检测到的关键词"
+    },
+    "add_rule": {
+      "title": "添加规则",
+      "word_or_phrase": "单词或短语",
+      "word_or_phrase_placeholder": "单词或短语",
+      "select_features": "选择功能",
+      "notification_type": "通知类型",
+      "add_button": "添加",
+      "add_button_aria": "添加新的关键词跟踪规则"
+    },
+    "added_rules": {
+      "title": "已添加的规则",
+      "table": {
+        "keywords": "关键词",
+        "features": "功能",
+        "notification_type": "通知类型"
+      }
+    },
+    "detected": {
+      "table": {
+        "keywords": "关键词",
+        "features": "功能",
+        "time": "时间"
+      }
+    },
+    "features": {
+      "all": "全部",
+      "snapchat": "Snapchat",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "messages": "消息",
+      "kik": "Kik"
+    },
+    "notifications": {
+      "notify_email": "通知到邮箱",
+      "notify_phone": "通知到手机",
+      "notify_both": "两者皆通知"
+    }
   }
 }

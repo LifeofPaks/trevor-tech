@@ -997,5 +997,54 @@
       { "name": "Korman 1102" },
       { "name": "Здесь нет бесплатного Wi-Fi" }
     ]
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "Оповещения о Ключевых Словах",
+      "demo_message": "Демонстрационные данные. Привяжите устройство для сбора реальных данных.",
+      "bind_button": "Привязать мое устройство",
+      "bind_button_aria": "Привязать устройство для начала сбора данных"
+    },
+    "tabs": {
+      "tracking_rules": "Правила Отслеживания",
+      "keywords_detected": "Обнаруженные Ключевые Слова"
+    },
+    "add_rule": {
+      "title": "Добавить Правило",
+      "word_or_phrase": "Слово или Фраза",
+      "word_or_phrase_placeholder": "Слово или Фраза",
+      "select_features": "Выбрать Функции",
+      "notification_type": "Тип Уведомления",
+      "add_button": "Добавить",
+      "add_button_aria": "Добавить новое правило отслеживания ключевых слов"
+    },
+    "added_rules": {
+      "title": "Добавленные Правила",
+      "table": {
+        "keywords": "Ключевые Слова",
+        "features": "Функции",
+        "notification_type": "Тип Уведомления"
+      }
+    },
+    "detected": {
+      "table": {
+        "keywords": "Ключевые Слова",
+        "features": "Функции",
+        "time": "Время"
+      }
+    },
+    "features": {
+      "all": "Все",
+      "snapchat": "Snapchat",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "messages": "Сообщения",
+      "kik": "Kik"
+    },
+    "notifications": {
+      "notify_email": "Уведомить по электронной почте",
+      "notify_phone": "Уведомить по телефону",
+      "notify_both": "Оба"
+    }
   }
 }

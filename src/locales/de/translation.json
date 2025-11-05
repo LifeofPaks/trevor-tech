@@ -1001,5 +1001,54 @@
       { "name": "Korman 1102" },
       { "name": "Hier kein kostenloses Wi-Fi" }
     ]
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "Schlüsselwort-Warnungen",
+      "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
+      "bind_button": "Mein Gerät binden",
+      "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen"
+    },
+    "tabs": {
+      "tracking_rules": "Tracking-Regeln",
+      "keywords_detected": "Erkannte Schlüsselwörter"
+    },
+    "add_rule": {
+      "title": "Regel hinzufügen",
+      "word_or_phrase": "Wort oder Phrase",
+      "word_or_phrase_placeholder": "Wort oder Phrase",
+      "select_features": "Funktionen auswählen",
+      "notification_type": "Benachrichtigungstyp",
+      "add_button": "Hinzufügen",
+      "add_button_aria": "Neue Regel für das Tracking von Schlüsselwörtern hinzufügen"
+    },
+    "added_rules": {
+      "title": "Hinzugefügte Regeln",
+      "table": {
+        "keywords": "Schlüsselwörter",
+        "features": "Funktionen",
+        "notification_type": "Benachrichtigungstyp"
+      }
+    },
+    "detected": {
+      "table": {
+        "keywords": "Schlüsselwörter",
+        "features": "Funktionen",
+        "time": "Zeit"
+      }
+    },
+    "features": {
+      "all": "Alle",
+      "snapchat": "Snapchat",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "messages": "Nachrichten",
+      "kik": "Kik"
+    },
+    "notifications": {
+      "notify_email": "Per E-Mail benachrichtigen",
+      "notify_phone": "Per Telefon benachrichtigen",
+      "notify_both": "Beides"
+    }
   }
 }

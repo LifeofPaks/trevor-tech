@@ -22,40 +22,125 @@ import {
   useTheme,
 } from "@mui/material";
 import { FiPlus } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
-import BuyModal from "../../components/buyModal/BuyModal";
 import { FaSearch } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import BuyModal from "../../components/buyModal/BuyModal";
 
 // Sample Data
 const detectedKeywords = [
-  { keyword: "dating", feature: "Snapchat", time: "2022-01-25 15:15" },
-  { keyword: "dating", feature: "WhatsApp", time: "2022-01-25 15:15" },
-  { keyword: "dating", feature: "Facebook", time: "2022-01-25 15:15" },
-  { keyword: "babe", feature: "Snapchat", time: "2022-01-25 15:15" },
-  { keyword: "damn", feature: "Messages", time: "2022-01-25 15:15" },
-  { keyword: "drunk", feature: "WhatsApp", time: "2022-01-25 15:15" },
-  { keyword: "erotic", feature: "WhatsApp", time: "2022-01-25 15:15" },
-  { keyword: "public", feature: "Kik", time: "2022-01-25 15:15" },
+  {
+    keyword: "dating",
+    featureKey: "dmkeywords.features.snapchat",
+    time: "2022-01-25 15:15",
+  },
+  {
+    keyword: "dating",
+    featureKey: "dmkeywords.features.whatsapp",
+    time: "2022-01-25 15:15",
+  },
+  {
+    keyword: "dating",
+    featureKey: "dmkeywords.features.facebook",
+    time: "2022-01-25 15:15",
+  },
+  {
+    keyword: "babe",
+    featureKey: "dmkeywords.features.snapchat",
+    time: "2022-01-25 15:15",
+  },
+  {
+    keyword: "damn",
+    featureKey: "dmkeywords.features.messages",
+    time: "2022-01-25 15:15",
+  },
+  {
+    keyword: "drunk",
+    featureKey: "dmkeywords.features.whatsapp",
+    time: "2022-01-25 15:15",
+  },
+  {
+    keyword: "erotic",
+    featureKey: "dmkeywords.features.whatsapp",
+    time: "2022-01-25 15:15",
+  },
+  {
+    keyword: "public",
+    featureKey: "dmkeywords.features.kik",
+    time: "2022-01-25 15:15",
+  },
 ];
 
-const features = ["All", "Snapchat", "WhatsApp", "Facebook", "Messages", "Kik"];
-const notificationTypes = ["Notify to email", "Notify to phone", "Both"];
+const features = [
+  "dmkeywords.features.all",
+  "dmkeywords.features.snapchat",
+  "dmkeywords.features.whatsapp",
+  "dmkeywords.features.facebook",
+  "dmkeywords.features.messages",
+  "dmkeywords.features.kik",
+];
+
+const notificationTypes = [
+  "dmkeywords.notifications.notify_email",
+  "dmkeywords.notifications.notify_phone",
+  "dmkeywords.notifications.notify_both",
+];
 
 const Keywords = () => {
+  const { t } = useTranslation();
   const [tab, setTab] = useState(0);
   const [keyword, setKeyword] = useState("");
-  const [selectedFeature, setSelectedFeature] = useState("All");
-  const [notificationType, setNotificationType] = useState("Notify to email");
+  const [selectedFeature, setSelectedFeature] = useState(
+    "dmkeywords.features.all"
+  );
+  const [notificationType, setNotificationType] = useState(
+    "dmkeywords.notifications.notify_email"
+  );
   const [addedRules, setAddedRules] = useState([
-    { keyword: "public", feature: "All", notify: "Notify to email" },
-    { keyword: "erotic", feature: "All", notify: "Notify to email" },
-    { keyword: "drunk", feature: "All", notify: "Notify to email" },
-    { keyword: "damn", feature: "All", notify: "Notify to email" },
-    { keyword: "babe", feature: "All", notify: "Notify to email" },
-    { keyword: "date with", feature: "All", notify: "Notify to email" },
-    { keyword: "dating", feature: "Facebook", notify: "Notify to email" },
-    { keyword: "dating", feature: "WhatsApp", notify: "Notify to email" },
-    { keyword: "dating", feature: "Snapchat", notify: "Notify to email" },
+    {
+      keyword: "public",
+      feature: "dmkeywords.features.all",
+      notify: "dmkeywords.notifications.notify_email",
+    },
+    {
+      keyword: "erotic",
+      feature: "dmkeywords.features.all",
+      notify: "dmkeywords.notifications.notify_email",
+    },
+    {
+      keyword: "drunk",
+      feature: "dmkeywords.features.all",
+      notify: "dmkeywords.notifications.notify_email",
+    },
+    {
+      keyword: "damn",
+      feature: "dmkeywords.features.all",
+      notify: "dmkeywords.notifications.notify_email",
+    },
+    {
+      keyword: "babe",
+      feature: "dmkeywords.features.all",
+      notify: "dmkeywords.notifications.notify_email",
+    },
+    {
+      keyword: "date with",
+      feature: "dmkeywords.features.all",
+      notify: "dmkeywords.notifications.notify_email",
+    },
+    {
+      keyword: "dating",
+      feature: "dmkeywords.features.facebook",
+      notify: "dmkeywords.notifications.notify_email",
+    },
+    {
+      keyword: "dating",
+      feature: "dmkeywords.features.whatsapp",
+      notify: "dmkeywords.notifications.notify_email",
+    },
+    {
+      keyword: "dating",
+      feature: "dmkeywords.features.snapchat",
+      notify: "dmkeywords.notifications.notify_email",
+    },
   ]);
   const [open, setOpen] = useState(false);
 
@@ -72,8 +157,8 @@ const Keywords = () => {
         ...addedRules,
       ]);
       setKeyword("");
-      setSelectedFeature("All");
-      setNotificationType("Notify to email");
+      setSelectedFeature("dmkeywords.features.all");
+      setNotificationType("dmkeywords.notifications.notify_email");
     }
   };
 
@@ -83,19 +168,20 @@ const Keywords = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Keywords Alert
+              {t("dmkeywords.header.title")}{" "}
               <FaSearch className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("dmkeywords.header.demo_message")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dmkeywords.header.bind_button_aria")}
             >
-              Bind My Device
+              {t("dmkeywords.header.bind_button")}
             </button>
           </div>
         </div>
@@ -110,7 +196,7 @@ const Keywords = () => {
               "& .MuiTab-root": {
                 textTransform: "none",
                 fontWeight: 600,
-                fontSize: "1rem",
+                fontSize: "0.8rem",
                 color: "#6b7280",
               },
               "& .Mui-selected": {
@@ -123,8 +209,8 @@ const Keywords = () => {
               },
             }}
           >
-            <Tab label="Tracking Rules" />
-            <Tab label="Keywords Detected" />
+            <Tab label={t("dmkeywords.tabs.tracking_rules")} />
+            <Tab label={t("dmkeywords.tabs.keywords_detected")} />
           </Tabs>
         </Box>
 
@@ -150,14 +236,16 @@ const Keywords = () => {
             >
               <Typography
                 variant="h6"
-                className="!font-bold !text-gray-800 !mb-4 !text-[14px]"
+                className="!font-bold !text-gray-800 !mb-4 !text-[13px]"
               >
-                Add Rule
+                {t("dmkeywords.add_rule.title")}
               </Typography>
               <Stack spacing={3}>
                 <TextField
-                  label="Word or Phrase"
-                  placeholder="Word or Phrase"
+                  label={t("dmkeywords.add_rule.word_or_phrase")}
+                  placeholder={t(
+                    "dmkeywords.add_rule.word_or_phrase_placeholder"
+                  )}
                   value={keyword}
                   onChange={(e) => setKeyword(e.target.value)}
                   fullWidth
@@ -172,11 +260,13 @@ const Keywords = () => {
                 />
 
                 <FormControl fullWidth size="small">
-                  <InputLabel>Select Features</InputLabel>
+                  <InputLabel>
+                    {t("dmkeywords.add_rule.select_features")}
+                  </InputLabel>
                   <Select
                     value={selectedFeature}
                     onChange={(e) => setSelectedFeature(e.target.value)}
-                    label="Select Features"
+                    label={t("dmkeywords.add_rule.select_features")}
                     sx={{
                       borderRadius: "12px",
                       backgroundColor: "#f9fafb",
@@ -184,18 +274,20 @@ const Keywords = () => {
                   >
                     {features.map((f) => (
                       <MenuItem key={f} value={f}>
-                        {f}
+                        {t(f)}
                       </MenuItem>
                     ))}
                   </Select>
                 </FormControl>
 
                 <FormControl fullWidth size="small">
-                  <InputLabel>Notification Type</InputLabel>
+                  <InputLabel>
+                    {t("dmkeywords.add_rule.notification_type")}
+                  </InputLabel>
                   <Select
                     value={notificationType}
                     onChange={(e) => setNotificationType(e.target.value)}
-                    label="Notification Type"
+                    label={t("dmkeywords.add_rule.notification_type")}
                     sx={{
                       borderRadius: "12px",
                       backgroundColor: "#f9fafb",
@@ -203,7 +295,7 @@ const Keywords = () => {
                   >
                     {notificationTypes.map((n) => (
                       <MenuItem key={n} value={n}>
-                        {n}
+                        {t(n)}
                       </MenuItem>
                     ))}
                   </Select>
@@ -225,13 +317,14 @@ const Keywords = () => {
                       boxShadow: "0 8px 16px rgba(6,149,200,0.3)",
                     },
                   }}
+                  aria-label={t("dmkeywords.add_rule.add_button_aria")}
                 >
-                  Add
+                  {t("dmkeywords.add_rule.add_button")}
                 </Button>
               </Stack>
             </Paper>
 
-            {/* Added Rules - No Borders */}
+            {/* Added Rules */}
             <Paper
               elevation={0}
               sx={{
@@ -243,9 +336,9 @@ const Keywords = () => {
             >
               <Typography
                 variant="h6"
-                className="!font-bold !text-gray-800 !mb-4 !text-[14px]"
+                className="!font-bold !text-gray-800 !mb-4 lg:!text-[14px] !text-[12px]"
               >
-                Added Rules
+                {t("dmkeywords.added_rules.title")}
               </Typography>
               <TableContainer
                 sx={{ maxHeight: 500 }}
@@ -254,24 +347,26 @@ const Keywords = () => {
                 <Table stickyHeader size="small">
                   <TableHead>
                     <TableRow sx={{ backgroundColor: "#f9fafb" }}>
-                      {["Keywords", "Features", "Notification Type"].map(
-                        (h) => (
-                          <TableCell
-                            key={h}
-                            sx={{
-                              fontWeight: 600,
-                              color: "#374151",
-                              fontSize: "0.8125rem",
-                              py: 2,
-                              pl: 3,
-                              pr: 3,
-                              border: "none", // No border
-                            }}
-                          >
-                            {h}
-                          </TableCell>
-                        )
-                      )}
+                      {[
+                        "dmkeywords.added_rules.table.keywords",
+                        "dmkeywords.added_rules.table.features",
+                        "dmkeywords.added_rules.table.notification_type",
+                      ].map((h) => (
+                        <TableCell
+                          className="!text-[12px] lg!text-[14px] truncate-text"
+                          key={h}
+                          sx={{
+                            fontWeight: 600,
+                            color: "#374151",
+                            py: 2,
+                            pl: 3,
+                            pr: 3,
+                            border: "none",
+                          }}
+                        >
+                          {t(h)}
+                        </TableCell>
+                      ))}
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -291,7 +386,7 @@ const Keywords = () => {
                             fontWeight: 500,
                             color: "#1f2937",
                             fontSize: "0.875rem",
-                            border: "none", // No border
+                            border: "none",
                             py: 2.5,
                           }}
                         >
@@ -305,9 +400,10 @@ const Keywords = () => {
                             py: 2.5,
                           }}
                         >
-                          {rule.feature}
+                          {t(rule.feature)}
                         </TableCell>
                         <TableCell
+                          className="truncate-text"
                           sx={{
                             color: "#0695c8",
                             fontWeight: 500,
@@ -316,7 +412,7 @@ const Keywords = () => {
                             py: 2.5,
                           }}
                         >
-                          {rule.notify}
+                          {t(rule.notify)}
                         </TableCell>
                       </TableRow>
                     ))}
@@ -326,7 +422,7 @@ const Keywords = () => {
             </Paper>
           </Box>
         ) : (
-          /* === Keywords Detected - No Borders === */
+          /* === Keywords Detected === */
           <Paper
             elevation={0}
             sx={{
@@ -339,7 +435,11 @@ const Keywords = () => {
               <Table>
                 <TableHead>
                   <TableRow sx={{ backgroundColor: "#f9fafb" }}>
-                    {["Keywords", "Features", "Time"].map((h) => (
+                    {[
+                      "dmkeywords.detected.table.keywords",
+                      "dmkeywords.detected.table.features",
+                      "dmkeywords.detected.table.time",
+                    ].map((h) => (
                       <TableCell
                         key={h}
                         sx={{
@@ -347,12 +447,13 @@ const Keywords = () => {
                           color: "#374151",
                           fontSize: "0.875rem",
                           py: 2.5,
-                          pl: h === "Keywords" ? 4 : 3,
-                          pr: h === "Time" ? 4 : 3,
-                          border: "none", // No border
+                          pl:
+                            h === "dmkeywords.detected.table.keywords" ? 4 : 3,
+                          pr: h === "dmkeywords.detected.table.time" ? 4 : 3,
+                          border: "none",
                         }}
                       >
-                        {h}
+                        {t(h)}
                       </TableCell>
                     ))}
                   </TableRow>
@@ -388,7 +489,7 @@ const Keywords = () => {
                           py: 2.5,
                         }}
                       >
-                        {item.feature}
+                        {t(item.featureKey)}
                       </TableCell>
                       <TableCell
                         align="left"

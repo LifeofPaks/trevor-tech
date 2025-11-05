@@ -1003,5 +1003,54 @@
       { "name": "Korman 1102" },
       { "name": "No free Wi-Fi here" }
     ]
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "Keywords Alert",
+      "demo_message": "Demo data. Bind your device to collect actual data.",
+      "bind_button": "Bind My Device",
+      "bind_button_aria": "Bind device to start collecting data"
+    },
+    "tabs": {
+      "tracking_rules": "Tracking Rules",
+      "keywords_detected": "Keywords Detected"
+    },
+    "add_rule": {
+      "title": "Add Rule",
+      "word_or_phrase": "Word or Phrase",
+      "word_or_phrase_placeholder": "Word or Phrase",
+      "select_features": "Select Features",
+      "notification_type": "Notification Type",
+      "add_button": "Add",
+      "add_button_aria": "Add new keyword tracking rule"
+    },
+    "added_rules": {
+      "title": "Added Rules",
+      "table": {
+        "keywords": "Keywords",
+        "features": "Features",
+        "notification_type": "Notification Type"
+      }
+    },
+    "detected": {
+      "table": {
+        "keywords": "Keywords",
+        "features": "Features",
+        "time": "Time"
+      }
+    },
+    "features": {
+      "all": "All",
+      "snapchat": "Snapchat",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "messages": "Messages",
+      "kik": "Kik"
+    },
+    "notifications": {
+      "notify_email": "Notify to email",
+      "notify_phone": "Notify to phone",
+      "notify_both": "Both"
+    }
   }
 }

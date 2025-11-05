@@ -997,5 +997,54 @@
       { "name": "Korman 1102" },
       { "name": "Sem Wi-Fi grátis aqui" }
     ]
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "Alerta de Palavras-Chave",
+      "demo_message": "Dados de demonstração. Vincule seu dispositivo para coletar dados reais.",
+      "bind_button": "Vincular meu dispositivo",
+      "bind_button_aria": "Vincular dispositivo para começar a coletar dados"
+    },
+    "tabs": {
+      "tracking_rules": "Regras de Rastreamento",
+      "keywords_detected": "Palavras-Chave Detectadas"
+    },
+    "add_rule": {
+      "title": "Adicionar Regra",
+      "word_or_phrase": "Palavra ou Frase",
+      "word_or_phrase_placeholder": "Palavra ou Frase",
+      "select_features": "Selecionar Recursos",
+      "notification_type": "Tipo de Notificação",
+      "add_button": "Adicionar",
+      "add_button_aria": "Adicionar nova regra de rastreamento de palavras-chave"
+    },
+    "added_rules": {
+      "title": "Regras Adicionadas",
+      "table": {
+        "keywords": "Palavras-Chave",
+        "features": "Recursos",
+        "notification_type": "Tipo de Notificação"
+      }
+    },
+    "detected": {
+      "table": {
+        "keywords": "Palavras-Chave",
+        "features": "Recursos",
+        "time": "Hora"
+      }
+    },
+    "features": {
+      "all": "Todos",
+      "snapchat": "Snapchat",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "messages": "Mensagens",
+      "kik": "Kik"
+    },
+    "notifications": {
+      "notify_email": "Notificar por e-mail",
+      "notify_phone": "Notificar por telefone",
+      "notify_both": "Ambos"
+    }
   }
 }

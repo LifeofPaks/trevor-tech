@@ -94,3 +94,14 @@ button {
 html[dir="rtl"] {
   direction: rtl;
 }
+
+@media (max-width: 640px) {
+  .truncate-text {
+    display: inline-block;
+    max-width: 7ch; /* roughly 5 characters */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+}

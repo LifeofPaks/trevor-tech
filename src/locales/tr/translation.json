@@ -995,5 +995,54 @@
       { "name": "Korman 1102" },
       { "name": "Burada ücretsiz Wi-Fi yok" }
     ]
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "Anahtar Kelime Uyarısı",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla"
+    },
+    "tabs": {
+      "tracking_rules": "İzleme Kuralları",
+      "keywords_detected": "Tespit Edilen Anahtar Kelimeler"
+    },
+    "add_rule": {
+      "title": "Kural Ekle",
+      "word_or_phrase": "Kelime veya İfade",
+      "word_or_phrase_placeholder": "Kelime veya İfade",
+      "select_features": "Özellikleri Seç",
+      "notification_type": "Bildirim Türü",
+      "add_button": "Ekle",
+      "add_button_aria": "Yeni anahtar kelime izleme kuralı ekle"
+    },
+    "added_rules": {
+      "title": "Eklenen Kurallar",
+      "table": {
+        "keywords": "Anahtar Kelimeler",
+        "features": "Özellikler",
+        "notification_type": "Bildirim Türü"
+      }
+    },
+    "detected": {
+      "table": {
+        "keywords": "Anahtar Kelimeler",
+        "features": "Özellikler",
+        "time": "Zaman"
+      }
+    },
+    "features": {
+      "all": "Tümü",
+      "snapchat": "Snapchat",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "messages": "Mesajlar",
+      "kik": "Kik"
+    },
+    "notifications": {
+      "notify_email": "E-posta ile bildir",
+      "notify_phone": "Telefon ile bildir",
+      "notify_both": "Her ikisiyle de bildir"
+    }
   }
 }

@@ -994,5 +994,54 @@
       { "name": "Korman 1102" },
       { "name": "لا يوجد Wi-Fi مجاني هنا" }
     ]
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "تنبيه الكلمات المفتاحية",
+      "demo_message": "بيانات تجريبية. قم بربط جهازك لجمع البيانات الفعلية.",
+      "bind_button": "ربط جهازي",
+      "bind_button_aria": "ربط الجهاز لبدء جمع البيانات"
+    },
+    "tabs": {
+      "tracking_rules": "قواعد التتبع",
+      "keywords_detected": "الكلمات المفتاحية المكتشفة"
+    },
+    "add_rule": {
+      "title": "إضافة قاعدة",
+      "word_or_phrase": "كلمة أو عبارة",
+      "word_or_phrase_placeholder": "كلمة أو عبارة",
+      "select_features": "اختيار الميزات",
+      "notification_type": "نوع الإشعار",
+      "add_button": "إضافة",
+      "add_button_aria": "إضافة قاعدة تتبع كلمات مفتاحية جديدة"
+    },
+    "added_rules": {
+      "title": "القواعد المضافة",
+      "table": {
+        "keywords": "الكلمات المفتاحية",
+        "features": "الميزات",
+        "notification_type": "نوع الإشعار"
+      }
+    },
+    "detected": {
+      "table": {
+        "keywords": "الكلمات المفتاحية",
+        "features": "الميزات",
+        "time": "الوقت"
+      }
+    },
+    "features": {
+      "all": "الكل",
+      "snapchat": "سناب شات",
+      "whatsapp": "واتساب",
+      "facebook": "فيسبوك",
+      "messages": "الرسائل",
+      "kik": "كيك"
+    },
+    "notifications": {
+      "notify_email": "إشعار عبر البريد الإلكتروني",
+      "notify_phone": "إشعار عبر الهاتف",
+      "notify_both": "كلاهما"
+    }
   }
 }
