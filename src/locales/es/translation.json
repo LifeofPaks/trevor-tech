@@ -1089,5 +1089,19 @@
       "page_aria": "Página {{page}}",
       "next_aria": "Página siguiente"
     }
+  },
+  "dmhistory": {
+    "header": {
+      "title": "Historial del Navegador",
+      "demo_message": "Datos de demostración. Vincula tu dispositivo para recopilar datos reales.",
+      "bind_button": "Vincular mi dispositivo",
+      "bind_button_aria": "Vincular dispositivo para comenzar a recopilar datos"
+    },
+    "favicon_alt": "favicon",
+    "pagination": {
+      "previous_aria": "Página anterior",
+      "page_aria": "Página {{page}}",
+      "next_aria": "Página siguiente"
+    }
   }
 }

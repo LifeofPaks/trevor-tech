@@ -10,9 +10,9 @@ import {
   useTheme,
 } from "@mui/material";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
-import BuyModal from "../../components/buyModal/BuyModal";
 import { FaHistory } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import BuyModal from "../../components/buyModal/BuyModal";
 
 // History data grouped by date
 const historyByDate = [
@@ -105,6 +105,7 @@ const allEntries = historyByDate.flatMap((group) =>
 const ROWS_PER_PAGE = 10;
 
 const HistoryPage = () => {
+  const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -135,19 +136,20 @@ const HistoryPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Browser History
+              {t("dmhistory.header.title")}{" "}
               <FaHistory className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("dmhistory.header.demo_message")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dmhistory.header.bind_button_aria")}
             >
-              Bind My Device
+              {t("dmhistory.header.bind_button")}
             </button>
           </div>
         </div>
@@ -209,7 +211,7 @@ const HistoryPage = () => {
                     <Box
                       component="img"
                       src={entry.favicon}
-                      alt="favicon"
+                      alt={t("dmhistory.favicon_alt")}
                       className="favicon"
                       sx={{
                         width: 20,
@@ -247,6 +249,7 @@ const HistoryPage = () => {
               disabled={page === 1}
               onClick={() => setPage(page - 1)}
               sx={{ color: page === 1 ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmhistory.pagination.previous_aria")}
             >
               <FiChevronLeft />
             </IconButton>
@@ -270,6 +273,9 @@ const HistoryPage = () => {
                     backgroundColor: page === i + 1 ? "#0695c8" : "#e5e7eb",
                   },
                 }}
+                aria-label={t("dmhistory.pagination.page_aria", {
+                  page: i + 1,
+                })}
               />
             ))}
 
@@ -278,6 +284,7 @@ const HistoryPage = () => {
               disabled={page === totalPages}
               onClick={() => setPage(page + 1)}
               sx={{ color: page === totalPages ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmhistory.pagination.next_aria")}
             >
               <FiChevronRight />
             </IconButton>

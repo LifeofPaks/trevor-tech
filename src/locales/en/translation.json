@@ -1098,5 +1098,19 @@
       "page_aria": "Page {{page}}",
       "next_aria": "Next page"
     }
+  },
+  "dmhistory": {
+    "header": {
+      "title": "Browser History",
+      "demo_message": "Demo data. Bind your device to collect actual data.",
+      "bind_button": "Bind My Device",
+      "bind_button_aria": "Bind device to start collecting data"
+    },
+    "favicon_alt": "favicon",
+    "pagination": {
+      "previous_aria": "Previous page",
+      "page_aria": "Page {{page}}",
+      "next_aria": "Next page"
+    }
   }
 }

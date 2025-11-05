@@ -1091,5 +1091,19 @@
       "page_aria": "ページ{{page}}",
       "next_aria": "次のページ"
     }
+  },
+  "dmhistory": {
+    "header": {
+      "title": "ブラウザ履歴",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド"
+    },
+    "favicon_alt": "ファビコン",
+    "pagination": {
+      "previous_aria": "前のページ",
+      "page_aria": "ページ{{page}}",
+      "next_aria": "次のページ"
+    }
   }
 }

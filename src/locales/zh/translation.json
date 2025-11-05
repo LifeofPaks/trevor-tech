@@ -1090,5 +1090,19 @@
       "page_aria": "第{{page}}页",
       "next_aria": "下一页"
     }
+  },
+  "dmhistory": {
+    "header": {
+      "title": "浏览器历史记录",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据"
+    },
+    "favicon_alt": "网站图标",
+    "pagination": {
+      "previous_aria": "上一页",
+      "page_aria": "第{{page}}页",
+      "next_aria": "下一页"
+    }
   }
 }
