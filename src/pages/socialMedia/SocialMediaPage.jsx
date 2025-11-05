@@ -176,7 +176,7 @@ const HackingSimulationCard = ({ inView }) => {
 };
 
 const SocialMediaPage = () => {
-  const { t } = useTranslation("smedia");
+  const { t } = useTranslation();
   const [modalOpen, setModalOpen] = useState(false);
   const [particleBurst, setParticleBurst] = useState(false);
 
