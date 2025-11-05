@@ -829,5 +829,37 @@
       "title": "Carte de localisation",
       "selected_location": "Emplacement sélectionné"
     }
+  },
+  "dkl": {
+    "header": {
+      "title": "Enregistreur de touches",
+      "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
+      "bind_button": "Connecter mon appareil",
+      "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données"
+    },
+    "dropdown": {
+      "label": "Applications"
+    },
+    "table": {
+      "app_name": "Nom de l'application",
+      "logged_text": "Texte enregistré",
+      "time": "Heure",
+      "no_activity": "Aucune activité récente"
+    },
+    "pagination": {
+      "prev_button_aria": "Page précédente",
+      "next_button_aria": "Page suivante"
+    },
+    "logs": [
+      { "text": "Comment masquer des messages sur le téléphone ?" },
+      { "text": "Retrouve-moi ce soir, ne dis rien à personne." },
+      { "text": "Je leur ai dit que je travaillais tard." },
+      { "text": "Comment supprimer l'historique des discussions ?" },
+      { "text": "Peux-tu me couvrir demain ?" },
+      { "text": "On se retrouve à l'endroit habituel." },
+      { "text": "Je ne peux pas laisser les autres découvrir." },
+      { "text": "Supprime ceci après l'avoir lu." },
+      { "text": "Comment effacer l'historique du navigateur ?" }
+    ]
   }
 }

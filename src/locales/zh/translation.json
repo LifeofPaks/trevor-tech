@@ -826,5 +826,37 @@
       "title": "位置地图",
       "selected_location": "选定位置"
     }
+  },
+  "dkl": {
+    "header": {
+      "title": "键盘记录器",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据"
+    },
+    "dropdown": {
+      "label": "应用程序"
+    },
+    "table": {
+      "app_name": "应用名称",
+      "logged_text": "记录文本",
+      "time": "时间",
+      "no_activity": "无近期活动"
+    },
+    "pagination": {
+      "prev_button_aria": "上一页",
+      "next_button_aria": "下一页"
+    },
+    "logs": [
+      { "text": "如何在手机上隐藏消息？" },
+      { "text": "今晚见面，不要告诉任何人。" },
+      { "text": "我告诉他们我在加班。" },
+      { "text": "如何删除聊天记录？" },
+      { "text": "明天能帮我掩护吗？" },
+      { "text": "我们在老地方见面。" },
+      { "text": "我不能让他们发现。" },
+      { "text": "读完后删除这条消息。" },
+      { "text": "如何清除浏览器历史记录？" }
+    ]
   }
 }

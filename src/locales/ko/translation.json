@@ -827,5 +827,37 @@
       "title": "위치 지도",
       "selected_location": "선택된 위치"
     }
+  },
+  "dkl": {
+    "header": {
+      "title": "키로거",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결"
+    },
+    "dropdown": {
+      "label": "앱"
+    },
+    "table": {
+      "app_name": "앱 이름",
+      "logged_text": "기록된 텍스트",
+      "time": "시간",
+      "no_activity": "최근 활동 없음"
+    },
+    "pagination": {
+      "prev_button_aria": "이전 페이지",
+      "next_button_aria": "다음 페이지"
+    },
+    "logs": [
+      { "text": "휴대폰에서 메시지를 숨기는 방법?" },
+      { "text": "오늘 밤 만나자, 아무에게도 말하지 마." },
+      { "text": "늦게까지 일한다고 말했어." },
+      { "text": "채팅 기록을 삭제하는 방법?" },
+      { "text": "내일 나를 커버해 줄 수 있어?" },
+      { "text": "평소 장소에서 만나자." },
+      { "text": "그들이 알아차리게 할 수 없어." },
+      { "text": "이거 읽고 나서 삭제해." },
+      { "text": "브라우저 기록을 지우는 방법?" }
+    ]
   }
 }
