@@ -1219,5 +1219,80 @@
         "time": "2022-01-25 10:05"
       }
     }
+  },
+  "dmscp": {
+    "header": {
+      "title": "Captures d'Écran"
+    },
+    "filters": {
+      "app_label": "Nom de l'Application",
+      "app_aria": "Filtrer par nom de l'application",
+      "type_label": "Type",
+      "type_aria": "Filtrer par type de capture",
+      "types": {
+        "all": "Tous",
+        "screenshot": "Captures d'Écran",
+        "recording": "Enregistrements d'Écran"
+      }
+    },
+    "pagination": {
+      "previous_aria": "Page précédente",
+      "next_aria": "Page suivante"
+    },
+    "modal": {
+      "close_aria": "Fermer la fenêtre d'image"
+    },
+    "items": {
+      "item1": {
+        "app": "WhatsApp",
+        "type": "Capture d'écran",
+        "date": "2022-02-02 21:30"
+      },
+      "item2": {
+        "app": "WhatsApp",
+        "type": "Capture d'écran",
+        "date": "2022-02-01 06:30"
+      },
+      "item3": {
+        "app": "WhatsApp",
+        "type": "Enregistrement d'écran",
+        "date": "2022-01-31 19:30"
+      },
+      "item4": {
+        "app": "Messages",
+        "type": "Capture d'écran",
+        "date": "2022-01-30 01:30"
+      },
+      "item5": {
+        "app": "Messages",
+        "type": "Capture d'écran",
+        "date": "2022-01-29 04:30"
+      },
+      "item6": {
+        "app": "Messages",
+        "type": "Capture d'écran",
+        "date": "2022-01-28 16:30"
+      },
+      "item7": {
+        "app": "Appel",
+        "type": "Capture d'écran",
+        "date": "2022-01-27 17:30"
+      },
+      "item8": {
+        "app": "Appel",
+        "type": "Capture d'écran",
+        "date": "2022-01-26 07:30"
+      },
+      "item9": {
+        "app": "Caméra",
+        "type": "Capture d'écran",
+        "date": "2022-01-11 20:11"
+      },
+      "item10": {
+        "app": "Photos",
+        "type": "Capture d'écran",
+        "date": "2022-01-10 07:30"
+      }
+    }
   }
 }

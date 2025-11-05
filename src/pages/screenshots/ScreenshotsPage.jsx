@@ -14,7 +14,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { FiChevronLeft, FiChevronRight, FiVideo } from "react-icons/fi";
-
+import { useTranslation } from "react-i18next";
 import Image1 from "../../assets/dashboard/screenshots/i-1.png";
 import Image2 from "../../assets/dashboard/screenshots/i-2.png";
 import Image3 from "../../assets/dashboard/screenshots/i-3.png";
@@ -28,76 +28,76 @@ import { IoLogoBitbucket } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
 import { RiScreenshot2Fill } from "react-icons/ri";
 
-// Sample Data
+// Sample Data with translation keys
 const allItems = [
   {
     id: 1,
-    app: "WhatsApp",
-    type: "screenshot",
-    date: "2022-02-02 21:30",
+    appKey: "item1.app",
+    typeKey: "item1.type",
+    dateKey: "item1.date",
     image: Image4,
   },
   {
     id: 2,
-    app: "WhatsApp",
-    type: "screenshot",
-    date: "2022-02-01 06:30",
+    appKey: "item2.app",
+    typeKey: "item2.type",
+    dateKey: "item2.date",
     image: Image1,
   },
   {
     id: 3,
-    app: "WhatsApp",
-    type: "recording",
-    date: "2022-01-31 19:30",
+    appKey: "item3.app",
+    typeKey: "item3.type",
+    dateKey: "item3.date",
     image: Image2,
   },
   {
     id: 4,
-    app: "Messages",
-    type: "screenshot",
-    date: "2022-01-30 01:30",
+    appKey: "item4.app",
+    typeKey: "item4.type",
+    dateKey: "item4.date",
     image: Image3,
   },
   {
     id: 5,
-    app: "Messages",
-    type: "screenshot",
-    date: "2022-01-29 04:30",
+    appKey: "item5.app",
+    typeKey: "item5.type",
+    dateKey: "item5.date",
     image: Image5,
   },
   {
     id: 6,
-    app: "Messages",
-    type: "screenshot",
-    date: "2022-01-28 16:30",
+    appKey: "item6.app",
+    typeKey: "item6.type",
+    dateKey: "item6.date",
     image: Image6,
   },
   {
     id: 7,
-    app: "Call",
-    type: "screenshot",
-    date: "2022-01-27 17:30",
+    appKey: "item7.app",
+    typeKey: "item7.type",
+    dateKey: "item7.date",
     image: Image7,
   },
   {
     id: 8,
-    app: "Call",
-    type: "screenshot",
-    date: "2022-01-26 07:30",
+    appKey: "item8.app",
+    typeKey: "item8.type",
+    dateKey: "item8.date",
     image: Image8,
   },
   {
     id: 9,
-    app: "Camera",
-    type: "screenshot",
-    date: "2022-01-11 20:11",
+    appKey: "item9.app",
+    typeKey: "item9.type",
+    dateKey: "item9.date",
     image: Image9,
   },
   {
     id: 10,
-    app: "Photos",
-    type: "screenshot",
-    date: "2022-01-10 07:30",
+    appKey: "item10.app",
+    typeKey: "item10.type",
+    dateKey: "item10.date",
     image: Image3,
   },
 ];
@@ -105,6 +105,7 @@ const allItems = [
 const ROWS_PER_PAGE = 10;
 
 const ScreenshotsPage = () => {
+  const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
   const [page, setPage] = useState(1);
   const [appFilter, setAppFilter] = useState("All");
@@ -115,8 +116,10 @@ const ScreenshotsPage = () => {
 
   // Filter logic
   const filteredItems = allItems.filter((item) => {
-    const appMatch = appFilter === "All" || item.app === appFilter;
-    const typeMatch = typeFilter === "All" || item.type === typeFilter;
+    const appMatch =
+      appFilter === "All" || t(`dmscp.items.${item.appKey}`) === appFilter;
+    const typeMatch =
+      typeFilter === "All" || t(`dmscp.items.${item.typeKey}`) === typeFilter;
     return appMatch && typeMatch;
   });
 
@@ -127,7 +130,10 @@ const ScreenshotsPage = () => {
     startIndex + ROWS_PER_PAGE
   );
 
-  const apps = ["All", ...new Set(allItems.map((i) => i.app))];
+  const apps = [
+    "All",
+    ...new Set(allItems.map((i) => t(`dmscp.items.${i.appKey}`))),
+  ];
 
   return (
     <>
@@ -135,7 +141,7 @@ const ScreenshotsPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Screen Captures
+              {t("dmscp.header.title")}{" "}
               <RiScreenshot2Fill className="text-[#0695c8]" />
             </h1>
           </div>
@@ -153,14 +159,17 @@ const ScreenshotsPage = () => {
             className="!flex-wrap"
           >
             <FormControl size="small" sx={{ minWidth: 140 }}>
-              <InputLabel>App Name</InputLabel>
+              <InputLabel id="app-filter-label">
+                {t("dmscp.filters.app_label")}
+              </InputLabel>
               <Select
+                labelId="app-filter-label"
                 value={appFilter}
                 onChange={(e) => {
                   setAppFilter(e.target.value);
                   setPage(1);
                 }}
-                label="App Name"
+                label={t("dmscp.filters.app_label")}
                 sx={{
                   borderRadius: "12px",
                   backgroundColor: "#fff",
@@ -168,6 +177,7 @@ const ScreenshotsPage = () => {
                     borderColor: "#d1d5db",
                   },
                 }}
+                aria-label={t("dmscp.filters.app_aria")}
               >
                 {apps.map((app) => (
                   <MenuItem key={app} value={app}>
@@ -178,14 +188,17 @@ const ScreenshotsPage = () => {
             </FormControl>
 
             <FormControl size="small" sx={{ minWidth: 160 }}>
-              <InputLabel>Type</InputLabel>
+              <InputLabel id="type-filter-label">
+                {t("dmscp.filters.type_label")}
+              </InputLabel>
               <Select
+                labelId="type-filter-label"
                 value={typeFilter}
                 onChange={(e) => {
                   setTypeFilter(e.target.value);
                   setPage(1);
                 }}
-                label="Type"
+                label={t("dmscp.filters.type_label")}
                 sx={{
                   borderRadius: "12px",
                   backgroundColor: "#fff",
@@ -193,10 +206,15 @@ const ScreenshotsPage = () => {
                     borderColor: "#d1d5db",
                   },
                 }}
+                aria-label={t("dmscp.filters.type_aria")}
               >
-                <MenuItem value="All">All</MenuItem>
-                <MenuItem value="screenshot">Screenshots</MenuItem>
-                <MenuItem value="recording">Screen Recordings</MenuItem>
+                <MenuItem value="All">{t("dmscp.filters.types.all")}</MenuItem>
+                <MenuItem value={t("dmscp.filters.types.screenshot")}>
+                  {t("dmscp.filters.types.screenshot")}
+                </MenuItem>
+                <MenuItem value={t("dmscp.filters.types.recording")}>
+                  {t("dmscp.filters.types.recording")}
+                </MenuItem>
               </Select>
             </FormControl>
           </Stack>
@@ -241,7 +259,7 @@ const ScreenshotsPage = () => {
                 <Box
                   component="img"
                   src={item.image}
-                  alt={item.app}
+                  alt={t(`dmscp.items.${item.appKey}`)}
                   sx={{
                     width: "100%",
                     height: "100%",
@@ -264,14 +282,15 @@ const ScreenshotsPage = () => {
                   }}
                 >
                   <Typography className="!font-medium !text-xs">
-                    {item.app}
+                    {t(`dmscp.items.${item.appKey}`)}
                   </Typography>
                   <Typography className="!text-xs !opacity-80">
-                    {item.date}
+                    {t(`dmscp.items.${item.dateKey}`)}
                   </Typography>
                 </Box>
 
-                {item.type === "recording" && (
+                {t(`dmscp.items.${item.typeKey}`) ===
+                  t("dmscp.filters.types.recording") && (
                   <Box
                     sx={{
                       position: "absolute",
@@ -302,6 +321,7 @@ const ScreenshotsPage = () => {
               disabled={page === 1}
               onClick={() => setPage(page - 1)}
               sx={{ color: page === 1 ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmscp.pagination.previous_aria")}
             >
               <FiChevronLeft />
             </IconButton>
@@ -322,6 +342,7 @@ const ScreenshotsPage = () => {
               disabled={page === totalPages}
               onClick={() => setPage(page + 1)}
               sx={{ color: page === totalPages ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmscp.pagination.next_aria")}
             >
               <FiChevronRight />
             </IconButton>
@@ -337,6 +358,7 @@ const ScreenshotsPage = () => {
             <IconButton
               className="!absolute !top-4 !left-4 !text-white !text-2xl"
               onClick={() => setSelectedImage(null)}
+              aria-label={t("dmscp.modal.close_aria")}
             >
               <FiChevronLeft />
             </IconButton>
@@ -345,7 +367,7 @@ const ScreenshotsPage = () => {
               <Box
                 component="img"
                 src={selectedImage.image}
-                alt={selectedImage.app}
+                alt={t(`dmscp.items.${selectedImage.appKey}`)}
                 sx={{
                   maxHeight: "80vh",
                   width: "auto",
@@ -355,10 +377,10 @@ const ScreenshotsPage = () => {
               />
               <Box className="!mt-4 !text-center !text-white">
                 <Typography className="!font-medium">
-                  {selectedImage.app}
+                  {t(`dmscp.items.${selectedImage.appKey}`)}
                 </Typography>
                 <Typography className="!text-sm !opacity-80">
-                  {selectedImage.date}
+                  {t(`dmscp.items.${selectedImage.dateKey}`)}
                 </Typography>
               </Box>
             </Box>

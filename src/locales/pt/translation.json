@@ -1218,5 +1218,80 @@
         "time": "2022-01-25 10:05"
       }
     }
+  },
+  "dmscp": {
+    "header": {
+      "title": "Capturas de Tela"
+    },
+    "filters": {
+      "app_label": "Nome do Aplicativo",
+      "app_aria": "Filtrar por nome do aplicativo",
+      "type_label": "Tipo",
+      "type_aria": "Filtrar por tipo de captura",
+      "types": {
+        "all": "Todos",
+        "screenshot": "Capturas de Tela",
+        "recording": "Gravações de Tela"
+      }
+    },
+    "pagination": {
+      "previous_aria": "Página anterior",
+      "next_aria": "Próxima página"
+    },
+    "modal": {
+      "close_aria": "Fechar janela de imagem"
+    },
+    "items": {
+      "item1": {
+        "app": "WhatsApp",
+        "type": "Captura de tela",
+        "date": "2022-02-02 21:30"
+      },
+      "item2": {
+        "app": "WhatsApp",
+        "type": "Captura de tela",
+        "date": "2022-02-01 06:30"
+      },
+      "item3": {
+        "app": "WhatsApp",
+        "type": "Gravação de tela",
+        "date": "2022-01-31 19:30"
+      },
+      "item4": {
+        "app": "Mensagens",
+        "type": "Captura de tela",
+        "date": "2022-01-30 01:30"
+      },
+      "item5": {
+        "app": "Mensagens",
+        "type": "Captura de tela",
+        "date": "2022-01-29 04:30"
+      },
+      "item6": {
+        "app": "Mensagens",
+        "type": "Captura de tela",
+        "date": "2022-01-28 16:30"
+      },
+      "item7": {
+        "app": "Chamada",
+        "type": "Captura de tela",
+        "date": "2022-01-27 17:30"
+      },
+      "item8": {
+        "app": "Chamada",
+        "type": "Captura de tela",
+        "date": "2022-01-26 07:30"
+      },
+      "item9": {
+        "app": "Câmera",
+        "type": "Captura de tela",
+        "date": "2022-01-11 20:11"
+      },
+      "item10": {
+        "app": "Fotos",
+        "type": "Captura de tela",
+        "date": "2022-01-10 07:30"
+      }
+    }
   }
 }

@@ -1216,5 +1216,80 @@
         "time": "2022-01-25 10:05"
       }
     }
+  },
+  "dmscp": {
+    "header": {
+      "title": "Ekran Görüntüleri"
+    },
+    "filters": {
+      "app_label": "Uygulama Adı",
+      "app_aria": "Uygulama adına göre filtrele",
+      "type_label": "Tür",
+      "type_aria": "Yakalama türüne göre filtrele",
+      "types": {
+        "all": "Tümü",
+        "screenshot": "Ekran Görüntüleri",
+        "recording": "Ekran Kayıtları"
+      }
+    },
+    "pagination": {
+      "previous_aria": "Önceki sayfa",
+      "next_aria": "Sonraki sayfa"
+    },
+    "modal": {
+      "close_aria": "Görüntü penceresini kapat"
+    },
+    "items": {
+      "item1": {
+        "app": "WhatsApp",
+        "type": "Ekran görüntüsü",
+        "date": "2022-02-02 21:30"
+      },
+      "item2": {
+        "app": "WhatsApp",
+        "type": "Ekran görüntüsü",
+        "date": "2022-02-01 06:30"
+      },
+      "item3": {
+        "app": "WhatsApp",
+        "type": "Ekran kaydı",
+        "date": "2022-01-31 19:30"
+      },
+      "item4": {
+        "app": "Mesajlar",
+        "type": "Ekran görüntüsü",
+        "date": "2022-01-30 01:30"
+      },
+      "item5": {
+        "app": "Mesajlar",
+        "type": "Ekran görüntüsü",
+        "date": "2022-01-29 04:30"
+      },
+      "item6": {
+        "app": "Mesajlar",
+        "type": "Ekran görüntüsü",
+        "date": "2022-01-28 16:30"
+      },
+      "item7": {
+        "app": "Arama",
+        "type": "Ekran görüntüsü",
+        "date": "2022-01-27 17:30"
+      },
+      "item8": {
+        "app": "Arama",
+        "type": "Ekran görüntüsü",
+        "date": "2022-01-26 07:30"
+      },
+      "item9": {
+        "app": "Kamera",
+        "type": "Ekran görüntüsü",
+        "date": "2022-01-11 20:11"
+      },
+      "item10": {
+        "app": "Fotoğraflar",
+        "type": "Ekran görüntüsü",
+        "date": "2022-01-10 07:30"
+      }
+    }
   }
 }

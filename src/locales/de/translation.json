@@ -1222,5 +1222,80 @@
         "time": "2022-01-25 10:05"
       }
     }
+  },
+  "dmscp": {
+    "header": {
+      "title": "Bildschirmaufnahmen"
+    },
+    "filters": {
+      "app_label": "App-Name",
+      "app_aria": "Nach App-Namen filtern",
+      "type_label": "Typ",
+      "type_aria": "Nach Aufnahmetyp filtern",
+      "types": {
+        "all": "Alle",
+        "screenshot": "Bildschirmfotos",
+        "recording": "Bildschirmaufzeichnungen"
+      }
+    },
+    "pagination": {
+      "previous_aria": "Vorherige Seite",
+      "next_aria": "Nächste Seite"
+    },
+    "modal": {
+      "close_aria": "Bildfenster schließen"
+    },
+    "items": {
+      "item1": {
+        "app": "WhatsApp",
+        "type": "Bildschirmfoto",
+        "date": "2022-02-02 21:30"
+      },
+      "item2": {
+        "app": "WhatsApp",
+        "type": "Bildschirmfoto",
+        "date": "2022-02-01 06:30"
+      },
+      "item3": {
+        "app": "WhatsApp",
+        "type": "Bildschirmaufzeichnung",
+        "date": "2022-01-31 19:30"
+      },
+      "item4": {
+        "app": "Nachrichten",
+        "type": "Bildschirmfoto",
+        "date": "2022-01-30 01:30"
+      },
+      "item5": {
+        "app": "Nachrichten",
+        "type": "Bildschirmfoto",
+        "date": "2022-01-29 04:30"
+      },
+      "item6": {
+        "app": "Nachrichten",
+        "type": "Bildschirmfoto",
+        "date": "2022-01-28 16:30"
+      },
+      "item7": {
+        "app": "Anruf",
+        "type": "Bildschirmfoto",
+        "date": "2022-01-27 17:30"
+      },
+      "item8": {
+        "app": "Anruf",
+        "type": "Bildschirmfoto",
+        "date": "2022-01-26 07:30"
+      },
+      "item9": {
+        "app": "Kamera",
+        "type": "Bildschirmfoto",
+        "date": "2022-01-11 20:11"
+      },
+      "item10": {
+        "app": "Fotos",
+        "type": "Bildschirmfoto",
+        "date": "2022-01-10 07:30"
+      }
+    }
   }
 }

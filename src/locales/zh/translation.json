@@ -1216,5 +1216,80 @@
         "time": "2022-01-25 10:05"
       }
     }
+  },
+  "dmscp": {
+    "header": {
+      "title": "屏幕捕获"
+    },
+    "filters": {
+      "app_label": "应用名称",
+      "app_aria": "按应用名称过滤",
+      "type_label": "类型",
+      "type_aria": "按捕获类型过滤",
+      "types": {
+        "all": "全部",
+        "screenshot": "屏幕截图",
+        "recording": "屏幕录像"
+      }
+    },
+    "pagination": {
+      "previous_aria": "上一页",
+      "next_aria": "下一页"
+    },
+    "modal": {
+      "close_aria": "关闭图片弹窗"
+    },
+    "items": {
+      "item1": {
+        "app": "WhatsApp",
+        "type": "屏幕截图",
+        "date": "2022-02-02 21:30"
+      },
+      "item2": {
+        "app": "WhatsApp",
+        "type": "屏幕截图",
+        "date": "2022-02-01 06:30"
+      },
+      "item3": {
+        "app": "WhatsApp",
+        "type": "屏幕录像",
+        "date": "2022-01-31 19:30"
+      },
+      "item4": {
+        "app": "消息",
+        "type": "屏幕截图",
+        "date": "2022-01-30 01:30"
+      },
+      "item5": {
+        "app": "消息",
+        "type": "屏幕截图",
+        "date": "2022-01-29 04:30"
+      },
+      "item6": {
+        "app": "消息",
+        "type": "屏幕截图",
+        "date": "2022-01-28 16:30"
+      },
+      "item7": {
+        "app": "通话",
+        "type": "屏幕截图",
+        "date": "2022-01-27 17:30"
+      },
+      "item8": {
+        "app": "通话",
+        "type": "屏幕截图",
+        "date": "2022-01-26 07:30"
+      },
+      "item9": {
+        "app": "相机",
+        "type": "屏幕截图",
+        "date": "2022-01-11 20:11"
+      },
+      "item10": {
+        "app": "照片",
+        "type": "屏幕截图",
+        "date": "2022-01-10 07:30"
+      }
+    }
   }
 }
