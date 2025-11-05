@@ -21,12 +21,14 @@ import {
   FiCamera,
   FiMic,
 } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 import useDropdownStore from "../../store/useDropdownStore";
 import useMobileMenuStore from "../../store/useMobileMenuStore";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
-const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
+  const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
   const { openDropdown, setOpenDropdown } = useDropdownStore();
 
   const dropdownRef = useRef(null);
@@ -46,7 +48,7 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [setOpenDropdown]);
 
   const toggleDropdown = (name) => {
     setOpenDropdown(openDropdown === name ? null : name);
@@ -109,14 +111,14 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
             {/* Desktop Icons */}
             <div className="hidden md:flex items-center gap-1">
               {/* Notifications Dropdown */}
-              <Dropdown title="Notifications">
+              <Dropdown title={t("dmh.notifications.title")}>
                 {{
                   icon: <FiBell className="text-xl text-gray-700" />,
                   badge: "8",
                   items: [
                     {
-                      title: "New message from John",
-                      subtitle: "2 min ago",
+                      title: t("dmh.notifications.items.new_message"),
+                      subtitle: t("dmh.notifications.items.time_2min"),
                       icon: (
                         <div className="w-9 h-9 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
                           J
@@ -125,8 +127,8 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                       unread: true,
                     },
                     {
-                      title: "Location updated",
-                      subtitle: "5 min ago",
+                      title: t("dmh.notifications.items.location_updated"),
+                      subtitle: t("dmh.notifications.items.time_5min"),
                       icon: (
                         <div className="w-9 h-9 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center">
                           <FiMapPin className="text-white text-xs" />
@@ -134,8 +136,8 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                       ),
                     },
                     {
-                      title: "Battery low",
-                      subtitle: "10 min ago",
+                      title: t("dmh.notifications.items.battery_low"),
+                      subtitle: t("dmh.notifications.items.time_10min"),
                       icon: (
                         <div className="w-9 h-9 bg-gradient-to-br from-red-400 to-rose-500 rounded-full flex items-center justify-center">
                           <FiBattery className="text-white text-xs" />
@@ -145,50 +147,50 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                   ],
                   footer: (
                     <button className="w-full text-center !py-2.5 text-sm font-semibold text-[#0695c8] hover:bg-blue-50 rounded-b-xl transition-all">
-                      View All Notifications
+                      {t("dmh.notifications.footer")}
                     </button>
                   ),
                 }}
               </Dropdown>
 
               {/* Messages Dropdown */}
-              <Dropdown title="Messages">
+              <Dropdown title={t("dmh.messages.title")}>
                 {{
                   icon: <FiMessageSquare className="text-xl text-gray-700" />,
                   badge: "3",
                   items: [
                     {
-                      title: "Sarah",
-                      subtitle: "Hey, are you free?",
+                      title: t("dmh.messages.items.sarah"),
+                      subtitle: t("dmh.messages.items.sarah_message"),
                       icon: (
                         <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
                           S
                         </div>
                       ),
-                      time: "2m",
+                      time: t("dmh.messages.items.time_2m"),
                       unread: true,
                     },
                     {
-                      title: "Team",
-                      subtitle: "Meeting at 3 PM",
+                      title: t("dmh.messages.items.team"),
+                      subtitle: t("dmh.messages.items.team_message"),
                       icon: (
                         <div className="w-9 h-9 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
                           T
                         </div>
                       ),
-                      time: "1h",
+                      time: t("dmh.messages.items.time_1h"),
                     },
                   ],
                   footer: (
                     <button className="w-full text-center !py-2.5 text-sm font-semibold text-[#0695c8] hover:bg-blue-50 rounded-b-xl transition-all">
-                      See All Messages
+                      {t("dmh.messages.footer")}
                     </button>
                   ),
                 }}
               </Dropdown>
 
               {/* Profile Dropdown */}
-              <Dropdown title="Profile">
+              <Dropdown title={t("dmh.profile.title")}>
                 {{
                   icon: (
                     <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-[#0695c8] rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
@@ -197,25 +199,25 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                   ),
                   items: [
                     {
-                      title: "My Account",
+                      title: t("dmh.profile.items.account"),
                       icon: <FiUser />,
-                      desc: "Edit profile",
+                      desc: t("dmh.profile.items.account_desc"),
                     },
                     {
-                      title: "Billing",
+                      title: t("dmh.profile.items.billing"),
                       icon: <FiCreditCard />,
-                      desc: "Manage subscription",
+                      desc: t("dmh.profile.items.billing_desc"),
                     },
                     {
-                      title: "Support",
+                      title: t("dmh.profile.items.support"),
                       icon: <FiHelpCircle />,
-                      desc: "Get help",
+                      desc: t("dmh.profile.items.support_desc"),
                     },
                   ],
                   footer: (
                     <button className="w-full text-center !py-2.5 text-sm font-semibold text-red-600 hover:bg-red-50 rounded-b-xl transition-all flex items-center justify-center gap-2">
                       <FiLogOut className="text-sm" />
-                      Logout
+                      {t("dmh.profile.footer")}
                     </button>
                   ),
                 }}
@@ -226,7 +228,8 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden !p-2 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95  !mr-10"
+              className="md:hidden !p-2 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95 !mr-10"
+              aria-label={t("dmh.mobile_menu.toggle_button_aria")}
             >
               <div className="w-9 h-9 bg-gradient-to-br from-teal-400 to-[#0695c8] rounded-full flex items-center justify-center text-white font-bold text-sm">
                 Z
@@ -235,7 +238,7 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
           </div>
         </div>
 
-        {/* Mobile Menu – clean, white-bg ready */}
+        {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden fixed inset-0 z-50 flex items-start justify-center !pt-16 !px-4 overflow-y-auto bg-white">
             <div
@@ -247,12 +250,15 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div>
-                      <h3 className="text-lg font-bold text-gray-800">Menu</h3>
+                      <h3 className="text-lg font-bold text-gray-800">
+                        {t("dmh.mobile_menu.title")}
+                      </h3>
                     </div>
                   </div>
                   <button
                     onClick={() => setMobileMenuOpen(false)}
                     className="p-2 rounded-full hover:bg-gray-100 transition"
+                    aria-label={t("dmh.mobile_menu.close_button_aria")}
                   >
                     <FiX className="text-gray-500" />
                   </button>
@@ -268,8 +274,12 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                         <FiHome className="text-xl text-indigo-600" />
                       </div>
                       <div className="text-left">
-                        <p className="font-semibold text-gray-800">Dashboard</p>
-                        <p className="text-xs text-gray-500">View all stats</p>
+                        <p className="font-semibold text-gray-800">
+                          {t("dmh.mobile_menu.dashboard.title")}
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          {t("dmh.mobile_menu.dashboard.subtitle")}
+                        </p>
                       </div>
                     </div>
                     <FiChevronRight className="text-gray-400 group-hover:text-indigo-600 transition" />
@@ -277,7 +287,7 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                 </div>
               </button>
 
-              {/* Notifications – RED badge only */}
+              {/* Notifications */}
               <button className="group w-full">
                 <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm hover:shadow-md transition-all duration-200">
                   <div className="flex items-center justify-between">
@@ -287,10 +297,10 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                       </div>
                       <div className="text-left">
                         <p className="font-semibold text-gray-800">
-                          Notifications
+                          {t("dmh.mobile_menu.notifications.title")}
                         </p>
                         <p className="text-xs text-gray-500">
-                          8 pending alerts
+                          {t("dmh.mobile_menu.notifications.subtitle")}
                         </p>
                       </div>
                     </div>
@@ -301,7 +311,7 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                 </div>
               </button>
 
-              {/* Messages – PURPLE badge only */}
+              {/* Messages */}
               <button className="group w-full">
                 <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm hover:shadow-md transition-all duration-200">
                   <div className="flex items-center justify-between">
@@ -310,8 +320,12 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                         <FiMessageSquare className="text-xl text-purple-600" />
                       </div>
                       <div className="text-left">
-                        <p className="font-semibold text-gray-800">Messages</p>
-                        <p className="text-xs text-gray-500">3 unread</p>
+                        <p className="font-semibold text-gray-800">
+                          {t("dmh.mobile_menu.messages.title")}
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          {t("dmh.mobile_menu.messages.subtitle")}
+                        </p>
                       </div>
                     </div>
                     <span className="bg-purple-500 text-white text-xs !px-3 !py-1 rounded-full font-bold shadow-sm">
@@ -325,21 +339,31 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
               <div className="bg-white border border-gray-200 rounded-3xl !p-5 shadow-sm">
                 <div className="flex items-center gap-2 !mb-3">
                   <FiActivity className="text-green-600" />
-                  <p className="font-semibold text-gray-800">Recent Activity</p>
+                  <p className="font-semibold text-gray-800">
+                    {t("dmh.mobile_menu.recent_activity.title")}
+                  </p>
                 </div>
                 <div className="!space-y-2">
                   {[
                     {
                       icon: FiMapPin,
-                      title: "Location Updated",
-                      time: "2 min ago",
+                      title: t(
+                        "dmh.mobile_menu.recent_activity.items.location_updated"
+                      ),
+                      time: t(
+                        "dmh.mobile_menu.recent_activity.items.time_2min"
+                      ),
                       desc: "123 Main St",
                     },
                     {
                       icon: FiCamera,
-                      title: "Screenshot Taken",
-                      time: "5 min ago",
-                      desc: "Selfie",
+                      title: t(
+                        "dmh.mobile_menu.recent_activity.items.screenshot_taken"
+                      ),
+                      time: t(
+                        "dmh.mobile_menu.recent_activity.items.time_5min"
+                      ),
+                      desc: t("dmh.mobile_menu.recent_activity.items.selfie"),
                     },
                   ].map((a, i) => (
                     <div
@@ -365,8 +389,16 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
               {/* Quick Actions */}
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { icon: FiCamera, label: "Take Photo", color: "indigo" },
-                  { icon: FiMic, label: "Record Audio", color: "purple" },
+                  {
+                    icon: FiCamera,
+                    label: t("dmh.mobile_menu.quick_actions.take_photo"),
+                    color: "indigo",
+                  },
+                  {
+                    icon: FiMic,
+                    label: t("dmh.mobile_menu.quick_actions.record_audio"),
+                    color: "purple",
+                  },
                 ].map((a, i) => (
                   <button
                     key={i}
@@ -385,7 +417,9 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                     Z
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">Zion Ethan</p>
+                    <p className="font-semibold text-gray-800">
+                      {t("dmh.mobile_menu.profile.name")}
+                    </p>
                     <p className="text-xs text-gray-500">zionethan@tech.com</p>
                   </div>
                 </div>
@@ -393,18 +427,18 @@ const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenuStore();
                 <div className="flex gap-2">
                   <button className="flex-1 flex items-center justify-center gap-2 !py-3 bg-gray-50 rounded-2xl text-gray-700 font-medium hover:bg-gray-100 transition">
                     <FiSettings className="text-gray-600" />
-                    Settings
+                    {t("dmh.mobile_menu.profile.settings")}
                   </button>
                   <button className="flex-1 flex items-center justify-center gap-2 !py-3 bg-red-50 rounded-2xl text-red-600 font-medium hover:bg-red-100 transition">
                     <FiLogOut />
-                    Logout
+                    {t("dmh.mobile_menu.profile.logout")}
                   </button>
                 </div>
               </div>
 
               {/* Footer */}
-              <div className="text-center !pt-4 text-xs text-gray-400">
-                © 2025 TrevorTech • v2.4.1
+              <div className="text-center !py-4 text-xs text-gray-400">
+                {t("dmh.mobile_menu.footer", { year: 2025, version: "2.4.1" })}
               </div>
             </div>
           </div>

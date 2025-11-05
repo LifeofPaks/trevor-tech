@@ -660,5 +660,80 @@
   },
   "easier_monitoring_with": "Monitoramento mais fácil com",
   "select_device": "Selecionar dispositivo",
-  "add_device": "Adicionar novo dispositivo"
+  "add_device": "Adicionar novo dispositivo",
+  "dmh": {
+    "notifications": {
+      "title": "Notificações",
+      "items": {
+        "new_message": "Nova mensagem de John",
+        "location_updated": "Localização atualizada",
+        "battery_low": "Bateria baixa",
+        "time_2min": "Há 2 minutos",
+        "time_5min": "Há 5 minutos",
+        "time_10min": "Há 10 minutos"
+      },
+      "footer": "Ver todas as notificações"
+    },
+    "messages": {
+      "title": "Mensagens",
+      "items": {
+        "sarah": "Sarah",
+        "sarah_message": "Oi, está livre?",
+        "team": "Equipe",
+        "team_message": "Reunião às 15h",
+        "time_2m": "2 min",
+        "time_1h": "1 h"
+      },
+      "footer": "Ver todas as mensagens"
+    },
+    "profile": {
+      "title": "Perfil",
+      "items": {
+        "account": "Minha conta",
+        "account_desc": "Editar perfil",
+        "billing": "Faturamento",
+        "billing_desc": "Gerenciar assinatura",
+        "support": "Suporte",
+        "support_desc": "Obter ajuda"
+      },
+      "footer": "Sair"
+    },
+    "mobile_menu": {
+      "title": "Menu",
+      "toggle_button_aria": "Alternar menu móvel",
+      "close_button_aria": "Fechar menu móvel",
+      "dashboard": {
+        "title": "Painel",
+        "subtitle": "Ver todas as estatísticas"
+      },
+      "notifications": {
+        "title": "Notificações",
+        "subtitle": "8 alertas pendentes"
+      },
+      "messages": {
+        "title": "Mensagens",
+        "subtitle": "3 não lidas"
+      },
+      "recent_activity": {
+        "title": "Atividade recente",
+        "items": {
+          "location_updated": "Localização atualizada",
+          "screenshot_taken": "Captura de tela tirada",
+          "time_2min": "Há 2 minutos",
+          "time_5min": "Há 5 minutos",
+          "selfie": "Selfie"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "Tirar foto",
+        "record_audio": "Gravar áudio"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "Configurações",
+        "logout": "Sair"
+      },
+      "footer": "© {{year}} TrevorTech • v{{version}}"
+    }
+  }
 }

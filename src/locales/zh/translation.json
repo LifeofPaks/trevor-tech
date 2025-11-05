@@ -660,5 +660,80 @@
   },
   "easier_monitoring_with": "使用更轻松的监控",
   "select_device": "选择设备",
-  "add_device": "添加新设备"
+  "add_device": "添加新设备",
+  "dmh": {
+    "notifications": {
+      "title": "通知",
+      "items": {
+        "new_message": "来自John的新消息",
+        "location_updated": "位置已更新",
+        "battery_low": "电池电量低",
+        "time_2min": "2分钟前",
+        "time_5min": "5分钟前",
+        "time_10min": "10分钟前"
+      },
+      "footer": "查看所有通知"
+    },
+    "messages": {
+      "title": "消息",
+      "items": {
+        "sarah": "Sarah",
+        "sarah_message": "嘿，你有空吗？",
+        "team": "团队",
+        "team_message": "下午3点开会",
+        "time_2m": "2分钟",
+        "time_1h": "1小时"
+      },
+      "footer": "查看所有消息"
+    },
+    "profile": {
+      "title": "个人资料",
+      "items": {
+        "account": "我的账户",
+        "account_desc": "编辑个人资料",
+        "billing": "账单",
+        "billing_desc": "管理订阅",
+        "support": "支持",
+        "support_desc": "获取帮助"
+      },
+      "footer": "退出登录"
+    },
+    "mobile_menu": {
+      "title": "菜单",
+      "toggle_button_aria": "切换移动菜单",
+      "close_button_aria": "关闭移动菜单",
+      "dashboard": {
+        "title": "仪表板",
+        "subtitle": "查看所有统计数据"
+      },
+      "notifications": {
+        "title": "通知",
+        "subtitle": "8个待处理警报"
+      },
+      "messages": {
+        "title": "消息",
+        "subtitle": "3条未读"
+      },
+      "recent_activity": {
+        "title": "近期活动",
+        "items": {
+          "location_updated": "位置已更新",
+          "screenshot_taken": "已截图",
+          "time_2min": "2分钟前",
+          "time_5min": "5分钟前",
+          "selfie": "自拍"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "拍照",
+        "record_audio": "录音"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "设置",
+        "logout": "退出登录"
+      },
+      "footer": "© {{year}} TrevorTech • 版本{{version}}"
+    }
+  }
 }

@@ -658,6 +658,81 @@
     "modal_image_alt": "Vista previa grande"
   },
   "easier_monitoring_with": "Supervisión más fácil con",
-    "select_device": "Seleccionar dispositivo",
-    "add_device": "Agregar nuevo dispositivo"
+  "select_device": "Seleccionar dispositivo",
+  "add_device": "Agregar nuevo dispositivo",
+  "dmh": {
+    "notifications": {
+      "title": "Notificaciones",
+      "items": {
+        "new_message": "Nuevo mensaje de John",
+        "location_updated": "Ubicación actualizada",
+        "battery_low": "Batería baja",
+        "time_2min": "Hace 2 minutos",
+        "time_5min": "Hace 5 minutos",
+        "time_10min": "Hace 10 minutos"
+      },
+      "footer": "Ver todas las notificaciones"
+    },
+    "messages": {
+      "title": "Mensajes",
+      "items": {
+        "sarah": "Sarah",
+        "sarah_message": "Oye, ¿estás libre?",
+        "team": "Equipo",
+        "team_message": "Reunión a las 3 de la tarde",
+        "time_2m": "2 min",
+        "time_1h": "1 h"
+      },
+      "footer": "Ver todos los mensajes"
+    },
+    "profile": {
+      "title": "Perfil",
+      "items": {
+        "account": "Mi cuenta",
+        "account_desc": "Editar perfil",
+        "billing": "Facturación",
+        "billing_desc": "Gestionar suscripción",
+        "support": "Soporte",
+        "support_desc": "Obtener ayuda"
+      },
+      "footer": "Cerrar sesión"
+    },
+    "mobile_menu": {
+      "title": "Menú",
+      "toggle_button_aria": "Alternar menú móvil",
+      "close_button_aria": "Cerrar menú móvil",
+      "dashboard": {
+        "title": "Tablero",
+        "subtitle": "Ver todas las estadísticas"
+      },
+      "notifications": {
+        "title": "Notificaciones",
+        "subtitle": "8 alertas pendientes"
+      },
+      "messages": {
+        "title": "Mensajes",
+        "subtitle": "3 sin leer"
+      },
+      "recent_activity": {
+        "title": "Actividad reciente",
+        "items": {
+          "location_updated": "Ubicación actualizada",
+          "screenshot_taken": "Captura de pantalla tomada",
+          "time_2min": "Hace 2 minutos",
+          "time_5min": "Hace 5 minutos",
+          "selfie": "Selfie"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "Tomar foto",
+        "record_audio": "Grabar audio"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "Configuración",
+        "logout": "Cerrar sesión"
+      },
+      "footer": "© {{year}} TrevorTech • v{{version}}"
+    }
+  }
 }

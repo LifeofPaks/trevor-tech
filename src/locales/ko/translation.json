@@ -661,5 +661,80 @@
   },
   "easier_monitoring_with": "더 쉽게 모니터링하기",
   "select_device": "기기 선택",
-  "add_device": "새 기기 추가"
+  "add_device": "새 기기 추가",
+  "dmh": {
+    "notifications": {
+      "title": "알림",
+      "items": {
+        "new_message": "John의 새 메시지",
+        "location_updated": "위치 업데이트됨",
+        "battery_low": "배터리 부족",
+        "time_2min": "2분 전",
+        "time_5min": "5분 전",
+        "time_10min": "10분 전"
+      },
+      "footer": "모든 알림 보기"
+    },
+    "messages": {
+      "title": "메시지",
+      "items": {
+        "sarah": "Sarah",
+        "sarah_message": "안녕, 시간 있어?",
+        "team": "팀",
+        "team_message": "오후 3시 회의",
+        "time_2m": "2분",
+        "time_1h": "1시간"
+      },
+      "footer": "모든 메시지 보기"
+    },
+    "profile": {
+      "title": "프로필",
+      "items": {
+        "account": "내 계정",
+        "account_desc": "프로필 수정",
+        "billing": "결제",
+        "billing_desc": "구독 관리",
+        "support": "지원",
+        "support_desc": "도움 받기"
+      },
+      "footer": "로그아웃"
+    },
+    "mobile_menu": {
+      "title": "메뉴",
+      "toggle_button_aria": "모바일 메뉴 토글",
+      "close_button_aria": "모바일 메뉴 닫기",
+      "dashboard": {
+        "title": "대시보드",
+        "subtitle": "모든 통계 보기"
+      },
+      "notifications": {
+        "title": "알림",
+        "subtitle": "8개 보류 중인 알림"
+      },
+      "messages": {
+        "title": "메시지",
+        "subtitle": "3개 읽지 않음"
+      },
+      "recent_activity": {
+        "title": "최근 활동",
+        "items": {
+          "location_updated": "위치 업데이트됨",
+          "screenshot_taken": "스크린샷 촬영됨",
+          "time_2min": "2분 전",
+          "time_5min": "5분 전",
+          "selfie": "셀카"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "사진 찍기",
+        "record_audio": "오디오 녹음"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "설정",
+        "logout": "로그아웃"
+      },
+      "footer": "© {{year}} TrevorTech • v{{version}}"
+    }
+  }
 }

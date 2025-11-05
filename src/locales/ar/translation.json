@@ -659,5 +659,80 @@
   },
   "easier_monitoring_with": "مراقبة أسهل باستخدام",
   "select_device": "اختر الجهاز",
-  "add_device": "إضافة جهاز جديد"
+  "add_device": "إضافة جهاز جديد",
+  "dmh": {
+    "notifications": {
+      "title": "الإشعارات",
+      "items": {
+        "new_message": "رسالة جديدة من جون",
+        "location_updated": "تم تحديث الموقع",
+        "battery_low": "البطارية منخفضة",
+        "time_2min": "منذ دقيقتين",
+        "time_5min": "منذ 5 دقائق",
+        "time_10min": "منذ 10 دقائق"
+      },
+      "footer": "عرض جميع الإشعارات"
+    },
+    "messages": {
+      "title": "الرسائل",
+      "items": {
+        "sarah": "سارة",
+        "sarah_message": "مرحبًا، هل أنت متفرغ؟",
+        "team": "الفريق",
+        "team_message": "اجتماع الساعة 3 مساءً",
+        "time_2m": "2 دقيقة",
+        "time_1h": "1 ساعة"
+      },
+      "footer": "عرض جميع الرسائل"
+    },
+    "profile": {
+      "title": "الملف الشخصي",
+      "items": {
+        "account": "حسابي",
+        "account_desc": "تعديل الملف الشخصي",
+        "billing": "الفوترة",
+        "billing_desc": "إدارة الاشتراك",
+        "support": "الدعم",
+        "support_desc": "الحصول على المساعدة"
+      },
+      "footer": "تسجيل الخروج"
+    },
+    "mobile_menu": {
+      "title": "القائمة",
+      "toggle_button_aria": "تبديل قائمة الهاتف المحمول",
+      "close_button_aria": "إغلاق قائمة الهاتف المحمول",
+      "dashboard": {
+        "title": "لوحة القيادة",
+        "subtitle": "عرض جميع الإحصائيات"
+      },
+      "notifications": {
+        "title": "الإشعارات",
+        "subtitle": "8 تنبيهات معلقة"
+      },
+      "messages": {
+        "title": "الرسائل",
+        "subtitle": "3 غير مقروءة"
+      },
+      "recent_activity": {
+        "title": "النشاط الأخير",
+        "items": {
+          "location_updated": "تم تحديث الموقع",
+          "screenshot_taken": "تم التقاط لقطة شاشة",
+          "time_2min": "منذ دقيقتين",
+          "time_5min": "منذ 5 دقائق",
+          "selfie": "سيلفي"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "التقاط صورة",
+        "record_audio": "تسجيل الصوت"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "الإعدادات",
+        "logout": "تسجيل الخروج"
+      },
+      "footer": "© {{year}} TrevorTech • الإصدار {{version}}"
+    }
+  }
 }

@@ -660,5 +660,80 @@
   },
   "easier_monitoring_with": "Более простое наблюдение с помощью",
   "select_device": "Выбрать устройство",
-  "add_device": "Добавить новое устройство"
+  "add_device": "Добавить новое устройство",
+  "dmh": {
+    "notifications": {
+      "title": "Уведомления",
+      "items": {
+        "new_message": "Новое сообщение от Джона",
+        "location_updated": "Местоположение обновлено",
+        "battery_low": "Низкий заряд батареи",
+        "time_2min": "2 минуты назад",
+        "time_5min": "5 минут назад",
+        "time_10min": "10 минут назад"
+      },
+      "footer": "Посмотреть все уведомления"
+    },
+    "messages": {
+      "title": "Сообщения",
+      "items": {
+        "sarah": "Сара",
+        "sarah_message": "Привет, ты свободен?",
+        "team": "Команда",
+        "team_message": "Встреча в 15:00",
+        "time_2m": "2 мин",
+        "time_1h": "1 ч"
+      },
+      "footer": "Посмотреть все сообщения"
+    },
+    "profile": {
+      "title": "Профиль",
+      "items": {
+        "account": "Мой аккаунт",
+        "account_desc": "Редактировать профиль",
+        "billing": "Биллинг",
+        "billing_desc": "Управление подпиской",
+        "support": "Поддержка",
+        "support_desc": "Получить помощь"
+      },
+      "footer": "Выйти"
+    },
+    "mobile_menu": {
+      "title": "Меню",
+      "toggle_button_aria": "Переключить мобильное меню",
+      "close_button_aria": "Закрыть мобильное меню",
+      "dashboard": {
+        "title": "Панель управления",
+        "subtitle": "Посмотреть все статистические данные"
+      },
+      "notifications": {
+        "title": "Уведомления",
+        "subtitle": "8 ожидающих уведомлений"
+      },
+      "messages": {
+        "title": "Сообщения",
+        "subtitle": "3 непрочитанных"
+      },
+      "recent_activity": {
+        "title": "Недавняя активность",
+        "items": {
+          "location_updated": "Местоположение обновлено",
+          "screenshot_taken": "Сделан скриншот",
+          "time_2min": "2 минуты назад",
+          "time_5min": "5 минут назад",
+          "selfie": "Селфи"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "Сделать фото",
+        "record_audio": "Записать аудио"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "Настройки",
+        "logout": "Выйти"
+      },
+      "footer": "© {{year}} TrevorTech • v{{version}}"
+    }
+  }
 }

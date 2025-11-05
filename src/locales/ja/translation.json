@@ -661,5 +661,80 @@
   },
   "easier_monitoring_with": "より簡単に監視できます",
   "select_device": "デバイスを選択",
-  "add_device": "新しいデバイスを追加"
+  "add_device": "新しいデバイスを追加",
+  "dmh": {
+    "notifications": {
+      "title": "通知",
+      "items": {
+        "new_message": "ジョンからの新着メッセージ",
+        "location_updated": "位置情報が更新されました",
+        "battery_low": "バッテリー残量が少ない",
+        "time_2min": "2分前",
+        "time_5min": "5分前",
+        "time_10min": "10分前"
+      },
+      "footer": "すべての通知を表示"
+    },
+    "messages": {
+      "title": "メッセージ",
+      "items": {
+        "sarah": "サラ",
+        "sarah_message": "ねえ、暇？",
+        "team": "チーム",
+        "team_message": "午後3時に会議",
+        "time_2m": "2分",
+        "time_1h": "1時間"
+      },
+      "footer": "すべてのメッセージを表示"
+    },
+    "profile": {
+      "title": "プロフィール",
+      "items": {
+        "account": "マイアカウント",
+        "account_desc": "プロフィールを編集",
+        "billing": "請求",
+        "billing_desc": "サブスクリプションを管理",
+        "support": "サポート",
+        "support_desc": "ヘルプを取得"
+      },
+      "footer": "ログアウト"
+    },
+    "mobile_menu": {
+      "title": "メニュー",
+      "toggle_button_aria": "モバイルメニューを切り替え",
+      "close_button_aria": "モバイルメニューを閉じる",
+      "dashboard": {
+        "title": "ダッシュボード",
+        "subtitle": "すべての統計を表示"
+      },
+      "notifications": {
+        "title": "通知",
+        "subtitle": "8件の保留中のアラート"
+      },
+      "messages": {
+        "title": "メッセージ",
+        "subtitle": "3件未読"
+      },
+      "recent_activity": {
+        "title": "最近のアクティビティ",
+        "items": {
+          "location_updated": "位置情報が更新されました",
+          "screenshot_taken": "スクリーンショットが撮影されました",
+          "time_2min": "2分前",
+          "time_5min": "5分前",
+          "selfie": "セルフィー"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "写真を撮る",
+        "record_audio": "音声を録音"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "設定",
+        "logout": "ログアウト"
+      },
+      "footer": "© {{year}} TrevorTech • バージョン{{version}}"
+    }
+  }
 }

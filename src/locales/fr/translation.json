@@ -659,5 +659,80 @@
   },
   "easier_monitoring_with": "Surveillance plus facile avec",
   "select_device": "Sélectionner un appareil",
-  "add_device": "Ajouter un nouvel appareil"
+  "add_device": "Ajouter un nouvel appareil",
+  "dmh": {
+    "notifications": {
+      "title": "Notifications",
+      "items": {
+        "new_message": "Nouveau message de John",
+        "location_updated": "Localisation mise à jour",
+        "battery_low": "Batterie faible",
+        "time_2min": "Il y a 2 minutes",
+        "time_5min": "Il y a 5 minutes",
+        "time_10min": "Il y a 10 minutes"
+      },
+      "footer": "Voir toutes les notifications"
+    },
+    "messages": {
+      "title": "Messages",
+      "items": {
+        "sarah": "Sarah",
+        "sarah_message": "Salut, es-tu libre ?",
+        "team": "Équipe",
+        "team_message": "Réunion à 15h",
+        "time_2m": "2 min",
+        "time_1h": "1 h"
+      },
+      "footer": "Voir tous les messages"
+    },
+    "profile": {
+      "title": "Profil",
+      "items": {
+        "account": "Mon compte",
+        "account_desc": "Modifier le profil",
+        "billing": "Facturation",
+        "billing_desc": "Gérer l'abonnement",
+        "support": "Support",
+        "support_desc": "Obtenir de l'aide"
+      },
+      "footer": "Déconnexion"
+    },
+    "mobile_menu": {
+      "title": "Menu",
+      "toggle_button_aria": "Basculer le menu mobile",
+      "close_button_aria": "Fermer le menu mobile",
+      "dashboard": {
+        "title": "Tableau de bord",
+        "subtitle": "Voir toutes les statistiques"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "subtitle": "8 alertes en attente"
+      },
+      "messages": {
+        "title": "Messages",
+        "subtitle": "3 non lus"
+      },
+      "recent_activity": {
+        "title": "Activité récente",
+        "items": {
+          "location_updated": "Localisation mise à jour",
+          "screenshot_taken": "Capture d'écran prise",
+          "time_2min": "Il y a 2 minutes",
+          "time_5min": "Il y a 5 minutes",
+          "selfie": "Selfie"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "Prendre une photo",
+        "record_audio": "Enregistrer l'audio"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "Paramètres",
+        "logout": "Déconnexion"
+      },
+      "footer": "© {{year}} TrevorTech • v{{version}}"
+    }
+  }
 }

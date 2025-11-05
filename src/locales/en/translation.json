@@ -664,5 +664,80 @@
     "prev_button_aria": "Previous screenshot",
     "next_button_aria": "Next screenshot",
     "modal_image_alt": "Large preview"
+  },
+  "dmh": {
+    "notifications": {
+      "title": "Notifications",
+      "items": {
+        "new_message": "New message from John",
+        "location_updated": "Location updated",
+        "battery_low": "Battery low",
+        "time_2min": "2 min ago",
+        "time_5min": "5 min ago",
+        "time_10min": "10 min ago"
+      },
+      "footer": "View All Notifications"
+    },
+    "messages": {
+      "title": "Messages",
+      "items": {
+        "sarah": "Sarah",
+        "sarah_message": "Hey, are you free?",
+        "team": "Team",
+        "team_message": "Meeting at 3 PM",
+        "time_2m": "2m",
+        "time_1h": "1h"
+      },
+      "footer": "See All Messages"
+    },
+    "profile": {
+      "title": "Profile",
+      "items": {
+        "account": "My Account",
+        "account_desc": "Edit profile",
+        "billing": "Billing",
+        "billing_desc": "Manage subscription",
+        "support": "Support",
+        "support_desc": "Get help"
+      },
+      "footer": "Logout"
+    },
+    "mobile_menu": {
+      "title": "Menu",
+      "toggle_button_aria": "Toggle mobile menu",
+      "close_button_aria": "Close mobile menu",
+      "dashboard": {
+        "title": "Dashboard",
+        "subtitle": "View all stats"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "subtitle": "8 pending alerts"
+      },
+      "messages": {
+        "title": "Messages",
+        "subtitle": "3 unread"
+      },
+      "recent_activity": {
+        "title": "Recent Activity",
+        "items": {
+          "location_updated": "Location Updated",
+          "screenshot_taken": "Screenshot Taken",
+          "time_2min": "2 min ago",
+          "time_5min": "5 min ago",
+          "selfie": "Selfie"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "Take Photo",
+        "record_audio": "Record Audio"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "Settings",
+        "logout": "Logout"
+      },
+      "footer": "© {{year}} TrevorTech • v{{version}}"
+    }
   }
 }

@@ -660,5 +660,80 @@
   },
   "easier_monitoring_with": "Daha kolay izleme için",
   "select_device": "Cihaz seç",
-  "add_device": "Yeni cihaz ekle"
+  "add_device": "Yeni cihaz ekle",
+  "dmh": {
+    "notifications": {
+      "title": "Bildirimler",
+      "items": {
+        "new_message": "John'dan yeni mesaj",
+        "location_updated": "Konum güncellendi",
+        "battery_low": "Pil düşük",
+        "time_2min": "2 dakika önce",
+        "time_5min": "5 dakika önce",
+        "time_10min": "10 dakika önce"
+      },
+      "footer": "Tüm bildirimleri görüntüle"
+    },
+    "messages": {
+      "title": "Mesajlar",
+      "items": {
+        "sarah": "Sarah",
+        "sarah_message": "Merhaba, müsait misiniz?",
+        "team": "Ekip",
+        "team_message": "Öğleden sonra 3'te toplantı",
+        "time_2m": "2 dk",
+        "time_1h": "1 sa"
+      },
+      "footer": "Tüm mesajları gör"
+    },
+    "profile": {
+      "title": "Profil",
+      "items": {
+        "account": "Hesabım",
+        "account_desc": "Profili düzenle",
+        "billing": "Faturalandırma",
+        "billing_desc": "Aboneliği yönet",
+        "support": "Destek",
+        "support_desc": "Yardım al"
+      },
+      "footer": "Çıkış yap"
+    },
+    "mobile_menu": {
+      "title": "Menü",
+      "toggle_button_aria": "Mobil menüyü aç/kapat",
+      "close_button_aria": "Mobil menüyü kapat",
+      "dashboard": {
+        "title": "Kontrol Paneli",
+        "subtitle": "Tüm istatistikleri görüntüle"
+      },
+      "notifications": {
+        "title": "Bildirimler",
+        "subtitle": "8 bekleyen uyarı"
+      },
+      "messages": {
+        "title": "Mesajlar",
+        "subtitle": "3 okunmamış"
+      },
+      "recent_activity": {
+        "title": "Son Aktivite",
+        "items": {
+          "location_updated": "Konum Güncellendi",
+          "screenshot_taken": "Ekran Görüntüsü Alındı",
+          "time_2min": "2 dakika önce",
+          "time_5min": "5 dakika önce",
+          "selfie": "Selfie"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "Fotoğraf Çek",
+        "record_audio": "Ses Kaydet"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "Ayarlar",
+        "logout": "Çıkış yap"
+      },
+      "footer": "© {{year}} TrevorTech • v{{version}}"
+    }
+  }
 }
