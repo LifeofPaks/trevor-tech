@@ -17,7 +17,7 @@ import { FaFileCircleXmark, FaSchoolLock } from "react-icons/fa6";
 import { GiGraduateCap } from "react-icons/gi";
 import { FaBtc } from "react-icons/fa";
 import { RiBtcFill } from "react-icons/ri";
-import { MdAttachMoney } from "react-icons/md";
+import { MdAttachMoney, MdOutlineAppsOutage } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
@@ -49,10 +49,17 @@ const About = () => {
     {
       title: t("about_page.service_grade_enhancement_title"),
       desc: t("about_page.service_grade_enhancement_desc"),
-      icon: <GiGraduateCap size={24} />,
+      icon: <MdOutlineAppsOutage size={24} />,
       color: "text-blue-400 bg-blue-900/20",
       path: "/elite/grade-enhancement",
     },
+    // {
+    //   title: t("about_page.service_hack_device_title"),
+    //   desc: t("about_page.service_hack_device_desc"),
+    //   icon: <GiGraduateCap size={24} />,
+    //   color: "text-blue-400 bg-blue-900/20",
+    //   path: "/elite/grade-enhancement",
+    // },
     {
       title: t("about_page.service_credit_boost_title"),
       desc: t("about_page.service_credit_boost_desc"),
@@ -141,7 +148,7 @@ const About = () => {
               {services.map((service, index) => {
                 const cardContent = (
                   <motion.div
-                    className="h-[260px] bg-white/5 backdrop-blur-xl !p-6 rounded-2xl border border-cyan-500/30 hover:border-cyan-400/60 shadow-2xl hover:shadow-cyan-500/20 cursor-pointer transition-all duration-300 group hover:bg-white/10"
+                    className="h-[275px] bg-white/5 backdrop-blur-xl !p-6 rounded-2xl border border-cyan-500/30 hover:border-cyan-400/60 shadow-2xl hover:shadow-cyan-500/20 cursor-pointer transition-all duration-300 group hover:bg-white/10"
                     whileHover={{ y: -5, scale: 1.02 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
