@@ -887,5 +887,19 @@
       "prev_button_aria": "Vorherige Seite",
       "next_button_aria": "Nächste Seite"
     }
+  },
+  "dct": {
+    "header": {
+      "title": "Kontakte",
+      "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
+      "bind_button": "Mein Gerät binden",
+      "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen"
+    },
+    "contact": {
+      "number": "Nummer",
+      "email": "E-Mail",
+      "expand": "Kontaktdetails erweitern",
+      "collapse": "Kontaktdetails einklappen"
+    }
   }
 }

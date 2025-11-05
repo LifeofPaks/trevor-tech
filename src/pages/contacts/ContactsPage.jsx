@@ -9,11 +9,11 @@ import {
   Paper,
 } from "@mui/material";
 import { FiPhone, FiMail, FiChevronDown, FiChevronUp } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
-import BuyModal from "../../components/buyModal/BuyModal";
 import { RiContactsBook2Fill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
+import BuyModal from "../../components/buyModal/BuyModal";
 
-// Sample Contacts Data (from screenshots)
+// Sample Contacts Data
 const contacts = [
   // Section A
   {
@@ -48,7 +48,6 @@ const contacts = [
     email: "arya@gmail.com",
     avatar: "https://i.pravatar.cc/150?img=12",
   },
-
   // Section B
   {
     id: 5,
@@ -77,11 +76,12 @@ const contacts = [
 ];
 
 const ContactsPage = () => {
+  const { t } = useTranslation();
   const [expanded, setExpanded] = useState(null);
-      const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-      const handleOpen = () => setOpen(true);
-      const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   const handleExpand = (id) => {
     setExpanded(expanded === id ? null : id);
@@ -100,24 +100,25 @@ const ContactsPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Contacts
+              {t("dct.header.title")}{" "}
               <RiContactsBook2Fill className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("dct.header.demo_message")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dct.header.bind_button_aria")}
             >
-              Bind My Device
+              {t("dct.header.bind_button")}
             </button>
           </div>
         </div>
       </header>
-      <Box className="!p-6 !bg-gray-50 ">
+      <Box className="!p-6 !bg-gray-50">
         {Object.keys(grouped).map((section) => (
           <Box key={section} className="!mb-6">
             {/* Section Header */}
@@ -159,7 +160,15 @@ const ContactsPage = () => {
                         </Typography>
                       </Stack>
 
-                      <IconButton size="small" className="!text-gray-500">
+                      <IconButton
+                        size="small"
+                        className="!text-gray-500"
+                        aria-label={t(
+                          expanded === contact.id
+                            ? "dct.contact.collapse"
+                            : "dct.contact.expand"
+                        )}
+                      >
                         {expanded === contact.id ? (
                           <FiChevronUp />
                         ) : (
@@ -183,7 +192,7 @@ const ContactsPage = () => {
                           </div>
                           <Box>
                             <Typography className="!text-xs !text-gray-600">
-                              Number
+                              {t("dct.contact.number")}
                             </Typography>
                             <Typography className="!font-mono !text-sm !text-gray-800">
                               {contact.number}
@@ -201,7 +210,7 @@ const ContactsPage = () => {
                           </div>
                           <Box>
                             <Typography className="!text-xs !text-gray-600">
-                              Email
+                              {t("dct.contact.email")}
                             </Typography>
                             <Typography className="!text-sm !text-gray-800">
                               {contact.email}

@@ -881,5 +881,19 @@
       "prev_button_aria": "上一页",
       "next_button_aria": "下一页"
     }
+  },
+  "dct": {
+    "header": {
+      "title": "联系人",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据"
+    },
+    "contact": {
+      "number": "电话号码",
+      "email": "电子邮件",
+      "expand": "展开联系人详情",
+      "collapse": "收起联系人详情"
+    }
   }
 }

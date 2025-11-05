@@ -882,5 +882,19 @@
       "prev_button_aria": "이전 페이지",
       "next_button_aria": "다음 페이지"
     }
+  },
+  "dct": {
+    "header": {
+      "title": "연락처",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결"
+    },
+    "contact": {
+      "number": "전화번호",
+      "email": "이메일",
+      "expand": "연락처 세부 정보 확장",
+      "collapse": "연락처 세부 정보 축소"
+    }
   }
 }

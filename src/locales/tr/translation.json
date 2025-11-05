@@ -881,5 +881,19 @@
       "prev_button_aria": "Önceki sayfa",
       "next_button_aria": "Sonraki sayfa"
     }
+  },
+  "dct": {
+    "header": {
+      "title": "Kişiler",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla"
+    },
+    "contact": {
+      "number": "Numara",
+      "email": "E-posta",
+      "expand": "Kişi detaylarını genişlet",
+      "collapse": "Kişi detaylarını daralt"
+    }
   }
 }

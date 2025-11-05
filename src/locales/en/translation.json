@@ -889,5 +889,19 @@
       "prev_button_aria": "Previous page",
       "next_button_aria": "Next page"
     }
+  },
+  "dct": {
+    "header": {
+      "title": "Contacts",
+      "demo_message": "Demo data. Bind your device to collect actual data.",
+      "bind_button": "Bind My Device",
+      "bind_button_aria": "Bind device to start collecting data"
+    },
+    "contact": {
+      "number": "Number",
+      "email": "Email",
+      "expand": "Expand contact details",
+      "collapse": "Collapse contact details"
+    }
   }
 }

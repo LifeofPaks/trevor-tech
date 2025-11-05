@@ -861,27 +861,42 @@
       { "text": "Supprime ceci après l'avoir lu." },
       { "text": "Comment effacer l'historique du navigateur ?" }
     ]
-  }, "dcl": {
-      "header": {
-        "title": "Appels",
-        "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
-        "bind_button": "Connecter mon appareil",
-        "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données",
-        "date_range": "{{startDate}} — {{endDate}}",
-        "last_7_days": "7 derniers jours"
-      },
-      "table": {
-        "state": "État",
-        "state_missed": "Manqué",
-        "state_incoming": "Entrant",
-        "state_outgoing": "Sortant",
-        "number": "Numéro",
-        "name": "Nom",
-        "duration": "Durée"
-      },
-      "pagination": {
-        "prev_button_aria": "Page précédente",
-        "next_button_aria": "Page suivante"
-      }
+  },
+  "dcl": {
+    "header": {
+      "title": "Appels",
+      "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
+      "bind_button": "Connecter mon appareil",
+      "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "7 derniers jours"
+    },
+    "table": {
+      "state": "État",
+      "state_missed": "Manqué",
+      "state_incoming": "Entrant",
+      "state_outgoing": "Sortant",
+      "number": "Numéro",
+      "name": "Nom",
+      "duration": "Durée"
+    },
+    "pagination": {
+      "prev_button_aria": "Page précédente",
+      "next_button_aria": "Page suivante"
     }
+  },
+  "dct": {
+    "header": {
+      "title": "Contacts",
+      "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
+      "bind_button": "Connecter mon appareil",
+      "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données"
+    },
+    "contact": {
+      "number": "Numéro",
+      "email": "E-mail",
+      "expand": "Afficher les détails du contact",
+      "collapse": "Masquer les détails du contact"
+    }
+  }
 }

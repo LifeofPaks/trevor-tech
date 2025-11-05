@@ -880,5 +880,19 @@
       "prev_button_aria": "Página anterior",
       "next_button_aria": "Página siguiente"
     }
+  },
+  "dct": {
+    "header": {
+      "title": "Contactos",
+      "demo_message": "Datos de demostración. Vincula tu dispositivo para recopilar datos reales.",
+      "bind_button": "Vincular mi dispositivo",
+      "bind_button_aria": "Vincular dispositivo para comenzar a recopilar datos"
+    },
+    "contact": {
+      "number": "Número",
+      "email": "Correo electrónico",
+      "expand": "Expandir detalles del contacto",
+      "collapse": "Colapsar detalles del contacto"
+    }
   }
 }
