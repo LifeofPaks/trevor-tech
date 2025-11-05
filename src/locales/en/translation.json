@@ -1299,5 +1299,27 @@
         "date": "2022-01-10 07:30"
       }
     }
+  },
+  "dmgf": {
+    "header": {
+      "title": "GPS Locations"
+    },
+    "tabs": {
+      "allowed": "Allowed",
+      "restricted": "Restricted",
+      "aria_label": "Geofence zone type selection"
+    },
+    "left_panel": {
+      "add_button": "Add",
+      "add_button_aria": "Add new geofence location",
+      "copy_aria": "Copy location address",
+      "delete_aria": "Delete location"
+    },
+    "map": {
+      "title": "Map View"
+    },
+    "location": {
+      "name": "Los Angeles Temple Visitors' Center, Los Angeles, CA"
+    }
   }
 }

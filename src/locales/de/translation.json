@@ -1297,5 +1297,27 @@
         "date": "2022-01-10 07:30"
       }
     }
+  },
+  "dmgf": {
+    "header": {
+      "title": "GPS-Standorte"
+    },
+    "tabs": {
+      "allowed": "Erlaubt",
+      "restricted": "Eingeschränkt",
+      "aria_label": "Auswahl des Geofence-Zonentyps"
+    },
+    "left_panel": {
+      "add_button": "Hinzufügen",
+      "add_button_aria": "Neuen Geofence-Standort hinzufügen",
+      "copy_aria": "Standortadresse kopieren",
+      "delete_aria": "Standort löschen"
+    },
+    "map": {
+      "title": "Kartenansicht"
+    },
+    "location": {
+      "name": "Besucherzentrum des Los Angeles Tempels, Los Angeles, CA"
+    }
   }
 }

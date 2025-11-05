@@ -1217,5 +1217,27 @@
         "time": "2022-01-25 10:05"
       }
     }
+  },
+  "dmgf": {
+    "header": {
+      "title": "GPS位置"
+    },
+    "tabs": {
+      "allowed": "許可",
+      "restricted": "制限",
+      "aria_label": "ジオフェンスゾーンの種類選択"
+    },
+    "left_panel": {
+      "add_button": "追加",
+      "add_button_aria": "新しいジオフェンス位置を追加",
+      "copy_aria": "位置の住所をコピー",
+      "delete_aria": "位置を削除"
+    },
+    "map": {
+      "title": "マップビュー"
+    },
+    "location": {
+      "name": "ロサンゼルス寺院ビジターセンター、ロサンゼルス、CA"
+    }
   }
 }

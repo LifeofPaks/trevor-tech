@@ -1291,5 +1291,27 @@
         "date": "2022-01-10 07:30"
       }
     }
+  },
+  "dmgf": {
+    "header": {
+      "title": "GPS Konumları"
+    },
+    "tabs": {
+      "allowed": "İzin Verilen",
+      "restricted": "Kısıtlı",
+      "aria_label": "Coğrafi çit bölgesi tipi seçimi"
+    },
+    "left_panel": {
+      "add_button": "Ekle",
+      "add_button_aria": "Yeni coğrafi çit konumu ekle",
+      "copy_aria": "Konum adresini kopyala",
+      "delete_aria": "Konumu sil"
+    },
+    "map": {
+      "title": "Harita Görünümü"
+    },
+    "location": {
+      "name": "Los Angeles Tapınak Ziyaretçi Merkezi, Los Angeles, CA"
+    }
   }
 }

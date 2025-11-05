@@ -1294,5 +1294,27 @@
         "date": "2022-01-10 07:30"
       }
     }
+  },
+  "dmgf": {
+    "header": {
+      "title": "Emplacements GPS"
+    },
+    "tabs": {
+      "allowed": "Autorisé",
+      "restricted": "Restreint",
+      "aria_label": "Sélection du type de zone de géorepérage"
+    },
+    "left_panel": {
+      "add_button": "Ajouter",
+      "add_button_aria": "Ajouter un nouvel emplacement de géorepérage",
+      "copy_aria": "Copier l'adresse de l'emplacement",
+      "delete_aria": "Supprimer l'emplacement"
+    },
+    "map": {
+      "title": "Vue de la Carte"
+    },
+    "location": {
+      "name": "Centre des visiteurs du temple de Los Angeles, Los Angeles, CA"
+    }
   }
 }

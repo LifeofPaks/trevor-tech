@@ -1292,5 +1292,27 @@
         "date": "2022-01-10 07:30"
       }
     }
+  },
+  "dmgf": {
+    "header": {
+      "title": "GPS 위치"
+    },
+    "tabs": {
+      "allowed": "허용",
+      "restricted": "제한",
+      "aria_label": "지오펜스 구역 유형 선택"
+    },
+    "left_panel": {
+      "add_button": "추가",
+      "add_button_aria": "새 지오펜스 위치 추가",
+      "copy_aria": "위치 주소 복사",
+      "delete_aria": "위치 삭제"
+    },
+    "map": {
+      "title": "지도 뷰"
+    },
+    "location": {
+      "name": "로스앤젤레스 템플 방문자 센터, 로스앤젤레스, CA"
+    }
   }
 }

@@ -1291,5 +1291,27 @@
         "date": "2022-01-10 07:30"
       }
     }
+  },
+  "dmgf": {
+    "header": {
+      "title": "GPS位置"
+    },
+    "tabs": {
+      "allowed": "允许",
+      "restricted": "限制",
+      "aria_label": "地理围栏区域类型选择"
+    },
+    "left_panel": {
+      "add_button": "添加",
+      "add_button_aria": "添加新的地理围栏位置",
+      "copy_aria": "复制位置地址",
+      "delete_aria": "删除位置"
+    },
+    "map": {
+      "title": "地图视图"
+    },
+    "location": {
+      "name": "洛杉矶寺庙游客中心，洛杉矶，加利福尼亚"
+    }
   }
 }

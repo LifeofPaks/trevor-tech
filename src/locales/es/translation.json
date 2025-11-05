@@ -1290,5 +1290,27 @@
         "date": "2022-01-10 07:30"
       }
     }
+  },
+  "dmgf": {
+    "header": {
+      "title": "Ubicaciones GPS"
+    },
+    "tabs": {
+      "allowed": "Permitido",
+      "restricted": "Restringido",
+      "aria_label": "Selección de tipo de zona de geocerca"
+    },
+    "left_panel": {
+      "add_button": "Agregar",
+      "add_button_aria": "Agregar nueva ubicación de geocerca",
+      "copy_aria": "Copiar dirección de ubicación",
+      "delete_aria": "Eliminar ubicación"
+    },
+    "map": {
+      "title": "Vista de Mapa"
+    },
+    "location": {
+      "name": "Centro de Visitantes del Templo de Los Ángeles, Los Ángeles, CA"
+    }
   }
 }
