@@ -36,7 +36,7 @@ const Navbarr = () => {
       icon: <RiBtcFill />,
     },
     {
-      to: "/elite/crypto-recovery",
+      to: "/elite/social-media",
       label: t("social_media"),
       icon: <MdOutlineAppsOutage />,
     },
