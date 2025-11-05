@@ -1,0 +1,1547 @@
+{
+  "zions_galaxy_s24_name": "Zions Galaxy S24",
+  "zions_galaxy_s24_status": "In uso",
+  "zions_galaxy_s24_battery": "20%",
+  "zions_iphone_16_name": "Zions iPhone 16",
+  "zions_iphone_16_status": "Offline",
+  "zions_iphone_16_battery": "",
+  "zions_iphone_14_name": "Zions iPhone 14",
+  "zions_iphone_14_status": "Offline",
+  "zions_iphone_14_battery": "",
+  "zions_icloud_name": "Zions iCloud",
+  "zions_icloud_status": "Disponibile",
+  "zions_icloud_battery": "",
+  "dashboard": "Pannello di controllo",
+  "general_features": "Funzionalità generali",
+  "text_messages": "Messaggi di testo",
+  "gps_locations": "Posizioni GPS",
+  "keylogger": "Keylogger",
+  "calls": "Chiamate",
+  "contacts": "Contatti",
+  "notes": "Note",
+  "photos": "Foto",
+  "videos": "Video",
+  "wi_fi_networks": "Reti Wi-Fi",
+  "keyword_alerts": "Avvisi per parole chiave",
+  "installed_apps": "Applicazioni installate",
+  "bookmarks": "Segnalibri",
+  "browser_history": "Cronologia del browser",
+  "email": "E-mail",
+  "sim_card": "Scheda SIM",
+  "social_networks": "Reti sociali",
+  "whatsapp": "WhatsApp",
+  "facebook": "Facebook",
+  "facebook_messenger": "Facebook Messenger",
+  "instagram": "Instagram",
+  "x": "X",
+  "tiktok": "TikTok",
+  "snapchat": "Snapchat",
+  "linkedin": "LinkedIn",
+  "zoom": "Zoom",
+  "viber": "Viber",
+  "telegram": "Telegram",
+  "line": "LINE",
+  "kakaotalk": "KakaoTalk",
+  "skype": "Skype",
+  "imo": "IMO",
+  "discord": "Discord",
+  "tinder": "Tinder",
+  "badoo": "Badoo",
+  "wechat": "WeChat",
+  "screen_captures": "Catture dello schermo",
+  "screenshots": "Screenshot",
+  "controls": "Controlli",
+  "geo_fencing": "Geofencing",
+  "website_block": "Blocco di siti web",
+  "wi_fi_block": "Blocco Wi-Fi",
+  "app_block": "Blocco delle app",
+  "elite_services": "Servizi d'élite",
+  "credit_score_upgrade": "Miglioramento del punteggio di credito",
+  "stop_blackmail": "Fermare il ricatto",
+  "improve_academic_grade": "Miglioramento dei voti accademici",
+  "erase_criminal_record": "Cancellazione dei precedenti penali",
+  "crypto_recovery": "Recupero di criptovalute",
+  "dmv_&_id_services": "Servizi DMV e ID",
+  "home": "Home",
+  "about": "Chi siamo",
+  "testimonial": "Testimonianze",
+  "faq": "Domande frequenti",
+  "view_demo": "Visualizza demo",
+  "home_page": {
+    "hero_title": "Scudo digitale definitivo: La tua ",
+    "hero_title_secret_weapon": "arma segreta",
+    "betrayal": " contro tradimenti e perdite",
+    "hero_subtitle": "Potenzia te stesso con strumenti all'avanguardia per <1>spiare i social media</1>, <1>hackerare dispositivi</1>, <1>recuperare criptovalute rubate</1>, tracciare posizioni e cancellare tracce digitali – tutto in modo <1>etico e discreto</1>, con l'assistenza di esperti per una totale tranquillità.",
+    "hero_subtitle_spy": "spiare i social media",
+    "hero_subtitle_hack": "hackerare dispositivi",
+    "hero_subtitle_crypto": "criptovalute rubate",
+    "hero_subtitle_ethically": "etico e discreto",
+    "available_on": "Disponibile su",
+    "view_demo": "Visualizza demo",
+    "try_it_now": "Prova ora"
+  },
+  "about_page": {
+    "header_title": "I tuoi esperti fidati per il recupero e il monitoraggio digitale",
+    "header_description": "Siamo un team professionale e discreto specializzato in accesso digitale etico, recupero e servizi di protezione. Con oltre un decennio di esperienza in sicurezza informatica, forensica blockchain e monitoraggio remoto, ti aiutiamo a riprendere il controllo, che si tratti di recuperare criptovalute rubate, proteggere account compromessi o salvaguardare i tuoi cari.",
+    "services_title": "Cosa facciamo",
+    "service_spy_hack_title": "Monitoraggio o hacking remoto di qualsiasi dispositivo",
+    "service_spy_hack_desc": "Monitora/Hackera qualsiasi Android, iPhone, tablet o computer da remoto. Visualizza messaggi, chiamate, GPS, foto, app e tasti premuti – nessun accesso fisico richiesto.",
+    "service_crypto_recovery_title": "Recupero di criptovalute rubate o truffate",
+    "service_crypto_recovery_desc": "Recupera Bitcoin, Ethereum, USDT e altro da piattaforme false, phishing o wallet rubati. Tracciamento completo della blockchain e identificazione dei truffatori.",
+    "service_grade_enhancement_title": "Miglioramento dei voti accademici",
+    "service_grade_enhancement_desc": "Migliora immediatamente i voti universitari, la media dei voti e i risultati degli esami. Modifica trascrizioni, risultati dei test e accedi a registri accademici completi.",
+    "service_credit_boost_title": "Miglioramento del punteggio di credito e ricarica delle carte",
+    "service_credit_boost_desc": "Migliora immediatamente i punteggi di credito (Equifax, TransUnion, Experian). Ricarica carte di debito/prepagate e accedi a registri finanziari completi.",
+    "service_clear_record_title": "Cancellazione di registri e modifica dei voti",
+    "service_clear_record_desc": "Cancella permanentemente i precedenti penali, modifica i voti universitari, la media dei voti e emetti nuove patenti/identità nei sistemi ufficiali.",
+    "service_stop_blackmail_title": "Fermare il ricatto e proteggere la privacy",
+    "service_stop_blackmail_desc": "Identifica i ricattatori, elimina materiale compromettente da dispositivi/cloud e blocca minacce future – protezione digitale completa.",
+    "why_choose_us_title": "Perché scegliere noi?",
+    "why_choose_us_discreet": "100% discreto – Nessun log, nessuna traccia, nessun accesso di terze parti",
+    "why_choose_us_no_physical_access": "Nessun accesso fisico richiesto – Configurazione ed esecuzione remota",
+    "why_choose_us_proven_results": "Risultati comprovati – Migliaia di casi di successo in tutto il mondo",
+    "why_choose_us_support": "Supporto 24/7 – Chat live, e-mail, telefono in più lingue",
+    "quote": "Non solo recuperiamo dati – ricostruiamo fiducia.",
+    "cta_title": "Pronto a riprendere il controllo?",
+    "cta_description": "I nostri esperti sono disponibili 24/7 per aiutarti a recuperare e proteggere il tuo mondo digitale.",
+    "cta_button": "Contattaci ora"
+  },
+  "phone_section": {
+    "header_title": "Monitoraggio di telefoni e social media",
+    "header_description": "Accesso remoto completo a qualsiasi dispositivo e conversazione privata. Visualizza ogni messaggio, chiamata, foto, video, messaggi eliminati e attività delle app in tempo reale – anche se l'utente li nasconde o elimina. Funziona su iPhone, Android, tablet e computer. Nessun accesso fisico richiesto dopo la configurazione. Esporta log completi con timestamp, media e metadati come prova.",
+    "header_devices": "iPhone, Android, tablet e computer",
+    "image_alt": "Pannello di controllo per il monitoraggio del telefono",
+    "feature_messages_title": "Leggi messaggi e chat social",
+    "feature_messages_desc": "Hackera/Monitora WhatsApp, Facebook, Instagram, Snapchat, Telegram, iMessage e qualsiasi app di messaggistica – visualizza conversazioni complete, timestamp, nomi dei contatti, file multimediali, note vocali e allegati. Esporta thread di chat come PDF o screenshot.",
+    "feature_calls_title": "Controlla la cronologia delle chiamate",
+    "feature_calls_desc": "Monitora chiamate in entrata, in uscita e perse con dettagli: numeri, nomi dei contatti, date/orari precisi, durata e tipo di chiamata (voce, video, VoIP). Ricevi notifiche per contatti specifici.",
+    "feature_browser_title": "Traccia la cronologia del browser",
+    "feature_browser_desc": "Visualizza ogni sito web visitato su Chrome, Safari, Firefox o qualsiasi browser (URL completo, titolo, ora di visita, durata, frequenza). Cattura la cronologia in modalità incognito/privata ed esporta report ricercabili.",
+    "feature_accounts_title": "Recupero di account e-mail e social compromessi",
+    "feature_accounts_desc": "Riprendi il controllo di account Gmail, Outlook, Yahoo, Instagram, Facebook, Twitter compromessi – modifica password, rimuovi gli aggressori, recupera e-mail/post eliminati e proteggi l'account in modo permanente."
+  },
+  "crypto": {
+    "header_title": "Soluzioni per il recupero finanziario e di criptovalute",
+    "header_description": "Riprendi il controllo di denaro, credito e asset digitali. Recupera criptovalute truffate, migliora i punteggi di credito, ricarica carte di debito e ferma il ricatto finanziario. Piena trasparenza su log bancari, transazioni e account nascosti.",
+    "header_assets": "Denaro, credito e asset digitali",
+    "image_alt": "Pannello di controllo per il recupero di criptovalute",
+    "feature_crypto_recovery_title": "Recupero di criptovalute rubate o truffate",
+    "feature_crypto_recovery_desc": "Recupera criptovalute perse, rubate o truffate da wallet (Bitcoin, Ethereum, USDT, ecc.). Traccia le transazioni blockchain e identifica i wallet dei truffatori. Include il monitoraggio del tasso di successo.",
+    "feature_credit_boost_title": "Migliora il credito e ricarica le carte",
+    "feature_credit_boost_desc": "Migliora i punteggi di credito (Equifax, TransUnion, Experian) gestendo voci negative. Ricarica carte di debito/prepagate e accedi a report di credito completi e cronologie delle transazioni.",
+    "feature_hidden_chats_title": "Chat nascoste e dati privati",
+    "feature_hidden_chats_desc": "Accedi a chat nascoste, storie eliminate, messaggi diretti e album privati su piattaforme principali – visualizza la cronologia delle conversazioni e i media condivisi.",
+    "feature_stop_blackmail_title": "Fermare il ricatto e rimuovere materiale compromettente",
+    "feature_stop_blackmail_desc": "Identifica i ricattatori, rimuovi materiale compromettente da dispositivi/cloud, blocca contatti futuri ed elimina tracce online per una protezione completa e tranquillità.",
+    "feature_driving_records_title": "Registri di guida e servizi ID",
+    "feature_driving_records_desc": "Recupera registri di guida e accedi ai dettagli di registrazione. (Nota: Rispetta le leggi locali e utilizza solo servizi legali.)"
+  },
+  "gps": {
+    "header_title": "Tracciamento GPS in tempo reale",
+    "header_description": "Traccia la posizione in tempo reale di qualsiasi dispositivo con precisione a livello di strada utilizzando GPS, Wi-Fi e torri cellulari. Visualizza i movimenti dal vivo su una mappa, ricevi notifiche di geofencing ed esporta la cronologia completa delle rotte con timestamp e dati di velocità.",
+    "header_accuracy": "Precisione a livello di strada",
+    "image_alt": "Pannello di controllo per il tracciamento GPS in tempo reale",
+    "feature_gps_track_title": "Traccia la posizione GPS",
+    "feature_location_history_title": "Visualizza la cronologia delle posizioni",
+    "feature_wifi_track_title": "Tracciamento della posizione Wi-Fi",
+    "feature_geofence_alerts_title": "Imposta notifiche di geofencing",
+    "subheader_title": "Inizia subito il tracciamento",
+    "subheader_description": "Scopri come il nostro sistema GPS ti tiene connesso in tempo reale ai tuoi dispositivi. Clicca su “Prova ora” per attivare immediatamente il tracciamento live o su “Visualizza demo” per esplorare come gli aggiornamenti di posizione e le notifiche appaiono nell'interfaccia del pannello di controllo.",
+    "subheader_try_now": "Prova ora",
+    "subheader_view_demo": "Visualizza demo",
+    "button_try_now": "Prova ora",
+    "button_view_demo": "Visualizza demo"
+  },
+  "tm": {
+    "header_title": "Cosa dicono i nostri clienti",
+    "header_description": "Ascolta le persone che hanno affidato a Trevor Tech il recupero di ciò che conta di più.",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Tech ha salvato i dati della mia azienda dopo un crash critico del sistema. La loro professionalità e velocità sono state insuperabili!",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "Servizio eccezionale! Il processo di recupero è stato trasparente e ho recuperato ogni singolo file in sicurezza.",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "Pensavo di aver perso anni di lavoro, ma Trevor Tech ha recuperato tutto. Raccomando vivamente il loro team!",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "Supporto rapido, affidabile e cordiale. Mi hanno tenuto aggiornato durante tutto il processo e hanno consegnato perfettamente.",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "Non posso ringraziare abbastanza Trevor Tech. Le mie foto e documenti sono stati recuperati con una cura e precisione incredibili.",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "Il loro team ha fatto di tutto per recuperare file critici. Il processo è stato fluido e senza stress.",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "Esperienza eccellente! Hanno comunicato chiaramente, lavorato velocemente e gestito i miei dati con grande cura.",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "Sono rimasto stupito da quanto velocemente hanno recuperato tutto. Vale assolutamente la pena – veri professionisti!",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "Ho consigliato Trevor Tech ai miei colleghi. Il loro servizio di recupero dati è semplicemente eccezionale."
+  },
+  "fq": {
+    "header_title": "Domande frequenti",
+    "header_description": "Hai domande? Abbiamo le risposte. Ecco tutto ciò che devi sapere sui nostri servizi discreti, potenti ed efficaci al 100%.",
+    "faq_1_question": "Quanto tempo richiede il recupero dei dati?",
+    "faq_1_answer": "Il recupero dei dati richiede generalmente tra 24 e 72 ore, a seconda dell'entità del danno e del volume dei dati.",
+    "faq_2_question": "I miei dati saranno trattati in modo confidenziale?",
+    "faq_2_answer": "Assolutamente. Seguiamo rigide politiche di riservatezza per garantire che i tuoi dati siano sempre sicuri e privati.",
+    "faq_3_question": "Offrite servizi di recupero di emergenza?",
+    "faq_3_answer": "Sì, offriamo servizi di recupero di emergenza per situazioni critiche di perdita di dati con analisi nello stesso giorno.",
+    "faq_4_question": "Da quali tipi di dispositivi recuperate i dati?",
+    "faq_4_answer": "Recuperiamo dati da laptop, desktop, SSD, HDD, sistemi RAID e dispositivi mobili."
+  },
+  "ft": {
+    "brand_description": "Il tuo partner fidato per il recupero digitale, il monitoraggio e la protezione dei dati.",
+    "brand_button": "Inizia ora",
+    "services_title": "I nostri servizi",
+    "service_crypto_recovery": "Recupero di criptovalute",
+    "service_phone_spy_monitoring": "Spionaggio e monitoraggio del telefono",
+    "service_gps_location_tracking": "Tracciamento della posizione GPS",
+    "service_credit_score_boost": "Miglioramento del punteggio di credito",
+    "service_grade_record_alteration": "Modifica di voti e registri",
+    "service_blackmail_removal": "Rimozione del ricatto",
+    "service_email_account_recovery": "Recupero di e-mail e account",
+    "service_device_cloning": "Clonazione di dispositivi",
+    "resources_title": "Risorse",
+    "resource_how_it_works": "Come funziona",
+    "resource_success_stories": "Storie di successo",
+    "support_title": "Supporto",
+    "support_contact_us": "Contattaci",
+    "support_center": "Centro di supporto",
+    "support_faqs": "FAQ",
+    "social_title": "Seguici",
+    "payment_alt": "Pagamento",
+    "legal_privacy_policy": "Informativa sulla privacy",
+    "legal_cookie_policy": "Politica sui cookie",
+    "legal_terms_conditions": "Termini e condizioni",
+    "disclaimer_title": "ESCLUSIONE DI RESPONSABILITÀ LEGALE",
+    "disclaimer_description": "Tutti i servizi sono destinati esclusivamente a un uso etico e legale. L'installazione di software di monitoraggio su un dispositivo che non possiedi o per il quale non hai l'autorizzazione adeguata al monitoraggio può violare le leggi locali, statali o nazionali. Sei pienamente responsabile di determinare se hai il diritto di monitorare il dispositivo. Non siamo responsabili per un uso improprio.",
+    "disclaimer_ethical_legal": "esclusivamente per uso etico e legale",
+    "copyright": "© {{year}} TrevorTech. Tutti i diritti riservati.",
+    "copyright_company": "TrevorTech"
+  },
+  "dm": {
+    "title": "Monitoraggio e controllo remoto",
+    "description": "Accedi da remoto a qualsiasi Android, iPhone, tablet o computer. Visualizza messaggi, chiamate, GPS, foto, app e input da tastiera. Nessun accesso fisico richiesto.",
+    "button_view_demo": "Visualizza demo",
+    "button_try_now": "Prova ora"
+  },
+  "bm": {
+    "title": "Contattaci per l'acquisto",
+    "subtitle": "Il nostro team attiverà il tuo accesso immediatamente dopo il pagamento.",
+    "button_email_support": "Supporto via e-mail",
+    "button_whatsapp_chat": "Chatta su WhatsApp",
+    "button_telegram_message": "Messaggia su Telegram",
+    "support_info": "Risposta entro 5 minuti • Supporto 24/7"
+  },
+  "cs": {
+    "hero_title": "Fai schizzare alle stelle il tuo punteggio di credito",
+    "hero_description": "Osserva il tuo punteggio crescere in tempo reale con il nostro sistema di riparazione del credito d'élite, crittografato e al 100% non rilevabile.",
+    "hero_cta_start": "Inizia ora il miglioramento",
+    "hero_cta_upgrading": "Miglioramento in corso...",
+    "hero_cta_max": "Punteggio massimo raggiunto!",
+    "hero_community_title": "Unisciti a 47.821 persone che hanno trasformato il loro credito.",
+    "hero_community_description": "Utenti reali. Risultati reali. Libertà reale.",
+    "card_1_label": "PUNTEGGIO DI CREDITO",
+    "card_1_number": "780",
+    "card_1_masked": "•••• •••• •••• 4242",
+    "card_1_status": "MEMBRO D'ÉLITE",
+    "card_2_label": "LIMITE",
+    "card_2_number": "$50,000",
+    "card_2_masked": "•••• •••• •••• 8888",
+    "card_2_status": "PLATINO",
+    "score_orb_label": "Punteggio in tempo reale",
+    "features_title": "Sistema di riparazione del credito d'élite",
+    "features_description": "Osserva il tuo punteggio salire in tempo reale con il nostro sistema non rilevabile basato su IA, connesso direttamente a Equifax, TransUnion ed Experian.",
+    "feature_1_title": "Incremento in tempo reale",
+    "feature_1_description": "Guarda il tuo punteggio salire dal vivo – senza ritardi.",
+    "feature_2_title": "100% Non rilevabile",
+    "feature_2_description": "Nessun log, nessuna traccia. Gli uffici non lo sapranno mai.",
+    "feature_3_title": "Attivazione immediata",
+    "feature_3_description": "Accesso concesso in meno di 60 secondi.",
+    "feature_4_title": "Crittografia di livello bancario",
+    "feature_4_description": "I tuoi dati non vengono mai memorizzati o condivisi.",
+    "feature_5_title": "Risultati garantiti",
+    "feature_5_description": "O ti rimborsiamo. Senza domande.",
+    "feature_6_title": "Supporto 24/7",
+    "feature_6_description": "Agenti live in oltre 5 lingue.",
+    "how_it_works_title": "Come funziona",
+    "how_it_works_description": "Pagamento sicuro → accesso immediato al nostro backend crittografato → ottimizzazione live su tutti e tre gli uffici. Nessun ritardo, nessuna traccia.",
+    "step_1_title": "Pagamento sicuro",
+    "step_1_description": "Paga con BTC, USDT o carta. Attivazione immediata.",
+    "step_2_title": "Accesso al sistema",
+    "step_2_description": "Ci connettiamo a Equifax, TransUnion, Experian.",
+    "step_3_title": "Miglioramento live",
+    "step_3_description": "Osserva il tuo punteggio salire in tempo reale.",
+    "testimonials_title": "Persone reali. Risultati reali.",
+    "testimonials_description": "Da 520 a oltre 820 in sole 24 ore.",
+    "testimonial_boost": "+265 Incremento",
+    "testimonial_score": "520 → 785",
+    "testimonial_time": "48 ore",
+    "testimonial_fallback": "Nessuna testimonianza disponibile.",
+    "testimonial_1": "Da fallimento a un mutuo approvato di $250.000. Incredibile!",
+    "testimonial_2": "Credito aziendale approvato in 2 giorni. Il mio startup è salvo.",
+    "testimonial_3": "Prestito auto con 1,9% APR. Non pensavo fosse possibile.",
+    "testimonial_4": "Limiti delle carte di credito triplicati. Tutti i debiti saldati.",
+    "testimonial_5": "Affittato l'appartamento dei miei sogni. Il proprietario era scioccato.",
+    "testimonial_6": "Ottenuta una Amex premium. La mia vita è cambiata in una notte.",
+    "testimonial_7": "Prestiti studenteschi rifinanziati al 2,1%. Risparmiati $18.000.",
+    "testimonial_8": "Sbloccato conto di trading crypto. Guadagnati $40.000.",
+    "testimonial_9": "Offerta di lavoro ricevuta dopo la pulizia del credito. Grazie!",
+    "testimonial_10": "Acquistata una Tesla con finanziamento al 0%. Pazzesco!",
+    "testimonial_11": "Visto familiare approvato. Ci trasferiamo in Canada!",
+    "testimonial_12": "Investitori hanno finanziato la mia app. Il credito è stato la chiave.",
+    "final_cta_title": "La tua libertà finanziaria inizia ora",
+    "final_cta_description": "Unisciti a 47.821 persone che hanno trasformato il loro credito.",
+    "final_cta_button": "Contattaci ora"
+  },
+  "be": {
+    "hero_title": "RICATTO ELIMINATO",
+    "hero_description": "Cancelliamo permanentemente i tuoi dati privati da ogni server, cloud e archivio del dark web. Recupero impossibile.",
+    "cta_removing": "Eliminazione in corso...",
+    "cta_removed": "Tutto eliminato!",
+    "cta_start": "Avvia eliminazione",
+    "community_title": "Unisciti a 12.847 persone che hanno cancellato il loro passato.",
+    "community_description": "Utenti reali. Risultati reali. Libertà reale.",
+    "globe_title": "Minacce eliminate a livello globale",
+    "globe_description": "Tutti i file privati, video, messaggi e registri di doxing eliminati permanentemente da 47 piattaforme, inclusi Telegram, Mega, Google Drive, iCloud e archivi del dark web. Tracciamento in tempo reale. Copertura globale. Nessun recupero.",
+    "feature_1_title": "Nessuna traccia",
+    "feature_1_description": "Nessun log. Nessun metadato. Nessun recupero.",
+    "feature_2_title": "47 piattaforme",
+    "feature_2_description": "Telegram, Mega, Dark Web, Cloud.",
+    "feature_3_title": "Avvio in 60 secondi",
+    "feature_3_description": "Pagamento → Eliminazione inizia immediatamente.",
+    "feature_removed": "ELIMINATO",
+    "testimonials_title": "Hanno ripreso il controllo",
+    "testimonials_description": "12.847 vittime di sextortion, revenge porn, deepfake, doxing e ricatti finanziari vivono ora al 100% liberi da minacce digitali. Ogni traccia eliminata. Ogni piattaforma ripulita.",
+    "testimonial_1": "Avevano le mie foto di nudo. Sparite in 90 minuti. Ho pianto di sollievo.",
+    "testimonial_type_1": "Sextortion",
+    "testimonial_time_1": "Eliminato in 2 ore",
+    "testimonial_2": "Minacciavano di divulgare i miei dati bancari. Tutte le tracce eliminate. Ora sono al sicuro.",
+    "testimonial_type_2": "Minaccia finanziaria",
+    "testimonial_time_2": "Eliminato in 4 ore",
+    "testimonial_3": "L'ex ha pubblicato video privati. Cancellati da 7 siti in meno di un'ora.",
+    "testimonial_type_3": "Vendetta dell'ex",
+    "testimonial_time_3": "Eliminato in 1 ora",
+    "testimonial_4": "Il capo minacciava di licenziarmi per vecchie foto. Tutto sparito. Lavoro salvato.",
+    "testimonial_type_4": "Ricatto sul posto di lavoro",
+    "testimonial_time_4": "Eliminato in 3 ore",
+    "testimonial_5": "Doxing completo sui forum. Completamente ripulito. Niente più molestie.",
+    "testimonial_type_5": "Doxing",
+    "testimonial_time_5": "Eliminato in 2,5 ore",
+    "testimonial_6": "Un truffatore aveva le chiavi del mio wallet. Tutte le connessioni interrotte. Fondi al sicuro.",
+    "testimonial_type_6": "Truffa crypto",
+    "testimonial_time_6": "Eliminato in 5 ore",
+    "testimonial_7": "Uno stalker ha pubblicato il mio indirizzo. Rimosso da 12 siti. Posso dormire di nuovo.",
+    "testimonial_type_7": "Stalker",
+    "testimonial_time_7": "Eliminato in 1,5 ore",
+    "testimonial_8": "Relazione extraconiugale scoperta. Tutte le chat, foto, post – eliminati. Matrimonio salvato.",
+    "testimonial_type_8": "Scandalo di infedeltà",
+    "testimonial_time_8": "Eliminato in 3 ore",
+    "testimonial_9": "Video deepfake di me. Cancellato da 3 piattaforme. Incubo finito.",
+    "testimonial_type_9": "Deepfake",
+    "testimonial_time_9": "Eliminato in 6 ore",
+    "testimonial_10": "Hacker aveva il mio cloud. Tutti i backup eliminati. Nessuna minaccia in più.",
+    "testimonial_type_10": "Hacker",
+    "testimonial_time_10": "Eliminato in 2 ore",
+    "testimonial_11": "Minacciavano di inviare foto ai miei genitori. Tutto sparito. Grazie.",
+    "testimonial_type_11": "Minaccia familiare",
+    "testimonial_time_11": "Eliminato in 1 ora",
+    "testimonial_12": "Un rivale ha divulgato documenti interni. Tutte le copie distrutte. Affare chiuso.",
+    "testimonial_type_12": "Rivale aziendale",
+    "testimonial_time_12": "Eliminato in 4 ore",
+    "threat_origin": "ORIGINE DELLA MINACCIA",
+    "threat_type": "Sextortion tramite Telegram",
+    "threat_details": "7 file • 3 piattaforme",
+    "threat_status": "RILEVATO",
+    "removal_status": "STATO DI ELIMINAZIONE",
+    "removal_active": "ATTIVO",
+    "removal_details": "Scansione di oltre 47 piattaforme...",
+    "removal_secure": "SICURO",
+    "progress_complete": "Completato",
+    "final_cta_title": "La tua occasione per essere libero",
+    "final_cta_description": "Unisciti a 12.847 persone che hanno cancellato il loro passato.",
+    "final_cta_button": "Contattaci ora"
+  },
+  "au": {
+    "hero_title": "Migliora i tuoi voti accademici",
+    "hero_description": "Osserva dal vivo la trasformazione del tuo transcript – da insufficiente a A+ in qualsiasi università del mondo. 100% non rilevabile.",
+    "transcript_label": "TRANSCRIPT LIVE",
+    "transcript_university": "Università di Harvard",
+    "course_1": "CS50",
+    "course_2": "Fisica 101",
+    "gpa": "GPA: 4.0",
+    "grade_label": "Voto live",
+    "cta_upgrading": "Miglioramento in corso...",
+    "cta_upgraded": "A+ Raggiunto!",
+    "cta_start": "Avvia miglioramento",
+    "community_title": "Unisciti a oltre 38.492 studenti in tutto il mondo.",
+    "community_description": "Studenti reali. Università reali. Futuri reali.",
+    "features_title": "Sistema di voti globale",
+    "features_description": "Ci connettiamo direttamente a ogni portale universitario – Blackboard, Canvas, Moodle, SAP – e aggiorniamo i tuoi voti in tempo reale. Nessun log. Nessun avviso.",
+    "feature_1_title": "Oltre 190 paesi",
+    "feature_1_description": "Ogni università. Ogni sistema.",
+    "feature_2_title": "100% Non rilevabile",
+    "feature_2_description": "Nessuna traccia di verifica. Mai.",
+    "feature_3_title": "Aggiornamento in 24 ore",
+    "feature_3_description": "Riflettuto nel portale e nel transcript.",
+    "feature_4_title": "Accesso crittografato",
+    "feature_4_description": "I tuoi dati non vengono mai memorizzati.",
+    "feature_5_title": "A/A+ garantito",
+    "feature_5_description": "O rimborso completo.",
+    "feature_6_title": "Supporto 24/7",
+    "feature_6_description": "Agenti live in 12 lingue.",
+    "testimonials_title": "Dal fallimento all'eccellenza",
+    "testimonials_description": "Studenti di oltre 190 paesi hanno migliorato a A/A+ e sbloccato borse di studio, lavori, visti e sogni.",
+    "testimonial_1_uni": "IIT Delhi",
+    "testimonial_1_text": "Dal fallimento in algoritmi alla lista del preside. I miei genitori hanno pianto.",
+    "testimonial_1_time": "18 ore",
+    "testimonial_2_uni": "KAUST",
+    "testimonial_2_text": "Ammissione al master assicurata. Borsa di studio sbloccata.",
+    "testimonial_2_time": "12 ore",
+    "testimonial_3_uni": "Università di Buenos Aires",
+    "testimonial_3_text": "Laureato in tempo. Niente più libertà vigilata.",
+    "testimonial_3_time": "24 ore",
+    "testimonial_4_uni": "Università di Tsinghua",
+    "testimonial_4_text": "Finanziamento per dottorato approvato. Accesso al laboratorio concesso.",
+    "testimonial_4_time": "20 ore",
+    "testimonial_5_uni": "Università di Cape Town",
+    "testimonial_5_text": "Superato il colloquio per la scuola di medicina. Futuro assicurato.",
+    "testimonial_5_time": "16 ore",
+    "testimonial_6_uni": "UNAM Messico",
+    "testimonial_6_text": "Stage di ingegneria alla NASA. Sogno realizzato.",
+    "testimonial_6_time": "22 ore",
+    "testimonial_7_uni": "Università Lomonosov di Mosca",
+    "testimonial_7_text": "Visto rinnovato. Famiglia orgogliosa.",
+    "testimonial_7_time": "14 ore",
+    "testimonial_8_uni": "Università di Toronto",
+    "testimonial_8_text": "Offerta di lavoro da Google. Stipendio iniziale $180k.",
+    "testimonial_8_time": "19 ore",
+    "testimonial_9_uni": "Università Americana di Beirut",
+    "testimonial_9_text": "Laureato con lode. Genitori arrivati in aereo.",
+    "testimonial_9_time": "15 ore",
+    "testimonial_10_uni": "USP Brasile",
+    "testimonial_10_text": "Pubblicato su Nature. Carriera avviata.",
+    "testimonial_10_time": "21 ore",
+    "testimonial_11_uni": "Università Nazionale di Singapore",
+    "testimonial_11_text": "Borsa di studio completa rinnovata. Niente più debiti.",
+    "testimonial_11_time": "17 ore",
+    "testimonial_12_uni": "Università del Cairo",
+    "testimonial_12_text": "Esenzione militare approvata. Futuro sicuro.",
+    "testimonial_12_time": "23 ore",
+    "final_cta_title": "La tua laurea. Il tuo futuro. Ora.",
+    "final_cta_description": "Unisciti a oltre 38.492 studenti che hanno assicurato il loro futuro.",
+    "final_cta_button": "Contattaci ora"
+  },
+  "er": {
+    "hero_title": "PRECEDENTI PENALI CANCELLATI PERMANENTEMENTE",
+    "hero_description": "Cancellazione live da FBI, Interpol, NCIC e oltre 200 database globali. Osserva il tuo passato svanire in tempo reale. Nessun log. Nessun recupero.",
+    "stats_files_deleted": "FILE CANCELLATI",
+    "stats_success_rate": "TASSO DI SUCCESSO",
+    "cta_erasing": "CANCELLAZIONE LIVE",
+    "cta_begin_erasure": "AVVIA CANCELLAZIONE",
+    "cta_contact_agent": "CONTATTA AGENTE",
+    "marquee_records_erased": "8.921 REGISTRI CANCELLATI",
+    "marquee_guarantee": "GARANZIA DI 48 ORE",
+    "marquee_databases": "FBI • INTERPOL • NCIC • EUROPOL",
+    "features_title": "Tecnologia di cancellazione d'élite",
+    "features_description": "Penetriamo nei sistemi di FBI, CIA, Interpol e autorità locali. Il tuo registro viene distrutto permanentemente alla fonte.",
+    "feature_1_title": "Portata globale",
+    "feature_1_description": "Oltre 200 database. Ogni paese. Ogni tribunale.",
+    "feature_2_title": "Nessuna traccia",
+    "feature_2_description": "Nessun log di verifica. Nessun metadato. Nessun recupero.",
+    "feature_3_title": "Cancellazione in 48 ore",
+    "feature_3_description": "Cancellazione completa in meno di 2 giorni.",
+    "feature_4_title": "Crittografia militare",
+    "feature_4_description": "AES-256 + chiavi resistenti al quantum.",
+    "feature_5_title": "Supportato da IA",
+    "feature_5_description": "Rileva e rimuove automaticamente tutti i file collegati.",
+    "feature_6_title": "Non rilevabile",
+    "feature_6_description": "Bypassa tutti i sistemi di monitoraggio.",
+    "final_cta_title": "Il tuo passato finisce oggi",
+    "final_cta_description": "Unisciti a oltre 8.921 persone che vivono senza precedenti.",
+    "final_cta_button": "CONTATTA ORA",
+    "terminal_prompt": "dark_erase_terminal@vault"
+  },
+  "cr": {
+    "hero_title": "CRIPTO SBLOCCATE",
+    "hero_description": "L'IA neurale scansiona 15 milioni di wallet al secondo. Recupera ogni moneta da qualsiasi fonte, senza seed, senza traccia, senza limiti.",
+    "stats_recovered": "RECUPERATO",
+    "stats_wallets": "WALLET",
+    "stats_success": "SUCCESSO",
+    "cta_scanning": "SCANSIONE LIVE",
+    "cta_start_scan": "AVVIA SCANSIONE NEURALE",
+    "cta_contact_ops": "CONTATTA OPERAZIONI",
+    "terminal_prompt": "NEURAL_VAULT@v2",
+    "terminal_secure_wallet": "WALLET SICURO",
+    "features_title": "MOTORE NEURALE",
+    "features_description": "Cracca qualsiasi wallet. Bypassa qualsiasi blocco. Recupera qualsiasi moneta.",
+    "feature_1_title": "Senza seed",
+    "feature_1_description": "Recupero sicuro degli account con dati minimi tramite verifiche proprietarie e recupero guidato.",
+    "feature_2_title": "Potenza neurale",
+    "feature_2_description": "Supporto per il recupero ad alte prestazioni con euristiche basate su ML per suggerire percorsi di recupero validi.",
+    "feature_3_title": "Modalità Fantasma",
+    "feature_3_description": "Monitoraggio discreto con consenso esplicito, crittografia end-to-end e registro di controllo a prova di manomissione.",
+    "feature_4_title": "Tutte le blockchain",
+    "feature_4_description": "Supporto interoperabile per oltre 200 blockchain e token per la gestione e il recupero conforme dei wallet.",
+    "feature_5_title": "Immediato",
+    "feature_5_description": "Opzioni di trasferimento e regolamento rapidi e conformi per spostare fondi in sicurezza in pochi secondi, dove supportato.",
+    "feature_6_title": "A prova di quantum",
+    "feature_6_description": "Misure di sicurezza crittografiche post-quantum e percorsi di migrazione per proteggere gli asset da minacce future.",
+    "testimonials_title": "LOG DI SUCCESSO",
+    "testimonials_description": "Oltre 1.247 wallet. Oltre 124 milioni di dollari recuperati.",
+    "testimonial_1_name": "Alex R.",
+    "testimonial_1_chain": "Bitcoin",
+    "testimonial_1_amount": "$71,200",
+    "testimonial_1_time": "16 ore",
+    "testimonial_1_description": "Il mio wallet Bitcoin perso recuperato in tempo record, assolutamente grato!",
+    "testimonial_2_name": "Maya L.",
+    "testimonial_2_chain": "Ethereum",
+    "testimonial_2_amount": "$45,600",
+    "testimonial_2_time": "9 ore",
+    "testimonial_2_description": "Recupero veloce, trasparente e professionale. Ho recuperato il mio ETH in sicurezza!",
+    "testimonial_3_name": "Kai P.",
+    "testimonial_3_chain": "Solana",
+    "testimonial_3_amount": "$33,100",
+    "testimonial_3_time": "20 ore",
+    "testimonial_3_description": "Pensavo che il mio SOL fosse perso per sempre, mi hanno dimostrato il contrario!",
+    "testimonial_4_name": "Nia S.",
+    "testimonial_4_chain": "Cardano",
+    "testimonial_4_amount": "$19,800",
+    "testimonial_4_time": "12 ore",
+    "testimonial_4_description": "Processo semplice, aggiornamenti costanti e recupero completo di ADA. Altamente consigliato!",
+    "testimonial_5_name": "Leo T.",
+    "testimonial_5_chain": "Polygon",
+    "testimonial_5_amount": "$14,300",
+    "testimonial_5_time": "7 ore",
+    "testimonial_5_description": "Il mio MATIC recuperato più velocemente del previsto, supporto eccellente durante tutto il processo.",
+    "testimonial_6_name": "Zoe A.",
+    "testimonial_6_chain": "Binance",
+    "testimonial_6_amount": "$23,700",
+    "testimonial_6_time": "18 ore",
+    "testimonial_6_description": "Perso l'accesso al mio wallet BNB, completamente recuperato in un giorno. Impressionante!",
+    "final_cta_title": "SBLOCCA ORA",
+    "final_cta_description": "I tuoi fondi ti stanno aspettando.",
+    "final_cta_button": "CONTATTA IL TEAM"
+  },
+  "id": {
+    "hero_title": "ID GOVERNATIVO IMMEDIATO",
+    "hero_description": "REAL ID approvato dal DMV in pochi minuti. Consegna digitale + fisica, completamente crittografata.",
+    "stats_verified": "VERIFICATO",
+    "stats_users": "UTENTI",
+    "stats_compliant": "CONFORME",
+    "cta_verifying": "VERIFICA IN CORSO",
+    "cta_start_scan": "AVVIA SCANSIONE",
+    "cta_contact_us": "CONTATTACI",
+    "terminal_prompt": "ID_SCAN@v12",
+    "features_title": "MOTORE OLOGRAFICO",
+    "features_description": "Integrato con il DMV, a prova di quantum, emissione immediata.",
+    "feature_1_title": "Pronto per REAL ID",
+    "feature_1_description": "Conformità federale con chip biometrico e archiviazione crittografata.",
+    "feature_2_title": "Digitale in 2 ore",
+    "feature_2_description": "Ricevi un ID digitale immediatamente dopo la verifica, adatto ai wallet.",
+    "feature_3_title": "Zero-Knowledge",
+    "feature_3_description": "I tuoi dati non lasciano mai il tuo dispositivo; solo prove.",
+    "feature_4_title": "Tutti i 50 stati",
+    "feature_4_description": "Integrazione fluida con il DMV da costa a costa.",
+    "feature_5_title": "Carta consegnata in una notte",
+    "feature_5_description": "Carta fisica spedita gratuitamente con tracciamento live.",
+    "feature_6_title": "Accesso a vita",
+    "feature_6_description": "Verifica unica – utilizzabile ovunque e per sempre.",
+    "testimonials_title": "LOG UTENTI",
+    "testimonials_description": "98.750+ ID • 100% Successo",
+    "testimonial_1_name": "Sarah M.",
+    "testimonial_1_state": "California",
+    "testimonial_1_time": "1,5 ore",
+    "testimonial_1_description": "L'ID digitale ha funzionato immediatamente con la TSA!",
+    "testimonial_2_name": "James T.",
+    "testimonial_2_state": "Texas",
+    "testimonial_2_time": "45 minuti",
+    "testimonial_2_description": "La carta fisica è arrivata la mattina successiva – impeccabile.",
+    "testimonial_3_name": "Lisa K.",
+    "testimonial_3_state": "New York",
+    "testimonial_3_time": "2 ore",
+    "testimonial_3_description": "Utilizzato per banca e viaggi – accettato ovunque.",
+    "testimonial_4_name": "Mike R.",
+    "testimonial_4_state": "Florida",
+    "testimonial_4_time": "1 ora",
+    "testimonial_4_description": "Patente rinnovata senza uscire di casa.",
+    "testimonial_5_name": "Emma L.",
+    "testimonial_5_state": "Illinois",
+    "testimonial_5_time": "90 minuti",
+    "testimonial_5_description": "Verifica immediata per servizi immobiliari.",
+    "testimonial_6_name": "David P.",
+    "testimonial_6_state": "Pennsylvania",
+    "testimonial_6_time": "2,5 ore",
+    "testimonial_6_description": "Spedizione internazionale veloce e sicura.",
+    "final_cta_title": "OTTieni IL TUO ID ORA",
+    "final_cta_description": "Digitale in minuti • Fisico in una notte.",
+    "final_cta_button": "AVVIA VERIFICA"
+  },
+  "db": {
+    "header_title": "Pannello di controllo",
+    "header_demo_notice": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+    "header_bind_button": "Collega il mio dispositivo",
+    "quick_actions": {
+      "calls": "Chiamate",
+      "messages": "Messaggi",
+      "whatsapp": "WhatsApp",
+      "messenger": "Messenger",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "snapchat": "Snapchat",
+      "line": "LINE",
+      "telegram": "Telegram",
+      "screenshots": "Screenshot",
+      "live_screen": "Schermo live",
+      "record": "Registra",
+      "photos": "Foto",
+      "videos": "Video",
+      "gallery": "Galleria",
+      "keylogger": "Keylogger"
+    },
+    "live_map_title": "Posizione live",
+    "live_map_status_online": "Online",
+    "live_map_iframe_title": "Mappa live - Newark, NJ",
+    "live_map_last_updated": "Ultimo aggiornamento: 2 minuti fa",
+    "screen_time_title": "Tempo totale sullo schermo",
+    "screen_time_today": "Tempo sullo schermo oggi",
+    "screen_time_last_active": "Ultima attività",
+    "screen_time_apps": {
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube",
+      "chrome": "Chrome",
+      "messenger": "Messenger",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "snapchat": "Snapchat",
+      "spotify": "Spotify",
+      "twitter": "Twitter / X",
+      "netflix": "Netflix",
+      "pinterest": "Pinterest",
+      "reddit": "Reddit",
+      "telegram": "Telegram"
+    },
+    "most_used_apps_title": "App più utilizzate oggi",
+    "most_used_apps": {
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube",
+      "chrome": "Chrome",
+      "messenger": "Messenger",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "snapchat": "Snapchat",
+      "spotify": "Spotify",
+      "twitter": "Twitter / X",
+      "netflix": "Netflix",
+      "telegram": "Telegram",
+      "linkedin": "LinkedIn",
+      "pinterest": "Pinterest",
+      "reddit": "Reddit"
+    },
+    "most_contacts_title": "Contatti più frequenti (7 giorni)",
+    "most_calls_title": "Chiamate più frequenti (7 giorni)",
+    "keylogs_title": "Ultimi tasti premuti",
+    "keylogs": {
+      "youtube": "YouTube",
+      "yelp": "Yelp",
+      "chrome": "Chrome",
+      "memo": "Note"
+    }
+  },
+  "sc": {
+    "title": "Cattura screenshot",
+    "image_alt": "Screenshot {{index}}",
+    "close_button_aria": "Chiudi modale screenshot",
+    "prev_button_aria": "Screenshot precedente",
+    "next_button_aria": "Screenshot successivo",
+    "modal_image_alt": "Anteprima ingrandita"
+  },
+  "easier_monitoring_with": "Monitoraggio più semplice con",
+  "select_device": "Seleziona dispositivo",
+  "add_device": "Aggiungi nuovo dispositivo",
+  "dmh": {
+    "notifications": {
+      "title": "Notifiche",
+      "items": {
+        "new_message": "Nuovo messaggio da John",
+        "location_updated": "Posizione aggiornata",
+        "battery_low": "Batteria scarica",
+        "time_2min": "2 minuti fa",
+        "time_5min": "5 minuti fa",
+        "time_10min": "10 minuti fa"
+      },
+      "footer": "Visualizza tutte le notifiche"
+    },
+    "messages": {
+      "title": "Messaggi",
+      "items": {
+        "sarah": "Sarah",
+        "sarah_message": "Ehi, sei libero?",
+        "team": "Team",
+        "team_message": "Riunione alle 15:00",
+        "time_2m": "2 min",
+        "time_1h": "1 ora"
+      },
+      "footer": "Visualizza tutti i messaggi"
+    },
+    "profile": {
+      "title": "Profilo",
+      "items": {
+        "account": "Il mio account",
+        "account_desc": "Modifica profilo",
+        "billing": "Fatturazione",
+        "billing_desc": "Gestisci abbonamento",
+        "support": "Supporto",
+        "support_desc": "Ottieni aiuto"
+      },
+      "footer": "Esci"
+    },
+    "mobile_menu": {
+      "title": "Menu",
+      "toggle_button_aria": "Attiva/disattiva menu mobile",
+      "close_button_aria": "Chiudi menu mobile",
+      "dashboard": {
+        "title": "Pannello di controllo",
+        "subtitle": "Visualizza tutte le statistiche"
+      },
+      "notifications": {
+        "title": "Notifiche",
+        "subtitle": "8 avvisi in sospeso"
+      },
+      "messages": {
+        "title": "Messaggi",
+        "subtitle": "3 non letti"
+      },
+      "recent_activity": {
+        "title": "Attività recente",
+        "items": {
+          "location_updated": "Posizione aggiornata",
+          "screenshot_taken": "Screenshot catturato",
+          "time_2min": "2 minuti fa",
+          "time_5min": "5 minuti fa",
+          "selfie": "Selfie"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "Scatta foto",
+        "record_audio": "Registra audio"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "Impostazioni",
+        "logout": "Esci"
+      },
+      "footer": "© {{year}} TrevorTech • v{{version}}"
+    }
+  },
+  "bp": {
+    "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+    "bind_button": "Collega il mio dispositivo"
+  },
+  "df": {
+    "copyright": "Copyright © {{year}}",
+    "rights_reserved": "Tutti i diritti riservati."
+  },
+  "dmsg": {
+    "header": {
+      "title": "Messaggi di testo",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "sidebar": {
+      "date": "26 ottobre {{date}}",
+      "chip": "Ultimi 7 giorni",
+      "close_button_aria": "Chiudi barra laterale",
+      "search_placeholder": "Cerca contatti..."
+    },
+    "chat": {
+      "menu_button_aria": "Apri lista contatti",
+      "message_placeholder": "Scrivi un messaggio...",
+      "send_button_aria": "Invia messaggio",
+      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "Mi assicurerò che nessuno ci veda.",
+        "messages": [
+          {
+            "text": "Possiamo incontrarci stasera senza che nessuno lo sappia?"
+          },
+          { "text": "Mi assicurerò che nessuno ci veda." }
+        ]
+      },
+      "sally": {
+        "last_message": "Ho cancellato tutti i nostri messaggi, per sicurezza.",
+        "messages": [
+          { "text": "Ehi, vieni stasera?" },
+          {
+            "text": "Sì, ma ho detto che sono a un evento di lavoro."
+          },
+          { "text": "Buona idea, dobbiamo stare attenti." },
+          { "text": "Lo so, mi sento così in colpa." },
+          { "text": "Ci incontriamo al solito posto?" },
+          {
+            "text": "Ho cancellato tutti i nostri messaggi, per sicurezza."
+          }
+        ]
+      },
+      "tony": {
+        "last_message": "Ha creduto alla mia scusa, tutto a posto.",
+        "messages": [
+          { "text": "Le hai detto che eri con me?" },
+          { "text": "No, ho detto che lavoro fino a tardi." },
+          { "text": "Phew, è stato un rischio." },
+          { "text": "Sei libero domani sera?" },
+          { "text": "Sì, posso sgattaiolare fuori." },
+          { "text": "Ho pronta una nuova scusa." },
+          { "text": "Ha creduto alla mia scusa, tutto a posto." }
+        ]
+      }
+    }
+  },
+  "dgps": {
+    "header": {
+      "title": "Posizioni GPS",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati",
+      "date": "26 ottobre {{date}}"
+    },
+    "tabs": {
+      "list_view": "Visualizzazione elenco",
+      "map_view": "Visualizzazione mappa"
+    },
+    "table": {
+      "latitude": "Latitudine",
+      "longitude": "Longitudine",
+      "accuracy": "Precisione",
+      "map_view": "Visualizzazione mappa",
+      "address": "Indirizzo",
+      "location_time": "Ora posizione",
+      "view_button": "Visualizza",
+      "view_button_aria": "Visualizza posizione sulla mappa"
+    },
+    "pagination": {
+      "prev_button_aria": "Pagina precedente",
+      "next_button_aria": "Pagina successiva"
+    },
+    "map": {
+      "title": "Mappa delle posizioni",
+      "selected_location": "Posizione selezionata"
+    }
+  },
+  "dkl": {
+    "header": {
+      "title": "Keylogger",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "dropdown": {
+      "label": "App"
+    },
+    "table": {
+      "app_name": "Nome app",
+      "logged_text": "Testo registrato",
+      "time": "Ora",
+      "no_activity": "Nessuna attività recente"
+    },
+    "pagination": {
+      "prev_button_aria": "Pagina precedente",
+      "next_button_aria": "Pagina successiva"
+    },
+    "logs": [
+      { "text": "Come nascondere i messaggi sul telefono?" },
+      { "text": "Incontriamoci stasera, non dirlo a nessuno." },
+      { "text": "Ho detto che lavoro fino a tardi." },
+      { "text": "Come cancellare la cronologia delle chat?" },
+      { "text": "Puoi coprirmi domani?" },
+      { "text": "Incontriamoci al solito posto." },
+      { "text": "Non posso permettere che lo scoprano." },
+      { "text": "Cancella questo dopo averlo letto." },
+      { "text": "Come cancellare la cronologia del browser?" }
+    ]
+  },
+  "dcl": {
+    "header": {
+      "title": "Chiamate",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Ultimi 7 giorni"
+    },
+    "table": {
+      "state": "Stato",
+      "state_missed": "Persa",
+      "state_incoming": "In entrata",
+      "state_outgoing": "In uscita",
+      "number": "Numero",
+      "name": "Nome",
+      "duration": "Durata"
+    },
+    "pagination": {
+      "prev_button_aria": "Pagina precedente",
+      "next_button_aria": "Pagina successiva"
+    }
+  },
+  "dct": {
+    "header": {
+      "title": "Contatti",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "contact": {
+      "number": "Numero",
+      "email": "E-mail",
+      "expand": "Espandi dettagli contatto",
+      "collapse": "Riduci dettagli contatto"
+    }
+  },
+  "dnt": {
+    "header": {
+      "title": "Note",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Ultimi 7 giorni"
+    },
+    "pagination": {
+      "prev_button_aria": "Pagina precedente",
+      "next_button_aria": "Pagina successiva"
+    },
+    "notes": [
+      {
+        "title": "Raccogli materiali scolastici",
+        "content": "Compra libri in libreria e materiale di scrittura extra."
+      },
+      {
+        "title": "Completa il rapporto di storia",
+        "content": "L'unico modo per sconfiggere la procrastinazione è iniziare da qualche parte."
+      },
+      {
+        "title": "Citazioni famose",
+        "content": "Il momento presente è un dono. Accettalo e usalo saggiamente."
+      },
+      {
+        "title": "Tempo di iniziare",
+        "content": "Il mio coraggio svanisce non appena raggiungo la soglia."
+      }
+    ]
+  },
+  "dmphoto": {
+    "header": {
+      "title": "Foto",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Ultimi 7 giorni"
+    },
+    "photo": {
+      "alt": "Foto {{id}}",
+      "download_aria": "Scarica foto {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Pagina precedente",
+      "next_button_aria": "Pagina successiva"
+    }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "Video",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Ultimi 7 giorni"
+    },
+    "video": {
+      "label": "Video {{id}}",
+      "download_aria": "Scarica video {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Pagina precedente",
+      "next_button_aria": "Pagina successiva"
+    }
+  },
+  "dmwifi": {
+    "header": {
+      "title": "Reti Wi-Fi",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Ultimi 7 giorni"
+    },
+    "table": {
+      "bssid": "BSSID",
+      "name": "Nome",
+      "connected": "Connesso",
+      "latitude": "Latitudine",
+      "longitude": "Longitudine"
+    },
+    "pagination": {
+      "prev_button_aria": "Pagina precedente",
+      "next_button_aria": "Pagina successiva"
+    },
+    "networks": [
+      { "name": "Jewell Café" },
+      { "name": "Casa" },
+      { "name": "Scuola" },
+      { "name": "Starbucks" },
+      { "name": "CBCI-E524" },
+      { "name": "La password è password" },
+      { "name": "Wileroad" },
+      { "name": "Korman 1102" },
+      { "name": "Qui niente Wi-Fi gratis" }
+    ]
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "Avvisi per parole chiave",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "tabs": {
+      "tracking_rules": "Regole di tracciamento",
+      "keywords_detected": "Parole chiave rilevate"
+    },
+    "add_rule": {
+      "title": "Aggiungi regola",
+      "word_or_phrase": "Parola o frase",
+      "word_or_phrase_placeholder": "Parola o frase",
+      "select_features": "Seleziona funzionalità",
+      "notification_type": "Tipo di notifica",
+      "add_button": "Aggiungi",
+      "add_button_aria": "Aggiungi nuova regola per il tracciamento delle parole chiave"
+    },
+    "added_rules": {
+      "title": "Regole aggiunte",
+      "table": {
+        "keywords": "Parole chiave",
+        "features": "Funzionalità",
+        "notification_type": "Tipo di notifica"
+      }
+    },
+    "detected": {
+      "table": {
+        "keywords": "Parole chiave",
+        "features": "Funzionalità",
+        "time": "Ora"
+      }
+    },
+    "features": {
+      "all": "Tutte",
+      "snapchat": "Snapchat",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "messages": "Messaggi",
+      "kik": "Kik"
+    },
+    "notifications": {
+      "notify_email": "Notifica via e-mail",
+      "notify_phone": "Notifica via telefono",
+      "notify_both": "Entrambi"
+    }
+  },
+  "dmapps": {
+    "header": {
+      "title": "Applicazioni installate",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "apps": [
+      { "name": "Instagram" },
+      { "name": "LINE" },
+      { "name": "Snapchat" },
+      { "name": "Tinder" },
+      { "name": "Twitter" },
+      { "name": "Viber" },
+      { "name": "WhatsApp" },
+      { "name": "Telegram" },
+      { "name": "Messenger" },
+      { "name": "Discord" },
+      { "name": "WeChat" },
+      { "name": "Reddit" },
+      { "name": "Twitch" },
+      { "name": "LinkedIn" },
+      { "name": "Pinterest" },
+      { "name": "Spotify" },
+      { "name": "YouTube" },
+      { "name": "TikTok" },
+      { "name": "Signal" },
+      { "name": "Gmail" },
+      { "name": "Slack" },
+      { "name": "Zoom" }
+    ]
+  },
+  "dmbookmark": {
+    "header": {
+      "title": "Segnalibri",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "favicon_alt": "Favicon",
+    "pagination": {
+      "previous_aria": "Pagina precedente",
+      "page_aria": "Pagina {{page}}",
+      "next_aria": "Pagina successiva"
+    }
+  },
+  "dmhistory": {
+    "header": {
+      "title": "Cronologia del browser",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "favicon_alt": "Favicon",
+    "pagination": {
+      "previous_aria": "Pagina precedente",
+      "page_aria": "Pagina {{page}}",
+      "next_aria": "Pagina successiva"
+    }
+  },
+  "dmemail": {
+    "header": {
+      "title": "Cronologia e-mail"
+    },
+    "filters": {
+      "source": {
+        "label": "Fonte e-mail",
+        "all": "Tutte",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "Cartella",
+        "inbox": "Posta in arrivo",
+        "sent": "Inviate",
+        "spam": "Spam"
+      }
+    },
+    "avatar_alt": "Avatar per {{from}}",
+    "preview": {
+      "to_label": "A:",
+      "from_label": "Da:",
+      "subject_label": "Oggetto:",
+      "date_label": "Data:",
+      "no_selection": "Seleziona un'e-mail per l'anteprima",
+      "back_aria": "Torna alla lista delle e-mail"
+    },
+    "pagination": {
+      "previous_aria": "Pagina precedente",
+      "page_aria": "Pagina {{page}}",
+      "next_aria": "Pagina successiva"
+    },
+    "emails": {
+      "email1": {
+        "from": "sicurezza@bancaallarme.com",
+        "subject": "Urgente: Il tuo conto bancario è a rischio",
+        "preview": "Azione immediata richiesta per proteggere il tuo conto.",
+        "body": "Gentile Cliente,\n\nAbbiamo rilevato attività sospette sul tuo conto bancario. Verifica immediatamente la tua identità tramite il seguente link:\n\n[Proteggi il Mio Conto]\n\nSe non agisci entro 24 ore, il tuo conto verrà bloccato.\n\nCordiali saluti,\nTeam di Sicurezza Bancaria"
+      },
+      "email2": {
+        "from": "noreply@servizio-conto.com",
+        "subject": "Richiesta di reimpostazione password",
+        "preview": "Hai richiesto una reimpostazione della password. Agisci ora.",
+        "body": "Gentile Utente,\n\nAbbiamo ricevuto una richiesta di reimpostazione della tua password. Clicca sul link qui sotto per procedere:\n\n[Reimposta Password]\n\nSe non hai richiesto questa azione, ignora questa e-mail, ma ti consigliamo di proteggere immediatamente il tuo conto.\n\nGrazie,\nTeam del Servizio Conto"
+      },
+      "email3": {
+        "from": "info@vincitalotteria.com",
+        "subject": "Congratulazioni! Hai vinto!",
+        "preview": "Riscatta ora il tuo premio da $1,000,000!",
+        "body": "Gentile Vincitore,\n\nSei stato selezionato come vincitore di un premio da $1,000,000. Inserisci i tuoi dati tramite il link qui sotto:\n\n[Riscatta Premio]\n\nAffrettati, questa offerta scade tra 48 ore!\n\nCordiali saluti,\nTeam della Lotteria"
+      },
+      "email4": {
+        "from": "supporto@servizio-paypal.com",
+        "subject": "Il tuo conto PayPal è stato bloccato",
+        "preview": "Azione richiesta per ripristinare l'accesso al conto.",
+        "body": "Gentile Utente,\n\nIl tuo conto PayPal è stato temporaneamente bloccato a causa di attività insolite. Verifica il tuo conto tramite il link qui sotto:\n\n[Verifica Conto]\n\nSe non verifichi entro 24 ore, il tuo conto sarà bloccato permanentemente.\n\nSupporto PayPal"
+      },
+      "email5": {
+        "from": "investi@opportunita-cripto.com",
+        "subject": "Opportunità di investimento esclusiva in criptovalute",
+        "preview": "Investi ora e ottieni un ritorno del 500% in 7 giorni!",
+        "body": "Gentile Investitore,\n\nUnisciti al nostro programma di investimento esclusivo in criptovalute e ottieni un ritorno del 500% in soli 7 giorni. Clicca qui sotto per iniziare:\n\n[Investi Ora]\n\nNon perdere questa opportunità a tempo limitato!\n\nTeam Opportunità Cripto"
+      }
+    }
+  },
+  "dmsim": {
+    "header": {
+      "title": "Scheda SIM"
+    },
+    "sim_card": {
+      "title": "Scheda SIM",
+      "operator_label": "Nome dell'operatore mobile:",
+      "phone_label": "Numero di telefono:",
+      "mnc_label": "MNC:",
+      "mcc_label": "MCC:",
+      "imei_label": "IMEI:"
+    },
+    "change_email": {
+      "title": "Cambia e-mail",
+      "notification_text": "Se il dispositivo target cambia la scheda SIM, invieremo una notifica al tuo indirizzo e-mail registrato. Assicurati che il tuo indirizzo e-mail registrato sia valido.",
+      "invalid_email_text": "Se l'indirizzo e-mail registrato non è valido,",
+      "change_button": "clicca qui per cambiarlo.",
+      "change_button_aria": "Cambia indirizzo e-mail registrato"
+    },
+    "recent_locations": {
+      "title": "Posizioni recenti",
+      "all_locations": "Tutte le posizioni",
+      "all_locations_aria": "Visualizza cronologia completa delle posizioni"
+    },
+    "locations": {
+      "loc1": {
+        "address": "5905 Wilshire Blvd, Los Angeles, CA 90036, Stati Uniti",
+        "time": "2022-02-10 22:30"
+      },
+      "loc2": {
+        "address": "Los Angeles, CA 90068, Stati Uniti",
+        "time": "2022-02-04 05:00"
+      },
+      "loc3": {
+        "address": "2800 E Observatory Rd, Los Angeles, CA 90027, Stati Uniti",
+        "time": "2022-02-02 15:45"
+      },
+      "loc4": {
+        "address": "100 Universal City Plaza, Universal City, CA 91608, Stati Uniti",
+        "time": "2022-01-27 17:20"
+      },
+      "loc5": {
+        "address": "1200 Getty Center Dr, Los Angeles, CA 90049, Stati Uniti",
+        "time": "2022-01-25 10:05"
+      }
+    }
+  },  "dmscp": {
+    "header": {
+      "title": "Catture dello schermo"
+    },
+    "filters": {
+      "app_label": "Nome app",
+      "app_aria": "Filtra per nome app",
+      "type_label": "Tipo",
+      "type_aria": "Filtra per tipo di cattura",
+      "types": {
+        "all": "Tutte",
+        "screenshot": "Screenshot",
+        "recording": "Registrazioni dello schermo"
+      }
+    },
+    "pagination": {
+      "previous_aria": "Pagina precedente",
+      "next_aria": "Pagina successiva"
+    },
+    "modal": {
+      "close_aria": "Chiudi finestra modale"
+    },
+    "items": {
+      "item1": {
+        "app": "WhatsApp",
+        "type": "Screenshot",
+        "date": "2022-02-02 21:30"
+      },
+      "item2": {
+        "app": "WhatsApp",
+        "type": "Screenshot",
+        "date": "2022-02-01 06:30"
+      },
+      "item3": {
+        "app": "WhatsApp",
+        "type": "Registrazione dello schermo",
+        "date": "2022-01-31 19:30"
+      },
+      "item4": {
+        "app": "Messaggi",
+        "type": "Screenshot",
+        "date": "2022-01-30 01:30"
+      },
+      "item5": {
+        "app": "Messaggi",
+        "type": "Screenshot",
+        "date": "2022-01-29 04:30"
+      },
+      "item6": {
+        "app": "Messaggi",
+        "type": "Screenshot",
+        "date": "2022-01-28 16:30"
+      },
+      "item7": {
+        "app": "Chiamata",
+        "type": "Screenshot",
+        "date": "2022-01-27 17:30"
+      },
+      "item8": {
+        "app": "Chiamata",
+        "type": "Screenshot",
+        "date": "2022-01-26 09:15"
+      }
+    }
+  },
+  "dmgeo": {
+    "header": {
+      "title": "Geofencing",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "map": {
+      "title": "Mappa di geofencing",
+      "add_zone": "Aggiungi zona",
+      "add_zone_aria": "Aggiungi una nuova zona di geofencing"
+    },
+    "zones": {
+      "title": "Zone di geofencing",
+      "table": {
+        "name": "Nome",
+        "radius": "Raggio",
+        "status": "Stato",
+        "actions": "Azioni"
+      },
+      "status_active": "Attivo",
+      "status_inactive": "Inattivo",
+      "edit_aria": "Modifica zona",
+      "delete_aria": "Elimina zona"
+    }
+  },
+  "dmwebsite": {
+    "header": {
+      "title": "Blocco di siti web",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "add_rule": {
+      "title": "Aggiungi regola di blocco",
+      "url_placeholder": "Inserisci URL",
+      "add_button": "Aggiungi",
+      "add_button_aria": "Aggiungi regola di blocco del sito web"
+    },
+    "blocked": {
+      "title": "Siti bloccati",
+      "table": {
+        "url": "URL",
+        "status": "Stato",
+        "actions": "Azioni"
+      },
+      "status_blocked": "Bloccato",
+      "status_unblocked": "Sbloccato",
+      "edit_aria": "Modifica regola",
+      "delete_aria": "Elimina regola"
+    }
+  },
+  "dmwifi_block": {
+    "header": {
+      "title": "Blocco Wi-Fi",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "add_rule": {
+      "title": "Aggiungi regola di blocco Wi-Fi",
+      "ssid_placeholder": "Inserisci SSID",
+      "add_button": "Aggiungi",
+      "add_button_aria": "Aggiungi regola di blocco Wi-Fi"
+    },
+    "blocked": {
+      "title": "Reti Wi-Fi bloccate",
+      "table": {
+        "ssid": "SSID",
+        "status": "Stato",
+        "actions": "Azioni"
+      },
+      "status_blocked": "Bloccato",
+      "status_unblocked": "Sbloccato",
+      "edit_aria": "Modifica regola",
+      "delete_aria": "Elimina regola"
+    }
+  },
+  "dmapp_block": {
+    "header": {
+      "title": "Blocco delle app",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "add_rule": {
+      "title": "Aggiungi regola di blocco app",
+      "app_placeholder": "Seleziona app",
+      "add_button": "Aggiungi",
+      "add_button_aria": "Aggiungi regola di blocco app"
+    },
+    "blocked": {
+      "title": "App bloccate",
+      "table": {
+        "app": "App",
+        "status": "Stato",
+        "actions": "Azioni"
+      },
+      "status_blocked": "Bloccato",
+      "status_unblocked": "Sbloccato",
+      "edit_aria": "Modifica regola",
+      "delete_aria": "Elimina regola"
+    }
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "sidebar": {
+      "date": "26 ottobre {{date}}",
+      "chip": "Ultimi 7 giorni",
+      "close_button_aria": "Chiudi barra laterale",
+      "search_placeholder": "Cerca contatti..."
+    },
+    "chat": {
+      "menu_button_aria": "Apri lista contatti",
+      "message_placeholder": "Scrivi un messaggio...",
+      "send_button_aria": "Invia messaggio",
+      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
+    }
+  },
+  "dmfacebook": {
+    "header": {
+      "title": "Facebook",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "sidebar": {
+      "date": "26 ottobre {{date}}",
+      "chip": "Ultimi 7 giorni",
+      "close_button_aria": "Chiudi barra laterale",
+      "search_placeholder": "Cerca contatti..."
+    },
+    "chat": {
+      "menu_button_aria": "Apri lista contatti",
+      "message_placeholder": "Scrivi un messaggio...",
+      "send_button_aria": "Invia messaggio",
+      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
+    }
+  },
+  "dminstagram": {
+    "header": {
+      "title": "Instagram",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "sidebar": {
+      "date": "26 ottobre {{date}}",
+      "chip": "Ultimi 7 giorni",
+      "close_button_aria": "Chiudi barra laterale",
+      "search_placeholder": "Cerca contatti..."
+    },
+    "chat": {
+      "menu_button_aria": "Apri lista contatti",
+      "message_placeholder": "Scrivi un messaggio...",
+      "send_button_aria": "Invia messaggio",
+      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
+    }
+  },
+  "dmsnapchat": {
+    "header": {
+      "title": "Snapchat",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "sidebar": {
+      "date": "26 ottobre {{date}}",
+      "chip": "Ultimi 7 giorni",
+      "close_button_aria": "Chiudi barra laterale",
+      "search_placeholder": "Cerca contatti..."
+    },
+    "chat": {
+      "menu_button_aria": "Apri lista contatti",
+      "message_placeholder": "Scrivi un messaggio...",
+      "send_button_aria": "Invia messaggio",
+      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
+    }
+  },
+  "dmtelegram": {
+    "header": {
+      "title": "Telegram",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "sidebar": {
+      "date": "26 ottobre {{date}}",
+      "chip": "Ultimi 7 giorni",
+      "close_button_aria": "Chiudi barra laterale",
+      "search_placeholder": "Cerca contatti..."
+    },
+    "chat": {
+      "menu_button_aria": "Apri lista contatti",
+      "message_placeholder": "Scrivi un messaggio...",
+      "send_button_aria": "Invia messaggio",
+      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
+    }
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "sidebar": {
+      "date": "26 ottobre {{date}}",
+      "chip": "Ultimi 7 giorni",
+      "close_button_aria": "Chiudi barra laterale",
+      "search_placeholder": "Cerca contenuti..."
+    },
+    "content": {
+      "menu_button_aria": "Apri lista contenuti",
+      "no_content_selected": "Seleziona un contenuto per visualizzare i dettagli"
+    }
+  },
+  "dmx": {
+    "header": {
+      "title": "X",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "sidebar": {
+      "date": "26 ottobre {{date}}",
+      "chip": "Ultimi 7 giorni",
+      "close_button_aria": "Chiudi barra laterale",
+      "search_placeholder": "Cerca post..."
+    },
+    "content": {
+      "menu_button_aria": "Apri lista post",
+      "no_content_selected": "Seleziona un post per visualizzare i dettagli"
+    }
+  },
+  "dmlinkedin": {
+    "header": {
+      "title": "LinkedIn",
+      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
+      "bind_button": "Collega il mio dispositivo",
+      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    },
+    "sidebar": {
+      "date": "26 ottobre {{date}}",
+      "chip": "Ultimi 7 giorni",
+      "close_button_aria": "Chiudi barra laterale",
+      "search_placeholder": "Cerca connessioni..."
+    },
+    "content": {
+      "menu_button_aria": "Apri lista connessioni",
+      "no_content_selected": "Seleziona una connessione per visualizzare i dettagli"
+    }
+  }
+}

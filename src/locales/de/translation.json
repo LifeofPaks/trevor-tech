@@ -940,7 +940,7 @@
       "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
       "bind_button": "Mein Gerät binden",
       "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen",
-      "date_range": "{{yue}} — {{endDate}}",
+      "date_range": "{{startDate}} — {{endDate}}",
       "last_7_days": "Letzte 7 Tage"
     },
     "photo": {

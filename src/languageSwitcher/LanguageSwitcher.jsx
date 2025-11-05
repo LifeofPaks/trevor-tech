@@ -12,19 +12,21 @@ const LanguageSwitcher = () => {
 
   const isDemoPage = location.pathname.includes("/demo");
 
-  const languages = [
-    { code: "en", name: "English", flag: "🇬🇧" },
-    { code: "zh", name: "中文 (Chinese)", flag: "🇨🇳" },
-    { code: "es", name: "Español", flag: "🇪🇸" },
-    { code: "fr", name: "Français", flag: "🇫🇷" },
-    { code: "ar", name: "العربية (Arabic)", flag: "🇸🇦" },
-    { code: "ru", name: "Русский (Russian)", flag: "🇷🇺" },
-    { code: "pt", name: "Português", flag: "🇵🇹" },
-    { code: "de", name: "Deutsch", flag: "🇩🇪" },
-    { code: "ja", name: "日本語 (Japan)", flag: "🇯🇵" },
-    { code: "tr", name: "Türkçe (Turkish)", flag: "🇹🇷" },
-    { code: "ko", name: "한국어 (Korean)", flag: "🇰🇷" },
-  ];
+const languages = [
+  { code: "en", name: "English", flag: "🇬🇧" },
+  { code: "es", name: "Español", flag: "🇪🇸" },
+  { code: "fr", name: "Français", flag: "🇫🇷" },
+  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "it", name: "Italiano", flag: "🇮🇹" },
+  { code: "zh", name: "中文 (Chinese)", flag: "🇨🇳" },
+  { code: "ar", name: "العربية (Arabic)", flag: "🇸🇦" },
+  { code: "ru", name: "Русский (Russian)", flag: "🇷🇺" },
+  { code: "pt", name: "Português", flag: "🇵🇹" },
+  { code: "ja", name: "日本語 (Japan)", flag: "🇯🇵" },
+  { code: "tr", name: "Türkçe (Turkish)", flag: "🇹🇷" },
+  { code: "ko", name: "한국어 (Korean)", flag: "🇰🇷" },
+];
+
 
   const currentLang =
     languages.find((lang) => lang.code === i18n.language) || languages[0];
