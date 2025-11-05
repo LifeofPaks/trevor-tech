@@ -795,5 +795,36 @@
         ]
       }
     }
+  },
+  "dgps": {
+    "header": {
+      "title": "GPS定位",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据",
+      "date": "{{date}}年10月26日"
+    },
+    "tabs": {
+      "list_view": "列表视图",
+      "map_view": "地图视图"
+    },
+    "table": {
+      "latitude": "纬度",
+      "longitude": "经度",
+      "accuracy": "精度",
+      "map_view": "地图视图",
+      "address": "地址",
+      "location_time": "定位时间",
+      "view_button": "查看",
+      "view_button_aria": "在地图上查看位置"
+    },
+    "pagination": {
+      "prev_button_aria": "上一页",
+      "next_button_aria": "下一页"
+    },
+    "map": {
+      "title": "位置地图",
+      "selected_location": "选定位置"
+    }
   }
 }

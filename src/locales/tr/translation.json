@@ -795,5 +795,36 @@
         ]
       }
     }
+  },
+  "dgps": {
+    "header": {
+      "title": "GPS Konumları",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla",
+      "date": "26 Ekim {{date}}"
+    },
+    "tabs": {
+      "list_view": "Liste Görünümü",
+      "map_view": "Harita Görünümü"
+    },
+    "table": {
+      "latitude": "Enlem",
+      "longitude": "Boylam",
+      "accuracy": "Doğruluk",
+      "map_view": "Harita Görünümü",
+      "address": "Adres",
+      "location_time": "Konum Zamanı",
+      "view_button": "Görüntüle",
+      "view_button_aria": "Konumu haritada görüntüle"
+    },
+    "pagination": {
+      "prev_button_aria": "Önceki sayfa",
+      "next_button_aria": "Sonraki sayfa"
+    },
+    "map": {
+      "title": "Konum Haritası",
+      "selected_location": "Seçilen Konum"
+    }
   }
 }

@@ -801,5 +801,36 @@
         ]
       }
     }
+  },
+  "dgps": {
+    "header": {
+      "title": "GPS-Standorte",
+      "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
+      "bind_button": "Mein Gerät binden",
+      "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen",
+      "date": "26. Oktober {{date}}"
+    },
+    "tabs": {
+      "list_view": "Listenansicht",
+      "map_view": "Kartenansicht"
+    },
+    "table": {
+      "latitude": "Breitengrad",
+      "longitude": "Längengrad",
+      "accuracy": "Genauigkeit",
+      "map_view": "Kartenansicht",
+      "address": "Adresse",
+      "location_time": "Standortzeit",
+      "view_button": "Ansehen",
+      "view_button_aria": "Standort auf der Karte ansehen"
+    },
+    "pagination": {
+      "prev_button_aria": "Vorherige Seite",
+      "next_button_aria": "Nächste Seite"
+    },
+    "map": {
+      "title": "Standortkarte",
+      "selected_location": "Ausgewählter Standort"
+    }
   }
 }

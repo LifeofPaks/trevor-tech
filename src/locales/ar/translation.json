@@ -794,5 +794,36 @@
         ]
       }
     }
+  },
+  "dgps": {
+    "header": {
+      "title": "مواقع GPS",
+      "demo_message": "بيانات تجريبية. قم بربط جهازك لجمع البيانات الفعلية.",
+      "bind_button": "ربط جهازي",
+      "bind_button_aria": "ربط الجهاز لبدء جمع البيانات",
+      "date": "26 أكتوبر {{date}}"
+    },
+    "tabs": {
+      "list_view": "عرض القائمة",
+      "map_view": "عرض الخريطة"
+    },
+    "table": {
+      "latitude": "خط العرض",
+      "longitude": "خط الطول",
+      "accuracy": "الدقة",
+      "map_view": "عرض الخريطة",
+      "address": "العنوان",
+      "location_time": "وقت الموقع",
+      "view_button": "عرض",
+      "view_button_aria": "عرض الموقع على الخريطة"
+    },
+    "pagination": {
+      "prev_button_aria": "الصفحة السابقة",
+      "next_button_aria": "الصفحة التالية"
+    },
+    "map": {
+      "title": "خريطة الموقع",
+      "selected_location": "الموقع المحدد"
+    }
   }
 }

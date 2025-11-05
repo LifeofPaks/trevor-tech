@@ -797,5 +797,36 @@
         ]
       }
     }
+  },
+  "dgps": {
+    "header": {
+      "title": "Localizações GPS",
+      "demo_message": "Dados de demonstração. Vincule seu dispositivo para coletar dados reais.",
+      "bind_button": "Vincular meu dispositivo",
+      "bind_button_aria": "Vincular dispositivo para começar a coletar dados",
+      "date": "26 de outubro de {{date}}"
+    },
+    "tabs": {
+      "list_view": "Vista de lista",
+      "map_view": "Vista de mapa"
+    },
+    "table": {
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "accuracy": "Precisão",
+      "map_view": "Vista de mapa",
+      "address": "Endereço",
+      "location_time": "Hora da localização",
+      "view_button": "Ver",
+      "view_button_aria": "Ver localização no mapa"
+    },
+    "pagination": {
+      "prev_button_aria": "Página anterior",
+      "next_button_aria": "Próxima página"
+    },
+    "map": {
+      "title": "Mapa de localização",
+      "selected_location": "Localização selecionada"
+    }
   }
 }

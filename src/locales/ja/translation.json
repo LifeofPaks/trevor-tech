@@ -796,5 +796,36 @@
         ]
       }
     }
+  },
+  "dgps": {
+    "header": {
+      "title": "GPS位置情報",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date": "{{date}}年10月26日"
+    },
+    "tabs": {
+      "list_view": "リストビュー",
+      "map_view": "マップビュー"
+    },
+    "table": {
+      "latitude": "緯度",
+      "longitude": "経度",
+      "accuracy": "精度",
+      "map_view": "マップビュー",
+      "address": "住所",
+      "location_time": "位置時間",
+      "view_button": "表示",
+      "view_button_aria": "マップ上で位置を表示"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    },
+    "map": {
+      "title": "位置マップ",
+      "selected_location": "選択された位置"
+    }
   }
 }

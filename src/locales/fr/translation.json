@@ -798,5 +798,36 @@
         ]
       }
     }
+  },
+  "dgps": {
+    "header": {
+      "title": "Emplacements GPS",
+      "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
+      "bind_button": "Connecter mon appareil",
+      "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données",
+      "date": "26 octobre {{date}}"
+    },
+    "tabs": {
+      "list_view": "Vue liste",
+      "map_view": "Vue carte"
+    },
+    "table": {
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "accuracy": "Précision",
+      "map_view": "Vue carte",
+      "address": "Adresse",
+      "location_time": "Heure de localisation",
+      "view_button": "Voir",
+      "view_button_aria": "Voir l'emplacement sur la carte"
+    },
+    "pagination": {
+      "prev_button_aria": "Page précédente",
+      "next_button_aria": "Page suivante"
+    },
+    "map": {
+      "title": "Carte de localisation",
+      "selected_location": "Emplacement sélectionné"
+    }
   }
 }

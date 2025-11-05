@@ -796,5 +796,36 @@
         ]
       }
     }
+  },
+  "dgps": {
+    "header": {
+      "title": "GPS 위치",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결",
+      "date": "{{date}}년 10월 26일"
+    },
+    "tabs": {
+      "list_view": "리스트 뷰",
+      "map_view": "지도 뷰"
+    },
+    "table": {
+      "latitude": "위도",
+      "longitude": "경도",
+      "accuracy": "정확도",
+      "map_view": "지도 뷰",
+      "address": "주소",
+      "location_time": "위치 시간",
+      "view_button": "보기",
+      "view_button_aria": "지도에서 위치 보기"
+    },
+    "pagination": {
+      "prev_button_aria": "이전 페이지",
+      "next_button_aria": "다음 페이지"
+    },
+    "map": {
+      "title": "위치 지도",
+      "selected_location": "선택된 위치"
+    }
   }
 }

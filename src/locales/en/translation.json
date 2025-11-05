@@ -803,5 +803,36 @@
         ]
       }
     }
+  },
+  "dgps": {
+    "header": {
+      "title": "GPS Locations",
+      "demo_message": "Demo data. Bind your device to collect actual data.",
+      "bind_button": "Bind My Device",
+      "bind_button_aria": "Bind device to start collecting data",
+      "date": "October 26, {{date}}"
+    },
+    "tabs": {
+      "list_view": "List View",
+      "map_view": "Map View"
+    },
+    "table": {
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "accuracy": "Accuracy",
+      "map_view": "Map View",
+      "address": "Address",
+      "location_time": "Location Time",
+      "view_button": "View",
+      "view_button_aria": "View location on map"
+    },
+    "pagination": {
+      "prev_button_aria": "Previous page",
+      "next_button_aria": "Next page"
+    },
+    "map": {
+      "title": "Location Map",
+      "selected_location": "Selected Location"
+    }
   }
 }

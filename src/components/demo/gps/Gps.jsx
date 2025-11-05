@@ -23,7 +23,7 @@ import {
   FiMapPin,
   FiCalendar,
 } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 import BuyModal from "../../buyModal/BuyModal";
 import { MdGpsFixed } from "react-icons/md";
 
@@ -92,6 +92,7 @@ const NJ_LAT = 40.0583;
 const NJ_LNG = -74.4057;
 
 const Gps = () => {
+  const { t } = useTranslation();
   const [view, setView] = useState("list");
   const [page, setPage] = useState(1);
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -113,19 +114,19 @@ const Gps = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              GPS Locations
-              <MdGpsFixed className="text-[#0695c8]" />
+              {t("dgps.header.title")} <MdGpsFixed className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("dgps.header.demo_message")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dgps.header.bind_button_aria")}
             >
-              Bind My Device
+              {t("dgps.header.bind_button")}
             </button>
           </div>
         </div>
@@ -156,14 +157,14 @@ const Gps = () => {
                 },
               }}
             >
-              <Tab label="List View" value="list" />
-              <Tab label="Map View" value="map" />
+              <Tab label={t("dgps.tabs.list_view")} value="list" />
+              <Tab label={t("dgps.tabs.map_view")} value="map" />
             </Tabs>
 
             <div className="hidden lg:flex items-center !gap-3 bg-gray-50 border border-gray-200 rounded-2xl !px-4 !py-2">
               <FiCalendar className="text-gray-500 text-lg" />
               <span className="text-gray-800 font-semibold text-[13px]">
-                October 26, 2025
+                {t("dgps.header.date", { date: "2025" })}
               </span>
             </div>
           </Stack>
@@ -193,12 +194,15 @@ const Gps = () => {
                 <TableHead>
                   <TableRow sx={{ backgroundColor: "#f9fafb" }}>
                     {[
-                      { label: "Latitude", hideOnMobile: true },
-                      { label: "Longitude", hideOnMobile: true },
-                      { label: "Accuracy", hideOnMobile: true },
-                      { label: "Map View", hideOnMobile: false },
-                      { label: "Address", hideOnMobile: false },
-                      { label: "Location Time", hideOnMobile: true },
+                      { label: t("dgps.table.latitude"), hideOnMobile: true },
+                      { label: t("dgps.table.longitude"), hideOnMobile: true },
+                      { label: t("dgps.table.accuracy"), hideOnMobile: true },
+                      { label: t("dgps.table.map_view"), hideOnMobile: false },
+                      { label: t("dgps.table.address"), hideOnMobile: false },
+                      {
+                        label: t("dgps.table.location_time"),
+                        hideOnMobile: true,
+                      },
                     ].map(({ label, hideOnMobile }) => (
                       <TableCell
                         key={label}
@@ -274,8 +278,9 @@ const Gps = () => {
                             "&:hover": { backgroundColor: "#e0f2fe" },
                             fontSize: "0.75rem",
                           }}
+                          aria-label={t("dgps.table.view_button_aria")}
                         >
-                          View
+                          {t("dgps.table.view_button")}
                         </Button>
                       </TableCell>
 
@@ -314,7 +319,11 @@ const Gps = () => {
             {/* Pagination */}
             <Box className="!mt-6 !flex justify-center">
               <Stack direction="row" spacing={1} alignItems="center">
-                <IconButton size="small" sx={{ color: "#9ca3af" }}>
+                <IconButton
+                  size="small"
+                  sx={{ color: "#9ca3af" }}
+                  aria-label={t("dgps.pagination.prev_button_aria")}
+                >
                   <FiChevronLeft />
                 </IconButton>
                 <Chip
@@ -328,7 +337,11 @@ const Gps = () => {
                     height: 32,
                   }}
                 />
-                <IconButton size="small" sx={{ color: "#9ca3af" }}>
+                <IconButton
+                  size="small"
+                  sx={{ color: "#9ca3af" }}
+                  aria-label={t("dgps.pagination.next_button_aria")}
+                >
                   <FiChevronRight />
                 </IconButton>
               </Stack>
@@ -337,7 +350,7 @@ const Gps = () => {
         ) : (
           <Box className="!h-full !min-h-96 !rounded-lg !overflow-hidden relative">
             <iframe
-              title="Location Map"
+              title={t("dgps.map.title")}
               width="100%"
               height="600"
               style={{ border: 0 }}
@@ -359,7 +372,7 @@ const Gps = () => {
                   fontWeight="bold"
                   color="#0695c8"
                 >
-                  Selected Location
+                  {t("dgps.map.selected_location")}
                 </Typography>
                 <Typography
                   variant="body2"
