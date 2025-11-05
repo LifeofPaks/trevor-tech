@@ -944,5 +944,23 @@
       "prev_button_aria": "الصفحة السابقة",
       "next_button_aria": "الصفحة التالية"
     }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "مقاطع الفيديو",
+      "demo_message": "بيانات تجريبية. قم بربط جهازك لجمع البيانات الفعلية.",
+      "bind_button": "ربط جهازي",
+      "bind_button_aria": "ربط الجهاز لبدء جمع البيانات",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "آخر 7 أيام"
+    },
+    "video": {
+      "label": "فيديو {{id}}",
+      "download_aria": "تنزيل الفيديو {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "الصفحة السابقة",
+      "next_button_aria": "الصفحة التالية"
+    }
   }
 }

@@ -7,9 +7,9 @@ import {
   FiDownload,
   FiVideo,
 } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
-import BuyModal from "../../components/buyModal/BuyModal";
 import { FaVideo } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import BuyModal from "../../components/buyModal/BuyModal";
 
 const allVideos = [
   {
@@ -57,6 +57,7 @@ const allVideos = [
 const VIDEOS_PER_PAGE = 8;
 
 const VideosPage = () => {
+  const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const totalPages = Math.ceil(allVideos.length / VIDEOS_PER_PAGE);
   const startIndex = (page - 1) * VIDEOS_PER_PAGE;
@@ -64,10 +65,10 @@ const VideosPage = () => {
     startIndex,
     startIndex + VIDEOS_PER_PAGE
   );
-      const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-      const handleOpen = () => setOpen(true);
-      const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   const handleDownload = async (url, filename) => {
     try {
@@ -90,19 +91,19 @@ const VideosPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Videos
-              <FaVideo className="text-[#0695c8]" />
+              {t("dmvideo.header.title")} <FaVideo className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("dmvideo.header.demo_message")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dmvideo.header.bind_button_aria")}
             >
-              Bind My Device
+              {t("dmvideo.header.bind_button")}
             </button>
           </div>
         </div>
@@ -123,16 +124,15 @@ const VideosPage = () => {
                 className="!flex !items-center !gap-2 !bg-white !border !border-gray-200 !rounded-xl !px-4 !py-2"
               >
                 <FiCalendar className="!text-gray-500 !text-sm" />
-                <Typography className="!text-gray-700 !font-medium !text-sm">
-                  2021-01-01
-                </Typography>
-                <Typography className="!text-gray-500 !mx-1">—</Typography>
-                <Typography className="!text-gray-700 !font-medium !text-sm">
-                  2022-04-30
+                <Typography className="!text-gray-700 !font-medium lg:!text-sm !text-[11px]">
+                  {t("dmvideo.header.date_range", {
+                    startDate: "2021-01-01",
+                    endDate: "2022-04-30",
+                  })}
                 </Typography>
               </Paper>
               <Chip
-                label="Last 7 days"
+                label={t("dmvideo.header.last_7_days")}
                 size="small"
                 sx={{
                   backgroundColor: "#e0f2fe",
@@ -148,7 +148,7 @@ const VideosPage = () => {
           </Stack>
         </Box>
 
-        {/* ✅ Responsive Grid */}
+        {/* Responsive Grid */}
         <Box
           className="!grid !gap-6 !mb-8"
           sx={{
@@ -157,7 +157,7 @@ const VideosPage = () => {
               xs: "1fr",
               sm: "repeat(2, 1fr)",
               md: "repeat(3, 1fr)",
-              lg: "repeat(4, 1fr)", // ✅ Exactly 4 columns on large screens
+              lg: "repeat(4, 1fr)",
             },
           }}
         >
@@ -194,6 +194,7 @@ const VideosPage = () => {
                   muted
                   preload="metadata"
                   className="!absolute !top-0 !left-0 !w-full !h-full !object-cover rounded-2xl"
+                  aria-label={t("dmvideo.video.label", { id: video.id })}
                 />
 
                 {/* Download Button */}
@@ -207,6 +208,9 @@ const VideosPage = () => {
                       transform: "scale(1.15)",
                     },
                   }}
+                  aria-label={t("dmvideo.video.download_aria", {
+                    id: video.id,
+                  })}
                   onClick={(e) => {
                     e.stopPropagation();
                     handleDownload(
@@ -236,6 +240,9 @@ const VideosPage = () => {
                       `video-${video.time.replace(/[: ]/g, "-")}.mp4`
                     );
                   }}
+                  aria-label={t("dmvideo.video.download_aria", {
+                    id: video.id,
+                  })}
                 />
               </Box>
             </Paper>
@@ -250,6 +257,7 @@ const VideosPage = () => {
               disabled={page === 1}
               onClick={() => setPage(page - 1)}
               sx={{ color: page === 1 ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmvideo.pagination.prev_button_aria")}
             >
               <FiChevronLeft />
             </IconButton>
@@ -281,6 +289,7 @@ const VideosPage = () => {
               disabled={page === totalPages}
               onClick={() => setPage(page + 1)}
               sx={{ color: page === totalPages ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmvideo.pagination.next_button_aria")}
             >
               <FiChevronRight />
             </IconButton>

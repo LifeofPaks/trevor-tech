@@ -945,5 +945,23 @@
       "prev_button_aria": "上一页",
       "next_button_aria": "下一页"
     }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "视频",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "最近7天"
+    },
+    "video": {
+      "label": "视频 {{id}}",
+      "download_aria": "下载视频 {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "上一页",
+      "next_button_aria": "下一页"
+    }
   }
 }

@@ -953,5 +953,23 @@
       "prev_button_aria": "Previous page",
       "next_button_aria": "Next page"
     }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "Videos",
+      "demo_message": "Demo data. Bind your device to collect actual data.",
+      "bind_button": "Bind My Device",
+      "bind_button_aria": "Bind device to start collecting data",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Last 7 days"
+    },
+    "video": {
+      "label": "Video {{id}}",
+      "download_aria": "Download video {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Previous page",
+      "next_button_aria": "Next page"
+    }
   }
 }

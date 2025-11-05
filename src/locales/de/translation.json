@@ -951,5 +951,23 @@
       "prev_button_aria": "Vorherige Seite",
       "next_button_aria": "Nächste Seite"
     }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "Videos",
+      "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
+      "bind_button": "Mein Gerät binden",
+      "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Letzte 7 Tage"
+    },
+    "video": {
+      "label": "Video {{id}}",
+      "download_aria": "Video herunterladen {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Vorherige Seite",
+      "next_button_aria": "Nächste Seite"
+    }
   }
 }

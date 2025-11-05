@@ -944,5 +944,23 @@
       "prev_button_aria": "Página anterior",
       "next_button_aria": "Página siguiente"
     }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "Videos",
+      "demo_message": "Datos de demostración. Vincula tu dispositivo para recopilar datos reales.",
+      "bind_button": "Vincular mi dispositivo",
+      "bind_button_aria": "Vincular dispositivo para comenzar a recopilar datos",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Últimos 7 días"
+    },
+    "video": {
+      "label": "Video {{id}}",
+      "download_aria": "Descargar video {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Página anterior",
+      "next_button_aria": "Página siguiente"
+    }
   }
 }

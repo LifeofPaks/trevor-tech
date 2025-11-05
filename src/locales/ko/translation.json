@@ -946,5 +946,23 @@
       "prev_button_aria": "이전 페이지",
       "next_button_aria": "다음 페이지"
     }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "비디오",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "최근 7일"
+    },
+    "video": {
+      "label": "비디오 {{id}}",
+      "download_aria": "비디오 다운로드 {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "이전 페이지",
+      "next_button_aria": "다음 페이지"
+    }
   }
 }

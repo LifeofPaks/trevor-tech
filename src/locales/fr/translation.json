@@ -948,5 +948,23 @@
       "prev_button_aria": "Page précédente",
       "next_button_aria": "Page suivante"
     }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "Vidéos",
+      "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
+      "bind_button": "Connecter mon appareil",
+      "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "7 derniers jours"
+    },
+    "video": {
+      "label": "Vidéo {{id}}",
+      "download_aria": "Télécharger la vidéo {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Page précédente",
+      "next_button_aria": "Page suivante"
+    }
   }
 }

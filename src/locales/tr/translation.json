@@ -945,5 +945,23 @@
       "prev_button_aria": "Önceki sayfa",
       "next_button_aria": "Sonraki sayfa"
     }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "Videolar",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Son 7 gün"
+    },
+    "video": {
+      "label": "Video {{id}}",
+      "download_aria": "Videoyu indir {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "Önceki sayfa",
+      "next_button_aria": "Sonraki sayfa"
+    }
   }
 }
