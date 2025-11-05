@@ -51,7 +51,7 @@ const About = () => {
       desc: t("about_page.service_grade_enhancement_desc"),
       icon: <MdOutlineAppsOutage size={24} />,
       color: "text-blue-400 bg-blue-900/20",
-      path: "/elite/grade-enhancement",
+      path: "/elite/social-media",
     },
     // {
     //   title: t("about_page.service_hack_device_title"),

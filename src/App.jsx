@@ -53,6 +53,7 @@ import CryptoRecoveryPage from "./pages/cryptoRecovery/CryptoRecoveryPage";
 import IDServicesPage from "./pages/idServices/IDServicesPage";
 import ElitePage from "./pages/elite/ElitePage";
 import LanguageSwitcher from "./languageSwitcher/LanguageSwitcher";
+import SocialMediaPage from "./pages/socialMedia/SocialMediaPage";
 
 
 
@@ -65,11 +66,12 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="generatescreenshot" element={<GenerateScreenshotPage />} />
         <Route path="/elite" element={<ElitePage />}>
+          <Route path="crypto-recovery" element={<CryptoRecoveryPage />} />
+          <Route path="social-media" element={<SocialMediaPage />} />
           <Route path="credit-boost" element={<CreditScorePage />} />
           <Route path="stop-harassment" element={<StopBlackmailPage />} />
           <Route path="grade-enhancement" element={<ImproveGradePage />} />
           <Route path="clear-record" element={<EraseRecordPage />} />
-          <Route path="crypto-recovery" element={<CryptoRecoveryPage />} />
           <Route path="dmv-id" element={<IDServicesPage />} />
         </Route>
 
