@@ -648,5 +648,13 @@
       "chrome": "كروم",
       "memo": "مذكرة"
     }
+  },
+  "sc": {
+    "title": "التقاط لقطات الشاشة",
+    "image_alt": "لقطة شاشة {{index}}",
+    "close_button_aria": "إغلاق نافذة لقطة الشاشة",
+    "prev_button_aria": "لقطة الشاشة السابقة",
+    "next_button_aria": "لقطة الشاشة التالية",
+    "modal_image_alt": "معاينة كبيرة"
   }
 }

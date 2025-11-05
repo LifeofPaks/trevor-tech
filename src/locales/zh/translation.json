@@ -649,5 +649,13 @@
       "chrome": "Chrome",
       "memo": "备忘录"
     }
+  },
+  "sc": {
+    "title": "截图",
+    "image_alt": "截图 {{index}}",
+    "close_button_aria": "关闭截图模态框",
+    "prev_button_aria": "上一张截图",
+    "next_button_aria": "下一张截图",
+    "modal_image_alt": "大图预览"
   }
 }

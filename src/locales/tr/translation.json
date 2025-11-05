@@ -649,5 +649,13 @@
       "chrome": "Chrome",
       "memo": "Not"
     }
+  },
+  "sc": {
+    "title": "Ekran görüntüleri yakala",
+    "image_alt": "Ekran görüntüsü {{index}}",
+    "close_button_aria": "Ekran görüntüsü modalini kapat",
+    "prev_button_aria": "Önceki ekran görüntüsü",
+    "next_button_aria": "Sonraki ekran görüntüsü",
+    "modal_image_alt": "Büyük önizleme"
   }
 }

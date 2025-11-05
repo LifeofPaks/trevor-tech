@@ -648,5 +648,13 @@
       "chrome": "Chrome",
       "memo": "Mémo"
     }
+  },
+  "sc": {
+    "title": "Capturer des captures d'écran",
+    "image_alt": "Capture d'écran {{index}}",
+    "close_button_aria": "Fermer le modal de capture d'écran",
+    "prev_button_aria": "Capture d'écran précédente",
+    "next_button_aria": "Capture d'écran suivante",
+    "modal_image_alt": "Aperçu agrandi"
   }
 }

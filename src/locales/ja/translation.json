@@ -650,5 +650,13 @@
       "chrome": "Chrome",
       "memo": "メモ"
     }
+  },
+  "sc": {
+    "title": "スクリーンショットのキャプチャ",
+    "image_alt": "スクリーンショット {{index}}",
+    "close_button_aria": "スクリーンショットのモーダルを閉じる",
+    "prev_button_aria": "前のスクリーンショット",
+    "next_button_aria": "次のスクリーンショット",
+    "modal_image_alt": "大きなプレビュー"
   }
 }

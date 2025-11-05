@@ -1,5 +1,4 @@
 {
-  "select_device": "Select Device",
   "zions_galaxy_s24_name": "Zion's Galaxy S24",
   "zions_galaxy_s24_status": "In Use",
   "zions_galaxy_s24_battery": "20%",
@@ -69,10 +68,12 @@
   "testimonial": "Testimonial",
   "faq": "FAQ",
   "view_demo": "View Demo",
-  "trevor_tech_app": "Trevor Tech App",
-  "easier_monitoring_with": "Easier monitoring with",
-
   "select_language": "Select language",
+  "trevor_tech_app": "Trevor Tech App",
+
+  "easier_monitoring_with": "Easier monitoring with",
+  "select_device": "Select Device",
+  "add_device": "Add new device",
 
   "home_page": {
     "hero_title": "Ultimate Digital Shield: Your ",
@@ -655,5 +656,13 @@
       "chrome": "Chrome",
       "memo": "Memo"
     }
+  },
+  "sc": {
+    "title": "Capture Screenshots",
+    "image_alt": "Screenshot {{index}}",
+    "close_button_aria": "Close screenshot modal",
+    "prev_button_aria": "Previous screenshot",
+    "next_button_aria": "Next screenshot",
+    "modal_image_alt": "Large preview"
   }
 }

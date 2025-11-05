@@ -649,5 +649,13 @@
       "chrome": "Chrome",
       "memo": "Notizen"
     }
+  },
+  "sc": {
+    "title": "Screenshots aufnehmen",
+    "image_alt": "Screenshot {{index}}",
+    "close_button_aria": "Screenshot-Modal schließen",
+    "prev_button_aria": "Vorheriger Screenshot",
+    "next_button_aria": "Nächster Screenshot",
+    "modal_image_alt": "Große Vorschau"
   }
 }

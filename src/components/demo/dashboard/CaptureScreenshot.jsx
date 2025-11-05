@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import { FiCamera } from "react-icons/fi";
 import { IoClose, IoChevronBack, IoChevronForward } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 import Image1 from "../../../assets/dashboard/screenshots/i-1.png";
 import Image2 from "../../../assets/dashboard/screenshots/i-2.png";
@@ -26,6 +27,7 @@ const images = [
 ];
 
 const CaptureScreenshot = () => {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -60,7 +62,7 @@ const CaptureScreenshot = () => {
       <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl !p-4 sm:!p-5 border border-white/50">
         <div className="flex items-center justify-between !mb-3 sm:!mb-4">
           <h3 className="text-base sm:text-lg font-bold text-slate-800">
-            Capture Screenshots
+            {t("sc.title")}
           </h3>
           <span className="text-md text-gray-500">
             <FaAngleRight />
@@ -77,7 +79,7 @@ const CaptureScreenshot = () => {
               <div className="aspect-square bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg sm:rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-all">
                 <img
                   src={img}
-                  alt={`Screenshot ${i + 1}`}
+                  alt={t("sc.image_alt", { index: i + 1 })}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                 />
               </div>
@@ -97,6 +99,7 @@ const CaptureScreenshot = () => {
           <button
             className="absolute top-3 right-3 sm:top-5 sm:right-5 text-white text-3xl sm:text-4xl hover:text-gray-300 z-[60]"
             onClick={closeModal}
+            aria-label={t("sc.close_button_aria")}
           >
             <IoClose />
           </button>
@@ -105,6 +108,7 @@ const CaptureScreenshot = () => {
           <button
             className="absolute left-3 sm:left-5 text-white text-4xl sm:text-5xl !p-3 rounded-full bg-black/50 hover:bg-black/70 backdrop-blur-md transition-all z-[60] flex items-center justify-center"
             onClick={prevImage}
+            aria-label={t("sc.prev_button_aria")}
           >
             <IoChevronBack />
           </button>
@@ -113,7 +117,7 @@ const CaptureScreenshot = () => {
           <div className="relative max-w-3xl !mx-4 w-full flex justify-center items-center z-[50]">
             <img
               src={images[currentIndex]}
-              alt="Large preview"
+              alt={t("sc.modal_image_alt")}
               className="w-full max-h-[80vh] object-contain rounded-2xl shadow-lg transition-all duration-500"
             />
           </div>
@@ -122,6 +126,7 @@ const CaptureScreenshot = () => {
           <button
             className="absolute right-3 sm:right-5 text-white text-4xl sm:text-5xl !p-3 rounded-full bg-black/50 hover:bg-black/70 backdrop-blur-md transition-all z-[60] flex items-center justify-center"
             onClick={nextImage}
+            aria-label={t("sc.next_button_aria")}
           >
             <IoChevronForward />
           </button>
