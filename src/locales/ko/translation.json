@@ -744,5 +744,57 @@
   "df": {
     "copyright": "저작권 © {{year}}",
     "rights_reserved": "모든 권리 보유."
+  },
+  "dmsg": {
+    "header": {
+      "title": "문자 메시지",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결"
+    },
+    "sidebar": {
+      "date": "{{date}}년 10월 26일",
+      "chip": "최근 7일",
+      "close_button_aria": "사이드바 닫기",
+      "search_placeholder": "연락처 검색..."
+    },
+    "chat": {
+      "menu_button_aria": "연락처 목록 열기",
+      "message_placeholder": "메시지를 입력하세요...",
+      "send_button_aria": "메시지 보내기",
+      "no_contact_selected": "메시지를 보려면 연락처를 선택하세요"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "아무도 우리를 보지 않도록 할게요.",
+        "messages": [
+          { "text": "오늘 밤 아무도 모르게 만날 수 있을까요?" },
+          { "text": "아무도 우리를 보지 않도록 할게요." }
+        ]
+      },
+      "sally": {
+        "last_message": "만일의 경우를 대비해 모든 메시지를 삭제했어요.",
+        "messages": [
+          { "text": "야, 오늘 밤에도 올 건가요?" },
+          { "text": "네, 하지만 직장 행사에 간다고 했어요." },
+          { "text": "좋은 생각이에요, 조심해야 해요." },
+          { "text": "알아요, 너무 죄책감이 들어요." },
+          { "text": "평소 장소에서 만날까요?" },
+          { "text": "만일의 경우를 대비해 모든 메시지를 삭제했어요." }
+        ]
+      },
+      "tony": {
+        "last_message": "그녀가 내 변명을 믿었어요, 괜찮아요.",
+        "messages": [
+          { "text": "그녀에게 나와 같이 있었다고 했나요?" },
+          { "text": "아니요, 늦게까지 일한다고 했어요." },
+          { "text": "휴, 가까웠네요." },
+          { "text": "내일 밤에 시간 있나요?" },
+          { "text": "네, 몰래 빠져나갈 수 있어요." },
+          { "text": "새로운 변명을 준비했어요." },
+          { "text": "그녀가 내 변명을 믿었어요, 괜찮아요." }
+        ]
+      }
+    }
   }
 }

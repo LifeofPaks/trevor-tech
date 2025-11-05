@@ -24,26 +24,26 @@ import {
   FiMenu,
   FiX,
 } from "react-icons/fi";
-import { IoChatbox, IoLogoBitbucket } from "react-icons/io5";
+import { IoChatbox } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 import BuyModal from "../../buyModal/BuyModal";
-import { MdOutlineTextsms, MdTextsms } from "react-icons/md";
 
 const contacts = [
   {
     id: 1,
     name: "Ari, T",
     phone: "3489899023",
-    lastMessage: "No, I'll be by the office later. I can pick it up.",
+    lastMessageKey: "dmsg.contacts.ari.last_message", // Reference to translated last message
     time: "2022-01-05 09:31",
     avatar: "https://i.pravatar.cc/150?img=1",
     messages: [
       {
-        text: "Did you want this report sent to your house?",
+        textKey: "dmsg.contacts.ari.messages.0.text",
         time: "2022-01-05 09:30",
         sent: false,
       },
       {
-        text: "No, I'll be by the office later. I can pick it up.",
+        textKey: "dmsg.contacts.ari.messages.1.text",
         time: "2022-01-05 09:31",
         sent: true,
       },
@@ -53,67 +53,82 @@ const contacts = [
     id: 2,
     name: "Sally, J",
     phone: "3427465723",
-    lastMessage: "Sure.",
+    lastMessageKey: "dmsg.contacts.sally.last_message",
     time: "2022-01-06 10:31",
     avatar: "https://i.pravatar.cc/150?img=5",
     messages: [
-      { text: "Hey Nina", time: "2022-01-06 10:20", sent: false },
       {
-        text: "Hi, I haven't seen you in a while. Are you ok?",
+        textKey: "dmsg.contacts.sally.messages.0.text",
+        time: "2022-01-06 10:20",
+        sent: false,
+      },
+      {
+        textKey: "dmsg.contacts.sally.messages.1.text",
         time: "2022-01-06 10:21",
         sent: true,
       },
       {
-        text: "I'm good. What's up with your sister?",
+        textKey: "dmsg.contacts.sally.messages.2.text",
         time: "2022-01-06 10:23",
         sent: false,
       },
       {
-        text: "I don't want to talk about it.",
+        textKey: "dmsg.contacts.sally.messages.3.text",
         time: "2022-01-06 10:25",
         sent: true,
       },
-      { text: "Want to meet?", time: "2022-01-06 10:30", sent: false },
-      { text: "Sure.", time: "2022-01-06 10:31", sent: true },
+      {
+        textKey: "dmsg.contacts.sally.messages.4.text",
+        time: "2022-01-06 10:30",
+        sent: false,
+      },
+      {
+        textKey: "dmsg.contacts.sally.messages.5.text",
+        time: "2022-01-06 10:31",
+        sent: true,
+      },
     ],
   },
   {
     id: 3,
     name: "Tony, S",
     phone: "3432780098",
-    lastMessage:
-      "Oh, that's great. I just couldn't find it any of the shops you told me about.",
+    lastMessageKey: "dmsg.contacts.tony.last_message",
     time: "2022-01-14 10:06",
     avatar: "https://i.pravatar.cc/150?img=3",
     messages: [
-      { text: "Are you OK?", time: "2022-01-14 10:00", sent: true },
       {
-        text: "Heard you went to the doctor yesterday.",
+        textKey: "dmsg.contacts.tony.messages.0.text",
+        time: "2022-01-14 10:00",
+        sent: true,
+      },
+      {
+        textKey: "dmsg.contacts.tony.messages.1.text",
         time: "2022-01-14 10:01",
         sent: true,
       },
       {
-        text: "I'm ok. It was nothing.",
+        textKey: "dmsg.contacts.tony.messages.2.text",
         time: "2022-01-14 10:02",
         sent: false,
       },
       {
-        text: "Are you coming home for Mom's birthday?",
+        textKey: "dmsg.contacts.tony.messages.3.text",
         time: "2022-01-14 10:03",
         sent: false,
       },
       {
-        text: "Yes, I finally found mom's present...",
+        textKey: "dmsg.contacts.tony.messages.4.text",
         time: "2022-01-14 10:04",
         sent: true,
       },
       {
-        text: "I had to look everywhere to find it, but I did...",
+        textKey: "dmsg.contacts.tony.messages.5.text",
         time: "2022-01-14 10:05",
         sent: true,
       },
       {
-        text: "Oh, that's great. I just couldn't find it any of the shops you told me about.",
+        textKey: "dmsg.contacts.tony.messages.6.text",
         time: "2022-01-14 10:06",
         sent: false,
       },
@@ -122,14 +137,15 @@ const contacts = [
 ];
 
 const Messages = () => {
+  const { t } = useTranslation();
   const [selectedContact, setSelectedContact] = useState(contacts[0]);
   const [searchQuery, setSearchQuery] = useState("");
   const [page, setPage] = useState(1);
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-          const [open, setOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-          const handleOpen = () => setOpen(true);
-          const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   const filteredContacts = contacts.filter(
     (c) =>
@@ -144,19 +160,19 @@ const Messages = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Text Message{" "}
-              <IoChatbox className="text-[#0695c8]" />
+              {t("dmsg.header.title")} <IoChatbox className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("dmsg.header.demo_message")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dmsg.header.bind_button_aria")}
             >
-              Bind My Device
+              {t("dmsg.header.bind_button")}
             </button>
           </div>
         </div>
@@ -177,11 +193,11 @@ const Messages = () => {
             <div className="hidden lg:flex items-center !gap-3 bg-gray-50 border border-gray-200 rounded-2xl !px-4 !py-2 hover:shadow-md transition-all cursor-default">
               <FiCalendar className="text-gray-500 text-lg" />
               <span className="text-gray-800 font-semibold text-[13px] sm:text-[13px]">
-                October 26, 2025
+                {t("dmsg.sidebar.date", { date: "2025-10-26" })}
               </span>
             </div>
             <Chip
-              label="Last 7 days"
+              label={t("dmsg.sidebar.chip")}
               size="small"
               sx={{
                 backgroundColor: "#e0f2fe",
@@ -196,6 +212,7 @@ const Messages = () => {
             <IconButton
               onClick={() => setIsSidebarOpen(false)}
               className="sm:!hidden"
+              aria-label={t("dmsg.sidebar.close_button_aria")}
             >
               <FiX />
             </IconButton>
@@ -206,7 +223,7 @@ const Messages = () => {
             <TextField
               fullWidth
               size="small"
-              placeholder="Search contacts..."
+              placeholder={t("dmsg.sidebar.search_placeholder")}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               InputProps={{
@@ -259,7 +276,7 @@ const Messages = () => {
                         </Typography>
                         <br />
                         <Typography variant="caption" color="text.secondary">
-                          {contact.lastMessage}
+                          {t(contact.lastMessageKey)}
                         </Typography>
                       </>
                     }
@@ -285,6 +302,7 @@ const Messages = () => {
                   <IconButton
                     onClick={() => setIsSidebarOpen(true)}
                     className="sm:!hidden"
+                    aria-label={t("dmsg.chat.menu_button_aria")}
                   >
                     <FiMenu />
                   </IconButton>
@@ -317,7 +335,7 @@ const Messages = () => {
                           : "!bg-gray-100 !text-gray-800"
                       }`}
                     >
-                      <Typography variant="body2">{msg.text}</Typography>
+                      <Typography variant="body2">{t(msg.textKey)}</Typography>
                       <Typography
                         variant="caption"
                         className={`!block !text-right !mt-1 ${
@@ -355,11 +373,15 @@ const Messages = () => {
                   <TextField
                     fullWidth
                     size="small"
-                    placeholder="Type a message..."
+                    placeholder={t("dmsg.chat.message_placeholder")}
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position="end">
-                          <IconButton size="small" sx={{ color: "#0695c8" }}>
+                          <IconButton
+                            size="small"
+                            sx={{ color: "#0695c8" }}
+                            aria-label={t("dmsg.chat.send_button_aria")}
+                          >
                             <FiSend />
                           </IconButton>
                         </InputAdornment>
@@ -373,7 +395,7 @@ const Messages = () => {
           ) : (
             <Box className="!flex-1 flex items-center justify-center">
               <Typography color="text.secondary">
-                Select a contact to view messages
+                {t("dmsg.chat.no_contact_selected")}
               </Typography>
             </Box>
           )}

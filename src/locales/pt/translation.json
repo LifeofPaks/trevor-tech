@@ -743,5 +743,59 @@
   "df": {
     "copyright": "Copyright © {{year}}",
     "rights_reserved": "Todos os direitos reservados."
+  },
+  "dmsg": {
+    "header": {
+      "title": "Mensagem de texto",
+      "demo_message": "Dados de demonstração. Vincule seu dispositivo para coletar dados reais.",
+      "bind_button": "Vincular meu dispositivo",
+      "bind_button_aria": "Vincular dispositivo para começar a coletar dados"
+    },
+    "sidebar": {
+      "date": "26 de outubro de {{date}}",
+      "chip": "Últimos 7 dias",
+      "close_button_aria": "Fechar barra lateral",
+      "search_placeholder": "Pesquisar contatos..."
+    },
+    "chat": {
+      "menu_button_aria": "Abrir lista de contatos",
+      "message_placeholder": "Digite uma mensagem...",
+      "send_button_aria": "Enviar mensagem",
+      "no_contact_selected": "Selecione um contato para ver as mensagens"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "Vou garantir que ninguém nos veja.",
+        "messages": [
+          { "text": "Podemos nos encontrar hoje à noite sem ninguém saber?" },
+          { "text": "Vou garantir que ninguém nos veja." }
+        ]
+      },
+      "sally": {
+        "last_message": "Apaguei todas as nossas mensagens, por segurança.",
+        "messages": [
+          { "text": "Oi, você ainda vem hoje à noite?" },
+          {
+            "text": "Sim, mas disse a eles que estou em um evento de trabalho."
+          },
+          { "text": "Boa ideia, temos que ser cuidadosos." },
+          { "text": "Eu sei, me sinto tão culpado." },
+          { "text": "Nos encontramos no lugar de sempre?" },
+          { "text": "Apaguei todas as nossas mensagens, por segurança." }
+        ]
+      },
+      "tony": {
+        "last_message": "Ela acreditou na minha desculpa, estamos bem.",
+        "messages": [
+          { "text": "Você disse a ela que estava comigo?" },
+          { "text": "Não, disse que estava trabalhando até tarde." },
+          { "text": "Nossa, por pouco." },
+          { "text": "Está livre amanhã à noite?" },
+          { "text": "Sim, posso sair escondido." },
+          { "text": "Tenho uma nova desculpa pronta." },
+          { "text": "Ela acreditou na minha desculpa, estamos bem." }
+        ]
+      }
+    }
   }
 }

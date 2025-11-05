@@ -747,5 +747,61 @@
   "df": {
     "copyright": "Copyright © {{year}}",
     "rights_reserved": "All rights reserved."
+  },
+  "dmsg": {
+    "header": {
+      "title": "Text Message",
+      "demo_message": "Demo data. Bind your device to collect actual data.",
+      "bind_button": "Bind My Device",
+      "bind_button_aria": "Bind device to start collecting data"
+    },
+    "sidebar": {
+      "date": "October 26, {{date}}",
+      "chip": "Last 7 days",
+      "close_button_aria": "Close sidebar",
+      "search_placeholder": "Search contacts..."
+    },
+    "chat": {
+      "menu_button_aria": "Open contact list",
+      "message_placeholder": "Type a message...",
+      "send_button_aria": "Send message",
+      "no_contact_selected": "Select a contact to view messages"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "I'll make sure nobody sees us.",
+        "messages": [
+          {
+            "text": "Can we meet tonight without anyone knowing?"
+          },
+          {
+            "text": "I'll make sure nobody sees us."
+          }
+        ]
+      },
+      "sally": {
+        "last_message": "I deleted all our texts, just in case.",
+        "messages": [
+          { "text": "Hey, you still coming over tonight?" },
+          { "text": "Yeah, but I told them I'm at a work event." },
+          { "text": "Good call. We need to be careful." },
+          { "text": "I know, I feel so guilty." },
+          { "text": "Meet me at the usual spot?" },
+          { "text": "I deleted all our texts, just in case." }
+        ]
+      },
+      "tony": {
+        "last_message": "She believed my excuse, we're good.",
+        "messages": [
+          { "text": "Did you tell her you were with me?" },
+          { "text": "No, said I was working late." },
+          { "text": "Phew, that was close." },
+          { "text": "You free tomorrow night?" },
+          { "text": "Yeah, I can sneak out." },
+          { "text": "Got a new alibi ready." },
+          { "text": "She believed my excuse, we're good." }
+        ]
+      }
+    }
   }
 }

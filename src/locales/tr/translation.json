@@ -743,5 +743,57 @@
   "df": {
     "copyright": "Telif Hakkı © {{year}}",
     "rights_reserved": "Tüm hakları saklıdır."
+  },
+  "dmsg": {
+    "header": {
+      "title": "Metin Mesajı",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla"
+    },
+    "sidebar": {
+      "date": "26 Ekim {{date}}",
+      "chip": "Son 7 gün",
+      "close_button_aria": "Kenar çubuğunu kapat",
+      "search_placeholder": "Kişileri ara..."
+    },
+    "chat": {
+      "menu_button_aria": "Kişi listesini aç",
+      "message_placeholder": "Bir mesaj yaz...",
+      "send_button_aria": "Mesaj gönder",
+      "no_contact_selected": "Mesajları görmek için bir kişi seçin"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "Kimsenin bizi görmemesini sağlayacağım.",
+        "messages": [
+          { "text": "Bu akşam kimseye çaktırmadan buluşabilir miyiz?" },
+          { "text": "Kimsenin bizi görmemesini sağlayacağım." }
+        ]
+      },
+      "sally": {
+        "last_message": "Her ihtimale karşı tüm mesajlarımızı sildim.",
+        "messages": [
+          { "text": "Hey, bu akşam hala geliyor musun?" },
+          { "text": "Evet, ama onlara iş etkinliğinde olduğumu söyledim." },
+          { "text": "İyi fikir, dikkatli olmalıyız." },
+          { "text": "Biliyorum, çok suçlu hissediyorum." },
+          { "text": "Her zamanki yerde buluşalım mı?" },
+          { "text": "Her ihtimale karşı tüm mesajlarımızı sildim." }
+        ]
+      },
+      "tony": {
+        "last_message": "Bahanelerime inandı, sorun yok.",
+        "messages": [
+          { "text": "Ona benimle olduğunu mu söyledin?" },
+          { "text": "Hayır, geç saatlere kadar çalıştığımı söyledim." },
+          { "text": "Vay, bu yakındı." },
+          { "text": "Yarın akşam müsait misin?" },
+          { "text": "Evet, gizlice kaçabilirim." },
+          { "text": "Yeni bir bahane hazırladım." },
+          { "text": "Bahanelerime inandı, sorun yok." }
+        ]
+      }
+    }
   }
 }

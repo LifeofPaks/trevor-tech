@@ -742,5 +742,57 @@
   "df": {
     "copyright": "Copyright © {{year}}",
     "rights_reserved": "Todos los derechos reservados."
+  },
+  "dmsg": {
+    "header": {
+      "title": "Mensaje de texto",
+      "demo_message": "Datos de demostración. Vincula tu dispositivo para recopilar datos reales.",
+      "bind_button": "Vincular mi dispositivo",
+      "bind_button_aria": "Vincular dispositivo para comenzar a recopilar datos"
+    },
+    "sidebar": {
+      "date": "26 de octubre de {{date}}",
+      "chip": "Últimos 7 días",
+      "close_button_aria": "Cerrar barra lateral",
+      "search_placeholder": "Buscar contactos..."
+    },
+    "chat": {
+      "menu_button_aria": "Abrir lista de contactos",
+      "message_placeholder": "Escribe un mensaje...",
+      "send_button_aria": "Enviar mensaje",
+      "no_contact_selected": "Selecciona un contacto para ver los mensajes"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "Me aseguraré de que nadie nos vea.",
+        "messages": [
+          { "text": "¿Podemos encontrarnos esta noche sin que nadie lo sepa?" },
+          { "text": "Me aseguraré de que nadie nos vea." }
+        ]
+      },
+      "sally": {
+        "last_message": "Borré todos nuestros mensajes, por si acaso.",
+        "messages": [
+          { "text": "Oye, ¿todavía vienes esta noche?" },
+          { "text": "Sí, pero les dije que estoy en un evento de trabajo." },
+          { "text": "Buena idea, tenemos que ser cuidadosos." },
+          { "text": "Lo sé, me siento tan culpable." },
+          { "text": "¿Nos encontramos en el lugar de siempre?" },
+          { "text": "Borré todos nuestros mensajes, por si acaso." }
+        ]
+      },
+      "tony": {
+        "last_message": "Ella creyó mi excusa, estamos bien.",
+        "messages": [
+          { "text": "¿Le dijiste que estabas conmigo?" },
+          { "text": "No, dije que estaba trabajando hasta tarde." },
+          { "text": "Uf, por poco." },
+          { "text": "¿Estás libre mañana por la noche?" },
+          { "text": "Sí, puedo escaparme." },
+          { "text": "Tengo una nueva coartada lista." },
+          { "text": "Ella creyó mi excusa, estamos bien." }
+        ]
+      }
+    }
   }
 }

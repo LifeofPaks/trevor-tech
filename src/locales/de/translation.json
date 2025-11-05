@@ -743,5 +743,63 @@
   "df": {
     "copyright": "Copyright © {{year}}",
     "rights_reserved": "Alle Rechte vorbehalten."
+  },
+  "dmsg": {
+    "header": {
+      "title": "Textnachricht",
+      "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
+      "bind_button": "Mein Gerät binden",
+      "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen"
+    },
+    "sidebar": {
+      "date": "26. Oktober {{date}}",
+      "chip": "Letzte 7 Tage",
+      "close_button_aria": "Seitenleiste schließen",
+      "search_placeholder": "Kontakte suchen..."
+    },
+    "chat": {
+      "menu_button_aria": "Kontaktliste öffnen",
+      "message_placeholder": "Nachricht eingeben...",
+      "send_button_aria": "Nachricht senden",
+      "no_contact_selected": "Wählen Sie einen Kontakt aus, um Nachrichten anzuzeigen"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "Ich werde sicherstellen, dass uns niemand sieht.",
+        "messages": [
+          {
+            "text": "Können wir uns heute Abend treffen, ohne dass es jemand weiß?"
+          },
+          { "text": "Ich werde sicherstellen, dass uns niemand sieht." }
+        ]
+      },
+      "sally": {
+        "last_message": "Ich habe alle unsere Nachrichten gelöscht, nur für den Fall.",
+        "messages": [
+          { "text": "Hey, kommst du heute Abend noch?" },
+          {
+            "text": "Ja, aber ich habe gesagt, ich sei bei einem Arbeitsevent."
+          },
+          { "text": "Gute Idee, wir müssen vorsichtig sein." },
+          { "text": "Ich weiß, ich fühle mich so schuldig." },
+          { "text": "Treffen wir uns am üblichen Ort?" },
+          {
+            "text": "Ich habe alle unsere Nachrichten gelöscht, nur für den Fall."
+          }
+        ]
+      },
+      "tony": {
+        "last_message": "Sie hat meine Ausrede geglaubt, alles gut.",
+        "messages": [
+          { "text": "Hast du ihr gesagt, du wärst bei mir?" },
+          { "text": "Nein, ich sagte, ich arbeite spät." },
+          { "text": "Puh, das war knapp." },
+          { "text": "Bist du morgen Abend frei?" },
+          { "text": "Ja, ich kann mich rausschleichen." },
+          { "text": "Ich habe eine neue Ausrede parat." },
+          { "text": "Sie hat meine Ausrede geglaubt, alles gut." }
+        ]
+      }
+    }
   }
 }

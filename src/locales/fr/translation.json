@@ -742,5 +742,61 @@
   "df": {
     "copyright": "Copyright © {{year}}",
     "rights_reserved": "Tous droits réservés."
+  },
+  "dmsg": {
+    "header": {
+      "title": "Message texte",
+      "demo_message": "Données de démonstration. Connectez votre appareil pour collecter des données réelles.",
+      "bind_button": "Connecter mon appareil",
+      "bind_button_aria": "Connecter l'appareil pour commencer à collecter des données"
+    },
+    "sidebar": {
+      "date": "26 octobre {{date}}",
+      "chip": "7 derniers jours",
+      "close_button_aria": "Fermer la barre latérale",
+      "search_placeholder": "Rechercher des contacts..."
+    },
+    "chat": {
+      "menu_button_aria": "Ouvrir la liste des contacts",
+      "message_placeholder": "Tapez un message...",
+      "send_button_aria": "Envoyer le message",
+      "no_contact_selected": "Sélectionnez un contact pour voir les messages"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "Je m'assurerai que personne ne nous voie.",
+        "messages": [
+          {
+            "text": "Peut-on se rencontrer ce soir sans que personne ne le sache ?"
+          },
+          { "text": "Je m'assurerai que personne ne nous voie." }
+        ]
+      },
+      "sally": {
+        "last_message": "J'ai supprimé tous nos messages, au cas où.",
+        "messages": [
+          { "text": "Salut, tu viens toujours ce soir ?" },
+          {
+            "text": "Oui, mais j'ai dit que j'étais à un événement professionnel."
+          },
+          { "text": "Bonne idée, il faut être prudents." },
+          { "text": "Je sais, je me sens tellement coupable." },
+          { "text": "On se retrouve au lieu habituel ?" },
+          { "text": "J'ai supprimé tous nos messages, au cas où." }
+        ]
+      },
+      "tony": {
+        "last_message": "Elle a cru mon excuse, tout va bien.",
+        "messages": [
+          { "text": "Tu lui as dit que tu étais avec moi ?" },
+          { "text": "Non, j'ai dit que je travaillais tard." },
+          { "text": "Ouf, c'était juste." },
+          { "text": "Tu es libre demain soir ?" },
+          { "text": "Oui, je peux m'éclipser." },
+          { "text": "J'ai une nouvelle excuse prête." },
+          { "text": "Elle a cru mon excuse, tout va bien." }
+        ]
+      }
+    }
   }
 }

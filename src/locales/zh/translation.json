@@ -743,5 +743,57 @@
   "df": {
     "copyright": "版权 © {{year}}",
     "rights_reserved": "保留所有权利。"
+  },
+  "dmsg": {
+    "header": {
+      "title": "短信",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据"
+    },
+    "sidebar": {
+      "date": "{{date}} 10月26日",
+      "chip": "最近7天",
+      "close_button_aria": "关闭侧边栏",
+      "search_placeholder": "搜索联系人..."
+    },
+    "chat": {
+      "menu_button_aria": "打开联系人列表",
+      "message_placeholder": "输入消息...",
+      "send_button_aria": "发送消息",
+      "no_contact_selected": "选择一个联系人以查看消息"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "我会确保没人看到我们。",
+        "messages": [
+          { "text": "今晚我们可以偷偷见面吗？" },
+          { "text": "我会确保没人看到我们。" }
+        ]
+      },
+      "sally": {
+        "last_message": "我删除了我们的所有消息，以防万一。",
+        "messages": [
+          { "text": "嘿，你今晚还过来吗？" },
+          { "text": "是的，但我跟他们说我在参加工作活动。" },
+          { "text": "好主意，我们得小心。" },
+          { "text": "我知道，我觉得很内疚。" },
+          { "text": "在老地方见面？" },
+          { "text": "我删除了我们的所有消息，以防万一。" }
+        ]
+      },
+      "tony": {
+        "last_message": "她相信了我的借口，没事了。",
+        "messages": [
+          { "text": "你跟她说你和我在一起了吗？" },
+          { "text": "没有，我说我在加班。" },
+          { "text": "呼，差一点。" },
+          { "text": "明天晚上有空吗？" },
+          { "text": "有，我可以偷偷溜出来。" },
+          { "text": "已经准备好新的借口了。" },
+          { "text": "她相信了我的借口，没事了。" }
+        ]
+      }
+    }
   }
 }
