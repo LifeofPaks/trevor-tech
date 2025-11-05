@@ -1365,5 +1365,39 @@
       "wifi8.title": "家里",
       "wifi9.title": "Jewell咖啡馆"
     }
+  },
+  "dmappblock": {
+    "header": {
+      "title": "应用屏蔽"
+    },
+    "button": {
+      "block": "屏蔽",
+      "unblock": "取消屏蔽",
+      "block_aria": "屏蔽应用 {name}",
+      "unblock_aria": "取消屏蔽应用 {name}"
+    },
+    "grid": {
+      "aria_label": "应用屏蔽列表"
+    },
+    "apps": {
+      "app1.name": "Instagram",
+      "app2.name": "LINE",
+      "app3.name": "Snapchat",
+      "app4.name": "Tinder",
+      "app5.name": "Twitter",
+      "app6.name": "Viber",
+      "app7.name": "Facebook",
+      "app8.name": "WhatsApp",
+      "app9.name": "TikTok",
+      "app10.name": "YouTube",
+      "app11.name": "Netflix",
+      "app12.name": "Spotify",
+      "app13.name": "Discord",
+      "app14.name": "Telegram",
+      "app15.name": "Twitch",
+      "app16.name": "Pinterest",
+      "app17.name": "LinkedIn",
+      "app18.name": "亚马逊"
+    }
   }
 }

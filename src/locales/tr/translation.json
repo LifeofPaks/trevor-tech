@@ -1365,5 +1365,39 @@
       "wifi8.title": "Ev",
       "wifi9.title": "Jewell kafe"
     }
+  },
+  "dmappblock": {
+    "header": {
+      "title": "Uygulama Engelleme"
+    },
+    "button": {
+      "block": "Engelle",
+      "unblock": "Engeli Kaldır",
+      "block_aria": "Uygulamayı {name} engelle",
+      "unblock_aria": "Uygulamanın {name} engelini kaldır"
+    },
+    "grid": {
+      "aria_label": "Uygulama engelleme listesi"
+    },
+    "apps": {
+      "app1.name": "Instagram",
+      "app2.name": "LINE",
+      "app3.name": "Snapchat",
+      "app4.name": "Tinder",
+      "app5.name": "Twitter",
+      "app6.name": "Viber",
+      "app7.name": "Facebook",
+      "app8.name": "WhatsApp",
+      "app9.name": "TikTok",
+      "app10.name": "YouTube",
+      "app11.name": "Netflix",
+      "app12.name": "Spotify",
+      "app13.name": "Discord",
+      "app14.name": "Telegram",
+      "app15.name": "Twitch",
+      "app16.name": "Pinterest",
+      "app17.name": "LinkedIn",
+      "app18.name": "Amazon"
+    }
   }
 }

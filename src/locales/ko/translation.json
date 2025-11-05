@@ -1366,5 +1366,39 @@
       "wifi8.title": "집",
       "wifi9.title": "Jewell 카페"
     }
+  },
+  "dmappblock": {
+    "header": {
+      "title": "앱 차단"
+    },
+    "button": {
+      "block": "차단",
+      "unblock": "차단 해제",
+      "block_aria": "앱 {name} 차단",
+      "unblock_aria": "앱 {name} 차단 해제"
+    },
+    "grid": {
+      "aria_label": "앱 차단 목록"
+    },
+    "apps": {
+      "app1.name": "인스타그램",
+      "app2.name": "라인",
+      "app3.name": "스냅챗",
+      "app4.name": "틴더",
+      "app5.name": "트위터",
+      "app6.name": "바이버",
+      "app7.name": "페이스북",
+      "app8.name": "왓츠앱",
+      "app9.name": "틱톡",
+      "app10.name": "유튜브",
+      "app11.name": "넷플릭스",
+      "app12.name": "스포티파이",
+      "app13.name": "디스코드",
+      "app14.name": "텔레그램",
+      "app15.name": "트위치",
+      "app16.name": "핀터레스트",
+      "app17.name": "링크드인",
+      "app18.name": "아마존"
+    }
   }
 }

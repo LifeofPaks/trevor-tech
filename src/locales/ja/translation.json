@@ -1291,5 +1291,39 @@
       "wifi8.title": "自宅",
       "wifi9.title": "Jewellカフェ"
     }
+  },
+  "dmappblock": {
+    "header": {
+      "title": "アプリブロック"
+    },
+    "button": {
+      "block": "ブロック",
+      "unblock": "ブロック解除",
+      "block_aria": "アプリ {name} をブロック",
+      "unblock_aria": "アプリ {name} のブロックを解除"
+    },
+    "grid": {
+      "aria_label": "アプリブロックリスト"
+    },
+    "apps": {
+      "app1.name": "インスタグラム",
+      "app2.name": "ライン",
+      "app3.name": "スナップチャット",
+      "app4.name": "ティンダー",
+      "app5.name": "ツイッター",
+      "app6.name": "バイバー",
+      "app7.name": "フェイスブック",
+      "app8.name": "ワッツアップ",
+      "app9.name": "ティックトック",
+      "app10.name": "ユーチューブ",
+      "app11.name": "ネットフリックス",
+      "app12.name": "スポティファイ",
+      "app13.name": "ディスコード",
+      "app14.name": "テレグラム",
+      "app15.name": "ツイッチ",
+      "app16.name": "ピンタレスト",
+      "app17.name": "リンクトイン",
+      "app18.name": "アマゾン"
+    }
   }
 }

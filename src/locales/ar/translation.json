@@ -1364,5 +1364,39 @@
       "wifi8.title": "المنزل",
       "wifi9.title": "مقهى جويل"
     }
+  },
+  "dmappblock": {
+    "header": {
+      "title": "حظر التطبيقات"
+    },
+    "button": {
+      "block": "حظر",
+      "unblock": "إلغاء الحظر",
+      "block_aria": "حظر التطبيق {name}",
+      "unblock_aria": "إلغاء حظر التطبيق {name}"
+    },
+    "grid": {
+      "aria_label": "قائمة حظر التطبيقات"
+    },
+    "apps": {
+      "app1.name": "إنستغرام",
+      "app2.name": "لاين",
+      "app3.name": "سناب شات",
+      "app4.name": "تيندر",
+      "app5.name": "تويتر",
+      "app6.name": "فايبر",
+      "app7.name": "فيسبوك",
+      "app8.name": "واتساب",
+      "app9.name": "تيك توك",
+      "app10.name": "يوتيوب",
+      "app11.name": "نتفليكس",
+      "app12.name": "سبوتيفاي",
+      "app13.name": "ديسكورد",
+      "app14.name": "تيليغرام",
+      "app15.name": "تويتش",
+      "app16.name": "بينتيريست",
+      "app17.name": "لينكدإن",
+      "app18.name": "أمازون"
+    }
   }
 }

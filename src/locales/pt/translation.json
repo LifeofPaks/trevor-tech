@@ -1367,5 +1367,39 @@
       "wifi8.title": "Casa",
       "wifi9.title": "Café Jewell"
     }
+  },
+  "dmappblock": {
+    "header": {
+      "title": "Bloqueio de Aplicativos"
+    },
+    "button": {
+      "block": "Bloquear",
+      "unblock": "Desbloquear",
+      "block_aria": "Bloquear aplicativo {name}",
+      "unblock_aria": "Desbloquear aplicativo {name}"
+    },
+    "grid": {
+      "aria_label": "Lista de bloqueio de aplicativos"
+    },
+    "apps": {
+      "app1.name": "Instagram",
+      "app2.name": "LINE",
+      "app3.name": "Snapchat",
+      "app4.name": "Tinder",
+      "app5.name": "Twitter",
+      "app6.name": "Viber",
+      "app7.name": "Facebook",
+      "app8.name": "WhatsApp",
+      "app9.name": "TikTok",
+      "app10.name": "YouTube",
+      "app11.name": "Netflix",
+      "app12.name": "Spotify",
+      "app13.name": "Discord",
+      "app14.name": "Telegram",
+      "app15.name": "Twitch",
+      "app16.name": "Pinterest",
+      "app17.name": "LinkedIn",
+      "app18.name": "Amazon"
+    }
   }
 }
