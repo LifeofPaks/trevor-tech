@@ -452,7 +452,7 @@ const DemoSidebar = () => {
                     className="w-full flex items-center justify-center !gap-2 !py-3 text-[#00d4ff] hover:text-white !font-medium transition"
                     style={{ fontSize: getFontSizeClass("12px") }}
                   >
-                    <FiPlus /> {t("add_a_new_device")}
+                    <FiPlus /> {t("add_device")}
                   </button>
                 </div>
               </div>

@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
     { code: "ru", name: "Русский (Russian)", flag: "🇷🇺" },
     { code: "pt", name: "Português", flag: "🇵🇹" },
     { code: "de", name: "Deutsch", flag: "🇩🇪" },
-    { code: "ja", name: "日本語 (Japn)", flag: "🇯🇵" },
+    { code: "ja", name: "日本語 (Japan)", flag: "🇯🇵" },
     { code: "tr", name: "Türkçe (Turkish)", flag: "🇹🇷" },
     { code: "ko", name: "한국어 (Korean)", flag: "🇰🇷" },
   ];
