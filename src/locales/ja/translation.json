@@ -1263,5 +1263,33 @@
       "site2.domain": "グーグル.com",
       "site3.domain": "フェイスブック.com"
     }
+  },
+  "dmwifiblocker": {
+    "header": {
+      "title": "Wi-Fiブロック"
+    },
+    "table": {
+      "title": "タイトル",
+      "connected_time": "接続時間",
+      "latitude": "緯度",
+      "longitude": "経度",
+      "block_status": "ブロック/ブロック済み",
+      "block_button": "ブロック",
+      "unblock_button": "ブロック解除",
+      "aria_label": "Wi-Fiネットワークブロックリスト",
+      "block_button_aria": "Wi-Fiネットワーク {title} をブロック",
+      "unblock_button_aria": "Wi-Fiネットワーク {title} のブロックを解除"
+    },
+    "wifi": {
+      "wifi1.title": "ここに無料Wi-Fiはありません",
+      "wifi2.title": "Korman 1102",
+      "wifi3.title": "Willeroad",
+      "wifi4.title": "パスワードはpassword",
+      "wifi5.title": "CBCI-E524",
+      "wifi6.title": "スターバックス",
+      "wifi7.title": "学校",
+      "wifi8.title": "自宅",
+      "wifi9.title": "Jewellカフェ"
+    }
   }
 }

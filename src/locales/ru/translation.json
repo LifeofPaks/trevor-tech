@@ -1339,5 +1339,33 @@
       "site2.domain": "google.com",
       "site3.domain": "facebook.com"
     }
+  },
+  "dmwifiblocker": {
+    "header": {
+      "title": "Блокировка Wi-Fi"
+    },
+    "table": {
+      "title": "Название",
+      "connected_time": "Время подключения",
+      "latitude": "Широта",
+      "longitude": "Долгота",
+      "block_status": "Блокировать/Заблокировано",
+      "block_button": "Блокировать",
+      "unblock_button": "Разблокировать",
+      "aria_label": "Список блокировки сетей Wi-Fi",
+      "block_button_aria": "Блокировать сеть Wi-Fi {title}",
+      "unblock_button_aria": "Разблокировать сеть Wi-Fi {title}"
+    },
+    "wifi": {
+      "wifi1.title": "Здесь нет бесплатного Wi-Fi",
+      "wifi2.title": "Korman 1102",
+      "wifi3.title": "Willeroad",
+      "wifi4.title": "Пароль - password",
+      "wifi5.title": "CBCI-E524",
+      "wifi6.title": "Starbucks",
+      "wifi7.title": "Школа",
+      "wifi8.title": "Дом",
+      "wifi9.title": "Кафе Jewell"
+    }
   }
 }

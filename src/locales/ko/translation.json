@@ -1338,5 +1338,33 @@
       "site2.domain": "구글.com",
       "site3.domain": "페이스북.com"
     }
+  },
+  "dmwifiblocker": {
+    "header": {
+      "title": "Wi-Fi 차단"
+    },
+    "table": {
+      "title": "제목",
+      "connected_time": "연결 시간",
+      "latitude": "위도",
+      "longitude": "경도",
+      "block_status": "차단/차단됨",
+      "block_button": "차단",
+      "unblock_button": "차단 해제",
+      "aria_label": "Wi-Fi 네트워크 차단 목록",
+      "block_button_aria": "Wi-Fi 네트워크 {title} 차단",
+      "unblock_button_aria": "Wi-Fi 네트워크 {title} 차단 해제"
+    },
+    "wifi": {
+      "wifi1.title": "여기 무료 Wi-Fi 없음",
+      "wifi2.title": "Korman 1102",
+      "wifi3.title": "Willeroad",
+      "wifi4.title": "비밀번호는 password",
+      "wifi5.title": "CBCI-E524",
+      "wifi6.title": "스타벅스",
+      "wifi7.title": "학교",
+      "wifi8.title": "집",
+      "wifi9.title": "Jewell 카페"
+    }
   }
 }

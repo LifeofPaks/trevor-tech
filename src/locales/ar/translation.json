@@ -1336,5 +1336,33 @@
       "site2.domain": "google.com",
       "site3.domain": "facebook.com"
     }
+  },
+  "dmwifiblocker": {
+    "header": {
+      "title": "حظر الواي فاي"
+    },
+    "table": {
+      "title": "العنوان",
+      "connected_time": "وقت الاتصال",
+      "latitude": "خط العرض",
+      "longitude": "خط الطول",
+      "block_status": "حظر/محظور",
+      "block_button": "حظر",
+      "unblock_button": "إلغاء الحظر",
+      "aria_label": "قائمة حظر شبكات الواي فاي",
+      "block_button_aria": "حظر شبكة الواي فاي {title}",
+      "unblock_button_aria": "إلغاء حظر شبكة الواي فاي {title}"
+    },
+    "wifi": {
+      "wifi1.title": "لا يوجد واي فاي مجاني هنا",
+      "wifi2.title": "Korman 1102",
+      "wifi3.title": "Willeroad",
+      "wifi4.title": "كلمة المرور هي password",
+      "wifi5.title": "CBCI-E524",
+      "wifi6.title": "ستاربكس",
+      "wifi7.title": "المدرسة",
+      "wifi8.title": "المنزل",
+      "wifi9.title": "مقهى جويل"
+    }
   }
 }

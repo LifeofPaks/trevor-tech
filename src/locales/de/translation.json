@@ -1343,5 +1343,33 @@
       "site2.domain": "google.com",
       "site3.domain": "facebook.com"
     }
+  },
+  "dmwifiblocker": {
+    "header": {
+      "title": "Wi-Fi-Blockierung"
+    },
+    "table": {
+      "title": "Titel",
+      "connected_time": "Verbindungszeit",
+      "latitude": "Breitengrad",
+      "longitude": "Längengrad",
+      "block_status": "Blockieren/Blockiert",
+      "block_button": "Blockieren",
+      "unblock_button": "Entsperren",
+      "aria_label": "Liste der blockierten Wi-Fi-Netzwerke",
+      "block_button_aria": "Wi-Fi-Netzwerk {title} blockieren",
+      "unblock_button_aria": "Wi-Fi-Netzwerk {title} entsperren"
+    },
+    "wifi": {
+      "wifi1.title": "Hier kein kostenloses Wi-Fi",
+      "wifi2.title": "Korman 1102",
+      "wifi3.title": "Willeroad",
+      "wifi4.title": "Passwort ist password",
+      "wifi5.title": "CBCI-E524",
+      "wifi6.title": "Starbucks",
+      "wifi7.title": "Schule",
+      "wifi8.title": "Zuhause",
+      "wifi9.title": "Jewell Café"
+    }
   }
 }

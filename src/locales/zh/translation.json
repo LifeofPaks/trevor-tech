@@ -1337,5 +1337,33 @@
       "site2.domain": "google.com",
       "site3.domain": "facebook.com"
     }
+  },
+  "dmwifiblocker": {
+    "header": {
+      "title": "Wi-Fi屏蔽"
+    },
+    "table": {
+      "title": "名称",
+      "connected_time": "连接时间",
+      "latitude": "纬度",
+      "longitude": "经度",
+      "block_status": "屏蔽/已屏蔽",
+      "block_button": "屏蔽",
+      "unblock_button": "取消屏蔽",
+      "aria_label": "Wi-Fi网络屏蔽列表",
+      "block_button_aria": "屏蔽Wi-Fi网络 {title}",
+      "unblock_button_aria": "取消屏蔽Wi-Fi网络 {title}"
+    },
+    "wifi": {
+      "wifi1.title": "此处无免费Wi-Fi",
+      "wifi2.title": "Korman 1102",
+      "wifi3.title": "Willeroad",
+      "wifi4.title": "密码是password",
+      "wifi5.title": "CBCI-E524",
+      "wifi6.title": "星巴克",
+      "wifi7.title": "学校",
+      "wifi8.title": "家里",
+      "wifi9.title": "Jewell咖啡馆"
+    }
   }
 }

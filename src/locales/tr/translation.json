@@ -1337,5 +1337,33 @@
       "site2.domain": "google.com",
       "site3.domain": "facebook.com"
     }
+  },
+  "dmwifiblocker": {
+    "header": {
+      "title": "Wi-Fi Engelleme"
+    },
+    "table": {
+      "title": "Başlık",
+      "connected_time": "Bağlantı Zamanı",
+      "latitude": "Enlem",
+      "longitude": "Boylam",
+      "block_status": "Engelle/Engellenmiş",
+      "block_button": "Engelle",
+      "unblock_button": "Engeli Kaldır",
+      "aria_label": "Wi-Fi ağ engelleme listesi",
+      "block_button_aria": "Wi-Fi ağı {title} engelle",
+      "unblock_button_aria": "Wi-Fi ağı {title} engelini kaldır"
+    },
+    "wifi": {
+      "wifi1.title": "Burada ücretsiz Wi-Fi yok",
+      "wifi2.title": "Korman 1102",
+      "wifi3.title": "Willeroad",
+      "wifi4.title": "Şifre password",
+      "wifi5.title": "CBCI-E524",
+      "wifi6.title": "Starbucks",
+      "wifi7.title": "Okul",
+      "wifi8.title": "Ev",
+      "wifi9.title": "Jewell kafe"
+    }
   }
 }
