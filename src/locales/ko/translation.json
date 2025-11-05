@@ -964,5 +964,37 @@
       "prev_button_aria": "이전 페이지",
       "next_button_aria": "다음 페이지"
     }
+  },
+  "dmwifi": {
+    "header": {
+      "title": "Wi-Fi 네트워크",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "최근 7일"
+    },
+    "table": {
+      "bssid": "BSSID",
+      "name": "이름",
+      "connected": "연결 시간",
+      "latitude": "위도",
+      "longitude": "경도"
+    },
+    "pagination": {
+      "prev_button_aria": "이전 페이지",
+      "next_button_aria": "다음 페이지"
+    },
+    "networks": [
+      { "name": "Jewell 카페" },
+      { "name": "집" },
+      { "name": "학교" },
+      { "name": "스타벅스" },
+      { "name": "CBCI-E524" },
+      { "name": "비밀번호는 password" },
+      { "name": "Wileroad" },
+      { "name": "Korman 1102" },
+      { "name": "여기 무료 Wi-Fi 없음" }
+    ]
   }
 }

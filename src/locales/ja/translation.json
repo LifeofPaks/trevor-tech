@@ -964,5 +964,37 @@
       "prev_button_aria": "前のページ",
       "next_button_aria": "次のページ"
     }
+  },
+  "dmwifi": {
+    "header": {
+      "title": "Wi-Fiネットワーク",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "過去7日間"
+    },
+    "table": {
+      "bssid": "BSSID",
+      "name": "名前",
+      "connected": "接続日時",
+      "latitude": "緯度",
+      "longitude": "経度"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    },
+    "networks": [
+      { "name": "Jewellカフェ" },
+      { "name": "自宅" },
+      { "name": "学校" },
+      { "name": "スターバックス" },
+      { "name": "CBCI-E524" },
+      { "name": "パスワードはpassword" },
+      { "name": "Wileroad" },
+      { "name": "Korman 1102" },
+      { "name": "ここでは無料Wi-Fiなし" }
+    ]
   }
 }

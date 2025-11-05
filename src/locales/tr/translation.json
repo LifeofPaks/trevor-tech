@@ -963,5 +963,37 @@
       "prev_button_aria": "Önceki sayfa",
       "next_button_aria": "Sonraki sayfa"
     }
+  },
+  "dmwifi": {
+    "header": {
+      "title": "Wi-Fi Ağları",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Son 7 gün"
+    },
+    "table": {
+      "bssid": "BSSID",
+      "name": "İsim",
+      "connected": "Bağlanma Zamanı",
+      "latitude": "Enlem",
+      "longitude": "Boylam"
+    },
+    "pagination": {
+      "prev_button_aria": "Önceki sayfa",
+      "next_button_aria": "Sonraki sayfa"
+    },
+    "networks": [
+      { "name": "Jewell kafe" },
+      { "name": "Ev" },
+      { "name": "Okul" },
+      { "name": "Starbucks" },
+      { "name": "CBCI-E524" },
+      { "name": "Şifre password" },
+      { "name": "Wileroad" },
+      { "name": "Korman 1102" },
+      { "name": "Burada ücretsiz Wi-Fi yok" }
+    ]
   }
 }

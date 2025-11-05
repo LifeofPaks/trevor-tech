@@ -965,5 +965,37 @@
       "prev_button_aria": "Предыдущая страница",
       "next_button_aria": "Следующая страница"
     }
+  },
+  "dmwifi": {
+    "header": {
+      "title": "Сети Wi-Fi",
+      "demo_message": "Демонстрационные данные. Привяжите устройство для сбора реальных данных.",
+      "bind_button": "Привязать мое устройство",
+      "bind_button_aria": "Привязать устройство для начала сбора данных",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Последние 7 дней"
+    },
+    "table": {
+      "bssid": "BSSID",
+      "name": "Название",
+      "connected": "Подключено",
+      "latitude": "Широта",
+      "longitude": "Долгота"
+    },
+    "pagination": {
+      "prev_button_aria": "Предыдущая страница",
+      "next_button_aria": "Следующая страница"
+    },
+    "networks": [
+      { "name": "Кафе Jewell" },
+      { "name": "Дом" },
+      { "name": "Школа" },
+      { "name": "Starbucks" },
+      { "name": "CBCI-E524" },
+      { "name": "Пароль - password" },
+      { "name": "Wileroad" },
+      { "name": "Korman 1102" },
+      { "name": "Здесь нет бесплатного Wi-Fi" }
+    ]
   }
 }

@@ -962,5 +962,37 @@
       "prev_button_aria": "الصفحة السابقة",
       "next_button_aria": "الصفحة التالية"
     }
+  },
+  "dmwifi": {
+    "header": {
+      "title": "شبكات Wi-Fi",
+      "demo_message": "بيانات تجريبية. قم بربط جهازك لجمع البيانات الفعلية.",
+      "bind_button": "ربط جهازي",
+      "bind_button_aria": "ربط الجهاز لبدء جمع البيانات",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "آخر 7 أيام"
+    },
+    "table": {
+      "bssid": "BSSID",
+      "name": "الاسم",
+      "connected": "تاريخ الاتصال",
+      "latitude": "خط العرض",
+      "longitude": "خط الطول"
+    },
+    "pagination": {
+      "prev_button_aria": "الصفحة السابقة",
+      "next_button_aria": "الصفحة التالية"
+    },
+    "networks": [
+      { "name": "مقهى جويل" },
+      { "name": "المنزل" },
+      { "name": "المدرسة" },
+      { "name": "ستاربكس" },
+      { "name": "CBCI-E524" },
+      { "name": "كلمة المرور هي password" },
+      { "name": "Wileroad" },
+      { "name": "Korman 1102" },
+      { "name": "لا يوجد Wi-Fi مجاني هنا" }
+    ]
   }
 }

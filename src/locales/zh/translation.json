@@ -963,5 +963,37 @@
       "prev_button_aria": "上一页",
       "next_button_aria": "下一页"
     }
+  },
+  "dmwifi": {
+    "header": {
+      "title": "Wi-Fi网络",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "最近7天"
+    },
+    "table": {
+      "bssid": "BSSID",
+      "name": "名称",
+      "connected": "连接时间",
+      "latitude": "纬度",
+      "longitude": "经度"
+    },
+    "pagination": {
+      "prev_button_aria": "上一页",
+      "next_button_aria": "下一页"
+    },
+    "networks": [
+      { "name": "Jewell咖啡馆" },
+      { "name": "家里" },
+      { "name": "学校" },
+      { "name": "星巴克" },
+      { "name": "CBCI-E524" },
+      { "name": "密码是password" },
+      { "name": "Wileroad" },
+      { "name": "Korman 1102" },
+      { "name": "这里没有免费Wi-Fi" }
+    ]
   }
 }

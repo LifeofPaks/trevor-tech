@@ -969,5 +969,37 @@
       "prev_button_aria": "Vorherige Seite",
       "next_button_aria": "Nächste Seite"
     }
+  },
+  "dmwifi": {
+    "header": {
+      "title": "Wi-Fi-Netzwerke",
+      "demo_message": "Demodaten. Binden Sie Ihr Gerät, um echte Daten zu sammeln.",
+      "bind_button": "Mein Gerät binden",
+      "bind_button_aria": "Gerät binden, um mit der Datensammlung zu beginnen",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Letzte 7 Tage"
+    },
+    "table": {
+      "bssid": "BSSID",
+      "name": "Name",
+      "connected": "Verbunden",
+      "latitude": "Breitengrad",
+      "longitude": "Längengrad"
+    },
+    "pagination": {
+      "prev_button_aria": "Vorherige Seite",
+      "next_button_aria": "Nächste Seite"
+    },
+    "networks": [
+      { "name": "Jewell Café" },
+      { "name": "Zuhause" },
+      { "name": "Schule" },
+      { "name": "Starbucks" },
+      { "name": "CBCI-E524" },
+      { "name": "Passwort ist password" },
+      { "name": "Wileroad" },
+      { "name": "Korman 1102" },
+      { "name": "Hier kein kostenloses Wi-Fi" }
+    ]
   }
 }
