@@ -734,5 +734,9 @@
       },
       "footer": "© {{year}} TrevorTech • v{{version}}"
     }
+  },
+  "bp": {
+    "demo_message": "Datos de demostración. Vincula tu dispositivo para recopilar datos reales.",
+    "bind_button": "Vincular mi dispositivo"
   }
 }

@@ -736,5 +736,9 @@
       },
       "footer": "© {{year}} TrevorTech • v{{version}}"
     }
+  },
+  "bp": {
+    "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+    "bind_button": "내 기기 연결"
   }
 }

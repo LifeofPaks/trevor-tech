@@ -735,5 +735,9 @@
       },
       "footer": "© {{year}} TrevorTech • v{{version}}"
     }
+  },
+  "bp": {
+    "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+    "bind_button": "Cihazımı bağla"
   }
 }

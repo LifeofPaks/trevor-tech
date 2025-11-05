@@ -736,5 +736,9 @@
       },
       "footer": "© {{year}} TrevorTech • バージョン{{version}}"
     }
+  },
+  "bp": {
+    "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+    "bind_button": "私のデバイスをバインド"
   }
 }
