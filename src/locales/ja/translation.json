@@ -859,5 +859,28 @@
       { "text": "読んだらこれを削除して。" },
       { "text": "ブラウザの履歴をクリアする方法？" }
     ]
+  },
+  "dcl": {
+    "header": {
+      "title": "通話",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "過去7日間"
+    },
+    "table": {
+      "state": "状態",
+      "state_missed": "不在",
+      "state_incoming": "着信",
+      "state_outgoing": "発信",
+      "number": "番号",
+      "name": "名前",
+      "duration": "通話時間"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    }
   }
 }

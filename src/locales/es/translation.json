@@ -857,5 +857,28 @@
       { "text": "Borra esto después de leerlo." },
       { "text": "¿Cómo borrar el historial del navegador?" }
     ]
+  },
+  "dcl": {
+    "header": {
+      "title": "Llamadas",
+      "demo_message": "Datos de demostración. Vincula tu dispositivo para recopilar datos reales.",
+      "bind_button": "Vincular mi dispositivo",
+      "bind_button_aria": "Vincular dispositivo para comenzar a recopilar datos",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Últimos 7 días"
+    },
+    "table": {
+      "state": "Estado",
+      "state_missed": "Perdida",
+      "state_incoming": "Entrante",
+      "state_outgoing": "Saliente",
+      "number": "Número",
+      "name": "Nombre",
+      "duration": "Duración"
+    },
+    "pagination": {
+      "prev_button_aria": "Página anterior",
+      "next_button_aria": "Página siguiente"
+    }
   }
 }

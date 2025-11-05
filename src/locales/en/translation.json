@@ -866,5 +866,28 @@
       { "text": "Delete this after reading." },
       { "text": "How to clear browser history?" }
     ]
+  },
+  "dcl": {
+    "header": {
+      "title": "Calls",
+      "demo_message": "Demo data. Bind your device to collect actual data.",
+      "bind_button": "Bind My Device",
+      "bind_button_aria": "Bind device to start collecting data",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Last 7 days"
+    },
+    "table": {
+      "state": "State",
+      "state_missed": "Missed",
+      "state_incoming": "Incoming",
+      "state_outgoing": "Outgoing",
+      "number": "Number",
+      "name": "Name",
+      "duration": "Duration"
+    },
+    "pagination": {
+      "prev_button_aria": "Previous page",
+      "next_button_aria": "Next page"
+    }
   }
 }

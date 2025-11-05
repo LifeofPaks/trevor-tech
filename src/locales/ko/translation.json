@@ -859,5 +859,28 @@
       { "text": "이거 읽고 나서 삭제해." },
       { "text": "브라우저 기록을 지우는 방법?" }
     ]
+  },
+  "dcl": {
+    "header": {
+      "title": "통화",
+      "demo_message": "데모 데이터. 실제 데이터를 수집하려면 기기를 연결하세요.",
+      "bind_button": "내 기기 연결",
+      "bind_button_aria": "데이터 수집을 시작하려면 기기를 연결",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "최근 7일"
+    },
+    "table": {
+      "state": "상태",
+      "state_missed": "부재중",
+      "state_incoming": "수신",
+      "state_outgoing": "발신",
+      "number": "번호",
+      "name": "이름",
+      "duration": "통화 시간"
+    },
+    "pagination": {
+      "prev_button_aria": "이전 페이지",
+      "next_button_aria": "다음 페이지"
+    }
   }
 }

@@ -860,5 +860,28 @@
       { "text": "Apague isso após ler." },
       { "text": "Como limpar o histórico do navegador?" }
     ]
+  },
+  "dcl": {
+    "header": {
+      "title": "Chamadas",
+      "demo_message": "Dados de demonstração. Vincule seu dispositivo para coletar dados reais.",
+      "bind_button": "Vincular meu dispositivo",
+      "bind_button_aria": "Vincular dispositivo para começar a coletar dados",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Últimos 7 dias"
+    },
+    "table": {
+      "state": "Estado",
+      "state_missed": "Perdida",
+      "state_incoming": "Recebida",
+      "state_outgoing": "Efetuada",
+      "number": "Número",
+      "name": "Nome",
+      "duration": "Duração"
+    },
+    "pagination": {
+      "prev_button_aria": "Página anterior",
+      "next_button_aria": "Próxima página"
+    }
   }
 }

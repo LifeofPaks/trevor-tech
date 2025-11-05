@@ -857,5 +857,28 @@
       { "text": "احذف هذا بعد القراءة." },
       { "text": "كيفية مسح سجل المتصفح؟" }
     ]
+  },
+  "dcl": {
+    "header": {
+      "title": "المكالمات",
+      "demo_message": "بيانات تجريبية. قم بربط جهازك لجمع البيانات الفعلية.",
+      "bind_button": "ربط جهازي",
+      "bind_button_aria": "ربط الجهاز لبدء جمع البيانات",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "آخر 7 أيام"
+    },
+    "table": {
+      "state": "الحالة",
+      "state_missed": "فائتة",
+      "state_incoming": "واردة",
+      "state_outgoing": "صادرة",
+      "number": "الرقم",
+      "name": "الاسم",
+      "duration": "المدة"
+    },
+    "pagination": {
+      "prev_button_aria": "الصفحة السابقة",
+      "next_button_aria": "الصفحة التالية"
+    }
   }
 }

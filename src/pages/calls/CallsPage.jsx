@@ -21,7 +21,8 @@ import {
   MdChevronLeft,
   MdChevronRight,
 } from "react-icons/md";
-import { IoCallSharp, IoLogoBitbucket } from "react-icons/io5";
+import { IoCallSharp } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 import BuyModal from "../../components/buyModal/BuyModal";
 
 // Sample Call Data
@@ -99,11 +100,12 @@ const calls = [
 ];
 
 const CallsPage = () => {
+  const { t } = useTranslation();
   const [page, setPage] = useState(1);
-      const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-      const handleOpen = () => setOpen(true);
-      const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -111,24 +113,24 @@ const CallsPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Calls
-              <IoCallSharp className="text-[#0695c8]" />
+              {t("dcl.header.title")} <IoCallSharp className="text-[#0695c8]" />
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center !gap-2 sm:!gap-3">
             <span className="text-[10px] sm:text-xs text-orange-600 bg-orange-100 !px-3 sm:!px-4 !py-1.5 sm:!py-2 rounded-full font-medium">
-              Demo data. Bind your device to collect actual data.
+              {t("dcl.header.demo_message")}
             </span>
             <button
               onClick={handleOpen}
               className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[13px] !px-4 sm:!px-5 !py-1.5 sm:!py-2 rounded-full font-semibold shadow-md hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+              aria-label={t("dcl.header.bind_button_aria")}
             >
-              Bind My Device
+              {t("dcl.header.bind_button")}
             </button>
           </div>
         </div>
       </header>
-      <Box className="!p-6 !bg-gray-50 ">
+      <Box className="!p-6 !bg-gray-50">
         {/* Header */}
         <Box className="!mb-6">
           <Stack
@@ -140,16 +142,15 @@ const CallsPage = () => {
             <Stack direction="row" spacing={2} alignItems="center">
               <div className="!flex !items-center !gap-2 !bg-white !border !border-gray-200 !rounded-xl !px-4 !py-2">
                 <MdCalendarToday className="!text-gray-500 !text-sm" />
-                <span className="!text-gray-700 !font-medium !text-sm">
-                  2021-01-01
-                </span>
-                <span className="!text-gray-500 !mx-1">—</span>
-                <span className="!text-gray-700 !font-medium !text-sm">
-                  2022-04-30
+                <span className="!text-gray-700 !font-medium !text-[11px] lg:!text-[13px]">
+                  {t("dcl.header.date_range", {
+                    startDate: "2021-01-01",
+                    endDate: "2022-04-30",
+                  })}
                 </span>
               </div>
               <Chip
-                label="Last 7 days"
+                label={t("dcl.header.last_7_days")}
                 size="small"
                 sx={{
                   backgroundColor: "#e0f2fe",
@@ -178,10 +179,15 @@ const CallsPage = () => {
           <Table>
             <TableHead>
               <TableRow sx={{ backgroundColor: "#f9fafb" }}>
-                {["State", "Number", "Name", "Duration"].map((header) => (
+                {[
+                  t("dcl.table.state"),
+                  t("dcl.table.number"),
+                  t("dcl.table.name"),
+                  t("dcl.table.duration"),
+                ].map((header, index) => (
                   <TableCell
-                    key={header}
-                    align={header === "Date" ? "right" : "left"}
+                    className="!text-[11px] lg:!text-[13px]"
+                    key={index}
                     sx={{
                       fontWeight: 600,
                       color: "#374151",
@@ -227,6 +233,7 @@ const CallsPage = () => {
                   >
                     {/* State */}
                     <TableCell
+                      className="!text-[11px] lg:!text-[13px]"
                       sx={{
                         px: 3,
                         fontWeight: 500,
@@ -236,16 +243,17 @@ const CallsPage = () => {
                       }}
                     >
                       <Stack direction="row" spacing={1.5} alignItems="center">
-                        <Icon style={{ color: iconColor, fontSize: 20 }} />
+                        <Icon style={{ color: iconColor, fontSize: 16 }} />
                         {/* Hide text on mobile */}
                         <span className="text-gray-600 hidden sm:inline">
-                          {call.state}
+                          {t(`dcl.table.state_${call.state.toLowerCase()}`)}
                         </span>
                       </Stack>
                     </TableCell>
 
                     {/* Number */}
                     <TableCell
+                      className="!text-[11px] lg:!text-[13px] "
                       sx={{
                         fontFamily: "monospace",
                         color: "#4b5563",
@@ -259,6 +267,7 @@ const CallsPage = () => {
 
                     {/* Name */}
                     <TableCell
+                      className="!text-[11px] lg:!text-[13px]"
                       sx={{
                         color: "#4b5563",
                         fontWeight: 500,
@@ -272,6 +281,7 @@ const CallsPage = () => {
 
                     {/* Duration */}
                     <TableCell
+                      className="!text-[11px] lg:!text-[13px]"
                       sx={{
                         fontFamily: "monospace",
                         color: "#6b7280",
@@ -292,7 +302,11 @@ const CallsPage = () => {
         {/* Pagination */}
         <Box className="!mt-6 !flex justify-center">
           <Stack direction="row" spacing={1} alignItems="center">
-            <IconButton size="small" sx={{ color: "#9ca3af" }}>
+            <IconButton
+              size="small"
+              sx={{ color: "#9ca3af" }}
+              aria-label={t("dcl.pagination.prev_button_aria")}
+            >
               <MdChevronLeft />
             </IconButton>
             <Chip
@@ -306,7 +320,11 @@ const CallsPage = () => {
                 height: 32,
               }}
             />
-            <IconButton size="small" sx={{ color: "#9ca3af" }}>
+            <IconButton
+              size="small"
+              sx={{ color: "#9ca3af" }}
+              aria-label={t("dcl.pagination.next_button_aria")}
+            >
               <MdChevronRight />
             </IconButton>
           </Stack>

@@ -858,5 +858,28 @@
       { "text": "读完后删除这条消息。" },
       { "text": "如何清除浏览器历史记录？" }
     ]
+  },
+  "dcl": {
+    "header": {
+      "title": "通话记录",
+      "demo_message": "演示数据。绑定您的设备以收集实际数据。",
+      "bind_button": "绑定我的设备",
+      "bind_button_aria": "绑定设备以开始收集数据",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "最近7天"
+    },
+    "table": {
+      "state": "状态",
+      "state_missed": "未接",
+      "state_incoming": "来电",
+      "state_outgoing": "去电",
+      "number": "号码",
+      "name": "姓名",
+      "duration": "时长"
+    },
+    "pagination": {
+      "prev_button_aria": "上一页",
+      "next_button_aria": "下一页"
+    }
   }
 }

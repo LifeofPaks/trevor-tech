@@ -858,5 +858,28 @@
       { "text": "Bunu okuduktan sonra sil." },
       { "text": "Tarayıcı geçmişi nasıl temizlenir?" }
     ]
+  },
+  "dcl": {
+    "header": {
+      "title": "Aramalar",
+      "demo_message": "Demo verileri. Gerçek verileri toplamak için cihazınızı bağlayın.",
+      "bind_button": "Cihazımı bağla",
+      "bind_button_aria": "Veri toplamaya başlamak için cihazı bağla",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "Son 7 gün"
+    },
+    "table": {
+      "state": "Durum",
+      "state_missed": "Cevapsız",
+      "state_incoming": "Gelen",
+      "state_outgoing": "Giden",
+      "number": "Numara",
+      "name": "İsim",
+      "duration": "Süre"
+    },
+    "pagination": {
+      "prev_button_aria": "Önceki sayfa",
+      "next_button_aria": "Sonraki sayfa"
+    }
   }
 }
