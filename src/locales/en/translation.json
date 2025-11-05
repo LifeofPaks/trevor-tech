@@ -1112,5 +1112,70 @@
       "page_aria": "Page {{page}}",
       "next_aria": "Next page"
     }
+  },
+  "dmemail": {
+    "header": {
+      "title": "Email History"
+    },
+    "filters": {
+      "source": {
+        "label": "Email source",
+        "all": "All",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "Folder",
+        "inbox": "Inbox",
+        "sent": "Sent",
+        "spam": "Spam"
+      }
+    },
+    "avatar_alt": "Avatar for {{from}}",
+    "preview": {
+      "to_label": "To:",
+      "from_label": "From:",
+      "subject_label": "Subject:",
+      "date_label": "Date:",
+      "no_selection": "Select an email to preview",
+      "back_aria": "Back to email list"
+    },
+    "pagination": {
+      "previous_aria": "Previous page",
+      "page_aria": "Page {{page}}",
+      "next_aria": "Next page"
+    },
+    "emails": {
+      "email1": {
+        "from": "security@bankalert.com",
+        "subject": "Urgent: Your Bank Account is at Risk",
+        "preview": "Immediate action required to secure your account.",
+        "body": "Dear Customer,\n\nWe detected suspicious activity on your bank account. Please verify your identity immediately by clicking the link below:\n\n[Secure My Account]\n\nFailure to act within 24 hours may result in account suspension.\n\nBest regards,\nBank Security Team"
+      },
+      "email2": {
+        "from": "noreply@accounts-service.com",
+        "subject": "Password Reset Request",
+        "preview": "You requested a password reset. Act now to secure your account.",
+        "body": "Dear User,\n\nWe received a request to reset your password. Click the link below to proceed:\n\n[Reset Password]\n\nIf you did not request this, please ignore this email, but we recommend securing your account immediately.\n\nThank you,\nAccount Services"
+      },
+      "email3": {
+        "from": "info@lotterywin.com",
+        "subject": "Congratulations! You're a Prize Winner!",
+        "preview": "Claim your $1,000,000 prize now!",
+        "body": "Dear Winner,\n\nYou have been selected as the winner of a $1,000,000 prize! To claim your reward, provide your details via the link below:\n\n[Claim Prize]\n\nHurry, this offer expires in 48 hours!\n\nBest,\nLottery Team"
+      },
+      "email4": {
+        "from": "support@paypal-service.com",
+        "subject": "Your PayPal Account Has Been Suspended",
+        "preview": "Action required to restore your PayPal account access.",
+        "body": "Dear User,\n\nYour PayPal account has been temporarily suspended due to unusual activity. Please verify your account by clicking below:\n\n[Verify Account]\n\nFailure to verify within 24 hours will result in permanent suspension.\n\nPayPal Support"
+      },
+      "email5": {
+        "from": "invest@crypto-opportunity.com",
+        "subject": "Exclusive Crypto Investment Opportunity",
+        "preview": "Invest now and earn 500% returns in 7 days!",
+        "body": "Dear Investor,\n\nJoin our exclusive cryptocurrency investment program and earn 500% returns in just 7 days! Click below to get started:\n\n[Invest Now]\n\nDon't miss this limited-time opportunity!\n\nCrypto Opportunity Team"
+      }
+    }
   }
 }

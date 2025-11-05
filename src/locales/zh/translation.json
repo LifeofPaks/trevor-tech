@@ -1104,5 +1104,70 @@
       "page_aria": "第{{page}}页",
       "next_aria": "下一页"
     }
+  },
+  "dmemail": {
+    "header": {
+      "title": "电子邮件历史记录"
+    },
+    "filters": {
+      "source": {
+        "label": "电子邮件来源",
+        "all": "全部",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "文件夹",
+        "inbox": "收件箱",
+        "sent": "已发送",
+        "spam": "垃圾邮件"
+      }
+    },
+    "avatar_alt": "{{from}}的头像",
+    "preview": {
+      "to_label": "收件人：",
+      "from_label": "发件人：",
+      "subject_label": "主题：",
+      "date_label": "日期：",
+      "no_selection": "选择一封电子邮件进行预览",
+      "back_aria": "返回电子邮件列表"
+    },
+    "pagination": {
+      "previous_aria": "上一页",
+      "page_aria": "第{{page}}页",
+      "next_aria": "下一页"
+    },
+    "emails": {
+      "email1": {
+        "from": "security@bankalert.com",
+        "subject": "紧急：您的银行账户存在风险",
+        "preview": "需立即采取行动以保护您的账户。",
+        "body": "尊敬的客户，\n\n我们检测到您的银行账户存在可疑活动。请立即通过以下链接验证您的身份：\n\n[保护我的账户]\n\n如未在24小时内采取行动，您的账户可能被暂停。\n\n此致，\n银行安全团队"
+      },
+      "email2": {
+        "from": "noreply@accounts-service.com",
+        "subject": "密码重置请求",
+        "preview": "您请求了密码重置，立即采取行动保护账户。",
+        "body": "尊敬的用户，\n\n我们收到您重置密码的请求。请点击以下链接继续：\n\n[重置密码]\n\n如果您未发起此请求，请忽略此邮件，但建议立即保护您的账户。\n\n谢谢，\n账户服务团队"
+      },
+      "email3": {
+        "from": "info@lotterywin.com",
+        "subject": "恭喜！您是奖品获得者！",
+        "preview": "立即领取100万美元大奖！",
+        "body": "尊敬的获奖者，\n\n您已被选为100万美元大奖的获得者！请通过以下链接提供您的详细信息：\n\n[领取奖品]\n\n抓紧时间，此优惠将在48小时内过期！\n\n此致，\n彩票团队"
+      },
+      "email4": {
+        "from": "support@paypal-service.com",
+        "subject": "您的PayPal账户已被暂停",
+        "preview": "需采取行动以恢复PayPal账户访问权限。",
+        "body": "尊敬的用户，\n\n由于异常活动，您的PayPal账户已被暂时暂停。请通过以下链接验证您的账户：\n\n[验证账户]\n\n如未在24小时内验证，您的账户将被永久暂停。\n\nPayPal支持团队"
+      },
+      "email5": {
+        "from": "invest@crypto-opportunity.com",
+        "subject": "独家加密货币投资机会",
+        "preview": "立即投资，7天内获得500%回报！",
+        "body": "尊敬的投资者，\n\n加入我们的独家加密货币投资计划，7天内获得500%回报！点击以下链接开始：\n\n[立即投资]\n\n不要错过这个限时机会！\n\n加密机会团队"
+      }
+    }
   }
 }

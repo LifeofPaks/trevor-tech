@@ -1103,5 +1103,70 @@
       "page_aria": "Página {{page}}",
       "next_aria": "Página siguiente"
     }
+  },
+  "dmemail": {
+    "header": {
+      "title": "Historial de Correos"
+    },
+    "filters": {
+      "source": {
+        "label": "Fuente de correo",
+        "all": "Todos",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "Carpeta",
+        "inbox": "Bandeja de entrada",
+        "sent": "Enviados",
+        "spam": "Spam"
+      }
+    },
+    "avatar_alt": "Avatar para {{from}}",
+    "preview": {
+      "to_label": "Para:",
+      "from_label": "De:",
+      "subject_label": "Asunto:",
+      "date_label": "Fecha:",
+      "no_selection": "Selecciona un correo para previsualizar",
+      "back_aria": "Volver a la lista de correos"
+    },
+    "pagination": {
+      "previous_aria": "Página anterior",
+      "page_aria": "Página {{page}}",
+      "next_aria": "Página siguiente"
+    },
+    "emails": {
+      "email1": {
+        "from": "seguridad@bancoalerta.com",
+        "subject": "Urgente: Su Cuenta Bancaria Está en Riesgo",
+        "preview": "Se requiere acción inmediata para asegurar su cuenta.",
+        "body": "Estimado Cliente,\n\nHemos detectado actividad sospechosa en su cuenta bancaria. Por favor, verifique su identidad inmediatamente haciendo clic en el enlace a continuación:\n\n[Asegurar Mi Cuenta]\n\nSi no actúa en 24 horas, su cuenta podría ser suspendida.\n\nSaludos cordiales,\nEquipo de Seguridad Bancaria"
+      },
+      "email2": {
+        "from": "noreply@servicio-cuentas.com",
+        "subject": "Solicitud de Restablecimiento de Contraseña",
+        "preview": "Ha solicitado restablecer su contraseña. Actúe ahora.",
+        "body": "Estimado Usuario,\n\nHemos recibido una solicitud para restablecer su contraseña. Haga clic en el enlace a continuación para continuar:\n\n[Restablecer Contraseña]\n\nSi no solicitó esto, ignore este correo, pero le recomendamos asegurar su cuenta de inmediato.\n\nGracias,\nEquipo de Servicios de Cuentas"
+      },
+      "email3": {
+        "from": "info@ganaloteria.com",
+        "subject": "¡Felicidades! ¡Eres Ganador de un Premio!",
+        "preview": "¡Reclama tu premio de $1,000,000 ahora!",
+        "body": "Estimado Ganador,\n\nHas sido seleccionado como ganador de un premio de $1,000,000. Proporciona tus datos a través del enlace a continuación:\n\n[Reclamar Premio]\n\n¡Date prisa, esta oferta expira en 48 horas!\n\nSaludos,\nEquipo de Lotería"
+      },
+      "email4": {
+        "from": "soporte@paypal-servicio.com",
+        "subject": "Tu Cuenta de PayPal Ha Sido Suspendida",
+        "preview": "Se requiere acción para restaurar el acceso a tu cuenta.",
+        "body": "Estimado Usuario,\n\nTu cuenta de PayPal ha sido suspendida temporalmente debido a actividad inusual. Por favor, verifica tu cuenta haciendo clic a continuación:\n\n[Verificar Cuenta]\n\nSi no verificas en 24 horas, tu cuenta será suspendida permanentemente.\n\nSoporte de PayPal"
+      },
+      "email5": {
+        "from": "inversion@cripto-oportunidad.com",
+        "subject": "Oportunidad Exclusiva de Inversión en Criptomonedas",
+        "preview": "¡Invierte ahora y obtén un 500% de retorno en 7 días!",
+        "body": "Estimado Inversor,\n\nÚnete a nuestro exclusivo programa de inversión en criptomonedas y obtén un 500% de retorno en solo 7 días. Haz clic a continuación para comenzar:\n\n[Invertir Ahora]\n\n¡No pierdas esta oportunidad de tiempo limitado!\n\nEquipo de Oportunidad Cripto"
+      }
+    }
   }
 }

@@ -1110,5 +1110,70 @@
       "page_aria": "Seite {{page}}",
       "next_aria": "Nächste Seite"
     }
+  },
+  "dmemail": {
+    "header": {
+      "title": "E-Mail-Verlauf"
+    },
+    "filters": {
+      "source": {
+        "label": "E-Mail-Quelle",
+        "all": "Alle",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "Ordner",
+        "inbox": "Posteingang",
+        "sent": "Gesendet",
+        "spam": "Spam"
+      }
+    },
+    "avatar_alt": "Avatar für {{from}}",
+    "preview": {
+      "to_label": "An:",
+      "from_label": "Von:",
+      "subject_label": "Betreff:",
+      "date_label": "Datum:",
+      "no_selection": "Wählen Sie eine E-Mail zur Vorschau aus",
+      "back_aria": "Zurück zur E-Mail-Liste"
+    },
+    "pagination": {
+      "previous_aria": "Vorherige Seite",
+      "page_aria": "Seite {{page}}",
+      "next_aria": "Nächste Seite"
+    },
+    "emails": {
+      "email1": {
+        "from": "sicherheit@bankalarm.com",
+        "subject": "Dringend: Ihr Bankkonto ist gefährdet",
+        "preview": "Sofortige Maßnahmen erforderlich, um Ihr Konto zu sichern.",
+        "body": "Sehr geehrter Kunde,\n\nWir haben verdächtige Aktivitäten auf Ihrem Bankkonto festgestellt. Bitte verifizieren Sie Ihre Identität sofort über den folgenden Link:\n\n[Mein Konto Sichern]\n\nWenn Sie innerhalb von 24 Stunden keine Maßnahmen ergreifen, wird Ihr Konto gesperrt.\n\nMit freundlichen Grüßen,\nBank-Sicherheitsteam"
+      },
+      "email2": {
+        "from": "noreply@konto-service.com",
+        "subject": "Anfrage zur Passwortzurücksetzung",
+        "preview": "Sie haben eine Passwortzurücksetzung angefordert. Handeln Sie jetzt.",
+        "body": "Sehr geehrter Nutzer,\n\nWir haben eine Anfrage zur Zurücksetzung Ihres Passworts erhalten. Klicken Sie auf den Link unten, um fortzufahren:\n\n[Passwort Zurücksetzen]\n\nWenn Sie diese Anfrage nicht gestellt haben, ignorieren Sie diese E-Mail, aber wir empfehlen, Ihr Konto sofort zu sichern.\n\nDanke,\nKonto-Service-Team"
+      },
+      "email3": {
+        "from": "info@lotteriegewinn.com",
+        "subject": "Herzlichen Glückwunsch! Sie sind Gewinner!",
+        "preview": "Holen Sie sich jetzt Ihren $1,000,000 Preis!",
+        "body": "Sehr geehrter Gewinner,\n\nSie wurden als Gewinner eines $1,000,000 Preises ausgewählt. Geben Sie Ihre Daten über den Link unten ein:\n\n[Preis Abholen]\n\nBeeilen Sie sich, dieses Angebot läuft in 48 Stunden ab!\n\nMit freundlichen Grüßen,\nLotterie-Team"
+      },
+      "email4": {
+        "from": "support@paypal-service.com",
+        "subject": "Ihr PayPal-Konto wurde gesperrt",
+        "preview": "Maßnahmen erforderlich, um den Kontozugriff wiederherzustellen.",
+        "body": "Sehr geehrter Nutzer,\n\nIhr PayPal-Konto wurde aufgrund ungewöhnlicher Aktivitäten vorübergehend gesperrt. Bitte verifizieren Sie Ihr Konto über den Link unten:\n\n[Konto Verifizieren]\n\nWenn Sie nicht innerhalb von 24 Stunden verifizieren, wird Ihr Konto dauerhaft gesperrt.\n\nPayPal-Support"
+      },
+      "email5": {
+        "from": "invest@krypto-chance.com",
+        "subject": "Exklusive Krypto-Investmentmöglichkeit",
+        "preview": "Investieren Sie jetzt und erzielen Sie 500% Rendite in 7 Tagen!",
+        "body": "Sehr geehrter Investor,\n\nSchließen Sie sich unserem exklusiven Krypto-Investmentprogramm an und erzielen Sie 500% Rendite in nur 7 Tagen. Klicken Sie unten, um zu beginnen:\n\n[Jetzt Investieren]\n\nVerpassen Sie diese zeitlich begrenzte Gelegenheit nicht!\n\nKrypto-Chance-Team"
+      }
+    }
   }
 }

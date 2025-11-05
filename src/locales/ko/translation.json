@@ -1105,5 +1105,70 @@
       "page_aria": "페이지 {{page}}",
       "next_aria": "다음 페이지"
     }
+  },
+  "dmemail": {
+    "header": {
+      "title": "이메일 기록"
+    },
+    "filters": {
+      "source": {
+        "label": "이메일 소스",
+        "all": "모두",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "폴더",
+        "inbox": "받은편지함",
+        "sent": "보낸편지함",
+        "spam": "스팸"
+      }
+    },
+    "avatar_alt": "{{from}}의 아바타",
+    "preview": {
+      "to_label": "받는 사람:",
+      "from_label": "보낸 사람:",
+      "subject_label": "제목:",
+      "date_label": "날짜:",
+      "no_selection": "미리보기 위해 이메일을 선택하세요",
+      "back_aria": "이메일 목록으로 돌아가기"
+    },
+    "pagination": {
+      "previous_aria": "이전 페이지",
+      "page_aria": "페이지 {{page}}",
+      "next_aria": "다음 페이지"
+    },
+    "emails": {
+      "email1": {
+        "from": "security@bankalert.com",
+        "subject": "긴급: 귀하의 은행 계좌가 위험에 처했습니다",
+        "preview": "계정을 보호하기 위해 즉시 조치가 필요합니다.",
+        "body": "친애하는 고객님,\n\n귀하의 은행 계좌에서 의심스러운 활동이 감지되었습니다. 아래 링크를 클릭하여 즉시 신원을 확인하십시오:\n\n[계정 보호]\n\n24시간 이내에 조치를 취하지 않으면 계정이 정지될 수 있습니다.\n\n감사합니다,\n은행 보안 팀"
+      },
+      "email2": {
+        "from": "noreply@accounts-service.com",
+        "subject": "비밀번호 재설정 요청",
+        "preview": "비밀번호 재설정을 요청했습니다. 지금 조치하십시오.",
+        "body": "친애하는 사용자님,\n\n귀하의 비밀번호 재설정 요청을 받았습니다. 아래 링크를 클릭하여 계속 진행하십시오:\n\n[비밀번호 재설정]\n\n이 요청을 하지 않았다면 이 이메일을 무시하셔도 됩니다. 하지만 즉시 계정을 보호하는 것을 권장합니다.\n\n감사합니다,\n계정 서비스 팀"
+      },
+      "email3": {
+        "from": "info@lotterywin.com",
+        "subject": "축하합니다! 당신은 상금 수상자입니다!",
+        "preview": "지금 100만 달러 상금을 청구하세요!",
+        "body": "친애하는 수상자님,\n\n당신은 100만 달러 상금의 수상자로 선정되었습니다. 아래 링크를 통해 세부 정보를 제공하십시오:\n\n[상금 청구]\n\n서두르세요, 이 제안은 48시간 내에 만료됩니다!\n\n감사합니다,\n로또 팀"
+      },
+      "email4": {
+        "from": "support@paypal-service.com",
+        "subject": "귀하의 PayPal 계정이 정지되었습니다",
+        "preview": "계정 접근을 복구하려면 조치가 필요합니다.",
+        "body": "친애하는 사용자님,\n\n비정상적인 활동으로 인해 귀하의 PayPal 계정이 일시적으로 정지되었습니다. 아래 링크를 클릭하여 계정을 확인하십시오:\n\n[계정 확인]\n\n24시간 이내에 확인하지 않으면 계정이 영구적으로 정지됩니다.\n\nPayPal 지원팀"
+      },
+      "email5": {
+        "from": "invest@crypto-opportunity.com",
+        "subject": "독점적인 암호화폐 투자 기회",
+        "preview": "지금 투자하여 7일 만에 500% 수익을 얻으세요!",
+        "body": "친애하는 투자자님,\n\n저희 독점적인 암호화폐 투자 프로그램에 참여하여 7일 만에 500% 수익을 얻으세요. 아래를 클릭하여 시작하십시오:\n\n[지금 투자]\n\n이 제한된 시간 기회를 놓치지 마세요!\n\n크립토 오퍼튜니티 팀"
+      }
+    }
   }
 }

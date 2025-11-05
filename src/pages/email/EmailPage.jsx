@@ -16,105 +16,64 @@ import {
   Divider,
 } from "@mui/material";
 import { FiChevronLeft, FiChevronRight, FiMail } from "react-icons/fi";
-import { IoLogoBitbucket } from "react-icons/io5";
-import BindPhone from "../../components/demo/BindPhone";
 import { MdEmail } from "react-icons/md";
+import { useTranslation } from "react-i18next";
+import BindPhone from "../../components/demo/BindPhone";
 
-// Sample Emails with Profile Pictures
+// Sample Emails with Profile Pictures (Cheating/Phishing Theme)
 const emails = [
   {
     id: 1,
-    from: "jane@gmail.com",
-    subject: "Happy birthday to you",
+    fromKey: "email1.from",
+    subjectKey: "email1.subject",
     time: "2022-02-10 09:00",
-    preview: "Hope you have a wonderful day filled with joy and laughter!",
+    previewKey: "email1.preview",
+    bodyKey: "email1.body",
     avatar: "https://i.pravatar.cc/150?img=1",
-    body: `Dear Nina,
-
-Hope you have a wonderful day filled with joy and laughter!
-
-Best wishes,
-Jane`,
   },
   {
     id: 2,
-    from: "jasonpayne@gmail.com",
-    subject: "Password rest request",
+    fromKey: "email2.from",
+    subjectKey: "email2.subject",
     time: "2022-02-05 10:20",
-    preview: "You requested a password reset for your account.",
+    previewKey: "email2.preview",
+    bodyKey: "email2.body",
     avatar: "https://i.pravatar.cc/150?img=5",
-    body: `Hi Nina,
-
-You requested a password reset for your account. Click the link below to proceed:
-
-[Reset Password]
-
-If you didn't request this, you can safely ignore this email.
-
-Thanks,
-The Team`,
   },
   {
     id: 3,
-    from: "mail@mail.adobe.com",
-    subject: "Unlock 25% off creative cloud",
+    fromKey: "email3.from",
+    subjectKey: "email3.subject",
     time: "2022-01-10 22:40",
-    preview: "Limited time offer: Save 25% on Adobe Creative Cloud!",
+    previewKey: "email3.preview",
+    bodyKey: "email3.body",
     avatar: "https://i.pravatar.cc/150?img=11",
-    body: `Hi Nina,
-
-Unlock 25% off Creative Cloud — your all-in-one design toolkit.
-
-- Photoshop
-- Illustrator
-- Premiere Pro
-- And 20+ apps
-
-Offer ends soon → https://adobe.com/offer
-
-Adobe`,
   },
   {
     id: 4,
-    from: "noreply@email.apple.com",
-    subject: "Your Apple ID was used to sign in to iCloud via a web browser",
+    fromKey: "email4.from",
+    subjectKey: "email4.subject",
     time: "2022-01-07 21:32",
-    preview:
-      "Your Apple ID (nina@outlook.com) was used to sign in to iCloud via a web browser.",
+    previewKey: "email4.preview",
+    bodyKey: "email4.body",
     avatar: "https://i.pravatar.cc/150?img=15",
-    body: `Dear Nina,
-
-Your Apple ID (nina@outlook.com) was used to sign in to iCloud via a web browser.
-
-Date and Time: Jan 7, 2022, 9:30 PM CST
-
-If the information above looks familiar, you can ignore this message.
-
-If you have not signed in to iCloud recently and believe someone may have accessed your account, go to Apple ID[](https://appleid.apple.com) and change your password as soon as possible.
-
-Apple Support`,
   },
   {
     id: 5,
-    from: "support@spotify.com",
-    subject: "Your premium trial has ended",
+    fromKey: "email5.from",
+    subjectKey: "email5.subject",
     time: "2022-01-05 14:15",
-    preview: "Keep listening ad-free with Spotify Premium.",
+    previewKey: "email5.preview",
+    bodyKey: "email5.body",
     avatar: "https://i.pravatar.cc/150?img=20",
-    body: `Hi Nina,
-
-Your Spotify Premium trial has ended. Keep listening ad-free, offline, and with unlimited skips.
-
-Subscribe now → https://spotify.com/premium
-
-Spotify`,
   },
 ];
 
 const ROWS_PER_PAGE = 10;
 
 const EmailPage = () => {
-  const [selectedEmail, setSelectedEmail] = useState(emails[3]); // Apple email by default
+  const { t } = useTranslation();
+  const [selectedEmail, setSelectedEmail] = useState(emails[3]); // Default to email4 (bank alert)
   const [page, setPage] = useState(1);
   const [source, setSource] = useState("All");
   const [folder, setFolder] = useState("Inbox");
@@ -132,14 +91,13 @@ const EmailPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Email History
-              <MdEmail className="text-[#0695c8]" />
+              {t("dmemail.header.title")} <MdEmail className="text-[#0695c8]" />
             </h1>
           </div>
           <BindPhone />
         </div>
       </header>
-      <Box className="  overflow-x-hidden">
+      <Box className="overflow-x-hidden">
         {/* Header */}
         <Box className="!m-6">
           <Stack
@@ -149,11 +107,11 @@ const EmailPage = () => {
             className="!flex-wrap"
           >
             <FormControl size="small" sx={{ minWidth: 120 }}>
-              <InputLabel>Email source</InputLabel>
+              <InputLabel>{t("dmemail.filters.source.label")}</InputLabel>
               <Select
                 value={source}
                 onChange={(e) => setSource(e.target.value)}
-                label="Email source"
+                label={t("dmemail.filters.source.label")}
                 sx={{
                   borderRadius: "12px",
                   backgroundColor: "#fff",
@@ -162,18 +120,24 @@ const EmailPage = () => {
                   },
                 }}
               >
-                <MenuItem value="All">All</MenuItem>
-                <MenuItem value="Gmail">Gmail</MenuItem>
-                <MenuItem value="Outlook">Outlook</MenuItem>
+                <MenuItem value="All">
+                  {t("dmemail.filters.source.all")}
+                </MenuItem>
+                <MenuItem value="Gmail">
+                  {t("dmemail.filters.source.gmail")}
+                </MenuItem>
+                <MenuItem value="Outlook">
+                  {t("dmemail.filters.source.outlook")}
+                </MenuItem>
               </Select>
             </FormControl>
 
             <FormControl size="small" sx={{ minWidth: 120 }}>
-              <InputLabel>Folder</InputLabel>
+              <InputLabel>{t("dmemail.filters.folder.label")}</InputLabel>
               <Select
                 value={folder}
                 onChange={(e) => setFolder(e.target.value)}
-                label="Folder"
+                label={t("dmemail.filters.folder.label")}
                 sx={{
                   borderRadius: "12px",
                   backgroundColor: "#fff",
@@ -182,9 +146,15 @@ const EmailPage = () => {
                   },
                 }}
               >
-                <MenuItem value="Inbox">Inbox</MenuItem>
-                <MenuItem value="Sent">Sent</MenuItem>
-                <MenuItem value="Spam">Spam</MenuItem>
+                <MenuItem value="Inbox">
+                  {t("dmemail.filters.folder.inbox")}
+                </MenuItem>
+                <MenuItem value="Sent">
+                  {t("dmemail.filters.folder.sent")}
+                </MenuItem>
+                <MenuItem value="Spam">
+                  {t("dmemail.filters.folder.spam")}
+                </MenuItem>
               </Select>
             </FormControl>
           </Stack>
@@ -239,7 +209,9 @@ const EmailPage = () => {
                   <Stack direction="row" spacing={2} alignItems="flex-start">
                     <Avatar
                       src={email.avatar}
-                      alt={email.from}
+                      alt={t("dmemail.avatar_alt", {
+                        from: t(`dmemail.emails.${email.fromKey}`),
+                      })}
                       sx={{
                         width: 40,
                         height: 40,
@@ -254,16 +226,16 @@ const EmailPage = () => {
                             selectedEmail?.id === email.id ? 600 : 500,
                         }}
                       >
-                        {email.from}
+                        {t(`dmemail.emails.${email.fromKey}`)}
                       </Typography>
                       <Typography className="!text-xs !text-gray-500 !mt-0.5">
                         {email.time}
                       </Typography>
                       <Typography className="!font-medium !text-gray-800 !text-sm !mt-1 !truncate">
-                        {email.subject}
+                        {t(`dmemail.emails.${email.subjectKey}`)}
                       </Typography>
                       <Typography className="!text-xs !text-gray-600 !truncate !mt-1">
-                        {email.preview}
+                        {t(`dmemail.emails.${email.previewKey}`)}
                       </Typography>
                     </Box>
                   </Stack>
@@ -304,14 +276,14 @@ const EmailPage = () => {
                       variant="h6"
                       className="!font-bold !text-gray-800"
                     >
-                      {selectedEmail.subject}
+                      {t(`dmemail.emails.${selectedEmail.subjectKey}`)}
                     </Typography>
                   </Stack>
 
                   <Stack spacing={1} className="!mb-6">
                     <Box className="!flex !justify-between">
                       <Typography className="!text-sm !text-gray-600">
-                        To:
+                        {t("dmemail.preview.to_label")}
                       </Typography>
                       <Typography className="!text-sm !font-medium">
                         nina@gmail.com
@@ -319,23 +291,23 @@ const EmailPage = () => {
                     </Box>
                     <Box className="!flex !justify-between">
                       <Typography className="!text-sm !text-gray-600">
-                        From:
+                        {t("dmemail.preview.from_label")}
                       </Typography>
                       <Typography className="!text-sm !font-medium">
-                        {selectedEmail.from}
+                        {t(`dmemail.emails.${selectedEmail.fromKey}`)}
                       </Typography>
                     </Box>
                     <Box className="!flex !justify-between">
                       <Typography className="!text-sm !text-gray-600">
-                        Subject:
+                        {t("dmemail.preview.subject_label")}
                       </Typography>
                       <Typography className="!text-sm !font-medium">
-                        {selectedEmail.subject}
+                        {t(`dmemail.emails.${selectedEmail.subjectKey}`)}
                       </Typography>
                     </Box>
                     <Box className="!flex !justify-between">
                       <Typography className="!text-sm !text-gray-600">
-                        Date:
+                        {t("dmemail.preview.date_label")}
                       </Typography>
                       <Typography className="!text-sm !font-medium">
                         {selectedEmail.time}
@@ -350,12 +322,12 @@ const EmailPage = () => {
                     className="!text-sm !text-gray-700 !whitespace-pre-wrap !font-sans"
                     sx={{ fontFamily: "inherit", lineHeight: 1.6 }}
                   >
-                    {selectedEmail.body}
+                    {t(`dmemail.emails.${selectedEmail.bodyKey}`)}
                   </Typography>
                 </Box>
               ) : (
                 <Typography className="!text-gray-500 !text-center">
-                  Select an email to preview
+                  {t("dmemail.preview.no_selection")}
                 </Typography>
               )}
             </Paper>
@@ -371,35 +343,41 @@ const EmailPage = () => {
               alignItems="center"
               className="!mb-6"
             >
-              <IconButton onClick={() => setSelectedEmail(null)} size="small">
+              <IconButton
+                onClick={() => setSelectedEmail(null)}
+                size="small"
+                aria-label={t("dmemail.preview.back_aria")}
+              >
                 <FiChevronLeft />
               </IconButton>
               <Typography
                 variant="h6"
                 className="!font-bold !text-gray-800 !flex-1"
               >
-                {selectedEmail.subject}
+                {t(`dmemail.emails.${selectedEmail.subjectKey}`)}
               </Typography>
             </Stack>
 
             <Stack spacing={1} className="!mb-6">
               <Box className="!flex !justify-between">
-                <Typography className="!text-sm !text-gray-600">To:</Typography>
+                <Typography className="!text-sm !text-gray-600">
+                  {t("dmemail.preview.to_label")}
+                </Typography>
                 <Typography className="!text-sm !font-medium">
                   nina@gmail.com
                 </Typography>
               </Box>
               <Box className="!flex !justify-between">
                 <Typography className="!text-sm !text-gray-600">
-                  From:
+                  {t("dmemail.preview.from_label")}
                 </Typography>
                 <Typography className="!text-sm !font-medium">
-                  {selectedEmail.from}
+                  {t(`dmemail.emails.${selectedEmail.fromKey}`)}
                 </Typography>
               </Box>
               <Box className="!flex !justify-between">
                 <Typography className="!text-sm !text-gray-600">
-                  Date:
+                  {t("dmemail.preview.date_label")}
                 </Typography>
                 <Typography className="!text-sm !font-medium">
                   {selectedEmail.time}
@@ -414,7 +392,7 @@ const EmailPage = () => {
               className="!text-sm !text-gray-700 !whitespace-pre-wrap !font-sans"
               sx={{ fontFamily: "inherit", lineHeight: 1.6 }}
             >
-              {selectedEmail.body}
+              {t(`dmemail.emails.${selectedEmail.bodyKey}`)}
             </Typography>
           </Box>
         )}
@@ -427,6 +405,7 @@ const EmailPage = () => {
               disabled={page === 1}
               onClick={() => setPage(page - 1)}
               sx={{ color: page === 1 ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmemail.pagination.previous_aria")}
             >
               <FiChevronLeft />
             </IconButton>
@@ -441,12 +420,14 @@ const EmailPage = () => {
                 height: 36,
                 fontSize: "0.875rem",
               }}
+              aria-label={t("dmemail.pagination.page_aria", { page })}
             />
             <IconButton
               size="small"
               disabled={page === totalPages}
               onClick={() => setPage(page + 1)}
               sx={{ color: page === totalPages ? "#d1d5db" : "#9ca3af" }}
+              aria-label={t("dmemail.pagination.next_aria")}
             >
               <FiChevronRight />
             </IconButton>

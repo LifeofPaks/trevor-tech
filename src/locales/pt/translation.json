@@ -1106,5 +1106,70 @@
       "page_aria": "Página {{page}}",
       "next_aria": "Próxima página"
     }
+  },
+  "dmemail": {
+    "header": {
+      "title": "Histórico de E-mails"
+    },
+    "filters": {
+      "source": {
+        "label": "Fonte do e-mail",
+        "all": "Todos",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "Pasta",
+        "inbox": "Caixa de entrada",
+        "sent": "Enviados",
+        "spam": "Spam"
+      }
+    },
+    "avatar_alt": "Avatar para {{from}}",
+    "preview": {
+      "to_label": "Para:",
+      "from_label": "De:",
+      "subject_label": "Assunto:",
+      "date_label": "Data:",
+      "no_selection": "Selecione um e-mail para visualizar",
+      "back_aria": "Voltar para a lista de e-mails"
+    },
+    "pagination": {
+      "previous_aria": "Página anterior",
+      "page_aria": "Página {{page}}",
+      "next_aria": "Próxima página"
+    },
+    "emails": {
+      "email1": {
+        "from": "seguranca@alertabanco.com",
+        "subject": "Urgente: Sua Conta Bancária Está em Risco",
+        "preview": "Ação imediata necessária para proteger sua conta.",
+        "body": "Prezado Cliente,\n\nDetectamos atividade suspeita em sua conta bancária. Por favor, verifique sua identidade imediatamente clicando no link abaixo:\n\n[Proteger Minha Conta]\n\nA não ação em 24 horas pode resultar na suspensão da conta.\n\nAtenciosamente,\nEquipe de Segurança Bancária"
+      },
+      "email2": {
+        "from": "noreply@servico-contas.com",
+        "subject": "Solicitação de Redefinição de Senha",
+        "preview": "Você solicitou uma redefinição de senha. Aja agora.",
+        "body": "Prezado Usuário,\n\nRecebemos uma solicitação para redefinir sua senha. Clique no link abaixo para prosseguir:\n\n[Redefinir Senha]\n\nSe você não fez esta solicitação, ignore este e-mail, mas recomendamos proteger sua conta imediatamente.\n\nObrigado,\nEquipe de Serviços de Contas"
+      },
+      "email3": {
+        "from": "info@ganhaloteria.com",
+        "subject": "Parabéns! Você é um Ganhador de Prêmio!",
+        "preview": "Resgate seu prêmio de $1,000,000 agora!",
+        "body": "Prezado Vencedor,\n\nVocê foi selecionado como ganhador de um prêmio de $1,000,000. Forneça seus dados pelo link abaixo:\n\n[Resgatar Prêmio]\n\nCorra, esta oferta expira em 48 horas!\n\nAtenciosamente,\nEquipe da Loteria"
+      },
+      "email4": {
+        "from": "suporte@paypal-servico.com",
+        "subject": "Sua Conta PayPal Foi Suspensa",
+        "preview": "Ação necessária para restaurar o acesso à conta.",
+        "body": "Prezado Usuário,\n\nSua conta PayPal foi temporariamente suspensa devido a atividade incomum. Por favor, verifique sua conta clicando abaixo:\n\n[Verificar Conta]\n\nSe não verificar em 24 horas, sua conta será suspensa permanentemente.\n\nSuporte PayPal"
+      },
+      "email5": {
+        "from": "investimento@cripto-oportunidade.com",
+        "subject": "Oportunidade Exclusiva de Investimento em Cripto",
+        "preview": "Invista agora e ganhe 500% de retorno em 7 dias!",
+        "body": "Prezado Investidor,\n\nJunte-se ao nosso programa exclusivo de investimento em criptomoedas e ganhe 500% de retorno em apenas 7 dias. Clique abaixo para começar:\n\n[Investir Agora]\n\nNão perca esta oportunidade de tempo limitado!\n\nEquipe Oportunidade Cripto"
+      }
+    }
   }
 }

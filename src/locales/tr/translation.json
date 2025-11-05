@@ -1104,5 +1104,70 @@
       "page_aria": "Sayfa {{page}}",
       "next_aria": "Sonraki sayfa"
     }
+  },
+  "dmemail": {
+    "header": {
+      "title": "E-posta Geçmişi"
+    },
+    "filters": {
+      "source": {
+        "label": "E-posta kaynağı",
+        "all": "Tümü",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "Klasör",
+        "inbox": "Gelen Kutusu",
+        "sent": "Gönderilen",
+        "spam": "Spam"
+      }
+    },
+    "avatar_alt": "{{from}} için avatar",
+    "preview": {
+      "to_label": "Kime:",
+      "from_label": "Kimden:",
+      "subject_label": "Konu:",
+      "date_label": "Tarih:",
+      "no_selection": "Önizleme için bir e-posta seçin",
+      "back_aria": "E-posta listesine geri dön"
+    },
+    "pagination": {
+      "previous_aria": "Önceki sayfa",
+      "page_aria": "Sayfa {{page}}",
+      "next_aria": "Sonraki sayfa"
+    },
+    "emails": {
+      "email1": {
+        "from": "guvenlik@banka-uyari.com",
+        "subject": "Acil: Banka Hesabınız Tehlikede",
+        "preview": "Hesabınızı güvence altına almak için hemen harekete geçin.",
+        "body": "Sayın Müşteri,\n\nBanka hesabınızda şüpheli bir etkinlik tespit ettik. Lütfen aşağıdaki bağlantıya tıklayarak kimliğinizi hemen doğrulayın:\n\n[Hesabımı Güvence Altına Al]\n\n24 saat içinde harekete geçmezseniz, hesabınız askıya alınabilir.\n\nSaygılarımızla,\nBanka Güvenlik Ekibi"
+      },
+      "email2": {
+        "from": "noreply@hesap-servis.com",
+        "subject": "Şifre Sıfırlama Talebi",
+        "preview": "Şifre sıfırlama talebinde bulundunuz. Şimdi harekete geçin.",
+        "body": "Sayın Kullanıcı,\n\nŞifrenizi sıfırlamak için bir talep aldık. Devam etmek için aşağıdaki bağlantıya tıklayın:\n\n[Şifreyi Sıfırla]\n\nBu talebi siz yapmadıysanız, bu e-postayı yok sayabilirsiniz, ancak hesabınızı hemen güvence altına almanızı öneririz.\n\nTeşekkürler,\nHesap Servis Ekibi"
+      },
+      "email3": {
+        "from": "bilgi@lotokazan.com",
+        "subject": "Tebrikler! Ödül Kazandınız!",
+        "preview": "Şimdi 1.000.000$ ödülünüzü talep edin!",
+        "body": "Sayın Kazanan,\n\n1.000.000$ ödülün kazananı olarak seçildiniz. Bilgilerinizi aşağıdaki bağlantı üzerinden sağlayın:\n\n[Ödülü Talep Et]\n\nAcele edin, bu teklif 48 saat içinde sona eriyor!\n\nSaygılar,\nLoto Ekibi"
+      },
+      "email4": {
+        "from": "destek@paypal-servis.com",
+        "subject": "PayPal Hesabınız Askıya Alındı",
+        "preview": "Hesap erişimini geri yüklemek için işlem gerekli.",
+        "body": "Sayın Kullanıcı,\n\nPayPal hesabınız alışılmadık aktiviteler nedeniyle geçici olarak askıya alındı. Lütfen hesabınızı aşağıdaki bağlantıya tıklayarak doğrulayın:\n\n[Hesabı Doğrula]\n\n24 saat içinde doğrulamazsanız, hesabınız kalıcı olarak askıya alınacaktır.\n\nPayPal Destek"
+      },
+      "email5": {
+        "from": "yatirim@kripto-firsat.com",
+        "subject": "Özel Kripto Para Yatırım Fırsatı",
+        "preview": "Şimdi yatırım yapın ve 7 günde %500 getiri elde edin!",
+        "body": "Sayın Yatırımcı,\n\nÖzel kripto para yatırım programımıza katılın ve sadece 7 günde %500 getiri elde edin. Başlamak için aşağıya tıklayın:\n\n[Şimdi Yatırım Yap]\n\nBu sınırlı süreli fırsatı kaçırmayın!\n\nKripto Fırsat Ekibi"
+      }
+    }
   }
 }

@@ -1107,5 +1107,70 @@
       "page_aria": "Page {{page}}",
       "next_aria": "Page suivante"
     }
+  },
+  "dmemail": {
+    "header": {
+      "title": "Historique des Emails"
+    },
+    "filters": {
+      "source": {
+        "label": "Source de l'email",
+        "all": "Tous",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "Dossier",
+        "inbox": "Boîte de réception",
+        "sent": "Envoyés",
+        "spam": "Spam"
+      }
+    },
+    "avatar_alt": "Avatar pour {{from}}",
+    "preview": {
+      "to_label": "À :",
+      "from_label": "De :",
+      "subject_label": "Objet :",
+      "date_label": "Date :",
+      "no_selection": "Sélectionnez un email pour le prévisualiser",
+      "back_aria": "Retour à la liste des emails"
+    },
+    "pagination": {
+      "previous_aria": "Page précédente",
+      "page_aria": "Page {{page}}",
+      "next_aria": "Page suivante"
+    },
+    "emails": {
+      "email1": {
+        "from": "securite@alertebanque.com",
+        "subject": "Urgent : Votre compte bancaire est en danger",
+        "preview": "Action immédiate requise pour sécuriser votre compte.",
+        "body": "Cher Client,\n\nNous avons détecté une activité suspecte sur votre compte bancaire. Veuillez vérifier votre identité immédiatement en cliquant sur le lien ci-dessous :\n\n[Sécuriser Mon Compte]\n\nSi vous ne réagissez pas dans les 24 heures, votre compte pourrait être suspendu.\n\nCordialement,\nÉquipe de Sécurité Bancaire"
+      },
+      "email2": {
+        "from": "noreply@service-comptes.com",
+        "subject": "Demande de réinitialisation de mot de passe",
+        "preview": "Vous avez demandé une réinitialisation. Agissez maintenant.",
+        "body": "Cher Utilisateur,\n\nNous avons reçu une demande de réinitialisation de votre mot de passe. Cliquez sur le lien ci-dessous pour continuer :\n\n[Réinitialiser le Mot de Passe]\n\nSi vous n'avez pas fait cette demande, ignorez cet email, mais nous vous recommandons de sécuriser votre compte immédiatement.\n\nMerci,\nÉquipe des Services de Comptes"
+      },
+      "email3": {
+        "from": "info@gagneloterie.com",
+        "subject": "Félicitations ! Vous êtes gagnant d'un prix !",
+        "preview": "Réclamez votre prix de 1 000 000 $ maintenant !",
+        "body": "Cher Gagnant,\n\nVous avez été sélectionné comme gagnant d'un prix de 1 000 000 $. Fournissez vos informations via le lien ci-dessous :\n\n[Récupérer le Prix]\n\nDépêchez-vous, cette offre expire dans 48 heures !\n\nCordialement,\nÉquipe de Loterie"
+      },
+      "email4": {
+        "from": "support@paypal-service.com",
+        "subject": "Votre compte PayPal a été suspendu",
+        "preview": "Action requise pour restaurer l'accès à votre compte.",
+        "body": "Cher Utilisateur,\n\nVotre compte PayPal a été temporairement suspendu en raison d'une activité inhabituelle. Veuillez vérifier votre compte en cliquant ci-dessous :\n\n[Vérifier le Compte]\n\nSi vous ne vérifiez pas dans les 24 heures, votre compte sera suspendu définitivement.\n\nSupport PayPal"
+      },
+      "email5": {
+        "from": "invest@crypto-opportunite.com",
+        "subject": "Opportunité exclusive d'investissement en crypto",
+        "preview": "Investissez maintenant pour 500 % de rendement en 7 jours !",
+        "body": "Cher Investisseur,\n\nRejoignez notre programme exclusif d'investissement en cryptomonnaie et obtenez 500 % de rendement en seulement 7 jours. Cliquez ci-dessous pour commencer :\n\n[Investir Maintenant]\n\nNe manquez pas cette opportunité à durée limitée !\n\nÉquipe Opportunité Crypto"
+      }
+    }
   }
 }
