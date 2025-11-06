@@ -2078,5 +2078,80 @@
         }
       }
     }
+  },
+  "dmsnap": {
+    "header": {
+      "title": "Snapchat"
+    },
+    "tabs": {
+      "chat": "聊天",
+      "followers": "关注者",
+      "aria_label": "Snapchat导航选项卡",
+      "chat_aria": "查看聊天列表",
+      "followers_aria": "查看关注者列表"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "Snapchat聊天列表",
+      "item_aria": "选择与{name}的聊天",
+      "detail_aria": "{name}的聊天详情"
+    },
+    "followers": {
+      "list_aria": "Snapchat关注者列表",
+      "item_aria": "选择关注者{name}",
+      "detail_aria": "{name}的关注者详情",
+      "phone": "电话",
+      "email": "电子邮件",
+      "ava_dance": { "name": "ava.dance", "email": "ava@snap.com" },
+      "noah_beck": { "name": "noah.beck", "email": "noah@snap.com" },
+      "ella_fit": { "name": "ella.fit", "email": "ella@snap.com" },
+      "liam_guitar": { "name": "liam.guitar", "email": "liam@snap.com" },
+      "zoe_style": { "name": "zoe.style", "email": "zoe@snap.com" },
+      "carter_skate": { "name": "carter.skate", "email": "carter@snap.com" },
+      "grace_photo": { "name": "grace.photo", "email": "grace@snap.com" },
+      "dylan_vlog": { "name": "dylan.vlog", "email": "dylan@snap.com" }
+    },
+    "chats": {
+      "lily_rosee": {
+        "name": "lily.rosee",
+        "lastMessage": "今晚见面？",
+        "messages": {
+          "msg1": { "text": "你能保密吗？", "incoming": true },
+          "msg2": { "text": "今晚见面？", "incoming": false }
+        }
+      },
+      "jake_surf": {
+        "name": "jake.surf",
+        "lastMessage": "别告诉她",
+        "messages": {
+          "msg1": { "text": "稍后有空吗？", "incoming": true },
+          "msg2": { "text": "别告诉她", "incoming": false }
+        }
+      },
+      "mia_vibes": {
+        "name": "mia.vibes",
+        "lastMessage": "九点秘密地点",
+        "messages": {
+          "msg1": { "text": "有秘密计划吗？", "incoming": true },
+          "msg2": { "text": "九点秘密地点", "incoming": false }
+        }
+      },
+      "ethan_music": {
+        "name": "ethan.music",
+        "lastMessage": "这事要保密",
+        "messages": {
+          "msg1": { "text": "刚才太危险了！", "incoming": true },
+          "msg2": { "text": "这事要保密", "incoming": false }
+        }
+      },
+      "sophia_art": {
+        "name": "sophia.art",
+        "lastMessage": "昨晚好想你",
+        "messages": {
+          "msg1": { "text": "你昨晚去哪了？", "incoming": true },
+          "msg2": { "text": "昨晚好想你", "incoming": false }
+        }
+      }
+    }
   }
 }

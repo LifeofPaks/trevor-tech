@@ -2105,5 +2105,85 @@
         }
       }
     }
-  }
+  }, "dmsnap": {
+      "header": {
+        "title": "Snapchat"
+      },
+      "tabs": {
+        "chat": "Chat",
+        "followers": "Seguidores",
+        "aria_label": "Pestañas de navegación de Snapchat",
+        "chat_aria": "Ver lista de chats",
+        "followers_aria": "Ver lista de seguidores"
+      },
+      "back_button_aria": "Volver a la lista",
+      "chat": {
+        "list_aria": "Lista de chats de Snapchat",
+        "item_aria": "Seleccionar chat con {name}",
+        "detail_aria": "Detalles del chat para {name}"
+      },
+      "followers": {
+        "list_aria": "Lista de seguidores de Snapchat",
+        "item_aria": "Seleccionar seguidor {name}",
+        "detail_aria": "Detalles del seguidor para {name}",
+        "phone": "Teléfono",
+        "email": "Correo electrónico",
+        "ava_dance": { "name": "ava.dance", "email": "ava@snap.com" },
+        "noah_beck": { "name": "noah.beck", "email": "noah@snap.com" },
+        "ella_fit": { "name": "ella.fit", "email": "ella@snap.com" },
+        "liam_guitar": { "name": "liam.guitar", "email": "liam@snap.com" },
+        "zoe_style": { "name": "zoe.style", "email": "zoe@snap.com" },
+        "carter_skate": { "name": "carter.skate", "email": "carter@snap.com" },
+        "grace_photo": { "name": "grace.photo", "email": "grace@snap.com" },
+        "dylan_vlog": { "name": "dylan.vlog", "email": "dylan@snap.com" }
+      },
+      "chats": {
+        "lily_rosee": {
+          "name": "lily.rosee",
+          "lastMessage": "¿Nos encontramos esta noche?",
+          "messages": {
+            "msg1": {
+              "text": "¿Puedes mantenerlo en secreto?",
+              "incoming": true
+            },
+            "msg2": {
+              "text": "¿Nos encontramos esta noche?",
+              "incoming": false
+            }
+          }
+        },
+        "jake_surf": {
+          "name": "jake.surf",
+          "lastMessage": "No se lo digas a ella",
+          "messages": {
+            "msg1": { "text": "¿Estás libre más tarde?", "incoming": true },
+            "msg2": { "text": "No se lo digas a ella", "incoming": false }
+          }
+        },
+        "mia_vibes": {
+          "name": "mia.vibes",
+          "lastMessage": "Lugar secreto a las 9",
+          "messages": {
+            "msg1": { "text": "¿Tienes un plan secreto?", "incoming": true },
+            "msg2": { "text": "Lugar secreto a las 9", "incoming": false }
+          }
+        },
+        "ethan_music": {
+          "name": "ethan.music",
+          "lastMessage": "Esto queda en privado",
+          "messages": {
+            "msg1": { "text": "¡Eso estuvo cerca!", "incoming": true },
+            "msg2": { "text": "Esto queda en privado", "incoming": false }
+          }
+        },
+        "sophia_art": {
+          "name": "sophia.art",
+          "lastMessage": "Te extrañé anoche",
+          "messages": {
+            "msg1": { "text": "¿Dónde estabas?", "incoming": true },
+            "msg2": { "text": "Te extrañé anoche", "incoming": false }
+          }
+        }
+      }
+    }
 }

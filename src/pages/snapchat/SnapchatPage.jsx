@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -64,57 +65,57 @@ const theme = createTheme({
 const chats = [
   {
     id: 1,
-    name: "lily.rosee",
+    nameKey: "dmsnap.chats.lily_rosee.name",
     avatar: "https://i.pravatar.cc/150?img=27", // young woman
-    lastMessage: "streaks?",
+    lastMessageKey: "dmsnap.chats.lily_rosee.lastMessage",
     time: "1m",
     messages: [
-      { text: "don't break the streak", time: "14:10", incoming: true },
-      { text: "streaks?", time: "14:11", incoming: false },
+      { textKey: "dmsnap.chats.lily_rosee.messages.msg1.text", time: "14:10", incoming: true },
+      { textKey: "dmsnap.chats.lily_rosee.messages.msg2.text", time: "14:11", incoming: false },
     ],
   },
   {
     id: 2,
-    name: "jake.surf",
+    nameKey: "dmsnap.chats.jake_surf.name",
     avatar: "https://i.pravatar.cc/150?img=32", // young man
-    lastMessage: "beach day",
+    lastMessageKey: "dmsnap.chats.jake_surf.lastMessage",
     time: "5m",
     messages: [
-      { text: "you coming?", time: "13:45", incoming: true },
-      { text: "beach day", time: "13:46", incoming: false },
+      { textKey: "dmsnap.chats.jake_surf.messages.msg1.text", time: "13:45", incoming: true },
+      { textKey: "dmsnap.chats.jake_surf.messages.msg2.text", time: "13:46", incoming: false },
     ],
   },
   {
     id: 3,
-    name: "mia.vibes",
+    nameKey: "dmsnap.chats.mia_vibes.name",
     avatar: "https://i.pravatar.cc/150?img=25", // young woman
-    lastMessage: "new fit check",
+    lastMessageKey: "dmsnap.chats.mia_vibes.lastMessage",
     time: "1h",
     messages: [
-      { text: "rate my outfit", time: "12:30", incoming: true },
-      { text: "new fit check", time: "12:31", incoming: false },
+      { textKey: "dmsnap.chats.mia_vibes.messages.msg1.text", time: "12:30", incoming: true },
+      { textKey: "dmsnap.chats.mia_vibes.messages.msg2.text", time: "12:31", incoming: false },
     ],
   },
   {
     id: 4,
-    name: "ethan.music",
+    nameKey: "dmsnap.chats.ethan_music.name",
     avatar: "https://i.pravatar.cc/150?img=30", // young man
-    lastMessage: "new drop",
+    lastMessageKey: "dmsnap.chats.ethan_music.lastMessage",
     time: "3h",
     messages: [
-      { text: "u heard my beat?", time: "10:00", incoming: true },
-      { text: "new drop", time: "10:01", incoming: false },
+      { textKey: "dmsnap.chats.ethan_music.messages.msg1.text", time: "10:00", incoming: true },
+      { textKey: "dmsnap.chats.ethan_music.messages.msg2.text", time: "10:01", incoming: false },
     ],
   },
   {
     id: 5,
-    name: "sophia.art",
+    nameKey: "dmsnap.chats.sophia_art.name",
     avatar: "https://i.pravatar.cc/150?img=26", // young woman
-    lastMessage: "sketch reveal",
+    lastMessageKey: "dmsnap.chats.sophia_art.lastMessage",
     time: "6h",
     messages: [
-      { text: "guess who", time: "08:20", incoming: true },
-      { text: "sketch reveal", time: "08:21", incoming: false },
+      { textKey: "dmsnap.chats.sophia_art.messages.msg1.text", time: "08:20", incoming: true },
+      { textKey: "dmsnap.chats.sophia_art.messages.msg2.text", time: "08:21", incoming: false },
     ],
   },
 ];
@@ -123,63 +124,64 @@ const chats = [
 const followers = [
   {
     id: 1,
-    name: "ava.dance",
+    nameKey: "dmsnap.followers.ava_dance.name",
     avatar: "https://i.pravatar.cc/150?img=24",
     phone: "+1 555-4001",
-    email: "ava@snap.com",
+    emailKey: "dmsnap.followers.ava_dance.email",
   },
   {
     id: 2,
-    name: "noah.beck",
+    nameKey: "dmsnap.followers.noah_beck.name",
     avatar: "https://i.pravatar.cc/150?img=31",
     phone: "+1 555-4002",
-    email: "noah@snap.com",
+    emailKey: "dmsnap.followers.noah_beck.email",
   },
   {
     id: 3,
-    name: "ella.fit",
+    nameKey: "dmsnap.followers.ella_fit.name",
     avatar: "https://i.pravatar.cc/150?img=28",
     phone: "+1 555-4003",
-    email: "ella@snap.com",
+    emailKey: "dmsnap.followers.ella_fit.email",
   },
   {
     id: 4,
-    name: "liam.guitar",
+    nameKey: "dmsnap.followers.liam_guitar.name",
     avatar: "https://i.pravatar.cc/150?img=33",
     phone: "+1 555-4004",
-    email: "liam@snap.com",
+    emailKey: "dmsnap.followers.liam_guitar.email",
   },
   {
     id: 5,
-    name: "zoe.style",
+    nameKey: "dmsnap.followers.zoe_style.name",
     avatar: "https://i.pravatar.cc/150?img=29",
     phone: "+1 555-4005",
-    email: "zoe@snap.com",
+    emailKey: "dmsnap.followers.zoe_style.email",
   },
   {
     id: 6,
-    name: "carter.skate",
+    nameKey: "dmsnap.followers.carter_skate.name",
     avatar: "https://i.pravatar.cc/150?img=34",
     phone: "+1 555-4006",
-    email: "carter@snap.com",
+    emailKey: "dmsnap.followers.carter_skate.email",
   },
   {
     id: 7,
-    name: "grace.photo",
+    nameKey: "dmsnap.followers.grace_photo.name",
     avatar: "https://i.pravatar.cc/150?img=23",
     phone: "+1 555-4007",
-    email: "grace@snap.com",
+    emailKey: "dmsnap.followers.grace_photo.email",
   },
   {
     id: 8,
-    name: "dylan.vlog",
+    nameKey: "dmsnap.followers.dylan_vlog.name",
     avatar: "https://i.pravatar.cc/150?img=35",
     phone: "+1 555-4008",
-    email: "dylan@snap.com",
+    emailKey: "dmsnap.followers.dylan_vlog.email",
   },
 ];
 
 const SnapchatPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -195,7 +197,7 @@ const SnapchatPage = () => {
   const groupFollowersByLetter = () => {
     const grouped = {};
     followers.forEach((follower) => {
-      const letter = follower.name[0].toUpperCase();
+      const letter = t(follower.nameKey)[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(follower);
     });
@@ -210,8 +212,7 @@ const SnapchatPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Snapchat
-              <RiSnapchatFill className="text-[#666505]" />
+              {t("dmsnap.header.title")} <RiSnapchatFill className="text-[#666505]" />
             </h1>
           </div>
           <BindPhone />
@@ -230,6 +231,7 @@ const SnapchatPage = () => {
             <Tabs
               value={tab}
               onChange={(e, v) => setTab(v)}
+              aria-label={t("dmsnap.tabs.aria_label")}
               sx={{
                 mb: 3,
                 "& .MuiTabs-indicator": {
@@ -241,14 +243,16 @@ const SnapchatPage = () => {
               <Tab
                 icon={<RiSnapchatFill />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chat"}
+                label={isMobile ? "" : t("dmsnap.tabs.chat")}
                 value="chat"
+                aria-label={t("dmsnap.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Followers"}
+                label={isMobile ? "" : t("dmsnap.tabs.followers")}
                 value="followers"
+                aria-label={t("dmsnap.tabs.followers_aria")}
               />
             </Tabs>
           )}
@@ -256,7 +260,11 @@ const SnapchatPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "secondary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "secondary.main" }}
+                aria-label={t("dmsnap.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -292,7 +300,7 @@ const SnapchatPage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmsnap.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -302,6 +310,7 @@ const SnapchatPage = () => {
                         "&:hover": { bgcolor: "#f7f7f7" },
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmsnap.chat.item_aria", { name: t(chat.nameKey) })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -312,7 +321,7 @@ const SnapchatPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {chat.name}
+                            {t(chat.nameKey)}
                           </Typography>
                           <Typography
                             sx={{
@@ -323,7 +332,7 @@ const SnapchatPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(chat.lastMessageKey)}
                           </Typography>
                         </Box>
                         <Typography
@@ -345,6 +354,7 @@ const SnapchatPage = () => {
                     maxHeight: "70vh",
                     overflowY: "auto",
                   }}
+                  aria-label={t("dmsnap.followers.list_aria")}
                 >
                   {Object.keys(groupFollowersByLetter())
                     .sort()
@@ -370,6 +380,7 @@ const SnapchatPage = () => {
                               "&:hover": { bgcolor: "#f7f7f7" },
                             }}
                             onClick={() => setSelectedFollower(follower)}
+                            aria-label={t("dmsnap.followers.item_aria", { name: t(follower.nameKey) })}
                           >
                             <Stack
                               direction="row"
@@ -383,7 +394,7 @@ const SnapchatPage = () => {
                               <Typography
                                 sx={{ fontWeight: 500, color: "text.primary" }}
                               >
-                                {follower.name}
+                                {t(follower.nameKey)}
                               </Typography>
                             </Stack>
                           </Box>
@@ -413,7 +424,7 @@ const SnapchatPage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack spacing={3} aria-label={t("dmsnap.chat.detail_aria", { name: t(selectedChat.nameKey) })}>
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -423,7 +434,7 @@ const SnapchatPage = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "text.primary" }}
                       >
-                        {selectedChat.name}
+                        {t(selectedChat.nameKey)}
                       </Typography>
                     </Stack>
                     <Stack spacing={2} sx={{ mt: 2 }}>
@@ -452,7 +463,7 @@ const SnapchatPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.9375rem" }}>
-                              {msg.text}
+                              {t(msg.textKey)}
                             </Typography>
                             <Typography
                               sx={{
@@ -473,7 +484,7 @@ const SnapchatPage = () => {
 
                 {/* Follower Detail */}
                 {selectedFollower && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack spacing={4} alignItems="center" aria-label={t("dmsnap.followers.detail_aria", { name: t(selectedFollower.nameKey) })}>
                     <Avatar
                       src={selectedFollower.avatar}
                       sx={{ width: 140, height: 140 }}
@@ -482,7 +493,7 @@ const SnapchatPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "text.primary" }}
                     >
-                      {selectedFollower.name}
+                      {t(selectedFollower.nameKey)}
                     </Typography>
 
                     {selectedFollower.phone && (
@@ -513,7 +524,7 @@ const SnapchatPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#666666" }}
                           >
-                            Phone
+                            {t("dmsnap.followers.phone")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
@@ -524,7 +535,7 @@ const SnapchatPage = () => {
                       </Paper>
                     )}
 
-                    {selectedFollower.email && (
+                    {selectedFollower.emailKey && (
                       <Paper
                         elevation={0}
                         sx={{
@@ -552,12 +563,12 @@ const SnapchatPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#666666" }}
                           >
-                            Email
+                            {t("dmsnap.followers.email")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {selectedFollower.email}
+                            {t(selectedFollower.emailKey)}
                           </Typography>
                         </Box>
                       </Paper>

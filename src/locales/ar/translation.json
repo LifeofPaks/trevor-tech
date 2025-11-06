@@ -2082,5 +2082,80 @@
         }
       }
     }
+  },
+  "dmsnap": {
+    "header": {
+      "title": "Snapchat"
+    },
+    "tabs": {
+      "chat": "الدردشة",
+      "followers": "المتابعون",
+      "aria_label": "علامات تبويب التنقل في Snapchat",
+      "chat_aria": "عرض قائمة الدردشات",
+      "followers_aria": "عرض قائمة المتابعين"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة الدردشات في Snapchat",
+      "item_aria": "اختيار الدردشة مع {name}",
+      "detail_aria": "تفاصيل الدردشة لـ {name}"
+    },
+    "followers": {
+      "list_aria": "قائمة المتابعين في Snapchat",
+      "item_aria": "اختيار المتابع {name}",
+      "detail_aria": "تفاصيل المتابع لـ {name}",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "ava_dance": { "name": "ava.dance", "email": "ava@snap.com" },
+      "noah_beck": { "name": "noah.beck", "email": "noah@snap.com" },
+      "ella_fit": { "name": "ella.fit", "email": "ella@snap.com" },
+      "liam_guitar": { "name": "liam.guitar", "email": "liam@snap.com" },
+      "zoe_style": { "name": "zoe.style", "email": "zoe@snap.com" },
+      "carter_skate": { "name": "carter.skate", "email": "carter@snap.com" },
+      "grace_photo": { "name": "grace.photo", "email": "grace@snap.com" },
+      "dylan_vlog": { "name": "dylan.vlog", "email": "dylan@snap.com" }
+    },
+    "chats": {
+      "lily_rosee": {
+        "name": "lily.rosee",
+        "lastMessage": "هل نلتقي الليلة؟",
+        "messages": {
+          "msg1": { "text": "هل يمكنك الحفاظ على السرية؟", "incoming": true },
+          "msg2": { "text": "هل نلتقي الليلة؟", "incoming": false }
+        }
+      },
+      "jake_surf": {
+        "name": "jake.surf",
+        "lastMessage": "لا تخبرها",
+        "messages": {
+          "msg1": { "text": "هل أنت متفرغ لاحقًا؟", "incoming": true },
+          "msg2": { "text": "لا تخبرها", "incoming": false }
+        }
+      },
+      "mia_vibes": {
+        "name": "mia.vibes",
+        "lastMessage": "مكان سري في التاسعة",
+        "messages": {
+          "msg1": { "text": "هل لديك خطة سرية؟", "incoming": true },
+          "msg2": { "text": "مكان سري في التاسعة", "incoming": false }
+        }
+      },
+      "ethan_music": {
+        "name": "ethan.music",
+        "lastMessage": "هذا يبقى خاصًا",
+        "messages": {
+          "msg1": { "text": "كان ذلك قريبًا جدًا!", "incoming": true },
+          "msg2": { "text": "هذا يبقى خاصًا", "incoming": false }
+        }
+      },
+      "sophia_art": {
+        "name": "sophia.art",
+        "lastMessage": "افتقدتك الليلة الماضية",
+        "messages": {
+          "msg1": { "text": "أين كنت؟", "incoming": true },
+          "msg2": { "text": "افتقدتك الليلة الماضية", "incoming": false }
+        }
+      }
+    }
   }
 }

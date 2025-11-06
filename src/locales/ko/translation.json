@@ -2000,96 +2000,172 @@
         }
       }
     }
-  }, "dmtiktok": {
-      "header": {
-        "title": "TikTok"
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok"
+    },
+    "tabs": {
+      "chat": "메시지",
+      "friends": "친구",
+      "call_log": "통화 기록",
+      "aria_label": "TikTok 탐색 탭",
+      "chat_aria": "메시지 목록 보기",
+      "friends_aria": "친구 목록 보기",
+      "call_log_aria": "통화 기록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "TikTok 메시지 목록",
+      "item_aria": "{name}과의 채팅 선택",
+      "detail_aria": "{name}의 채팅 상세"
+    },
+    "friends": {
+      "list_aria": "TikTok 친구 목록",
+      "item_aria": "친구 {name} 선택",
+      "detail_aria": "{name}의 친구 상세",
+      "phone": "전화",
+      "email": "이메일",
+      "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
+      "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
+      "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
+      "larray": { "name": "larray", "email": "larray@tiktok.com" },
+      "madi": { "name": "madi", "email": "madi@tiktok.com" },
+      "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
+      "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
+      "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+    },
+    "callLogs": {
+      "list_aria": "TikTok 통화 기록",
+      "item_aria": "{name}과의 통화 선택",
+      "detail_aria": "{name}의 통화 상세",
+      "charli_damelio": { "name": "charli.damelio" },
+      "khaby_lame": { "name": "khaby.lame" },
+      "addisonrae": { "name": "addisonrae" },
+      "zachking": { "name": "zachking" },
+      "bellapoarch": { "name": "bellapoarch" }
+    },
+    "callTypes": {
+      "outgoing": "발신",
+      "incoming": "수신",
+      "missed": "부재중"
+    },
+    "chats": {
+      "charli_damelio": {
+        "name": "charli.damelio",
+        "lastMessage": "오늘 밤 몰래 나갈까?",
+        "messages": {
+          "msg1": { "text": "이거 비밀로 할 수 있어?", "incoming": true },
+          "msg2": { "text": "오늘 밤 몰래 나갈까?", "incoming": false }
+        }
       },
-      "tabs": {
-        "chat": "메시지",
-        "friends": "친구",
-        "call_log": "통화 기록",
-        "aria_label": "TikTok 탐색 탭",
-        "chat_aria": "메시지 목록 보기",
-        "friends_aria": "친구 목록 보기",
-        "call_log_aria": "통화 기록 보기"
+      "khaby_lame": {
+        "name": "khaby.lame",
+        "lastMessage": "아무에게도 말하지 마.",
+        "messages": {
+          "msg1": { "text": "그녀가 우리 일을 알아선 안 돼", "incoming": true },
+          "msg2": { "text": "아무에게도 말하지 마.", "incoming": false }
+        }
       },
-      "back_button_aria": "목록으로 돌아가기",
-      "chat": {
-        "list_aria": "TikTok 메시지 목록",
-        "item_aria": "{name}과의 채팅 선택",
-        "detail_aria": "{name}의 채팅 상세"
+      "addisonrae": {
+        "name": "addisonrae",
+        "lastMessage": "해가 진 후에 만나",
+        "messages": {
+          "msg1": { "text": "오늘 밤 시간 있어?", "incoming": true },
+          "msg2": { "text": "해가 진 후에 만나", "incoming": false }
+        }
       },
-      "friends": {
-        "list_aria": "TikTok 친구 목록",
-        "item_aria": "친구 {name} 선택",
-        "detail_aria": "{name}의 친구 상세",
-        "phone": "전화",
-        "email": "이메일",
-        "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
-        "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
-        "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
-        "larray": { "name": "larray", "email": "larray@tiktok.com" },
-        "madi": { "name": "madi", "email": "madi@tiktok.com" },
-        "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
-        "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
-        "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+      "zachking": {
+        "name": "zachking",
+        "lastMessage": "이건 우리 둘만의 비밀",
+        "messages": {
+          "msg1": { "text": "너무 아슬아슬했어!", "incoming": true },
+          "msg2": { "text": "이건 우리 둘만의 비밀", "incoming": false }
+        }
       },
-      "callLogs": {
-        "list_aria": "TikTok 통화 기록",
-        "item_aria": "{name}과의 통화 선택",
-        "detail_aria": "{name}의 통화 상세",
-        "charli_damelio": { "name": "charli.damelio" },
-        "khaby_lame": { "name": "khaby.lame" },
-        "addisonrae": { "name": "addisonrae" },
-        "zachking": { "name": "zachking" },
-        "bellapoarch": { "name": "bellapoarch" }
-      },
-      "callTypes": {
-        "outgoing": "발신",
-        "incoming": "수신",
-        "missed": "부재중"
-      },
-      "chats": {
-        "charli_damelio": {
-          "name": "charli.damelio",
-          "lastMessage": "오늘 밤 몰래 나갈까?",
-          "messages": {
-            "msg1": { "text": "이거 비밀로 할 수 있어?", "incoming": true },
-            "msg2": { "text": "오늘 밤 몰래 나갈까?", "incoming": false }
-          }
-        },
-        "khaby_lame": {
-          "name": "khaby.lame",
-          "lastMessage": "아무에게도 말하지 마.",
-          "messages": {
-            "msg1": { "text": "그녀가 우리 일을 알아선 안 돼", "incoming": true },
-            "msg2": { "text": "아무에게도 말하지 마.", "incoming": false }
-          }
-        },
-        "addisonrae": {
-          "name": "addisonrae",
-          "lastMessage": "해가 진 후에 만나",
-          "messages": {
-            "msg1": { "text": "오늘 밤 시간 있어?", "incoming": true },
-            "msg2": { "text": "해가 진 후에 만나", "incoming": false }
-          }
-        },
-        "zachking": {
-          "name": "zachking",
-          "lastMessage": "이건 우리 둘만의 비밀",
-          "messages": {
-            "msg1": { "text": "너무 아슬아슬했어!", "incoming": true },
-            "msg2": { "text": "이건 우리 둘만의 비밀", "incoming": false }
-          }
-        },
-        "bellapoarch": {
-          "name": "bellapoarch",
-          "lastMessage": "어젯밤 네가 그리웠어",
-          "messages": {
-            "msg1": { "text": "어디 있었어?", "incoming": true },
-            "msg2": { "text": "어젯밤 네가 그리웠어", "incoming": false }
-          }
+      "bellapoarch": {
+        "name": "bellapoarch",
+        "lastMessage": "어젯밤 네가 그리웠어",
+        "messages": {
+          "msg1": { "text": "어디 있었어?", "incoming": true },
+          "msg2": { "text": "어젯밤 네가 그리웠어", "incoming": false }
         }
       }
     }
+  },
+  "dmsnap": {
+    "header": {
+      "title": "Snapchat"
+    },
+    "tabs": {
+      "chat": "채팅",
+      "followers": "팔로워",
+      "aria_label": "Snapchat 탐색 탭",
+      "chat_aria": "채팅 목록 보기",
+      "followers_aria": "팔로워 목록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "Snapchat 채팅 목록",
+      "item_aria": "{name}과의 채팅 선택",
+      "detail_aria": "{name}의 채팅 상세"
+    },
+    "followers": {
+      "list_aria": "Snapchat 팔로워 목록",
+      "item_aria": "팔로워 {name} 선택",
+      "detail_aria": "{name}의 팔로워 상세",
+      "phone": "전화",
+      "email": "이메일",
+      "ava_dance": { "name": "ava.dance", "email": "ava@snap.com" },
+      "noah_beck": { "name": "noah.beck", "email": "noah@snap.com" },
+      "ella_fit": { "name": "ella.fit", "email": "ella@snap.com" },
+      "liam_guitar": { "name": "liam.guitar", "email": "liam@snap.com" },
+      "zoe_style": { "name": "zoe.style", "email": "zoe@snap.com" },
+      "carter_skate": { "name": "carter.skate", "email": "carter@snap.com" },
+      "grace_photo": { "name": "grace.photo", "email": "grace@snap.com" },
+      "dylan_vlog": { "name": "dylan.vlog", "email": "dylan@snap.com" }
+    },
+    "chats": {
+      "lily_rosee": {
+        "name": "lily.rosee",
+        "lastMessage": "오늘 밤에 만날까?",
+        "messages": {
+          "msg1": { "text": "이거 비밀로 할 수 있어?", "incoming": true },
+          "msg2": { "text": "오늘 밤에 만날까?", "incoming": false }
+        }
+      },
+      "jake_surf": {
+        "name": "jake.surf",
+        "lastMessage": "그녀에게 말하지 마",
+        "messages": {
+          "msg1": { "text": "나중에 시간 있어?", "incoming": true },
+          "msg2": { "text": "그녀에게 말하지 마", "incoming": false }
+        }
+      },
+      "mia_vibes": {
+        "name": "mia.vibes",
+        "lastMessage": "9시 비밀 장소",
+        "messages": {
+          "msg1": { "text": "비밀 계획 있어?", "incoming": true },
+          "msg2": { "text": "9시 비밀 장소", "incoming": false }
+        }
+      },
+      "ethan_music": {
+        "name": "ethan.music",
+        "lastMessage": "이건 비밀이야",
+        "messages": {
+          "msg1": { "text": "아슬아슬했어!", "incoming": true },
+          "msg2": { "text": "이건 비밀이야", "incoming": false }
+        }
+      },
+      "sophia_art": {
+        "name": "sophia.art",
+        "lastMessage": "어젯밤 네가 그리웠어",
+        "messages": {
+          "msg1": { "text": "어디 있었어?", "incoming": true },
+          "msg2": { "text": "어젯밤 네가 그리웠어", "incoming": false }
+        }
+      }
+    }
+  }
 }

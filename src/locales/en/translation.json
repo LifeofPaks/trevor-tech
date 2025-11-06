@@ -2095,5 +2095,80 @@
         }
       }
     }
+  },
+  "dmsnap": {
+    "header": {
+      "title": "Snapchat"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "followers": "Followers",
+      "aria_label": "Snapchat navigation tabs",
+      "chat_aria": "View chat list",
+      "followers_aria": "View followers list"
+    },
+    "back_button_aria": "Go back to list",
+    "chat": {
+      "list_aria": "Snapchat chat list",
+      "item_aria": "Select chat with {name}",
+      "detail_aria": "Chat details for {name}"
+    },
+    "followers": {
+      "list_aria": "Snapchat followers list",
+      "item_aria": "Select follower {name}",
+      "detail_aria": "Follower details for {name}",
+      "phone": "Phone",
+      "email": "Email",
+      "ava_dance": { "name": "ava.dance", "email": "ava@snap.com" },
+      "noah_beck": { "name": "noah.beck", "email": "noah@snap.com" },
+      "ella_fit": { "name": "ella.fit", "email": "ella@snap.com" },
+      "liam_guitar": { "name": "liam.guitar", "email": "liam@snap.com" },
+      "zoe_style": { "name": "zoe.style", "email": "zoe@snap.com" },
+      "carter_skate": { "name": "carter.skate", "email": "carter@snap.com" },
+      "grace_photo": { "name": "grace.photo", "email": "grace@snap.com" },
+      "dylan_vlog": { "name": "dylan.vlog", "email": "dylan@snap.com" }
+    },
+    "chats": {
+      "lily_rosee": {
+        "name": "lily.rosee",
+        "lastMessage": "Meet me tonight?",
+        "messages": {
+          "msg1": { "text": "Can you keep it quiet?", "incoming": true },
+          "msg2": { "text": "Meet me tonight?", "incoming": false }
+        }
+      },
+      "jake_surf": {
+        "name": "jake.surf",
+        "lastMessage": "Don't tell her",
+        "messages": {
+          "msg1": { "text": "You free later?", "incoming": true },
+          "msg2": { "text": "Don't tell her", "incoming": false }
+        }
+      },
+      "mia_vibes": {
+        "name": "mia.vibes",
+        "lastMessage": "Secret spot at 9",
+        "messages": {
+          "msg1": { "text": "Got a secret plan?", "incoming": true },
+          "msg2": { "text": "Secret spot at 9", "incoming": false }
+        }
+      },
+      "ethan_music": {
+        "name": "ethan.music",
+        "lastMessage": "This stays private",
+        "messages": {
+          "msg1": { "text": "That was close!", "incoming": true },
+          "msg2": { "text": "This stays private", "incoming": false }
+        }
+      },
+      "sophia_art": {
+        "name": "sophia.art",
+        "lastMessage": "Missed you last night",
+        "messages": {
+          "msg1": { "text": "Where were you?", "incoming": true },
+          "msg2": { "text": "Missed you last night", "incoming": false }
+        }
+      }
+    }
   }
 }

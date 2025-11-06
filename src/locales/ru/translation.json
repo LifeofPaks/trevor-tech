@@ -2102,5 +2102,86 @@
         }
       }
     }
+  },
+  "dmsnap": {
+    "header": {
+      "title": "Snapchat"
+    },
+    "tabs": {
+      "chat": "Чат",
+      "followers": "Подписчики",
+      "aria_label": "Вкладки навигации Snapchat",
+      "chat_aria": "Просмотреть список чатов",
+      "followers_aria": "Просмотреть список подписчиков"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список чатов Snapchat",
+      "item_aria": "Выбрать чат с {name}",
+      "detail_aria": "Детали чата для {name}"
+    },
+    "followers": {
+      "list_aria": "Список подписчиков Snapchat",
+      "item_aria": "Выбрать подписчика {name}",
+      "detail_aria": "Детали подписчика для {name}",
+      "phone": "Телефон",
+      "email": "Электронная почта",
+      "ava_dance": { "name": "ava.dance", "email": "ava@snap.com" },
+      "noah_beck": { "name": "noah.beck", "email": "noah@snap.com" },
+      "ella_fit": { "name": "ella.fit", "email": "ella@snap.com" },
+      "liam_guitar": { "name": "liam.guitar", "email": "liam@snap.com" },
+      "zoe_style": { "name": "zoe.style", "email": "zoe@snap.com" },
+      "carter_skate": { "name": "carter.skate", "email": "carter@snap.com" },
+      "grace_photo": { "name": "grace.photo", "email": "grace@snap.com" },
+      "dylan_vlog": { "name": "dylan.vlog", "email": "dylan@snap.com" }
+    },
+    "chats": {
+      "lily_rosee": {
+        "name": "lily.rosee",
+        "lastMessage": "Встретимся сегодня вечером?",
+        "messages": {
+          "msg1": {
+            "text": "Можешь сохранить это в тайне?",
+            "incoming": true
+          },
+          "msg2": { "text": "Встретимся сегодня вечером?", "incoming": false }
+        }
+      },
+      "jake_surf": {
+        "name": "jake.surf",
+        "lastMessage": "Не говори ей",
+        "messages": {
+          "msg1": { "text": "Ты свободен позже?", "incoming": true },
+          "msg2": { "text": "Не говори ей", "incoming": false }
+        }
+      },
+      "mia_vibes": {
+        "name": "mia.vibes",
+        "lastMessage": "Секретное место в 9",
+        "messages": {
+          "msg1": { "text": "Есть секретный план?", "incoming": true },
+          "msg2": { "text": "Секретное место в 9", "incoming": false }
+        }
+      },
+      "ethan_music": {
+        "name": "ethan.music",
+        "lastMessage": "Это останется в тайне",
+        "messages": {
+          "msg1": { "text": "Это было близко!", "incoming": true },
+          "msg2": { "text": "Это останется в тайне", "incoming": false }
+        }
+      },
+      "sophia_art": {
+        "name": "sophia.art",
+        "lastMessage": "Скучал по тебе прошлой ночью",
+        "messages": {
+          "msg1": { "text": "Где ты была?", "incoming": true },
+          "msg2": {
+            "text": "Скучал по тебе прошлой ночью",
+            "incoming": false
+          }
+        }
+      }
+    }
   }
 }

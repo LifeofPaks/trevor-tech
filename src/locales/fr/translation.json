@@ -2012,96 +2012,175 @@
         }
       }
     }
-  },  "dmtiktok": {
-      "header": {
-        "title": "TikTok"
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok"
+    },
+    "tabs": {
+      "chat": "Messages",
+      "friends": "Amis",
+      "call_log": "Journal d'appels",
+      "aria_label": "Onglets de navigation TikTok",
+      "chat_aria": "Voir la liste des messages",
+      "friends_aria": "Voir la liste des amis",
+      "call_log_aria": "Voir le journal d'appels"
+    },
+    "back_button_aria": "Retourner à la liste",
+    "chat": {
+      "list_aria": "Liste des messages TikTok",
+      "item_aria": "Sélectionner le chat avec {name}",
+      "detail_aria": "Détails du chat pour {name}"
+    },
+    "friends": {
+      "list_aria": "Liste des amis TikTok",
+      "item_aria": "Sélectionner l'ami {name}",
+      "detail_aria": "Détails de l'ami pour {name}",
+      "phone": "Téléphone",
+      "email": "Email",
+      "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
+      "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
+      "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
+      "larray": { "name": "larray", "email": "larray@tiktok.com" },
+      "madi": { "name": "madi", "email": "madi@tiktok.com" },
+      "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
+      "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
+      "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+    },
+    "callLogs": {
+      "list_aria": "Journal d'appels TikTok",
+      "item_aria": "Sélectionner l'appel avec {name}",
+      "detail_aria": "Détails de l'appel pour {name}",
+      "charli_damelio": { "name": "charli.damelio" },
+      "khaby_lame": { "name": "khaby.lame" },
+      "addisonrae": { "name": "addisonrae" },
+      "zachking": { "name": "zachking" },
+      "bellapoarch": { "name": "bellapoarch" }
+    },
+    "callTypes": {
+      "outgoing": "Sortant",
+      "incoming": "Entrant",
+      "missed": "Manqué"
+    },
+    "chats": {
+      "charli_damelio": {
+        "name": "charli.damelio",
+        "lastMessage": "On s'échappe ce soir ?",
+        "messages": {
+          "msg1": { "text": "Peux-tu garder ce secret ?", "incoming": true },
+          "msg2": { "text": "On s'échappe ce soir ?", "incoming": false }
+        }
       },
-      "tabs": {
-        "chat": "Messages",
-        "friends": "Amis",
-        "call_log": "Journal d'appels",
-        "aria_label": "Onglets de navigation TikTok",
-        "chat_aria": "Voir la liste des messages",
-        "friends_aria": "Voir la liste des amis",
-        "call_log_aria": "Voir le journal d'appels"
+      "khaby_lame": {
+        "name": "khaby.lame",
+        "lastMessage": "Ne dis rien à personne.",
+        "messages": {
+          "msg1": {
+            "text": "Elle ne doit pas savoir pour nous",
+            "incoming": true
+          },
+          "msg2": { "text": "Ne dis rien à personne.", "incoming": false }
+        }
       },
-      "back_button_aria": "Retourner à la liste",
-      "chat": {
-        "list_aria": "Liste des messages TikTok",
-        "item_aria": "Sélectionner le chat avec {name}",
-        "detail_aria": "Détails du chat pour {name}"
+      "addisonrae": {
+        "name": "addisonrae",
+        "lastMessage": "Retrouve-moi après la nuit",
+        "messages": {
+          "msg1": { "text": "T'es libre ce soir ?", "incoming": true },
+          "msg2": { "text": "Retrouve-moi après la nuit", "incoming": false }
+        }
       },
-      "friends": {
-        "list_aria": "Liste des amis TikTok",
-        "item_aria": "Sélectionner l'ami {name}",
-        "detail_aria": "Détails de l'ami pour {name}",
-        "phone": "Téléphone",
-        "email": "Email",
-        "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
-        "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
-        "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
-        "larray": { "name": "larray", "email": "larray@tiktok.com" },
-        "madi": { "name": "madi", "email": "madi@tiktok.com" },
-        "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
-        "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
-        "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+      "zachking": {
+        "name": "zachking",
+        "lastMessage": "Ça reste entre nous",
+        "messages": {
+          "msg1": { "text": "C'était trop juste !", "incoming": true },
+          "msg2": { "text": "Ça reste entre nous", "incoming": false }
+        }
       },
-      "callLogs": {
-        "list_aria": "Journal d'appels TikTok",
-        "item_aria": "Sélectionner l'appel avec {name}",
-        "detail_aria": "Détails de l'appel pour {name}",
-        "charli_damelio": { "name": "charli.damelio" },
-        "khaby_lame": { "name": "khaby.lame" },
-        "addisonrae": { "name": "addisonrae" },
-        "zachking": { "name": "zachking" },
-        "bellapoarch": { "name": "bellapoarch" }
-      },
-      "callTypes": {
-        "outgoing": "Sortant",
-        "incoming": "Entrant",
-        "missed": "Manqué"
-      },
-      "chats": {
-        "charli_damelio": {
-          "name": "charli.damelio",
-          "lastMessage": "On s'échappe ce soir ?",
-          "messages": {
-            "msg1": { "text": "Peux-tu garder ce secret ?", "incoming": true },
-            "msg2": { "text": "On s'échappe ce soir ?", "incoming": false }
-          }
-        },
-        "khaby_lame": {
-          "name": "khaby.lame",
-          "lastMessage": "Ne dis rien à personne.",
-          "messages": {
-            "msg1": { "text": "Elle ne doit pas savoir pour nous", "incoming": true },
-            "msg2": { "text": "Ne dis rien à personne.", "incoming": false }
-          }
-        },
-        "addisonrae": {
-          "name": "addisonrae",
-          "lastMessage": "Retrouve-moi après la nuit",
-          "messages": {
-            "msg1": { "text": "T'es libre ce soir ?", "incoming": true },
-            "msg2": { "text":  "Retrouve-moi après la nuit", "incoming": false }
-          }
-        },
-        "zachking": {
-          "name": "zachking",
-          "lastMessage": "Ça reste entre nous",
-          "messages": {
-            "msg1": { "text": "C'était trop juste !", "incoming": true },
-            "msg2": { "text": "Ça reste entre nous", "incoming": false }
-          }
-        },
-        "bellapoarch": {
-          "name": "bellapoarch",
-          "lastMessage": "Tu m'as manqué hier soir",
-          "messages": {
-            "msg1": { "text": "Où étais-tu ?", "incoming": true },
-            "msg2": { "text": "Tu m'as manqué hier soir", "incoming": false }
-          }
+      "bellapoarch": {
+        "name": "bellapoarch",
+        "lastMessage": "Tu m'as manqué hier soir",
+        "messages": {
+          "msg1": { "text": "Où étais-tu ?", "incoming": true },
+          "msg2": { "text": "Tu m'as manqué hier soir", "incoming": false }
         }
       }
     }
+  },
+  "dmsnap": {
+    "header": {
+      "title": "Snapchat"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "followers": "Abonnés",
+      "aria_label": "Onglets de navigation Snapchat",
+      "chat_aria": "Voir la liste des chats",
+      "followers_aria": "Voir la liste des abonnés"
+    },
+    "back_button_aria": "Retourner à la liste",
+    "chat": {
+      "list_aria": "Liste des chats Snapchat",
+      "item_aria": "Sélectionner le chat avec {name}",
+      "detail_aria": "Détails du chat pour {name}"
+    },
+    "followers": {
+      "list_aria": "Liste des abonnés Snapchat",
+      "item_aria": "Sélectionner l'abonné {name}",
+      "detail_aria": "Détails de l'abonné pour {name}",
+      "phone": "Téléphone",
+      "email": "Email",
+      "ava_dance": { "name": "ava.dance", "email": "ava@snap.com" },
+      "noah_beck": { "name": "noah.beck", "email": "noah@snap.com" },
+      "ella_fit": { "name": "ella.fit", "email": "ella@snap.com" },
+      "liam_guitar": { "name": "liam.guitar", "email": "liam@snap.com" },
+      "zoe_style": { "name": "zoe.style", "email": "zoe@snap.com" },
+      "carter_skate": { "name": "carter.skate", "email": "carter@snap.com" },
+      "grace_photo": { "name": "grace.photo", "email": "grace@snap.com" },
+      "dylan_vlog": { "name": "dylan.vlog", "email": "dylan@snap.com" }
+    },
+    "chats": {
+      "lily_rosee": {
+        "name": "lily.rosee",
+        "lastMessage": "On se voit ce soir ?",
+        "messages": {
+          "msg1": { "text": "Peux-tu garder ça secret ?", "incoming": true },
+          "msg2": { "text": "On se voit ce soir ?", "incoming": false }
+        }
+      },
+      "jake_surf": {
+        "name": "jake.surf",
+        "lastMessage": "Ne lui dis pas",
+        "messages": {
+          "msg1": { "text": "T'es libre plus tard ?", "incoming": true },
+          "msg2": { "text": "Ne lui dis pas", "incoming": false }
+        }
+      },
+      "mia_vibes": {
+        "name": "mia.vibes",
+        "lastMessage": "Endroit secret à 21h",
+        "messages": {
+          "msg1": { "text": "Un plan secret ?", "incoming": true },
+          "msg2": { "text": "Endroit secret à 21h", "incoming": false }
+        }
+      },
+      "ethan_music": {
+        "name": "ethan.music",
+        "lastMessage": "Ça reste entre nous",
+        "messages": {
+          "msg1": { "text": "C'était juste !", "incoming": true },
+          "msg2": { "text": "Ça reste entre nous", "incoming": false }
+        }
+      },
+      "sophia_art": {
+        "name": "sophia.art",
+        "lastMessage": "Tu m'as manqué hier soir",
+        "messages": {
+          "msg1": { "text": "Où étais-tu ?", "incoming": true },
+          "msg2": { "text": "Tu m'as manqué hier soir", "incoming": false }
+        }
+      }
+    }
+  }
 }

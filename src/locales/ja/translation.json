@@ -2038,5 +2038,80 @@
         }
       }
     }
+  },
+  "dmsnap": {
+    "header": {
+      "title": "Snapchat"
+    },
+    "tabs": {
+      "chat": "チャット",
+      "followers": "フォロワー",
+      "aria_label": "Snapchatナビゲーションタブ",
+      "chat_aria": "チャットリストを表示",
+      "followers_aria": "フォロワーリストを表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Snapchatチャットリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "followers": {
+      "list_aria": "Snapchatフォロワーリスト",
+      "item_aria": "フォロワー{name}を選択",
+      "detail_aria": "{name}のフォロワー詳細",
+      "phone": "電話",
+      "email": "メール",
+      "ava_dance": { "name": "ava.dance", "email": "ava@snap.com" },
+      "noah_beck": { "name": "noah.beck", "email": "noah@snap.com" },
+      "ella_fit": { "name": "ella.fit", "email": "ella@snap.com" },
+      "liam_guitar": { "name": "liam.guitar", "email": "liam@snap.com" },
+      "zoe_style": { "name": "zoe.style", "email": "zoe@snap.com" },
+      "carter_skate": { "name": "carter.skate", "email": "carter@snap.com" },
+      "grace_photo": { "name": "grace.photo", "email": "grace@snap.com" },
+      "dylan_vlog": { "name": "dylan.vlog", "email": "dylan@snap.com" }
+    },
+    "chats": {
+      "lily_rosee": {
+        "name": "lily.rosee",
+        "lastMessage": "今夜会う？",
+        "messages": {
+          "msg1": { "text": "これ秘密にできる？", "incoming": true },
+          "msg2": { "text": "今夜会う？", "incoming": false }
+        }
+      },
+      "jake_surf": {
+        "name": "jake.surf",
+        "lastMessage": "彼女に言わないで",
+        "messages": {
+          "msg1": { "text": "後で空いてる？", "incoming": true },
+          "msg2": { "text": "彼女に言わないで", "incoming": false }
+        }
+      },
+      "mia_vibes": {
+        "name": "mia.vibes",
+        "lastMessage": "9時に秘密の場所",
+        "messages": {
+          "msg1": { "text": "秘密の計画ある？", "incoming": true },
+          "msg2": { "text": "9時に秘密の場所", "incoming": false }
+        }
+      },
+      "ethan_music": {
+        "name": "ethan.music",
+        "lastMessage": "これは内緒だよ",
+        "messages": {
+          "msg1": { "text": "危なかった！", "incoming": true },
+          "msg2": { "text": "これは内緒だよ", "incoming": false }
+        }
+      },
+      "sophia_art": {
+        "name": "sophia.art",
+        "lastMessage": "昨夜君がいなくて寂しかった",
+        "messages": {
+          "msg1": { "text": "どこにいたの？", "incoming": true },
+          "msg2": { "text": "昨夜君がいなくて寂しかった", "incoming": false }
+        }
+      }
+    }
   }
 }
