@@ -577,7 +577,7 @@ const SocialMediaPage = () => {
                 perspective={1000}
                 scale={1.05}
                 transitionSpeed={2000}
-                className="relative !p-6 bg-gradient-to-br from-cyan-900/50 to-teal-900/30 backdrop-blur-3xl border-2 border-teal-400/60 rounded-xl shadow-2xl hover:shadow-teal-500/80 group"
+                className="relative !p-6 bg-gradient-to-br from-cyan-900/30 to-teal-900/30 backdrop-blur-3xl border-2 border-teal-400/30 rounded-xl shadow-2xl hover:shadow-teal-500/80 group"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[rgba(45,212,191,0.2)] to-transparent animate-pulse-slow" />
                 <div className="absolute inset-0 overflow-hidden">
@@ -701,7 +701,7 @@ const SocialMediaPage = () => {
                 perspective={1000}
                 scale={1.05}
                 transitionSpeed={2000}
-                className="relative !p-6 bg-gradient-to-br from-cyan-900/50 to-teal-900/30 backdrop-blur-3xl border-2 border-teal-400/60 rounded-xl shadow-2xl hover:shadow-teal-500/80 group"
+                className="relative !p-6 bg-gradient-to-br from-cyan-900/30 to-teal-900/30 backdrop-blur-3xl border-2 border-teal-400/30 rounded-xl shadow-2xl hover:shadow-teal-500/80 group"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[rgba(45,212,191,0.2)] to-transparent animate-pulse-slow" />
                 <div className="absolute inset-0 overflow-hidden">
