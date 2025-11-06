@@ -1772,5 +1772,111 @@
         }
       }
     }
+  },
+  "dminsta": {
+    "header": {
+      "title": "Instagram"
+    },
+    "tabs": {
+      "chat": "Messages",
+      "contacts": "Contacts",
+      "call_log": "Call Log",
+      "aria_label": "Instagram navigation tabs",
+      "chat_aria": "View messages list",
+      "contacts_aria": "View contacts list",
+      "call_log_aria": "View call log"
+    },
+    "back_button_aria": "Go back to list",
+    "chat": {
+      "list_aria": "Instagram messages list",
+      "item_aria": "Select chat with {name}",
+      "detail_aria": "Chat details for {name}"
+    },
+    "contacts": {
+      "list_aria": "Instagram contacts list",
+      "item_aria": "Select contact {name}",
+      "detail_aria": "Contact details for {name}",
+      "phone": "Phone",
+      "email": "Email",
+      "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
+      "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
+      "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
+      "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
+      "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
+      "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
+      "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
+      "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
+      "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
+    },
+    "callLogs": {
+      "list_aria": "Instagram call log",
+      "item_aria": "Select call with {name}",
+      "detail_aria": "Call details for {name}",
+      "emilyChen": { "name": "emily.chen" },
+      "michaelTorres": { "name": "michael.torres" },
+      "sarahKim": { "name": "sarah.kim" },
+      "davidPatel": { "name": "david.patel" },
+      "lisaWong": { "name": "lisa.wong" }
+    },
+    "callTypes": {
+      "outgoing": "Outgoing",
+      "incoming": "Incoming",
+      "missed": "Missed"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "emily.chen",
+        "lastMessage": "Don't tell anyone about this!",
+        "messages": {
+          "msg1": { "text": "I sent you a private link.", "incoming": true },
+          "msg2": { "text": "Got it, but why the secrecy?", "incoming": false },
+          "msg3": { "text": "Don't tell anyone about this!", "incoming": true }
+        }
+      },
+      "michaelTorres": {
+        "name": "michael.torres",
+        "lastMessage": "I'll delete the chat after.",
+        "messages": {
+          "msg1": {
+            "text": "You still meeting her tonight?",
+            "incoming": true
+          },
+          "msg2": { "text": "Yeah, but keep it quiet.", "incoming": false },
+          "msg3": { "text": "I'll delete the chat after.", "incoming": true }
+        }
+      },
+      "sarahKim": {
+        "name": "sarah.kim",
+        "lastMessage": "I hid the post, thanks!",
+        "messages": {
+          "msg1": {
+            "text": "Can you hide that post for me?",
+            "incoming": true
+          },
+          "msg2": { "text": "I hid the post, thanks!", "incoming": false }
+        }
+      },
+      "davidPatel": {
+        "name": "david.patel",
+        "lastMessage": "Check the secret group.",
+        "messages": {
+          "msg1": {
+            "text": "I added you to a secret group.",
+            "incoming": true
+          },
+          "msg2": { "text": "Thanks, what's it about?", "incoming": false },
+          "msg3": { "text": "Check the secret group.", "incoming": true }
+        }
+      },
+      "lisaWong": {
+        "name": "lisa.wong",
+        "lastMessage": "Let's keep this between us.",
+        "messages": {
+          "msg1": { "text": "You free to talk privately?", "incoming": true },
+          "msg2": { "text": "Yeah, what's up?", "incoming": false },
+          "msg3": { "text": "Let's keep this between us.", "incoming": true }
+        }
+      }
+    }
   }
 }

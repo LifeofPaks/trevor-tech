@@ -1759,5 +1759,111 @@
         }
       }
     }
+  },
+  "dminsta": {
+    "header": {
+      "title": "Instagram"
+    },
+    "tabs": {
+      "chat": "الرسائل",
+      "contacts": "جهات الاتصال",
+      "call_log": "سجل المكالمات",
+      "aria_label": "علامات تبويب التنقل في Instagram",
+      "chat_aria": "عرض قائمة الرسائل",
+      "contacts_aria": "عرض قائمة جهات الاتصال",
+      "call_log_aria": "عرض سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة رسائل Instagram",
+      "item_aria": "اختيار الدردشة مع {name}",
+      "detail_aria": "تفاصيل الدردشة لـ {name}"
+    },
+    "contacts": {
+      "list_aria": "قائمة جهات اتصال Instagram",
+      "item_aria": "اختيار جهة اتصال {name}",
+      "detail_aria": "تفاصيل جهة الاتصال لـ {name}",
+      "phone": "رقم",
+      "email": "بريد إلكتروني",
+      "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
+      "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
+      "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
+      "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
+      "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
+      "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
+      "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
+      "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
+      "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
+    },
+    "callLogs": {
+      "list_aria": "سجل مكالمات Instagram",
+      "item_aria": "اختيار مكالمة مع {name}",
+      "detail_aria": "تفاصيل المكالمة لـ {name}",
+      "emilyChen": { "name": "emily.chen" },
+      "michaelTorres": { "name": "michael.torres" },
+      "sarahKim": { "name": "sarah.kim" },
+      "davidPatel": { "name": "david.patel" },
+      "lisaWong": { "name": "lisa.wong" }
+    },
+    "callTypes": {
+      "outgoing": "صادرة",
+      "incoming": "واردة",
+      "missed": "فائتة"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "emily.chen",
+        "lastMessage": "لا تخبر أحداً بذلك!",
+        "messages": {
+          "msg1": { "text": "أرسلت لك رابطاً خاصاً.", "incoming": true },
+          "msg2": {
+            "text": "استلمته، لكن لماذا كل هذا السر؟",
+            "incoming": false
+          },
+          "msg3": { "text": "لا تخبر أحداً بذلك!", "incoming": true }
+        }
+      },
+      "michaelTorres": {
+        "name": "michael.torres",
+        "lastMessage": "سأحذف الدردشة لاحقاً.",
+        "messages": {
+          "msg1": { "text": "هل ستلتقي بها الليلة؟", "incoming": true },
+          "msg2": { "text": "نعم، لكن لا تتحدث عن ذلك.", "incoming": false },
+          "msg3": { "text": "سأحذف الدردشة لاحقاً.", "incoming": true }
+        }
+      },
+      "sarahKim": {
+        "name": "sarah.kim",
+        "lastMessage": "أخفيت المنشور، شكراً!",
+        "messages": {
+          "msg1": {
+            "text": "هل يمكنك إخفاء ذلك المنشور من أجلي؟",
+            "incoming": true
+          },
+          "msg2": { "text": "أخفيت المنشور، شكراً!", "incoming": false }
+        }
+      },
+      "davidPatel": {
+        "name": "david.patel",
+        "lastMessage": "تحقق من المجموعة السرية.",
+        "messages": {
+          "msg1": { "text": "أضفتك إلى مجموعة سرية.", "incoming": true },
+          "msg2": { "text": "شكراً، ما هي هذه المجموعة؟", "incoming": false },
+          "msg3": { "text": "تحقق من المجموعة السرية.", "incoming": true }
+        }
+      },
+      "lisaWong": {
+        "name": "lisa.wong",
+        "lastMessage": "لنبقي الأمر بيننا.",
+        "messages": {
+          "msg1": {
+            "text": "هل أنت متفرغ للتحدث على انفراد؟",
+            "incoming": true
+          },
+          "msg2": { "text": "نعم، ما الأمر؟", "incoming": false },
+          "msg3": { "text": "لنبقي الأمر بيننا.", "incoming": true }
+        }
+      }
+    }
   }
 }

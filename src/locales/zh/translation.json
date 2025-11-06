@@ -1764,5 +1764,102 @@
         }
       }
     }
+  },
+  "dminsta": {
+    "header": {
+      "title": "Instagram"
+    },
+    "tabs": {
+      "chat": "消息",
+      "contacts": "联系人",
+      "call_log": "通话记录",
+      "aria_label": "Instagram导航选项卡",
+      "chat_aria": "查看消息列表",
+      "contacts_aria": "查看联系人列表",
+      "call_log_aria": "查看通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "Instagram消息列表",
+      "item_aria": "选择与{name}的聊天",
+      "detail_aria": "{name}的聊天详情"
+    },
+    "contacts": {
+      "list_aria": "Instagram联系人列表",
+      "item_aria": "选择联系人{name}",
+      "detail_aria": "{name}的联系人详情",
+      "phone": "电话",
+      "email": "电子邮件",
+      "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
+      "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
+      "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
+      "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
+      "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
+      "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
+      "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
+      "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
+      "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
+    },
+    "callLogs": {
+      "list_aria": "Instagram通话记录",
+      "item_aria": "选择与{name}的通话",
+      "detail_aria": "{name}的通话详情",
+      "emilyChen": { "name": "emily.chen" },
+      "michaelTorres": { "name": "michael.torres" },
+      "sarahKim": { "name": "sarah.kim" },
+      "davidPatel": { "name": "david.patel" },
+      "lisaWong": { "name": "lisa.wong" }
+    },
+    "callTypes": {
+      "outgoing": "拨出",
+      "incoming": "来电",
+      "missed": "未接"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "emily.chen",
+        "lastMessage": "别告诉任何人！",
+        "messages": {
+          "msg1": { "text": "我给你发了一个私人链接。", "incoming": true },
+          "msg2": { "text": "收到了，但为什么要保密？", "incoming": false },
+          "msg3": { "text": "别告诉任何人！", "incoming": true }
+        }
+      },
+      "michaelTorres": {
+        "name": "michael.torres",
+        "lastMessage": "我会之后删除聊天记录。",
+        "messages": {
+          "msg1": { "text": "你今晚还去见她吗？", "incoming": true },
+          "msg2": { "text": "是的，但别声张。", "incoming": false },
+          "msg3": { "text": "我会之后删除聊天记录。", "incoming": true }
+        }
+      },
+      "sarahKim": {
+        "name": "sarah.kim",
+        "lastMessage": "我把帖子隐藏了，谢谢！",
+        "messages": {
+          "msg1": { "text": "能帮我把那个帖子隐藏吗？", "incoming": true },
+          "msg2": { "text": "我把帖子隐藏了，谢谢！", "incoming": false }
+        }
+      },
+      "davidPatel": {
+        "name": "david.patel",
+        "lastMessage": "查看秘密小组。",
+        "messages": {
+          "msg1": { "text": "我把你加入了一个秘密小组。", "incoming": true },
+          "msg2": { "text": "谢谢，是关于什么的？", "incoming": false },
+          "msg3": { "text": "查看秘密小组。", "incoming": true }
+        }
+      },
+      "lisaWong": {
+        "name": "lisa.wong",
+        "lastMessage": "这件事我们保密。",
+        "messages": {
+          "msg1": { "text": "有空私下聊聊吗？", "incoming": true },
+          "msg2": { "text": "有空，怎么了？", "incoming": false },
+          "msg3": { "text": "这件事我们保密。", "incoming": true }
+        }
+      }
+    }
   }
 }

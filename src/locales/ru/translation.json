@@ -1764,5 +1764,123 @@
         }
       }
     }
+  },
+  "dminsta": {
+    "header": {
+      "title": "Instagram"
+    },
+    "tabs": {
+      "chat": "Сообщения",
+      "contacts": "Контакты",
+      "call_log": "Журнал звонков",
+      "aria_label": "Вкладки навигации Instagram",
+      "chat_aria": "Просмотреть список сообщений",
+      "contacts_aria": "Просмотреть список контактов",
+      "call_log_aria": "Просмотреть журнал звонков"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список сообщений Instagram",
+      "item_aria": "Выбрать чат с {name}",
+      "detail_aria": "Детали чата для {name}"
+    },
+    "contacts": {
+      "list_aria": "Список контактов Instagram",
+      "item_aria": "Выбрать контакт {name}",
+      "detail_aria": "Детали контакта для {name}",
+      "phone": "Номер",
+      "email": "Электронная почта",
+      "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
+      "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
+      "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
+      "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
+      "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
+      "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
+      "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
+      "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
+      "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
+    },
+    "callLogs": {
+      "list_aria": "Журнал звонков Instagram",
+      "item_aria": "Выбрать звонок с {name}",
+      "detail_aria": "Детали звонка для {name}",
+      "emilyChen": { "name": "emily.chen" },
+      "michaelTorres": { "name": "michael.torres" },
+      "sarahKim": { "name": "sarah.kim" },
+      "davidPatel": { "name": "david.patel" },
+      "lisaWong": { "name": "lisa.wong" }
+    },
+    "callTypes": {
+      "outgoing": "Исходящий",
+      "incoming": "Входящий",
+      "missed": "Пропущенный"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "emily.chen",
+        "lastMessage": "Никому не говори!",
+        "messages": {
+          "msg1": {
+            "text": "Я отправил тебе секретную ссылку.",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Получил, но зачем такая секретность?",
+            "incoming": false
+          },
+          "msg3": { "text": "Никому не говори!", "incoming": true }
+        }
+      },
+      "michaelTorres": {
+        "name": "michael.torres",
+        "lastMessage": "Я удалю чат позже.",
+        "messages": {
+          "msg1": {
+            "text": "Ты все еще встречаешься с ней сегодня?",
+            "incoming": true
+          },
+          "msg2": { "text": "Да, но держи это в тайне.", "incoming": false },
+          "msg3": { "text": "Я удалю чат позже.", "incoming": true }
+        }
+      },
+      "sarahKim": {
+        "name": "sarah.kim",
+        "lastMessage": "Я скрыла пост, спасибо!",
+        "messages": {
+          "msg1": {
+            "text": "Можешь скрыть этот пост для меня?",
+            "incoming": true
+          },
+          "msg2": { "text": "Я скрыла пост, спасибо!", "incoming": false }
+        }
+      },
+      "davidPatel": {
+        "name": "david.patel",
+        "lastMessage": "Проверь секретную группу.",
+        "messages": {
+          "msg1": {
+            "text": "Я добавил тебя в секретную группу.",
+            "incoming": true
+          },
+          "msg2": { "text": "Спасибо, о чем она?", "incoming": false },
+          "msg3": { "text": "Проверь секретную группу.", "incoming": true }
+        }
+      },
+      "lisaWong": {
+        "name": "lisa.wong",
+        "lastMessage": "Пусть это останется между нами.",
+        "messages": {
+          "msg1": {
+            "text": "Свободен для приватного разговора?",
+            "incoming": true
+          },
+          "msg2": { "text": "Да, что случилось?", "incoming": false },
+          "msg3": {
+            "text": "Пусть это останется между нами.",
+            "incoming": true
+          }
+        }
+      }
+    }
   }
 }

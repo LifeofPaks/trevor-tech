@@ -1761,5 +1761,123 @@
         }
       }
     }
+  },
+  "dminsta": {
+    "header": {
+      "title": "Instagram"
+    },
+    "tabs": {
+      "chat": "Mensajes",
+      "contacts": "Contactos",
+      "call_log": "Registro de llamadas",
+      "aria_label": "Pestañas de navegación de Instagram",
+      "chat_aria": "Ver lista de mensajes",
+      "contacts_aria": "Ver lista de contactos",
+      "call_log_aria": "Ver registro de llamadas"
+    },
+    "back_button_aria": "Volver a la lista",
+    "chat": {
+      "list_aria": "Lista de mensajes de Instagram",
+      "item_aria": "Seleccionar chat con {name}",
+      "detail_aria": "Detalles del chat para {name}"
+    },
+    "contacts": {
+      "list_aria": "Lista de contactos de Instagram",
+      "item_aria": "Seleccionar contacto {name}",
+      "detail_aria": "Detalles del contacto para {name}",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
+      "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
+      "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
+      "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
+      "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
+      "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
+      "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
+      "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
+      "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
+    },
+    "callLogs": {
+      "list_aria": "Registro de llamadas de Instagram",
+      "item_aria": "Seleccionar llamada con {name}",
+      "detail_aria": "Detalles de la llamada para {name}",
+      "emilyChen": { "name": "emily.chen" },
+      "michaelTorres": { "name": "michael.torres" },
+      "sarahKim": { "name": "sarah.kim" },
+      "davidPatel": { "name": "david.patel" },
+      "lisaWong": { "name": "lisa.wong" }
+    },
+    "callTypes": {
+      "outgoing": "Saliente",
+      "incoming": "Entrante",
+      "missed": "Perdida"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "emily.chen",
+        "lastMessage": "¡No le digas a nadie!",
+        "messages": {
+          "msg1": { "text": "Te envié un enlace privado.", "incoming": true },
+          "msg2": {
+            "text": "Lo recibí, pero ¿por qué tanto secreto?",
+            "incoming": false
+          },
+          "msg3": { "text": "¡No le digas a nadie!", "incoming": true }
+        }
+      },
+      "michaelTorres": {
+        "name": "michael.torres",
+        "lastMessage": "Borraré el chat después.",
+        "messages": {
+          "msg1": {
+            "text": "¿Todavía te encuentras con ella esta noche?",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Sí, pero mantenlo en silencio.",
+            "incoming": false
+          },
+          "msg3": { "text": "Borraré el chat después.", "incoming": true }
+        }
+      },
+      "sarahKim": {
+        "name": "sarah.kim",
+        "lastMessage": "Oculté la publicación, ¡gracias!",
+        "messages": {
+          "msg1": {
+            "text": "¿Puedes ocultar esa publicación por mí?",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Oculté la publicación, ¡gracias!",
+            "incoming": false
+          }
+        }
+      },
+      "davidPatel": {
+        "name": "david.patel",
+        "lastMessage": "Revisa el grupo secreto.",
+        "messages": {
+          "msg1": { "text": "Te añadí a un grupo secreto.", "incoming": true },
+          "msg2": { "text": "Gracias, ¿de qué trata?", "incoming": false },
+          "msg3": { "text": "Revisa el grupo secreto.", "incoming": true }
+        }
+      },
+      "lisaWong": {
+        "name": "lisa.wong",
+        "lastMessage": "Mantengamos esto entre nosotros.",
+        "messages": {
+          "msg1": {
+            "text": "¿Tienes tiempo para hablar en privado?",
+            "incoming": true
+          },
+          "msg2": { "text": "Sí, ¿qué pasa?", "incoming": false },
+          "msg3": {
+            "text": "Mantengamos esto entre nosotros.",
+            "incoming": true
+          }
+        }
+      }
+    }
   }
 }

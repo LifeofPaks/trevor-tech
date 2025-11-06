@@ -1768,5 +1768,123 @@
         }
       }
     }
+  },
+  "dminsta": {
+    "header": {
+      "title": "Instagram"
+    },
+    "tabs": {
+      "chat": "Mesajlar",
+      "contacts": "Kişiler",
+      "call_log": "Arama Kaydı",
+      "aria_label": "Instagram gezinme sekmeleri",
+      "chat_aria": "Mesaj listesini görüntüle",
+      "contacts_aria": "Kişi listesini görüntüle",
+      "call_log_aria": "Arama kaydını görüntüle"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "Instagram mesaj listesi",
+      "item_aria": "{name} ile sohbeti seç",
+      "detail_aria": "{name} için sohbet detayları"
+    },
+    "contacts": {
+      "list_aria": "Instagram kişi listesi",
+      "item_aria": "{name} kişisini seç",
+      "detail_aria": "{name} için kişi detayları",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
+      "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
+      "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
+      "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
+      "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
+      "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
+      "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
+      "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
+      "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
+    },
+    "callLogs": {
+      "list_aria": "Instagram arama kaydı",
+      "item_aria": "{name} ile aramayı seç",
+      "detail_aria": "{name} için arama detayları",
+      "emilyChen": { "name": "emily.chen" },
+      "michaelTorres": { "name": "michael.torres" },
+      "sarahKim": { "name": "sarah.kim" },
+      "davidPatel": { "name": "david.patel" },
+      "lisaWong": { "name": "lisa.wong" }
+    },
+    "callTypes": {
+      "outgoing": "Giden",
+      "incoming": "Gelen",
+      "missed": "Cevapsız"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "emily.chen",
+        "lastMessage": "Bunu kimseye söyleme!",
+        "messages": {
+          "msg1": {
+            "text": "Sana özel bir bağlantı gönderdim.",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Aldım, ama neden bu kadar gizli?",
+            "incoming": false
+          },
+          "msg3": { "text": "Bunu kimseye söyleme!", "incoming": true }
+        }
+      },
+      "michaelTorres": {
+        "name": "michael.torres",
+        "lastMessage": "Sonra sohbeti sileceğim.",
+        "messages": {
+          "msg1": {
+            "text": "Bu akşam onunla buluşuyor musun?",
+            "incoming": true
+          },
+          "msg2": { "text": "Evet, ama sessiz ol.", "incoming": false },
+          "msg3": { "text": "Sonra sohbeti sileceğim.", "incoming": true }
+        }
+      },
+      "sarahKim": {
+        "name": "sarah.kim",
+        "lastMessage": "Gönderiyi gizledim, teşekkürler!",
+        "messages": {
+          "msg1": {
+            "text": "O gönderiyi benim için gizler misin?",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Gönderiyi gizledim, teşekkürler!",
+            "incoming": false
+          }
+        }
+      },
+      "davidPatel": {
+        "name": "david.patel",
+        "lastMessage": "Gizli grubu kontrol et.",
+        "messages": {
+          "msg1": { "text": "Seni gizli bir gruba ekledim.", "incoming": true },
+          "msg2": {
+            "text": "Teşekkürler, bu grup ne hakkında?",
+            "incoming": false
+          },
+          "msg3": { "text": "Gizli grubu kontrol et.", "incoming": true }
+        }
+      },
+      "lisaWong": {
+        "name": "lisa.wong",
+        "lastMessage": "Bunu aramızda tutalım.",
+        "messages": {
+          "msg1": {
+            "text": "Özel konuşmak için vaktin var mı?",
+            "incoming": true
+          },
+          "msg2": { "text": "Evet, ne var?", "incoming": false },
+          "msg3": { "text": "Bunu aramızda tutalım.", "incoming": true }
+        }
+      }
+    }
   }
 }

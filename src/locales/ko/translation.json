@@ -1772,5 +1772,108 @@
         }
       }
     }
+  },
+  "dminsta": {
+    "header": {
+      "title": "Instagram"
+    },
+    "tabs": {
+      "chat": "메시지",
+      "contacts": "연락처",
+      "call_log": "통화 기록",
+      "aria_label": "Instagram 탐색 탭",
+      "chat_aria": "메시지 목록 보기",
+      "contacts_aria": "연락처 목록 보기",
+      "call_log_aria": "통화 기록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "Instagram 메시지 목록",
+      "item_aria": "{name}과의 채팅 선택",
+      "detail_aria": "{name}의 채팅 상세"
+    },
+    "contacts": {
+      "list_aria": "Instagram 연락처 목록",
+      "item_aria": "{name} 연락처 선택",
+      "detail_aria": "{name}의 연락처 상세",
+      "phone": "전화",
+      "email": "이메일",
+      "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
+      "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
+      "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
+      "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
+      "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
+      "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
+      "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
+      "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
+      "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
+    },
+    "callLogs": {
+      "list_aria": "Instagram 통화 기록",
+      "item_aria": "{name}과의 통화 선택",
+      "detail_aria": "{name}의 통화 상세",
+      "emilyChen": { "name": "emily.chen" },
+      "michaelTorres": { "name": "michael.torres" },
+      "sarahKim": { "name": "sarah.kim" },
+      "davidPatel": { "name": "david.patel" },
+      "lisaWong": { "name": "lisa.wong" }
+    },
+    "callTypes": {
+      "outgoing": "발신",
+      "incoming": "수신",
+      "missed": "부재중"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "emily.chen",
+        "lastMessage": "아무에게도 말하지 마!",
+        "messages": {
+          "msg1": { "text": "너에게 비밀 링크를 보냈어.", "incoming": true },
+          "msg2": {
+            "text": "받았어, 근데 왜 이렇게 비밀스러운 거야?",
+            "incoming": false
+          },
+          "msg3": { "text": "아무에게도 말하지 마!", "incoming": true }
+        }
+      },
+      "michaelTorres": {
+        "name": "michael.torres",
+        "lastMessage": "나중에 채팅을 지울게.",
+        "messages": {
+          "msg1": {
+            "text": "오늘 밤에도 그녀를 만나는 거야?",
+            "incoming": true
+          },
+          "msg2": { "text": "응, 하지만 조용히 해.", "incoming": false },
+          "msg3": { "text": "나중에 채팅을 지울게.", "incoming": true }
+        }
+      },
+      "sarahKim": {
+        "name": "sarah.kim",
+        "lastMessage": "게시물을 숨겼어, 고마워!",
+        "messages": {
+          "msg1": { "text": "그 게시물을 나 대신 숨겨줄래?", "incoming": true },
+          "msg2": { "text": "게시물을 숨겼어, 고마워!", "incoming": false }
+        }
+      },
+      "davidPatel": {
+        "name": "david.patel",
+        "lastMessage": "비밀 그룹을 확인해.",
+        "messages": {
+          "msg1": { "text": "너를 비밀 그룹에 추가했어.", "incoming": true },
+          "msg2": { "text": "고마워, 어떤 그룹이야?", "incoming": false },
+          "msg3": { "text": "비밀 그룹을 확인해.", "incoming": true }
+        }
+      },
+      "lisaWong": {
+        "name": "lisa.wong",
+        "lastMessage": "이건 우리 둘만의 비밀이야.",
+        "messages": {
+          "msg1": { "text": "비밀리에 이야기할 시간 있어?", "incoming": true },
+          "msg2": { "text": "응, 무슨 일이야?", "incoming": false },
+          "msg3": { "text": "이건 우리 둘만의 비밀이야.", "incoming": true }
+        }
+      }
+    }
   }
 }

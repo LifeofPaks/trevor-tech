@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -64,61 +65,121 @@ const theme = createTheme({
   },
 });
 
-// === Instagram-Style Data ===
+// === Instagram-Style Data with Cheating Theme ===
 const chats = [
   {
     id: 1,
-    name: "jessica.travel",
+    nameKey: "dminsta.chats.emilyChen.name",
     avatar: "https://i.pravatar.cc/150?img=68",
-    lastMessage: "Just landed in Bali",
+    lastMessageKey: "dminsta.chats.emilyChen.lastMessage",
     time: "2m",
     messages: [
-      { text: "How's Tokyo?", time: "10:20", incoming: true },
-      { text: "Amazing! Just landed in Bali", time: "10:22", incoming: false },
+      {
+        textKey: "dminsta.chats.emilyChen.messages.msg1.text",
+        time: "10:20",
+        incoming: true,
+      },
+      {
+        textKey: "dminsta.chats.emilyChen.messages.msg2.text",
+        time: "10:21",
+        incoming: false,
+      },
+      {
+        textKey: "dminsta.chats.emilyChen.messages.msg3.text",
+        time: "10:22",
+        incoming: true,
+      },
     ],
   },
   {
     id: 2,
-    name: "alex.codes",
+    nameKey: "dminsta.chats.michaelTorres.name",
     avatar: "https://i.pravatar.cc/150?img=56",
-    lastMessage: "React 19 is wild",
+    lastMessageKey: "dminsta.chats.michaelTorres.lastMessage",
     time: "15m",
     messages: [
-      { text: "Did you try the new React 19?", time: "09:50", incoming: true },
-      { text: "React 19 is wild", time: "09:52", incoming: false },
+      {
+        textKey: "dminsta.chats.michaelTorres.messages.msg1.text",
+        time: "09:50",
+        incoming: true,
+      },
+      {
+        textKey: "dminsta.chats.michaelTorres.messages.msg2.text",
+        time: "09:51",
+        incoming: false,
+      },
+      {
+        textKey: "dminsta.chats.michaelTorres.messages.msg3.text",
+        time: "09:52",
+        incoming: true,
+      },
     ],
   },
   {
     id: 3,
-    name: "maria.art",
+    nameKey: "dminsta.chats.sarahKim.name",
     avatar: "https://i.pravatar.cc/150?img=3",
-    lastMessage: "Sent you a sketch",
+    lastMessageKey: "dminsta.chats.sarahKim.lastMessage",
     time: "1h",
     messages: [
-      { text: "Working on your portrait", time: "14:30", incoming: true },
-      { text: "Sent you a sketch", time: "14:32", incoming: false },
+      {
+        textKey: "dminsta.chats.sarahKim.messages.msg1.text",
+        time: "14:30",
+        incoming: true,
+      },
+      {
+        textKey: "dminsta.chats.sarahKim.messages.msg2.text",
+        time: "14:32",
+        incoming: false,
+      },
     ],
   },
   {
     id: 4,
-    name: "tom.foodie",
+    nameKey: "dminsta.chats.davidPatel.name",
     avatar: "https://i.pravatar.cc/150?img=24",
-    lastMessage: "That ramen was",
+    lastMessageKey: "dminsta.chats.davidPatel.lastMessage",
     time: "3h",
     messages: [
-      { text: "Best ramen in town", time: "11:00", incoming: true },
-      { text: "That ramen was", time: "11:02", incoming: false },
+      {
+        textKey: "dminsta.chats.davidPatel.messages.msg1.text",
+        time: "11:00",
+        incoming: true,
+      },
+      {
+        textKey: "dminsta.chats.davidPatel.messages.msg2.text",
+        time: "11:01",
+        incoming: false,
+      },
+      {
+        textKey: "dminsta.chats.davidPatel.messages.msg3.text",
+        time: "11:02",
+        incoming: true,
+      },
     ],
   },
   {
     id: 5,
-    name: "lily.yoga",
+    nameKey: "dminsta.chats.lisaWong.name",
     avatar: "https://i.pravatar.cc/150?img=47",
-    lastMessage: "Morning flow at 7",
+    lastMessageKey: "dminsta.chats.lisaWong.lastMessage",
     time: "5h",
     messages: [
-      { text: "Join me for sunrise yoga?", time: "06:45", incoming: true },
-      { text: "Morning flow at 7", time: "06:50", incoming: false },
+      {
+        textKey: "dminsta.chats.lisaWong.messages.msg1.text",
+        time: "06:45",
+        incoming: true,
+      },
+      {
+        textKey: "dminsta.chats.lisaWong.messages.msg2.text",
+        time: "06:48",
+        incoming: false,
+      },
+      {
+        textKey: "dminsta.chats.lisaWong.messages.msg3.text",
+        time: "06:50",
+        incoming: true,
+      },
     ],
   },
 ];
@@ -126,112 +187,113 @@ const chats = [
 const contacts = [
   {
     id: 1,
-    name: "ava.dance",
+    nameKey: "dminsta.contacts.alexRivera.name",
     avatar: "https://i.pravatar.cc/150?img=12",
     phone: "+1 555-0101",
-    email: "ava@ig.com",
+    emailKey: "dminsta.contacts.alexRivera.email",
   },
   {
     id: 2,
-    name: "ben.guitar",
+    nameKey: "dminsta.contacts.briannaLee.name",
     avatar: "https://i.pravatar.cc/150?img=33",
     phone: "+1 555-0102",
-    email: "ben@ig.com",
+    emailKey: "dminsta.contacts.briannaLee.email",
   },
   {
     id: 3,
-    name: "chloe.fit",
+    nameKey: "dminsta.contacts.carlosMendoza.name",
     avatar: "https://i.pravatar.cc/150?img=45",
     phone: "+1 555-0103",
-    email: "chloe@ig.com",
+    emailKey: "dminsta.contacts.carlosMendoza.email",
   },
   {
     id: 4,
-    name: "diego.photo",
+    nameKey: "dminsta.contacts.dianaFoster.name",
     avatar: "https://i.pravatar.cc/150?img=61",
     phone: "+1 555-0104",
-    email: "diego@ig.com",
+    emailKey: "dminsta.contacts.dianaFoster.email",
   },
   {
     id: 5,
-    name: "ella.bake",
+    nameKey: "dminsta.contacts.ethanBrooks.name",
     avatar: "https://i.pravatar.cc/150?img=19",
     phone: "+1 555-0105",
-    email: "ella@ig.com",
+    emailKey: "dminsta.contacts.ethanBrooks.email",
   },
   {
     id: 6,
-    name: "finn.surf",
+    nameKey: "dminsta.contacts.fionaGrant.name",
     avatar: "https://i.pravatar.cc/150?img=52",
     phone: "+1 555-0106",
-    email: "finn@ig.com",
+    emailKey: "dminsta.contacts.fionaGrant.email",
   },
   {
     id: 7,
-    name: "grace.run",
+    nameKey: "dminsta.contacts.gabrielOrtiz.name",
     avatar: "https://i.pravatar.cc/150?img=28",
     phone: "+1 555-0107",
-    email: "grace@ig.com",
+    emailKey: "dminsta.contacts.gabrielOrtiz.email",
   },
   {
     id: 8,
-    name: "henry.drone",
+    nameKey: "dminsta.contacts.hannahPark.name",
     avatar: "https://i.pravatar.cc/150?img=39",
     phone: "+1 555-0108",
-    email: "henry@ig.com",
+    emailKey: "dminsta.contacts.hannahPark.email",
   },
   {
     id: 9,
-    name: "isla.paint",
+    nameKey: "dminsta.contacts.isaacNewton.name",
     avatar: "https://i.pravatar.cc/150?img=7",
     phone: "+1 555-0109",
-    email: "isla@ig.com",
+    emailKey: "dminsta.contacts.isaacNewton.email",
   },
 ];
 
 const callLogs = [
   {
     id: 1,
-    name: "jessica.travel",
+    nameKey: "dminsta.callLogs.emilyChen.name",
     avatar: "https://i.pravatar.cc/150?img=68",
-    type: "outgoing",
-    time: "2025-10-28 09:30",
+    typeKey: "dminsta.callTypes.outgoing",
+    time: "2025-11-06 09:30",
     duration: "08:12",
   },
   {
     id: 2,
-    name: "alex.codes",
+    nameKey: "dminsta.callLogs.michaelTorres.name",
     avatar: "https://i.pravatar.cc/150?img=56",
-    type: "incoming",
-    time: "2025-10-27 19:45",
+    typeKey: "dminsta.callTypes.incoming",
+    time: "2025-11-05 19:45",
     duration: "22:30",
   },
   {
     id: 3,
-    name: "maria.art",
+    nameKey: "dminsta.callLogs.sarahKim.name",
     avatar: "https://i.pravatar.cc/150?img=3",
-    type: "missed",
-    time: "2025-10-27 14:20",
+    typeKey: "dminsta.callTypes.missed",
+    time: "2025-11-05 14:20",
   },
   {
     id: 4,
-    name: "tom.foodie",
+    nameKey: "dminsta.callLogs.davidPatel.name",
     avatar: "https://i.pravatar.cc/150?img=24",
-    type: "outgoing",
-    time: "2025-10-26 12:15",
+    typeKey: "dminsta.callTypes.outgoing",
+    time: "2025-11-04 12:15",
     duration: "05:40",
   },
   {
     id: 5,
-    name: "lily.yoga",
+    nameKey: "dminsta.callLogs.lisaWong.name",
     avatar: "https://i.pravatar.cc/150?img=47",
-    type: "incoming",
-    time: "2025-10-26 07:00",
+    typeKey: "dminsta.callTypes.incoming",
+    time: "2025-11-04 07:00",
     duration: "10:25",
   },
 ];
 
 const InstagramPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -246,10 +308,11 @@ const InstagramPage = () => {
     setSelectedCall(null);
   };
 
-  const getCallIcon = (type) => {
-    if (type === "outgoing")
+  const getCallIcon = (typeKey) => {
+    const type = t(typeKey).toLowerCase();
+    if (type === t("dminsta.callTypes.outgoing").toLowerCase())
       return <FiPhoneCall sx={{ fontSize: 16, color: "#10b981" }} />;
-    if (type === "incoming")
+    if (type === t("dminsta.callTypes.incoming").toLowerCase())
       return <FiPhoneIncoming sx={{ fontSize: 16, color: "#10b981" }} />;
     return <FiPhoneMissed sx={{ fontSize: 16, color: "#ef4444" }} />;
   };
@@ -257,7 +320,8 @@ const InstagramPage = () => {
   const groupContactsByLetter = () => {
     const grouped = {};
     contacts.forEach((contact) => {
-      const letter = contact.name[0].toUpperCase();
+      const name = t(contact.nameKey);
+      const letter = name[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(contact);
     });
@@ -272,7 +336,7 @@ const InstagramPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Instagram
+              {t("dminsta.header.title")}
               <FiInstagram className="text-[#833ab4]" />
             </h1>
           </div>
@@ -292,6 +356,7 @@ const InstagramPage = () => {
             <Tabs
               value={tab}
               onChange={(e, v) => setTab(v)}
+              aria-label={t("dminsta.tabs.aria_label")}
               sx={{
                 mb: 3,
                 "& .MuiTabs-indicator": {
@@ -303,20 +368,23 @@ const InstagramPage = () => {
               <Tab
                 icon={<FiInstagram />}
                 iconPosition="start"
-                label={isMobile ? "" : "Messages"}
+                label={isMobile ? "" : t("dminsta.tabs.chat")}
                 value="chat"
+                aria-label={t("dminsta.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Contacts"}
+                label={isMobile ? "" : t("dminsta.tabs.contacts")}
                 value="contacts"
+                aria-label={t("dminsta.tabs.contacts_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Call Log"}
+                label={isMobile ? "" : t("dminsta.tabs.call_log")}
                 value="call-log"
+                aria-label={t("dminsta.tabs.call_log_aria")}
               />
             </Tabs>
           )}
@@ -324,7 +392,11 @@ const InstagramPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dminsta.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -356,7 +428,7 @@ const InstagramPage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dminsta.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -366,6 +438,9 @@ const InstagramPage = () => {
                         "&:hover": { bgcolor: "#fafafa" },
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dminsta.chat.item_aria", {
+                        name: t(chat.nameKey),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -376,7 +451,7 @@ const InstagramPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {chat.name}
+                            {t(chat.nameKey)}
                           </Typography>
                           <Typography
                             sx={{
@@ -387,7 +462,7 @@ const InstagramPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(chat.lastMessageKey)}
                           </Typography>
                         </Box>
                         <Typography
@@ -406,9 +481,10 @@ const InstagramPage = () => {
                 <Stack
                   className="scrollbar-hide"
                   sx={{
-                    maxHeight: "70vh", // ensure scrolling still works
+                    maxHeight: "70vh",
                     overflowY: "auto",
                   }}
+                  aria-label={t("dminsta.contacts.list_aria")}
                 >
                   {Object.keys(groupContactsByLetter())
                     .sort()
@@ -434,6 +510,9 @@ const InstagramPage = () => {
                               "&:hover": { bgcolor: "#fafafa" },
                             }}
                             onClick={() => setSelectedContact(contact)}
+                            aria-label={t("dminsta.contacts.item_aria", {
+                              name: t(contact.nameKey),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -447,7 +526,7 @@ const InstagramPage = () => {
                               <Typography
                                 sx={{ fontWeight: 500, color: "text.primary" }}
                               >
-                                {contact.name}
+                                {t(contact.nameKey)}
                               </Typography>
                             </Stack>
                           </Box>
@@ -459,10 +538,13 @@ const InstagramPage = () => {
 
               {/* Call Log */}
               {tab === "call-log" && (
-                <Stack>
+                <Stack aria-label={t("dminsta.callLogs.list_aria")}>
                   {callLogs.map((call) => {
                     const color =
-                      call.type === "missed" ? "#ef4444" : "#10b981";
+                      t(call.typeKey).toLowerCase() ===
+                      t("dminsta.callTypes.missed").toLowerCase()
+                        ? "#ef4444"
+                        : "#10b981";
                     return (
                       <Box
                         key={call.id}
@@ -472,6 +554,9 @@ const InstagramPage = () => {
                           "&:hover": { bgcolor: "#fafafa" },
                         }}
                         onClick={() => setSelectedCall(call)}
+                        aria-label={t("dminsta.callLogs.item_aria", {
+                          name: t(call.nameKey),
+                        })}
                       >
                         <Stack direction="row" spacing={2} alignItems="center">
                           <Box sx={{ position: "relative" }}>
@@ -492,18 +577,17 @@ const InstagramPage = () => {
                                 justifyContent: "center",
                               }}
                             >
-                              {getCallIcon(call.type)}
+                              {getCallIcon(call.typeKey)}
                             </Box>
                           </Box>
                           <Box sx={{ flex: 1 }}>
                             <Typography
                               sx={{ fontWeight: 600, color: "text.primary" }}
                             >
-                              {call.name}
+                              {t(call.nameKey)}
                             </Typography>
                             <Typography sx={{ fontSize: "0.875rem", color }}>
-                              {call.type.charAt(0).toUpperCase() +
-                                call.type.slice(1)}
+                              {t(call.typeKey)}
                             </Typography>
                           </Box>
                           <Typography
@@ -534,7 +618,12 @@ const InstagramPage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dminsta.chat.detail_aria", {
+                      name: t(selectedChat.nameKey),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -544,7 +633,7 @@ const InstagramPage = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "text.primary" }}
                       >
-                        {selectedChat.name}
+                        {t(selectedChat.nameKey)}
                       </Typography>
                     </Stack>
                     <Stack spacing={2} sx={{ mt: 2 }}>
@@ -584,7 +673,7 @@ const InstagramPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.9375rem" }}>
-                              {msg.text}
+                              {t(msg.textKey)}
                             </Typography>
                             <Typography
                               sx={{
@@ -607,7 +696,13 @@ const InstagramPage = () => {
 
                 {/* Contact Detail */}
                 {selectedContact && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dminsta.contacts.detail_aria", {
+                      name: t(selectedContact.nameKey),
+                    })}
+                  >
                     <Avatar
                       src={selectedContact.avatar}
                       sx={{ width: 140, height: 140 }}
@@ -616,7 +711,7 @@ const InstagramPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "text.primary" }}
                     >
-                      {selectedContact.name}
+                      {t(selectedContact.nameKey)}
                     </Typography>
 
                     {selectedContact.phone && (
@@ -647,7 +742,7 @@ const InstagramPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#8e8e8e" }}
                           >
-                            Phone
+                            {t("dminsta.contacts.phone")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
@@ -658,7 +753,7 @@ const InstagramPage = () => {
                       </Paper>
                     )}
 
-                    {selectedContact.email && (
+                    {selectedContact.emailKey && (
                       <Paper
                         elevation={0}
                         sx={{
@@ -686,12 +781,12 @@ const InstagramPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#8e8e8e" }}
                           >
-                            Email
+                            {t("dminsta.contacts.email")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {selectedContact.email}
+                            {t(selectedContact.emailKey)}
                           </Typography>
                         </Box>
                       </Paper>
@@ -701,7 +796,13 @@ const InstagramPage = () => {
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dminsta.callLogs.detail_aria", {
+                      name: t(selectedCall.nameKey),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 140, height: 140 }}
@@ -710,7 +811,7 @@ const InstagramPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "text.primary" }}
                     >
-                      {selectedCall.name}
+                      {t(selectedCall.nameKey)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -739,7 +840,7 @@ const InstagramPage = () => {
                             mt: 1,
                           }}
                         >
-                          {selectedCall.duration} • {selectedCall.type}
+                          {selectedCall.duration} • {t(selectedCall.typeKey)}
                         </Typography>
                       )}
                     </Paper>
