@@ -392,6 +392,14 @@ const SocialMediaPage = () => {
           >
             {t("smedia.how_it_works_title")}
           </motion.h2>
+          <motion.p
+            className="lg:text-xl text-cyan-200/80 !mb-12 text-center max-w-4xl !mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={howItWorksInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            {t("smedia.how_it_works_subtitle")}
+          </motion.p>
           <div className="grid grid-cols-1 md:grid-cols-3 !gap-8">
             {[
               {
@@ -508,6 +516,14 @@ const SocialMediaPage = () => {
           >
             {t("smedia.features_title")}
           </motion.h2>
+          <motion.p
+            className="lg:text-xl text-cyan-200/80 !mb-12 text-center max-w-4xl !mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={featuresInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            {t("smedia.features_subtitle")}
+          </motion.p>
           <div className="grid grid-cols-1 md:grid-cols-3 !gap-8">
             {[
               {
