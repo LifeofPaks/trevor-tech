@@ -348,7 +348,7 @@ const SocialMediaPage = () => {
             <motion.div className="flex flex-col sm:flex-row !gap-4 !mt-8" initial={{ opacity: 0, y: 30 }} animate={heroInView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }}>
               <button
                 onClick={() => setModalOpen(true)}
-                className="!px-8 !py-4 border border-teal-400 text-teal-300 rounded-full font-bold hover:bg-teal-500/20 transition-all"
+                className="!px-8 !py-4 border border-teal-600 text-teal-600 rounded-full font-bold hover:bg-teal-500/20 transition-all"
               >
                 {t("smedia.cta_contact_us")}
               </button>
@@ -455,7 +455,7 @@ const SocialMediaPage = () => {
             {testimonials.map((tm, i) => (
               <div
                 key={i}
-                className="!w-80 !mx-auto bg-gradient-to-br from-cyan-900/70 to-teal-900/70 backdrop-blur-2xl border border-teal-400/50 rounded-xl !p-6 shadow-xl hover:shadow-teal-500/60"
+                className="!w-80 !mx-auto bg-gradient-to-br from-cyan-900/30 to-teal-900/30 backdrop-blur-2xl border border-teal-400/30 rounded-xl !p-6 shadow-xl hover:shadow-teal-500/60"
               >
                 <div className="relative !w-20 !h-20 !mb-4 !mx-auto">
                   <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-400 rounded-full blur-lg opacity-70" />
