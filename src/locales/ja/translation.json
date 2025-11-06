@@ -1712,101 +1712,236 @@
         }
       }
     }
-  }, "dminsta": {
-      "header": {
-        "title": "Instagram"
+  },
+  "dminsta": {
+    "header": {
+      "title": "Instagram"
+    },
+    "tabs": {
+      "chat": "メッセージ",
+      "contacts": "連絡先",
+      "call_log": "通話履歴",
+      "aria_label": "Instagramナビゲーションタブ",
+      "chat_aria": "メッセージリストを表示",
+      "contacts_aria": "連絡先リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Instagramメッセージリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "contacts": {
+      "list_aria": "Instagram連絡先リスト",
+      "item_aria": "連絡先{name}を選択",
+      "detail_aria": "{name}の連絡先詳細",
+      "phone": "電話",
+      "email": "メール",
+      "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
+      "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
+      "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
+      "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
+      "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
+      "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
+      "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
+      "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
+      "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
+    },
+    "callLogs": {
+      "list_aria": "Instagram通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "emilyChen": { "name": "emily.chen" },
+      "michaelTorres": { "name": "michael.torres" },
+      "sarahKim": { "name": "sarah.kim" },
+      "davidPatel": { "name": "david.patel" },
+      "lisaWong": { "name": "lisa.wong" }
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "emily.chen",
+        "lastMessage": "誰にも言わないで！",
+        "messages": {
+          "msg1": {
+            "text": "プライベートリンクを送ったよ。",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "受け取ったけど、なんでこんな秘密なの？",
+            "incoming": false
+          },
+          "msg3": { "text": "誰にも言わないで！", "incoming": true }
+        }
       },
-      "tabs": {
-        "chat": "メッセージ",
-        "contacts": "連絡先",
-        "call_log": "通話履歴",
-        "aria_label": "Instagramナビゲーションタブ",
-        "chat_aria": "メッセージリストを表示",
-        "contacts_aria": "連絡先リストを表示",
-        "call_log_aria": "通話履歴を表示"
+      "michaelTorres": {
+        "name": "michael.torres",
+        "lastMessage": "後でチャットを削除するよ。",
+        "messages": {
+          "msg1": { "text": "今夜まだ彼女に会う？", "incoming": true },
+          "msg2": { "text": "うん、でも内緒にして。", "incoming": false },
+          "msg3": { "text": "後でチャットを削除するよ。", "incoming": true }
+        }
       },
-      "back_button_aria": "リストに戻る",
-      "chat": {
-        "list_aria": "Instagramメッセージリスト",
-        "item_aria": "{name}とのチャットを選択",
-        "detail_aria": "{name}のチャット詳細"
-      },
-      "contacts": {
-        "list_aria": "Instagram連絡先リスト",
-        "item_aria": "連絡先{name}を選択",
-        "detail_aria": "{name}の連絡先詳細",
-        "phone": "電話",
-        "email": "メール",
-        "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
-        "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
-        "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
-        "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
-        "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
-        "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
-        "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
-        "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
-        "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
-      },
-      "callLogs": {
-        "list_aria": "Instagram通話履歴",
-        "item_aria": "{name}との通話を選択",
-        "detail_aria": "{name}の通話詳細",
-        "emilyChen": { "name": "emily.chen" },
-        "michaelTorres": { "name": "michael.torres" },
-        "sarahKim": { "name": "sarah.kim" },
-        "davidPatel": { "name": "david.patel" },
-        "lisaWong": { "name": "lisa.wong" }
-      },
-      "callTypes": {
-        "outgoing": "発信",
-        "incoming": "着信",
-        "missed": "不在着信"
-      },
-      "chats": {
-        "emilyChen": {
-          "name": "emily.chen",
-          "lastMessage": "誰にも言わないで！",
-          "messages": {
-            "msg1": { "text": "プライベートリンクを送ったよ。", "incoming": true },
-            "msg2": { "text": "受け取ったけど、なんでこんな秘密なの？", "incoming": false },
-            "msg3": { "text": "誰にも言わないで！", "incoming": true }
+      "sarahKim": {
+        "name": "sarah.kim",
+        "lastMessage": "投稿を非表示にした、ありがとう！",
+        "messages": {
+          "msg1": { "text": "その投稿を隠してくれる？", "incoming": true },
+          "msg2": {
+            "text": "投稿を非表示にした、ありがとう！",
+            "incoming": false
           }
-        },
-        "michaelTorres": {
-          "name": "michael.torres",
-          "lastMessage": "後でチャットを削除するよ。",
-          "messages": {
-            "msg1": { "text": "今夜まだ彼女に会う？", "incoming": true },
-            "msg2": { "text": "うん、でも内緒にして。", "incoming": false },
-            "msg3": { "text": "後でチャットを削除するよ。", "incoming": true }
-          }
-        },
-        "sarahKim": {
-          "name": "sarah.kim",
-          "lastMessage": "投稿を非表示にした、ありがとう！",
-          "messages": {
-            "msg1": { "text": "その投稿を隠してくれる？", "incoming": true },
-            "msg2": { "text": "投稿を非表示にした、ありがとう！", "incoming": false }
-          }
-        },
-        "davidPatel": {
-          "name": "david.patel",
-          "lastMessage": "秘密のグループを確認して。",
-          "messages": {
-            "msg1": { "text": "秘密のグループに追加したよ。", "incoming": true },
-            "msg2": { "text": "ありがとう、どんなグループ？", "incoming": false },
-            "msg3": { "text": "秘密のグループを確認して。", "incoming": true }
-          }
-        },
-        "lisaWong": {
-          "name": "lisa.wong",
-          "lastMessage": "このことは内緒にしよう。",
-          "messages": {
-            "msg1": { "text": "プライベートで話す時間ある？", "incoming": true },
-            "msg2": { "text": "うん、なに？", "incoming": false },
-            "msg3": { "text": "このことは内緒にしよう。", "incoming": true }
-          }
+        }
+      },
+      "davidPatel": {
+        "name": "david.patel",
+        "lastMessage": "秘密のグループを確認して。",
+        "messages": {
+          "msg1": { "text": "秘密のグループに追加したよ。", "incoming": true },
+          "msg2": { "text": "ありがとう、どんなグループ？", "incoming": false },
+          "msg3": { "text": "秘密のグループを確認して。", "incoming": true }
+        }
+      },
+      "lisaWong": {
+        "name": "lisa.wong",
+        "lastMessage": "このことは内緒にしよう。",
+        "messages": {
+          "msg1": { "text": "プライベートで話す時間ある？", "incoming": true },
+          "msg2": { "text": "うん、なに？", "incoming": false },
+          "msg3": { "text": "このことは内緒にしよう。", "incoming": true }
         }
       }
     }
+  },
+  "dmtwitter": {
+    "header": {
+      "title": "X"
+    },
+    "tabs": {
+      "chat": "メッセージ",
+      "followers": "フォロワー",
+      "call_log": "通話履歴",
+      "aria_label": "Xナビゲーションタブ",
+      "chat_aria": "メッセージリストを表示",
+      "followers_aria": "フォロワーリストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Xメッセージリスト",
+      "item_aria": "{handle}とのチャットを選択",
+      "detail_aria": "{handle}のチャット詳細"
+    },
+    "followers": {
+      "list_aria": "Xフォロワーリスト",
+      "item_aria": "フォロワー{handle}を選択",
+      "detail_aria": "{handle}のフォロワー詳細",
+      "handle": "ハンドル",
+      "a16z": { "handle": "@a16z", "name": "a16z", "email": "a16z@x.com" },
+      "balajis": {
+        "handle": "@balajis",
+        "name": "Balaji Srinivasan",
+        "email": "balaji@x.com"
+      },
+      "cdixon": {
+        "handle": "@cdixon",
+        "name": "Chris Dixon",
+        "email": "chris@x.com"
+      },
+      "pmarca": {
+        "handle": "@pmarca",
+        "name": "Marc Andreessen",
+        "email": "marc@x.com"
+      },
+      "naval": {
+        "handle": "@naval",
+        "name": "Naval Ravikant",
+        "email": "naval@x.com"
+      },
+      "paulg": {
+        "handle": "@paulg",
+        "name": "Paul Graham",
+        "email": "paul@x.com"
+      },
+      "sama": { "handle": "@sama", "name": "Sam Altman", "email": "sam@x.com" },
+      "jack": {
+        "handle": "@jack",
+        "name": "Jack Dorsey",
+        "email": "jack@x.com"
+      },
+      "vitalik": {
+        "handle": "@vitalik",
+        "name": "Vitalik Buterin",
+        "email": "vitalik@x.com"
+      }
+    },
+    "callLogs": {
+      "list_aria": "X通話履歴",
+      "item_aria": "{handle}との通話を選択",
+      "detail_aria": "{handle}の通話詳細",
+      "elonmusk": { "handle": "@elonmusk" },
+      "codinghorror": { "handle": "@codinghorror" },
+      "verge": { "handle": "@verge" },
+      "nasdaily": { "handle": "@nasdaily" },
+      "techcrunch": { "handle": "@techcrunch" }
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "elonmusk": {
+        "handle": "@elonmusk",
+        "name": "Elon Musk",
+        "lastMessage": "月へ",
+        "messages": {
+          "msg1": { "text": "おはよう、Xファミリー", "incoming": true },
+          "msg2": { "text": "月へ", "incoming": false }
+        }
+      },
+      "codinghorror": {
+        "handle": "@codinghorror",
+        "name": "Jeff Atwood",
+        "lastMessage": "useStateは王",
+        "messages": {
+          "msg1": { "text": "Reactフック > クラス", "incoming": true },
+          "msg2": { "text": "useStateは王", "incoming": false }
+        }
+      },
+      "verge": {
+        "handle": "@verge",
+        "name": "The Verge",
+        "lastMessage": "速報：AIニュース",
+        "messages": {
+          "msg1": { "text": "新しいGrokモデルがリリース", "incoming": true },
+          "msg2": { "text": "速報：AIニュース", "incoming": false }
+        }
+      },
+      "nasdaily": {
+        "handle": "@nasdaily",
+        "name": "Nas Daily",
+        "lastMessage": "それが1分",
+        "messages": {
+          "msg1": { "text": "明日会おう！", "incoming": true },
+          "msg2": { "text": "それが1分", "incoming": false }
+        }
+      },
+      "techcrunch": {
+        "handle": "@techcrunch",
+        "name": "TechCrunch",
+        "lastMessage": "スタートアップの資金調達",
+        "messages": {
+          "msg1": { "text": "1億ドルのシリーズB", "incoming": true },
+          "msg2": { "text": "スタートアップの資金調達", "incoming": false }
+        }
+      }
+    }
+  }
 }

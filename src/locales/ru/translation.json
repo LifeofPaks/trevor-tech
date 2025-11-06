@@ -1882,5 +1882,133 @@
         }
       }
     }
+  },
+  "dmtwitter": {
+    "header": {
+      "title": "X"
+    },
+    "tabs": {
+      "chat": "Сообщения",
+      "followers": "Подписчики",
+      "call_log": "Журнал звонков",
+      "aria_label": "Вкладки навигации X",
+      "chat_aria": "Просмотреть список сообщений",
+      "followers_aria": "Просмотреть список подписчиков",
+      "call_log_aria": "Просмотреть журнал звонков"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список сообщений X",
+      "item_aria": "Выбрать чат с {handle}",
+      "detail_aria": "Детали чата для {handle}"
+    },
+    "followers": {
+      "list_aria": "Список подписчиков X",
+      "item_aria": "Выбрать подписчика {handle}",
+      "detail_aria": "Детали подписчика для {handle}",
+      "handle": "Хэндл",
+      "a16z": { "handle": "@a16z", "name": "a16z", "email": "a16z@x.com" },
+      "balajis": {
+        "handle": "@balajis",
+        "name": "Balaji Srinivasan",
+        "email": "balaji@x.com"
+      },
+      "cdixon": {
+        "handle": "@cdixon",
+        "name": "Chris Dixon",
+        "email": "chris@x.com"
+      },
+      "pmarca": {
+        "handle": "@pmarca",
+        "name": "Marc Andreessen",
+        "email": "marc@x.com"
+      },
+      "naval": {
+        "handle": "@naval",
+        "name": "Naval Ravikant",
+        "email": "naval@x.com"
+      },
+      "paulg": {
+        "handle": "@paulg",
+        "name": "Paul Graham",
+        "email": "paul@x.com"
+      },
+      "sama": { "handle": "@sama", "name": "Sam Altman", "email": "sam@x.com" },
+      "jack": {
+        "handle": "@jack",
+        "name": "Jack Dorsey",
+        "email": "jack@x.com"
+      },
+      "vitalik": {
+        "handle": "@vitalik",
+        "name": "Vitalik Buterin",
+        "email": "vitalik@x.com"
+      }
+    },
+    "callLogs": {
+      "list_aria": "Журнал звонков X",
+      "item_aria": "Выбрать звонок с {handle}",
+      "detail_aria": "Детали звонка для {handle}",
+      "elonmusk": { "handle": "@elonmusk" },
+      "codinghorror": { "handle": "@codinghorror" },
+      "verge": { "handle": "@verge" },
+      "nasdaily": { "handle": "@nasdaily" },
+      "techcrunch": { "handle": "@techcrunch" }
+    },
+    "callTypes": {
+      "outgoing": "Исходящий",
+      "incoming": "Входящий",
+      "missed": "Пропущенный"
+    },
+    "chats": {
+      "elonmusk": {
+        "handle": "@elonmusk",
+        "name": "Elon Musk",
+        "lastMessage": "На Луну",
+        "messages": {
+          "msg1": { "text": "Доброе утро, семья X", "incoming": true },
+          "msg2": { "text": "На Луну", "incoming": false }
+        }
+      },
+      "codinghorror": {
+        "handle": "@codinghorror",
+        "name": "Jeff Atwood",
+        "lastMessage": "useState - король",
+        "messages": {
+          "msg1": { "text": "Хуки React > классы", "incoming": true },
+          "msg2": { "text": "useState - король", "incoming": false }
+        }
+      },
+      "verge": {
+        "handle": "@verge",
+        "name": "The Verge",
+        "lastMessage": "Срочные новости: ИИ",
+        "messages": {
+          "msg1": { "text": "Новый модель Grok выпущен", "incoming": true },
+          "msg2": { "text": "Срочные новости: ИИ", "incoming": false }
+        }
+      },
+      "nasdaily": {
+        "handle": "@nasdaily",
+        "name": "Nas Daily",
+        "lastMessage": "Это одна минута",
+        "messages": {
+          "msg1": { "text": "Увидимся завтра!", "incoming": true },
+          "msg2": { "text": "Это одна минута", "incoming": false }
+        }
+      },
+      "techcrunch": {
+        "handle": "@techcrunch",
+        "name": "TechCrunch",
+        "lastMessage": "Раунд финансирования стартапов",
+        "messages": {
+          "msg1": { "text": "$100M Серия B", "incoming": true },
+          "msg2": {
+            "text": "Раунд финансирования стартапов",
+            "incoming": false
+          }
+        }
+      }
+    }
   }
 }

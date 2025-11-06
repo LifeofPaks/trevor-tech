@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -24,8 +25,8 @@ import {
 } from "react-icons/fi";
 import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
 import { FiTwitter } from "react-icons/fi";
-import BindPhone from "../../components/demo/BindPhone";
 import { RiTwitterXLine } from "react-icons/ri";
+import BindPhone from "../../components/demo/BindPhone";
 
 // X (Twitter) Light Mode Theme
 const theme = createTheme({
@@ -69,62 +70,102 @@ const theme = createTheme({
 const chats = [
   {
     id: 1,
-    handle: "@elonmusk",
-    name: "Elon Musk",
+    handleKey: "dmtwitter.chats.elonmusk.handle",
+    nameKey: "dmtwitter.chats.elonmusk.name",
     avatar: "https://i.pravatar.cc/150?img=68",
-    lastMessage: "To the moon",
+    lastMessageKey: "dmtwitter.chats.elonmusk.lastMessage",
     time: "1m",
     messages: [
-      { text: "GM X fam", time: "09:00", incoming: true },
-      { text: "To the moon", time: "09:01", incoming: false },
+      {
+        textKey: "dmtwitter.chats.elonmusk.messages.msg1.text",
+        time: "09:00",
+        incoming: true,
+      },
+      {
+        textKey: "dmtwitter.chats.elonmusk.messages.msg2.text",
+        time: "09:01",
+        incoming: false,
+      },
     ],
   },
   {
     id: 2,
-    handle: "@codinghorror",
-    name: "Jeff Atwood",
+    handleKey: "dmtwitter.chats.codinghorror.handle",
+    nameKey: "dmtwitter.chats.codinghorror.name",
     avatar: "https://i.pravatar.cc/150?img=56",
-    lastMessage: "useState is king",
+    lastMessageKey: "dmtwitter.chats.codinghorror.lastMessage",
     time: "5m",
     messages: [
-      { text: "React hooks > classes", time: "08:50", incoming: true },
-      { text: "useState is king", time: "08:51", incoming: false },
+      {
+        textKey: "dmtwitter.chats.codinghorror.messages.msg1.text",
+        time: "08:50",
+        incoming: true,
+      },
+      {
+        textKey: "dmtwitter.chats.codinghorror.messages.msg2.text",
+        time: "08:51",
+        incoming: false,
+      },
     ],
   },
   {
     id: 3,
-    handle: "@verge",
-    name: "The Verge",
+    handleKey: "dmtwitter.chats.verge.handle",
+    nameKey: "dmtwitter.chats.verge.name",
     avatar: "https://i.pravatar.cc/150?img=3",
-    lastMessage: "Breaking: AI news",
+    lastMessageKey: "dmtwitter.chats.verge.lastMessage",
     time: "30m",
     messages: [
-      { text: "New Grok model dropped", time: "08:20", incoming: true },
-      { text: "Breaking: AI news", time: "08:21", incoming: false },
+      {
+        textKey: "dmtwitter.chats.verge.messages.msg1.text",
+        time: "08:20",
+        incoming: true,
+      },
+      {
+        textKey: "dmtwitter.chats.verge.messages.msg2.text",
+        time: "08:21",
+        incoming: false,
+      },
     ],
   },
   {
     id: 4,
-    handle: "@nasdaily",
-    name: "Nas Daily",
+    handleKey: "dmtwitter.chats.nasdaily.handle",
+    nameKey: "dmtwitter.chats.nasdaily.name",
     avatar: "https://i.pravatar.cc/150?img=24",
-    lastMessage: "That's one minute",
+    lastMessageKey: "dmtwitter.chats.nasdaily.lastMessage",
     time: "2h",
     messages: [
-      { text: "See you tomorrow!", time: "07:00", incoming: true },
-      { text: "That's one minute", time: "07:01", incoming: false },
+      {
+        textKey: "dmtwitter.chats.nasdaily.messages.msg1.text",
+        time: "07:00",
+        incoming: true,
+      },
+      {
+        textKey: "dmtwitter.chats.nasdaily.messages.msg2.text",
+        time: "07:01",
+        incoming: false,
+      },
     ],
   },
   {
     id: 5,
-    handle: "@techcrunch",
-    name: "TechCrunch",
+    handleKey: "dmtwitter.chats.techcrunch.handle",
+    nameKey: "dmtwitter.chats.techcrunch.name",
     avatar: "https://i.pravatar.cc/150?img=47",
-    lastMessage: "Startup funding round",
+    lastMessageKey: "dmtwitter.chats.techcrunch.lastMessage",
     time: "4h",
     messages: [
-      { text: "$100M Series B", time: "05:30", incoming: true },
-      { text: "Startup funding round", time: "05:31", incoming: false },
+      {
+        textKey: "dmtwitter.chats.techcrunch.messages.msg1.text",
+        time: "05:30",
+        incoming: true,
+      },
+      {
+        textKey: "dmtwitter.chats.techcrunch.messages.msg2.text",
+        time: "05:31",
+        incoming: false,
+      },
     ],
   },
 ];
@@ -133,121 +174,122 @@ const chats = [
 const followers = [
   {
     id: 1,
-    handle: "@a16z",
-    name: "a16z",
+    handleKey: "dmtwitter.followers.a16z.handle",
+    nameKey: "dmtwitter.followers.a16z.name",
     avatar: "https://i.pravatar.cc/150?img=12",
     phone: "+1 555-1001",
-    email: "a16z@x.com",
+    emailKey: "dmtwitter.followers.a16z.email",
   },
   {
     id: 2,
-    handle: "@balajis",
-    name: "Balaji Srinivasan",
+    handleKey: "dmtwitter.followers.balajis.handle",
+    nameKey: "dmtwitter.followers.balajis.name",
     avatar: "https://i.pravatar.cc/150?img=33",
     phone: "+1 555-1002",
-    email: "balaji@x.com",
+    emailKey: "dmtwitter.followers.balajis.email",
   },
   {
     id: 3,
-    handle: "@cdixon",
-    name: "Chris Dixon",
+    handleKey: "dmtwitter.followers.cdixon.handle",
+    nameKey: "dmtwitter.followers.cdixon.name",
     avatar: "https://i.pravatar.cc/150?img=45",
     phone: "+1 555-1003",
-    email: "chris@x.com",
+    emailKey: "dmtwitter.followers.cdixon.email",
   },
   {
     id: 4,
-    handle: "@pmarca",
-    name: "Marc Andreessen",
+    handleKey: "dmtwitter.followers.pmarca.handle",
+    nameKey: "dmtwitter.followers.pmarca.name",
     avatar: "https://i.pravatar.cc/150?img=61",
     phone: "+1 555-1004",
-    email: "marc@x.com",
+    emailKey: "dmtwitter.followers.pmarca.email",
   },
   {
     id: 5,
-    handle: "@naval",
-    name: "Naval Ravikant",
+    handleKey: "dmtwitter.followers.naval.handle",
+    nameKey: "dmtwitter.followers.naval.name",
     avatar: "https://i.pravatar.cc/150?img=19",
     phone: "+1 555-1005",
-    email: "naval@x.com",
+    emailKey: "dmtwitter.followers.naval.email",
   },
   {
     id: 6,
-    handle: "@paulg",
-    name: "Paul Graham",
+    handleKey: "dmtwitter.followers.paulg.handle",
+    nameKey: "dmtwitter.followers.paulg.name",
     avatar: "https://i.pravatar.cc/150?img=52",
     phone: "+1 555-1006",
-    email: "paul@x.com",
+    emailKey: "dmtwitter.followers.paulg.email",
   },
   {
     id: 7,
-    handle: "@sama",
-    name: "Sam Altman",
+    handleKey: "dmtwitter.followers.sama.handle",
+    nameKey: "dmtwitter.followers.sama.name",
     avatar: "https://i.pravatar.cc/150?img=28",
     phone: "+1 555-1007",
-    email: "sam@x.com",
+    emailKey: "dmtwitter.followers.sama.email",
   },
   {
     id: 8,
-    handle: "@jack",
-    name: "Jack Dorsey",
+    handleKey: "dmtwitter.followers.jack.handle",
+    nameKey: "dmtwitter.followers.jack.name",
     avatar: "https://i.pravatar.cc/150?img=39",
     phone: "+1 555-1008",
-    email: "jack@x.com",
+    emailKey: "dmtwitter.followers.jack.email",
   },
   {
     id: 9,
-    handle: "@vitalik",
-    name: "Vitalik Buterin",
+    handleKey: "dmtwitter.followers.vitalik.handle",
+    nameKey: "dmtwitter.followers.vitalik.name",
     avatar: "https://i.pravatar.cc/150?img=7",
     phone: "+1 555-1009",
-    email: "vitalik@x.com",
+    emailKey: "dmtwitter.followers.vitalik.email",
   },
 ];
 
 const callLogs = [
   {
     id: 1,
-    handle: "@elonmusk",
+    handleKey: "dmtwitter.callLogs.elonmusk.handle",
     avatar: "https://i.pravatar.cc/150?img=68",
-    type: "outgoing",
+    typeKey: "dmtwitter.callTypes.outgoing",
     time: "2025-10-28 14:00",
     duration: "15:30",
   },
   {
     id: 2,
-    handle: "@codinghorror",
+    handleKey: "dmtwitter.callLogs.codinghorror.handle",
     avatar: "https://i.pravatar.cc/150?img=56",
-    type: "incoming",
+    typeKey: "dmtwitter.callTypes.incoming",
     time: "2025-10-28 11:20",
     duration: "08:45",
   },
   {
     id: 3,
-    handle: "@verge",
+    handleKey: "dmtwitter.callLogs.verge.handle",
     avatar: "https://i.pravatar.cc/150?img=3",
-    type: "missed",
+    typeKey: "dmtwitter.callTypes.missed",
     time: "2025-10-28 09:15",
   },
   {
     id: 4,
-    handle: "@nasdaily",
+    handleKey: "dmtwitter.callLogs.nasdaily.handle",
     avatar: "https://i.pravatar.cc/150?img=24",
-    type: "outgoing",
+    typeKey: "dmtwitter.callTypes.outgoing",
     time: "2025-10-27 20:00",
     duration: "03:20",
   },
   {
     id: 5,
-    handle: "@techcrunch",
+    handleKey: "dmtwitter.callLogs.techcrunch.handle",
     avatar: "https://i.pravatar.cc/150?img=47",
-    type: "incoming",
+    typeKey: "dmtwitter.callTypes.incoming",
     time: "2025-10-27 16:45",
     duration: "12:10",
   },
 ];
 
 const XPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -262,10 +304,11 @@ const XPage = () => {
     setSelectedCall(null);
   };
 
-  const getCallIcon = (type) => {
-    if (type === "outgoing")
+  const getCallIcon = (typeKey) => {
+    const type = t(typeKey).toLowerCase();
+    if (type === t("dmtwitter.callTypes.outgoing").toLowerCase())
       return <FiPhoneCall sx={{ fontSize: 16, color: "#10b981" }} />;
-    if (type === "incoming")
+    if (type === t("dmtwitter.callTypes.incoming").toLowerCase())
       return <FiPhoneIncoming sx={{ fontSize: 16, color: "#10b981" }} />;
     return <FiPhoneMissed sx={{ fontSize: 16, color: "#ef4444" }} />;
   };
@@ -273,7 +316,7 @@ const XPage = () => {
   const groupFollowersByLetter = () => {
     const grouped = {};
     followers.forEach((follower) => {
-      const letter = follower.handle[1].toUpperCase(); // @a → A
+      const letter = t(follower.handleKey)[1].toUpperCase(); // @a → A
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(follower);
     });
@@ -288,7 +331,7 @@ const XPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              <RiTwitterXLine className="" />
+              {t("dmtwitter.header.title")} <RiTwitterXLine className="" />
             </h1>
           </div>
           <BindPhone />
@@ -307,6 +350,7 @@ const XPage = () => {
             <Tabs
               value={tab}
               onChange={(e, v) => setTab(v)}
+              aria-label={t("dmtwitter.tabs.aria_label")}
               sx={{
                 mb: 3,
                 "& .MuiTabs-indicator": {
@@ -319,20 +363,23 @@ const XPage = () => {
               <Tab
                 icon={<FiTwitter />}
                 iconPosition="start"
-                label={isMobile ? "" : "Messages"}
+                label={isMobile ? "" : t("dmtwitter.tabs.chat")}
                 value="chat"
+                aria-label={t("dmtwitter.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Followers"}
+                label={isMobile ? "" : t("dmtwitter.tabs.followers")}
                 value="followers"
+                aria-label={t("dmtwitter.tabs.followers_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Call Log"}
+                label={isMobile ? "" : t("dmtwitter.tabs.call_log")}
                 value="call-log"
+                aria-label={t("dmtwitter.tabs.call_log_aria")}
               />
             </Tabs>
           )}
@@ -340,7 +387,11 @@ const XPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmtwitter.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -372,7 +423,7 @@ const XPage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmtwitter.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -382,6 +433,9 @@ const XPage = () => {
                         "&:hover": { bgcolor: "#f7f9f9" },
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmtwitter.chat.item_aria", {
+                        handle: t(chat.handleKey),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -392,7 +446,7 @@ const XPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {chat.handle}
+                            {t(chat.handleKey)}
                           </Typography>
                           <Typography
                             sx={{
@@ -403,7 +457,7 @@ const XPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(chat.lastMessageKey)}
                           </Typography>
                         </Box>
                         <Typography
@@ -425,6 +479,7 @@ const XPage = () => {
                     maxHeight: "70vh",
                     overflowY: "auto",
                   }}
+                  aria-label={t("dmtwitter.followers.list_aria")}
                 >
                   {Object.keys(groupFollowersByLetter())
                     .sort()
@@ -450,6 +505,9 @@ const XPage = () => {
                               "&:hover": { bgcolor: "#f7f9f9" },
                             }}
                             onClick={() => setSelectedFollower(follower)}
+                            aria-label={t("dmtwitter.followers.item_aria", {
+                              handle: t(follower.handleKey),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -467,7 +525,7 @@ const XPage = () => {
                                     color: "text.primary",
                                   }}
                                 >
-                                  {follower.handle}
+                                  {t(follower.handleKey)}
                                 </Typography>
                                 <Typography
                                   sx={{
@@ -475,7 +533,7 @@ const XPage = () => {
                                     color: "text.secondary",
                                   }}
                                 >
-                                  {follower.name}
+                                  {t(follower.nameKey)}
                                 </Typography>
                               </Box>
                             </Stack>
@@ -488,10 +546,13 @@ const XPage = () => {
 
               {/* Call Log */}
               {tab === "call-log" && (
-                <Stack>
+                <Stack aria-label={t("dmtwitter.callLogs.list_aria")}>
                   {callLogs.map((call) => {
                     const color =
-                      call.type === "missed" ? "#ef4444" : "#10b981";
+                      t(call.typeKey).toLowerCase() ===
+                      t("dmtwitter.callTypes.missed").toLowerCase()
+                        ? "#ef4444"
+                        : "#10b981";
                     return (
                       <Box
                         key={call.id}
@@ -501,6 +562,9 @@ const XPage = () => {
                           "&:hover": { bgcolor: "#f7f9f9" },
                         }}
                         onClick={() => setSelectedCall(call)}
+                        aria-label={t("dmtwitter.callLogs.item_aria", {
+                          handle: t(call.handleKey),
+                        })}
                       >
                         <Stack direction="row" spacing={2} alignItems="center">
                           <Box sx={{ position: "relative" }}>
@@ -522,18 +586,17 @@ const XPage = () => {
                                 boxShadow: "0 0 0 2px white",
                               }}
                             >
-                              {getCallIcon(call.type)}
+                              {getCallIcon(call.typeKey)}
                             </Box>
                           </Box>
                           <Box sx={{ flex: 1 }}>
                             <Typography
                               sx={{ fontWeight: 600, color: "text.primary" }}
                             >
-                              {call.handle}
+                              {t(call.handleKey)}
                             </Typography>
                             <Typography sx={{ fontSize: "0.875rem", color }}>
-                              {call.type.charAt(0).toUpperCase() +
-                                call.type.slice(1)}
+                              {t(call.typeKey)}
                             </Typography>
                           </Box>
                           <Typography
@@ -564,7 +627,12 @@ const XPage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmtwitter.chat.detail_aria", {
+                      handle: t(selectedChat.handleKey),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -575,12 +643,12 @@ const XPage = () => {
                           variant="h5"
                           sx={{ fontWeight: 700, color: "text.primary" }}
                         >
-                          {selectedChat.handle}
+                          {t(selectedChat.handleKey)}
                         </Typography>
                         <Typography
                           sx={{ fontSize: "0.875rem", color: "text.secondary" }}
                         >
-                          {selectedChat.name}
+                          {t(selectedChat.nameKey)}
                         </Typography>
                       </Box>
                     </Stack>
@@ -610,7 +678,7 @@ const XPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.9375rem" }}>
-                              {msg.text}
+                              {t(msg.textKey)}
                             </Typography>
                             <Typography
                               sx={{
@@ -633,7 +701,13 @@ const XPage = () => {
 
                 {/* Follower Detail */}
                 {selectedFollower && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmtwitter.followers.detail_aria", {
+                      handle: t(selectedFollower.handleKey),
+                    })}
+                  >
                     <Avatar
                       src={selectedFollower.avatar}
                       sx={{ width: 140, height: 140 }}
@@ -643,7 +717,7 @@ const XPage = () => {
                         variant="h4"
                         sx={{ fontWeight: 700, color: "text.primary" }}
                       >
-                        {selectedFollower.handle}
+                        {t(selectedFollower.handleKey)}
                       </Typography>
                       <Typography
                         sx={{
@@ -652,11 +726,11 @@ const XPage = () => {
                           mt: 0.5,
                         }}
                       >
-                        {selectedFollower.name}
+                        {t(selectedFollower.nameKey)}
                       </Typography>
                     </Box>
 
-                    {selectedFollower.email && (
+                    {selectedFollower.emailKey && (
                       <Paper
                         elevation={0}
                         sx={{
@@ -686,12 +760,12 @@ const XPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#536471" }}
                           >
-                            Handle
+                            {t("dmtwitter.followers.handle")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {selectedFollower.email}
+                            {t(selectedFollower.emailKey)}
                           </Typography>
                         </Box>
                       </Paper>
@@ -701,7 +775,13 @@ const XPage = () => {
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmtwitter.callLogs.detail_aria", {
+                      handle: t(selectedCall.handleKey),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 140, height: 140 }}
@@ -710,7 +790,7 @@ const XPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "text.primary" }}
                     >
-                      {selectedCall.handle}
+                      {t(selectedCall.handleKey)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -739,7 +819,7 @@ const XPage = () => {
                             mt: 1,
                           }}
                         >
-                          {selectedCall.duration} • {selectedCall.type}
+                          {selectedCall.duration} • {t(selectedCall.typeKey)}
                         </Typography>
                       )}
                     </Paper>

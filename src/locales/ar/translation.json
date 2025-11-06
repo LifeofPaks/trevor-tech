@@ -1865,5 +1865,130 @@
         }
       }
     }
+  },
+  "dmtwitter": {
+    "header": {
+      "title": "X"
+    },
+    "tabs": {
+      "chat": "الرسائل",
+      "followers": "المتابعون",
+      "call_log": "سجل المكالمات",
+      "aria_label": "علامات تبويب التنقل في X",
+      "chat_aria": "عرض قائمة الرسائل",
+      "followers_aria": "عرض قائمة المتابعين",
+      "call_log_aria": "عرض سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة رسائل X",
+      "item_aria": "اختيار الدردشة مع {handle}",
+      "detail_aria": "تفاصيل الدردشة لـ {handle}"
+    },
+    "followers": {
+      "list_aria": "قائمة المتابعين في X",
+      "item_aria": "اختيار المتابع {handle}",
+      "detail_aria": "تفاصيل المتابع لـ {handle}",
+      "handle": "اسم المستخدم",
+      "a16z": { "handle": "@a16z", "name": "a16z", "email": "a16z@x.com" },
+      "balajis": {
+        "handle": "@balajis",
+        "name": "Balaji Srinivasan",
+        "email": "balaji@x.com"
+      },
+      "cdixon": {
+        "handle": "@cdixon",
+        "name": "Chris Dixon",
+        "email": "chris@x.com"
+      },
+      "pmarca": {
+        "handle": "@pmarca",
+        "name": "Marc Andreessen",
+        "email": "marc@x.com"
+      },
+      "naval": {
+        "handle": "@naval",
+        "name": "Naval Ravikant",
+        "email": "naval@x.com"
+      },
+      "paulg": {
+        "handle": "@paulg",
+        "name": "Paul Graham",
+        "email": "paul@x.com"
+      },
+      "sama": { "handle": "@sama", "name": "Sam Altman", "email": "sam@x.com" },
+      "jack": {
+        "handle": "@jack",
+        "name": "Jack Dorsey",
+        "email": "jack@x.com"
+      },
+      "vitalik": {
+        "handle": "@vitalik",
+        "name": "Vitalik Buterin",
+        "email": "vitalik@x.com"
+      }
+    },
+    "callLogs": {
+      "list_aria": "سجل مكالمات X",
+      "item_aria": "اختيار مكالمة مع {handle}",
+      "detail_aria": "تفاصيل المكالمة لـ {handle}",
+      "elonmusk": { "handle": "@elonmusk" },
+      "codinghorror": { "handle": "@codinghorror" },
+      "verge": { "handle": "@verge" },
+      "nasdaily": { "handle": "@nasdaily" },
+      "techcrunch": { "handle": "@techcrunch" }
+    },
+    "callTypes": {
+      "outgoing": "صادرة",
+      "incoming": "واردة",
+      "missed": "فائتة"
+    },
+    "chats": {
+      "elonmusk": {
+        "handle": "@elonmusk",
+        "name": "Elon Musk",
+        "lastMessage": "إلى القمر",
+        "messages": {
+          "msg1": { "text": "صباح الخير يا عائلة X", "incoming": true },
+          "msg2": { "text": "إلى القمر", "incoming": false }
+        }
+      },
+      "codinghorror": {
+        "handle": "@codinghorror",
+        "name": "Jeff Atwood",
+        "lastMessage": "useState هو الملك",
+        "messages": {
+          "msg1": { "text": "هوكات React > الكلاسات", "incoming": true },
+          "msg2": { "text": "useState هو الملك", "incoming": false }
+        }
+      },
+      "verge": {
+        "handle": "@verge",
+        "name": "The Verge",
+        "lastMessage": "عاجل: أخبار الذكاء الاصطناعي",
+        "messages": {
+          "msg1": { "text": "نموذج Grok الجديد تم إطلاقه", "incoming": true },
+          "msg2": { "text": "عاجل: أخبار الذكاء الاصطناعي", "incoming": false }
+        }
+      },
+      "nasdaily": {
+        "handle": "@nasdaily",
+        "name": "Nas Daily",
+        "lastMessage": "هذه دقيقة واحدة",
+        "messages": {
+          "msg1": { "text": "أراك غداً!", "incoming": true },
+          "msg2": { "text": "هذه دقيقة واحدة", "incoming": false }
+        }
+      },
+      "techcrunch": {
+        "handle": "@techcrunch",
+        "name": "TechCrunch",
+        "lastMessage": "جولة تمويل الشركات الناشئة",
+        "messages": {
+          "msg1": { "text": "100 مليون دولار سلسلة B", "incoming": true },
+          "msg2": { "text": "جولة تمويل الشركات الناشئة", "incoming": false }
+        }
+      }
+    }
   }
 }

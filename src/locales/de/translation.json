@@ -1942,5 +1942,136 @@
         }
       }
     }
+  },
+  "dmtwitter": {
+    "header": {
+      "title": "X"
+    },
+    "tabs": {
+      "chat": "Nachrichten",
+      "followers": "Follower",
+      "call_log": "Anrufprotokoll",
+      "aria_label": "X-Navigationsregister",
+      "chat_aria": "Nachrichtenliste anzeigen",
+      "followers_aria": "Follower-Liste anzeigen",
+      "call_log_aria": "Anrufprotokoll anzeigen"
+    },
+    "back_button_aria": "Zurück zur Liste",
+    "chat": {
+      "list_aria": "X-Nachrichtenliste",
+      "item_aria": "Chat mit {handle} auswählen",
+      "detail_aria": "Chatdetails für {handle}"
+    },
+    "followers": {
+      "list_aria": "X-Follower-Liste",
+      "item_aria": "Follower {handle} auswählen",
+      "detail_aria": "Follower-Details für {handle}",
+      "handle": "Handle",
+      "a16z": { "handle": "@a16z", "name": "a16z", "email": "a16z@x.com" },
+      "balajis": {
+        "handle": "@balajis",
+        "name": "Balaji Srinivasan",
+        "email": "balaji@x.com"
+      },
+      "cdixon": {
+        "handle": "@cdixon",
+        "name": "Chris Dixon",
+        "email": "chris@x.com"
+      },
+      "pmarca": {
+        "handle": "@pmarca",
+        "name": "Marc Andreessen",
+        "email": "marc@x.com"
+      },
+      "naval": {
+        "handle": "@naval",
+        "name": "Naval Ravikant",
+        "email": "naval@x.com"
+      },
+      "paulg": {
+        "handle": "@paulg",
+        "name": "Paul Graham",
+        "email": "paul@x.com"
+      },
+      "sama": { "handle": "@sama", "name": "Sam Altman", "email": "sam@x.com" },
+      "jack": {
+        "handle": "@jack",
+        "name": "Jack Dorsey",
+        "email": "jack@x.com"
+      },
+      "vitalik": {
+        "handle": "@vitalik",
+        "name": "Vitalik Buterin",
+        "email": "vitalik@x.com"
+      }
+    },
+    "callLogs": {
+      "list_aria": "X-Anrufprotokoll",
+      "item_aria": "Anruf mit {handle} auswählen",
+      "detail_aria": "Anrufdetails für {handle}",
+      "elonmusk": { "handle": "@elonmusk" },
+      "codinghorror": { "handle": "@codinghorror" },
+      "verge": { "handle": "@verge" },
+      "nasdaily": { "handle": "@nasdaily" },
+      "techcrunch": { "handle": "@techcrunch" }
+    },
+    "callTypes": {
+      "outgoing": "Ausgehend",
+      "incoming": "Eingehend",
+      "missed": "Verpasst"
+    },
+    "chats": {
+      "elonmusk": {
+        "handle": "@elonmusk",
+        "name": "Elon Musk",
+        "lastMessage": "Zum Mond",
+        "messages": {
+          "msg1": { "text": "Guten Morgen, X-Familie", "incoming": true },
+          "msg2": { "text": "Zum Mond", "incoming": false }
+        }
+      },
+      "codinghorror": {
+        "handle": "@codinghorror",
+        "name": "Jeff Atwood",
+        "lastMessage": "useState ist König",
+        "messages": {
+          "msg1": { "text": "React-Hooks > Klassen", "incoming": true },
+          "msg2": { "text": "useState ist König", "incoming": false }
+        }
+      },
+      "verge": {
+        "handle": "@verge",
+        "name": "The Verge",
+        "lastMessage": "Eilmeldung: KI-News",
+        "messages": {
+          "msg1": {
+            "text": "Neues Grok-Modell veröffentlicht",
+            "incoming": true
+          },
+          "msg2": { "text": "Eilmeldung: KI-News", "incoming": false }
+        }
+      },
+      "nasdaily": {
+        "handle": "@nasdaily",
+        "name": "Nas Daily",
+        "lastMessage": "Das ist eine Minute",
+        "messages": {
+          "msg1": { "text": "Bis morgen!", "incoming": true },
+          "msg2": { "text": "Das ist eine Minute", "incoming": false }
+        }
+      },
+      "techcrunch": {
+        "handle": "@techcrunch",
+        "name": "TechCrunch",
+        "lastMessage": "Finanzierungsrunde für Startups",
+        "messages": {
+          "msg1": { "text": "$100M Serie B", "incoming": true },
+          "msg2": {
+            "text": "Finanzierungsrunde für Startups",
+            "incoming": false
+          }
+        }
+      }
+    }
   }
 }
