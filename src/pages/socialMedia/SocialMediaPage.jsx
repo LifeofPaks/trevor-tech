@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring, useScroll } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
+import Tilt from "react-parallax-tilt";
 import {
   FiLock,
   FiEyeOff,
@@ -316,7 +317,8 @@ const SocialMediaPage = () => {
       <motion.div
         className="fixed !w-96 !h-96 rounded-full pointer-events-none z-50 mix-blend-screen"
         style={{
-          background: "radial-gradient(circle, rgba(45,212,191,0.4) 0%, transparent 70%)",
+          background:
+            "radial-gradient(circle, rgba(45,212,191,0.4) 0%, transparent 70%)",
           left: mouse.x - 192,
           top: mouse.y - 192,
         }}
@@ -325,10 +327,17 @@ const SocialMediaPage = () => {
       />
 
       {/* HERO SECTION */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center !pt-32 lg:!pt-48 overflow-hidden">
+      <section
+        ref={heroRef}
+        className="relative min-h-screen flex items-center justify-center !pt-32 lg:!pt-48 overflow-hidden"
+      >
         <div className="absolute inset-0 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#0a2e33] opacity-95" />
         <div className="relative z-10 max-w-7xl !mx-auto !px-6 grid lg:grid-cols-2 !gap-12 items-center">
-          <motion.div initial={{ opacity: 0, x: -100 }} animate={heroInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8 }}>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={heroInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8 }}
+          >
             <motion.h1
               className="text-center lg:text-left text-5xl lg:text-7xl font-black bg-gradient-to-r from-cyan-300  bg-clip-text text-transparent !mb-8 leading-tight "
               initial={{ opacity: 0, y: 50 }}
@@ -345,7 +354,12 @@ const SocialMediaPage = () => {
             >
               {t("smedia.hero_description")}
             </motion.p>
-            <motion.div className="flex flex-col sm:flex-row !gap-4 !mt-8" initial={{ opacity: 0, y: 30 }} animate={heroInView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }}>
+            <motion.div
+              className="flex flex-col sm:flex-row !gap-4 !mt-8"
+              initial={{ opacity: 0, y: 30 }}
+              animate={heroInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.6 }}
+            >
               <button
                 onClick={() => setModalOpen(true)}
                 className="!px-8 !py-4 border border-teal-600 text-teal-600 rounded-full font-bold hover:bg-teal-500/20 transition-all"
@@ -354,17 +368,24 @@ const SocialMediaPage = () => {
               </button>
             </motion.div>
           </motion.div>
-          <motion.div initial={{ opacity: 0, x: 100 }} animate={heroInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8 }}>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={heroInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8 }}
+          >
             <HoloAccessTerminal inView={heroInView} />
           </motion.div>
         </div>
       </section>
 
       {/* HOW IT WORKS SECTION */}
-      <section ref={howItWorksRef} className="relative !py-20 lg:!py-32 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#0a2e33] opacity-95">
+      <section
+        ref={howItWorksRef}
+        className="relative !py-20 lg:!py-32 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#0a2e33] opacity-95"
+      >
         <div className="max-w-7xl !mx-auto !px-6">
           <motion.h2
-            className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300  bg-clip-text text-transparent !mb-12 text-center "
+            className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-violet-300 to-teal-300 bg-clip-text text-transparent !mb-12 text-center glitch"
             initial={{ opacity: 0, y: 30 }}
             animate={howItWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
@@ -373,37 +394,114 @@ const SocialMediaPage = () => {
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 !gap-8">
             {[
-              { icon: FiZap, titleKey: "smedia.step_1_title", descKey: "smedia.step_1_description", color: "cyan-300" },
-              { icon: FiSmartphone, titleKey: "smedia.step_2_title", descKey: "smedia.step_2_description", color: "violet-300" },
-              { icon: FiLock, titleKey: "smedia.step_3_title", descKey: "smedia.step_3_description", color: "teal-300" },
+              {
+                icon: FiZap,
+                titleKey: "smedia.step_1_title",
+                descKey: "smedia.step_1_description",
+                color: "cyan-300",
+              },
+              {
+                icon: FiSmartphone,
+                titleKey: "smedia.step_2_title",
+                descKey: "smedia.step_2_description",
+                color: "violet-300",
+              },
+              {
+                icon: FiLock,
+                titleKey: "smedia.step_3_title",
+                descKey: "smedia.step_3_description",
+                color: "teal-300",
+              },
             ].map((step, i) => (
-              <motion.div
+              <Tilt
                 key={i}
-                className="relative group bg-gradient-to-br from-cyan-900/70 to-teal-900/70 backdrop-blur-2xl border border-teal-400/50 rounded-xl !p-6 text-center shadow-xl hover:shadow-teal-500/60"
-                initial={{ opacity: 0, y: 50 }}
-                animate={howItWorksInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: i * 0.2 }}
-                whileHover={{ rotateY: 180 }}
+                tiltMaxAngleX={15}
+                tiltMaxAngleY={15}
+                perspective={1000}
+                scale={1.05}
+                transitionSpeed={2000}
+                className="relative !p-6 bg-gradient-to-br from-cyan-900/50 to-teal-900/30 backdrop-blur-3xl border-2 border-teal-400/60 rounded-xl shadow-2xl hover:shadow-teal-500/80 group"
               >
-                <motion.div className="absolute inset-0 backface-hidden">
-                  <step.icon className={`w-12 h-12 text-${step.color} !mx-auto !mb-4 drop-shadow-glow`} />
-                  <h3 className="text-lg font-bold text-cyan-100 !mb-2">{t(step.titleKey)}</h3>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[rgba(45,212,191,0.2)] to-transparent animate-pulse-slow" />
+                <div className="absolute inset-0 overflow-hidden">
+                  <div className="absolute inset-0 font-mono text-[10px] text-teal-400/30 leading-tight opacity-50 animate-data-stream">
+                    {[...Array(20)].map((_, j) => (
+                      <div key={j}>
+                        {Math.random().toString(16).slice(2, 8).toUpperCase()}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div
+                  className="absolute top-2 right-2 !w-3 !h-3 rounded-full bg-[var(--card-color)] animate-ping"
+                  style={{
+                    "--card-color":
+                      step.color === "cyan-300"
+                        ? "#22d3ee"
+                        : step.color === "violet-300"
+                        ? "#a78bfa"
+                        : "#2dd4bf",
+                  }}
+                />
+                <div className="relative text-center">
+                  <step.icon
+                    className={`w-16 h-16 text-${step.color} !mx-auto !mb-4 neon-glow group-hover:animate-neon-flicker`}
+                  />
+                  <h3 className="text-lg font-bold text-cyan-100 !mb-2 group-hover:glitch">
+                    {t(step.titleKey)}
+                  </h3>
                   <p className="text-sm text-cyan-200/80">{t(step.descKey)}</p>
-                </motion.div>
-                <motion.div className="absolute inset-0 bg-gradient-to-br from-teal-900/70 to-cyan-900/70 backdrop-blur-2xl rounded-xl !p-6 text-center backface-hidden" style={{ rotateY: 180 }}>
-                  <p className="text-sm text-cyan-200/80">Advanced {t(step.titleKey)} technology ensures rapid, secure access.</p>
-                </motion.div>
-              </motion.div>
+                </div>
+                <AnimatePresence>
+                  {running && (
+                    <motion.div
+                      className="absolute inset-0 pointer-events-none"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                    >
+                      {[...Array(10)].map((_, j) => (
+                        <motion.div
+                          key={j}
+                          className="absolute w-2 h-2 rounded-full"
+                          style={{
+                            background:
+                              step.color === "cyan-300"
+                                ? "#22d3ee"
+                                : step.color === "violet-300"
+                                ? "#a78bfa"
+                                : "#2dd4bf",
+                            left: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 100}%`,
+                          }}
+                          animate={{
+                            y: [-20, -100],
+                            opacity: [1, 0],
+                            scale: [1, 0],
+                          }}
+                          transition={{
+                            duration: 1,
+                            delay: Math.random() * 0.5,
+                          }}
+                        />
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </Tilt>
             ))}
           </div>
         </div>
       </section>
 
       {/* FEATURES SECTION */}
-      <section ref={featuresRef} className="relative !py-20 lg:!py-32 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#0a2e33] opacity-95">
+      <section
+        ref={featuresRef}
+        className="relative !py-20 lg:!py-32 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#0a2e33] opacity-95"
+      >
         <div className="max-w-7xl !mx-auto !px-6">
           <motion.h2
-            className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300  bg-clip-text text-transparent !mb-12 text-center "
+            className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300 via-violet-300 to-teal-300 bg-clip-text text-transparent !mb-12 text-center glitch"
             initial={{ opacity: 0, y: 30 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
@@ -412,43 +510,118 @@ const SocialMediaPage = () => {
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 !gap-8">
             {[
-              { icon: FiEyeOff, titleKey: "smedia.feature_1_title", descKey: "smedia.feature_1_description", color: "cyan-300" },
-              { icon: FiSmartphone, titleKey: "smedia.feature_2_title", descKey: "smedia.feature_2_description", color: "violet-300" },
-              { icon: FiLock, titleKey: "smedia.feature_3_title", descKey: "smedia.feature_3_description", color: "teal-300" },
+              {
+                icon: FiEyeOff,
+                titleKey: "smedia.feature_1_title",
+                descKey: "smedia.feature_1_description",
+                color: "cyan-300",
+              },
+              {
+                icon: FiSmartphone,
+                titleKey: "smedia.feature_2_title",
+                descKey: "smedia.feature_2_description",
+                color: "violet-300",
+              },
+              {
+                icon: FiLock,
+                titleKey: "smedia.feature_3_title",
+                descKey: "smedia.feature_3_description",
+                color: "teal-300",
+              },
             ].map((feature, i) => (
-              <motion.div
+              <Tilt
                 key={i}
-                className="relative group bg-gradient-to-br from-cyan-900/70 to-teal-900/70 backdrop-blur-2xl border border-teal-400/50 rounded-xl !p-6 text-center shadow-xl hover:shadow-teal-500/60"
-                initial={{ opacity: 0, y: 50 }}
-                animate={featuresInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: i * 0.2 }}
-                whileHover={{ rotateY: 180 }}
+                tiltMaxAngleX={15}
+                tiltMaxAngleY={15}
+                perspective={1000}
+                scale={1.05}
+                transitionSpeed={2000}
+                className="relative !p-6 bg-gradient-to-br from-cyan-900/50 to-teal-900/30 backdrop-blur-3xl border-2 border-teal-400/60 rounded-xl shadow-2xl hover:shadow-teal-500/80 group"
               >
-                <motion.div className="absolute inset-0 backface-hidden">
-                  <feature.icon className={`w-12 h-12 text-${feature.color} !mx-auto !mb-4 drop-shadow-glow`} />
-                  <h3 className="text-lg font-bold text-cyan-100 !mb-2">{t(feature.titleKey)}</h3>
-                  <p className="text-sm text-cyan-200/80">{t(feature.descKey)}</p>
-                </motion.div>
-                <motion.div className="absolute inset-0 bg-gradient-to-br from-teal-900/70 to-cyan-900/70 backdrop-blur-2xl rounded-xl !p-6 text-center backface-hidden" style={{ rotateY: 180 }}>
-                  <p className="text-sm text-cyan-200/80">Cutting-edge {t(feature.titleKey)} for unmatched performance.</p>
-                </motion.div>
-              </motion.div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[rgba(45,212,191,0.2)] to-transparent animate-pulse-slow" />
+                <div className="absolute inset-0 overflow-hidden">
+                  <div className="absolute inset-0 font-mono text-[10px] text-teal-400/30 leading-tight opacity-50 animate-data-stream">
+                    {[...Array(20)].map((_, j) => (
+                      <div key={j}>
+                        {Math.random().toString(16).slice(2, 8).toUpperCase()}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div
+                  className="absolute top-2 right-2 !w-3 !h-3 rounded-full bg-[var(--card-color)] animate-ping"
+                  style={{
+                    "--card-color":
+                      feature.color === "cyan-300"
+                        ? "#22d3ee"
+                        : feature.color === "violet-300"
+                        ? "#a78bfa"
+                        : "#2dd4bf",
+                  }}
+                />
+                <div className="relative text-center">
+                  <feature.icon
+                    className={`w-16 h-16 text-${feature.color} !mx-auto !mb-4 neon-glow group-hover:animate-neon-flicker`}
+                  />
+                  <h3 className="text-lg font-bold text-cyan-100 !mb-2 group-hover:glitch">
+                    {t(feature.titleKey)}
+                  </h3>
+                  <p className="text-sm text-cyan-200/80">
+                    {t(feature.descKey)}
+                  </p>
+                </div>
+                <AnimatePresence>
+                  {running && (
+                    <motion.div
+                      className="absolute inset-0 pointer-events-none"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                    >
+                      {[...Array(10)].map((_, j) => (
+                        <motion.div
+                          key={j}
+                          className="absolute w-2 h-2 rounded-full"
+                          style={{
+                            background:
+                              feature.color === "cyan-300"
+                                ? "#22d3ee"
+                                : feature.color === "violet-300"
+                                ? "#a78bfa"
+                                : "#2dd4bf",
+                            left: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 100}%`,
+                          }}
+                          animate={{
+                            y: [-20, -100],
+                            opacity: [1, 0],
+                            scale: [1, 0],
+                          }}
+                          transition={{
+                            duration: 1,
+                            delay: Math.random() * 0.5,
+                          }}
+                        />
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </Tilt>
             ))}
           </div>
         </div>
       </section>
 
       {/* TESTIMONIALS SECTION */}
-      <section ref={testimonialsRef} className="relative !py-20 lg:!py-32 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#0a2e33] opacity-95">
+      <section
+        ref={testimonialsRef}
+        className="relative !py-20 lg:!py-32 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#0a2e33] opacity-95"
+      >
         <div className="max-w-7xl !mx-auto !px-6">
-          <h2
-            className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300  bg-clip-text text-transparent !mb-12 text-center "
-          >
+          <h2 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-cyan-300  bg-clip-text text-transparent !mb-12 text-center ">
             {t("smedia.testimonials_title")}
           </h2>
-          <p
-            className="text-center lg:text-xl text-cyan-200 !mb-12 max-w-4xl !mx-auto"
-          >
+          <p className="text-center lg:text-xl text-cyan-200 !mb-12 max-w-4xl !mx-auto">
             {t("smedia.testimonials_description")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 !gap-8">
@@ -459,14 +632,26 @@ const SocialMediaPage = () => {
               >
                 <div className="relative !w-20 !h-20 !mb-4 !mx-auto">
                   <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-400 rounded-full blur-lg opacity-70" />
-                  <img src={tm.img} alt={tm.name} className="relative !w-full !h-full rounded-full object-cover border-2 border-teal-400/60" />
+                  <img
+                    src={tm.img}
+                    alt={tm.name}
+                    className="relative !w-full !h-full rounded-full object-cover border-2 border-teal-400/60"
+                  />
                   <div className="absolute -bottom-1 -right-1 !w-8 !h-8 rounded-full bg-teal-500 flex items-center justify-center border border-white/20">
-                    <span className="text-white text-xs font-bold">{t(tm.typeKey).slice(0, 2)}</span>
+                    <span className="text-white text-xs font-bold">
+                      {t(tm.typeKey).slice(0, 2)}
+                    </span>
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-cyan-100 text-center !mb-2">{tm.name}</h3>
-                <p className="text-sm text-cyan-300 text-center !mb-2">{t(tm.typeKey)}</p>
-                <p className="text-sm text-cyan-200/80 italic text-center">{`"${t(tm.textKey)}"`}</p>
+                <h3 className="text-lg font-bold text-cyan-100 text-center !mb-2">
+                  {tm.name}
+                </h3>
+                <p className="text-sm text-cyan-300 text-center !mb-2">
+                  {t(tm.typeKey)}
+                </p>
+                <p className="text-sm text-cyan-200/80 italic text-center">{`"${t(
+                  tm.textKey
+                )}"`}</p>
                 <p className="text-xs text-teal-400 text-center !mt-2 flex items-center justify-center !gap-1">
                   <FiCheckCircle className="text-green-400" /> {t(tm.timeKey)}
                 </p>
@@ -502,7 +687,9 @@ const SocialMediaPage = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <span className="relative z-10">{t("smedia.final_cta_button")}</span>
+            <span className="relative z-10">
+              {t("smedia.final_cta_button")}
+            </span>
             <motion.div
               className="absolute inset-0 rounded-full bg-teal-400/30"
               animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
@@ -512,14 +699,31 @@ const SocialMediaPage = () => {
         </div>
         <AnimatePresence>
           {particleBurst && (
-            <motion.div className="fixed inset-0 pointer-events-none z-50" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            <motion.div
+              className="fixed inset-0 pointer-events-none z-50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
               {[...Array(50)].map((_, i) => (
                 <motion.div
                   key={i}
                   className="absolute w-2 h-2 rounded-full"
-                  style={{ background: i % 2 === 0 ? "#22d3ee" : "#2dd4bf", left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%` }}
-                  animate={{ y: [0, -1000 + Math.random() * 500], x: [0, (Math.random() - 0.5) * 500], opacity: [1, 0], rotate: [0, 720] }}
-                  transition={{ duration: 1.8 + Math.random() * 0.5, delay: Math.random() * 0.4 }}
+                  style={{
+                    background: i % 2 === 0 ? "#22d3ee" : "#2dd4bf",
+                    left: `${Math.random() * 100}%`,
+                    top: `${Math.random() * 100}%`,
+                  }}
+                  animate={{
+                    y: [0, -1000 + Math.random() * 500],
+                    x: [0, (Math.random() - 0.5) * 500],
+                    opacity: [1, 0],
+                    rotate: [0, 720],
+                  }}
+                  transition={{
+                    duration: 1.8 + Math.random() * 0.5,
+                    delay: Math.random() * 0.4,
+                  }}
                 />
               ))}
             </motion.div>
@@ -534,18 +738,40 @@ const SocialMediaPage = () => {
         . {
           position: relative;
           text-shadow: 2px 2px 0 #22d3ee, -2px -2px 0 #a78bfa;
-          animation:  1.5s linear infinite;
+          animation: 1.5s linear infinite;
         }
-        @keyframes  {
-          0%, 100% { transform: translate(0, 0); }
-          10%, 30%, 50%, 70%, 90% { transform: translate(2px, -2px); }
-          20%, 40%, 60%, 80% { transform: translate(-2px, 2px); }
+        @keyframes {
+          0%,
+          100% {
+            transform: translate(0, 0);
+          }
+          10%,
+          30%,
+          50%,
+          70%,
+          90% {
+            transform: translate(2px, -2px);
+          }
+          20%,
+          40%,
+          60%,
+          80% {
+            transform: translate(-2px, 2px);
+          }
         }
         .drop-shadow-glow {
-          filter: drop-shadow(0 0 20px currentColor) drop-shadow(0 0 40px currentColor);
+          filter: drop-shadow(0 0 20px currentColor)
+            drop-shadow(0 0 40px currentColor);
         }
         .hexagon {
-          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(
+            25% 0%,
+            75% 0%,
+            100% 50%,
+            75% 100%,
+            25% 100%,
+            0% 50%
+          );
         }
         .backface-hidden {
           backface-visibility: hidden;
