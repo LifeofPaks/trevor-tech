@@ -1,5 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence, useMotionValue, useTransform, useSpring, useScroll } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useMotionValue,
+  useTransform,
+  useSpring,
+  useScroll,
+} from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
 import Tilt from "react-parallax-tilt";
@@ -23,18 +30,90 @@ import BuyModal from "../../components/buyModal/BuyModal";
 
 // Testimonials Data
 const testimonials = [
-  { name: "Emma T.", img: "https://randomuser.me/api/portraits/women/22.jpg", textKey: "smedia.testimonial_1", typeKey: "smedia.testimonial_type_1", timeKey: "smedia.testimonial_time_1" }, // Snapchat
-  { name: "Liam S.", img: "https://randomuser.me/api/portraits/men/38.jpg", textKey: "smedia.testimonial_2", typeKey: "smedia.testimonial_type_2", timeKey: "smedia.testimonial_time_2" }, // Instagram
-  { name: "Aisha M.", img: "https://randomuser.me/api/portraits/women/49.jpg", textKey: "smedia.testimonial_3", typeKey: "smedia.testimonial_type_3", timeKey: "smedia.testimonial_time_3" }, // WhatsApp
-  { name: "Noah K.", img: "https://randomuser.me/api/portraits/men/64.jpg", textKey: "smedia.testimonial_4", typeKey: "smedia.testimonial_type_4", timeKey: "smedia.testimonial_time_4" }, // Facebook
-  { name: "Sophia L.", img: "https://randomuser.me/api/portraits/women/75.jpg", textKey: "smedia.testimonial_5", typeKey: "smedia.testimonial_type_5", timeKey: "smedia.testimonial_time_5" }, // Telegram
-  { name: "Ethan R.", img: "https://randomuser.me/api/portraits/men/19.jpg", textKey: "smedia.testimonial_6", typeKey: "smedia.testimonial_type_6", timeKey: "smedia.testimonial_time_6" }, // Instagram
-  { name: "Olivia P.", img: "https://randomuser.me/api/portraits/women/33.jpg", textKey: "smedia.testimonial_7", typeKey: "smedia.testimonial_type_7", timeKey: "smedia.testimonial_time_7" }, // Snapchat
-  { name: "James W.", img: "https://randomuser.me/api/portraits/men/45.jpg", textKey: "smedia.testimonial_8", typeKey: "smedia.testimonial_type_8", timeKey: "smedia.testimonial_time_8" }, // Snapchat
-  { name: "Mia C.", img: "https://randomuser.me/api/portraits/women/61.jpg", textKey: "smedia.testimonial_9", typeKey: "smedia.testimonial_type_9", timeKey: "smedia.testimonial_time_9" }, // Snapchat
-  { name: "Lucas B.", img: "https://randomuser.me/api/portraits/men/27.jpg", textKey: "smedia.testimonial_10", typeKey: "smedia.testimonial_type_10", timeKey: "smedia.testimonial_time_10" }, // Snapchat
-  { name: "Ava D.", img: "https://randomuser.me/api/portraits/women/82.jpg", textKey: "smedia.testimonial_11", typeKey: "smedia.testimonial_type_11", timeKey: "smedia.testimonial_time_11" }, // Snapchat
-  { name: "Henry J.", img: "https://randomuser.me/api/portraits/men/53.jpg", textKey: "smedia.testimonial_12", typeKey: "smedia.testimonial_type_12", timeKey: "smedia.testimonial_time_12" }, // Snapchat
+  {
+    name: "Emma T.",
+    img: "https://randomuser.me/api/portraits/women/22.jpg",
+    textKey: "smedia.testimonial_1",
+    typeKey: "smedia.testimonial_type_1",
+    timeKey: "smedia.testimonial_time_1",
+  }, // Snapchat
+  {
+    name: "Liam S.",
+    img: "https://randomuser.me/api/portraits/men/38.jpg",
+    textKey: "smedia.testimonial_2",
+    typeKey: "smedia.testimonial_type_2",
+    timeKey: "smedia.testimonial_time_2",
+  }, // Instagram
+  {
+    name: "Aisha M.",
+    img: "https://randomuser.me/api/portraits/women/49.jpg",
+    textKey: "smedia.testimonial_3",
+    typeKey: "smedia.testimonial_type_3",
+    timeKey: "smedia.testimonial_time_3",
+  }, // WhatsApp
+  {
+    name: "Noah K.",
+    img: "https://randomuser.me/api/portraits/men/64.jpg",
+    textKey: "smedia.testimonial_4",
+    typeKey: "smedia.testimonial_type_4",
+    timeKey: "smedia.testimonial_time_4",
+  }, // Facebook
+  {
+    name: "Sophia L.",
+    img: "https://randomuser.me/api/portraits/women/75.jpg",
+    textKey: "smedia.testimonial_5",
+    typeKey: "smedia.testimonial_type_5",
+    timeKey: "smedia.testimonial_time_5",
+  }, // Telegram
+  {
+    name: "Ethan R.",
+    img: "https://randomuser.me/api/portraits/men/19.jpg",
+    textKey: "smedia.testimonial_6",
+    typeKey: "smedia.testimonial_type_6",
+    timeKey: "smedia.testimonial_time_6",
+  }, // Instagram
+  {
+    name: "Olivia P.",
+    img: "https://randomuser.me/api/portraits/women/33.jpg",
+    textKey: "smedia.testimonial_7",
+    typeKey: "smedia.testimonial_type_7",
+    timeKey: "smedia.testimonial_time_7",
+  }, // Snapchat
+  {
+    name: "James W.",
+    img: "https://randomuser.me/api/portraits/men/45.jpg",
+    textKey: "smedia.testimonial_8",
+    typeKey: "smedia.testimonial_type_8",
+    timeKey: "smedia.testimonial_time_8",
+  }, // Snapchat
+  {
+    name: "Mia C.",
+    img: "https://randomuser.me/api/portraits/women/61.jpg",
+    textKey: "smedia.testimonial_9",
+    typeKey: "smedia.testimonial_type_9",
+    timeKey: "smedia.testimonial_time_9",
+  }, // Snapchat
+  {
+    name: "Lucas B.",
+    img: "https://randomuser.me/api/portraits/men/27.jpg",
+    textKey: "smedia.testimonial_10",
+    typeKey: "smedia.testimonial_type_10",
+    timeKey: "smedia.testimonial_time_10",
+  }, // Snapchat
+  {
+    name: "Ava D.",
+    img: "https://randomuser.me/api/portraits/women/82.jpg",
+    textKey: "smedia.testimonial_11",
+    typeKey: "smedia.testimonial_type_11",
+    timeKey: "smedia.testimonial_time_11",
+  }, // Snapchat
+  {
+    name: "Henry J.",
+    img: "https://randomuser.me/api/portraits/men/53.jpg",
+    textKey: "smedia.testimonial_12",
+    typeKey: "smedia.testimonial_type_12",
+    timeKey: "smedia.testimonial_time_12",
+  }, // Snapchat
 ];
 
 // HoloGrid Background
@@ -71,7 +150,8 @@ const HoloGridBackground = () => {
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       nodesData.forEach((n1, i) => {
-        const pulse = 0.7 + 0.3 * Math.sin(performance.now() * 0.002 + n1.pulse);
+        const pulse =
+          0.7 + 0.3 * Math.sin(performance.now() * 0.002 + n1.pulse);
         ctx.beginPath();
         ctx.arc(n1.x, n1.y, n1.r * pulse, 0, Math.PI * 2);
         ctx.fillStyle = `hsla(${n1.hue},100%,80%,${pulse})`;
@@ -115,7 +195,10 @@ const HoloGridBackground = () => {
 
   return (
     <>
-      <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-0 opacity-70" />
+      <canvas
+        ref={canvasRef}
+        className="fixed inset-0 pointer-events-none z-0 opacity-70"
+      />
       <motion.div
         className="absolute inset-0 bg-gradient-to-b from-transparent via-teal-400/10 to-transparent opacity-25"
         animate={{ y: ["-100%", "100%"] }}
@@ -142,13 +225,22 @@ const HoloAccessTerminal = ({ inView }) => {
   const ref = useRef(null);
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
-  const tx = useSpring(useTransform(mx, [-300, 300], [-10, 10]), { stiffness: 100, damping: 20 });
-  const ty = useSpring(useTransform(my, [-300, 300], [-10, 10]), { stiffness: 100, damping: 20 });
+  const tx = useSpring(useTransform(mx, [-300, 300], [-10, 10]), {
+    stiffness: 100,
+    damping: 20,
+  });
+  const ty = useSpring(useTransform(my, [-300, 300], [-10, 10]), {
+    stiffness: 100,
+    damping: 20,
+  });
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     if (inView && progress < 100) {
-      const timer = setInterval(() => setProgress((prev) => Math.min(prev + 1.5, 100)), 80);
+      const timer = setInterval(
+        () => setProgress((prev) => Math.min(prev + 1.5, 100)),
+        80
+      );
       return () => clearInterval(timer);
     }
   }, [inView, progress]);
@@ -175,7 +267,9 @@ const HoloAccessTerminal = ({ inView }) => {
         <div className="relative !p-6 h-full flex flex-col">
           <div className="flex items-center !gap-3 !mb-4">
             <FiCpu className="text-teal-400 !w-10 !h-10 drop-shadow-glow" />
-            <span className="text-cyan-100 font-black text-xl tracking-widest">{t("smedia.simulation_title")}</span>
+            <span className="text-cyan-100 font-black text-xl tracking-widest">
+              {t("smedia.simulation_title")}
+            </span>
           </div>
           <div className="flex-1 font-mono text-sm text-cyan-200/80 overflow-hidden">
             {[...Array(5)].map((_, i) => (
@@ -184,21 +278,41 @@ const HoloAccessTerminal = ({ inView }) => {
                 animate={{ y: [0, -20], opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 2, repeat: Infinity, delay: i * 0.2 }}
               >
-                &gt; {`Breach attempt ${Math.random().toString(36).substr(2, 5).toUpperCase()}... ${progress > 80 ? "SUCCESS" : "RUNNING"}`}
+                &gt;{" "}
+                {`Breach attempt ${Math.random()
+                  .toString(36)
+                  .substr(2, 5)
+                  .toUpperCase()}... ${progress > 80 ? "SUCCESS" : "RUNNING"}`}
               </motion.div>
             ))}
           </div>
           <div className="relative !w-24 !h-24 !mx-auto">
             <svg className="w-full h-full">
-              <circle cx="50%" cy="50%" r="40%" fill="none" stroke="url(#progressGradient)" strokeWidth="4" strokeDasharray={`${progress * 2.51} 251`} />
+              <circle
+                cx="50%"
+                cy="50%"
+                r="40%"
+                fill="none"
+                stroke="url(#progressGradient)"
+                strokeWidth="4"
+                strokeDasharray={`${progress * 2.51} 251`}
+              />
               <defs>
-                <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <linearGradient
+                  id="progressGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
                   <stop offset="0%" style={{ stopColor: "#22d3ee" }} />
                   <stop offset="100%" style={{ stopColor: "#2dd4bf" }} />
                 </linearGradient>
               </defs>
             </svg>
-            <span className="absolute inset-0 flex items-center justify-center text-cyan-100 font-bold">{Math.round(progress)}%</span>
+            <span className="absolute inset-0 flex items-center justify-center text-cyan-100 font-bold">
+              {Math.round(progress)}%
+            </span>
           </div>
         </div>
       </motion.div>
@@ -213,9 +327,17 @@ const QuantumMatrix = ({ active, t }) => {
 
   useEffect(() => {
     if (active) {
-      const platforms = ["Snapchat", "Snapchat", "Snapchat", "Instagram", "WhatsApp", "Telegram"];
+      const platforms = [
+        "Snapchat",
+        "Snapchat",
+        "Snapchat",
+        "Instagram",
+        "WhatsApp",
+        "Telegram",
+      ];
       iv.current = setInterval(() => {
-        const platform = platforms[Math.floor(Math.random() * platforms.length)];
+        const platform =
+          platforms[Math.floor(Math.random() * platforms.length)];
         const num = Math.random().toString(36).substr(2, 7).toUpperCase();
         const status = Math.random() > 0.3 ? "BYPASSED" : "SCANNING";
 
@@ -240,7 +362,9 @@ const QuantumMatrix = ({ active, t }) => {
       <div className="flex items-center justify-between !mb-4">
         <div className="flex items-center !gap-3">
           <FiCpu className="text-teal-400 animate-pulse" />
-          <span className="text-cyan-300 font-bold tracking-widest">{t("smedia.matrix_title")}</span>
+          <span className="text-cyan-300 font-bold tracking-widest">
+            {t("smedia.matrix_title")}
+          </span>
         </div>
         <div className="flex !gap-1">
           <div className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
@@ -256,7 +380,15 @@ const QuantumMatrix = ({ active, t }) => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
           >
-            <span className={c.status === "BYPASSED" ? "text-green-400 animate-pulse" : "text-yellow-400"}>[{c.status}]</span>
+            <span
+              className={
+                c.status === "BYPASSED"
+                  ? "text-green-400 animate-pulse"
+                  : "text-yellow-400"
+              }
+            >
+              [{c.status}]
+            </span>
             <span className="text-cyan-300"> {c.platform}</span>
             <span className="text-violet-400"> {c.num}</span>
           </motion.div>
@@ -278,8 +410,14 @@ const AccessOrb = ({ inView }) => {
       transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
     >
       <div className="text-center text-cyan-200">
-        <p className="text-sm"><span className="text-teal-400">{t("smedia.matrix_accounts")}</span>: 12,847</p>
-        <p className="text-sm"><span className="text-teal-400">{t("smedia.matrix_platforms")}</span>: 20+</p>
+        <p className="text-sm">
+          <span className="text-teal-400">{t("smedia.matrix_accounts")}</span>:
+          12,847
+        </p>
+        <p className="text-sm">
+          <span className="text-teal-400">{t("smedia.matrix_platforms")}</span>:
+          20+
+        </p>
       </div>
     </motion.div>
   );
@@ -293,10 +431,21 @@ const SocialMediaPage = () => {
   const [running, setRunning] = useState(false);
   const { scrollYProgress } = useScroll();
 
-  const { ref: heroRef, inView: heroInView } = useInView({ threshold: 0.3, triggerOnce: true });
-  const { ref: howItWorksRef, inView: howItWorksInView } = useInView({ threshold: 0.3, triggerOnce: true });
-  const { ref: featuresRef, inView: featuresInView } = useInView({ threshold: 0.3, triggerOnce: true });
-  const { ref: testimonialsRef, inView: testimonialsInView } = useInView({ threshold: 0.2 });
+  const { ref: heroRef, inView: heroInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const { ref: howItWorksRef, inView: howItWorksInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const { ref: featuresRef, inView: featuresInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const { ref: testimonialsRef, inView: testimonialsInView } = useInView({
+    threshold: 0.2,
+  });
 
   useEffect(() => {
     const onMove = (e) => setMouse({ x: e.clientX, y: e.clientY });
@@ -362,7 +511,7 @@ const SocialMediaPage = () => {
             >
               <button
                 onClick={() => setModalOpen(true)}
-                className="!px-8 !py-4 border border-teal-600 text-teal-600 rounded-full font-bold hover:bg-teal-500/20 transition-all"
+                className="relative !px-10 !py-5 bg-gradient-to-r from-cyan-500 via-violet-500 to-teal-500 rounded-full font-bold text-white shadow-2xl hover:shadow-teal-500/80 transition-all hover:scale-105"
               >
                 {t("smedia.cta_contact_us")}
               </button>
