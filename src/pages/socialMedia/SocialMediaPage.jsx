@@ -268,7 +268,7 @@ const QuantumMatrix = ({ active, t }) => {
 
 // Access Orb
 const AccessOrb = ({ inView }) => {
-  const { t } = useTranslation("smedia");
+  const { t } = useTranslation();
   return (
     <motion.div
       className="fixed bottom-10 right-10 !w-40 !h-40 bg-gradient-to-br from-cyan-900/70 to-teal-900/70 backdrop-blur-3xl rounded-full border border-teal-400/50 shadow-2xl flex items-center justify-center"
@@ -731,7 +731,6 @@ const SocialMediaPage = () => {
         </AnimatePresence>
       </section>
 
-      <AccessOrb inView={testimonialsInView} />
       <BuyModal open={modalOpen} handleClose={() => setModalOpen(false)} />
 
       <style jsx>{`
