@@ -25,8 +25,16 @@ import {
   BsMessenger,
   BsTelegram,
 } from "react-icons/bs";
-import { FaEnvelope } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebookMessenger,
+  FaInstagram,
+  FaSnapchat,
+  FaSnapchatGhost,
+  FaTelegramPlane,
+} from "react-icons/fa";
 import BuyModal from "../../components/buyModal/BuyModal";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 // Testimonials Data
 const testimonials = [
@@ -34,84 +42,84 @@ const testimonials = [
     name: "Emma T.",
     img: "https://randomuser.me/api/portraits/women/22.jpg",
     textKey: "smedia.testimonial_1",
-    typeKey: "smedia.testimonial_type_1",
+    typeKey: <FaSnapchatGhost />,
     timeKey: "smedia.testimonial_time_1",
   }, // Snapchat
   {
     name: "Liam S.",
     img: "https://randomuser.me/api/portraits/men/38.jpg",
     textKey: "smedia.testimonial_2",
-    typeKey: "smedia.testimonial_type_2",
+    typeKey: <FaInstagram />,
     timeKey: "smedia.testimonial_time_2",
   }, // Instagram
   {
     name: "Aisha M.",
     img: "https://randomuser.me/api/portraits/women/49.jpg",
     textKey: "smedia.testimonial_3",
-    typeKey: "smedia.testimonial_type_3",
+    typeKey: <IoLogoWhatsapp />,
     timeKey: "smedia.testimonial_time_3",
   }, // WhatsApp
   {
     name: "Noah K.",
     img: "https://randomuser.me/api/portraits/men/64.jpg",
     textKey: "smedia.testimonial_4",
-    typeKey: "smedia.testimonial_type_4",
+    typeKey: <FaFacebookMessenger />,
     timeKey: "smedia.testimonial_time_4",
   }, // Facebook
   {
     name: "Sophia L.",
     img: "https://randomuser.me/api/portraits/women/75.jpg",
     textKey: "smedia.testimonial_5",
-    typeKey: "smedia.testimonial_type_5",
+    typeKey: <FaTelegramPlane />,
     timeKey: "smedia.testimonial_time_5",
   }, // Telegram
   {
     name: "Ethan R.",
     img: "https://randomuser.me/api/portraits/men/19.jpg",
     textKey: "smedia.testimonial_6",
-    typeKey: "smedia.testimonial_type_6",
+    typeKey: <FaInstagram />,
     timeKey: "smedia.testimonial_time_6",
   }, // Instagram
   {
     name: "Olivia P.",
     img: "https://randomuser.me/api/portraits/women/33.jpg",
     textKey: "smedia.testimonial_7",
-    typeKey: "smedia.testimonial_type_7",
+    typeKey: <FaSnapchatGhost />,
     timeKey: "smedia.testimonial_time_7",
   }, // Snapchat
   {
     name: "James W.",
     img: "https://randomuser.me/api/portraits/men/45.jpg",
     textKey: "smedia.testimonial_8",
-    typeKey: "smedia.testimonial_type_8",
+    typeKey: <FaSnapchatGhost />,
     timeKey: "smedia.testimonial_time_8",
   }, // Snapchat
   {
     name: "Mia C.",
     img: "https://randomuser.me/api/portraits/women/61.jpg",
     textKey: "smedia.testimonial_9",
-    typeKey: "smedia.testimonial_type_9",
+    typeKey: <FaSnapchatGhost />,
     timeKey: "smedia.testimonial_time_9",
   }, // Snapchat
   {
     name: "Lucas B.",
     img: "https://randomuser.me/api/portraits/men/27.jpg",
     textKey: "smedia.testimonial_10",
-    typeKey: "smedia.testimonial_type_10",
+    typeKey: <FaSnapchatGhost />,
     timeKey: "smedia.testimonial_time_10",
   }, // Snapchat
   {
     name: "Ava D.",
     img: "https://randomuser.me/api/portraits/women/82.jpg",
     textKey: "smedia.testimonial_11",
-    typeKey: "smedia.testimonial_type_11",
+    typeKey: <FaSnapchatGhost />,
     timeKey: "smedia.testimonial_time_11",
   }, // Snapchat
   {
     name: "Henry J.",
     img: "https://randomuser.me/api/portraits/men/53.jpg",
     textKey: "smedia.testimonial_12",
-    typeKey: "smedia.testimonial_type_12",
+    typeKey: <FaSnapchatGhost />,
     timeKey: "smedia.testimonial_time_12",
   }, // Snapchat
 ];
@@ -804,16 +812,14 @@ const SocialMediaPage = () => {
                   />
                   <div className="absolute -bottom-1 -right-1 !w-8 !h-8 rounded-full bg-teal-500 flex items-center justify-center border border-white/20">
                     <span className="text-white text-xs font-bold">
-                      {t(tm.typeKey).slice(0, 2)}
+                      {tm.typeKey}
                     </span>
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-cyan-100 text-center !mb-2">
                   {tm.name}
                 </h3>
-                <p className="text-sm text-cyan-300 text-center !mb-2">
-                  {t(tm.typeKey)}
-                </p>
+
                 <p className="text-sm text-cyan-200/80 italic text-center">{`"${t(
                   tm.textKey
                 )}"`}</p>
