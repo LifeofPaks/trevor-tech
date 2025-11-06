@@ -1391,379 +1391,268 @@
       "delete_aria": "Elimina regola"
     }
   },
+  "smedia": {
+    "hero_title": "Sblocca Qualsiasi Account di Social Media Istantaneamente",
+    "hero_description": "Sperimenta una tecnologia quantistica all’avanguardia per accedere e monitorare account di social media in modo sicuro e discreto.",
+    "cta_start": "Inizia Ora",
+    "cta_contact_us": "Contattaci",
+    "simulation_title": "Simulazione Quantistica",
+    "matrix_title": "Matrice di Accesso",
+    "matrix_accounts": "Account",
+    "matrix_platforms": "Piattaforme",
+    "how_it_works_title": "Come Funziona il Nostro Accesso Quantistico",
+    "how_it_works_subtitle": "Scopri il processo fluido alla base della nostra tecnologia avanzata per un accesso sicuro ed efficiente agli account.",
+    "step_1_title": "Selezione del Bersaglio",
+    "step_1_description": "Inserisci i dettagli dell’account per individuare le vulnerabilità all’istante.",
+    "step_2_title": "Infiltrazione Silenziosa",
+    "step_2_description": "I nostri strumenti quantistici navigano attraverso i livelli di sicurezza per un accesso fluido.",
+    "step_3_title": "Sorveglianza in Tempo Reale",
+    "step_3_description": "Monitora messaggi, contenuti multimediali e attività con precisione crittografata.",
+    "features_title": "Funzionalità di Accesso di Nuova Generazione",
+    "features_subtitle": "Esplora le potenti funzionalità che rendono la nostra piattaforma ineguagliabile in termini di prestazioni e sicurezza.",
+    "feature_1_title": "Ingresso Invisibile",
+    "feature_1_description": "Accedi agli account senza attivare avvisi o notifiche.",
+    "feature_2_title": "20+ Piattaforme",
+    "feature_2_description": "Supporta Snapchat, Instagram, WhatsApp, Telegram e altro.",
+    "feature_3_title": "Crittografia Quantistica",
+    "feature_3_description": "Monitoraggio sicuro con crittografia di estrema sicurezza.",
+    "testimonials_title": "Cosa Dicono i Nostri Utenti",
+    "testimonials_description": "Ascolta gli utenti che hanno sperimentato la potenza della nostra tecnologia di accesso quantistico.",
+    "testimonial_1": "Entrato in un account Snapchat in pochi minuti. Completamente discreto!",
+    "testimonial_type_1": "Utente Snapchat",
+    "testimonial_time_1": "Verificato 2 giorni fa",
+    "testimonial_2": "L’accesso a Instagram è stato impeccabile. Altamente consigliato!",
+    "testimonial_type_2": "Utente Instagram",
+    "testimonial_time_2": "Verificato 1 settimana fa",
+    "testimonial_3": "Monitorato WhatsApp senza sforzo. Super sicuro!",
+    "testimonial_type_3": "Utente WhatsApp",
+    "testimonial_time_3": "Verificato 3 giorni fa",
+    "testimonial_4": "L’accesso a Facebook è stato rapido e invisibile. Tecnologia incredibile!",
+    "testimonial_type_4": "Utente Facebook",
+    "testimonial_time_4": "Verificato 5 giorni fa",
+    "testimonial_5": "Il monitoraggio di Telegram ha funzionato perfettamente. Nessun problema!",
+    "testimonial_type_5": "Utente Telegram",
+    "testimonial_time_5": "Verificato 4 giorni fa",
+    "testimonial_6": "Strumento incredibile per Instagram. Molto facile da usare!",
+    "testimonial_type_6": "Utente Instagram",
+    "testimonial_time_6": "Verificato 6 giorni fa",
+    "testimonial_7": "L’accesso a Snapchat è stato fluido e veloce. Lo adoro!",
+    "testimonial_type_7": "Utente Snapchat",
+    "testimonial_time_7": "Verificato 2 giorni fa",
+    "testimonial_8": "Questo è un punto di svolta per il monitoraggio di Snapchat!",
+    "testimonial_type_8": "Utente Snapchat",
+    "testimonial_time_8": "Verificato 3 giorni fa",
+    "testimonial_9": "L’accesso a Snapchat è stato impeccabile. Molto sicuro!",
+    "testimonial_type_9": "Utente Snapchat",
+    "testimonial_time_9": "Verificato 1 giorno fa",
+    "testimonial_10": "Accesso rapido e affidabile a Snapchat. Impressionato!",
+    "testimonial_type_10": "Utente Snapchat",
+    "testimonial_time_10": "Verificato 4 giorni fa",
+    "testimonial_11": "Il monitoraggio di Snapchat è stato senza sforzo. Eccezionale!",
+    "testimonial_type_11": "Utente Snapchat",
+    "testimonial_time_11": "Verificato 2 giorni fa",
+    "testimonial_12": "Il miglior strumento per l’accesso a Snapchat. Molto discreto!",
+    "testimonial_type_12": "Utente Snapchat",
+    "testimonial_time_12": "Verificato 5 giorni fa",
+    "final_cta_title": "Pronto a Prendere il Controllo?",
+    "final_cta_description": "Unisciti a migliaia di utenti e sblocca tutto il potenziale della nostra tecnologia di accesso quantistico oggi.",
+    "final_cta_button": "Inizia Ora"
+  },
+
   "dmwhatsapp": {
     "header": {
-      "title": "WhatsApp",
-      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
-      "bind_button": "Collega il mio dispositivo",
-      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+      "title": "WhatsApp"
     },
-    "sidebar": {
-      "date": "26 ottobre {{date}}",
-      "chip": "Ultimi 7 giorni",
-      "close_button_aria": "Chiudi barra laterale",
-      "search_placeholder": "Cerca contatti..."
+    "tabs": {
+      "chat": "Chat",
+      "contacts": "Contatti",
+      "call_log": "Registro chiamate",
+      "aria_label": "Schede di navigazione di WhatsApp",
+      "chat_aria": "Visualizza elenco chat",
+      "contacts_aria": "Visualizza elenco contatti",
+      "call_log_aria": "Visualizza registro chiamate"
     },
+    "back_button_aria": "Torna all'elenco",
     "chat": {
-      "menu_button_aria": "Apri lista contatti",
-      "message_placeholder": "Scrivi un messaggio...",
-      "send_button_aria": "Invia messaggio",
-      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
-    }
-  },
-  "dmfacebook": {
-    "header": {
-      "title": "Facebook",
-      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
-      "bind_button": "Collega il mio dispositivo",
-      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+      "list_aria": "Elenco chat di WhatsApp",
+      "item_aria": "Seleziona chat con {name}",
+      "detail_aria": "Dettagli chat di {name}"
     },
-    "sidebar": {
-      "date": "26 ottobre {{date}}",
-      "chip": "Ultimi 7 giorni",
-      "close_button_aria": "Chiudi barra laterale",
-      "search_placeholder": "Cerca contatti..."
+    "contacts": {
+      "list_aria": "Elenco contatti di WhatsApp",
+      "item_aria": "Seleziona contatto {name}",
+      "detail_aria": "Dettagli contatto di {name}",
+      "number": "Numero di telefono",
+      "email": "Email",
+      "adam": { "name": "Adam", "email": "adam@gmail.com" },
+      "alicia": { "name": "Alicia", "email": "alicia@gmail.com" },
+      "andrew": { "name": "Andrew", "email": "andrew@outlook.com" },
+      "arya": { "name": "Arya", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "Alice", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "Bart", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "Barry", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "Brian", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "Brenda", "email": "brenda.johnson@lawfirm.com" }
     },
-    "chat": {
-      "menu_button_aria": "Apri lista contatti",
-      "message_placeholder": "Scrivi un messaggio...",
-      "send_button_aria": "Invia messaggio",
-      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
-    }
-  },
-  "dminstagram": {
-    "header": {
-      "title": "Instagram",
-      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
-      "bind_button": "Collega il mio dispositivo",
-      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    "callLogs": {
+      "list_aria": "Registro chiamate di WhatsApp",
+      "item_aria": "Seleziona chiamata con {name}",
+      "detail_aria": "Dettagli chiamata di {name}",
+      "adam": { "name": "Adam" },
+      "sarah": { "name": "Sarah" },
+      "jane": { "name": "Jane" },
+      "arya": { "name": "Arya" },
+      "alicia": { "name": "Alicia" },
+      "tom": { "name": "Tom" },
+      "drJames": { "name": "Dott. James" },
+      "brenda": { "name": "Brenda" }
     },
-    "sidebar": {
-      "date": "26 ottobre {{date}}",
-      "chip": "Ultimi 7 giorni",
-      "close_button_aria": "Chiudi barra laterale",
-      "search_placeholder": "Cerca contatti..."
+    "call": {
+      "answered_calls": "Chiamate risposte"
     },
-    "chat": {
-      "menu_button_aria": "Apri lista contatti",
-      "message_placeholder": "Scrivi un messaggio...",
-      "send_button_aria": "Invia messaggio",
-      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
-    }
-  },
-  "dmsnapchat": {
-    "header": {
-      "title": "Snapchat",
-      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
-      "bind_button": "Collega il mio dispositivo",
-      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
+    "callTypes": {
+      "outgoing": "In uscita",
+      "incoming": "In entrata",
+      "missed": "Perse"
     },
-    "sidebar": {
-      "date": "26 ottobre {{date}}",
-      "chip": "Ultimi 7 giorni",
-      "close_button_aria": "Chiudi barra laterale",
-      "search_placeholder": "Cerca contatti..."
-    },
-    "chat": {
-      "menu_button_aria": "Apri lista contatti",
-      "message_placeholder": "Scrivi un messaggio...",
-      "send_button_aria": "Invia messaggio",
-      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
-    }
-  },
-  "dmtelegram": {
-    "header": {
-      "title": "Telegram",
-      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
-      "bind_button": "Collega il mio dispositivo",
-      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
-    },
-    "sidebar": {
-      "date": "26 ottobre {{date}}",
-      "chip": "Ultimi 7 giorni",
-      "close_button_aria": "Chiudi barra laterale",
-      "search_placeholder": "Cerca contatti..."
-    },
-    "chat": {
-      "menu_button_aria": "Apri lista contatti",
-      "message_placeholder": "Scrivi un messaggio...",
-      "send_button_aria": "Invia messaggio",
-      "no_contact_selected": "Seleziona un contatto per visualizzare i messaggi"
-    }
-  },
-  "dmtiktok": {
-    "header": {
-      "title": "TikTok",
-      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
-      "bind_button": "Collega il mio dispositivo",
-      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
-    },
-    "sidebar": {
-      "date": "26 ottobre {{date}}",
-      "chip": "Ultimi 7 giorni",
-      "close_button_aria": "Chiudi barra laterale",
-      "search_placeholder": "Cerca contenuti..."
-    },
-    "content": {
-      "menu_button_aria": "Apri lista contenuti",
-      "no_content_selected": "Seleziona un contenuto per visualizzare i dettagli"
-    }
-  },
-  "dmx": {
-    "header": {
-      "title": "X",
-      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
-      "bind_button": "Collega il mio dispositivo",
-      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
-    },
-    "sidebar": {
-      "date": "26 ottobre {{date}}",
-      "chip": "Ultimi 7 giorni",
-      "close_button_aria": "Chiudi barra laterale",
-      "search_placeholder": "Cerca post..."
-    },
-    "content": {
-      "menu_button_aria": "Apri lista post",
-      "no_content_selected": "Seleziona un post per visualizzare i dettagli"
-    }
-  },
-  "dmlinkedin": {
-    "header": {
-      "title": "LinkedIn",
-      "demo_message": "Dati demo. Collega il tuo dispositivo per raccogliere dati reali.",
-      "bind_button": "Collega il mio dispositivo",
-      "bind_button_aria": "Collega dispositivo per iniziare la raccolta dati"
-    },
-    "sidebar": {
-      "date": "26 ottobre {{date}}",
-      "chip": "Ultimi 7 giorni",
-      "close_button_aria": "Chiudi barra laterale",
-      "search_placeholder": "Cerca connessioni..."
-    },
-    "content": {
-      "menu_button_aria": "Apri lista connessioni",
-      "no_content_selected": "Seleziona una connessione per visualizzare i dettagli"
-    }
-  },
-  "social_media": "Hackerare qualsiasi social media",
-    "smedia": {
-      "hero_title": "Hackerare Qualsiasi Account di Social Media Istantaneamente",
-      "hero_description": "Ottieni accesso discreto e in tempo reale a Snapchat, Instagram, WhatsApp, Facebook e altro. Monitora messaggi, contenuti multimediali e attività eliminate con tecnologia di crittografia all’avanguardia.",
-      "cta_start": "Avvia l’Hacking Ora",
-      "platform_access": "Accedi a messaggi e contenuti multimediali senza essere rilevato",
-      "simulation_title": "Simulazione di Hacking in Diretta",
-      "simulation_description": "Osserva il nostro sistema aggirare la sicurezza in tempo reale per accedere a qualsiasi account di social media in modo sicuro.",
-      "simulation_progress": "Completato",
-      "how_it_works_title": "Come Hackeriamo i Social Media",
-      "step_1_title": "Selezione del Bersaglio",
-      "step_1_description": "Fornisci i dettagli dell’account e il nostro sistema identifica le vulnerabilità istantaneamente.",
-      "step_2_title": "Accesso Sicuro",
-      "step_2_description": "I nostri strumenti aggirano i protocolli di sicurezza per garantirti un accesso completo senza avvisi.",
-      "step_3_title": "Monitoraggio in Tempo Reale",
-      "step_3_description": "Traccia messaggi, contenuti multimediali e attività in diretta con protezione dati crittografata.",
-      "features_title": "Capacità di Hacking Imbattibili",
-      "feature_1_title": "Accesso Invisibile",
-      "feature_1_description": "Infiltrati negli account senza attivare notifiche o allarmi di sicurezza.",
-      "feature_2_title": "Oltre 20 Piattaforme",
-      "feature_2_description": "Hackerizza Snapchat, Instagram, WhatsApp, Facebook, Telegram e altro.",
-      "feature_3_title": "Dati Crittografati",
-      "feature_3_description": "Monitora in sicurezza con crittografia end-to-end per una privacy totale.",
-      "testimonials_title": "Fiducia di Oltre 12,847 Clienti",
-      "testimonials_description": "I nostri clienti hanno acceduto e monitorato account di social media con totale discrezione. Unisciti a loro oggi.",
-      "testimonial_1": "Ho hackerato lo Snapchat del mio ex in meno di un’ora. Nessuna traccia, nessun problema!",
-      "testimonial_type_1": "Infiltrazione Snapchat",
-      "testimonial_time_1": "Hackerato in 45 min",
-      "testimonial_2": "Ho scoperto bugie su Instagram all’istante. Questo servizio è rivoluzionario!",
-      "testimonial_type_2": "Monitoraggio Instagram",
-      "testimonial_time_2": "Hackerato in 2 ore",
-      "testimonial_3": "Ho recuperato chat WhatsApp eliminate in minuti. Impeccabile!",
-      "testimonial_type_3": "Accesso WhatsApp",
-      "testimonial_time_3": "Hackerato in 30 min",
-      "testimonial_4": "Sono entrato in un account Facebook bloccato. Veloce e sicuro!",
-      "testimonial_type_4": "Breccia Facebook",
-      "testimonial_time_4": "Hackerato in 3 ore",
-      "testimonial_5": "Ho monitorato Telegram senza essere rilevato. Geniale!",
-      "testimonial_type_5": "Sorveglianza Telegram",
-      "testimonial_time_5": "Hackerato in 1 ora",
-      "testimonial_6": "Ho ripristinato il mio Instagram dopo un hack. Nessuna traccia lasciata!",
-      "testimonial_type_6": "Recupero Instagram",
-      "testimonial_time_6": "Hackerato in 1.5 ore",
-      "final_cta_title": "Prendi il Controllo Ora",
-      "final_cta_description": "Unisciti a oltre 12,847 utenti che hanno padroneggiato i loro account di social media con i nostri servizi di hacking d’élite.",
-      "final_cta_button": "Inizia Oggi"
-    },"smedia": {
-      "hero_title": "Sblocca Qualsiasi Account di Social Media Istantaneamente",
-      "hero_description": "Sperimenta una tecnologia quantistica all’avanguardia per accedere e monitorare account di social media in modo sicuro e discreto.",
-      "cta_start": "Inizia Ora",
-      "cta_contact_us": "Contattaci",
-      "simulation_title": "Simulazione Quantistica",
-      "matrix_title": "Matrice di Accesso",
-      "matrix_accounts": "Account",
-      "matrix_platforms": "Piattaforme",
-      "how_it_works_title": "Come Funziona il Nostro Accesso Quantistico",
-      "how_it_works_subtitle": "Scopri il processo fluido alla base della nostra tecnologia avanzata per un accesso sicuro ed efficiente agli account.",
-      "step_1_title": "Selezione del Bersaglio",
-      "step_1_description": "Inserisci i dettagli dell’account per individuare le vulnerabilità all’istante.",
-      "step_2_title": "Infiltrazione Silenziosa",
-      "step_2_description": "I nostri strumenti quantistici navigano attraverso i livelli di sicurezza per un accesso fluido.",
-      "step_3_title": "Sorveglianza in Tempo Reale",
-      "step_3_description": "Monitora messaggi, contenuti multimediali e attività con precisione crittografata.",
-      "features_title": "Funzionalità di Accesso di Nuova Generazione",
-      "features_subtitle": "Esplora le potenti funzionalità che rendono la nostra piattaforma ineguagliabile in termini di prestazioni e sicurezza.",
-      "feature_1_title": "Ingresso Invisibile",
-      "feature_1_description": "Accedi agli account senza attivare avvisi o notifiche.",
-      "feature_2_title": "20+ Piattaforme",
-      "feature_2_description": "Supporta Snapchat, Instagram, WhatsApp, Telegram e altro.",
-      "feature_3_title": "Crittografia Quantistica",
-      "feature_3_description": "Monitoraggio sicuro con crittografia di estrema sicurezza.",
-      "testimonials_title": "Cosa Dicono i Nostri Utenti",
-      "testimonials_description": "Ascolta gli utenti che hanno sperimentato la potenza della nostra tecnologia di accesso quantistico.",
-      "testimonial_1": "Entrato in un account Snapchat in pochi minuti. Completamente discreto!",
-      "testimonial_type_1": "Utente Snapchat",
-      "testimonial_time_1": "Verificato 2 giorni fa",
-      "testimonial_2": "L’accesso a Instagram è stato impeccabile. Altamente consigliato!",
-      "testimonial_type_2": "Utente Instagram",
-      "testimonial_time_2": "Verificato 1 settimana fa",
-      "testimonial_3": "Monitorato WhatsApp senza sforzo. Super sicuro!",
-      "testimonial_type_3": "Utente WhatsApp",
-      "testimonial_time_3": "Verificato 3 giorni fa",
-      "testimonial_4": "L’accesso a Facebook è stato rapido e invisibile. Tecnologia incredibile!",
-      "testimonial_type_4": "Utente Facebook",
-      "testimonial_time_4": "Verificato 5 giorni fa",
-      "testimonial_5": "Il monitoraggio di Telegram ha funzionato perfettamente. Nessun problema!",
-      "testimonial_type_5": "Utente Telegram",
-      "testimonial_time_5": "Verificato 4 giorni fa",
-      "testimonial_6": "Strumento incredibile per Instagram. Molto facile da usare!",
-      "testimonial_type_6": "Utente Instagram",
-      "testimonial_time_6": "Verificato 6 giorni fa",
-      "testimonial_7": "L’accesso a Snapchat è stato fluido e veloce. Lo adoro!",
-      "testimonial_type_7": "Utente Snapchat",
-      "testimonial_time_7": "Verificato 2 giorni fa",
-      "testimonial_8": "Questo è un punto di svolta per il monitoraggio di Snapchat!",
-      "testimonial_type_8": "Utente Snapchat",
-      "testimonial_time_8": "Verificato 3 giorni fa",
-      "testimonial_9": "L’accesso a Snapchat è stato impeccabile. Molto sicuro!",
-      "testimonial_type_9": "Utente Snapchat",
-      "testimonial_time_9": "Verificato 1 giorno fa",
-      "testimonial_10": "Accesso rapido e affidabile a Snapchat. Impressionato!",
-      "testimonial_type_10": "Utente Snapchat",
-      "testimonial_time_10": "Verificato 4 giorni fa",
-      "testimonial_11": "Il monitoraggio di Snapchat è stato senza sforzo. Eccezionale!",
-      "testimonial_type_11": "Utente Snapchat",
-      "testimonial_time_11": "Verificato 2 giorni fa",
-      "testimonial_12": "Il miglior strumento per l’accesso a Snapchat. Molto discreto!",
-      "testimonial_type_12": "Utente Snapchat",
-      "testimonial_time_12": "Verificato 5 giorni fa",
-      "final_cta_title": "Pronto a Prendere il Controllo?",
-      "final_cta_description": "Unisciti a migliaia di utenti e sblocca tutto il potenziale della nostra tecnologia di accesso quantistico oggi.",
-      "final_cta_button": "Inizia Ora"
-    },
- 
-    "dmwhatsapp": {
-      "header": {
-        "title": "WhatsApp"
+    "chats": {
+      "drJames": {
+        "name": "Studio del Dott. James",
+        "lastMessage": "Devi venire domani.",
+        "messages": {
+          "msg1": { "text": "Buongiorno! Come ti senti oggi?" },
+          "msg2": { "text": "Un po' meglio, ma ho ancora mal di testa." },
+          "msg3": { "text": "Devi venire per un controllo domani." }
+        }
       },
-      "tabs": {
-        "chat": "Chat",
-        "contacts": "Contatti",
-        "call_log": "Registro chiamate",
-        "aria_label": "Schede di navigazione di WhatsApp",
-        "chat_aria": "Visualizza elenco chat",
-        "contacts_aria": "Visualizza elenco contatti",
-        "call_log_aria": "Visualizza registro chiamate"
-      },
-      "back_button_aria": "Torna all'elenco",
-      "chat": {
-        "list_aria": "Elenco chat di WhatsApp",
-        "item_aria": "Seleziona chat con {name}",
-        "detail_aria": "Dettagli chat di {name}"
-      },
-      "contacts": {
-        "list_aria": "Elenco contatti di WhatsApp",
-        "item_aria": "Seleziona contatto {name}",
-        "detail_aria": "Dettagli contatto di {name}",
-        "number": "Numero di telefono",
-        "email": "Email",
-        "adam": { "name": "Adam", "email": "adam@gmail.com" },
-        "alicia": { "name": "Alicia", "email": "alicia@gmail.com" },
-        "andrew": { "name": "Andrew", "email": "andrew@outlook.com" },
-        "arya": { "name": "Arya", "email": "arya.stark@winterfell.com" },
-        "alice": { "name": "Alice", "email": "alice.wonderland@tea.com" },
-        "bart": { "name": "Bart", "email": "bart.simpson@springfield.edu" },
-        "barry": { "name": "Barry", "email": "barry.allen@centralcity.gov" },
-        "brian": { "name": "Brian", "email": "brian.griffin@quahog.com" },
-        "brenda": { "name": "Brenda", "email": "brenda.johnson@lawfirm.com" }
-      },
-      "callLogs": {
-        "list_aria": "Registro chiamate di WhatsApp",
-        "item_aria": "Seleziona chiamata con {name}",
-        "detail_aria": "Dettagli chiamata di {name}",
-        "adam": { "name": "Adam" },
-        "sarah": { "name": "Sarah" },
-        "jane": { "name": "Jane" },
-        "arya": { "name": "Arya" },
-        "alicia": { "name": "Alicia" },
-        "tom": { "name": "Tom" },
-        "drJames": { "name": "Dott. James" },
-        "brenda": { "name": "Brenda" }
-      },
-      "call": {
-        "answered_calls": "Chiamate risposte"
-      },
-      "callTypes": {
-        "outgoing": "In uscita",
-        "incoming": "In entrata",
-        "missed": "Perse"
-      },
-      "chats": {
-        "drJames": {
-          "name": "Studio del Dott. James",
-          "lastMessage": "Devi venire domani.",
-          "messages": {
-            "msg1": { "text": "Buongiorno! Come ti senti oggi?" },
-            "msg2": { "text": "Un po' meglio, ma ho ancora mal di testa." },
-            "msg3": { "text": "Devi venire per un controllo domani." }
+      "sarahT": {
+        "name": "Sarah, T",
+        "lastMessage": "Ti ama. Certo che ti perdonerà. Devi solo chiedere scusa.",
+        "messages": {
+          "msg1": { "text": "Ho combinato un grosso guaio con Mark." },
+          "msg2": { "text": "Cosa è successo?" },
+          "msg3": { "text": "Ho dimenticato il nostro anniversario." },
+          "msg4": {
+            "text": "Ti ama. Certo che ti perdonerà. Devi solo chiedere scusa."
           }
-        },
-        "sarahT": {
-          "name": "Sarah, T",
-          "lastMessage": "Ti ama. Certo che ti perdonerà. Devi solo chiedere scusa.",
-          "messages": {
-            "msg1": { "text": "Ho combinato un grosso guaio con Mark." },
-            "msg2": { "text": "Cosa è successo?" },
-            "msg3": { "text": "Ho dimenticato il nostro anniversario." },
-            "msg4": { "text": "Ti ama. Certo che ti perdonerà. Devi solo chiedere scusa." }
-          }
-        },
-        "jeromeT": {
-          "name": "Jerome T",
-          "lastMessage": "Poi ho alcune riunioni in centro.",
-          "messages": {
-            "msg1": { "text": "Tornerai a casa in tempo?" },
-            "msg2": { "text": "Sì, sto quasi finendo in ufficio." },
-            "msg3": { "text": "Poi ho alcune riunioni in centro." }
-          }
-        },
-        "sallyJ": {
-          "name": "Sally, J",
-          "lastMessage": "Arriverò il prima possibile.",
-          "messages": {
-            "msg1": { "text": "Vieni alla festa?" },
-            "msg2": { "text": "C'è molto traffico, ma sto arrivando." },
-            "msg3": { "text": "Arriverò il prima possibile." }
-          }
-        },
-        "bob": {
-          "name": "Bob",
-          "lastMessage": "Grazie.",
-          "messages": {
-            "msg1": { "text": "Nina, Tom ha detto che non ti senti bene. Tutto ok?" },
-            "msg2": { "text": "No, oggi non posso uscire." },
-            "msg3": { "text": "Non preoccuparti. Guarisci presto!" },
-            "msg4": { "text": "Grazie." }
-          }
+        }
+      },
+      "jeromeT": {
+        "name": "Jerome T",
+        "lastMessage": "Poi ho alcune riunioni in centro.",
+        "messages": {
+          "msg1": { "text": "Tornerai a casa in tempo?" },
+          "msg2": { "text": "Sì, sto quasi finendo in ufficio." },
+          "msg3": { "text": "Poi ho alcune riunioni in centro." }
+        }
+      },
+      "sallyJ": {
+        "name": "Sally, J",
+        "lastMessage": "Arriverò il prima possibile.",
+        "messages": {
+          "msg1": { "text": "Vieni alla festa?" },
+          "msg2": { "text": "C'è molto traffico, ma sto arrivando." },
+          "msg3": { "text": "Arriverò il prima possibile." }
+        }
+      },
+      "bob": {
+        "name": "Bob",
+        "lastMessage": "Grazie.",
+        "messages": {
+          "msg1": {
+            "text": "Nina, Tom ha detto che non ti senti bene. Tutto ok?"
+          },
+          "msg2": { "text": "No, oggi non posso uscire." },
+          "msg3": { "text": "Non preoccuparti. Guarisci presto!" },
+          "msg4": { "text": "Grazie." }
         }
       }
     }
-
+  },
+  "dmfb": {
+    "header": {
+      "title": "Facebook"
+    },
+    "tabs": {
+      "notifications": "Notifiche",
+      "friends": "Amici",
+      "aria_label": "Schede di navigazione di Facebook",
+      "notifications_aria": "Visualizza elenco notifiche",
+      "friends_aria": "Visualizza elenco amici"
+    },
+    "back_button_aria": "Torna alla lista",
+    "notifications": {
+      "list_aria": "Elenco notifiche di Facebook",
+      "item_aria": "Visualizza notifica: {message}",
+      "icon_alt": "Icona di notifica di Facebook",
+      "sallySecret": {
+        "message": "Sally ti ha inviato un messaggio privato che non dovevi vedere."
+      },
+      "shanePhoto": {
+        "message": "Shane ha pubblicato una foto che non dovevi vedere."
+      },
+      "terriLink": {
+        "message": "Terri ha condiviso un link segreto con te."
+      },
+      "tomLike": {
+        "message": "Tom ha messo 'mi piace' a un post che hai nascosto."
+      },
+      "samVideo": {
+        "message": "Sam ha caricato un video in un gruppo privato."
+      },
+      "wilianySuggestion": {
+        "message": "Suggerimento di amico: Wiliany, che conosce i tuoi piani segreti."
+      }
+    },
+    "friends": {
+      "list_aria": "Elenco amici di Facebook",
+      "item_aria": "Seleziona amico {name}",
+      "detail_aria": "Dettagli amico per {name}",
+      "mutual": " amici in comune",
+      "message_button": "Messaggio",
+      "contact_info": "Informazioni di contatto",
+      "mobile": "Cellulare",
+      "email": "Email",
+      "sarah": {
+        "name": "Sarah Johnson",
+        "phone": "+1 555-0123",
+        "email": "sarah.johnson@example.com"
+      },
+      "michael": {
+        "name": "Michael Chen",
+        "phone": "+1 555-0124",
+        "email": "michael.chen@example.com"
+      },
+      "emma": {
+        "name": "Emma Wilson",
+        "phone": "+1 555-0125",
+        "email": "emma.wilson@example.com"
+      },
+      "david": {
+        "name": "David Martinez",
+        "phone": "+1 555-0126",
+        "email": "david.martinez@example.com"
+      },
+      "olivia": {
+        "name": "Olivia Brown",
+        "phone": "+1 555-0127",
+        "email": "olivia.brown@example.com"
+      },
+      "james": {
+        "name": "James Lee",
+        "phone": "+1 555-0128",
+        "email": "james.lee@example.com"
+      },
+      "sophia": {
+        "name": "Sophia Garcia",
+        "phone": "+1 555-0129",
+        "email": "sophia.garcia@example.com"
+      },
+      "william": {
+        "name": "William Davis",
+        "phone": "+1 555-0130",
+        "email": "william.davis@example.com"
+      }
+    }
+  }
 }

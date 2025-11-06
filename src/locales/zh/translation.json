@@ -1572,5 +1572,91 @@
         }
       }
     }
+  },
+  "dmfb": {
+    "header": {
+      "title": "脸书"
+    },
+    "tabs": {
+      "notifications": "通知",
+      "friends": "朋友",
+      "aria_label": "脸书导航选项卡",
+      "notifications_aria": "查看通知列表",
+      "friends_aria": "查看朋友列表"
+    },
+    "back_button_aria": "返回列表",
+    "notifications": {
+      "list_aria": "脸书通知列表",
+      "item_aria": "查看通知：{message}",
+      "icon_alt": "脸书通知图标",
+      "sallySecret": {
+        "message": "莎莉给你发了一条你不该看到的私人消息。"
+      },
+      "shanePhoto": {
+        "message": "肖恩发布了一张你不该看到的照片。"
+      },
+      "terriLink": {
+        "message": "特里与你分享了一个秘密链接。"
+      },
+      "tomLike": {
+        "message": "汤姆点赞了你隐藏的帖子。"
+      },
+      "samVideo": {
+        "message": "山姆在一个私人小组上传了一段视频。"
+      },
+      "wilianySuggestion": {
+        "message": "朋友建议：了解你秘密计划的Wiliany。"
+      }
+    },
+    "friends": {
+      "list_aria": "脸书朋友列表",
+      "item_aria": "选择朋友 {name}",
+      "detail_aria": "{name}的朋友详情",
+      "mutual": "个共同好友",
+      "message_button": "消息",
+      "contact_info": "联系信息",
+      "mobile": "手机",
+      "email": "电子邮件",
+      "sarah": {
+        "name": "莎拉·约翰逊",
+        "phone": "+1 555-0123",
+        "email": "sarah.johnson@example.com"
+      },
+      "michael": {
+        "name": "迈克尔·陈",
+        "phone": "+1 555-0124",
+        "email": "michael.chen@example.com"
+      },
+      "emma": {
+        "name": "艾玛·威尔逊",
+        "phone": "+1 555-0125",
+        "email": "emma.wilson@example.com"
+      },
+      "david": {
+        "name": "大卫·马丁内兹",
+        "phone": "+1 555-0126",
+        "email": "david.martinez@example.com"
+      },
+      "olivia": {
+        "name": "奥利维娅·布朗",
+        "phone": "+1 555-0127",
+        "email": "olivia.brown@example.com"
+      },
+      "james": {
+        "name": "詹姆斯·李",
+        "phone": "+1 555-0128",
+        "email": "james.lee@example.com"
+      },
+      "sophia": {
+        "name": "索菲娅·加西亚",
+        "phone": "+1 555-0129",
+        "email": "sophia.garcia@example.com"
+      },
+      "william": {
+        "name": "威廉·戴维斯",
+        "phone": "+1 555-0130",
+        "email": "william.davis@example.com"
+      }
+    }
   }
 }

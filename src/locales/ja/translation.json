@@ -1502,5 +1502,91 @@
         }
       }
     }
+  },
+  "dmfb": {
+    "header": {
+      "title": "Facebook"
+    },
+    "tabs": {
+      "notifications": "通知",
+      "friends": "友達",
+      "aria_label": "Facebookナビゲーションタブ",
+      "notifications_aria": "通知リストを表示",
+      "friends_aria": "友達リストを表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "notifications": {
+      "list_aria": "Facebook通知リスト",
+      "item_aria": "通知を表示：{message}",
+      "icon_alt": "Facebook通知アイコン",
+      "sallySecret": {
+        "message": "サリーがあなたに見せるべきでないプライベートメッセージを送りました。"
+      },
+      "shanePhoto": {
+        "message": "シェーンがあなたに見せるべきでない写真を投稿しました。"
+      },
+      "terriLink": {
+        "message": "テリーがあなたと秘密のリンクを共有しました。"
+      },
+      "tomLike": {
+        "message": "トムがあなたが隠した投稿にいいねしました。"
+      },
+      "samVideo": {
+        "message": "サムがプライベートグループにビデオをアップロードしました。"
+      },
+      "wilianySuggestion": {
+        "message": "友達の提案：あなたの秘密の計画を知っているウィリアニー。"
+      }
+    },
+    "friends": {
+      "list_aria": "Facebook友達リスト",
+      "item_aria": "友達を選択 {name}",
+      "detail_aria": "{name}の友達詳細",
+      "mutual": "人の共通の友達",
+      "message_button": "メッセージ",
+      "contact_info": "連絡先情報",
+      "mobile": "携帯",
+      "email": "メール",
+      "sarah": {
+        "name": "サラ・ジョンソン",
+        "phone": "+1 555-0123",
+        "email": "sarah.johnson@example.com"
+      },
+      "michael": {
+        "name": "マイケル・チェン",
+        "phone": "+1 555-0124",
+        "email": "michael.chen@example.com"
+      },
+      "emma": {
+        "name": "エマ・ウィルソン",
+        "phone": "+1 555-0125",
+        "email": "emma.wilson@example.com"
+      },
+      "david": {
+        "name": "デビッド・マーティネズ",
+        "phone": "+1 555-0126",
+        "email": "david.martinez@example.com"
+      },
+      "olivia": {
+        "name": "オリビア・ブラウン",
+        "phone": "+1 555-0127",
+        "email": "olivia.brown@example.com"
+      },
+      "james": {
+        "name": "ジェームズ・リー",
+        "phone": "+1 555-0128",
+        "email": "james.lee@example.com"
+      },
+      "sophia": {
+        "name": "ソフィア・ガルシア",
+        "phone": "+1 555-0129",
+        "email": "sophia.garcia@example.com"
+      },
+      "william": {
+        "name": "ウィリアム・デイビス",
+        "phone": "+1 555-0130",
+        "email": "william.davis@example.com"
+      }
+    }
   }
 }

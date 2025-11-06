@@ -1573,5 +1573,91 @@
         }
       }
     }
+  },
+  "dmfb": {
+    "header": {
+      "title": "فيسبوك"
+    },
+    "tabs": {
+      "notifications": "الإشعارات",
+      "friends": "الأصدقاء",
+      "aria_label": "علامات تبويب التنقل في فيسبوك",
+      "notifications_aria": "عرض قائمة الإشعارات",
+      "friends_aria": "عرض قائمة الأصدقاء"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "notifications": {
+      "list_aria": "قائمة إشعارات فيسبوك",
+      "item_aria": "عرض الإشعار: {message}",
+      "icon_alt": "أيقونة إشعار فيسبوك",
+      "sallySecret": {
+        "message": "أرسلت سالي رسالة خاصة لم تكن من المفترض أن تراها."
+      },
+      "shanePhoto": {
+        "message": "نشر شين صورة لم تكن من المفترض أن تراها."
+      },
+      "terriLink": {
+        "message": "شاركت تيري رابطًا سريًا معك."
+      },
+      "tomLike": {
+        "message": "أعجب توم بمنشور قمت بإخفائه عن الآخرين."
+      },
+      "samVideo": {
+        "message": "رفع سام فيديو في مجموعة خاصة."
+      },
+      "wilianySuggestion": {
+        "message": "اقتراح صديق: ويلياني، الذي يعرف خططك السرية."
+      }
+    },
+    "friends": {
+      "list_aria": "قائمة أصدقاء فيسبوك",
+      "item_aria": "اختيار الصديق {name}",
+      "detail_aria": "تفاصيل الصديق {name}",
+      "mutual": "أصدقاء مشتركين",
+      "message_button": "رسالة",
+      "contact_info": "معلومات الاتصال",
+      "mobile": "جوال",
+      "email": "بريد إلكتروني",
+      "sarah": {
+        "name": "سارة جونسون",
+        "phone": "+1 555-0123",
+        "email": "sarah.johnson@example.com"
+      },
+      "michael": {
+        "name": "مايكل تشن",
+        "phone": "+1 555-0124",
+        "email": "michael.chen@example.com"
+      },
+      "emma": {
+        "name": "إيما ويلسون",
+        "phone": "+1 555-0125",
+        "email": "emma.wilson@example.com"
+      },
+      "david": {
+        "name": "ديفيد مارتينيز",
+        "phone": "+1 555-0126",
+        "email": "david.martinez@example.com"
+      },
+      "olivia": {
+        "name": "أوليفيا براون",
+        "phone": "+1 555-0127",
+        "email": "olivia.brown@example.com"
+      },
+      "james": {
+        "name": "جيمس لي",
+        "phone": "+1 555-0128",
+        "email": "james.lee@example.com"
+      },
+      "sophia": {
+        "name": "صوفيا غارسيا",
+        "phone": "+1 555-0129",
+        "email": "sophia.garcia@example.com"
+      },
+      "william": {
+        "name": "ويليام ديفيس",
+        "phone": "+1 555-0130",
+        "email": "william.davis@example.com"
+      }
+    }
   }
 }

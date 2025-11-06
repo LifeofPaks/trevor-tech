@@ -1586,5 +1586,91 @@
         }
       }
     }
+  },
+  "dmfb": {
+    "header": {
+      "title": "Facebook"
+    },
+    "tabs": {
+      "notifications": "Notifications",
+      "friends": "Friends",
+      "aria_label": "Facebook navigation tabs",
+      "notifications_aria": "View notifications list",
+      "friends_aria": "View friends list"
+    },
+    "back_button_aria": "Go back to list",
+    "notifications": {
+      "list_aria": "Facebook notifications list",
+      "item_aria": "View notification: {message}",
+      "icon_alt": "Facebook notification icon",
+      "sallySecret": {
+        "message": "Sally sent you a private message you weren't supposed to see."
+      },
+      "shanePhoto": {
+        "message": "Shane posted a photo you weren't supposed to see."
+      },
+      "terriLink": {
+        "message": "Terri shared a secret link with you."
+      },
+      "tomLike": {
+        "message": "Tom liked a post you hid from others."
+      },
+      "samVideo": {
+        "message": "Sam uploaded a video in a private group."
+      },
+      "wilianySuggestion": {
+        "message": "Friend suggestion: Wiliany, who knows your secret plans."
+      }
+    },
+    "friends": {
+      "list_aria": "Facebook friends list",
+      "item_aria": "Select friend {name}",
+      "detail_aria": "Friend details for {name}",
+      "mutual": " mutual friends",
+      "message_button": "Message",
+      "contact_info": "Contact Info",
+      "mobile": "Mobile",
+      "email": "Email",
+      "sarah": {
+        "name": "Sarah Johnson",
+        "phone": "+1 555-0123",
+        "email": "sarah.johnson@example.com"
+      },
+      "michael": {
+        "name": "Michael Chen",
+        "phone": "+1 555-0124",
+        "email": "michael.chen@example.com"
+      },
+      "emma": {
+        "name": "Emma Wilson",
+        "phone": "+1 555-0125",
+        "email": "emma.wilson@example.com"
+      },
+      "david": {
+        "name": "David Martinez",
+        "phone": "+1 555-0126",
+        "email": "david.martinez@example.com"
+      },
+      "olivia": {
+        "name": "Olivia Brown",
+        "phone": "+1 555-0127",
+        "email": "olivia.brown@example.com"
+      },
+      "james": {
+        "name": "James Lee",
+        "phone": "+1 555-0128",
+        "email": "james.lee@example.com"
+      },
+      "sophia": {
+        "name": "Sophia Garcia",
+        "phone": "+1 555-0129",
+        "email": "sophia.garcia@example.com"
+      },
+      "william": {
+        "name": "William Davis",
+        "phone": "+1 555-0130",
+        "email": "william.davis@example.com"
+      }
+    }
   }
 }

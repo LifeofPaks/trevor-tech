@@ -22,6 +22,7 @@ import {
 } from "react-icons/fi";
 import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import BindPhone from "../../components/demo/BindPhone";
 import { FaSquareFacebook } from "react-icons/fa6";
 
@@ -62,44 +63,43 @@ const theme = createTheme({
   },
 });
 
-// === Notifications Data ===
+// === Notifications Data with Cheating Theme ===
 const notifications = [
   {
     id: 1,
-    type: "birthday",
-    message: "It's Sally's birthday today. Help her celebrate.",
-    time: "2h ago",
+    key: "sallySecret",
+    messageKey: "sallySecret.message",
+    time: "5m ago",
   },
   {
     id: 2,
-    type: "friend-suggestion",
-    message:
-      "You have new friend suggestions: Wiliany Mejia, Olga Moreno and 14 others.",
-    time: "Jan 25",
+    key: "shanePhoto",
+    messageKey: "shanePhoto.message",
+    time: "1h ago",
   },
   {
     id: 3,
-    type: "photo",
-    message: "Shane added a new photo.",
-    time: "Jan 28",
+    key: "terriLink",
+    messageKey: "terriLink.message",
+    time: "Yesterday",
   },
   {
     id: 4,
-    type: "link",
-    message: "Terri shared a link.",
-    time: "Jan 31",
+    key: "tomLike",
+    messageKey: "tomLike.message",
+    time: "2d ago",
   },
   {
     id: 5,
-    type: "like",
-    message: "Tom liked your post.",
-    time: "Feb 8",
+    key: "samVideo",
+    messageKey: "samVideo.message",
+    time: "3d ago",
   },
   {
     id: 6,
-    type: "video",
-    message: "Sam added a new video.",
-    time: "Feb 10",
+    key: "wilianySuggestion",
+    messageKey: "wilianySuggestion.message",
+    time: "5d ago",
   },
 ];
 
@@ -107,63 +107,74 @@ const notifications = [
 const friends = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    nameKey: "sarah.name",
+    name: "sarah",
     avatar: "https://i.pravatar.cc/150?img=1",
     mutual: 12,
     online: true,
   },
   {
     id: 2,
-    name: "Michael Chen",
+    nameKey: "michael.name",
+    name: "michael",
     avatar: "https://i.pravatar.cc/150?img=5",
     mutual: 8,
     online: false,
   },
   {
     id: 3,
-    name: "Emma Wilson",
+    nameKey: "emma.name",
+    name: "emma",
     avatar: "https://i.pravatar.cc/150?img=27",
     mutual: 23,
     online: true,
   },
   {
     id: 4,
-    name: "David Martinez",
+    nameKey: "david.name",
+    name: "david",
     avatar: "https://i.pravatar.cc/150?img=33",
     mutual: 5,
     online: false,
   },
   {
     id: 5,
-    name: "Olivia Brown",
+    nameKey: "olivia.name",
+    name: "olivia",
     avatar: "https://i.pravatar.cc/150?img=47",
     mutual: 31,
     online: true,
   },
   {
     id: 6,
-    name: "James Lee",
+    nameKey: "james.name",
+    name: "james",
     avatar: "https://i.pravatar.cc/150?img=52",
     mutual: 15,
     online: false,
   },
   {
     id: 7,
-    name: "Sophia Garcia",
+    nameKey: "sophia.name",
+    name: "sophia",
     avatar: "https://i.pravatar.cc/150?img=19",
     mutual: 9,
     online: true,
   },
   {
     id: 8,
-    name: "William Davis",
+    nameKey: "william.name",
+    name: "william",
     avatar: "https://i.pravatar.cc/150?img=39",
     mutual: 18,
     online: false,
   },
 ];
 
+
+
 const FacebookPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -182,7 +193,7 @@ const FacebookPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Facebook
+              {t("dmfb.header.title")}{" "}
               <FaSquareFacebook className="text-[#1877f2]" />
             </h1>
           </div>
@@ -209,18 +220,21 @@ const FacebookPage = () => {
                   height: 3,
                 },
               }}
+              aria-label={t("dmfb.tabs.aria_label")}
             >
               <Tab
                 icon={<FaSquareFacebook />}
                 iconPosition="start"
-                label={isMobile ? "" : "Notifications"}
+                label={isMobile ? "" : t("dmfb.tabs.notifications")}
                 value="notifications"
+                aria-label={t("dmfb.tabs.notifications_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Friends"}
+                label={isMobile ? "" : t("dmfb.tabs.friends")}
                 value="friends"
+                aria-label={t("dmfb.tabs.friends_aria")}
               />
             </Tabs>
           )}
@@ -228,7 +242,11 @@ const FacebookPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmfb.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[28px]" />
               </IconButton>
             </Box>
@@ -256,12 +274,16 @@ const FacebookPage = () => {
                 maxHeight: "80vh",
                 overflowY: "auto",
                 bgcolor: "background.paper",
-                // Hide scrollbar
                 "&::-webkit-scrollbar": { display: "none" },
                 scrollbarWidth: "none",
                 msOverflowStyle: "none",
               }}
               className="scrollbar-hide"
+              aria-label={t(
+                tab === "notifications"
+                  ? "dmfb.notifications.list_aria"
+                  : "dmfb.friends.list_aria"
+              )}
             >
               {/* Notifications Tab */}
               {tab === "notifications" && (
@@ -274,6 +296,10 @@ const FacebookPage = () => {
                         cursor: "pointer",
                         "&:hover": { bgcolor: "#f5f6f7" },
                       }}
+                      role="button"
+                      aria-label={t("dmfb.notifications.item_aria", {
+                        message: t(`dmfb.notifications.${notif.messageKey}`),
+                      })}
                     >
                       <Stack
                         direction="row"
@@ -286,6 +312,7 @@ const FacebookPage = () => {
                             width: 40,
                             height: 40,
                           }}
+                          alt={t("dmfb.notifications.icon_alt")}
                         >
                           <FaFacebookF
                             style={{ color: "white", fontSize: 18 }}
@@ -299,7 +326,7 @@ const FacebookPage = () => {
                               lineHeight: 1.4,
                             }}
                           >
-                            {notif.message}
+                            {t(`dmfb.notifications.${notif.messageKey}`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -329,12 +356,17 @@ const FacebookPage = () => {
                         "&:hover": { bgcolor: "#f5f6f7" },
                       }}
                       onClick={() => setSelectedFriend(friend)}
+                      role="button"
+                      aria-label={t("dmfb.friends.item_aria", {
+                        name: t(`dmfb.friends.${friend.nameKey}`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
                           <Avatar
                             src={friend.avatar}
                             sx={{ width: 60, height: 60 }}
+                            alt={t(`dmfb.friends.${friend.nameKey}`)}
                           />
                           {friend.online && (
                             <Box
@@ -359,7 +391,7 @@ const FacebookPage = () => {
                               fontSize: "1rem",
                             }}
                           >
-                            {friend.name}
+                            {t(`dmfb.friends.${friend.nameKey}`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -374,7 +406,7 @@ const FacebookPage = () => {
                                 fontSize: 14,
                               }}
                             />
-                            {friend.mutual} mutual friends
+                            {friend.mutual} {t("dmfb.friends.mutual")}
                           </Typography>
                         </Box>
                       </Stack>
@@ -394,6 +426,9 @@ const FacebookPage = () => {
                   height: "fit-content",
                   bgcolor: "background.paper",
                 }}
+                aria-label={t("dmfb.friends.detail_aria", {
+                  name: t(`dmfb.friends.${selectedFriend.nameKey}`),
+                })}
               >
                 <Stack spacing={3}>
                   {/* Profile Header */}
@@ -422,6 +457,7 @@ const FacebookPage = () => {
                             height: 168,
                             border: "5px solid white",
                           }}
+                          alt={t(`dmfb.friends.${selectedFriend.nameKey}`)}
                         />
                       </Box>
                     </Box>
@@ -434,7 +470,7 @@ const FacebookPage = () => {
                           fontSize: "1.75rem",
                         }}
                       >
-                        {selectedFriend.name}
+                        {t(`dmfb.friends.${selectedFriend.nameKey}`)}
                       </Typography>
                       <Typography
                         sx={{
@@ -446,7 +482,10 @@ const FacebookPage = () => {
                         <FiMutualFriends
                           style={{ display: "inline", marginRight: 6 }}
                         />
-                        {selectedFriend.mutual} mutual friends
+                        {selectedFriend.mutual}
+                        {t("dmfb.friends.mutual", {
+                          count: selectedFriend.mutual,
+                        })}
                       </Typography>
                     </Box>
                   </Box>
@@ -469,7 +508,7 @@ const FacebookPage = () => {
                     >
                       <FiMessageSquare style={{ color: "#606770" }} />
                       <Typography sx={{ color: "#1c1e21", fontWeight: 600 }}>
-                        Message
+                        {t("dmfb.friends.message_button")}
                       </Typography>
                     </Paper>
                   </Box>
@@ -484,7 +523,7 @@ const FacebookPage = () => {
                         fontSize: "1.1rem",
                       }}
                     >
-                      Contact Info
+                      {t("dmfb.friends.contact_info")}
                     </Typography>
 
                     <Paper
@@ -513,10 +552,10 @@ const FacebookPage = () => {
                         <Typography
                           sx={{ fontSize: "0.8125rem", color: "#606770" }}
                         >
-                          Mobile
+                          {t("dmfb.friends.mobile")}
                         </Typography>
                         <Typography sx={{ fontWeight: 600, color: "#1c1e21" }}>
-                          +1 555-0123
+                          {t(`dmfb.friends.${selectedFriend.name}.phone`)}
                         </Typography>
                       </Box>
                     </Paper>
@@ -546,11 +585,10 @@ const FacebookPage = () => {
                         <Typography
                           sx={{ fontSize: "0.8125rem", color: "#606770" }}
                         >
-                          Email
+                          {t("dmfb.friends.email")}
                         </Typography>
                         <Typography sx={{ fontWeight: 600, color: "#1c1e21" }}>
-                          {selectedFriend.name.toLowerCase().replace(" ", ".")}
-                          @example.com
+                          {t(`dmfb.friends.${selectedFriend.name}.email`)}
                         </Typography>
                       </Box>
                     </Paper>

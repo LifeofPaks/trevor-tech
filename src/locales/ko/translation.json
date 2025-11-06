@@ -1577,5 +1577,91 @@
         }
       }
     }
+  },
+  "dmfb": {
+    "header": {
+      "title": "페이스북"
+    },
+    "tabs": {
+      "notifications": "알림",
+      "friends": "친구",
+      "aria_label": "페이스북 탐색 탭",
+      "notifications_aria": "알림 목록 보기",
+      "friends_aria": "친구 목록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "notifications": {
+      "list_aria": "페이스북 알림 목록",
+      "item_aria": "알림 보기: {message}",
+      "icon_alt": "페이스북 알림 아이콘",
+      "sallySecret": {
+        "message": "Sally가 당신이 보지 말아야 할 비밀 메시지를 보냈습니다."
+      },
+      "shanePhoto": {
+        "message": "Shane이 당신이 보지 말아야 할 사진을 게시했습니다."
+      },
+      "terriLink": {
+        "message": "Terri가 당신과 비밀 링크를 공유했습니다."
+      },
+      "tomLike": {
+        "message": "Tom이 당신이 숨긴 게시물을 좋아했습니다."
+      },
+      "samVideo": {
+        "message": "Sam이 비공개 그룹에 동영상을 업로드했습니다."
+      },
+      "wilianySuggestion": {
+        "message": "친구 제안: 당신의 비밀 계획을 아는 Wiliany."
+      }
+    },
+    "friends": {
+      "list_aria": "페이스북 친구 목록",
+      "item_aria": "친구 선택 {name}",
+      "detail_aria": "{name}의 친구 세부 정보",
+      "mutual": "명의 공통 친구",
+      "message_button": "메시지",
+      "contact_info": "연락처 정보",
+      "mobile": "모바일",
+      "email": "이메일",
+      "sarah": {
+        "name": "Sarah Johnson",
+        "phone": "+1 555-0123",
+        "email": "sarah.johnson@example.com"
+      },
+      "michael": {
+        "name": "Michael Chen",
+        "phone": "+1 555-0124",
+        "email": "michael.chen@example.com"
+      },
+      "emma": {
+        "name": "Emma Wilson",
+        "phone": "+1 555-0125",
+        "email": "emma.wilson@example.com"
+      },
+      "david": {
+        "name": "David Martinez",
+        "phone": "+1 555-0126",
+        "email": "david.martinez@example.com"
+      },
+      "olivia": {
+        "name": "Olivia Brown",
+        "phone": "+1 555-0127",
+        "email": "olivia.brown@example.com"
+      },
+      "james": {
+        "name": "James Lee",
+        "phone": "+1 555-0128",
+        "email": "james.lee@example.com"
+      },
+      "sophia": {
+        "name": "Sophia Garcia",
+        "phone": "+1 555-0129",
+        "email": "sophia.garcia@example.com"
+      },
+      "william": {
+        "name": "William Davis",
+        "phone": "+1 555-0130",
+        "email": "william.davis@example.com"
+      }
+    }
   }
 }

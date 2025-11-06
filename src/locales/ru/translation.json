@@ -1578,5 +1578,91 @@
         }
       }
     }
+  },
+  "dmfb": {
+    "header": {
+      "title": "Facebook"
+    },
+    "tabs": {
+      "notifications": "Уведомления",
+      "friends": "Друзья",
+      "aria_label": "Вкладки навигации Facebook",
+      "notifications_aria": "Просмотреть список уведомлений",
+      "friends_aria": "Просмотреть список друзей"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "notifications": {
+      "list_aria": "Список уведомлений Facebook",
+      "item_aria": "Просмотреть уведомление: {message}",
+      "icon_alt": "Иконка уведомления Facebook",
+      "sallySecret": {
+        "message": "Салли отправила вам личное сообщение, которое вы не должны были видеть."
+      },
+      "shanePhoto": {
+        "message": "Шейн опубликовал фото, которое вы не должны были видеть."
+      },
+      "terriLink": {
+        "message": "Терри поделился с вами секретной ссылкой."
+      },
+      "tomLike": {
+        "message": "Том лайкнул ваш скрытый пост."
+      },
+      "samVideo": {
+        "message": "Сэм загрузил видео в закрытую группу."
+      },
+      "wilianySuggestion": {
+        "message": "Предложение друга: Уилиани, который знает ваши секретные планы."
+      }
+    },
+    "friends": {
+      "list_aria": "Список друзей Facebook",
+      "item_aria": "Выбрать друга {name}",
+      "detail_aria": "Детали друга {name}",
+      "mutual": "общих друзей",
+      "message_button": "Сообщение",
+      "contact_info": "Контактная информация",
+      "mobile": "Мобильный",
+      "email": "Электронная почта",
+      "sarah": {
+        "name": "Сара Джонсон",
+        "phone": "+1 555-0123",
+        "email": "sarah.johnson@example.com"
+      },
+      "michael": {
+        "name": "Майкл Чен",
+        "phone": "+1 555-0124",
+        "email": "michael.chen@example.com"
+      },
+      "emma": {
+        "name": "Эмма Уилсон",
+        "phone": "+1 555-0125",
+        "email": "emma.wilson@example.com"
+      },
+      "david": {
+        "name": "Дэвид Мартинез",
+        "phone": "+1 555-0126",
+        "email": "david.martinez@example.com"
+      },
+      "olivia": {
+        "name": "Оливия Браун",
+        "phone": "+1 555-0127",
+        "email": "olivia.brown@example.com"
+      },
+      "james": {
+        "name": "Джеймс Ли",
+        "phone": "+1 555-0128",
+        "email": "james.lee@example.com"
+      },
+      "sophia": {
+        "name": "София Гарсия",
+        "phone": "+1 555-0129",
+        "email": "sophia.garcia@example.com"
+      },
+      "william": {
+        "name": "Уильям Дэвис",
+        "phone": "+1 555-0130",
+        "email": "william.davis@example.com"
+      }
+    }
   }
 }
