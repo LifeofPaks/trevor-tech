@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -72,57 +73,97 @@ const theme = createTheme({
 const chats = [
   {
     id: 1,
-    name: "charli.damelio",
+    nameKey: "dmtiktok.chats.charli_damelio.name",
     avatar: "https://i.pravatar.cc/150?img=70",
-    lastMessage: "new dance dropping",
+    lastMessageKey: "dmtiktok.chats.charli_damelio.lastMessage",
     time: "1m",
     messages: [
-      { text: "you in for the collab?", time: "14:10", incoming: true },
-      { text: "new dance dropping", time: "14:11", incoming: false },
+      {
+        textKey: "dmtiktok.chats.charli_damelio.messages.msg1.text",
+        time: "14:10",
+        incoming: true,
+      },
+      {
+        textKey: "dmtiktok.chats.charli_damelio.messages.msg2.text",
+        time: "14:11",
+        incoming: false,
+      },
     ],
   },
   {
     id: 2,
-    name: "khaby.lame",
+    nameKey: "dmtiktok.chats.khaby_lame.name",
     avatar: "https://i.pravatar.cc/150?img=69",
-    lastMessage: "life hack failed",
+    lastMessageKey: "dmtiktok.chats.khaby_lame.lastMessage",
     time: "10m",
     messages: [
-      { text: "tried your life hack", time: "13:45", incoming: true },
-      { text: "life hack failed", time: "13:46", incoming: false },
+      {
+        textKey: "dmtiktok.chats.khaby_lame.messages.msg1.text",
+        time: "13:45",
+        incoming: true,
+      },
+      {
+        textKey: "dmtiktok.chats.khaby_lame.messages.msg2.text",
+        time: "13:46",
+        incoming: false,
+      },
     ],
   },
   {
     id: 3,
-    name: "addisonrae",
+    nameKey: "dmtiktok.chats.addisonrae.name",
     avatar: "https://i.pravatar.cc/150?img=68",
-    lastMessage: "meet at 8",
+    lastMessageKey: "dmtiktok.chats.addisonrae.lastMessage",
     time: "1h",
     messages: [
-      { text: "studio sesh tonight?", time: "12:30", incoming: true },
-      { text: "meet at 8", time: "12:31", incoming: false },
+      {
+        textKey: "dmtiktok.chats.addisonrae.messages.msg1.text",
+        time: "12:30",
+        incoming: true,
+      },
+      {
+        textKey: "dmtiktok.chats.addisonrae.messages.msg2.text",
+        time: "12:31",
+        incoming: false,
+      },
     ],
   },
   {
     id: 4,
-    name: "zachking",
+    nameKey: "dmtiktok.chats.zachking.name",
     avatar: "https://i.pravatar.cc/150?img=67",
-    lastMessage: "magic trick reveal",
+    lastMessageKey: "dmtiktok.chats.zachking.lastMessage",
     time: "3h",
     messages: [
-      { text: "how'd you do that?", time: "10:00", incoming: true },
-      { text: "magic trick reveal", time: "10:01", incoming: false },
+      {
+        textKey: "dmtiktok.chats.zachking.messages.msg1.text",
+        time: "10:00",
+        incoming: true,
+      },
+      {
+        textKey: "dmtiktok.chats.zachking.messages.msg2.text",
+        time: "10:01",
+        incoming: false,
+      },
     ],
   },
   {
     id: 5,
-    name: "bellapoarch",
+    nameKey: "dmtiktok.chats.bellapoarch.name",
     avatar: "https://i.pravatar.cc/150?img=66",
-    lastMessage: "M to the B",
+    lastMessageKey: "dmtiktok.chats.bellapoarch.lastMessage",
     time: "6h",
     messages: [
-      { text: "new sound?", time: "08:20", incoming: true },
-      { text: "M to the B", time: "08:21", incoming: false },
+      {
+        textKey: "dmtiktok.chats.bellapoarch.messages.msg1.text",
+        time: "08:20",
+        incoming: true,
+      },
+      {
+        textKey: "dmtiktok.chats.bellapoarch.messages.msg2.text",
+        time: "08:21",
+        incoming: false,
+      },
     ],
   },
 ];
@@ -131,105 +172,106 @@ const chats = [
 const friends = [
   {
     id: 1,
-    name: "dixiedamelio",
+    nameKey: "dmtiktok.friends.dixiedamelio.name",
     avatar: "https://i.pravatar.cc/150?img=65",
     phone: "+1 555-2001",
-    email: "dixie@tiktok.com",
+    emailKey: "dmtiktok.friends.dixiedamelio.email",
   },
   {
     id: 2,
-    name: "noahbeck",
+    nameKey: "dmtiktok.friends.noahbeck.name",
     avatar: "https://i.pravatar.cc/150?img=64",
     phone: "+1 555-2002",
-    email: "noah@tiktok.com",
+    emailKey: "dmtiktok.friends.noahbeck.email",
   },
   {
     id: 3,
-    name: "jamescharles",
+    nameKey: "dmtiktok.friends.jamescharles.name",
     avatar: "https://i.pravatar.cc/150?img=63",
     phone: "+1 555-2003",
-    email: "james@tiktok.com",
+    emailKey: "dmtiktok.friends.jamescharles.email",
   },
   {
     id: 4,
-    name: "larray",
+    nameKey: "dmtiktok.friends.larray.name",
     avatar: "https://i.pravatar.cc/150?img=62",
     phone: "+1 555-2004",
-    email: "larray@tiktok.com",
+    emailKey: "dmtiktok.friends.larray.email",
   },
   {
     id: 5,
-    name: "madi",
+    nameKey: "dmtiktok.friends.madi.name",
     avatar: "https://i.pravatar.cc/150?img=61",
     phone: "+1 555-2005",
-    email: "madi@tiktok.com",
+    emailKey: "dmtiktok.friends.madi.email",
   },
   {
     id: 6,
-    name: "quenblackwell",
+    nameKey: "dmtiktok.friends.quenblackwell.name",
     avatar: "https://i.pravatar.cc/150?img=60",
     phone: "+1 555-2006",
-    email: "quen@tiktok.com",
+    emailKey: "dmtiktok.friends.quenblackwell.email",
   },
   {
     id: 7,
-    name: "brycehall",
+    nameKey: "dmtiktok.friends.brycehall.name",
     avatar: "https://i.pravatar.cc/150?img=59",
     phone: "+1 555-2007",
-    email: "bryce@tiktok.com",
+    emailKey: "dmtiktok.friends.brycehall.email",
   },
   {
     id: 8,
-    name: "lorengray",
+    nameKey: "dmtiktok.friends.lorengray.name",
     avatar: "https://i.pravatar.cc/150?img=58",
     phone: "+1 555-2008",
-    email: "loren@tiktok.com",
+    emailKey: "dmtiktok.friends.lorengray.email",
   },
 ];
 
 const callLogs = [
   {
     id: 1,
-    name: "charli.damelio",
+    nameKey: "dmtiktok.callLogs.charli_damelio.name",
     avatar: "https://i.pravatar.cc/150?img=70",
-    type: "outgoing",
+    typeKey: "dmtiktok.callTypes.outgoing",
     time: "2025-10-28 15:00",
     duration: "12:45",
   },
   {
     id: 2,
-    name: "khaby.lame",
+    nameKey: "dmtiktok.callLogs.khaby_lame.name",
     avatar: "https://i.pravatar.cc/150?img=69",
-    type: "incoming",
+    typeKey: "dmtiktok.callTypes.incoming",
     time: "2025-10-28 11:30",
     duration: "05:20",
   },
   {
     id: 3,
-    name: "addisonrae",
+    nameKey: "dmtiktok.callLogs.addisonrae.name",
     avatar: "https://i.pravatar.cc/150?img=68",
-    type: "missed",
+    typeKey: "dmtiktok.callTypes.missed",
     time: "2025-10-28 09:15",
   },
   {
     id: 4,
-    name: "zachking",
+    nameKey: "dmtiktok.callLogs.zachking.name",
     avatar: "https://i.pravatar.cc/150?img=67",
-    type: "outgoing",
+    typeKey: "dmtiktok.callTypes.outgoing",
     time: "2025-10-27 21:00",
     duration: "18:30",
   },
   {
     id: 5,
-    name: "bellapoarch",
+    nameKey: "dmtiktok.callLogs.bellapoarch.name",
     avatar: "https://i.pravatar.cc/150?img=66",
-    type: "incoming",
+    typeKey: "dmtiktok.callTypes.incoming",
     time: "2025-10-27 17:45",
     duration: "09:10",
   },
 ];
 
 const TiktokPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -244,12 +286,12 @@ const TiktokPage = () => {
     setSelectedCall(null);
   };
 
-  // Fixed: No sx on react-icons
-  const getCallIcon = (type) => {
+  const getCallIcon = (typeKey) => {
+    const type = t(typeKey).toLowerCase();
     const iconStyle = { fontSize: 16 };
-    if (type === "outgoing")
+    if (type === t("dmtiktok.callTypes.outgoing").toLowerCase())
       return <FiPhoneCall style={{ ...iconStyle, color: "#363939" }} />;
-    if (type === "incoming")
+    if (type === t("dmtiktok.callTypes.incoming").toLowerCase())
       return <FiPhoneIncoming style={{ ...iconStyle, color: "#363939" }} />;
     return <FiPhoneMissed style={{ ...iconStyle, color: "#363939" }} />;
   };
@@ -257,7 +299,7 @@ const TiktokPage = () => {
   const groupFriendsByLetter = () => {
     const grouped = {};
     friends.forEach((friend) => {
-      const letter = friend.name[0].toUpperCase();
+      const letter = t(friend.nameKey)[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(friend);
     });
@@ -272,7 +314,7 @@ const TiktokPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              TikTok
+              {t("dmtiktok.header.title")}{" "}
               <SiTiktok className="text-[#ff0050]" />
             </h1>
           </div>
@@ -292,6 +334,7 @@ const TiktokPage = () => {
             <Tabs
               value={tab}
               onChange={(e, v) => setTab(v)}
+              aria-label={t("dmtiktok.tabs.aria_label")}
               sx={{
                 mb: 3,
                 "& .MuiTabs-indicator": {
@@ -303,20 +346,23 @@ const TiktokPage = () => {
               <Tab
                 icon={<SiTiktok />}
                 iconPosition="start"
-                label={isMobile ? "" : "Messages"}
+                label={isMobile ? "" : t("dmtiktok.tabs.chat")}
                 value="chat"
+                aria-label={t("dmtiktok.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Friends"}
+                label={isMobile ? "" : t("dmtiktok.tabs.friends")}
                 value="friends"
+                aria-label={t("dmtiktok.tabs.friends_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Call Log"}
+                label={isMobile ? "" : t("dmtiktok.tabs.call_log")}
                 value="call-log"
+                aria-label={t("dmtiktok.tabs.call_log_aria")}
               />
             </Tabs>
           )}
@@ -324,7 +370,11 @@ const TiktokPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmtiktok.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -360,7 +410,7 @@ const TiktokPage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmtiktok.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -370,6 +420,9 @@ const TiktokPage = () => {
                         "&:hover": { bgcolor: "#f7f7f7" },
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmtiktok.chat.item_aria", {
+                        name: t(chat.nameKey),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -380,7 +433,7 @@ const TiktokPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {chat.name}
+                            {t(chat.nameKey)}
                           </Typography>
                           <Typography
                             sx={{
@@ -391,7 +444,7 @@ const TiktokPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(chat.lastMessageKey)}
                           </Typography>
                         </Box>
                         <Typography
@@ -413,6 +466,7 @@ const TiktokPage = () => {
                     maxHeight: "70vh",
                     overflowY: "auto",
                   }}
+                  aria-label={t("dmtiktok.friends.list_aria")}
                 >
                   {Object.keys(groupFriendsByLetter())
                     .sort()
@@ -438,6 +492,9 @@ const TiktokPage = () => {
                               "&:hover": { bgcolor: "#f7f7f7" },
                             }}
                             onClick={() => setSelectedFriend(friend)}
+                            aria-label={t("dmtiktok.friends.item_aria", {
+                              name: t(friend.nameKey),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -451,7 +508,7 @@ const TiktokPage = () => {
                               <Typography
                                 sx={{ fontWeight: 500, color: "text.primary" }}
                               >
-                                {friend.name}
+                                {t(friend.nameKey)}
                               </Typography>
                             </Stack>
                           </Box>
@@ -463,10 +520,13 @@ const TiktokPage = () => {
 
               {/* Call Log */}
               {tab === "call-log" && (
-                <Stack>
+                <Stack aria-label={t("dmtiktok.callLogs.list_aria")}>
                   {callLogs.map((call) => {
                     const color =
-                      call.type === "missed" ? "#ff0050" : "#06cd20";
+                      t(call.typeKey).toLowerCase() ===
+                      t("dmtiktok.callTypes.missed").toLowerCase()
+                        ? "#ff0050"
+                        : "#06cd20";
                     return (
                       <Box
                         key={call.id}
@@ -476,6 +536,9 @@ const TiktokPage = () => {
                           "&:hover": { bgcolor: "#f7f7f7" },
                         }}
                         onClick={() => setSelectedCall(call)}
+                        aria-label={t("dmtiktok.callLogs.item_aria", {
+                          name: t(call.nameKey),
+                        })}
                       >
                         <Stack direction="row" spacing={2} alignItems="center">
                           <Box sx={{ position: "relative" }}>
@@ -497,18 +560,17 @@ const TiktokPage = () => {
                                 boxShadow: "0 0 0 2px white",
                               }}
                             >
-                              {getCallIcon(call.type)}
+                              {getCallIcon(call.typeKey)}
                             </Box>
                           </Box>
                           <Box sx={{ flex: 1 }}>
                             <Typography
                               sx={{ fontWeight: 600, color: "text.primary" }}
                             >
-                              {call.name}
+                              {t(call.nameKey)}
                             </Typography>
                             <Typography sx={{ fontSize: "0.875rem", color }}>
-                              {call.type.charAt(0).toUpperCase() +
-                                call.type.slice(1)}
+                              {t(call.typeKey)}
                             </Typography>
                           </Box>
                           <Typography
@@ -543,7 +605,12 @@ const TiktokPage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmtiktok.chat.detail_aria", {
+                      name: t(selectedChat.nameKey),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -553,7 +620,7 @@ const TiktokPage = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "text.primary" }}
                       >
-                        {selectedChat.name}
+                        {t(selectedChat.nameKey)}
                       </Typography>
                     </Stack>
                     <Stack spacing={2} sx={{ mt: 2 }}>
@@ -584,7 +651,7 @@ const TiktokPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.9375rem" }}>
-                              {msg.text}
+                              {t(msg.textKey)}
                             </Typography>
                             <Typography
                               sx={{
@@ -607,7 +674,13 @@ const TiktokPage = () => {
 
                 {/* Friend Detail */}
                 {selectedFriend && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmtiktok.friends.detail_aria", {
+                      name: t(selectedFriend.nameKey),
+                    })}
+                  >
                     <Avatar
                       src={selectedFriend.avatar}
                       sx={{ width: 140, height: 140 }}
@@ -616,7 +689,7 @@ const TiktokPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "text.primary" }}
                     >
-                      {selectedFriend.name}
+                      {t(selectedFriend.nameKey)}
                     </Typography>
 
                     {selectedFriend.phone && (
@@ -647,7 +720,7 @@ const TiktokPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#606060" }}
                           >
-                            Phone
+                            {t("dmtiktok.friends.phone")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
@@ -658,7 +731,7 @@ const TiktokPage = () => {
                       </Paper>
                     )}
 
-                    {selectedFriend.email && (
+                    {selectedFriend.emailKey && (
                       <Paper
                         elevation={0}
                         sx={{
@@ -686,12 +759,12 @@ const TiktokPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#606060" }}
                           >
-                            Email
+                            {t("dmtiktok.friends.email")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {selectedFriend.email}
+                            {t(selectedFriend.emailKey)}
                           </Typography>
                         </Box>
                       </Paper>
@@ -701,7 +774,13 @@ const TiktokPage = () => {
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmtiktok.callLogs.detail_aria", {
+                      name: t(selectedCall.nameKey),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 140, height: 140 }}
@@ -710,7 +789,7 @@ const TiktokPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "text.primary" }}
                     >
-                      {selectedCall.name}
+                      {t(selectedCall.nameKey)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -739,7 +818,7 @@ const TiktokPage = () => {
                             mt: 1,
                           }}
                         >
-                          {selectedCall.duration} • {selectedCall.type}
+                          {selectedCall.duration} • {t(selectedCall.typeKey)}
                         </Typography>
                       )}
                     </Paper>

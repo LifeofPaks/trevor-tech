@@ -2073,5 +2073,109 @@
         }
       }
     }
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok"
+    },
+    "tabs": {
+      "chat": "Nachrichten",
+      "friends": "Freunde",
+      "call_log": "Anrufprotokoll",
+      "aria_label": "TikTok-Navigationsregister",
+      "chat_aria": "Nachrichtenliste anzeigen",
+      "friends_aria": "Freundesliste anzeigen",
+      "call_log_aria": "Anrufprotokoll anzeigen"
+    },
+    "back_button_aria": "Zurück zur Liste",
+    "chat": {
+      "list_aria": "TikTok-Nachrichtenliste",
+      "item_aria": "Chat mit {name} auswählen",
+      "detail_aria": "Chatdetails für {name}"
+    },
+    "friends": {
+      "list_aria": "TikTok-Freundesliste",
+      "item_aria": "Freund {name} auswählen",
+      "detail_aria": "Freundesdetails für {name}",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
+      "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
+      "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
+      "larray": { "name": "larray", "email": "larray@tiktok.com" },
+      "madi": { "name": "madi", "email": "madi@tiktok.com" },
+      "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
+      "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
+      "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+    },
+    "callLogs": {
+      "list_aria": "TikTok-Anrufprotokoll",
+      "item_aria": "Anruf mit {name} auswählen",
+      "detail_aria": "Anrufdetails für {name}",
+      "charli_damelio": { "name": "charli.damelio" },
+      "khaby_lame": { "name": "khaby.lame" },
+      "addisonrae": { "name": "addisonrae" },
+      "zachking": { "name": "zachking" },
+      "bellapoarch": { "name": "bellapoarch" }
+    },
+    "callTypes": {
+      "outgoing": "Ausgehend",
+      "incoming": "Eingehend",
+      "missed": "Verpasst"
+    },
+    "chats": {
+      "charli_damelio": {
+        "name": "charli.damelio",
+        "lastMessage": "Schleichst du heute Abend raus?",
+        "messages": {
+          "msg1": { "text": "Kannst du das geheim halten?", "incoming": true },
+          "msg2": {
+            "text": "Schleichst du heute Abend raus?",
+            "incoming": false
+          }
+        }
+      },
+      "khaby_lame": {
+        "name": "khaby.lame",
+        "lastMessage": "Sag es niemandem.",
+        "messages": {
+          "msg1": {
+            "text": "Sie darf nichts von uns wissen",
+            "incoming": true
+          },
+          "msg2": { "text": "Sag es niemandem.", "incoming": false }
+        }
+      },
+      "addisonrae": {
+        "name": "addisonrae",
+        "lastMessage": "Treff mich nach Einbruch der Dunkelheit",
+        "messages": {
+          "msg1": { "text": "Bist du heute Abend frei?", "incoming": true },
+          "msg2": {
+            "text": "Treff mich nach Einbruch der Dunkelheit",
+            "incoming": false
+          }
+        }
+      },
+      "zachking": {
+        "name": "zachking",
+        "lastMessage": "Das bleibt unter uns",
+        "messages": {
+          "msg1": { "text": "Das war knapp!", "incoming": true },
+          "msg2": { "text": "Das bleibt unter uns", "incoming": false }
+        }
+      },
+      "bellapoarch": {
+        "name": "bellapoarch",
+        "lastMessage": "Hab dich letzte Nacht vermisst",
+        "messages": {
+          "msg1": { "text": "Wo warst du?", "incoming": true },
+          "msg2": {
+            "text": "Hab dich letzte Nacht vermisst",
+            "incoming": false
+          }
+        }
+      }
+    }
   }
 }

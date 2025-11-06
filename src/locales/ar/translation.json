@@ -1990,5 +1990,97 @@
         }
       }
     }
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok"
+    },
+    "tabs": {
+      "chat": "الرسائل",
+      "friends": "الأصدقاء",
+      "call_log": "سجل المكالمات",
+      "aria_label": "علامات تبويب التنقل في TikTok",
+      "chat_aria": "عرض قائمة الرسائل",
+      "friends_aria": "عرض قائمة الأصدقاء",
+      "call_log_aria": "عرض سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة رسائل TikTok",
+      "item_aria": "اختيار الدردشة مع {name}",
+      "detail_aria": "تفاصيل الدردشة لـ {name}"
+    },
+    "friends": {
+      "list_aria": "قائمة أصدقاء TikTok",
+      "item_aria": "اختيار صديق {name}",
+      "detail_aria": "تفاصيل الصديق لـ {name}",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
+      "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
+      "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
+      "larray": { "name": "larray", "email": "larray@tiktok.com" },
+      "madi": { "name": "madi", "email": "madi@tiktok.com" },
+      "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
+      "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
+      "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+    },
+    "callLogs": {
+      "list_aria": "سجل مكالمات TikTok",
+      "item_aria": "اختيار مكالمة مع {name}",
+      "detail_aria": "تفاصيل المكالمة لـ {name}",
+      "charli_damelio": { "name": "charli.damelio" },
+      "khaby_lame": { "name": "khaby.lame" },
+      "addisonrae": { "name": "addisonrae" },
+      "zachking": { "name": "zachking" },
+      "bellapoarch": { "name": "bellapoarch" }
+    },
+    "callTypes": {
+      "outgoing": "صادرة",
+      "incoming": "واردة",
+      "missed": "فائتة"
+    },
+    "chats": {
+      "charli_damelio": {
+        "name": "charli.damelio",
+        "lastMessage": "تتسلل الليلة؟",
+        "messages": {
+          "msg1": { "text": "هل يمكنك الحفاظ على هذا السر؟", "incoming": true },
+          "msg2": { "text": "تتسلل الليلة؟", "incoming": false }
+        }
+      },
+      "khaby_lame": {
+        "name": "khaby.lame",
+        "lastMessage": "لا تخبر أحدًا.",
+        "messages": {
+          "msg1": { "text": "لا يمكنها معرفة أمرنا", "incoming": true },
+          "msg2": { "text": "لا تخبر أحدًا.", "incoming": false }
+        }
+      },
+      "addisonrae": {
+        "name": "addisonrae",
+        "lastMessage": "التقي بي بعد الغروب",
+        "messages": {
+          "msg1": { "text": "هل أنت متفرغ الليلة؟", "incoming": true },
+          "msg2": { "text": "التقي بي بعد الغروب", "incoming": false }
+        }
+      },
+      "zachking": {
+        "name": "zachking",
+        "lastMessage": "هذا يبقى بيننا",
+        "messages": {
+          "msg1": { "text": "كان ذلك قريبًا جدًا!", "incoming": true },
+          "msg2": { "text": "هذا يبقى بيننا", "incoming": false }
+        }
+      },
+      "bellapoarch": {
+        "name": "bellapoarch",
+        "lastMessage": "افتقدتك الليلة الماضية",
+        "messages": {
+          "msg1": { "text": "أين كنت؟", "incoming": true },
+          "msg2": { "text": "افتقدتك الليلة الماضية", "incoming": false }
+        }
+      }
+    }
   }
 }

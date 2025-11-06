@@ -2003,5 +2003,97 @@
         }
       }
     }
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok"
+    },
+    "tabs": {
+      "chat": "Messages",
+      "friends": "Friends",
+      "call_log": "Call Log",
+      "aria_label": "TikTok navigation tabs",
+      "chat_aria": "View messages list",
+      "friends_aria": "View friends list",
+      "call_log_aria": "View call log"
+    },
+    "back_button_aria": "Go back to list",
+    "chat": {
+      "list_aria": "TikTok messages list",
+      "item_aria": "Select chat with {name}",
+      "detail_aria": "Chat details for {name}"
+    },
+    "friends": {
+      "list_aria": "TikTok friends list",
+      "item_aria": "Select friend {name}",
+      "detail_aria": "Friend details for {name}",
+      "phone": "Phone",
+      "email": "Email",
+      "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
+      "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
+      "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
+      "larray": { "name": "larray", "email": "larray@tiktok.com" },
+      "madi": { "name": "madi", "email": "madi@tiktok.com" },
+      "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
+      "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
+      "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+    },
+    "callLogs": {
+      "list_aria": "TikTok call log",
+      "item_aria": "Select call with {name}",
+      "detail_aria": "Call details for {name}",
+      "charli_damelio": { "name": "charli.damelio" },
+      "khaby_lame": { "name": "khaby.lame" },
+      "addisonrae": { "name": "addisonrae" },
+      "zachking": { "name": "zachking" },
+      "bellapoarch": { "name": "bellapoarch" }
+    },
+    "callTypes": {
+      "outgoing": "Outgoing",
+      "incoming": "Incoming",
+      "missed": "Missed"
+    },
+    "chats": {
+      "charli_damelio": {
+        "name": "charli.damelio",
+        "lastMessage": "Sneaking out tonight?",
+        "messages": {
+          "msg1": { "text": "Can you keep this secret?", "incoming": true },
+          "msg2": { "text": "Sneaking out tonight?", "incoming": false }
+        }
+      },
+      "khaby_lame": {
+        "name": "khaby.lame",
+        "lastMessage": "Don't tell anyone.",
+        "messages": {
+          "msg1": { "text": "She can't know about us", "incoming": true },
+          "msg2": { "text": "Don't tell anyone.", "incoming": false }
+        }
+      },
+      "addisonrae": {
+        "name": "addisonrae",
+        "lastMessage": "Meet me after dark",
+        "messages": {
+          "msg1": { "text": "You free tonight?", "incoming": true },
+          "msg2": { "text": "Meet me after dark", "incoming": false }
+        }
+      },
+      "zachking": {
+        "name": "zachking",
+        "lastMessage": "This stays between us",
+        "messages": {
+          "msg1": { "text": "That was too close!", "incoming": true },
+          "msg2": { "text": "This stays between us", "incoming": false }
+        }
+      },
+      "bellapoarch": {
+        "name": "bellapoarch",
+        "lastMessage": "Missed you last night",
+        "messages": {
+          "msg1": { "text": "Where were you?", "incoming": true },
+          "msg2": { "text": "Missed you last night", "incoming": false }
+        }
+      }
+    }
   }
 }

@@ -1886,101 +1886,231 @@
         }
       }
     }
-  },  "dmtwitter": {
-      "header": {
-        "title": "X"
+  },
+  "dmtwitter": {
+    "header": {
+      "title": "X"
+    },
+    "tabs": {
+      "chat": "Mesajlar",
+      "followers": "Takipçiler",
+      "call_log": "Arama Kaydı",
+      "aria_label": "X gezinme sekmeleri",
+      "chat_aria": "Mesaj listesini görüntüle",
+      "followers_aria": "Takipçi listesini görüntüle",
+      "call_log_aria": "Arama kaydını görüntüle"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "X mesaj listesi",
+      "item_aria": "{handle} ile sohbeti seç",
+      "detail_aria": "{handle} için sohbet detayları"
+    },
+    "followers": {
+      "list_aria": "X takipçi listesi",
+      "item_aria": "Takipçi {handle} seç",
+      "detail_aria": "{handle} için takipçi detayları",
+      "handle": "Kullanıcı adı",
+      "a16z": { "handle": "@a16z", "name": "a16z", "email": "a16z@x.com" },
+      "balajis": {
+        "handle": "@balajis",
+        "name": "Balaji Srinivasan",
+        "email": "balaji@x.com"
       },
-      "tabs": {
-        "chat": "Mesajlar",
-        "followers": "Takipçiler",
-        "call_log": "Arama Kaydı",
-        "aria_label": "X gezinme sekmeleri",
-        "chat_aria": "Mesaj listesini görüntüle",
-        "followers_aria": "Takipçi listesini görüntüle",
-        "call_log_aria": "Arama kaydını görüntüle"
+      "cdixon": {
+        "handle": "@cdixon",
+        "name": "Chris Dixon",
+        "email": "chris@x.com"
       },
-      "back_button_aria": "Listeye geri dön",
-      "chat": {
-        "list_aria": "X mesaj listesi",
-        "item_aria": "{handle} ile sohbeti seç",
-        "detail_aria": "{handle} için sohbet detayları"
+      "pmarca": {
+        "handle": "@pmarca",
+        "name": "Marc Andreessen",
+        "email": "marc@x.com"
       },
-      "followers": {
-        "list_aria": "X takipçi listesi",
-        "item_aria": "Takipçi {handle} seç",
-        "detail_aria": "{handle} için takipçi detayları",
-        "handle": "Kullanıcı adı",
-        "a16z": { "handle": "@a16z", "name": "a16z", "email": "a16z@x.com" },
-        "balajis": { "handle": "@balajis", "name": "Balaji Srinivasan", "email": "balaji@x.com" },
-        "cdixon": { "handle": "@cdixon", "name": "Chris Dixon", "email": "chris@x.com" },
-        "pmarca": { "handle": "@pmarca", "name": "Marc Andreessen", "email": "marc@x.com" },
-        "naval": { "handle": "@naval", "name": "Naval Ravikant", "email": "naval@x.com" },
-        "paulg": { "handle": "@paulg", "name": "Paul Graham", "email": "paul@x.com" },
-        "sama": { "handle": "@sama", "name": "Sam Altman", "email": "sam@x.com" },
-        "jack": { "handle": "@jack", "name": "Jack Dorsey", "email": "jack@x.com" },
-        "vitalik": { "handle": "@vitalik", "name": "Vitalik Buterin", "email": "vitalik@x.com" }
+      "naval": {
+        "handle": "@naval",
+        "name": "Naval Ravikant",
+        "email": "naval@x.com"
       },
-      "callLogs": {
-        "list_aria": "X arama kaydı",
-        "item_aria": "{handle} ile aramayı seç",
-        "detail_aria": "{handle} için arama detayları",
-        "elonmusk": { "handle": "@elonmusk" },
-        "codinghorror": { "handle": "@codinghorror" },
-        "verge": { "handle": "@verge" },
-        "nasdaily": { "handle": "@nasdaily" },
-        "techcrunch": { "handle": "@techcrunch" }
+      "paulg": {
+        "handle": "@paulg",
+        "name": "Paul Graham",
+        "email": "paul@x.com"
       },
-      "callTypes": {
-        "outgoing": "Giden",
-        "incoming": "Gelen",
-        "missed": "Cevapsız"
+      "sama": { "handle": "@sama", "name": "Sam Altman", "email": "sam@x.com" },
+      "jack": {
+        "handle": "@jack",
+        "name": "Jack Dorsey",
+        "email": "jack@x.com"
       },
-      "chats": {
-        "elonmusk": {
-          "handle": "@elonmusk",
-          "name": "Elon Musk",
-          "lastMessage": "Aya doğru",
-          "messages": {
-            "msg1": { "text": "Günaydın X ailesi", "incoming": true },
-            "msg2": { "text": "Aya doğru", "incoming": false }
-          }
-        },
-        "codinghorror": {
-          "handle": "@codinghorror",
-          "name": "Jeff Atwood",
-          "lastMessage": "useState kraldır",
-          "messages": {
-            "msg1": { "text": "React kancaları > sınıflar", "incoming": true },
-            "msg2": { "text": "useState kraldır", "incoming": false }
-          }
-        },
-        "verge": {
-          "handle": "@verge",
-          "name": "The Verge",
-          "lastMessage": "Son dakika: AI haberleri",
-          "messages": {
-            "msg1": { "text": "Yeni Grok modeli çıktı", "incoming": true },
-            "msg2": { "text": "Son dakika: AI haberleri", "incoming": false }
-          }
-        },
-        "nasdaily": {
-          "handle": "@nasdaily",
-          "name": "Nas Daily",
-          "lastMessage": "Bu bir dakika",
-          "messages": {
-            "msg1": { "text": "Yarın görüşürüz!", "incoming": true },
-            "msg2": { "text": "Bu bir dakika", "incoming": false }
-          }
-        },
-        "techcrunch": {
-          "handle": "@techcrunch",
-          "name": "TechCrunch",
-          "lastMessage": "Startup finansman turu",
-          "messages": {
-            "msg1": { "text": "100 milyon dolarlık B Serisi", "incoming": true },
-            "msg2": { "text": "Startup finansman turu", "incoming": false }
-          }
+      "vitalik": {
+        "handle": "@vitalik",
+        "name": "Vitalik Buterin",
+        "email": "vitalik@x.com"
+      }
+    },
+    "callLogs": {
+      "list_aria": "X arama kaydı",
+      "item_aria": "{handle} ile aramayı seç",
+      "detail_aria": "{handle} için arama detayları",
+      "elonmusk": { "handle": "@elonmusk" },
+      "codinghorror": { "handle": "@codinghorror" },
+      "verge": { "handle": "@verge" },
+      "nasdaily": { "handle": "@nasdaily" },
+      "techcrunch": { "handle": "@techcrunch" }
+    },
+    "callTypes": {
+      "outgoing": "Giden",
+      "incoming": "Gelen",
+      "missed": "Cevapsız"
+    },
+    "chats": {
+      "elonmusk": {
+        "handle": "@elonmusk",
+        "name": "Elon Musk",
+        "lastMessage": "Aya doğru",
+        "messages": {
+          "msg1": { "text": "Günaydın X ailesi", "incoming": true },
+          "msg2": { "text": "Aya doğru", "incoming": false }
+        }
+      },
+      "codinghorror": {
+        "handle": "@codinghorror",
+        "name": "Jeff Atwood",
+        "lastMessage": "useState kraldır",
+        "messages": {
+          "msg1": { "text": "React kancaları > sınıflar", "incoming": true },
+          "msg2": { "text": "useState kraldır", "incoming": false }
+        }
+      },
+      "verge": {
+        "handle": "@verge",
+        "name": "The Verge",
+        "lastMessage": "Son dakika: AI haberleri",
+        "messages": {
+          "msg1": { "text": "Yeni Grok modeli çıktı", "incoming": true },
+          "msg2": { "text": "Son dakika: AI haberleri", "incoming": false }
+        }
+      },
+      "nasdaily": {
+        "handle": "@nasdaily",
+        "name": "Nas Daily",
+        "lastMessage": "Bu bir dakika",
+        "messages": {
+          "msg1": { "text": "Yarın görüşürüz!", "incoming": true },
+          "msg2": { "text": "Bu bir dakika", "incoming": false }
+        }
+      },
+      "techcrunch": {
+        "handle": "@techcrunch",
+        "name": "TechCrunch",
+        "lastMessage": "Startup finansman turu",
+        "messages": {
+          "msg1": { "text": "100 milyon dolarlık B Serisi", "incoming": true },
+          "msg2": { "text": "Startup finansman turu", "incoming": false }
         }
       }
     }
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok"
+    },
+    "tabs": {
+      "chat": "Mesajlar",
+      "friends": "Arkadaşlar",
+      "call_log": "Arama Kaydı",
+      "aria_label": "TikTok gezinme sekmeleri",
+      "chat_aria": "Mesaj listesini görüntüle",
+      "friends_aria": "Arkadaş listesini görüntüle",
+      "call_log_aria": "Arama kaydını görüntüle"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "TikTok mesaj listesi",
+      "item_aria": "{name} ile sohbeti seç",
+      "detail_aria": "{name} için sohbet detayları"
+    },
+    "friends": {
+      "list_aria": "TikTok arkadaş listesi",
+      "item_aria": "Arkadaş {name} seç",
+      "detail_aria": "{name} için arkadaş detayları",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
+      "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
+      "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
+      "larray": { "name": "larray", "email": "larray@tiktok.com" },
+      "madi": { "name": "madi", "email": "madi@tiktok.com" },
+      "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
+      "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
+      "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+    },
+    "callLogs": {
+      "list_aria": "TikTok arama kaydı",
+      "item_aria": "{name} ile aramayı seç",
+      "detail_aria": "{name} için arama detayları",
+      "charli_damelio": { "name": "charli.damelio" },
+      "khaby_lame": { "name": "khaby.lame" },
+      "addisonrae": { "name": "addisonrae" },
+      "zachking": { "name": "zachking" },
+      "bellapoarch": { "name": "bellapoarch" }
+    },
+    "callTypes": {
+      "outgoing": "Giden",
+      "incoming": "Gelen",
+      "missed": "Cevapsız"
+    },
+    "chats": {
+      "charli_damelio": {
+        "name": "charli.damelio",
+        "lastMessage": "Bu akşam gizlice dışarı mı çıkalım?",
+        "messages": {
+          "msg1": {
+            "text": "Bunu sır olarak saklayabilir misin?",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Bu akşam gizlice dışarı mı çıkalım?",
+            "incoming": false
+          }
+        }
+      },
+      "khaby_lame": {
+        "name": "khaby.lame",
+        "lastMessage": "Kimseye söyleme.",
+        "messages": {
+          "msg1": { "text": "O bizim hakkımızda bilmemeli", "incoming": true },
+          "msg2": { "text": "Kimseye söyleme.", "incoming": false }
+        }
+      },
+      "addisonrae": {
+        "name": "addisonrae",
+        "lastMessage": "Karanlık çöktükten sonra buluşalım",
+        "messages": {
+          "msg1": { "text": "Bu akşam boş musun?", "incoming": true },
+          "msg2": {
+            "text": "Karanlık çöktükten sonra buluşalım",
+            "incoming": false
+          }
+        }
+      },
+      "zachking": {
+        "name": "zachking",
+        "lastMessage": "Bu aramızda kalacak",
+        "messages": {
+          "msg1": { "text": "Bu çok yakındı!", "incoming": true },
+          "msg2": { "text": "Bu aramızda kalacak", "incoming": false }
+        }
+      },
+      "bellapoarch": {
+        "name": "bellapoarch",
+        "lastMessage": "Dün gece seni özledim",
+        "messages": {
+          "msg1": { "text": "Neredeydin?", "incoming": true },
+          "msg2": { "text": "Dün gece seni özledim", "incoming": false }
+        }
+      }
+    }
+  }
 }

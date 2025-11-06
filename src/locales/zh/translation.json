@@ -1861,101 +1861,222 @@
         }
       }
     }
-  }, "dmtwitter": {
-      "header": {
-        "title": "X"
+  },
+  "dmtwitter": {
+    "header": {
+      "title": "X"
+    },
+    "tabs": {
+      "chat": "消息",
+      "followers": "关注者",
+      "call_log": "通话记录",
+      "aria_label": "X导航选项卡",
+      "chat_aria": "查看消息列表",
+      "followers_aria": "查看关注者列表",
+      "call_log_aria": "查看通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "X消息列表",
+      "item_aria": "选择与{handle}的聊天",
+      "detail_aria": "{handle}的聊天详情"
+    },
+    "followers": {
+      "list_aria": "X关注者列表",
+      "item_aria": "选择关注者{handle}",
+      "detail_aria": "{handle}的关注者详情",
+      "handle": "用户名",
+      "a16z": { "handle": "@a16z", "name": "a16z", "email": "a16z@x.com" },
+      "balajis": {
+        "handle": "@balajis",
+        "name": "Balaji Srinivasan",
+        "email": "balaji@x.com"
       },
-      "tabs": {
-        "chat": "消息",
-        "followers": "关注者",
-        "call_log": "通话记录",
-        "aria_label": "X导航选项卡",
-        "chat_aria": "查看消息列表",
-        "followers_aria": "查看关注者列表",
-        "call_log_aria": "查看通话记录"
+      "cdixon": {
+        "handle": "@cdixon",
+        "name": "Chris Dixon",
+        "email": "chris@x.com"
       },
-      "back_button_aria": "返回列表",
-      "chat": {
-        "list_aria": "X消息列表",
-        "item_aria": "选择与{handle}的聊天",
-        "detail_aria": "{handle}的聊天详情"
+      "pmarca": {
+        "handle": "@pmarca",
+        "name": "Marc Andreessen",
+        "email": "marc@x.com"
       },
-      "followers": {
-        "list_aria": "X关注者列表",
-        "item_aria": "选择关注者{handle}",
-        "detail_aria": "{handle}的关注者详情",
-        "handle": "用户名",
-        "a16z": { "handle": "@a16z", "name": "a16z", "email": "a16z@x.com" },
-        "balajis": { "handle": "@balajis", "name": "Balaji Srinivasan", "email": "balaji@x.com" },
-        "cdixon": { "handle": "@cdixon", "name": "Chris Dixon", "email": "chris@x.com" },
-        "pmarca": { "handle": "@pmarca", "name": "Marc Andreessen", "email": "marc@x.com" },
-        "naval": { "handle": "@naval", "name": "Naval Ravikant", "email": "naval@x.com" },
-        "paulg": { "handle": "@paulg", "name": "Paul Graham", "email": "paul@x.com" },
-        "sama": { "handle": "@sama", "name": "Sam Altman", "email": "sam@x.com" },
-        "jack": { "handle": "@jack", "name": "Jack Dorsey", "email": "jack@x.com" },
-        "vitalik": { "handle": "@vitalik", "name": "Vitalik Buterin", "email": "vitalik@x.com" }
+      "naval": {
+        "handle": "@naval",
+        "name": "Naval Ravikant",
+        "email": "naval@x.com"
       },
-      "callLogs": {
-        "list_aria": "X通话记录",
-        "item_aria": "选择与{handle}的通话",
-        "detail_aria": "{handle}的通话详情",
-        "elonmusk": { "handle": "@elonmusk" },
-        "codinghorror": { "handle": "@codinghorror" },
-        "verge": { "handle": "@verge" },
-        "nasdaily": { "handle": "@nasdaily" },
-        "techcrunch": { "handle": "@techcrunch" }
+      "paulg": {
+        "handle": "@paulg",
+        "name": "Paul Graham",
+        "email": "paul@x.com"
       },
-      "callTypes": {
-        "outgoing": "拨出",
-        "incoming": "来电",
-        "missed": "未接"
+      "sama": { "handle": "@sama", "name": "Sam Altman", "email": "sam@x.com" },
+      "jack": {
+        "handle": "@jack",
+        "name": "Jack Dorsey",
+        "email": "jack@x.com"
       },
-      "chats": {
-        "elonmusk": {
-          "handle": "@elonmusk",
-          "name": "Elon Musk",
-          "lastMessage": "飞向月球",
-          "messages": {
-            "msg1": { "text": "早上好，X大家庭", "incoming": true },
-            "msg2": { "text": "飞向月球", "incoming": false }
-          }
-        },
-        "codinghorror": {
-          "handle": "@codinghorror",
-          "name": "Jeff Atwood",
-          "lastMessage": "useState是王道",
-          "messages": {
-            "msg1": { "text": "React钩子 > 类", "incoming": true },
-            "msg2": { "text": "useState是王道", "incoming": false }
-          }
-        },
-        "verge": {
-          "handle": "@verge",
-          "name": "The Verge",
-          "lastMessage": "突发：AI新闻",
-          "messages": {
-            "msg1": { "text": "新的Grok模型发布", "incoming": true },
-            "msg2": { "text": "突发：AI新闻", "incoming": false }
-          }
-        },
-        "nasdaily": {
-          "handle": "@nasdaily",
-          "name": "Nas Daily",
-          "lastMessage": "这就是一分钟",
-          "messages": {
-            "msg1": { "text": "明天见！", "incoming": true },
-            "msg2": { "text": "这就是一分钟", "incoming": false }
-          }
-        },
-        "techcrunch": {
-          "handle": "@techcrunch",
-          "name": "TechCrunch",
-          "lastMessage": "初创公司融资",
-          "messages": {
-            "msg1": { "text": "1亿美元B轮融资", "incoming": true },
-            "msg2": { "text": "初创公司融资", "incoming": false }
-          }
+      "vitalik": {
+        "handle": "@vitalik",
+        "name": "Vitalik Buterin",
+        "email": "vitalik@x.com"
+      }
+    },
+    "callLogs": {
+      "list_aria": "X通话记录",
+      "item_aria": "选择与{handle}的通话",
+      "detail_aria": "{handle}的通话详情",
+      "elonmusk": { "handle": "@elonmusk" },
+      "codinghorror": { "handle": "@codinghorror" },
+      "verge": { "handle": "@verge" },
+      "nasdaily": { "handle": "@nasdaily" },
+      "techcrunch": { "handle": "@techcrunch" }
+    },
+    "callTypes": {
+      "outgoing": "拨出",
+      "incoming": "来电",
+      "missed": "未接"
+    },
+    "chats": {
+      "elonmusk": {
+        "handle": "@elonmusk",
+        "name": "Elon Musk",
+        "lastMessage": "飞向月球",
+        "messages": {
+          "msg1": { "text": "早上好，X大家庭", "incoming": true },
+          "msg2": { "text": "飞向月球", "incoming": false }
+        }
+      },
+      "codinghorror": {
+        "handle": "@codinghorror",
+        "name": "Jeff Atwood",
+        "lastMessage": "useState是王道",
+        "messages": {
+          "msg1": { "text": "React钩子 > 类", "incoming": true },
+          "msg2": { "text": "useState是王道", "incoming": false }
+        }
+      },
+      "verge": {
+        "handle": "@verge",
+        "name": "The Verge",
+        "lastMessage": "突发：AI新闻",
+        "messages": {
+          "msg1": { "text": "新的Grok模型发布", "incoming": true },
+          "msg2": { "text": "突发：AI新闻", "incoming": false }
+        }
+      },
+      "nasdaily": {
+        "handle": "@nasdaily",
+        "name": "Nas Daily",
+        "lastMessage": "这就是一分钟",
+        "messages": {
+          "msg1": { "text": "明天见！", "incoming": true },
+          "msg2": { "text": "这就是一分钟", "incoming": false }
+        }
+      },
+      "techcrunch": {
+        "handle": "@techcrunch",
+        "name": "TechCrunch",
+        "lastMessage": "初创公司融资",
+        "messages": {
+          "msg1": { "text": "1亿美元B轮融资", "incoming": true },
+          "msg2": { "text": "初创公司融资", "incoming": false }
         }
       }
     }
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok"
+    },
+    "tabs": {
+      "chat": "消息",
+      "friends": "朋友",
+      "call_log": "通话记录",
+      "aria_label": "TikTok导航选项卡",
+      "chat_aria": "查看消息列表",
+      "friends_aria": "查看朋友列表",
+      "call_log_aria": "查看通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "TikTok消息列表",
+      "item_aria": "选择与{name}的聊天",
+      "detail_aria": "{name}的聊天详情"
+    },
+    "friends": {
+      "list_aria": "TikTok朋友列表",
+      "item_aria": "选择朋友{name}",
+      "detail_aria": "{name}的朋友详情",
+      "phone": "电话",
+      "email": "电子邮件",
+      "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
+      "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
+      "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
+      "larray": { "name": "larray", "email": "larray@tiktok.com" },
+      "madi": { "name": "madi", "email": "madi@tiktok.com" },
+      "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
+      "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
+      "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+    },
+    "callLogs": {
+      "list_aria": "TikTok通话记录",
+      "item_aria": "选择与{name}的通话",
+      "detail_aria": "{name}的通话详情",
+      "charli_damelio": { "name": "charli.damelio" },
+      "khaby_lame": { "name": "khaby.lame" },
+      "addisonrae": { "name": "addisonrae" },
+      "zachking": { "name": "zachking" },
+      "bellapoarch": { "name": "bellapoarch" }
+    },
+    "callTypes": {
+      "outgoing": "拨出",
+      "incoming": "来电",
+      "missed": "未接"
+    },
+    "chats": {
+      "charli_damelio": {
+        "name": "charli.damelio",
+        "lastMessage": "今晚偷偷出去？",
+        "messages": {
+          "msg1": { "text": "你能保守这个秘密吗？", "incoming": true },
+          "msg2": { "text": "今晚偷偷出去？", "incoming": false }
+        }
+      },
+      "khaby_lame": {
+        "name": "khaby.lame",
+        "lastMessage": "别告诉任何人。",
+        "messages": {
+          "msg1": { "text": "她不能知道我们的事", "incoming": true },
+          "msg2": { "text": "别告诉任何人。", "incoming": false }
+        }
+      },
+      "addisonrae": {
+        "name": "addisonrae",
+        "lastMessage": "天黑后见我",
+        "messages": {
+          "msg1": { "text": "今晚有空吗？", "incoming": true },
+          "msg2": { "text": "天黑后见我", "incoming": false }
+        }
+      },
+      "zachking": {
+        "name": "zachking",
+        "lastMessage": "这事只有我们知道",
+        "messages": {
+          "msg1": { "text": "刚才太危险了！", "incoming": true },
+          "msg2": { "text": "这事只有我们知道", "incoming": false }
+        }
+      },
+      "bellapoarch": {
+        "name": "bellapoarch",
+        "lastMessage": "昨晚好想你",
+        "messages": {
+          "msg1": { "text": "昨晚你去哪了？", "incoming": true },
+          "msg2": { "text": "昨晚好想你", "incoming": false }
+        }
+      }
+    }
+  }
 }

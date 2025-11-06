@@ -1943,5 +1943,100 @@
         }
       }
     }
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok"
+    },
+    "tabs": {
+      "chat": "メッセージ",
+      "friends": "友達",
+      "call_log": "通話履歴",
+      "aria_label": "TikTokナビゲーションタブ",
+      "chat_aria": "メッセージリストを表示",
+      "friends_aria": "友達リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "TikTokメッセージリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "friends": {
+      "list_aria": "TikTok友達リスト",
+      "item_aria": "友達{name}を選択",
+      "detail_aria": "{name}の友達詳細",
+      "phone": "電話",
+      "email": "メール",
+      "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
+      "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
+      "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
+      "larray": { "name": "larray", "email": "larray@tiktok.com" },
+      "madi": { "name": "madi", "email": "madi@tiktok.com" },
+      "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
+      "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
+      "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+    },
+    "callLogs": {
+      "list_aria": "TikTok通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "charli_damelio": { "name": "charli.damelio" },
+      "khaby_lame": { "name": "khaby.lame" },
+      "addisonrae": { "name": "addisonrae" },
+      "zachking": { "name": "zachking" },
+      "bellapoarch": { "name": "bellapoarch" }
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "charli_damelio": {
+        "name": "charli.damelio",
+        "lastMessage": "今夜こっそり出かける？",
+        "messages": {
+          "msg1": { "text": "この秘密を守れる？", "incoming": true },
+          "msg2": { "text": "今夜こっそり出かける？", "incoming": false }
+        }
+      },
+      "khaby_lame": {
+        "name": "khaby.lame",
+        "lastMessage": "誰にも言わないで。",
+        "messages": {
+          "msg1": {
+            "text": "彼女に私たちのことはバレちゃダメ",
+            "incoming": true
+          },
+          "msg2": { "text": "誰にも言わないで。", "incoming": false }
+        }
+      },
+      "addisonrae": {
+        "name": "addisonrae",
+        "lastMessage": "暗くなったら会おう",
+        "messages": {
+          "msg1": { "text": "今夜空いてる？", "incoming": true },
+          "msg2": { "text": "暗くなったら会おう", "incoming": false }
+        }
+      },
+      "zachking": {
+        "name": "zachking",
+        "lastMessage": "これは内緒だよ",
+        "messages": {
+          "msg1": { "text": "さっきのは危なかった！", "incoming": true },
+          "msg2": { "text": "これは内緒だよ", "incoming": false }
+        }
+      },
+      "bellapoarch": {
+        "name": "bellapoarch",
+        "lastMessage": "昨夜君がいなくて寂しかった",
+        "messages": {
+          "msg1": { "text": "どこにいたの？", "incoming": true },
+          "msg2": { "text": "昨夜君がいなくて寂しかった", "incoming": false }
+        }
+      }
+    }
   }
 }
