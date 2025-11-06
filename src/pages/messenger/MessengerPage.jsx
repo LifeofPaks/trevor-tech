@@ -15,19 +15,18 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import {
-  FiMessageSquare,
-  FiUsers,
   FiPhone,
   FiPhoneCall,
   FiPhoneIncoming,
   FiPhoneMissed,
   FiMail,
+  FiUsers,
 } from "react-icons/fi";
-import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
-import { SiFacebook } from "react-icons/si"; // Facebook Messenger icon
-import { RiCheckDoubleFill } from "react-icons/ri";
-import BindPhone from "../../components/demo/BindPhone";
+import { IoArrowBackCircle } from "react-icons/io5";
 import { FaFacebookMessenger } from "react-icons/fa6";
+import { RiCheckDoubleFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
+import BindPhone from "../../components/demo/BindPhone";
 
 // Facebook Blue Theme
 const theme = createTheme({
@@ -62,67 +61,109 @@ const theme = createTheme({
   },
 });
 
-// === Facebook-Style Data ===
-
-// Chat Data (Facebook-style conversations)
+// Chat Data (sorted by time, cheating theme)
 const chats = [
   {
     id: 1,
-    name: "Emily Chen",
+    nameKey: "emilyChen.name",
     avatar: "https://i.pravatar.cc/150?img=15",
-    lastMessage: "Haha, that's hilarious!",
-    time: "10:25",
+    lastMessageKey: "emilyChen.lastMessage",
+    time: "2025-11-06 10:25", // Most recent
     messages: [
-      { text: "Did you see the new trailer?", time: "10:20", incoming: true },
-      { text: "YES! The graphics are insane", time: "10:22", incoming: false },
-      { text: "Haha, that's hilarious!", time: "10:25", incoming: true },
+      {
+        textKey: "emilyChen.messages.msg1.text",
+        time: "10:20",
+        incoming: true,
+      },
+      {
+        textKey: "emilyChen.messages.msg2.text",
+        time: "10:22",
+        incoming: false,
+      },
+      {
+        textKey: "emilyChen.messages.msg3.text",
+        time: "10:25",
+        incoming: true,
+      },
     ],
   },
   {
     id: 2,
-    name: "Michael Torres",
+    nameKey: "michaelTorres.name",
     avatar: "https://i.pravatar.cc/150?img=12",
-    lastMessage: "I'll be there in 10",
-    time: "09:58",
+    lastMessageKey: "michaelTorres.lastMessage",
+    time: "2025-11-06 09:58",
     messages: [
-      { text: "Still at the office?", time: "09:50", incoming: true },
-      { text: "Yeah, wrapping up", time: "09:52", incoming: false },
-      { text: "I'll be there in 10", time: "09:58", incoming: false },
-    ],
-  },
-  {
-    id: 3,
-    name: "Sarah Kim",
-    avatar: "https://i.pravatar.cc/150?img=1",
-    lastMessage: "Thanks for the invite!",
-    time: "Yesterday",
-    messages: [
-      { text: "Party at my place Saturday!", time: "14:30", incoming: true },
-      { text: "Thanks for the invite!", time: "15:10", incoming: false },
-    ],
-  },
-  {
-    id: 4,
-    name: "David Patel",
-    avatar: "https://i.pravatar.cc/150?img=16",
-    lastMessage: "Check your email",
-    time: "Monday",
-    messages: [
-      { text: "Sent you the files", time: "11:00", incoming: true },
-      { text: "Got it, thanks!", time: "11:05", incoming: false },
-      { text: "Check your email", time: "11:30", incoming: false },
+      {
+        textKey: "michaelTorres.messages.msg1.text",
+        time: "09:50",
+        incoming: true,
+      },
+      {
+        textKey: "michaelTorres.messages.msg2.text",
+        time: "09:52",
+        incoming: false,
+      },
+      {
+        textKey: "michaelTorres.messages.msg3.text",
+        time: "09:58",
+        incoming: false,
+      },
     ],
   },
   {
     id: 5,
-    name: "Lisa Wong",
+    nameKey: "lisaWong.name",
     avatar: "https://i.pravatar.cc/150?img=2",
-    lastMessage: "Let's do lunch tomorrow",
-    time: "12:15",
+    lastMessageKey: "lisaWong.lastMessage",
+    time: "2025-11-05 12:15", // Yesterday
     messages: [
-      { text: "Free for lunch?", time: "12:00", incoming: true },
-      { text: "Yes! 1pm?", time: "12:10", incoming: false },
-      { text: "Let's do lunch tomorrow", time: "12:15", incoming: true },
+      { textKey: "lisaWong.messages.msg1.text", time: "12:00", incoming: true },
+      {
+        textKey: "lisaWong.messages.msg2.text",
+        time: "12:10",
+        incoming: false,
+      },
+      { textKey: "lisaWong.messages.msg3.text", time: "12:15", incoming: true },
+    ],
+  },
+  {
+    id: 4,
+    nameKey: "davidPatel.name",
+    avatar: "https://i.pravatar.cc/150?img=16",
+    lastMessageKey: "davidPatel.lastMessage",
+    time: "2025-11-04 11:30", // Monday
+    messages: [
+      {
+        textKey: "davidPatel.messages.msg1.text",
+        time: "11:00",
+        incoming: true,
+      },
+      {
+        textKey: "davidPatel.messages.msg2.text",
+        time: "11:05",
+        incoming: false,
+      },
+      {
+        textKey: "davidPatel.messages.msg3.text",
+        time: "11:30",
+        incoming: false,
+      },
+    ],
+  },
+  {
+    id: 3,
+    nameKey: "sarahKim.name",
+    avatar: "https://i.pravatar.cc/150?img=1",
+    lastMessageKey: "sarahKim.lastMessage",
+    time: "2025-11-03 15:10", // Older
+    messages: [
+      { textKey: "sarahKim.messages.msg1.text", time: "14:30", incoming: true },
+      {
+        textKey: "sarahKim.messages.msg2.text",
+        time: "15:10",
+        incoming: false,
+      },
     ],
   },
 ];
@@ -131,66 +172,66 @@ const chats = [
 const contacts = [
   {
     id: 1,
-    name: "Alex Rivera",
+    nameKey: "alexRivera.name",
     avatar: "https://i.pravatar.cc/150?img=3",
     phone: "555-123-4567",
-    email: "alex.rivera@fb.com",
+    emailKey: "alexRivera.email",
   },
   {
     id: 2,
-    name: "Brianna Lee",
+    nameKey: "briannaLee.name",
     avatar: "https://i.pravatar.cc/150?img=4",
     phone: "555-987-6543",
-    email: "brianna.lee@fb.com",
+    emailKey: "briannaLee.email",
   },
   {
     id: 3,
-    name: "Carlos Mendoza",
+    nameKey: "carlosMendoza.name",
     avatar: "https://i.pravatar.cc/150?img=5",
     phone: "555-456-7890",
-    email: "carlos.m@fb.com",
+    emailKey: "carlosMendoza.email",
   },
   {
     id: 4,
-    name: "Diana Foster",
+    nameKey: "dianaFoster.name",
     avatar: "https://i.pravatar.cc/150?img=6",
     phone: "555-321-0987",
-    email: "diana.f@fb.com",
+    emailKey: "dianaFoster.email",
   },
   {
     id: 5,
-    name: "Ethan Brooks",
+    nameKey: "ethanBrooks.name",
     avatar: "https://i.pravatar.cc/150?img=7",
     phone: "555-789-0123",
-    email: "ethan.b@fb.com",
+    emailKey: "ethanBrooks.email",
   },
   {
     id: 6,
-    name: "Fiona Grant",
+    nameKey: "fionaGrant.name",
     avatar: "https://i.pravatar.cc/150?img=8",
     phone: "555-654-3210",
-    email: "fiona.g@fb.com",
+    emailKey: "fionaGrant.email",
   },
   {
     id: 7,
-    name: "Gabriel Ortiz",
+    nameKey: "gabrielOrtiz.name",
     avatar: "https://i.pravatar.cc/150?img=9",
     phone: "555-210-9876",
-    email: "gabriel.o@fb.com",
+    emailKey: "gabrielOrtiz.email",
   },
   {
     id: 8,
-    name: "Hannah Park",
+    nameKey: "hannahPark.name",
     avatar: "https://i.pravatar.cc/150?img=10",
     phone: "555-876-5432",
-    email: "hannah.p@fb.com",
+    emailKey: "hannahPark.email",
   },
   {
     id: 9,
-    name: "Isaac Newton",
+    nameKey: "isaacNewton.name",
     avatar: "https://i.pravatar.cc/150?img=11",
     phone: "555-345-6789",
-    email: "isaac.n@fb.com",
+    emailKey: "isaacNewton.email",
   },
 ];
 
@@ -198,7 +239,7 @@ const contacts = [
 const callLogs = [
   {
     id: 1,
-    name: "Emily Chen",
+    nameKey: "emilyChen.name",
     avatar: "https://i.pravatar.cc/150?img=15",
     type: "outgoing",
     time: "2025-10-27 14:30",
@@ -206,7 +247,7 @@ const callLogs = [
   },
   {
     id: 2,
-    name: "Michael Torres",
+    nameKey: "michaelTorres.name",
     avatar: "https://i.pravatar.cc/150?img=12",
     type: "incoming",
     time: "2025-10-26 09:15",
@@ -214,14 +255,14 @@ const callLogs = [
   },
   {
     id: 3,
-    name: "Sarah Kim",
+    nameKey: "sarahKim.name",
     avatar: "https://i.pravatar.cc/150?img=1",
     type: "missed",
     time: "2025-10-25 18:42",
   },
   {
     id: 4,
-    name: "David Patel",
+    nameKey: "davidPatel.name",
     avatar: "https://i.pravatar.cc/150?img=16",
     type: "outgoing",
     time: "2025-10-24 11:10",
@@ -229,7 +270,7 @@ const callLogs = [
   },
   {
     id: 5,
-    name: "Lisa Wong",
+    nameKey: "lisaWong.name",
     avatar: "https://i.pravatar.cc/150?img=2",
     type: "incoming",
     time: "2025-10-23 13:05",
@@ -238,6 +279,7 @@ const callLogs = [
 ];
 
 const FacebookPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -254,16 +296,17 @@ const FacebookPage = () => {
 
   const getCallIcon = (type) => {
     if (type === "outgoing")
-      return <FiPhoneCall sx={{ fontSize: 16, color: "#10b981" }} />;
+      return <FiPhoneCall style={{ fontSize: 16, color: "#10b981" }} />;
     if (type === "incoming")
-      return <FiPhoneIncoming sx={{ fontSize: 16, color: "#10b981" }} />;
-    return <FiPhoneMissed sx={{ fontSize: 16, color: "#ef4444" }} />;
+      return <FiPhoneIncoming style={{ fontSize: 16, color: "#10b981" }} />;
+    return <FiPhoneMissed style={{ fontSize: 16, color: "#ef4444" }} />;
   };
 
   const groupContactsByLetter = () => {
     const grouped = {};
     contacts.forEach((contact) => {
-      const letter = contact.name[0].toUpperCase();
+      const name = t(`dmfbchat.contacts.${contact.nameKey}`);
+      const letter = name[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(contact);
     });
@@ -278,7 +321,7 @@ const FacebookPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Messenger
+              {t("dmfbchat.header.title")}
               <FaFacebookMessenger className="text-[#1877f2]" />
             </h1>
           </div>
@@ -302,24 +345,28 @@ const FacebookPage = () => {
                 mb: 3,
                 "& .MuiTabs-indicator": { bgcolor: "primary.main", height: 3 },
               }}
+              aria-label={t("dmfbchat.tabs.aria_label")}
             >
               <Tab
                 icon={<FaFacebookMessenger />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chat"}
+                label={isMobile ? "" : t("dmfbchat.tabs.chat")}
                 value="chat"
+                aria-label={t("dmfbchat.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Contacts"}
+                label={isMobile ? "" : t("dmfbchat.tabs.contacts")}
                 value="contacts"
+                aria-label={t("dmfbchat.tabs.contacts_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Call Log"}
+                label={isMobile ? "" : t("dmfbchat.tabs.call_log")}
                 value="call-log"
+                aria-label={t("dmfbchat.tabs.call_log_aria")}
               />
             </Tabs>
           )}
@@ -327,7 +374,11 @@ const FacebookPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmfbchat.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -356,6 +407,13 @@ const FacebookPage = () => {
                 overflowY: "auto",
                 bgcolor: "background.paper",
               }}
+              aria-label={t(
+                tab === "chat"
+                  ? "dmfbchat.chat.list_aria"
+                  : tab === "contacts"
+                  ? "dmfbchat.contacts.list_aria"
+                  : "dmfbchat.callLogs.list_aria"
+              )}
             >
               {/* Chat List */}
               {tab === "chat" && (
@@ -369,17 +427,22 @@ const FacebookPage = () => {
                         "&:hover": { bgcolor: "#f5f6f7" },
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      role="button"
+                      aria-label={t("dmfbchat.chat.item_aria", {
+                        name: t(`dmfbchat.chats.${chat.nameKey}`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
                           src={chat.avatar}
                           sx={{ width: 48, height: 48 }}
+                          alt={t(`dmfbchat.chats.${chat.nameKey}`)}
                         />
                         <Box sx={{ flex: 1, minWidth: 0 }}>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {chat.name}
+                            {t(`dmfbchat.chats.${chat.nameKey}`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -390,13 +453,13 @@ const FacebookPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(`dmfbchat.chats.${chat.lastMessageKey}`)}
                           </Typography>
                         </Box>
                         <Typography
                           sx={{ fontSize: "0.75rem", color: "#8a8d91" }}
                         >
-                          {chat.time}
+                          {chat.time.split(" ")[1] || chat.time}
                         </Typography>
                       </Stack>
                     </Box>
@@ -409,7 +472,7 @@ const FacebookPage = () => {
                 <Stack
                   className="scrollbar-hide"
                   sx={{
-                    maxHeight: "70vh", // ensure scrolling still works
+                    maxHeight: "70vh",
                     overflowY: "auto",
                   }}
                 >
@@ -439,6 +502,10 @@ const FacebookPage = () => {
                               borderBottom: "1px solid #e4e6eb",
                             }}
                             onClick={() => setSelectedContact(contact)}
+                            role="button"
+                            aria-label={t("dmfbchat.contacts.item_aria", {
+                              name: t(`dmfbchat.contacts.${contact.nameKey}`),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -448,11 +515,12 @@ const FacebookPage = () => {
                               <Avatar
                                 src={contact.avatar}
                                 sx={{ width: 48, height: 48 }}
+                                alt={t(`dmfbchat.contacts.${contact.nameKey}`)}
                               />
                               <Typography
                                 sx={{ fontWeight: 500, color: "text.primary" }}
                               >
-                                {contact.name}
+                                {t(`dmfbchat.contacts.${contact.nameKey}`)}
                               </Typography>
                             </Stack>
                           </Box>
@@ -478,12 +546,17 @@ const FacebookPage = () => {
                           borderBottom: "1px solid #e4e6eb",
                         }}
                         onClick={() => setSelectedCall(call)}
+                        role="button"
+                        aria-label={t("dmfbchat.callLogs.item_aria", {
+                          name: t(`dmfbchat.callLogs.${call.nameKey}`),
+                        })}
                       >
                         <Stack direction="row" spacing={2} alignItems="center">
                           <Box sx={{ position: "relative" }}>
                             <Avatar
                               src={call.avatar}
                               sx={{ width: 48, height: 48 }}
+                              alt={t(`dmfbchat.callLogs.${call.nameKey}`)}
                             />
                             <Box
                               sx={{
@@ -505,11 +578,10 @@ const FacebookPage = () => {
                             <Typography
                               sx={{ fontWeight: 600, color: "text.primary" }}
                             >
-                              {call.name}
+                              {t(`dmfbchat.callLogs.${call.nameKey}`)}
                             </Typography>
                             <Typography sx={{ fontSize: "0.875rem", color }}>
-                              {call.type.charAt(0).toUpperCase() +
-                                call.type.slice(1)}
+                              {t(`dmfbchat.callTypes.${call.type}`)}
                             </Typography>
                           </Box>
                           <Typography
@@ -537,6 +609,20 @@ const FacebookPage = () => {
                   overflowY: "auto",
                   bgcolor: "background.paper",
                 }}
+                aria-label={t(
+                  selectedChat
+                    ? "dmfbchat.chat.detail_aria"
+                    : selectedContact
+                    ? "dmfbchat.contacts.detail_aria"
+                    : "dmfbchat.callLogs.detail_aria",
+                  {
+                    name: selectedChat
+                      ? t(`dmfbchat.chats.${selectedChat.nameKey}`)
+                      : selectedContact
+                      ? t(`dmfbchat.contacts.${selectedContact.nameKey}`)
+                      : t(`dmfbchat.callLogs.${selectedCall.nameKey}`),
+                  }
+                )}
               >
                 {/* Chat Detail */}
                 {selectedChat && (
@@ -545,12 +631,13 @@ const FacebookPage = () => {
                       <Avatar
                         src={selectedChat.avatar}
                         sx={{ width: 64, height: 64 }}
+                        alt={t(`dmfbchat.chats.${selectedChat.nameKey}`)}
                       />
                       <Typography
                         variant="h5"
                         sx={{ fontWeight: 700, color: "text.primary" }}
                       >
-                        {selectedChat.name}
+                        {t(`dmfbchat.chats.${selectedChat.nameKey}`)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -580,7 +667,7 @@ const FacebookPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(`dmfbchat.chats.${msg.textKey}`)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -608,12 +695,13 @@ const FacebookPage = () => {
                     <Avatar
                       src={selectedContact.avatar}
                       sx={{ width: 120, height: 120 }}
+                      alt={t(`dmfbchat.contacts.${selectedContact.nameKey}`)}
                     />
                     <Typography
                       variant="h4"
                       sx={{ fontWeight: 700, color: "text.primary" }}
                     >
-                      {selectedContact.name}
+                      {t(`dmfbchat.contacts.${selectedContact.nameKey}`)}
                     </Typography>
 
                     {selectedContact.phone && (
@@ -644,7 +732,7 @@ const FacebookPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#606770" }}
                           >
-                            Number
+                            {t("dmfbchat.contacts.number")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
@@ -655,7 +743,7 @@ const FacebookPage = () => {
                       </Paper>
                     )}
 
-                    {selectedContact.email && (
+                    {selectedContact.emailKey && (
                       <Paper
                         elevation={0}
                         sx={{
@@ -683,12 +771,12 @@ const FacebookPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#606770" }}
                           >
-                            Email
+                            {t("dmfbchat.contacts.email")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {selectedContact.email}
+                            {t(`dmfbchat.contacts.${selectedContact.emailKey}`)}
                           </Typography>
                         </Box>
                       </Paper>
@@ -702,12 +790,13 @@ const FacebookPage = () => {
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
+                      alt={t(`dmfbchat.callLogs.${selectedCall.nameKey}`)}
                     />
                     <Typography
                       variant="h4"
                       sx={{ fontWeight: 700, color: "text.primary" }}
                     >
-                      {selectedCall.name}
+                      {t(`dmfbchat.callLogs.${selectedCall.nameKey}`)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -736,7 +825,8 @@ const FacebookPage = () => {
                             mt: 1,
                           }}
                         >
-                          {selectedCall.duration} Answered
+                          {selectedCall.duration}{" "}
+                          {t("dmfbchat.call.answered_calls")}
                         </Typography>
                       )}
                     </Paper>

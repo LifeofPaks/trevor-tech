@@ -1659,5 +1659,105 @@
         "email": "william.davis@example.com"
       }
     }
+  },
+  "dmfbchat": {
+    "header": {
+      "title": "Messenger"
+    },
+    "tabs": {
+      "chat": "الدردشة",
+      "contacts": "جهات الاتصال",
+      "call_log": "سجل المكالمات",
+      "aria_label": "علامات تبويب التنقل في Messenger",
+      "chat_aria": "عرض قائمة الدردشات",
+      "contacts_aria": "عرض قائمة جهات الاتصال",
+      "call_log_aria": "عرض سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة دردشة Messenger",
+      "item_aria": "اختيار الدردشة مع {name}",
+      "detail_aria": "تفاصيل الدردشة لـ {name}"
+    },
+    "contacts": {
+      "list_aria": "قائمة جهات اتصال Messenger",
+      "item_aria": "اختيار جهة اتصال {name}",
+      "detail_aria": "تفاصيل جهة الاتصال لـ {name}",
+      "number": "رقم",
+      "email": "بريد إلكتروني",
+      "alexRivera": { "name": "أليكس ريفيرا", "email": "alex.rivera@fb.com" },
+      "briannaLee": { "name": "بريانا لي", "email": "brianna.lee@fb.com" },
+      "carlosMendoza": { "name": "كارلوس ميندوزا", "email": "carlos.m@fb.com" },
+      "dianaFoster": { "name": "ديانا فوستر", "email": "diana.f@fb.com" },
+      "ethanBrooks": { "name": "إيثان بروكس", "email": "ethan.b@fb.com" },
+      "fionaGrant": { "name": "فيونا غرانت", "email": "fiona.g@fb.com" },
+      "gabrielOrtiz": { "name": "غابرييل أورتيز", "email": "gabriel.o@fb.com" },
+      "hannahPark": { "name": "هانا بارك", "email": "hannah.p@fb.com" },
+      "isaacNewton": { "name": "إسحاق نيوتن", "email": "isaac.n@fb.com" }
+    },
+    "callLogs": {
+      "list_aria": "سجل مكالمات Messenger",
+      "item_aria": "اختيار مكالمة مع {name}",
+      "detail_aria": "تفاصيل المكالمة لـ {name}",
+      "emilyChen": { "name": "إيميلي تشين" },
+      "michaelTorres": { "name": "مايكل توريس" },
+      "sarahKim": { "name": "سارة كيم" },
+      "davidPatel": { "name": "ديفيد باتيل" },
+      "lisaWong": { "name": "ليزا وونغ" }
+    },
+    "call": {
+      "answered_calls": "تم الرد"
+    },
+    "callTypes": {
+      "outgoing": "صادرة",
+      "incoming": "واردة",
+      "missed": "فائتة"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "إيميلي تشين",
+        "lastMessage": "لا تخبر أحداً بذلك!",
+        "messages": {
+          "msg1": { "text": "أرسلت لك رابطاً خاصاً." },
+          "msg2": { "text": "استلمته، لكن لماذا كل هذا السر؟" },
+          "msg3": { "text": "لا تخبر أحداً بذلك!" }
+        }
+      },
+      "michaelTorres": {
+        "name": "مايكل توريس",
+        "lastMessage": "سأحذف الدردشة لاحقاً.",
+        "messages": {
+          "msg1": { "text": "هل ستلتقي بها الليلة؟" },
+          "msg2": { "text": "نعم، لكن لا تتحدث عن ذلك." },
+          "msg3": { "text": "سأحذف الدردشة لاحقاً." }
+        }
+      },
+      "sarahKim": {
+        "name": "سارة كيم",
+        "lastMessage": "أخفيت المنشور، شكراً!",
+        "messages": {
+          "msg1": { "text": "هل يمكنك إخفاء ذلك المنشور من أجلي؟" },
+          "msg2": { "text": "أخفيت المنشور، شكراً!" }
+        }
+      },
+      "davidPatel": {
+        "name": "ديفيد باتيل",
+        "lastMessage": "تحقق من المجموعة السرية.",
+        "messages": {
+          "msg1": { "text": "أضفتك إلى مجموعة سرية." },
+          "msg2": { "text": "شكراً، ما هي هذه المجموعة؟" },
+          "msg3": { "text": "تحقق من المجموعة السرية." }
+        }
+      },
+      "lisaWong": {
+        "name": "ليزا وونغ",
+        "lastMessage": "لنبقي الأمر بيننا.",
+        "messages": {
+          "msg1": { "text": "هل أنت متفرغ للتحدث على انفراد؟" },
+          "msg2": { "text": "نعم، ما الأمر؟" },
+          "msg3": { "text": "لنبقي الأمر بيننا." }
+        }
+      }
+    }
   }
 }

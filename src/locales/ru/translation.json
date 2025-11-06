@@ -1664,5 +1664,105 @@
         "email": "william.davis@example.com"
       }
     }
+  },
+  "dmfbchat": {
+    "header": {
+      "title": "Messenger"
+    },
+    "tabs": {
+      "chat": "Чат",
+      "contacts": "Контакты",
+      "call_log": "Журнал звонков",
+      "aria_label": "Вкладки навигации Messenger",
+      "chat_aria": "Просмотреть список чатов",
+      "contacts_aria": "Просмотреть список контактов",
+      "call_log_aria": "Просмотреть журнал звонков"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список чатов Messenger",
+      "item_aria": "Выбрать чат с {name}",
+      "detail_aria": "Детали чата для {name}"
+    },
+    "contacts": {
+      "list_aria": "Список контактов Messenger",
+      "item_aria": "Выбрать контакт {name}",
+      "detail_aria": "Детали контакта для {name}",
+      "number": "Номер",
+      "email": "Электронная почта",
+      "alexRivera": { "name": "Алекс Ривера", "email": "alex.rivera@fb.com" },
+      "briannaLee": { "name": "Брианна Ли", "email": "brianna.lee@fb.com" },
+      "carlosMendoza": { "name": "Карлос Мендоса", "email": "carlos.m@fb.com" },
+      "dianaFoster": { "name": "Диана Фостер", "email": "diana.f@fb.com" },
+      "ethanBrooks": { "name": "Итан Брукс", "email": "ethan.b@fb.com" },
+      "fionaGrant": { "name": "Фиона Грант", "email": "fiona.g@fb.com" },
+      "gabrielOrtiz": { "name": "Габриэль Ортиз", "email": "gabriel.o@fb.com" },
+      "hannahPark": { "name": "Ханна Парк", "email": "hannah.p@fb.com" },
+      "isaacNewton": { "name": "Исаак Ньютон", "email": "isaac.n@fb.com" }
+    },
+    "callLogs": {
+      "list_aria": "Журнал звонков Messenger",
+      "item_aria": "Выбрать звонок с {name}",
+      "detail_aria": "Детали звонка для {name}",
+      "emilyChen": { "name": "Эмили Чен" },
+      "michaelTorres": { "name": "Майкл Торрес" },
+      "sarahKim": { "name": "Сара Ким" },
+      "davidPatel": { "name": "Давид Патель" },
+      "lisaWong": { "name": "Лиза Вонг" }
+    },
+    "call": {
+      "answered_calls": "Отвеченные"
+    },
+    "callTypes": {
+      "outgoing": "Исходящий",
+      "incoming": "Входящий",
+      "missed": "Пропущенный"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "Эмили Чен",
+        "lastMessage": "Никому не говори!",
+        "messages": {
+          "msg1": { "text": "Я отправил тебе секретную ссылку." },
+          "msg2": { "text": "Получил, но зачем такая секретность?" },
+          "msg3": { "text": "Никому не говори!" }
+        }
+      },
+      "michaelTorres": {
+        "name": "Майкл Торрес",
+        "lastMessage": "Я удалю чат позже.",
+        "messages": {
+          "msg1": { "text": "Ты все еще встречаешься с ней сегодня?" },
+          "msg2": { "text": "Да, но держи это в тайне." },
+          "msg3": { "text": "Я удалю чат позже." }
+        }
+      },
+      "sarahKim": {
+        "name": "Сара Ким",
+        "lastMessage": "Я скрыла пост, спасибо!",
+        "messages": {
+          "msg1": { "text": "Можешь скрыть этот пост для меня?" },
+          "msg2": { "text": "Я скрыла пост, спасибо!" }
+        }
+      },
+      "davidPatel": {
+        "name": "Давид Патель",
+        "lastMessage": "Проверь секретную группу.",
+        "messages": {
+          "msg1": { "text": "Я добавил тебя в секретную группу." },
+          "msg2": { "text": "Спасибо, о чем она?" },
+          "msg3": { "text": "Проверь секретную группу." }
+        }
+      },
+      "lisaWong": {
+        "name": "Лиза Вонг",
+        "lastMessage": "Пусть это останется между нами.",
+        "messages": {
+          "msg1": { "text": "Свободен для приватного разговора?" },
+          "msg2": { "text": "Да, что случилось?" },
+          "msg3": { "text": "Пусть это останется между нами." }
+        }
+      }
+    }
   }
 }

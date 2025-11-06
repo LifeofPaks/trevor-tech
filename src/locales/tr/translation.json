@@ -1662,5 +1662,111 @@
         "email": "william.davis@example.com"
       }
     }
+  },
+  "dmfbchat": {
+    "header": {
+      "title": "Messenger"
+    },
+    "tabs": {
+      "chat": "Sohbet",
+      "contacts": "Kişiler",
+      "call_log": "Arama Kaydı",
+      "aria_label": "Messenger navigasyon sekmeleri",
+      "chat_aria": "Sohbet listesini görüntüle",
+      "contacts_aria": "Kişi listesini görüntüle",
+      "call_log_aria": "Arama kaydını görüntüle"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "Messenger sohbet listesi",
+      "item_aria": "{name} ile sohbeti seç",
+      "detail_aria": "{name} için sohbet detayları"
+    },
+    "contacts": {
+      "list_aria": "Messenger kişi listesi",
+      "item_aria": "{name} kişisini seç",
+      "detail_aria": "{name} için kişi detayları",
+      "number": "Numara",
+      "email": "E-posta",
+      "alexRivera": { "name": "Alex Rivera", "email": "alex.rivera@fb.com" },
+      "briannaLee": { "name": "Brianna Lee", "email": "brianna.lee@fb.com" },
+      "carlosMendoza": {
+        "name": "Carlos Mendoza",
+        "email": "carlos.m@fb.com"
+      },
+      "dianaFoster": { "name": "Diana Foster", "email": "diana.f@fb.com" },
+      "ethanBrooks": { "name": "Ethan Brooks", "email": "ethan.b@fb.com" },
+      "fionaGrant": { "name": "Fiona Grant", "email": "fiona.g@fb.com" },
+      "gabrielOrtiz": {
+        "name": "Gabriel Ortiz",
+        "email": "gabriel.o@fb.com"
+      },
+      "hannahPark": { "name": "Hannah Park", "email": "hannah.p@fb.com" },
+      "isaacNewton": { "name": "Isaac Newton", "email": "isaac.n@fb.com" }
+    },
+    "callLogs": {
+      "list_aria": "Messenger arama kaydı",
+      "item_aria": "{name} ile aramayı seç",
+      "detail_aria": "{name} için arama detayları",
+      "emilyChen": { "name": "Emily Chen" },
+      "michaelTorres": { "name": "Michael Torres" },
+      "sarahKim": { "name": "Sarah Kim" },
+      "davidPatel": { "name": "David Patel" },
+      "lisaWong": { "name": "Lisa Wong" }
+    },
+    "call": {
+      "answered_calls": "Cevaplanan"
+    },
+    "callTypes": {
+      "outgoing": "Giden",
+      "incoming": "Gelen",
+      "missed": "Cevapsız"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "Emily Chen",
+        "lastMessage": "Bunu kimseye söyleme!",
+        "messages": {
+          "msg1": { "text": "Sana özel bir bağlantı gönderdim." },
+          "msg2": { "text": "Aldım, ama neden bu kadar gizli?" },
+          "msg3": { "text": "Bunu kimseye söyleme!" }
+        }
+      },
+      "michaelTorres": {
+        "name": "Michael Torres",
+        "lastMessage": "Sohbeti sonra sileceğim.",
+        "messages": {
+          "msg1": { "text": "Bu akşam onunla hala buluşuyor musun?" },
+          "msg2": { "text": "Evet, ama sessiz ol." },
+          "msg3": { "text": "Sohbeti sonra sileceğim." }
+        }
+      },
+      "sarahKim": {
+        "name": "Sarah Kim",
+        "lastMessage": "Gönderiyi gizledim, teşekkürler!",
+        "messages": {
+          "msg1": { "text": "O gönderiyi benim için gizler misin?" },
+          "msg2": { "text": "Gönderiyi gizledim, teşekkürler!" }
+        }
+      },
+      "davidPatel": {
+        "name": "David Patel",
+        "lastMessage": "Gizli grubu kontrol et.",
+        "messages": {
+          "msg1": { "text": "Seni gizli bir gruba ekledim." },
+          "msg2": { "text": "Teşekkürler, bu grup ne hakkında?" },
+          "msg3": { "text": "Gizli grubu kontrol et." }
+        }
+      },
+      "lisaWong": {
+        "name": "Lisa Wong",
+        "lastMessage": "Bunu aramızda tutalım.",
+        "messages": {
+          "msg1": { "text": "Özel konuşmak için vaktin var mı?" },
+          "msg2": { "text": "Evet, ne oldu?" },
+          "msg3": { "text": "Bunu aramızda tutalım." }
+        }
+      }
+    }
   }
 }

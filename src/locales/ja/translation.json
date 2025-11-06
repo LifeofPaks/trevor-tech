@@ -1588,5 +1588,129 @@
         "email": "william.davis@example.com"
       }
     }
+  },
+  "dmfbchat": {
+    "header": {
+      "title": "Messenger"
+    },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "call_log": "通話履歴",
+      "aria_label": "Messengerナビゲーションタブ",
+      "chat_aria": "チャットリストを表示",
+      "contacts_aria": "連絡先リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Messengerチャットリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "contacts": {
+      "list_aria": "Messenger連絡先リスト",
+      "item_aria": "連絡先{name}を選択",
+      "detail_aria": "{name}の連絡先詳細",
+      "number": "番号",
+      "email": "メール",
+      "alexRivera": {
+        "name": "アレックス・リベラ",
+        "email": "alex.rivera@fb.com"
+      },
+      "briannaLee": {
+        "name": "ブリアナ・リー",
+        "email": "brianna.lee@fb.com"
+      },
+      "carlosMendoza": {
+        "name": "カルロス・メンドーサ",
+        "email": "carlos.m@fb.com"
+      },
+      "dianaFoster": {
+        "name": "ダイアナ・フォスター",
+        "email": "diana.f@fb.com"
+      },
+      "ethanBrooks": {
+        "name": "イーサン・ブルックス",
+        "email": "ethan.b@fb.com"
+      },
+      "fionaGrant": {
+        "name": "フィオナ・グラント",
+        "email": "fiona.g@fb.com"
+      },
+      "gabrielOrtiz": {
+        "name": "ガブリエル・オルティス",
+        "email": "gabriel.o@fb.com"
+      },
+      "hannahPark": { "name": "ハンナ・パーク", "email": "hannah.p@fb.com" },
+      "isaacNewton": {
+        "name": "アイザック・ニュートン",
+        "email": "isaac.n@fb.com"
+      }
+    },
+    "callLogs": {
+      "list_aria": "Messenger通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "emilyChen": { "name": "エミリー・チェン" },
+      "michaelTorres": { "name": "マイケル・トーレス" },
+      "sarahKim": { "name": "サラ・キム" },
+      "davidPatel": { "name": "デビッド・パテル" },
+      "lisaWong": { "name": "リサ・ウォン" }
+    },
+    "call": {
+      "answered_calls": "応答済み"
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "エミリー・チェン",
+        "lastMessage": "誰にも言わないで！",
+        "messages": {
+          "msg1": { "text": "プライベートリンクを送ったよ。" },
+          "msg2": { "text": "受け取ったけど、なぜ秘密なの？" },
+          "msg3": { "text": "誰にも言わないで！" }
+        }
+      },
+      "michaelTorres": {
+        "name": "マイケル・トーレス",
+        "lastMessage": "後でチャットを削除するよ。",
+        "messages": {
+          "msg1": { "text": "今夜まだ彼女に会う？" },
+          "msg2": { "text": "うん、でも内緒にして。" },
+          "msg3": { "text": "後でチャットを削除するよ。" }
+        }
+      },
+      "sarahKim": {
+        "name": "サラ・キム",
+        "lastMessage": "投稿を非表示にした、ありがとう！",
+        "messages": {
+          "msg1": { "text": "その投稿を非表示にしてくれる？" },
+          "msg2": { "text": "投稿を非表示にした、ありがとう！" }
+        }
+      },
+      "davidPatel": {
+        "name": "デビッド・パテル",
+        "lastMessage": "秘密のグループを確認して。",
+        "messages": {
+          "msg1": { "text": "秘密のグループにあなたを追加したよ。" },
+          "msg2": { "text": "ありがとう、どんなグループ？" },
+          "msg3": { "text": "秘密のグループを確認して。" }
+        }
+      },
+      "lisaWong": {
+        "name": "リサ・ウォン",
+        "lastMessage": "これは私たちの間で秘密に。",
+        "messages": {
+          "msg1": { "text": "プライベートで話す時間ある？" },
+          "msg2": { "text": "うん、なに？" },
+          "msg3": { "text": "これは私たちの間で秘密に。" }
+        }
+      }
+    }
   }
 }

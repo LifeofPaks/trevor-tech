@@ -1664,5 +1664,105 @@
         "email": "william.davis@example.com"
       }
     }
+  },
+  "dmfbchat": {
+    "header": {
+      "title": "Messenger"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "contacts": "Contatos",
+      "call_log": "Registro de chamadas",
+      "aria_label": "Abas de navegação do Messenger",
+      "chat_aria": "Ver lista de chats",
+      "contacts_aria": "Ver lista de contatos",
+      "call_log_aria": "Ver registro de chamadas"
+    },
+    "back_button_aria": "Voltar para a lista",
+    "chat": {
+      "list_aria": "Lista de chats do Messenger",
+      "item_aria": "Selecionar chat com {name}",
+      "detail_aria": "Detalhes do chat para {name}"
+    },
+    "contacts": {
+      "list_aria": "Lista de contatos do Messenger",
+      "item_aria": "Selecionar contato {name}",
+      "detail_aria": "Detalhes do contato para {name}",
+      "number": "Número",
+      "email": "E-mail",
+      "alexRivera": { "name": "Alex Rivera", "email": "alex.rivera@fb.com" },
+      "briannaLee": { "name": "Brianna Lee", "email": "brianna.lee@fb.com" },
+      "carlosMendoza": { "name": "Carlos Mendoza", "email": "carlos.m@fb.com" },
+      "dianaFoster": { "name": "Diana Foster", "email": "diana.f@fb.com" },
+      "ethanBrooks": { "name": "Ethan Brooks", "email": "ethan.b@fb.com" },
+      "fionaGrant": { "name": "Fiona Grant", "email": "fiona.g@fb.com" },
+      "gabrielOrtiz": { "name": "Gabriel Ortiz", "email": "gabriel.o@fb.com" },
+      "hannahPark": { "name": "Hannah Park", "email": "hannah.p@fb.com" },
+      "isaacNewton": { "name": "Isaac Newton", "email": "isaac.n@fb.com" }
+    },
+    "callLogs": {
+      "list_aria": "Registro de chamadas do Messenger",
+      "item_aria": "Selecionar chamada com {name}",
+      "detail_aria": "Detalhes da chamada para {name}",
+      "emilyChen": { "name": "Emily Chen" },
+      "michaelTorres": { "name": "Michael Torres" },
+      "sarahKim": { "name": "Sarah Kim" },
+      "davidPatel": { "name": "David Patel" },
+      "lisaWong": { "name": "Lisa Wong" }
+    },
+    "call": {
+      "answered_calls": "Atendidas"
+    },
+    "callTypes": {
+      "outgoing": "Efetuada",
+      "incoming": "Recebida",
+      "missed": "Perdida"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "Emily Chen",
+        "lastMessage": "Não conte a ninguém!",
+        "messages": {
+          "msg1": { "text": "Enviei um link privado para você." },
+          "msg2": { "text": "Recebi, mas por que tanto segredo?" },
+          "msg3": { "text": "Não conte a ninguém!" }
+        }
+      },
+      "michaelTorres": {
+        "name": "Michael Torres",
+        "lastMessage": "Vou apagar o chat depois.",
+        "messages": {
+          "msg1": { "text": "Você ainda vai encontrá-la hoje à noite?" },
+          "msg2": { "text": "Sim, mas mantenha isso em segredo." },
+          "msg3": { "text": "Vou apagar o chat depois." }
+        }
+      },
+      "sarahKim": {
+        "name": "Sarah Kim",
+        "lastMessage": "Eu escondi o post, obrigado!",
+        "messages": {
+          "msg1": { "text": "Pode esconder aquele post para mim?" },
+          "msg2": { "text": "Eu escondi o post, obrigado!" }
+        }
+      },
+      "davidPatel": {
+        "name": "David Patel",
+        "lastMessage": "Confira o grupo secreto.",
+        "messages": {
+          "msg1": { "text": "Te adicionei a um grupo secreto." },
+          "msg2": { "text": "Obrigado, do que se trata?" },
+          "msg3": { "text": "Confira o grupo secreto." }
+        }
+      },
+      "lisaWong": {
+        "name": "Lisa Wong",
+        "lastMessage": "Vamos manter isso entre nós.",
+        "messages": {
+          "msg1": { "text": "Está livre para conversar em particular?" },
+          "msg2": { "text": "Sim, o que está acontecendo?" },
+          "msg3": { "text": "Vamos manter isso entre nós." }
+        }
+      }
+    }
   }
 }
