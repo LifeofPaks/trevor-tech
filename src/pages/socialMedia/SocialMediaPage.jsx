@@ -254,7 +254,7 @@ const HoloAccessTerminal = ({ inView }) => {
   return (
     <motion.div
       ref={ref}
-      className="relative lg:!w-[450px] lg:!h-[300px] !w-[360px] !h-[240px] !my-12 lg:!my-0"
+      className="relative lg:!w-[450px] lg:!h-[300px] !w-full !h-[240px] !my-12 lg:!my-0"
       style={{ x: tx, y: ty, perspective: 1000 }}
       onMouseMove={onMove}
       whileHover={{ scale: 1.05 }}
@@ -478,7 +478,7 @@ const SocialMediaPage = () => {
       {/* HERO SECTION */}
       <section
         ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center !pt-32 lg:!pt-48 overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center !pt-32 lg:!pt-32 overflow-hidden"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-[#060820] via-[#0b0d38] to-[#0a2e33] opacity-95" />
         <div className="relative z-10 max-w-7xl !mx-auto !px-6 grid lg:grid-cols-2 !gap-12 items-center">
@@ -504,7 +504,7 @@ const SocialMediaPage = () => {
               {t("smedia.hero_description")}
             </motion.p>
             <motion.div
-              className="flex flex-col sm:flex-row !gap-4 !mt-8"
+              className="flex flex-col sm:flex-row !gap-4 !mt-8 max-w-[80%] lg:!mx-0 !mx-auto"
               initial={{ opacity: 0, y: 30 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6 }}
