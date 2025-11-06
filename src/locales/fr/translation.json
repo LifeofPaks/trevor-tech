@@ -1403,53 +1403,6 @@
       "app18.name": "Amazon"
     }
   },
-  "social_media": "Pirater n'importe quel réseau social",
-  "smedia": {
-    "hero_title": "Pirater Instantanément Tout Compte de Réseaux Sociaux",
-    "hero_description": "Accédez discrètement et en temps réel à Snapchat, Instagram, WhatsApp, Facebook et plus. Surveillez messages, médias et activités supprimées avec une technologie de cryptage de pointe.",
-    "cta_start": "Lancer le Piratage Maintenant",
-    "platform_access": "Accédez aux messages et médias sans être détecté",
-    "simulation_title": "Simulation de Piratage en Direct",
-    "simulation_description": "Observez notre système contourner la sécurité en temps réel pour accéder à tout compte de réseaux sociaux en toute sécurité.",
-    "simulation_progress": "Terminé",
-    "how_it_works_title": "Comment Nous Piratons les Réseaux Sociaux",
-    "step_1_title": "Sélection de la Cible",
-    "step_1_description": "Fournissez les détails du compte, et notre système identifie les vulnérabilités instantanément.",
-    "step_2_title": "Accès Sécurisé",
-    "step_2_description": "Nos outils contournent les protocoles de sécurité pour vous donner un accès complet sans alertes.",
-    "step_3_title": "Surveillance en Temps Réel",
-    "step_3_description": "Suivez messages, médias et activités en direct avec une protection de données cryptées.",
-    "features_title": "Capacités de Piratage Inégalées",
-    "feature_1_title": "Accès Indétectable",
-    "feature_1_description": "Infiltrez les comptes sans déclencher de notifications ou d'alertes de sécurité.",
-    "feature_2_title": "Plus de 20 Plateformes",
-    "feature_2_description": "Piratez Snapchat, Instagram, WhatsApp, Facebook, Telegram et plus.",
-    "feature_3_title": "Données Cryptées",
-    "feature_3_description": "Surveillez en toute sécurité avec un cryptage de bout en bout pour une confidentialité totale.",
-    "testimonials_title": "Approuvé par Plus de 12,847 Clients",
-    "testimonials_description": "Nos clients ont accédé et surveillé des comptes de réseaux sociaux avec une discrétion totale. Rejoignez-les aujourd'hui.",
-    "testimonial_1": "J’ai piraté le Snapchat de mon ex en moins d’une heure. Sans trace, sans souci !",
-    "testimonial_type_1": "Infiltration Snapchat",
-    "testimonial_time_1": "Piraté en 45 min",
-    "testimonial_2": "J’ai découvert des mensonges sur Instagram instantanément. Ce service change la donne !",
-    "testimonial_type_2": "Surveillance Instagram",
-    "testimonial_time_2": "Piraté en 2 heures",
-    "testimonial_3": "J’ai récupéré des chats WhatsApp supprimés en minutes. Parfait !",
-    "testimonial_type_3": "Accès WhatsApp",
-    "testimonial_time_3": "Piraté en 30 min",
-    "testimonial_4": "J’ai pénétré un compte Facebook verrouillé. Rapide et sécurisé !",
-    "testimonial_type_4": "Brèche Facebook",
-    "testimonial_time_4": "Piraté en 3 heures",
-    "testimonial_5": "J’ai surveillé Telegram sans être détecté. Génial !",
-    "testimonial_type_5": "Surveillance Telegram",
-    "testimonial_time_5": "Piraté en 1 heure",
-    "testimonial_6": "J’ai restauré mon Instagram après un piratage. Aucune trace !",
-    "testimonial_type_6": "Récupération Instagram",
-    "testimonial_time_6": "Piraté en 1.5 heures",
-    "final_cta_title": "Prenez le Contrôle Maintenant",
-    "final_cta_description": "Rejoignez plus de 12,847 utilisateurs qui ont maîtrisé leurs comptes de réseaux sociaux avec nos services de piratage d’élite.",
-    "final_cta_button": "Commencez Aujourd’hui"
-  },
   "smedia": {
     "hero_title": "Déverrouillez N'importe Quel Compte de Réseaux Sociaux Instantanément",
     "hero_description": "Découvrez une technologie quantique de pointe pour accéder et surveiller les comptes de réseaux sociaux de manière sécurisée et discrète.",
@@ -1516,5 +1469,119 @@
     "final_cta_title": "Prêt à Prendre le Contrôle ?",
     "final_cta_description": "Rejoignez des milliers d’utilisateurs et déverrouillez tout le potentiel de notre technologie d’accès quantique aujourd’hui.",
     "final_cta_button": "Commencer Maintenant"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "contacts": "Contacts",
+      "call_log": "Journal d'Appels",
+      "aria_label": "Onglets de navigation WhatsApp",
+      "chat_aria": "Voir la liste des chats",
+      "contacts_aria": "Voir la liste des contacts",
+      "call_log_aria": "Voir le journal d'appels"
+    },
+    "back_button_aria": "Retourner à la liste",
+    "chat": {
+      "list_aria": "Liste des chats WhatsApp",
+      "item_aria": "Sélectionner le chat avec {name}",
+      "detail_aria": "Détails du chat de {name}"
+    },
+    "contacts": {
+      "list_aria": "Liste des contacts WhatsApp",
+      "item_aria": "Sélectionner le contact {name}",
+      "detail_aria": "Détails du contact {name}",
+      "number": "Numéro",
+      "email": "Email",
+      "adam": { "name": "Adam", "email": "adam@gmail.com" },
+      "alicia": { "name": "Alicia", "email": "alicia@gmail.com" },
+      "andrew": { "name": "Andrew", "email": "andrew@outlook.com" },
+      "arya": { "name": "Arya", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "Alice", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "Bart", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "Barry", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "Brian", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "Brenda", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "Journal d'appels WhatsApp",
+      "item_aria": "Sélectionner l'appel avec {name}",
+      "detail_aria": "Détails de l'appel de {name}",
+      "adam": { "name": "Adam" },
+      "sarah": { "name": "Sarah" },
+      "jane": { "name": "Jane" },
+      "arya": { "name": "Arya" },
+      "alicia": { "name": "Alicia" },
+      "tom": { "name": "Tom" },
+      "drJames": { "name": "Dr. James" },
+      "brenda": { "name": "Brenda" }
+    },
+    "call": {
+      "answered_calls": "Appels Répondus"
+    },
+    "callTypes": {
+      "outgoing": "Sortant",
+      "incoming": "Entrant",
+      "missed": "Manqué"
+    },
+    "chats": {
+      "drJames": {
+        "name": "Cabinet du Dr James",
+        "lastMessage": "Vous devriez venir demain.",
+        "messages": {
+          "msg1": {
+            "text": "Bonjour ! Comment vous sentez-vous aujourd'hui ?"
+          },
+          "msg2": { "text": "Mieux, mais j'ai encore mal à la tête." },
+          "msg3": { "text": "Vous devriez venir demain pour un contrôle." }
+        }
+      },
+      "sarahT": {
+        "name": "Sarah, T",
+        "lastMessage": "Il t'aime. Bien sûr qu'il te pardonnera. Il suffit de dire que tu es désolée.",
+        "messages": {
+          "msg1": { "text": "J'ai vraiment foiré avec Mark." },
+          "msg2": { "text": "Que s'est-il passé ?" },
+          "msg3": { "text": "J'ai oublié notre anniversaire." },
+          "msg4": {
+            "text": "Il t'aime. Bien sûr qu'il te pardonnera. Il suffit de dire que tu es désolée."
+          }
+        }
+      },
+      "jeromeT": {
+        "name": "Jerome T",
+        "lastMessage": "Ensuite, j'ai quelques réunions en ville.",
+        "messages": {
+          "msg1": { "text": "Vas-tu rentrer à l'heure ?" },
+          "msg2": { "text": "Oui, j'ai presque fini au bureau." },
+          "msg3": { "text": "Ensuite, j'ai quelques réunions en ville." }
+        }
+      },
+      "sallyJ": {
+        "name": "Sally, J",
+        "lastMessage": "Je serai là dès que possible.",
+        "messages": {
+          "msg1": { "text": "Viens-tu à la fête ?" },
+          "msg2": {
+            "text": "La circulation est mauvaise, mais je suis en route."
+          },
+          "msg3": { "text": "Je serai là dès que possible." }
+        }
+      },
+      "bob": {
+        "name": "Bob",
+        "lastMessage": "Merci.",
+        "messages": {
+          "msg1": {
+            "text": "Nina, Tom a dit que tu ne te sentais pas bien. Ça va ?"
+          },
+          "msg2": { "text": "Non, je ne pourrai pas sortir aujourd'hui." },
+          "msg3": { "text": "Ne t'inquiète pas. Remets-toi vite !" },
+          "msg4": { "text": "Merci." }
+        }
+      }
+    }
   }
 }

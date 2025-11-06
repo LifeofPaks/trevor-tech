@@ -1326,71 +1326,181 @@
       "app18.name": "アマゾン"
     }
   },
- "smedia": {
-      "hero_title": "ソーシャルメディアアカウントを即座にアンロック",
-      "hero_description": "最先端の量子技術を体験して、ソーシャルメディアアカウントに安全かつ慎重にアクセスし、監視します。",
-      "cta_start": "今すぐ開始",
-      "cta_contact_us": "お問い合わせ",
-      "simulation_title": "量子シミュレーション",
-      "matrix_title": "アクセスマトリックス",
-      "matrix_accounts": "アカウント",
-      "matrix_platforms": "プラットフォーム",
-      "how_it_works_title": "量子アクセスの仕組み",
-      "how_it_works_subtitle": "安全かつ効率的なアカウントアクセスを実現する先進技術のシームレスなプロセスをご覧ください。",
-      "step_1_title": "ターゲット選択",
-      "step_1_description": "アカウントの詳細を入力して、脆弱性を即座に特定します。",
-      "step_2_title": "ステルス浸透",
-      "step_2_description": "量子ツールがセキュリティ層を通過し、シームレスなアクセスを実現します。",
-      "step_3_title": "リアルタイム監視",
-      "step_3_description": "暗号化された精度でメッセージ、メディア、アクティビティを監視します。",
-      "features_title": "次世代アクセス機能",
-      "features_subtitle": "当プラットフォームをパフォーマンスとセキュリティで無敵にする強力な機能をご覧ください。",
-      "feature_1_title": "不可視エントリー",
-      "feature_1_description": "アラートや通知をトリガーせずにアカウントにアクセスします。",
-      "feature_2_title": "20以上のプラットフォーム",
-      "feature_2_description": "Snapchat、Instagram、WhatsApp、Telegramなどをサポート。",
-      "feature_3_title": "量子暗号化",
-      "feature_3_description": "破られないエンドツーエンドの暗号化で安全な監視。",
-      "testimonials_title": "ユーザーの声",
-      "testimonials_description": "私たちの量子アクセス技術の力を体験したユーザーの声を聞いてください。",
-      "testimonial_1": "数分でSnapchatアカウントにアクセス。完全に慎重！",
-      "testimonial_type_1": "Snapchatユーザー",
-      "testimonial_time_1": "2日前検証済み",
-      "testimonial_2": "Instagramへのアクセスは完璧でした。強くお勧めします！",
-      "testimonial_type_2": "Instagramユーザー",
-      "testimonial_time_2": "1週間前検証済み",
-      "testimonial_3": "WhatsAppを簡単に監視。超安全！",
-      "testimonial_type_3": "WhatsAppユーザー",
-      "testimonial_time_3": "3日前検証済み",
-      "testimonial_4": "Facebookへのアクセスは迅速かつ不可視。驚くべき技術！",
-      "testimonial_type_4": "Facebookユーザー",
-      "testimonial_time_4": "5日前検証済み",
-      "testimonial_5": "Telegramの監視は完璧に機能しました。問題なし！",
-      "testimonial_type_5": "Telegramユーザー",
-      "testimonial_time_5": "4日前検証済み",
-      "testimonial_6": "Instagramのための素晴らしいツール。使いやすい！",
-      "testimonial_type_6": "Instagramユーザー",
-      "testimonial_time_6": "6日前検証済み",
-      "testimonial_7": "Snapchatへのアクセスはスムーズで速かったです。大好き！",
-      "testimonial_type_7": "Snapchatユーザー",
-      "testimonial_time_7": "2日前検証済み",
-      "testimonial_8": "Snapchat監視のゲームチェンジャーです！",
-      "testimonial_type_8": "Snapchatユーザー",
-      "testimonial_time_8": "3日前検証済み",
-      "testimonial_9": "Snapchatへのアクセスはシームレス。非常に安全！",
-      "testimonial_type_9": "Snapchatユーザー",
-      "testimonial_time_9": "昨日検証済み",
-      "testimonial_10": "迅速で信頼性の高いSnapchatアクセス。感動しました！",
-      "testimonial_type_10": "Snapchatユーザー",
-      "testimonial_time_10": "4日前検証済み",
-      "testimonial_11": "Snapchat監視は楽でした。最高品質！",
-      "testimonial_type_11": "Snapchatユーザー",
-      "testimonial_time_11": "2日前検証済み",
-      "testimonial_12": "Snapchatアクセスに最適なツール。非常に慎重！",
-      "testimonial_type_12": "Snapchatユーザー",
-      "testimonial_time_12": "5日前検証済み",
-      "final_cta_title": "コントロールする準備はできていますか？",
-      "final_cta_description": "何千人ものユーザーに加わり、今日、私たちの量子アクセス技術の全可能性を解き放ちましょう。",
-      "final_cta_button": "今すぐ開始"
+  "smedia": {
+    "hero_title": "ソーシャルメディアアカウントを即座にアンロック",
+    "hero_description": "最先端の量子技術を体験して、ソーシャルメディアアカウントに安全かつ慎重にアクセスし、監視します。",
+    "cta_start": "今すぐ開始",
+    "cta_contact_us": "お問い合わせ",
+    "simulation_title": "量子シミュレーション",
+    "matrix_title": "アクセスマトリックス",
+    "matrix_accounts": "アカウント",
+    "matrix_platforms": "プラットフォーム",
+    "how_it_works_title": "量子アクセスの仕組み",
+    "how_it_works_subtitle": "安全かつ効率的なアカウントアクセスを実現する先進技術のシームレスなプロセスをご覧ください。",
+    "step_1_title": "ターゲット選択",
+    "step_1_description": "アカウントの詳細を入力して、脆弱性を即座に特定します。",
+    "step_2_title": "ステルス浸透",
+    "step_2_description": "量子ツールがセキュリティ層を通過し、シームレスなアクセスを実現します。",
+    "step_3_title": "リアルタイム監視",
+    "step_3_description": "暗号化された精度でメッセージ、メディア、アクティビティを監視します。",
+    "features_title": "次世代アクセス機能",
+    "features_subtitle": "当プラットフォームをパフォーマンスとセキュリティで無敵にする強力な機能をご覧ください。",
+    "feature_1_title": "不可視エントリー",
+    "feature_1_description": "アラートや通知をトリガーせずにアカウントにアクセスします。",
+    "feature_2_title": "20以上のプラットフォーム",
+    "feature_2_description": "Snapchat、Instagram、WhatsApp、Telegramなどをサポート。",
+    "feature_3_title": "量子暗号化",
+    "feature_3_description": "破られないエンドツーエンドの暗号化で安全な監視。",
+    "testimonials_title": "ユーザーの声",
+    "testimonials_description": "私たちの量子アクセス技術の力を体験したユーザーの声を聞いてください。",
+    "testimonial_1": "数分でSnapchatアカウントにアクセス。完全に慎重！",
+    "testimonial_type_1": "Snapchatユーザー",
+    "testimonial_time_1": "2日前検証済み",
+    "testimonial_2": "Instagramへのアクセスは完璧でした。強くお勧めします！",
+    "testimonial_type_2": "Instagramユーザー",
+    "testimonial_time_2": "1週間前検証済み",
+    "testimonial_3": "WhatsAppを簡単に監視。超安全！",
+    "testimonial_type_3": "WhatsAppユーザー",
+    "testimonial_time_3": "3日前検証済み",
+    "testimonial_4": "Facebookへのアクセスは迅速かつ不可視。驚くべき技術！",
+    "testimonial_type_4": "Facebookユーザー",
+    "testimonial_time_4": "5日前検証済み",
+    "testimonial_5": "Telegramの監視は完璧に機能しました。問題なし！",
+    "testimonial_type_5": "Telegramユーザー",
+    "testimonial_time_5": "4日前検証済み",
+    "testimonial_6": "Instagramのための素晴らしいツール。使いやすい！",
+    "testimonial_type_6": "Instagramユーザー",
+    "testimonial_time_6": "6日前検証済み",
+    "testimonial_7": "Snapchatへのアクセスはスムーズで速かったです。大好き！",
+    "testimonial_type_7": "Snapchatユーザー",
+    "testimonial_time_7": "2日前検証済み",
+    "testimonial_8": "Snapchat監視のゲームチェンジャーです！",
+    "testimonial_type_8": "Snapchatユーザー",
+    "testimonial_time_8": "3日前検証済み",
+    "testimonial_9": "Snapchatへのアクセスはシームレス。非常に安全！",
+    "testimonial_type_9": "Snapchatユーザー",
+    "testimonial_time_9": "昨日検証済み",
+    "testimonial_10": "迅速で信頼性の高いSnapchatアクセス。感動しました！",
+    "testimonial_type_10": "Snapchatユーザー",
+    "testimonial_time_10": "4日前検証済み",
+    "testimonial_11": "Snapchat監視は楽でした。最高品質！",
+    "testimonial_type_11": "Snapchatユーザー",
+    "testimonial_time_11": "2日前検証済み",
+    "testimonial_12": "Snapchatアクセスに最適なツール。非常に慎重！",
+    "testimonial_type_12": "Snapchatユーザー",
+    "testimonial_time_12": "5日前検証済み",
+    "final_cta_title": "コントロールする準備はできていますか？",
+    "final_cta_description": "何千人ものユーザーに加わり、今日、私たちの量子アクセス技術の全可能性を解き放ちましょう。",
+    "final_cta_button": "今すぐ開始"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp"
+    },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "call_log": "通話履歴",
+      "aria_label": "WhatsAppナビゲーションタブ",
+      "chat_aria": "チャットリストを表示",
+      "contacts_aria": "連絡先リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "WhatsAppチャットリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "contacts": {
+      "list_aria": "WhatsApp連絡先リスト",
+      "item_aria": "連絡先{name}を選択",
+      "detail_aria": "{name}の連絡先詳細",
+      "number": "電話番号",
+      "email": "メール",
+      "adam": { "name": "アダム", "email": "adam@gmail.com" },
+      "alicia": { "name": "アリシア", "email": "alicia@gmail.com" },
+      "andrew": { "name": "アンドリュー", "email": "andrew@outlook.com" },
+      "arya": { "name": "アーリア", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "アリス", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "バート", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "バリー", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "ブライアン", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "ブレンダ", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "WhatsApp通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "adam": { "name": "アダム" },
+      "sarah": { "name": "サラ" },
+      "jane": { "name": "ジェーン" },
+      "arya": { "name": "アーリア" },
+      "alicia": { "name": "アリシア" },
+      "tom": { "name": "トム" },
+      "drJames": { "name": "ジェームズ博士" },
+      "brenda": { "name": "ブレンダ" }
+    },
+    "call": {
+      "answered_calls": "応答済み通話"
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "drJames": {
+        "name": "ジェームズ博士のオフィス",
+        "lastMessage": "明日来てください。",
+        "messages": {
+          "msg1": { "text": "おはよう！今日の気分はどうですか？" },
+          "msg2": { "text": "良くなったけど、まだ頭痛がします。" },
+          "msg3": { "text": "明日、検診に来てください。" }
+        }
+      },
+      "sarahT": {
+        "name": "サラ、T",
+        "lastMessage": "彼はあなたを愛しています。もちろん許してくれます。謝るだけでいいのよ。",
+        "messages": {
+          "msg1": { "text": "マークと大失敗しちゃった。" },
+          "msg2": { "text": "何が起こったの？" },
+          "msg3": { "text": "私たちの記念日を忘れちゃった。" },
+          "msg4": {
+            "text": "彼はあなたを愛しています。もちろん許してくれます。謝るだけでいいのよ。"
+          }
+        }
+      },
+      "jeromeT": {
+        "name": "ジェローム T",
+        "lastMessage": "その後、街でいくつか会議があります。",
+        "messages": {
+          "msg1": { "text": "時間通りに帰宅できる？" },
+          "msg2": { "text": "うん、オフィスでほぼ終わったよ。" },
+          "msg3": { "text": "その後、街でいくつか会議があります。" }
+        }
+      },
+      "sallyJ": {
+        "name": "サリー、J",
+        "lastMessage": "できるだけ早くそこに着きます。",
+        "messages": {
+          "msg1": { "text": "パーティーに来る？" },
+          "msg2": { "text": "交通がひどいけど、向かってるよ。" },
+          "msg3": { "text": "できるだけ早くそこに着きます。" }
+        }
+      },
+      "bob": {
+        "name": "ボブ",
+        "lastMessage": "ありがとう。",
+        "messages": {
+          "msg1": {
+            "text": "ニーナ、トムがあなたが体調悪いって言ってた。大丈夫？"
+          },
+          "msg2": { "text": "ううん、今日外に出られないよ。" },
+          "msg3": { "text": "心配しないで。早く良くなってね！" },
+          "msg4": { "text": "ありがとう。" }
+        }
+      }
     }
+  }
 }

@@ -1465,5 +1465,115 @@
     "final_cta_title": "¿Listo para Tomar el Control?",
     "final_cta_description": "Únete a miles de usuarios y desbloquea todo el potencial de nuestra tecnología de acceso cuántico hoy.",
     "final_cta_button": "Comenzar Ahora"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "contacts": "Contactos",
+      "call_log": "Registro de Llamadas",
+      "aria_label": "Pestañas de navegación de WhatsApp",
+      "chat_aria": "Ver lista de chats",
+      "contacts_aria": "Ver lista de contactos",
+      "call_log_aria": "Ver registro de llamadas"
+    },
+    "back_button_aria": "Volver a la lista",
+    "chat": {
+      "list_aria": "Lista de chats de WhatsApp",
+      "item_aria": "Seleccionar chat con {name}",
+      "detail_aria": "Detalles del chat de {name}"
+    },
+    "contacts": {
+      "list_aria": "Lista de contactos de WhatsApp",
+      "item_aria": "Seleccionar contacto {name}",
+      "detail_aria": "Detalles del contacto {name}",
+      "number": "Número",
+      "email": "Correo Electrónico",
+      "adam": { "name": "Adam", "email": "adam@gmail.com" },
+      "alicia": { "name": "Alicia", "email": "alicia@gmail.com" },
+      "andrew": { "name": "Andrew", "email": "andrew@outlook.com" },
+      "arya": { "name": "Arya", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "Alice", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "Bart", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "Barry", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "Brian", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "Brenda", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "Registro de llamadas de WhatsApp",
+      "item_aria": "Seleccionar llamada con {name}",
+      "detail_aria": "Detalles de la llamada de {name}",
+      "adam": { "name": "Adam" },
+      "sarah": { "name": "Sarah" },
+      "jane": { "name": "Jane" },
+      "arya": { "name": "Arya" },
+      "alicia": { "name": "Alicia" },
+      "tom": { "name": "Tom" },
+      "drJames": { "name": "Dr. James" },
+      "brenda": { "name": "Brenda" }
+    },
+    "call": {
+      "answered_calls": "Llamadas Contestadas"
+    },
+    "callTypes": {
+      "outgoing": "Saliente",
+      "incoming": "Entrante",
+      "missed": "Perdida"
+    },
+    "chats": {
+      "drJames": {
+        "name": "Oficina del Dr. James",
+        "lastMessage": "Deberías venir mañana.",
+        "messages": {
+          "msg1": { "text": "¡Buenos días! ¿Cómo te sientes hoy?" },
+          "msg2": { "text": "Mejor, pero todavía tengo dolor de cabeza." },
+          "msg3": { "text": "Deberías venir mañana para un chequeo." }
+        }
+      },
+      "sarahT": {
+        "name": "Sarah, T",
+        "lastMessage": "Te ama. Por supuesto que te perdonará. Solo tienes que pedir disculpas.",
+        "messages": {
+          "msg1": { "text": "La cagué a lo grande con Mark." },
+          "msg2": { "text": "¿Qué pasó?" },
+          "msg3": { "text": "Olvidé nuestro aniversario." },
+          "msg4": {
+            "text": "Te ama. Por supuesto que te perdonará. Solo tienes que pedir disculpas."
+          }
+        }
+      },
+      "jeromeT": {
+        "name": "Jerome T",
+        "lastMessage": "Luego tengo algunas reuniones en la ciudad.",
+        "messages": {
+          "msg1": { "text": "¿Vas a llegar a casa a tiempo?" },
+          "msg2": { "text": "Sí, ya casi termino en la oficina." },
+          "msg3": { "text": "Luego tengo algunas reuniones en la ciudad." }
+        }
+      },
+      "sallyJ": {
+        "name": "Sally, J",
+        "lastMessage": "Estaré allí tan pronto como pueda.",
+        "messages": {
+          "msg1": { "text": "¿Vienes a la fiesta?" },
+          "msg2": { "text": "El tráfico está malo, pero estoy en camino." },
+          "msg3": { "text": "Estaré allí tan pronto como pueda." }
+        }
+      },
+      "bob": {
+        "name": "Bob",
+        "lastMessage": "Gracias.",
+        "messages": {
+          "msg1": {
+            "text": "Nina, Tom dijo que no te sentías bien. ¿Estás bien?"
+          },
+          "msg2": { "text": "No, no podré salir hoy." },
+          "msg3": { "text": "No te preocupes. ¡Mejórate pronto!" },
+          "msg4": { "text": "Gracias." }
+        }
+      }
+    }
   }
 }

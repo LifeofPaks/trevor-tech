@@ -18,17 +18,15 @@ import {
   FiMessageSquare,
   FiUsers,
   FiPhone,
-  FiArrowLeft,
   FiPhoneCall,
   FiPhoneIncoming,
   FiPhoneMissed,
   FiMail,
-  FiCheck,
 } from "react-icons/fi";
-import { IoArrowBackCircle, IoLogoBitbucket, IoLogoWhatsapp } from "react-icons/io5";
+import { IoArrowBackCircle } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 import BindPhone from "../../components/demo/BindPhone";
 import { RiCheckDoubleFill, RiWhatsappFill } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
 
 // Create custom theme with cyan primary color
 const theme = createTheme({
@@ -60,259 +58,205 @@ const theme = createTheme({
   },
 });
 
-// Sample Data
-// Full Chat Data
+// Sample Data with updated keys
 const chats = [
   {
     id: 1,
-    name: "Dr. Jame's Office",
+    nameKey: "drJames.name",
+    lastMessageKey: "drJames.lastMessage",
     avatar: "https://i.pravatar.cc/150?img=15",
-    lastMessage: "You should come in tomorrow.",
-    time: " 09:35",
+    time: "09:35",
     messages: [
-      {
-        text: "Good morning! How are you feeling today?",
-        time: "09:30",
-        incoming: true,
-      },
-      {
-        text: "Better, but still have a headache.",
-        time: "09:32",
-        incoming: false,
-      },
-      {
-        text: "You should come in tomorrow for a check-up.",
-        time: "09:35",
-        incoming: true,
-      },
+      { textKey: "drJames.messages.msg1.text", time: "09:30", incoming: true },
+      { textKey: "drJames.messages.msg2.text", time: "09:32", incoming: false },
+      { textKey: "drJames.messages.msg3.text", time: "09:35", incoming: true },
     ],
   },
   {
     id: 2,
-    name: "Sarah, T",
+    nameKey: "sarahT.name",
+    lastMessageKey: "sarahT.lastMessage",
     avatar: "https://i.pravatar.cc/150?img=12",
-    lastMessage:
-      "He loves you. of course, he'll forgive you. you just's gotta say you're sorry.",
-    time: "09:34",
+    time: "10:34",
     messages: [
-      {
-        text: "I messed up big time with Mark.",
-        time: "09:20",
-        incoming: false,
-      },
-      { text: "What happened?", time: "09:22", incoming: true },
-      { text: "I forgot our anniversary.", time: "09:25", incoming: false },
-      {
-        text: "He loves you. of course, he'll forgive you. you just's gotta say you're sorry.",
-        time: "09:34",
-        incoming: true,
-      },
+      { textKey: "sarahT.messages.msg1.text", time: "10:00", incoming: false },
+      { textKey: "sarahT.messages.msg2.text", time: "10:42", incoming: true },
+      { textKey: "sarahT.messages.msg3.text", time: "10:45", incoming: false },
+      { textKey: "sarahT.messages.msg4.text", time: "10:54", incoming: true },
     ],
   },
   {
     id: 3,
-    name: "Jerome T",
+    nameKey: "jeromeT.name",
+    lastMessageKey: "jeromeT.lastMessage",
     avatar: "https://i.pravatar.cc/150?img=1",
-    lastMessage: "Then I have a few meetings in the city.",
     time: "2022-01-07 10:45",
     messages: [
-      {
-        text: "Are you going to get home on time?",
-        time: "10:30",
-        incoming: true,
-      },
-      {
-        text: "Yes. I'm almost done at the office.",
-        time: "10:40",
-        incoming: false,
-      },
-      {
-        text: "Then I have a few meetings in the city.",
-        time: "10:45",
-        incoming: false,
-      },
+      { textKey: "jeromeT.messages.msg1.text", time: "10:50", incoming: true },
+      { textKey: "jeromeT.messages.msg2.text", time: "11:10", incoming: false },
+      { textKey: "jeromeT.messages.msg3.text", time: "11:15", incoming: false },
     ],
   },
   {
     id: 4,
-    name: "Sally, J",
+    nameKey: "sallyJ.name",
+    lastMessageKey: "sallyJ.lastMessage",
     avatar: "https://i.pravatar.cc/150?img=16",
-    lastMessage: "I'll be there as soon as I can.",
-    time: "10:41",
+    time: "11:41",
     messages: [
-      { text: "Are you coming to the party?", time: "10:30", incoming: true },
-      {
-        text: "Traffic is bad, but I'm on my way.",
-        time: "10:35",
-        incoming: false,
-      },
-      {
-        text: "I'll be there as soon as I can.",
-        time: "10:41",
-        incoming: false,
-      },
+      { textKey: "sallyJ.messages.msg1.text", time: "11:50", incoming: true },
+      { textKey: "sallyJ.messages.msg2.text", time: "11:51", incoming: false },
+      { textKey: "sallyJ.messages.msg3.text", time: "11:58", incoming: false },
     ],
   },
   {
     id: 5,
-    name: "Bob",
+    nameKey: "bob.name",
+    lastMessageKey: "bob.lastMessage",
     avatar: "https://i.pravatar.cc/150?img=2",
-    lastMessage: "Thanks.",
-    time: "10:00",
+    time: "12:00",
     messages: [
-      {
-        text: "Nina, Tom said you weren't feeling well. Are you ok?",
-        time: "08:11",
-        incoming: true,
-      },
-      {
-        text: "No. I won't be able to hang out today.",
-        time: "08:33",
-        incoming: false,
-      },
-      {
-        text: "Don't worry about it. Feel better soon!",
-        time: "09:52",
-        incoming: true,
-      },
-      { text: "Thanks.", time: "10:00", incoming: false },
+      { textKey: "bob.messages.msg1.text", time: "12:11", incoming: true },
+      { textKey: "bob.messages.msg2.text", time: "12:33", incoming: false },
+      { textKey: "bob.messages.msg3.text", time: "12:52", incoming: true },
+      { textKey: "bob.messages.msg4.text", time: "12:58", incoming: false },
     ],
   },
 ];
 
-// Full Contact Data
 const contacts = [
   {
     id: 1,
-    name: "Adam",
+    nameKey: "adam.name",
+    emailKey: "adam.email",
     avatar: "https://i.pravatar.cc/150?img=3",
     phone: "3474652243",
-    email: "adam@gmail.com",
   },
   {
     id: 2,
-    name: "Alicia",
+    nameKey: "alicia.name",
+    emailKey: "alicia.email",
     avatar: "https://i.pravatar.cc/150?img=4",
     phone: "3457565667",
-    email: "alicia@gmail.com",
   },
   {
     id: 3,
-    name: "Andrew",
+    nameKey: "andrew.name",
+    emailKey: "andrew.email",
     avatar: "https://i.pravatar.cc/150?img=5",
     phone: "3471122334",
-    email: "andrew@outlook.com",
   },
   {
     id: 4,
-    name: "Arya",
+    nameKey: "arya.name",
+    emailKey: "arya.email",
     avatar: "https://i.pravatar.cc/150?img=6",
     phone: "3479988776",
-    email: "arya.stark@winterfell.com",
   },
   {
     id: 5,
-    name: "Alice",
+    nameKey: "alice.name",
+    emailKey: "alice.email",
     avatar: "https://i.pravatar.cc/150?img=7",
     phone: "3472233445",
-    email: "alice.wonderland@tea.com",
   },
   {
     id: 6,
-    name: "Bart",
+    nameKey: "bart.name",
+    emailKey: "bart.email",
     avatar: "https://i.pravatar.cc/150?img=8",
     phone: "3475566778",
-    email: "bart.simpson@springfield.edu",
   },
   {
     id: 7,
-    name: "Barry",
+    nameKey: "barry.name",
+    emailKey: "barry.email",
     avatar: "https://i.pravatar.cc/150?img=9",
     phone: "3478899001",
-    email: "barry.allen@centralcity.gov",
   },
   {
     id: 8,
-    name: "Brian",
+    nameKey: "brian.name",
+    emailKey: "brian.email",
     avatar: "https://i.pravatar.cc/150?img=10",
     phone: "3473344556",
-    email: "brian.griffin@quahog.com",
   },
   {
     id: 9,
-    name: "Brenda",
+    nameKey: "brenda.name",
+    emailKey: "brenda.email",
     avatar: "https://i.pravatar.cc/150?img=11",
     phone: "3476677889",
-    email: "brenda.johnson@lawfirm.com",
   },
 ];
 
-// Call Logs (unchanged)
 const callLogs = [
   {
     id: 1,
-    name: "Adam",
-    avatar: "https://i.pravatar.cc/150?img=3",
+    nameKey: "adam.name",
     type: "outgoing",
-    time: "2022-02-10 20:30",
     duration: "20:30",
+    avatar: "https://i.pravatar.cc/150?img=3",
+    time: "2022-02-10 20:30",
   },
   {
     id: 2,
-    name: "Sarah",
-    avatar: "https://i.pravatar.cc/150?img=12",
+    nameKey: "sarah.name",
     type: "outgoing",
-    time: "2022-02-08 09:45",
     duration: "09:45",
+    avatar: "https://i.pravatar.cc/150?img=12",
+    time: "2022-02-08 09:45",
   },
   {
     id: 3,
-    name: "Jane",
-    avatar: "https://i.pravatar.cc/150?img=13",
+    nameKey: "jane.name",
     type: "missed",
+    avatar: "https://i.pravatar.cc/150?img=13",
     time: "2022-02-04 18:38",
   },
   {
     id: 4,
-    name: "Arya",
-    avatar: "https://i.pravatar.cc/150?img=6",
+    nameKey: "arya.name",
     type: "incoming",
-    time: "2022-01-28 09:30",
     duration: "05:20",
+    avatar: "https://i.pravatar.cc/150?img=6",
+    time: "2022-01-28 09:30",
   },
   {
     id: 5,
-    name: "Alicia",
-    avatar: "https://i.pravatar.cc/150?img=4",
+    nameKey: "alicia.name",
     type: "outgoing",
-    time: "2022-01-15 17:30",
     duration: "12:15",
+    avatar: "https://i.pravatar.cc/150?img=4",
+    time: "2022-01-15 17:30",
   },
   {
     id: 6,
-    name: "Tom",
-    avatar: "https://i.pravatar.cc/150?img=14",
+    nameKey: "tom.name",
     type: "missed",
+    avatar: "https://i.pravatar.cc/150?img=14",
     time: "2022-01-11 07:56",
   },
   {
     id: 7,
-    name: "Dr. James",
-    avatar: "https://i.pravatar.cc/150?img=15",
+    nameKey: "drJames.name",
     type: "outgoing",
-    time: "2022-01-10 15:45",
     duration: "08:30",
+    avatar: "https://i.pravatar.cc/150?img=15",
+    time: "2022-01-10 15:45",
   },
   {
     id: 8,
-    name: "Brenda",
-    avatar: "https://i.pravatar.cc/150?img=11",
+    nameKey: "brenda.name",
     type: "outgoing",
-    time: "2022-01-01 10:30",
     duration: "03:45",
+    avatar: "https://i.pravatar.cc/150?img=11",
+    time: "2022-01-01 10:30",
   },
 ];
-const Index = () => {
+
+const WhatsAppPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -329,16 +273,17 @@ const Index = () => {
 
   const getCallIcon = (type) => {
     if (type === "outgoing")
-      return <FiPhoneCall sx={{ fontSize: 16, color: "#10b981" }} />;
+      return <FiPhoneCall style={{ fontSize: 16, color: "#10b981" }} />;
     if (type === "incoming")
-      return <FiPhoneIncoming sx={{ fontSize: 16, color: "#10b981" }} />;
-    return <FiPhoneMissed sx={{ fontSize: 16, color: "#ef4444" }} />;
+      return <FiPhoneIncoming style={{ fontSize: 16, color: "#10b981" }} />;
+    return <FiPhoneMissed style={{ fontSize: 16, color: "#ef4444" }} />;
   };
 
   const groupContactsByLetter = () => {
     const grouped = {};
     contacts.forEach((contact) => {
-      const letter = contact.name[0].toUpperCase();
+      const name = t(`dmwhatsapp.contacts.${contact.nameKey}`);
+      const letter = name[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(contact);
     });
@@ -353,8 +298,8 @@ const Index = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              WhatsApp
-              <RiWhatsappFill className="text-[#066a5e] " />
+              {t("dmwhatsapp.header.title")}{" "}
+              <RiWhatsappFill className="text-[#066a5e]" />
             </h1>
           </div>
           <BindPhone />
@@ -376,24 +321,28 @@ const Index = () => {
                 mb: 3,
                 "& .MuiTabs-indicator": { bgcolor: "primary.main", height: 3 },
               }}
+              aria-label={t("dmwhatsapp.tabs.aria_label")}
             >
               <Tab
                 icon={<RiWhatsappFill />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chat"}
+                label={isMobile ? "" : t("dmwhatsapp.tabs.chat")}
                 value="chat"
+                aria-label={t("dmwhatsapp.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Contacts"}
+                label={isMobile ? "" : t("dmwhatsapp.tabs.contacts")}
                 value="contacts"
+                aria-label={t("dmwhatsapp.tabs.contacts_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Call Log"}
+                label={isMobile ? "" : t("dmwhatsapp.tabs.call_log")}
                 value="call-log"
+                aria-label={t("dmwhatsapp.tabs.call_log_aria")}
               />
             </Tabs>
           )}
@@ -401,7 +350,11 @@ const Index = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmwhatsapp.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -416,7 +369,6 @@ const Index = () => {
                 lg: showDetail ? "1fr 1fr" : "1fr",
               },
               gap: 3,
-              // height: "calc(100vh - 200px)",
             }}
           >
             {/* Left Panel: Lists */}
@@ -429,6 +381,13 @@ const Index = () => {
                 height: "100%",
                 overflowY: "auto",
               }}
+              aria-label={t(
+                tab === "chat"
+                  ? "dmwhatsapp.chat.list_aria"
+                  : tab === "contacts"
+                  ? "dmwhatsapp.contacts.list_aria"
+                  : "dmwhatsapp.callLogs.list_aria"
+              )}
             >
               {/* Chat List */}
               {tab === "chat" && (
@@ -443,17 +402,22 @@ const Index = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      role="button"
+                      aria-label={t("dmwhatsapp.chat.item_aria", {
+                        name: t(`dmwhatsapp.chats.${chat.nameKey}`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
                           src={chat.avatar}
                           sx={{ width: 48, height: 48 }}
+                          alt={t(`dmwhatsapp.chats.${chat.nameKey}`)}
                         />
                         <Box sx={{ flex: 1, minWidth: 0 }}>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {chat.name}
+                            {t(`dmwhatsapp.chats.${chat.nameKey}`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -464,13 +428,14 @@ const Index = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(`dmwhatsapp.chats.${chat.lastMessageKey}`)}
                           </Typography>
                         </Box>
                         <Typography
                           sx={{ fontSize: "0.75rem", color: "#9ca3af" }}
                         >
-                          {chat.time.split(" ")[1]}
+                          {/* Extract time part if date-time string, else show full time */}
+                          {chat.time.split(" ")[1] || chat.time}
                         </Typography>
                       </Stack>
                     </Box>
@@ -506,6 +471,10 @@ const Index = () => {
                               transition: "background 0.2s",
                             }}
                             onClick={() => setSelectedContact(contact)}
+                            role="button"
+                            aria-label={t("dmwhatsapp.contacts.item_aria", {
+                              name: t(`dmwhatsapp.contacts.${contact.nameKey}`),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -515,11 +484,14 @@ const Index = () => {
                               <Avatar
                                 src={contact.avatar}
                                 sx={{ width: 48, height: 48 }}
+                                alt={t(
+                                  `dmwhatsapp.contacts.${contact.nameKey}`
+                                )}
                               />
                               <Typography
                                 sx={{ fontWeight: 500, color: "#1f2937" }}
                               >
-                                {contact.name}
+                                {t(`dmwhatsapp.contacts.${contact.nameKey}`)}
                               </Typography>
                             </Stack>
                           </Box>
@@ -545,12 +517,17 @@ const Index = () => {
                           transition: "background 0.2s",
                         }}
                         onClick={() => setSelectedCall(call)}
+                        role="button"
+                        aria-label={t("dmwhatsapp.callLogs.item_aria", {
+                          name: t(`dmwhatsapp.callLogs.${call.nameKey}`),
+                        })}
                       >
                         <Stack direction="row" spacing={2} alignItems="center">
                           <Box sx={{ position: "relative" }}>
                             <Avatar
                               src={call.avatar}
                               sx={{ width: 48, height: 48 }}
+                              alt={t(`dmwhatsapp.callLogs.${call.nameKey}`)}
                             />
                             <Box
                               sx={{
@@ -572,17 +549,17 @@ const Index = () => {
                             <Typography
                               sx={{ fontWeight: 600, color: "#1f2937" }}
                             >
-                              {call.name}
+                              {t(`dmwhatsapp.callLogs.${call.nameKey}`)}
                             </Typography>
                             <Typography sx={{ fontSize: "0.875rem", color }}>
-                              {call.type.charAt(0).toUpperCase() +
-                                call.type.slice(1)}
+                              {t(`dmwhatsapp.callTypes.${call.type}`)}
                             </Typography>
                           </Box>
                           <Typography
                             sx={{ fontSize: "0.75rem", color: "#9ca3af" }}
                           >
-                            {call.time.split(" ")[1]}
+                            {/* Extract time part if date-time string, else show full time */}
+                            {call.time.split(" ")[1] || call.time}
                           </Typography>
                         </Stack>
                       </Box>
@@ -602,6 +579,20 @@ const Index = () => {
                   height: "100%",
                   overflowY: "auto",
                 }}
+                aria-label={t(
+                  selectedChat
+                    ? "dmwhatsapp.chat.detail_aria"
+                    : selectedContact
+                    ? "dmwhatsapp.contacts.detail_aria"
+                    : "dmwhatsapp.callLogs.detail_aria",
+                  {
+                    name: selectedChat
+                      ? t(`dmwhatsapp.chats.${selectedChat.nameKey}`)
+                      : selectedContact
+                      ? t(`dmwhatsapp.contacts.${selectedContact.nameKey}`)
+                      : t(`dmwhatsapp.callLogs.${selectedCall.nameKey}`),
+                  }
+                )}
               >
                 {/* Chat Detail */}
                 {selectedChat && (
@@ -610,12 +601,13 @@ const Index = () => {
                       <Avatar
                         src={selectedChat.avatar}
                         sx={{ width: 64, height: 64 }}
+                        alt={t(`dmwhatsapp.chats.${selectedChat.nameKey}`)}
                       />
                       <Typography
                         variant="h5"
                         sx={{ fontWeight: 700, color: "#1f2937" }}
                       >
-                        {selectedChat.name}
+                        {t(`dmwhatsapp.chats.${selectedChat.nameKey}`)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -645,7 +637,7 @@ const Index = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(`dmwhatsapp.chats.${msg.textKey}`)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -673,12 +665,13 @@ const Index = () => {
                     <Avatar
                       src={selectedContact.avatar}
                       sx={{ width: 120, height: 120 }}
+                      alt={t(`dmwhatsapp.contacts.${selectedContact.nameKey}`)}
                     />
                     <Typography
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedContact.name}
+                      {t(`dmwhatsapp.contacts.${selectedContact.nameKey}`)}
                     </Typography>
 
                     {selectedContact.phone && (
@@ -702,16 +695,13 @@ const Index = () => {
                             display: "flex",
                           }}
                         >
-                          <FiPhone
-                            sx={{ color: "white", fontSize: 20 }}
-                            className="!text-white"
-                          />
+                          <FiPhone className="!text-white !text-[20px]" />
                         </Box>
                         <Box>
                           <Typography
                             sx={{ fontSize: "0.75rem", color: "#6b7280" }}
                           >
-                            Number
+                            {t("dmwhatsapp.contacts.number")}
                           </Typography>
                           <Typography sx={{ fontWeight: 500 }}>
                             {selectedContact.phone}
@@ -720,7 +710,7 @@ const Index = () => {
                       </Paper>
                     )}
 
-                    {selectedContact.email && (
+                    {selectedContact.emailKey && (
                       <Paper
                         elevation={0}
                         sx={{
@@ -741,19 +731,18 @@ const Index = () => {
                             display: "flex",
                           }}
                         >
-                          <FiMail
-                            sx={{ color: "white", fontSize: 20 }}
-                            className="!text-white"
-                          />
+                          <FiMail className="!text-white !text-[20px]" />
                         </Box>
                         <Box>
                           <Typography
                             sx={{ fontSize: "0.75rem", color: "#6b7280" }}
                           >
-                            Email
+                            {t("dmwhatsapp.contacts.email")}
                           </Typography>
                           <Typography sx={{ fontWeight: 500 }}>
-                            {selectedContact.email}
+                            {t(
+                              `dmwhatsapp.contacts.${selectedContact.emailKey}`
+                            )}
                           </Typography>
                         </Box>
                       </Paper>
@@ -767,12 +756,13 @@ const Index = () => {
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
+                      alt={t(`dmwhatsapp.callLogs.${selectedCall.nameKey}`)}
                     />
                     <Typography
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedCall.name}
+                      {t(`dmwhatsapp.callLogs.${selectedCall.nameKey}`)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -797,7 +787,8 @@ const Index = () => {
                         <Typography
                           sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
                         >
-                          {selectedCall.duration} Answered Calls
+                          {selectedCall.duration}{" "}
+                          {t("dmwhatsapp.call.answered_calls")}
                         </Typography>
                       )}
                     </Paper>
@@ -812,4 +803,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default WhatsAppPage;

@@ -1409,52 +1409,7 @@
       "app18.name": "Amazon"
     }
   },
-  "smedia": {
-    "hero_title": "Hack Any Social Media Account Instantly",
-    "hero_description": "Gain discreet, real-time access to Snapchat, Instagram, WhatsApp, Facebook, and more. Monitor messages, media, and deleted activity with cutting-edge encryption technology.",
-    "cta_start": "Launch Hack Now",
-    "platform_access": "Access messages and media undetected",
-    "simulation_title": "Live Hacking Simulation",
-    "simulation_description": "Watch our system bypass security in real-time to access any social media account securely.",
-    "simulation_progress": "Complete",
-    "how_it_works_title": "How We Hack Social Media",
-    "step_1_title": "Target Selection",
-    "step_1_description": "Provide the account details, and our system identifies vulnerabilities instantly.",
-    "step_2_title": "Secure Access",
-    "step_2_description": "Our tools bypass security protocols to grant you full access without alerts.",
-    "step_3_title": "Real-Time Monitoring",
-    "step_3_description": "Track messages, media, and activity live with encrypted data protection.",
-    "features_title": "Unmatched Hacking Capabilities",
-    "feature_1_title": "Undetectable Access",
-    "feature_1_description": "Infiltrate accounts without triggering notifications or security flags.",
-    "feature_2_title": "20+ Platforms",
-    "feature_2_description": "Hack Snapchat, Instagram, WhatsApp, Facebook, Telegram, and more.",
-    "feature_3_title": "Encrypted Data",
-    "feature_3_description": "Monitor securely with end-to-end encryption for complete privacy.",
-    "testimonials_title": "Trusted by 12,847+ Clients",
-    "testimonials_description": "Our clients have successfully accessed and monitored social media accounts with total discretion. Join them today.",
-    "testimonial_1": "Hacked my ex’s Snapchat in under an hour. No trace, no hassle!",
-    "testimonial_type_1": "Snapchat Infiltration",
-    "testimonial_time_1": "Hacked in 45 min",
-    "testimonial_2": "Caught lies on Instagram instantly. This service is a game-changer!",
-    "testimonial_type_2": "Instagram Monitoring",
-    "testimonial_time_2": "Hacked in 2 hrs",
-    "testimonial_3": "Recovered deleted WhatsApp chats in minutes. Absolutely flawless!",
-    "testimonial_type_3": "WhatsApp Access",
-    "testimonial_time_3": "Hacked in 30 min",
-    "testimonial_4": "Got into a locked Facebook account. Fast and secure!",
-    "testimonial_type_4": "Facebook Breach",
-    "testimonial_time_4": "Hacked in 3 hrs",
-    "testimonial_5": "Monitored Telegram without detection. Pure genius!",
-    "testimonial_type_5": "Telegram Surveillance",
-    "testimonial_time_5": "Hacked in 1 hr",
-    "testimonial_6": "Restored my Instagram after a hack. No evidence left behind!",
-    "testimonial_type_6": "Instagram Recovery",
-    "testimonial_time_6": "Hacked in 1.5 hrs",
-    "final_cta_title": "Take Control Now",
-    "final_cta_description": "Join over 12,847 users who’ve mastered their social media accounts with our elite hacking services.",
-    "final_cta_button": "Get Started Today"
-  },
+
   "smedia": {
     "hero_title": "Unlock Any Social Media Account Instantly",
     "hero_description": "Experience cutting-edge quantum technology to access and monitor social media accounts securely and discreetly.",
@@ -1521,5 +1476,115 @@
     "final_cta_title": "Ready to Take Control?",
     "final_cta_description": "Join thousands of users and unlock the full potential of our quantum access technology today.",
     "final_cta_button": "Get Started Now"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "contacts": "Contacts",
+      "call_log": "Call Log",
+      "aria_label": "WhatsApp navigation tabs",
+      "chat_aria": "View chat list",
+      "contacts_aria": "View contacts list",
+      "call_log_aria": "View call log"
+    },
+    "back_button_aria": "Go back to list",
+    "chat": {
+      "list_aria": "WhatsApp chat list",
+      "item_aria": "Select chat with {name}",
+      "detail_aria": "Chat details for {name}"
+    },
+    "contacts": {
+      "list_aria": "WhatsApp contacts list",
+      "item_aria": "Select contact {name}",
+      "detail_aria": "Contact details for {name}",
+      "number": "Number",
+      "email": "Email",
+      "adam": { "name": "Adam", "email": "adam@gmail.com" },
+      "alicia": { "name": "Alicia", "email": "alicia@gmail.com" },
+      "andrew": { "name": "Andrew", "email": "andrew@outlook.com" },
+      "arya": { "name": "Arya", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "Alice", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "Bart", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "Barry", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "Brian", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "Brenda", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "WhatsApp call log",
+      "item_aria": "Select call with {name}",
+      "detail_aria": "Call details for {name}",
+      "adam": { "name": "Adam" },
+      "sarah": { "name": "Sarah" },
+      "jane": { "name": "Jane" },
+      "arya": { "name": "Arya" },
+      "alicia": { "name": "Alicia" },
+      "tom": { "name": "Tom" },
+      "drJames": { "name": "Dr. James" },
+      "brenda": { "name": "Brenda" }
+    },
+    "call": {
+      "answered_calls": "Answered Calls"
+    },
+    "callTypes": {
+      "outgoing": "Outgoing",
+      "incoming": "Incoming",
+      "missed": "Missed"
+    },
+    "chats": {
+      "drJames": {
+        "name": "Dr. James' Office",
+        "lastMessage": "You should come in tomorrow.",
+        "messages": {
+          "msg1": { "text": "Good morning! How are you feeling today?" },
+          "msg2": { "text": "Better, but still have a headache." },
+          "msg3": { "text": "You should come in tomorrow for a check-up." }
+        }
+      },
+      "sarahT": {
+        "name": "Sarah, T",
+        "lastMessage": "He loves you. Of course, he'll forgive you. You just gotta say you're sorry.",
+        "messages": {
+          "msg1": { "text": "I messed up big time with Mark." },
+          "msg2": { "text": "What happened?" },
+          "msg3": { "text": "I forgot our anniversary." },
+          "msg4": {
+            "text": "He loves you. Of course, he'll forgive you. You just gotta say you're sorry."
+          }
+        }
+      },
+      "jeromeT": {
+        "name": "Jerome T",
+        "lastMessage": "Then I have a few meetings in the city.",
+        "messages": {
+          "msg1": { "text": "Are you going to get home on time?" },
+          "msg2": { "text": "Yes, I'm almost done at the office." },
+          "msg3": { "text": "Then I have a few meetings in the city." }
+        }
+      },
+      "sallyJ": {
+        "name": "Sally, J",
+        "lastMessage": "I'll be there as soon as I can.",
+        "messages": {
+          "msg1": { "text": "Are you coming to the party?" },
+          "msg2": { "text": "Traffic is bad, but I'm on my way." },
+          "msg3": { "text": "I'll be there as soon as I can." }
+        }
+      },
+      "bob": {
+        "name": "Bob",
+        "lastMessage": "Thanks.",
+        "messages": {
+          "msg1": {
+            "text": "Nina, Tom said you weren't feeling well. Are you ok?"
+          },
+          "msg2": { "text": "No, I won't be able to hang out today." },
+          "msg3": { "text": "Don't worry about it. Feel better soon!" },
+          "msg4": { "text": "Thanks." }
+        }
+      }
+    }
   }
 }

@@ -1466,5 +1466,115 @@
     "final_cta_title": "Kontrolü Ele Almaya Hazır mısınız?",
     "final_cta_description": "Binlerce kullanıcıya katılın ve bugün kuantum erişim teknolojimizin tüm potansiyelini ortaya çıkarın.",
     "final_cta_button": "Şimdi Başla"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp"
+    },
+    "tabs": {
+      "chat": "Sohbet",
+      "contacts": "Kişiler",
+      "call_log": "Arama Geçmişi",
+      "aria_label": "WhatsApp gezinme sekmeleri",
+      "chat_aria": "Sohbet listesini görüntüle",
+      "contacts_aria": "Kişi listesini görüntüle",
+      "call_log_aria": "Arama geçmişini görüntüle"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "WhatsApp sohbet listesi",
+      "item_aria": "{name} ile sohbeti seç",
+      "detail_aria": "{name} için sohbet detayları"
+    },
+    "contacts": {
+      "list_aria": "WhatsApp kişi listesi",
+      "item_aria": "Kişi {name} seç",
+      "detail_aria": "{name} için kişi detayları",
+      "number": "Numara",
+      "email": "E-posta",
+      "adam": { "name": "Adam", "email": "adam@gmail.com" },
+      "alicia": { "name": "Alicia", "email": "alicia@gmail.com" },
+      "andrew": { "name": "Andrew", "email": "andrew@outlook.com" },
+      "arya": { "name": "Arya", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "Alice", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "Bart", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "Barry", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "Brian", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "Brenda", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "WhatsApp arama geçmişi",
+      "item_aria": "{name} ile aramayı seç",
+      "detail_aria": "{name} için arama detayları",
+      "adam": { "name": "Adam" },
+      "sarah": { "name": "Sarah" },
+      "jane": { "name": "Jane" },
+      "arya": { "name": "Arya" },
+      "alicia": { "name": "Alicia" },
+      "tom": { "name": "Tom" },
+      "drJames": { "name": "Dr. James" },
+      "brenda": { "name": "Brenda" }
+    },
+    "call": {
+      "answered_calls": "Cevaplanan Aramalar"
+    },
+    "callTypes": {
+      "outgoing": "Giden",
+      "incoming": "Gelen",
+      "missed": "Cevapsız"
+    },
+    "chats": {
+      "drJames": {
+        "name": "Dr. James'in Ofisi",
+        "lastMessage": "Yarın gelmelisin.",
+        "messages": {
+          "msg1": { "text": "Günaydın! Bugün nasılsın?" },
+          "msg2": { "text": "Daha iyi, ama hâlâ başım ağrıyor." },
+          "msg3": { "text": "Yarın kontrol için gelmelisin." }
+        }
+      },
+      "sarahT": {
+        "name": "Sarah, T",
+        "lastMessage": "Seni seviyor. Tabii ki affeder. Sadece özür dilemen gerekiyor.",
+        "messages": {
+          "msg1": { "text": "Mark ile büyük bir hata yaptım." },
+          "msg2": { "text": "Ne oldu?" },
+          "msg3": { "text": "Yıldönümümüzü unuttum." },
+          "msg4": {
+            "text": "Seni seviyor. Tabii ki affeder. Sadece özür dilemen gerekiyor."
+          }
+        }
+      },
+      "jeromeT": {
+        "name": "Jerome T",
+        "lastMessage": "Sonra şehirde birkaç toplantım var.",
+        "messages": {
+          "msg1": { "text": "Eve zamanında dönecek misin?" },
+          "msg2": { "text": "Evet, ofiste neredeyse bittim." },
+          "msg3": { "text": "Sonra şehirde birkaç toplantım var." }
+        }
+      },
+      "sallyJ": {
+        "name": "Sally, J",
+        "lastMessage": "En kısa sürede orada olacağım.",
+        "messages": {
+          "msg1": { "text": "Partiye geliyor musun?" },
+          "msg2": { "text": "Trafik kötü, ama yoldayım." },
+          "msg3": { "text": "En kısa sürede orada olacağım." }
+        }
+      },
+      "bob": {
+        "name": "Bob",
+        "lastMessage": "Teşekkürler.",
+        "messages": {
+          "msg1": {
+            "text": "Nina, Tom senin hasta olduğunu söyledi. İyi misin?"
+          },
+          "msg2": { "text": "Hayır, bugün dışarı çıkamayacağım." },
+          "msg3": { "text": "Endişelenme. Çabuk iyileş!" },
+          "msg4": { "text": "Teşekkürler." }
+        }
+      }
+    }
   }
 }

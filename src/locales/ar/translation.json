@@ -1399,71 +1399,179 @@
       "app18.name": "أمازون"
     }
   },
- "smedia": {
-      "hero_title": "افتح أي حساب على وسائل التواصل الاجتماعي فورًا",
-      "hero_description": "جرب تقنية الكم المتطورة للوصول إلى حسابات وسائل التواصل الاجتماعي ومراقبتها بشكل آمن وسري.",
-      "cta_start": "ابدأ الآن",
-      "cta_contact_us": "تواصل معنا",
-      "simulation_title": "محاكاة الكم",
-      "matrix_title": "مصفوفة الوصول",
-      "matrix_accounts": "الحسابات",
-      "matrix_platforms": "المنصات",
-      "how_it_works_title": "كيف يعمل وصولنا الكمومي",
-      "how_it_works_subtitle": "اكتشف العملية السلسة وراء تقنيتنا المتقدمة للوصول الآمن والفعال للحسابات.",
-      "step_1_title": "اختيار الهدف",
-      "step_1_description": "أدخل تفاصيل الحساب لتحديد الثغرات على الفور.",
-      "step_2_title": "التسلل الخفي",
-      "step_2_description": "أدواتنا الكمومية تتجاوز طبقات الأمان للوصول السلس.",
-      "step_3_title": "المراقبة في الوقت الحقيقي",
-      "step_3_description": "راقب الرسائل، الوسائط والأنشطة بدقة مشفرة.",
-      "features_title": "ميزات وصول من الجيل التالي",
-      "features_subtitle": "استكشف القدرات القوية التي تجعل منصتنا لا مثيل لها في الأداء والأمان.",
-      "feature_1_title": "دخول غير مرئي",
-      "feature_1_description": "الوصول إلى الحسابات دون إطلاق التنبيهات أو الإشعارات.",
-      "feature_2_title": "أكثر من 20 منصة",
-      "feature_2_description": "يدعم سناب شات، إنستغرام، واتساب، تيليغرام وغيرها.",
-      "feature_3_title": "التشفير الكمومي",
-      "feature_3_description": "مراقبة آمنة مع تشفير من طرف إلى طرف غير قابل للكسر.",
-      "testimonials_title": "ماذا يقول مستخدمونا",
-      "testimonials_description": "استمع إلى المستخدمين الذين جربوا قوة تقنية الوصول الكمومي الخاصة بنا.",
-      "testimonial_1": "دخلت إلى حساب سناب شات في دقائق. سري تمامًا!",
-      "testimonial_type_1": "مستخدم سناب شات",
-      "testimonial_time_1": "تم التحقق منذ يومين",
-      "testimonial_2": "الوصول إلى إنستغرام كان مثاليًا. موصى به بشدة!",
-      "testimonial_type_2": "مستخدم إنستغرام",
-      "testimonial_time_2": "تم التحقق منذ أسبوع",
-      "testimonial_3": "راقبت واتساب بسهولة. آمن جدًا!",
-      "testimonial_type_3": "مستخدم واتساب",
-      "testimonial_time_3": "تم التحقق منذ 3 أيام",
-      "testimonial_4": "الوصول إلى فيسبوك كان سريعًا وغير مرئي. تقنية مذهلة!",
-      "testimonial_type_4": "مستخدم فيسبوك",
-      "testimonial_time_4": "تم التحقق منذ 5 أيام",
-      "testimonial_5": "مراقبة تيليغرام عملت بشكل مثالي. لا مشاكل!",
-      "testimonial_type_5": "مستخدم تيليغرام",
-      "testimonial_time_5": "تم التحقق منذ 4 أيام",
-      "testimonial_6": "أداة رائعة لإنستغرام. سهلة الاستخدام جدًا!",
-      "testimonial_type_6": "مستخدم إنستغرام",
-      "testimonial_time_6": "تم التحقق منذ 6 أيام",
-      "testimonial_7": "الوصول إلى سناب شات كان سلسًا وسريعًا. أحببته!",
-      "testimonial_type_7": "مستخدم سناب شات",
-      "testimonial_time_7": "تم التحقق منذ يومين",
-      "testimonial_8": "هذا يغير قواعد اللعبة لمراقبة سناب شات!",
-      "testimonial_type_8": "مستخدم سناب شات",
-      "testimonial_time_8": "تم التحقق منذ 3 أيام",
-      "testimonial_9": "الوصول إلى سناب شات كان سلسًا. آمن جدًا!",
-      "testimonial_type_9": "مستخدم سناب شات",
-      "testimonial_time_9": "تم التحقق منذ يوم",
-      "testimonial_10": "وصول سريع وموثوق إلى سناب شات. مبهر!",
-      "testimonial_type_10": "مستخدم سناب شات",
-      "testimonial_time_10": "تم التحقق منذ 4 أيام",
-      "testimonial_11": "مراقبة سناب شات كانت سهلة. من الطراز الأول!",
-      "testimonial_type_11": "مستخدم سناب شات",
-      "testimonial_time_11": "تم التحقق منذ يومين",
-      "testimonial_12": "أفضل أداة للوصول إلى سناب شات. سري جدًا!",
-      "testimonial_type_12": "مستخدم سناب شات",
-      "testimonial_time_12": "تم التحقق منذ 5 أيام",
-      "final_cta_title": "هل أنت مستعد للسيطرة؟",
-      "final_cta_description": "انضم إلى آلاف المستخدمين وأطلق العنان للإمكانات الكاملة لتقنية الوصول الكمومي الخاصة بنا اليوم.",
-      "final_cta_button": "ابدأ الآن"
+  "smedia": {
+    "hero_title": "افتح أي حساب على وسائل التواصل الاجتماعي فورًا",
+    "hero_description": "جرب تقنية الكم المتطورة للوصول إلى حسابات وسائل التواصل الاجتماعي ومراقبتها بشكل آمن وسري.",
+    "cta_start": "ابدأ الآن",
+    "cta_contact_us": "تواصل معنا",
+    "simulation_title": "محاكاة الكم",
+    "matrix_title": "مصفوفة الوصول",
+    "matrix_accounts": "الحسابات",
+    "matrix_platforms": "المنصات",
+    "how_it_works_title": "كيف يعمل وصولنا الكمومي",
+    "how_it_works_subtitle": "اكتشف العملية السلسة وراء تقنيتنا المتقدمة للوصول الآمن والفعال للحسابات.",
+    "step_1_title": "اختيار الهدف",
+    "step_1_description": "أدخل تفاصيل الحساب لتحديد الثغرات على الفور.",
+    "step_2_title": "التسلل الخفي",
+    "step_2_description": "أدواتنا الكمومية تتجاوز طبقات الأمان للوصول السلس.",
+    "step_3_title": "المراقبة في الوقت الحقيقي",
+    "step_3_description": "راقب الرسائل، الوسائط والأنشطة بدقة مشفرة.",
+    "features_title": "ميزات وصول من الجيل التالي",
+    "features_subtitle": "استكشف القدرات القوية التي تجعل منصتنا لا مثيل لها في الأداء والأمان.",
+    "feature_1_title": "دخول غير مرئي",
+    "feature_1_description": "الوصول إلى الحسابات دون إطلاق التنبيهات أو الإشعارات.",
+    "feature_2_title": "أكثر من 20 منصة",
+    "feature_2_description": "يدعم سناب شات، إنستغرام، واتساب، تيليغرام وغيرها.",
+    "feature_3_title": "التشفير الكمومي",
+    "feature_3_description": "مراقبة آمنة مع تشفير من طرف إلى طرف غير قابل للكسر.",
+    "testimonials_title": "ماذا يقول مستخدمونا",
+    "testimonials_description": "استمع إلى المستخدمين الذين جربوا قوة تقنية الوصول الكمومي الخاصة بنا.",
+    "testimonial_1": "دخلت إلى حساب سناب شات في دقائق. سري تمامًا!",
+    "testimonial_type_1": "مستخدم سناب شات",
+    "testimonial_time_1": "تم التحقق منذ يومين",
+    "testimonial_2": "الوصول إلى إنستغرام كان مثاليًا. موصى به بشدة!",
+    "testimonial_type_2": "مستخدم إنستغرام",
+    "testimonial_time_2": "تم التحقق منذ أسبوع",
+    "testimonial_3": "راقبت واتساب بسهولة. آمن جدًا!",
+    "testimonial_type_3": "مستخدم واتساب",
+    "testimonial_time_3": "تم التحقق منذ 3 أيام",
+    "testimonial_4": "الوصول إلى فيسبوك كان سريعًا وغير مرئي. تقنية مذهلة!",
+    "testimonial_type_4": "مستخدم فيسبوك",
+    "testimonial_time_4": "تم التحقق منذ 5 أيام",
+    "testimonial_5": "مراقبة تيليغرام عملت بشكل مثالي. لا مشاكل!",
+    "testimonial_type_5": "مستخدم تيليغرام",
+    "testimonial_time_5": "تم التحقق منذ 4 أيام",
+    "testimonial_6": "أداة رائعة لإنستغرام. سهلة الاستخدام جدًا!",
+    "testimonial_type_6": "مستخدم إنستغرام",
+    "testimonial_time_6": "تم التحقق منذ 6 أيام",
+    "testimonial_7": "الوصول إلى سناب شات كان سلسًا وسريعًا. أحببته!",
+    "testimonial_type_7": "مستخدم سناب شات",
+    "testimonial_time_7": "تم التحقق منذ يومين",
+    "testimonial_8": "هذا يغير قواعد اللعبة لمراقبة سناب شات!",
+    "testimonial_type_8": "مستخدم سناب شات",
+    "testimonial_time_8": "تم التحقق منذ 3 أيام",
+    "testimonial_9": "الوصول إلى سناب شات كان سلسًا. آمن جدًا!",
+    "testimonial_type_9": "مستخدم سناب شات",
+    "testimonial_time_9": "تم التحقق منذ يوم",
+    "testimonial_10": "وصول سريع وموثوق إلى سناب شات. مبهر!",
+    "testimonial_type_10": "مستخدم سناب شات",
+    "testimonial_time_10": "تم التحقق منذ 4 أيام",
+    "testimonial_11": "مراقبة سناب شات كانت سهلة. من الطراز الأول!",
+    "testimonial_type_11": "مستخدم سناب شات",
+    "testimonial_time_11": "تم التحقق منذ يومين",
+    "testimonial_12": "أفضل أداة للوصول إلى سناب شات. سري جدًا!",
+    "testimonial_type_12": "مستخدم سناب شات",
+    "testimonial_time_12": "تم التحقق منذ 5 أيام",
+    "final_cta_title": "هل أنت مستعد للسيطرة؟",
+    "final_cta_description": "انضم إلى آلاف المستخدمين وأطلق العنان للإمكانات الكاملة لتقنية الوصول الكمومي الخاصة بنا اليوم.",
+    "final_cta_button": "ابدأ الآن"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "واتساب"
+    },
+    "tabs": {
+      "chat": "الدردشة",
+      "contacts": "جهات الاتصال",
+      "call_log": "سجل المكالمات",
+      "aria_label": "علامات تبويب التنقل في واتساب",
+      "chat_aria": "عرض قائمة الدردشات",
+      "contacts_aria": "عرض قائمة جهات الاتصال",
+      "call_log_aria": "عرض سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة الدردشات في واتساب",
+      "item_aria": "اختيار الدردشة مع {name}",
+      "detail_aria": "تفاصيل الدردشة لـ {name}"
+    },
+    "contacts": {
+      "list_aria": "قائمة جهات الاتصال في واتساب",
+      "item_aria": "اختيار جهة الاتصال {name}",
+      "detail_aria": "تفاصيل جهة الاتصال {name}",
+      "number": "رقم الهاتف",
+      "email": "البريد الإلكتروني",
+      "adam": { "name": "آدم", "email": "adam@gmail.com" },
+      "alicia": { "name": "أليسيا", "email": "alicia@gmail.com" },
+      "andrew": { "name": "أندرو", "email": "andrew@outlook.com" },
+      "arya": { "name": "اريا", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "أليس", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "بارت", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "باري", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "برايان", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "بريندا", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "سجل مكالمات واتساب",
+      "item_aria": "اختيار المكالمة مع {name}",
+      "detail_aria": "تفاصيل المكالمة لـ {name}",
+      "adam": { "name": "آدم" },
+      "sarah": { "name": "سارة" },
+      "jane": { "name": "جين" },
+      "arya": { "name": "اريا" },
+      "alicia": { "name": "أليسيا" },
+      "tom": { "name": "توم" },
+      "drJames": { "name": "دكتور جيمس" },
+      "brenda": { "name": "بريندا" }
+    },
+    "call": {
+      "answered_calls": "المكالمات المجابة"
+    },
+    "callTypes": {
+      "outgoing": "صادرة",
+      "incoming": "واردة",
+      "missed": "مفقودة"
+    },
+    "chats": {
+      "drJames": {
+        "name": "مكتب الدكتور جيمس",
+        "lastMessage": "يجب أن تأتي غداً.",
+        "messages": {
+          "msg1": { "text": "صباح الخير! كيف تشعر اليوم؟" },
+          "msg2": { "text": "أفضل، لكن لا زلت أعاني من صداع." },
+          "msg3": { "text": "يجب أن تأتي غداً للفحص." }
+        }
+      },
+      "sarahT": {
+        "name": "سارة، ت",
+        "lastMessage": "إنه يحبك. بالطبع سيغفر لكِ. عليكِ فقط أن تعتذري.",
+        "messages": {
+          "msg1": { "text": "أخطأت كثيراً مع مارك." },
+          "msg2": { "text": "ماذا حدث؟" },
+          "msg3": { "text": "نسيت ذكرى زواجنا." },
+          "msg4": { "text": "إنه يحبك. بالطبع سيغفر لكِ. عليكِ فقط أن تعتذري." }
+        }
+      },
+      "jeromeT": {
+        "name": "جيروم ت",
+        "lastMessage": "ثم لدي بعض الاجتماعات في المدينة.",
+        "messages": {
+          "msg1": { "text": "هل ستعود إلى المنزل في الوقت المحدد؟" },
+          "msg2": { "text": "نعم، أنا تقريباً انتهيت في المكتب." },
+          "msg3": { "text": "ثم لدي بعض الاجتماعات في المدينة." }
+        }
+      },
+      "sallyJ": {
+        "name": "سالي، ج",
+        "lastMessage": "سأكون هناك بأسرع ما يمكن.",
+        "messages": {
+          "msg1": { "text": "هل ستأتين إلى الحفلة؟" },
+          "msg2": { "text": "الزحام سيء، لكنني في الطريق." },
+          "msg3": { "text": "سأكون هناك بأسرع ما يمكن." }
+        }
+      },
+      "bob": {
+        "name": "بوب",
+        "lastMessage": "شكراً.",
+        "messages": {
+          "msg1": {
+            "text": "نينا، قال توم إنكِ لستِ على ما يرام. هل أنتِ بخير؟"
+          },
+          "msg2": { "text": "لا، لن أتمكن من الخروج اليوم." },
+          "msg3": { "text": "لا تقلقي. تحسني قريباً!" },
+          "msg4": { "text": "شكراً." }
+        }
+      }
     }
+  }
 }

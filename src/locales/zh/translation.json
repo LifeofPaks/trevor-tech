@@ -1466,5 +1466,111 @@
     "final_cta_title": "准备好掌控了吗？",
     "final_cta_description": "加入数千用户，立即释放我们量子访问技术的全部潜力。",
     "final_cta_button": "立即开始"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp"
+    },
+    "tabs": {
+      "chat": "聊天",
+      "contacts": "联系人",
+      "call_log": "通话记录",
+      "aria_label": "WhatsApp导航选项卡",
+      "chat_aria": "查看聊天列表",
+      "contacts_aria": "查看联系人列表",
+      "call_log_aria": "查看通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "WhatsApp聊天列表",
+      "item_aria": "选择与{name}的聊天",
+      "detail_aria": "{name}的聊天详情"
+    },
+    "contacts": {
+      "list_aria": "WhatsApp联系人列表",
+      "item_aria": "选择联系人{name}",
+      "detail_aria": "{name}的联系人详情",
+      "number": "电话号码",
+      "email": "电子邮件",
+      "adam": { "name": "亚当", "email": "adam@gmail.com" },
+      "alicia": { "name": "艾丽西亚", "email": "alicia@gmail.com" },
+      "andrew": { "name": "安德鲁", "email": "andrew@outlook.com" },
+      "arya": { "name": "艾莉亚", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "爱丽丝", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "巴特", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "巴里", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "布莱恩", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "布伦达", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "WhatsApp通话记录",
+      "item_aria": "选择与{name}的通话",
+      "detail_aria": "{name}的通话详情",
+      "adam": { "name": "亚当" },
+      "sarah": { "name": "莎拉" },
+      "jane": { "name": "简" },
+      "arya": { "name": "艾莉亚" },
+      "alicia": { "name": "艾丽西亚" },
+      "tom": { "name": "汤姆" },
+      "drJames": { "name": "詹姆斯医生" },
+      "brenda": { "name": "布伦达" }
+    },
+    "call": {
+      "answered_calls": "已接通话"
+    },
+    "callTypes": {
+      "outgoing": "外拨",
+      "incoming": "来电",
+      "missed": "未接"
+    },
+    "chats": {
+      "drJames": {
+        "name": "詹姆斯医生办公室",
+        "lastMessage": "你明天应该过来。",
+        "messages": {
+          "msg1": { "text": "早上好！你今天感觉怎么样？" },
+          "msg2": { "text": "好些了，但还是头痛。" },
+          "msg3": { "text": "你明天应该过来检查。" }
+        }
+      },
+      "sarahT": {
+        "name": "莎拉，T",
+        "lastMessage": "他爱你。当然会原谅你。你只需要说对不起。",
+        "messages": {
+          "msg1": { "text": "我跟马克搞砸了。" },
+          "msg2": { "text": "发生了什么？" },
+          "msg3": { "text": "我忘了我们的纪念日。" },
+          "msg4": { "text": "他爱你。当然会原谅你。你只需要说对不起。" }
+        }
+      },
+      "jeromeT": {
+        "name": "杰罗姆 T",
+        "lastMessage": "然后我在市里还有几场会议。",
+        "messages": {
+          "msg1": { "text": "你会按时回家吗？" },
+          "msg2": { "text": "是的，我在办公室快忙完了。" },
+          "msg3": { "text": "然后我在市里还有几场会议。" }
+        }
+      },
+      "sallyJ": {
+        "name": "莎莉，J",
+        "lastMessage": "我会尽快到那儿。",
+        "messages": {
+          "msg1": { "text": "你要来派对吗？" },
+          "msg2": { "text": "交通很糟糕，但我已经在路上了。" },
+          "msg3": { "text": "我会尽快到那儿。" }
+        }
+      },
+      "bob": {
+        "name": "鲍勃",
+        "lastMessage": "谢谢。",
+        "messages": {
+          "msg1": { "text": "妮娜，汤姆说你身体不适。你还好吗？" },
+          "msg2": { "text": "不好，我今天没法出去。" },
+          "msg3": { "text": "别担心，祝你早日康复！" },
+          "msg4": { "text": "谢谢。" }
+        }
+      }
+    }
   }
 }

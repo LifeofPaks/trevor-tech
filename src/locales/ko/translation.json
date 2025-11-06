@@ -1467,5 +1467,115 @@
     "final_cta_title": "컨트롤을 잡을 준비가 되셨나요?",
     "final_cta_description": "수천 명의 사용자와 함께 오늘 우리의 양자 액세스 기술의 모든 잠재력을 발휘하세요.",
     "final_cta_button": "지금 시작하기"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp"
+    },
+    "tabs": {
+      "chat": "채팅",
+      "contacts": "연락처",
+      "call_log": "통화 기록",
+      "aria_label": "WhatsApp 탐색 탭",
+      "chat_aria": "채팅 목록 보기",
+      "contacts_aria": "연락처 목록 보기",
+      "call_log_aria": "통화 기록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "WhatsApp 채팅 목록",
+      "item_aria": "{name}과의 채팅 선택",
+      "detail_aria": "{name}의 채팅 세부 정보"
+    },
+    "contacts": {
+      "list_aria": "WhatsApp 연락처 목록",
+      "item_aria": "연락처 {name} 선택",
+      "detail_aria": "{name}의 연락처 세부 정보",
+      "number": "전화번호",
+      "email": "이메일",
+      "adam": { "name": "아담", "email": "adam@gmail.com" },
+      "alicia": { "name": "알리시아", "email": "alicia@gmail.com" },
+      "andrew": { "name": "앤드류", "email": "andrew@outlook.com" },
+      "arya": { "name": "아리아", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "앨리스", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "바트", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "배리", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "브라이언", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "브렌다", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "WhatsApp 통화 기록",
+      "item_aria": "{name}과의 통화 선택",
+      "detail_aria": "{name}의 통화 세부 정보",
+      "adam": { "name": "아담" },
+      "sarah": { "name": "사라" },
+      "jane": { "name": "제인" },
+      "arya": { "name": "아리아" },
+      "alicia": { "name": "알리시아" },
+      "tom": { "name": "톰" },
+      "drJames": { "name": "제임스 박사" },
+      "brenda": { "name": "브렌다" }
+    },
+    "call": {
+      "answered_calls": "응답한 통화"
+    },
+    "callTypes": {
+      "outgoing": "발신",
+      "incoming": "수신",
+      "missed": "부재중"
+    },
+    "chats": {
+      "drJames": {
+        "name": "제임스 박사 사무실",
+        "lastMessage": "내일 와야 해요.",
+        "messages": {
+          "msg1": { "text": "좋은 아침이에요! 오늘 기분이 어때요?" },
+          "msg2": { "text": "좀 나아졌지만, 여전히 머리가 아파요." },
+          "msg3": { "text": "내일 검진을 위해 와야 해요." }
+        }
+      },
+      "sarahT": {
+        "name": "사라, T",
+        "lastMessage": "그는 당신을 사랑해요. 물론 용서할 거예요. 그냥 미안하다고 하면 돼요.",
+        "messages": {
+          "msg1": { "text": "마크와 크게 실수했어요." },
+          "msg2": { "text": "무슨 일이 있었나요?" },
+          "msg3": { "text": "우리 기념일을 까먹었어요." },
+          "msg4": {
+            "text": "그는 당신을 사랑해요. 물론 용서할 거예요. 그냥 미안하다고 하면 돼요."
+          }
+        }
+      },
+      "jeromeT": {
+        "name": "제롬 T",
+        "lastMessage": "그리고 나서 시내에서 몇 개의 회의가 있어요.",
+        "messages": {
+          "msg1": { "text": "제시간에 집에 올 건가요?" },
+          "msg2": { "text": "네, 사무실에서 거의 끝냈어요." },
+          "msg3": { "text": "그리고 나서 시내에서 몇 개의 회의가 있어요." }
+        }
+      },
+      "sallyJ": {
+        "name": "샐리, J",
+        "lastMessage": "최대한 빨리 거기에 도착할게요.",
+        "messages": {
+          "msg1": { "text": "파티에 올 건가요?" },
+          "msg2": { "text": "교통이 안 좋아요, 하지만 가는 중이에요." },
+          "msg3": { "text": "최대한 빨리 거기에 도착할게요." }
+        }
+      },
+      "bob": {
+        "name": "밥",
+        "lastMessage": "고마워요.",
+        "messages": {
+          "msg1": {
+            "text": "니나, 톰이 당신이 몸이 안 좋다고 했어요. 괜찮아요?"
+          },
+          "msg2": { "text": "아니요, 오늘 외출할 수 없어요." },
+          "msg3": { "text": "걱정하지 마세요. 빨리 나으세요!" },
+          "msg4": { "text": "고마워요." }
+        }
+      }
+    }
   }
 }

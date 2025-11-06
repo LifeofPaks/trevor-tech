@@ -1403,70 +1403,180 @@
     }
   },
   "smedia": {
-      "hero_title": "Мгновенно Разблокируйте Любую Социальную Сеть",
-      "hero_description": "Оцените передовую квантовую технологию для безопасного и незаметного доступа и мониторинга аккаунтов социальных сетей.",
-      "cta_start": "Начать Сейчас",
-      "cta_contact_us": "Связаться с Нами",
-      "simulation_title": "Квантовая Симуляция",
-      "matrix_title": "Матрица Доступа",
-      "matrix_accounts": "Аккаунты",
-      "matrix_platforms": "Платформы",
-      "how_it_works_title": "Как Работает Наш Квантовый Доступ",
-      "how_it_works_subtitle": "Узнайте о плавном процессе нашей передовой технологии для безопасного и эффективного доступа к аккаунтам.",
-      "step_1_title": "Выбор Цели",
-      "step_1_description": "Введите данные учетной записи, чтобы мгновенно выявить уязвимости.",
-      "step_2_title": "Скрытое Проникновение",
-      "step_2_description": "Наши квантовые инструменты обходят слои безопасности для бесшовного доступа.",
-      "step_3_title": "Мониторинг в Реальном Времени",
-      "step_3_description": "Отслеживайте сообщения, медиа и активности с зашифрованной точностью.",
-      "features_title": "Функции Доступа Нового Поколения",
-      "features_subtitle": "Ознакомьтесь с мощными возможностями, которые делают нашу платформу непревзойденной по производительности и безопасности.",
-      "feature_1_title": "Невидимый Вход",
-      "feature_1_description": "Доступ к учетным записям без срабатывания оповещений или уведомлений.",
-      "feature_2_title": "20+ Платформ",
-      "feature_2_description": "Поддерживает Snapchat, Instagram, WhatsApp, Telegram и другие.",
-      "feature_3_title": "Квантовое Шифрование",
-      "feature_3_description": "Безопасный мониторинг с нерушимым сквозным шифрованием.",
-      "testimonials_title": "Что Говорят Наши Пользователи",
-      "testimonials_description": "Узнайте мнение пользователей, которые испытали мощь нашей технологии квантового доступа.",
-      "testimonial_1": "Попал в аккаунт Snapchat за минуты. Полностью незаметно!",
-      "testimonial_type_1": "Пользователь Snapchat",
-      "testimonial_time_1": "Проверено 2 дня назад",
-      "testimonial_2": "Доступ к Instagram был безупречен. Очень рекомендую!",
-      "testimonial_type_2": "Пользователь Instagram",
-      "testimonial_time_2": "Проверено неделю назад",
-      "testimonial_3": "Мониторил WhatsApp без усилий. Супер безопасно!",
-      "testimonial_type_3": "Пользователь WhatsApp",
-      "testimonial_time_3": "Проверено 3 дня назад",
-      "testimonial_4": "Доступ к Facebook был быстрым и незаметным. Удивительная технология!",
-      "testimonial_type_4": "Пользователь Facebook",
-      "testimonial_time_4": "Проверено 5 дней назад",
-      "testimonial_5": "Мониторинг Telegram работал идеально. Без проблем!",
-      "testimonial_type_5": "Пользователь Telegram",
-      "testimonial_time_5": "Проверено 4 дня назад",
-      "testimonial_6": "Невероятный инструмент для Instagram. Так просто использовать!",
-      "testimonial_type_6": "Пользователь Instagram",
-      "testimonial_time_6": "Проверено 6 дней назад",
-      "testimonial_7": "Доступ к Snapchat был плавным и быстрым. Люблю это!",
-      "testimonial_type_7": "Пользователь Snapchat",
-      "testimonial_time_7": "Проверено 2 дня назад",
-      "testimonial_8": "Это меняет правила игры для мониторинга Snapchat!",
-      "testimonial_type_8": "Пользователь Snapchat",
-      "testimonial_time_8": "Проверено 3 дня назад",
-      "testimonial_9": "Доступ к Snapchat был безупречным. Очень безопасно!",
-      "testimonial_type_9": "Пользователь Snapchat",
-      "testimonial_time_9": "Проверено вчера",
-      "testimonial_10": "Быстрый и надежный доступ к Snapchat. Впечатлен!",
-      "testimonial_type_10": "Пользователь Snapchat",
-      "testimonial_time_10": "Проверено 4 дня назад",
-      "testimonial_11": "Мониторинг Snapchat был легким. Первоклассно!",
-      "testimonial_type_11": "Пользователь Snapchat",
-      "testimonial_time_11": "Проверено 2 дня назад",
-      "testimonial_12": "Лучший инструмент для доступа к Snapchat. Очень незаметно!",
-      "testimonial_type_12": "Пользователь Snapchat",
-      "testimonial_time_12": "Проверено 5 дней назад",
-      "final_cta_title": "Готовы Взять Контроль?",
-      "final_cta_description": "Присоединяйтесь к тысячам пользователей и раскройте весь потенциал нашей технологии квантового доступа уже сегодня.",
-      "final_cta_button": "Начать Сейчас"
+    "hero_title": "Мгновенно Разблокируйте Любую Социальную Сеть",
+    "hero_description": "Оцените передовую квантовую технологию для безопасного и незаметного доступа и мониторинга аккаунтов социальных сетей.",
+    "cta_start": "Начать Сейчас",
+    "cta_contact_us": "Связаться с Нами",
+    "simulation_title": "Квантовая Симуляция",
+    "matrix_title": "Матрица Доступа",
+    "matrix_accounts": "Аккаунты",
+    "matrix_platforms": "Платформы",
+    "how_it_works_title": "Как Работает Наш Квантовый Доступ",
+    "how_it_works_subtitle": "Узнайте о плавном процессе нашей передовой технологии для безопасного и эффективного доступа к аккаунтам.",
+    "step_1_title": "Выбор Цели",
+    "step_1_description": "Введите данные учетной записи, чтобы мгновенно выявить уязвимости.",
+    "step_2_title": "Скрытое Проникновение",
+    "step_2_description": "Наши квантовые инструменты обходят слои безопасности для бесшовного доступа.",
+    "step_3_title": "Мониторинг в Реальном Времени",
+    "step_3_description": "Отслеживайте сообщения, медиа и активности с зашифрованной точностью.",
+    "features_title": "Функции Доступа Нового Поколения",
+    "features_subtitle": "Ознакомьтесь с мощными возможностями, которые делают нашу платформу непревзойденной по производительности и безопасности.",
+    "feature_1_title": "Невидимый Вход",
+    "feature_1_description": "Доступ к учетным записям без срабатывания оповещений или уведомлений.",
+    "feature_2_title": "20+ Платформ",
+    "feature_2_description": "Поддерживает Snapchat, Instagram, WhatsApp, Telegram и другие.",
+    "feature_3_title": "Квантовое Шифрование",
+    "feature_3_description": "Безопасный мониторинг с нерушимым сквозным шифрованием.",
+    "testimonials_title": "Что Говорят Наши Пользователи",
+    "testimonials_description": "Узнайте мнение пользователей, которые испытали мощь нашей технологии квантового доступа.",
+    "testimonial_1": "Попал в аккаунт Snapchat за минуты. Полностью незаметно!",
+    "testimonial_type_1": "Пользователь Snapchat",
+    "testimonial_time_1": "Проверено 2 дня назад",
+    "testimonial_2": "Доступ к Instagram был безупречен. Очень рекомендую!",
+    "testimonial_type_2": "Пользователь Instagram",
+    "testimonial_time_2": "Проверено неделю назад",
+    "testimonial_3": "Мониторил WhatsApp без усилий. Супер безопасно!",
+    "testimonial_type_3": "Пользователь WhatsApp",
+    "testimonial_time_3": "Проверено 3 дня назад",
+    "testimonial_4": "Доступ к Facebook был быстрым и незаметным. Удивительная технология!",
+    "testimonial_type_4": "Пользователь Facebook",
+    "testimonial_time_4": "Проверено 5 дней назад",
+    "testimonial_5": "Мониторинг Telegram работал идеально. Без проблем!",
+    "testimonial_type_5": "Пользователь Telegram",
+    "testimonial_time_5": "Проверено 4 дня назад",
+    "testimonial_6": "Невероятный инструмент для Instagram. Так просто использовать!",
+    "testimonial_type_6": "Пользователь Instagram",
+    "testimonial_time_6": "Проверено 6 дней назад",
+    "testimonial_7": "Доступ к Snapchat был плавным и быстрым. Люблю это!",
+    "testimonial_type_7": "Пользователь Snapchat",
+    "testimonial_time_7": "Проверено 2 дня назад",
+    "testimonial_8": "Это меняет правила игры для мониторинга Snapchat!",
+    "testimonial_type_8": "Пользователь Snapchat",
+    "testimonial_time_8": "Проверено 3 дня назад",
+    "testimonial_9": "Доступ к Snapchat был безупречным. Очень безопасно!",
+    "testimonial_type_9": "Пользователь Snapchat",
+    "testimonial_time_9": "Проверено вчера",
+    "testimonial_10": "Быстрый и надежный доступ к Snapchat. Впечатлен!",
+    "testimonial_type_10": "Пользователь Snapchat",
+    "testimonial_time_10": "Проверено 4 дня назад",
+    "testimonial_11": "Мониторинг Snapchat был легким. Первоклассно!",
+    "testimonial_type_11": "Пользователь Snapchat",
+    "testimonial_time_11": "Проверено 2 дня назад",
+    "testimonial_12": "Лучший инструмент для доступа к Snapchat. Очень незаметно!",
+    "testimonial_type_12": "Пользователь Snapchat",
+    "testimonial_time_12": "Проверено 5 дней назад",
+    "final_cta_title": "Готовы Взять Контроль?",
+    "final_cta_description": "Присоединяйтесь к тысячам пользователей и раскройте весь потенциал нашей технологии квантового доступа уже сегодня.",
+    "final_cta_button": "Начать Сейчас"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp"
+    },
+    "tabs": {
+      "chat": "Чат",
+      "contacts": "Контакты",
+      "call_log": "Журнал вызовов",
+      "aria_label": "Вкладки навигации WhatsApp",
+      "chat_aria": "Просмотреть список чатов",
+      "contacts_aria": "Просмотреть список контактов",
+      "call_log_aria": "Просмотреть журнал вызовов"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список чатов WhatsApp",
+      "item_aria": "Выбрать чат с {name}",
+      "detail_aria": "Детали чата для {name}"
+    },
+    "contacts": {
+      "list_aria": "Список контактов WhatsApp",
+      "item_aria": "Выбрать контакт {name}",
+      "detail_aria": "Детали контакта {name}",
+      "number": "Номер",
+      "email": "Электронная почта",
+      "adam": { "name": "Адам", "email": "adam@gmail.com" },
+      "alicia": { "name": "Алисия", "email": "alicia@gmail.com" },
+      "andrew": { "name": "Эндрю", "email": "andrew@outlook.com" },
+      "arya": { "name": "Арья", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "Алиса", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "Барт", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "Барри", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "Брайан", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "Бренда", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "Журнал вызовов WhatsApp",
+      "item_aria": "Выбрать вызов с {name}",
+      "detail_aria": "Детали вызова для {name}",
+      "adam": { "name": "Адам" },
+      "sarah": { "name": "Сара" },
+      "jane": { "name": "Джейн" },
+      "arya": { "name": "Арья" },
+      "alicia": { "name": "Алисия" },
+      "tom": { "name": "Том" },
+      "drJames": { "name": "Доктор Джеймс" },
+      "brenda": { "name": "Бренда" }
+    },
+    "call": {
+      "answered_calls": "Отвеченные вызовы"
+    },
+    "callTypes": {
+      "outgoing": "Исходящий",
+      "incoming": "Входящий",
+      "missed": "Пропущенный"
+    },
+    "chats": {
+      "drJames": {
+        "name": "Офис доктора Джеймса",
+        "lastMessage": "Вам следует прийти завтра.",
+        "messages": {
+          "msg1": { "text": "Доброе утро! Как вы себя чувствуете сегодня?" },
+          "msg2": { "text": "Лучше, но голова всё ещё болит." },
+          "msg3": { "text": "Вам следует прийти завтра на осмотр." }
+        }
+      },
+      "sarahT": {
+        "name": "Сара, Т",
+        "lastMessage": "Он тебя любит. Конечно, он простит. Просто скажи, что тебе жаль.",
+        "messages": {
+          "msg1": { "text": "Я сильно облажалась с Марком." },
+          "msg2": { "text": "Что случилось?" },
+          "msg3": { "text": "Я забыла про нашу годовщину." },
+          "msg4": {
+            "text": "Он тебя любит. Конечно, он простит. Просто скажи, что тебе жаль."
+          }
+        }
+      },
+      "jeromeT": {
+        "name": "Джером Т",
+        "lastMessage": "Затем у меня несколько встреч в городе.",
+        "messages": {
+          "msg1": { "text": "Ты вернёшься домой вовремя?" },
+          "msg2": { "text": "Да, я почти закончил в офисе." },
+          "msg3": { "text": "Затем у меня несколько встреч в городе." }
+        }
+      },
+      "sallyJ": {
+        "name": "Салли, Дж",
+        "lastMessage": "Я буду там как можно скорее.",
+        "messages": {
+          "msg1": { "text": "Ты идёшь на вечеринку?" },
+          "msg2": { "text": "Пробки ужасные, но я уже в пути." },
+          "msg3": { "text": "Я буду там как можно скорее." }
+        }
+      },
+      "bob": {
+        "name": "Боб",
+        "lastMessage": "Спасибо.",
+        "messages": {
+          "msg1": {
+            "text": "Нина, Том сказал, что ты плохо себя чувствуешь. Ты в порядке?"
+          },
+          "msg2": { "text": "Нет, я не смогу выйти сегодня." },
+          "msg3": { "text": "Не волнуйся. Выздоравливай скорее!" },
+          "msg4": { "text": "Спасибо." }
+        }
+      }
     }
+  }
 }
