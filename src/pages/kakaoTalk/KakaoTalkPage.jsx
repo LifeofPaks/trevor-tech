@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -66,176 +67,168 @@ const theme = createTheme({
   },
 });
 
-// === Cheating Drama Chats (12 Total) – Young Men Only ===
+// === Data with translation keys (avatars stay in code) ===
 const chats = [
   {
     id: 1,
-    name: "Minjun Kim",
+    nameKey: "minjun_kim",
     avatar: "https://i.pravatar.cc/150?img=62",
-    lastMessage: "I left my ring at your place",
+    lastMessageKey: "minjun_kim.lastMessage",
     time: "03:30",
     messages: [
-      { text: "You still up?", time: "03:10", incoming: true },
-      { text: "Yeah... can’t sleep", time: "03:11", incoming: false },
-      { text: "I left my ring at your place", time: "03:30", incoming: false },
+      { textKey: "minjun_kim.message1", time: "03:10", incoming: true },
+      { textKey: "minjun_kim.message2", time: "03:11", incoming: false },
+      { textKey: "minjun_kim.message3", time: "03:30", incoming: false },
     ],
   },
   {
     id: 2,
-    name: "Jaehyun Park",
+    nameKey: "jaehyun_park",
     avatar: "https://i.pravatar.cc/150?img=63",
-    lastMessage: "She doesn’t suspect anything",
+    lastMessageKey: "jaehyun_park.lastMessage",
     time: "01:55",
     messages: [
-      { text: "That was too close", time: "01:40", incoming: true },
-      { text: "But we pulled it off", time: "01:41", incoming: false },
-      { text: "She doesn’t suspect anything", time: "01:55", incoming: false },
+      { textKey: "jaehyun_park.message1", time: "01:40", incoming: true },
+      { textKey: "jaehyun_park.message2", time: "01:41", incoming: false },
+      { textKey: "jaehyun_park.message3", time: "01:55", incoming: false },
     ],
   },
   {
     id: 3,
-    name: "Seojun Lee",
+    nameKey: "seojun_lee",
     avatar: "https://i.pravatar.cc/150?img=64",
-    lastMessage: "Send the video again",
+    lastMessageKey: "seojun_lee.lastMessage",
     time: "00:20",
     messages: [
-      { text: "You deleted it?", time: "00:05", incoming: true },
-      { text: "Had to. Too risky", time: "00:06", incoming: false },
-      { text: "Send the video again", time: "00:20", incoming: false },
+      { textKey: "seojun_lee.message1", time: "00:05", incoming: true },
+      { textKey: "seojun_lee.message2", time: "00:06", incoming: false },
+      { textKey: "seojun_lee.message3", time: "00:20", incoming: false },
     ],
   },
   {
     id: 4,
-    name: "Dohyun Choi",
+    nameKey: "dohyun_choi",
     avatar: "https://i.pravatar.cc/150?img=65",
-    lastMessage: "I’m in your apartment",
+    lastMessageKey: "dohyun_choi.lastMessage",
     time: "23:45",
     messages: [
-      { text: "You home?", time: "23:30", incoming: true },
-      { text: "She’s out. Door’s open", time: "23:31", incoming: false },
-      { text: "I’m in your apartment", time: "23:45", incoming: false },
+      { textKey: "dohyun_choi.message1", time: "23:30", incoming: true },
+      { textKey: "dohyun_choi.message2", time: "23:31", incoming: false },
+      { textKey: "dohyun_choi.message3", time: "23:45", incoming: false },
     ],
   },
   {
     id: 5,
-    name: "Yejun Jung",
+    nameKey: "yejun_jung",
     avatar: "https://i.pravatar.cc/150?img=66",
-    lastMessage: "I’m obsessed with you",
+    lastMessageKey: "yejun_jung.lastMessage",
     time: "02:15",
     messages: [
-      {
-        text: "I can’t stop thinking about you",
-        time: "02:00",
-        incoming: true,
-      },
-      { text: "Same. Every second", time: "02:01", incoming: false },
-      { text: "I’m obsessed with you", time: "02:15", incoming: false },
+      { textKey: "yejun_jung.message1", time: "02:00", incoming: true },
+      { textKey: "yejun_jung.message2", time: "02:01", incoming: false },
+      { textKey: "yejun_jung.message3", time: "02:15", incoming: false },
     ],
   },
   {
     id: 6,
-    name: "Siwoo Kang",
+    nameKey: "siwoo_kang",
     avatar: "https://i.pravatar.cc/150?img=67",
-    lastMessage: "I told her I was at work",
+    lastMessageKey: "siwoo_kang.lastMessage",
     time: "21:50",
     messages: [
-      { text: "Where are you?", time: "21:30", incoming: true },
-      { text: "Work. Late meeting", time: "21:31", incoming: false },
-      { text: "Liar", time: "21:32", incoming: true },
-      { text: "I told her I was at work", time: "21:50", incoming: false },
+      { textKey: "siwoo_kang.message1", time: "21:30", incoming: true },
+      { textKey: "siwoo_kang.message2", time: "21:31", incoming: false },
+      { textKey: "siwoo_kang.message3", time: "21:32", incoming: true },
+      { textKey: "siwoo_kang.message4", time: "21:50", incoming: false },
     ],
   },
   {
     id: 7,
-    name: "Haneul Song",
+    nameKey: "haneul_song",
     avatar: "https://i.pravatar.cc/150?img=68",
-    lastMessage: "This is dangerous",
+    lastMessageKey: "haneul_song.lastMessage",
     time: "20:10",
     messages: [
-      { text: "We said last time was the last", time: "19:55", incoming: true },
-      { text: "I know", time: "19:56", incoming: false },
-      { text: "Then why am I here?", time: "19:57", incoming: true },
-      { text: "This is dangerous", time: "20:10", incoming: false },
+      { textKey: "haneul_song.message1", time: "19:55", incoming: true },
+      { textKey: "haneul_song.message2", time: "19:56", incoming: false },
+      { textKey: "haneul_song.message3", time: "19:57", incoming: true },
+      { textKey: "haneul_song.message4", time: "20:10", incoming: false },
     ],
   },
   {
     id: 8,
-    name: "Juwon Han",
+    nameKey: "juwon_han",
     avatar: "https://i.pravatar.cc/150?img=69",
-    lastMessage: "I dream about you every night",
+    lastMessageKey: "juwon_han.lastMessage",
     time: "04:05",
     messages: [
-      { text: "Are you sleeping?", time: "03:50", incoming: true },
-      { text: "No. You?", time: "03:51", incoming: false },
-      { text: "Thinking of you", time: "03:52", incoming: true },
-      { text: "I dream about you every night", time: "04:05", incoming: false },
+      { textKey: "juwon_han.message1", time: "03:50", incoming: true },
+      { textKey: "juwon_han.message2", time: "03:51", incoming: false },
+      { textKey: "juwon_han.message3", time: "03:52", incoming: true },
+      { textKey: "juwon_han.message4", time: "04:05", incoming: false },
     ],
   },
   {
     id: 9,
-    name: "Eunwoo Shin",
+    nameKey: "eunwoo_shin",
     avatar: "https://i.pravatar.cc/150?img=70",
-    lastMessage: "Delete after reading",
+    lastMessageKey: "eunwoo_shin.lastMessage",
     time: "01:30",
     messages: [
-      {
-        text: "I can’t stop replaying last night",
-        time: "01:15",
-        incoming: true,
-      },
-      { text: "That thing you did...", time: "01:16", incoming: false },
-      { text: "Shh. Don’t type it", time: "01:17", incoming: true },
-      { text: "Delete after reading", time: "01:30", incoming: false },
+      { textKey: "eunwoo_shin.message1", time: "01:15", incoming: true },
+      { textKey: "eunwoo_shin.message2", time: "01:16", incoming: false },
+      { textKey: "eunwoo_shin.message3", time: "01:17", incoming: true },
+      { textKey: "eunwoo_shin.message4", time: "01:30", incoming: false },
     ],
   },
   {
     id: 10,
-    name: "Taeyang Yoon",
+    nameKey: "taeyang_yoon",
     avatar: "https://i.pravatar.cc/150?img=1",
-    lastMessage: "I’m falling for you",
+    lastMessageKey: "taeyang_yoon.lastMessage",
     time: "00:40",
     messages: [
-      { text: "This is getting serious", time: "00:25", incoming: true },
-      { text: "I know", time: "00:26", incoming: false },
-      { text: "But I don’t want to stop", time: "00:27", incoming: true },
-      { text: "I’m falling for you", time: "00:40", incoming: false },
+      { textKey: "taeyang_yoon.message1", time: "00:25", incoming: true },
+      { textKey: "taeyang_yoon.message2", time: "00:26", incoming: false },
+      { textKey: "taeyang_yoon.message3", time: "00:27", incoming: true },
+      { textKey: "taeyang_yoon.message4", time: "00:40", incoming: false },
     ],
   },
   {
     id: 11,
-    name: "Jihoon Baek",
+    nameKey: "jihoon_baek",
     avatar: "https://i.pravatar.cc/150?img=2",
-    lastMessage: "Your scent is on my pillow",
+    lastMessageKey: "jihoon_baek.lastMessage",
     time: "05:00",
     messages: [
-      { text: "I can still smell you", time: "04:40", incoming: true },
-      { text: "Good", time: "04:41", incoming: false },
-      { text: "Your scent is on my pillow", time: "05:00", incoming: false },
+      { textKey: "jihoon_baek.message1", time: "04:40", incoming: true },
+      { textKey: "jihoon_baek.message2", time: "04:41", incoming: false },
+      { textKey: "jihoon_baek.message3", time: "05:00", incoming: false },
     ],
   },
   {
     id: 12,
-    name: "Woojin Oh",
+    nameKey: "woojin_oh",
     avatar: "https://i.pravatar.cc/150?img=3",
-    lastMessage: "I lied to her for you",
+    lastMessageKey: "woojin_oh.lastMessage",
     time: "22:20",
     messages: [
-      { text: "She asked where I was", time: "22:05", incoming: true },
-      { text: "What’d you say?", time: "22:06", incoming: false },
-      { text: "With you", time: "22:07", incoming: true },
-      { text: "I lied to her for you", time: "22:20", incoming: false },
+      { textKey: "woojin_oh.message1", time: "22:05", incoming: true },
+      { textKey: "woojin_oh.message2", time: "22:06", incoming: false },
+      { textKey: "woojin_oh.message3", time: "22:07", incoming: true },
+      { textKey: "woojin_oh.message4", time: "22:20", incoming: false },
     ],
   },
 ];
 
-// === Friends (KakaoTalk uses "Friends") ===
+// === Friends (derived from chats) ===
 const friends = [
   ...chats.map((c) => ({
     id: c.id,
-    name: c.name,
+    nameKey: c.nameKey,
     avatar: c.avatar,
     phone: `+82 10-${String(1000 + c.id).padStart(4, "0")}`,
-    email: `${c.name.split(" ")[0].toLowerCase()}@kakao.com`,
+    email: `${c.nameKey.split("_")[0].toLowerCase()}@kakao.com`,
   })),
 ];
 
@@ -243,7 +236,7 @@ const friends = [
 const callLogs = [
   {
     id: 1,
-    name: "Minjun Kim",
+    nameKey: "minjun_kim",
     avatar: "https://i.pravatar.cc/150?img=62",
     type: "outgoing",
     time: "2025-10-28 23:55",
@@ -251,7 +244,7 @@ const callLogs = [
   },
   {
     id: 2,
-    name: "Jaehyun Park",
+    nameKey: "jaehyun_park",
     avatar: "https://i.pravatar.cc/150?img=63",
     type: "incoming",
     time: "2025-10-28 22:30",
@@ -259,14 +252,14 @@ const callLogs = [
   },
   {
     id: 3,
-    name: "Seojun Lee",
+    nameKey: "seojun_lee",
     avatar: "https://i.pravatar.cc/150?img=64",
     type: "missed",
     time: "2025-10-28 21:10",
   },
   {
     id: 4,
-    name: "Dohyun Choi",
+    nameKey: "dohyun_choi",
     avatar: "https://i.pravatar.cc/150?img=65",
     type: "outgoing",
     time: "2025-10-27 20:45",
@@ -274,7 +267,7 @@ const callLogs = [
   },
   {
     id: 5,
-    name: "Yejun Jung",
+    nameKey: "yejun_jung",
     avatar: "https://i.pravatar.cc/150?img=66",
     type: "incoming",
     time: "2025-10-27 19:20",
@@ -282,7 +275,7 @@ const callLogs = [
   },
   {
     id: 6,
-    name: "Jihoon Baek",
+    nameKey: "jihoon_baek",
     avatar: "https://i.pravatar.cc/150?img=2",
     type: "missed",
     time: "2025-10-27 18:00",
@@ -290,6 +283,7 @@ const callLogs = [
 ];
 
 const KakaoTalkPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -323,7 +317,9 @@ const KakaoTalkPage = () => {
   const groupFriendsByLetter = () => {
     const grouped = {};
     friends.forEach((f) => {
-      const letter = f.name[0].toUpperCase();
+      const letter = t(
+        `dmkaks.friends_list.${f.nameKey}.name`
+      )[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(f);
     });
@@ -338,7 +334,7 @@ const KakaoTalkPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              KakaoTalk
+              {t("dmkaks.header.title")}
               <SiKakaotalk className="text-[#524a04] drop-shadow-md" />
             </h1>
           </div>
@@ -346,12 +342,7 @@ const KakaoTalkPage = () => {
         </div>
       </header>
 
-      <Box
-        sx={{
-          bgcolor: "#fafafa",
-          p: { xs: 2, sm: 3, md: 4 },
-        }}
-      >
+      <Box sx={{ bgcolor: "#fafafa", p: { xs: 2, sm: 3, md: 4 } }}>
         <Box sx={{ maxWidth: 1400, mx: "auto" }}>
           {/* Tabs */}
           {!showDetail && (
@@ -362,24 +353,28 @@ const KakaoTalkPage = () => {
                 mb: 3,
                 "& .MuiTabs-indicator": { bgcolor: "#3C1E1E", height: 3 },
               }}
+              aria-label={t("dmkaks.tabs.aria_label")}
             >
               <Tab
                 icon={<SiKakaotalk className="text-[#524a04]" />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chats"}
+                label={isMobile ? "" : t("dmkaks.tabs.chat")}
                 value="chat"
+                aria-label={t("dmkaks.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Friends"}
+                label={isMobile ? "" : t("dmkaks.tabs.friends")}
                 value="friends"
+                aria-label={t("dmkaks.tabs.friends_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Calls"}
+                label={isMobile ? "" : t("dmkaks.tabs.calls")}
                 value="calls"
+                aria-label={t("dmkaks.tabs.calls_aria")}
               />
             </Tabs>
           )}
@@ -387,7 +382,11 @@ const KakaoTalkPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "#3C1E1E" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "#3C1E1E" }}
+                aria-label={t("dmkaks.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -404,7 +403,7 @@ const KakaoTalkPage = () => {
               gap: 3,
             }}
           >
-            {/* Left Panel: Lists */}
+            {/* Left Panel */}
             <Paper
               elevation={0}
               sx={{
@@ -422,7 +421,7 @@ const KakaoTalkPage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmkaks.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -433,6 +432,9 @@ const KakaoTalkPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmkaks.chat.item_aria", {
+                        name: t(`dmkaks.chats.${chat.nameKey}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -443,7 +445,7 @@ const KakaoTalkPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {chat.name}
+                            {t(`dmkaks.chats.${chat.nameKey}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -454,7 +456,7 @@ const KakaoTalkPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(`dmkaks.chats.${chat.lastMessageKey}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -470,14 +472,13 @@ const KakaoTalkPage = () => {
 
               {/* Friends List */}
               {tab === "friends" && (
-                <Stack>
+                <Stack aria-label={t("dmkaks.friends.list_aria")}>
                   {Object.keys(groupFriendsByLetter())
                     .sort()
                     .map((letter) => (
                       <Box key={letter}>
                         <Box sx={{ px: 2, py: 1, bgcolor: "#f3f4f6" }}>
                           <Typography
-                            LDSX
                             sx={{
                               fontSize: "0.75rem",
                               fontWeight: 700,
@@ -497,6 +498,11 @@ const KakaoTalkPage = () => {
                               transition: "background 0.2s",
                             }}
                             onClick={() => setSelectedFriend(friend)}
+                            aria-label={t("dmkaks.friends.item_aria", {
+                              name: t(
+                                `dmkaks.friends_list.${friend.nameKey}.name`
+                              ),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -510,7 +516,9 @@ const KakaoTalkPage = () => {
                               <Typography
                                 sx={{ fontWeight: 500, color: "#1f2937" }}
                               >
-                                {friend.name}
+                                {t(
+                                  `dmkaks.friends_list.${friend.nameKey}.name`
+                                )}
                               </Typography>
                             </Stack>
                           </Box>
@@ -522,7 +530,7 @@ const KakaoTalkPage = () => {
 
               {/* Call Log */}
               {tab === "calls" && (
-                <Stack>
+                <Stack aria-label={t("dmkaks.call_log.list_aria")}>
                   {callLogs.map((call) => (
                     <Box
                       key={call.id}
@@ -533,6 +541,9 @@ const KakaoTalkPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedCall(call)}
+                      aria-label={t("dmkaks.call_log.item_aria", {
+                        name: t(`dmkaks.call_logs.${call.nameKey}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
@@ -561,7 +572,7 @@ const KakaoTalkPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {call.name}
+                            {t(`dmkaks.call_logs.${call.nameKey}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -574,8 +585,7 @@ const KakaoTalkPage = () => {
                                   : "#EF4444",
                             }}
                           >
-                            {call.type.charAt(0).toUpperCase() +
-                              call.type.slice(1)}
+                            {t(`dmkaks.call_log.types.${call.type}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -590,7 +600,7 @@ const KakaoTalkPage = () => {
               )}
             </Paper>
 
-            {/* Right Panel: Details */}
+            {/* Right Panel – Details */}
             {showDetail && (
               <Paper
                 elevation={0}
@@ -605,7 +615,12 @@ const KakaoTalkPage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmkaks.chat.detail_aria", {
+                      name: t(`dmkaks.chats.${selectedChat.nameKey}.name`),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -615,7 +630,7 @@ const KakaoTalkPage = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "#1f2937" }}
                       >
-                        {selectedChat.name}
+                        {t(`dmkaks.chats.${selectedChat.nameKey}.name`)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -646,7 +661,7 @@ const KakaoTalkPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(`dmkaks.chats.${msg.textKey}`)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -669,7 +684,15 @@ const KakaoTalkPage = () => {
 
                 {/* Friend Detail */}
                 {selectedFriend && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmkaks.friends.detail_aria", {
+                      name: t(
+                        `dmkaks.friends_list.${selectedFriend.nameKey}.name`
+                      ),
+                    })}
+                  >
                     <Avatar
                       src={selectedFriend.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -678,7 +701,7 @@ const KakaoTalkPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedFriend.name}
+                      {t(`dmkaks.friends_list.${selectedFriend.nameKey}.name`)}
                     </Typography>
 
                     {selectedFriend.phone && (
@@ -712,7 +735,7 @@ const KakaoTalkPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Phone
+                            {t("dmkaks.friends.phone_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
@@ -754,7 +777,7 @@ const KakaoTalkPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Email
+                            {t("dmkaks.friends.email_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
@@ -769,7 +792,13 @@ const KakaoTalkPage = () => {
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmkaks.call_log.detail_aria", {
+                      name: t(`dmkaks.call_logs.${selectedCall.nameKey}.name`),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -778,7 +807,7 @@ const KakaoTalkPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedCall.name}
+                      {t(`dmkaks.call_logs.${selectedCall.nameKey}.name`)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -804,8 +833,7 @@ const KakaoTalkPage = () => {
                           sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
                         >
                           {selectedCall.duration} •{" "}
-                          {selectedCall.type.charAt(0).toUpperCase() +
-                            selectedCall.type.slice(1)}
+                          {t(`dmkaks.call_log.types.${selectedCall.type}`)}
                         </Typography>
                       )}
                     </Paper>

@@ -3564,5 +3564,154 @@
         }
       }
     }
+  },
+  "dmkaks": {
+    "header": { "title": "KakaoTalk" },
+    "tabs": {
+      "chat": "聊天",
+      "friends": "好友",
+      "calls": "通话",
+      "aria_label": "KakaoTalk导航标签",
+      "chat_aria": "显示聊天",
+      "friends_aria": "显示好友",
+      "calls_aria": "显示通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "聊天列表",
+      "item_aria": "与{{name}}的聊天",
+      "detail_aria": "{{name}}的聊天详情"
+    },
+    "friends": {
+      "phone_label": "电话",
+      "email_label": "电子邮件",
+      "list_aria": "好友列表",
+      "item_aria": "好友 {{name}}",
+      "detail_aria": "{{name}}的好友详情"
+    },
+    "call_log": {
+      "list_aria": "通话记录列表",
+      "item_aria": "{{name}}的通话记录",
+      "detail_aria": "{{name}}的通话详情",
+      "types": {
+        "outgoing": "拨出",
+        "incoming": "来电",
+        "missed": "未接"
+      }
+    },
+    "friends_list": {
+      "minjun_kim": { "name": "金敏俊" },
+      "jaehyun_park": { "name": "朴宰贤" },
+      "seojun_lee": { "name": "李瑞俊" },
+      "dohyun_choi": { "name": "崔道贤" },
+      "yejun_jung": { "name": "郑艺俊" },
+      "siwoo_kang": { "name": "姜时宇" },
+      "haneul_song": { "name": "宋하늘" },
+      "juwon_han": { "name": "韩柱元" },
+      "eunwoo_shin": { "name": "申恩宇" },
+      "taeyang_yoon": { "name": "尹太阳" },
+      "jihoon_baek": { "name": "白智勋" },
+      "woojin_oh": { "name": "吴宇镇" }
+    },
+    "call_logs": {
+      "minjun_kim": { "name": "金敏俊" },
+      "jaehyun_park": { "name": "朴宰贤" },
+      "seojun_lee": { "name": "李瑞俊" },
+      "dohyun_choi": { "name": "崔道贤" },
+      "yejun_jung": { "name": "郑艺俊" },
+      "jihoon_baek": { "name": "白智勋" }
+    },
+    "chats": {
+      "minjun_kim": {
+        "name": "金敏俊",
+        "lastMessage": "我把戒指忘在你家了",
+        "message1": "你还醒着吗？",
+        "message2": "嗯…睡不着",
+        "message3": "我把戒指忘在你家了"
+      },
+      "jaehyun_park": {
+        "name": "朴宰贤",
+        "lastMessage": "她什么都没怀疑",
+        "message1": "今天好险",
+        "message2": "但我们成功了",
+        "message3": "她什么都没怀疑"
+      },
+      "seojun_lee": {
+        "name": "李瑞俊",
+        "lastMessage": "再发一次视频",
+        "message1": "你删了吗？",
+        "message2": "没办法。太危险了",
+        "message3": "再发一次视频"
+      },
+      "dohyun_choi": {
+        "name": "崔道贤",
+        "lastMessage": "我在你公寓",
+        "message1": "你在家吗？",
+        "message2": "她出去了。门没锁",
+        "message3": "我在你公寓"
+      },
+      "yejun_jung": {
+        "name": "郑艺俊",
+        "lastMessage": "我对你着迷了",
+        "message1": "我停不下来地想你",
+        "message2": "我也一样。每秒钟",
+        "message3": "我对你着迷了"
+      },
+      "siwoo_kang": {
+        "name": "姜时宇",
+        "lastMessage": "我跟她说我在上班",
+        "message1": "你在哪儿？",
+        "message2": "公司。晚会",
+        "message3": "骗子",
+        "message4": "我跟她说我在上班"
+      },
+      "haneul_song": {
+        "name": "宋하늘",
+        "lastMessage": "这很危险",
+        "message1": "我们说上次是最后一次",
+        "message2": "我知道",
+        "message3": "那我为什么在这里？",
+        "message4": "这很危险"
+      },
+      "juwon_han": {
+        "name": "韩柱元",
+        "lastMessage": "我每晚都梦见你",
+        "message1": "你在睡吗？",
+        "message2": "没有。你呢？",
+        "message3": "想着你",
+        "message4": "我每晚都梦见你"
+      },
+      "eunwoo_shin": {
+        "name": "申恩宇",
+        "lastMessage": "读完删除",
+        "message1": "我一直在回想昨晚",
+        "message2": "你做的那个…",
+        "message3": "嘘。别打出来",
+        "message4": "读完删除"
+      },
+      "taeyang_yoon": {
+        "name": "尹太阳",
+        "lastMessage": "我爱上你了",
+        "message1": "这越来越认真了",
+        "message2": "我知道",
+        "message3": "但我不想停",
+        "message4": "我爱上你了"
+      },
+      "jihoon_baek": {
+        "name": "白智勋",
+        "lastMessage": "你的气味还在我的枕头上",
+        "message1": "我还能闻到你",
+        "message2": "好",
+        "message3": "你的气味还在我的枕头上"
+      },
+      "woojin_oh": {
+        "name": "吴宇镇",
+        "lastMessage": "我为你对她撒了谎",
+        "message1": "她问我在哪儿",
+        "message2": "你说了什么？",
+        "message3": "和你在一起",
+        "message4": "我为你对她撒了谎"
+      }
+    }
   }
 }

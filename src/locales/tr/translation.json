@@ -3461,181 +3461,331 @@
         }
       }
     }
-  }, "dmvibez": {
-      "header": { "title": "Viber" },
-      "tabs": {
-        "chat": "Sohbetler",
-        "contacts": "Kişiler",
-        "call_log": "Arama Kaydı",
-        "aria_label": "Viber navigasyon sekmeleri",
-        "chat_aria": "Sohbetleri göster",
-        "contacts_aria": "Kişileri göster",
-        "call_log_aria": "Arama kaydını göster"
+  },
+  "dmvibez": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "Sohbetler",
+      "contacts": "Kişiler",
+      "call_log": "Arama Kaydı",
+      "aria_label": "Viber navigasyon sekmeleri",
+      "chat_aria": "Sohbetleri göster",
+      "contacts_aria": "Kişileri göster",
+      "call_log_aria": "Arama kaydını göster"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "Sohbet listesi",
+      "item_aria": "{{name}} ile sohbet",
+      "detail_aria": "{{name}} için sohbet detayları"
+    },
+    "contacts": {
+      "phone_label": "Telefon",
+      "email_label": "E-posta",
+      "list_aria": "Kişi listesi",
+      "item_aria": "Kişi {{name}}",
+      "detail_aria": "{{name}} için kişi detayları",
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
       },
-      "back_button_aria": "Listeye geri dön",
-      "chat": {
-        "list_aria": "Sohbet listesi",
-        "item_aria": "{{name}} ile sohbet",
-        "detail_aria": "{{name}} için sohbet detayları"
+      "liam_park": {
+        "name": "Liam Park",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
       },
-      "contacts": {
-        "phone_label": "Telefon",
-        "email_label": "E-posta",
-        "list_aria": "Kişi listesi",
-        "item_aria": "Kişi {{name}}",
-        "detail_aria": "{{name}} için kişi detayları",
-        "alex_rivera": {
-          "name": "Alex Rivera",
-          "phone": "+1 555-1001",
-          "email": "alex@viber.com"
-        },
-        "liam_park": {
-          "name": "Liam Park",
-          "phone": "+1 555-1002",
-          "email": "liam@viber.com"
-        },
-        "ethan_brooks": {
-          "name": "Ethan Brooks",
-          "phone": "+1 555-1003",
-          "email": "ethan@viber.com"
-        },
-        "noah_lee": {
-          "name": "Noah Lee",
-          "phone": "+1 555-1004",
-          "email": "noah@viber.com"
-        },
-        "dylan_kim": {
-          "name": "Dylan Kim",
-          "phone": "+1 555-1005",
-          "email": "dylan@viber.com"
-        },
-        "carter_lee": {
-          "name": "Carter Lee",
-          "phone": "+1 555-1006",
-          "email": "carter@viber.com"
-        },
-        "mason_wu": {
-          "name": "Mason Wu",
-          "phone": "+1 555-1007",
-          "email": "mason@viber.com"
-        },
-        "ryan_chen": {
-          "name": "Ryan Chen",
-          "phone": "+1 555-1008",
-          "email": "ryan@viber.com"
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "Arama kaydı listesi",
+      "item_aria": "{{name}} için arama kaydı",
+      "detail_aria": "{{name}} için arama detayları",
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "type": "outgoing"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "type": "incoming"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "type": "missed"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "type": "outgoing"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "type": "incoming"
+      },
+      "types": {
+        "outgoing": "Giden",
+        "incoming": "Gelen",
+        "missed": "Cevapsız"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "lastMessage": "Seni düşünmekten vazgeçemiyorum",
+        "messages": {
+          "msg1": "Hala uyanık mısın?",
+          "msg2": "Uyuyamıyorum. Dün geceyi düşünüyorum",
+          "msg3": "Ben de. Dokunuşunu özlüyorum",
+          "msg4": "Seni düşünmekten vazgeçemiyorum"
         }
       },
-      "call_log": {
-        "list_aria": "Arama kaydı listesi",
-        "item_aria": "{{name}} için arama kaydı",
-        "detail_aria": "{{name}} için arama detayları",
-        "alex_rivera": {
-          "name": "Alex Rivera",
-          "type": "outgoing"
-        },
-        "liam_park": {
-          "name": "Liam Park",
-          "type": "incoming"
-        },
-        "ethan_brooks": {
-          "name": "Ethan Brooks",
-          "type": "missed"
-        },
-        "noah_lee": {
-          "name": "Noah Lee",
-          "type": "outgoing"
-        },
-        "dylan_kim": {
-          "name": "Dylan Kim",
-          "type": "incoming"
-        },
-        "types": {
-          "outgoing": "Giden",
-          "incoming": "Gelen",
-          "missed": "Cevapsız"
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "Bu sohbeti sil",
+        "messages": {
+          "msg1": "O otel mükemmeldi",
+          "msg2": "Tekrar yapmalıyız",
+          "msg3": "Önümüzdeki hafta mı?",
+          "msg4": "Bu sohbeti sil"
         }
       },
-      "chats": {
-        "alex_rivera": {
-          "name": "Alex Rivera",
-          "lastMessage": "Seni düşünmekten vazgeçemiyorum",
-          "messages": {
-            "msg1": "Hala uyanık mısın?",
-            "msg2": "Uyuyamıyorum. Dün geceyi düşünüyorum",
-            "msg3": "Ben de. Dokunuşunu özlüyorum",
-            "msg4": "Seni düşünmekten vazgeçemiyorum"
-          }
-        },
-        "liam_park": {
-          "name": "Liam Park",
-          "lastMessage": "Bu sohbeti sil",
-          "messages": {
-            "msg1": "O otel mükemmeldi",
-            "msg2": "Tekrar yapmalıyız",
-            "msg3": "Önümüzdeki hafta mı?",
-            "msg4": "Bu sohbeti sil"
-          }
-        },
-        "ethan_brooks": {
-          "name": "Ethan Brooks",
-          "lastMessage": "O uyuyor",
-          "messages": {
-            "msg1": "Konuşabilir misin?",
-            "msg2": "O uyuyor",
-            "msg3": "Seninle olmak isterdim",
-            "msg4": "Ben de. Bu işkence"
-          }
-        },
-        "noah_lee": {
-          "name": "Noah Lee",
-          "lastMessage": "Fotoğrafı gönder",
-          "messages": {
-            "msg1": "Ne giyiyorsun?",
-            "msg2": "Senin görmediğin bir şey değil",
-            "msg3": "Fotoğrafı gönder",
-            "msg4": "10'da sileceğim..."
-          }
-        },
-        "dylan_kim": {
-          "name": "Dylan Kim",
-          "lastMessage": "Seni seviyorum",
-          "messages": {
-            "msg1": "Bunu söylememeliyim",
-            "msg2": "Söyle",
-            "msg3": "Seni seviyorum",
-            "msg4": "Seni daha çok seviyorum"
-          }
-        },
-        "carter_lee": {
-          "name": "Carter Lee",
-          "lastMessage": "707 numaralı oda",
-          "messages": {
-            "msg1": "Aynı otel mi?",
-            "msg2": "707 numaralı oda",
-            "msg3": "8'de orada olacağım",
-            "msg4": "Kapı açık"
-          }
-        },
-        "mason_wu": {
-          "name": "Mason Wu",
-          "lastMessage": "Kimse bilmeyecek",
-          "messages": {
-            "msg1": "Dikkatli olmalıyız",
-            "msg2": "Biliyorum. Ama duramıyorum",
-            "msg3": "Sadece bir kez daha",
-            "msg4": "Kimse bilmeyecek"
-          }
-        },
-        "ryan_chen": {
-          "name": "Ryan Chen",
-          "lastMessage": "Sen benim sırrımsın",
-          "messages": {
-            "msg1": "Kız arkadaşıma geç çalışıyorum dedim",
-            "msg2": "Erkek arkadaşıma da aynısını söyledim",
-            "msg3": "Bu çok yanlış",
-            "msg4": "Ama sen benim sırrımsın"
-          }
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "O uyuyor",
+        "messages": {
+          "msg1": "Konuşabilir misin?",
+          "msg2": "O uyuyor",
+          "msg3": "Seninle olmak isterdim",
+          "msg4": "Ben de. Bu işkence"
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "Fotoğrafı gönder",
+        "messages": {
+          "msg1": "Ne giyiyorsun?",
+          "msg2": "Senin görmediğin bir şey değil",
+          "msg3": "Fotoğrafı gönder",
+          "msg4": "10'da sileceğim..."
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "Seni seviyorum",
+        "messages": {
+          "msg1": "Bunu söylememeliyim",
+          "msg2": "Söyle",
+          "msg3": "Seni seviyorum",
+          "msg4": "Seni daha çok seviyorum"
+        }
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "lastMessage": "707 numaralı oda",
+        "messages": {
+          "msg1": "Aynı otel mi?",
+          "msg2": "707 numaralı oda",
+          "msg3": "8'de orada olacağım",
+          "msg4": "Kapı açık"
+        }
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "lastMessage": "Kimse bilmeyecek",
+        "messages": {
+          "msg1": "Dikkatli olmalıyız",
+          "msg2": "Biliyorum. Ama duramıyorum",
+          "msg3": "Sadece bir kez daha",
+          "msg4": "Kimse bilmeyecek"
+        }
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "lastMessage": "Sen benim sırrımsın",
+        "messages": {
+          "msg1": "Kız arkadaşıma geç çalışıyorum dedim",
+          "msg2": "Erkek arkadaşıma da aynısını söyledim",
+          "msg3": "Bu çok yanlış",
+          "msg4": "Ama sen benim sırrımsın"
         }
       }
     }
+  },
+  "dmkaks": {
+    "header": { "title": "KakaoTalk" },
+    "tabs": {
+      "chat": "Sohbetler",
+      "friends": "Arkadaşlar",
+      "calls": "Aramalar",
+      "aria_label": "KakaoTalk navigasyon sekmeleri",
+      "chat_aria": "Sohbetleri göster",
+      "friends_aria": "Arkadaşları göster",
+      "calls_aria": "Arama kaydını göster"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "Sohbet listesi",
+      "item_aria": "{{name}} ile sohbet",
+      "detail_aria": "{{name}} için sohbet detayları"
+    },
+    "friends": {
+      "phone_label": "Telefon",
+      "email_label": "E-posta",
+      "list_aria": "Arkadaş listesi",
+      "item_aria": "Arkadaş {{name}}",
+      "detail_aria": "{{name}} için arkadaş detayları"
+    },
+    "call_log": {
+      "list_aria": "Arama kaydı listesi",
+      "item_aria": "{{name}} için arama kaydı",
+      "detail_aria": "{{name}} için arama detayları",
+      "types": {
+        "outgoing": "Giden",
+        "incoming": "Gelen",
+        "missed": "Cevapsız"
+      }
+    },
+    "friends_list": {
+      "minjun_kim": { "name": "Minjun Kim" },
+      "jaehyun_park": { "name": "Jaehyun Park" },
+      "seojun_lee": { "name": "Seojun Lee" },
+      "dohyun_choi": { "name": "Dohyun Choi" },
+      "yejun_jung": { "name": "Yejun Jung" },
+      "siwoo_kang": { "name": "Siwoo Kang" },
+      "haneul_song": { "name": "Haneul Song" },
+      "juwon_han": { "name": "Juwon Han" },
+      "eunwoo_shin": { "name": "Eunwoo Shin" },
+      "taeyang_yoon": { "name": "Taeyang Yoon" },
+      "jihoon_baek": { "name": "Jihoon Baek" },
+      "woojin_oh": { "name": "Woojin Oh" }
+    },
+    "call_logs": {
+      "minjun_kim": { "name": "Minjun Kim" },
+      "jaehyun_park": { "name": "Jaehyun Park" },
+      "seojun_lee": { "name": "Seojun Lee" },
+      "dohyun_choi": { "name": "Dohyun Choi" },
+      "yejun_jung": { "name": "Yejun Jung" },
+      "jihoon_baek": { "name": "Jihoon Baek" }
+    },
+    "chats": {
+      "minjun_kim": {
+        "name": "Minjun Kim",
+        "lastMessage": "Yüzüğümü senin evinde unuttum",
+        "message1": "Hala uyanık mısın?",
+        "message2": "Evet... uyuyamıyorum",
+        "message3": "Yüzüğümü senin evinde unuttum"
+      },
+      "jaehyun_park": {
+        "name": "Jaehyun Park",
+        "lastMessage": "O hiçbir şeyden şüphelenmiyor",
+        "message1": "Bugün çok yakındı",
+        "message2": "Ama başardık",
+        "message3": "O hiçbir şeyden şüphelenmiyor"
+      },
+      "seojun_lee": {
+        "name": "Seojun Lee",
+        "lastMessage": "Videoyu tekrar gönder",
+        "message1": "Sildin mi?",
+        "message2": "Mecbur kaldım. Çok riskli",
+        "message3": "Videoyu tekrar gönder"
+      },
+      "dohyun_choi": {
+        "name": "Dohyun Choi",
+        "lastMessage": "Senin dairedeyim",
+        "message1": "Evde misin?",
+        "message2": "O dışarı çıktı. Kapı açık",
+        "message3": "Senin dairedeyim"
+      },
+      "yejun_jung": {
+        "name": "Yejun Jung",
+        "lastMessage": "Sana takıntılıyım",
+        "message1": "Seni düşünmekten vazgeçemiyorum",
+        "message2": "Ben de. Her saniye",
+        "message3": "Sana takıntılıyım"
+      },
+      "siwoo_kang": {
+        "name": "Siwoo Kang",
+        "lastMessage": "Ona işte olduğumu söyledim",
+        "message1": "Neredesin?",
+        "message2": "İşte. Geç toplantı",
+        "message3": "Yalancı",
+        "message4": "Ona işte olduğumu söyledim"
+      },
+      "haneul_song": {
+        "name": "Haneul Song",
+        "lastMessage": "Bu tehlikeli",
+        "message1": "Son seferin son olduğunu söylemiştik",
+        "message2": "Biliyorum",
+        "message3": "O zaman neden buradayım?",
+        "message4": "Bu tehlikeli"
+      },
+      "juwon_han": {
+        "name": "Juwon Han",
+        "lastMessage": "Her gece seni rüyamda görüyorum",
+        "message1": "Uyuyor musun?",
+        "message2": "Hayır. Sen?",
+        "message3": "Seni düşünüyorum",
+        "message4": "Her gece seni rüyamda görüyorum"
+      },
+      "eunwoo_shin": {
+        "name": "Eunwoo Shin",
+        "lastMessage": "Okuduktan sonra sil",
+        "message1": "Dün geceyi tekrar tekrar düşünüyorum",
+        "message2": "Senin yaptığın o şey...",
+        "message3": "Şşş. Yazma",
+        "message4": "Okuduktan sonra sil"
+      },
+      "taeyang_yoon": {
+        "name": "Taeyang Yoon",
+        "lastMessage": "Sana aşık oluyorum",
+        "message1": "Bu ciddileşiyor",
+        "message2": "Biliyorum",
+        "message3": "Ama durmak istemiyorum",
+        "message4": "Sana aşık oluyorum"
+      },
+      "jihoon_baek": {
+        "name": "Jihoon Baek",
+        "lastMessage": "Kokun yastığımda",
+        "message1": "Hala kokunu alıyorum",
+        "message2": "İyi",
+        "message3": "Kokun yastığımda"
+      },
+      "woojin_oh": {
+        "name": "Woojin Oh",
+        "lastMessage": "Senin için ona yalan söyledim",
+        "message1": "Nerede olduğumu sordu",
+        "message2": "Ne dedin?",
+        "message3": "Seninle",
+        "message4": "Senin için ona yalan söyledim"
+      }
+    }
+  }
 }

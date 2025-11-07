@@ -3638,5 +3638,154 @@
         }
       }
     }
+  },
+  "dmkaks": {
+    "header": { "title": "KakaoTalk" },
+    "tabs": {
+      "chat": "Chats",
+      "friends": "Friends",
+      "calls": "Calls",
+      "aria_label": "KakaoTalk Navigation Tabs",
+      "chat_aria": "Show Chats",
+      "friends_aria": "Show Friends",
+      "calls_aria": "Show Call Log"
+    },
+    "back_button_aria": "Back to List",
+    "chat": {
+      "list_aria": "Chat List",
+      "item_aria": "Chat with {{name}}",
+      "detail_aria": "Chat Details for {{name}}"
+    },
+    "friends": {
+      "phone_label": "Phone",
+      "email_label": "Email",
+      "list_aria": "Friends List",
+      "item_aria": "Friend {{name}}",
+      "detail_aria": "Friend Details for {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Call Log List",
+      "item_aria": "Call Log for {{name}}",
+      "detail_aria": "Call Details for {{name}}",
+      "types": {
+        "outgoing": "Outgoing",
+        "incoming": "Incoming",
+        "missed": "Missed"
+      }
+    },
+    "friends_list": {
+      "minjun_kim": { "name": "Minjun Kim" },
+      "jaehyun_park": { "name": "Jaehyun Park" },
+      "seojun_lee": { "name": "Seojun Lee" },
+      "dohyun_choi": { "name": "Dohyun Choi" },
+      "yejun_jung": { "name": "Yejun Jung" },
+      "siwoo_kang": { "name": "Siwoo Kang" },
+      "haneul_song": { "name": "Haneul Song" },
+      "juwon_han": { "name": "Juwon Han" },
+      "eunwoo_shin": { "name": "Eunwoo Shin" },
+      "taeyang_yoon": { "name": "Taeyang Yoon" },
+      "jihoon_baek": { "name": "Jihoon Baek" },
+      "woojin_oh": { "name": "Woojin Oh" }
+    },
+    "call_logs": {
+      "minjun_kim": { "name": "Minjun Kim" },
+      "jaehyun_park": { "name": "Jaehyun Park" },
+      "seojun_lee": { "name": "Seojun Lee" },
+      "dohyun_choi": { "name": "Dohyun Choi" },
+      "yejun_jung": { "name": "Yejun Jung" },
+      "jihoon_baek": { "name": "Jihoon Baek" }
+    },
+    "chats": {
+      "minjun_kim": {
+        "name": "Minjun Kim",
+        "lastMessage": "I left my ring at your place",
+        "message1": "You still up?",
+        "message2": "Yeah... can’t sleep",
+        "message3": "I left my ring at your place"
+      },
+      "jaehyun_park": {
+        "name": "Jaehyun Park",
+        "lastMessage": "She doesn’t suspect anything",
+        "message1": "That was too close",
+        "message2": "But we pulled it off",
+        "message3": "She doesn’t suspect anything"
+      },
+      "seojun_lee": {
+        "name": "Seojun Lee",
+        "lastMessage": "Send the video again",
+        "message1": "You deleted it?",
+        "message2": "Had to. Too risky",
+        "message3": "Send the video again"
+      },
+      "dohyun_choi": {
+        "name": "Dohyun Choi",
+        "lastMessage": "I’m in your apartment",
+        "message1": "You home?",
+        "message2": "She’s out. Door’s open",
+        "message3": "I’m in your apartment"
+      },
+      "yejun_jung": {
+        "name": "Yejun Jung",
+        "lastMessage": "I’m obsessed with you",
+        "message1": "I can’t stop thinking about you",
+        "message2": "Same. Every second",
+        "message3": "I’m obsessed with you"
+      },
+      "siwoo_kang": {
+        "name": "Siwoo Kang",
+        "lastMessage": "I told her I was at work",
+        "message1": "Where are you?",
+        "message2": "Work. Late meeting",
+        "message3": "Liar",
+        "message4": "I told her I was at work"
+      },
+      "haneul_song": {
+        "name": "Haneul Song",
+        "lastMessage": "This is dangerous",
+        "message1": "We said last time was the last",
+        "message2": "I know",
+        "message3": "Then why am I here?",
+        "message4": "This is dangerous"
+      },
+      "juwon_han": {
+        "name": "Juwon Han",
+        "lastMessage": "I dream about you every night",
+        "message1": "Are you sleeping?",
+        "message2": "No. You?",
+        "message3": "Thinking of you",
+        "message4": "I dream about you every night"
+      },
+      "eunwoo_shin": {
+        "name": "Eunwoo Shin",
+        "lastMessage": "Delete after reading",
+        "message1": "I can’t stop replaying last night",
+        "message2": "That thing you did...",
+        "message3": "Shh. Don’t type it",
+        "message4": "Delete after reading"
+      },
+      "taeyang_yoon": {
+        "name": "Taeyang Yoon",
+        "lastMessage": "I’m falling for you",
+        "message1": "This is getting serious",
+        "message2": "I know",
+        "message3": "But I don’t want to stop",
+        "message4": "I’m falling for you"
+      },
+      "jihoon_baek": {
+        "name": "Jihoon Baek",
+        "lastMessage": "Your scent is on my pillow",
+        "message1": "I can still smell you",
+        "message2": "Good",
+        "message3": "Your scent is on my pillow"
+      },
+      "woojin_oh": {
+        "name": "Woojin Oh",
+        "lastMessage": "I lied to her for you",
+        "message1": "She asked where I was",
+        "message2": "What’d you say?",
+        "message3": "With you",
+        "message4": "I lied to her for you"
+      }
+    }
   }
 }

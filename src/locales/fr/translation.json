@@ -3633,5 +3633,153 @@
         }
       }
     }
-  }
+  },  "dmkaks": {
+      "header": { "title": "KakaoTalk" },
+      "tabs": {
+        "chat": "Discussions",
+        "friends": "Amis",
+        "calls": "Appels",
+        "aria_label": "Onglets de navigation KakaoTalk",
+        "chat_aria": "Afficher les discussions",
+        "friends_aria": "Afficher les amis",
+        "calls_aria": "Afficher le journal d'appels"
+      },
+      "back_button_aria": "Retour à la liste",
+      "chat": {
+        "list_aria": "Liste des discussions",
+        "item_aria": "Discussion avec {{name}}",
+        "detail_aria": "Détails de la discussion pour {{name}}"
+      },
+      "friends": {
+        "phone_label": "Téléphone",
+        "email_label": "E-mail",
+        "list_aria": "Liste des amis",
+        "item_aria": "Ami {{name}}",
+        "detail_aria": "Détails de l'ami pour {{name}}"
+      },
+      "call_log": {
+        "list_aria": "Liste du journal d'appels",
+        "item_aria": "Journal d'appels pour {{name}}",
+        "detail_aria": "Détails de l'appel pour {{name}}",
+        "types": {
+          "outgoing": "Sortant",
+          "incoming": "Entrant",
+          "missed": "Manqué"
+        }
+      },
+      "friends_list": {
+        "minjun_kim": { "name": "Minjun Kim" },
+        "jaehyun_park": { "name": "Jaehyun Park" },
+        "seojun_lee": { "name": "Seojun Lee" },
+        "dohyun_choi": { "name": "Dohyun Choi" },
+        "yejun_jung": { "name": "Yejun Jung" },
+        "siwoo_kang": { "name": "Siwoo Kang" },
+        "haneul_song": { "name": "Haneul Song" },
+        "juwon_han": { "name": "Juwon Han" },
+        "eunwoo_shin": { "name": "Eunwoo Shin" },
+        "taeyang_yoon": { "name": "Taeyang Yoon" },
+        "jihoon_baek": { "name": "Jihoon Baek" },
+        "woojin_oh": { "name": "Woojin Oh" }
+      },
+      "call_logs": {
+        "minjun_kim": { "name": "Minjun Kim" },
+        "jaehyun_park": { "name": "Jaehyun Park" },
+        "seojun_lee": { "name": "Seojun Lee" },
+        "dohyun_choi": { "name": "Dohyun Choi" },
+        "yejun_jung": { "name": "Yejun Jung" },
+        "jihoon_baek": { "name": "Jihoon Baek" }
+      },
+      "chats": {
+        "minjun_kim": {
+          "name": "Minjun Kim",
+          "lastMessage": "J'ai oublié ma bague chez toi",
+          "message1": "Tu es encore réveillé ?",
+          "message2": "Ouais... je n'arrive pas à dormir",
+          "message3": "J'ai oublié ma bague chez toi"
+        },
+        "jaehyun_park": {
+          "name": "Jaehyun Park",
+          "lastMessage": "Elle ne soupçonne rien",
+          "message1": "C'était trop juste",
+          "message2": "Mais on s'en est sortis",
+          "message3": "Elle ne soupçonne rien"
+        },
+        "seojun_lee": {
+          "name": "Seojun Lee",
+          "lastMessage": "Renvoyez la vidéo",
+          "message1": "Tu l'as supprimée ?",
+          "message2": "Obligé. Trop risqué",
+          "message3": "Renvoyez la vidéo"
+        },
+        "dohyun_choi": {
+          "name": "Dohyun Choi",
+          "lastMessage": "Je suis dans ton appartement",
+          "message1": "Tu es chez toi ?",
+          "message2": "Elle est sortie. La porte est ouverte",
+          "message3": "Je suis dans ton appartement"
+        },
+        "yejun_jung": {
+          "name": "Yejun Jung",
+          "lastMessage": "Je suis obsédé par toi",
+          "message1": "Je ne peux pas arrêter de penser à toi",
+          "message2": "Pareil. Chaque seconde",
+          "message3": "Je suis obsédé par toi"
+        },
+        "siwoo_kang": {
+          "name": "Siwoo Kang",
+          "lastMessage": "Je lui ai dit que j'étais au travail",
+          "message1": "Où es-tu ?",
+          "message2": "Travail. Réunion tardive",
+          "message3": "Menteur",
+          "message4": "Je lui ai dit que j'étais au travail"
+        },
+        "haneul_song": {
+          "name": "Haneul Song",
+          "lastMessage": "C'est dangereux",
+          "message1": "On a dit que la dernière fois était la dernière",
+          "message2": "Je sais",
+          "message3": "Alors pourquoi suis-je ici ?",
+          "message4": "C'est dangereux"
+        },
+        "juwon_han": {
+          "name": "Juwon Han",
+          "lastMessage": "Je rêve de toi chaque nuit",
+          "message1": "Tu dors ?",
+          "message2": "Non. Et toi ?",
+          "message3": "Je pense à toi",
+          "message4": "Je rêve de toi chaque nuit"
+        },
+        "eunwoo_shin": {
+          "name": "Eunwoo Shin",
+          "lastMessage": "Supprime après avoir lu",
+          "message1": "Je ne peux pas arrêter de revivre hier soir",
+          "message2": "Ce que tu as fait...",
+          "message3": "Chut. Ne l'écris pas",
+          "message4": "Supprime après avoir lu"
+        },
+        "taeyang_yoon": {
+          "name": "Taeyang Yoon",
+          "lastMessage": "Je tombe amoureux de toi",
+          "message1": "Ça devient sérieux",
+          "message2": "Je sais",
+          "message3": "Mais je ne veux pas arrêter",
+          "message4": "Je tombe amoureux de toi"
+        },
+        "jihoon_baek": {
+          "name": "Jihoon Baek",
+          "lastMessage": "Ton parfum est sur mon oreiller",
+          "message1": "Je peux encore te sentir",
+          "message2": "Bien",
+          "message3": "Ton parfum est sur mon oreiller"
+        },
+        "woojin_oh": {
+          "name": "Woojin Oh",
+          "lastMessage": "J'ai menti pour toi",
+          "message1": "Elle a demandé où j'étais",
+          "message2": "Qu'est-ce que tu as dit ?",
+          "message3": "Avec toi",
+          "message4": "J'ai menti pour toi"
+        }
+      }
+    }
 }

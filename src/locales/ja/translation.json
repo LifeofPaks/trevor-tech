@@ -3558,5 +3558,154 @@
         }
       }
     }
+  },
+  "dmkaks": {
+    "header": { "title": "カカオトーク" },
+    "tabs": {
+      "chat": "チャット",
+      "friends": "友達",
+      "calls": "通話",
+      "aria_label": "カカオトークのナビゲーションタブ",
+      "chat_aria": "チャットを表示",
+      "friends_aria": "友達を表示",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "チャットリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}のチャットの詳細"
+    },
+    "friends": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "list_aria": "友達リスト",
+      "item_aria": "友達 {{name}}",
+      "detail_aria": "{{name}}の友達の詳細"
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "types": {
+        "outgoing": "発信",
+        "incoming": "着信",
+        "missed": "不在"
+      }
+    },
+    "friends_list": {
+      "minjun_kim": { "name": "キム・ミンジュン" },
+      "jaehyun_park": { "name": "パク・ジェヒョン" },
+      "seojun_lee": { "name": "イ・ソジュン" },
+      "dohyun_choi": { "name": "チェ・ドヒョン" },
+      "yejun_jung": { "name": "ジョン・イェジュン" },
+      "siwoo_kang": { "name": "カン・シユー" },
+      "haneul_song": { "name": "ソン・ハヌル" },
+      "juwon_han": { "name": "ハン・ジュウォン" },
+      "eunwoo_shin": { "name": "シン・ウヌ" },
+      "taeyang_yoon": { "name": "ユン・テヤン" },
+      "jihoon_baek": { "name": "ペク・ジフン" },
+      "woojin_oh": { "name": "オ・ウジン" }
+    },
+    "call_logs": {
+      "minjun_kim": { "name": "キム・ミンジュン" },
+      "jaehyun_park": { "name": "パク・ジェヒョン" },
+      "seojun_lee": { "name": "イ・ソジュン" },
+      "dohyun_choi": { "name": "チェ・ドヒョン" },
+      "yejun_jung": { "name": "ジョン・イェジュン" },
+      "jihoon_baek": { "name": "ペク・ジフン" }
+    },
+    "chats": {
+      "minjun_kim": {
+        "name": "キム・ミンジュン",
+        "lastMessage": "君の家に指輪を忘れた",
+        "message1": "まだ起きてる？",
+        "message2": "うん…眠れない",
+        "message3": "君の家に指輪を忘れた"
+      },
+      "jaehyun_park": {
+        "name": "パク・ジェヒョン",
+        "lastMessage": "彼女は何も疑っていない",
+        "message1": "あれは危なかった",
+        "message2": "でも上手くやった",
+        "message3": "彼女は何も疑っていない"
+      },
+      "seojun_lee": {
+        "name": "イ・ソジュン",
+        "lastMessage": "ビデオをもう一度送って",
+        "message1": "削除した？",
+        "message2": "仕方なかった。リスクが高すぎる",
+        "message3": "ビデオをもう一度送って"
+      },
+      "dohyun_choi": {
+        "name": "チェ・ドヒョン",
+        "lastMessage": "君のアパートにいる",
+        "message1": "家にいる？",
+        "message2": "彼女は出かけてる。ドアは開いてる",
+        "message3": "君のアパートにいる"
+      },
+      "yejun_jung": {
+        "name": "ジョン・イェジュン",
+        "lastMessage": "君に夢中だ",
+        "message1": "君のことを考えるのをやめられない",
+        "message2": "同じだ。一秒ごとに",
+        "message3": "君に夢中だ"
+      },
+      "siwoo_kang": {
+        "name": "カン・シユー",
+        "lastMessage": "彼女に仕事にいるって言った",
+        "message1": "どこにいる？",
+        "message2": "仕事。遅いミーティング",
+        "message3": "嘘つき",
+        "message4": "彼女に仕事にいるって言った"
+      },
+      "haneul_song": {
+        "name": "ソン・ハヌル",
+        "lastMessage": "これは危険だ",
+        "message1": "前回が最後って言ったよね",
+        "message2": "わかってる",
+        "message3": "じゃあなんでここにいるんだ？",
+        "message4": "これは危険だ"
+      },
+      "juwon_han": {
+        "name": "ハン・ジュウォン",
+        "lastMessage": "毎晩君の夢を見る",
+        "message1": "寝てる？",
+        "message2": "いや。君は？",
+        "message3": "君のこと考えてた",
+        "message4": "毎晩君の夢を見る"
+      },
+      "eunwoo_shin": {
+        "name": "シン・ウヌ",
+        "lastMessage": "読んだら削除して",
+        "message1": "昨夜を何度も思い出してる",
+        "message2": "君がしたあの...",
+        "message3": "しっ。タイプしないで",
+        "message4": "読んだら削除して"
+      },
+      "taeyang_yoon": {
+        "name": "ユン・テヤン",
+        "lastMessage": "君に恋してる",
+        "message1": "これ、深刻になってきた",
+        "message2": "わかってる",
+        "message3": "でもやめたくない",
+        "message4": "君に恋してる"
+      },
+      "jihoon_baek": {
+        "name": "ペク・ジフン",
+        "lastMessage": "君の香りが枕に残ってる",
+        "message1": "まだ君の匂いがする",
+        "message2": "いいね",
+        "message3": "君の香りが枕に残ってる"
+      },
+      "woojin_oh": {
+        "name": "オ・ウジン",
+        "lastMessage": "君のために彼女に嘘をついた",
+        "message1": "彼女がどこにいたか聞いてきた",
+        "message2": "なんて言った？",
+        "message3": "君と一緒にいたって",
+        "message4": "君のために彼女に嘘をついた"
+      }
+    }
   }
 }
