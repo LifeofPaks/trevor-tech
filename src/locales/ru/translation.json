@@ -3451,5 +3451,182 @@
         }
       }
     }
+  },
+  "dmvibez": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "Чаты",
+      "contacts": "Контакты",
+      "call_log": "Журнал вызовов",
+      "aria_label": "Вкладки навигации Viber",
+      "chat_aria": "Показать чаты",
+      "contacts_aria": "Показать контакты",
+      "call_log_aria": "Показать журнал вызовов"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список чатов",
+      "item_aria": "Чат с {{name}}",
+      "detail_aria": "Детали чата для {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Телефон",
+      "email_label": "Электронная почта",
+      "list_aria": "Список контактов",
+      "item_aria": "Контакт {{name}}",
+      "detail_aria": "Детали контакта для {{name}}",
+      "alex_rivera": {
+        "name": "Алекс Ривера",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
+      },
+      "liam_park": {
+        "name": "Лиам Парк",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
+      },
+      "ethan_brooks": {
+        "name": "Итан Брукс",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "Ноа Ли",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "Дилан Ким",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "Картер Ли",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "Мейсон Ву",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "Райан Чен",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "Список журнала вызовов",
+      "item_aria": "Журнал вызовов для {{name}}",
+      "detail_aria": "Детали вызова для {{name}}",
+      "alex_rivera": {
+        "name": "Алекс Ривера",
+        "type": "outgoing"
+      },
+      "liam_park": {
+        "name": "Лиам Парк",
+        "type": "incoming"
+      },
+      "ethan_brooks": {
+        "name": "Итан Брукс",
+        "type": "missed"
+      },
+      "noah_lee": {
+        "name": "Ноа Ли",
+        "type": "outgoing"
+      },
+      "dylan_kim": {
+        "name": "Дилан Ким",
+        "type": "incoming"
+      },
+      "types": {
+        "outgoing": "Исходящий",
+        "incoming": "Входящий",
+        "missed": "Пропущенный"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "Алекс Ривера",
+        "lastMessage": "Не могу перестать думать о тебе",
+        "messages": {
+          "msg1": "Ты еще не спишь?",
+          "msg2": "Не могу уснуть. Думаю о прошлой ночи",
+          "msg3": "Я тоже. Скучаю по твоим прикосновениям",
+          "msg4": "Не могу перестать думать о тебе"
+        }
+      },
+      "liam_park": {
+        "name": "Лиам Парк",
+        "lastMessage": "Удали этот чат",
+        "messages": {
+          "msg1": "Тот отель был идеальным",
+          "msg2": "Надо повторить",
+          "msg3": "На следующей неделе?",
+          "msg4": "Удали этот чат"
+        }
+      },
+      "ethan_brooks": {
+        "name": "Итан Брукс",
+        "lastMessage": "Она спит",
+        "messages": {
+          "msg1": "Можешь говорить?",
+          "msg2": "Она спит",
+          "msg3": "Хочу быть с тобой",
+          "msg4": "Я тоже. Это мучение"
+        }
+      },
+      "noah_lee": {
+        "name": "Ноа Ли",
+        "lastMessage": "Пришли фото",
+        "messages": {
+          "msg1": "Что на тебе надето?",
+          "msg2": "Ничего, чего ты не видел",
+          "msg3": "Пришли фото",
+          "msg4": "Удалю через 10..."
+        }
+      },
+      "dylan_kim": {
+        "name": "Дилан Ким",
+        "lastMessage": "Я тебя люблю",
+        "messages": {
+          "msg1": "Мне не стоит это говорить",
+          "msg2": "Скажи",
+          "msg3": "Я тебя люблю",
+          "msg4": "Я тебя люблю больше"
+        }
+      },
+      "carter_lee": {
+        "name": "Картер Ли",
+        "lastMessage": "Комната 707",
+        "messages": {
+          "msg1": "Тот же отель?",
+          "msg2": "Комната 707",
+          "msg3": "Буду там в 8",
+          "msg4": "Дверь открыта"
+        }
+      },
+      "mason_wu": {
+        "name": "Мейсон Ву",
+        "lastMessage": "Никто не узнает",
+        "messages": {
+          "msg1": "Нам нужно быть осторожными",
+          "msg2": "Знаю. Но не могу остановиться",
+          "msg3": "Только еще раз",
+          "msg4": "Никто не узнает"
+        }
+      },
+      "ryan_chen": {
+        "name": "Райан Чен",
+        "lastMessage": "Ты мой секрет",
+        "messages": {
+          "msg1": "Сказал своей девушке, что работаю допоздна",
+          "msg2": "Я сказал то же своему парню",
+          "msg3": "Это так неправильно",
+          "msg4": "Но ты мой секрет"
+        }
+      }
+    }
   }
 }

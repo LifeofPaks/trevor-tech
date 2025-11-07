@@ -3410,5 +3410,182 @@
         }
       }
     }
+  },
+  "dmvibez": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "الدردشات",
+      "contacts": "جهات الاتصال",
+      "call_log": "سجل المكالمات",
+      "aria_label": "علامات تبويب التنقل في Viber",
+      "chat_aria": "إظهار الدردشات",
+      "contacts_aria": "إظهار جهات الاتصال",
+      "call_log_aria": "إظهار سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة الدردشات",
+      "item_aria": "دردشة مع {{name}}",
+      "detail_aria": "تفاصيل الدردشة لـ {{name}}"
+    },
+    "contacts": {
+      "phone_label": "الهاتف",
+      "email_label": "البريد الإلكتروني",
+      "list_aria": "قائمة جهات الاتصال",
+      "item_aria": "جهة اتصال {{name}}",
+      "detail_aria": "تفاصيل جهة الاتصال لـ {{name}}",
+      "alex_rivera": {
+        "name": "أليكس ريفيرا",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
+      },
+      "liam_park": {
+        "name": "ليام بارك",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
+      },
+      "ethan_brooks": {
+        "name": "إيثان بروكس",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "نوح لي",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "ديلان كيم",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "كارتر لي",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "ماسون وو",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "رايان تشن",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "قائمة سجل المكالمات",
+      "item_aria": "سجل المكالمات لـ {{name}}",
+      "detail_aria": "تفاصيل المكالمة لـ {{name}}",
+      "alex_rivera": {
+        "name": "أليكس ريفيرا",
+        "type": "outgoing"
+      },
+      "liam_park": {
+        "name": "ليام بارك",
+        "type": "incoming"
+      },
+      "ethan_brooks": {
+        "name": "إيثان بروكس",
+        "type": "missed"
+      },
+      "noah_lee": {
+        "name": "نوح لي",
+        "type": "outgoing"
+      },
+      "dylan_kim": {
+        "name": "ديلان كيم",
+        "type": "incoming"
+      },
+      "types": {
+        "outgoing": "صادرة",
+        "incoming": "واردة",
+        "missed": "مفقودة"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "أليكس ريفيرا",
+        "lastMessage": "لا أستطيع التوقف عن التفكير بك",
+        "messages": {
+          "msg1": "ما زلت مستيقظًا؟",
+          "msg2": "لا أستطيع النوم. أفكر في الليلة الماضية",
+          "msg3": "نفس الشيء. أفتقد لمستك",
+          "msg4": "لا أستطيع التوقف عن التفكير بك"
+        }
+      },
+      "liam_park": {
+        "name": "ليام بارك",
+        "lastMessage": "احذف هذه الدردشة",
+        "messages": {
+          "msg1": "الفندق كان مثاليًا",
+          "msg2": "يجب أن نكررها",
+          "msg3": "الأسبوع القادم؟",
+          "msg4": "احذف هذه الدردشة"
+        }
+      },
+      "ethan_brooks": {
+        "name": "إيثان بروكس",
+        "lastMessage": "إنها نائمة",
+        "messages": {
+          "msg1": "هل يمكنك التحدث؟",
+          "msg2": "إنها نائمة",
+          "msg3": "أتمنى لو كنت معك",
+          "msg4": "نفس الشيء. هذا تعذيب"
+        }
+      },
+      "noah_lee": {
+        "name": "نوح لي",
+        "lastMessage": "أرسل الصورة",
+        "messages": {
+          "msg1": "ماذا ترتدي؟",
+          "msg2": "لا شيء لم تره من قبل",
+          "msg3": "أرسل الصورة",
+          "msg4": "سأحذفها بعد 10..."
+        }
+      },
+      "dylan_kim": {
+        "name": "ديلان كيم",
+        "lastMessage": "أحبك",
+        "messages": {
+          "msg1": "لا ينبغي أن أقول هذا",
+          "msg2": "قلها",
+          "msg3": "أحبك",
+          "msg4": "أحبك أكثر"
+        }
+      },
+      "carter_lee": {
+        "name": "كارتر لي",
+        "lastMessage": "غرفة 707",
+        "messages": {
+          "msg1": "نفس الفندق؟",
+          "msg2": "غرفة 707",
+          "msg3": "سأكون هناك في الثامنة",
+          "msg4": "الباب مفتوح"
+        }
+      },
+      "mason_wu": {
+        "name": "ماسون وو",
+        "lastMessage": "لن يعرف أحد",
+        "messages": {
+          "msg1": "يجب أن نكون حذرين",
+          "msg2": "أعلم. لكن لا أستطيع التوقف",
+          "msg3": "مرة واحدة أخرى فقط",
+          "msg4": "لن يعرف أحد"
+        }
+      },
+      "ryan_chen": {
+        "name": "رايان تشن",
+        "lastMessage": "أنت سري",
+        "messages": {
+          "msg1": "قلت لصديقتي إنني أعمل لوقت متأخر",
+          "msg2": "قلت لصديقي نفس الشيء",
+          "msg3": "هذا خطأ جدًا",
+          "msg4": "لكنك سري"
+        }
+      }
+    }
   }
 }

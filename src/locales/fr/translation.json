@@ -3456,5 +3456,182 @@
         }
       }
     }
+  },
+  "dmvibez": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "Chats",
+      "contacts": "Contacts",
+      "call_log": "Journal des appels",
+      "aria_label": "Onglets de navigation Viber",
+      "chat_aria": "Afficher les chats",
+      "contacts_aria": "Afficher les contacts",
+      "call_log_aria": "Afficher le journal des appels"
+    },
+    "back_button_aria": "Retour à la liste",
+    "chat": {
+      "list_aria": "Liste des chats",
+      "item_aria": "Chat avec {{name}}",
+      "detail_aria": "Détails du chat pour {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Téléphone",
+      "email_label": "E-mail",
+      "list_aria": "Liste des contacts",
+      "item_aria": "Contact {{name}}",
+      "detail_aria": "Détails du contact pour {{name}}",
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "Liste du journal des appels",
+      "item_aria": "Journal des appels pour {{name}}",
+      "detail_aria": "Détails de l'appel pour {{name}}",
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "type": "outgoing"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "type": "incoming"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "type": "missed"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "type": "outgoing"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "type": "incoming"
+      },
+      "types": {
+        "outgoing": "Sortant",
+        "incoming": "Entrant",
+        "missed": "Manqué"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "lastMessage": "Je ne peux pas arrêter de penser à toi",
+        "messages": {
+          "msg1": "Tu es encore réveillé ?",
+          "msg2": "Je n'arrive pas à dormir. Je pense à hier soir",
+          "msg3": "Pareil. Ton toucher me manque",
+          "msg4": "Je ne peux pas arrêter de penser à toi"
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "Supprime ce chat",
+        "messages": {
+          "msg1": "Cet hôtel était parfait",
+          "msg2": "Il faut qu'on recommence",
+          "msg3": "La semaine prochaine ?",
+          "msg4": "Supprime ce chat"
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "Elle dort",
+        "messages": {
+          "msg1": "Tu peux parler ?",
+          "msg2": "Elle dort",
+          "msg3": "J'aimerais être avec toi",
+          "msg4": "Pareil. C'est une torture"
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "Envoie la photo",
+        "messages": {
+          "msg1": "Qu'est-ce que tu portes ?",
+          "msg2": "Rien que tu n'aies déjà vu",
+          "msg3": "Envoie la photo",
+          "msg4": "Je la supprime dans 10..."
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "Je t'aime",
+        "messages": {
+          "msg1": "Je ne devrais pas dire ça",
+          "msg2": "Dis-le",
+          "msg3": "Je t'aime",
+          "msg4": "Je t'aime encore plus"
+        }
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "lastMessage": "Chambre 707",
+        "messages": {
+          "msg1": "Même hôtel ?",
+          "msg2": "Chambre 707",
+          "msg3": "Je serai là à 20h",
+          "msg4": "La porte est ouverte"
+        }
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "lastMessage": "Personne ne le saura",
+        "messages": {
+          "msg1": "Il faut être prudents",
+          "msg2": "Je sais. Mais je ne peux pas arrêter",
+          "msg3": "Juste une fois de plus",
+          "msg4": "Personne ne le saura"
+        }
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "lastMessage": "Tu es mon secret",
+        "messages": {
+          "msg1": "J'ai dit à ma copine que je travaillais tard",
+          "msg2": "J'ai dit la même chose à mon copain",
+          "msg3": "C'est tellement mal",
+          "msg4": "Mais tu es mon secret"
+        }
+      }
+    }
   }
 }

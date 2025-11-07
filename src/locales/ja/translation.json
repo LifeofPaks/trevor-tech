@@ -3381,5 +3381,182 @@
         }
       }
     }
+  },
+  "dmvibez": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "call_log": "通話履歴",
+      "aria_label": "Viberナビゲーションタブ",
+      "chat_aria": "チャットを表示",
+      "contacts_aria": "連絡先を表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "チャットリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}のチャット詳細"
+    },
+    "contacts": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "list_aria": "連絡先リスト",
+      "item_aria": "連絡先 {{name}}",
+      "detail_aria": "{{name}}の連絡先詳細",
+      "alex_rivera": {
+        "name": "アレックス・リベラ",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
+      },
+      "liam_park": {
+        "name": "リアム・パーク",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
+      },
+      "ethan_brooks": {
+        "name": "イーサン・ブルックス",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "ノア・リー",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "ディラン・キム",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "カーター・リー",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "メイソン・ウー",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "ライアン・チェン",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "alex_rivera": {
+        "name": "アレックス・リベラ",
+        "type": "outgoing"
+      },
+      "liam_park": {
+        "name": "リアム・パーク",
+        "type": "incoming"
+      },
+      "ethan_brooks": {
+        "name": "イーサン・ブルックス",
+        "type": "missed"
+      },
+      "noah_lee": {
+        "name": "ノア・リー",
+        "type": "outgoing"
+      },
+      "dylan_kim": {
+        "name": "ディラン・キム",
+        "type": "incoming"
+      },
+      "types": {
+        "outgoing": "発信",
+        "incoming": "着信",
+        "missed": "不在"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "アレックス・リベラ",
+        "lastMessage": "君のことを考えるのをやめられない",
+        "messages": {
+          "msg1": "まだ起きてる？",
+          "msg2": "眠れない。昨夜のことを考えてる",
+          "msg3": "同じく。君の感触が恋しい",
+          "msg4": "君のことを考えるのをやめられない"
+        }
+      },
+      "liam_park": {
+        "name": "リアム・パーク",
+        "lastMessage": "このチャットを消して",
+        "messages": {
+          "msg1": "あのホテル最高だったね",
+          "msg2": "またやらないと",
+          "msg3": "来週？",
+          "msg4": "このチャットを消して"
+        }
+      },
+      "ethan_brooks": {
+        "name": "イーサン・ブルックス",
+        "lastMessage": "彼女は寝てる",
+        "messages": {
+          "msg1": "話せる？",
+          "msg2": "彼女は寝てる",
+          "msg3": "君と一緒にいたい",
+          "msg4": "同じく。これは拷問だ"
+        }
+      },
+      "noah_lee": {
+        "name": "ノア・リー",
+        "lastMessage": "写真送って",
+        "messages": {
+          "msg1": "何着てる？",
+          "msg2": "君が見たことないものじゃない",
+          "msg3": "写真送って",
+          "msg4": "10秒後に消す..."
+        }
+      },
+      "dylan_kim": {
+        "name": "ディラン・キム",
+        "lastMessage": "愛してる",
+        "messages": {
+          "msg1": "こんなこと言うべきじゃない",
+          "msg2": "言って",
+          "msg3": "愛してる",
+          "msg4": "もっと愛してる"
+        }
+      },
+      "carter_lee": {
+        "name": "カーター・リー",
+        "lastMessage": "707号室",
+        "messages": {
+          "msg1": "同じホテル？",
+          "msg2": "707号室",
+          "msg3": "8時にそこにいるよ",
+          "msg4": "ドア開けてるよ"
+        }
+      },
+      "mason_wu": {
+        "name": "メイソン・ウー",
+        "lastMessage": "誰も知らないよ",
+        "messages": {
+          "msg1": "慎重にしないと",
+          "msg2": "分かってる。でもやめられない",
+          "msg3": "もう一度だけ",
+          "msg4": "誰も知らないよ"
+        }
+      },
+      "ryan_chen": {
+        "name": "ライアン・チェン",
+        "lastMessage": "君は僕の秘密",
+        "messages": {
+          "msg1": "彼女に遅くまで仕事って言った",
+          "msg2": "彼氏にも同じこと言った",
+          "msg3": "これはめっちゃ間違ってる",
+          "msg4": "でも君は僕の秘密"
+        }
+      }
+    }
   }
 }
