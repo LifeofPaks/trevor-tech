@@ -3923,5 +3923,120 @@
       "owen_blake": { "name": "Owen Blake" },
       "rhett_stone": { "name": "Rhett Stone" }
     }
+  },
+  "dmimo": {
+    "header": { "title": "Imo" },
+    "tabs": {
+      "chat": "Chats",
+      "contacts": "Contactos",
+      "calls": "Llamadas",
+      "aria_label": "Pestañas de navegación de Imo",
+      "chat_aria": "Mostrar chats",
+      "contacts_aria": "Mostrar contactos",
+      "calls_aria": "Mostrar registro de llamadas"
+    },
+    "back_button_aria": "Volver a la lista",
+    "chat": {
+      "list_aria": "Lista de chats",
+      "item_aria": "Chat con {{name}}",
+      "detail_aria": "Detalles del chat para {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Teléfono",
+      "email_label": "Correo electrónico",
+      "list_aria": "Lista de contactos",
+      "item_aria": "Contacto {{name}}",
+      "detail_aria": "Detalles del contacto para {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Lista de registro de llamadas",
+      "item_aria": "Registro de llamadas para {{name}}",
+      "detail_aria": "Detalles de la llamada para {{name}}",
+      "types": {
+        "outgoing": "Saliente",
+        "incoming": "Entrante",
+        "missed": "Perdida"
+      }
+    },
+    "chats": {
+      "aryan_patel": {
+        "lastMessage": "Dejé mis llaves en tu coche",
+        "message1": "¿Sigues despierto?",
+        "message2": "Sí... no puedo dormir",
+        "message3": "Dejé mis llaves en tu coche"
+      },
+      "rohan_mehta": {
+        "lastMessage": "No se dio cuenta",
+        "message1": "Eso fue demasiado arriesgado",
+        "message2": "Pero estamos a salvo",
+        "message3": "No se dio cuenta"
+      },
+      "vikram_singh": {
+        "lastMessage": "Envía el video otra vez",
+        "message1": "¿Lo borraste?",
+        "message2": "Tuve que hacerlo. Demasiado arriesgado",
+        "message3": "Envía el video otra vez"
+      },
+      "arjun_desai": {
+        "lastMessage": "Estoy en tu apartamento",
+        "message1": "¿Estás en casa?",
+        "message2": "Ella no está. La puerta está abierta",
+        "message3": "Estoy en tu apartamento"
+      },
+      "neil_sharma": {
+        "lastMessage": "Estoy adicto a ti",
+        "message1": "No puedo dejar de pensar en ti",
+        "message2": "Lo mismo. Cada segundo",
+        "message3": "Estoy adicto a ti"
+      },
+      "karan_reddy": {
+        "lastMessage": "Le dije que estaba en el trabajo",
+        "message1": "¿Dónde estás?",
+        "message2": "Trabajo. Turno tardío",
+        "message3": "Mentiroso",
+        "message4": "Le dije que estaba en el trabajo"
+      },
+      "dev_kapoor": {
+        "lastMessage": "Esto se está saliendo de control",
+        "message1": "Dijimos que la última vez fue la última",
+        "message2": "Lo sé",
+        "message3": "¿Entonces por qué estoy aquí?",
+        "message4": "Esto se está saliendo de control"
+      },
+      "siddharth_rao": {
+        "lastMessage": "Sueño contigo todas las noches",
+        "message1": "¿Estás durmiendo?",
+        "message2": "No. ¿Y tú?",
+        "message3": "Pensando en ti",
+        "message4": "Sueño contigo todas las noches"
+      },
+      "yash_malhotra": {
+        "lastMessage": "Borra después de leer",
+        "message1": "No puedo parar de repetir anoche",
+        "message2": "Eso que hiciste...",
+        "message3": "Shh. No lo escribas",
+        "message4": "Borra después de leer"
+      },
+      "rishi_gupta": {
+        "lastMessage": "Me estoy enamorando de ti",
+        "message1": "Esto se está poniendo peligroso",
+        "message2": "Lo sé",
+        "message3": "Pero no quiero parar",
+        "message4": "Me estoy enamorando de ti"
+      },
+      "aadi_nair": {
+        "lastMessage": "Tu aroma está en mi camisa",
+        "message1": "Todavía puedo olerte",
+        "message2": "Bien",
+        "message3": "Tu aroma está en mi camisa"
+      },
+      "vivan_joshi": {
+        "lastMessage": "Mentí por ti",
+        "message1": "Ella preguntó dónde estaba",
+        "message2": "¿Qué dijiste?",
+        "message3": "Contigo",
+        "message4": "Mentí por ti"
+      }
+    }
   }
 }

@@ -3922,5 +3922,120 @@
       "owen_blake": { "name": "Owen Blake" },
       "rhett_stone": { "name": "Rhett Stone" }
     }
+  },
+  "dmimo": {
+    "header": { "title": "Imo" },
+    "tabs": {
+      "chat": "Chat",
+      "contacts": "Contatti",
+      "calls": "Chiamate",
+      "aria_label": "Schede di navigazione Imo",
+      "chat_aria": "Mostra chat",
+      "contacts_aria": "Mostra contatti",
+      "calls_aria": "Mostra registro chiamate"
+    },
+    "back_button_aria": "Torna alla lista",
+    "chat": {
+      "list_aria": "Elenco chat",
+      "item_aria": "Chat con {{name}}",
+      "detail_aria": "Dettagli chat per {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Telefono",
+      "email_label": "E-mail",
+      "list_aria": "Elenco contatti",
+      "item_aria": "Contatto {{name}}",
+      "detail_aria": "Dettagli contatto per {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Elenco registro chiamate",
+      "item_aria": "Registro chiamate per {{name}}",
+      "detail_aria": "Dettagli chiamata per {{name}}",
+      "types": {
+        "outgoing": "In uscita",
+        "incoming": "In entrata",
+        "missed": "Persa"
+      }
+    },
+    "chats": {
+      "aryan_patel": {
+        "lastMessage": "Ho dimenticato le mie chiavi nella tua macchina",
+        "message1": "Sei ancora sveglio?",
+        "message2": "Sì... non riesco a dormire",
+        "message3": "Ho dimenticato le mie chiavi nella tua macchina"
+      },
+      "rohan_mehta": {
+        "lastMessage": "Non si è accorta di nulla",
+        "message1": "È stato troppo rischioso",
+        "message2": "Ma siamo al sicuro",
+        "message3": "Non si è accorta di nulla"
+      },
+      "vikram_singh": {
+        "lastMessage": "Rimanda il video",
+        "message1": "L'hai cancellato?",
+        "message2": "Dovevo. Troppo rischioso",
+        "message3": "Rimanda il video"
+      },
+      "arjun_desai": {
+        "lastMessage": "Sono nel tuo appartamento",
+        "message1": "Sei a casa?",
+        "message2": "Lei non c'è. La porta è aperta",
+        "message3": "Sono nel tuo appartamento"
+      },
+      "neil_sharma": {
+        "lastMessage": "Sono dipendente da te",
+        "message1": "Non smetto di pensarti",
+        "message2": "Idem. Ogni secondo",
+        "message3": "Sono dipendente da te"
+      },
+      "karan_reddy": {
+        "lastMessage": "Le ho detto che ero al lavoro",
+        "message1": "Dove sei?",
+        "message2": "Lavoro. Turno tardi",
+        "message3": "Bugiardo",
+        "message4": "Le ho detto che ero al lavoro"
+      },
+      "dev_kapoor": {
+        "lastMessage": "Sta sfuggendo di mano",
+        "message1": "Abbiamo detto che l'ultima volta era l'ultima",
+        "message2": "Lo so",
+        "message3": "Allora perché sono qui?",
+        "message4": "Sta sfuggendo di mano"
+      },
+      "siddharth_rao": {
+        "lastMessage": "Ti sogno ogni notte",
+        "message1": "Dormi?",
+        "message2": "No. Tu?",
+        "message3": "Sto pensando a te",
+        "message4": "Ti sogno ogni notte"
+      },
+      "yash_malhotra": {
+        "lastMessage": "Cancella dopo aver letto",
+        "message1": "Non riesco a smettere di pensare a ieri sera",
+        "message2": "Quella cosa che hai fatto...",
+        "message3": "Ssh. Non scriverlo",
+        "message4": "Cancella dopo aver letto"
+      },
+      "rishi_gupta": {
+        "lastMessage": "Mi sto innamorando di te",
+        "message1": "Sta diventando pericoloso",
+        "message2": "Lo so",
+        "message3": "Ma non voglio fermarmi",
+        "message4": "Mi sto innamorando di te"
+      },
+      "aadi_nair": {
+        "lastMessage": "Il tuo profumo è sulla mia camicia",
+        "message1": "Sento ancora il tuo odore",
+        "message2": "Bene",
+        "message3": "Il tuo profumo è sulla mia camicia"
+      },
+      "vivan_joshi": {
+        "lastMessage": "Ho mentito per te",
+        "message1": "Ha chiesto dove fossi",
+        "message2": "Cosa hai detto?",
+        "message3": "Con te",
+        "message4": "Ho mentito per te"
+      }
+    }
   }
 }

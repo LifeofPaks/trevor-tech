@@ -3931,5 +3931,119 @@
         "owen_blake": { "name": "Owen Blake" },
         "rhett_stone": { "name": "Rhett Stone" }
       }
+    }, "dmimo": {
+      "header": { "title": "Imo" },
+      "tabs": {
+        "chat": "Conversas",
+        "contacts": "Contatos",
+        "calls": "Chamadas",
+        "aria_label": "Abas de navegação do Imo",
+        "chat_aria": "Mostrar conversas",
+        "contacts_aria": "Mostrar contatos",
+        "calls_aria": "Mostrar registro de chamadas"
+      },
+      "back_button_aria": "Voltar para a lista",
+      "chat": {
+        "list_aria": "Lista de conversas",
+        "item_aria": "Conversa com {{name}}",
+        "detail_aria": "Detalhes da conversa para {{name}}"
+      },
+      "contacts": {
+        "phone_label": "Telefone",
+        "email_label": "E-mail",
+        "list_aria": "Lista de contatos",
+        "item_aria": "Contato {{name}}",
+        "detail_aria": "Detalhes do contato para {{name}}"
+      },
+      "call_log": {
+        "list_aria": "Lista de registro de chamadas",
+        "item_aria": "Registro de chamadas para {{name}}",
+        "detail_aria": "Detalhes da chamada para {{name}}",
+        "types": {
+          "outgoing": "Saída",
+          "incoming": "Entrada",
+          "missed": "Perdida"
+        }
+      },
+      "chats": {
+        "aryan_patel": {
+          "lastMessage": "Deixei minhas chaves no seu carro",
+          "message1": "Ainda acordado?",
+          "message2": "Sim... não consigo dormir",
+          "message3": "Deixei minhas chaves no seu carro"
+        },
+        "rohan_mehta": {
+          "lastMessage": "Ela não percebeu",
+          "message1": "Foi por pouco",
+          "message2": "Mas estamos seguros",
+          "message3": "Ela não percebeu"
+        },
+        "vikram_singh": {
+          "lastMessage": "Manda o vídeo de novo",
+          "message1": "Você deletou?",
+          "message2": "Tive que deletar. Muito arriscado",
+          "message3": "Manda o vídeo de novo"
+        },
+        "arjun_desai": {
+          "lastMessage": "Estou no seu apartamento",
+          "message1": "Tá em casa?",
+          "message2": "Ela saiu. A porta tá aberta",
+          "message3": "Estou no seu apartamento"
+        },
+        "neil_sharma": {
+          "lastMessage": "Sou viciado em você",
+          "message1": "Não paro de pensar em você",
+          "message2": "Igual. A cada segundo",
+          "message3": "Sou viciado em você"
+        },
+        "karan_reddy": {
+          "lastMessage": "Falei pra ela que tava no trabalho",
+          "message1": "Onde você tá?",
+          "message2": "Trabalho. Turno tarde",
+          "message3": "Mentiroso",
+          "message4": "Falei pra ela que tava no trabalho"
+        },
+        "dev_kapoor": {
+          "lastMessage": "Isso tá saindo do controle",
+          "message1": "Dizemos que a última vez foi a última",
+          "message2": "Eu sei",
+          "message3": "Então por que tô aqui?",
+          "message4": "Isso tá saindo do controle"
+        },
+        "siddharth_rao": {
+          "lastMessage": "Sonho com você toda noite",
+          "message1": "Tá dormindo?",
+          "message2": "Não. E você?",
+          "message3": "Pensando em você",
+          "message4": "Sonho com você toda noite"
+        },
+        "yash_malhotra": {
+          "lastMessage": "Apaga depois de ler",
+          "message1": "Não consigo parar de lembrar ontem à noite",
+          "message2": "Aquela coisa que você fez...",
+          "message3": "Shh. Não escreve isso",
+          "message4": "Apaga depois de ler"
+        },
+        "rishi_gupta": {
+          "lastMessage": "Tô me apaixonando por você",
+          "message1": "Isso tá ficando perigoso",
+          "message2": "Eu sei",
+          "message3": "Mas não quero parar",
+          "message4": "Tô me apaixonando por você"
+        },
+        "aadi_nair": {
+          "lastMessage": "Seu perfume tá na minha camisa",
+          "message1": "Ainda sinto seu cheiro",
+          "message2": "Ótimo",
+          "message3": "Seu perfume tá na minha camisa"
+        },
+        "vivan_joshi": {
+          "lastMessage": "Menti pra ela por você",
+          "message1": "Ela perguntou onde eu tava",
+          "message2": "O que você disse?",
+          "message3": "Com você",
+          "message4": "Menti pra ela por você"
+        }
+      }
     }
 }

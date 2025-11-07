@@ -3885,5 +3885,120 @@
         "message4": "كذبت عليها من أجلك"
       }
     }
+  },
+  "dmimo": {
+    "header": { "title": "آيمو" },
+    "tabs": {
+      "chat": "الدردشات",
+      "contacts": "جهات الاتصال",
+      "calls": "المكالمات",
+      "aria_label": "علامات تبويب التنقل في آيمو",
+      "chat_aria": "إظهار الدردشات",
+      "contacts_aria": "إظهار جهات الاتصال",
+      "calls_aria": "إظهار سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة الدردشات",
+      "item_aria": "الدردشة مع {{name}}",
+      "detail_aria": "تفاصيل الدردشة لـ {{name}}"
+    },
+    "contacts": {
+      "phone_label": "الهاتف",
+      "email_label": "البريد الإلكتروني",
+      "list_aria": "قائمة جهات الاتصال",
+      "item_aria": "جهة الاتصال {{name}}",
+      "detail_aria": "تفاصيل جهة الاتصال لـ {{name}}"
+    },
+    "call_log": {
+      "list_aria": "قائمة سجل المكالمات",
+      "item_aria": "سجل المكالمات لـ {{name}}",
+      "detail_aria": "تفاصيل المكالمة لـ {{name}}",
+      "types": {
+        "outgoing": "صادرة",
+        "incoming": "واردة",
+        "missed": "مفقودة"
+      }
+    },
+    "chats": {
+      "aryan_patel": {
+        "lastMessage": "تركت مفاتيحي في سيارتك",
+        "message1": "هل ما زلت مستيقظًا؟",
+        "message2": "نعم... لا أستطيع النوم",
+        "message3": "تركت مفاتيحي في سيارتك"
+      },
+      "rohan_mehta": {
+        "lastMessage": "لم تلاحظ",
+        "message1": "كان ذلك قريبًا جدًا",
+        "message2": "لكننا في أمان",
+        "message3": "لم تلاحظ"
+      },
+      "vikram_singh": {
+        "lastMessage": "أرسل الفيديو مجددًا",
+        "message1": "هل حذفته؟",
+        "message2": "كان عليّ ذلك. محفوف بالمخاطر",
+        "message3": "أرسل الفيديو مجددًا"
+      },
+      "arjun_desai": {
+        "lastMessage": "أنا في شقتك",
+        "message1": "هل أنت في البيت؟",
+        "message2": "إنها نائمة. الباب مفتوح",
+        "message3": "أنا في شقتك"
+      },
+      "neil_sharma": {
+        "lastMessage": "أنا مدمن عليك",
+        "message1": "لا أستطيع التوقف عن التفكير فيك",
+        "message2": "نفس الشيء. كل ثانية",
+        "message3": "أنا مدمن عليك"
+      },
+      "karan_reddy": {
+        "lastMessage": "قلت لها إنني في العمل",
+        "message1": "أين أنت؟",
+        "message2": "العمل. وردية متأخرة",
+        "message3": "كاذب",
+        "message4": "قلت لها إنني في العمل"
+      },
+      "dev_kapoor": {
+        "lastMessage": "الأمر يخرج عن السيطرة",
+        "message1": "قلنا إن المرة الأخيرة كانت الأخيرة",
+        "message2": "أعلم",
+        "message3": "إذن لماذا أنا هنا؟",
+        "message4": "الأمر يخرج عن السيطرة"
+      },
+      "siddharth_rao": {
+        "lastMessage": "أحلم بك كل ليلة",
+        "message1": "هل أنت نائم؟",
+        "message2": "لا. وأنت؟",
+        "message3": "أفكر فيك",
+        "message4": "أحلم بك كل ليلة"
+      },
+      "yash_malhotra": {
+        "lastMessage": "احذف بعد القراءة",
+        "message1": "لا أستطيع التوقف عن إعادة الليلة الماضية",
+        "message2": "الشيء الذي فعلته...",
+        "message3": "هش. لا تكتبه",
+        "message4": "احذف بعد القراءة"
+      },
+      "rishi_gupta": {
+        "lastMessage": "أنا أقع في حبك",
+        "message1": "هذا يصبح خطيرًا",
+        "message2": "أعلم",
+        "message3": "لكنني لا أريد التوقف",
+        "message4": "أنا أقع في حبك"
+      },
+      "aadi_nair": {
+        "lastMessage": "رائحتك على قميصي",
+        "message1": "ما زلت أشم رائحتك",
+        "message2": "جيد",
+        "message3": "رائحتك على قميصي"
+      },
+      "vivan_joshi": {
+        "lastMessage": "كذبت عليها من أجلك",
+        "message1": "سألتني أين كنت",
+        "message2": "ماذا قلت؟",
+        "message3": "معك",
+        "message4": "كذبت عليها من أجلك"
+      }
+    }
   }
 }

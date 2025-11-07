@@ -3931,5 +3931,119 @@
       "owen_blake": { "name": "Owen Blake" },
       "rhett_stone": { "name": "Rhett Stone" }
     }
-  }
+  },"dmimo": {
+      "header": { "title": "Imo" },
+      "tabs": {
+        "chat": "Conversations",
+        "contacts": "Contacts",
+        "calls": "Appels",
+        "aria_label": "Onglets de navigation Imo",
+        "chat_aria": "Afficher les conversations",
+        "contacts_aria": "Afficher les contacts",
+        "calls_aria": "Afficher l'historique des appels"
+      },
+      "back_button_aria": "Retour à la liste",
+      "chat": {
+        "list_aria": "Liste des conversations",
+        "item_aria": "Conversation avec {{name}}",
+        "detail_aria": "Détails de la conversation pour {{name}}"
+      },
+      "contacts": {
+        "phone_label": "Téléphone",
+        "email_label": "E-mail",
+        "list_aria": "Liste des contacts",
+        "item_aria": "Contact {{name}}",
+        "detail_aria": "Détails du contact pour {{name}}"
+      },
+      "call_log": {
+        "list_aria": "Liste de l'historique des appels",
+        "item_aria": "Historique des appels pour {{name}}",
+        "detail_aria": "Détails de l'appel pour {{name}}",
+        "types": {
+          "outgoing": "Sortant",
+          "incoming": "Entrant",
+          "missed": "Manqué"
+        }
+      },
+      "chats": {
+        "aryan_patel": {
+          "lastMessage": "J'ai oublié mes clés dans ta voiture",
+          "message1": "Tu es encore réveillé ?",
+          "message2": "Ouais... je n'arrive pas à dormir",
+          "message3": "J'ai oublié mes clés dans ta voiture"
+        },
+        "rohan_mehta": {
+          "lastMessage": "Elle n'a rien remarqué",
+          "message1": "C'était trop juste",
+          "message2": "Mais on est en sécurité",
+          "message3": "Elle n'a rien remarqué"
+        },
+        "vikram_singh": {
+          "lastMessage": "Renvoye la vidéo",
+          "message1": "Tu l'as supprimée ?",
+          "message2": "Obligé. Trop risqué",
+          "message3": "Renvoye la vidéo"
+        },
+        "arjun_desai": {
+          "lastMessage": "Je suis dans ton appartement",
+          "message1": "T'es à la maison ?",
+          "message2": "Elle est sortie. La porte est ouverte",
+          "message3": "Je suis dans ton appartement"
+        },
+        "neil_sharma": {
+          "lastMessage": "Je suis accro à toi",
+          "message1": "Je n'arrête pas de penser à toi",
+          "message2": "Pareil. À chaque seconde",
+          "message3": "Je suis accro à toi"
+        },
+        "karan_reddy": {
+          "lastMessage": "Je lui ai dit que j'étais au travail",
+          "message1": "T'es où ?",
+          "message2": "Travail. Équipe de nuit",
+          "message3": "Menteur",
+          "message4": "Je lui ai dit que j'étais au travail"
+        },
+        "dev_kapoor": {
+          "lastMessage": "Ça devient hors de contrôle",
+          "message1": "On avait dit que la dernière fois était la dernière",
+          "message2": "Je sais",
+          "message3": "Alors pourquoi je suis là ?",
+          "message4": "Ça devient hors de contrôle"
+        },
+        "siddharth_rao": {
+          "lastMessage": "Je rêve de toi toutes les nuits",
+          "message1": "Tu dors ?",
+          "message2": "Non. Et toi ?",
+          "message3": "Je pense à toi",
+          "message4": "Je rêve de toi toutes les nuits"
+        },
+        "yash_malhotra": {
+          "lastMessage": "Supprime après lecture",
+          "message1": "Je n'arrête pas de repenser à hier soir",
+          "message2": "Ce que tu as fait...",
+          "message3": "Chut. N'écris pas ça",
+          "message4": "Supprime après lecture"
+        },
+        "rishi_gupta": {
+          "lastMessage": "Je tombe amoureux de toi",
+          "message1": "Ça devient dangereux",
+          "message2": "Je sais",
+          "message3": "Mais je ne veux pas arrêter",
+          "message4": "Je tombe amoureux de toi"
+        },
+        "aadi_nair": {
+          "lastMessage": "Ton parfum est sur ma chemise",
+          "message1": "Je sens encore ton odeur",
+          "message2": "Tant mieux",
+          "message3": "Ton parfum est sur ma chemise"
+        },
+        "vivan_joshi": {
+          "lastMessage": "J'ai menti pour toi",
+          "message1": "Elle a demandé où j'étais",
+          "message2": "Qu'est-ce que t'as dit ?",
+          "message3": "Avec toi",
+          "message4": "J'ai menti pour toi"
+        }
+      }
+    }
 }

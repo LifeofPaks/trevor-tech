@@ -3936,5 +3936,120 @@
       "owen_blake": { "name": "Owen Blake" },
       "rhett_stone": { "name": "Rhett Stone" }
     }
+  },
+  "dmimo": {
+    "header": { "title": "Imo" },
+    "tabs": {
+      "chat": "Chats",
+      "contacts": "Contacts",
+      "calls": "Calls",
+      "aria_label": "Imo navigation tabs",
+      "chat_aria": "Show chats",
+      "contacts_aria": "Show contacts",
+      "calls_aria": "Show call logs"
+    },
+    "back_button_aria": "Back to list",
+    "chat": {
+      "list_aria": "Chat list",
+      "item_aria": "Chat with {{name}}",
+      "detail_aria": "Chat details for {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Phone",
+      "email_label": "Email",
+      "list_aria": "Contact list",
+      "item_aria": "Contact {{name}}",
+      "detail_aria": "Contact details for {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Call log list",
+      "item_aria": "Call log for {{name}}",
+      "detail_aria": "Call details for {{name}}",
+      "types": {
+        "outgoing": "Outgoing",
+        "incoming": "Incoming",
+        "missed": "Missed"
+      }
+    },
+    "chats": {
+      "aryan_patel": {
+        "lastMessage": "I left my keys in your car",
+        "message1": "You still up?",
+        "message2": "Yeah. Can’t sleep",
+        "message3": "I left my keys in your car"
+      },
+      "rohan_mehta": {
+        "lastMessage": "She didn’t notice",
+        "message1": "That was too close",
+        "message2": "But we’re safe",
+        "message3": "She didn’t notice"
+      },
+      "vikram_singh": {
+        "lastMessage": "Send the video again",
+        "message1": "You deleted it?",
+        "message2": "Had to. Too risky",
+        "message3": "Send the video again"
+      },
+      "arjun_desai": {
+        "lastMessage": "I’m in your apartment",
+        "message1": "You home?",
+        "message2": "She’s out. Door’s open",
+        "message3": "I’m in your apartment"
+      },
+      "neil_sharma": {
+        "lastMessage": "I’m addicted to you",
+        "message1": "I can’t stop thinking about you",
+        "message2": "Same. Every second",
+        "message3": "I’m addicted to you"
+      },
+      "karan_reddy": {
+        "lastMessage": "I told her I was at work",
+        "message1": "Where are you?",
+        "message2": "Work. Late shift",
+        "message3": "Liar",
+        "message4": "I told her I was at work"
+      },
+      "dev_kapoor": {
+        "lastMessage": "This is getting out of control",
+        "message1": "We said last time was the last",
+        "message2": "I know",
+        "message3": "Then why am I here?",
+        "message4": "This is getting out of control"
+      },
+      "siddharth_rao": {
+        "lastMessage": "I dream about you every night",
+        "message1": "You sleeping?",
+        "message2": "No. You?",
+        "message3": "Thinking of you",
+        "message4": "I dream about you every night"
+      },
+      "yash_malhotra": {
+        "lastMessage": "Delete after reading",
+        "message1": "I can’t stop replaying last night",
+        "message2": "That thing you did...",
+        "message3": "Shh. Don’t type it",
+        "message4": "Delete after reading"
+      },
+      "rishi_gupta": {
+        "lastMessage": "I’m falling for you",
+        "message1": "This is getting dangerous",
+        "message2": "I know",
+        "message3": "But I don’t want to stop",
+        "message4": "I’m falling for you"
+      },
+      "aadi_nair": {
+        "lastMessage": "Your scent is on my shirt",
+        "message1": "I can still smell you",
+        "message2": "Good",
+        "message3": "Your scent is on my shirt"
+      },
+      "vivan_joshi": {
+        "lastMessage": "I lied to her for you",
+        "message1": "She asked where I was",
+        "message2": "What’d you say?",
+        "message3": "With you",
+        "message4": "I lied to her for you"
+      }
+    }
   }
 }

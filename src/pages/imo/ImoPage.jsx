@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -72,162 +73,150 @@ const chats = [
     id: 1,
     name: "Aryan Patel",
     avatar: "https://i.pravatar.cc/150?img=16",
-    lastMessage: "I left my keys in your car",
+    lastMessageKey: "aryan_patel.lastMessage",
     time: "03:20",
     messages: [
-      { text: "You still up?", time: "03:05", incoming: true },
-      { text: "Yeah. Can’t sleep", time: "03:06", incoming: false },
-      { text: "I left my keys in your car", time: "03:20", incoming: false },
+      { textKey: "aryan_patel.message1", time: "03:05", incoming: true },
+      { textKey: "aryan_patel.message2", time: "03:06", incoming: false },
+      { textKey: "aryan_patel.message3", time: "03:20", incoming: false },
     ],
   },
   {
     id: 2,
     name: "Rohan Mehta",
     avatar: "https://i.pravatar.cc/150?img=17",
-    lastMessage: "She didn’t notice",
+    lastMessageKey: "rohan_mehta.lastMessage",
     time: "02:15",
     messages: [
-      { text: "That was too close", time: "02:00", incoming: true },
-      { text: "But we’re safe", time: "02:01", incoming: false },
-      { text: "She didn’t notice", time: "02:15", incoming: false },
+      { textKey: "rohan_mehta.message1", time: "02:00", incoming: true },
+      { textKey: "rohan_mehta.message2", time: "02:01", incoming: false },
+      { textKey: "rohan_mehta.message3", time: "02:15", incoming: false },
     ],
   },
   {
     id: 3,
     name: "Vikram Singh",
     avatar: "https://i.pravatar.cc/150?img=18",
-    lastMessage: "Send the video again",
+    lastMessageKey: "vikram_singh.lastMessage",
     time: "01:30",
     messages: [
-      { text: "You deleted it?", time: "01:15", incoming: true },
-      { text: "Had to. Too risky", time: "01:16", incoming: false },
-      { text: "Send the video again", time: "01:30", incoming: false },
+      { textKey: "vikram_singh.message1", time: "01:15", incoming: true },
+      { textKey: "vikram_singh.message2", time: "01:16", incoming: false },
+      { textKey: "vikram_singh.message3", time: "01:30", incoming: false },
     ],
   },
   {
     id: 4,
     name: "Arjun Desai",
     avatar: "https://i.pravatar.cc/150?img=19",
-    lastMessage: "I’m in your apartment",
+    lastMessageKey: "arjun_desai.lastMessage",
     time: "00:45",
     messages: [
-      { text: "You home?", time: "00:30", incoming: true },
-      { text: "She’s out. Door’s open", time: "00:31", incoming: false },
-      { text: "I’m in your apartment", time: "00:45", incoming: false },
+      { textKey: "arjun_desai.message1", time: "00:30", incoming: true },
+      { textKey: "arjun_desai.message2", time: "00:31", incoming: false },
+      { textKey: "arjun_desai.message3", time: "00:45", incoming: false },
     ],
   },
   {
     id: 5,
     name: "Neil Sharma",
     avatar: "https://i.pravatar.cc/150?img=20",
-    lastMessage: "I’m addicted to you",
+    lastMessageKey: "neil_sharma.lastMessage",
     time: "04:10",
     messages: [
-      {
-        text: "I can’t stop thinking about you",
-        time: "03:55",
-        incoming: true,
-      },
-      { text: "Same. Every second", time: "03:56", incoming: false },
-      { text: "I’m addicted to you", time: "04:10", incoming: false },
+      { textKey: "neil_sharma.message1", time: "03:55", incoming: true },
+      { textKey: "neil_sharma.message2", time: "03:56", incoming: false },
+      { textKey: "neil_sharma.message3", time: "04:10", incoming: false },
     ],
   },
   {
     id: 6,
     name: "Karan Reddy",
     avatar: "https://i.pravatar.cc/150?img=21",
-    lastMessage: "I told her I was at work",
+    lastMessageKey: "karan_reddy.lastMessage",
     time: "22:40",
     messages: [
-      { text: "Where are you?", time: "22:20", incoming: true },
-      { text: "Work. Late shift", time: "22:21", incoming: false },
-      { text: "Liar", time: "22:22", incoming: true },
-      { text: "I told her I was at work", time: "22:40", incoming: false },
+      { textKey: "karan_reddy.message1", time: "22:20", incoming: true },
+      { textKey: "karan_reddy.message2", time: "22:21", incoming: false },
+      { textKey: "karan_reddy.message3", time: "22:22", incoming: true },
+      { textKey: "karan_reddy.message4", time: "22:40", incoming: false },
     ],
   },
   {
     id: 7,
     name: "Dev Kapoor",
     avatar: "https://i.pravatar.cc/150?img=22",
-    lastMessage: "This is getting out of control",
+    lastMessageKey: "dev_kapoor.lastMessage",
     time: "21:05",
     messages: [
-      { text: "We said last time was the last", time: "20:50", incoming: true },
-      { text: "I know", time: "20:51", incoming: false },
-      { text: "Then why am I here?", time: "20:52", incoming: true },
-      {
-        text: "This is getting out of control",
-        time: "21:05",
-        incoming: false,
-      },
+      { textKey: "dev_kapoor.message1", time: "20:50", incoming: true },
+      { textKey: "dev_kapoor.message2", time: "20:51", incoming: false },
+      { textKey: "dev_kapoor.message3", time: "20:52", incoming: true },
+      { textKey: "dev_kapoor.message4", time: "21:05", incoming: false },
     ],
   },
   {
     id: 8,
     name: "Siddharth Rao",
     avatar: "https://i.pravatar.cc/150?img=23",
-    lastMessage: "I dream about you every night",
+    lastMessageKey: "siddharth_rao.lastMessage",
     time: "05:00",
     messages: [
-      { text: "You sleeping?", time: "04:45", incoming: true },
-      { text: "No. You?", time: "04:46", incoming: false },
-      { text: "Thinking of you", time: "04:47", incoming: true },
-      { text: "I dream about you every night", time: "05:00", incoming: false },
+      { textKey: "siddharth_rao.message1", time: "04:45", incoming: true },
+      { textKey: "siddharth_rao.message2", time: "04:46", incoming: false },
+      { textKey: "siddharth_rao.message3", time: "04:47", incoming: true },
+      { textKey: "siddharth_rao.message4", time: "05:00", incoming: false },
     ],
   },
   {
     id: 9,
     name: "Yash Malhotra",
     avatar: "https://i.pravatar.cc/150?img=24",
-    lastMessage: "Delete after reading",
+    lastMessageKey: "yash_malhotra.lastMessage",
     time: "02:25",
     messages: [
-      {
-        text: "I can’t stop replaying last night",
-        time: "02:10",
-        incoming: true,
-      },
-      { text: "That thing you did...", time: "02:11", incoming: false },
-      { text: "Shh. Don’t type it", time: "02:12", incoming: true },
-      { text: "Delete after reading", time: "02:25", incoming: false },
+      { textKey: "yash_malhotra.message1", time: "02:10", incoming: true },
+      { textKey: "yash_malhotra.message2", time: "02:11", incoming: false },
+      { textKey: "yash_malhotra.message3", time: "02:12", incoming: true },
+      { textKey: "yash_malhotra.message4", time: "02:25", incoming: false },
     ],
   },
   {
     id: 10,
     name: "Rishi Gupta",
     avatar: "https://i.pravatar.cc/150?img=25",
-    lastMessage: "I’m falling for you",
+    lastMessageKey: "rishi_gupta.lastMessage",
     time: "01:40",
     messages: [
-      { text: "This is getting dangerous", time: "01:25", incoming: true },
-      { text: "I know", time: "01:26", incoming: false },
-      { text: "But I don’t want to stop", time: "01:27", incoming: true },
-      { text: "I’m falling for you", time: "01:40", incoming: false },
+      { textKey: "rishi_gupta.message1", time: "01:25", incoming: true },
+      { textKey: "rishi_gupta.message2", time: "01:26", incoming: false },
+      { textKey: "rishi_gupta.message3", time: "01:27", incoming: true },
+      { textKey: "rishi_gupta.message4", time: "01:40", incoming: false },
     ],
   },
   {
     id: 11,
     name: "Aadi Nair",
     avatar: "https://i.pravatar.cc/150?img=26",
-    lastMessage: "Your scent is on my shirt",
+    lastMessageKey: "aadi_nair.lastMessage",
     time: "06:15",
     messages: [
-      { text: "I can still smell you", time: "05:55", incoming: true },
-      { text: "Good", time: "05:56", incoming: false },
-      { text: "Your scent is on my shirt", time: "06:15", incoming: false },
+      { textKey: "aadi_nair.message1", time: "05:55", incoming: true },
+      { textKey: "aadi_nair.message2", time: "05:56", incoming: false },
+      { textKey: "aadi_nair.message3", time: "06:15", incoming: false },
     ],
   },
   {
     id: 12,
     name: "Vivan Joshi",
     avatar: "https://i.pravatar.cc/150?img=27",
-    lastMessage: "I lied to her for you",
+    lastMessageKey: "vivan_joshi.lastMessage",
     time: "23:10",
     messages: [
-      { text: "She asked where I was", time: "22:55", incoming: true },
-      { text: "What’d you say?", time: "22:56", incoming: false },
-      { text: "With you", time: "22:57", incoming: true },
-      { text: "I lied to her for you", time: "23:10", incoming: false },
+      { textKey: "vivan_joshi.message1", time: "22:55", incoming: true },
+      { textKey: "vivan_joshi.message2", time: "22:56", incoming: false },
+      { textKey: "vivan_joshi.message3", time: "22:57", incoming: true },
+      { textKey: "vivan_joshi.message4", time: "23:10", incoming: false },
     ],
   },
 ];
@@ -294,6 +283,7 @@ const callLogs = [
 ];
 
 const ImoPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -342,7 +332,7 @@ const ImoPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Imo
+              {t("dmimo.header.title")}
               <BsChatText className="text-[#00D084] text-xl" />
             </h1>
           </div>
@@ -366,24 +356,28 @@ const ImoPage = () => {
                 mb: 3,
                 "& .MuiTabs-indicator": { bgcolor: "primary.main", height: 3 },
               }}
+              aria-label={t("dmimo.tabs.aria_label")}
             >
               <Tab
                 icon={<BsChatText className="text-[#00D084]" />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chats"}
+                label={isMobile ? "" : t("dmimo.tabs.chat")}
                 value="chat"
+                aria-label={t("dmimo.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Contacts"}
+                label={isMobile ? "" : t("dmimo.tabs.contacts")}
                 value="contacts"
+                aria-label={t("dmimo.tabs.contacts_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Calls"}
+                label={isMobile ? "" : t("dmimo.tabs.calls")}
                 value="calls"
+                aria-label={t("dmimo.tabs.calls_aria")}
               />
             </Tabs>
           )}
@@ -391,7 +385,11 @@ const ImoPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmimo.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -426,7 +424,7 @@ const ImoPage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmimo.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -437,6 +435,9 @@ const ImoPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmimo.chat.item_aria", {
+                        name: chat.name,
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -458,7 +459,7 @@ const ImoPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(`dmimo.chats.${chat.lastMessageKey}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -474,7 +475,7 @@ const ImoPage = () => {
 
               {/* Contacts List */}
               {tab === "contacts" && (
-                <Stack>
+                <Stack aria-label={t("dmimo.contacts.list_aria")}>
                   {Object.keys(groupContactsByLetter())
                     .sort()
                     .map((letter) => (
@@ -500,6 +501,9 @@ const ImoPage = () => {
                               transition: "background 0.2s",
                             }}
                             onClick={() => setSelectedContact(contact)}
+                            aria-label={t("dmimo.contacts.item_aria", {
+                              name: contact.name,
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -525,7 +529,7 @@ const ImoPage = () => {
 
               {/* Call Log */}
               {tab === "calls" && (
-                <Stack>
+                <Stack aria-label={t("dmimo.call_log.list_aria")}>
                   {callLogs.map((call) => (
                     <Box
                       key={call.id}
@@ -536,6 +540,9 @@ const ImoPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedCall(call)}
+                      aria-label={t("dmimo.call_log.item_aria", {
+                        name: call.name,
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
@@ -577,8 +584,7 @@ const ImoPage = () => {
                                   : "#EF4444",
                             }}
                           >
-                            {call.type.charAt(0).toUpperCase() +
-                              call.type.slice(1)}
+                            {t(`dmimo.call_log.types.${call.type}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -608,7 +614,12 @@ const ImoPage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmimo.chat.detail_aria", {
+                      name: selectedChat.name,
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -648,7 +659,7 @@ const ImoPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(`dmimo.chats.${msg.textKey}`)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -672,7 +683,13 @@ const ImoPage = () => {
 
                 {/* Contact Detail */}
                 {selectedContact && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmimo.contacts.detail_aria", {
+                      name: selectedContact.name,
+                    })}
+                  >
                     <Avatar
                       src={selectedContact.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -715,7 +732,7 @@ const ImoPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Phone
+                            {t("dmimo.contacts.phone_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
@@ -757,7 +774,7 @@ const ImoPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Email
+                            {t("dmimo.contacts.email_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
@@ -772,7 +789,13 @@ const ImoPage = () => {
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmimo.call_log.detail_aria", {
+                      name: selectedCall.name,
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -807,8 +830,7 @@ const ImoPage = () => {
                           sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
                         >
                           {selectedCall.duration} •{" "}
-                          {selectedCall.type.charAt(0).toUpperCase() +
-                            selectedCall.type.slice(1)}
+                          {t(`dmimo.call_log.types.${selectedCall.type}`)}
                         </Typography>
                       )}
                     </Paper>

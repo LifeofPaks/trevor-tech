@@ -3862,5 +3862,120 @@
       "owen_blake": { "name": "欧文·布莱克" },
       "rhett_stone": { "name": "雷特·斯通" }
     }
+  },
+  "dmimo": {
+    "header": { "title": "Imo" },
+    "tabs": {
+      "chat": "聊天",
+      "contacts": "联系人",
+      "calls": "通话",
+      "aria_label": "Imo导航标签",
+      "chat_aria": "显示聊天",
+      "contacts_aria": "显示联系人",
+      "calls_aria": "显示通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "聊天列表",
+      "item_aria": "与{{name}}的聊天",
+      "detail_aria": "{{name}}的聊天详情"
+    },
+    "contacts": {
+      "phone_label": "电话",
+      "email_label": "电子邮件",
+      "list_aria": "联系人列表",
+      "item_aria": "联系人 {{name}}",
+      "detail_aria": "{{name}}的联系人详情"
+    },
+    "call_log": {
+      "list_aria": "通话记录列表",
+      "item_aria": "{{name}}的通话记录",
+      "detail_aria": "{{name}}的通话详情",
+      "types": {
+        "outgoing": "拨出",
+        "incoming": "拨入",
+        "missed": "未接"
+      }
+    },
+    "chats": {
+      "aryan_patel": {
+        "lastMessage": "我把钥匙忘在你车里了",
+        "message1": "你还醒着吗？",
+        "message2": "嗯...睡不着",
+        "message3": "我把钥匙忘在你车里了"
+      },
+      "rohan_mehta": {
+        "lastMessage": "她没注意到",
+        "message1": "那太险了",
+        "message2": "但我们安全了",
+        "message3": "她没注意到"
+      },
+      "vikram_singh": {
+        "lastMessage": "再发一遍视频",
+        "message1": "你删了它？",
+        "message2": "必须删。太冒险了",
+        "message3": "再发一遍视频"
+      },
+      "arjun_desai": {
+        "lastMessage": "我在你公寓里",
+        "message1": "你在家吗？",
+        "message2": "她出去了。门没锁",
+        "message3": "我在你公寓里"
+      },
+      "neil_sharma": {
+        "lastMessage": "我对你上瘾了",
+        "message1": "我停不下来想你",
+        "message2": "我也一样。每秒都在想",
+        "message3": "我对你上瘾了"
+      },
+      "karan_reddy": {
+        "lastMessage": "我跟她说我在工作",
+        "message1": "你在哪儿？",
+        "message2": "工作。晚班",
+        "message3": "骗子",
+        "message4": "我跟她说我在工作"
+      },
+      "dev_kapoor": {
+        "lastMessage": "这事失控了",
+        "message1": "我们说了上次是最后一次",
+        "message2": "我知道",
+        "message3": "那我为什么还在这儿？",
+        "message4": "这事失控了"
+      },
+      "siddharth_rao": {
+        "lastMessage": "我每晚都梦见你",
+        "message1": "睡了吗？",
+        "message2": "没。你呢？",
+        "message3": "在想你",
+        "message4": "我每晚都梦见你"
+      },
+      "yash_malhotra": {
+        "lastMessage": "读完删除",
+        "message1": "我一直在回想昨晚",
+        "message2": "你做的那个...",
+        "message3": "嘘。别写出来",
+        "message4": "读完删除"
+      },
+      "rishi_gupta": {
+        "lastMessage": "我爱上你了",
+        "message1": "这越来越危险了",
+        "message2": "我知道",
+        "message3": "但我不想停下来",
+        "message4": "我爱上你了"
+      },
+      "aadi_nair": {
+        "lastMessage": "你的气味在我衬衫上",
+        "message1": "我还能闻到你的气味",
+        "message2": "很好",
+        "message3": "你的气味在我衬衫上"
+      },
+      "vivan_joshi": {
+        "lastMessage": "我为你撒谎了",
+        "message1": "她问我在哪儿",
+        "message2": "你怎么说的？",
+        "message3": "和你在一起",
+        "message4": "我为你撒谎了"
+      }
+    }
   }
 }
