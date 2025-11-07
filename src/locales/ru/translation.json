@@ -2183,5 +2183,189 @@
         }
       }
     }
+  },
+  "dmlink": {
+    "header": {
+      "title": "LinkedIn"
+    },
+    "tabs": {
+      "chat": "Сообщения",
+      "connections": "Контакты",
+      "aria_label": "Вкладки навигации LinkedIn",
+      "chat_aria": "Просмотреть список сообщений",
+      "connections_aria": "Просмотреть список контактов"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список сообщений LinkedIn",
+      "item_aria": "Выбрать чат с {name}",
+      "detail_aria": "Детали чата для {name}"
+    },
+    "connections": {
+      "list_aria": "Список контактов LinkedIn",
+      "item_aria": "Выбрать контакт {name}",
+      "detail_aria": "Детали контакта для {name}",
+      "email": "Электронная почта",
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Инженер-программист @ Meta",
+        "email": "noah@meta.com"
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Дизайнер продуктов @ Airbnb",
+        "email": "isabella@airbnb.com"
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "Инженер ML @ OpenAI",
+        "email": "ethan@openai.com"
+      },
+      "zoe_park": {
+        "name": "Zoe Park",
+        "title": "Стратег контента @ TikTok",
+        "email": "zoe@tiktok.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "title": "DevOps @ AWS",
+        "email": "carter@amazon.com"
+      },
+      "grace_liu": {
+        "name": "Grace Liu",
+        "title": "Дизайнер бренда @ Adobe",
+        "email": "grace@adobe.com"
+      },
+      "dylan_chen": {
+        "name": "Dylan Chen",
+        "title": "Фуллстек-разработчик @ Shopify",
+        "email": "dylan@shopify.com"
+      },
+      "ava_singh": {
+        "name": "Ava Singh",
+        "title": "Исследователь UX @ Spotify",
+        "email": "ava@spotify.com"
+      }
+    },
+    "chats": {
+      "emma_chen": {
+        "name": "Emma Chen",
+        "title": "Дизайнер UX @ Figma",
+        "lastMessage": "Я уже по тебе скучаю...",
+        "messages": {
+          "msg1": { "text": "Прошлой ночью было потрясающе", "incoming": true },
+          "msg2": {
+            "text": "Не могу перестать думать об этом",
+            "incoming": false
+          },
+          "msg3": {
+            "text": "Тоже... хотел бы, чтобы ты остался подольше",
+            "incoming": true
+          },
+          "msg4": { "text": "Я уже по тебе скучаю...", "incoming": false }
+        }
+      },
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "title": "Фронтенд-инженер @ Stripe",
+        "lastMessage": "Удали этот чат",
+        "messages": {
+          "msg1": {
+            "text": "Ты выглядела потрясающе в том платье",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Прекрати, кто-то может увидеть",
+            "incoming": false
+          },
+          "msg3": { "text": "Мне все равно, я хочу тебя", "incoming": true },
+          "msg4": { "text": "Удали этот чат", "incoming": false }
+        }
+      },
+      "sofia_patel": {
+        "name": "Sofia Patel",
+        "title": "Менеджер продукта @ Notion",
+        "lastMessage": "Он спит",
+        "messages": {
+          "msg1": { "text": "Можешь говорить?", "incoming": true },
+          "msg2": { "text": "Да, он спит", "incoming": false },
+          "msg3": {
+            "text": "Хотел бы быть с тобой вместо этого",
+            "incoming": true
+          },
+          "msg4": { "text": "Тоже. Это мучительно", "incoming": false }
+        }
+      },
+      "liam_brooks": {
+        "name": "Liam Brooks",
+        "title": "Аналитик данных @ Google",
+        "lastMessage": "Пришли мне фото",
+        "messages": {
+          "msg1": { "text": "Что на тебе надето?", "incoming": true },
+          "msg2": { "text": "Ничего, что ты не видел", "incoming": false },
+          "msg3": { "text": "Пришли мне фото", "incoming": true },
+          "msg4": { "text": "Удаляю через 10...", "incoming": false }
+        }
+      },
+      "maya_kim": {
+        "name": "Maya Kim",
+        "title": "Маркетинг роста @ Canva",
+        "lastMessage": "Я тебя люблю",
+        "messages": {
+          "msg1": { "text": "Я больше не могу этого делать", "incoming": true },
+          "msg2": { "text": "Делать что?", "incoming": false },
+          "msg3": {
+            "text": "Прикидываться, что не люблю тебя",
+            "incoming": true
+          },
+          "msg4": { "text": "Я тебя люблю", "incoming": false }
+        }
+      },
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Инженер-программист @ Meta",
+        "lastMessage": "Отель забронирован",
+        "messages": {
+          "msg1": {
+            "text": "Тот же отель, что в прошлый раз?",
+            "incoming": true
+          },
+          "msg2": { "text": "Да, номер 512", "incoming": false },
+          "msg3": { "text": "Буду там в 8", "incoming": true },
+          "msg4": { "text": "Отель забронирован", "incoming": false }
+        }
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Дизайнер продуктов @ Airbnb",
+        "lastMessage": "Никто не узнает",
+        "messages": {
+          "msg1": { "text": "Нам нужно быть осторожнее", "incoming": true },
+          "msg2": {
+            "text": "Знаю, но я не могу остановиться",
+            "incoming": false
+          },
+          "msg3": { "text": "Тоже. Только еще раз", "incoming": true },
+          "msg4": { "text": "Никто не узнает", "incoming": false }
+        }
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "Инженер ML @ OpenAI",
+        "lastMessage": "Ты мой секрет",
+        "messages": {
+          "msg1": {
+            "text": "Я сказал своей девушке, что задержусь на работе",
+            "incoming": true
+          },
+          "msg2": { "text": "Я сказал то же своему парню", "incoming": false },
+          "msg3": { "text": "Это так неправильно", "incoming": true },
+          "msg4": {
+            "text": "Но так правильно. Ты мой секрет",
+            "incoming": false
+          }
+        }
+      }
+    }
   }
 }

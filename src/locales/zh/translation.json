@@ -2153,5 +2153,159 @@
         }
       }
     }
+  },
+  "dmlink": {
+    "header": {
+      "title": "LinkedIn"
+    },
+    "tabs": {
+      "chat": "消息",
+      "connections": "联系人",
+      "aria_label": "LinkedIn导航选项卡",
+      "chat_aria": "查看消息列表",
+      "connections_aria": "查看联系人列表"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "LinkedIn消息列表",
+      "item_aria": "选择与{name}的消息",
+      "detail_aria": "{name}的消息详情"
+    },
+    "connections": {
+      "list_aria": "LinkedIn联系人列表",
+      "item_aria": "选择联系人{name}",
+      "detail_aria": "{name}的联系人详情",
+      "email": "电子邮件",
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Meta软件工程师",
+        "email": "noah@meta.com"
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnb产品设计师",
+        "email": "isabella@airbnb.com"
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI机器学习工程师",
+        "email": "ethan@openai.com"
+      },
+      "zoe_park": {
+        "name": "Zoe Park",
+        "title": "TikTok内容策略师",
+        "email": "zoe@tiktok.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "title": "AWS DevOps",
+        "email": "carter@amazon.com"
+      },
+      "grace_liu": {
+        "name": "Grace Liu",
+        "title": "Adobe品牌设计师",
+        "email": "grace@adobe.com"
+      },
+      "dylan_chen": {
+        "name": "Dylan Chen",
+        "title": "Shopify全栈开发",
+        "email": "dylan@shopify.com"
+      },
+      "ava_singh": {
+        "name": "Ava Singh",
+        "title": "Spotify用户体验研究员",
+        "email": "ava@spotify.com"
+      }
+    },
+    "chats": {
+      "emma_chen": {
+        "name": "Emma Chen",
+        "title": "Figma用户体验设计师",
+        "lastMessage": "我已经开始想你了...",
+        "messages": {
+          "msg1": { "text": "昨晚太美妙了", "incoming": true },
+          "msg2": { "text": "我停不下来一直在想", "incoming": false },
+          "msg3": { "text": "我也是...希望你能多留一会儿", "incoming": true },
+          "msg4": { "text": "我已经开始想你了...", "incoming": false }
+        }
+      },
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "title": "Stripe前端工程师",
+        "lastMessage": "删除这个聊天",
+        "messages": {
+          "msg1": { "text": "你穿那件裙子真好看", "incoming": true },
+          "msg2": { "text": "别说了，有人可能会看到", "incoming": false },
+          "msg3": { "text": "我不在乎，我想你", "incoming": true },
+          "msg4": { "text": "删除这个聊天", "incoming": false }
+        }
+      },
+      "sofia_patel": {
+        "name": "Sofia Patel",
+        "title": "Notion产品经理",
+        "lastMessage": "他睡着了",
+        "messages": {
+          "msg1": { "text": "能聊吗？", "incoming": true },
+          "msg2": { "text": "可以，他睡着了", "incoming": false },
+          "msg3": { "text": "我宁愿跟你在一起", "incoming": true },
+          "msg4": { "text": "我也是，太折磨人了", "incoming": false }
+        }
+      },
+      "liam_brooks": {
+        "name": "Liam Brooks",
+        "title": "Google数据分析师",
+        "lastMessage": "给我发张照片",
+        "messages": {
+          "msg1": { "text": "你穿什么？", "incoming": true },
+          "msg2": { "text": "你没见过的东西", "incoming": false },
+          "msg3": { "text": "给我发张照片", "incoming": true },
+          "msg4": { "text": "10秒后删除...", "incoming": false }
+        }
+      },
+      "maya_kim": {
+        "name": "Maya Kim",
+        "title": "Canva增长营销",
+        "lastMessage": "我爱你",
+        "messages": {
+          "msg1": { "text": "我不能再这样了", "incoming": true },
+          "msg2": { "text": "不能怎样？", "incoming": false },
+          "msg3": { "text": "假装我不爱你", "incoming": true },
+          "msg4": { "text": "我爱你", "incoming": false }
+        }
+      },
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Meta软件工程师",
+        "lastMessage": "酒店已订好",
+        "messages": {
+          "msg1": { "text": "还是上次那家酒店？", "incoming": true },
+          "msg2": { "text": "是的，512房间", "incoming": false },
+          "msg3": { "text": "我8点到", "incoming": true },
+          "msg4": { "text": "酒店已订好", "incoming": false }
+        }
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnb产品设计师",
+        "lastMessage": "没人会知道",
+        "messages": {
+          "msg1": { "text": "我们得更小心点", "incoming": true },
+          "msg2": { "text": "我知道，但我停不下来", "incoming": false },
+          "msg3": { "text": "我也是，就再一次", "incoming": true },
+          "msg4": { "text": "没人会知道", "incoming": false }
+        }
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI机器学习工程师",
+        "lastMessage": "你是我的秘密",
+        "messages": {
+          "msg1": { "text": "我告诉我女朋友我加班", "incoming": true },
+          "msg2": { "text": "我也跟我男朋友说了同样的话", "incoming": false },
+          "msg3": { "text": "这太不对了", "incoming": true },
+          "msg4": { "text": "但感觉太对了，你是我的秘密", "incoming": false }
+        }
+      }
+    }
   }
 }

@@ -2170,5 +2170,174 @@
         }
       }
     }
+  },
+  "dmlink": {
+    "header": {
+      "title": "LinkedIn"
+    },
+    "tabs": {
+      "chat": "Messages",
+      "connections": "Connections",
+      "aria_label": "LinkedIn navigation tabs",
+      "chat_aria": "View message list",
+      "connections_aria": "View connections list"
+    },
+    "back_button_aria": "Go back to list",
+    "chat": {
+      "list_aria": "LinkedIn message list",
+      "item_aria": "Select chat with {name}",
+      "detail_aria": "Chat details for {name}"
+    },
+    "connections": {
+      "list_aria": "LinkedIn connections list",
+      "item_aria": "Select connection {name}",
+      "detail_aria": "Connection details for {name}",
+      "email": "Email",
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Software Engineer @ Meta",
+        "email": "noah@meta.com"
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Product Designer @ Airbnb",
+        "email": "isabella@airbnb.com"
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "ML Engineer @ OpenAI",
+        "email": "ethan@openai.com"
+      },
+      "zoe_park": {
+        "name": "Zoe Park",
+        "title": "Content Strategist @ TikTok",
+        "email": "zoe@tiktok.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "title": "DevOps @ AWS",
+        "email": "carter@amazon.com"
+      },
+      "grace_liu": {
+        "name": "Grace Liu",
+        "title": "Brand Designer @ Adobe",
+        "email": "grace@adobe.com"
+      },
+      "dylan_chen": {
+        "name": "Dylan Chen",
+        "title": "Fullstack @ Shopify",
+        "email": "dylan@shopify.com"
+      },
+      "ava_singh": {
+        "name": "Ava Singh",
+        "title": "UX Researcher @ Spotify",
+        "email": "ava@spotify.com"
+      }
+    },
+    "chats": {
+      "emma_chen": {
+        "name": "Emma Chen",
+        "title": "UX Designer @ Figma",
+        "lastMessage": "I miss you already...",
+        "messages": {
+          "msg1": { "text": "Last night was amazing", "incoming": true },
+          "msg2": {
+            "text": "I can't stop thinking about it",
+            "incoming": false
+          },
+          "msg3": {
+            "text": "Same... wish you stayed longer",
+            "incoming": true
+          },
+          "msg4": { "text": "I miss you already...", "incoming": false }
+        }
+      },
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "title": "Frontend Engineer @ Stripe",
+        "lastMessage": "Delete this chat",
+        "messages": {
+          "msg1": {
+            "text": "You looked incredible in that dress",
+            "incoming": true
+          },
+          "msg2": { "text": "Stop, someone might see", "incoming": false },
+          "msg3": { "text": "I don't care. I want you", "incoming": true },
+          "msg4": { "text": "Delete this chat", "incoming": false }
+        }
+      },
+      "sofia_patel": {
+        "name": "Sofia Patel",
+        "title": "Product Manager @ Notion",
+        "lastMessage": "He's asleep",
+        "messages": {
+          "msg1": { "text": "Can you talk?", "incoming": true },
+          "msg2": { "text": "Yes, he's asleep", "incoming": false },
+          "msg3": { "text": "I wish I was with you instead", "incoming": true },
+          "msg4": { "text": "Same. This is torture", "incoming": false }
+        }
+      },
+      "liam_brooks": {
+        "name": "Liam Brooks",
+        "title": "Data Analyst @ Google",
+        "lastMessage": "Send me a pic",
+        "messages": {
+          "msg1": { "text": "What are you wearing?", "incoming": true },
+          "msg2": { "text": "Nothing you haven't seen", "incoming": false },
+          "msg3": { "text": "Send me a pic", "incoming": true },
+          "msg4": { "text": "Deleting in 10...", "incoming": false }
+        }
+      },
+      "maya_kim": {
+        "name": "Maya Kim",
+        "title": "Growth Marketer @ Canva",
+        "lastMessage": "I love you",
+        "messages": {
+          "msg1": { "text": "I can't do this anymore", "incoming": true },
+          "msg2": { "text": "Do what?", "incoming": false },
+          "msg3": { "text": "Pretend I don't love you", "incoming": true },
+          "msg4": { "text": "I love you", "incoming": false }
+        }
+      },
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Software Engineer @ Meta",
+        "lastMessage": "Hotel booked",
+        "messages": {
+          "msg1": { "text": "Same hotel as last time?", "incoming": true },
+          "msg2": { "text": "Yes. Room 512", "incoming": false },
+          "msg3": { "text": "I'll be there at 8", "incoming": true },
+          "msg4": { "text": "Hotel booked", "incoming": false }
+        }
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Product Designer @ Airbnb",
+        "lastMessage": "No one will know",
+        "messages": {
+          "msg1": { "text": "We have to be more careful", "incoming": true },
+          "msg2": { "text": "I know. But I can't stop", "incoming": false },
+          "msg3": { "text": "Same. Just one more time", "incoming": true },
+          "msg4": { "text": "No one will know", "incoming": false }
+        }
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "ML Engineer @ OpenAI",
+        "lastMessage": "You're my secret",
+        "messages": {
+          "msg1": {
+            "text": "I told my girlfriend I was working late",
+            "incoming": true
+          },
+          "msg2": { "text": "I told my boyfriend the same", "incoming": false },
+          "msg3": { "text": "This is so wrong", "incoming": true },
+          "msg4": {
+            "text": "But it feels so right. You're my secret",
+            "incoming": false
+          }
+        }
+      }
+    }
   }
 }

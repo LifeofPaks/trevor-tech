@@ -2157,5 +2157,174 @@
         }
       }
     }
+  },
+  "dmlink": {
+    "header": {
+      "title": "LinkedIn"
+    },
+    "tabs": {
+      "chat": "الرسائل",
+      "connections": "العلاقات",
+      "aria_label": "علامات تبويب التنقل في LinkedIn",
+      "chat_aria": "عرض قائمة الرسائل",
+      "connections_aria": "عرض قائمة العلاقات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة الرسائل في LinkedIn",
+      "item_aria": "اختيار الدردشة مع {name}",
+      "detail_aria": "تفاصيل الدردشة لـ {name}"
+    },
+    "connections": {
+      "list_aria": "قائمة العلاقات في LinkedIn",
+      "item_aria": "اختيار العلاقة {name}",
+      "detail_aria": "تفاصيل العلاقة لـ {name}",
+      "email": "البريد الإلكتروني",
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "مهندس برمجيات @ Meta",
+        "email": "noah@meta.com"
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "مصممة منتجات @ Airbnb",
+        "email": "isabella@airbnb.com"
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "مهندس تعلم آلي @ OpenAI",
+        "email": "ethan@openai.com"
+      },
+      "zoe_park": {
+        "name": "Zoe Park",
+        "title": "استراتيجي محتوى @ TikTok",
+        "email": "zoe@tiktok.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "title": "DevOps @ AWS",
+        "email": "carter@amazon.com"
+      },
+      "grace_liu": {
+        "name": "Grace Liu",
+        "title": "مصممة علامة تجارية @ Adobe",
+        "email": "grace@adobe.com"
+      },
+      "dylan_chen": {
+        "name": "Dylan Chen",
+        "title": "مطور Fullstack @ Shopify",
+        "email": "dylan@shopify.com"
+      },
+      "ava_singh": {
+        "name": "Ava Singh",
+        "title": "باحثة تجربة مستخدم @ Spotify",
+        "email": "ava@spotify.com"
+      }
+    },
+    "chats": {
+      "emma_chen": {
+        "name": "Emma Chen",
+        "title": "مصممة تجربة مستخدم @ Figma",
+        "lastMessage": "أشتاق إليك بالفعل...",
+        "messages": {
+          "msg1": { "text": "الليلة الماضية كانت رائعة", "incoming": true },
+          "msg2": {
+            "text": "لا أستطيع التوقف عن التفكير فيها",
+            "incoming": false
+          },
+          "msg3": {
+            "text": "نفس الشيء... كنت أتمنى أن تبقى أكثر",
+            "incoming": true
+          },
+          "msg4": { "text": "أشتاق إليك بالفعل...", "incoming": false }
+        }
+      },
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "title": "مهندس واجهة أمامية @ Stripe",
+        "lastMessage": "احذف هذه الدردشة",
+        "messages": {
+          "msg1": {
+            "text": "كنتِ تبدين رائعة في ذلك الفستان",
+            "incoming": true
+          },
+          "msg2": { "text": "توقف، قد يراها أحد", "incoming": false },
+          "msg3": { "text": "لا يهمني، أريدك", "incoming": true },
+          "msg4": { "text": "احذف هذه الدردشة", "incoming": false }
+        }
+      },
+      "sofia_patel": {
+        "name": "Sofia Patel",
+        "title": "مديرة منتج @ Notion",
+        "lastMessage": "إنه نائم",
+        "messages": {
+          "msg1": { "text": "هل يمكنك التحدث؟", "incoming": true },
+          "msg2": { "text": "نعم، إنه نائم", "incoming": false },
+          "msg3": { "text": "أتمنى لو كنت معك بدلاً منه", "incoming": true },
+          "msg4": { "text": "نفس الشيء، هذا تعذيب", "incoming": false }
+        }
+      },
+      "liam_brooks": {
+        "name": "Liam Brooks",
+        "title": "محلل بيانات @ Google",
+        "lastMessage": "أرسل لي صورة",
+        "messages": {
+          "msg1": { "text": "ماذا ترتدي؟", "incoming": true },
+          "msg2": { "text": "لا شيء لم تره من قبل", "incoming": false },
+          "msg3": { "text": "أرسل لي صورة", "incoming": true },
+          "msg4": { "text": "سأحذف بعد 10...", "incoming": false }
+        }
+      },
+      "maya_kim": {
+        "name": "Maya Kim",
+        "title": "تسويق النمو @ Canva",
+        "lastMessage": "أحبك",
+        "messages": {
+          "msg1": { "text": "لا أستطيع الاستمرار هكذا", "incoming": true },
+          "msg2": { "text": "الاستمرار في ماذا؟", "incoming": false },
+          "msg3": { "text": "التظاهر بأنني لا أحبك", "incoming": true },
+          "msg4": { "text": "أحبك", "incoming": false }
+        }
+      },
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "مهندس برمجيات @ Meta",
+        "lastMessage": "تم حجز الفندق",
+        "messages": {
+          "msg1": { "text": "نفس الفندق مثل المرة الماضية؟", "incoming": true },
+          "msg2": { "text": "نعم، غرفة 512", "incoming": false },
+          "msg3": { "text": "سأكون هناك في الثامنة", "incoming": true },
+          "msg4": { "text": "تم حجز الفندق", "incoming": false }
+        }
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "مصممة منتجات @ Airbnb",
+        "lastMessage": "لن يعرف أحد",
+        "messages": {
+          "msg1": { "text": "يجب أن نكون أكثر حذراً", "incoming": true },
+          "msg2": { "text": "أعرف، لكن لا أستطيع التوقف", "incoming": false },
+          "msg3": { "text": "نفس الشيء، مرة أخرى فقط", "incoming": true },
+          "msg4": { "text": "لن يعرف أحد", "incoming": false }
+        }
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "مهندس تعلم آلي @ OpenAI",
+        "lastMessage": "أنت سري",
+        "messages": {
+          "msg1": {
+            "text": "قلت لصديقتي إنني سأعمل حتى وقت متأخر",
+            "incoming": true
+          },
+          "msg2": { "text": "قلت الشيء نفسه لصديقي", "incoming": false },
+          "msg3": { "text": "هذا خطأ كبير", "incoming": true },
+          "msg4": {
+            "text": "لكنه يبدو صحيحًا جدًا، أنت سري",
+            "incoming": false
+          }
+        }
+      }
+    }
   }
 }

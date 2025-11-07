@@ -2182,5 +2182,126 @@
         }
       }
     }
-  }
+  },    "dmlink": {
+      "header": {
+        "title": "LinkedIn"
+      },
+      "tabs": {
+        "chat": "Messages",
+        "connections": "Connexions",
+        "aria_label": "Onglets de navigation LinkedIn",
+        "chat_aria": "Voir la liste des messages",
+        "connections_aria": "Voir la liste des connexions"
+      },
+      "back_button_aria": "Retourner à la liste",
+      "chat": {
+        "list_aria": "Liste des messages LinkedIn",
+        "item_aria": "Sélectionner le chat avec {name}",
+        "detail_aria": "Détails du chat pour {name}"
+      },
+      "connections": {
+        "list_aria": "Liste des connexions LinkedIn",
+        "item_aria": "Sélectionner la connexion {name}",
+        "detail_aria": "Détails de la connexion pour {name}",
+        "email": "Email",
+        "noah_kim": { "name": "Noah Kim", "title": "Ingénieur Logiciel @ Meta", "email": "noah@meta.com" },
+        "isabella_wu": { "name": "Isabella Wu", "title": "Designer Produit @ Airbnb", "email": "isabella@airbnb.com" },
+        "ethan_zhang": { "name": "Ethan Zhang", "title": "Ingénieur ML @ OpenAI", "email": "ethan@openai.com" },
+        "zoe_park": { "name": "Zoe Park", "title": "Stratège de Contenu @ TikTok", "email": "zoe@tiktok.com" },
+        "carter_lee": { "name": "Carter Lee", "title": "DevOps @ AWS", "email": "carter@amazon.com" },
+        "grace_liu": { "name": "Grace Liu", "title": "Designer de Marque @ Adobe", "email": "grace@adobe.com" },
+        "dylan_chen": { "name": "Dylan Chen", "title": "Développeur Fullstack @ Shopify", "email": "dylan@shopify.com" },
+        "ava_singh": { "name": "Ava Singh", "title": "Chercheuse UX @ Spotify", "email": "ava@spotify.com" }
+      },
+      "chats": {
+        "emma_chen": {
+          "name": "Emma Chen",
+          "title": "Designer UX @ Figma",
+          "lastMessage": "Tu me manques déjà...",
+          "messages": {
+            "msg1": { "text": "Hier soir était incroyable", "incoming": true },
+            "msg2": { "text": "Je ne peux pas arrêter d'y penser", "incoming": false },
+            "msg3": { "text": "Pareil... j'aurais voulu que tu restes plus longtemps", "incoming": true },
+            "msg4": { "text": "Tu me manques déjà...", "incoming": false }
+          }
+        },
+        "alex_rivera": {
+          "name": "Alex Rivera",
+          "title": "Ingénieur Frontend @ Stripe",
+          "lastMessage": "Supprime ce chat",
+          "messages": {
+            "msg1": { "text": "Tu étais magnifique dans cette robe", "incoming": true },
+            "msg2": { "text": "Arrête, quelqu'un pourrait voir", "incoming": false },
+            "msg3": { "text": "Je m'en fiche, je te veux", "incoming": true },
+            "msg4": { "text": "Supprime ce chat", "incoming": false }
+          }
+        },
+        "sofia_patel": {
+          "name": "Sofia Patel",
+          "title": "Manager de Produit @ Notion",
+          "lastMessage": "Il dort",
+          "messages": {
+            "msg1": { "text": "Peux-tu parler ?", "incoming": true },
+            "msg2": { "text": "Oui, il dort", "incoming": false },
+            "msg3": { "text": "J'aimerais être avec toi à la place", "incoming": true },
+            "msg4": { "text": "Pareil, c'est une torture", "incoming": false }
+          }
+        },
+        "liam_brooks": {
+          "name": "Liam Brooks",
+          "title": "Analyste de Données @ Google",
+          "lastMessage": "Envoie-moi une photo",
+          "messages": {
+            "msg1": { "text": "Qu'est-ce que tu portes ?", "incoming": true },
+            "msg2": { "text": "Rien que tu n'aies vu", "incoming": false },
+            "msg3": { "text": "Envoie-moi une photo", "incoming": true },
+            "msg4": { "text": "Suppression dans 10...", "incoming": false }
+          }
+        },
+        "maya_kim": {
+          "name": "Maya Kim",
+          "title": "Marketing de Croissance @ Canva",
+          "lastMessage": "Je t'aime",
+          "messages": {
+            "msg1": { "text": "Je ne peux plus faire ça", "incoming": true },
+            "msg2": { "text": "Faire quoi ?", "incoming": false },
+            "msg3": { "text": "Faire semblant de ne pas t'aimer", "incoming": true },
+            "msg4": { "framed": "Je t'aime", "incoming": false }
+          }
+        },
+        "noah_kim": {
+          "name": "Noah Kim",
+          "title": "Ingénieur Logiciel @ Meta",
+          "lastMessage": "Hôtel réservé",
+          "messages": {
+            "msg1": { "text": "Même hôtel que la dernière fois ?", "incoming": true },
+            "msg2": { "text": "Oui, chambre 512", "incoming": false },
+            "msg3": { "text": "Je serai là à 20h", "incoming": true },
+            "msg4": { "text": "Hôtel réservé", "incoming": false }
+          }
+        },
+        "isabella_wu": {
+          "name": "Isabella Wu",
+          "title": "Designer Produit @ Airbnb",
+          "lastMessage": "Personne ne saura",
+          "messages": {
+            "msg1": { "text": "Il faut être plus prudents", "incoming": true },
+            "msg2": { "text": "Je sais, mais je ne peux pas arrêter", "incoming": false },
+            "msg3": { "text": "Pareil, juste une fois de plus", "incoming": true },
+            "msg4": { "text": "Personne ne saura", "incoming": false }
+          }
+        },
+        "ethan_zhang": {
+          "name": "Ethan Zhang",
+          "title": "Ingénieur ML @ OpenAI",
+          "lastMessage": "Tu es mon secret",
+          "messages": {
+            "msg1": { "text": "J'ai dit à ma copine que je travaillais tard", "incoming": true },
+            "msg2": { "text": "J'ai dit la même chose à mon copain", "incoming": false },
+            "msg3": { "text": "C'est tellement mal", "incoming": true },
+            "msg4": { "text": "Mais ça semble si juste. Tu es mon secret", "incoming": false }
+          }
+        }
+      }
+    }
 }

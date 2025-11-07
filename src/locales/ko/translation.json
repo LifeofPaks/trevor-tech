@@ -2167,5 +2167,177 @@
         }
       }
     }
+  },
+  "dmlink": {
+    "header": {
+      "title": "LinkedIn"
+    },
+    "tabs": {
+      "chat": "메시지",
+      "connections": "연결",
+      "aria_label": "LinkedIn 내비게이션 탭",
+      "chat_aria": "메시지 목록 보기",
+      "connections_aria": "연결 목록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "LinkedIn 메시지 목록",
+      "item_aria": "{name}과의 채팅 선택",
+      "detail_aria": "{name}의 채팅 세부 정보"
+    },
+    "connections": {
+      "list_aria": "LinkedIn 연결 목록",
+      "item_aria": "연결 {name} 선택",
+      "detail_aria": "{name}의 연결 세부 정보",
+      "email": "이메일",
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Meta 소프트웨어 엔지니어",
+        "email": "noah@meta.com"
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnb 제품 디자이너",
+        "email": "isabella@airbnb.com"
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI 머신 러닝 엔지니어",
+        "email": "ethan@openai.com"
+      },
+      "zoe_park": {
+        "name": "Zoe Park",
+        "title": "TikTok 콘텐츠 전략가",
+        "email": "zoe@tiktok.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "title": "AWS DevOps",
+        "email": "carter@amazon.com"
+      },
+      "grace_liu": {
+        "name": "Grace Liu",
+        "title": "Adobe 브랜드 디자이너",
+        "email": "grace@adobe.com"
+      },
+      "dylan_chen": {
+        "name": "Dylan Chen",
+        "title": "Shopify 풀스택 개발자",
+        "email": "dylan@shopify.com"
+      },
+      "ava_singh": {
+        "name": "Ava Singh",
+        "title": "Spotify UX 연구원",
+        "email": "ava@spotify.com"
+      }
+    },
+    "chats": {
+      "emma_chen": {
+        "name": "Emma Chen",
+        "title": "Figma UX 디자이너",
+        "lastMessage": "벌써 네가 그리워...",
+        "messages": {
+          "msg1": { "text": "어젯밤 정말 대단했어", "incoming": true },
+          "msg2": { "text": "그 생각을 멈출 수가 없어", "incoming": false },
+          "msg3": {
+            "text": "나도... 더 오래 있었으면 좋았을 텐데",
+            "incoming": true
+          },
+          "msg4": { "text": "벌써 네가 그리워...", "incoming": false }
+        }
+      },
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "title": "Stripe 프론트엔드 엔지니어",
+        "lastMessage": "이 채팅 삭제해",
+        "messages": {
+          "msg1": {
+            "text": "그 드레스 입은 너 정말 멋졌어",
+            "incoming": true
+          },
+          "msg2": { "text": "그만해, 누가 볼지도 몰라", "incoming": false },
+          "msg3": { "text": "상관없어, 널 원해", "incoming": true },
+          "msg4": { "text": "이 채팅 삭제해", "incoming": false }
+        }
+      },
+      "sofia_patel": {
+        "name": "Sofia Patel",
+        "title": "Notion 제품 매니저",
+        "lastMessage": "그가 자고 있어",
+        "messages": {
+          "msg1": { "text": "통화 가능해?", "incoming": true },
+          "msg2": { "text": "응, 그가 자고 있어", "incoming": false },
+          "msg3": { "text": "대신 너와 함께 있고 싶어", "incoming": true },
+          "msg4": { "text": "나도. 이건 고문이야", "incoming": false }
+        }
+      },
+      "liam_brooks": {
+        "name": "Liam Brooks",
+        "title": "Google 데이터 분석가",
+        "lastMessage": "사진 보내줘",
+        "messages": {
+          "msg1": { "text": "뭐 입고 있어?", "incoming": true },
+          "msg2": { "text": "너가 안 본 건 없지", "incoming": false },
+          "msg3": { "text": "사진 보내줘", "incoming": true },
+          "msg4": { "text": "10초 후 삭제할게...", "incoming": false }
+        }
+      },
+      "maya_kim": {
+        "name": "Maya Kim",
+        "title": "Canva 성장 마케팅",
+        "lastMessage": "사랑해",
+        "messages": {
+          "msg1": { "text": "더 이상 이렇게 못해", "incoming": true },
+          "msg2": { "text": "뭐를?", "incoming": false },
+          "msg3": {
+            "text": "너를 사랑하지 않는 척하는 거",
+            "incoming": true
+          },
+          "msg4": { "text": "사랑해", "incoming": false }
+        }
+      },
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Meta 소프트웨어 엔지니어",
+        "lastMessage": "호텔 예약했어",
+        "messages": {
+          "msg1": { "text": "지난번 그 호텔?", "incoming": true },
+          "msg2": { "text": "응, 512호실", "incoming": false },
+          "msg3": { "text": "8시에 거기 있을게", "incoming": true },
+          "msg4": { "text": "호텔 예약했어", "incoming": false }
+        }
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnb 제품 디자이너",
+        "lastMessage": "아무도 모를 거야",
+        "messages": {
+          "msg1": { "text": "더 조심해야 해", "incoming": true },
+          "msg2": { "text": "알아, 근데 멈출 수가 없어", "incoming": false },
+          "msg3": { "text": "나도. 딱 한 번만 더", "incoming": true },
+          "msg4": { "text": "아무도 모를 거야", "incoming": false }
+        }
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI 머신 러닝 엔지니어",
+        "lastMessage": "넌 내 비밀이야",
+        "messages": {
+          "msg1": {
+            "text": "여자친구한테 늦게까지 일한다고 했어",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "나도 남자친구한테 똑같이 말했어",
+            "incoming": false
+          },
+          "msg3": { "text": "이건 정말 잘못된 거야", "incoming": true },
+          "msg4": {
+            "text": "근데 너무 맞는 것 같아. 넌 내 비밀이야",
+            "incoming": false
+          }
+        }
+      }
+    }
   }
 }

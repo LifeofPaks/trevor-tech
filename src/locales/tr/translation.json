@@ -2190,5 +2190,192 @@
         }
       }
     }
+  },
+  "dmlink": {
+    "header": {
+      "title": "LinkedIn"
+    },
+    "tabs": {
+      "chat": "Mesajlar",
+      "connections": "Bağlantılar",
+      "aria_label": "LinkedIn navigasyon sekmeleri",
+      "chat_aria": "Mesaj listesini görüntüle",
+      "connections_aria": "Bağlantı listesini görüntüle"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "LinkedIn mesaj listesi",
+      "item_aria": "{name} ile sohbeti seç",
+      "detail_aria": "{name} için sohbet detayları"
+    },
+    "connections": {
+      "list_aria": "LinkedIn bağlantı listesi",
+      "item_aria": "Bağlantı {name} seç",
+      "detail_aria": "{name} için bağlantı detayları",
+      "email": "E-posta",
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Meta Yazılım Mühendisi",
+        "email": "noah@meta.com"
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnb Ürün Tasarımcısı",
+        "email": "isabella@airbnb.com"
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI Makine Öğrenimi Mühendisi",
+        "email": "ethan@openai.com"
+      },
+      "zoe_park": {
+        "name": "Zoe Park",
+        "title": "TikTok İçerik Stratejisti",
+        "email": "zoe@tiktok.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "title": "AWS DevOps",
+        "email": "carter@amazon.com"
+      },
+      "grace_liu": {
+        "name": "Grace Liu",
+        "title": "Adobe Marka Tasarımcısı",
+        "email": "grace@adobe.com"
+      },
+      "dylan_chen": {
+        "name": "Dylan Chen",
+        "title": "Shopify Fullstack Geliştirici",
+        "email": "dylan@shopify.com"
+      },
+      "ava_singh": {
+        "name": "Ava Singh",
+        "title": "Spotify Kullanıcı Deneyimi Araştırmacısı",
+        "email": "ava@spotify.com"
+      }
+    },
+    "chats": {
+      "emma_chen": {
+        "name": "Emma Chen",
+        "title": "Figma Kullanıcı Deneyimi Tasarımcısı",
+        "lastMessage": "Seni şimdiden özledim...",
+        "messages": {
+          "msg1": { "text": "Dün gece harikaydı", "incoming": true },
+          "msg2": {
+            "text": "Bunu düşünmeyi bırakamıyorum",
+            "incoming": false
+          },
+          "msg3": {
+            "text": "Aynen... keşke daha uzun kalsaydın",
+            "incoming": true
+          },
+          "msg4": { "text": "Seni şimdiden özledim...", "incoming": false }
+        }
+      },
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "title": "Stripe Ön Uç Mühendisi",
+        "lastMessage": "Bu sohbeti sil",
+        "messages": {
+          "msg1": {
+            "text": "O elbisedeki halin inanılmazdı",
+            "incoming": true
+          },
+          "msg2": { "text": "Dur, biri görebilir", "incoming": false },
+          "msg3": {
+            "text": "Umurumda değil, seni istiyorum",
+            "incoming": true
+          },
+          "msg4": { "text": "Bu sohbeti sil", "incoming": false }
+        }
+      },
+      "sofia_patel": {
+        "name": "Sofia Patel",
+        "title": "Notion Ürün Yöneticisi",
+        "lastMessage": "O uyuyor",
+        "messages": {
+          "msg1": { "text": "Konuşabilir misin?", "incoming": true },
+          "msg2": { "text": "Evet, o uyuyor", "incoming": false },
+          "msg3": {
+            "text": "Keşke onun yerine seninle olsaydım",
+            "incoming": true
+          },
+          "msg4": { "text": "Aynen, bu işkence", "incoming": false }
+        }
+      },
+      "liam_brooks": {
+        "name": "Liam Brooks",
+        "title": "Google Veri Analisti",
+        "lastMessage": "Bana bir fotoğraf gönder",
+        "messages": {
+          "msg1": { "text": "Ne giyiyorsun?", "incoming": true },
+          "msg2": {
+            "text": "Senin görmediğin bir şey değil",
+            "incoming": false
+          },
+          "msg3": { "text": "Bana bir fotoğraf gönder", "incoming": true },
+          "msg4": {
+            "text": "10 saniye sonra siliyorum...",
+            "incoming": false
+          }
+        }
+      },
+      "maya_kim": {
+        "name": "Maya Kim",
+        "title": "Canva Büyüme Pazarlama",
+        "lastMessage": "Seni seviyorum",
+        "messages": {
+          "msg1": { "text": "Bunu artık yapamam", "incoming": true },
+          "msg2": { "text": "Neyi?", "incoming": false },
+          "msg3": {
+            "text": "Seni sevmiyormuş gibi davranmayı",
+            "incoming": true
+          },
+          "msg4": { "text": "Seni seviyorum", "incoming": false }
+        }
+      },
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Meta Yazılım Mühendisi",
+        "lastMessage": "Otel rezervasyonu yapıldı",
+        "messages": {
+          "msg1": { "text": "Geçen seferki otel mi?", "incoming": true },
+          "msg2": { "text": "Evet, 512 numaralı oda", "incoming": false },
+          "msg3": { "text": "8’de orada olacağım", "incoming": true },
+          "msg4": { "text": "Otel rezervasyonu yapıldı", "incoming": false }
+        }
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnb Ürün Tasarımcısı",
+        "lastMessage": "Kimse bilmeyecek",
+        "messages": {
+          "msg1": { "text": "Daha dikkatli olmalıyız", "incoming": true },
+          "msg2": { "text": "Biliyorum, ama duramıyorum", "incoming": false },
+          "msg3": { "text": "Aynen, sadece bir kez daha", "incoming": true },
+          "msg4": { "text": "Kimse bilmeyecek", "incoming": false }
+        }
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI Makine Öğrenimi Mühendisi",
+        "lastMessage": "Sen benim sırrımsın",
+        "messages": {
+          "msg1": {
+            "text": "Kız arkadaşıma geç çalışacağımı söyledim",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Erkek arkadaşıma da aynısını söyledim",
+            "incoming": false
+          },
+          "msg3": { "text": "Bu çok yanlış", "incoming": true },
+          "msg4": {
+            "text": "Ama çok doğru hissettiriyor. Sen benim sırrımsın",
+            "incoming": false
+          }
+        }
+      }
+    }
   }
 }

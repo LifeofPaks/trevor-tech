@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -15,9 +16,8 @@ import {
 } from "@mui/material";
 import { FiMessageSquare, FiUsers, FiMail } from "react-icons/fi";
 import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
-import { RiLinkedinFill } from "react-icons/ri";
-import BindPhone from "../../components/demo/BindPhone";
 import { FaLinkedin } from "react-icons/fa";
+import BindPhone from "../../components/demo/BindPhone";
 
 // LinkedIn Light Mode Theme
 const theme = createTheme({
@@ -65,127 +65,239 @@ const theme = createTheme({
 const chats = [
   {
     id: 1,
-    name: "Emma Chen",
+    nameKey: "dmlink.chats.emma_chen.name",
     avatar: "https://i.pravatar.cc/150?img=27", // young woman
-    title: "UX Designer @ Figma",
-    lastMessage: "I miss you already...",
+    titleKey: "dmlink.chats.emma_chen.title",
+    lastMessageKey: "dmlink.chats.emma_chen.lastMessage",
     time: "2m",
     messages: [
-      { text: "Last night was amazing", time: "00:15", incoming: true },
       {
-        text: "I can't stop thinking about it",
+        textKey: "dmlink.chats.emma_chen.messages.msg1.text",
+        time: "00:15",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.emma_chen.messages.msg2.text",
         time: "00:16",
         incoming: false,
       },
-      { text: "Same... wish you stayed longer", time: "00:18", incoming: true },
-      { text: "I miss you already...", time: "00:20", incoming: false },
+      {
+        textKey: "dmlink.chats.emma_chen.messages.msg3.text",
+        time: "00:18",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.emma_chen.messages.msg4.text",
+        time: "00:20",
+        incoming: false,
+      },
     ],
   },
   {
     id: 2,
-    name: "Alex Rivera",
+    nameKey: "dmlink.chats.alex_rivera.name",
     avatar: "https://i.pravatar.cc/150?img=32", // young man
-    title: "Frontend Engineer @ Stripe",
-    lastMessage: "Delete this chat",
+    titleKey: "dmlink.chats.alex_rivera.title",
+    lastMessageKey: "dmlink.chats.alex_rivera.lastMessage",
     time: "10m",
     messages: [
       {
-        text: "You looked incredible in that dress",
+        textKey: "dmlink.chats.alex_rivera.messages.msg1.text",
         time: "22:30",
         incoming: true,
       },
-      { text: "Stop, someone might see", time: "22:31", incoming: false },
-      { text: "I don't care. I want you", time: "22:32", incoming: true },
-      { text: "Delete this chat", time: "22:33", incoming: false },
+      {
+        textKey: "dmlink.chats.alex_rivera.messages.msg2.text",
+        time: "22:31",
+        incoming: false,
+      },
+      {
+        textKey: "dmlink.chats.alex_rivera.messages.msg3.text",
+        time: "22:32",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.alex_rivera.messages.msg4.text",
+        time: "22:33",
+        incoming: false,
+      },
     ],
   },
   {
     id: 3,
-    name: "Sofia Patel",
+    nameKey: "dmlink.chats.sofia_patel.name",
     avatar: "https://i.pravatar.cc/150?img=25", // young woman
-    title: "Product Manager @ Notion",
-    lastMessage: "He's asleep",
+    titleKey: "dmlink.chats.sofia_patel.title",
+    lastMessageKey: "dmlink.chats.sofia_patel.lastMessage",
     time: "1h",
     messages: [
-      { text: "Can you talk?", time: "23:45", incoming: true },
-      { text: "Yes, he's asleep", time: "23:46", incoming: false },
-      { text: "I wish I was with you instead", time: "23:47", incoming: true },
-      { text: "Same. This is torture", time: "23:48", incoming: false },
+      {
+        textKey: "dmlink.chats.sofia_patel.messages.msg1.text",
+        time: "23:45",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.sofia_patel.messages.msg2.text",
+        time: "23:46",
+        incoming: false,
+      },
+      {
+        textKey: "dmlink.chats.sofia_patel.messages.msg3.text",
+        time: "23:47",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.sofia_patel.messages.msg4.text",
+        time: "23:48",
+        incoming: false,
+      },
     ],
   },
   {
     id: 4,
-    name: "Liam Brooks",
+    nameKey: "dmlink.chats.liam_brooks.name",
     avatar: "https://i.pravatar.cc/150?img=30", // young man
-    title: "Data Analyst @ Google",
-    lastMessage: "Send me a pic",
+    titleKey: "dmlink.chats.liam_brooks.title",
+    lastMessageKey: "dmlink.chats.liam_brooks.lastMessage",
     time: "3h",
     messages: [
-      { text: "What are you wearing?", time: "21:00", incoming: true },
-      { text: "Nothing you haven't seen", time: "21:01", incoming: false },
-      { text: "Send me a pic", time: "21:02", incoming: true },
-      { text: "Deleting in 10...", time: "21:03", incoming: false },
+      {
+        textKey: "dmlink.chats.liam_brooks.messages.msg1.text",
+        time: "21:00",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.liam_brooks.messages.msg2.text",
+        time: "21:01",
+        incoming: false,
+      },
+      {
+        textKey: "dmlink.chats.liam_brooks.messages.msg3.text",
+        time: "21:02",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.liam_brooks.messages.msg4.text",
+        time: "21:03",
+        incoming: false,
+      },
     ],
   },
   {
     id: 5,
-    name: "Maya Kim",
+    nameKey: "dmlink.chats.maya_kim.name",
     avatar: "https://i.pravatar.cc/150?img=26", // young woman
-    title: "Growth Marketer @ Canva",
-    lastMessage: "I love you",
+    titleKey: "dmlink.chats.maya_kim.title",
+    lastMessageKey: "dmlink.chats.maya_kim.lastMessage",
     time: "6h",
     messages: [
-      { text: "I can't do this anymore", time: "02:10", incoming: true },
-      { text: "Do what?", time: "02:11", incoming: false },
-      { text: "Pretend I don't love you", time: "02:12", incoming: true },
-      { text: "I love you", time: "02:13", incoming: false },
+      {
+        textKey: "dmlink.chats.maya_kim.messages.msg1.text",
+        time: "02:10",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.maya_kim.messages.msg2.text",
+        time: "02:11",
+        incoming: false,
+      },
+      {
+        textKey: "dmlink.chats.maya_kim.messages.msg3.text",
+        time: "02:12",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.maya_kim.messages.msg4.text",
+        time: "02:13",
+        incoming: false,
+      },
     ],
   },
   {
     id: 6,
-    name: "Noah Kim",
+    nameKey: "dmlink.chats.noah_kim.name",
     avatar: "https://i.pravatar.cc/150?img=31", // young man
-    title: "Software Engineer @ Meta",
-    lastMessage: "Hotel booked",
+    titleKey: "dmlink.chats.noah_kim.title",
+    lastMessageKey: "dmlink.chats.noah_kim.lastMessage",
     time: "1d",
     messages: [
-      { text: "Same hotel as last time?", time: "18:00", incoming: true },
-      { text: "Yes. Room 512", time: "18:01", incoming: false },
-      { text: "I'll be there at 8", time: "18:02", incoming: true },
-      { text: "Hotel booked", time: "18:03", incoming: false },
+      {
+        textKey: "dmlink.chats.noah_kim.messages.msg1.text",
+        time: "18:00",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.noah_kim.messages.msg2.text",
+        time: "18:01",
+        incoming: false,
+      },
+      {
+        textKey: "dmlink.chats.noah_kim.messages.msg3.text",
+        time: "18:02",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.noah_kim.messages.msg4.text",
+        time: "18:03",
+        incoming: false,
+      },
     ],
   },
   {
     id: 7,
-    name: "Isabella Wu",
+    nameKey: "dmlink.chats.isabella_wu.name",
     avatar: "https://i.pravatar.cc/150?img=28", // young woman
-    title: "Product Designer @ Airbnb",
-    lastMessage: "No one will know",
+    titleKey: "dmlink.chats.isabella_wu.title",
+    lastMessageKey: "dmlink.chats.isabella_wu.lastMessage",
     time: "2d",
     messages: [
-      { text: "We have to be more careful", time: "20:30", incoming: true },
-      { text: "I know. But I can't stop", time: "20:31", incoming: false },
-      { text: "Same. Just one more time", time: "20:32", incoming: true },
-      { text: "No one will know", time: "20:33", incoming: false },
+      {
+        textKey: "dmlink.chats.isabella_wu.messages.msg1.text",
+        time: "20:30",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.isabella_wu.messages.msg2.text",
+        time: "20:31",
+        incoming: false,
+      },
+      {
+        textKey: "dmlink.chats.isabella_wu.messages.msg3.text",
+        time: "20:32",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.isabella_wu.messages.msg4.text",
+        time: "20:33",
+        incoming: false,
+      },
     ],
   },
   {
     id: 8,
-    name: "Ethan Zhang",
+    nameKey: "dmlink.chats.ethan_zhang.name",
     avatar: "https://i.pravatar.cc/150?img=33", // young man
-    title: "ML Engineer @ OpenAI",
-    lastMessage: "You're my secret",
+    titleKey: "dmlink.chats.ethan_zhang.title",
+    lastMessageKey: "dmlink.chats.ethan_zhang.lastMessage",
     time: "3d",
     messages: [
       {
-        text: "I told my girlfriend I was working late",
+        textKey: "dmlink.chats.ethan_zhang.messages.msg1.text",
         time: "23:00",
         incoming: true,
       },
-      { text: "I told my boyfriend the same", time: "23:01", incoming: false },
-      { text: "This is so wrong", time: "23:02", incoming: true },
       {
-        text: "But it feels so right. You're my secret",
+        textKey: "dmlink.chats.ethan_zhang.messages.msg2.text",
+        time: "23:01",
+        incoming: false,
+      },
+      {
+        textKey: "dmlink.chats.ethan_zhang.messages.msg3.text",
+        time: "23:02",
+        incoming: true,
+      },
+      {
+        textKey: "dmlink.chats.ethan_zhang.messages.msg4.text",
         time: "23:03",
         incoming: false,
       },
@@ -197,63 +309,64 @@ const chats = [
 const connections = [
   {
     id: 1,
-    name: "Noah Kim",
+    nameKey: "dmlink.connections.noah_kim.name",
     avatar: "https://i.pravatar.cc/150?img=31",
-    title: "Software Engineer @ Meta",
-    email: "noah@meta.com",
+    titleKey: "dmlink.connections.noah_kim.title",
+    emailKey: "dmlink.connections.noah_kim.email",
   },
   {
     id: 2,
-    name: "Isabella Wu",
+    nameKey: "dmlink.connections.isabella_wu.name",
     avatar: "https://i.pravatar.cc/150?img=28",
-    title: "Product Designer @ Airbnb",
-    email: "isabella@airbnb.com",
+    titleKey: "dmlink.connections.isabella_wu.title",
+    emailKey: "dmlink.connections.isabella_wu.email",
   },
   {
     id: 3,
-    name: "Ethan Zhang",
+    nameKey: "dmlink.connections.ethan_zhang.name",
     avatar: "https://i.pravatar.cc/150?img=33",
-    title: "ML Engineer @ OpenAI",
-    email: "ethan@openai.com",
+    titleKey: "dmlink.connections.ethan_zhang.title",
+    emailKey: "dmlink.connections.ethan_zhang.email",
   },
   {
     id: 4,
-    name: "Zoe Park",
+    nameKey: "dmlink.connections.zoe_park.name",
     avatar: "https://i.pravatar.cc/150?img=29",
-    title: "Content Strategist @ TikTok",
-    email: "zoe@tiktok.com",
+    titleKey: "dmlink.connections.zoe_park.title",
+    emailKey: "dmlink.connections.zoe_park.email",
   },
   {
     id: 5,
-    name: "Carter Lee",
+    nameKey: "dmlink.connections.carter_lee.name",
     avatar: "https://i.pravatar.cc/150?img=34",
-    title: "DevOps @ AWS",
-    email: "carter@amazon.com",
+    titleKey: "dmlink.connections.carter_lee.title",
+    emailKey: "dmlink.connections.carter_lee.email",
   },
   {
     id: 6,
-    name: "Grace Liu",
+    nameKey: "dmlink.connections.grace_liu.name",
     avatar: "https://i.pravatar.cc/150?img=23",
-    title: "Brand Designer @ Adobe",
-    email: "grace@adobe.com",
+    titleKey: "dmlink.connections.grace_liu.title",
+    emailKey: "dmlink.connections.grace_liu.email",
   },
   {
     id: 7,
-    name: "Dylan Chen",
+    nameKey: "dmlink.connections.dylan_chen.name",
     avatar: "https://i.pravatar.cc/150?img=35",
-    title: "Fullstack @ Shopify",
-    email: "dylan@shopify.com",
+    titleKey: "dmlink.connections.dylan_chen.title",
+    emailKey: "dmlink.connections.dylan_chen.email",
   },
   {
     id: 8,
-    name: "Ava Singh",
+    nameKey: "dmlink.connections.ava_singh.name",
     avatar: "https://i.pravatar.cc/150?img=24",
-    title: "UX Researcher @ Spotify",
-    email: "ava@spotify.com",
+    titleKey: "dmlink.connections.ava_singh.title",
+    emailKey: "dmlink.connections.ava_singh.email",
   },
 ];
 
 const LinkedInPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -269,7 +382,7 @@ const LinkedInPage = () => {
   const groupConnectionsByLetter = () => {
     const grouped = {};
     connections.forEach((conn) => {
-      const letter = conn.name[0].toUpperCase();
+      const letter = t(conn.nameKey)[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(conn);
     });
@@ -284,7 +397,7 @@ const LinkedInPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              LinkedIn
+              {t("dmlink.header.title")}{" "}
               <FaLinkedin className="text-[#0A66C2]" />
             </h1>
           </div>
@@ -304,6 +417,7 @@ const LinkedInPage = () => {
             <Tabs
               value={tab}
               onChange={(e, v) => setTab(v)}
+              aria-label={t("dmlink.tabs.aria_label")}
               sx={{
                 mb: 3,
                 "& .MuiTabs-indicator": {
@@ -315,14 +429,16 @@ const LinkedInPage = () => {
               <Tab
                 icon={<FaLinkedin />}
                 iconPosition="start"
-                label={isMobile ? "" : "Messages"}
+                label={isMobile ? "" : t("dmlink.tabs.chat")}
                 value="chat"
+                aria-label={t("dmlink.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Connections"}
+                label={isMobile ? "" : t("dmlink.tabs.connections")}
                 value="connections"
+                aria-label={t("dmlink.tabs.connections_aria")}
               />
             </Tabs>
           )}
@@ -330,7 +446,11 @@ const LinkedInPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmlink.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -366,7 +486,7 @@ const LinkedInPage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmlink.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -376,6 +496,9 @@ const LinkedInPage = () => {
                         "&:hover": { bgcolor: "#f8f9fa" },
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmlink.chat.item_aria", {
+                        name: t(chat.nameKey),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -386,7 +509,7 @@ const LinkedInPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {chat.name}
+                            {t(chat.nameKey)}
                           </Typography>
                           <Typography
                             sx={{
@@ -398,7 +521,7 @@ const LinkedInPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.title}
+                            {t(chat.titleKey)}
                           </Typography>
                           <Typography
                             sx={{
@@ -409,7 +532,7 @@ const LinkedInPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(chat.lastMessageKey)}
                           </Typography>
                         </Box>
                         <Typography
@@ -431,6 +554,7 @@ const LinkedInPage = () => {
                     maxHeight: "70vh",
                     overflowY: "auto",
                   }}
+                  aria-label={t("dmlink.connections.list_aria")}
                 >
                   {Object.keys(groupConnectionsByLetter())
                     .sort()
@@ -456,6 +580,9 @@ const LinkedInPage = () => {
                               "&:hover": { bgcolor: "#f8f9fa" },
                             }}
                             onClick={() => setSelectedConnection(conn)}
+                            aria-label={t("dmlink.connections.item_aria", {
+                              name: t(conn.nameKey),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -473,7 +600,7 @@ const LinkedInPage = () => {
                                     color: "text.primary",
                                   }}
                                 >
-                                  {conn.name}
+                                  {t(conn.nameKey)}
                                 </Typography>
                                 <Typography
                                   sx={{
@@ -482,7 +609,7 @@ const LinkedInPage = () => {
                                     fontWeight: 500,
                                   }}
                                 >
-                                  {conn.title}
+                                  {t(conn.titleKey)}
                                 </Typography>
                               </Box>
                             </Stack>
@@ -513,7 +640,12 @@ const LinkedInPage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmlink.chat.detail_aria", {
+                      name: t(selectedChat.nameKey),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -524,12 +656,12 @@ const LinkedInPage = () => {
                           variant="h5"
                           sx={{ fontWeight: 700, color: "text.primary" }}
                         >
-                          {selectedChat.name}
+                          {t(selectedChat.nameKey)}
                         </Typography>
                         <Typography
                           sx={{ color: "#0A66C2", fontSize: "0.9375rem" }}
                         >
-                          {selectedChat.title}
+                          {t(selectedChat.titleKey)}
                         </Typography>
                       </Box>
                     </Stack>
@@ -559,7 +691,7 @@ const LinkedInPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.9375rem" }}>
-                              {msg.text}
+                              {t(msg.textKey)}
                             </Typography>
                             <Typography
                               sx={{
@@ -582,7 +714,13 @@ const LinkedInPage = () => {
 
                 {/* Connection Detail */}
                 {selectedConnection && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmlink.connections.detail_aria", {
+                      name: t(selectedConnection.nameKey),
+                    })}
+                  >
                     <Avatar
                       src={selectedConnection.avatar}
                       sx={{ width: 140, height: 140 }}
@@ -592,16 +730,16 @@ const LinkedInPage = () => {
                         variant="h4"
                         sx={{ fontWeight: 700, color: "text.primary" }}
                       >
-                        {selectedConnection.name}
+                        {t(selectedConnection.nameKey)}
                       </Typography>
                       <Typography
                         sx={{ color: "#0A66C2", fontSize: "1rem", mt: 1 }}
                       >
-                        {selectedConnection.title}
+                        {t(selectedConnection.titleKey)}
                       </Typography>
                     </Box>
 
-                    {selectedConnection.email && (
+                    {selectedConnection.emailKey && (
                       <Paper
                         elevation={0}
                         sx={{
@@ -629,12 +767,12 @@ const LinkedInPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#666666" }}
                           >
-                            Email
+                            {t("dmlink.connections.email")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "text.primary" }}
                           >
-                            {selectedConnection.email}
+                            {t(selectedConnection.emailKey)}
                           </Typography>
                         </Box>
                       </Paper>
