@@ -3873,5 +3873,154 @@
         "message4": "Ich habe für dich gelogen"
       }
     }
+  },
+  "dmskype": {
+    "header": { "title": "Skype" },
+    "tabs": {
+      "chat": "Chats",
+      "contacts": "Kontakte",
+      "calls": "Anrufe",
+      "aria_label": "Skype-Navigationsregister",
+      "chat_aria": "Chats anzeigen",
+      "contacts_aria": "Kontakte anzeigen",
+      "calls_aria": "Anrufprotokoll anzeigen"
+    },
+    "back_button_aria": "Zurück zur Liste",
+    "chat": {
+      "list_aria": "Chatliste",
+      "item_aria": "Chat mit {{name}}",
+      "detail_aria": "Chatdetails für {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Telefon",
+      "email_label": "E-Mail",
+      "list_aria": "Kontaktliste",
+      "item_aria": "Kontakt {{name}}",
+      "detail_aria": "Kontaktdetails für {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Anrufprotokollliste",
+      "item_aria": "Anrufprotokoll für {{name}}",
+      "detail_aria": "Anrufdetails für {{name}}",
+      "types": {
+        "outgoing": "Ausgehend",
+        "incoming": "Eingehend",
+        "missed": "Verpasst"
+      }
+    },
+    "chats": {
+      "marcus_hale": {
+        "name": "Marcus Hale",
+        "lastMessage": "Ich habe meine Uhr bei dir vergessen",
+        "message1": "Bist du noch wach?",
+        "message2": "Ja... kann nicht schlafen",
+        "message3": "Ich habe meine Uhr bei dir vergessen"
+      },
+      "nico_rivera": {
+        "name": "Nico Rivera",
+        "lastMessage": "Sie weiß nichts",
+        "message1": "Das war riskant",
+        "message2": "Aber wir haben es geschafft",
+        "message3": "Sie weiß nichts"
+      },
+      "eli_grant": {
+        "name": "Eli Grant",
+        "lastMessage": "Schick das Bild nochmal",
+        "message1": "Hast du es gelöscht?",
+        "message2": "Musste ich. Zu riskant",
+        "message3": "Schick das Bild nochmal"
+      },
+      "leo_pierce": {
+        "name": "Leo Pierce",
+        "lastMessage": "Ich bin in deinem Zimmer",
+        "message1": "Bist du zu Hause?",
+        "message2": "Sie schläft. Tür ist offen",
+        "message3": "Ich bin in deinem Zimmer"
+      },
+      "owen_blake": {
+        "name": "Owen Blake",
+        "lastMessage": "Ich bin süchtig nach dir",
+        "message1": "Kann nicht aufhören, an dich zu denken",
+        "message2": "Gleichfalls. Jede Sekunde",
+        "message3": "Ich bin süchtig nach dir"
+      },
+      "finn_cole": {
+        "name": "Finn Cole",
+        "lastMessage": "Habe ihr gesagt, ich bin in einem Anruf",
+        "message1": "Wo bist du?",
+        "message2": "Arbeitsanruf. Kann nicht sprechen",
+        "message3": "Lügner",
+        "message4": "Habe ihr gesagt, ich bin in einem Anruf"
+      },
+      "theo_shaw": {
+        "name": "Theo Shaw",
+        "lastMessage": "Das darf nicht weitergehen",
+        "message1": "Wir sagten, das letzte Mal war das letzte",
+        "message2": "Ich weiß",
+        "message3": "Warum bin ich dann hier?",
+        "message4": "Das darf nicht weitergehen"
+      },
+      "zane_knox": {
+        "name": "Zane Knox",
+        "lastMessage": "Ich träume jede Nacht von dir",
+        "message1": "Schläfst du?",
+        "message2": "Nein. Du?",
+        "message3": "Denke an dich",
+        "message4": "Ich träume jede Nacht von dir"
+      },
+      "jett_miles": {
+        "name": "Jett Miles",
+        "lastMessage": "Lösche das nach dem Lesen",
+        "message1": "Kann die letzte Nacht nicht vergessen",
+        "message2": "Die Dinge, die du gemacht hast...",
+        "message3": "Pssst. Nicht schreiben",
+        "message4": "Lösche das nach dem Lesen"
+      },
+      "kade_vance": {
+        "name": "Kade Vance",
+        "lastMessage": "Ich verliebe mich in dich",
+        "message1": "Das wird ernst",
+        "message2": "Ich weiß",
+        "message3": "Aber ich will nicht aufhören",
+        "message4": "Ich verliebe mich in dich"
+      },
+      "rhett_stone": {
+        "name": "Rhett Stone",
+        "lastMessage": "Dein Duft ist an meiner Jacke",
+        "message1": "Ich kann dich immer noch riechen",
+        "message2": "Gut",
+        "message3": "Dein Duft ist an meiner Jacke"
+      },
+      "cruz_reid": {
+        "name": "Cruz Reid",
+        "lastMessage": "Ich habe für dich gelogen",
+        "message1": "Sie fragte, wo ich war",
+        "message2": "Was hast du gesagt?",
+        "message3": "Bei dir",
+        "message4": "Ich habe für dich gelogen"
+      }
+    },
+    "contacts_list": {
+      "marcus_hale": { "name": "Marcus Hale" },
+      "nico_rivera": { "name": "Nico Rivera" },
+      "eli_grant": { "name": "Eli Grant" },
+      "leo_pierce": { "name": "Leo Pierce" },
+      "owen_blake": { "name": "Owen Blake" },
+      "finn_cole": { "name": "Finn Cole" },
+      "theo_shaw": { "name": "Theo Shaw" },
+      "zane_knox": { "name": "Zane Knox" },
+      "jett_miles": { "name": "Jett Miles" },
+      "kade_vance": { "name": "Kade Vance" },
+      "rhett_stone": { "name": "Rhett Stone" },
+      "cruz_reid": { "name": "Cruz Reid" }
+    },
+    "call_logs": {
+      "marcus_hale": { "name": "Marcus Hale" },
+      "nico_rivera": { "name": "Nico Rivera" },
+      "eli_grant": { "name": "Eli Grant" },
+      "leo_pierce": { "name": "Leo Pierce" },
+      "owen_blake": { "name": "Owen Blake" },
+      "rhett_stone": { "name": "Rhett Stone" }
+    }
   }
 }

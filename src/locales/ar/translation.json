@@ -3736,5 +3736,154 @@
         "message4": "كذبت عليها من أجلك"
       }
     }
+  },
+  "dmskype": {
+    "header": { "title": "سكايب" },
+    "tabs": {
+      "chat": "المحادثات",
+      "contacts": "جهات الاتصال",
+      "calls": "المكالمات",
+      "aria_label": "علامات تبويب التنقل في سكايب",
+      "chat_aria": "إظهار المحادثات",
+      "contacts_aria": "إظهار جهات الاتصال",
+      "calls_aria": "إظهار سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة المحادثات",
+      "item_aria": "محادثة مع {{name}}",
+      "detail_aria": "تفاصيل المحادثة لـ {{name}}"
+    },
+    "contacts": {
+      "phone_label": "الهاتف",
+      "email_label": "البريد الإلكتروني",
+      "list_aria": "قائمة جهات الاتصال",
+      "item_aria": "جهة اتصال {{name}}",
+      "detail_aria": "تفاصيل جهة الاتصال لـ {{name}}"
+    },
+    "call_log": {
+      "list_aria": "قائمة سجل المكالمات",
+      "item_aria": "سجل المكالمات لـ {{name}}",
+      "detail_aria": "تفاصيل المكالمة لـ {{name}}",
+      "types": {
+        "outgoing": "صادرة",
+        "incoming": "واردة",
+        "missed": "مفقودة"
+      }
+    },
+    "contacts_list": {
+      "marcus_hale": { "name": "ماركوس هيل" },
+      "nico_rivera": { "name": "نيكو ريفيرا" },
+      "eli_grant": { "name": "إيلي غرانت" },
+      "leo_pierce": { "name": "ليو بيرس" },
+      "owen_blake": { "name": "أوين بليك" },
+      "finn_cole": { "name": "فين كول" },
+      "theo_shaw": { "name": "ثيو شو" },
+      "zane_knox": { "name": "زين نوكس" },
+      "jett_miles": { "name": "جيت مايلز" },
+      "kade_vance": { "name": "كيد فانس" },
+      "rhett_stone": { "name": "ريت ستون" },
+      "cruz_reid": { "name": "كروز ريد" }
+    },
+    "call_logs": {
+      "marcus_hale": { "name": "ماركوس هيل" },
+      "nico_rivera": { "name": "نيكو ريفيرا" },
+      "eli_grant": { "name": "إيلي غرانت" },
+      "leo_pierce": { "name": "ليو بيرس" },
+      "owen_blake": { "name": "أوين بليك" },
+      "rhett_stone": { "name": "ريت ستون" }
+    },
+    "chats": {
+      "marcus_hale": {
+        "name": "ماركوس هيل",
+        "lastMessage": "تركت ساعتي في مكانك",
+        "message1": "هل ما زلت متصلًا؟",
+        "message2": "نعم... لا أستطيع النوم",
+        "message3": "تركت ساعتي في مكانك"
+      },
+      "nico_rivera": {
+        "name": "نيكو ريفيرا",
+        "lastMessage": "هي لا تعرف شيئًا",
+        "message1": "كان ذلك محفوفًا بالمخاطر",
+        "message2": "لكننا نجحنا",
+        "message3": "هي لا تعرف شيئًا"
+      },
+      "eli_grant": {
+        "name": "إيلي غرانت",
+        "lastMessage": "أرسل الصورة مرة أخرى",
+        "message1": "هل حذفتها؟",
+        "message2": "كان عليّ. خطير جدًا",
+        "message3": "أرسل الصورة مرة أخرى"
+      },
+      "leo_pierce": {
+        "name": "ليو بيرس",
+        "lastMessage": "أنا في غرفتك",
+        "message1": "هل أنت في البيت؟",
+        "message2": "هي نائمة. الباب مفتوح",
+        "message3": "أنا في غرفتك"
+      },
+      "owen_blake": {
+        "name": "أوين بليك",
+        "lastMessage": "أنا مدمن عليك",
+        "message1": "لا أستطيع التوقف عن التفكير بك",
+        "message2": "نفس الشيء. كل ثانية",
+        "message3": "أنا مدمن عليك"
+      },
+      "finn_cole": {
+        "name": "فين كول",
+        "lastMessage": "قلت لها إنني في مكالمة",
+        "message1": "أين أنت؟",
+        "message2": "مكالمة عمل. لا أستطيع التحدث",
+        "message3": "كاذب",
+        "message4": "قلت لها إنني في مكالمة"
+      },
+      "theo_shaw": {
+        "name": "ثيو شو",
+        "lastMessage": "لا يمكن أن يستمر هذا",
+        "message1": "قلنا إن المرة الأخيرة كانت الأخيرة",
+        "message2": "أعلم",
+        "message3": "إذن لماذا أنا هنا؟",
+        "message4": "لا يمكن أن يستمر هذا"
+      },
+      "zane_knox": {
+        "name": "زين نوكس",
+        "lastMessage": "أحلم بك كل ليلة",
+        "message1": "هل أنت نائم؟",
+        "message2": "لا. وأنت؟",
+        "message3": "أفكر بك",
+        "message4": "أحلم بك كل ليلة"
+      },
+      "jett_miles": {
+        "name": "جيت مايلز",
+        "lastMessage": "احذف بعد القراءة",
+        "message1": "لا أستطيع التوقف عن إعادة تشغيل ليلة البارحة",
+        "message2": "تلك الأشياء التي فعلتها...",
+        "message3": "صه. لا تكتبها",
+        "message4": "احذف بعد القراءة"
+      },
+      "kade_vance": {
+        "name": "كيد فانس",
+        "lastMessage": "أنا أقع في حبك",
+        "message1": "هذا يصبح جديًا",
+        "message2": "أعلم",
+        "message3": "لكن لا أريد التوقف",
+        "message4": "أنا أقع في حبك"
+      },
+      "rhett_stone": {
+        "name": "ريت ستون",
+        "lastMessage": "رائحتك على جاكيتي",
+        "message1": "ما زلت أشم رائحتك",
+        "message2": "جيد",
+        "message3": "رائحتك على جاكيتي"
+      },
+      "cruz_reid": {
+        "name": "كروز ريد",
+        "lastMessage": "كذبت عليها من أجلك",
+        "message1": "سألتني أين كنت",
+        "message2": "ماذا قلت؟",
+        "message3": "معك",
+        "message4": "كذبت عليها من أجلك"
+      }
+    }
   }
 }

@@ -3774,5 +3774,154 @@
         "message4": "Mentí por ti"
       }
     }
+  },
+  "dmskype": {
+    "header": { "title": "Skype" },
+    "tabs": {
+      "chat": "Chats",
+      "contacts": "Contactos",
+      "calls": "Llamadas",
+      "aria_label": "Pestañas de navegación de Skype",
+      "chat_aria": "Mostrar chats",
+      "contacts_aria": "Mostrar contactos",
+      "calls_aria": "Mostrar registro de llamadas"
+    },
+    "back_button_aria": "Volver a la lista",
+    "chat": {
+      "list_aria": "Lista de chats",
+      "item_aria": "Chat con {{name}}",
+      "detail_aria": "Detalles del chat para {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Teléfono",
+      "email_label": "Correo electrónico",
+      "list_aria": "Lista de contactos",
+      "item_aria": "Contacto {{name}}",
+      "detail_aria": "Detalles del contacto para {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Lista de registro de llamadas",
+      "item_aria": "Registro de llamadas para {{name}}",
+      "detail_aria": "Detalles de la llamada para {{name}}",
+      "types": {
+        "outgoing": "Saliente",
+        "incoming": "Entrante",
+        "missed": "Perdida"
+      }
+    },
+    "chats": {
+      "marcus_hale": {
+        "name": "Marcus Hale",
+        "lastMessage": "Dejé mi reloj en tu casa",
+        "message1": "¿Sigues despierto?",
+        "message2": "Sí... no puedo dormir",
+        "message3": "Dejé mi reloj en tu casa"
+      },
+      "nico_rivera": {
+        "name": "Nico Rivera",
+        "lastMessage": "Ella no sabe nada",
+        "message1": "Eso fue arriesgado",
+        "message2": "Pero lo logramos",
+        "message3": "Ella no sabe nada"
+      },
+      "eli_grant": {
+        "name": "Eli Grant",
+        "lastMessage": "Envía la foto otra vez",
+        "message1": "¿La borraste?",
+        "message2": "Tuve que hacerlo. Demasiado arriesgado",
+        "message3": "Envía la foto otra vez"
+      },
+      "leo_pierce": {
+        "name": "Leo Pierce",
+        "lastMessage": "Estoy en tu habitación",
+        "message1": "¿Estás en casa?",
+        "message2": "Ella está dormida. La puerta está abierta",
+        "message3": "Estoy en tu habitación"
+      },
+      "owen_blake": {
+        "name": "Owen Blake",
+        "lastMessage": "Estoy adicto a ti",
+        "message1": "No puedo dejar de pensar en ti",
+        "message2": "Lo mismo. Cada segundo",
+        "message3": "Estoy adicto a ti"
+      },
+      "finn_cole": {
+        "name": "Finn Cole",
+        "lastMessage": "Le dije que estoy en una llamada",
+        "message1": "¿Dónde estás?",
+        "message2": "Llamada de trabajo. No puedo hablar",
+        "message3": "Mentiroso",
+        "message4": "Le dije que estoy en una llamada"
+      },
+      "theo_shaw": {
+        "name": "Theo Shaw",
+        "lastMessage": "Esto no puede seguir sucediendo",
+        "message1": "Dijimos que la última vez fue la última",
+        "message2": "Lo sé",
+        "message3": "¿Entonces por qué estoy aquí?",
+        "message4": "Esto no puede seguir sucediendo"
+      },
+      "zane_knox": {
+        "name": "Zane Knox",
+        "lastMessage": "Sueño contigo todas las noches",
+        "message1": "¿Estás dormido?",
+        "message2": "No. ¿Tú?",
+        "message3": "Pensando en ti",
+        "message4": "Sueño contigo todas las noches"
+      },
+      "jett_miles": {
+        "name": "Jett Miles",
+        "lastMessage": "Borra esto después de leerlo",
+        "message1": "No puedo dejar de repetir anoche",
+        "message2": "Las cosas que hiciste...",
+        "message3": "Shh. No lo escribas",
+        "message4": "Borra esto después de leerlo"
+      },
+      "kade_vance": {
+        "name": "Kade Vance",
+        "lastMessage": "Me estoy enamorando de ti",
+        "message1": "Esto se está poniendo serio",
+        "message2": "Lo sé",
+        "message3": "Pero no quiero parar",
+        "message4": "Me estoy enamorando de ti"
+      },
+      "rhett_stone": {
+        "name": "Rhett Stone",
+        "lastMessage": "Tu aroma está en mi chaqueta",
+        "message1": "Todavía puedo olerte",
+        "message2": "Bien",
+        "message3": "Tu aroma está en mi chaqueta"
+      },
+      "cruz_reid": {
+        "name": "Cruz Reid",
+        "lastMessage": "Mentí por ti",
+        "message1": "Ella preguntó dónde estaba",
+        "message2": "¿Qué dijiste?",
+        "message3": "Contigo",
+        "message4": "Mentí por ti"
+      }
+    },
+    "contacts_list": {
+      "marcus_hale": { "name": "Marcus Hale" },
+      "nico_rivera": { "name": "Nico Rivera" },
+      "eli_grant": { "name": "Eli Grant" },
+      "leo_pierce": { "name": "Leo Pierce" },
+      "owen_blake": { "name": "Owen Blake" },
+      "finn_cole": { "name": "Finn Cole" },
+      "theo_shaw": { "name": "Theo Shaw" },
+      "zane_knox": { "name": "Zane Knox" },
+      "jett_miles": { "name": "Jett Miles" },
+      "kade_vance": { "name": "Kade Vance" },
+      "rhett_stone": { "name": "Rhett Stone" },
+      "cruz_reid": { "name": "Cruz Reid" }
+    },
+    "call_logs": {
+      "marcus_hale": { "name": "Marcus Hale" },
+      "nico_rivera": { "name": "Nico Rivera" },
+      "eli_grant": { "name": "Eli Grant" },
+      "leo_pierce": { "name": "Leo Pierce" },
+      "owen_blake": { "name": "Owen Blake" },
+      "rhett_stone": { "name": "Rhett Stone" }
+    }
   }
 }

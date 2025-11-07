@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -70,180 +71,170 @@ const theme = createTheme({
 const chats = [
   {
     id: 1,
-    name: "Marcus Hale",
+    nameKey: "marcus_hale",
     avatar: "https://i.pravatar.cc/150?img=4",
-    lastMessage: "I left my watch at your place",
+    lastMessageKey: "marcus_hale.lastMessage", // Fixed: Removed leading space
     time: "03:45",
     messages: [
-      { text: "You still online?", time: "03:30", incoming: true },
-      { text: "Yeah. Can’t sleep", time: "03:31", incoming: false },
-      { text: "I left my watch at your place", time: "03:45", incoming: false },
+      { textKey: "marcus_hale.message1", time: "03:30", incoming: true },
+      { textKey: "marcus_hale.message2", time: "03:31", incoming: false },
+      { textKey: "marcus_hale.message3", time: "03:45", incoming: false },
     ],
   },
   {
     id: 2,
-    name: "Nico Rivera",
+    nameKey: "nico_rivera",
     avatar: "https://i.pravatar.cc/150?img=5",
-    lastMessage: "She has no clue",
+    lastMessageKey: "nico_rivera.lastMessage",
     time: "02:10",
     messages: [
-      { text: "That was risky", time: "01:55", incoming: true },
-      { text: "But we got away with it", time: "01:56", incoming: false },
-      { text: "She has no clue", time: "02:10", incoming: false },
+      { textKey: "nico_rivera.message1", time: "01:55", incoming: true },
+      { textKey: "nico_rivera.message2", time: "01:56", incoming: false },
+      { textKey: "nico_rivera.message3", time: "02:10", incoming: false },
     ],
   },
   {
     id: 3,
-    name: "Eli Grant",
+    nameKey: "eli_grant",
     avatar: "https://i.pravatar.cc/150?img=6",
-    lastMessage: "Send the pic again",
+    lastMessageKey: "eli_grant.lastMessage",
     time: "01:20",
     messages: [
-      { text: "You deleted it?", time: "01:05", incoming: true },
-      { text: "Had to. Too dangerous", time: "01:06", incoming: false },
-      { text: "Send the pic again", time: "01:20", incoming: false },
+      { textKey: "eli_grant.message1", time: "01:05", incoming: true },
+      { textKey: "eli_grant.message2", time: "01:06", incoming: false },
+      { textKey: "eli_grant.message3", time: "01:20", incoming: false },
     ],
   },
   {
     id: 4,
-    name: "Leo Pierce",
+    nameKey: "leo_pierce",
     avatar: "https://i.pravatar.cc/150?img=7",
-    lastMessage: "I’m in your room",
+    lastMessageKey: "leo_pierce.lastMessage",
     time: "00:35",
     messages: [
-      { text: "You home?", time: "00:20", incoming: true },
-      { text: "She’s asleep. Door’s open", time: "00:21", incoming: false },
-      { text: "I’m in your room", time: "00:35", incoming: false },
+      { textKey: "leo_pierce.message1", time: "00:20", incoming: true },
+      { textKey: "leo_pierce.message2", time: "00:21", incoming: false },
+      { textKey: "leo_pierce.message3", time: "00:35", incoming: false },
     ],
   },
   {
     id: 5,
-    name: "Owen Blake",
+    nameKey: "owen_blake",
     avatar: "https://i.pravatar.cc/150?img=8",
-    lastMessage: "I’m addicted to you",
+    lastMessageKey: "owen_blake.lastMessage",
     time: "04:00",
     messages: [
-      {
-        text: "I can’t stop thinking about you",
-        time: "03:45",
-        incoming: true,
-      },
-      { text: "Same. Every second", time: "03:46", incoming: false },
-      { text: "I’m addicted to you", time: "04:00", incoming: false },
+      { textKey: "owen_blake.message1", time: "03:45", incoming: true },
+      { textKey: "owen_blake.message2", time: "03:46", incoming: false },
+      { textKey: "owen_blake.message3", time: "04:00", incoming: false },
     ],
   },
   {
     id: 6,
-    name: "Finn Cole",
+    nameKey: "finn_cole",
     avatar: "https://i.pravatar.cc/150?img=9",
-    lastMessage: "I told her I was on a call",
+    lastMessageKey: "finn_cole.lastMessage",
     time: "22:50",
     messages: [
-      { text: "Where are you?", time: "22:30", incoming: true },
-      { text: "Work call. Can’t talk", time: "22:31", incoming: false },
-      { text: "Liar", time: "22:32", incoming: true },
-      { text: "I told her I was on a call", time: "22:50", incoming: false },
+      { textKey: "finn_cole.message1", time: "22:30", incoming: true },
+      { textKey: "finn_cole.message2", time: "22:31", incoming: false },
+      { textKey: "finn_cole.message3", time: "22:32", incoming: true },
+      { textKey: "finn_cole.message4", time: "22:50", incoming: false },
     ],
   },
   {
     id: 7,
-    name: "Theo Shaw",
+    nameKey: "theo_shaw",
     avatar: "https://i.pravatar.cc/150?img=10",
-    lastMessage: "This can’t keep happening",
+    lastMessageKey: "theo_shaw.lastMessage",
     time: "21:15",
     messages: [
-      { text: "We said last time was final", time: "21:00", incoming: true },
-      { text: "I know", time: "21:01", incoming: false },
-      { text: "Then why am I here?", time: "21:02", incoming: true },
-      { text: "This can’t keep happening", time: "21:15", incoming: false },
+      { textKey: "theo_shaw.message1", time: "21:00", incoming: true },
+      { textKey: "theo_shaw.message2", time: "21:01", incoming: false },
+      { textKey: "theo_shaw.message3", time: "21:02", incoming: true },
+      { textKey: "theo_shaw.message4", time: "21:15", incoming: false },
     ],
   },
   {
     id: 8,
-    name: "Zane Knox",
+    nameKey: "zane_knox",
     avatar: "https://i.pravatar.cc/150?img=11",
-    lastMessage: "I dream about you every night",
+    lastMessageKey: "zane_knox.lastMessage",
     time: "05:05",
     messages: [
-      { text: "You sleeping?", time: "04:50", incoming: true },
-      { text: "No. You?", time: "04:51", incoming: false },
-      { text: "Thinking of you", time: "04:52", incoming: true },
-      { text: "I dream about you every night", time: "05:05", incoming: false },
+      { textKey: "zane_knox.message1", time: "04:50", incoming: true },
+      { textKey: "zane_knox.message2", time: "04:51", incoming: false },
+      { textKey: "zane_knox.message3", time: "04:52", incoming: true },
+      { textKey: "zane_knox.message4", time: "05:05", incoming: false },
     ],
   },
   {
     id: 9,
-    name: "Jett Miles",
+    nameKey: "jett_miles",
     avatar: "https://i.pravatar.cc/150?img=12",
-    lastMessage: "Delete after reading",
+    lastMessageKey: "jett_miles.lastMessage",
     time: "02:30",
     messages: [
-      {
-        text: "I can’t stop replaying last night",
-        time: "02:15",
-        incoming: true,
-      },
-      { text: "That thing you did...", time: "02:16", incoming: false },
-      { text: "Shh. Don’t type it", time: "02:17", incoming: true },
-      { text: "Delete after reading", time: "02:30", incoming: false },
+      { textKey: "jett_miles.message1", time: "02:15", incoming: true },
+      { textKey: "jett_miles.message2", time: "02:16", incoming: false },
+      { textKey: "jett_miles.message3", time: "02:17", incoming: true },
+      { textKey: "jett_miles.message4", time: "02:30", incoming: false },
     ],
   },
   {
     id: 10,
-    name: "Kade Vance",
+    nameKey: "kade_vance",
     avatar: "https://i.pravatar.cc/150?img=13",
-    lastMessage: "I’m falling for you",
+    lastMessageKey: "kade_vance.lastMessage",
     time: "01:45",
     messages: [
-      { text: "This is getting serious", time: "01:30", incoming: true },
-      { text: "I know", time: "01:31", incoming: false },
-      { text: "But I don’t want to stop", time: "01:32", incoming: true },
-      { text: "I’m falling for you", time: "01:45", incoming: false },
+      { textKey: "kade_vance.message1", time: "01:30", incoming: true },
+      { textKey: "kade_vance.message2", time: "01:31", incoming: false },
+      { textKey: "kade_vance.message3", time: "01:32", incoming: true },
+      { textKey: "kade_vance.message4", time: "01:45", incoming: false },
     ],
   },
   {
     id: 11,
-    name: "Rhett Stone",
+    nameKey: "rhett_stone",
     avatar: "https://i.pravatar.cc/150?img=14",
-    lastMessage: "Your scent is on my jacket",
+    lastMessageKey: "rhett_stone.lastMessage",
     time: "06:00",
     messages: [
-      { text: "I can still smell you", time: "05:40", incoming: true },
-      { text: "Good", time: "05:41", incoming: false },
-      { text: "Your scent is on my jacket", time: "06:00", incoming: false },
+      { textKey: "rhett_stone.message1", time: "05:40", incoming: true },
+      { textKey: "rhett_stone.message2", time: "05:41", incoming: false },
+      { textKey: "rhett_stone.message3", time: "06:00", incoming: false },
     ],
   },
   {
     id: 12,
-    name: "Cruz Reid",
+    nameKey: "cruz_reid",
     avatar: "https://i.pravatar.cc/150?img=15",
-    lastMessage: "I lied to her for you",
+    lastMessageKey: "cruz_reid.lastMessage",
     time: "23:00",
     messages: [
-      { text: "She asked where I was", time: "22:45", incoming: true },
-      { text: "What’d you say?", time: "22:46", incoming: false },
-      { text: "With you", time: "22:47", incoming: true },
-      { text: "I lied to her for you", time: "23:00", incoming: false },
+      { textKey: "cruz_reid.message1", time: "22:45", incoming: true },
+      { textKey: "cruz_reid.message2", time: "22:46", incoming: false },
+      { textKey: "cruz_reid.message3", time: "22:47", incoming: true },
+      { textKey: "cruz_reid.message4", time: "23:00", incoming: false },
     ],
   },
 ];
 
 // === Contacts (Skype uses "Contacts") ===
-const contacts = [
-  ...chats.map((c) => ({
-    id: c.id,
-    name: c.name,
-    avatar: c.avatar,
-    phone: `+1 555-${String(2000 + c.id).padStart(4, "0")}`,
-    email: `${c.name.split(" ")[0].toLowerCase()}@skype.com`,
-  })),
-];
+const contacts = chats.map((c) => ({
+  id: c.id,
+  nameKey: c.nameKey,
+  avatar: c.avatar,
+  phone: `+1 555-${String(2000 + c.id).padStart(4, "0")}`,
+  email: `${c.nameKey.split("_")[0].toLowerCase()}@skype.com`,
+}));
 
 // === Call Logs ===
 const callLogs = [
   {
     id: 1,
-    name: "Marcus Hale",
+    nameKey: "marcus_hale",
     avatar: "https://i.pravatar.cc/150?img=4",
     type: "outgoing",
     time: "2025-10-28 23:55",
@@ -251,7 +242,7 @@ const callLogs = [
   },
   {
     id: 2,
-    name: "Nico Rivera",
+    nameKey: "nico_rivera",
     avatar: "https://i.pravatar.cc/150?img=5",
     type: "incoming",
     time: "2025-10-28 22:40",
@@ -259,14 +250,14 @@ const callLogs = [
   },
   {
     id: 3,
-    name: "Eli Grant",
+    nameKey: "eli_grant",
     avatar: "https://i.pravatar.cc/150?img=6",
     type: "missed",
     time: "2025-10-28 21:20",
   },
   {
     id: 4,
-    name: "Leo Pierce",
+    nameKey: "leo_pierce",
     avatar: "https://i.pravatar.cc/150?img=7",
     type: "outgoing",
     time: "2025-10-27 20:55",
@@ -274,7 +265,7 @@ const callLogs = [
   },
   {
     id: 5,
-    name: "Owen Blake",
+    nameKey: "owen_blake",
     avatar: "https://i.pravatar.cc/150?img=8",
     type: "incoming",
     time: "2025-10-27 19:30",
@@ -282,14 +273,15 @@ const callLogs = [
   },
   {
     id: 6,
-    name: "Rhett Stone",
+    nameKey: "rhett_stone",
     avatar: "https://i.pravatar.cc/150?img=14",
     type: "missed",
-    time: "2025-10-27 18:00",
+    time: "2025-10-28 18:00",
   },
 ];
 
 const Skype = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -323,7 +315,9 @@ const Skype = () => {
   const groupContactsByLetter = () => {
     const grouped = {};
     contacts.forEach((c) => {
-      const letter = c.name[0].toUpperCase();
+      const letter = t(
+        `dmskype.contacts_list.${c.nameKey}.name`
+      )[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(c);
     });
@@ -338,7 +332,7 @@ const Skype = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Skype
+              {t("dmskype.header.title")}
               <FaSkype className="text-[#00AFF0]" />
             </h1>
           </div>
@@ -362,24 +356,28 @@ const Skype = () => {
                 mb: 3,
                 "& .MuiTabs-indicator": { bgcolor: "primary.main", height: 3 },
               }}
+              aria-label={t("dmskype.tabs.aria_label")}
             >
               <Tab
                 icon={<FaSkype />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chats"}
+                label={isMobile ? "" : t("dmskype.tabs.chat")}
                 value="chat"
+                aria-label={t("dmskype.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Contacts"}
+                label={isMobile ? "" : t("dmskype.tabs.contacts")}
                 value="contacts"
+                aria-label={t("dmskype.tabs.contacts_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Calls"}
+                label={isMobile ? "" : t("dmskype.tabs.calls")}
                 value="calls"
+                aria-label={t("dmskype.tabs.calls_aria")}
               />
             </Tabs>
           )}
@@ -387,7 +385,11 @@ const Skype = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmskype.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -422,7 +424,7 @@ const Skype = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmskype.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -433,6 +435,9 @@ const Skype = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmskype.chat.item_aria", {
+                        name: t(`dmskype.chats.${chat.nameKey}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -443,7 +448,7 @@ const Skype = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {chat.name}
+                            {t(`dmskype.chats.${chat.nameKey}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -454,7 +459,7 @@ const Skype = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(`dmskype.chats.${chat.lastMessageKey}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -470,7 +475,7 @@ const Skype = () => {
 
               {/* Contacts List */}
               {tab === "contacts" && (
-                <Stack>
+                <Stack aria-label={t("dmskype.contacts.list_aria")}>
                   {Object.keys(groupContactsByLetter())
                     .sort()
                     .map((letter) => (
@@ -496,6 +501,11 @@ const Skype = () => {
                               transition: "background 0.2s",
                             }}
                             onClick={() => setSelectedContact(contact)}
+                            aria-label={t("dmskype.contacts.item_aria", {
+                              name: t(
+                                `dmskype.contacts_list.${contact.nameKey}.name`
+                              ),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -509,7 +519,9 @@ const Skype = () => {
                               <Typography
                                 sx={{ fontWeight: 500, color: "#1f2937" }}
                               >
-                                {contact.name}
+                                {t(
+                                  `dmskype.contacts_list.${contact.nameKey}.name`
+                                )}
                               </Typography>
                             </Stack>
                           </Box>
@@ -521,7 +533,7 @@ const Skype = () => {
 
               {/* Call Log */}
               {tab === "calls" && (
-                <Stack>
+                <Stack aria-label={t("dmskype.call_log.list_aria")}>
                   {callLogs.map((call) => (
                     <Box
                       key={call.id}
@@ -532,6 +544,9 @@ const Skype = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedCall(call)}
+                      aria-label={t("dmskype.call_log.item_aria", {
+                        name: t(`dmskype.call_logs.${call.nameKey}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
@@ -560,7 +575,7 @@ const Skype = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {call.name}
+                            {t(`dmskype.call_logs.${call.nameKey}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -573,8 +588,7 @@ const Skype = () => {
                                   : "#EF4444",
                             }}
                           >
-                            {call.type.charAt(0).toUpperCase() +
-                              call.type.slice(1)}
+                            {t(`dmskype.call_log.types.${call.type}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -604,7 +618,12 @@ const Skype = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmskype.chat.detail_aria", {
+                      name: t(`dmskype.chats.${selectedChat.nameKey}.name`),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -614,7 +633,7 @@ const Skype = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "#1f2937" }}
                       >
-                        {selectedChat.name}
+                        {t(`dmskype.chats.${selectedChat.nameKey}.name`)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -644,7 +663,7 @@ const Skype = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(`dmskype.chats.${msg.textKey}`)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -668,7 +687,15 @@ const Skype = () => {
 
                 {/* Contact Detail */}
                 {selectedContact && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmskype.contacts.detail_aria", {
+                      name: t(
+                        `dmskype.contacts_list.${selectedContact.nameKey}.name`
+                      ),
+                    })}
+                  >
                     <Avatar
                       src={selectedContact.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -677,7 +704,9 @@ const Skype = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedContact.name}
+                      {t(
+                        `dmskype.contacts_list.${selectedContact.nameKey}.name`
+                      )}
                     </Typography>
 
                     {selectedContact.phone && (
@@ -711,7 +740,7 @@ const Skype = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Phone
+                            {t("dmskype.contacts.phone_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
@@ -753,7 +782,7 @@ const Skype = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Email
+                            {t("dmskype.contacts.email_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
@@ -768,7 +797,13 @@ const Skype = () => {
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmskype.call_log.detail_aria", {
+                      name: t(`dmskype.call_logs.${selectedCall.nameKey}.name`),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -777,7 +812,7 @@ const Skype = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedCall.name}
+                      {t(`dmskype.call_logs.${selectedCall.nameKey}.name`)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -803,8 +838,7 @@ const Skype = () => {
                           sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
                         >
                           {selectedCall.duration} •{" "}
-                          {selectedCall.type.charAt(0).toUpperCase() +
-                            selectedCall.type.slice(1)}
+                          {t(`dmskype.call_log.types.${selectedCall.type}`)}
                         </Typography>
                       )}
                     </Paper>

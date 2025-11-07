@@ -3787,5 +3787,154 @@
         "message4": "Senin için ona yalan söyledim"
       }
     }
+  },
+  "dmskype": {
+    "header": { "title": "Skype" },
+    "tabs": {
+      "chat": "Sohbetler",
+      "contacts": "Kişiler",
+      "calls": "Aramalar",
+      "aria_label": "Skype gezinme sekmeleri",
+      "chat_aria": "Sohbetleri göster",
+      "contacts_aria": "Kişileri göster",
+      "calls_aria": "Arama geçmişini göster"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "Sohbet listesi",
+      "item_aria": "{{name}} ile sohbet",
+      "detail_aria": "{{name}} için sohbet detayları"
+    },
+    "contacts": {
+      "phone_label": "Telefon",
+      "email_label": "E-posta",
+      "list_aria": "Kişi listesi",
+      "item_aria": "Kişi {{name}}",
+      "detail_aria": "{{name}} için kişi detayları"
+    },
+    "call_log": {
+      "list_aria": "Arama geçmişi listesi",
+      "item_aria": "{{name}} için arama geçmişi",
+      "detail_aria": "{{name}} için arama detayları",
+      "types": {
+        "outgoing": "Giden",
+        "incoming": "Gelen",
+        "missed": "Cevapsız"
+      }
+    },
+    "chats": {
+      "marcus_hale": {
+        "name": "Marcus Hale",
+        "lastMessage": "Saatimi senin evinde unuttum",
+        "message1": "Hala uyanık mısın?",
+        "message2": "Evet... uyuyamıyorum",
+        "message3": "Saatimi senin evinde unuttum"
+      },
+      "nico_rivera": {
+        "name": "Nico Rivera",
+        "lastMessage": "O hiçbir şey bilmiyor",
+        "message1": "Bu riskliydi",
+        "message2": "Ama başardık",
+        "message3": "O hiçbir şey bilmiyor"
+      },
+      "eli_grant": {
+        "name": "Eli Grant",
+        "lastMessage": "Fotoyu tekrar gönder",
+        "message1": "Sildin mi?",
+        "message2": "Silmek zorundaydım. Çok riskli",
+        "message3": "Fotoyu tekrar gönder"
+      },
+      "leo_pierce": {
+        "name": "Leo Pierce",
+        "lastMessage": "Senin odandayım",
+        "message1": "Evde misin?",
+        "message2": "O uyuyor. Kapı açık",
+        "message3": "Senin odandayım"
+      },
+      "owen_blake": {
+        "name": "Owen Blake",
+        "lastMessage": "Sana bağımlıyım",
+        "message1": "Seni düşünmekten vazgeçemiyorum",
+        "message2": "Ben de. Her saniye",
+        "message3": "Sana bağımlıyım"
+      },
+      "finn_cole": {
+        "name": "Finn Cole",
+        "lastMessage": "Ona telefonda olduğumu söyledim",
+        "message1": "Neredesin?",
+        "message2": "İş görüşmesi. Konuşamam",
+        "message3": "Yalancı",
+        "message4": "Ona telefonda olduğumu söyledim"
+      },
+      "theo_shaw": {
+        "name": "Theo Shaw",
+        "lastMessage": "Bu böyle devam edemez",
+        "message1": "Sonuncusu son olacak demiştik",
+        "message2": "Biliyorum",
+        "message3": "O zaman neden buradayım?",
+        "message4": "Bu böyle devam edemez"
+      },
+      "zane_knox": {
+        "name": "Zane Knox",
+        "lastMessage": "Her gece seni rüyamda görüyorum",
+        "message1": "Uyuyor musun?",
+        "message2": "Hayır. Sen?",
+        "message3": "Seni düşünüyorum",
+        "message4": "Her gece seni rüyamda görüyorum"
+      },
+      "jett_miles": {
+        "name": "Jett Miles",
+        "lastMessage": "Okuduktan sonra sil",
+        "message1": "Dün geceyi unutamıyorum",
+        "message2": "Yaptıkların...",
+        "message3": "Şşş. Yazma",
+        "message4": "Okuduktan sonra sil"
+      },
+      "kade_vance": {
+        "name": "Kade Vance",
+        "lastMessage": "Sana aşık oluyorum",
+        "message1": "Bu ciddileşiyor",
+        "message2": "Biliyorum",
+        "message3": "Ama durmak istemiyorum",
+        "message4": "Sana aşık oluyorum"
+      },
+      "rhett_stone": {
+        "name": "Rhett Stone",
+        "lastMessage": "Kokan ceketimde",
+        "message1": "Hala kokunu alıyorum",
+        "message2": "Güzel",
+        "message3": "Kokan ceketimde"
+      },
+      "cruz_reid": {
+        "name": "Cruz Reid",
+        "lastMessage": "Senin için yalan söyledim",
+        "message1": "Nerede olduğumu sordu",
+        "message2": "Ne dedin?",
+        "message3": "Seninle",
+        "message4": "Senin için yalan söyledim"
+      }
+    },
+    "contacts_list": {
+      "marcus_hale": { "name": "Marcus Hale" },
+      "nico_rivera": { "name": "Nico Rivera" },
+      "eli_grant": { "name": "Eli Grant" },
+      "leo_pierce": { "name": "Leo Pierce" },
+      "owen_blake": { "name": "Owen Blake" },
+      "finn_cole": { "name": "Finn Cole" },
+      "theo_shaw": { "name": "Theo Shaw" },
+      "zane_knox": { "name": "Zane Knox" },
+      "jett_miles": { "name": "Jett Miles" },
+      "kade_vance": { "name": "Kade Vance" },
+      "rhett_stone": { "name": "Rhett Stone" },
+      "cruz_reid": { "name": "Cruz Reid" }
+    },
+    "call_logs": {
+      "marcus_hale": { "name": "Marcus Hale" },
+      "nico_rivera": { "name": "Nico Rivera" },
+      "eli_grant": { "name": "Eli Grant" },
+      "leo_pierce": { "name": "Leo Pierce" },
+      "owen_blake": { "name": "Owen Blake" },
+      "rhett_stone": { "name": "Rhett Stone" }
+    }
   }
 }

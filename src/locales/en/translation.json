@@ -3787,5 +3787,154 @@
         "message4": "I lied to her for you"
       }
     }
+  },
+  "dmskype": {
+    "header": { "title": "Skype" },
+    "tabs": {
+      "chat": "Chats",
+      "contacts": "Contacts",
+      "calls": "Calls",
+      "aria_label": "Skype navigation tabs",
+      "chat_aria": "Show chats",
+      "contacts_aria": "Show contacts",
+      "calls_aria": "Show call logs"
+    },
+    "back_button_aria": "Back to list",
+    "chat": {
+      "list_aria": "Chat list",
+      "item_aria": "Chat with {{name}}",
+      "detail_aria": "Chat details for {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Phone",
+      "email_label": "Email",
+      "list_aria": "Contact list",
+      "item_aria": "Contact {{name}}",
+      "detail_aria": "Contact details for {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Call log list",
+      "item_aria": "Call log for {{name}}",
+      "detail_aria": "Call details for {{name}}",
+      "types": {
+        "outgoing": "Outgoing",
+        "incoming": "Incoming",
+        "missed": "Missed"
+      }
+    },
+    "chats": {
+      "marcus_hale": {
+        "name": "Marcus Hale",
+        "lastMessage": "I left my watch at your place",
+        "message1": "You still up?",
+        "message2": "Yeah... can't sleep",
+        "message3": "I left my watch at your place"
+      },
+      "nico_rivera": {
+        "name": "Nico Rivera",
+        "lastMessage": "She doesn't know anything",
+        "message1": "That was risky",
+        "message2": "But we pulled it off",
+        "message3": "She doesn't know anything"
+      },
+      "eli_grant": {
+        "name": "Eli Grant",
+        "lastMessage": "Send the pic again",
+        "message1": "Did you delete it?",
+        "message2": "Had to. Too risky",
+        "message3": "Send the pic again"
+      },
+      "leo_pierce": {
+        "name": "Leo Pierce",
+        "lastMessage": "I'm in your room",
+        "message1": "You home?",
+        "message2": "She's asleep. Door's open",
+        "message3": "I'm in your room"
+      },
+      "owen_blake": {
+        "name": "Owen Blake",
+        "lastMessage": "I'm addicted to you",
+        "message1": "Can't stop thinking about you",
+        "message2": "Same. Every second",
+        "message3": "I'm addicted to you"
+      },
+      "finn_cole": {
+        "name": "Finn Cole",
+        "lastMessage": "Told her I'm on a call",
+        "message1": "Where are you?",
+        "message2": "Work call. Can't talk",
+        "message3": "Liar",
+        "message4": "Told her I'm on a call"
+      },
+      "theo_shaw": {
+        "name": "Theo Shaw",
+        "lastMessage": "This can't keep happening",
+        "message1": "We said last time was the last",
+        "message2": "I know",
+        "message3": "Then why am I here?",
+        "message4": "This can't keep happening"
+      },
+      "zane_knox": {
+        "name": "Zane Knox",
+        "lastMessage": "I dream about you every night",
+        "message1": "You asleep?",
+        "message2": "Nah. You?",
+        "message3": "Thinking of you",
+        "message4": "I dream about you every night"
+      },
+      "jett_miles": {
+        "name": "Jett Miles",
+        "lastMessage": "Delete this after reading",
+        "message1": "Can't stop replaying last night",
+        "message2": "The things you did...",
+        "message3": "Shh. Don't write it",
+        "message4": "Delete this after reading"
+      },
+      "kade_vance": {
+        "name": "Kade Vance",
+        "lastMessage": "I'm falling for you",
+        "message1": "This is getting serious",
+        "message2": "I know",
+        "message3": "But I don't wanna stop",
+        "message4": "I'm falling for you"
+      },
+      "rhett_stone": {
+        "name": "Rhett Stone",
+        "lastMessage": "Your scent's on my jacket",
+        "message1": "I can still smell you",
+        "message2": "Good",
+        "message3": "Your scent's on my jacket"
+      },
+      "cruz_reid": {
+        "name": "Cruz Reid",
+        "lastMessage": "I lied to her for you",
+        "message1": "She asked where I was",
+        "message2": "What'd you say?",
+        "message3": "With you",
+        "message4": "I lied to her for you"
+      }
+    },
+    "contacts_list": {
+      "marcus_hale": { "name": "Marcus Hale" },
+      "nico_rivera": { "name": "Nico Rivera" },
+      "eli_grant": { "name": "Eli Grant" },
+      "leo_pierce": { "name": "Leo Pierce" },
+      "owen_blake": { "name": "Owen Blake" },
+      "finn_cole": { "name": "Finn Cole" },
+      "theo_shaw": { "name": "Theo Shaw" },
+      "zane_knox": { "name": "Zane Knox" },
+      "jett_miles": { "name": "Jett Miles" },
+      "kade_vance": { "name": "Kade Vance" },
+      "rhett_stone": { "name": "Rhett Stone" },
+      "cruz_reid": { "name": "Cruz Reid" }
+    },
+    "call_logs": {
+      "marcus_hale": { "name": "Marcus Hale" },
+      "nico_rivera": { "name": "Nico Rivera" },
+      "eli_grant": { "name": "Eli Grant" },
+      "leo_pierce": { "name": "Leo Pierce" },
+      "owen_blake": { "name": "Owen Blake" },
+      "rhett_stone": { "name": "Rhett Stone" }
+    }
   }
 }

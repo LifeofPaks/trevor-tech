@@ -3713,5 +3713,154 @@
         "message4": "我为你对她撒了谎"
       }
     }
+  },
+  "dmskype": {
+    "header": { "title": "Skype" },
+    "tabs": {
+      "chat": "聊天",
+      "contacts": "联系人",
+      "calls": "通话",
+      "aria_label": "Skype导航选项卡",
+      "chat_aria": "显示聊天",
+      "contacts_aria": "显示联系人",
+      "calls_aria": "显示通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "聊天列表",
+      "item_aria": "与{{name}}的聊天",
+      "detail_aria": "{{name}}的聊天详情"
+    },
+    "contacts": {
+      "phone_label": "电话",
+      "email_label": "电子邮件",
+      "list_aria": "联系人列表",
+      "item_aria": "联系人 {{name}}",
+      "detail_aria": "{{name}}的联系人详情"
+    },
+    "call_log": {
+      "list_aria": "通话记录列表",
+      "item_aria": "{{name}}的通话记录",
+      "detail_aria": "{{name}}的通话详情",
+      "types": {
+        "outgoing": "拨出",
+        "incoming": "拨入",
+        "missed": "未接"
+      }
+    },
+    "chats": {
+      "marcus_hale": {
+        "name": "马库斯·黑尔",
+        "lastMessage": "我把表忘在你家了",
+        "message1": "你还醒着吗？",
+        "message2": "嗯…睡不着",
+        "message3": "我把表忘在你家了"
+      },
+      "nico_rivera": {
+        "name": "尼科·里维拉",
+        "lastMessage": "她什么也不知道",
+        "message1": "那太冒险了",
+        "message2": "但我们成功了",
+        "message3": "她什么也不知道"
+      },
+      "eli_grant": {
+        "name": "伊莱·格兰特",
+        "lastMessage": "再发一次照片",
+        "message1": "你删了吗？",
+        "message2": "必须删。太危险了",
+        "message3": "再发一次照片"
+      },
+      "leo_pierce": {
+        "name": "里奥·皮尔斯",
+        "lastMessage": "我在你房间",
+        "message1": "你在家吗？",
+        "message2": "她在睡觉。门开着",
+        "message3": "我在你房间"
+      },
+      "owen_blake": {
+        "name": "欧文·布莱克",
+        "lastMessage": "我对你上瘾了",
+        "message1": "一直想着你",
+        "message2": "我也是。每秒都在想",
+        "message3": "我对你上瘾了"
+      },
+      "finn_cole": {
+        "name": "芬恩·科尔",
+        "lastMessage": "我告诉她我在通话",
+        "message1": "你在哪儿？",
+        "message2": "工作电话。不能聊",
+        "message3": "骗子",
+        "message4": "我告诉她我在通话"
+      },
+      "theo_shaw": {
+        "name": "西奥·肖",
+        "lastMessage": "这不能再继续了",
+        "message1": "我们说上次是最后一次",
+        "message2": "我知道",
+        "message3": "那我为什么在这儿？",
+        "message4": "这不能再继续了"
+      },
+      "zane_knox": {
+        "name": "赞恩·诺克斯",
+        "lastMessage": "每晚都梦见你",
+        "message1": "睡了吗？",
+        "message2": "没。你呢？",
+        "message3": "在想你",
+        "message4": "每晚都梦见你"
+      },
+      "jett_miles": {
+        "name": "杰特·迈尔斯",
+        "lastMessage": "读完后删除",
+        "message1": "昨晚一直在脑海里",
+        "message2": "你做的事…",
+        "message3": "嘘。别写出来",
+        "message4": "读完后删除"
+      },
+      "kade_vance": {
+        "name": "凯德·万斯",
+        "lastMessage": "我爱上你了",
+        "message1": "这变得严重了",
+        "message2": "我知道",
+        "message3": "但我不想停",
+        "message4": "我爱上你了"
+      },
+      "rhett_stone": {
+        "name": "雷特·斯通",
+        "lastMessage": "你的味道在我的夹克上",
+        "message1": "我还能闻到你的味道",
+        "message2": "好",
+        "message3": "你的味道在我的夹克上"
+      },
+      "cruz_reid": {
+        "name": "克鲁兹·里德",
+        "lastMessage": "我为你撒了谎",
+        "message1": "她问我在哪儿",
+        "message2": "你怎么说的？",
+        "message3": "和你一起",
+        "message4": "我为你撒了谎"
+      }
+    },
+    "contacts_list": {
+      "marcus_hale": { "name": "马库斯·黑尔" },
+      "nico_rivera": { "name": "尼科·里维拉" },
+      "eli_grant": { "name": "伊莱·格兰特" },
+      "leo_pierce": { "name": "里奥·皮尔斯" },
+      "owen_blake": { "name": "欧文·布莱克" },
+      "finn_cole": { "name": "芬恩·科尔" },
+      "theo_shaw": { "name": "西奥·肖" },
+      "zane_knox": { "name": "赞恩·诺克斯" },
+      "jett_miles": { "name": "杰特·迈尔斯" },
+      "kade_vance": { "name": "凯德·万斯" },
+      "rhett_stone": { "name": "雷特·斯通" },
+      "cruz_reid": { "name": "克鲁兹·里德" }
+    },
+    "call_logs": {
+      "marcus_hale": { "name": "马库斯·黑尔" },
+      "nico_rivera": { "name": "尼科·里维拉" },
+      "eli_grant": { "name": "伊莱·格兰特" },
+      "leo_pierce": { "name": "里奥·皮尔斯" },
+      "owen_blake": { "name": "欧文·布莱克" },
+      "rhett_stone": { "name": "雷特·斯通" }
+    }
   }
 }

@@ -3707,5 +3707,154 @@
         "message4": "君のために彼女に嘘をついた"
       }
     }
+  },
+  "dmskype": {
+    "header": { "title": "Skype" },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "calls": "通話",
+      "aria_label": "Skypeナビゲーションタブ",
+      "chat_aria": "チャットを表示",
+      "contacts_aria": "連絡先を表示",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "チャットリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}のチャット詳細"
+    },
+    "contacts": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "list_aria": "連絡先リスト",
+      "item_aria": "連絡先 {{name}}",
+      "detail_aria": "{{name}}の連絡先詳細"
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "types": {
+        "outgoing": "発信",
+        "incoming": "着信",
+        "missed": "不在着信"
+      }
+    },
+    "chats": {
+      "marcus_hale": {
+        "name": "マーカス・ヘイル",
+        "lastMessage": "君の家に時計を忘れた",
+        "message1": "まだ起きてる？",
+        "message2": "うん…眠れない",
+        "message3": "君の家に時計を忘れた"
+      },
+      "nico_rivera": {
+        "name": "ニコ・リベラ",
+        "lastMessage": "彼女は何も知らない",
+        "message1": "あれは危険だった",
+        "message2": "でもうまくやった",
+        "message3": "彼女は何も知らない"
+      },
+      "eli_grant": {
+        "name": "イーライ・グラント",
+        "lastMessage": "写真をもう一度送って",
+        "message1": "削除した？",
+        "message2": "しなきゃ。危険すぎる",
+        "message3": "写真をもう一度送って"
+      },
+      "leo_pierce": {
+        "name": "レオ・ピアース",
+        "lastMessage": "君の部屋にいる",
+        "message1": "家にいる？",
+        "message2": "彼女は寝てる。ドアは開いてる",
+        "message3": "君の部屋にいる"
+      },
+      "owen_blake": {
+        "name": "オーウェン・ブレイク",
+        "lastMessage": "君に夢中だ",
+        "message1": "君のことを考え続けてる",
+        "message2": "同じく。一秒ごとに",
+        "message3": "君に夢中だ"
+      },
+      "finn_cole": {
+        "name": "フィン・コール",
+        "lastMessage": "仕事の電話中だと彼女に言った",
+        "message1": "どこにいる？",
+        "message2": "仕事の電話。話せない",
+        "message3": "嘘つき",
+        "message4": "仕事の電話中だと彼女に言った"
+      },
+      "theo_shaw": {
+        "name": "テオ・ショー",
+        "lastMessage": "これ以上続けられない",
+        "message1": "前回が最後だって言ったよね",
+        "message2": "分かってる",
+        "message3": "じゃあなんでここにいる？",
+        "message4": "これ以上続けられない"
+      },
+      "zane_knox": {
+        "name": "ゼイン・ノックス",
+        "lastMessage": "毎晩君の夢を見る",
+        "message1": "寝てる？",
+        "message2": "いや。君は？",
+        "message3": "君のことを考えてる",
+        "message4": "毎晩君の夢を見る"
+      },
+      "jett_miles": {
+        "name": "ジェット・マイルズ",
+        "lastMessage": "読んだら消して",
+        "message1": "昨夜が頭から離れない",
+        "message2": "君がしたこと…",
+        "message3": "シッ。書かないで",
+        "message4": "読んだら消して"
+      },
+      "kade_vance": {
+        "name": "ケイド・ヴァンス",
+        "lastMessage": "君に恋してる",
+        "message1": "これ本気になってきた",
+        "message2": "分かってる",
+        "message3": "でもやめたくない",
+        "message4": "君に恋してる"
+      },
+      "rhett_stone": {
+        "name": "レット・ストーン",
+        "lastMessage": "君の香りがジャケットについてる",
+        "message1": "まだ君の香りがする",
+        "message2": "いいね",
+        "message3": "君の香りがジャケットについてる"
+      },
+      "cruz_reid": {
+        "name": "クルーズ・リード",
+        "lastMessage": "君のために嘘をついた",
+        "message1": "彼女にどこにいたか聞かれた",
+        "message2": "なんて言った？",
+        "message3": "君と一緒",
+        "message4": "君のために嘘をついた"
+      }
+    },
+    "contacts_list": {
+      "marcus_hale": { "name": "マーカス・ヘイル" },
+      "nico_rivera": { "name": "ニコ・リベラ" },
+      "eli_grant": { "name": "イーライ・グラント" },
+      "leo_pierce": { "name": "レオ・ピアース" },
+      "owen_blake": { "name": "オーウェン・ブレイク" },
+      "finn_cole": { "name": "フィン・コール" },
+      "theo_shaw": { "name": "テオ・ショー" },
+      "zane_knox": { "name": "ゼイン・ノックス" },
+      "jett_miles": { "name": "ジェット・マイルズ" },
+      "kade_vance": { "name": "ケイド・ヴァンス" },
+      "rhett_stone": { "name": "レット・ストーン" },
+      "cruz_reid": { "name": "クルーズ・リード" }
+    },
+    "call_logs": {
+      "marcus_hale": { "name": "マーカス・ヘイル" },
+      "nico_rivera": { "name": "ニコ・リベラ" },
+      "eli_grant": { "name": "イーライ・グラント" },
+      "leo_pierce": { "name": "レオ・ピアース" },
+      "owen_blake": { "name": "オーウェン・ブレイク" },
+      "rhett_stone": { "name": "レット・ストーン" }
+    }
   }
 }
