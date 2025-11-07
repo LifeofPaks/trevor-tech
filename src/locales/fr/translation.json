@@ -3093,5 +3093,368 @@
         }
       }
     }
+  },
+  "dmline": {
+    "header": { "title": "LINE" },
+    "tabs": {
+      "chat": "Discussions",
+      "friends": "Amis",
+      "calls": "Appels",
+      "aria_label": "Onglets de navigation LINE",
+      "chat_aria": "Afficher les discussions",
+      "friends_aria": "Afficher les amis",
+      "calls_aria": "Afficher l'historique des appels"
+    },
+    "back_button_aria": "Retour à la liste",
+    "chat": {
+      "list_aria": "Liste des discussions",
+      "item_aria": "Discussion avec {{name}}",
+      "detail_aria": "Détails de la discussion pour {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Téléphone",
+      "email_label": "E-mail",
+      "list_aria": "Liste d'amis",
+      "item_aria": "Ami {{name}}",
+      "detail_aria": "Détails de l'ami pour {{name}}",
+      "kai_nakamura": {
+        "name": "Kai Nakamura",
+        "phone": "+81 90-1001",
+        "email": "kai@line.me"
+      },
+      "riku_sato": {
+        "name": "Riku Sato",
+        "phone": "+81 90-1002",
+        "email": "riku@line.me"
+      },
+      "haruto_tanaka": {
+        "name": "Haruto Tanaka",
+        "phone": "+81 90-1003",
+        "email": "haruto@line.me"
+      },
+      "sora_yamamoto": {
+        "name": "Sora Yamamoto",
+        "phone": "+81 90-1004",
+        "email": "sora@line.me"
+      },
+      "ren_kobayashi": {
+        "name": "Ren Kobayashi",
+        "phone": "+81 90-1005",
+        "email": "ren@line.me"
+      },
+      "yuto_ikeda": {
+        "name": "Yuto Ikeda",
+        "phone": "+81 90-1006",
+        "email": "yuto@line.me"
+      },
+      "daichi_fujimoto": {
+        "name": "Daichi Fujimoto",
+        "phone": "+81 90-1007",
+        "email": "daichi@line.me"
+      },
+      "kaito_mori": {
+        "name": "Kaito Mori",
+        "phone": "+81 90-1008",
+        "email": "kaito@line.me"
+      },
+      "shota_okada": {
+        "name": "Shota Okada",
+        "phone": "+81 90-1009",
+        "email": "shota@line.me"
+      },
+      "ryo_hashimoto": {
+        "name": "Ryo Hashimoto",
+        "phone": "+81 90-1010",
+        "email": "ryo@line.me"
+      },
+      "toma_inoue": {
+        "name": "Toma Inoue",
+        "phone": "+81 90-1011",
+        "email": "toma@line.me"
+      },
+      "yuki_arai": {
+        "name": "Yuki Arai",
+        "phone": "+81 90-1012",
+        "email": "yuki@line.me"
+      }
+    },
+    "call_log": {
+      "list_aria": "Liste de l'historique des appels",
+      "item_aria": "Historique des appels pour {{name}}",
+      "detail_aria": "Détails de l'appel pour {{name}}",
+      "outgoing": "Sortant",
+      "incoming": "Entrant",
+      "missed": "Manqué",
+      "kai_nakamura": {
+        "name": "Kai Nakamura",
+        "type": "outgoing",
+        "time": "2025-10-28 23:45",
+        "duration": "19:30"
+      },
+      "riku_sato": {
+        "name": "Riku Sato",
+        "type": "incoming",
+        "time": "2025-10-28 22:20",
+        "duration": "12:45"
+      },
+      "haruto_tanaka": {
+        "name": "Haruto Tanaka",
+        "type": "missed",
+        "time": "2025-10-28 21:15"
+      },
+      "sora_yamamoto": {
+        "name": "Sora Yamamoto",
+        "type": "outgoing",
+        "time": "2025-10-27 20:50",
+        "duration": "41:10"
+      },
+      "ren_kobayashi": {
+        "name": "Ren Kobayashi",
+        "type": "incoming",
+        "time": "2025-10-27 19:30",
+        "duration": "29:55"
+      },
+      "toma_inoue": {
+        "name": "Toma Inoue",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "kai_nakamura": {
+        "name": "Kai Nakamura",
+        "avatar": "https://i.pravatar.cc/150?img=50",
+        "lastMessage": "Je suis dehors. Elle n’est pas chez elle",
+        "time": "02:41",
+        "msg1_time": "02:30",
+        "msg2_time": "02:31",
+        "msg3_time": "02:32",
+        "msg4_time": "02:41",
+        "messages": {
+          "msg1": "Tu es encore réveillé ?",
+          "msg1_incoming": "true",
+          "msg2": "Ouais. Et toi ?",
+          "msg2_incoming": "false",
+          "msg3": "Je viens de quitter chez elle",
+          "msg3_incoming": "true",
+          "msg4": "Je suis dehors. Elle n’est pas chez elle",
+          "msg4_incoming": "false"
+        }
+      },
+      "riku_sato": {
+        "name": "Riku Sato",
+        "avatar": "https://i.pravatar.cc/150?img=51",
+        "lastMessage": "Je ne peux pas supprimer tes photos",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "Cette nuit-là était irréelle",
+          "msg1_incoming": "true",
+          "msg2": "J’ai encore la vidéo",
+          "msg2_incoming": "false",
+          "msg3": "Tu ferais mieux de la supprimer",
+          "msg3_incoming": "true",
+          "msg4": "Je ne peux pas supprimer tes photos",
+          "msg4_incoming": "false"
+        }
+      },
+      "haruto_tanaka": {
+        "name": "Haruto Tanaka",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "lastMessage": "Retrouve-moi dans le parking",
+        "time": "23:58",
+        "msg1_time": "23:45",
+        "msg2_time": "23:46",
+        "msg3_time": "23:47",
+        "msg4_time": "23:58",
+        "messages": {
+          "msg1": "Où es-tu ?",
+          "msg1_incoming": "true",
+          "msg2": "Au travail. Quart de nuit",
+          "msg2_incoming": "false",
+          "msg3": "Menteur. Je suis dans la voiture",
+          "msg3_incoming": "true",
+          "msg4": "Retrouve-moi dans le parking",
+          "msg4_incoming": "false"
+        }
+      },
+      "sora_yamamoto": {
+        "name": "Sora Yamamoto",
+        "avatar": "https://i.pravatar.cc/150?img=53",
+        "lastMessage": "Je lui ai dit que j’étais malade",
+        "time": "22:30",
+        "msg1_time": "22:10",
+        "msg2_time": "22:11",
+        "msg3_time": "22:12",
+        "msg4_time": "22:30",
+        "messages": {
+          "msg1": "Elle pense que je suis malade chez moi",
+          "msg1_incoming": "true",
+          "msg2": "Tu n’es pas malade ?",
+          "msg2_incoming": "false",
+          "msg3": "Je suis dans ton lit",
+          "msg3_incoming": "true",
+          "msg4": "Je lui ai dit que j’étais malade",
+          "msg4_incoming": "false"
+        }
+      },
+      "ren_kobayashi": {
+        "name": "Ren Kobayashi",
+        "avatar": "https://i.pravatar.cc/150?img=54",
+        "lastMessage": "Tu es mon échappatoire",
+        "time": "03:20",
+        "msg1_time": "03:00",
+        "msg2_time": "03:01",
+        "msg3_time": "03:02",
+        "msg4_time": "03:20",
+        "messages": {
+          "msg1": "Je déteste rentrer chez moi",
+          "msg1_incoming": "true",
+          "msg2": "Alors ne rentre pas",
+          "msg2_incoming": "false",
+          "msg3": "J’aimerais pouvoir rester",
+          "msg3_incoming": "true",
+          "msg4": "Tu es mon échappatoire",
+          "msg4_incoming": "false"
+        }
+      },
+      "yuto_ikeda": {
+        "name": "Yuto Ikeda",
+        "avatar": "https://i.pravatar.cc/150?img=55",
+        "lastMessage": "Je sens encore ton goût",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:45",
+        "messages": {
+          "msg1": "Je n’arrête pas de penser à tes lèvres",
+          "msg1_incoming": "true",
+          "msg2": "Pareil. Sur mon cou",
+          "msg2_incoming": "false",
+          "msg3": "Je sens encore ton goût",
+          "msg3_incoming": "false"
+        }
+      },
+      "daichi_fujimoto": {
+        "name": "Daichi Fujimoto",
+        "avatar": "https://i.pravatar.cc/150?img=56",
+        "lastMessage": "Ça devient hors de contrôle",
+        "time": "21:10",
+        "msg1_time": "20:55",
+        "msg2_time": "20:56",
+        "msg3_time": "20:57",
+        "msg4_time": "21:10",
+        "messages": {
+          "msg1": "On avait dit une seule fois",
+          "msg1_incoming": "true",
+          "msg2": "Je sais",
+          "msg2_incoming": "false",
+          "msg3": "Alors pourquoi je suis dans ta douche ?",
+          "msg3_incoming": "true",
+          "msg4": "Ça devient hors de contrôle",
+          "msg4_incoming": "false"
+        }
+      },
+      "kaito_mori": {
+        "name": "Kaito Mori",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "lastMessage": "Je lui ai encore menti",
+        "time": "19:40",
+        "msg1_time": "19:20",
+        "msg2_time": "19:21",
+        "msg3_time": "19:22",
+        "msg4_time": "19:40",
+        "messages": {
+          "msg1": "Elle m’a demandé si j’étais avec toi",
+          "msg1_incoming": "true",
+          "msg2": "Qu’est-ce que tu as dit ?",
+          "msg2_incoming": "false",
+          "msg3": "Urgence au travail",
+          "msg3_incoming": "true",
+          "msg4": "Je lui ai encore menti",
+          "msg4_incoming": "false"
+        }
+      },
+      "shota_okada": {
+        "name": "Shota Okada",
+        "avatar": "https://i.pravatar.cc/150?img=58",
+        "lastMessage": "Ton nom est enregistré comme 'Boss'",
+        "time": "02:05",
+        "msg1_time": "01:50",
+        "msg2_time": "01:51",
+        "msg3_time": "01:52",
+        "msg4_time": "02:05",
+        "messages": {
+          "msg1": "Change mon nom dans ton téléphone",
+          "msg1_incoming": "true",
+          "msg2": "C’est déjà fait",
+          "msg2_incoming": "false",
+          "msg3": "En quoi ?",
+          "msg3_incoming": "true",
+          "msg4": "Ton nom est enregistré comme 'Boss'",
+          "msg4_incoming": "false"
+        }
+      },
+      "ryo_hashimoto": {
+        "name": "Ryo Hashimoto",
+        "avatar": "https://i.pravatar.cc/150?img=59",
+        "lastMessage": "Je suis amoureux de toi",
+        "time": "00:10",
+        "msg1_time": "23:55",
+        "msg2_time": "23:56",
+        "msg3_time": "23:57",
+        "msg4_time": "00:10",
+        "messages": {
+          "msg1": "Ce n’est plus juste du sexe",
+          "msg1_incoming": "true",
+          "msg2": "Je sais",
+          "msg2_incoming": "false",
+          "msg3": "Alors c’est quoi ?",
+          "msg3_incoming": "true",
+          "msg4": "Je suis amoureux de toi",
+          "msg4_incoming": "false"
+        }
+      },
+      "toma_inoue": {
+        "name": "Toma Inoue",
+        "avatar": "https://i.pravatar.cc/150?img=60",
+        "lastMessage": "J’ai laissé des marques sur ton cou",
+        "time": "04:30",
+        "msg1_time": "04:10",
+        "msg2_time": "04:11",
+        "msg3_time": "04:30",
+        "messages": {
+          "msg1": "Tu m’as mordu trop fort",
+          "msg1_incoming": "true",
+          "msg2": "C’est toi qui l’as demandé",
+          "msg2_incoming": "false",
+          "msg3": "J’ai laissé des marques sur ton cou",
+          "msg3_incoming": "false"
+        }
+      },
+      "yuki_arai": {
+        "name": "Yuki Arai",
+        "avatar": "https://i.pravatar.cc/150?img=61",
+        "lastMessage": "Je ne peux pas te perdre",
+        "time": "22:00",
+        "msg1_time": "21:45",
+        "msg2_time": "21:46",
+        "msg3_time": "21:47",
+        "msg4_time": "22:00",
+        "messages": {
+          "msg1": "Elle a trouvé un cheveu sur ma chemise",
+          "msg1_incoming": "true",
+          "msg2": "C’était le tien ?",
+          "msg2_incoming": "false",
+          "msg3": "Oui",
+          "msg3_incoming": "true",
+          "msg4": "Je ne peux pas te perdre",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

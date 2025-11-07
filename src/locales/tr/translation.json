@@ -3098,5 +3098,368 @@
         }
       }
     }
+  },
+  "dmline": {
+    "header": { "title": "LINE" },
+    "tabs": {
+      "chat": "Sohbetler",
+      "friends": "Arkadaşlar",
+      "calls": "Aramalar",
+      "aria_label": "LINE navigasyon sekmeleri",
+      "chat_aria": "Sohbetleri göster",
+      "friends_aria": "Arkadaşları göster",
+      "calls_aria": "Arama kaydını göster"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "Sohbet listesi",
+      "item_aria": "{{name}} ile sohbet",
+      "detail_aria": "{{name}} için sohbet detayları"
+    },
+    "contacts": {
+      "phone_label": "Telefon",
+      "email_label": "E-posta",
+      "list_aria": "Arkadaş listesi",
+      "item_aria": "Arkadaş {{name}}",
+      "detail_aria": "{{name}} için arkadaş detayları",
+      "kai_nakamura": {
+        "name": "Kai Nakamura",
+        "phone": "+81 90-1001",
+        "email": "kai@line.me"
+      },
+      "riku_sato": {
+        "name": "Riku Sato",
+        "phone": "+81 90-1002",
+        "email": "riku@line.me"
+      },
+      "haruto_tanaka": {
+        "name": "Haruto Tanaka",
+        "phone": "+81 90-1003",
+        "email": "haruto@line.me"
+      },
+      "sora_yamamoto": {
+        "name": "Sora Yamamoto",
+        "phone": "+81 90-1004",
+        "email": "sora@line.me"
+      },
+      "ren_kobayashi": {
+        "name": "Ren Kobayashi",
+        "phone": "+81 90-1005",
+        "email": "ren@line.me"
+      },
+      "yuto_ikeda": {
+        "name": "Yuto Ikeda",
+        "phone": "+81 90-1006",
+        "email": "yuto@line.me"
+      },
+      "daichi_fujimoto": {
+        "name": "Daichi Fujimoto",
+        "phone": "+81 90-1007",
+        "email": "daichi@line.me"
+      },
+      "kaito_mori": {
+        "name": "Kaito Mori",
+        "phone": "+81 90-1008",
+        "email": "kaito@line.me"
+      },
+      "shota_okada": {
+        "name": "Shota Okada",
+        "phone": "+81 90-1009",
+        "email": "shota@line.me"
+      },
+      "ryo_hashimoto": {
+        "name": "Ryo Hashimoto",
+        "phone": "+81 90-1010",
+        "email": "ryo@line.me"
+      },
+      "toma_inoue": {
+        "name": "Toma Inoue",
+        "phone": "+81 90-1011",
+        "email": "toma@line.me"
+      },
+      "yuki_arai": {
+        "name": "Yuki Arai",
+        "phone": "+81 90-1012",
+        "email": "yuki@line.me"
+      }
+    },
+    "call_log": {
+      "list_aria": "Arama kayıtları listesi",
+      "item_aria": "{{name}} için arama kaydı",
+      "detail_aria": "{{name}} için arama detayları",
+      "outgoing": "Giden",
+      "incoming": "Gelen",
+      "missed": "Cevapsız",
+      "kai_nakamura": {
+        "name": "Kai Nakamura",
+        "type": "outgoing",
+        "time": "2025-10-28 23:45",
+        "duration": "19:30"
+      },
+      "riku_sato": {
+        "name": "Riku Sato",
+        "type": "incoming",
+        "time": "2025-10-28 22:20",
+        "duration": "12:45"
+      },
+      "haruto_tanaka": {
+        "name": "Haruto Tanaka",
+        "type": "missed",
+        "time": "2025-10-28 21:15"
+      },
+      "sora_yamamoto": {
+        "name": "Sora Yamamoto",
+        "type": "outgoing",
+        "time": "2025-10-27 20:50",
+        "duration": "41:10"
+      },
+      "ren_kobayashi": {
+        "name": "Ren Kobayashi",
+        "type": "incoming",
+        "time": "2025-10-27 19:30",
+        "duration": "29:55"
+      },
+      "toma_inoue": {
+        "name": "Toma Inoue",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "kai_nakamura": {
+        "name": "Kai Nakamura",
+        "avatar": "https://i.pravatar.cc/150?img=50",
+        "lastMessage": "Dışardayım. O evde değil",
+        "time": "02:41",
+        "msg1_time": "02:30",
+        "msg2_time": "02:31",
+        "msg3_time": "02:32",
+        "msg4_time": "02:41",
+        "messages": {
+          "msg1": "Hala uyanık mısın?",
+          "msg1_incoming": "true",
+          "msg2": "Evet. Sen?",
+          "msg2_incoming": "false",
+          "msg3": "Onun evinden yeni çıktım",
+          "msg3_incoming": "true",
+          "msg4": "Dışardayım. O evde değil",
+          "msg4_incoming": "false"
+        }
+      },
+      "riku_sato": {
+        "name": "Riku Sato",
+        "avatar": "https://i.pravatar.cc/150?img=51",
+        "lastMessage": "Fotoğraflarını silemiyorum",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "O gece inanılmazdı",
+          "msg1_incoming": "true",
+          "msg2": "Hala videon bende",
+          "msg2_incoming": "false",
+          "msg3": "Onu silsen iyi olur",
+          "msg3_incoming": "true",
+          "msg4": "Fotoğraflarını silemiyorum",
+          "msg4_incoming": "false"
+        }
+      },
+      "haruto_tanaka": {
+        "name": "Haruto Tanaka",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "lastMessage": "Otoparkta buluşalım",
+        "time": "23:58",
+        "msg1_time": "23:45",
+        "msg2_time": "23:46",
+        "msg3_time": "23:47",
+        "msg4_time": "23:58",
+        "messages": {
+          "msg1": "Neredesin?",
+          "msg1_incoming": "true",
+          "msg2": "İşte. Geç vardiya",
+          "msg2_incoming": "false",
+          "msg3": "Yalancı. Arabadayım",
+          "msg3_incoming": "true",
+          "msg4": "Otoparkta buluşalım",
+          "msg4_incoming": "false"
+        }
+      },
+      "sora_yamamoto": {
+        "name": "Sora Yamamoto",
+        "avatar": "https://i.pravatar.cc/150?img=53",
+        "lastMessage": "Ona hasta olduğumu söyledim",
+        "time": "22:30",
+        "msg1_time": "22:10",
+        "msg2_time": "22:11",
+        "msg3_time": "22:12",
+        "msg4_time": "22:30",
+        "messages": {
+          "msg1": "Evde hasta olduğumu sanıyor",
+          "msg1_incoming": "true",
+          "msg2": "Değil misin?",
+          "msg2_incoming": "false",
+          "msg3": "Senin yatağındayım",
+          "msg3_incoming": "true",
+          "msg4": "Ona hasta olduğumu söyledim",
+          "msg4_incoming": "false"
+        }
+      },
+      "ren_kobayashi": {
+        "name": "Ren Kobayashi",
+        "avatar": "https://i.pravatar.cc/150?img=54",
+        "lastMessage": "Sen benim kaçışım",
+        "time": "03:20",
+        "msg1_time": "03:00",
+        "msg2_time": "03:01",
+        "msg3_time": "03:02",
+        "msg4_time": "03:20",
+        "messages": {
+          "msg1": "Eve dönmekten nefret ediyorum",
+          "msg1_incoming": "true",
+          "msg2": "O zaman dönme",
+          "msg2_incoming": "false",
+          "msg3": "Keşke kalsam",
+          "msg3_incoming": "true",
+          "msg4": "Sen benim kaçışım",
+          "msg4_incoming": "false"
+        }
+      },
+      "yuto_ikeda": {
+        "name": "Yuto Ikeda",
+        "avatar": "https://i.pravatar.cc/150?img=55",
+        "lastMessage": "Hala tadın ağzımda",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:45",
+        "messages": {
+          "msg1": "Dudaklarını düşünmekten vazgeçemiyorum",
+          "msg1_incoming": "true",
+          "msg2": "Aynen. Boynumda",
+          "msg2_incoming": "false",
+          "msg3": "Hala tadın ağzımda",
+          "msg3_incoming": "false"
+        }
+      },
+      "daichi_fujimoto": {
+        "name": "Daichi Fujimoto",
+        "avatar": "https://i.pravatar.cc/150?img=56",
+        "lastMessage": "Bu iş kontrolden çıkıyor",
+        "time": "21:10",
+        "msg1_time": "20:55",
+        "msg2_time": "20:56",
+        "msg3_time": "20:57",
+        "msg4_time": "21:10",
+        "messages": {
+          "msg1": "Bir kerelik dedik",
+          "msg1_incoming": "true",
+          "msg2": "Biliyorum",
+          "msg2_incoming": "false",
+          "msg3": "O zaman neden senin duşundayım?",
+          "msg3_incoming": "true",
+          "msg4": "Bu iş kontrolden çıkıyor",
+          "msg4_incoming": "false"
+        }
+      },
+      "kaito_mori": {
+        "name": "Kaito Mori",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "lastMessage": "Ona yine yalan söyledim",
+        "time": "19:40",
+        "msg1_time": "19:20",
+        "msg2_time": "19:21",
+        "msg3_time": "19:22",
+        "msg4_time": "19:40",
+        "messages": {
+          "msg1": "Seninle miydim diye sordu",
+          "msg1_incoming": "true",
+          "msg2": "Ne dedin?",
+          "msg2_incoming": "false",
+          "msg3": "İş aciliyeti",
+          "msg3_incoming": "true",
+          "msg4": "Ona yine yalan söyledim",
+          "msg4_incoming": "false"
+        }
+      },
+      "shota_okada": {
+        "name": "Shota Okada",
+        "avatar": "https://i.pravatar.cc/150?img=58",
+        "lastMessage": "Adın 'Patron' olarak kayıtlı",
+        "time": "02:05",
+        "msg1_time": "01:50",
+        "msg2_time": "01:51",
+        "msg3_time": "01:52",
+        "msg4_time": "02:05",
+        "messages": {
+          "msg1": "Telefonunda adımı değiştir",
+          "msg1_incoming": "true",
+          "msg2": "Zaten değiştirdim",
+          "msg2_incoming": "false",
+          "msg3": "Neye?",
+          "msg3_incoming": "true",
+          "msg4": "Adın 'Patron' olarak kayıtlı",
+          "msg4_incoming": "false"
+        }
+      },
+      "ryo_hashimoto": {
+        "name": "Ryo Hashimoto",
+        "avatar": "https://i.pravatar.cc/150?img=59",
+        "lastMessage": "Sana aşık oldum",
+        "time": "00:10",
+        "msg1_time": "23:55",
+        "msg2_time": "23:56",
+        "msg3_time": "23:57",
+        "msg4_time": "00:10",
+        "messages": {
+          "msg1": "Bu artık sadece seks değil",
+          "msg1_incoming": "true",
+          "msg2": "Biliyorum",
+          "msg2_incoming": "false",
+          "msg3": "O zaman bu ne?",
+          "msg3_incoming": "true",
+          "msg4": "Sana aşık oldum",
+          "msg4_incoming": "false"
+        }
+      },
+      "toma_inoue": {
+        "name": "Toma Inoue",
+        "avatar": "https://i.pravatar.cc/150?img=60",
+        "lastMessage": "Boynunda izler bıraktım",
+        "time": "04:30",
+        "msg1_time": "04:10",
+        "msg2_time": "04:11",
+        "msg3_time": "04:30",
+        "messages": {
+          "msg1": "Beni çok sert ısırdın",
+          "msg1_incoming": "true",
+          "msg2": "Sen istedin",
+          "msg2_incoming": "false",
+          "msg3": "Boynunda izler bıraktım",
+          "msg3_incoming": "false"
+        }
+      },
+      "yuki_arai": {
+        "name": "Yuki Arai",
+        "avatar": "https://i.pravatar.cc/150?img=61",
+        "lastMessage": "Seni kaybedemem",
+        "time": "22:00",
+        "msg1_time": "21:45",
+        "msg2_time": "21:46",
+        "msg3_time": "21:47",
+        "msg4_time": "22:00",
+        "messages": {
+          "msg1": "Gömleğimde bir saç buldu",
+          "msg1_incoming": "true",
+          "msg2": "Senin miydi?",
+          "msg2_incoming": "false",
+          "msg3": "Evet",
+          "msg3_incoming": "true",
+          "msg4": "Seni kaybedemem",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

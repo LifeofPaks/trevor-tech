@@ -3088,5 +3088,368 @@
         }
       }
     }
+  },
+  "dmline": {
+    "header": { "title": "LINE" },
+    "tabs": {
+      "chat": "Чаты",
+      "friends": "Друзья",
+      "calls": "Звонки",
+      "aria_label": "Вкладки навигации LINE",
+      "chat_aria": "Показать чаты",
+      "friends_aria": "Показать друзей",
+      "calls_aria": "Показать историю звонков"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список чатов",
+      "item_aria": "Чат с {{name}}",
+      "detail_aria": "Детали чата для {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Телефон",
+      "email_label": "Электронная почта",
+      "list_aria": "Список друзей",
+      "item_aria": "Друг {{name}}",
+      "detail_aria": "Детали друга для {{name}}",
+      "kai_nakamura": {
+        "name": "Кай Накамура",
+        "phone": "+81 90-1001",
+        "email": "kai@line.me"
+      },
+      "riku_sato": {
+        "name": "Рику Сато",
+        "phone": "+81 90-1002",
+        "email": "riku@line.me"
+      },
+      "haruto_tanaka": {
+        "name": "Харуто Танака",
+        "phone": "+81 90-1003",
+        "email": "haruto@line.me"
+      },
+      "sora_yamamoto": {
+        "name": "Сора Ямамото",
+        "phone": "+81 90-1004",
+        "email": "sora@line.me"
+      },
+      "ren_kobayashi": {
+        "name": "Рен Кобаяши",
+        "phone": "+81 90-1005",
+        "email": "ren@line.me"
+      },
+      "yuto_ikeda": {
+        "name": "Юто Икеда",
+        "phone": "+81 90-1006",
+        "email": "yuto@line.me"
+      },
+      "daichi_fujimoto": {
+        "name": "Дайчи Фудзимото",
+        "phone": "+81 90-1007",
+        "email": "daichi@line.me"
+      },
+      "kaito_mori": {
+        "name": "Кайто Мори",
+        "phone": "+81 90-1008",
+        "email": "kaito@line.me"
+      },
+      "shota_okada": {
+        "name": "Шота Окада",
+        "phone": "+81 90-1009",
+        "email": "shota@line.me"
+      },
+      "ryo_hashimoto": {
+        "name": "Рё Хасимото",
+        "phone": "+81 90-1010",
+        "email": "ryo@line.me"
+      },
+      "toma_inoue": {
+        "name": "Тома Иноуэ",
+        "phone": "+81 90-1011",
+        "email": "toma@line.me"
+      },
+      "yuki_arai": {
+        "name": "Юки Араи",
+        "phone": "+81 90-1012",
+        "email": "yuki@line.me"
+      }
+    },
+    "call_log": {
+      "list_aria": "Список истории звонков",
+      "item_aria": "История звонков для {{name}}",
+      "detail_aria": "Детали звонка для {{name}}",
+      "outgoing": "Исходящий",
+      "incoming": "Входящий",
+      "missed": "Пропущенный",
+      "kai_nakamura": {
+        "name": "Кай Накамура",
+        "type": "outgoing",
+        "time": "2025-10-28 23:45",
+        "duration": "19:30"
+      },
+      "riku_sato": {
+        "name": "Рику Сато",
+        "type": "incoming",
+        "time": "2025-10-28 22:20",
+        "duration": "12:45"
+      },
+      "haruto_tanaka": {
+        "name": "Харуто Танака",
+        "type": "missed",
+        "time": "2025-10-28 21:15"
+      },
+      "sora_yamamoto": {
+        "name": "Сора Ямамото",
+        "type": "outgoing",
+        "time": "2025-10-27 20:50",
+        "duration": "41:10"
+      },
+      "ren_kobayashi": {
+        "name": "Рен Кобаяши",
+        "type": "incoming",
+        "time": "2025-10-27 19:30",
+        "duration": "29:55"
+      },
+      "toma_inoue": {
+        "name": "Тома Иноуэ",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "kai_nakamura": {
+        "name": "Кай Накамура",
+        "avatar": "https://i.pravatar.cc/150?img=50",
+        "lastMessage": "Я снаружи. Ее нет дома",
+        "time": "02:41",
+        "msg1_time": "02:30",
+        "msg2_time": "02:31",
+        "msg3_time": "02:32",
+        "msg4_time": "02:41",
+        "messages": {
+          "msg1": "Ты еще не спишь?",
+          "msg1_incoming": "true",
+          "msg2": "Да. А ты?",
+          "msg2_incoming": "false",
+          "msg3": "Только что ушел от нее",
+          "msg3_incoming": "true",
+          "msg4": "Я снаружи. Ее нет дома",
+          "msg4_incoming": "false"
+        }
+      },
+      "riku_sato": {
+        "name": "Рику Сато",
+        "avatar": "https://i.pravatar.cc/150?img=51",
+        "lastMessage": "Не могу удалить твои фото",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "Та ночь была нереальной",
+          "msg1_incoming": "true",
+          "msg2": "У меня все еще есть видео",
+          "msg2_incoming": "false",
+          "msg3": "Лучше удали его",
+          "msg3_incoming": "true",
+          "msg4": "Не могу удалить твои фото",
+          "msg4_incoming": "false"
+        }
+      },
+      "haruto_tanaka": {
+        "name": "Харуто Танака",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "lastMessage": "Встречай меня в гараже",
+        "time": "23:58",
+        "msg1_time": "23:45",
+        "msg2_time": "23:46",
+        "msg3_time": "23:47",
+        "msg4_time": "23:58",
+        "messages": {
+          "msg1": "Где ты?",
+          "msg1_incoming": "true",
+          "msg2": "На работе. Поздняя смена",
+          "msg2_incoming": "false",
+          "msg3": "Лжец. Я в машине",
+          "msg3_incoming": "true",
+          "msg4": "Встречай меня в гараже",
+          "msg4_incoming": "false"
+        }
+      },
+      "sora_yamamoto": {
+        "name": "Сора Ямамото",
+        "avatar": "https://i.pravatar.cc/150?img=53",
+        "lastMessage": "Я сказал ей, что болен",
+        "time": "22:30",
+        "msg1_time": "22:10",
+        "msg2_time": "22:11",
+        "msg3_time": "22:12",
+        "msg4_time": "22:30",
+        "messages": {
+          "msg1": "Она думает, что я дома болею",
+          "msg1_incoming": "true",
+          "msg2": "Ты не болен?",
+          "msg2_incoming": "false",
+          "msg3": "Я в твоей постели",
+          "msg3_incoming": "true",
+          "msg4": "Я сказал ей, что болен",
+          "msg4_incoming": "false"
+        }
+      },
+      "ren_kobayashi": {
+        "name": "Рен Кобаяши",
+        "avatar": "https://i.pravatar.cc/150?img=54",
+        "lastMessage": "Ты мой побег",
+        "time": "03:20",
+        "msg1_time": "03:00",
+        "msg2_time": "03:01",
+        "msg3_time": "03:02",
+        "msg4_time": "03:20",
+        "messages": {
+          "msg1": "Ненавижу возвращаться домой",
+          "msg1_incoming": "true",
+          "msg2": "Тогда не возвращайся",
+          "msg2_incoming": "false",
+          "msg3": "Хочу остаться",
+          "msg3_incoming": "true",
+          "msg4": "Ты мой побег",
+          "msg4_incoming": "false"
+        }
+      },
+      "yuto_ikeda": {
+        "name": "Юто Икеда",
+        "avatar": "https://i.pravatar.cc/150?img=55",
+        "lastMessage": "Я все еще чувствую твой вкус",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:45",
+        "messages": {
+          "msg1": "Не могу перестать думать о твоих губах",
+          "msg1_incoming": "true",
+          "msg2": "То же самое. На моей шее",
+          "msg2_incoming": "false",
+          "msg3": "Я все еще чувствую твой вкус",
+          "msg3_incoming": "false"
+        }
+      },
+      "daichi_fujimoto": {
+        "name": "Дайчи Фудзимото",
+        "avatar": "https://i.pravatar.cc/150?img=56",
+        "lastMessage": "Это выходит из-под контроля",
+        "time": "21:10",
+        "msg1_time": "20:55",
+        "msg2_time": "20:56",
+        "msg3_time": "20:57",
+        "msg4_time": "21:10",
+        "messages": {
+          "msg1": "Мы сказали, что только один раз",
+          "msg1_incoming": "true",
+          "msg2": "Знаю",
+          "msg2_incoming": "false",
+          "msg3": "Тогда почему я в твоем душе?",
+          "msg3_incoming": "true",
+          "msg4": "Это выходит из-под контроля",
+          "msg4_incoming": "false"
+        }
+      },
+      "kaito_mori": {
+        "name": "Кайто Мори",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "lastMessage": "Я снова ей солгал",
+        "time": "19:40",
+        "msg1_time": "19:20",
+        "msg2_time": "19:21",
+        "msg3_time": "19:22",
+        "msg4_time": "19:40",
+        "messages": {
+          "msg1": "Она спросила, был ли я с тобой",
+          "msg1_incoming": "true",
+          "msg2": "Что ты сказал?",
+          "msg2_incoming": "false",
+          "msg3": "Чрезвычайная ситуация на работе",
+          "msg3_incoming": "true",
+          "msg4": "Я снова ей солгал",
+          "msg4_incoming": "false"
+        }
+      },
+      "shota_okada": {
+        "name": "Шота Окада",
+        "avatar": "https://i.pravatar.cc/150?img=58",
+        "lastMessage": "Твое имя сохранено как 'Босс'",
+        "time": "02:05",
+        "msg1_time": "01:50",
+        "msg2_time": "01:51",
+        "msg3_time": "01:52",
+        "msg4_time": "02:05",
+        "messages": {
+          "msg1": "Измени мое имя в своем телефоне",
+          "msg1_incoming": "true",
+          "msg2": "Уже изменил",
+          "msg2_incoming": "false",
+          "msg3": "На что?",
+          "msg3_incoming": "true",
+          "msg4": "Твое имя сохранено как 'Босс'",
+          "msg4_incoming": "false"
+        }
+      },
+      "ryo_hashimoto": {
+        "name": "Рё Хасимото",
+        "avatar": "https://i.pravatar.cc/150?img=59",
+        "lastMessage": "Я в тебя влюблен",
+        "time": "00:10",
+        "msg1_time": "23:55",
+        "msg2_time": "23:56",
+        "msg3_time": "23:57",
+        "msg4_time": "00:10",
+        "messages": {
+          "msg1": "Это уже не просто секс",
+          "msg1_incoming": "true",
+          "msg2": "Знаю",
+          "msg2_incoming": "false",
+          "msg3": "Тогда что это?",
+          "msg3_incoming": "true",
+          "msg4": "Я в тебя влюблен",
+          "msg4_incoming": "false"
+        }
+      },
+      "toma_inoue": {
+        "name": "Тома Иноуэ",
+        "avatar": "https://i.pravatar.cc/150?img=60",
+        "lastMessage": "Я оставил следы на твоей шее",
+        "time": "04:30",
+        "msg1_time": "04:10",
+        "msg2_time": "04:11",
+        "msg3_time": "04:30",
+        "messages": {
+          "msg1": "Ты слишком сильно меня укусил",
+          "msg1_incoming": "true",
+          "msg2": "Ты сам попросил",
+          "msg2_incoming": "false",
+          "msg3": "Я оставил следы на твоей шее",
+          "msg3_incoming": "false"
+        }
+      },
+      "yuki_arai": {
+        "name": "Юки Араи",
+        "avatar": "https://i.pravatar.cc/150?img=61",
+        "lastMessage": "Я не могу тебя потерять",
+        "time": "22:00",
+        "msg1_time": "21:45",
+        "msg2_time": "21:46",
+        "msg3_time": "21:47",
+        "msg4_time": "22:00",
+        "messages": {
+          "msg1": "Она нашла волос на моей рубашке",
+          "msg1_incoming": "true",
+          "msg2": "Это был твой?",
+          "msg2_incoming": "false",
+          "msg3": "Да",
+          "msg3_incoming": "true",
+          "msg4": "Я не могу тебя потерять",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

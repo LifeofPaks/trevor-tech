@@ -3024,5 +3024,368 @@
         }
       }
     }
+  },
+  "dmline": {
+    "header": { "title": "LINE" },
+    "tabs": {
+      "chat": "聊天",
+      "friends": "朋友",
+      "calls": "通话",
+      "aria_label": "LINE 导航标签",
+      "chat_aria": "显示聊天",
+      "friends_aria": "显示朋友",
+      "calls_aria": "显示通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "聊天列表",
+      "item_aria": "与{{name}}的聊天",
+      "detail_aria": "{{name}}的聊天详情"
+    },
+    "contacts": {
+      "phone_label": "电话",
+      "email_label": "电子邮件",
+      "list_aria": "朋友列表",
+      "item_aria": "朋友 {{name}}",
+      "detail_aria": "{{name}}的朋友详情",
+      "kai_nakamura": {
+        "name": "中村凯",
+        "phone": "+81 90-1001",
+        "email": "kai@line.me"
+      },
+      "riku_sato": {
+        "name": "佐藤陆",
+        "phone": "+81 90-1002",
+        "email": "riku@line.me"
+      },
+      "haruto_tanaka": {
+        "name": "田中晴人",
+        "phone": "+81 90-1003",
+        "email": "haruto@line.me"
+      },
+      "sora_yamamoto": {
+        "name": "山本空",
+        "phone": "+81 90-1004",
+        "email": "sora@line.me"
+      },
+      "ren_kobayashi": {
+        "name": "小林莲",
+        "phone": "+81 90-1005",
+        "email": "ren@line.me"
+      },
+      "yuto_ikeda": {
+        "name": "池田优斗",
+        "phone": "+81 90-1006",
+        "email": "yuto@line.me"
+      },
+      "daichi_fujimoto": {
+        "name": "藤本大地",
+        "phone": "+81 90-1007",
+        "email": "daichi@line.me"
+      },
+      "kaito_mori": {
+        "name": "森海斗",
+        "phone": "+81 90-1008",
+        "email": "kaito@line.me"
+      },
+      "shota_okada": {
+        "name": "冈田翔太",
+        "phone": "+81 90-1009",
+        "email": "shota@line.me"
+      },
+      "ryo_hashimoto": {
+        "name": "桥本凉",
+        "phone": "+81 90-1010",
+        "email": "ryo@line.me"
+      },
+      "toma_inoue": {
+        "name": "井上斗真",
+        "phone": "+81 90-1011",
+        "email": "toma@line.me"
+      },
+      "yuki_arai": {
+        "name": "新井优希",
+        "phone": "+81 90-1012",
+        "email": "yuki@line.me"
+      }
+    },
+    "call_log": {
+      "list_aria": "通话记录列表",
+      "item_aria": "{{name}}的通话记录",
+      "detail_aria": "{{name}}的通话详情",
+      "outgoing": "拨出",
+      "incoming": "来电",
+      "missed": "未接",
+      "kai_nakamura": {
+        "name": "中村凯",
+        "type": "outgoing",
+        "time": "2025-10-28 23:45",
+        "duration": "19:30"
+      },
+      "riku_sato": {
+        "name": "佐藤陆",
+        "type": "incoming",
+        "time": "2025-10-28 22:20",
+        "duration": "12:45"
+      },
+      "haruto_tanaka": {
+        "name": "田中晴人",
+        "type": "missed",
+        "time": "2025-10-28 21:15"
+      },
+      "sora_yamamoto": {
+        "name": "山本空",
+        "type": "outgoing",
+        "time": "2025-10-27 20:50",
+        "duration": "41:10"
+      },
+      "ren_kobayashi": {
+        "name": "小林莲",
+        "type": "incoming",
+        "time": "2025-10-27 19:30",
+        "duration": "29:55"
+      },
+      "toma_inoue": {
+        "name": "井上斗真",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "kai_nakamura": {
+        "name": "中村凯",
+        "avatar": "https://i.pravatar.cc/150?img=50",
+        "lastMessage": "我在外面，她不在家",
+        "time": "02:41",
+        "msg1_time": "02:30",
+        "msg2_time": "02:31",
+        "msg3_time": "02:32",
+        "msg4_time": "02:41",
+        "messages": {
+          "msg1": "你还醒着吗？",
+          "msg1_incoming": "true",
+          "msg2": "嗯，你呢？",
+          "msg2_incoming": "false",
+          "msg3": "刚从她家出来",
+          "msg3_incoming": "true",
+          "msg4": "我在外面，她不在家",
+          "msg4_incoming": "false"
+        }
+      },
+      "riku_sato": {
+        "name": "佐藤陆",
+        "avatar": "https://i.pravatar.cc/150?img=51",
+        "lastMessage": "我删不掉你的照片",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "那晚太梦幻了",
+          "msg1_incoming": "true",
+          "msg2": "我还有那个视频",
+          "msg2_incoming": "false",
+          "msg3": "你最好删了它",
+          "msg3_incoming": "true",
+          "msg4": "我删不掉你的照片",
+          "msg4_incoming": "false"
+        }
+      },
+      "haruto_tanaka": {
+        "name": "田中晴人",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "lastMessage": "在停车场见我",
+        "time": "23:58",
+        "msg1_time": "23:45",
+        "msg2_time": "23:46",
+        "msg3_time": "23:47",
+        "msg4_time": "23:58",
+        "messages": {
+          "msg1": "你在哪儿？",
+          "msg1_incoming": "true",
+          "msg2": "工作，晚班",
+          "msg2_incoming": "false",
+          "msg3": "骗子，我在车里",
+          "msg3_incoming": "true",
+          "msg4": "在停车场见我",
+          "msg4_incoming": "false"
+        }
+      },
+      "sora_yamamoto": {
+        "name": "山本空",
+        "avatar": "https://i.pravatar.cc/150?img=53",
+        "lastMessage": "我告诉她我生病了",
+        "time": "22:30",
+        "msg1_time": "22:10",
+        "msg2_time": "22:11",
+        "msg3_time": "22:12",
+        "msg4_time": "22:30",
+        "messages": {
+          "msg1": "她以为我在家生病",
+          "msg1_incoming": "true",
+          "msg2": "你没病吗？",
+          "msg2_incoming": "false",
+          "msg3": "我在你的床上",
+          "msg3_incoming": "true",
+          "msg4": "我告诉她我生病了",
+          "msg4_incoming": "false"
+        }
+      },
+      "ren_kobayashi": {
+        "name": "小林莲",
+        "avatar": "https://i.pravatar.cc/150?img=54",
+        "lastMessage": "你是我的逃避",
+        "time": "03:20",
+        "msg1_time": "03:00",
+        "msg2_time": "03:01",
+        "msg3_time": "03:02",
+        "msg4_time": "03:20",
+        "messages": {
+          "msg1": "我讨厌回家",
+          "msg1_incoming": "true",
+          "msg2": "那就别回",
+          "msg2_incoming": "false",
+          "msg3": "我希望能留下来",
+          "msg3_incoming": "true",
+          "msg4": "你是我的逃避",
+          "msg4_incoming": "false"
+        }
+      },
+      "yuto_ikeda": {
+        "name": "池田优斗",
+        "avatar": "https://i.pravatar.cc/150?img=55",
+        "lastMessage": "我还尝得到你",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:45",
+        "messages": {
+          "msg1": "我无法停止想你的唇",
+          "msg1_incoming": "true",
+          "msg2": "我也是，在我脖子上",
+          "msg2_incoming": "false",
+          "msg3": "我还尝得到你",
+          "msg3_incoming": "false"
+        }
+      },
+      "daichi_fujimoto": {
+        "name": "藤本大地",
+        "avatar": "https://i.pravatar.cc/150?img=56",
+        "lastMessage": "这事失控了",
+        "time": "21:10",
+        "msg1_time": "20:55",
+        "msg2_time": "20:56",
+        "msg3_time": "20:57",
+        "msg4_time": "21:10",
+        "messages": {
+          "msg1": "我们说好只有一次",
+          "msg1_incoming": "true",
+          "msg2": "我知道",
+          "msg2_incoming": "false",
+          "msg3": "那我为什么在你浴室？",
+          "msg3_incoming": "true",
+          "msg4": "这事失控了",
+          "msg4_incoming": "false"
+        }
+      },
+      "kaito_mori": {
+        "name": "森海斗",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "lastMessage": "我又对她撒谎了",
+        "time": "19:40",
+        "msg1_time": "19:20",
+        "msg2_time": "19:21",
+        "msg3_time": "19:22",
+        "msg4_time": "19:40",
+        "messages": {
+          "msg1": "她问我是不是跟你在一起",
+          "msg1_incoming": "true",
+          "msg2": "你说了什么？",
+          "msg2_incoming": "false",
+          "msg3": "工作紧急情况",
+          "msg3_incoming": "true",
+          "msg4": "我又对她撒谎了",
+          "msg4_incoming": "false"
+        }
+      },
+      "shota_okada": {
+        "name": "冈田翔太",
+        "avatar": "https://i.pravatar.cc/150?img=58",
+        "lastMessage": "你的名字存为‘老板’",
+        "time": "02:05",
+        "msg1_time": "01:50",
+        "msg2_time": "01:51",
+        "msg3_time": "01:52",
+        "msg4_time": "02:05",
+        "messages": {
+          "msg1": "把我手机里的名字改了",
+          "msg1_incoming": "true",
+          "msg2": "已经改了",
+          "msg2_incoming": "false",
+          "msg3": "改成什么？",
+          "msg3_incoming": "true",
+          "msg4": "你的名字存为‘老板’",
+          "msg4_incoming": "false"
+        }
+      },
+      "ryo_hashimoto": {
+        "name": "桥本凉",
+        "avatar": "https://i.pravatar.cc/150?img=59",
+        "lastMessage": "我爱上你了",
+        "time": "00:10",
+        "msg1_time": "23:55",
+        "msg2_time": "23:56",
+        "msg3_time": "23:57",
+        "msg4_time": "00:10",
+        "messages": {
+          "msg1": "这已经不只是性了",
+          "msg1_incoming": "true",
+          "msg2": "我知道",
+          "msg2_incoming": "false",
+          "msg3": "那这是什么？",
+          "msg3_incoming": "true",
+          "msg4": "我爱上你了",
+          "msg4_incoming": "false"
+        }
+      },
+      "toma_inoue": {
+        "name": "井上斗真",
+        "avatar": "https://i.pravatar.cc/150?img=60",
+        "lastMessage": "我在你脖子上留了痕迹",
+        "time": "04:30",
+        "msg1_time": "04:10",
+        "msg2_time": "04:11",
+        "msg3_time": "04:30",
+        "messages": {
+          "msg1": "你咬我太用力了",
+          "msg1_incoming": "true",
+          "msg2": "是你要求的",
+          "msg2_incoming": "false",
+          "msg3": "我在你脖子上留了痕迹",
+          "msg3_incoming": "false"
+        }
+      },
+      "yuki_arai": {
+        "name": "新井优希",
+        "avatar": "https://i.pravatar.cc/150?img=61",
+        "lastMessage": "我不能失去你",
+        "time": "22:00",
+        "msg1_time": "21:45",
+        "msg2_time": "22:00",
+        "msg3_time": "21:47",
+        "msg4_time": "22:00",
+        "messages": {
+          "msg1": "她在我的衬衫上发现了一根头发",
+          "msg1_incoming": "true",
+          "msg2": "是你的吗？",
+          "msg2_incoming": "false",
+          "msg3": "是的",
+          "msg3_incoming": "true",
+          "msg4": "我不能失去你",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

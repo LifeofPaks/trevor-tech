@@ -3047,5 +3047,368 @@
         }
       }
     }
+  },
+  "dmline": {
+    "header": { "title": "LINE" },
+    "tabs": {
+      "chat": "الدردشات",
+      "friends": "الأصدقاء",
+      "calls": "المكالمات",
+      "aria_label": "علامات تبويب التنقل في LINE",
+      "chat_aria": "إظهار الدردشات",
+      "friends_aria": "إظهار الأصدقاء",
+      "calls_aria": "إظهار سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة الدردشات",
+      "item_aria": "دردشة مع {{name}}",
+      "detail_aria": "تفاصيل الدردشة لـ {{name}}"
+    },
+    "contacts": {
+      "phone_label": "الهاتف",
+      "email_label": "البريد الإلكتروني",
+      "list_aria": "قائمة الأصدقاء",
+      "item_aria": "صديق {{name}}",
+      "detail_aria": "تفاصيل الصديق لـ {{name}}",
+      "kai_nakamura": {
+        "name": "كاي ناكامورا",
+        "phone": "+81 90-1001",
+        "email": "kai@line.me"
+      },
+      "riku_sato": {
+        "name": "ريكو ساتو",
+        "phone": "+81 90-1002",
+        "email": "riku@line.me"
+      },
+      "haruto_tanaka": {
+        "name": "هاروتو تاناكا",
+        "phone": "+81 90-1003",
+        "email": "haruto@line.me"
+      },
+      "sora_yamamoto": {
+        "name": "سورا ياماموتو",
+        "phone": "+81 90-1004",
+        "email": "sora@line.me"
+      },
+      "ren_kobayashi": {
+        "name": "رين كوباياشي",
+        "phone": "+81 90-1005",
+        "email": "ren@line.me"
+      },
+      "yuto_ikeda": {
+        "name": "يوتو إيكيدا",
+        "phone": "+81 90-1006",
+        "email": "yuto@line.me"
+      },
+      "daichi_fujimoto": {
+        "name": "دايتشي فوجيموتو",
+        "phone": "+81 90-1007",
+        "email": "daichi@line.me"
+      },
+      "kaito_mori": {
+        "name": "كايتو موري",
+        "phone": "+81 90-1008",
+        "email": "kaito@line.me"
+      },
+      "shota_okada": {
+        "name": "شوتا أوكادا",
+        "phone": "+81 90-1009",
+        "email": "shota@line.me"
+      },
+      "ryo_hashimoto": {
+        "name": "ريو هاشيموتو",
+        "phone": "+81 90-1010",
+        "email": "ryo@line.me"
+      },
+      "toma_inoue": {
+        "name": "توما إينوي",
+        "phone": "+81 90-1011",
+        "email": "toma@line.me"
+      },
+      "yuki_arai": {
+        "name": "يوكي أراي",
+        "phone": "+81 90-1012",
+        "email": "yuki@line.me"
+      }
+    },
+    "call_log": {
+      "list_aria": "قائمة سجل المكالمات",
+      "item_aria": "سجل المكالمات لـ {{name}}",
+      "detail_aria": "تفاصيل المكالمة لـ {{name}}",
+      "outgoing": "صادرة",
+      "incoming": "واردة",
+      "missed": "مفقودة",
+      "kai_nakamura": {
+        "name": "كاي ناكامورا",
+        "type": "outgoing",
+        "time": "2025-10-28 23:45",
+        "duration": "19:30"
+      },
+      "riku_sato": {
+        "name": "ريكو ساتو",
+        "type": "incoming",
+        "time": "2025-10-28 22:20",
+        "duration": "12:45"
+      },
+      "haruto_tanaka": {
+        "name": "هاروتو تاناكا",
+        "type": "missed",
+        "time": "2025-10-28 21:15"
+      },
+      "sora_yamamoto": {
+        "name": "سورا ياماموتو",
+        "type": "outgoing",
+        "time": "2025-10-27 20:50",
+        "duration": "41:10"
+      },
+      "ren_kobayashi": {
+        "name": "رين كوباياشي",
+        "type": "incoming",
+        "time": "2025-10-27 19:30",
+        "duration": "29:55"
+      },
+      "toma_inoue": {
+        "name": "توما إينوي",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "kai_nakamura": {
+        "name": "كاي ناكامورا",
+        "avatar": "https://i.pravatar.cc/150?img=50",
+        "lastMessage": "أنا بالخارج. إنها ليست في المنزل",
+        "time": "02:41",
+        "msg1_time": "02:30",
+        "msg2_time": "02:31",
+        "msg3_time": "02:32",
+        "msg4_time": "02:41",
+        "messages": {
+          "msg1": "هل ما زلت مستيقظًا؟",
+          "msg1_incoming": "true",
+          "msg2": "نعم، وأنت؟",
+          "msg2_incoming": "false",
+          "msg3": "لقد غادرت منزلها للتو",
+          "msg3_incoming": "true",
+          "msg4": "أنا بالخارج. إنها ليست في المنزل",
+          "msg4_incoming": "false"
+        }
+      },
+      "riku_sato": {
+        "name": "ريكو ساتو",
+        "avatar": "https://i.pravatar.cc/150?img=51",
+        "lastMessage": "لا أستطيع حذف صورك",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "تلك الليلة كانت سريالية",
+          "msg1_incoming": "true",
+          "msg2": "ما زلت أملك الفيديو",
+          "msg2_incoming": "false",
+          "msg3": "من الأفضل أن تحذفه",
+          "msg3_incoming": "true",
+          "msg4": "لا أستطيع حذف صورك",
+          "msg4_incoming": "false"
+        }
+      },
+      "haruto_tanaka": {
+        "name": "هاروتو تاناكا",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "lastMessage": "التقِ بي في موقف السيارات",
+        "time": "23:58",
+        "msg1_time": "23:45",
+        "msg2_time": "23:46",
+        "msg3_time": "23:47",
+        "msg4_time": "23:58",
+        "messages": {
+          "msg1": "أين أنت؟",
+          "msg1_incoming": "true",
+          "msg2": "في العمل. وردية ليلية",
+          "msg2_incoming": "false",
+          "msg3": "كاذب. أنا في السيارة",
+          "msg3_incoming": "true",
+          "msg4": "التقِ بي في موقف السيارات",
+          "msg4_incoming": "false"
+        }
+      },
+      "sora_yamamoto": {
+        "name": "سورا ياماموتو",
+        "avatar": "https://i.pravatar.cc/150?img=53",
+        "lastMessage": "قلت لها إنني مريض",
+        "time": "22:30",
+        "msg1_time": "22:10",
+        "msg2_time": "22:11",
+        "msg3_time": "22:12",
+        "msg4_time": "22:30",
+        "messages": {
+          "msg1": "إنها تعتقد أنني مريض في المنزل",
+          "msg1_incoming": "true",
+          "msg2": "ألست مريضًا؟",
+          "msg2_incoming": "false",
+          "msg3": "أنا في سريرك",
+          "msg3_incoming": "true",
+          "msg4": "قلت لها إنني مريض",
+          "msg4_incoming": "false"
+        }
+      },
+      "ren_kobayashi": {
+        "name": "رين كوباياشي",
+        "avatar": "https://i.pravatar.cc/150?img=54",
+        "lastMessage": "أنت مهربي",
+        "time": "03:20",
+        "msg1_time": "03:00",
+        "msg2_time": "03:01",
+        "msg3_time": "03:02",
+        "msg4_time": "03:20",
+        "messages": {
+          "msg1": "أكره العودة إلى المنزل",
+          "msg1_incoming": "true",
+          "msg2": "إذًا لا تعُد",
+          "msg2_incoming": "false",
+          "msg3": "أتمنى لو أستطيع البقاء",
+          "msg3_incoming": "true",
+          "msg4": "أنت مهربي",
+          "msg4_incoming": "false"
+        }
+      },
+      "yuto_ikeda": {
+        "name": "يوتو إيكيدا",
+        "avatar": "https://i.pravatar.cc/150?img=55",
+        "lastMessage": "ما زلت أشعر بطعمك",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:45",
+        "messages": {
+          "msg1": "لا أستطيع التوقف عن التفكير بشفتيك",
+          "msg1_incoming": "true",
+          "msg2": "نفس الشيء. على رقبتي",
+          "msg2_incoming": "false",
+          "msg3": "ما زلت أشعر بطعمك",
+          "msg3_incoming": "false"
+        }
+      },
+      "daichi_fujimoto": {
+        "name": "دايتشي فوجيموتو",
+        "avatar": "https://i.pravatar.cc/150?img=56",
+        "lastMessage": "الأمور خرجت عن السيطرة",
+        "time": "21:10",
+        "msg1_time": "20:55",
+        "msg2_time": "20:56",
+        "msg3_time": "20:57",
+        "msg4_time": "21:10",
+        "messages": {
+          "msg1": "قلنا مرة واحدة فقط",
+          "msg1_incoming": "true",
+          "msg2": "أعلم",
+          "msg2_incoming": "false",
+          "msg3": "إذًا لماذا أنا في حمامك؟",
+          "msg3_incoming": "true",
+          "msg4": "الأمور خرجت عن السيطرة",
+          "msg4_incoming": "false"
+        }
+      },
+      "kaito_mori": {
+        "name": "كايتو موري",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "lastMessage": "كذبت عليها مجددًا",
+        "time": "19:40",
+        "msg1_time": "19:20",
+        "msg2_time": "19:21",
+        "msg3_time": "19:22",
+        "msg4_time": "19:40",
+        "messages": {
+          "msg1": "سألتني إن كنت معك",
+          "msg1_incoming": "true",
+          "msg2": "ماذا قلت؟",
+          "msg2_incoming": "false",
+          "msg3": "طارئ في العمل",
+          "msg3_incoming": "true",
+          "msg4": "كذبت عليها مجددًا",
+          "msg4_incoming": "false"
+        }
+      },
+      "shota_okada": {
+        "name": "شوتا أوكادا",
+        "avatar": "https://i.pravatar.cc/150?img=58",
+        "lastMessage": "اسمك محفوظ باسم 'المدير'",
+        "time": "02:05",
+        "msg1_time": "01:50",
+        "msg2_time": "01:51",
+        "msg3_time": "01:52",
+        "msg4_time": "02:05",
+        "messages": {
+          "msg1": "غيّر اسمي في هاتفك",
+          "msg1_incoming": "true",
+          "msg2": "لقد غيرته بالفعل",
+          "msg2_incoming": "false",
+          "msg3": "إلى ماذا؟",
+          "msg3_incoming": "true",
+          "msg4": "اسمك محفوظ باسم 'المدير'",
+          "msg4_incoming": "false"
+        }
+      },
+      "ryo_hashimoto": {
+        "name": "ريو هاشيموتو",
+        "avatar": "https://i.pravatar.cc/150?img=59",
+        "lastMessage": "أنا واقع في حبك",
+        "time": "00:10",
+        "msg1_time": "23:55",
+        "msg2_time": "23:56",
+        "msg3_time": "23:57",
+        "msg4_time": "00:10",
+        "messages": {
+          "msg1": "هذا لم يعد مجرد جنس",
+          "msg1_incoming": "true",
+          "msg2": "أعلم",
+          "msg2_incoming": "false",
+          "msg3": "إذًا ما هذا؟",
+          "msg3_incoming": "true",
+          "msg4": "أنا واقع في حبك",
+          "msg4_incoming": "false"
+        }
+      },
+      "toma_inoue": {
+        "name": "توما إينوي",
+        "avatar": "https://i.pravatar.cc/150?img=60",
+        "lastMessage": "تركت علامات على رقبتك",
+        "time": "04:30",
+        "msg1_time": "04:10",
+        "msg2_time": "04:11",
+        "msg3_time": "04:30",
+        "messages": {
+          "msg1": "لقد عضتني بقوة زائدة",
+          "msg1_incoming": "true",
+          "msg2": "أنت من طلبت ذلك",
+          "msg2_incoming": "false",
+          "msg3": "تركت علامات على رقبتك",
+          "msg3_incoming": "false"
+        }
+      },
+      "yuki_arai": {
+        "name": "يوكي أراي",
+        "avatar": "https://i.pravatar.cc/150?img=61",
+        "lastMessage": "لا أستطيع أن أفقدك",
+        "time": "22:00",
+        "msg1_time": "21:45",
+        "msg2_time": "21:46",
+        "msg3_time": "21:47",
+        "msg4_time": "22:00",
+        "messages": {
+          "msg1": "وجدت شعرة على قميصي",
+          "msg1_incoming": "true",
+          "msg2": "كانت شعرتك؟",
+          "msg2_incoming": "false",
+          "msg3": "نعم",
+          "msg3_incoming": "true",
+          "msg4": "لا أستطيع أن أفقدك",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

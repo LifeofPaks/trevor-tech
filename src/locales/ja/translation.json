@@ -3018,5 +3018,368 @@
         }
       }
     }
+  },
+  "dmline": {
+    "header": { "title": "LINE" },
+    "tabs": {
+      "chat": "チャット",
+      "friends": "友達",
+      "calls": "通話",
+      "aria_label": "LINEナビゲーションタブ",
+      "chat_aria": "チャットを表示",
+      "friends_aria": "友達を表示",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "チャットリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}のチャット詳細"
+    },
+    "contacts": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "list_aria": "友達リスト",
+      "item_aria": "友達 {{name}}",
+      "detail_aria": "{{name}}の友達詳細",
+      "kai_nakamura": {
+        "name": "中村海",
+        "phone": "+81 90-1001",
+        "email": "kai@line.me"
+      },
+      "riku_sato": {
+        "name": "佐藤陸",
+        "phone": "+81 90-1002",
+        "email": "riku@line.me"
+      },
+      "haruto_tanaka": {
+        "name": "田中晴人",
+        "phone": "+81 90-1003",
+        "email": "haruto@line.me"
+      },
+      "sora_yamamoto": {
+        "name": "山本空",
+        "phone": "+81 90-1004",
+        "email": "sora@line.me"
+      },
+      "ren_kobayashi": {
+        "name": "小林蓮",
+        "phone": "+81 90-1005",
+        "email": "ren@line.me"
+      },
+      "yuto_ikeda": {
+        "name": "池田優斗",
+        "phone": "+81 90-1006",
+        "email": "yuto@line.me"
+      },
+      "daichi_fujimoto": {
+        "name": "藤本大地",
+        "phone": "+81 90-1007",
+        "email": "daichi@line.me"
+      },
+      "kaito_mori": {
+        "name": "森海斗",
+        "phone": "+81 90-1008",
+        "email": "kaito@line.me"
+      },
+      "shota_okada": {
+        "name": "岡田翔太",
+        "phone": "+81 90-1009",
+        "email": "shota@line.me"
+      },
+      "ryo_hashimoto": {
+        "name": "橋本涼",
+        "phone": "+81 90-1010",
+        "email": "ryo@line.me"
+      },
+      "toma_inoue": {
+        "name": "井上斗真",
+        "phone": "+81 90-1011",
+        "email": "toma@line.me"
+      },
+      "yuki_arai": {
+        "name": "新井優希",
+        "phone": "+81 90-1012",
+        "email": "yuki@line.me"
+      }
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在",
+      "kai_nakamura": {
+        "name": "中村海",
+        "type": "outgoing",
+        "time": "2025-10-28 23:45",
+        "duration": "19:30"
+      },
+      "riku_sato": {
+        "name": "佐藤陸",
+        "type": "incoming",
+        "time": "2025-10-28 22:20",
+        "duration": "12:45"
+      },
+      "haruto_tanaka": {
+        "name": "田中晴人",
+        "type": "missed",
+        "time": "2025-10-28 21:15"
+      },
+      "sora_yamamoto": {
+        "name": "山本空",
+        "type": "outgoing",
+        "time": "2025-10-27 20:50",
+        "duration": "41:10"
+      },
+      "ren_kobayashi": {
+        "name": "小林蓮",
+        "type": "incoming",
+        "time": "2025-10-27 19:30",
+        "duration": "29:55"
+      },
+      "toma_inoue": {
+        "name": "井上斗真",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "kai_nakamura": {
+        "name": "中村海",
+        "avatar": "https://i.pravatar.cc/150?img=50",
+        "lastMessage": "外にいるよ。彼女は家にいない",
+        "time": "02:41",
+        "msg1_time": "02:30",
+        "msg2_time": "02:31",
+        "msg3_time": "02:32",
+        "msg4_time": "02:41",
+        "messages": {
+          "msg1": "まだ起きてる？",
+          "msg1_incoming": "true",
+          "msg2": "うん、君は？",
+          "msg2_incoming": "false",
+          "msg3": "彼女の家から出てきたところ",
+          "msg3_incoming": "true",
+          "msg4": "外にいるよ。彼女は家にいない",
+          "msg4_incoming": "false"
+        }
+      },
+      "riku_sato": {
+        "name": "佐藤陸",
+        "avatar": "https://i.pravatar.cc/150?img=51",
+        "lastMessage": "君の写真を消せない",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "あの夜は現実離れしてた",
+          "msg1_incoming": "true",
+          "msg2": "まだあのビデオ持ってるよ",
+          "msg2_incoming": "false",
+          "msg3": "消した方がいいよ",
+          "msg3_incoming": "true",
+          "msg4": "君の写真を消せない",
+          "msg4_incoming": "false"
+        }
+      },
+      "haruto_tanaka": {
+        "name": "田中晴人",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "lastMessage": "駐車場で会おう",
+        "time": "23:58",
+        "msg1_time": "23:45",
+        "msg2_time": "23:46",
+        "msg3_time": "23:47",
+        "msg4_time": "23:58",
+        "messages": {
+          "msg1": "どこにいる？",
+          "msg1_incoming": "true",
+          "msg2": "仕事。夜勤",
+          "msg2_incoming": "false",
+          "msg3": "嘘つき。車の中にいるよ",
+          "msg3_incoming": "true",
+          "msg4": "駐車場で会おう",
+          "msg4_incoming": "false"
+        }
+      },
+      "sora_yamamoto": {
+        "name": "山本空",
+        "avatar": "https://i.pravatar.cc/150?img=53",
+        "lastMessage": "彼女に病気だって言った",
+        "time": "22:30",
+        "msg1_time": "22:10",
+        "msg2_time": "22:11",
+        "msg3_time": "22:12",
+        "msg4_time": "22:30",
+        "messages": {
+          "msg1": "彼女は私が家で病気だと思ってる",
+          "msg1_incoming": "true",
+          "msg2": "病気じゃないの？",
+          "msg2_incoming": "false",
+          "msg3": "君のベッドにいるよ",
+          "msg3_incoming": "true",
+          "msg4": "彼女に病気だって言った",
+          "msg4_incoming": "false"
+        }
+      },
+      "ren_kobayashi": {
+        "name": "小林蓮",
+        "avatar": "https://i.pravatar.cc/150?img=54",
+        "lastMessage": "君は俺の逃げ場だ",
+        "time": "03:20",
+        "msg1_time": "03:00",
+        "msg2_time": "03:01",
+        "msg3_time": "03:02",
+        "msg4_time": "03:20",
+        "messages": {
+          "msg1": "家に帰るのが嫌いだ",
+          "msg1_incoming": "true",
+          "msg2": "じゃあ帰らなきゃ",
+          "msg2_incoming": "false",
+          "msg3": "ここにいたい",
+          "msg3_incoming": "true",
+          "msg4": "君は俺の逃げ場だ",
+          "msg4_incoming": "false"
+        }
+      },
+      "yuto_ikeda": {
+        "name": "池田優斗",
+        "avatar": "https://i.pravatar.cc/150?img=55",
+        "lastMessage": "まだ君の味がする",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:45",
+        "messages": {
+          "msg1": "君の唇が頭から離れない",
+          "msg1_incoming": "true",
+          "msg2": "同じく。首に",
+          "msg2_incoming": "false",
+          "msg3": "まだ君の味がする",
+          "msg3_incoming": "false"
+        }
+      },
+      "daichi_fujimoto": {
+        "name": "藤本大地",
+        "avatar": "https://i.pravatar.cc/150?img=56",
+        "lastMessage": "これ、制御不能になってる",
+        "time": "21:10",
+        "msg1_time": "20:55",
+        "msg2_time": "20:56",
+        "msg3_time": "20:57",
+        "msg4_time": "21:10",
+        "messages": {
+          "msg1": "一回だけって言ったよね",
+          "msg1_incoming": "true",
+          "msg2": "わかってる",
+          "msg2_incoming": "false",
+          "msg3": "じゃあなんで君のシャワーにいるんだ？",
+          "msg3_incoming": "true",
+          "msg4": "これ、制御不能になってる",
+          "msg4_incoming": "false"
+        }
+      },
+      "kaito_mori": {
+        "name": "森海斗",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "lastMessage": "また彼女に嘘ついた",
+        "time": "19:40",
+        "msg1_time": "19:20",
+        "msg2_time": "19:21",
+        "msg3_time": "19:22",
+        "msg4_time": "19:40",
+        "messages": {
+          "msg1": "彼女に君といたかって聞かれた",
+          "msg1_incoming": "true",
+          "msg2": "なんて言った？",
+          "msg2_incoming": "false",
+          "msg3": "仕事の緊急事態",
+          "msg3_incoming": "true",
+          "msg4": "また彼女に嘘ついた",
+          "msg4_incoming": "false"
+        }
+      },
+      "shota_okada": {
+        "name": "岡田翔太",
+        "avatar": "https://i.pravatar.cc/150?img=58",
+        "lastMessage": "君の名前を「ボス」って保存した",
+        "time": "02:05",
+        "msg1_time": "01:50",
+        "msg2_time": "01:51",
+        "msg3_time": "01:52",
+        "msg4_time": "02:05",
+        "messages": {
+          "msg1": "俺の名前、電話で変えて",
+          "msg1_incoming": "true",
+          "msg2": "もう変えたよ",
+          "msg2_incoming": "false",
+          "msg3": "何に？",
+          "msg3_incoming": "true",
+          "msg4": "君の名前を「ボス」って保存した",
+          "msg4_incoming": "false"
+        }
+      },
+      "ryo_hashimoto": {
+        "name": "橋本涼",
+        "avatar": "https://i.pravatar.cc/150?img=59",
+        "lastMessage": "君に恋してる",
+        "time": "00:10",
+        "msg1_time": "23:55",
+        "msg2_time": "23:56",
+        "msg3_time": "23:57",
+        "msg4_time": "00:10",
+        "messages": {
+          "msg1": "もうただのセックスじゃない",
+          "msg1_incoming": "true",
+          "msg2": "わかってる",
+          "msg2_incoming": "false",
+          "msg3": "じゃあ何だ？",
+          "msg3_incoming": "true",
+          "msg4": "君に恋してる",
+          "msg4_incoming": "false"
+        }
+      },
+      "toma_inoue": {
+        "name": "井上斗真",
+        "avatar": "https://i.pravatar.cc/150?img=60",
+        "lastMessage": "君の首に跡つけた",
+        "time": "04:30",
+        "msg1_time": "04:10",
+        "msg2_time": "04:11",
+        "msg3_time": "04:30",
+        "messages": {
+          "msg1": "めっちゃ強く噛んだね",
+          "msg1_incoming": "true",
+          "msg2": "君がそうしろって言った",
+          "msg2_incoming": "false",
+          "msg3": "君の首に跡つけた",
+          "msg3_incoming": "false"
+        }
+      },
+      "yuki_arai": {
+        "name": "新井優希",
+        "avatar": "https://i.pravatar.cc/150?img=61",
+        "lastMessage": "君を失いたくない",
+        "time": "22:00",
+        "msg1_time": "21:45",
+        "msg2_time": "21:46",
+        "msg3_time": "21:47",
+        "msg4_time": "22:00",
+        "messages": {
+          "msg1": "彼女がシャツに髪の毛見つけた",
+          "msg1_incoming": "true",
+          "msg2": "君の？",
+          "msg2_incoming": "false",
+          "msg3": "うん",
+          "msg3_incoming": "true",
+          "msg4": "君を失いたくない",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

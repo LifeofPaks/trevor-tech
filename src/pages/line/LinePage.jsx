@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -70,97 +71,197 @@ const theme = createTheme({
 const chats = [
   {
     id: 1,
-    name: "Kai Nakamura",
+    name: "kai_nakamura",
     avatar: "https://i.pravatar.cc/150?img=50",
-    lastMessage: "I’m outside. She’s not home",
+    lastMessage: "dmline.chats.kai_nakamura.lastMessage",
     time: "02:41",
     messages: [
-      { text: "You still awake?", time: "02:30", incoming: true },
-      { text: "Yeah. You?", time: "02:31", incoming: false },
-      { text: "Just left her place", time: "02:32", incoming: true },
-      { text: "I’m outside. She’s not home", time: "02:41", incoming: false },
+      {
+        text: "dmline.chats.kai_nakamura.messages.msg1",
+        time: "02:30",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.kai_nakamura.messages.msg2",
+        time: "02:31",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.kai_nakamura.messages.msg3",
+        time: "02:32",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.kai_nakamura.messages.msg4",
+        time: "02:41",
+        incoming: false,
+      },
     ],
   },
   {
     id: 2,
-    name: "Riku Sato",
+    name: "riku_sato",
     avatar: "https://i.pravatar.cc/150?img=51",
-    lastMessage: "I can’t delete your photos",
+    lastMessage: "dmline.chats.riku_sato.lastMessage",
     time: "01:15",
     messages: [
-      { text: "That night was unreal", time: "01:00", incoming: true },
-      { text: "I still have the video", time: "01:01", incoming: false },
-      { text: "You better delete it", time: "01:02", incoming: true },
-      { text: "I can’t delete your photos", time: "01:15", incoming: false },
+      {
+        text: "dmline.chats.riku_sato.messages.msg1",
+        time: "01:00",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.riku_sato.messages.msg2",
+        time: "01:01",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.riku_sato.messages.msg3",
+        time: "01:02",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.riku_sato.messages.msg4",
+        time: "01:15",
+        incoming: false,
+      },
     ],
   },
   {
     id: 3,
-    name: "Haruto Tanaka",
+    name: "haruto_tanaka",
     avatar: "https://i.pravatar.cc/150?img=52",
-    lastMessage: "Meet me in the parking garage",
+    lastMessage: "dmline.chats.haruto_tanaka.lastMessage",
     time: "23:58",
     messages: [
-      { text: "Where are you?", time: "23:45", incoming: true },
-      { text: "Work. Late shift", time: "23:46", incoming: false },
-      { text: "Liar. I’m in the car", time: "23:47", incoming: true },
-      { text: "Meet me in the parking garage", time: "23:58", incoming: false },
+      {
+        text: "dmline.chats.haruto_tanaka.messages.msg1",
+        time: "23:45",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.haruto_tanaka.messages.msg2",
+        time: "23:46",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.haruto_tanaka.messages.msg3",
+        time: "23:47",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.haruto_tanaka.messages.msg4",
+        time: "23:58",
+        incoming: false,
+      },
     ],
   },
   {
     id: 4,
-    name: "Sora Yamamoto",
+    name: "sora_yamamoto",
     avatar: "https://i.pravatar.cc/150?img=53",
-    lastMessage: "I told her I was sick",
+    lastMessage: "dmline.chats.sora_yamamoto.lastMessage",
     time: "22:30",
     messages: [
-      { text: "She thinks I’m home sick", time: "22:10", incoming: true },
-      { text: "You’re not?", time: "22:11", incoming: false },
-      { text: "I’m in your bed", time: "22:12", incoming: true },
-      { text: "I told her I was sick", time: "22:30", incoming: false },
+      {
+        text: "dmline.chats.sora_yamamoto.messages.msg1",
+        time: "22:10",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.sora_yamamoto.messages.msg2",
+        time: "22:11",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.sora_yamamoto.messages.msg3",
+        time: "22:12",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.sora_yamamoto.messages.msg4",
+        time: "22:30",
+        incoming: false,
+      },
     ],
   },
   {
     id: 5,
-    name: "Ren Kobayashi",
+    name: "ren_kobayashi",
     avatar: "https://i.pravatar.cc/150?img=54",
-    lastMessage: "You’re my escape",
+    lastMessage: "dmline.chats.ren_kobayashi.lastMessage",
     time: "03:20",
     messages: [
-      { text: "I hate going home", time: "03:00", incoming: true },
-      { text: "Then don’t", time: "03:01", incoming: false },
-      { text: "I wish I could stay", time: "03:02", incoming: true },
-      { text: "You’re my escape", time: "03:20", incoming: false },
+      {
+        text: "dmline.chats.ren_kobayashi.messages.msg1",
+        time: "03:00",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.ren_kobayashi.messages.msg2",
+        time: "03:01",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.ren_kobayashi.messages.msg3",
+        time: "03:02",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.ren_kobayashi.messages.msg4",
+        time: "03:20",
+        incoming: false,
+      },
     ],
   },
   {
     id: 6,
-    name: "Yuto Ikeda",
+    name: "yuto_ikeda",
     avatar: "https://i.pravatar.cc/150?img=55",
-    lastMessage: "I still taste you",
+    lastMessage: "dmline.chats.yuto_ikeda.lastMessage",
     time: "00:45",
     messages: [
       {
-        text: "I can’t stop thinking about your lips",
+        text: "dmline.chats.yuto_ikeda.messages.msg1",
         time: "00:30",
         incoming: true,
       },
-      { text: "Same. On my neck", time: "00:31", incoming: false },
-      { text: "I still taste you", time: "00:45", incoming: false },
+      {
+        text: "dmline.chats.yuto_ikeda.messages.msg2",
+        time: "00:31",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.yuto_ikeda.messages.msg3",
+        time: "00:45",
+        incoming: false,
+      },
     ],
   },
   {
     id: 7,
-    name: "Daichi Fujimoto",
+    name: "daichi_fujimoto",
     avatar: "https://i.pravatar.cc/150?img=56",
-    lastMessage: "This is getting out of control",
+    lastMessage: "dmline.chats.daichi_fujimoto.lastMessage",
     time: "21:10",
     messages: [
-      { text: "We said one time", time: "20:55", incoming: true },
-      { text: "I know", time: "20:56", incoming: false },
-      { text: "Then why am I in your shower?", time: "20:57", incoming: true },
       {
-        text: "This is getting out of control",
+        text: "dmline.chats.daichi_fujimoto.messages.msg1",
+        time: "20:55",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.daichi_fujimoto.messages.msg2",
+        time: "20:56",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.daichi_fujimoto.messages.msg3",
+        time: "20:57",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.daichi_fujimoto.messages.msg4",
         time: "21:10",
         incoming: false,
       },
@@ -168,66 +269,142 @@ const chats = [
   },
   {
     id: 8,
-    name: "Kaito Mori",
+    name: "kaito_mori",
     avatar: "https://i.pravatar.cc/150?img=57",
-    lastMessage: "I lied to her again",
+    lastMessage: "dmline.chats.kaito_mori.lastMessage",
     time: "19:40",
     messages: [
-      { text: "She asked if I was with you", time: "19:20", incoming: true },
-      { text: "What’d you say?", time: "19:21", incoming: false },
-      { text: "Work emergency", time: "19:22", incoming: true },
-      { text: "I lied to her again", time: "19:40", incoming: false },
+      {
+        text: "dmline.chats.kaito_mori.messages.msg1",
+        time: "19:20",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.kaito_mori.messages.msg2",
+        time: "19:21",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.kaito_mori.messages.msg3",
+        time: "19:22",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.kaito_mori.messages.msg4",
+        time: "19:40",
+        incoming: false,
+      },
     ],
   },
   {
     id: 9,
-    name: "Shota Okada",
+    name: "shota_okada",
     avatar: "https://i.pravatar.cc/150?img=58",
-    lastMessage: "Your name is saved as 'Boss'",
+    lastMessage: "dmline.chats.shota_okada.lastMessage",
     time: "02:05",
     messages: [
-      { text: "Change my name in your phone", time: "01:50", incoming: true },
-      { text: "Already did", time: "01:51", incoming: false },
-      { text: "To what?", time: "01:52", incoming: true },
-      { text: "Your name is saved as 'Boss'", time: "02:05", incoming: false },
+      {
+        text: "dmline.chats.shota_okada.messages.msg1",
+        time: "01:50",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.shota_okada.messages.msg2",
+        time: "01:51",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.shota_okada.messages.msg3",
+        time: "01:52",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.shota_okada.messages.msg4",
+        time: "02:05",
+        incoming: false,
+      },
     ],
   },
   {
     id: 10,
-    name: "Ryo Hashimoto",
+    name: "ryo_hashimoto",
     avatar: "https://i.pravatar.cc/150?img=59",
-    lastMessage: "I’m in love with you",
+    lastMessage: "dmline.chats.ryo_hashimoto.lastMessage",
     time: "00:10",
     messages: [
-      { text: "This isn’t just sex anymore", time: "23:55", incoming: true },
-      { text: "I know", time: "23:56", incoming: false },
-      { text: "Then what is it?", time: "23:57", incoming: true },
-      { text: "I’m in love with you", time: "00:10", incoming: false },
+      {
+        text: "dmline.chats.ryo_hashimoto.messages.msg1",
+        time: "23:55",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.ryo_hashimoto.messages.msg2",
+        time: "23:56",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.ryo_hashimoto.messages.msg3",
+        time: "23:57",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.ryo_hashimoto.messages.msg4",
+        time: "00:10",
+        incoming: false,
+      },
     ],
   },
   {
     id: 11,
-    name: "Toma Inoue",
+    name: "toma_inoue",
     avatar: "https://i.pravatar.cc/150?img=60",
-    lastMessage: "I left marks on your neck",
+    lastMessage: "dmline.chats.toma_inoue.lastMessage",
     time: "04:30",
     messages: [
-      { text: "You bit me too hard", time: "04:10", incoming: true },
-      { text: "You asked for it", time: "04:11", incoming: false },
-      { text: "I left marks on your neck", time: "04:30", incoming: false },
+      {
+        text: "dmline.chats.toma_inoue.messages.msg1",
+        time: "04:10",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.toma_inoue.messages.msg2",
+        time: "04:11",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.toma_inoue.messages.msg3",
+        time: "04:30",
+        incoming: false,
+      },
     ],
   },
   {
     id: 12,
-    name: "Yuki Arai",
+    name: "yuki_arai",
     avatar: "https://i.pravatar.cc/150?img=61",
-    lastMessage: "I can’t lose you",
+    lastMessage: "dmline.chats.yuki_arai.lastMessage",
     time: "22:00",
     messages: [
-      { text: "She found a hair on my shirt", time: "21:45", incoming: true },
-      { text: "Was it yours?", time: "21:46", incoming: false },
-      { text: "Yes", time: "21:47", incoming: true },
-      { text: "I can’t lose you", time: "22:00", incoming: false },
+      {
+        text: "dmline.chats.yuki_arai.messages.msg1",
+        time: "21:45",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.yuki_arai.messages.msg2",
+        time: "21:46",
+        incoming: false,
+      },
+      {
+        text: "dmline.chats.yuki_arai.messages.msg3",
+        time: "21:47",
+        incoming: true,
+      },
+      {
+        text: "dmline.chats.yuki_arai.messages.msg4",
+        time: "22:00",
+        incoming: false,
+      },
     ],
   },
 ];
@@ -238,8 +415,8 @@ const friends = [
     id: c.id,
     name: c.name,
     avatar: c.avatar,
-    phone: `+81 90-${String(1000 + c.id).padStart(4, "0")}`,
-    email: `${c.name.split(" ")[0].toLowerCase()}@line.me`,
+    phone: `dmline.contacts.${c.name}.phone`,
+    email: `dmline.contacts.${c.name}.email`,
   })),
 ];
 
@@ -247,53 +424,54 @@ const friends = [
 const callLogs = [
   {
     id: 1,
-    name: "Kai Nakamura",
+    name: "kai_nakamura",
     avatar: "https://i.pravatar.cc/150?img=50",
-    type: "outgoing",
+    type: "dmline.call_log.kai_nakamura.type",
     time: "2025-10-28 23:45",
     duration: "19:30",
   },
   {
     id: 2,
-    name: "Riku Sato",
+    name: "riku_sato",
     avatar: "https://i.pravatar.cc/150?img=51",
-    type: "incoming",
+    type: "dmline.call_log.riku_sato.type",
     time: "2025-10-28 22:20",
     duration: "12:45",
   },
   {
     id: 3,
-    name: "Haruto Tanaka",
+    name: "haruto_tanaka",
     avatar: "https://i.pravatar.cc/150?img=52",
-    type: "missed",
+    type: "dmline.call_log.haruto_tanaka.type",
     time: "2025-10-28 21:15",
   },
   {
     id: 4,
-    name: "Sora Yamamoto",
+    name: "sora_yamamoto",
     avatar: "https://i.pravatar.cc/150?img=53",
-    type: "outgoing",
+    type: "dmline.call_log.sora_yamamoto.type",
     time: "2025-10-27 20:50",
     duration: "41:10",
   },
   {
     id: 5,
-    name: "Ren Kobayashi",
+    name: "ren_kobayashi",
     avatar: "https://i.pravatar.cc/150?img=54",
-    type: "incoming",
+    type: "dmline.call_log.ren_kobayashi.type",
     time: "2025-10-27 19:30",
     duration: "29:55",
   },
   {
     id: 6,
-    name: "Toma Inoue",
+    name: "toma_inoue",
     avatar: "https://i.pravatar.cc/150?img=60",
-    type: "missed",
+    type: "dmline.call_log.toma_inoue.type",
     time: "2025-10-27 18:00",
   },
 ];
 
 const LinePage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -309,17 +487,22 @@ const LinePage = () => {
   };
 
   const getCallIcon = (type) => {
-    const iconColor =
-      type === "incoming"
-        ? "#10B981"
-        : type === "outgoing"
-        ? "#0B5CFF"
-        : "#EF4444";
+    const iconColor = t(type).includes("incoming")
+      ? "#10B981"
+      : t(type).includes("outgoing")
+      ? "#0B5CFF"
+      : "#EF4444";
     return (
       <Box sx={{ color: iconColor }}>
-        {type === "outgoing" && <FiPhoneCall style={{ fontSize: 16 }} />}
-        {type === "incoming" && <FiPhoneIncoming style={{ fontSize: 16 }} />}
-        {type === "missed" && <FiPhoneMissed style={{ fontSize: 16 }} />}
+        {t(type).includes("outgoing") && (
+          <FiPhoneCall style={{ fontSize: 16 }} />
+        )}
+        {t(type).includes("incoming") && (
+          <FiPhoneIncoming style={{ fontSize: 16 }} />
+        )}
+        {t(type).includes("missed") && (
+          <FiPhoneMissed style={{ fontSize: 16 }} />
+        )}
       </Box>
     );
   };
@@ -327,7 +510,7 @@ const LinePage = () => {
   const groupFriendsByLetter = () => {
     const grouped = {};
     friends.forEach((f) => {
-      const letter = f.name[0].toUpperCase();
+      const letter = t(`dmline.contacts.${f.name}.name`)[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(f);
     });
@@ -342,7 +525,7 @@ const LinePage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              LINE
+              {t("dmline.header.title")}
               <SiLine className="text-[#00B900]" />
             </h1>
           </div>
@@ -366,24 +549,28 @@ const LinePage = () => {
                 mb: 3,
                 "& .MuiTabs-indicator": { bgcolor: "primary.main", height: 3 },
               }}
+              aria-label={t("dmline.tabs.aria_label")}
             >
               <Tab
                 icon={<SiLine />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chats"}
+                label={isMobile ? "" : t("dmline.tabs.chat")}
                 value="chat"
+                aria-label={t("dmline.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Friends"}
+                label={isMobile ? "" : t("dmline.tabs.friends")}
                 value="friends"
+                aria-label={t("dmline.tabs.friends_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Calls"}
                 value="calls"
+                label={isMobile ? "" : t("dmline.tabs.calls")}
+                aria-label={t("dmline.tabs.calls_aria")}
               />
             </Tabs>
           )}
@@ -391,7 +578,11 @@ const LinePage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmline.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -426,7 +617,7 @@ const LinePage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmline.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -437,6 +628,9 @@ const LinePage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmline.chat.item_aria", {
+                        name: t(`dmline.chats.${chat.name}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -447,7 +641,7 @@ const LinePage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {chat.name}
+                            {t(`dmline.chats.${chat.name}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -458,7 +652,7 @@ const LinePage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(chat.lastMessage)}
                           </Typography>
                         </Box>
                         <Typography
@@ -474,7 +668,7 @@ const LinePage = () => {
 
               {/* Friends List */}
               {tab === "friends" && (
-                <Stack>
+                <Stack aria-label={t("dmline.contacts.list_aria")}>
                   {Object.keys(groupFriendsByLetter())
                     .sort()
                     .map((letter) => (
@@ -500,6 +694,9 @@ const LinePage = () => {
                               transition: "background 0.2s",
                             }}
                             onClick={() => setSelectedFriend(friend)}
+                            aria-label={t("dmline.contacts.item_aria", {
+                              name: t(`dmline.contacts.${friend.name}.name`),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -513,7 +710,7 @@ const LinePage = () => {
                               <Typography
                                 sx={{ fontWeight: 500, color: "#1f2937" }}
                               >
-                                {friend.name}
+                                {t(`dmline.contacts.${friend.name}.name`)}
                               </Typography>
                             </Stack>
                           </Box>
@@ -525,7 +722,7 @@ const LinePage = () => {
 
               {/* Call Log */}
               {tab === "calls" && (
-                <Stack>
+                <Stack aria-label={t("dmline.call_log.list_aria")}>
                   {callLogs.map((call) => (
                     <Box
                       key={call.id}
@@ -536,6 +733,9 @@ const LinePage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedCall(call)}
+                      aria-label={t("dmline.call_log.item_aria", {
+                        name: t(`dmline.call_log.${call.name}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
@@ -564,21 +764,19 @@ const LinePage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {call.name}
+                            {t(`dmline.call_log.${call.name}.name`)}
                           </Typography>
                           <Typography
                             sx={{
                               fontSize: "0.875rem",
-                              color:
-                                call.type === "incoming"
-                                  ? "#10B981"
-                                  : call.type === "outgoing"
-                                  ? "#0B5CFF"
-                                  : "#EF4444",
+                              color: t(call.type).includes("incoming")
+                                ? "#10B981"
+                                : t(call.type).includes("outgoing")
+                                ? "#0B5CFF"
+                                : "#EF4444",
                             }}
                           >
-                            {call.type.charAt(0).toUpperCase() +
-                              call.type.slice(1)}
+                            {t(call.type)}
                           </Typography>
                         </Box>
                         <Typography
@@ -608,7 +806,12 @@ const LinePage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmline.chat.detail_aria", {
+                      name: t(`dmline.chats.${selectedChat.name}.name`),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -618,7 +821,7 @@ const LinePage = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "#1f2937" }}
                       >
-                        {selectedChat.name}
+                        {t(`dmline.chats.${selectedChat.name}.name`)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -648,7 +851,7 @@ const LinePage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(msg.text)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -672,7 +875,13 @@ const LinePage = () => {
 
                 {/* Friend Detail */}
                 {selectedFriend && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmline.contacts.detail_aria", {
+                      name: t(`dmline.contacts.${selectedFriend.name}.name`),
+                    })}
+                  >
                     <Avatar
                       src={selectedFriend.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -681,7 +890,7 @@ const LinePage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedFriend.name}
+                      {t(`dmline.contacts.${selectedFriend.name}.name`)}
                     </Typography>
 
                     {selectedFriend.phone && (
@@ -715,12 +924,12 @@ const LinePage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Phone
+                            {t("dmline.contacts.phone_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {selectedFriend.phone}
+                            {t(selectedFriend.phone)}
                           </Typography>
                         </Box>
                       </Paper>
@@ -757,12 +966,12 @@ const LinePage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Email
+                            {t("dmline.contacts.email_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {selectedFriend.email}
+                            {t(selectedFriend.email)}
                           </Typography>
                         </Box>
                       </Paper>
@@ -772,7 +981,13 @@ const LinePage = () => {
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmline.call_log.detail_aria", {
+                      name: t(`dmline.call_log.${selectedCall.name}.name`),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -781,7 +996,7 @@ const LinePage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedCall.name}
+                      {t(`dmline.call_log.${selectedCall.name}.name`)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -806,9 +1021,7 @@ const LinePage = () => {
                         <Typography
                           sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
                         >
-                          {selectedCall.duration} •{" "}
-                          {selectedCall.type.charAt(0).toUpperCase() +
-                            selectedCall.type.slice(1)}
+                          {selectedCall.duration} • {t(selectedCall.type)}
                         </Typography>
                       )}
                     </Paper>

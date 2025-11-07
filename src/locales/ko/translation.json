@@ -3056,5 +3056,368 @@
         }
       }
     }
+  },
+  "dmline": {
+    "header": { "title": "LINE" },
+    "tabs": {
+      "chat": "채팅",
+      "friends": "친구",
+      "calls": "통화",
+      "aria_label": "LINE 내비게이션 탭",
+      "chat_aria": "채팅 보기",
+      "friends_aria": "친구 보기",
+      "calls_aria": "통화 기록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "채팅 목록",
+      "item_aria": "{{name}}과의 채팅",
+      "detail_aria": "{{name}}의 채팅 상세"
+    },
+    "contacts": {
+      "phone_label": "전화",
+      "email_label": "이메일",
+      "list_aria": "친구 목록",
+      "item_aria": "친구 {{name}}",
+      "detail_aria": "{{name}}의 친구 상세",
+      "kai_nakamura": {
+        "name": "나카무라 카이",
+        "phone": "+81 90-1001",
+        "email": "kai@line.me"
+      },
+      "riku_sato": {
+        "name": "사토 리쿠",
+        "phone": "+81 90-1002",
+        "email": "riku@line.me"
+      },
+      "haruto_tanaka": {
+        "name": "타나카 하루토",
+        "phone": "+81 90-1003",
+        "email": "haruto@line.me"
+      },
+      "sora_yamamoto": {
+        "name": "야마모토 소라",
+        "phone": "+81 90-1004",
+        "email": "sora@line.me"
+      },
+      "ren_kobayashi": {
+        "name": "코바야시 렌",
+        "phone": "+81 90-1005",
+        "email": "ren@line.me"
+      },
+      "yuto_ikeda": {
+        "name": "이케다 유토",
+        "phone": "+81 90-1006",
+        "email": "yuto@line.me"
+      },
+      "daichi_fujimoto": {
+        "name": "후지모토 다이치",
+        "phone": "+81 90-1007",
+        "email": "daichi@line.me"
+      },
+      "kaito_mori": {
+        "name": "모리 카이토",
+        "phone": "+81 90-1008",
+        "email": "kaito@line.me"
+      },
+      "shota_okada": {
+        "name": "오카다 쇼타",
+        "phone": "+81 90-1009",
+        "email": "shota@line.me"
+      },
+      "ryo_hashimoto": {
+        "name": "하시모토 료",
+        "phone": "+81 90-1010",
+        "email": "ryo@line.me"
+      },
+      "toma_inoue": {
+        "name": "이노우에 토마",
+        "phone": "+81 90-1011",
+        "email": "toma@line.me"
+      },
+      "yuki_arai": {
+        "name": "아라이 유키",
+        "phone": "+81 90-1012",
+        "email": "yuki@line.me"
+      }
+    },
+    "call_log": {
+      "list_aria": "통화 기록 목록",
+      "item_aria": "{{name}}의 통화 기록",
+      "detail_aria": "{{name}}의 통화 상세",
+      "outgoing": "발신",
+      "incoming": "수신",
+      "missed": "부재중",
+      "kai_nakamura": {
+        "name": "나카무라 카이",
+        "type": "outgoing",
+        "time": "2025-10-28 23:45",
+        "duration": "19:30"
+      },
+      "riku_sato": {
+        "name": "사토 리쿠",
+        "type": "incoming",
+        "time": "2025-10-28 22:20",
+        "duration": "12:45"
+      },
+      "haruto_tanaka": {
+        "name": "타나카 하루토",
+        "type": "missed",
+        "time": "2025-10-28 21:15"
+      },
+      "sora_yamamoto": {
+        "name": "야마모토 소라",
+        "type": "outgoing",
+        "time": "2025-10-27 20:50",
+        "duration": "41:10"
+      },
+      "ren_kobayashi": {
+        "name": "코바야시 렌",
+        "type": "incoming",
+        "time": "2025-10-27 19:30",
+        "duration": "29:55"
+      },
+      "toma_inoue": {
+        "name": "이노우에 토마",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "kai_nakamura": {
+        "name": "나카무라 카이",
+        "avatar": "https://i.pravatar.cc/150?img=50",
+        "lastMessage": "나 밖에 있어. 그녀 집에 없어",
+        "time": "02:41",
+        "msg1_time": "02:30",
+        "msg2_time": "02:31",
+        "msg3_time": "02:32",
+        "msg4_time": "02:41",
+        "messages": {
+          "msg1": "아직 깨어 있어?",
+          "msg1_incoming": "true",
+          "msg2": "응, 너는?",
+          "msg2_incoming": "false",
+          "msg3": "그녀 집에서 막 나왔어",
+          "msg3_incoming": "true",
+          "msg4": "나 밖에 있어. 그녀 집에 없어",
+          "msg4_incoming": "false"
+        }
+      },
+      "riku_sato": {
+        "name": "사토 리쿠",
+        "avatar": "https://i.pravatar.cc/150?img=51",
+        "lastMessage": "너 사진 못 지워",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "그날 밤은 정말 대단했어",
+          "msg1_incoming": "true",
+          "msg2": "나 아직 그 영상 가지고 있어",
+          "msg2_incoming": "false",
+          "msg3": "그거 지우는 게 좋을걸",
+          "msg3_incoming": "true",
+          "msg4": "너 사진 못 지워",
+          "msg4_incoming": "false"
+        }
+      },
+      "haruto_tanaka": {
+        "name": "타나카 하루토",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "lastMessage": "주차장에서 만나",
+        "time": "23:58",
+        "msg1_time": "23:45",
+        "msg2_time": "23:46",
+        "msg3_time": "23:47",
+        "msg4_time": "23:58",
+        "messages": {
+          "msg1": "어디야?",
+          "msg1_incoming": "true",
+          "msg2": "회사. 야간 근무",
+          "msg2_incoming": "false",
+          "msg3": "거짓말쟁이. 나 차 안에 있어",
+          "msg3_incoming": "true",
+          "msg4": "주차장에서 만나",
+          "msg4_incoming": "false"
+        }
+      },
+      "sora_yamamoto": {
+        "name": "야마모토 소라",
+        "avatar": "https://i.pravatar.cc/150?img=53",
+        "lastMessage": "그녀한테 아프다고 했어",
+        "time": "22:30",
+        "msg1_time": "22:10",
+        "msg2_time": "22:11",
+        "msg3_time": "22:12",
+        "msg4_time": "22:30",
+        "messages": {
+          "msg1": "그녀는 내가 집에서 아프다고 생각해",
+          "msg1_incoming": "true",
+          "msg2": "아프지 않은 거야?",
+          "msg2_incoming": "false",
+          "msg3": "너희 집 침대에 있어",
+          "msg3_incoming": "true",
+          "msg4": "그녀한테 아프다고 했어",
+          "msg4_incoming": "false"
+        }
+      },
+      "ren_kobayashi": {
+        "name": "코바야시 렌",
+        "avatar": "https://i.pravatar.cc/150?img=54",
+        "lastMessage": "넌 내 도피처야",
+        "time": "03:20",
+        "msg1_time": "03:00",
+        "msg2_time": "03:01",
+        "msg3_time": "03:02",
+        "msg4_time": "03:20",
+        "messages": {
+          "msg1": "집에 가는 게 싫어",
+          "msg1_incoming": "true",
+          "msg2": "그럼 가지 마",
+          "msg2_incoming": "false",
+          "msg3": "여기 머물고 싶어",
+          "msg3_incoming": "true",
+          "msg4": "넌 내 도피처야",
+          "msg4_incoming": "false"
+        }
+      },
+      "yuto_ikeda": {
+        "name": "이케다 유토",
+        "avatar": "https://i.pravatar.cc/150?img=55",
+        "lastMessage": "아직도 너 맛이 느껴져",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:45",
+        "messages": {
+          "msg1": "너 입술 생각이 멈추질 않아",
+          "msg1_incoming": "true",
+          "msg2": "나도. 내 목에",
+          "msg2_incoming": "false",
+          "msg3": "아직도 너 맛이 느껴져",
+          "msg3_incoming": "false"
+        }
+      },
+      "daichi_fujimoto": {
+        "name": "후지모토 다이치",
+        "avatar": "https://i.pravatar.cc/150?img=56",
+        "lastMessage": "이제 통제가 안 돼",
+        "time": "21:10",
+        "msg1_time": "20:55",
+        "msg2_time": "20:56",
+        "msg3_time": "20:57",
+        "msg4_time": "21:10",
+        "messages": {
+          "msg1": "한 번만 하자고 했잖아",
+          "msg1_incoming": "true",
+          "msg2": "알아",
+          "msg2_incoming": "false",
+          "msg3": "그럼 내가 왜 네 샤워실에 있는 거지?",
+          "msg3_incoming": "true",
+          "msg4": "이제 통제가 안 돼",
+          "msg4_incoming": "false"
+        }
+      },
+      "kaito_mori": {
+        "name": "모리 카이토",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "lastMessage": "그녀한테 또 거짓말했어",
+        "time": "19:40",
+        "msg1_time": "19:20",
+        "msg2_time": "19:21",
+        "msg3_time": "19:22",
+        "msg4_time": "19:40",
+        "messages": {
+          "msg1": "그녀가 나랑 같이 있었냐고 물었어",
+          "msg1_incoming": "true",
+          "msg2": "뭐라고 했어?",
+          "msg2_incoming": "false",
+          "msg3": "업무 긴급 상황",
+          "msg3_incoming": "true",
+          "msg4": "그녀한테 또 거짓말했어",
+          "msg4_incoming": "false"
+        }
+      },
+      "shota_okada": {
+        "name": "오카다 쇼타",
+        "avatar": "https://i.pravatar.cc/150?img=58",
+        "lastMessage": "너 이름 '보스'로 저장했어",
+        "time": "02:05",
+        "msg1_time": "01:50",
+        "msg2_time": "01:51",
+        "msg3_time": "01:52",
+        "msg4_time": "02:05",
+        "messages": {
+          "msg1": "내 이름 전화기에서 바꿔",
+          "msg1_incoming": "true",
+          "msg2": "이미 바꿨어",
+          "msg2_incoming": "false",
+          "msg3": "뭐로?",
+          "msg3_incoming": "true",
+          "msg4": "너 이름 '보스'로 저장했어",
+          "msg4_incoming": "false"
+        }
+      },
+      "ryo_hashimoto": {
+        "name": "하시모토 료",
+        "avatar": "https://i.pravatar.cc/150?img=59",
+        "lastMessage": "너한테 반했어",
+        "time": "00:10",
+        "msg1_time": "23:55",
+        "msg2_time": "23:56",
+        "msg3_time": "23:57",
+        "msg4_time": "00:10",
+        "messages": {
+          "msg1": "이제 이건 단순한 섹스가 아니야",
+          "msg1_incoming": "true",
+          "msg2": "알아",
+          "msg2_incoming": "false",
+          "msg3": "그럼 이게 뭐야?",
+          "msg3_incoming": "true",
+          "msg4": "너한테 반했어",
+          "msg4_incoming": "false"
+        }
+      },
+      "toma_inoue": {
+        "name": "이노우에 토마",
+        "avatar": "https://i.pravatar.cc/150?img=60",
+        "lastMessage": "네 목에 자국 남겼어",
+        "time": "04:30",
+        "msg1_time": "04:10",
+        "msg2_time": "04:11",
+        "msg3_time": "04:30",
+        "messages": {
+          "msg1": "너무 세게 물었어",
+          "msg1_incoming": "true",
+          "msg2": "네가 원했잖아",
+          "msg2_incoming": "false",
+          "msg3": "네 목에 자국 남겼어",
+          "msg3_incoming": "false"
+        }
+      },
+      "yuki_arai": {
+        "name": "아라이 유키",
+        "avatar": "https://i.pravatar.cc/150?img=61",
+        "lastMessage": "너를 잃을 수 없어",
+        "time": "22:00",
+        "msg1_time": "21:45",
+        "msg2_time": "21:46",
+        "msg3_time": "21:47",
+        "msg4_time": "22:00",
+        "messages": {
+          "msg1": "그녀가 내 셔츠에서 머리카락을 찾았어",
+          "msg1_incoming": "true",
+          "msg2": "너 거였어?",
+          "msg2_incoming": "false",
+          "msg3": "응",
+          "msg3_incoming": "true",
+          "msg4": "너를 잃을 수 없어",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }
