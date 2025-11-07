@@ -2675,5 +2675,386 @@
         "duration": "32:00"
       }
     }
+  },
+  "dmtele": {
+    "header": { "title": "텔레그램" },
+    "tabs": {
+      "chat": "채팅",
+      "friends": "친구",
+      "calls": "통화",
+      "aria_label": "텔레그램 내비게이션 탭",
+      "chat_aria": "채팅 보기",
+      "friends_aria": "친구 보기",
+      "calls_aria": "통화 기록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "채팅 목록",
+      "item_aria": "{{name}}과의 채팅",
+      "detail_aria": "{{name}}의 채팅 상세"
+    },
+    "contacts": {
+      "phone_label": "전화",
+      "email_label": "이메일",
+      "list_aria": "친구 목록",
+      "item_aria": "친구 {{name}}",
+      "detail_aria": "{{name}}의 친구 상세",
+      "jake_morrison": {
+        "name": "제이크 모리슨",
+        "phone": "+1 555-1001",
+        "email": "jake@telegram.com"
+      },
+      "tyler_reed": {
+        "name": "타일러 리드",
+        "phone": "+1 555-1002",
+        "email": "tyler@telegram.com"
+      },
+      "caleb_holt": {
+        "name": "케일럽 홀트",
+        "phone": "+1 555-1003",
+        "email": "caleb@telegram.com"
+      },
+      "logan_pierce": {
+        "name": "로건 피어스",
+        "phone": "+1 555-1004",
+        "email": "logan@telegram.com"
+      },
+      "austin_grey": {
+        "name": "오스틴 그레이",
+        "phone": "+1 555-1005",
+        "email": "austin@telegram.com"
+      },
+      "brandon_cole": {
+        "name": "브랜든 콜",
+        "phone": "+1 555-1006",
+        "email": "brandon@telegram.com"
+      },
+      "evan_shaw": {
+        "name": "에반 쇼",
+        "phone": "+1 555-1007",
+        "email": "evan@telegram.com"
+      },
+      "gavin_knox": {
+        "name": "개빈 녹스",
+        "phone": "+1 555-1008",
+        "email": "gavin@telegram.com"
+      },
+      "hunter_blake": {
+        "name": "헌터 블레이크",
+        "phone": "+1 555-1009",
+        "email": "hunter@telegram.com"
+      },
+      "jordan_miles": {
+        "name": "조던 마일스",
+        "phone": "+1 555-1010",
+        "email": "jordan@telegram.com"
+      },
+      "kyle_vance": {
+        "name": "카일 밴스",
+        "phone": "+1 555-1011",
+        "email": "kyle@telegram.com"
+      },
+      "mason_hale": {
+        "name": "메이슨 헤일",
+        "phone": "+1 555-1012",
+        "email": "mason@telegram.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "통화 기록 목록",
+      "item_aria": "{{name}}의 통화 기록",
+      "detail_aria": "{{name}}의 통화 상세",
+      "outgoing": "발신",
+      "incoming": "수신",
+      "missed": "부재중",
+      "jake_morrison": {
+        "name": "제이크 모리슨",
+        "type": "outgoing",
+        "time": "2025-10-28 23:30",
+        "duration": "22:15"
+      },
+      "tyler_reed": {
+        "name": "타일러 리드",
+        "type": "incoming",
+        "time": "2025-10-28 22:10",
+        "duration": "14:30"
+      },
+      "caleb_holt": {
+        "name": "케일럽 홀트",
+        "type": "missed",
+        "time": "2025-10-28 21:05"
+      },
+      "logan_pierce": {
+        "name": "로건 피어스",
+        "type": "outgoing",
+        "time": "2025-10-27 20:45",
+        "duration": "38:20"
+      },
+      "austin_grey": {
+        "name": "오스틴 그레이",
+        "type": "incoming",
+        "time": "2025-10-27 19:20",
+        "duration": "27:10"
+      },
+      "kyle_vance": {
+        "name": "카일 밴스",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "jake_morrison": {
+        "name": "제이크 모리슨",
+        "avatar": "https://i.pravatar.cc/150?img=38",
+        "lastMessage": "너 집에 내 후드티를 두고 왔어",
+        "time": "03:12",
+        "msg1_time": "02:50",
+        "msg2_time": "02:51",
+        "msg3_time": "02:52",
+        "msg4_time": "02:53",
+        "msg5_time": "03:12",
+        "messages": {
+          "msg1": "아직 깨어 있어?",
+          "msg1_incoming": "true",
+          "msg2": "응… 잠이 안 와",
+          "msg2_incoming": "false",
+          "msg3": "아까 일 생각해?",
+          "msg3_incoming": "true",
+          "msg4": "매 순간",
+          "msg4_incoming": "false",
+          "msg5": "너 집에 내 후드티를 두고 왔어",
+          "msg5_incoming": "false"
+        }
+      },
+      "tyler_reed": {
+        "name": "타일러 리드",
+        "avatar": "https://i.pravatar.cc/150?img=39",
+        "lastMessage": "그녀는 전혀 모르고 있어",
+        "time": "01:47",
+        "msg1_time": "01:30",
+        "msg2_time": "01:31",
+        "msg3_time": "01:32",
+        "msg4_time": "01:33",
+        "msg5_time": "01:47",
+        "messages": {
+          "msg1": "오늘 좀 아슬아슬했어",
+          "msg1_incoming": "true",
+          "msg2": "너무 아슬아슬했지. 심장이 쿵쿵 뛰었어",
+          "msg2_incoming": "false",
+          "msg3": "그래도 그만한 가치가 있었어",
+          "msg3_incoming": "true",
+          "msg4": "항상 그래",
+          "msg4_incoming": "false",
+          "msg5": "그녀는 전혀 모르고 있어",
+          "msg5_incoming": "false"
+        }
+      },
+      "caleb_holt": {
+        "name": "케일럽 홀트",
+        "avatar": "https://i.pravatar.cc/150?img=40",
+        "lastMessage": "다시 보내줘, 내가 지웠어",
+        "time": "00:28",
+        "msg1_time": "00:10",
+        "msg2_time": "00:11",
+        "msg3_time": "00:12",
+        "msg4_time": "00:28",
+        "messages": {
+          "msg1": "오늘 저녁 너 정말 멋졌어",
+          "msg1_incoming": "true",
+          "msg2": "그거 보지 말았어야 했어",
+          "msg2_incoming": "false",
+          "msg3": "너무 늦었어. 저장할 거야",
+          "msg3_incoming": "true",
+          "msg4": "다시 보내줘, 내가 지웠어",
+          "msg4_incoming": "false"
+        }
+      },
+      "logan_pierce": {
+        "name": "로건 피어스",
+        "avatar": "https://i.pravatar.cc/150?img=41",
+        "lastMessage": "문 열려 있어. 조용히 들어와",
+        "time": "23:55",
+        "msg1_time": "23:40",
+        "msg2_time": "23:41",
+        "msg3_time": "23:42",
+        "msg4_time": "23:55",
+        "messages": {
+          "msg1": "집에 있어?",
+          "msg1_incoming": "true",
+          "msg2": "응. 그녀는 자고 있어",
+          "msg2_incoming": "false",
+          "msg3": "가는 중이야",
+          "msg3_incoming": "true",
+          "msg4": "문 열려 있어. 조용히 들어와",
+          "msg4_incoming": "false"
+        }
+      },
+      "austin_grey": {
+        "name": "오스틴 그레이",
+        "avatar": "https://i.pravatar.cc/150?img=42",
+        "lastMessage": "너한테 중독됐어",
+        "time": "02:30",
+        "msg1_time": "02:00",
+        "msg2_time": "02:01",
+        "msg3_time": "02:02",
+        "msg4_time": "02:03",
+        "msg5_time": "02:30",
+        "messages": {
+          "msg1": "여기 있으면 안 되는데",
+          "msg1_incoming": "true",
+          "msg2": "그럼 왜 여기 있는 거야?",
+          "msg2_incoming": "false",
+          "msg3": "너한테서 떨어질 수가 없어서",
+          "msg3_incoming": "true",
+          "msg4": "좋아",
+          "msg4_incoming": "false",
+          "msg5": "너한테 중독됐어",
+          "msg5_incoming": "false"
+        }
+      },
+      "brandon_cole": {
+        "name": "브랜든 콜",
+        "avatar": "https://i.pravatar.cc/150?img=43",
+        "lastMessage": "그녀한테 체육관에 있었다고 했어",
+        "time": "22:10",
+        "msg1_time": "21:50",
+        "msg2_time": "21:51",
+        "msg3_time": "21:52",
+        "msg4_time": "21:53",
+        "msg5_time": "22:10",
+        "messages": {
+          "msg1": "어디야?",
+          "msg1_incoming": "true",
+          "msg2": "체육관. 늦게 운동했어",
+          "msg2_incoming": "false",
+          "msg3": "거짓말쟁이",
+          "msg3_incoming": "true",
+          "msg4": "왜인지 알잖아",
+          "msg4_incoming": "false",
+          "msg5": "그녀한테 체육관에 있었다고 했어",
+          "msg5_incoming": "false"
+        }
+      },
+      "evan_shaw": {
+        "name": "에반 쇼",
+        "avatar": "https://i.pravatar.cc/150?img=44",
+        "lastMessage": "이렇게 계속할 수는 없어",
+        "time": "20:45",
+        "msg1_time": "20:30",
+        "msg2_time": "20:31",
+        "msg3_time": "20:32",
+        "msg4_time": "20:45",
+        "messages": {
+          "msg1": "지난번이 마지막이라고 했잖아",
+          "msg1_incoming": "true",
+          "msg2": "알아",
+          "msg2_incoming": "false",
+          "msg3": "그럼 왜 너 집 앞에 와 있는 거지?",
+          "msg3_incoming": "true",
+          "msg4": "이렇게 계속할 수는 없어",
+          "msg4_incoming": "false"
+        }
+      },
+      "gavin_knox": {
+        "name": "개빈 녹스",
+        "avatar": "https://i.pravatar.cc/150?img=45",
+        "lastMessage": "매일 밤 너 꿈을 꿔",
+        "time": "03:05",
+        "msg1_time": "02:55",
+        "msg2_time": "02:56",
+        "msg3_time": "02:57",
+        "msg4_time": "03:05",
+        "messages": {
+          "msg1": "자?",
+          "msg1_incoming": "true",
+          "msg2": "아니. 너는?",
+          "msg2_incoming": "false",
+          "msg3": "깨어 있어. 너 생각하고 있어",
+          "msg3_incoming": "true",
+          "msg4": "매일 밤 너 꿈을 꿔",
+          "msg4_incoming": "false"
+        }
+      },
+      "hunter_blake": {
+        "name": "헌터 블레이크",
+        "avatar": "https://i.pravatar.cc/150?img=46",
+        "lastMessage": "읽고 지워",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "어젯밤을 계속 떠올리고 있어",
+          "msg1_incoming": "true",
+          "msg2": "나도. 네가 한 그거…",
+          "msg2_incoming": "false",
+          "msg3": "쉿. 쓰지 마",
+          "msg3_incoming": "true",
+          "msg4": "읽고 지워",
+          "msg4_incoming": "false"
+        }
+      },
+      "jordan_miles": {
+        "name": "조던 마일스",
+        "avatar": "https://i.pravatar.cc/150?img=47",
+        "lastMessage": "너한테 빠지고 있어",
+        "time": "00:05",
+        "msg1_time": "23:50",
+        "msg2_time": "23:51",
+        "msg3_time": "23:52",
+        "msg4_time": "00:05",
+        "messages": {
+          "msg1": "이거 위험해지고 있어",
+          "msg1_incoming": "true",
+          "msg2": "알아",
+          "msg2_incoming": "false",
+          "msg3": "하지만 멈추고 싶지 않아",
+          "msg3_incoming": "true",
+          "msg4": "너한테 빠지고 있어",
+          "msg4_incoming": "false"
+        }
+      },
+      "kyle_vance": {
+        "name": "카일 밴스",
+        "avatar": "https://i.pravatar.cc/150?img=48",
+        "lastMessage": "너 냄새가 아직 내 침대 시트에 남아 있어",
+        "time": "04:20",
+        "msg1_time": "04:00",
+        "msg2_time": "04:01",
+        "msg3_time": "04:02",
+        "msg4_time": "04:20",
+        "messages": {
+          "msg1": "아직도 너 맛이 느껴져",
+          "msg1_incoming": "true",
+          "msg2": "그만해. 또 흥분돼",
+          "msg2_incoming": "false",
+          "msg3": "좋아",
+          "msg3_incoming": "true",
+          "msg4": "너 냄새가 아직 내 침대 시트에 남아 있어",
+          "msg4_incoming": "false"
+        }
+      },
+      "mason_hale": {
+        "name": "메이슨 헤일",
+        "avatar": "https://i.pravatar.cc/150?img=49",
+        "lastMessage": "너 때문에 거짓말했어",
+        "time": "21:30",
+        "msg1_time": "21:15",
+        "msg2_time": "21:16",
+        "msg3_time": "21:17",
+        "msg4_time": "21:30",
+        "messages": {
+          "msg1": "그녀가 나 어디 있었냐고 물었어",
+          "msg1_incoming": "true",
+          "msg2": "뭐라고 했어?",
+          "msg2_incoming": "false",
+          "msg3": "너랑 같이 있었다고",
+          "msg3_incoming": "true",
+          "msg4": "너 때문에 거짓말했어",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

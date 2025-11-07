@@ -2717,5 +2717,386 @@
         "duration": "32:00"
       }
     }
+  },
+  "dmtele": {
+    "header": { "title": "Telegram" },
+    "tabs": {
+      "chat": "Chats",
+      "friends": "Friends",
+      "calls": "Calls",
+      "aria_label": "Telegram navigation tabs",
+      "chat_aria": "View chats",
+      "friends_aria": "View friends",
+      "calls_aria": "View call logs"
+    },
+    "back_button_aria": "Go back to list",
+    "chat": {
+      "list_aria": "List of chats",
+      "item_aria": "Chat with {{name}}",
+      "detail_aria": "Chat details for {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Phone",
+      "email_label": "Email",
+      "list_aria": "List of friends",
+      "item_aria": "Friend {{name}}",
+      "detail_aria": "Friend details for {{name}}",
+      "jake_morrison": {
+        "name": "Jake Morrison",
+        "phone": "+1 555-1001",
+        "email": "jake@telegram.com"
+      },
+      "tyler_reed": {
+        "name": "Tyler Reed",
+        "phone": "+1 555-1002",
+        "email": "tyler@telegram.com"
+      },
+      "caleb_holt": {
+        "name": "Caleb Holt",
+        "phone": "+1 555-1003",
+        "email": "caleb@telegram.com"
+      },
+      "logan_pierce": {
+        "name": "Logan Pierce",
+        "phone": "+1 555-1004",
+        "email": "logan@telegram.com"
+      },
+      "austin_grey": {
+        "name": "Austin Grey",
+        "phone": "+1 555-1005",
+        "email": "austin@telegram.com"
+      },
+      "brandon_cole": {
+        "name": "Brandon Cole",
+        "phone": "+1 555-1006",
+        "email": "brandon@telegram.com"
+      },
+      "evan_shaw": {
+        "name": "Evan Shaw",
+        "phone": "+1 555-1007",
+        "email": "evan@telegram.com"
+      },
+      "gavin_knox": {
+        "name": "Gavin Knox",
+        "phone": "+1 555-1008",
+        "email": "gavin@telegram.com"
+      },
+      "hunter_blake": {
+        "name": "Hunter Blake",
+        "phone": "+1 555-1009",
+        "email": "hunter@telegram.com"
+      },
+      "jordan_miles": {
+        "name": "Jordan Miles",
+        "phone": "+1 555-1010",
+        "email": "jordan@telegram.com"
+      },
+      "kyle_vance": {
+        "name": "Kyle Vance",
+        "phone": "+1 555-1011",
+        "email": "kyle@telegram.com"
+      },
+      "mason_hale": {
+        "name": "Mason Hale",
+        "phone": "+1 555-1012",
+        "email": "mason@telegram.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "List of call logs",
+      "item_aria": "Call log for {{name}}",
+      "detail_aria": "Call details for {{name}}",
+      "outgoing": "Outgoing",
+      "incoming": "Incoming",
+      "missed": "Missed",
+      "jake_morrison": {
+        "name": "Jake Morrison",
+        "type": "outgoing",
+        "time": "2025-10-28 23:30",
+        "duration": "22:15"
+      },
+      "tyler_reed": {
+        "name": "Tyler Reed",
+        "type": "incoming",
+        "time": "2025-10-28 22:10",
+        "duration": "14:30"
+      },
+      "caleb_holt": {
+        "name": "Caleb Holt",
+        "type": "missed",
+        "time": "2025-10-28 21:05"
+      },
+      "logan_pierce": {
+        "name": "Logan Pierce",
+        "type": "outgoing",
+        "time": "2025-10-27 20:45",
+        "duration": "38:20"
+      },
+      "austin_grey": {
+        "name": "Austin Grey",
+        "type": "incoming",
+        "time": "2025-10-27 19:20",
+        "duration": "27:10"
+      },
+      "kyle_vance": {
+        "name": "Kyle Vance",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "jake_morrison": {
+        "name": "Jake Morrison",
+        "avatar": "https://i.pravatar.cc/150?img=38",
+        "lastMessage": "I left my hoodie at your place",
+        "time": "03:12",
+        "msg1_time": "02:50",
+        "msg2_time": "02:51",
+        "msg3_time": "02:52",
+        "msg4_time": "02:53",
+        "msg5_time": "03:12",
+        "messages": {
+          "msg1": "You still up?",
+          "msg1_incoming": "true",
+          "msg2": "Yeah... can't sleep",
+          "msg2_incoming": "false",
+          "msg3": "Thinking about earlier?",
+          "msg3_incoming": "true",
+          "msg4": "Every second",
+          "msg4_incoming": "false",
+          "msg5": "I left my hoodie at your place",
+          "msg5_incoming": "false"
+        }
+      },
+      "tyler_reed": {
+        "name": "Tyler Reed",
+        "avatar": "https://i.pravatar.cc/150?img=39",
+        "lastMessage": "She has no idea",
+        "time": "01:47",
+        "msg1_time": "01:30",
+        "msg2_time": "01:31",
+        "msg3_time": "01:32",
+        "msg4_time": "01:33",
+        "msg5_time": "01:47",
+        "messages": {
+          "msg1": "That was close today",
+          "msg1_incoming": "true",
+          "msg2": "Too close. My heart was racing",
+          "msg2_incoming": "false",
+          "msg3": "But worth it",
+          "msg3_incoming": "true",
+          "msg4": "Every time",
+          "msg4_incoming": "false",
+          "msg5": "She has no idea",
+          "msg5_incoming": "false"
+        }
+      },
+      "caleb_holt": {
+        "name": "Caleb Holt",
+        "avatar": "https://i.pravatar.cc/150?img=40",
+        "lastMessage": "Send it again, I deleted it",
+        "time": "00:28",
+        "msg1_time": "00:10",
+        "msg2_time": "00:11",
+        "msg3_time": "00:12",
+        "msg4_time": "00:28",
+        "messages": {
+          "msg1": "You looked insane tonight",
+          "msg1_incoming": "true",
+          "msg2": "You weren't supposed to see that",
+          "msg2_incoming": "false",
+          "msg3": "Too late. Save it",
+          "msg3_incoming": "true",
+          "msg4": "Send it again, I deleted it",
+          "msg4_incoming": "false"
+        }
+      },
+      "logan_pierce": {
+        "name": "Logan Pierce",
+        "avatar": "https://i.pravatar.cc/150?img=41",
+        "lastMessage": "Door’s unlocked. Come in quiet",
+        "time": "23:55",
+        "msg1_time": "23:40",
+        "msg2_time": "23:41",
+        "msg3_time": "23:42",
+        "msg4_time": "23:55",
+        "messages": {
+          "msg1": "You home?",
+          "msg1_incoming": "true",
+          "msg2": "Yeah. She’s asleep",
+          "msg2_incoming": "false",
+          "msg3": "On my way",
+          "msg3_incoming": "true",
+          "msg4": "Door’s unlocked. Come in quiet",
+          "msg4_incoming": "false"
+        }
+      },
+      "austin_grey": {
+        "name": "Austin Grey",
+        "avatar": "https://i.pravatar.cc/150?img=42",
+        "lastMessage": "I’m addicted to you",
+        "time": "02:30",
+        "msg1_time": "02:00",
+        "msg2_time": "02:01",
+        "msg3_time": "02:02",
+        "msg4_time": "02:03",
+        "msg5_time": "02:30",
+        "messages": {
+          "msg1": "I shouldn’t be here",
+          "msg1_incoming": "true",
+          "msg2": "Then why are you?",
+          "msg2_incoming": "false",
+          "msg3": "Because I can’t stay away",
+          "msg3_incoming": "true",
+          "msg4": "Good",
+          "msg4_incoming": "false",
+          "msg5": "I’m addicted to you",
+          "msg5_incoming": "false"
+        }
+      },
+      "brandon_cole": {
+        "name": "Brandon Cole",
+        "avatar": "https://i.pravatar.cc/150?img=43",
+        "lastMessage": "I told her I was at the gym",
+        "time": "22:10",
+        "msg1_time": "21:50",
+        "msg2_time": "21:51",
+        "msg3_time": "21:52",
+        "msg4_time": "21:53",
+        "msg5_time": "22:10",
+        "messages": {
+          "msg1": "Where are you?",
+          "msg1_incoming": "true",
+          "msg2": "Gym. Late session",
+          "msg2_incoming": "false",
+          "msg3": "Liar",
+          "msg3_incoming": "true",
+          "msg4": "You know why",
+          "msg4_incoming": "false",
+          "msg5": "I told her I was at the gym",
+          "msg5_incoming": "false"
+        }
+      },
+      "evan_shaw": {
+        "name": "Evan Shaw",
+        "avatar": "https://i.pravatar.cc/150?img=44",
+        "lastMessage": "This can’t keep happening",
+        "time": "20:45",
+        "msg1_time": "20:30",
+        "msg2_time": "20:31",
+        "msg3_time": "20:32",
+        "msg4_time": "20:45",
+        "messages": {
+          "msg1": "We said last time was the last",
+          "msg1_incoming": "true",
+          "msg2": "I know",
+          "msg2_incoming": "false",
+          "msg3": "Then why am I pulling into your driveway?",
+          "msg3_incoming": "true",
+          "msg4": "This can’t keep happening",
+          "msg4_incoming": "false"
+        }
+      },
+      "gavin_knox": {
+        "name": "Gavin Knox",
+        "avatar": "https://i.pravatar.cc/150?img=45",
+        "lastMessage": "I dream about you every night",
+        "time": "03:05",
+        "msg1_time": "02:55",
+        "msg2_time": "02:56",
+        "msg3_time": "02:57",
+        "msg4_time": "03:05",
+        "messages": {
+          "msg1": "Are you asleep?",
+          "msg1_incoming": "true",
+          "msg2": "No. You?",
+          "msg2_incoming": "false",
+          "msg3": "Wide awake. Thinking of you",
+          "msg3_incoming": "true",
+          "msg4": "I dream about you every night",
+          "msg4_incoming": "false"
+        }
+      },
+      "hunter_blake": {
+        "name": "Hunter Blake",
+        "avatar": "https://i.pravatar.cc/150?img=46",
+        "lastMessage": "Delete after reading",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "I can’t stop replaying last night",
+          "msg1_incoming": "true",
+          "msg2": "Same. That thing you did...",
+          "msg2_incoming": "false",
+          "msg3": "Shh. Don’t type it",
+          "msg3_incoming": "true",
+          "msg4": "Delete after reading",
+          "msg4_incoming": "false"
+        }
+      },
+      "jordan_miles": {
+        "name": "Jordan Miles",
+        "avatar": "https://i.pravatar.cc/150?img=47",
+        "lastMessage": "I’m falling for you",
+        "time": "00:05",
+        "msg1_time": "23:50",
+        "msg2_time": "23:51",
+        "msg3_time": "23:52",
+        "msg4_time": "00:05",
+        "messages": {
+          "msg1": "This is getting dangerous",
+          "msg1_incoming": "true",
+          "msg2": "I know",
+          "msg2_incoming": "false",
+          "msg3": "But I don’t want to stop",
+          "msg3_incoming": "true",
+          "msg4": "I’m falling for you",
+          "msg4_incoming": "false"
+        }
+      },
+      "kyle_vance": {
+        "name": "Kyle Vance",
+        "avatar": "https://i.pravatar.cc/150?img=48",
+        "lastMessage": "Your scent is still on my sheets",
+        "time": "04:20",
+        "msg1_time": "04:00",
+        "msg2_time": "04:01",
+        "msg3_time": "04:02",
+        "msg4_time": "04:20",
+        "messages": {
+          "msg1": "I can still taste you",
+          "msg1_incoming": "true",
+          "msg2": "Stop. I’m getting hard again",
+          "msg2_incoming": "false",
+          "msg3": "Good",
+          "msg3_incoming": "true",
+          "msg4": "Your scent is still on my sheets",
+          "msg4_incoming": "false"
+        }
+      },
+      "mason_hale": {
+        "name": "Mason Hale",
+        "avatar": "https://i.pravatar.cc/150?img=49",
+        "lastMessage": "I lied to her for you",
+        "time": "21:30",
+        "msg1_time": "21:15",
+        "msg2_time": "21:16",
+        "msg3_time": "21:17",
+        "msg4_time": "21:30",
+        "messages": {
+          "msg1": "She asked where I was",
+          "msg1_incoming": "true",
+          "msg2": "What’d you say?",
+          "msg2_incoming": "false",
+          "msg3": "With you",
+          "msg3_incoming": "true",
+          "msg4": "I lied to her for you",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

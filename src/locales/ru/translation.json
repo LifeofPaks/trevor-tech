@@ -2707,5 +2707,386 @@
         "duration": "32:00"
       }
     }
+  },
+  "dmtele": {
+    "header": { "title": "Телеграм" },
+    "tabs": {
+      "chat": "Чаты",
+      "friends": "Друзья",
+      "calls": "Звонки",
+      "aria_label": "Вкладки навигации Телеграм",
+      "chat_aria": "Просмотр чатов",
+      "friends_aria": "Просмотр друзей",
+      "calls_aria": "Просмотр журнала звонков"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список чатов",
+      "item_aria": "Чат с {{name}}",
+      "detail_aria": "Детали чата для {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Телефон",
+      "email_label": "Электронная почта",
+      "list_aria": "Список друзей",
+      "item_aria": "Друг {{name}}",
+      "detail_aria": "Детали друга для {{name}}",
+      "jake_morrison": {
+        "name": "Джейк Моррисон",
+        "phone": "+1 555-1001",
+        "email": "jake@telegram.com"
+      },
+      "tyler_reed": {
+        "name": "Тайлер Рид",
+        "phone": "+1 555-1002",
+        "email": "tyler@telegram.com"
+      },
+      "caleb_holt": {
+        "name": "Калеб Холт",
+        "phone": "+1 555-1003",
+        "email": "caleb@telegram.com"
+      },
+      "logan_pierce": {
+        "name": "Логан Пирс",
+        "phone": "+1 555-1004",
+        "email": "logan@telegram.com"
+      },
+      "austin_grey": {
+        "name": "Остин Грей",
+        "phone": "+1 555-1005",
+        "email": "austin@telegram.com"
+      },
+      "brandon_cole": {
+        "name": "Брэндон Коул",
+        "phone": "+1 555-1006",
+        "email": "brandon@telegram.com"
+      },
+      "evan_shaw": {
+        "name": "Эван Шоу",
+        "phone": "+1 555-1007",
+        "email": "evan@telegram.com"
+      },
+      "gavin_knox": {
+        "name": "Гэвин Нокс",
+        "phone": "+1 555-1008",
+        "email": "gavin@telegram.com"
+      },
+      "hunter_blake": {
+        "name": "Хантер Блейк",
+        "phone": "+1 555-1009",
+        "email": "hunter@telegram.com"
+      },
+      "jordan_miles": {
+        "name": "Джордан Майлз",
+        "phone": "+1 555-1010",
+        "email": "jordan@telegram.com"
+      },
+      "kyle_vance": {
+        "name": "Кайл Вэнс",
+        "phone": "+1 555-1011",
+        "email": "kyle@telegram.com"
+      },
+      "mason_hale": {
+        "name": "Мейсон Хейл",
+        "phone": "+1 555-1012",
+        "email": "mason@telegram.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "Список журналов звонков",
+      "item_aria": "Журнал звонков для {{name}}",
+      "detail_aria": "Детали звонка для {{name}}",
+      "outgoing": "Исходящий",
+      "incoming": "Входящий",
+      "missed": "Пропущенный",
+      "jake_morrison": {
+        "name": "Джейк Моррисон",
+        "type": "outgoing",
+        "time": "2025-10-28 23:30",
+        "duration": "22:15"
+      },
+      "tyler_reed": {
+        "name": "Тайлер Рид",
+        "type": "incoming",
+        "time": "2025-10-28 22:10",
+        "duration": "14:30"
+      },
+      "caleb_holt": {
+        "name": "Калеб Холт",
+        "type": "missed",
+        "time": "2025-10-28 21:05"
+      },
+      "logan_pierce": {
+        "name": "Логан Пирс",
+        "type": "outgoing",
+        "time": "2025-10-27 20:45",
+        "duration": "38:20"
+      },
+      "austin_grey": {
+        "name": "Остин Грей",
+        "type": "incoming",
+        "time": "2025-10-27 19:20",
+        "duration": "27:10"
+      },
+      "kyle_vance": {
+        "name": "Кайл Вэнс",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "jake_morrison": {
+        "name": "Джейк Моррисон",
+        "avatar": "https://i.pravatar.cc/150?img=38",
+        "lastMessage": "Я оставил свою толстовку у тебя",
+        "time": "03:12",
+        "msg1_time": "02:50",
+        "msg2_time": "02:51",
+        "msg3_time": "02:52",
+        "msg4_time": "02:53",
+        "msg5_time": "03:12",
+        "messages": {
+          "msg1": "Ты еще не спишь?",
+          "msg1_incoming": "true",
+          "msg2": "Да... не могу уснуть",
+          "msg2_incoming": "false",
+          "msg3": "Думаешь о том, что было?",
+          "msg3_incoming": "true",
+          "msg4": "Каждую секунду",
+          "msg4_incoming": "false",
+          "msg5": "Я оставил свою толстовку у тебя",
+          "msg5_incoming": "false"
+        }
+      },
+      "tyler_reed": {
+        "name": "Тайлер Рид",
+        "avatar": "https://i.pravatar.cc/150?img=39",
+        "lastMessage": "Она ничего не знает",
+        "time": "01:47",
+        "msg1_time": "01:30",
+        "msg2_time": "01:31",
+        "msg3_time": "01:32",
+        "msg4_time": "01:33",
+        "msg5_time": "01:47",
+        "messages": {
+          "msg1": "Сегодня было близко",
+          "msg1_incoming": "true",
+          "msg2": "Слишком близко. Сердце колотилось",
+          "msg2_incoming": "false",
+          "msg3": "Но оно того стоило",
+          "msg3_incoming": "true",
+          "msg4": "Каждый раз",
+          "msg4_incoming": "false",
+          "msg5": "Она ничего не знает",
+          "msg5_incoming": "false"
+        }
+      },
+      "caleb_holt": {
+        "name": "Калеб Холт",
+        "avatar": "https://i.pravatar.cc/150?img=40",
+        "lastMessage": "Отправь еще раз, я удалил",
+        "time": "00:28",
+        "msg1_time": "00:10",
+        "msg2_time": "00:11",
+        "msg3_time": "00:12",
+        "msg4_time": "00:28",
+        "messages": {
+          "msg1": "Ты сегодня выглядел потрясающе",
+          "msg1_incoming": "true",
+          "msg2": "Ты не должен был это видеть",
+          "msg2_incoming": "false",
+          "msg3": "Слишком поздно. Сохраняю",
+          "msg3_incoming": "true",
+          "msg4": "Отправь еще раз, я удалил",
+          "msg4_incoming": "false"
+        }
+      },
+      "logan_pierce": {
+        "name": "Логан Пирс",
+        "avatar": "https://i.pravatar.cc/150?img=41",
+        "lastMessage": "Дверь открыта. Входи тихо",
+        "time": "23:55",
+        "msg1_time": "23:40",
+        "msg2_time": "23:41",
+        "msg3_time": "23:42",
+        "msg4_time": "23:55",
+        "messages": {
+          "msg1": "Ты дома?",
+          "msg1_incoming": "true",
+          "msg2": "Да. Она спит",
+          "msg2_incoming": "false",
+          "msg3": "Еду",
+          "msg3_incoming": "true",
+          "msg4": "Дверь открыта. Входи тихо",
+          "msg4_incoming": "false"
+        }
+      },
+      "austin_grey": {
+        "name": "Остин Грей",
+        "avatar": "https://i.pravatar.cc/150?img=42",
+        "lastMessage": "Я зависим от тебя",
+        "time": "02:30",
+        "msg1_time": "02:00",
+        "msg2_time": "02:01",
+        "msg3_time": "02:02",
+        "msg4_time": "02:03",
+        "msg5_time": "02:30",
+        "messages": {
+          "msg1": "Мне не следует здесь быть",
+          "msg1_incoming": "true",
+          "msg2": "Тогда почему ты здесь?",
+          "msg2_incoming": "false",
+          "msg3": "Потому что не могу держаться подальше",
+          "msg3_incoming": "true",
+          "msg4": "Хорошо",
+          "msg4_incoming": "false",
+          "msg5": "Я зависим от тебя",
+          "msg5_incoming": "false"
+        }
+      },
+      "brandon_cole": {
+        "name": "Брэндон Коул",
+        "avatar": "https://i.pravatar.cc/150?img=43",
+        "lastMessage": "Сказал ей, что был в спортзале",
+        "time": "22:10",
+        "msg1_time": "21:50",
+        "msg2_time": "21:51",
+        "msg3_time": "21:52",
+        "msg4_time": "21:53",
+        "msg5_time": "22:10",
+        "messages": {
+          "msg1": "Где ты?",
+          "msg1_incoming": "true",
+          "msg2": "Спортзал. Поздняя тренировка",
+          "msg2_incoming": "false",
+          "msg3": "Лжец",
+          "msg3_incoming": "true",
+          "msg4": "Ты знаешь почему",
+          "msg4_incoming": "false",
+          "msg5": "Сказал ей, что был в спортзале",
+          "msg5_incoming": "false"
+        }
+      },
+      "evan_shaw": {
+        "name": "Эван Шоу",
+        "avatar": "https://i.pravatar.cc/150?img=44",
+        "lastMessage": "Так продолжаться не может",
+        "time": "20:45",
+        "msg1_time": "20:30",
+        "msg2_time": "20:31",
+        "msg3_time": "20:32",
+        "msg4_time": "20:45",
+        "messages": {
+          "msg1": "Мы сказали, что прошлый раз был последним",
+          "msg1_incoming": "true",
+          "msg2": "Знаю",
+          "msg2_incoming": "false",
+          "msg3": "Тогда почему я подъезжаю к твоему дому?",
+          "msg3_incoming": "true",
+          "msg4": "Так продолжаться не может",
+          "msg4_incoming": "false"
+        }
+      },
+      "gavin_knox": {
+        "name": "Гэвин Нокс",
+        "avatar": "https://i.pravatar.cc/150?img=45",
+        "lastMessage": "Ты снится мне каждую ночь",
+        "time": "03:05",
+        "msg1_time": "02:55",
+        "msg2_time": "02:56",
+        "msg3_time": "02:57",
+        "msg4_time": "03:05",
+        "messages": {
+          "msg1": "Ты спишь?",
+          "msg1_incoming": "true",
+          "msg2": "Нет. А ты?",
+          "msg2_incoming": "false",
+          "msg3": "Не сплю. Думаю о тебе",
+          "msg3_incoming": "true",
+          "msg4": "Ты снится мне каждую ночь",
+          "msg4_incoming": "false"
+        }
+      },
+      "hunter_blake": {
+        "name": "Хантер Блейк",
+        "avatar": "https://i.pravatar.cc/150?img=46",
+        "lastMessage": "Удали после прочтения",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "Не могу перестать думать о прошлой ночи",
+          "msg1_incoming": "true",
+          "msg2": "Так же. То, что ты сделал...",
+          "msg2_incoming": "false",
+          "msg3": "Тише. Не пиши это",
+          "msg3_incoming": "true",
+          "msg4": "Удали после прочтения",
+          "msg4_incoming": "false"
+        }
+      },
+      "jordan_miles": {
+        "name": "Джордан Майлз",
+        "avatar": "https://i.pravatar.cc/150?img=47",
+        "lastMessage": "Я в тебя влюбляюсь",
+        "time": "00:05",
+        "msg1_time": "23:50",
+        "msg2_time": "23:51",
+        "msg3_time": "23:52",
+        "msg4_time": "00:05",
+        "messages": {
+          "msg1": "Это становится опасно",
+          "msg1_incoming": "true",
+          "msg2": "Знаю",
+          "msg2_incoming": "false",
+          "msg3": "Но я не хочу останавливаться",
+          "msg3_incoming": "true",
+          "msg4": "Я в тебя влюбляюсь",
+          "msg4_incoming": "false"
+        }
+      },
+      "kyle_vance": {
+        "name": "Кайл Вэнс",
+        "avatar": "https://i.pravatar.cc/150?img=48",
+        "lastMessage": "Твой запах все еще на моих простынях",
+        "time": "04:20",
+        "msg1_time": "04:00",
+        "msg2_time": "04:01",
+        "msg3_time": "04:02",
+        "msg4_time": "04:20",
+        "messages": {
+          "msg1": "Я все еще чувствую твой вкус",
+          "msg1_incoming": "true",
+          "msg2": "Хватит. Я снова возбуждаюсь",
+          "msg2_incoming": "false",
+          "msg3": "Хорошо",
+          "msg3_incoming": "true",
+          "msg4": "Твой запах все еще на моих простынях",
+          "msg4_incoming": "false"
+        }
+      },
+      "mason_hale": {
+        "name": "Мейсон Хейл",
+        "avatar": "https://i.pravatar.cc/150?img=49",
+        "lastMessage": "Я солгал ради тебя",
+        "time": "21:30",
+        "msg1_time": "21:15",
+        "msg2_time": "21:16",
+        "msg3_time": "21:17",
+        "msg4_time": "21:30",
+        "messages": {
+          "msg1": "Она спросила, где я был",
+          "msg1_incoming": "true",
+          "msg2": "Что ты сказал?",
+          "msg2_incoming": "false",
+          "msg3": "С тобой",
+          "msg3_incoming": "true",
+          "msg4": "Я солгал ради тебя",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

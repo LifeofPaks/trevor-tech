@@ -2713,5 +2713,386 @@
         "duration": "32:00"
       }
     }
+  },
+  "dmtele": {
+    "header": { "title": "Telegram" },
+    "tabs": {
+      "chat": "Conversas",
+      "friends": "Amigos",
+      "calls": "Chamadas",
+      "aria_label": "Abas de navegação do Telegram",
+      "chat_aria": "Mostrar conversas",
+      "friends_aria": "Mostrar amigos",
+      "calls_aria": "Mostrar registro de chamadas"
+    },
+    "back_button_aria": "Voltar para a lista",
+    "chat": {
+      "list_aria": "Lista de conversas",
+      "item_aria": "Conversa com {{name}}",
+      "detail_aria": "Detalhes da conversa para {{name}}"
+    },
+    "contacts": {
+      "phone_label": "Telefone",
+      "email_label": "E-mail",
+      "list_aria": "Lista de amigos",
+      "item_aria": "Amigo {{name}}",
+      "detail_aria": "Detalhes do amigo para {{name}}",
+      "jake_morrison": {
+        "name": "Jake Morrison",
+        "phone": "+1 555-1001",
+        "email": "jake@telegram.com"
+      },
+      "tyler_reed": {
+        "name": "Tyler Reed",
+        "phone": "+1 555-1002",
+        "email": "tyler@telegram.com"
+      },
+      "caleb_holt": {
+        "name": "Caleb Holt",
+        "phone": "+1 555-1003",
+        "email": "caleb@telegram.com"
+      },
+      "logan_pierce": {
+        "name": "Logan Pierce",
+        "phone": "+1 555-1004",
+        "email": "logan@telegram.com"
+      },
+      "austin_grey": {
+        "name": "Austin Grey",
+        "phone": "+1 555-1005",
+        "email": "austin@telegram.com"
+      },
+      "brandon_cole": {
+        "name": "Brandon Cole",
+        "phone": "+1 555-1006",
+        "email": "brandon@telegram.com"
+      },
+      "evan_shaw": {
+        "name": "Evan Shaw",
+        "phone": "+1 555-1007",
+        "email": "evan@telegram.com"
+      },
+      "gavin_knox": {
+        "name": "Gavin Knox",
+        "phone": "+1 555-1008",
+        "email": "gavin@telegram.com"
+      },
+      "hunter_blake": {
+        "name": "Hunter Blake",
+        "phone": "+1 555-1009",
+        "email": "hunter@telegram.com"
+      },
+      "jordan_miles": {
+        "name": "Jordan Miles",
+        "phone": "+1 555-1010",
+        "email": "jordan@telegram.com"
+      },
+      "kyle_vance": {
+        "name": "Kyle Vance",
+        "phone": "+1 555-1011",
+        "email": "kyle@telegram.com"
+      },
+      "mason_hale": {
+        "name": "Mason Hale",
+        "phone": "+1 555-1012",
+        "email": "mason@telegram.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "Lista de registros de chamadas",
+      "item_aria": "Registro de chamadas para {{name}}",
+      "detail_aria": "Detalhes da chamada para {{name}}",
+      "outgoing": "Saída",
+      "incoming": "Entrada",
+      "missed": "Perdida",
+      "jake_morrison": {
+        "name": "Jake Morrison",
+        "type": "outgoing",
+        "time": "2025-10-28 23:30",
+        "duration": "22:15"
+      },
+      "tyler_reed": {
+        "name": "Tyler Reed",
+        "type": "incoming",
+        "time": "2025-10-28 22:10",
+        "duration": "14:30"
+      },
+      "caleb_holt": {
+        "name": "Caleb Holt",
+        "type": "missed",
+        "time": "2025-10-28 21:05"
+      },
+      "logan_pierce": {
+        "name": "Logan Pierce",
+        "type": "outgoing",
+        "time": "2025-10-27 20:45",
+        "duration": "38:20"
+      },
+      "austin_grey": {
+        "name": "Austin Grey",
+        "type": "incoming",
+        "time": "2025-10-27 19:20",
+        "duration": "27:10"
+      },
+      "kyle_vance": {
+        "name": "Kyle Vance",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "jake_morrison": {
+        "name": "Jake Morrison",
+        "avatar": "https://i.pravatar.cc/150?img=38",
+        "lastMessage": "Deixei meu moletom na sua casa",
+        "time": "03:12",
+        "msg1_time": "02:50",
+        "msg2_time": "02:51",
+        "msg3_time": "02:52",
+        "msg4_time": "02:53",
+        "msg5_time": "03:12",
+        "messages": {
+          "msg1": "Ainda está acordado?",
+          "msg1_incoming": "true",
+          "msg2": "Sim... não consigo dormir",
+          "msg2_incoming": "false",
+          "msg3": "Pensando no que aconteceu antes?",
+          "msg3_incoming": "true",
+          "msg4": "A cada segundo",
+          "msg4_incoming": "false",
+          "msg5": "Deixei meu moletom na sua casa",
+          "msg5_incoming": "false"
+        }
+      },
+      "tyler_reed": {
+        "name": "Tyler Reed",
+        "avatar": "https://i.pravatar.cc/150?img=39",
+        "lastMessage": "Ela não faz ideia",
+        "time": "01:47",
+        "msg1_time": "01:30",
+        "msg2_time": "01:31",
+        "msg3_time": "01:32",
+        "msg4_time": "01:33",
+        "msg5_time": "01:47",
+        "messages": {
+          "msg1": "Hoje foi por pouco",
+          "msg1_incoming": "true",
+          "msg2": "Muito por pouco. Meu coração estava disparado",
+          "msg2_incoming": "false",
+          "msg3": "Mas valeu a pena",
+          "msg3_incoming": "true",
+          "msg4": "Sempre vale",
+          "msg4_incoming": "false",
+          "msg5": "Ela não faz ideia",
+          "msg5_incoming": "false"
+        }
+      },
+      "caleb_holt": {
+        "name": "Caleb Holt",
+        "avatar": "https://i.pravatar.cc/150?img=40",
+        "lastMessage": "Manda de novo, eu apaguei",
+        "time": "00:28",
+        "msg1_time": "00:10",
+        "msg2_time": "00:11",
+        "msg3_time": "00:12",
+        "msg4_time": "00:28",
+        "messages": {
+          "msg1": "Você estava incrível hoje à noite",
+          "msg1_incoming": "true",
+          "msg2": "Você não deveria ter visto isso",
+          "msg2_incoming": "false",
+          "msg3": "Tarde demais. Vou salvar",
+          "msg3_incoming": "true",
+          "msg4": "Manda de novo, eu apaguei",
+          "msg4_incoming": "false"
+        }
+      },
+      "logan_pierce": {
+        "name": "Logan Pierce",
+        "avatar": "https://i.pravatar.cc/150?img=41",
+        "lastMessage": "A porta está aberta. Entre quieto",
+        "time": "23:55",
+        "msg1_time": "23:40",
+        "msg2_time": "23:41",
+        "msg3_time": "23:42",
+        "msg4_time": "23:55",
+        "messages": {
+          "msg1": "Está em casa?",
+          "msg1_incoming": "true",
+          "msg2": "Sim. Ela está dormindo",
+          "msg2_incoming": "false",
+          "msg3": "A caminho",
+          "msg3_incoming": "true",
+          "msg4": "A porta está aberta. Entre quieto",
+          "msg4_incoming": "false"
+        }
+      },
+      "austin_grey": {
+        "name": "Austin Grey",
+        "avatar": "https://i.pravatar.cc/150?img=42",
+        "lastMessage": "Estou viciado em você",
+        "time": "02:30",
+        "msg1_time": "02:00",
+        "msg2_time": "02:01",
+        "msg3_time": "02:02",
+        "msg4_time": "02:03",
+        "msg5_time": "02:30",
+        "messages": {
+          "msg1": "Eu não deveria estar aqui",
+          "msg1_incoming": "true",
+          "msg2": "Então por que está?",
+          "msg2_incoming": "false",
+          "msg3": "Porque não consigo ficar longe",
+          "msg3_incoming": "true",
+          "msg4": "Bom",
+          "msg4_incoming": "false",
+          "msg5": "Estou viciado em você",
+          "msg5_incoming": "false"
+        }
+      },
+      "brandon_cole": {
+        "name": "Brandon Cole",
+        "avatar": "https://i.pravatar.cc/150?img=43",
+        "lastMessage": "Disse a ela que estava na academia",
+        "time": "22:10",
+        "msg1_time": "21:50",
+        "msg2_time": "21:51",
+        "msg3_time": "21:52",
+        "msg4_time": "21:53",
+        "msg5_time": "22:10",
+        "messages": {
+          "msg1": "Onde você está?",
+          "msg1_incoming": "true",
+          "msg2": "Academia. Treino tardio",
+          "msg2_incoming": "false",
+          "msg3": "Mentiroso",
+          "msg3_incoming": "true",
+          "msg4": "Você sabe por quê",
+          "msg4_incoming": "false",
+          "msg5": "Disse a ela que estava na academia",
+          "msg5_incoming": "false"
+        }
+      },
+      "evan_shaw": {
+        "name": "Evan Shaw",
+        "avatar": "https://i.pravatar.cc/150?img=44",
+        "lastMessage": "Isso não pode continuar",
+        "time": "20:45",
+        "msg1_time": "20:30",
+        "msg2_time": "20:31",
+        "msg3_time": "20:32",
+        "msg4_time": "20:45",
+        "messages": {
+          "msg1": "Dissemos que a última vez seria a última",
+          "msg1_incoming": "true",
+          "msg2": "Eu sei",
+          "msg2_incoming": "false",
+          "msg3": "Então por que estou na sua entrada?",
+          "msg3_incoming": "true",
+          "msg4": "Isso não pode continuar",
+          "msg4_incoming": "false"
+        }
+      },
+      "gavin_knox": {
+        "name": "Gavin Knox",
+        "avatar": "https://i.pravatar.cc/150?img=45",
+        "lastMessage": "Sonho com você toda noite",
+        "time": "03:05",
+        "msg1_time": "02:55",
+        "msg2_time": "02:56",
+        "msg3_time": "02:57",
+        "msg4_time": "03:05",
+        "messages": {
+          "msg1": "Está dormindo?",
+          "msg1_incoming": "true",
+          "msg2": "Não. Você?",
+          "msg2_incoming": "false",
+          "msg3": "Acordado. Pensando em você",
+          "msg3_incoming": "true",
+          "msg4": "Sonho com você toda noite",
+          "msg4_incoming": "false"
+        }
+      },
+      "hunter_blake": {
+        "name": "Hunter Blake",
+        "avatar": "https://i.pravatar.cc/150?img=46",
+        "lastMessage": "Apague depois de ler",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "Não consigo parar de repetir ontem à noite",
+          "msg1_incoming": "true",
+          "msg2": "Igual. Aquela coisa que você fez...",
+          "msg2_incoming": "false",
+          "msg3": "Shh. Não escreva isso",
+          "msg3_incoming": "true",
+          "msg4": "Apague depois de ler",
+          "msg4_incoming": "false"
+        }
+      },
+      "jordan_miles": {
+        "name": "Jordan Miles",
+        "avatar": "https://i.pravatar.cc/150?img=47",
+        "lastMessage": "Estou me apaixonando por você",
+        "time": "00:05",
+        "msg1_time": "23:50",
+        "msg2_time": "23:51",
+        "msg3_time": "23:52",
+        "msg4_time": "00:05",
+        "messages": {
+          "msg1": "Isso está ficando perigoso",
+          "msg1_incoming": "true",
+          "msg2": "Eu sei",
+          "msg2_incoming": "false",
+          "msg3": "Mas não quero parar",
+          "msg3_incoming": "true",
+          "msg4": "Estou me apaixonando por você",
+          "msg4_incoming": "false"
+        }
+      },
+      "kyle_vance": {
+        "name": "Kyle Vance",
+        "avatar": "https://i.pravatar.cc/150?img=48",
+        "lastMessage": "Seu cheiro ainda está nos meus lençóis",
+        "time": "04:20",
+        "msg1_time": "04:00",
+        "msg2_time": "04:01",
+        "msg3_time": "04:02",
+        "msg4_time": "04:20",
+        "messages": {
+          "msg1": "Ainda sinto seu gosto",
+          "msg1_incoming": "true",
+          "msg2": "Para. Estou ficando excitado de novo",
+          "msg2_incoming": "false",
+          "msg3": "Bom",
+          "msg3_incoming": "true",
+          "msg4": "Seu cheiro ainda está nos meus lençóis",
+          "msg4_incoming": "false"
+        }
+      },
+      "mason_hale": {
+        "name": "Mason Hale",
+        "avatar": "https://i.pravatar.cc/150?img=49",
+        "lastMessage": "Menti por você",
+        "time": "21:30",
+        "msg1_time": "21:15",
+        "msg2_time": "21:16",
+        "msg3_time": "21:17",
+        "msg4_time": "21:30",
+        "messages": {
+          "msg1": "Ela perguntou onde eu estava",
+          "msg1_incoming": "true",
+          "msg2": "O que você disse?",
+          "msg2_incoming": "false",
+          "msg3": "Com você",
+          "msg3_incoming": "true",
+          "msg4": "Menti por você",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }

@@ -2717,5 +2717,386 @@
         "duration": "32:00"
       }
     }
+  },
+  "dmtele": {
+    "header": { "title": "Telegram" },
+    "tabs": {
+      "chat": "Sohbetler",
+      "friends": "Arkadaşlar",
+      "calls": "Aramalar",
+      "aria_label": "Telegram navigasyon sekmeleri",
+      "chat_aria": "Sohbetleri göster",
+      "friends_aria": "Arkadaşları göster",
+      "calls_aria": "Arama kaydını göster"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "Sohbet listesi",
+      "item_aria": "{{name}} ile sohbet",
+      "detail_aria": "{{name}} için sohbet detayları"
+    },
+    "contacts": {
+      "phone_label": "Telefon",
+      "email_label": "E-posta",
+      "list_aria": "Arkadaş listesi",
+      "item_aria": "Arkadaş {{name}}",
+      "detail_aria": "{{name}} için arkadaş detayları",
+      "jake_morrison": {
+        "name": "Jake Morrison",
+        "phone": "+1 555-1001",
+        "email": "jake@telegram.com"
+      },
+      "tyler_reed": {
+        "name": "Tyler Reed",
+        "phone": "+1 555-1002",
+        "email": "tyler@telegram.com"
+      },
+      "caleb_holt": {
+        "name": "Caleb Holt",
+        "phone": "+1 555-1003",
+        "email": "caleb@telegram.com"
+      },
+      "logan_pierce": {
+        "name": "Logan Pierce",
+        "phone": "+1 555-1004",
+        "email": "logan@telegram.com"
+      },
+      "austin_grey": {
+        "name": "Austin Grey",
+        "phone": "+1 555-1005",
+        "email": "austin@telegram.com"
+      },
+      "brandon_cole": {
+        "name": "Brandon Cole",
+        "phone": "+1 555-1006",
+        "email": "brandon@telegram.com"
+      },
+      "evan_shaw": {
+        "name": "Evan Shaw",
+        "phone": "+1 555-1007",
+        "email": "evan@telegram.com"
+      },
+      "gavin_knox": {
+        "name": "Gavin Knox",
+        "phone": "+1 555-1008",
+        "email": "gavin@telegram.com"
+      },
+      "hunter_blake": {
+        "name": "Hunter Blake",
+        "phone": "+1 555-1009",
+        "email": "hunter@telegram.com"
+      },
+      "jordan_miles": {
+        "name": "Jordan Miles",
+        "phone": "+1 555-1010",
+        "email": "jordan@telegram.com"
+      },
+      "kyle_vance": {
+        "name": "Kyle Vance",
+        "phone": "+1 555-1011",
+        "email": "kyle@telegram.com"
+      },
+      "mason_hale": {
+        "name": "Mason Hale",
+        "phone": "+1 555-1012",
+        "email": "mason@telegram.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "Arama kayıtları listesi",
+      "item_aria": "{{name}} için arama kaydı",
+      "detail_aria": "{{name}} için arama detayları",
+      "outgoing": "Giden",
+      "incoming": "Gelen",
+      "missed": "Cevapsız",
+      "jake_morrison": {
+        "name": "Jake Morrison",
+        "type": "outgoing",
+        "time": "2025-10-28 23:30",
+        "duration": "22:15"
+      },
+      "tyler_reed": {
+        "name": "Tyler Reed",
+        "type": "incoming",
+        "time": "2025-10-28 22:10",
+        "duration": "14:30"
+      },
+      "caleb_holt": {
+        "name": "Caleb Holt",
+        "type": "missed",
+        "time": "2025-10-28 21:05"
+      },
+      "logan_pierce": {
+        "name": "Logan Pierce",
+        "type": "outgoing",
+        "time": "2025-10-27 20:45",
+        "duration": "38:20"
+      },
+      "austin_grey": {
+        "name": "Austin Grey",
+        "type": "incoming",
+        "time": "2025-10-27 19:20",
+        "duration": "27:10"
+      },
+      "kyle_vance": {
+        "name": "Kyle Vance",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "jake_morrison": {
+        "name": "Jake Morrison",
+        "avatar": "https://i.pravatar.cc/150?img=38",
+        "lastMessage": "Kapüşonlumu sende unuttum",
+        "time": "03:12",
+        "msg1_time": "02:50",
+        "msg2_time": "02:51",
+        "msg3_time": "02:52",
+        "msg4_time": "02:53",
+        "msg5_time": "03:12",
+        "messages": {
+          "msg1": "Hala uyanık mısın?",
+          "msg1_incoming": "true",
+          "msg2": "Evet... uyuyamıyorum",
+          "msg2_incoming": "false",
+          "msg3": "Öncesini mi düşünüyorsun?",
+          "msg3_incoming": "true",
+          "msg4": "Her saniye",
+          "msg4_incoming": "false",
+          "msg5": "Kapüşonlumu sende unuttum",
+          "msg5_incoming": "false"
+        }
+      },
+      "tyler_reed": {
+        "name": "Tyler Reed",
+        "avatar": "https://i.pravatar.cc/150?img=39",
+        "lastMessage": "Onun haberi yok",
+        "time": "01:47",
+        "msg1_time": "01:30",
+        "msg2_time": "01:31",
+        "msg3_time": "01:32",
+        "msg4_time": "01:33",
+        "msg5_time": "01:47",
+        "messages": {
+          "msg1": "Bugün çok riskliydi",
+          "msg1_incoming": "true",
+          "msg2": "Çok riskli. Kalbim küt küt attı",
+          "msg2_incoming": "false",
+          "msg3": "Ama değdi",
+          "msg3_incoming": "true",
+          "msg4": "Her zaman",
+          "msg4_incoming": "false",
+          "msg5": "Onun haberi yok",
+          "msg5_incoming": "false"
+        }
+      },
+      "caleb_holt": {
+        "name": "Caleb Holt",
+        "avatar": "https://i.pravatar.cc/150?img=40",
+        "lastMessage": "Tekrar gönder, sildim",
+        "time": "00:28",
+        "msg1_time": "00:10",
+        "msg2_time": "00:11",
+        "msg3_time": "00:12",
+        "msg4_time": "00:28",
+        "messages": {
+          "msg1": "Bu akşam harikaydın",
+          "msg1_incoming": "true",
+          "msg2": "Bunu görmemeliydin",
+          "msg2_incoming": "false",
+          "msg3": "Çok geç. Kaydediyorum",
+          "msg3_incoming": "true",
+          "msg4": "Tekrar gönder, sildim",
+          "msg4_incoming": "false"
+        }
+      },
+      "logan_pierce": {
+        "name": "Logan Pierce",
+        "avatar": "https://i.pravatar.cc/150?img=41",
+        "lastMessage": "Kapı açık. Sessizce gir",
+        "time": "23:55",
+        "msg1_time": "23:40",
+        "msg2_time": "23:41",
+        "msg3_time": "23:42",
+        "msg4_time": "23:55",
+        "messages": {
+          "msg1": "Evde misin?",
+          "msg1_incoming": "true",
+          "msg2": "Evet. O uyuyor",
+          "msg2_incoming": "false",
+          "msg3": "Yoldayım",
+          "msg3_incoming": "true",
+          "msg4": "Kapı açık. Sessizce gir",
+          "msg4_incoming": "false"
+        }
+      },
+      "austin_grey": {
+        "name": "Austin Grey",
+        "avatar": "https://i.pravatar.cc/150?img=42",
+        "lastMessage": "Sana bağımlıyım",
+        "time": "02:30",
+        "msg1_time": "02:00",
+        "msg2_time": "02:01",
+        "msg3_time": "02:02",
+        "msg4_time": "02:03",
+        "msg5_time": "02:30",
+        "messages": {
+          "msg1": "Burada olmamalıyım",
+          "msg1_incoming": "true",
+          "msg2": "O zaman neden buradasın?",
+          "msg2_incoming": "false",
+          "msg3": "Çünkü uzak duramıyorum",
+          "msg3_incoming": "true",
+          "msg4": "Güzel",
+          "msg4_incoming": "false",
+          "msg5": "Sana bağımlıyım",
+          "msg5_incoming": "false"
+        }
+      },
+      "brandon_cole": {
+        "name": "Brandon Cole",
+        "avatar": "https://i.pravatar.cc/150?img=43",
+        "lastMessage": "Ona spor salonunda olduğumu söyledim",
+        "time": "22:10",
+        "msg1_time": "21:50",
+        "msg2_time": "21:51",
+        "msg3_time": "21:52",
+        "msg4_time": "21:53",
+        "msg5_time": "22:10",
+        "messages": {
+          "msg1": "Neredesin?",
+          "msg1_incoming": "true",
+          "msg2": "Spor salonu. Geç antrenman",
+          "msg2_incoming": "false",
+          "msg3": "Yalancı",
+          "msg3_incoming": "true",
+          "msg4": "Nedenini biliyorsun",
+          "msg4_incoming": "false",
+          "msg5": "Ona spor salonunda olduğumu söyledim",
+          "msg5_incoming": "false"
+        }
+      },
+      "evan_shaw": {
+        "name": "Evan Shaw",
+        "avatar": "https://i.pravatar.cc/150?img=44",
+        "lastMessage": "Böyle devam edemez",
+        "time": "20:45",
+        "msg1_time": "20:30",
+        "msg2_time": "20:31",
+        "msg3_time": "20:32",
+        "msg4_time": "20:45",
+        "messages": {
+          "msg1": "Son kez son dedik",
+          "msg1_incoming": "true",
+          "msg2": "Biliyorum",
+          "msg2_incoming": "false",
+          "msg3": "O zaman neden senin evine geliyorum?",
+          "msg3_incoming": "true",
+          "msg4": "Böyle devam edemez",
+          "msg4_incoming": "false"
+        }
+      },
+      "gavin_knox": {
+        "name": "Gavin Knox",
+        "avatar": "https://i.pravatar.cc/150?img=45",
+        "lastMessage": "Her gece seni rüyamda görüyorum",
+        "time": "03:05",
+        "msg1_time": "02:55",
+        "msg2_time": "02:56",
+        "msg3_time": "02:57",
+        "msg4_time": "03:05",
+        "messages": {
+          "msg1": "Uyuyor musun?",
+          "msg1_incoming": "true",
+          "msg2": "Hayır. Sen?",
+          "msg2_incoming": "false",
+          "msg3": "Uyanığım. Seni düşünüyorum",
+          "msg3_incoming": "true",
+          "msg4": "Her gece seni rüyamda görüyorum",
+          "msg4_incoming": "false"
+        }
+      },
+      "hunter_blake": {
+        "name": "Hunter Blake",
+        "avatar": "https://i.pravatar.cc/150?img=46",
+        "lastMessage": "Okuduktan sonra sil",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "Dün geceyi tekrar tekrar düşünüyorum",
+          "msg1_incoming": "true",
+          "msg2": "Aynen. Senin yaptığın o şey...",
+          "msg2_incoming": "false",
+          "msg3": "Şşş. Yazma",
+          "msg3_incoming": "true",
+          "msg4": "Okuduktan sonra sil",
+          "msg4_incoming": "false"
+        }
+      },
+      "jordan_miles": {
+        "name": "Jordan Miles",
+        "avatar": "https://i.pravatar.cc/150?img=47",
+        "lastMessage": "Sana aşık oluyorum",
+        "time": "00:05",
+        "msg1_time": "23:50",
+        "msg2_time": "23:51",
+        "msg3_time": "23:52",
+        "msg4_time": "00:05",
+        "messages": {
+          "msg1": "Bu tehlikeli olmaya başladı",
+          "msg1_incoming": "true",
+          "msg2": "Biliyorum",
+          "msg2_incoming": "false",
+          "msg3": "Ama durmak istemiyorum",
+          "msg3_incoming": "true",
+          "msg4": "Sana aşık oluyorum",
+          "msg4_incoming": "false"
+        }
+      },
+      "kyle_vance": {
+        "name": "Kyle Vance",
+        "avatar": "https://i.pravatar.cc/150?img=48",
+        "lastMessage": "Kokun hala çarşaflarda",
+        "time": "04:20",
+        "msg1_time": "04:00",
+        "msg2_time": "04:01",
+        "msg3_time": "04:02",
+        "msg4_time": "04:20",
+        "messages": {
+          "msg1": "Hala tadın ağzımda",
+          "msg1_incoming": "true",
+          "msg2": "Dur. Tekrar tahrik oluyorum",
+          "msg2_incoming": "false",
+          "msg3": "Güzel",
+          "msg3_incoming": "true",
+          "msg4": "Kokun hala çarşaflarda",
+          "msg4_incoming": "false"
+        }
+      },
+      "mason_hale": {
+        "name": "Mason Hale",
+        "avatar": "https://i.pravatar.cc/150?img=49",
+        "lastMessage": "Senin için yalan söyledim",
+        "time": "21:30",
+        "msg1_time": "21:15",
+        "msg2_time": "21:16",
+        "msg3_time": "21:17",
+        "msg4_time": "21:30",
+        "messages": {
+          "msg1": "Nerede olduğumu sordu",
+          "msg1_incoming": "true",
+          "msg2": "Ne dedin?",
+          "msg2_incoming": "false",
+          "msg3": "Seninle",
+          "msg3_incoming": "true",
+          "msg4": "Senin için yalan söyledim",
+          "msg4_incoming": "false"
+        }
+      }
+    }
   }
 }
