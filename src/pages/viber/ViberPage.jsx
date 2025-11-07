@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import {
   Box,
   Typography,
@@ -15,7 +17,6 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import {
-  FiMessageSquare,
   FiUsers,
   FiPhone,
   FiPhoneCall,
@@ -23,12 +24,12 @@ import {
   FiPhoneMissed,
   FiMail,
 } from "react-icons/fi";
-import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
+import { IoArrowBackCircle } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
 import { RiCheckDoubleFill } from "react-icons/ri";
 import { FaViber } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
-// Viber Light Mode Theme
 const theme = createTheme({
   palette: {
     primary: {
@@ -41,9 +42,9 @@ const theme = createTheme({
       light: "#FFFFFF",
       dark: "#E0E0E0",
     },
-    success: { main: "#10B981" }, // incoming
-    error: { main: "#EF4444" }, // missed
-    info: { main: "#0B5CFF" }, // outgoing
+    success: { main: "#10B981" },
+    error: { main: "#EF4444" },
+    info: { main: "#0B5CFF" },
   },
   typography: {
     fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
@@ -65,232 +66,333 @@ const theme = createTheme({
   },
 });
 
-// === Cheating Drama Chats (8 Total) – Young Men Only ===
 const chats = [
   {
     id: 1,
-    name: "Alex Rivera",
-    avatar: "https://i.pravatar.cc/150?img=32",
-    lastMessage: "I can't stop thinking about you",
-    time: "00:45",
+    nameKey: "dmviber.chats.alex_rivera.name",
+    avatarKey: "dmviber.chats.alex_rivera.avatar",
+    lastMessageKey: "dmviber.chats.alex_rivera.lastMessage",
+    timeKey: "dmviber.chats.alex_rivera.time",
     messages: [
-      { text: "You're still awake?", time: "00:30", incoming: true },
       {
-        text: "Can't sleep. Thinking about last night",
-        time: "00:31",
+        textKey: "dmviber.chats.alex_rivera.messages.msg1",
+        timeKey: "dmviber.chats.alex_rivera.msg1_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.alex_rivera.messages.msg2",
+        timeKey: "dmviber.chats.alex_rivera.msg2_time",
         incoming: false,
       },
-      { text: "Same. I miss your touch", time: "00:32", incoming: true },
       {
-        text: "I can't stop thinking about you",
-        time: "00:45",
+        textKey: "dmviber.chats.alex_rivera.messages.msg3",
+        timeKey: "dmviber.chats.alex_rivera.msg3_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.alex_rivera.messages.msg4",
+        timeKey: "dmviber.chats.alex_rivera.msg4_time",
         incoming: false,
       },
     ],
   },
   {
     id: 2,
-    name: "Liam Park",
-    avatar: "https://i.pravatar.cc/150?img=33",
-    lastMessage: "Delete this chat",
-    time: "23:20",
+    nameKey: "dmviber.chats.liam_park.name",
+    avatarKey: "dmviber.chats.liam_park.avatar",
+    lastMessageKey: "dmviber.chats.liam_park.lastMessage",
+    timeKey: "dmviber.chats.liam_park.time",
     messages: [
-      { text: "That hotel was perfect", time: "23:00", incoming: true },
-      { text: "We have to do it again", time: "23:01", incoming: false },
-      { text: "Next week?", time: "23:02", incoming: true },
-      { text: "Delete this chat", time: "23:20", incoming: false },
+      {
+        textKey: "dmviber.chats.liam_park.messages.msg1",
+        timeKey: "dmviber.chats.liam_park.msg1_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.liam_park.messages.msg2",
+        timeKey: "dmviber.chats.liam_park.msg2_time",
+        incoming: false,
+      },
+      {
+        textKey: "dmviber.chats.liam_park.messages.msg3",
+        timeKey: "dmviber.chats.liam_park.msg3_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.liam_park.messages.msg4",
+        timeKey: "dmviber.chats.liam_park.msg4_time",
+        incoming: false,
+      },
     ],
   },
   {
     id: 3,
-    name: "Ethan Brooks",
-    avatar: "https://i.pravatar.cc/150?img=30",
-    lastMessage: "She's asleep",
-    time: "22:15",
+    nameKey: "dmviber.chats.ethan_brooks.name",
+    avatarKey: "dmviber.chats.ethan_brooks.avatar",
+    lastMessageKey: "dmviber.chats.ethan_brooks.lastMessage",
+    timeKey: "dmviber.chats.ethan_brooks.time",
     messages: [
-      { text: "Can you talk?", time: "22:00", incoming: true },
-      { text: "She's asleep", time: "22:01", incoming: false },
-      { text: "I wish I was with you", time: "22:02", incoming: true },
-      { text: "Same. This is torture", time: "22:15", incoming: false },
+      {
+        textKey: "dmviber.chats.ethan_brooks.messages.msg1",
+        timeKey: "dmviber.chats.ethan_brooks.msg1_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.ethan_brooks.messages.msg2",
+        timeKey: "dmviber.chats.ethan_brooks.msg2_time",
+        incoming: false,
+      },
+      {
+        textKey: "dmviber.chats.ethan_brooks.messages.msg3",
+        timeKey: "dmviber.chats.ethan_brooks.msg3_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.ethan_brooks.messages.msg4",
+        timeKey: "dmviber.chats.ethan_brooks.msg4_time",
+        incoming: false,
+      },
     ],
   },
   {
     id: 4,
-    name: "Noah Lee",
-    avatar: "https://i.pravatar.cc/150?img=31",
-    lastMessage: "Send the pic",
-    time: "21:40",
+    nameKey: "dmviber.chats.noah_lee.name",
+    avatarKey: "dmviber.chats.noah_lee.avatar",
+    lastMessageKey: "dmviber.chats.noah_lee.lastMessage",
+    timeKey: "dmviber.chats.noah_lee.time",
     messages: [
-      { text: "What are you wearing?", time: "21:30", incoming: true },
-      { text: "Nothing you haven't seen", time: "21:31", incoming: false },
-      { text: "Send the pic", time: "21:32", incoming: true },
-      { text: "Deleting in 10...", time: "21:40", incoming: false },
+      {
+        textKey: "dmviber.chats.noah_lee.messages.msg1",
+        timeKey: "dmviber.chats.noah_lee.msg1_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.noah_lee.messages.msg2",
+        timeKey: "dmviber.chats.noah_lee.msg2_time",
+        incoming: false,
+      },
+      {
+        textKey: "dmviber.chats.noah_lee.messages.msg3",
+        timeKey: "dmviber.chats.noah_lee.msg3_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.noah_lee.messages.msg4",
+        timeKey: "dmviber.chats.noah_lee.msg4_time",
+        incoming: false,
+      },
     ],
   },
   {
     id: 5,
-    name: "Dylan Kim",
-    avatar: "https://i.pravatar.cc/150?img=35",
-    lastMessage: "I love you",
-    time: "02:25",
+    nameKey: "dmviber.chats.dylan_kim.name",
+    avatarKey: "dmviber.chats.dylan_kim.avatar",
+    lastMessageKey: "dmviber.chats.dylan_kim.lastMessage",
+    timeKey: "dmviber.chats.dylan_kim.time",
     messages: [
-      { text: "I shouldn't say this", time: "02:10", incoming: true },
-      { text: "Say it", time: "02:11", incoming: false },
-      { text: "I love you", time: "02:12", incoming: true },
-      { text: "I love you more", time: "02:25", incoming: false },
+      {
+        textKey: "dmviber.chats.dylan_kim.messages.msg1",
+        timeKey: "dmviber.chats.dylan_kim.msg1_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.dylan_kim.messages.msg2",
+        timeKey: "dmviber.chats.dylan_kim.msg2_time",
+        incoming: false,
+      },
+      {
+        textKey: "dmviber.chats.dylan_kim.messages.msg3",
+        timeKey: "dmviber.chats.dylan_kim.msg3_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.dylan_kim.messages.msg4",
+        timeKey: "dmviber.chats.dylan_kim.msg4_time",
+        incoming: false,
+      },
     ],
   },
   {
     id: 6,
-    name: "Carter Lee",
-    avatar: "https://i.pravatar.cc/150?img=34",
-    lastMessage: "Room 707",
-    time: "19:55",
+    nameKey: "dmviber.chats.carter_lee.name",
+    avatarKey: "dmviber.chats.carter_lee.avatar",
+    lastMessageKey: "dmviber.chats.carter_lee.lastMessage",
+    timeKey: "dmviber.chats.carter_lee.time",
     messages: [
-      { text: "Same hotel?", time: "19:40", incoming: true },
-      { text: "Room 707", time: "19:41", incoming: false },
-      { text: "I'll be there at 8", time: "19:42", incoming: true },
-      { text: "Door's open", time: "19:55", incoming: false },
+      {
+        textKey: "dmviber.chats.carter_lee.messages.msg1",
+        timeKey: "dmviber.chats.carter_lee.msg1_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.carter_lee.messages.msg2",
+        timeKey: "dmviber.chats.carter_lee.msg2_time",
+        incoming: false,
+      },
+      {
+        textKey: "dmviber.chats.carter_lee.messages.msg3",
+        timeKey: "dmviber.chats.carter_lee.msg3_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.carter_lee.messages.msg4",
+        timeKey: "dmviber.chats.carter_lee.msg4_time",
+        incoming: false,
+      },
     ],
   },
   {
     id: 7,
-    name: "Mason Wu",
-    avatar: "https://i.pravatar.cc/150?img=36",
-    lastMessage: "No one will know",
-    time: "18:35",
+    nameKey: "dmviber.chats.mason_wu.name",
+    avatarKey: "dmviber.chats.mason_wu.avatar",
+    lastMessageKey: "dmviber.chats.mason_wu.lastMessage",
+    timeKey: "dmviber.chats.mason_wu.time",
     messages: [
-      { text: "We have to be careful", time: "18:20", incoming: true },
-      { text: "I know. But I can't stop", time: "18:21", incoming: false },
-      { text: "Just one more time", time: "18:22", incoming: true },
-      { text: "No one will know", time: "18:35", incoming: false },
+      {
+        textKey: "dmviber.chats.mason_wu.messages.msg1",
+        timeKey: "dmviber.chats.mason_wu.msg1_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.mason_wu.messages.msg2",
+        timeKey: "dmviber.chats.mason_wu.msg2_time",
+        incoming: false,
+      },
+      {
+        textKey: "dmviber.chats.mason_wu.messages.msg3",
+        timeKey: "dmviber.chats.mason_wu.msg3_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.mason_wu.messages.msg4",
+        timeKey: "dmviber.chats.mason_wu.msg4_time",
+        incoming: false,
+      },
     ],
   },
   {
     id: 8,
-    name: "Ryan Chen",
-    avatar: "https://i.pravatar.cc/150?img=37",
-    lastMessage: "You're my secret",
-    time: "01:20",
+    nameKey: "dmviber.chats.ryan_chen.name",
+    avatarKey: "dmviber.chats.ryan_chen.avatar",
+    lastMessageKey: "dmviber.chats.ryan_chen.lastMessage",
+    timeKey: "dmviber.chats.ryan_chen.time",
     messages: [
       {
-        text: "I told my girlfriend I was working late",
-        time: "01:00",
+        textKey: "dmviber.chats.ryan_chen.messages.msg1",
+        timeKey: "dmviber.chats.ryan_chen.msg1_time",
         incoming: true,
       },
-      { text: "I told my boyfriend the same", time: "01:01", incoming: false },
-      { text: "This is so wrong", time: "01:02", incoming: true },
-      { text: "But you're my secret", time: "01:20", incoming: false },
+      {
+        textKey: "dmviber.chats.ryan_chen.messages.msg2",
+        timeKey: "dmviber.chats.ryan_chen.msg2_time",
+        incoming: false,
+      },
+      {
+        textKey: "dmviber.chats.ryan_chen.messages.msg3",
+        timeKey: "dmviber.chats.ryan_chen.msg3_time",
+        incoming: true,
+      },
+      {
+        textKey: "dmviber.chats.ryan_chen.messages.msg4",
+        timeKey: "dmviber.chats.ryan_chen.msg4_time",
+        incoming: false,
+      },
     ],
   },
 ];
 
-// === Contacts (Young Men Only) ===
 const contacts = [
   {
     id: 1,
-    name: "Alex Rivera",
-    avatar: "https://i.pravatar.cc/150?img=32",
-    phone: "+1 555-1001",
-    email: "alex@viber.com",
+    nameKey: "dmviber.contacts.alex_rivera.name",
+    phoneKey: "dmviber.contacts.alex_rivera.phone",
+    emailKey: "dmviber.contacts.alex_rivera.email",
   },
   {
     id: 2,
-    name: "Liam Park",
-    avatar: "https://i.pravatar.cc/150?img=33",
-    phone: "+1 555-1002",
-    email: "liam@viber.com",
+    nameKey: "dmviber.contacts.liam_park.name",
+    phoneKey: "dmviber.contacts.liam_park.phone",
+    emailKey: "dmviber.contacts.liam_park.email",
   },
   {
     id: 3,
-    name: "Ethan Brooks",
-    avatar: "https://i.pravatar.cc/150?img=30",
-    phone: "+1 555-1003",
-    email: "ethan@viber.com",
+    nameKey: "dmviber.contacts.ethan_brooks.name",
+    phoneKey: "dmviber.contacts.ethan_brooks.phone",
+    emailKey: "dmviber.contacts.ethan_brooks.email",
   },
   {
     id: 4,
-    name: "Noah Lee",
-    avatar: "https://i.pravatar.cc/150?img=31",
-    phone: "+1 555-1004",
-    email: "noah@viber.com",
+    nameKey: "dmviber.contacts.noah_lee.name",
+    phoneKey: "dmviber.contacts.noah_lee.phone",
+    emailKey: "dmviber.contacts.noah_lee.email",
   },
   {
     id: 5,
-    name: "Dylan Kim",
-    avatar: "https://i.pravatar.cc/150?img=35",
-    phone: "+1 555-1005",
-    email: "dylan@viber.com",
+    nameKey: "dmviber.contacts.dylan_kim.name",
+    phoneKey: "dmviber.contacts.dylan_kim.phone",
+    emailKey: "dmviber.contacts.dylan_kim.email",
   },
   {
     id: 6,
-    name: "Carter Lee",
-    avatar: "https://i.pravatar.cc/150?img=34",
-    phone: "+1 555-1006",
-    email: "carter@viber.com",
+    nameKey: "dmviber.contacts.carter_lee.name",
+    phoneKey: "dmviber.contacts.carter_lee.phone",
+    emailKey: "dmviber.contacts.carter_lee.email",
   },
   {
     id: 7,
-    name: "Mason Wu",
-    avatar: "https://i.pravatar.cc/150?img=36",
-    phone: "+1 555-1007",
-    email: "mason@viber.com",
+    nameKey: "dmviber.contacts.mason_wu.name",
+    phoneKey: "dmviber.contacts.mason_wu.phone",
+    emailKey: "dmviber.contacts.mason_wu.email",
   },
   {
     id: 8,
-    name: "Ryan Chen",
-    avatar: "https://i.pravatar.cc/150?img=37",
-    phone: "+1 555-1008",
-    email: "ryan@viber.com",
+    nameKey: "dmviber.contacts.ryan_chen.name",
+    phoneKey: "dmviber.contacts.ryan_chen.phone",
+    emailKey: "dmviber.contacts.ryan_chen.email",
   },
 ];
 
-// === Call Logs ===
 const callLogs = [
   {
     id: 1,
-    name: "Alex Rivera",
-    avatar: "https://i.pravatar.cc/150?img=32",
-    type: "outgoing",
-    time: "2025-10-28 23:30",
-    duration: "18:20",
+    nameKey: "dmviber.call_log.alex_rivera.name",
+    typeKey: "dmviber.call_log.alex_rivera.type",
+    timeKey: "dmviber.call_log.alex_rivera.time",
+    durationKey: "dmviber.call_log.alex_rivera.duration",
   },
   {
     id: 2,
-    name: "Liam Park",
-    avatar: "https://i.pravatar.cc/150?img=33",
-    type: "incoming",
-    time: "2025-10-28 22:15",
-    duration: "09:45",
+    nameKey: "dmviber.call_log.liam_park.name",
+    typeKey: "dmviber.call_log.liam_park.type",
+    timeKey: "dmviber.call_log.liam_park.time",
+    durationKey: "dmviber.call_log.liam_park.duration",
   },
   {
     id: 3,
-    name: "Ethan Brooks",
-    avatar: "https://i.pravatar.cc/150?img=30",
-    type: "missed",
-    time: "2025-10-28 21:00",
+    nameKey: "dmviber.call_log.ethan_brooks.name",
+    typeKey: "dmviber.call_log.ethan_brooks.type",
+    timeKey: "dmviber.call_log.ethan_brooks.time",
   },
   {
     id: 4,
-    name: "Noah Lee",
-    avatar: "https://i.pravatar.cc/150?img=31",
-    type: "outgoing",
-    time: "2025-10-27 20:30",
-    duration: "25:10",
+    nameKey: "dmviber.call_log.noah_lee.name",
+    typeKey: "dmviber.call_log.noah_lee.type",
+    timeKey: "dmviber.call_log.noah_lee.time",
+    durationKey: "dmviber.call_log.noah_lee.duration",
   },
   {
     id: 5,
-    name: "Dylan Kim",
-    avatar: "https://i.pravatar.cc/150?img=35",
-    type: "incoming",
-    time: "2025-10-27 19:00",
-    duration: "32:00",
+    nameKey: "dmviber.call_log.dylan_kim.name",
+    typeKey: "dmviber.call_log.dylan_kim.type",
+    timeKey: "dmviber.call_log.dylan_kim.time",
+    durationKey: "dmviber.call_log.dylan_kim.duration",
   },
 ];
 
 const ViberPage = () => {
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
+  const { t } = useTranslation();
 
   const [tab, setTab] = useState("chat");
   const [selectedChat, setSelectedChat] = useState(null);
@@ -309,7 +411,7 @@ const ViberPage = () => {
         ? "#10B981"
         : type === "outgoing"
         ? "#0B5CFF"
-        : "#EF4444"; // missed
+        : "#EF4444";
     return (
       <Box sx={{ color: iconColor }}>
         {type === "outgoing" && <FiPhoneCall style={{ fontSize: 16 }} />}
@@ -322,7 +424,8 @@ const ViberPage = () => {
   const groupContactsByLetter = () => {
     const grouped = {};
     contacts.forEach((c) => {
-      const letter = c.name[0].toUpperCase();
+      const name = t(c.nameKey);
+      const letter = name[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(c);
     });
@@ -337,7 +440,7 @@ const ViberPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Viber
+              {t("dmviber.header.title")}
               <FaViber className="text-[#7B4B94]" />
             </h1>
           </div>
@@ -345,14 +448,8 @@ const ViberPage = () => {
         </div>
       </header>
 
-      <Box
-        sx={{
-          bgcolor: "#fafafa",
-          p: { xs: 2, sm: 3, md: 4 },
-        }}
-      >
+      <Box sx={{ bgcolor: "#fafafa", p: { xs: 2, sm: 3, md: 4 } }}>
         <Box sx={{ maxWidth: 1400, mx: "auto" }}>
-          {/* Tabs */}
           {!showDetail && (
             <Tabs
               value={tab}
@@ -365,25 +462,24 @@ const ViberPage = () => {
               <Tab
                 icon={<FaViber />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chat"}
+                label={isMobile ? "" : t("dmviber.tabs.chat")}
                 value="chat"
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Contacts"}
+                label={isMobile ? "" : t("dmviber.tabs.contacts")}
                 value="contacts"
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Call Log"}
+                label={isMobile ? "" : t("dmviber.tabs.call_log")}
                 value="call-log"
               />
             </Tabs>
           )}
 
-          {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
               <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
@@ -392,7 +488,6 @@ const ViberPage = () => {
             </Box>
           )}
 
-          {/* Content Grid */}
           <Box
             sx={{
               display: "grid",
@@ -403,7 +498,6 @@ const ViberPage = () => {
               gap: 3,
             }}
           >
-            {/* Left Panel: Lists */}
             <Paper
               elevation={0}
               sx={{
@@ -414,12 +508,8 @@ const ViberPage = () => {
                 maxHeight: "80vh",
                 overflowY: "auto",
                 bgcolor: "background.paper",
-                "&::-webkit-scrollbar": { display: "none" },
-                scrollbarWidth: "none",
               }}
-              className="scrollbar-hide"
             >
-              {/* Chat List */}
               {tab === "chat" && (
                 <Stack>
                   {chats.map((chat) => (
@@ -434,15 +524,12 @@ const ViberPage = () => {
                       onClick={() => setSelectedChat(chat)}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
-                        <Avatar
-                          src={chat.avatar}
-                          sx={{ width: 48, height: 48 }}
-                        />
+                        <Avatar sx={{ width: 48, height: 48 }} />
                         <Box sx={{ flex: 1, minWidth: 0 }}>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {chat.name}
+                            {t(chat.nameKey)}
                           </Typography>
                           <Typography
                             sx={{
@@ -453,13 +540,13 @@ const ViberPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(chat.lastMessageKey)}
                           </Typography>
                         </Box>
                         <Typography
                           sx={{ fontSize: "0.75rem", color: "#9ca3af" }}
                         >
-                          {chat.time}
+                          {t(chat.timeKey)}
                         </Typography>
                       </Stack>
                     </Box>
@@ -467,7 +554,6 @@ const ViberPage = () => {
                 </Stack>
               )}
 
-              {/* Contacts List */}
               {tab === "contacts" && (
                 <Stack>
                   {Object.keys(groupContactsByLetter())
@@ -501,14 +587,11 @@ const ViberPage = () => {
                               spacing={2}
                               alignItems="center"
                             >
-                              <Avatar
-                                src={contact.avatar}
-                                sx={{ width: 48, height: 48 }}
-                              />
+                              <Avatar sx={{ width: 48, height: 48 }} />
                               <Typography
                                 sx={{ fontWeight: 500, color: "#1f2937" }}
                               >
-                                {contact.name}
+                                {t(contact.nameKey)}
                               </Typography>
                             </Stack>
                           </Box>
@@ -518,7 +601,6 @@ const ViberPage = () => {
                 </Stack>
               )}
 
-              {/* Call Log */}
               {tab === "call-log" && (
                 <Stack>
                   {callLogs.map((call) => (
@@ -534,10 +616,7 @@ const ViberPage = () => {
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
-                          <Avatar
-                            src={call.avatar}
-                            sx={{ width: 48, height: 48 }}
-                          />
+                          <Avatar sx={{ width: 48, height: 48 }} />
                           <Box
                             sx={{
                               position: "absolute",
@@ -552,34 +631,33 @@ const ViberPage = () => {
                               boxShadow: "0 0 0 2px white",
                             }}
                           >
-                            {getCallIcon(call.type)}
+                            {getCallIcon(t(call.typeKey))}
                           </Box>
                         </Box>
                         <Box sx={{ flex: 1 }}>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {call.name}
+                            {t(call.nameKey)}
                           </Typography>
                           <Typography
                             sx={{
                               fontSize: "0.875rem",
                               color:
-                                call.type === "incoming"
+                                t(call.typeKey) === "incoming"
                                   ? "#10B981"
-                                  : call.type === "outgoing"
+                                  : t(call.typeKey) === "outgoing"
                                   ? "#0B5CFF"
                                   : "#EF4444",
                             }}
                           >
-                            {call.type.charAt(0).toUpperCase() +
-                              call.type.slice(1)}
+                            {t(call.typeKey)}
                           </Typography>
                         </Box>
                         <Typography
                           sx={{ fontSize: "0.75rem", color: "#9ca3af" }}
                         >
-                          {call.time.split(" ")[1]}
+                          {t(call.timeKey).split(" ")[1]}
                         </Typography>
                       </Stack>
                     </Box>
@@ -588,7 +666,6 @@ const ViberPage = () => {
               )}
             </Paper>
 
-            {/* Right Panel: Details */}
             {showDetail && (
               <Paper
                 elevation={0}
@@ -601,19 +678,15 @@ const ViberPage = () => {
                   bgcolor: "background.paper",
                 }}
               >
-                {/* Chat Detail */}
                 {selectedChat && (
                   <Stack spacing={3}>
                     <Stack direction="row" spacing={2} alignItems="center">
-                      <Avatar
-                        src={selectedChat.avatar}
-                        sx={{ width: 64, height: 64 }}
-                      />
+                      <Avatar sx={{ width: 64, height: 64 }} />
                       <Typography
                         variant="h5"
                         sx={{ fontWeight: 700, color: "#1f2937" }}
                       >
-                        {selectedChat.name}
+                        {t(selectedChat.nameKey)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -636,14 +709,10 @@ const ViberPage = () => {
                               borderRadius: "18px",
                               px: 3,
                               py: 1.5,
-                              borderBottomLeftRadius: msg.incoming ? 0 : "18px",
-                              borderBottomRightRadius: msg.incoming
-                                ? "18px"
-                                : 0,
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(msg.textKey)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -655,7 +724,7 @@ const ViberPage = () => {
                                   : "rgba(255,255,255,0.8)",
                               }}
                             >
-                              {msg.time}
+                              {t(msg.timeKey)}
                               <RiCheckDoubleFill />
                             </Typography>
                           </Box>
@@ -665,118 +734,102 @@ const ViberPage = () => {
                   </Stack>
                 )}
 
-                {/* Contact Detail */}
                 {selectedContact && (
                   <Stack spacing={4} alignItems="center">
-                    <Avatar
-                      src={selectedContact.avatar}
-                      sx={{ width: 120, height: 120 }}
-                    />
+                    <Avatar sx={{ width: 120, height: 120 }} />
                     <Typography
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedContact.name}
+                      {t(selectedContact.nameKey)}
                     </Typography>
 
-                    {selectedContact.phone && (
-                      <Paper
-                        elevation={0}
+                    <Paper
+                      elevation={0}
+                      sx={{
+                        bgcolor: "#e9d5ff",
+                        borderRadius: 3,
+                        p: 2.5,
+                        width: "100%",
+                        maxWidth: 360,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 2,
+                      }}
+                    >
+                      <Box
                         sx={{
-                          bgcolor: "#e9d5ff",
-                          borderRadius: 3,
-                          p: 2.5,
-                          width: "100%",
-                          maxWidth: 360,
+                          bgcolor: "#7B4B94",
+                          borderRadius: "50%",
+                          p: 1.2,
                           display: "flex",
-                          alignItems: "center",
-                          gap: 2,
                         }}
                       >
-                        <Box
-                          sx={{
-                            bgcolor: "#7B4B94",
-                            borderRadius: "50%",
-                            p: 1.2,
-                            display: "flex",
-                          }}
+                        <FiPhone
+                          className="!text-white"
+                          style={{ fontSize: 22 }}
+                        />
+                      </Box>
+                      <Box sx={{ textAlign: "left" }}>
+                        <Typography
+                          sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                         >
-                          <FiPhone
-                            className="!text-white"
-                            style={{ fontSize: 22 }}
-                          />
-                        </Box>
-                        <Box sx={{ textAlign: "left" }}>
-                          <Typography
-                            sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
-                          >
-                            Phone
-                          </Typography>
-                          <Typography
-                            sx={{ fontWeight: 600, color: "#1f2937" }}
-                          >
-                            {selectedContact.phone}
-                          </Typography>
-                        </Box>
-                      </Paper>
-                    )}
+                          {t("dmviber.contacts.phone_label")}
+                        </Typography>
+                        <Typography sx={{ fontWeight: 600, color: "#1f2937" }}>
+                          {t(selectedContact.phoneKey)}
+                        </Typography>
+                      </Box>
+                    </Paper>
 
-                    {selectedContact.email && (
-                      <Paper
-                        elevation={0}
+                    <Paper
+                      elevation={0}
+                      sx={{
+                        bgcolor: "#dbeafe",
+                        borderRadius: 3,
+                        p: 2.5,
+                        width: "100%",
+                        maxWidth: 360,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 2,
+                      }}
+                    >
+                      <Box
                         sx={{
-                          bgcolor: "#dbeafe",
-                          borderRadius: 3,
-                          p: 2.5,
-                          width: "100%",
-                          maxWidth: 360,
+                          bgcolor: "#7B4B94",
+                          borderRadius: "50%",
+                          p: 1.2,
                           display: "flex",
-                          alignItems: "center",
-                          gap: 2,
                         }}
                       >
-                        <Box
-                          sx={{
-                            bgcolor: "#7B4B94",
-                            borderRadius: "50%",
-                            p: 1.2,
-                            display: "flex",
-                          }}
+                        <FiMail
+                          className="!text-white"
+                          style={{ fontSize: 22 }}
+                        />
+                      </Box>
+                      <Box sx={{ textAlign: "left" }}>
+                        <Typography
+                          sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                         >
-                          <FiMail
-                            className="!text-white"
-                            style={{ fontSize: 22 }}
-                          />
-                        </Box>
-                        <Box sx={{ textAlign: "left" }}>
-                          <Typography
-                            sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
-                          >
-                            Email
-                          </Typography>
-                          <Typography
-                            sx={{ fontWeight: 600, color: "#1f2937" }}
-                          >
-                            {selectedContact.email}
-                          </Typography>
-                        </Box>
-                      </Paper>
-                    )}
+                          {t("dmviber.contacts.email_label")}
+                        </Typography>
+                        <Typography sx={{ fontWeight: 600, color: "#1f2937" }}>
+                          {t(selectedContact.emailKey)}
+                        </Typography>
+                      </Box>
+                    </Paper>
                   </Stack>
                 )}
 
-                {/* Call Detail */}
                 {selectedCall && (
                   <Stack spacing={4} alignItems="center">
-                    <Avatar
-                      src={selectedCall.avatar}
-                      sx={{ width: 120, height: 120 }}
-                    />
+                    <Avatar sx={{ width: 120, height: 120 }} />
                     <Typography
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedCall.name}
+                      {t(selectedCall.nameKey)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -795,15 +848,14 @@ const ViberPage = () => {
                           color: "#1f2937",
                         }}
                       >
-                        {selectedCall.time}
+                        {t(selectedCall.timeKey)}
                       </Typography>
-                      {selectedCall.duration && (
+                      {selectedCall.durationKey && (
                         <Typography
                           sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
                         >
-                          {selectedCall.duration} •{" "}
-                          {selectedCall.type.charAt(0).toUpperCase() +
-                            selectedCall.type.slice(1)}
+                          {t(selectedCall.durationKey)} •{" "}
+                          {t(selectedCall.typeKey)}
                         </Typography>
                       )}
                     </Paper>
@@ -815,7 +867,6 @@ const ViberPage = () => {
         </Box>
       </Box>
 
-      {/* Hide Scrollbar */}
       <style jsx>{`
         .scrollbar-hide {
           -ms-overflow-style: none;

@@ -2453,5 +2453,218 @@
         }
       }
     }
+  },
+  "dmviber": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "الدردشة",
+      "contacts": "جهات الاتصال",
+      "call_log": "سجل المكالمات"
+    },
+    "contacts": {
+      "phone_label": "رقم الهاتف",
+      "email_label": "البريد الإلكتروني",
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "avatar": "https://i.pravatar.cc/150?img=32",
+        "lastMessage": "لا أستطيع التوقف عن التفكير فيك",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:32",
+        "msg4_time": "00:45",
+        "messages": {
+          "msg1": "هل أنت مستيقظ؟",
+          "msg2": "لا أستطيع النوم",
+          "msg3": "أنا أيضا",
+          "msg4": "لا أستطيع التوقف عن التفكير فيك"
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "avatar": "https://i.pravatar.cc/150?img=33",
+        "lastMessage": "احذف هذه الدردشة",
+        "time": "23:20",
+        "msg1_time": "23:00",
+        "msg2_time": "23:01",
+        "msg3_time": "23:02",
+        "msg4_time": "23:20",
+        "messages": {
+          "msg1": "هذا الفندق كان مثاليا",
+          "msg2": "يجب أن نكرره",
+          "msg3": "الأسبوع المقبل؟",
+          "msg4": "احذف هذه الدردشة"
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "avatar": "https://i.pravatar.cc/150?img=30",
+        "lastMessage": "هي نائمة",
+        "time": "22:15",
+        "msg1_time": "22:00",
+        "msg2_time": "22:01",
+        "msg3_time": "22:02",
+        "msg4_time": "22:15",
+        "messages": {
+          "msg1": "هل يمكنك التحدث؟",
+          "msg2": "هي نائمة",
+          "msg3": "أتمنى أن أكون معك",
+          "msg4": "أنا أيضا. هذا تعذيب"
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "avatar": "https://i.pravatar.cc/150?img=31",
+        "lastMessage": "أرسل الصورة",
+        "time": "21:40",
+        "msg1_time": "21:30",
+        "msg2_time": "21:31",
+        "msg3_time": "21:32",
+        "msg4_time": "21:40",
+        "messages": {
+          "msg1": "ماذا ترتدي؟",
+          "msg2": "لا شيء لم تره",
+          "msg3": "أرسل الصورة",
+          "msg4": "الحذف في 10..."
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "avatar": "https://i.pravatar.cc/150?img=35",
+        "lastMessage": "أحبك",
+        "time": "02:25",
+        "msg1_time": "02:10",
+        "msg2_time": "02:11",
+        "msg3_time": "02:12",
+        "msg4_time": "02:25",
+        "messages": {
+          "msg1": "لا يجب أن أقول هذا",
+          "msg2": "قله",
+          "msg3": "أحبك",
+          "msg4": "أحبك أكثر"
+        }
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "avatar": "https://i.pravatar.cc/150?img=34",
+        "lastMessage": "الغرفة 707",
+        "time": "19:55",
+        "msg1_time": "19:40",
+        "msg2_time": "19:41",
+        "msg3_time": "19:42",
+        "msg4_time": "19:55",
+        "messages": {
+          "msg1": "نفس الفندق؟",
+          "msg2": "الغرفة 707",
+          "msg3": "سأكون هناك الساعة 8",
+          "msg4": "الباب مفتوح"
+        }
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "avatar": "https://i.pravatar.cc/150?img=36",
+        "lastMessage": "لن يعرف أحد",
+        "time": "18:35",
+        "msg1_time": "18:20",
+        "msg2_time": "18:21",
+        "msg3_time": "18:22",
+        "msg4_time": "18:35",
+        "messages": {
+          "msg1": "يجب أن نكون حذرين",
+          "msg2": "أعرف. لكن لا أستطيع التوقف",
+          "msg3": "أنا أيضا. مرة واحدة فقط",
+          "msg4": "لن يعرف أحد"
+        }
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "avatar": "https://i.pravatar.cc/150?img=37",
+        "lastMessage": "أنت سري",
+        "time": "01:20",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:20",
+        "messages": {
+          "msg1": "قلت لصديقتي أنني أعمل",
+          "msg2": "قلت لصديقي نفس الشيء",
+          "msg3": "هذا خطأ جدا",
+          "msg4": "لكن أنت سري"
+        }
+      }
+    },
+    "call_log": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "type": "صادر",
+        "time": "2025-10-28 23:30",
+        "duration": "18:20"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "type": "وارد",
+        "time": "2025-10-28 22:15",
+        "duration": "09:45"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "type": "مفقود",
+        "time": "2025-10-28 21:00"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "type": "صادر",
+        "time": "2025-10-27 20:30",
+        "duration": "25:10"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "type": "وارد",
+        "time": "2025-10-27 19:00",
+        "duration": "32:00"
+      }
+    }
   }
 }

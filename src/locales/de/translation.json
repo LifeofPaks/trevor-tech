@@ -2590,5 +2590,218 @@
         }
       }
     }
+  },
+  "dmviber": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "Chat",
+      "contacts": "Kontakte",
+      "call_log": "Anrufprotokoll"
+    },
+    "contacts": {
+      "phone_label": "Telefon",
+      "email_label": "E-Mail",
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "avatar": "https://i.pravatar.cc/150?img=32",
+        "lastMessage": "Ich kann nicht aufhören, an dich zu denken",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:32",
+        "msg4_time": "00:45",
+        "messages": {
+          "msg1": "Bist du noch wach?",
+          "msg2": "Kann nicht schlafen",
+          "msg3": "Ich auch nicht",
+          "msg4": "Ich kann nicht aufhören, an dich zu denken"
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "avatar": "https://i.pravatar.cc/150?img=33",
+        "lastMessage": "Löschen Sie diesen Chat",
+        "time": "23:20",
+        "msg1_time": "23:00",
+        "msg2_time": "23:01",
+        "msg3_time": "23:02",
+        "msg4_time": "23:20",
+        "messages": {
+          "msg1": "Das Hotel war perfekt",
+          "msg2": "Wir müssen es wiederholen",
+          "msg3": "Nächste Woche?",
+          "msg4": "Löschen Sie diesen Chat"
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "avatar": "https://i.pravatar.cc/150?img=30",
+        "lastMessage": "Sie schläft",
+        "time": "22:15",
+        "msg1_time": "22:00",
+        "msg2_time": "22:01",
+        "msg3_time": "22:02",
+        "msg4_time": "22:15",
+        "messages": {
+          "msg1": "Kannst du reden?",
+          "msg2": "Sie schläft",
+          "msg3": "Ich wünschte, ich wäre bei dir",
+          "msg4": "Ich auch. Das ist Folter"
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "avatar": "https://i.pravatar.cc/150?img=31",
+        "lastMessage": "Schicke das Foto",
+        "time": "21:40",
+        "msg1_time": "21:30",
+        "msg2_time": "21:31",
+        "msg3_time": "21:32",
+        "msg4_time": "21:40",
+        "messages": {
+          "msg1": "Was trägst du?",
+          "msg2": "Nichts, das du nicht gesehen hast",
+          "msg3": "Schicke das Foto",
+          "msg4": "Wird in 10... gelöscht"
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "avatar": "https://i.pravatar.cc/150?img=35",
+        "lastMessage": "Ich liebe dich",
+        "time": "02:25",
+        "msg1_time": "02:10",
+        "msg2_time": "02:11",
+        "msg3_time": "02:12",
+        "msg4_time": "02:25",
+        "messages": {
+          "msg1": "Ich sollte das nicht sagen",
+          "msg2": "Sag es",
+          "msg3": "Ich liebe dich",
+          "msg4": "Ich liebe dich mehr"
+        }
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "avatar": "https://i.pravatar.cc/150?img=34",
+        "lastMessage": "Zimmer 707",
+        "time": "19:55",
+        "msg1_time": "19:40",
+        "msg2_time": "19:41",
+        "msg3_time": "19:42",
+        "msg4_time": "19:55",
+        "messages": {
+          "msg1": "Dasselbe Hotel?",
+          "msg2": "Zimmer 707",
+          "msg3": "Ich bin um 8 da",
+          "msg4": "Tür ist offen"
+        }
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "avatar": "https://i.pravatar.cc/150?img=36",
+        "lastMessage": "Niemand wird es wissen",
+        "time": "18:35",
+        "msg1_time": "18:20",
+        "msg2_time": "18:21",
+        "msg3_time": "18:22",
+        "msg4_time": "18:35",
+        "messages": {
+          "msg1": "Wir müssen vorsichtig sein",
+          "msg2": "Ich weiß. Aber ich kann nicht aufhören",
+          "msg3": "Ich auch nicht. Nur noch einmal",
+          "msg4": "Niemand wird es wissen"
+        }
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "avatar": "https://i.pravatar.cc/150?img=37",
+        "lastMessage": "Du bist mein Geheimnis",
+        "time": "01:20",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:20",
+        "messages": {
+          "msg1": "Ich habe meiner Freundin gesagt, ich arbeite spät",
+          "msg2": "Ich habe meinem Freund das Gleiche gesagt",
+          "msg3": "Das ist so falsch",
+          "msg4": "Aber du bist mein Geheimnis"
+        }
+      }
+    },
+    "call_log": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "type": "ausgehend",
+        "time": "2025-10-28 23:30",
+        "duration": "18:20"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "type": "eingehend",
+        "time": "2025-10-28 22:15",
+        "duration": "09:45"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "type": "verpasst",
+        "time": "2025-10-28 21:00"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "type": "ausgehend",
+        "time": "2025-10-27 20:30",
+        "duration": "25:10"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "type": "eingehend",
+        "time": "2025-10-27 19:00",
+        "duration": "32:00"
+      }
+    }
   }
 }

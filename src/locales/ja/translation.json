@@ -2424,5 +2424,218 @@
         }
       }
     }
+  },
+  "dmviber": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "call_log": "通話履歴"
+    },
+    "contacts": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "avatar": "https://i.pravatar.cc/150?img=32",
+        "lastMessage": "君のことばかり考えてる",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:32",
+        "msg4_time": "00:45",
+        "messages": {
+          "msg1": "まだ起きてる?",
+          "msg2": "眠れない",
+          "msg3": "同じく",
+          "msg4": "君のことばかり考えてる"
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "avatar": "https://i.pravatar.cc/150?img=33",
+        "lastMessage": "このチャット削除してくれ",
+        "time": "23:20",
+        "msg1_time": "23:00",
+        "msg2_time": "23:01",
+        "msg3_time": "23:02",
+        "msg4_time": "23:20",
+        "messages": {
+          "msg1": "そのホテル最高だった",
+          "msg2": "また行かなきゃ",
+          "msg3": "来週?",
+          "msg4": "このチャット削除してくれ"
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "avatar": "https://i.pravatar.cc/150?img=30",
+        "lastMessage": "彼女寝てる",
+        "time": "22:15",
+        "msg1_time": "22:00",
+        "msg2_time": "22:01",
+        "msg3_time": "22:02",
+        "msg4_time": "22:15",
+        "messages": {
+          "msg1": "話できる?",
+          "msg2": "彼女寝てる",
+          "msg3": "君といたい",
+          "msg4": "同じく。地獄だよ"
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "avatar": "https://i.pravatar.cc/150?img=31",
+        "lastMessage": "写真を送ってくれ",
+        "time": "21:40",
+        "msg1_time": "21:30",
+        "msg2_time": "21:31",
+        "msg3_time": "21:32",
+        "msg4_time": "21:40",
+        "messages": {
+          "msg1": "何着てる?",
+          "msg2": "君が見たことないもの",
+          "msg3": "写真を送ってくれ",
+          "msg4": "10秒後に削除..."
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "avatar": "https://i.pravatar.cc/150?img=35",
+        "lastMessage": "愛してる",
+        "time": "02:25",
+        "msg1_time": "02:10",
+        "msg2_time": "02:11",
+        "msg3_time": "02:12",
+        "msg4_time": "02:25",
+        "messages": {
+          "msg1": "こんなの言うべきじゃなかった",
+          "msg2": "言ってよ",
+          "msg3": "愛してる",
+          "msg4": "もっと愛してる"
+        }
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "avatar": "https://i.pravatar.cc/150?img=34",
+        "lastMessage": "707号室",
+        "time": "19:55",
+        "msg1_time": "19:40",
+        "msg2_time": "19:41",
+        "msg3_time": "19:42",
+        "msg4_time": "19:55",
+        "messages": {
+          "msg1": "同じホテル?",
+          "msg2": "707号室",
+          "msg3": "8時に行く",
+          "msg4": "ドア開いてる"
+        }
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "avatar": "https://i.pravatar.cc/150?img=36",
+        "lastMessage": "誰も知らないよ",
+        "time": "18:35",
+        "msg1_time": "18:20",
+        "msg2_time": "18:21",
+        "msg3_time": "18:22",
+        "msg4_time": "18:35",
+        "messages": {
+          "msg1": "気をつけようぜ",
+          "msg2": "わかってる。でも止められない",
+          "msg3": "同じく。もう一回",
+          "msg4": "誰も知らないよ"
+        }
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "avatar": "https://i.pravatar.cc/150?img=37",
+        "lastMessage": "君は僕の秘密",
+        "time": "01:20",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:20",
+        "messages": {
+          "msg1": "彼女に仕事してるって言った",
+          "msg2": "俺も彼氏に同じこと言った",
+          "msg3": "これ最悪だ",
+          "msg4": "でも君は僕の秘密"
+        }
+      }
+    },
+    "call_log": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "type": "発信",
+        "time": "2025-10-28 23:30",
+        "duration": "18:20"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "type": "着信",
+        "time": "2025-10-28 22:15",
+        "duration": "09:45"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "type": "不在着信",
+        "time": "2025-10-28 21:00"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "type": "発信",
+        "time": "2025-10-27 20:30",
+        "duration": "25:10"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "type": "着信",
+        "time": "2025-10-27 19:00",
+        "duration": "32:00"
+      }
+    }
   }
 }
