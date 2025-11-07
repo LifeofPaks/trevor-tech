@@ -4284,5 +4284,112 @@
         "message4": "Ich habe für dich gelogen"
       }
     }
+  },
+  "dmtinder": {
+    "header": { "title": "Tinder" },
+    "tabs": {
+      "chat": "Matches",
+      "calls": "Anrufe",
+      "aria_label": "Tinder-Navigationsreiter",
+      "chat_aria": "Matches anzeigen",
+      "calls_aria": "Anrufprotokoll anzeigen"
+    },
+    "back_button_aria": "Zurück zur Liste",
+    "chat": {
+      "list_aria": "Liste der Matches",
+      "item_aria": "Match mit {{name}}",
+      "detail_aria": "Chat-Details für {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Liste des Anrufprotokolls",
+      "item_aria": "Anrufprotokoll für {{name}}",
+      "detail_aria": "Anrufdetails für {{name}}",
+      "types": {
+        "outgoing": "Ausgehend",
+        "incoming": "Eingehend",
+        "missed": "Verpasst"
+      }
+    },
+    "matches": {
+      "liam_cruz": {
+        "name": "Liam Cruz",
+        "lastMessage": "Ich bin vor deinem Gebäude",
+        "messages": {
+          "message1": {
+            "text": "Bist du wach?",
+            "time": "03:00",
+            "incoming": true
+          },
+          "message2": { "text": "Ja", "time": "03:01", "incoming": false },
+          "message3": {
+            "text": "Ich bin vor deinem Gebäude",
+            "time": "03:10",
+            "incoming": false
+          }
+        }
+      },
+      "noah_reyes": {
+        "name": "Noah Reyes",
+        "lastMessage": "Sie weiß nicht, dass ich gegangen bin",
+        "messages": {
+          "message1": {
+            "text": "Das war intensiv",
+            "time": "02:10",
+            "incoming": true
+          },
+          "message2": {
+            "text": "Wir sind damit durchgekommen",
+            "time": "02:11",
+            "incoming": false
+          },
+          "message3": {
+            "text": "Sie weiß nicht, dass ich gegangen bin",
+            "time": "02:25",
+            "incoming": false
+          }
+        }
+      },
+      "ethan_park": {
+        "name": "Ethan Park",
+        "lastMessage": "Ich habe sie heute Abend angelogen",
+        "messages": {
+          "message1": {
+            "text": "Sie hat gefragt, wo ich war",
+            "time": "22:45",
+            "incoming": true
+          },
+          "message2": {
+            "text": "Was hast du gesagt?",
+            "time": "22:46",
+            "incoming": false
+          },
+          "message3": { "text": "Mit dir", "time": "22:47", "incoming": true },
+          "message4": {
+            "text": "Ich habe sie heute Abend angelogen",
+            "time": "23:00",
+            "incoming": false
+          }
+        }
+      }
+    },
+    "call_logs": {
+      "liam_cruz": {
+        "name": "Liam Cruz",
+        "type": "Ausgehend",
+        "time": "2025-10-28 23:55",
+        "duration": "19:20"
+      },
+      "noah_reyes": {
+        "name": "Noah Reyes",
+        "type": "Eingehend",
+        "time": "2025-10-28 22:30",
+        "duration": "14:10"
+      },
+      "ethan_park": {
+        "name": "Ethan Park",
+        "type": "Verpasst",
+        "time": "2025-10-28 21:15"
+      }
+    }
   }
 }

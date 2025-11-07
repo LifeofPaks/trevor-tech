@@ -4185,5 +4185,112 @@
         "message4": "mentí por ti"
       }
     }
+  },
+  "dmtinder": {
+    "header": { "title": "Tinder" },
+    "tabs": {
+      "chat": "Coincidencias",
+      "calls": "Llamadas",
+      "aria_label": "Pestañas de navegación de Tinder",
+      "chat_aria": "Mostrar coincidencias",
+      "calls_aria": "Mostrar registro de llamadas"
+    },
+    "back_button_aria": "Volver a la lista",
+    "chat": {
+      "list_aria": "Lista de coincidencias",
+      "item_aria": "Coincidencia con {{name}}",
+      "detail_aria": "Detalles del chat para {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Lista de registro de llamadas",
+      "item_aria": "Registro de llamadas para {{name}}",
+      "detail_aria": "Detalles de la llamada para {{name}}",
+      "types": {
+        "outgoing": "Saliente",
+        "incoming": "Entrante",
+        "missed": "Perdida"
+      }
+    },
+    "matches": {
+      "liam_cruz": {
+        "name": "Liam Cruz",
+        "lastMessage": "Estoy fuera de tu edificio",
+        "messages": {
+          "message1": {
+            "text": "¿Estás despierto?",
+            "time": "03:00",
+            "incoming": true
+          },
+          "message2": { "text": "Sí", "time": "03:01", "incoming": false },
+          "message3": {
+            "text": "Estoy fuera de tu edificio",
+            "time": "03:10",
+            "incoming": false
+          }
+        }
+      },
+      "noah_reyes": {
+        "name": "Noah Reyes",
+        "lastMessage": "Ella no sabe que me fui",
+        "messages": {
+          "message1": {
+            "text": "Eso fue intenso",
+            "time": "02:10",
+            "incoming": true
+          },
+          "message2": {
+            "text": "Nos salimos con la nuestra",
+            "time": "02:11",
+            "incoming": false
+          },
+          "message3": {
+            "text": "Ella no sabe que me fui",
+            "time": "02:25",
+            "incoming": false
+          }
+        }
+      },
+      "ethan_park": {
+        "name": "Ethan Park",
+        "lastMessage": "Le mentí sobre esta noche",
+        "messages": {
+          "message1": {
+            "text": "Ella preguntó dónde estaba",
+            "time": "22:45",
+            "incoming": true
+          },
+          "message2": {
+            "text": "¿Qué dijiste?",
+            "time": "22:46",
+            "incoming": false
+          },
+          "message3": { "text": "Contigo", "time": "22:47", "incoming": true },
+          "message4": {
+            "text": "Le mentí sobre esta noche",
+            "time": "23:00",
+            "incoming": false
+          }
+        }
+      }
+    },
+    "call_logs": {
+      "liam_cruz": {
+        "name": "Liam Cruz",
+        "type": "Saliente",
+        "time": "2025-10-28 23:55",
+        "duration": "19:20"
+      },
+      "noah_reyes": {
+        "name": "Noah Reyes",
+        "type": "Entrante",
+        "time": "2025-10-28 22:30",
+        "duration": "14:10"
+      },
+      "ethan_park": {
+        "name": "Ethan Park",
+        "type": "Perdida",
+        "time": "2025-10-28 21:15"
+      }
+    }
   }
 }

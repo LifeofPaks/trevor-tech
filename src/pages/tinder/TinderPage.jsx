@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -54,40 +55,79 @@ const theme = createTheme({
 const matches = [
   {
     id: 1,
-    name: "Liam Cruz",
+    name: "liam_cruz",
     avatar: "https://i.pravatar.cc/150?img=40",
-    lastMessage: "I'm outside your building",
+    lastMessage: "dmtinder.matches.liam_cruz.lastMessage",
     time: "03:10",
     messages: [
-      { text: "You up?", time: "03:00", incoming: true },
-      { text: "Yeah", time: "03:01", incoming: false },
-      { text: "I'm outside your building", time: "03:10", incoming: false },
+      {
+        text: "dmtinder.matches.liam_cruz.messages.message1.text",
+        time: "03:00",
+        incoming: true,
+      },
+      {
+        text: "dmtinder.matches.liam_cruz.messages.message2.text",
+        time: "03:01",
+        incoming: false,
+      },
+      {
+        text: "dmtinder.matches.liam_cruz.messages.message3.text",
+        time: "03:10",
+        incoming: false,
+      },
     ],
   },
   {
     id: 2,
-    name: "Noah Reyes",
+    name: "noah_reyes",
     avatar: "https://i.pravatar.cc/150?img=41",
-    lastMessage: "She doesn't know I left",
+    lastMessage: "dmtinder.matches.noah_reyes.lastMessage",
     time: "02:25",
     messages: [
-      { text: "That was intense", time: "02:10", incoming: true },
-      { text: "We got away with it", time: "02:11", incoming: false },
-      { text: "She doesn't know I left", time: "02:25", incoming: false },
+      {
+        text: "dmtinder.matches.noah_reyes.messages.message1.text",
+        time: "02:10",
+        incoming: true,
+      },
+      {
+        text: "dmtinder.matches.noah_reyes.messages.message2.text",
+        time: "02:11",
+        incoming: false,
+      },
+      {
+        text: "dmtinder.matches.noah_reyes.messages.message3.text",
+        time: "02:25",
+        incoming: false,
+      },
     ],
   },
-  // ... (10 more with same pattern)
   {
     id: 12,
-    name: "Ethan Park",
+    name: "ethan_park",
     avatar: "https://i.pravatar.cc/150?img=51",
-    lastMessage: "I lied to her about tonight",
+    lastMessage: "dmtinder.matches.ethan_park.lastMessage",
     time: "23:00",
     messages: [
-      { text: "She asked where I was", time: "22:45", incoming: true },
-      { text: "What'd you say?", time: "22:46", incoming: false },
-      { text: "With you", time: "22:47", incoming: true },
-      { text: "I lied to her about tonight", time: "23:00", incoming: false },
+      {
+        text: "dmtinder.matches.ethan_park.messages.message1.text",
+        time: "22:45",
+        incoming: true,
+      },
+      {
+        text: "dmtinder.matches.ethan_park.messages.message2.text",
+        time: "22:46",
+        incoming: false,
+      },
+      {
+        text: "dmtinder.matches.ethan_park.messages.message3.text",
+        time: "22:47",
+        incoming: true,
+      },
+      {
+        text: "dmtinder.matches.ethan_park.messages.message4.text",
+        time: "23:00",
+        incoming: false,
+      },
     ],
   },
 ];
@@ -95,7 +135,7 @@ const matches = [
 const callLogs = [
   {
     id: 1,
-    name: "Liam Cruz",
+    name: "liam_cruz",
     avatar: "https://i.pravatar.cc/150?img=40",
     type: "outgoing",
     time: "2025-10-28 23:55",
@@ -103,7 +143,7 @@ const callLogs = [
   },
   {
     id: 2,
-    name: "Noah Reyes",
+    name: "noah_reyes",
     avatar: "https://i.pravatar.cc/150?img=41",
     type: "incoming",
     time: "2025-10-28 22:30",
@@ -111,7 +151,7 @@ const callLogs = [
   },
   {
     id: 3,
-    name: "Ethan Park",
+    name: "ethan_park",
     avatar: "https://i.pravatar.cc/150?img=51",
     type: "missed",
     time: "2025-10-28 21:15",
@@ -119,6 +159,7 @@ const callLogs = [
 ];
 
 const TinderPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
   const [tab, setTab] = useState("chat");
@@ -129,6 +170,7 @@ const TinderPage = () => {
     setSelectedChat(null);
     setSelectedCall(null);
   };
+
   const getCallIcon = (type) => {
     const color =
       type === "incoming"
@@ -154,9 +196,9 @@ const TinderPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <header className="!mb-4 sm:!mb-6 !px-4">
-        <div className="flex items-center justify-between">
+        <div className="flex lg:flex-row flex-col gap-2 justify-between">
           <h1 className="text-xl font-bold text-slate-800 flex items-center gap-2">
-            Tinder <SiTinder className="text-[#FF5A5F]" />
+            {t("dmtinder.header.title")} <SiTinder className="text-[#FF5A5F]" />
           </h1>
           <BindPhone />
         </div>
@@ -175,22 +217,29 @@ const TinderPage = () => {
               value={tab}
               onChange={(e, v) => setTab(v)}
               sx={{ mb: 3, "& .MuiTabs-indicator": { bgcolor: "#FF5A5F" } }}
+              aria-label={t("dmtinder.tabs.aria_label")}
             >
               <Tab
                 icon={<SiTinder />}
-                label={isMobile ? "" : "Matches"}
+                label={isMobile ? "" : t("dmtinder.tabs.chat")}
                 value="chat"
+                aria-label={t("dmtinder.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiPhone />}
-                label={isMobile ? "" : "Calls"}
+                label={isMobile ? "" : t("dmtinder.tabs.calls")}
                 value="calls"
+                aria-label={t("dmtinder.tabs.calls_aria")}
               />
             </Tabs>
           )}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "#FF5A5F" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "#FF5A5F" }}
+                aria-label={t("dmtinder.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -220,7 +269,7 @@ const TinderPage = () => {
               className="scrollbar-hide"
             >
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmtinder.chat.list_aria")}>
                   {matches.map((m) => (
                     <Box
                       key={m.id}
@@ -230,6 +279,9 @@ const TinderPage = () => {
                         "&:hover": { bgcolor: "#fdf2f2" },
                       }}
                       onClick={() => setSelectedChat(m)}
+                      aria-label={t("dmtinder.chat.item_aria", {
+                        name: t(`dmtinder.matches.${m.name}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar src={m.avatar} sx={{ width: 48, height: 48 }} />
@@ -237,12 +289,12 @@ const TinderPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {m.name}
+                            {t(`dmtinder.matches.${m.name}.name`)}
                           </Typography>
                           <Typography
                             sx={{ fontSize: "0.875rem", color: "#6b7280" }}
                           >
-                            {m.lastMessage}
+                            {t(m.lastMessage)}
                           </Typography>
                         </Box>
                         <Typography
@@ -256,7 +308,7 @@ const TinderPage = () => {
                 </Stack>
               )}
               {tab === "calls" && (
-                <Stack>
+                <Stack aria-label={t("dmtinder.call_log.list_aria")}>
                   {callLogs.map((c) => (
                     <Box
                       key={c.id}
@@ -266,6 +318,9 @@ const TinderPage = () => {
                         "&:hover": { bgcolor: "#fdf2f2" },
                       }}
                       onClick={() => setSelectedCall(c)}
+                      aria-label={t("dmtinder.call_log.item_aria", {
+                        name: t(`dmtinder.call_logs.${c.name}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
@@ -291,7 +346,7 @@ const TinderPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {c.name}
+                            {t(`dmtinder.call_logs.${c.name}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -304,7 +359,7 @@ const TinderPage = () => {
                                   : "#EF4444",
                             }}
                           >
-                            {c.type.charAt(0).toUpperCase() + c.type.slice(1)}
+                            {t(`dmtinder.call_log.types.${c.type}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -331,7 +386,12 @@ const TinderPage = () => {
                 }}
               >
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmtinder.chat.detail_aria", {
+                      name: t(`dmtinder.matches.${selectedChat.name}.name`),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -341,7 +401,7 @@ const TinderPage = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "#1f2937" }}
                       >
-                        {selectedChat.name}
+                        {t(`dmtinder.matches.${selectedChat.name}.name`)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -371,7 +431,7 @@ const TinderPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(msg.text)}
                             </Typography>
                             <Typography
                               sx={{
@@ -395,7 +455,13 @@ const TinderPage = () => {
                   </Stack>
                 )}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmtinder.call_log.detail_aria", {
+                      name: t(`dmtinder.call_logs.${selectedCall.name}.name`),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -404,7 +470,7 @@ const TinderPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedCall.name}
+                      {t(`dmtinder.call_logs.${selectedCall.name}.name`)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -430,8 +496,7 @@ const TinderPage = () => {
                           sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
                         >
                           {selectedCall.duration} •{" "}
-                          {selectedCall.type.charAt(0).toUpperCase() +
-                            selectedCall.type.slice(1)}
+                          {t(`dmtinder.call_log.types.${selectedCall.type}`)}
                         </Typography>
                       )}
                     </Paper>

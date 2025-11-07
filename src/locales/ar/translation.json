@@ -4147,5 +4147,112 @@
         "message4": "كذبت عليها من أجلك"
       }
     }
+  },
+  "dmtinder": {
+    "header": { "title": "تيندر" },
+    "tabs": {
+      "chat": "المطابقات",
+      "calls": "المكالمات",
+      "aria_label": "علامات تبويب التنقل في تيندر",
+      "chat_aria": "إظهار المطابقات",
+      "calls_aria": "إظهار سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة المطابقات",
+      "item_aria": "مطابقة مع {{name}}",
+      "detail_aria": "تفاصيل الدردشة لـ {{name}}"
+    },
+    "call_log": {
+      "list_aria": "قائمة سجل المكالمات",
+      "item_aria": "سجل المكالمات لـ {{name}}",
+      "detail_aria": "تفاصيل المكالمة لـ {{name}}",
+      "types": {
+        "outgoing": "صادرة",
+        "incoming": "واردة",
+        "missed": "مفقودة"
+      }
+    },
+    "matches": {
+      "liam_cruz": {
+        "name": "ليام كروز",
+        "lastMessage": "أنا خارج مبناك",
+        "messages": {
+          "message1": {
+            "text": "هل أنت مستيقظ؟",
+            "time": "03:00",
+            "incoming": true
+          },
+          "message2": { "text": "نعم", "time": "03:01", "incoming": false },
+          "message3": {
+            "text": "أنا خارج مبناك",
+            "time": "03:10",
+            "incoming": false
+          }
+        }
+      },
+      "noah_reyes": {
+        "name": "نواه رييس",
+        "lastMessage": "هي لا تعرف أنني غادرت",
+        "messages": {
+          "message1": {
+            "text": "كان ذلك مثيرًا",
+            "time": "02:10",
+            "incoming": true
+          },
+          "message2": {
+            "text": "لقد نجحنا في ذلك",
+            "time": "02:11",
+            "incoming": false
+          },
+          "message3": {
+            "text": "هي لا تعرف أنني غادرت",
+            "time": "02:25",
+            "incoming": false
+          }
+        }
+      },
+      "ethan_park": {
+        "name": "إيثان بارك",
+        "lastMessage": "كذبت عليها بشأن الليلة",
+        "messages": {
+          "message1": {
+            "text": "سألتني أين كنت",
+            "time": "22:45",
+            "incoming": true
+          },
+          "message2": {
+            "text": "ماذا قلت؟",
+            "time": "22:46",
+            "incoming": false
+          },
+          "message3": { "text": "معك", "time": "22:47", "incoming": true },
+          "message4": {
+            "text": "كذبت عليها بشأن الليلة",
+            "time": "23:00",
+            "incoming": false
+          }
+        }
+      }
+    },
+    "call_logs": {
+      "liam_cruz": {
+        "name": "ليام كروز",
+        "type": "صادرة",
+        "time": "2025-10-28 23:55",
+        "duration": "19:20"
+      },
+      "noah_reyes": {
+        "name": "نواه رييس",
+        "type": "واردة",
+        "time": "2025-10-28 22:30",
+        "duration": "14:10"
+      },
+      "ethan_park": {
+        "name": "إيثان بارك",
+        "type": "مفقودة",
+        "time": "2025-10-28 21:15"
+      }
+    }
   }
 }
