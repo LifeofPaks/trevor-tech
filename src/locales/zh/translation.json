@@ -3977,5 +3977,154 @@
         "message4": "我为你撒谎了"
       }
     }
+  },
+  "dmdiscord": {
+    "header": {
+      "title": "Discord"
+    },
+    "tabs": {
+      "dms": "私信",
+      "friends": "好友",
+      "calls": "通话",
+      "aria_label": "Discord导航选项卡",
+      "dms_aria": "显示私信",
+      "friends_aria": "显示好友",
+      "calls_aria": "显示通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "私信列表",
+      "item_aria": "与{{name}}的私信",
+      "detail_aria": "{{name}}的私信详情"
+    },
+    "friends": {
+      "list_aria": "好友列表",
+      "item_aria": "好友 {{name}}",
+      "detail_aria": "{{name}}的好友详情"
+    },
+    "call_log": {
+      "list_aria": "通话记录列表",
+      "item_aria": "{{name}}的通话记录",
+      "detail_aria": "{{name}}的通话详情",
+      "types": {
+        "outgoing": "呼出",
+        "incoming": "呼入",
+        "missed": "未接"
+      }
+    },
+    "friends_list": {
+      "luka_voss": { "name": "卢卡·沃斯" },
+      "cade_wilder": { "name": "凯德·威尔德" },
+      "jace_holt": { "name": "杰斯·霍尔特" },
+      "knox_reed": { "name": "诺克斯·里德" },
+      "ryder_kane": { "name": "莱德·凯恩" },
+      "zeke_ford": { "name": "泽克·福特" },
+      "milo_grey": { "name": "迈洛·格雷" },
+      "asher_dean": { "name": "阿舍·迪恩" },
+      "beck_hale": { "name": "贝克·黑尔" },
+      "tate_moss": { "name": "泰特·莫斯" },
+      "rhys_vale": { "name": "里斯·威尔" },
+      "dax_noir": { "name": "达克斯·诺伊尔" }
+    },
+    "call_logs": {
+      "luka_voss": { "name": "卢卡·沃斯" },
+      "cade_wilder": { "name": "凯德·威尔德" },
+      "jace_holt": { "name": "杰斯·霍尔特" },
+      "knox_reed": { "name": "诺克斯·里德" },
+      "ryder_kane": { "name": "莱德·凯恩" },
+      "rhys_vale": { "name": "里斯·威尔" }
+    },
+    "chats": {
+      "luka_voss": {
+        "name": "卢卡·沃斯",
+        "lastMessage": "我把卫衣忘在你那儿了",
+        "message1": "你还在吗？",
+        "message2": "嗯...睡不着",
+        "message3": "我把卫衣忘在你那儿了"
+      },
+      "cade_wilder": {
+        "name": "凯德·威尔德",
+        "lastMessage": "她没看到通知",
+        "message1": "那太危险了",
+        "message2": "不过没问题",
+        "message3": "她没看到通知"
+      },
+      "jace_holt": {
+        "name": "杰斯·霍尔特",
+        "lastMessage": "再发一次那个视频",
+        "message1": "你删了？",
+        "message2": "必须删，太冒险了",
+        "message3": "再发一次那个视频"
+      },
+      "knox_reed": {
+        "name": "诺克斯·里德",
+        "lastMessage": "我现在在你房间",
+        "message1": "你在家吗？",
+        "message2": "她睡了，门没锁",
+        "message3": "我现在在你房间"
+      },
+      "ryder_kane": {
+        "name": "莱德·凯恩",
+        "lastMessage": "我对你上瘾了",
+        "message1": "我停不下来想你",
+        "message2": "我也是，每秒都在想",
+        "message3": "我对你上瘾了"
+      },
+      "zeke_ford": {
+        "name": "泽克·福特",
+        "lastMessage": "我跟她说我在玩游戏",
+        "message1": "你在哪儿？",
+        "message2": "玩游戏，晚场",
+        "message3": "骗子",
+        "message4": "我跟她说我在玩游戏"
+      },
+      "milo_grey": {
+        "name": "迈洛·格雷",
+        "lastMessage": "这越来越危险了",
+        "message1": "我们说了上次是最后一次",
+        "message2": "我知道",
+        "message3": "那我为什么还在这儿？",
+        "message4": "这越来越危险了"
+      },
+      "asher_dean": {
+        "name": "阿舍·迪恩",
+        "lastMessage": "我每晚都梦到你",
+        "message1": "你睡了吗？",
+        "message2": "没，你呢？",
+        "message3": "在想你",
+        "message4": "我每晚都梦到你"
+      },
+      "beck_hale": {
+        "name": "贝克·黑尔",
+        "lastMessage": "读后删除",
+        "message1": "我忘不了昨晚",
+        "message2": "你做的那个...",
+        "message3": "嘘，别写出来",
+        "message4": "读后删除"
+      },
+      "tate_moss": {
+        "name": "泰特·莫斯",
+        "lastMessage": "我在爱上你",
+        "message1": "这越来越认真了",
+        "message2": "我知道",
+        "message3": "但我不想停",
+        "message4": "我在爱上你"
+      },
+      "rhys_vale": {
+        "name": "里斯·威尔",
+        "lastMessage": "你的气味留在我的枕头上",
+        "message1": "我还能闻到你的气味",
+        "message2": "好",
+        "message3": "你的气味留在我的枕头上"
+      },
+      "dax_noir": {
+        "name": "达克斯·诺伊尔",
+        "lastMessage": "我为你撒了谎",
+        "message1": "她问我在哪儿",
+        "message2": "你怎么说的？",
+        "message3": "跟你在一起",
+        "message4": "我为你撒了谎"
+      }
+    }
   }
 }

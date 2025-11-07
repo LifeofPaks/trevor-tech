@@ -4137,5 +4137,152 @@
         "message4": "Ich habe für dich gelogen"
       }
     }
+  },
+  "dmdiscord": {
+    "header": { "title": "Discord" },
+    "tabs": {
+      "dms": "DMs",
+      "friends": "Freunde",
+      "calls": "Anrufe",
+      "aria_label": "Discord Navigations-Tabs",
+      "dms_aria": "DMs anzeigen",
+      "friends_aria": "Freunde anzeigen",
+      "calls_aria": "Anrufprotokoll anzeigen"
+    },
+    "back_button_aria": "Zurück zur Liste",
+    "chat": {
+      "list_aria": "DM-Liste",
+      "item_aria": "DM mit {{name}}",
+      "detail_aria": "DM-Details für {{name}}"
+    },
+    "friends": {
+      "list_aria": "Freundesliste",
+      "item_aria": "Freund {{name}}",
+      "detail_aria": "Freundesdetails für {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Anrufprotokollliste",
+      "item_aria": "Anrufprotokoll für {{name}}",
+      "detail_aria": "Anrufdetails für {{name}}",
+      "types": {
+        "outgoing": "Ausgehend",
+        "incoming": "Eingehend",
+        "missed": "Verpasst"
+      }
+    },
+    "friends_list": {
+      "luka_voss": { "name": "Luka Voss" },
+      "cade_wilder": { "name": "Cade Wilder" },
+      "jace_holt": { "name": "Jace Holt" },
+      "knox_reed": { "name": "Knox Reed" },
+      "ryder_kane": { "name": "Ryder Kane" },
+      "zeke_ford": { "name": "Zeke Ford" },
+      "milo_grey": { "name": "Milo Grey" },
+      "asher_dean": { "name": "Asher Dean" },
+      "beck_hale": { "name": "Beck Hale" },
+      "tate_moss": { "name": "Tate Moss" },
+      "rhys_vale": { "name": "Rhys Vale" },
+      "dax_noir": { "name": "Dax Noir" }
+    },
+    "call_logs": {
+      "luka_voss": { "name": "Luka Voss" },
+      "cade_wilder": { "name": "Cade Wilder" },
+      "jace_holt": { "name": "Jace Holt" },
+      "knox_reed": { "name": "Knox Reed" },
+      "ryder_kane": { "name": "Ryder Kane" },
+      "rhys_vale": { "name": "Rhys Vale" }
+    },
+    "chats": {
+      "luka_voss": {
+        "name": "Luka Voss",
+        "lastMessage": "Ich habe meinen Hoodie bei dir gelassen",
+        "message1": "Bist du noch wach?",
+        "message2": "Ja... kann nicht schlafen",
+        "message3": "Ich habe meinen Hoodie bei dir gelassen"
+      },
+      "cade_wilder": {
+        "name": "Cade Wilder",
+        "lastMessage": "Sie hat die Benachrichtigungen nicht gesehen",
+        "message1": "Das war knapp",
+        "message2": "Aber wir sind gut",
+        "message3": "Sie hat die Benachrichtigungen nicht gesehen"
+      },
+      "jace_holt": {
+        "name": "Jace Holt",
+        "lastMessage": "Schick den Clip nochmal",
+        "message1": "Hast du ihn gelöscht?",
+        "message2": "Musste ich. Zu riskant",
+        "message3": "Schick den Clip nochmal"
+      },
+      "knox_reed": {
+        "name": "Knox Reed",
+        "lastMessage": "Bin gerade in deinem Zimmer",
+        "message1": "Bist du zu Hause?",
+        "message2": "Sie schläft. Tür ist offen",
+        "message3": "Bin gerade in deinem Zimmer"
+      },
+      "ryder_kane": {
+        "name": "Ryder Kane",
+        "lastMessage": "Ich bin süchtig nach dir",
+        "message1": "Kann nicht aufhören, an dich zu denken",
+        "message2": "Gleichfalls. Jede Sekunde",
+        "message3": "Ich bin süchtig nach dir"
+      },
+      "zeke_ford": {
+        "name": "Zeke Ford",
+        "lastMessage": "Habe ihr gesagt, ich zocke",
+        "message1": "Wo bist du?",
+        "message2": "Zocken. Lange Session",
+        "message3": "Lügner",
+        "message4": "Habe ihr gesagt, ich zocke"
+      },
+      "milo_grey": {
+        "name": "Milo Grey",
+        "lastMessage": "Das wird gefährlich",
+        "message1": "Wir sagten, das letzte Mal war das letzte",
+        "message2": "Ich weiß",
+        "message3": "Warum bin ich dann hier?",
+        "message4": "Das wird gefährlich"
+      },
+      "asher_dean": {
+        "name": "Asher Dean",
+        "lastMessage": "Ich träume jede Nacht von dir",
+        "message1": "Schläfst du?",
+        "message2": "Nein. Du?",
+        "message3": "Denke an dich",
+        "message4": "Ich träume jede Nacht von dir"
+      },
+      "beck_hale": {
+        "name": "Beck Hale",
+        "lastMessage": "Löschen nach dem Lesen",
+        "message1": "Kann letzte Nacht nicht aufhören, daran zu denken",
+        "message2": "Das, was du getan hast...",
+        "message3": "Pssst. Schreib es nicht",
+        "message4": "Löschen nach dem Lesen"
+      },
+      "tate_moss": {
+        "name": "Tate Moss",
+        "lastMessage": "Ich verliebe mich in dich",
+        "message1": "Das wird ernst",
+        "message2": "Ich weiß",
+        "message3": "Aber ich will nicht aufhören",
+        "message4": "Ich verliebe mich in dich"
+      },
+      "rhys_vale": {
+        "name": "Rhys Vale",
+        "lastMessage": "Dein Duft ist auf meinem Kissen",
+        "message1": "Ich kann dich immer noch riechen",
+        "message2": "Gut",
+        "message3": "Dein Duft ist auf meinem Kissen"
+      },
+      "dax_noir": {
+        "name": "Dax Noir",
+        "lastMessage": "Ich habe für dich gelogen",
+        "message1": "Sie hat gefragt, wo ich war",
+        "message2": "Was hast du gesagt?",
+        "message3": "Bei dir",
+        "message4": "Ich habe für dich gelogen"
+      }
+    }
   }
 }

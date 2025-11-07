@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -70,176 +71,164 @@ const theme = createTheme({
 const chats = [
   {
     id: 1,
-    name: "Luka Voss",
+    nameKey: "luka_voss",
     avatar: "https://i.pravatar.cc/150?img=28",
-    lastMessage: "I left my hoodie at your place",
+    lastMessageKey: "luka_voss.lastMessage",
     time: "03:15",
     status: "online",
     messages: [
-      { text: "you still up?", time: "03:00", incoming: true },
-      { text: "yeah. can't sleep", time: "03:01", incoming: false },
-      {
-        text: "I left my hoodie at your place",
-        time: "03:15",
-        incoming: false,
-      },
+      { textKey: "luka_voss.message1", time: "03:00", incoming: true },
+      { textKey: "luka_voss.message2", time: "03:01", incoming: false },
+      { textKey: "luka_voss.message3", time: "03:15", incoming: false },
     ],
   },
   {
     id: 2,
-    name: "Cade Wilder",
+    nameKey: "cade_wilder",
     avatar: "https://i.pravatar.cc/150?img=29",
-    lastMessage: "she didn't see the notifs",
+    lastMessageKey: "cade_wilder.lastMessage",
     time: "02:30",
     status: "idle",
     messages: [
-      { text: "that was too close", time: "02:15", incoming: true },
-      { text: "but we're good", time: "02:16", incoming: false },
-      { text: "she didn't see the notifs", time: "02:30", incoming: false },
+      { textKey: "cade_wilder.message1", time: "02:15", incoming: true },
+      { textKey: "cade_wilder.message2", time: "02:16", incoming: false },
+      { textKey: "cade_wilder.message3", time: "02:30", incoming: false },
     ],
   },
   {
     id: 3,
-    name: "Jace Holt",
+    nameKey: "jace_holt",
     avatar: "https://i.pravatar.cc/150?img=30",
-    lastMessage: "send the clip again",
+    lastMessageKey: "jace_holt.lastMessage",
     time: "01:45",
     status: "online",
     messages: [
-      { text: "you deleted it?", time: "01:30", incoming: true },
-      { text: "had to. too risky", time: "01:31", incoming: false },
-      { text: "send the clip again", time: "01:45", incoming: false },
+      { textKey: "jace_holt.message1", time: "01:30", incoming: true },
+      { textKey: "jace_holt.message2", time: "01:31", incoming: false },
+      { textKey: "jace_holt.message3", time: "01:45", incoming: false },
     ],
   },
   {
     id: 4,
-    name: "Knox Reed",
+    nameKey: "knox_reed",
     avatar: "https://i.pravatar.cc/150?img=31",
-    lastMessage: "i'm in your room rn",
+    lastMessageKey: "knox_reed.lastMessage",
     time: "00:50",
     status: "dnd",
     messages: [
-      { text: "you home?", time: "00:35", incoming: true },
-      { text: "she's out. door's open", time: "00:36", incoming: false },
-      { text: "i'm in your room rn", time: "00:50", incoming: false },
+      { textKey: "knox_reed.message1", time: "00:35", incoming: true },
+      { textKey: "knox_reed.message2", time: "00:36", incoming: false },
+      { textKey: "knox_reed.message3", time: "00:50", incoming: false },
     ],
   },
   {
     id: 5,
-    name: "Ryder Kane",
+    nameKey: "ryder_kane",
     avatar: "https://i.pravatar.cc/150?img=32",
-    lastMessage: "i'm addicted to you",
+    lastMessageKey: "ryder_kane.lastMessage",
     time: "04:20",
     status: "online",
     messages: [
-      {
-        text: "i can't stop thinking about you",
-        time: "04:05",
-        incoming: true,
-      },
-      { text: "same. every second", time: "04:06", incoming: false },
-      { text: "i'm addicted to you", time: "04:20", incoming: false },
+      { textKey: "ryder_kane.message1", time: "04:05", incoming: true },
+      { textKey: "ryder_kane.message2", time: "04:06", incoming: false },
+      { textKey: "ryder_kane.message3", time: "04:20", incoming: false },
     ],
   },
   {
     id: 6,
-    name: "Zeke Ford",
+    nameKey: "zeke_ford",
     avatar: "https://i.pravatar.cc/150?img=33",
-    lastMessage: "told her i was gaming",
+    lastMessageKey: "zeke_ford.lastMessage",
     time: "22:55",
     status: "idle",
     messages: [
-      { text: "where are you?", time: "22:35", incoming: true },
-      { text: "gaming. late session", time: "22:36", incoming: false },
-      { text: "liar", time: "22:37", incoming: true },
-      { text: "told her i was gaming", time: "22:55", incoming: false },
+      { textKey: "zeke_ford.message1", time: "22:35", incoming: true },
+      { textKey: "zeke_ford.message2", time: "22:36", incoming: false },
+      { textKey: "zeke_ford.message3", time: "22:37", incoming: true },
+      { textKey: "zeke_ford.message4", time: "22:55", incoming: false },
     ],
   },
   {
     id: 7,
-    name: "Milo Grey",
+    nameKey: "milo_grey",
     avatar: "https://i.pravatar.cc/150?img=34",
-    lastMessage: "this is getting dangerous",
+    lastMessageKey: "milo_grey.lastMessage",
     time: "21:10",
     status: "online",
     messages: [
-      { text: "we said last time was the last", time: "20:55", incoming: true },
-      { text: "i know", time: "20:56", incoming: false },
-      { text: "then why am i here?", time: "20:57", incoming: true },
-      { text: "this is getting dangerous", time: "21:10", incoming: false },
+      { textKey: "milo_grey.message1", time: "20:55", incoming: true },
+      { textKey: "milo_grey.message2", time: "20:56", incoming: false },
+      { textKey: "milo_grey.message3", time: "20:57", incoming: true },
+      { textKey: "milo_grey.message4", time: "21:10", incoming: false },
     ],
   },
   {
     id: 8,
-    name: "Asher Dean",
+    nameKey: "asher_dean",
     avatar: "https://i.pravatar.cc/150?img=35",
-    lastMessage: "i dream about you every night",
+    lastMessageKey: "asher_dean.lastMessage",
     time: "05:30",
     status: "idle",
     messages: [
-      { text: "you sleeping?", time: "05:15", incoming: true },
-      { text: "no. you?", time: "05:16", incoming: false },
-      { text: "thinking of you", time: "05:17", incoming: true },
-      { text: "i dream about you every night", time: "05:30", incoming: false },
+      { textKey: "asher_dean.message1", time: "05:15", incoming: true },
+      { textKey: "asher_dean.message2", time: "05:16", incoming: false },
+      { textKey: "asher_dean.message3", time: "05:17", incoming: true },
+      { textKey: "asher_dean.message4", time: "05:30", incoming: false },
     ],
   },
   {
     id: 9,
-    name: "Beck Hale",
+    nameKey: "beck_hale",
     avatar: "https://i.pravatar.cc/150?img=36",
-    lastMessage: "delete after reading",
+    lastMessageKey: "beck_hale.lastMessage",
     time: "02:40",
     status: "dnd",
     messages: [
-      {
-        text: "i can't stop replaying last night",
-        time: "02:25",
-        incoming: true,
-      },
-      { text: "that thing you did...", time: "02:26", incoming: false },
-      { text: "shh. don't type it", time: "02:27", incoming: true },
-      { text: "delete after reading", time: "02:40", incoming: false },
+      { textKey: "beck_hale.message1", time: "02:25", incoming: true },
+      { textKey: "beck_hale.message2", time: "02:26", incoming: false },
+      { textKey: "beck_hale.message3", time: "02:27", incoming: true },
+      { textKey: "beck_hale.message4", time: "02:40", incoming: false },
     ],
   },
   {
     id: 10,
-    name: "Tate Moss",
+    nameKey: "tate_moss",
     avatar: "https://i.pravatar.cc/150?img=37",
-    lastMessage: "i'm falling for you",
+    lastMessageKey: "tate_moss.lastMessage",
     time: "01:55",
     status: "online",
     messages: [
-      { text: "this is getting serious", time: "01:40", incoming: true },
-      { text: "i know", time: "01:41", incoming: false },
-      { text: "but i don't want to stop", time: "01:42", incoming: true },
-      { text: "i'm falling for you", time: "01:55", incoming: false },
+      { textKey: "tate_moss.message1", time: "01:40", incoming: true },
+      { textKey: "tate_moss.message2", time: "01:41", incoming: false },
+      { textKey: "tate_moss.message3", time: "01:42", incoming: true },
+      { textKey: "tate_moss.message4", time: "01:55", incoming: false },
     ],
   },
   {
     id: 11,
-    name: "Rhys Vale",
+    nameKey: "rhys_vale",
     avatar: "https://i.pravatar.cc/150?img=38",
-    lastMessage: "your scent is on my pillow",
+    lastMessageKey: "rhys_vale.lastMessage",
     time: "06:45",
     status: "idle",
     messages: [
-      { text: "i can still smell you", time: "06:25", incoming: true },
-      { text: "good", time: "06:26", incoming: false },
-      { text: "your scent is on my pillow", time: "06:45", incoming: false },
+      { textKey: "rhys_vale.message1", time: "06:25", incoming: true },
+      { textKey: "rhys_vale.message2", time: "06:26", incoming: false },
+      { textKey: "rhys_vale.message3", time: "06:45", incoming: false },
     ],
   },
   {
     id: 12,
-    name: "Dax Noir",
+    nameKey: "dax_noir",
     avatar: "https://i.pravatar.cc/150?img=39",
-    lastMessage: "i lied to her for you",
+    lastMessageKey: "dax_noir.lastMessage",
     time: "23:20",
     status: "dnd",
     messages: [
-      { text: "she asked where i was", time: "23:05", incoming: true },
-      { text: "what'd you say?", time: "23:06", incoming: false },
-      { text: "with you", time: "23:07", incoming: true },
-      { text: "i lied to her for you", time: "23:20", incoming: false },
+      { textKey: "dax_noir.message1", time: "23:05", incoming: true },
+      { textKey: "dax_noir.message2", time: "23:06", incoming: false },
+      { textKey: "dax_noir.message3", time: "23:07", incoming: true },
+      { textKey: "dax_noir.message4", time: "23:20", incoming: false },
     ],
   },
 ];
@@ -248,7 +237,7 @@ const chats = [
 const friends = [
   ...chats.map((c) => ({
     id: c.id,
-    name: c.name,
+    nameKey: c.nameKey,
     avatar: c.avatar,
     status: c.status,
     tag: `#${String(1000 + c.id).padStart(4, "0")}`,
@@ -259,7 +248,7 @@ const friends = [
 const callLogs = [
   {
     id: 1,
-    name: "Luka Voss",
+    nameKey: "luka_voss",
     avatar: "https://i.pravatar.cc/150?img=28",
     type: "outgoing",
     time: "2025-10-28 23:55",
@@ -267,7 +256,7 @@ const callLogs = [
   },
   {
     id: 2,
-    name: "Cade Wilder",
+    nameKey: "cade_wilder",
     avatar: "https://i.pravatar.cc/150?img=29",
     type: "incoming",
     time: "2025-10-28 22:40",
@@ -275,14 +264,14 @@ const callLogs = [
   },
   {
     id: 3,
-    name: "Jace Holt",
+    nameKey: "jace_holt",
     avatar: "https://i.pravatar.cc/150?img=30",
     type: "missed",
     time: "2025-10-28 21:20",
   },
   {
     id: 4,
-    name: "Knox Reed",
+    nameKey: "knox_reed",
     avatar: "https://i.pravatar.cc/150?img=31",
     type: "outgoing",
     time: "2025-10-27 20:55",
@@ -290,7 +279,7 @@ const callLogs = [
   },
   {
     id: 5,
-    name: "Ryder Kane",
+    nameKey: "ryder_kane",
     avatar: "https://i.pravatar.cc/150?img=32",
     type: "incoming",
     time: "2025-10-27 19:30",
@@ -298,7 +287,7 @@ const callLogs = [
   },
   {
     id: 6,
-    name: "Rhys Vale",
+    nameKey: "rhys_vale",
     avatar: "https://i.pravatar.cc/150?img=38",
     type: "missed",
     time: "2025-10-27 18:00",
@@ -306,6 +295,7 @@ const callLogs = [
 ];
 
 const DiscordPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -364,7 +354,9 @@ const DiscordPage = () => {
   const groupFriendsByLetter = () => {
     const grouped = {};
     friends.forEach((f) => {
-      const letter = f.name[0].toUpperCase();
+      const letter = t(
+        `dmdiscord.friends_list.${f.nameKey}.name`
+      )[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(f);
     });
@@ -379,7 +371,7 @@ const DiscordPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Discord
+              {t("dmdiscord.header.title")}
               <SiDiscord className="text-[#5865F2]" />
             </h1>
           </div>
@@ -404,24 +396,28 @@ const DiscordPage = () => {
                 mb: 3,
                 "& .MuiTabs-indicator": { bgcolor: "primary.main", height: 3 },
               }}
+              aria-label={t("dmdiscord.tabs.aria_label")}
             >
               <Tab
                 icon={<SiDiscord />}
                 iconPosition="start"
-                label={isMobile ? "" : "DMs"}
+                label={isMobile ? "" : t("dmdiscord.tabs.dms")}
                 value="chat"
+                aria-label={t("dmdiscord.tabs.dms_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Friends"}
+                label={isMobile ? "" : t("dmdiscord.tabs.friends")}
                 value="friends"
+                aria-label={t("dmdiscord.tabs.friends_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Calls"}
+                label={isMobile ? "" : t("dmdiscord.tabs.calls")}
                 value="calls"
+                aria-label={t("dmdiscord.tabs.calls_aria")}
               />
             </Tabs>
           )}
@@ -429,7 +425,11 @@ const DiscordPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmdiscord.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -464,7 +464,7 @@ const DiscordPage = () => {
             >
               {/* DM List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmdiscord.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -475,6 +475,9 @@ const DiscordPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmdiscord.chat.item_aria", {
+                        name: t(`dmdiscord.chats.${chat.nameKey}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
@@ -488,7 +491,7 @@ const DiscordPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#2C2F33" }}
                           >
-                            {chat.name}
+                            {t(`dmdiscord.chats.${chat.nameKey}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -499,7 +502,7 @@ const DiscordPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(`dmdiscord.chats.${chat.lastMessageKey}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -515,7 +518,7 @@ const DiscordPage = () => {
 
               {/* Friends List */}
               {tab === "friends" && (
-                <Stack>
+                <Stack aria-label={t("dmdiscord.friends.list_aria")}>
                   {Object.keys(groupFriendsByLetter())
                     .sort()
                     .map((letter) => (
@@ -541,6 +544,11 @@ const DiscordPage = () => {
                               transition: "background 0.2s",
                             }}
                             onClick={() => setSelectedFriend(friend)}
+                            aria-label={t("dmdiscord.friends.item_aria", {
+                              name: t(
+                                `dmdiscord.friends_list.${friend.nameKey}.name`
+                              ),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -558,7 +566,9 @@ const DiscordPage = () => {
                                 <Typography
                                   sx={{ fontWeight: 600, color: "#2C2F33" }}
                                 >
-                                  {friend.name}
+                                  {t(
+                                    `dmdiscord.friends_list.${friend.nameKey}.name`
+                                  )}
                                 </Typography>
                                 <Typography
                                   sx={{
@@ -566,8 +576,12 @@ const DiscordPage = () => {
                                     color: "#99AAB5",
                                   }}
                                 >
-                                  {friend.name.split(" ")[0]}#
-                                  {friend.tag.slice(1)}
+                                  {
+                                    t(
+                                      `dmdiscord.friends_list.${friend.nameKey}.name`
+                                    ).split(" ")[0]
+                                  }
+                                  #{friend.tag.slice(1)}
                                 </Typography>
                               </Box>
                             </Stack>
@@ -580,7 +594,7 @@ const DiscordPage = () => {
 
               {/* Call Log */}
               {tab === "calls" && (
-                <Stack>
+                <Stack aria-label={t("dmdiscord.call_log.list_aria")}>
                   {callLogs.map((call) => (
                     <Box
                       key={call.id}
@@ -591,6 +605,9 @@ const DiscordPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedCall(call)}
+                      aria-label={t("dmdiscord.call_log.item_aria", {
+                        name: t(`dmdiscord.call_logs.${call.nameKey}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
@@ -619,7 +636,7 @@ const DiscordPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#2C2F33" }}
                           >
-                            {call.name}
+                            {t(`dmdiscord.call_logs.${call.nameKey}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -632,8 +649,7 @@ const DiscordPage = () => {
                                   : "#EF4444",
                             }}
                           >
-                            {call.type.charAt(0).toUpperCase() +
-                              call.type.slice(1)}
+                            {t(`dmdiscord.call_log.types.${call.type}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -663,7 +679,12 @@ const DiscordPage = () => {
               >
                 {/* DM Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmdiscord.chat.detail_aria", {
+                      name: t(`dmdiscord.chats.${selectedChat.nameKey}.name`),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Box sx={{ position: "relative" }}>
                         <Avatar
@@ -676,7 +697,7 @@ const DiscordPage = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "#2C2F33" }}
                       >
-                        {selectedChat.name}
+                        {t(`dmdiscord.chats.${selectedChat.nameKey}.name`)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -706,7 +727,7 @@ const DiscordPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(`dmdiscord.chats.${msg.textKey}`)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -730,7 +751,15 @@ const DiscordPage = () => {
 
                 {/* Friend Detail */}
                 {selectedFriend && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmdiscord.friends.detail_aria", {
+                      name: t(
+                        `dmdiscord.friends_list.${selectedFriend.nameKey}.name`
+                      ),
+                    })}
+                  >
                     <Box sx={{ position: "relative" }}>
                       <Avatar
                         src={selectedFriend.avatar}
@@ -742,18 +771,32 @@ const DiscordPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#2C2F33" }}
                     >
-                      {selectedFriend.name}
+                      {t(
+                        `dmdiscord.friends_list.${selectedFriend.nameKey}.name`
+                      )}
                     </Typography>
                     <Typography sx={{ fontSize: "1rem", color: "#99AAB5" }}>
-                      {selectedFriend.name.split(" ")[0]}#
-                      {selectedFriend.tag.slice(1)}
+                      {
+                        t(
+                          `dmdiscord.friends_list.${selectedFriend.nameKey}.name`
+                        ).split(" ")[0]
+                      }
+                      #{selectedFriend.tag.slice(1)}
                     </Typography>
                   </Stack>
                 )}
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmdiscord.call_log.detail_aria", {
+                      name: t(
+                        `dmdiscord.call_logs.${selectedCall.nameKey}.name`
+                      ),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -762,7 +805,7 @@ const DiscordPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#2C2F33" }}
                     >
-                      {selectedCall.name}
+                      {t(`dmdiscord.call_logs.${selectedCall.nameKey}.name`)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -788,8 +831,7 @@ const DiscordPage = () => {
                           sx={{ fontSize: "0.875rem", color: "#99AAB5", mt: 1 }}
                         >
                           {selectedCall.duration} •{" "}
-                          {selectedCall.type.charAt(0).toUpperCase() +
-                            selectedCall.type.slice(1)}
+                          {t(`dmdiscord.call_log.types.${selectedCall.type}`)}
                         </Typography>
                       )}
                     </Paper>

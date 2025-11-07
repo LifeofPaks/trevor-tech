@@ -4051,5 +4051,152 @@
         "message4": "Senin için yalan söyledim"
       }
     }
+  },
+  "dmdiscord": {
+    "header": { "title": "Discord" },
+    "tabs": {
+      "dms": "DM'ler",
+      "friends": "Arkadaşlar",
+      "calls": "Aramalar",
+      "aria_label": "Discord navigasyon sekmeleri",
+      "dms_aria": "DM'leri göster",
+      "friends_aria": "Arkadaşları göster",
+      "calls_aria": "Arama geçmişini göster"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "DM listesi",
+      "item_aria": "{{name}} ile DM",
+      "detail_aria": "{{name}} için DM detayları"
+    },
+    "friends": {
+      "list_aria": "Arkadaş listesi",
+      "item_aria": "Arkadaş {{name}}",
+      "detail_aria": "{{name}} için arkadaş detayları"
+    },
+    "call_log": {
+      "list_aria": "Arama geçmişi listesi",
+      "item_aria": "{{name}} için arama geçmişi",
+      "detail_aria": "{{name}} için arama detayları",
+      "types": {
+        "outgoing": "Giden",
+        "incoming": "Gelen",
+        "missed": "Cevapsız"
+      }
+    },
+    "friends_list": {
+      "luka_voss": { "name": "Luka Voss" },
+      "cade_wilder": { "name": "Cade Wilder" },
+      "jace_holt": { "name": "Jace Holt" },
+      "knox_reed": { "name": "Knox Reed" },
+      "ryder_kane": { "name": "Ryder Kane" },
+      "zeke_ford": { "name": "Zeke Ford" },
+      "milo_grey": { "name": "Milo Grey" },
+      "asher_dean": { "name": "Asher Dean" },
+      "beck_hale": { "name": "Beck Hale" },
+      "tate_moss": { "name": "Tate Moss" },
+      "rhys_vale": { "name": "Rhys Vale" },
+      "dax_noir": { "name": "Dax Noir" }
+    },
+    "call_logs": {
+      "luka_voss": { "name": "Luka Voss" },
+      "cade_wilder": { "name": "Cade Wilder" },
+      "jace_holt": { "name": "Jace Holt" },
+      "knox_reed": { "name": "Knox Reed" },
+      "ryder_kane": { "name": "Ryder Kane" },
+      "rhys_vale": { "name": "Rhys Vale" }
+    },
+    "chats": {
+      "luka_voss": {
+        "name": "Luka Voss",
+        "lastMessage": "Kapüşonlumu sende unuttum",
+        "message1": "hala uyanık mısın?",
+        "message2": "evet... uyuyamıyorum",
+        "message3": "Kapüşonlumu sende unuttum"
+      },
+      "cade_wilder": {
+        "name": "Cade Wilder",
+        "lastMessage": "bildirimleri görmedi",
+        "message1": "bu çok yakındı",
+        "message2": "ama sorun yok",
+        "message3": "bildirimleri görmedi"
+      },
+      "jace_holt": {
+        "name": "Jace Holt",
+        "lastMessage": "klibi tekrar gönder",
+        "message1": "sildin mi?",
+        "message2": "silmek zorundaydım. çok riskli",
+        "message3": "klibi tekrar gönder"
+      },
+      "knox_reed": {
+        "name": "Knox Reed",
+        "lastMessage": "şu an odandayım",
+        "message1": "evde misin?",
+        "message2": "o uyuyor. kapı açık",
+        "message3": "şu an odandayım"
+      },
+      "ryder_kane": {
+        "name": "Ryder Kane",
+        "lastMessage": "sana bağımlıyım",
+        "message1": "seni düşünmekten vazgeçemiyorum",
+        "message2": "aynı. her saniye",
+        "message3": "sana bağımlıyım"
+      },
+      "zeke_ford": {
+        "name": "Zeke Ford",
+        "lastMessage": "ona oyun oynadığımı söyledim",
+        "message1": "neredesin?",
+        "message2": "oyun oynuyorum. uzun bir seans",
+        "message3": "yalancı",
+        "message4": "ona oyun oynadığımı söyledim"
+      },
+      "milo_grey": {
+        "name": "Milo Grey",
+        "lastMessage": "bu tehlikeli olmaya başladı",
+        "message1": "son seferin son olduğunu söylemiştik",
+        "message2": "biliyorum",
+        "message3": "o zaman neden buradayım?",
+        "message4": "bu tehlikeli olmaya başladı"
+      },
+      "asher_dean": {
+        "name": "Asher Dean",
+        "lastMessage": "her gece seni rüyamda görüyorum",
+        "message1": "uyuyor musun?",
+        "message2": "hayır. sen?",
+        "message3": "seni düşünüyorum",
+        "message4": "her gece seni rüyamda görüyorum"
+      },
+      "beck_hale": {
+        "name": "Beck Hale",
+        "lastMessage": "okuduktan sonra sil",
+        "message1": "dün geceyi tekrar tekrar yaşamaktan vazgeçemiyorum",
+        "message2": "yaptığın o şey...",
+        "message3": "şşş. yazma",
+        "message4": "okuduktan sonra sil"
+      },
+      "tate_moss": {
+        "name": "Tate Moss",
+        "lastMessage": "sana aşık oluyorum",
+        "message1": "bu ciddileşiyor",
+        "message2": "biliyorum",
+        "message3": "ama durmak istemiyorum",
+        "message4": "sana aşık oluyorum"
+      },
+      "rhys_vale": {
+        "name": "Rhys Vale",
+        "lastMessage": "yastığımda senin kokun var",
+        "message1": "hala kokunu alıyorum",
+        "message2": "güzel",
+        "message3": "yastığımda senin kokun var"
+      },
+      "dax_noir": {
+        "name": "Dax Noir",
+        "lastMessage": "senin için yalan söyledim",
+        "message1": "nerede olduğumu sordu",
+        "message2": "ne dedin?",
+        "message3": "seninle",
+        "message4": "senin için yalan söyledim"
+      }
+    }
   }
 }

@@ -4000,5 +4000,152 @@
         "message4": "كذبت عليها من أجلك"
       }
     }
+  },
+  "dmdiscord": {
+    "header": { "title": "ديسكورد" },
+    "tabs": {
+      "dms": "الرسائل الخاصة",
+      "friends": "الأصدقاء",
+      "calls": "المكالمات",
+      "aria_label": "علامات تبويب التنقل في ديسكورد",
+      "dms_aria": "إظهار الرسائل الخاصة",
+      "friends_aria": "إظهار الأصدقاء",
+      "calls_aria": "إظهار سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة الرسائل الخاصة",
+      "item_aria": "رسالة خاصة مع {{name}}",
+      "detail_aria": "تفاصيل الرسالة الخاصة لـ {{name}}"
+    },
+    "friends": {
+      "list_aria": "قائمة الأصدقاء",
+      "item_aria": "صديق {{name}}",
+      "detail_aria": "تفاصيل الصديق لـ {{name}}"
+    },
+    "call_log": {
+      "list_aria": "قائمة سجل المكالمات",
+      "item_aria": "سجل المكالمات لـ {{name}}",
+      "detail_aria": "تفاصيل المكالمة لـ {{name}}",
+      "types": {
+        "outgoing": "صادرة",
+        "incoming": "واردة",
+        "missed": "مفقودة"
+      }
+    },
+    "friends_list": {
+      "luka_voss": { "name": "لوكا فوس" },
+      "cade_wilder": { "name": "كيد وايلدر" },
+      "jace_holt": { "name": "جيس هولت" },
+      "knox_reed": { "name": "نوكس ريد" },
+      "ryder_kane": { "name": "رايدر كين" },
+      "zeke_ford": { "name": "زيك فورد" },
+      "milo_grey": { "name": "مايلو غراي" },
+      "asher_dean": { "name": "آشر دين" },
+      "beck_hale": { "name": "بيك هيل" },
+      "tate_moss": { "name": "تيت موس" },
+      "rhys_vale": { "name": "ريس فال" },
+      "dax_noir": { "name": "داكس نوار" }
+    },
+    "call_logs": {
+      "luka_voss": { "name": "لوكا فوس" },
+      "cade_wilder": { "name": "كيد وايلدر" },
+      "jace_holt": { "name": "جيس هولت" },
+      "knox_reed": { "name": "نوكس ريد" },
+      "ryder_kane": { "name": "رايدر كين" },
+      "rhys_vale": { "name": "ريس فال" }
+    },
+    "chats": {
+      "luka_voss": {
+        "name": "لوكا فوس",
+        "lastMessage": "تركت هودي في مكانك",
+        "message1": "ما زلت مستيقظًا؟",
+        "message2": "نعم... لا أستطيع النوم",
+        "message3": "تركت هودي في مكانك"
+      },
+      "cade_wilder": {
+        "name": "كيد وايلدر",
+        "lastMessage": "لم ترَ الإشعارات",
+        "message1": "كان ذلك قريبًا جدًا",
+        "message2": "لكننا بخير",
+        "message3": "لم ترَ الإشعارات"
+      },
+      "jace_holt": {
+        "name": "جيس هولت",
+        "lastMessage": "أرسل الكليب مرة أخرى",
+        "message1": "هل حذفته؟",
+        "message2": "كان عليّ. خطير جدًا",
+        "message3": "أرسل الكليب مرة أخرى"
+      },
+      "knox_reed": {
+        "name": "نوكس ريد",
+        "lastMessage": "أنا في غرفتك الآن",
+        "message1": "هل أنت في البيت؟",
+        "message2": "هي نائمة. الباب مفتوح",
+        "message3": "أنا في غرفتك الآن"
+      },
+      "ryder_kane": {
+        "name": "رايدر كين",
+        "lastMessage": "أنا مدمن عليك",
+        "message1": "لا أستطيع التوقف عن التفكير بك",
+        "message2": "نفس الشيء. كل ثانية",
+        "message3": "أنا مدمن عليك"
+      },
+      "zeke_ford": {
+        "name": "زيك فورد",
+        "lastMessage": "قلت لها إنني ألعب",
+        "message1": "أين أنت؟",
+        "message2": "ألعب. جلسة متأخرة",
+        "message3": "كاذب",
+        "message4": "قلت لها إنني ألعب"
+      },
+      "milo_grey": {
+        "name": "مايلو غراي",
+        "lastMessage": "الأمر يخرج عن السيطرة",
+        "message1": "قلنا إن المرة الأخيرة كانت الأخيرة",
+        "message2": "أعلم",
+        "message3": "إذن لماذا أنا هنا؟",
+        "message4": "الأمر يخرج عن السيطرة"
+      },
+      "asher_dean": {
+        "name": "آشر دين",
+        "lastMessage": "أحلم بك كل ليلة",
+        "message1": "هل أنت نائم؟",
+        "message2": "لا. أنت؟",
+        "message3": "أفكر بك",
+        "message4": "أحلم بك كل ليلة"
+      },
+      "beck_hale": {
+        "name": "بيك هيل",
+        "lastMessage": "احذف بعد القراءة",
+        "message1": "لا أستطيع التوقف عن إعادة ليلة البارحة",
+        "message2": "تلك الأشياء التي فعلتها...",
+        "message3": "صه. لا تكتبها",
+        "message4": "احذف بعد القراءة"
+      },
+      "tate_moss": {
+        "name": "تيت موس",
+        "lastMessage": "أنا أقع في حبك",
+        "message1": "هذا يصبح خطيرًا",
+        "message2": "أعلم",
+        "message3": "لكن لا أريد التوقف",
+        "message4": "أنا أقع في حبك"
+      },
+      "rhys_vale": {
+        "name": "ريس فال",
+        "lastMessage": "رائحتك على وسادتي",
+        "message1": "ما زلت أشم رائحتك",
+        "message2": "جيد",
+        "message3": "رائحتك على وسادتي"
+      },
+      "dax_noir": {
+        "name": "داكس نوار",
+        "lastMessage": "كذبت عليها من أجلك",
+        "message1": "سألتني أين كنت",
+        "message2": "ماذا قلت؟",
+        "message3": "معك",
+        "message4": "كذبت عليها من أجلك"
+      }
+    }
   }
 }

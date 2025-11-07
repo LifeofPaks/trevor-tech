@@ -4009,5 +4009,152 @@
         "message4": "너 때문에 거짓말했어"
       }
     }
+  },
+  "dmdiscord": {
+    "header": { "title": "디스코드" },
+    "tabs": {
+      "dms": "DM",
+      "friends": "친구",
+      "calls": "통화",
+      "aria_label": "디스코드 탐색 탭",
+      "dms_aria": "DM 보기",
+      "friends_aria": "친구 보기",
+      "calls_aria": "통화 기록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "DM 목록",
+      "item_aria": "{{name}}과의 DM",
+      "detail_aria": "{{name}}의 DM 상세"
+    },
+    "friends": {
+      "list_aria": "친구 목록",
+      "item_aria": "친구 {{name}}",
+      "detail_aria": "{{name}}의 친구 상세"
+    },
+    "call_log": {
+      "list_aria": "통화 기록 목록",
+      "item_aria": "{{name}}의 통화 기록",
+      "detail_aria": "{{name}}의 통화 상세",
+      "types": {
+        "outgoing": "발신",
+        "incoming": "수신",
+        "missed": "부재중"
+      }
+    },
+    "friends_list": {
+      "luka_voss": { "name": "루카 보스" },
+      "cade_wilder": { "name": "케이드 와일더" },
+      "jace_holt": { "name": "제이스 홀트" },
+      "knox_reed": { "name": "녹스 리드" },
+      "ryder_kane": { "name": "라이더 케인" },
+      "zeke_ford": { "name": "지크 포드" },
+      "milo_grey": { "name": "마일로 그레이" },
+      "asher_dean": { "name": "애셔 딘" },
+      "beck_hale": { "name": "벡 헤일" },
+      "tate_moss": { "name": "테이츠 모스" },
+      "rhys_vale": { "name": "리스 베일" },
+      "dax_noir": { "name": "댁스 누아르" }
+    },
+    "call_logs": {
+      "luka_voss": { "name": "루카 보스" },
+      "cade_wilder": { "name": "케이드 와일더" },
+      "jace_holt": { "name": "제이스 홀트" },
+      "knox_reed": { "name": "녹스 리드" },
+      "ryder_kane": { "name": "라이더 케인" },
+      "rhys_vale": { "name": "리스 베일" }
+    },
+    "chats": {
+      "luka_voss": {
+        "name": "루카 보스",
+        "lastMessage": "너 집에 내 후디 두고 왔어",
+        "message1": "아직 깨어있어?",
+        "message2": "응... 잠이 안 와",
+        "message3": "너 집에 내 후디 두고 왔어"
+      },
+      "cade_wilder": {
+        "name": "케이드 와일더",
+        "lastMessage": "그녀는 알림을 못 봤어",
+        "message1": "너무 아슬아슬했어",
+        "message2": "근데 괜찮아",
+        "message3": "그녀는 알림을 못 봤어"
+      },
+      "jace_holt": {
+        "name": "제이스 홀트",
+        "lastMessage": "클립 다시 보내",
+        "message1": "삭제했어?",
+        "message2": "해야 했어. 너무 위험해",
+        "message3": "클립 다시 보내"
+      },
+      "knox_reed": {
+        "name": "녹스 리드",
+        "lastMessage": "지금 너 방에 있어",
+        "message1": "집에 있어?",
+        "message2": "그녀가 자고 있어. 문 열려있어",
+        "message3": "지금 너 방에 있어"
+      },
+      "ryder_kane": {
+        "name": "라이더 케인",
+        "lastMessage": "너한테 중독됐어",
+        "message1": "너 생각만 해",
+        "message2": "나도. 매초마다",
+        "message3": "너한테 중독됐어"
+      },
+      "zeke_ford": {
+        "name": "지크 포드",
+        "lastMessage": "그녀한테 게임 중이라고 했어",
+        "message1": "어디야?",
+        "message2": "게임. 장시간 세션",
+        "message3": "거짓말쟁이",
+        "message4": "그녀한테 게임 중이라고 했어"
+      },
+      "milo_grey": {
+        "name": "마일로 그레이",
+        "lastMessage": "이건 위험해지고 있어",
+        "message1": "지난번이 마지막이라고 했잖아",
+        "message2": "알아",
+        "message3": "그럼 내가 왜 여기 있어?",
+        "message4": "이건 위험해지고 있어"
+      },
+      "asher_dean": {
+        "name": "애셔 딘",
+        "lastMessage": "매일 밤 너 꿈을 꿔",
+        "message1": "자고 있어?",
+        "message2": "아니. 너는?",
+        "message3": "너 생각하고 있어",
+        "message4": "매일 밤 너 꿈을 꿔"
+      },
+      "beck_hale": {
+        "name": "벡 헤일",
+        "lastMessage": "읽고 나서 지워",
+        "message1": "어젯밤이 계속 떠올라",
+        "message2": "네가 한 그거...",
+        "message3": "쉿. 쓰지 마",
+        "message4": "읽고 나서 지워"
+      },
+      "tate_moss": {
+        "name": "테이츠 모스",
+        "lastMessage": "너한테 반했어",
+        "message1": "이거 심각해지고 있어",
+        "message2": "알아",
+        "message3": "하지만 멈추고 싶지 않아",
+        "message4": "너한테 반했어"
+      },
+      "rhys_vale": {
+        "name": "리스 베일",
+        "lastMessage": "네 향기가 내 베개에 배었어",
+        "message1": "아직도 네 향기가 나",
+        "message2": "좋아",
+        "message3": "네 향기가 내 베개에 배었어"
+      },
+      "dax_noir": {
+        "name": "댁스 누아르",
+        "lastMessage": "너 때문에 거짓말했어",
+        "message1": "그녀가 내가 어디 있었냐고 물었어",
+        "message2": "뭐라고 했어?",
+        "message3": "너랑 같이 있었다고",
+        "message4": "너 때문에 거짓말했어"
+      }
+    }
   }
 }

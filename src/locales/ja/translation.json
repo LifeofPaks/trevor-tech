@@ -468,119 +468,266 @@
     }
   },
 
-    "dmimo": {
-      "header": { "title": "Imo" },
-      "tabs": {
-        "chat": "聊天",
-        "contacts": "联系人",
-        "calls": "通话",
-        "aria_label": "Imo导航标签",
-        "chat_aria": "显示聊天",
-        "contacts_aria": "显示联系人",
-        "calls_aria": "显示通话记录"
-      },
-      "back_button_aria": "返回列表",
-      "chat": {
-        "list_aria": "聊天列表",
-        "item_aria": "与{{name}}的聊天",
-        "detail_aria": "{{name}}的聊天详情"
-      },
-      "contacts": {
-        "phone_label": "电话",
-        "email_label": "电子邮件",
-        "list_aria": "联系人列表",
-        "item_aria": "联系人 {{name}}",
-        "detail_aria": "{{name}}的联系人详情"
-      },
-      "call_log": {
-        "list_aria": "通话记录列表",
-        "item_aria": "{{name}}的通话记录",
-        "detail_aria": "{{name}}的通话详情",
-        "types": {
-          "outgoing": "拨出",
-          "incoming": "拨入",
-          "missed": "未接"
-        }
-      },
-      "chats": {
-        "aryan_patel": {
-          "lastMessage": "我把钥匙忘在你车里了",
-          "message1": "你还醒着吗？",
-          "message2": "嗯...睡不着",
-          "message3": "我把钥匙忘在你车里了"
-        },
-        "rohan_mehta": {
-          "lastMessage": "她没注意到",
-          "message1": "那太险了",
-          "message2": "但我们安全了",
-          "message3": "她没注意到"
-        },
-        "vikram_singh": {
-          "lastMessage": "再发一遍视频",
-          "message1": "你删了它？",
-          "message2": "必须删。太冒险了",
-          "message3": "再发一遍视频"
-        },
-        "arjun_desai": {
-          "lastMessage": "我在你公寓里",
-          "message1": "你在家吗？",
-          "message2": "她出去了。门没锁",
-          "message3": "我在你公寓里"
-        },
-        "neil_sharma": {
-          "lastMessage": "我对你上瘾了",
-          "message1": "我停不下来想你",
-          "message2": "我也一样。每秒都在想",
-          "message3": "我对你上瘾了"
-        },
-        "karan_reddy": {
-          "lastMessage": "我跟她说我在工作",
-          "message1": "你在哪儿？",
-          "message2": "工作。晚班",
-          "message3": "骗子",
-          "message4": "我跟她说我在工作"
-        },
-        "dev_kapoor": {
-          "lastMessage": "这事失控了",
-          "message1": "我们说了上次是最后一次",
-          "message2": "我知道",
-          "message3": "那我为什么还在这儿？",
-          "message4": "这事失控了"
-        },
-        "siddharth_rao": {
-          "lastMessage": "我每晚都梦见你",
-          "message1": "睡了吗？",
-          "message2": "没。你呢？",
-          "message3": "在想你",
-          "message4": "我每晚都梦见你"
-        },
-        "yash_malhotra": {
-          "lastMessage": "读完删除",
-          "message1": "我一直在回想昨晚",
-          "message2": "你做的那个...",
-          "message3": "嘘。别写出来",
-          "message4": "读完删除"
-        },
-        "rishi_gupta": {
-          "lastMessage": "我爱上你了",
-          "message1": "这越来越危险了",
-          "message2": "我知道",
-          "message3": "但我不想停下来",
-          "message4": "我爱上你了"
-        },
-        "aadi_nair": {
-          "lastMessage": "你的气味在我衬衫上",
-          "message1": "我还能闻到你的气味",
-          "message2": "很好",
-          "message3": "你的气味在我衬衫上"
-        },
-        "vivan_joshi": {
-          "lastMessage": "我为你撒谎了",
-          "message1": "她问我在哪儿",
-          "message2": "你怎么说的？",
-          "message3": "和你在一起",
-          "message4": "我为你撒谎了"
-        }
+  "dmimo": {
+    "header": { "title": "Imo" },
+    "tabs": {
+      "chat": "聊天",
+      "contacts": "联系人",
+      "calls": "通话",
+      "aria_label": "Imo导航标签",
+      "chat_aria": "显示聊天",
+      "contacts_aria": "显示联系人",
+      "calls_aria": "显示通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "聊天列表",
+      "item_aria": "与{{name}}的聊天",
+      "detail_aria": "{{name}}的聊天详情"
+    },
+    "contacts": {
+      "phone_label": "电话",
+      "email_label": "电子邮件",
+      "list_aria": "联系人列表",
+      "item_aria": "联系人 {{name}}",
+      "detail_aria": "{{name}}的联系人详情"
+    },
+    "call_log": {
+      "list_aria": "通话记录列表",
+      "item_aria": "{{name}}的通话记录",
+      "detail_aria": "{{name}}的通话详情",
+      "types": {
+        "outgoing": "拨出",
+        "incoming": "拨入",
+        "missed": "未接"
       }
+    },
+    "chats": {
+      "aryan_patel": {
+        "lastMessage": "我把钥匙忘在你车里了",
+        "message1": "你还醒着吗？",
+        "message2": "嗯...睡不着",
+        "message3": "我把钥匙忘在你车里了"
+      },
+      "rohan_mehta": {
+        "lastMessage": "她没注意到",
+        "message1": "那太险了",
+        "message2": "但我们安全了",
+        "message3": "她没注意到"
+      },
+      "vikram_singh": {
+        "lastMessage": "再发一遍视频",
+        "message1": "你删了它？",
+        "message2": "必须删。太冒险了",
+        "message3": "再发一遍视频"
+      },
+      "arjun_desai": {
+        "lastMessage": "我在你公寓里",
+        "message1": "你在家吗？",
+        "message2": "她出去了。门没锁",
+        "message3": "我在你公寓里"
+      },
+      "neil_sharma": {
+        "lastMessage": "我对你上瘾了",
+        "message1": "我停不下来想你",
+        "message2": "我也一样。每秒都在想",
+        "message3": "我对你上瘾了"
+      },
+      "karan_reddy": {
+        "lastMessage": "我跟她说我在工作",
+        "message1": "你在哪儿？",
+        "message2": "工作。晚班",
+        "message3": "骗子",
+        "message4": "我跟她说我在工作"
+      },
+      "dev_kapoor": {
+        "lastMessage": "这事失控了",
+        "message1": "我们说了上次是最后一次",
+        "message2": "我知道",
+        "message3": "那我为什么还在这儿？",
+        "message4": "这事失控了"
+      },
+      "siddharth_rao": {
+        "lastMessage": "我每晚都梦见你",
+        "message1": "睡了吗？",
+        "message2": "没。你呢？",
+        "message3": "在想你",
+        "message4": "我每晚都梦见你"
+      },
+      "yash_malhotra": {
+        "lastMessage": "读完删除",
+        "message1": "我一直在回想昨晚",
+        "message2": "你做的那个...",
+        "message3": "嘘。别写出来",
+        "message4": "读完删除"
+      },
+      "rishi_gupta": {
+        "lastMessage": "我爱上你了",
+        "message1": "这越来越危险了",
+        "message2": "我知道",
+        "message3": "但我不想停下来",
+        "message4": "我爱上你了"
+      },
+      "aadi_nair": {
+        "lastMessage": "你的气味在我衬衫上",
+        "message1": "我还能闻到你的气味",
+        "message2": "很好",
+        "message3": "你的气味在我衬衫上"
+      },
+      "vivan_joshi": {
+        "lastMessage": "我为你撒谎了",
+        "message1": "她问我在哪儿",
+        "message2": "你怎么说的？",
+        "message3": "和你在一起",
+        "message4": "我为你撒谎了"
+      }
+    }
+  },
+  "dmdiscord": {
+    "header": { "title": "Discord" },
+    "tabs": {
+      "dms": "DM",
+      "friends": "フレンド",
+      "calls": "通話",
+      "aria_label": "Discordナビゲーションタブ",
+      "dms_aria": "DMを表示",
+      "friends_aria": "フレンドを表示",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "DMリスト",
+      "item_aria": "{{name}}とのDM",
+      "detail_aria": "{{name}}のDM詳細"
+    },
+    "friends": {
+      "list_aria": "フレンドリスト",
+      "item_aria": "フレンド {{name}}",
+      "detail_aria": "{{name}}のフレンド詳細"
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "types": {
+        "outgoing": "発信",
+        "incoming": "着信",
+        "missed": "不在着信"
+      }
+    },
+    "friends_list": {
+      "luka_voss": { "name": "ルカ・ヴォス" },
+      "cade_wilder": { "name": "ケイド・ワイルダー" },
+      "jace_holt": { "name": "ジェイス・ホルト" },
+      "knox_reed": { "name": "ノックス・リード" },
+      "ryder_kane": { "name": "ライダー・ケイン" },
+      "zeke_ford": { "name": "ジーク・フォード" },
+      "milo_grey": { "name": "マイロ・グレイ" },
+      "asher_dean": { "name": "アッシャー・ディーン" },
+      "beck_hale": { "name": "ベック・ヘイル" },
+      "tate_moss": { "name": "テイト・モス" },
+      "rhys_vale": { "name": "リース・ヴェイル" },
+      "dax_noir": { "name": "ダックス・ノワール" }
+    },
+    "call_logs": {
+      "luka_voss": { "name": "ルカ・ヴォス" },
+      "cade_wilder": { "name": "ケイド・ワイルダー" },
+      "jace_holt": { "name": "ジェイス・ホルト" },
+      "knox_reed": { "name": "ノックス・リード" },
+      "ryder_kane": { "name": "ライダー・ケイン" },
+      "rhys_vale": { "name": "リース・ヴェイル" }
+    },
+    "chats": {
+      "luka_voss": {
+        "name": "ルカ・ヴォス",
+        "lastMessage": "君の家にパーカーを忘れた",
+        "message1": "まだ起きてる？",
+        "message2": "うん…眠れない",
+        "message3": "君の家にパーカーを忘れた"
+      },
+      "cade_wilder": {
+        "name": "ケイド・ワイルダー",
+        "lastMessage": "彼女は通知を見ていない",
+        "message1": "あれは危なかった",
+        "message2": "でも大丈夫",
+        "message3": "彼女は通知を見ていない"
+      },
+      "jace_holt": {
+        "name": "ジェイス・ホルト",
+        "lastMessage": "クリップをもう一度送って",
+        "message1": "削除した？",
+        "message2": "しなきゃ。リスクが高すぎる",
+        "message3": "クリップをもう一度送って"
+      },
+      "knox_reed": {
+        "name": "ノックス・リード",
+        "lastMessage": "今君の部屋にいる",
+        "message1": "家にいる？",
+        "message2": "彼女は寝てる。ドアは開いてる",
+        "message3": "今君の部屋にいる"
+      },
+      "ryder_kane": {
+        "name": "ライダー・ケイン",
+        "lastMessage": "君に夢中だ",
+        "message1": "君のことを考え続けてる",
+        "message2": "同じく。一秒ごとに",
+        "message3": "君に夢中だ"
+      },
+      "zeke_ford": {
+        "name": "ジーク・フォード",
+        "lastMessage": "彼女にゲーム中だと伝えた",
+        "message1": "どこにいる？",
+        "message2": "ゲーム。長時間セッション",
+        "message3": "嘘つき",
+        "message4": "彼女にゲーム中だと伝えた"
+      },
+      "milo_grey": {
+        "name": "マイロ・グレイ",
+        "lastMessage": "これは危険になってきた",
+        "message1": "前回が最後だって言ったよね",
+        "message2": "分かってる",
+        "message3": "じゃあなんでここにいる？",
+        "message4": "これは危険になってきた"
+      },
+      "asher_dean": {
+        "name": "アッシャー・ディーン",
+        "lastMessage": "毎晩君の夢を見る",
+        "message1": "寝てる？",
+        "message2": "いや。君は？",
+        "message3": "君のことを考えてる",
+        "message4": "毎晩君の夢を見る"
+      },
+      "beck_hale": {
+        "name": "ベック・ヘイル",
+        "lastMessage": "読んだら消して",
+        "message1": "昨夜が頭から離れない",
+        "message2": "君がしたこと…",
+        "message3": "シッ。書かないで",
+        "message4": "読んだら消して"
+      },
+      "tate_moss": {
+        "name": "テイト・モス",
+        "lastMessage": "君に恋してる",
+        "message1": "これ本気になってきた",
+        "message2": "分かってる",
+        "message3": "でもやめたくない",
+        "message4": "君に恋してる"
+      },
+      "rhys_vale": {
+        "name": "リース・ヴェイル",
+        "lastMessage": "君の香りが枕に残ってる",
+        "message1": "まだ君の香りがする",
+        "message2": "いいね",
+        "message3": "君の香りが枕に残ってる"
+      },
+      "dax_noir": {
+        "name": "ダックス・ノワール",
+        "lastMessage": "君のために嘘をついた",
+        "message1": "彼女にどこにいたか聞かれた",
+        "message2": "なんて言った？",
+        "message3": "君と一緒",
+        "message4": "君のために嘘をついた"
+      }
+    }
   }
 }
