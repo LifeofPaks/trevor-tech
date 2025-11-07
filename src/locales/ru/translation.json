@@ -2367,5 +2367,132 @@
         }
       }
     }
+  },
+  "dmzoom": {
+    "header": { "title": "Zoom" },
+    "tabs": {
+      "chat": "Чат",
+      "participants": "Участники",
+      "call_log": "История вызовов",
+      "aria_label": "Вкладки навигации Zoom",
+      "chat_aria": "Просмотр списка чатов",
+      "participants_aria": "Просмотр списка участников",
+      "call_log_aria": "Просмотр истории вызовов"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список чатов Zoom",
+      "item_aria": "Выберите чат с {name}",
+      "detail_aria": "Детали чата для {name}"
+    },
+    "participants": {
+      "list_aria": "Список участников Zoom",
+      "item_aria": "Выберите участника {name}",
+      "detail_aria": "Детали участника для {name}",
+      "email": "Email",
+      "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+      "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+      "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+      "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+      "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+      "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+    },
+    "call_log": {
+      "list_aria": "История вызовов Zoom",
+      "item_aria": "Выберите вызов с {name}",
+      "detail_aria": "Детали вызова для {name}",
+      "ava_chen": { "name": "Ava Chen", "type": "исходящий" },
+      "liam_park": { "name": "Liam Park", "type": "входящий" },
+      "zoe_kim": { "name": "Zoe Kim", "type": "пропущенный" },
+      "ethan_brooks": { "name": "Ethan Brooks", "type": "исходящий" },
+      "maya_wu": { "name": "Maya Wu", "type": "входящий" }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "Я не могу перестать думать о тебе",
+        "messages": {
+          "msg1": { "text": "Ты еще не спишь?" },
+          "msg2": { "text": "Да, не могу уснуть" },
+          "msg3": { "text": "То же самое. Хотел бы, чтобы ты был здесь" },
+          "msg4": { "text": "Я не могу перестать думать о тебе" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "Удалить после чтения",
+        "messages": {
+          "msg1": { "text": "Тот отель был идеален" },
+          "msg2": { "text": "Мы должны повторить" },
+          "msg3": { "text": "Скоро. Обещаю" },
+          "msg4": { "text": "Удалить после чтения" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "Он вне города",
+        "messages": {
+          "msg1": { "text": "Ты свободна вечером?" },
+          "msg2": { "text": "Он вне города" },
+          "msg3": { "text": "Встреть меня в 10" },
+          "msg4": { "text": "Я в пути" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "Отправь это",
+        "messages": {
+          "msg1": { "text": "Ты выглядишь потрясающе" },
+          "msg2": { "text": "Хватай дразнить меня" },
+          "msg3": { "text": "Отправь это" },
+          "msg4": { "text": "Отправлено. Удали через 5" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "Я люблю тебя больше",
+        "messages": {
+          "msg1": { "text": "Я не должен это говорить" },
+          "msg2": { "text": "Но?" },
+          "msg3": { "text": "Я люблю тебя" },
+          "msg4": { "text": "Я люблю тебя больше" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "Номер 808",
+        "messages": {
+          "msg1": { "text": "То же место?" },
+          "msg2": { "text": "Да, номер 808" },
+          "msg3": { "text": "Я буду там в 8" },
+          "msg4": { "text": "Дверь открыта" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "Никто не узнает",
+        "messages": {
+          "msg1": { "text": "Мы должны быть осторожнее" },
+          "msg2": { "text": "Я знаю. Но я не могу остановиться" },
+          "msg3": { "text": "Я тоже. Еще раз" },
+          "msg4": { "text": "Никто не узнает" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "Ты мое спасение",
+        "messages": {
+          "msg1": { "text": "Я сказал ей, что работаю допоздна" },
+          "msg2": { "text": "Я сказал ему, что с друзьями" },
+          "msg3": { "text": "Это так неправильно" },
+          "msg4": { "text": "Но ты мое спасение" }
+        }
+      }
+    }
   }
 }

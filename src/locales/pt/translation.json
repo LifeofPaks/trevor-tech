@@ -2373,5 +2373,132 @@
         }
       }
     }
+  },
+  "dmzoom": {
+    "header": { "title": "Zoom" },
+    "tabs": {
+      "chat": "Chat",
+      "participants": "Participantes",
+      "call_log": "Registro de Chamadas",
+      "aria_label": "Abas de navegação do Zoom",
+      "chat_aria": "Ver lista de chats",
+      "participants_aria": "Ver lista de participantes",
+      "call_log_aria": "Ver registro de chamadas"
+    },
+    "back_button_aria": "Voltar para a lista",
+    "chat": {
+      "list_aria": "Lista de chat do Zoom",
+      "item_aria": "Selecionar chat com {name}",
+      "detail_aria": "Detalhes do chat para {name}"
+    },
+    "participants": {
+      "list_aria": "Lista de participantes do Zoom",
+      "item_aria": "Selecionar participante {name}",
+      "detail_aria": "Detalhes do participante para {name}",
+      "email": "E-mail",
+      "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+      "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+      "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+      "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+      "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+      "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+    },
+    "call_log": {
+      "list_aria": "Registro de chamadas do Zoom",
+      "item_aria": "Selecionar chamada com {name}",
+      "detail_aria": "Detalhes da chamada para {name}",
+      "ava_chen": { "name": "Ava Chen", "type": "saída" },
+      "liam_park": { "name": "Liam Park", "type": "entrada" },
+      "zoe_kim": { "name": "Zoe Kim", "type": "perdida" },
+      "ethan_brooks": { "name": "Ethan Brooks", "type": "saída" },
+      "maya_wu": { "name": "Maya Wu", "type": "entrada" }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "Não consigo parar de pensar em você",
+        "messages": {
+          "msg1": { "text": "Ainda está acordada?" },
+          "msg2": { "text": "Sim, não consigo dormir" },
+          "msg3": { "text": "Eu também. Gostaria que estivesse aqui" },
+          "msg4": { "text": "Não consigo parar de pensar em você" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "Deletar após a leitura",
+        "messages": {
+          "msg1": { "text": "Esse hotel foi perfeito" },
+          "msg2": { "text": "Temos que repetir" },
+          "msg3": { "text": "Em breve. Prometo" },
+          "msg4": { "text": "Deletar após a leitura" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "Ele está fora da cidade",
+        "messages": {
+          "msg1": { "text": "Você está livre hoje à noite?" },
+          "msg2": { "text": "Ele está fora da cidade" },
+          "msg3": { "text": "Me encontre às 10" },
+          "msg4": { "text": "Estou a caminho" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "Envie",
+        "messages": {
+          "msg1": { "text": "Você fica linda" },
+          "msg2": { "text": "Para de me provocar" },
+          "msg3": { "text": "Envie" },
+          "msg4": { "text": "Enviado. Delete em 5" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "Eu te amo mais",
+        "messages": {
+          "msg1": { "text": "Não deveria dizer isso" },
+          "msg2": { "text": "Mas?" },
+          "msg3": { "text": "Eu te amo" },
+          "msg4": { "text": "Eu te amo mais" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "Quarto 808",
+        "messages": {
+          "msg1": { "text": "O mesmo lugar?" },
+          "msg2": { "text": "Sim, quarto 808" },
+          "msg3": { "text": "Estarei lá às 8" },
+          "msg4": { "text": "A porta está aberta" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "Ninguém vai saber",
+        "messages": {
+          "msg1": { "text": "Precisamos ser mais cuidadosos" },
+          "msg2": { "text": "Eu sei. Mas não consigo parar" },
+          "msg3": { "text": "Eu também. Só mais uma vez" },
+          "msg4": { "text": "Ninguém vai saber" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "Você é meu refúgio",
+        "messages": {
+          "msg1": { "text": "Disse a ela que estava trabalhando até tarde" },
+          "msg2": { "text": "Disse a ele que estava com amigos" },
+          "msg3": { "text": "Isso é tão errado" },
+          "msg4": { "text": "Mas você é meu refúgio" }
+        }
+      }
+    }
   }
 }

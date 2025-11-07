@@ -2339,5 +2339,132 @@
         }
       }
     }
+  },
+  "dmzoom": {
+    "header": { "title": "Zoom" },
+    "tabs": {
+      "chat": "채팅",
+      "participants": "참가자",
+      "call_log": "통화 기록",
+      "aria_label": "Zoom 네비게이션 탭",
+      "chat_aria": "채팅 목록 보기",
+      "participants_aria": "참가자 목록 보기",
+      "call_log_aria": "통화 기록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "Zoom 채팅 목록",
+      "item_aria": "{name}와의 채팅 선택",
+      "detail_aria": "{name}의 채팅 세부 정보"
+    },
+    "participants": {
+      "list_aria": "Zoom 참가자 목록",
+      "item_aria": "참가자 {name} 선택",
+      "detail_aria": "{name}의 참가자 세부 정보",
+      "email": "이메일",
+      "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+      "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+      "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+      "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+      "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+      "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+    },
+    "call_log": {
+      "list_aria": "Zoom 통화 기록",
+      "item_aria": "{name}와의 통화 선택",
+      "detail_aria": "{name}의 통화 세부 정보",
+      "ava_chen": { "name": "Ava Chen", "type": "발신" },
+      "liam_park": { "name": "Liam Park", "type": "수신" },
+      "zoe_kim": { "name": "Zoe Kim", "type": "부재중" },
+      "ethan_brooks": { "name": "Ethan Brooks", "type": "발신" },
+      "maya_wu": { "name": "Maya Wu", "type": "수신" }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "너 생각을 멈출 수가 없어",
+        "messages": {
+          "msg1": { "text": "아직 깨어있어?" },
+          "msg2": { "text": "응, 잠을 못 자" },
+          "msg3": { "text": "나도. 너가 여기 있으면 좋겠어" },
+          "msg4": { "text": "너 생각을 멈출 수가 없어" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "읽고 삭제해",
+        "messages": {
+          "msg1": { "text": "그 호텔 최고였어" },
+          "msg2": { "text": "우리 또 가야 해" },
+          "msg3": { "text": "곧이면 해. 약속할게" },
+          "msg4": { "text": "읽고 삭제해" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "그가 도시 밖이야",
+        "messages": {
+          "msg1": { "text": "오늘 밤에 시간 있어?" },
+          "msg2": { "text": "그가 도시 밖이야" },
+          "msg3": { "text": "10시에 만나" },
+          "msg4": { "text": "가는 중이야" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "보내",
+        "messages": {
+          "msg1": { "text": "넌 정말 멋있어" },
+          "msg2": { "text": "놀리지 마" },
+          "msg3": { "text": "보내" },
+          "msg4": { "text": "보냈어. 5초 후 삭제할게" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "난 너를 더 사랑해",
+        "messages": {
+          "msg1": { "text": "이런 말 하면 안 돼" },
+          "msg2": { "text": "근데?" },
+          "msg3": { "text": "난 너를 사랑해" },
+          "msg4": { "text": "난 너를 더 사랑해" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "808호실",
+        "messages": {
+          "msg1": { "text": "지난번 그곳?" },
+          "msg2": { "text": "응, 808호실" },
+          "msg3": { "text": "8시에 거기 있을게" },
+          "msg4": { "text": "문은 열려있어" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "아무도 모를 거야",
+        "messages": {
+          "msg1": { "text": "우리 더 조심해야 해" },
+          "msg2": { "text": "알아. 그런데 멈출 수가 없어" },
+          "msg3": { "text": "나도. 딱 한 번만 더" },
+          "msg4": { "text": "아무도 모를 거야" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "넌 내 도피처야",
+        "messages": {
+          "msg1": { "text": "여자한테 늦게 일한다고 말했어" },
+          "msg2": { "text": "남자한테도 친구들이랑 있다고 말했어" },
+          "msg3": { "text": "이건 진짜 잘못된 거야" },
+          "msg4": { "text": "근데 넌 내 도피처야" }
+        }
+      }
+    }
   }
 }

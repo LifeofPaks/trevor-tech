@@ -2303,5 +2303,131 @@
           }
         }
       }
+    },"dmzoom": {
+      "header": { "title": "Zoom" },
+      "tabs": {
+        "chat": "Discussion",
+        "participants": "Participants",
+        "call_log": "Historique des appels",
+        "aria_label": "Onglets de navigation Zoom",
+        "chat_aria": "Afficher la liste de discussion",
+        "participants_aria": "Afficher la liste des participants",
+        "call_log_aria": "Afficher l'historique des appels"
+      },
+      "back_button_aria": "Retour à la liste",
+      "chat": {
+        "list_aria": "Liste de discussion Zoom",
+        "item_aria": "Sélectionner la discussion avec {name}",
+        "detail_aria": "Détails de la discussion pour {name}"
+      },
+      "participants": {
+        "list_aria": "Liste des participants Zoom",
+        "item_aria": "Sélectionner le participant {name}",
+        "detail_aria": "Détails du participant pour {name}",
+        "email": "E-mail",
+        "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+        "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+        "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+        "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+        "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+        "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+        "isabella_zhang": {
+          "name": "Isabella Zhang",
+          "email": "isabella@zoom.us"
+        },
+        "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+      },
+      "call_log": {
+        "list_aria": "Historique des appels Zoom",
+        "item_aria": "Sélectionner l'appel avec {name}",
+        "detail_aria": "Détails de l'appel pour {name}",
+        "ava_chen": { "name": "Ava Chen", "type": "sortant" },
+        "liam_park": { "name": "Liam Park", "type": "entrant" },
+        "zoe_kim": { "name": "Zoe Kim", "type": "manqué" },
+        "ethan_brooks": { "name": "Ethan Brooks", "type": "sortant" },
+        "maya_wu": { "name": "Maya Wu", "type": "entrant" }
+      },
+      "chats": {
+        "ava_chen": {
+          "name": "Ava Chen",
+          "lastMessage": "Je ne peux pas cesser de penser à toi",
+          "messages": {
+            "msg1": { "text": "Tu es encore éveillée?" },
+            "msg2": { "text": "Ouais, je n'arrive pas à dormir" },
+            "msg3": { "text": "Idem. J'aimerais que tu sois ici" },
+            "msg4": { "text": "Je ne peux pas cesser de penser à toi" }
+          }
+        },
+        "liam_park": {
+          "name": "Liam Park",
+          "lastMessage": "Supprimer après lecture",
+          "messages": {
+            "msg1": { "text": "Cet hôtel était parfait" },
+            "msg2": { "text": "On doit recommencer" },
+            "msg3": { "text": "Bientôt. Je te le promets" },
+            "msg4": { "text": "Supprimer après lecture" }
+          }
+        },
+        "zoe_kim": {
+          "name": "Zoe Kim",
+          "lastMessage": "Il est hors de la ville",
+          "messages": {
+            "msg1": { "text": "Tu es libre ce soir?" },
+            "msg2": { "text": "Il est hors de la ville" },
+            "msg3": { "text": "Rencontre-moi à 10h" },
+            "msg4": { "text": "J'arrive" }
+          }
+        },
+        "ethan_brooks": {
+          "name": "Ethan Brooks",
+          "lastMessage": "Envoie-le",
+          "messages": {
+            "msg1": { "text": "Tu es magnifique" },
+            "msg2": { "text": "Arrête de m'agacer" },
+            "msg3": { "text": "Envoie-le" },
+            "msg4": { "text": "Envoyé. Supprime en 5" }
+          }
+        },
+        "maya_wu": {
+          "name": "Maya Wu",
+          "lastMessage": "Je t'aime plus",
+          "messages": {
+            "msg1": { "text": "Je ne devrais pas dire ça" },
+            "msg2": { "text": "Mais?" },
+            "msg3": { "text": "Je t'aime" },
+            "msg4": { "text": "Je t'aime plus" }
+          }
+        },
+        "noah_lee": {
+          "name": "Noah Lee",
+          "lastMessage": "Chambre 808",
+          "messages": {
+            "msg1": { "text": "Le même endroit?" },
+            "msg2": { "text": "Chambre 808" },
+            "msg3": { "text": "J'y serai" },
+            "msg4": { "text": "La porte est ouverte" }
+          }
+        },
+        "isabella_zhang": {
+          "name": "Isabella Zhang",
+          "lastMessage": "Personne ne le sait",
+          "messages": {
+            "msg1": { "text": "On doit être prudents" },
+            "msg2": { "text": "Je sais. Mais je ne peux pas m'arrêter" },
+            "msg3": { "text": "Moi non plus. Juste une fois de plus" },
+            "msg4": { "text": "Personne ne le sait" }
+          }
+        },
+        "dylan_kim": {
+          "name": "Dylan Kim",
+          "lastMessage": "Tu es ma fuite",
+          "messages": {
+            "msg1": { "text": "Je lui ai dit que je travaillais tard" },
+            "msg2": { "text": "Je lui ai dit que j'étais avec des amis" },
+            "msg3": { "text": "C'est tellement mal" },
+            "msg4": { "text": "Mais tu es ma fuite" }
+          }
+        }
+      }
     }
 }

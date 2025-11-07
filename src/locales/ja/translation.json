@@ -2113,188 +2113,316 @@
         }
       }
     }
-  },  "dmlink": {
-      "header": {
-        "title": "LinkedIn"
+  },
+  "dmlink": {
+    "header": {
+      "title": "LinkedIn"
+    },
+    "tabs": {
+      "chat": "メッセージ",
+      "connections": "コネクション",
+      "aria_label": "LinkedInナビゲーションタブ",
+      "chat_aria": "メッセージリストを表示",
+      "connections_aria": "コネクションリストを表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "LinkedInメッセージリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "connections": {
+      "list_aria": "LinkedInコネクションリスト",
+      "item_aria": "コネクション{name}を選択",
+      "detail_aria": "{name}のコネクション詳細",
+      "email": "メール",
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Metaソフトウェアエンジニア",
+        "email": "noah@meta.com"
       },
-      "tabs": {
-        "chat": "メッセージ",
-        "connections": "コネクション",
-        "aria_label": "LinkedInナビゲーションタブ",
-        "chat_aria": "メッセージリストを表示",
-        "connections_aria": "コネクションリストを表示"
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnbプロダクトデザイナー",
+        "email": "isabella@airbnb.com"
       },
-      "back_button_aria": "リストに戻る",
-      "chat": {
-        "list_aria": "LinkedInメッセージリスト",
-        "item_aria": "{name}とのチャットを選択",
-        "detail_aria": "{name}のチャット詳細"
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI機械学習エンジニア",
+        "email": "ethan@openai.com"
       },
-      "connections": {
-        "list_aria": "LinkedInコネクションリスト",
-        "item_aria": "コネクション{name}を選択",
-        "detail_aria": "{name}のコネクション詳細",
-        "email": "メール",
-        "noah_kim": {
-          "name": "Noah Kim",
-          "title": "Metaソフトウェアエンジニア",
-          "email": "noah@meta.com"
-        },
-        "isabella_wu": {
-          "name": "Isabella Wu",
-          "title": "Airbnbプロダクトデザイナー",
-          "email": "isabella@airbnb.com"
-        },
-        "ethan_zhang": {
-          "name": "Ethan Zhang",
-          "title": "OpenAI機械学習エンジニア",
-          "email": "ethan@openai.com"
-        },
-        "zoe_park": {
-          "name": "Zoe Park",
-          "title": "TikTokコンテンツストラテジスト",
-          "email": "zoe@tiktok.com"
-        },
-        "carter_lee": {
-          "name": "Carter Lee",
-          "title": "AWS DevOps",
-          "email": "carter@amazon.com"
-        },
-        "grace_liu": {
-          "name": "Grace Liu",
-          "title": "Adobeブランドデザイナー",
-          "email": "grace@adobe.com"
-        },
-        "dylan_chen": {
-          "name": "Dylan Chen",
-          "title": "Shopifyフルスタック開発者",
-          "email": "dylan@shopify.com"
-        },
-        "ava_singh": {
-          "name": "Ava Singh",
-          "title": "Spotify UXリサーチャー",
-          "email": "ava@spotify.com"
+      "zoe_park": {
+        "name": "Zoe Park",
+        "title": "TikTokコンテンツストラテジスト",
+        "email": "zoe@tiktok.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "title": "AWS DevOps",
+        "email": "carter@amazon.com"
+      },
+      "grace_liu": {
+        "name": "Grace Liu",
+        "title": "Adobeブランドデザイナー",
+        "email": "grace@adobe.com"
+      },
+      "dylan_chen": {
+        "name": "Dylan Chen",
+        "title": "Shopifyフルスタック開発者",
+        "email": "dylan@shopify.com"
+      },
+      "ava_singh": {
+        "name": "Ava Singh",
+        "title": "Spotify UXリサーチャー",
+        "email": "ava@spotify.com"
+      }
+    },
+    "chats": {
+      "emma_chen": {
+        "name": "Emma Chen",
+        "title": "Figma UXデザイナー",
+        "lastMessage": "もう君が恋しいよ...",
+        "messages": {
+          "msg1": { "text": "昨夜は最高だった", "incoming": true },
+          "msg2": {
+            "text": "それについて考えるのをやめられない",
+            "incoming": false
+          },
+          "msg3": {
+            "text": "同じく...もっと長くいてほしかった",
+            "incoming": true
+          },
+          "msg4": { "text": "もう君が恋しいよ...", "incoming": false }
         }
       },
-      "chats": {
-        "emma_chen": {
-          "name": "Emma Chen",
-          "title": "Figma UXデザイナー",
-          "lastMessage": "もう君が恋しいよ...",
-          "messages": {
-            "msg1": { "text": "昨夜は最高だった", "incoming": true },
-            "msg2": {
-              "text": "それについて考えるのをやめられない",
-              "incoming": false
-            },
-            "msg3": {
-              "text": "同じく...もっと長くいてほしかった",
-              "incoming": true
-            },
-            "msg4": { "text": "もう君が恋しいよ...", "incoming": false }
-          }
-        },
-        "alex_rivera": {
-          "name": "Alex Rivera",
-          "title": "Stripeフロントエンドエンジニア",
-          "lastMessage": "このチャットを削除して",
-          "messages": {
-            "msg1": {
-              "text": "そのドレスを着た君は最高だった",
-              "incoming": true
-            },
-            "msg2": {
-              "text": "やめて、誰かに見られるかもしれない",
-              "incoming": false
-            },
-            "msg3": { "text": "気にしない、君が欲しい", "incoming": true },
-            "msg4": { "text": "このチャットを削除して", "incoming": false }
-          }
-        },
-        "sofia_patel": {
-          "name": "Sofia Patel",
-          "title": "Notionプロダクトマネージャー",
-          "lastMessage": "彼は寝てるよ",
-          "messages": {
-            "msg1": { "text": "話せる？", "incoming": true },
-            "msg2": { "text": "うん、彼は寝てるよ", "incoming": false },
-            "msg3": { "text": "代わりに君と一緒にいたい", "incoming": true },
-            "msg4": { "text": "同じく。これはつらい", "incoming": false }
-          }
-        },
-        "liam_brooks": {
-          "name": "Liam Brooks",
-          "title": "Googleデータアナリスト",
-          "lastMessage": "写真送って",
-          "messages": {
-            "msg1": { "text": "何を着てる？", "incoming": true },
-            "msg2": {
-              "text": "君が見たことないものはないよ",
-              "incoming": false
-            },
-            "msg3": { "text": "写真送って", "incoming": true },
-            "msg4": { "text": "10秒後に削除するよ...", "incoming": false }
-          }
-        },
-        "maya_kim": {
-          "name": "Maya Kim",
-          "title": "Canvaグロースマーケティング",
-          "lastMessage": "愛してる",
-          "messages": {
-            "msg1": { "text": "もうこれ以上続けられない", "incoming": true },
-            "msg2": { "text": "何を？", "incoming": false },
-            "msg3": {
-              "text": "君を愛してないふりをするのを",
-              "incoming": true
-            },
-            "msg4": { "text": "愛してる", "incoming": false }
-          }
-        },
-        "noah_kim": {
-          "name": "Noah Kim",
-          "title": "Metaソフトウェアエンジニア",
-          "lastMessage": "ホテル予約した",
-          "messages": {
-            "msg1": { "text": "前と同じホテル？", "incoming": true },
-            "msg2": { "text": "うん、512号室", "incoming": false },
-            "msg3": { "text": "8時にそこにいるよ", "incoming": true },
-            "msg4": { "text": "ホテル予約した", "incoming": false }
-          }
-        },
-        "isabella_wu": {
-          "name": "Isabella Wu",
-          "title": "Airbnbプロダクトデザイナー",
-          "lastMessage": "誰も知らないよ",
-          "messages": {
-            "msg1": { "text": "もっと慎重にならないと", "incoming": true },
-            "msg2": {
-              "text": "分かってる、でもやめられない",
-              "incoming": false
-            },
-            "msg3": { "text": "同じく。もう一度だけ", "incoming": true },
-            "msg4": { "text": "誰も知らないよ", "incoming": false }
-          }
-        },
-        "ethan_zhang": {
-          "name": "Ethan Zhang",
-          "title": "OpenAI機械学習エンジニア",
-          "lastMessage": "君は僕の秘密",
-          "messages": {
-            "msg1": {
-              "text": "ガールフレンドに遅くまで仕事って言った",
-              "incoming": true
-            },
-            "msg2": {
-              "text": "ボーイフレンドにも同じこと言った",
-              "incoming": false
-            },
-            "msg3": { "text": "これは本当に間違ってる", "incoming": true },
-            "msg4": {
-              "text": "でもめっちゃ正しい感じ。君は僕の秘密",
-              "incoming": false
-            }
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "title": "Stripeフロントエンドエンジニア",
+        "lastMessage": "このチャットを削除して",
+        "messages": {
+          "msg1": {
+            "text": "そのドレスを着た君は最高だった",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "やめて、誰かに見られるかもしれない",
+            "incoming": false
+          },
+          "msg3": { "text": "気にしない、君が欲しい", "incoming": true },
+          "msg4": { "text": "このチャットを削除して", "incoming": false }
+        }
+      },
+      "sofia_patel": {
+        "name": "Sofia Patel",
+        "title": "Notionプロダクトマネージャー",
+        "lastMessage": "彼は寝てるよ",
+        "messages": {
+          "msg1": { "text": "話せる？", "incoming": true },
+          "msg2": { "text": "うん、彼は寝てるよ", "incoming": false },
+          "msg3": { "text": "代わりに君と一緒にいたい", "incoming": true },
+          "msg4": { "text": "同じく。これはつらい", "incoming": false }
+        }
+      },
+      "liam_brooks": {
+        "name": "Liam Brooks",
+        "title": "Googleデータアナリスト",
+        "lastMessage": "写真送って",
+        "messages": {
+          "msg1": { "text": "何を着てる？", "incoming": true },
+          "msg2": {
+            "text": "君が見たことないものはないよ",
+            "incoming": false
+          },
+          "msg3": { "text": "写真送って", "incoming": true },
+          "msg4": { "text": "10秒後に削除するよ...", "incoming": false }
+        }
+      },
+      "maya_kim": {
+        "name": "Maya Kim",
+        "title": "Canvaグロースマーケティング",
+        "lastMessage": "愛してる",
+        "messages": {
+          "msg1": { "text": "もうこれ以上続けられない", "incoming": true },
+          "msg2": { "text": "何を？", "incoming": false },
+          "msg3": {
+            "text": "君を愛してないふりをするのを",
+            "incoming": true
+          },
+          "msg4": { "text": "愛してる", "incoming": false }
+        }
+      },
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Metaソフトウェアエンジニア",
+        "lastMessage": "ホテル予約した",
+        "messages": {
+          "msg1": { "text": "前と同じホテル？", "incoming": true },
+          "msg2": { "text": "うん、512号室", "incoming": false },
+          "msg3": { "text": "8時にそこにいるよ", "incoming": true },
+          "msg4": { "text": "ホテル予約した", "incoming": false }
+        }
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnbプロダクトデザイナー",
+        "lastMessage": "誰も知らないよ",
+        "messages": {
+          "msg1": { "text": "もっと慎重にならないと", "incoming": true },
+          "msg2": {
+            "text": "分かってる、でもやめられない",
+            "incoming": false
+          },
+          "msg3": { "text": "同じく。もう一度だけ", "incoming": true },
+          "msg4": { "text": "誰も知らないよ", "incoming": false }
+        }
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI機械学習エンジニア",
+        "lastMessage": "君は僕の秘密",
+        "messages": {
+          "msg1": {
+            "text": "ガールフレンドに遅くまで仕事って言った",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "ボーイフレンドにも同じこと言った",
+            "incoming": false
+          },
+          "msg3": { "text": "これは本当に間違ってる", "incoming": true },
+          "msg4": {
+            "text": "でもめっちゃ正しい感じ。君は僕の秘密",
+            "incoming": false
           }
         }
       }
     }
+  },
+  "dmzoom": {
+    "header": { "title": "Zoom" },
+    "tabs": {
+      "chat": "チャット",
+      "participants": "参加者",
+      "call_log": "通話履歴",
+      "aria_label": "Zoomナビゲーションタブ",
+      "chat_aria": "チャットリストを表示",
+      "participants_aria": "参加者リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Zoomチャットリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "participants": {
+      "list_aria": "Zoom参加者リスト",
+      "item_aria": "参加者{name}を選択",
+      "detail_aria": "{name}の参加者詳細",
+      "email": "メール",
+      "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+      "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+      "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+      "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+      "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+      "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+    },
+    "call_log": {
+      "list_aria": "Zoom通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "ava_chen": { "name": "Ava Chen", "type": "発信" },
+      "liam_park": { "name": "Liam Park", "type": "着信" },
+      "zoe_kim": { "name": "Zoe Kim", "type": "不在着信" },
+      "ethan_brooks": { "name": "Ethan Brooks", "type": "発信" },
+      "maya_wu": { "name": "Maya Wu", "type": "着信" }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "君のことばかり考えてる",
+        "messages": {
+          "msg1": { "text": "まだ起きてる?" },
+          "msg2": { "text": "うん、眠れない" },
+          "msg3": { "text": "同じく。君がいたらいいのに" },
+          "msg4": { "text": "君のことばかり考えてる" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "読んだら削除して",
+        "messages": {
+          "msg1": { "text": "そのホテル最高だった" },
+          "msg2": { "text": "また行かなきゃ" },
+          "msg3": { "text": "近いうちに。約束する" },
+          "msg4": { "text": "読んだら削除して" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "彼は町を離れてる",
+        "messages": {
+          "msg1": { "text": "今夜空いてる?" },
+          "msg2": { "text": "彼は町を離れてる" },
+          "msg3": { "text": "10時に会おう" },
+          "msg4": { "text": "今向かってる" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "送って",
+        "messages": {
+          "msg1": { "text": "君最高に見える" },
+          "msg2": { "text": "やめてよ、誰か見るかもしれない" },
+          "msg3": { "text": "送って" },
+          "msg4": { "text": "送った。5秒後に削除するね" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "君をもっと愛してる",
+        "messages": {
+          "msg1": { "text": "これ言うべきじゃないけど" },
+          "msg2": { "text": "でも?" },
+          "msg3": { "text": "君を愛してる" },
+          "msg4": { "text": "君をもっと愛してる" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "808号室",
+        "messages": {
+          "msg1": { "text": "前と同じ場所?" },
+          "msg2": { "text": "うん、808号室" },
+          "msg3": { "text": "8時にそこにいるよ" },
+          "msg4": { "text": "ドア開いてるよ" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "誰も知らないよ",
+        "messages": {
+          "msg1": { "text": "もっと用心しなきゃ" },
+          "msg2": { "text": "分かってる。でもやめられない" },
+          "msg3": { "text": "同じく。もう一度だけ" },
+          "msg4": { "text": "誰も知らないよ" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "君は僕の逃げ場",
+        "messages": {
+          "msg1": { "text": "彼女に遅くまで仕事って言ったんだ" },
+          "msg2": { "text": "彼氏にも同じこと言ったんだ" },
+          "msg3": { "text": "これ本当に間違ってる" },
+          "msg4": { "text": "でも最高に正しい気がする。君は僕の逃げ場" }
+        }
+      }
+    }
+  }
 }

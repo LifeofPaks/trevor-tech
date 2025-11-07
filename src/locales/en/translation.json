@@ -2339,5 +2339,170 @@
         }
       }
     }
+  },
+  "dmzoom": {
+    "header": {
+      "title": "Zoom"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "participants": "Participants",
+      "call_log": "Call Log",
+      "aria_label": "Zoom navigation tabs",
+      "chat_aria": "View chat list",
+      "participants_aria": "View participants list",
+      "call_log_aria": "View call log"
+    },
+    "back_button_aria": "Back to list",
+    "chat": {
+      "list_aria": "Zoom chat list",
+      "item_aria": "Select chat with {name}",
+      "detail_aria": "Chat details for {name}"
+    },
+    "participants": {
+      "list_aria": "Zoom participants list",
+      "item_aria": "Select participant {name}",
+      "detail_aria": "Participant details for {name}",
+      "email": "Email",
+      "ava_chen": {
+        "name": "Ava Chen",
+        "email": "ava@zoom.us"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "email": "liam@zoom.us"
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "email": "zoe@zoom.us"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "email": "ethan@zoom.us"
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "email": "maya@zoom.us"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "email": "noah@zoom.us"
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "email": "dylan@zoom.us"
+      }
+    },
+    "call_log": {
+      "list_aria": "Zoom call log",
+      "item_aria": "Select call with {name}",
+      "detail_aria": "Call details for {name}",
+      "ava_chen": {
+        "name": "Ava Chen",
+        "type": "outgoing"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "type": "incoming"
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "type": "missed"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "type": "outgoing"
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "type": "incoming"
+      }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "I can't stop thinking about you",
+        "messages": {
+          "msg1": { "text": "You're still up?" },
+          "msg2": { "text": "Yeah, can't sleep" },
+          "msg3": { "text": "Same. Wish you were here" },
+          "msg4": { "text": "I can't stop thinking about you" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "Delete after reading",
+        "messages": {
+          "msg1": { "text": "That hotel was perfect" },
+          "msg2": { "text": "We have to do it again" },
+          "msg3": { "text": "Soon. I promise" },
+          "msg4": { "text": "Delete after reading" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "He's out of town",
+        "messages": {
+          "msg1": { "text": "You free tonight?" },
+          "msg2": { "text": "He's out of town" },
+          "msg3": { "text": "Meet me at 10" },
+          "msg4": { "text": "On my way" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "Send it",
+        "messages": {
+          "msg1": { "text": "You look so good" },
+          "msg2": { "text": "Stop teasing me" },
+          "msg3": { "text": "Send it" },
+          "msg4": { "text": "Sent. Delete in 5" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "I love you more",
+        "messages": {
+          "msg1": { "text": "I shouldn't say this" },
+          "msg2": { "text": "But?" },
+          "msg3": { "text": "I love you" },
+          "msg4": { "text": "I love you more" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "Room 808",
+        "messages": {
+          "msg1": { "text": "Same place?" },
+          "msg2": { "text": "Room 808" },
+          "msg3": { "text": "I'll be there" },
+          "msg4": { "text": "Door's open" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "No one suspects",
+        "messages": {
+          "msg1": { "text": "We need to be careful" },
+          "msg2": { "text": "I know. But I can't stop" },
+          "msg3": { "text": "Same. Just one more time" },
+          "msg4": { "text": "No one suspects" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "You're my escape",
+        "messages": {
+          "msg1": { "text": "I told her I was at the office" },
+          "msg2": { "text": "I told him I was with friends" },
+          "msg3": { "text": "This is so wrong" },
+          "msg4": { "text": "But you're my escape" }
+        }
+      }
+    }
   }
 }

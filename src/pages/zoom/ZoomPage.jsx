@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -15,7 +18,6 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import {
-  FiMessageSquare,
   FiUsers,
   FiPhone,
   FiPhoneCall,
@@ -23,7 +25,7 @@ import {
   FiPhoneMissed,
   FiMail,
 } from "react-icons/fi";
-import { IoArrowBackCircle, IoLogoBitbucket } from "react-icons/io5";
+import { IoArrowBackCircle } from "react-icons/io5";
 import BindPhone from "../../components/demo/BindPhone";
 import { RiCheckDoubleFill } from "react-icons/ri";
 import { SiZoom } from "react-icons/si";
@@ -41,9 +43,9 @@ const theme = createTheme({
       light: "#FFFFFF",
       dark: "#E0E0E0",
     },
-    success: { main: "#10B981" }, // incoming
-    error: { main: "#EF4444" }, // missed
-    info: { main: "#0B5CFF" }, // outgoing
+    success: { main: "#10B981" },
+    error: { main: "#EF4444" },
+    info: { main: "#0B5CFF" },
   },
   typography: {
     fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
@@ -65,20 +67,31 @@ const theme = createTheme({
   },
 });
 
-// === Cheating Drama Chats (8 Total) ===
 const chats = [
   {
     id: 1,
-    name: "Ava Chen",
+    nameKey: "dmzoom.chats.ava_chen.name",
     avatar: "https://i.pravatar.cc/150?img=27",
-    lastMessage: "I can't stop thinking about you",
+    lastMessageKey: "dmzoom.chats.ava_chen.lastMessage",
     time: "00:42",
     messages: [
-      { text: "You're still up?", time: "00:30", incoming: true },
-      { text: "Yeah, can't sleep", time: "00:31", incoming: false },
-      { text: "Same. Wish you were here", time: "00:32", incoming: true },
       {
-        text: "I can't stop thinking about you",
+        textKey: "dmzoom.chats.ava_chen.messages.msg1.text",
+        time: "00:30",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.ava_chen.messages.msg2.text",
+        time: "00:31",
+        incoming: false,
+      },
+      {
+        textKey: "dmzoom.chats.ava_chen.messages.msg3.text",
+        time: "00:32",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.ava_chen.messages.msg4.text",
         time: "00:42",
         incoming: false,
       },
@@ -86,193 +99,304 @@ const chats = [
   },
   {
     id: 2,
-    name: "Liam Park",
+    nameKey: "dmzoom.chats.liam_park.name",
     avatar: "https://i.pravatar.cc/150?img=32",
-    lastMessage: "Delete after reading",
+    lastMessageKey: "dmzoom.chats.liam_park.lastMessage",
     time: "23:15",
     messages: [
-      { text: "That hotel was perfect", time: "23:00", incoming: true },
-      { text: "We have to do it again", time: "23:01", incoming: false },
-      { text: "Soon. I promise", time: "23:02", incoming: true },
-      { text: "Delete after reading", time: "23:15", incoming: false },
+      {
+        textKey: "dmzoom.chats.liam_park.messages.msg1.text",
+        time: "23:00",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.liam_park.messages.msg2.text",
+        time: "23:01",
+        incoming: false,
+      },
+      {
+        textKey: "dmzoom.chats.liam_park.messages.msg3.text",
+        time: "23:02",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.liam_park.messages.msg4.text",
+        time: "23:15",
+        incoming: false,
+      },
     ],
   },
   {
     id: 3,
-    name: "Zoe Kim",
+    nameKey: "dmzoom.chats.zoe_kim.name",
     avatar: "https://i.pravatar.cc/150?img=25",
-    lastMessage: "He's out of town",
+    lastMessageKey: "dmzoom.chats.zoe_kim.lastMessage",
     time: "22:10",
     messages: [
-      { text: "You free tonight?", time: "22:00", incoming: true },
-      { text: "He's out of town", time: "22:01", incoming: false },
-      { text: "Meet me at 10", time: "22:02", incoming: true },
-      { text: "On my way", time: "22:10", incoming: false },
+      {
+        textKey: "dmzoom.chats.zoe_kim.messages.msg1.text",
+        time: "22:00",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.zoe_kim.messages.msg2.text",
+        time: "22:01",
+        incoming: false,
+      },
+      {
+        textKey: "dmzoom.chats.zoe_kim.messages.msg3.text",
+        time: "22:02",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.zoe_kim.messages.msg4.text",
+        time: "22:10",
+        incoming: false,
+      },
     ],
   },
   {
     id: 4,
-    name: "Ethan Brooks",
+    nameKey: "dmzoom.chats.ethan_brooks.name",
     avatar: "https://i.pravatar.cc/150?img=30",
-    lastMessage: "Send it",
+    lastMessageKey: "dmzoom.chats.ethan_brooks.lastMessage",
     time: "21:45",
     messages: [
-      { text: "You look so good", time: "21:30", incoming: true },
-      { text: "Stop teasing me", time: "21:31", incoming: false },
-      { text: "Send it", time: "21:32", incoming: true },
-      { text: "Sent. Delete in 5", time: "21:45", incoming: false },
+      {
+        textKey: "dmzoom.chats.ethan_brooks.messages.msg1.text",
+        time: "21:30",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.ethan_brooks.messages.msg2.text",
+        time: "21:31",
+        incoming: false,
+      },
+      {
+        textKey: "dmzoom.chats.ethan_brooks.messages.msg3.text",
+        time: "21:32",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.ethan_brooks.messages.msg4.text",
+        time: "21:45",
+        incoming: false,
+      },
     ],
   },
   {
     id: 5,
-    name: "Maya Wu",
+    nameKey: "dmzoom.chats.maya_wu.name",
     avatar: "https://i.pravatar.cc/150?img=26",
-    lastMessage: "I love you more",
+    lastMessageKey: "dmzoom.chats.maya_wu.lastMessage",
     time: "02:20",
     messages: [
-      { text: "I shouldn't say this", time: "02:10", incoming: true },
-      { text: "But?", time: "02:11", incoming: false },
-      { text: "I love you", time: "02:12", incoming: true },
-      { text: "I love you more", time: "02:20", incoming: false },
+      {
+        textKey: "dmzoom.chats.maya_wu.messages.msg1.text",
+        time: "02:10",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.maya_wu.messages.msg2.text",
+        time: "02:11",
+        incoming: false,
+      },
+      {
+        textKey: "dmzoom.chats.maya_wu.messages.msg3.text",
+        time: "02:12",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.maya_wu.messages.msg4.text",
+        time: "02:20",
+        incoming: false,
+      },
     ],
   },
   {
     id: 6,
-    name: "Noah Lee",
+    nameKey: "dmzoom.chats.noah_lee.name",
     avatar: "https://i.pravatar.cc/150?img=31",
-    lastMessage: "Room 808",
+    lastMessageKey: "dmzoom.chats.noah_lee.lastMessage",
     time: "19:50",
     messages: [
-      { text: "Same place?", time: "19:40", incoming: true },
-      { text: "Room 808", time: "19:41", incoming: false },
-      { text: "I'll be there", time: "19:42", incoming: true },
-      { text: "Door's open", time: "19:50", incoming: false },
+      {
+        textKey: "dmzoom.chats.noah_lee.messages.msg1.text",
+        time: "19:40",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.noah_lee.messages.msg2.text",
+        time: "19:41",
+        incoming: false,
+      },
+      {
+        textKey: "dmzoom.chats.noah_lee.messages.msg3.text",
+        time: "19:42",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.noah_lee.messages.msg4.text",
+        time: "19:50",
+        incoming: false,
+      },
     ],
   },
   {
     id: 7,
-    name: "Isabella Zhang",
+    nameKey: "dmzoom.chats.isabella_zhang.name",
     avatar: "https://i.pravatar.cc/150?img=28",
-    lastMessage: "No one suspects",
+    lastMessageKey: "dmzoom.chats.isabella_zhang.lastMessage",
     time: "18:30",
     messages: [
-      { text: "We need to be careful", time: "18:20", incoming: true },
-      { text: "I know. But I can't stop", time: "18:21", incoming: false },
-      { text: "Same. Just one more time", time: "18:22", incoming: true },
-      { text: "No one suspects", time: "18:30", incoming: false },
+      {
+        textKey: "dmzoom.chats.isabella_zhang.messages.msg1.text",
+        time: "18:20",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.isabella_zhang.messages.msg2.text",
+        time: "18:21",
+        incoming: false,
+      },
+      {
+        textKey: "dmzoom.chats.isabella_zhang.messages.msg3.text",
+        time: "18:22",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.isabella_zhang.messages.msg4.text",
+        time: "18:30",
+        incoming: false,
+      },
     ],
   },
   {
     id: 8,
-    name: "Dylan Kim",
+    nameKey: "dmzoom.chats.dylan_kim.name",
     avatar: "https://i.pravatar.cc/150?img=33",
-    lastMessage: "You're my escape",
+    lastMessageKey: "dmzoom.chats.dylan_kim.lastMessage",
     time: "01:15",
     messages: [
-      { text: "I told her I was at the office", time: "01:00", incoming: true },
-      { text: "I told him I was with friends", time: "01:01", incoming: false },
-      { text: "This is so wrong", time: "01:02", incoming: true },
-      { text: "But you're my escape", time: "01:15", incoming: false },
+      {
+        textKey: "dmzoom.chats.dylan_kim.messages.msg1.text",
+        time: "01:00",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.dylan_kim.messages.msg2.text",
+        time: "01:01",
+        incoming: false,
+      },
+      {
+        textKey: "dmzoom.chats.dylan_kim.messages.msg3.text",
+        time: "01:02",
+        incoming: true,
+      },
+      {
+        textKey: "dmzoom.chats.dylan_kim.messages.msg4.text",
+        time: "01:15",
+        incoming: false,
+      },
     ],
   },
 ];
 
-// === Participants ===
 const participants = [
   {
     id: 1,
-    name: "Ava Chen",
+    nameKey: "dmzoom.participants.ava_chen.name",
     avatar: "https://i.pravatar.cc/150?img=27",
-    email: "ava@zoom.us",
+    emailKey: "dmzoom.participants.ava_chen.email",
   },
   {
     id: 2,
-    name: "Liam Park",
+    nameKey: "dmzoom.participants.liam_park.name",
     avatar: "https://i.pravatar.cc/150?img=32",
-    email: "liam@zoom.us",
+    emailKey: "dmzoom.participants.liam_park.email",
   },
   {
     id: 3,
-    name: "Zoe Kim",
+    nameKey: "dmzoom.participants.zoe_kim.name",
     avatar: "https://i.pravatar.cc/150?img=25",
-    email: "zoe@zoom.us",
+    emailKey: "dmzoom.participants.zoe_kim.email",
   },
   {
     id: 4,
-    name: "Ethan Brooks",
+    nameKey: "dmzoom.participants.ethan_brooks.name",
     avatar: "https://i.pravatar.cc/150?img=30",
-    email: "ethan@zoom.us",
+    emailKey: "dmzoom.participants.ethan_brooks.email",
   },
   {
     id: 5,
-    name: "Maya Wu",
+    nameKey: "dmzoom.participants.maya_wu.name",
     avatar: "https://i.pravatar.cc/150?img=26",
-    email: "maya@zoom.us",
+    emailKey: "dmzoom.participants.maya_wu.email",
   },
   {
     id: 6,
-    name: "Noah Lee",
+    nameKey: "dmzoom.participants.noah_lee.name",
     avatar: "https://i.pravatar.cc/150?img=31",
-    email: "noah@zoom.us",
+    emailKey: "dmzoom.participants.noah_lee.email",
   },
   {
     id: 7,
-    name: "Isabella Zhang",
+    nameKey: "dmzoom.participants.isabella_zhang.name",
     avatar: "https://i.pravatar.cc/150?img=28",
-    email: "isabella@zoom.us",
+    emailKey: "dmzoom.participants.isabella_zhang.email",
   },
   {
     id: 8,
-    name: "Dylan Kim",
+    nameKey: "dmzoom.participants.dylan_kim.name",
     avatar: "https://i.pravatar.cc/150?img=33",
-    email: "dylan@zoom.us",
+    emailKey: "dmzoom.participants.dylan_kim.email",
   },
 ];
 
-// === Call Logs ===
 const callLogs = [
   {
     id: 1,
-    name: "Ava Chen",
+    nameKey: "dmzoom.call_log.ava_chen.name",
     avatar: "https://i.pravatar.cc/150?img=27",
-    type: "outgoing",
+    typeKey: "dmzoom.call_log.ava_chen.type",
     time: "2025-10-28 23:30",
     duration: "15:20",
   },
   {
     id: 2,
-    name: "Liam Park",
+    nameKey: "dmzoom.call_log.liam_park.name",
     avatar: "https://i.pravatar.cc/150?img=32",
-    type: "incoming",
+    typeKey: "dmzoom.call_log.liam_park.type",
     time: "2025-10-28 22:15",
     duration: "08:45",
   },
   {
     id: 3,
-    name: "Zoe Kim",
+    nameKey: "dmzoom.call_log.zoe_kim.name",
     avatar: "https://i.pravatar.cc/150?img=25",
-    type: "missed",
+    typeKey: "dmzoom.call_log.zoe_kim.type",
     time: "2025-10-28 21:00",
   },
   {
     id: 4,
-    name: "Ethan Brooks",
+    nameKey: "dmzoom.call_log.ethan_brooks.name",
     avatar: "https://i.pravatar.cc/150?img=30",
-    type: "outgoing",
+    typeKey: "dmzoom.call_log.ethan_brooks.type",
     time: "2025-10-27 20:30",
     duration: "22:10",
   },
   {
     id: 5,
-    name: "Maya Wu",
+    nameKey: "dmzoom.call_log.maya_wu.name",
     avatar: "https://i.pravatar.cc/150?img=26",
-    type: "incoming",
+    typeKey: "dmzoom.call_log.maya_wu.type",
     time: "2025-10-27 19:00",
     duration: "30:00",
   },
 ];
 
 const ZoomPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -293,7 +417,7 @@ const ZoomPage = () => {
         ? "#10B981"
         : type === "outgoing"
         ? "#0B5CFF"
-        : "#EF4444"; // missed
+        : "#EF4444";
     return (
       <Box sx={{ color: iconColor }}>
         {type === "outgoing" && <FiPhoneCall style={{ fontSize: 16 }} />}
@@ -306,7 +430,7 @@ const ZoomPage = () => {
   const groupParticipantsByLetter = () => {
     const grouped = {};
     participants.forEach((p) => {
-      const letter = p.name[0].toUpperCase();
+      const letter = t(p.nameKey)[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(p);
     });
@@ -321,7 +445,7 @@ const ZoomPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Zoom
+              {t("dmzoom.header.title")}
               <SiZoom className="text-[#0B5CFF]" />
             </h1>
           </div>
@@ -341,6 +465,7 @@ const ZoomPage = () => {
             <Tabs
               value={tab}
               onChange={(e, v) => setTab(v)}
+              aria-label={t("dmzoom.tabs.aria_label")}
               sx={{
                 mb: 3,
                 "& .MuiTabs-indicator": { bgcolor: "primary.main", height: 3 },
@@ -349,20 +474,23 @@ const ZoomPage = () => {
               <Tab
                 icon={<SiZoom />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chat"}
+                label={isMobile ? "" : t("dmzoom.tabs.chat")}
                 value="chat"
+                aria-label={t("dmzoom.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "Participants"}
+                label={isMobile ? "" : t("dmzoom.tabs.participants")}
                 value="participants"
+                aria-label={t("dmzoom.tabs.participants_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Call Log"}
+                label={isMobile ? "" : t("dmzoom.tabs.call_log")}
                 value="call-log"
+                aria-label={t("dmzoom.tabs.call_log_aria")}
               />
             </Tabs>
           )}
@@ -370,7 +498,11 @@ const ZoomPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmzoom.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -405,7 +537,7 @@ const ZoomPage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmzoom.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -416,6 +548,9 @@ const ZoomPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmzoom.chat.item_aria", {
+                        name: t(chat.nameKey),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -426,7 +561,7 @@ const ZoomPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {chat.name}
+                            {t(chat.nameKey)}
                           </Typography>
                           <Typography
                             sx={{
@@ -437,7 +572,7 @@ const ZoomPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(chat.lastMessageKey)}
                           </Typography>
                         </Box>
                         <Typography
@@ -453,7 +588,7 @@ const ZoomPage = () => {
 
               {/* Participants List */}
               {tab === "participants" && (
-                <Stack>
+                <Stack aria-label={t("dmzoom.participants.list_aria")}>
                   {Object.keys(groupParticipantsByLetter())
                     .sort()
                     .map((letter) => (
@@ -479,6 +614,9 @@ const ZoomPage = () => {
                               transition: "background 0.2s",
                             }}
                             onClick={() => setSelectedParticipant(p)}
+                            aria-label={t("dmzoom.participants.item_aria", {
+                              name: t(p.nameKey),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -492,7 +630,7 @@ const ZoomPage = () => {
                               <Typography
                                 sx={{ fontWeight: 500, color: "#1f2937" }}
                               >
-                                {p.name}
+                                {t(p.nameKey)}
                               </Typography>
                             </Stack>
                           </Box>
@@ -504,7 +642,7 @@ const ZoomPage = () => {
 
               {/* Call Log */}
               {tab === "call-log" && (
-                <Stack>
+                <Stack aria-label={t("dmzoom.call_log.list_aria")}>
                   {callLogs.map((call) => (
                     <Box
                       key={call.id}
@@ -515,6 +653,9 @@ const ZoomPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedCall(call)}
+                      aria-label={t("dmzoom.call_log.item_aria", {
+                        name: t(call.nameKey),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
@@ -536,28 +677,28 @@ const ZoomPage = () => {
                               boxShadow: "0 0 0 2px white",
                             }}
                           >
-                            {getCallIcon(call.type)}
+                            {getCallIcon(t(call.typeKey))}
                           </Box>
                         </Box>
                         <Box sx={{ flex: 1 }}>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {call.name}
+                            {t(call.nameKey)}
                           </Typography>
                           <Typography
                             sx={{
                               fontSize: "0.875rem",
                               color:
-                                call.type === "incoming"
+                                t(call.typeKey) === "incoming"
                                   ? "#10B981"
-                                  : call.type === "outgoing"
+                                  : t(call.typeKey) === "outgoing"
                                   ? "#0B5CFF"
                                   : "#EF4444",
                             }}
                           >
-                            {call.type.charAt(0).toUpperCase() +
-                              call.type.slice(1)}
+                            {t(call.typeKey).charAt(0).toUpperCase() +
+                              t(call.typeKey).slice(1)}
                           </Typography>
                         </Box>
                         <Typography
@@ -587,7 +728,12 @@ const ZoomPage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmzoom.chat.detail_aria", {
+                      name: t(selectedChat.nameKey),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -597,7 +743,7 @@ const ZoomPage = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "#1f2937" }}
                       >
-                        {selectedChat.name}
+                        {t(selectedChat.nameKey)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -627,7 +773,7 @@ const ZoomPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(msg.textKey)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -651,7 +797,13 @@ const ZoomPage = () => {
 
                 {/* Participant Detail */}
                 {selectedParticipant && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmzoom.participants.detail_aria", {
+                      name: t(selectedParticipant.nameKey),
+                    })}
+                  >
                     <Avatar
                       src={selectedParticipant.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -660,10 +812,10 @@ const ZoomPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedParticipant.name}
+                      {t(selectedParticipant.nameKey)}
                     </Typography>
 
-                    {selectedParticipant.email && (
+                    {selectedParticipant.emailKey && (
                       <Paper
                         elevation={0}
                         sx={{
@@ -693,10 +845,10 @@ const ZoomPage = () => {
                           <Typography
                             sx={{ fontSize: "0.75rem", color: "#6b7280" }}
                           >
-                            Email
+                            {t("dmzoom.participants.email")}
                           </Typography>
                           <Typography sx={{ fontWeight: 500 }}>
-                            {selectedParticipant.email}
+                            {t(selectedParticipant.emailKey)}
                           </Typography>
                         </Box>
                       </Paper>
@@ -706,7 +858,13 @@ const ZoomPage = () => {
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmzoom.call_log.detail_aria", {
+                      name: t(selectedCall.nameKey),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -715,7 +873,7 @@ const ZoomPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedCall.name}
+                      {t(selectedCall.nameKey)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -738,11 +896,15 @@ const ZoomPage = () => {
                       </Typography>
                       {selectedCall.duration && (
                         <Typography
-                          sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
+                          sx={{
+                            fontSize: "0.875rem",
+                            color: "#6b7280",
+                            mt: 1,
+                          }}
                         >
                           {selectedCall.duration} •{" "}
-                          {selectedCall.type.charAt(0).toUpperCase() +
-                            selectedCall.type.slice(1)}
+                          {t(selectedCall.typeKey).charAt(0).toUpperCase() +
+                            t(selectedCall.typeKey).slice(1)}
                         </Typography>
                       )}
                     </Paper>

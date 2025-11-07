@@ -2307,5 +2307,132 @@
         }
       }
     }
+  },
+  "dmzoom": {
+    "header": { "title": "Zoom" },
+    "tabs": {
+      "chat": "聊天",
+      "participants": "参与者",
+      "call_log": "通话记录",
+      "aria_label": "Zoom导航标签",
+      "chat_aria": "查看聊天列表",
+      "participants_aria": "查看参与者列表",
+      "call_log_aria": "查看通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "Zoom聊天列表",
+      "item_aria": "选择与{name}的聊天",
+      "detail_aria": "{name}的聊天详情"
+    },
+    "participants": {
+      "list_aria": "Zoom参与者列表",
+      "item_aria": "选择参与者{name}",
+      "detail_aria": "{name}的参与者详情",
+      "email": "电子邮件",
+      "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+      "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+      "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+      "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+      "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+      "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+    },
+    "call_log": {
+      "list_aria": "Zoom通话记录",
+      "item_aria": "选择与{name}的通话",
+      "detail_aria": "{name}的通话详情",
+      "ava_chen": { "name": "Ava Chen", "type": "拨出" },
+      "liam_park": { "name": "Liam Park", "type": "接入" },
+      "zoe_kim": { "name": "Zoe Kim", "type": "未接" },
+      "ethan_brooks": { "name": "Ethan Brooks", "type": "拨出" },
+      "maya_wu": { "name": "Maya Wu", "type": "接入" }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "我无法停止想你",
+        "messages": {
+          "msg1": { "text": "你还醒着吗?" },
+          "msg2": { "text": "是的,睡不着" },
+          "msg3": { "text": "我也是。真希望你在这里" },
+          "msg4": { "text": "我无法停止想你" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "看后删除",
+        "messages": {
+          "msg1": { "text": "那家酒店太完美了" },
+          "msg2": { "text": "我们必须再来一次" },
+          "msg3": { "text": "很快。我保证" },
+          "msg4": { "text": "看后删除" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "他不在城里",
+        "messages": {
+          "msg1": { "text": "你今晚有空吗?" },
+          "msg2": { "text": "他不在城里" },
+          "msg3": { "text": "晚上10点见我" },
+          "msg4": { "text": "我在路上" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "发送",
+        "messages": {
+          "msg1": { "text": "你看起来真好" },
+          "msg2": { "text": "别逗我了" },
+          "msg3": { "text": "发送" },
+          "msg4": { "text": "已发送。5秒后删除" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "我更爱你",
+        "messages": {
+          "msg1": { "text": "我不应该说这个" },
+          "msg2": { "text": "但?" },
+          "msg3": { "text": "我爱你" },
+          "msg4": { "text": "我更爱你" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "808房间",
+        "messages": {
+          "msg1": { "text": "还是老地方?" },
+          "msg2": { "text": "是的,808房间" },
+          "msg3": { "text": "我8点到那里" },
+          "msg4": { "text": "门是开的" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "没人会知道",
+        "messages": {
+          "msg1": { "text": "我们要小心点" },
+          "msg2": { "text": "我知道。但我无法停止" },
+          "msg3": { "text": "我也是。就再来一次" },
+          "msg4": { "text": "没人会知道" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "你是我的逃脱",
+        "messages": {
+          "msg1": { "text": "我告诉她我在办公室" },
+          "msg2": { "text": "我告诉他我和朋友在一起" },
+          "msg3": { "text": "这太错了" },
+          "msg4": { "text": "但你是我的逃脱" }
+        }
+      }
+    }
   }
 }

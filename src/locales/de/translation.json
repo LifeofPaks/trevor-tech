@@ -2261,206 +2261,334 @@
         }
       }
     }
-  }, "dmlink": {
-      "header": {
-        "title": "LinkedIn"
+  },
+  "dmlink": {
+    "header": {
+      "title": "LinkedIn"
+    },
+    "tabs": {
+      "chat": "Nachrichten",
+      "connections": "Verbindungen",
+      "aria_label": "LinkedIn-Navigationsreiter",
+      "chat_aria": "Nachrichtenliste anzeigen",
+      "connections_aria": "Verbindungsliste anzeigen"
+    },
+    "back_button_aria": "Zurück zur Liste",
+    "chat": {
+      "list_aria": "LinkedIn-Nachrichtenliste",
+      "item_aria": "Chat mit {name} auswählen",
+      "detail_aria": "Chatdetails für {name}"
+    },
+    "connections": {
+      "list_aria": "LinkedIn-Verbindungsliste",
+      "item_aria": "Verbindung {name} auswählen",
+      "detail_aria": "Verbindungsdetails für {name}",
+      "email": "E-Mail",
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Softwareingenieur @ Meta",
+        "email": "noah@meta.com"
       },
-      "tabs": {
-        "chat": "Nachrichten",
-        "connections": "Verbindungen",
-        "aria_label": "LinkedIn-Navigationsreiter",
-        "chat_aria": "Nachrichtenliste anzeigen",
-        "connections_aria": "Verbindungsliste anzeigen"
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Produktdesignerin @ Airbnb",
+        "email": "isabella@airbnb.com"
       },
-      "back_button_aria": "Zurück zur Liste",
-      "chat": {
-        "list_aria": "LinkedIn-Nachrichtenliste",
-        "item_aria": "Chat mit {name} auswählen",
-        "detail_aria": "Chatdetails für {name}"
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "ML-Ingenieur @ OpenAI",
+        "email": "ethan@openai.com"
       },
-      "connections": {
-        "list_aria": "LinkedIn-Verbindungsliste",
-        "item_aria": "Verbindung {name} auswählen",
-        "detail_aria": "Verbindungsdetails für {name}",
-        "email": "E-Mail",
-        "noah_kim": {
-          "name": "Noah Kim",
-          "title": "Softwareingenieur @ Meta",
-          "email": "noah@meta.com"
-        },
-        "isabella_wu": {
-          "name": "Isabella Wu",
-          "title": "Produktdesignerin @ Airbnb",
-          "email": "isabella@airbnb.com"
-        },
-        "ethan_zhang": {
-          "name": "Ethan Zhang",
-          "title": "ML-Ingenieur @ OpenAI",
-          "email": "ethan@openai.com"
-        },
-        "zoe_park": {
-          "name": "Zoe Park",
-          "title": "Content-Strategin @ TikTok",
-          "email": "zoe@tiktok.com"
-        },
-        "carter_lee": {
-          "name": "Carter Lee",
-          "title": "DevOps @ AWS",
-          "email": "carter@amazon.com"
-        },
-        "grace_liu": {
-          "name": "Grace Liu",
-          "title": "Markendesignerin @ Adobe",
-          "email": "grace@adobe.com"
-        },
-        "dylan_chen": {
-          "name": "Dylan Chen",
-          "title": "Fullstack-Entwickler @ Shopify",
-          "email": "dylan@shopify.com"
-        },
-        "ava_singh": {
-          "name": "Ava Singh",
-          "title": "UX-Forscherin @ Spotify",
-          "email": "ava@spotify.com"
+      "zoe_park": {
+        "name": "Zoe Park",
+        "title": "Content-Strategin @ TikTok",
+        "email": "zoe@tiktok.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "title": "DevOps @ AWS",
+        "email": "carter@amazon.com"
+      },
+      "grace_liu": {
+        "name": "Grace Liu",
+        "title": "Markendesignerin @ Adobe",
+        "email": "grace@adobe.com"
+      },
+      "dylan_chen": {
+        "name": "Dylan Chen",
+        "title": "Fullstack-Entwickler @ Shopify",
+        "email": "dylan@shopify.com"
+      },
+      "ava_singh": {
+        "name": "Ava Singh",
+        "title": "UX-Forscherin @ Spotify",
+        "email": "ava@spotify.com"
+      }
+    },
+    "chats": {
+      "emma_chen": {
+        "name": "Emma Chen",
+        "title": "UX-Designerin @ Figma",
+        "lastMessage": "Ich vermisse dich jetzt schon...",
+        "messages": {
+          "msg1": {
+            "text": "Letzte Nacht war unglaublich",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Ich kann nicht aufhören, daran zu denken",
+            "incoming": false
+          },
+          "msg3": {
+            "text": "Gleich hier... wünschte, du wärst länger geblieben",
+            "incoming": true
+          },
+          "msg4": {
+            "text": "Ich vermisse dich jetzt schon...",
+            "incoming": false
+          }
         }
       },
-      "chats": {
-        "emma_chen": {
-          "name": "Emma Chen",
-          "title": "UX-Designerin @ Figma",
-          "lastMessage": "Ich vermisse dich jetzt schon...",
-          "messages": {
-            "msg1": {
-              "text": "Letzte Nacht war unglaublich",
-              "incoming": true
-            },
-            "msg2": {
-              "text": "Ich kann nicht aufhören, daran zu denken",
-              "incoming": false
-            },
-            "msg3": {
-              "text": "Gleich hier... wünschte, du wärst länger geblieben",
-              "incoming": true
-            },
-            "msg4": {
-              "text": "Ich vermisse dich jetzt schon...",
-              "incoming": false
-            }
-          }
-        },
-        "alex_rivera": {
-          "name": "Alex Rivera",
-          "title": "Frontend-Ingenieur @ Stripe",
-          "lastMessage": "Lösch diesen Chat",
-          "messages": {
-            "msg1": {
-              "text": "Du sahst in dem Kleid toll aus",
-              "incoming": true
-            },
-            "msg2": {
-              "text": "Hör auf, jemand könnte es sehen",
-              "incoming": false
-            },
-            "msg3": { "text": "Mir egal, ich will dich", "incoming": true },
-            "msg4": { "text": "Lösch diesen Chat", "incoming": false }
-          }
-        },
-        "sofia_patel": {
-          "name": "Sofia Patel",
-          "title": "Produktmanagerin @ Notion",
-          "lastMessage": "Er schläft",
-          "messages": {
-            "msg1": { "text": "Kannst du reden?", "incoming": true },
-            "msg2": { "text": "Ja, er schläft", "incoming": false },
-            "msg3": {
-              "text": "Ich wünschte, ich wäre stattdessen bei dir",
-              "incoming": true
-            },
-            "msg4": { "text": "Gleich hier. Das ist Folter", "incoming": false }
-          }
-        },
-        "liam_brooks": {
-          "name": "Liam Brooks",
-          "title": "Datenanalyst @ Google",
-          "lastMessage": "Schick mir ein Foto",
-          "messages": {
-            "msg1": { "text": "Was trägst du?", "incoming": true },
-            "msg2": {
-              "text": "Nichts, was du nicht gesehen hast",
-              "incoming": false
-            },
-            "msg3": { "text": "Schick mir ein Foto", "incoming": true },
-            "msg4": { "text": "Lösche in 10...", "incoming": false }
-          }
-        },
-        "maya_kim": {
-          "name": "Maya Kim",
-          "title": "Wachstumsmarketing @ Canva",
-          "lastMessage": "Ich liebe dich",
-          "messages": {
-            "msg1": { "text": "Ich kann das nicht mehr", "incoming": true },
-            "msg2": { "text": "Was nicht?", "incoming": false },
-            "msg3": {
-              "text": "So tun, als würde ich dich nicht lieben",
-              "incoming": true
-            },
-            "msg4": { "text": "Ich liebe dich", "incoming": false }
-          }
-        },
-        "noah_kim": {
-          "name": "Noah Kim",
-          "title": "Softwareingenieur @ Meta",
-          "lastMessage": "Hotel gebucht",
-          "messages": {
-            "msg1": {
-              "text": "Dasselbe Hotel wie letztes Mal?",
-              "incoming": true
-            },
-            "msg2": { "text": "Ja, Zimmer 512", "incoming": false },
-            "msg3": { "text": "Ich bin um 8 da", "incoming": true },
-            "msg4": { "text": "Hotel gebucht", "incoming": false }
-          }
-        },
-        "isabella_wu": {
-          "name": "Isabella Wu",
-          "title": "Produktdesignerin @ Airbnb",
-          "lastMessage": "Niemand wird es wissen",
-          "messages": {
-            "msg1": {
-              "text": "Wir müssen vorsichtiger sein",
-              "incoming": true
-            },
-            "msg2": {
-              "text": "Ich weiß, aber ich kann nicht aufhören",
-              "incoming": false
-            },
-            "msg3": {
-              "text": "Gleich hier. Nur noch einmal",
-              "incoming": true
-            },
-            "msg4": { "text": "Niemand wird es wissen", "incoming": false }
-          }
-        },
-        "ethan_zhang": {
-          "name": "Ethan Zhang",
-          "title": "ML-Ingenieur @ OpenAI",
-          "lastMessage": "Du bist mein Geheimnis",
-          "messages": {
-            "msg1": {
-              "text": "Ich habe meiner Freundin gesagt, ich arbeite spät",
-              "incoming": true
-            },
-            "msg2": {
-              "text": "Ich habe meinem Freund dasselbe gesagt",
-              "incoming": false
-            },
-            "msg3": { "text": "Das ist so falsch", "incoming": true },
-            "msg4": {
-              "text": "Aber es fühlt sich so richtig an. Du bist mein Geheimnis",
-              "incoming": false
-            }
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "title": "Frontend-Ingenieur @ Stripe",
+        "lastMessage": "Lösch diesen Chat",
+        "messages": {
+          "msg1": {
+            "text": "Du sahst in dem Kleid toll aus",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Hör auf, jemand könnte es sehen",
+            "incoming": false
+          },
+          "msg3": { "text": "Mir egal, ich will dich", "incoming": true },
+          "msg4": { "text": "Lösch diesen Chat", "incoming": false }
+        }
+      },
+      "sofia_patel": {
+        "name": "Sofia Patel",
+        "title": "Produktmanagerin @ Notion",
+        "lastMessage": "Er schläft",
+        "messages": {
+          "msg1": { "text": "Kannst du reden?", "incoming": true },
+          "msg2": { "text": "Ja, er schläft", "incoming": false },
+          "msg3": {
+            "text": "Ich wünschte, ich wäre stattdessen bei dir",
+            "incoming": true
+          },
+          "msg4": { "text": "Gleich hier. Das ist Folter", "incoming": false }
+        }
+      },
+      "liam_brooks": {
+        "name": "Liam Brooks",
+        "title": "Datenanalyst @ Google",
+        "lastMessage": "Schick mir ein Foto",
+        "messages": {
+          "msg1": { "text": "Was trägst du?", "incoming": true },
+          "msg2": {
+            "text": "Nichts, was du nicht gesehen hast",
+            "incoming": false
+          },
+          "msg3": { "text": "Schick mir ein Foto", "incoming": true },
+          "msg4": { "text": "Lösche in 10...", "incoming": false }
+        }
+      },
+      "maya_kim": {
+        "name": "Maya Kim",
+        "title": "Wachstumsmarketing @ Canva",
+        "lastMessage": "Ich liebe dich",
+        "messages": {
+          "msg1": { "text": "Ich kann das nicht mehr", "incoming": true },
+          "msg2": { "text": "Was nicht?", "incoming": false },
+          "msg3": {
+            "text": "So tun, als würde ich dich nicht lieben",
+            "incoming": true
+          },
+          "msg4": { "text": "Ich liebe dich", "incoming": false }
+        }
+      },
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Softwareingenieur @ Meta",
+        "lastMessage": "Hotel gebucht",
+        "messages": {
+          "msg1": {
+            "text": "Dasselbe Hotel wie letztes Mal?",
+            "incoming": true
+          },
+          "msg2": { "text": "Ja, Zimmer 512", "incoming": false },
+          "msg3": { "text": "Ich bin um 8 da", "incoming": true },
+          "msg4": { "text": "Hotel gebucht", "incoming": false }
+        }
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Produktdesignerin @ Airbnb",
+        "lastMessage": "Niemand wird es wissen",
+        "messages": {
+          "msg1": {
+            "text": "Wir müssen vorsichtiger sein",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Ich weiß, aber ich kann nicht aufhören",
+            "incoming": false
+          },
+          "msg3": {
+            "text": "Gleich hier. Nur noch einmal",
+            "incoming": true
+          },
+          "msg4": { "text": "Niemand wird es wissen", "incoming": false }
+        }
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "ML-Ingenieur @ OpenAI",
+        "lastMessage": "Du bist mein Geheimnis",
+        "messages": {
+          "msg1": {
+            "text": "Ich habe meiner Freundin gesagt, ich arbeite spät",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "Ich habe meinem Freund dasselbe gesagt",
+            "incoming": false
+          },
+          "msg3": { "text": "Das ist so falsch", "incoming": true },
+          "msg4": {
+            "text": "Aber es fühlt sich so richtig an. Du bist mein Geheimnis",
+            "incoming": false
           }
         }
       }
     }
+  },
+  "dmzoom": {
+    "header": { "title": "Zoom" },
+    "tabs": {
+      "chat": "Chat",
+      "participants": "Teilnehmer",
+      "call_log": "Anrufprotokoll",
+      "aria_label": "Zoom-Navigationsreiter",
+      "chat_aria": "Chat-Liste anzeigen",
+      "participants_aria": "Teilnehmerliste anzeigen",
+      "call_log_aria": "Anrufprotokoll anzeigen"
+    },
+    "back_button_aria": "Zurück zur Liste",
+    "chat": {
+      "list_aria": "Zoom-Chat-Liste",
+      "item_aria": "Chat mit {name} auswählen",
+      "detail_aria": "Chat-Details für {name}"
+    },
+    "participants": {
+      "list_aria": "Zoom-Teilnehmerliste",
+      "item_aria": "Teilnehmer {name} auswählen",
+      "detail_aria": "Teilnehmerdetails für {name}",
+      "email": "E-Mail",
+      "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+      "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+      "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+      "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+      "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+      "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+    },
+    "call_log": {
+      "list_aria": "Zoom-Anrufprotokoll",
+      "item_aria": "Anruf mit {name} auswählen",
+      "detail_aria": "Anrufdetails für {name}",
+      "ava_chen": { "name": "Ava Chen", "type": "ausgehend" },
+      "liam_park": { "name": "Liam Park", "type": "eingehend" },
+      "zoe_kim": { "name": "Zoe Kim", "type": "verpasst" },
+      "ethan_brooks": { "name": "Ethan Brooks", "type": "ausgehend" },
+      "maya_wu": { "name": "Maya Wu", "type": "eingehend" }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "Ich kann nicht aufhören, an dich zu denken",
+        "messages": {
+          "msg1": { "text": "Bist du noch wach?" },
+          "msg2": { "text": "Ja, kann nicht schlafen" },
+          "msg3": { "text": "Gleiches hier. Wünschte, du wärst hier" },
+          "msg4": { "text": "Ich kann nicht aufhören, an dich zu denken" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "Nach dem Lesen löschen",
+        "messages": {
+          "msg1": { "text": "Das Hotel war perfekt" },
+          "msg2": { "text": "Wir müssen es wiederholen" },
+          "msg3": { "text": "Bald. Ich verspreche es" },
+          "msg4": { "text": "Nach dem Lesen löschen" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "Er ist außerhalb der Stadt",
+        "messages": {
+          "msg1": { "text": "Bist du heute Abend frei?" },
+          "msg2": { "text": "Er ist außerhalb der Stadt" },
+          "msg3": { "text": "Triff mich um 10" },
+          "msg4": { "text": "Bin unterwegs" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "Schick es",
+        "messages": {
+          "msg1": { "text": "Du siehst so gut aus" },
+          "msg2": { "text": "Hör auf, mich zu necken" },
+          "msg3": { "text": "Schick es" },
+          "msg4": { "text": "Gesendet. Lösche in 5" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "Ich liebe dich mehr",
+        "messages": {
+          "msg1": { "text": "Ich sollte das nicht sagen" },
+          "msg2": { "text": "Aber?" },
+          "msg3": { "text": "Ich liebe dich" },
+          "msg4": { "text": "Ich liebe dich mehr" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "Zimmer 808",
+        "messages": {
+          "msg1": { "text": "Derselbe Ort?" },
+          "msg2": { "text": "Zimmer 808" },
+          "msg3": { "text": "Ich bin um 8 da" },
+          "msg4": { "text": "Tür ist offen" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "Niemand wird es wissen",
+        "messages": {
+          "msg1": { "text": "Wir müssen vorsichtiger sein" },
+          "msg2": { "text": "Ich weiß. Aber ich kann nicht aufhören" },
+          "msg3": { "text": "Gleiches hier. Nur noch einmal" },
+          "msg4": { "text": "Niemand wird es wissen" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "Du bist mein Fluchtweg",
+        "messages": {
+          "msg1": { "text": "Ich habe ihr gesagt, ich arbeite spät" },
+          "msg2": { "text": "Ich habe ihm das Gleiche gesagt" },
+          "msg3": { "text": "Das ist so falsch" },
+          "msg4": { "text": "Aber du bist mein Fluchtweg" }
+        }
+      }
+    }
+  }
 }

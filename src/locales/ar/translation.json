@@ -2326,5 +2326,132 @@
         }
       }
     }
+  },
+  "dmzoom": {
+    "header": { "title": "Zoom" },
+    "tabs": {
+      "chat": "الدردشة",
+      "participants": "المشاركون",
+      "call_log": "سجل المكالمات",
+      "aria_label": "علامات تنقل Zoom",
+      "chat_aria": "عرض قائمة الدردشة",
+      "participants_aria": "عرض قائمة المشاركين",
+      "call_log_aria": "عرض سجل المكالمات"
+    },
+    "back_button_aria": "العودة إلى القائمة",
+    "chat": {
+      "list_aria": "قائمة دردشة Zoom",
+      "item_aria": "تحديد الدردشة مع {name}",
+      "detail_aria": "تفاصيل الدردشة لـ {name}"
+    },
+    "participants": {
+      "list_aria": "قائمة المشاركين في Zoom",
+      "item_aria": "تحديد المشارك {name}",
+      "detail_aria": "تفاصيل المشارك لـ {name}",
+      "email": "البريد الإلكتروني",
+      "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+      "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+      "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+      "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+      "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+      "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+    },
+    "call_log": {
+      "list_aria": "سجل مكالمات Zoom",
+      "item_aria": "تحديد المكالمة مع {name}",
+      "detail_aria": "تفاصيل المكالمة لـ {name}",
+      "ava_chen": { "name": "Ava Chen", "type": "صادر" },
+      "liam_park": { "name": "Liam Park", "type": "وارد" },
+      "zoe_kim": { "name": "Zoe Kim", "type": "مفقود" },
+      "ethan_brooks": { "name": "Ethan Brooks", "type": "صادر" },
+      "maya_wu": { "name": "Maya Wu", "type": "وارد" }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "لا أستطيع التوقف عن التفكير فيك",
+        "messages": {
+          "msg1": { "text": "هل أنتِ مستيقظة؟" },
+          "msg2": { "text": "نعم، لا أستطيع النوم" },
+          "msg3": { "text": "نفسي أيضاً. أتمنى أن تكوني هنا" },
+          "msg4": { "text": "لا أستطيع التوقف عن التفكير فيك" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "احذف بعد القراءة",
+        "messages": {
+          "msg1": { "text": "هذا الفندق كان مثالياً" },
+          "msg2": { "text": "يجب أن نكرره" },
+          "msg3": { "text": "قريباً. أعدك" },
+          "msg4": { "text": "احذف بعد القراءة" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "هو خارج المدينة",
+        "messages": {
+          "msg1": { "text": "هل أنتِ حرة الليلة؟" },
+          "msg2": { "text": "هو خارج المدينة" },
+          "msg3": { "text": "التقيني في الساعة 10" },
+          "msg4": { "text": "أنا في الطريق" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "أرسله",
+        "messages": {
+          "msg1": { "text": "تبدين جميلة جداً" },
+          "msg2": { "text": "توقفي عن استفزازي" },
+          "msg3": { "text": "أرسله" },
+          "msg4": { "text": "تم الإرسال. احذفي في 5" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "أنا أحبك أكثر",
+        "messages": {
+          "msg1": { "text": "لا يجب أن أقول هذا" },
+          "msg2": { "text": "لكن؟" },
+          "msg3": { "text": "أنا أحبك" },
+          "msg4": { "text": "أنا أحبك أكثر" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "الغرفة 808",
+        "messages": {
+          "msg1": { "text": "نفس المكان؟" },
+          "msg2": { "text": "نعم، الغرفة 808" },
+          "msg3": { "text": "سأكون هناك في الساعة 8" },
+          "msg4": { "text": "الباب مفتوح" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "لن يعرف أحد",
+        "messages": {
+          "msg1": { "text": "يجب أن نكون حذرين" },
+          "msg2": { "text": "أعرف. لكنني لا أستطيع التوقف" },
+          "msg3": { "text": "أنا أيضاً. فقط مرة واحدة أخرى" },
+          "msg4": { "text": "لن يعرف أحد" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "أنتِ ملاذي",
+        "messages": {
+          "msg1": { "text": "قلت لها أنني في المكتب" },
+          "msg2": { "text": "قلت له أنني مع الأصدقاء" },
+          "msg3": { "text": "هذا خطأ جداً" },
+          "msg4": { "text": "لكنك ملاذي" }
+        }
+      }
+    }
   }
 }

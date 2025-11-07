@@ -2377,5 +2377,132 @@
         }
       }
     }
+  },
+  "dmzoom": {
+    "header": { "title": "Zoom" },
+    "tabs": {
+      "chat": "Sohbet",
+      "participants": "Katılımcılar",
+      "call_log": "Çağrı Geçmişi",
+      "aria_label": "Zoom navigasyon sekmeleri",
+      "chat_aria": "Sohbet listesini görüntüle",
+      "participants_aria": "Katılımcı listesini görüntüle",
+      "call_log_aria": "Çağrı geçmişini görüntüle"
+    },
+    "back_button_aria": "Listeye dön",
+    "chat": {
+      "list_aria": "Zoom sohbet listesi",
+      "item_aria": "{name} ile sohbeti seç",
+      "detail_aria": "{name} için sohbet detayları"
+    },
+    "participants": {
+      "list_aria": "Zoom katılımcı listesi",
+      "item_aria": "Katılımcı {name} seç",
+      "detail_aria": "{name} için katılımcı detayları",
+      "email": "E-posta",
+      "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+      "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+      "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+      "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+      "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+      "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+    },
+    "call_log": {
+      "list_aria": "Zoom çağrı geçmişi",
+      "item_aria": "{name} ile çağrı seç",
+      "detail_aria": "{name} için çağrı detayları",
+      "ava_chen": { "name": "Ava Chen", "type": "giden" },
+      "liam_park": { "name": "Liam Park", "type": "gelen" },
+      "zoe_kim": { "name": "Zoe Kim", "type": "cevapsız" },
+      "ethan_brooks": { "name": "Ethan Brooks", "type": "giden" },
+      "maya_wu": { "name": "Maya Wu", "type": "gelen" }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "Seni düşünmeyi bırakamıyorum",
+        "messages": {
+          "msg1": { "text": "Hala uyanık mısın?" },
+          "msg2": { "text": "Evet, uyuyamıyorum" },
+          "msg3": { "text": "Aynen. Keşke burada olsaydın" },
+          "msg4": { "text": "Seni düşünmeyi bırakamıyorum" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "Okuduktan sonra sil",
+        "messages": {
+          "msg1": { "text": "O otel mükemmeldi" },
+          "msg2": { "text": "Bunu tekrar yapmalıyız" },
+          "msg3": { "text": "Yakında. Söz veriyorum" },
+          "msg4": { "text": "Okuduktan sonra sil" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "O şehir dışında",
+        "messages": {
+          "msg1": { "text": "Bu gece açık mısın?" },
+          "msg2": { "text": "O şehir dışında" },
+          "msg3": { "text": "Beni 10'da karşıla" },
+          "msg4": { "text": "Yolda gidiyorum" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "Gönder",
+        "messages": {
+          "msg1": { "text": "Çok güzel görünüyorsun" },
+          "msg2": { "text": "Beni kışkırtmayı kes" },
+          "msg3": { "text": "Gönder" },
+          "msg4": { "text": "Gönderildi. 5 saniyede sil" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "Seni daha çok seviyorum",
+        "messages": {
+          "msg1": { "text": "Bunu söylememesi gerekiyordu" },
+          "msg2": { "text": "Ama?" },
+          "msg3": { "text": "Seni seviyorum" },
+          "msg4": { "text": "Seni daha çok seviyorum" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "808 numaralı oda",
+        "messages": {
+          "msg1": { "text": "Aynı yer mi?" },
+          "msg2": { "text": "Evet, 808 numaralı oda" },
+          "msg3": { "text": "Saat 8'de orada olacağım" },
+          "msg4": { "text": "Kapı açık" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "Kimse bilmeyecek",
+        "messages": {
+          "msg1": { "text": "Daha dikkatli olmalıyız" },
+          "msg2": { "text": "Biliyorum. Ama duramıyorum" },
+          "msg3": { "text": "Ben de. Sadece bir kez daha" },
+          "msg4": { "text": "Kimse bilmeyecek" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "Sen benim kaçışım",
+        "messages": {
+          "msg1": { "text": "Ona geç çalıştığını söyledim" },
+          "msg2": { "text": "Ona arkadaşlarla olduğunu söyledim" },
+          "msg3": { "text": "Bu çok yanlış" },
+          "msg4": { "text": "Ama sen benim kaçışım" }
+        }
+      }
+    }
   }
 }
