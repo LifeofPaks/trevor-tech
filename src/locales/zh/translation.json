@@ -4237,5 +4237,155 @@
         "time": "2025-10-28 21:15"
       }
     }
+  },
+  "dmbadoo": {
+    "header": {
+      "title": "Badoo"
+    },
+    "tabs": {
+      "aria_label": "Badoo导航选项卡",
+      "chat": "聊天",
+      "chat_aria": "查看聊天",
+      "people": "附近的人",
+      "people_aria": "查看附近的人",
+      "calls": "通话",
+      "calls_aria": "查看通话记录"
+    },
+    "back_button_aria": "返回",
+    "chat": {
+      "list_aria": "聊天列表",
+      "item_aria": "与{{name}}的聊天",
+      "detail_aria": "与{{name}}的聊天详情"
+    },
+    "people": {
+      "list_aria": "附近的人列表",
+      "item_aria": "{{name}}的个人资料",
+      "detail_aria": "{{name}}的详情",
+      "distance": "距离{{distance}}公里",
+      "phone_label": "电话",
+      "email_label": "电子邮件"
+    },
+    "call_log": {
+      "list_aria": "通话记录列表",
+      "item_aria": "与{{name}}的通话记录",
+      "detail_aria": "与{{name}}的通话详情",
+      "types": {
+        "incoming": "来电",
+        "outgoing": "去电",
+        "missed": "未接"
+      }
+    },
+    "chats": {
+      "diego_morales": {
+        "name": "迭戈·莫拉莱斯",
+        "lastMessage": "我在你附近",
+        "message1": "你醒着吗？",
+        "message2": "嗯，睡不着",
+        "message3": "我在你附近"
+      },
+      "rafael_ortiz": {
+        "name": "拉斐尔·奥尔蒂斯",
+        "lastMessage": "她完全不知道",
+        "message1": "那太接近了",
+        "message2": "但我们成功了",
+        "message3": "她完全不知道"
+      },
+      "santiago_vega": {
+        "name": "圣地亚哥·维加",
+        "lastMessage": "再把照片发过来",
+        "message1": "你删掉了吗？",
+        "message2": "必须删，太危险了",
+        "message3": "再把照片发过来"
+      },
+      "mateo_herrera": {
+        "name": "马特奥·埃雷拉",
+        "lastMessage": "我在你家门口",
+        "message1": "你在家吗？",
+        "message2": "她睡着了，门没锁",
+        "message3": "我在你家门口"
+      },
+      "alejandro_ruiz": {
+        "name": "亚历杭德罗·鲁伊斯",
+        "lastMessage": "我对你着迷了",
+        "message1": "我停不下来想你",
+        "message2": "我也是，每一秒",
+        "message3": "我对你着迷了"
+      },
+      "gabriel_castro": {
+        "name": "加布里埃尔·卡斯特罗",
+        "lastMessage": "我告诉她我跟朋友出去了",
+        "message1": "你在哪儿？",
+        "message2": "跟朋友，深夜",
+        "message3": "骗子",
+        "message4": "我告诉她我跟朋友出去了"
+      },
+      "javier_silva": {
+        "name": "哈维尔·席尔瓦",
+        "lastMessage": "这不能再继续了",
+        "message1": "我们说上次是最后一次",
+        "message2": "我知道",
+        "message3": "那我为什么还在这儿？",
+        "message4": "这不能再继续了"
+      },
+      "carlos_navarro": {
+        "name": "卡洛斯·纳瓦罗",
+        "lastMessage": "我每晚都梦到你",
+        "message1": "你睡了吗？",
+        "message2": "没，你呢？",
+        "message3": "在想你",
+        "message4": "我每晚都梦到你"
+      },
+      "luis_mendoza": {
+        "name": "路易斯·门多萨",
+        "lastMessage": "读完删除",
+        "message1": "我一直在回想昨晚",
+        "message2": "你做的那个...",
+        "message3": "嘘，别写出来",
+        "message4": "读完删除"
+      },
+      "felipe_torres": {
+        "name": "费利佩·托雷斯",
+        "lastMessage": "我爱上你了",
+        "message1": "这越来越认真了",
+        "message2": "我知道",
+        "message3": "但我不想停下来",
+        "message4": "我爱上你了"
+      },
+      "andres_gomez": {
+        "name": "安德烈斯·戈麦斯",
+        "lastMessage": "你的味道留在我衬衫上",
+        "message1": "我还能闻到你的味道",
+        "message2": "很好",
+        "message3": "你的味道留在我衬衫上"
+      },
+      "marco_rivera": {
+        "name": "马可·里维拉",
+        "lastMessage": "我为你对她撒了谎",
+        "message1": "她问我在哪儿",
+        "message2": "你怎么说的？",
+        "message3": "跟你在一起",
+        "message4": "我为你对她撒了谎"
+      }
+    },
+    "call_logs": {
+      "diego_morales": {
+        "name": "迭戈·莫拉莱斯"
+      },
+      "rafael_ortiz": {
+        "name": "拉斐尔·奥尔蒂斯"
+      },
+      "santiago_vega": {
+        "name": "圣地亚哥·维加"
+      },
+      "mateo_herrera": {
+        "name": "马特奥·埃雷拉"
+      },
+      "alejandro_ruiz": {
+        "name": "亚历杭德罗·鲁伊斯"
+      },
+      "andres_gomez": {
+        "name": "安德烈斯·戈麦斯"
+      }
+    }
   }
 }

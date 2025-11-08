@@ -4254,5 +4254,155 @@
         "time": "2025-10-28 21:15"
       }
     }
+  },
+  "dmbadoo": {
+    "header": {
+      "title": "بادو"
+    },
+    "tabs": {
+      "aria_label": "علامات تبويب التنقل في بادو",
+      "chat": "الدردشات",
+      "chat_aria": "عرض الدردشات",
+      "people": "الأشخاص القريبون",
+      "people_aria": "عرض الأشخاص القريبين",
+      "calls": "المكالمات",
+      "calls_aria": "عرض سجل المكالمات"
+    },
+    "back_button_aria": "الرجوع",
+    "chat": {
+      "list_aria": "قائمة الدردشات",
+      "item_aria": "الدردشة مع {{name}}",
+      "detail_aria": "تفاصيل الدردشة مع {{name}}"
+    },
+    "people": {
+      "list_aria": "قائمة الأشخاص القريبين",
+      "item_aria": "ملف {{name}}",
+      "detail_aria": "تفاصيل {{name}}",
+      "distance": "{{distance}} كم بعيدًا",
+      "phone_label": "الهاتف",
+      "email_label": "البريد الإلكتروني"
+    },
+    "call_log": {
+      "list_aria": "قائمة سجل المكالمات",
+      "item_aria": "سجل المكالمات مع {{name}}",
+      "detail_aria": "تفاصيل المكالمة مع {{name}}",
+      "types": {
+        "incoming": "وارد",
+        "outgoing": "صادر",
+        "missed": "مفقود"
+      }
+    },
+    "chats": {
+      "diego_morales": {
+        "name": "دييغو موراليس",
+        "lastMessage": "أنا في حيك",
+        "message1": "هل أنت مستيقظ؟",
+        "message2": "نعم، لا أستطيع النوم",
+        "message3": "أنا في حيك"
+      },
+      "rafael_ortiz": {
+        "name": "رافائيل أورتيز",
+        "lastMessage": "هي لا تعرف شيئًا",
+        "message1": "كان ذلك قريبًا جدًا",
+        "message2": "لكننا نجحنا",
+        "message3": "هي لا تعرف شيئًا"
+      },
+      "santiago_vega": {
+        "name": "سانتياغو فيغا",
+        "lastMessage": "أرسل الصورة مرة أخرى",
+        "message1": "هل حذفتها؟",
+        "message2": "كان عليّ، خطير جدًا",
+        "message3": "أرسل الصورة مرة أخرى"
+      },
+      "mateo_herrera": {
+        "name": "ماتيو هيريرا",
+        "lastMessage": "أنا عند بابك",
+        "message1": "هل أنت في البيت؟",
+        "message2": "هي نائمة، الباب مفتوح",
+        "message3": "أنا عند بابك"
+      },
+      "alejandro_ruiz": {
+        "name": "أليخاندرو رويز",
+        "lastMessage": "أنا مهووس بك",
+        "message1": "لا أستطيع التوقف عن التفكير بك",
+        "message2": "نفس الشيء، كل ثانية",
+        "message3": "أنا مهووس بك"
+      },
+      "gabriel_castro": {
+        "name": "غابرييل كاسترو",
+        "lastMessage": "قلت لها إنني كنت مع أصدقاء",
+        "message1": "أين أنت؟",
+        "message2": "مع أصدقاء، ليلة متأخرة",
+        "message3": "كاذب",
+        "message4": "قلت لها إنني كنت مع أصدقاء"
+      },
+      "javier_silva": {
+        "name": "خافيير سيلفا",
+        "lastMessage": "هذا لا يمكن أن يستمر",
+        "message1": "قلنا إن المرة الأخيرة كانت الأخيرة",
+        "message2": "أعلم",
+        "message3": "إذًا لماذا أنا هنا؟",
+        "message4": "هذا لا يمكن أن يستمر"
+      },
+      "carlos_navarro": {
+        "name": "كارلوس نافارو",
+        "lastMessage": "أحلم بك كل ليلة",
+        "message1": "هل أنت نائم؟",
+        "message2": "لا، وأنت؟",
+        "message3": "أفكر بك",
+        "message4": "أحلم بك كل ليلة"
+      },
+      "luis_mendoza": {
+        "name": "لويس ميندوزا",
+        "lastMessage": "احذف بعد القراءة",
+        "message1": "لا أستطيع التوقف عن إعادة تشغيل ليلة البارحة",
+        "message2": "تلك الحركة التي قمت بها...",
+        "message3": "هش، لا تكتبها",
+        "message4": "احذف بعد القراءة"
+      },
+      "felipe_torres": {
+        "name": "فيليبي توريس",
+        "lastMessage": "أنا أقع في حبك",
+        "message1": "هذا يصبح جديًا",
+        "message2": "أعلم",
+        "message3": "لكنني لا أريد التوقف",
+        "message4": "أنا أقع في حبك"
+      },
+      "andres_gomez": {
+        "name": "أندريس غوميز",
+        "lastMessage": "رائحتك على قميصي",
+        "message1": "ما زلت أشم رائحتك",
+        "message2": "جيد",
+        "message3": "رائحتك على قميصي"
+      },
+      "marco_rivera": {
+        "name": "ماركو ريفيرا",
+        "lastMessage": "كذبت عليها من أجلك",
+        "message1": "سألتني أين كنت",
+        "message2": "ماذا قلت؟",
+        "message3": "معك",
+        "message4": "كذبت عليها من أجلك"
+      }
+    },
+    "call_logs": {
+      "diego_morales": {
+        "name": "دييغو موراليس"
+      },
+      "rafael_ortiz": {
+        "name": "رافائيل أورتيز"
+      },
+      "santiago_vega": {
+        "name": "سانتياغو فيغا"
+      },
+      "mateo_herrera": {
+        "name": "ماتيو هيريرا"
+      },
+      "alejandro_ruiz": {
+        "name": "أليخاندرو رويز"
+      },
+      "andres_gomez": {
+        "name": "أندريس غوميز"
+      }
+    }
   }
 }

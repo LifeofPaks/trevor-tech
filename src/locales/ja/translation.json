@@ -729,79 +729,262 @@
         "message4": "君のために嘘をついた"
       }
     }
-  },"dmtinder": {
-      "header": { "title": "Tinder" },
-      "tabs": {
-        "chat": "マッチ",
-        "calls": "通話",
-        "aria_label": "Tinderナビゲーションタブ",
-        "chat_aria": "マッチを表示",
-        "calls_aria": "通話履歴を表示"
-      },
-      "back_button_aria": "リストに戻る",
-      "chat": {
-        "list_aria": "マッチリスト",
-        "item_aria": "{{name}}とのマッチ",
-        "detail_aria": "{{name}}のチャット詳細"
-      },
-      "call_log": {
-        "list_aria": "通話履歴リスト",
-        "item_aria": "{{name}}の通話履歴",
-        "detail_aria": "{{name}}の通話詳細",
-        "types": {
-          "outgoing": "発信",
-          "incoming": "着信",
-          "missed": "不在"
-        }
-      },
-      "matches": {
-        "liam_cruz": {
-          "name": "リアム・クルーズ",
-          "lastMessage": "君のビルの前にいるよ",
-          "messages": {
-            "message1": { "text": "起きてる？", "time": "03:00", "incoming": true },
-            "message2": { "text": "うん", "time": "03:01", "incoming": false },
-            "message3": { "text": "君のビルの前にいるよ", "time": "03:10", "incoming": false }
-          }
-        },
-        "noah_reyes": {
-          "name": "ノア・レイエス",
-          "lastMessage": "彼女は俺が出かけたこと知らない",
-          "messages": {
-            "message1": { "text": "めっちゃ興奮したね", "time": "02:10", "incoming": true },
-            "message2": { "text": "うまくやったよ", "time": "02:11", "incoming": false },
-            "message3": { "text": "彼女は俺が出かけたこと知らない", "time": "02:25", "incoming": false }
-          }
-        },
-        "ethan_park": {
-          "name": "イーサン・パーク",
-          "lastMessage": "今夜のこと嘘ついた",
-          "messages": {
-            "message1": { "text": "彼女がどこにいたか聞いてきた", "time": "22:45", "incoming": true },
-            "message2": { "text": "なんて言った？", "time": "22:46", "incoming": false },
-            "message3": { "text": "君と", "time": "22:47", "incoming": true },
-            "message4": { "text": "今夜のこと嘘ついた", "time": "23:00", "incoming": false }
+  },
+  "dmtinder": {
+    "header": { "title": "Tinder" },
+    "tabs": {
+      "chat": "マッチ",
+      "calls": "通話",
+      "aria_label": "Tinderナビゲーションタブ",
+      "chat_aria": "マッチを表示",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "マッチリスト",
+      "item_aria": "{{name}}とのマッチ",
+      "detail_aria": "{{name}}のチャット詳細"
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "types": {
+        "outgoing": "発信",
+        "incoming": "着信",
+        "missed": "不在"
+      }
+    },
+    "matches": {
+      "liam_cruz": {
+        "name": "リアム・クルーズ",
+        "lastMessage": "君のビルの前にいるよ",
+        "messages": {
+          "message1": {
+            "text": "起きてる？",
+            "time": "03:00",
+            "incoming": true
+          },
+          "message2": { "text": "うん", "time": "03:01", "incoming": false },
+          "message3": {
+            "text": "君のビルの前にいるよ",
+            "time": "03:10",
+            "incoming": false
           }
         }
       },
-      "call_logs": {
-        "liam_cruz": {
-          "name": "リアム・クルーズ",
-          "type": "発信",
-          "time": "2025-10-28 23:55",
-          "duration": "19:20"
-        },
-        "noah_reyes": {
-          "name": "ノア・レイエス",
-          "type": "着信",
-          "time": "2025-10-28 22:30",
-          "duration": "14:10"
-        },
-        "ethan_park": {
-          "name": "イーサン・パーク",
-          "type": "不在",
-          "time": "2025-10-28 21:15"
+      "noah_reyes": {
+        "name": "ノア・レイエス",
+        "lastMessage": "彼女は俺が出かけたこと知らない",
+        "messages": {
+          "message1": {
+            "text": "めっちゃ興奮したね",
+            "time": "02:10",
+            "incoming": true
+          },
+          "message2": {
+            "text": "うまくやったよ",
+            "time": "02:11",
+            "incoming": false
+          },
+          "message3": {
+            "text": "彼女は俺が出かけたこと知らない",
+            "time": "02:25",
+            "incoming": false
+          }
+        }
+      },
+      "ethan_park": {
+        "name": "イーサン・パーク",
+        "lastMessage": "今夜のこと嘘ついた",
+        "messages": {
+          "message1": {
+            "text": "彼女がどこにいたか聞いてきた",
+            "time": "22:45",
+            "incoming": true
+          },
+          "message2": {
+            "text": "なんて言った？",
+            "time": "22:46",
+            "incoming": false
+          },
+          "message3": { "text": "君と", "time": "22:47", "incoming": true },
+          "message4": {
+            "text": "今夜のこと嘘ついた",
+            "time": "23:00",
+            "incoming": false
+          }
         }
       }
+    },
+    "call_logs": {
+      "liam_cruz": {
+        "name": "リアム・クルーズ",
+        "type": "発信",
+        "time": "2025-10-28 23:55",
+        "duration": "19:20"
+      },
+      "noah_reyes": {
+        "name": "ノア・レイエス",
+        "type": "着信",
+        "time": "2025-10-28 22:30",
+        "duration": "14:10"
+      },
+      "ethan_park": {
+        "name": "イーサン・パーク",
+        "type": "不在",
+        "time": "2025-10-28 21:15"
+      }
     }
+  },
+  "dmbadoo": {
+    "header": {
+      "title": "Badoo"
+    },
+    "tabs": {
+      "aria_label": "Badooナビゲーションタブ",
+      "chat": "チャット",
+      "chat_aria": "チャットを表示",
+      "people": "近くの人々",
+      "people_aria": "近くの人々を表示",
+      "calls": "通話",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "戻る",
+    "chat": {
+      "list_aria": "チャットのリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}とのチャットの詳細"
+    },
+    "people": {
+      "list_aria": "近くの人々のリスト",
+      "item_aria": "{{name}}のプロフィール",
+      "detail_aria": "{{name}}の詳細",
+      "distance": "{{distance}}km離れている",
+      "phone_label": "電話",
+      "email_label": "メール"
+    },
+    "call_log": {
+      "list_aria": "通話履歴のリスト",
+      "item_aria": "{{name}}との通話履歴",
+      "detail_aria": "{{name}}との通話の詳細",
+      "types": {
+        "incoming": "着信",
+        "outgoing": "発信",
+        "missed": "不在"
+      }
+    },
+    "chats": {
+      "diego_morales": {
+        "name": "ディエゴ・モラレス",
+        "lastMessage": "君の近所にいるよ",
+        "message1": "起きてる？",
+        "message2": "うん、眠れない",
+        "message3": "君の近所にいるよ"
+      },
+      "rafael_ortiz": {
+        "name": "ラファエル・オルティス",
+        "lastMessage": "彼女は何も知らない",
+        "message1": "あれは危なかった",
+        "message2": "でも何とかした",
+        "message3": "彼女は何も知らない"
+      },
+      "santiago_vega": {
+        "name": "サンティアゴ・ベガ",
+        "lastMessage": "写真をもう一度送って",
+        "message1": "削除したの？",
+        "message2": "しなきゃ、危なすぎる",
+        "message3": "写真をもう一度送って"
+      },
+      "mateo_herrera": {
+        "name": "マテオ・エレーラ",
+        "lastMessage": "君のドアの前にいる",
+        "message1": "家にいる？",
+        "message2": "彼女は寝てる、ドアは開いてる",
+        "message3": "君のドアの前にいる"
+      },
+      "alejandro_ruiz": {
+        "name": "アレハンドロ・ルイス",
+        "lastMessage": "君に夢中だよ",
+        "message1": "君のことを考えるのをやめられない",
+        "message2": "同じだ、毎秒",
+        "message3": "君に夢中だよ"
+      },
+      "gabriel_castro": {
+        "name": "ガブリエル・カストロ",
+        "lastMessage": "友達と出かけてると彼女に言った",
+        "message1": "どこにいる？",
+        "message2": "友達と、夜遅く",
+        "message3": "嘘つき",
+        "message4": "友達と出かけてると彼女に言った"
+      },
+      "javier_silva": {
+        "name": "ハビエル・シルバ",
+        "lastMessage": "これ以上続けられない",
+        "message1": "前回が最後って言ったよね",
+        "message2": "わかってる",
+        "message3": "じゃあなんでここにいるの？",
+        "message4": "これ以上続けられない"
+      },
+      "carlos_navarro": {
+        "name": "カルロス・ナバロ",
+        "lastMessage": "毎晩君の夢を見る",
+        "message1": "寝てる？",
+        "message2": "いや、君は？",
+        "message3": "君のことを考えてる",
+        "message4": "毎晩君の夢を見る"
+      },
+      "luis_mendoza": {
+        "name": "ルイス・メンドーサ",
+        "lastMessage": "読んだら削除して",
+        "message1": "昨夜のことを何度も思い出してる",
+        "message2": "君がしたあの...",
+        "message3": "シーッ、書かないで",
+        "message4": "読んだら削除して"
+      },
+      "felipe_torres": {
+        "name": "フェリペ・トーレス",
+        "lastMessage": "君に恋してる",
+        "message1": "これ本気になってきた",
+        "message2": "わかってる",
+        "message3": "でもやめたくない",
+        "message4": "君に恋してる"
+      },
+      "andres_gomez": {
+        "name": "アンドレス・ゴメス",
+        "lastMessage": "君の香りがシャツについてる",
+        "message1": "まだ君の香りがする",
+        "message2": "いいね",
+        "message3": "君の香りがシャツについてる"
+      },
+      "marco_rivera": {
+        "name": "マルコ・リベラ",
+        "lastMessage": "君のために彼女に嘘をついた",
+        "message1": "彼女がどこにいたか聞いた",
+        "message2": "なんて言った？",
+        "message3": "君と",
+        "message4": "君のために彼女に嘘をついた"
+      }
+    },
+    "call_logs": {
+      "diego_morales": {
+        "name": "ディエゴ・モラレス"
+      },
+      "rafael_ortiz": {
+        "name": "ラファエル・オルティス"
+      },
+      "santiago_vega": {
+        "name": "サンティアゴ・ベガ"
+      },
+      "mateo_herrera": {
+        "name": "マテオ・エレーラ"
+      },
+      "alejandro_ruiz": {
+        "name": "アレハンドロ・ルイス"
+      },
+      "andres_gomez": {
+        "name": "アンドレス・ゴメス"
+      }
+    }
+  }
 }

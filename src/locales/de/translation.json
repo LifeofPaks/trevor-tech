@@ -4391,5 +4391,155 @@
         "time": "2025-10-28 21:15"
       }
     }
+  },
+  "dmbadoo": {
+    "header": {
+      "title": "Badoo"
+    },
+    "tabs": {
+      "aria_label": "Badoo-Navigationsregisterkarten",
+      "chat": "Chats",
+      "chat_aria": "Chats anzeigen",
+      "people": "Personen in der Nähe",
+      "people_aria": "Personen in der Nähe anzeigen",
+      "calls": "Anrufe",
+      "calls_aria": "Anrufprotokolle anzeigen"
+    },
+    "back_button_aria": "Zurück",
+    "chat": {
+      "list_aria": "Liste der Chats",
+      "item_aria": "Chat mit {{name}}",
+      "detail_aria": "Chatdetails mit {{name}}"
+    },
+    "people": {
+      "list_aria": "Liste der Personen in der Nähe",
+      "item_aria": "Profil von {{name}}",
+      "detail_aria": "Details von {{name}}",
+      "distance": "{{distance}} km entfernt",
+      "phone_label": "Telefon",
+      "email_label": "E-Mail"
+    },
+    "call_log": {
+      "list_aria": "Liste der Anrufprotokolle",
+      "item_aria": "Anrufprotokoll mit {{name}}",
+      "detail_aria": "Anrufdetails mit {{name}}",
+      "types": {
+        "incoming": "Eingehend",
+        "outgoing": "Ausgehend",
+        "missed": "Verpasst"
+      }
+    },
+    "chats": {
+      "diego_morales": {
+        "name": "Diego Morales",
+        "lastMessage": "Ich bin in deiner Nachbarschaft",
+        "message1": "Bist du wach?",
+        "message2": "Ja, kann nicht schlafen",
+        "message3": "Ich bin in deiner Nachbarschaft"
+      },
+      "rafael_ortiz": {
+        "name": "Rafael Ortiz",
+        "lastMessage": "Sie hat keine Ahnung",
+        "message1": "Das war knapp",
+        "message2": "Aber wir haben es geschafft",
+        "message3": "Sie hat keine Ahnung"
+      },
+      "santiago_vega": {
+        "name": "Santiago Vega",
+        "lastMessage": "Schick das Foto nochmal",
+        "message1": "Hast du es gelöscht?",
+        "message2": "Musste ich, zu gefährlich",
+        "message3": "Schick das Foto nochmal"
+      },
+      "mateo_herrera": {
+        "name": "Mateo Herrera",
+        "lastMessage": "Ich bin an deiner Tür",
+        "message1": "Bist du zu Hause?",
+        "message2": "Sie schläft, die Tür ist offen",
+        "message3": "Ich bin an deiner Tür"
+      },
+      "alejandro_ruiz": {
+        "name": "Alejandro Ruiz",
+        "lastMessage": "Ich bin besessen von dir",
+        "message1": "Ich kann nicht aufhören, an dich zu denken",
+        "message2": "Gleiches hier, jede Sekunde",
+        "message3": "Ich bin besessen von dir"
+      },
+      "gabriel_castro": {
+        "name": "Gabriel Castro",
+        "lastMessage": "Ich habe ihr gesagt, ich sei mit Freunden unterwegs",
+        "message1": "Wo bist du?",
+        "message2": "Mit Freunden, spät abends",
+        "message3": "Lügner",
+        "message4": "Ich habe ihr gesagt, ich sei mit Freunden unterwegs"
+      },
+      "javier_silva": {
+        "name": "Javier Silva",
+        "lastMessage": "Das kann nicht so weitergehen",
+        "message1": "Wir sagten, das letzte Mal war das letzte",
+        "message2": "Ich weiß",
+        "message3": "Warum bin ich dann hier?",
+        "message4": "Das kann nicht so weitergehen"
+      },
+      "carlos_navarro": {
+        "name": "Carlos Navarro",
+        "lastMessage": "Ich träume jede Nacht von dir",
+        "message1": "Schläfst du?",
+        "message2": "Nein, du?",
+        "message3": "Ich denke an dich",
+        "message4": "Ich träume jede Nacht von dir"
+      },
+      "luis_mendoza": {
+        "name": "Luis Mendoza",
+        "lastMessage": "Lösche nach dem Lesen",
+        "message1": "Ich kann letzte Nacht nicht aus dem Kopf bekommen",
+        "message2": "Das, was du gemacht hast...",
+        "message3": "Pssst, schreib es nicht",
+        "message4": "Lösche nach dem Lesen"
+      },
+      "felipe_torres": {
+        "name": "Felipe Torres",
+        "lastMessage": "Ich verliebe mich in dich",
+        "message1": "Das wird ernst",
+        "message2": "Ich weiß",
+        "message3": "Aber ich will nicht aufhören",
+        "message4": "Ich verliebe mich in dich"
+      },
+      "andres_gomez": {
+        "name": "Andrés Gomez",
+        "lastMessage": "Dein Duft ist auf meinem Shirt",
+        "message1": "Ich kann dich immer noch riechen",
+        "message2": "Gut",
+        "message3": "Dein Duft ist auf meinem Shirt"
+      },
+      "marco_rivera": {
+        "name": "Marco Rivera",
+        "lastMessage": "Ich habe für dich gelogen",
+        "message1": "Sie fragte, wo ich war",
+        "message2": "Was hast du gesagt?",
+        "message3": "Mit dir",
+        "message4": "Ich habe für dich gelogen"
+      }
+    },
+    "call_logs": {
+      "diego_morales": {
+        "name": "Diego Morales"
+      },
+      "rafael_ortiz": {
+        "name": "Rafael Ortiz"
+      },
+      "santiago_vega": {
+        "name": "Santiago Vega"
+      },
+      "mateo_herrera": {
+        "name": "Mateo Herrera"
+      },
+      "alejandro_ruiz": {
+        "name": "Alejandro Ruiz"
+      },
+      "andres_gomez": {
+        "name": "Andrés Gomez"
+      }
+    }
   }
 }

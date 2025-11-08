@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -70,164 +71,152 @@ const theme = createTheme({
 const chats = [
   {
     id: 1,
-    name: "Diego Morales",
+    nameKey: "diego_morales",
     avatar: "https://i.pravatar.cc/150?img=52",
-    lastMessage: "I’m in your neighborhood",
+    lastMessageKey: "diego_morales.lastMessage",
     time: "03:40",
     messages: [
-      { text: "You awake?", time: "03:25", incoming: true },
-      { text: "Yeah. Can’t sleep", time: "03:26", incoming: false },
-      { text: "I’m in your neighborhood", time: "03:40", incoming: false },
+      { textKey: "diego_morales.message1", time: "03:25", incoming: true },
+      { textKey: "diego_morales.message2", time: "03:26", incoming: false },
+      { textKey: "diego_morales.message3", time: "03:40", incoming: false },
     ],
   },
   {
     id: 2,
-    name: "Rafael Ortiz",
+    nameKey: "rafael_ortiz",
     avatar: "https://i.pravatar.cc/150?img=53",
-    lastMessage: "She has no idea",
+    lastMessageKey: "rafael_ortiz.lastMessage",
     time: "02:05",
     messages: [
-      { text: "That was too close", time: "01:50", incoming: true },
-      { text: "But we made it", time: "01:51", incoming: false },
-      { text: "She has no idea", time: "02:05", incoming: false },
+      { textKey: "rafael_ortiz.message1", time: "01:50", incoming: true },
+      { textKey: "rafael_ortiz.message2", time: "01:51", incoming: false },
+      { textKey: "rafael_ortiz.message3", time: "02:05", incoming: false },
     ],
   },
   {
     id: 3,
-    name: "Santiago Vega",
+    nameKey: "santiago_vega",
     avatar: "https://i.pravatar.cc/150?img=54",
-    lastMessage: "Send the photo again",
+    lastMessageKey: "santiago_vega.lastMessage",
     time: "01:15",
     messages: [
-      { text: "You deleted it?", time: "01:00", incoming: true },
-      { text: "Had to. Too dangerous", time: "01:01", incoming: false },
-      { text: "Send the photo again", time: "01:15", incoming: false },
+      { textKey: "santiago_vega.message1", time: "01:00", incoming: true },
+      { textKey: "santiago_vega.message2", time: "01:01", incoming: false },
+      { textKey: "santiago_vega.message3", time: "01:15", incoming: false },
     ],
   },
   {
     id: 4,
-    name: "Mateo Herrera",
+    nameKey: "mateo_herrera",
     avatar: "https://i.pravatar.cc/150?img=55",
-    lastMessage: "I’m at your door",
+    lastMessageKey: "mateo_herrera.lastMessage",
     time: "00:30",
     messages: [
-      { text: "You home?", time: "00:15", incoming: true },
-      { text: "She’s asleep. Door’s open", time: "00:16", incoming: false },
-      { text: "I’m at your door", time: "00:30", incoming: false },
+      { textKey: "mateo_herrera.message1", time: "00:15", incoming: true },
+      { textKey: "mateo_herrera.message2", time: "00:16", incoming: false },
+      { textKey: "mateo_herrera.message3", time: "00:30", incoming: false },
     ],
   },
   {
     id: 5,
-    name: "Alejandro Ruiz",
+    nameKey: "alejandro_ruiz",
     avatar: "https://i.pravatar.cc/150?img=56",
-    lastMessage: "I’m obsessed with you",
+    lastMessageKey: "alejandro_ruiz.lastMessage",
     time: "04:05",
     messages: [
-      {
-        text: "I can’t stop thinking about you",
-        time: "03:50",
-        incoming: true,
-      },
-      { text: "Same. Every second", time: "03:51", incoming: false },
-      { text: "I’m obsessed with you", time: "04:05", incoming: false },
+      { textKey: "alejandro_ruiz.message1", time: "03:50", incoming: true },
+      { textKey: "alejandro_ruiz.message2", time: "03:51", incoming: false },
+      { textKey: "alejandro_ruiz.message3", time: "04:05", incoming: false },
     ],
   },
   {
     id: 6,
-    name: "Gabriel Castro",
+    nameKey: "gabriel_castro",
     avatar: "https://i.pravatar.cc/150?img=57",
-    lastMessage: "I told her I was out with friends",
+    lastMessageKey: "gabriel_castro.lastMessage",
     time: "22:45",
     messages: [
-      { text: "Where are you?", time: "22:25", incoming: true },
-      { text: "With friends. Late night", time: "22:26", incoming: false },
-      { text: "Liar", time: "22:27", incoming: true },
-      {
-        text: "I told her I was out with friends",
-        time: "22:45",
-        incoming: false,
-      },
+      { textKey: "gabriel_castro.message1", time: "22:25", incoming: true },
+      { textKey: "gabriel_castro.message2", time: "22:26", incoming: false },
+      { textKey: "gabriel_castro.message3", time: "22:27", incoming: true },
+      { textKey: "gabriel_castro.message4", time: "22:45", incoming: false },
     ],
   },
   {
     id: 7,
-    name: "Javier Silva",
+    nameKey: "javier_silva",
     avatar: "https://i.pravatar.cc/150?img=58",
-    lastMessage: "This can’t keep going",
+    lastMessageKey: "javier_silva.lastMessage",
     time: "21:00",
     messages: [
-      { text: "We said last time was final", time: "20:45", incoming: true },
-      { text: "I know", time: "20:46", incoming: false },
-      { text: "Then why am I here?", time: "20:47", incoming: true },
-      { text: "This can’t keep going", time: "21:00", incoming: false },
+      { textKey: "javier_silva.message1", time: "20:45", incoming: true },
+      { textKey: "javier_silva.message2", time: "20:46", incoming: false },
+      { textKey: "javier_silva.message3", time: "20:47", incoming: true },
+      { textKey: "javier_silva.message4", time: "21:00", incoming: false },
     ],
   },
   {
     id: 8,
-    name: "Carlos Navarro",
+    nameKey: "carlos_navarro",
     avatar: "https://i.pravatar.cc/150?img=59",
-    lastMessage: "I dream about you every night",
+    lastMessageKey: "carlos_navarro.lastMessage",
     time: "05:10",
     messages: [
-      { text: "You sleeping?", time: "04:55", incoming: true },
-      { text: "No. You?", time: "04:56", incoming: false },
-      { text: "Thinking of you", time: "04:57", incoming: true },
-      { text: "I dream about you every night", time: "05:10", incoming: false },
+      { textKey: "carlos_navarro.message1", time: "04:55", incoming: true },
+      { textKey: "carlos_navarro.message2", time: "04:56", incoming: false },
+      { textKey: "carlos_navarro.message3", time: "04:57", incoming: true },
+      { textKey: "carlos_navarro.message4", time: "05:10", incoming: false },
     ],
   },
   {
     id: 9,
-    name: "Luis Mendoza",
+    nameKey: "luis_mendoza",
     avatar: "https://i.pravatar.cc/150?img=60",
-    lastMessage: "Delete after reading",
+    lastMessageKey: "luis_mendoza.lastMessage",
     time: "02:20",
     messages: [
-      {
-        text: "I can’t stop replaying last night",
-        time: "02:05",
-        incoming: true,
-      },
-      { text: "That thing you did...", time: "02:06", incoming: false },
-      { text: "Shh. Don’t type it", time: "02:07", incoming: true },
-      { text: "Delete after reading", time: "02:20", incoming: false },
+      { textKey: "luis_mendoza.message1", time: "02:05", incoming: true },
+      { textKey: "luis_mendoza.message2", time: "02:06", incoming: false },
+      { textKey: "luis_mendoza.message3", time: "02:07", incoming: true },
+      { textKey: "luis_mendoza.message4", time: "02:20", incoming: false },
     ],
   },
   {
     id: 10,
-    name: "Felipe Torres",
+    nameKey: "felipe_torres",
     avatar: "https://i.pravatar.cc/150?img=61",
-    lastMessage: "I’m falling for you",
+    lastMessageKey: "felipe_torres.lastMessage",
     time: "01:35",
     messages: [
-      { text: "This is getting serious", time: "01:20", incoming: true },
-      { text: "I know", time: "01:21", incoming: false },
-      { text: "But I don’t want to stop", time: "01:22", incoming: true },
-      { text: "I’m falling for you", time: "01:35", incoming: false },
+      { textKey: "felipe_torres.message1", time: "01:20", incoming: true },
+      { textKey: "felipe_torres.message2", time: "01:21", incoming: false },
+      { textKey: "felipe_torres.message3", time: "01:22", incoming: true },
+      { textKey: "felipe_torres.message4", time: "01:35", incoming: false },
     ],
   },
   {
     id: 11,
-    name: "Andrés Gomez",
+    nameKey: "andres_gomez",
     avatar: "https://i.pravatar.cc/150?img=62",
-    lastMessage: "Your scent is on my shirt",
+    lastMessageKey: "andres_gomez.lastMessage",
     time: "06:20",
     messages: [
-      { text: "I can still smell you", time: "06:00", incoming: true },
-      { text: "Good", time: "06:01", incoming: false },
-      { text: "Your scent is on my shirt", time: "06:20", incoming: false },
+      { textKey: "andres_gomez.message1", time: "06:00", incoming: true },
+      { textKey: "andres_gomez.message2", time: "06:01", incoming: false },
+      { textKey: "andres_gomez.message3", time: "06:20", incoming: false },
     ],
   },
   {
     id: 12,
-    name: "Marco Rivera",
+    nameKey: "marco_rivera",
     avatar: "https://i.pravatar.cc/150?img=63",
-    lastMessage: "I lied to her for you",
+    lastMessageKey: "marco_rivera.lastMessage",
     time: "23:15",
     messages: [
-      { text: "She asked where I was", time: "23:00", incoming: true },
-      { text: "What’d you say?", time: "23:01", incoming: false },
-      { text: "With you", time: "23:02", incoming: true },
-      { text: "I lied to her for you", time: "23:15", incoming: false },
+      { textKey: "marco_rivera.message1", time: "23:00", incoming: true },
+      { textKey: "marco_rivera.message2", time: "23:01", incoming: false },
+      { textKey: "marco_rivera.message3", time: "23:02", incoming: true },
+      { textKey: "marco_rivera.message4", time: "23:15", incoming: false },
     ],
   },
 ];
@@ -236,11 +225,11 @@ const chats = [
 const peopleNearby = [
   ...chats.map((c) => ({
     id: c.id,
-    name: c.name,
+    nameKey: c.nameKey,
     avatar: c.avatar,
-    distance: `${Math.floor(Math.random() * 5) + 1} km away`,
+    distanceKey: `${Math.floor(Math.random() * 5) + 1} km away`,
     phone: `+34 6${String(100 + c.id).padStart(3, "0")} 12345`,
-    email: `${c.name.split(" ")[0].toLowerCase()}@badoo.com`,
+    email: `${c.nameKey.split("_")[0].toLowerCase()}@badoo.com`,
   })),
 ];
 
@@ -248,7 +237,7 @@ const peopleNearby = [
 const callLogs = [
   {
     id: 1,
-    name: "Diego Morales",
+    nameKey: "diego_morales",
     avatar: "https://i.pravatar.cc/150?img=52",
     type: "outgoing",
     time: "2025-10-28 23:55",
@@ -256,7 +245,7 @@ const callLogs = [
   },
   {
     id: 2,
-    name: "Rafael Ortiz",
+    nameKey: "rafael_ortiz",
     avatar: "https://i.pravatar.cc/150?img=53",
     type: "incoming",
     time: "2025-10-28 22:35",
@@ -264,14 +253,14 @@ const callLogs = [
   },
   {
     id: 3,
-    name: "Santiago Vega",
+    nameKey: "santiago_vega",
     avatar: "https://i.pravatar.cc/150?img=54",
     type: "missed",
     time: "2025-10-28 21:15",
   },
   {
     id: 4,
-    name: "Mateo Herrera",
+    nameKey: "mateo_herrera",
     avatar: "https://i.pravatar.cc/150?img=55",
     type: "outgoing",
     time: "2025-10-27 20:50",
@@ -279,7 +268,7 @@ const callLogs = [
   },
   {
     id: 5,
-    name: "Alejandro Ruiz",
+    nameKey: "alejandro_ruiz",
     avatar: "https://i.pravatar.cc/150?img=56",
     type: "incoming",
     time: "2025-10-27 19:25",
@@ -287,7 +276,7 @@ const callLogs = [
   },
   {
     id: 6,
-    name: "Andrés Gomez",
+    nameKey: "andres_gomez",
     avatar: "https://i.pravatar.cc/150?img=62",
     type: "missed",
     time: "2025-10-27 18:00",
@@ -295,6 +284,7 @@ const callLogs = [
 ];
 
 const BadooPage = () => {
+  const { t } = useTranslation();
   const muiTheme = useTheme();
   const isMobile = useMediaQuery(muiTheme.breakpoints.down("md"));
 
@@ -328,7 +318,7 @@ const BadooPage = () => {
   const groupPeopleByLetter = () => {
     const grouped = {};
     peopleNearby.forEach((p) => {
-      const letter = p.name[0].toUpperCase();
+      const letter = t(`dmbadoo.chats.${p.nameKey}.name`)[0].toUpperCase();
       if (!grouped[letter]) grouped[letter] = [];
       grouped[letter].push(p);
     });
@@ -343,7 +333,7 @@ const BadooPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between !gap-3 sm:!gap-4">
           <div className="flex items-center !gap-2 sm:!gap-3">
             <h1 className="text-lg sm:text-lg md:text-xl font-bold text-slate-800 flex items-center !gap-2">
-              Badoo
+              {t("dmbadoo.header.title")}
               <SiBadoo className="text-[#9C27B0]" />
             </h1>
           </div>
@@ -368,24 +358,28 @@ const BadooPage = () => {
                 mb: 3,
                 "& .MuiTabs-indicator": { bgcolor: "primary.main", height: 3 },
               }}
+              aria-label={t("dmbadoo.tabs.aria_label")}
             >
               <Tab
                 icon={<SiBadoo />}
                 iconPosition="start"
-                label={isMobile ? "" : "Chats"}
+                label={isMobile ? "" : t("dmbadoo.tabs.chat")}
                 value="chat"
+                aria-label={t("dmbadoo.tabs.chat_aria")}
               />
               <Tab
                 icon={<FiUsers />}
                 iconPosition="start"
-                label={isMobile ? "" : "People Nearby"}
+                label={isMobile ? "" : t("dmbadoo.tabs.people")}
                 value="people"
+                aria-label={t("dmbadoo.tabs.people_aria")}
               />
               <Tab
                 icon={<FiPhone />}
                 iconPosition="start"
-                label={isMobile ? "" : "Calls"}
+                label={isMobile ? "" : t("dmbadoo.tabs.calls")}
                 value="calls"
+                aria-label={t("dmbadoo.tabs.calls_aria")}
               />
             </Tabs>
           )}
@@ -393,7 +387,11 @@ const BadooPage = () => {
           {/* Back Button */}
           {showDetail && (
             <Box sx={{ mb: 2 }}>
-              <IconButton onClick={handleBack} sx={{ color: "primary.main" }}>
+              <IconButton
+                onClick={handleBack}
+                sx={{ color: "primary.main" }}
+                aria-label={t("dmbadoo.back_button_aria")}
+              >
                 <IoArrowBackCircle className="!text-[25px]" />
               </IconButton>
             </Box>
@@ -418,7 +416,7 @@ const BadooPage = () => {
                 overflow: "hidden",
                 display: showDetail && isMobile ? "none" : "block",
                 height: "100%",
-                maxHeight: "80vh O",
+                maxHeight: "80vh",
                 overflowY: "auto",
                 bgcolor: "background.paper",
                 "&::-webkit-scrollbar": { display: "none" },
@@ -428,7 +426,7 @@ const BadooPage = () => {
             >
               {/* Chat List */}
               {tab === "chat" && (
-                <Stack>
+                <Stack aria-label={t("dmbadoo.chat.list_aria")}>
                   {chats.map((chat) => (
                     <Box
                       key={chat.id}
@@ -439,6 +437,9 @@ const BadooPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedChat(chat)}
+                      aria-label={t("dmbadoo.chat.item_aria", {
+                        name: t(`dmbadoo.chats.${chat.nameKey}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Avatar
@@ -449,7 +450,7 @@ const BadooPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {chat.name}
+                            {t(`dmbadoo.chats.${chat.nameKey}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -460,7 +461,7 @@ const BadooPage = () => {
                               whiteSpace: "nowrap",
                             }}
                           >
-                            {chat.lastMessage}
+                            {t(`dmbadoo.chats.${chat.lastMessageKey}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -476,7 +477,7 @@ const BadooPage = () => {
 
               {/* People Nearby List */}
               {tab === "people" && (
-                <Stack>
+                <Stack aria-label={t("dmbadoo.people.list_aria")}>
                   {Object.keys(groupPeopleByLetter())
                     .sort()
                     .map((letter) => (
@@ -502,6 +503,9 @@ const BadooPage = () => {
                               transition: "background 0.2s",
                             }}
                             onClick={() => setSelectedPerson(person)}
+                            aria-label={t("dmbadoo.people.item_aria", {
+                              name: t(`dmbadoo.chats.${person.nameKey}.name`),
+                            })}
                           >
                             <Stack
                               direction="row"
@@ -516,7 +520,7 @@ const BadooPage = () => {
                                 <Typography
                                   sx={{ fontWeight: 500, color: "#1f2937" }}
                                 >
-                                  {person.name}
+                                  {t(`dmbadoo.chats.${person.nameKey}.name`)}
                                 </Typography>
                                 <Typography
                                   sx={{
@@ -524,7 +528,9 @@ const BadooPage = () => {
                                     color: "#9C27B0",
                                   }}
                                 >
-                                  {person.distance}
+                                  {t("dmbadoo.people.distance", {
+                                    distance: person.distanceKey.split(" ")[0],
+                                  })}
                                 </Typography>
                               </Box>
                             </Stack>
@@ -537,7 +543,7 @@ const BadooPage = () => {
 
               {/* Call Log */}
               {tab === "calls" && (
-                <Stack>
+                <Stack aria-label={t("dmbadoo.call_log.list_aria")}>
                   {callLogs.map((call) => (
                     <Box
                       key={call.id}
@@ -548,6 +554,9 @@ const BadooPage = () => {
                         transition: "background 0.2s",
                       }}
                       onClick={() => setSelectedCall(call)}
+                      aria-label={t("dmbadoo.call_log.item_aria", {
+                        name: t(`dmbadoo.call_logs.${call.nameKey}.name`),
+                      })}
                     >
                       <Stack direction="row" spacing={2} alignItems="center">
                         <Box sx={{ position: "relative" }}>
@@ -576,7 +585,7 @@ const BadooPage = () => {
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
                           >
-                            {call.name}
+                            {t(`dmbadoo.call_logs.${call.nameKey}.name`)}
                           </Typography>
                           <Typography
                             sx={{
@@ -589,8 +598,7 @@ const BadooPage = () => {
                                   : "#EF4444",
                             }}
                           >
-                            {call.type.charAt(0).toUpperCase() +
-                              call.type.slice(1)}
+                            {t(`dmbadoo.call_log.types.${call.type}`)}
                           </Typography>
                         </Box>
                         <Typography
@@ -620,7 +628,12 @@ const BadooPage = () => {
               >
                 {/* Chat Detail */}
                 {selectedChat && (
-                  <Stack spacing={3}>
+                  <Stack
+                    spacing={3}
+                    aria-label={t("dmbadoo.chat.detail_aria", {
+                      name: t(`dmbadoo.chats.${selectedChat.nameKey}.name`),
+                    })}
+                  >
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Avatar
                         src={selectedChat.avatar}
@@ -630,7 +643,7 @@ const BadooPage = () => {
                         variant="h5"
                         sx={{ fontWeight: 700, color: "#1f2937" }}
                       >
-                        {selectedChat.name}
+                        {t(`dmbadoo.chats.${selectedChat.nameKey}.name`)}
                       </Typography>
                     </Stack>
                     <Divider />
@@ -660,7 +673,7 @@ const BadooPage = () => {
                             }}
                           >
                             <Typography sx={{ fontSize: "0.875rem" }}>
-                              {msg.text}
+                              {t(`dmbadoo.chats.${msg.textKey}`)}
                             </Typography>
                             <Typography
                               className="flex items-center gap-1"
@@ -684,7 +697,13 @@ const BadooPage = () => {
 
                 {/* Person Detail */}
                 {selectedPerson && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmbadoo.people.detail_aria", {
+                      name: t(`dmbadoo.chats.${selectedPerson.nameKey}.name`),
+                    })}
+                  >
                     <Avatar
                       src={selectedPerson.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -693,10 +712,12 @@ const BadooPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedPerson.name}
+                      {t(`dmbadoo.chats.${selectedPerson.nameKey}.name`)}
                     </Typography>
                     <Typography sx={{ fontSize: "1rem", color: "#9C27B0" }}>
-                      {selectedPerson.distance}
+                      {t("dmbadoo.people.distance", {
+                        distance: selectedPerson.distanceKey.split(" ")[0],
+                      })}
                     </Typography>
 
                     {selectedPerson.phone && (
@@ -730,7 +751,7 @@ const BadooPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Phone
+                            {t("dmbadoo.people.phone_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
@@ -772,7 +793,7 @@ const BadooPage = () => {
                           <Typography
                             sx={{ fontSize: "0.8125rem", color: "#6b7280" }}
                           >
-                            Email
+                            {t("dmbadoo.people.email_label")}
                           </Typography>
                           <Typography
                             sx={{ fontWeight: 600, color: "#1f2937" }}
@@ -787,7 +808,13 @@ const BadooPage = () => {
 
                 {/* Call Detail */}
                 {selectedCall && (
-                  <Stack spacing={4} alignItems="center">
+                  <Stack
+                    spacing={4}
+                    alignItems="center"
+                    aria-label={t("dmbadoo.call_log.detail_aria", {
+                      name: t(`dmbadoo.call_logs.${selectedCall.nameKey}.name`),
+                    })}
+                  >
                     <Avatar
                       src={selectedCall.avatar}
                       sx={{ width: 120, height: 120 }}
@@ -796,7 +823,7 @@ const BadooPage = () => {
                       variant="h4"
                       sx={{ fontWeight: 700, color: "#1f2937" }}
                     >
-                      {selectedCall.name}
+                      {t(`dmbadoo.call_logs.${selectedCall.nameKey}.name`)}
                     </Typography>
                     <Paper
                       elevation={0}
@@ -822,8 +849,7 @@ const BadooPage = () => {
                           sx={{ fontSize: "0.875rem", color: "#6b7280", mt: 1 }}
                         >
                           {selectedCall.duration} •{" "}
-                          {selectedCall.type.charAt(0).toUpperCase() +
-                            selectedCall.type.slice(1)}
+                          {t(`dmbadoo.call_log.types.${selectedCall.type}`)}
                         </Typography>
                       )}
                     </Paper>

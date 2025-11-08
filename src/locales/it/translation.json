@@ -4291,5 +4291,155 @@
         "time": "2025-10-28 21:15"
       }
     }
+  },
+  "dmbadoo": {
+    "header": {
+      "title": "Badoo"
+    },
+    "tabs": {
+      "aria_label": "Schede di navigazione Badoo",
+      "chat": "Chat",
+      "chat_aria": "Visualizza chat",
+      "people": "Persone nelle vicinanze",
+      "people_aria": "Visualizza persone nelle vicinanze",
+      "calls": "Chiamate",
+      "calls_aria": "Visualizza registro chiamate"
+    },
+    "back_button_aria": "Indietro",
+    "chat": {
+      "list_aria": "Elenco delle chat",
+      "item_aria": "Chat con {{name}}",
+      "detail_aria": "Dettagli della chat con {{name}}"
+    },
+    "people": {
+      "list_aria": "Elenco delle persone nelle vicinanze",
+      "item_aria": "Profilo di {{name}}",
+      "detail_aria": "Dettagli di {{name}}",
+      "distance": "{{distance}} km di distanza",
+      "phone_label": "Telefono",
+      "email_label": "Email"
+    },
+    "call_log": {
+      "list_aria": "Elenco del registro chiamate",
+      "item_aria": "Registro chiamate con {{name}}",
+      "detail_aria": "Dettagli della chiamata con {{name}}",
+      "types": {
+        "incoming": "In entrata",
+        "outgoing": "In uscita",
+        "missed": "Persa"
+      }
+    },
+    "chats": {
+      "diego_morales": {
+        "name": "Diego Morales",
+        "lastMessage": "Sono nel tuo quartiere",
+        "message1": "Sei sveglio?",
+        "message2": "Sì, non riesco a dormire",
+        "message3": "Sono nel tuo quartiere"
+      },
+      "rafael_ortiz": {
+        "name": "Rafael Ortiz",
+        "lastMessage": "Non ha idea",
+        "message1": "È stato troppo rischioso",
+        "message2": "Ma ce l’abbiamo fatta",
+        "message3": "Non ha idea"
+      },
+      "santiago_vega": {
+        "name": "Santiago Vega",
+        "lastMessage": "Invia di nuovo la foto",
+        "message1": "L’hai cancellata?",
+        "message2": "Dovevo, troppo pericoloso",
+        "message3": "Invia di nuovo la foto"
+      },
+      "mateo_herrera": {
+        "name": "Mateo Herrera",
+        "lastMessage": "Sono alla tua porta",
+        "message1": "Sei a casa?",
+        "message2": "Lei sta dormendo, la porta è aperta",
+        "message3": "Sono alla tua porta"
+      },
+      "alejandro_ruiz": {
+        "name": "Alejandro Ruiz",
+        "lastMessage": "Sono ossessionato da te",
+        "message1": "Non riesco a smettere di pensarti",
+        "message2": "Lo stesso, ogni secondo",
+        "message3": "Sono ossessionato da te"
+      },
+      "gabriel_castro": {
+        "name": "Gabriel Castro",
+        "lastMessage": "Le ho detto che ero con amici",
+        "message1": "Dove sei?",
+        "message2": "Con amici, serata tardi",
+        "message3": "Bugiardo",
+        "message4": "Le ho detto che ero con amici"
+      },
+      "javier_silva": {
+        "name": "Javier Silva",
+        "lastMessage": "Non può continuare così",
+        "message1": "Abbiamo detto che l’ultima volta era l’ultima",
+        "message2": "Lo so",
+        "message3": "Allora perché sono qui?",
+        "message4": "Non può continuare così"
+      },
+      "carlos_navarro": {
+        "name": "Carlos Navarro",
+        "lastMessage": "Sogno di te ogni notte",
+        "message1": "Stai dormendo?",
+        "message2": "No, tu?",
+        "message3": "Sto pensando a te",
+        "message4": "Sogno di te ogni notte"
+      },
+      "luis_mendoza": {
+        "name": "Luis Mendoza",
+        "lastMessage": "Cancella dopo aver letto",
+        "message1": "Non riesco a smettere di ripensare a ieri sera",
+        "message2": "Quella cosa che hai fatto...",
+        "message3": "Ssh, non scriverlo",
+        "message4": "Cancella dopo aver letto"
+      },
+      "felipe_torres": {
+        "name": "Felipe Torres",
+        "lastMessage": "Mi sto innamorando di te",
+        "message1": "Sta diventando serio",
+        "message2": "Lo so",
+        "message3": "Ma non voglio smettere",
+        "message4": "Mi sto innamorando di te"
+      },
+      "andres_gomez": {
+        "name": "Andrés Gomez",
+        "lastMessage": "Il tuo profumo è sulla mia maglietta",
+        "message1": "Posso ancora sentirti",
+        "message2": "Bene",
+        "message3": "Il tuo profumo è sulla mia maglietta"
+      },
+      "marco_rivera": {
+        "name": "Marco Rivera",
+        "lastMessage": "Ho mentito per te",
+        "message1": "Mi ha chiesto dove fossi",
+        "message2": "Cosa hai detto?",
+        "message3": "Con te",
+        "message4": "Ho mentito per te"
+      }
+    },
+    "call_logs": {
+      "diego_morales": {
+        "name": "Diego Morales"
+      },
+      "rafael_ortiz": {
+        "name": "Rafael Ortiz"
+      },
+      "santiago_vega": {
+        "name": "Santiago Vega"
+      },
+      "mateo_herrera": {
+        "name": "Mateo Herrera"
+      },
+      "alejandro_ruiz": {
+        "name": "Alejandro Ruiz"
+      },
+      "andres_gomez": {
+        "name": "Andrés Gomez"
+      }
+    }
   }
 }

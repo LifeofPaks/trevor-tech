@@ -4309,5 +4309,154 @@
         "time": "2025-10-28 21:15"
       }
     }
-  }
+  },"dmbadoo": {
+      "header": {
+        "title": "Badoo"
+      },
+      "tabs": {
+        "aria_label": "Badoo gezinme sekmeleri",
+        "chat": "Sohbetler",
+        "chat_aria": "Sohbetleri görüntüle",
+        "people": "Yakındaki kişiler",
+        "people_aria": "Yakındaki kişileri görüntüle",
+        "calls": "Aramalar",
+        "calls_aria": "Arama geçmişini görüntüle"
+      },
+      "back_button_aria": "Geri",
+      "chat": {
+        "list_aria": "Sohbet listesi",
+        "item_aria": "{{name}} ile sohbet",
+        "detail_aria": "{{name}} ile sohbet detayları"
+      },
+      "people": {
+        "list_aria": "Yakındaki kişiler listesi",
+        "item_aria": "{{name}} profili",
+        "detail_aria": "{{name}} detayları",
+        "distance": "{{distance}} km uzakta",
+        "phone_label": "Telefon",
+        "email_label": "E-posta"
+      },
+      "call_log": {
+        "list_aria": "Arama geçmişi listesi",
+        "item_aria": "{{name}} ile arama geçmişi",
+        "detail_aria": "{{name}} ile arama detayları",
+        "types": {
+          "incoming": "Gelen",
+          "outgoing": "Giden",
+          "missed": "Cevapsız"
+        }
+      },
+      "chats": {
+        "diego_morales": {
+          "name": "Diego Morales",
+          "lastMessage": "Mahallendeyim",
+          "message1": "Uyanık mısın?",
+          "message2": "Evet, uyuyamıyorum",
+          "message3": "Mahallendeyim"
+        },
+        "rafael_ortiz": {
+          "name": "Rafael Ortiz",
+          "lastMessage": "Onun haberi yok",
+          "message1": "Bu çok yakındı",
+          "message2": "Ama başardık",
+          "message3": "Onun haberi yok"
+        },
+        "santiago_vega": {
+          "name": "Santiago Vega",
+          "lastMessage": "Fotoğrafı tekrar gönder",
+          "message1": "Sildin mi?",
+          "message2": "Silmek zorundaydım, çok tehlikeli",
+          "message3": "Fotoğrafı tekrar gönder"
+        },
+        "mateo_herrera": {
+          "name": "Mateo Herrera",
+          "lastMessage": "Kapındayım",
+          "message1": "Evde misiniz?",
+          "message2": "O uyuyor, kapı açık",
+          "message3": "Kapındayım"
+        },
+        "alejandro_ruiz": {
+          "name": "Alejandro Ruiz",
+          "lastMessage": "Sana takıntılıyım",
+          "message1": "Seni düşünmeyi bırakamıyorum",
+          "message2": "Aynısı, her saniye",
+          "message3": "Sana takıntılıyım"
+        },
+        "gabriel_castro": {
+          "name": "Gabriel Castro",
+          "lastMessage": "Ona arkadaşlarla dışarıda olduğumu söyledim",
+          "message1": "Neredesin?",
+          "message2": "Arkadaşlarla, geç saat",
+          "message3": "Yalancı",
+          "message4": "Ona arkadaşlarla dışarıda olduğumu söyledim"
+        },
+        "javier_silva": {
+          "name": "Javier Silva",
+          "lastMessage": "Bu böyle devam edemez",
+          "message1": "Son seferin son olduğunu söylemiştik",
+          "message2": "Biliyorum",
+          "message3": "O zaman neden buradayım?",
+          "message4": "Bu böyle devam edemez"
+        },
+        "carlos_navarro": {
+          "name": "Carlos Navarro",
+          "lastMessage": "Her gece seni rüyamda görü Popularity: see",
+          "message1": "Uyuyor musun?",
+          "message2": "Hayır, ya sen?",
+          "message3": "Seni düşünüyorum",
+          "message4": "Her gece seni rüyamda görüyorum"
+        },
+        "luis_mendoza": {
+          "name": "Luis Mendoza",
+          "lastMessage": "Okuduktan sonra sil",
+          "message1": "Dün geceyi tekrar tekrar yaşıyorum",
+          "message2": "Senin yaptığın o şey...",
+          "message3": "Şşş, yazma",
+          "message4": "Okuduktan sonra sil"
+        },
+        "felipe_torres": {
+          "name": "Felipe Torres",
+          "lastMessage": "Sana aşık oluyorum",
+          "message1": "Bu ciddileşiyor",
+          "message2": "Biliyorum",
+          "message3": "Ama durmak istemiyorum",
+          "message4": "Sana aşık oluyorum"
+        },
+        "andres_gomez": {
+          "name": "Andrés Gomez",
+          "lastMessage": "Koku gömleğime sinmiş",
+          "message1": "Hala kokunu alıyorum",
+          "message2": "Güzel",
+          "message3": "Koku gömleğime sinmiş"
+        },
+        "marco_rivera": {
+          "name": "Marco Rivera",
+          "lastMessage": "Senin için ona yalan söyledim",
+          "message1": "Nerede olduğumu sordu",
+          "message2": "Ne dedin?",
+          "message3": "Seninleydim",
+          "message4": "Senin için ona yalan söyledim"
+        }
+      },
+      "call_logs": {
+        "diego_morales": {
+          "name": "Diego Morales"
+        },
+        "rafael_ortiz": {
+          "name": "Rafael Ortiz"
+        },
+        "santiago_vega": {
+          "name": "Santiago Vega"
+        },
+        "mateo_herrera": {
+          "name": "Mateo Herrera"
+        },
+        "alejandro_ruiz": {
+          "name": "Alejandro Ruiz"
+        },
+        "andres_gomez": {
+          "name": "Andrés Gomez"
+        }
+      }
+    }
 }

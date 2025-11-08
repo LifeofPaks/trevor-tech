@@ -4301,5 +4301,155 @@
         "time": "2025-10-28 21:15"
       }
     }
+  },
+  "dmbadoo": {
+    "header": {
+      "title": "Badoo"
+    },
+    "tabs": {
+      "aria_label": "Badoo navigation tabs",
+      "chat": "Chats",
+      "chat_aria": "View chats",
+      "people": "People Nearby",
+      "people_aria": "View people nearby",
+      "calls": "Calls",
+      "calls_aria": "View call logs"
+    },
+    "back_button_aria": "Go back",
+    "chat": {
+      "list_aria": "List of chats",
+      "item_aria": "Chat with {{name}}",
+      "detail_aria": "Chat details with {{name}}"
+    },
+    "people": {
+      "list_aria": "List of people nearby",
+      "item_aria": "Profile of {{name}}",
+      "detail_aria": "Details of {{name}}",
+      "distance": "{{distance}} km away",
+      "phone_label": "Phone",
+      "email_label": "Email"
+    },
+    "call_log": {
+      "list_aria": "List of call logs",
+      "item_aria": "Call log with {{name}}",
+      "detail_aria": "Call details with {{name}}",
+      "types": {
+        "incoming": "Incoming",
+        "outgoing": "Outgoing",
+        "missed": "Missed"
+      }
+    },
+    "chats": {
+      "diego_morales": {
+        "name": "Diego Morales",
+        "lastMessage": "I’m in your neighborhood",
+        "message1": "You awake?",
+        "message2": "Yeah. Can’t sleep",
+        "message3": "I’m in your neighborhood"
+      },
+      "rafael_ortiz": {
+        "name": "Rafael Ortiz",
+        "lastMessage": "She has no idea",
+        "message1": "That was too close",
+        "message2": "But we made it",
+        "message3": "She has no idea"
+      },
+      "santiago_vega": {
+        "name": "Santiago Vega",
+        "lastMessage": "Send the photo again",
+        "message1": "You deleted it?",
+        "message2": "Had to. Too dangerous",
+        "message3": "Send the photo again"
+      },
+      "mateo_herrera": {
+        "name": "Mateo Herrera",
+        "lastMessage": "I’m at your door",
+        "message1": "You home?",
+        "message2": "She’s asleep. Door’s open",
+        "message3": "I’m at your door"
+      },
+      "alejandro_ruiz": {
+        "name": "Alejandro Ruiz",
+        "lastMessage": "I’m obsessed with you",
+        "message1": "I can’t stop thinking about you",
+        "message2": "Same. Every second",
+        "message3": "I’m obsessed with you"
+      },
+      "gabriel_castro": {
+        "name": "Gabriel Castro",
+        "lastMessage": "I told her I was out with friends",
+        "message1": "Where are you?",
+        "message2": "With friends. Late night",
+        "message3": "Liar",
+        "message4": "I told her I was out with friends"
+      },
+      "javier_silva": {
+        "name": "Javier Silva",
+        "lastMessage": "This can’t keep going",
+        "message1": "We said last time was final",
+        "message2": "I know",
+        "message3": "Then why am I here?",
+        "message4": "This can’t keep going"
+      },
+      "carlos_navarro": {
+        "name": "Carlos Navarro",
+        "lastMessage": "I dream about you every night",
+        "message1": "You sleeping?",
+        "message2": "No. You?",
+        "message3": "Thinking of you",
+        "message4": "I dream about you every night"
+      },
+      "luis_mendoza": {
+        "name": "Luis Mendoza",
+        "lastMessage": "Delete after reading",
+        "message1": "I can’t stop replaying last night",
+        "message2": "That thing you did...",
+        "message3": "Shh. Don’t type it",
+        "message4": "Delete after reading"
+      },
+      "felipe_torres": {
+        "name": "Felipe Torres",
+        "lastMessage": "I’m falling for you",
+        "message1": "This is getting serious",
+        "message2": "I know",
+        "message3": "But I don’t want to stop",
+        "message4": "I’m falling for you"
+      },
+      "andres_gomez": {
+        "name": "Andrés Gomez",
+        "lastMessage": "Your scent is on my shirt",
+        "message1": "I can still smell you",
+        "message2": "Good",
+        "message3": "Your scent is on my shirt"
+      },
+      "marco_rivera": {
+        "name": "Marco Rivera",
+        "lastMessage": "I lied to her for you",
+        "message1": "She asked where I was",
+        "message2": "What’d you say?",
+        "message3": "With you",
+        "message4": "I lied to her for you"
+      }
+    },
+    "call_logs": {
+      "diego_morales": {
+        "name": "Diego Morales"
+      },
+      "rafael_ortiz": {
+        "name": "Rafael Ortiz"
+      },
+      "santiago_vega": {
+        "name": "Santiago Vega"
+      },
+      "mateo_herrera": {
+        "name": "Mateo Herrera"
+      },
+      "alejandro_ruiz": {
+        "name": "Alejandro Ruiz"
+      },
+      "andres_gomez": {
+        "name": "Andrés Gomez"
+      }
+    }
   }
 }
