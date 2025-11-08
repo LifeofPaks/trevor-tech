@@ -1,4 +1,4 @@
-// src/components/SEO.jsx
+
 const DEFAULT_SEO = {
   title: "Trevor Tech Solutions",
   description:
