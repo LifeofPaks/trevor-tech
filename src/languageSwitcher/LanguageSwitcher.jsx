@@ -39,7 +39,7 @@ const languages = [
   return (
     <div
       className={`!fixed ${
-        isDemoPage ? "lg:!top-5" : "lg:!top-10"
+        isDemoPage ? "lg:!top-5" : "lg:!top-30"
       }  !top-22 !right-5 !z-[1000]`}
       style={{
         direction:
