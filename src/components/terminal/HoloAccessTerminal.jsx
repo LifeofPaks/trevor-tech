@@ -1,3 +1,8 @@
+import { useMotionValue, useSpring, useTransform, motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { FiCpu } from "react-icons/fi";
+
 // HoloAccess Terminal
 const HoloAccessTerminal = ({ inView }) => {
   const { t } = useTranslation();
@@ -33,13 +38,13 @@ const HoloAccessTerminal = ({ inView }) => {
   return (
     <motion.div
       ref={ref}
-      className="relative lg:!w-[450px] lg:!h-[300px] !w-full !h-[240px] !my-12 lg:!my-0"
+      className="relative lg:!w-[550px] lg:!h-[300px] !w-full !h-[240px] !my-12 lg:!my-0"
       style={{ x: tx, y: ty, perspective: 1000 }}
       onMouseMove={onMove}
       whileHover={{ scale: 1.05 }}
     >
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-cyan-900/70 via-violet-900/60 to-teal-900/50 backdrop-blur-3xl rounded-2xl border border-teal-400/50 shadow-2xl overflow-hidden"
+        className="absolute inset-0 bg-gradient-to-br from-cyan-900/70 via-blue-900/60 to-teal-900/50 backdrop-blur-3xl rounded-2xl border border-teal-400/50 shadow-2xl overflow-hidden"
         animate={{ opacity: [0.8, 1, 0.8] }}
         transition={{ duration: 3, repeat: Infinity }}
       >
@@ -65,36 +70,11 @@ const HoloAccessTerminal = ({ inView }) => {
               </motion.div>
             ))}
           </div>
-          <div className="relative !w-24 !h-24 !mx-auto">
-            <svg className="w-full h-full">
-              <circle
-                cx="50%"
-                cy="50%"
-                r="40%"
-                fill="none"
-                stroke="url(#progressGradient)"
-                strokeWidth="4"
-                strokeDasharray={`${progress * 2.51} 251`}
-              />
-              <defs>
-                <linearGradient
-                  id="progressGradient"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" style={{ stopColor: "#22d3ee" }} />
-                  <stop offset="100%" style={{ stopColor: "#2dd4bf" }} />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span className="absolute inset-0 flex items-center justify-center text-cyan-100 font-bold">
-              {Math.round(progress)}%
-            </span>
-          </div>
+
         </div>
       </motion.div>
     </motion.div>
   );
 };
+
+export default HoloAccessTerminal;

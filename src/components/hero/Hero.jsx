@@ -11,6 +11,7 @@ import BuyModal from "../buyModal/BuyModal";
 import HeroImage from "../../assets/hero-image.png";
 import { useTranslation } from "react-i18next";
 import { Trans } from "react-i18next";
+import HoloAccessTerminal from "../terminal/HoloAccessTerminal";
 
 const Hero = () => {
   const [open, setOpen] = useState(false);
@@ -70,7 +71,7 @@ const Hero = () => {
         <Arrow className="w-8 h-8 drop-shadow-glow" />
       </motion.div>
 
-      <div className="flex flex-col lg:flex-row items-start justify-between !gap-16 !mb-8">
+      <div className="flex flex-col lg:flex-row lg:items-start justify-between lg:!gap-16 !mb-8">
         {/* Left Section */}
         <motion.div
           className="flex-1"
@@ -78,8 +79,8 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <div className="relative inline-block lg:w-[125%]">
-            <h1 className="text-[2.3rem] md:text-4xl lg:text-[3.6rem] font-extrabold lg:leading-[70px] leading-[40px] text-center lg:text-left">
+          <div className="relative inline-block ">
+            <h1 className="text-[2.3rem] md:text-4xl lg:text-[3.6rem] font-extrabold lg:leading-[70px] leading-[40px] text-center lg:text-left font-black bg-gradient-to-r from-cyan-300  bg-clip-text text-transparent">
               {t("home_page.hero_title")}
               <span className="relative inline-block">
                 <span
@@ -180,11 +181,12 @@ const Hero = () => {
 
             {/* Image Container */}
 
-            <img
+            {/* <img
               src={HeroImage}
               alt="Digital security and monitoring dashboard showcasing hack, track, and recovery tools"
               className="relative w-full lg:!h-[500px] !h-[400px] rounded-2xl object-cover shadow-inner hidden lg:block opacity-40"
-            />
+            /> */}
+            <HoloAccessTerminal />
             {/* Inner Glow */}
             {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-900/50 to-transparent opacity-50" /> */}
           </motion.div>
