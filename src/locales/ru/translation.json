@@ -2221,5 +2221,116 @@
         "message4": "я соврал ей ради тебя"
       }
     }
+  },
+  "dmtinder": {
+    "header": { "title": "Tinder" },
+    "tabs": {
+      "chat": "Совпадения",
+      "calls": "Звонки",
+      "aria_label": "Вкладки навигации Tinder",
+      "chat_aria": "Показать совпадения",
+      "calls_aria": "Показать историю звонков"
+    },
+    "back_button_aria": "Вернуться к списку",
+    "chat": {
+      "list_aria": "Список совпадений",
+      "item_aria": "Совпадение с {{name}}",
+      "detail_aria": "Детали чата для {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Список истории звонков",
+      "item_aria": "История звонков для {{name}}",
+      "detail_aria": "Детали звонка для {{name}}",
+      "types": {
+        "outgoing": "Исходящий",
+        "incoming": "Входящий",
+        "missed": "Пропущенный"
+      }
+    },
+    "matches": {
+      "liam_cruz": {
+        "name": "Лиам Круз",
+        "lastMessage": "Я у твоего дома",
+        "messages": {
+          "message1": {
+            "text": "Ты не спишь?",
+            "time": "03:00",
+            "incoming": true
+          },
+          "message2": { "text": "Да", "time": "03:01", "incoming": false },
+          "message3": {
+            "text": "Я у твоего дома",
+            "time": "03:10",
+            "incoming": false
+          }
+        }
+      },
+      "noah_reyes": {
+        "name": "Ноа Рейес",
+        "lastMessage": "Она не знает, что я ушёл",
+        "messages": {
+          "message1": {
+            "text": "Это было мощно",
+            "time": "02:10",
+            "incoming": true
+          },
+          "message2": {
+            "text": "Мы справились",
+            "time": "02:11",
+            "incoming": false
+          },
+          "message3": {
+            "text": "Она не знает, что я ушёл",
+            "time": "02:25",
+            "incoming": false
+          }
+        }
+      },
+      "ethan_park": {
+        "name": "Итан Парк",
+        "lastMessage": "Я соврал про этот вечер",
+        "messages": {
+          "message1": {
+            "text": "Она спросила, где я был",
+            "time": "22:45",
+            "incoming": true
+          },
+          "message2": {
+            "text": "Что ты сказал?",
+            "time": "22:46",
+            "incoming": false
+          },
+          "message3": {
+            "text": "С тобой",
+            "time": "22:47",
+            "incoming": true
+          },
+          "message4": {
+            "text": "Я соврал про этот вечер",
+            "time": "23:00",
+            "incoming": false
+          }
+        }
+      }
+    },
+    "call_logs": {
+      "liam_cruz": {
+        "name": "Лиам Круз",
+        "type": "Исходящий",
+        "time": "2025-10-28 23:55",
+        "duration": "19:20"
+      },
+      "noah_reyes": {
+        "name": "Ноа Рейес",
+        "type": "Входящий",
+        "time": "2025-10-28 22:30",
+        "duration": "14:10"
+      },
+      "ethan_park": {
+        "name": "Итан Парк",
+        "type": "Пропущенный",
+        "time": "2025-10-28 21:15"
+      }
+    }
   }
 }

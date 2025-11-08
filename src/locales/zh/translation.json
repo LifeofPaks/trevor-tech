@@ -4126,5 +4126,116 @@
         "message4": "我为你撒了谎"
       }
     }
+  },
+  "dmtinder": {
+    "header": { "title": "Tinder" },
+    "tabs": {
+      "chat": "匹配",
+      "calls": "通话",
+      "aria_label": "Tinder导航标签",
+      "chat_aria": "显示匹配",
+      "calls_aria": "显示通话记录"
+    },
+    "back_button_aria": "返回列表",
+    "chat": {
+      "list_aria": "匹配列表",
+      "item_aria": "与{{name}}的匹配",
+      "detail_aria": "{{name}}的聊天详情"
+    },
+    "call_log": {
+      "list_aria": "通话记录列表",
+      "item_aria": "{{name}}的通话记录",
+      "detail_aria": "{{name}}的通话详情",
+      "types": {
+        "outgoing": "呼出",
+        "incoming": "呼入",
+        "missed": "未接"
+      }
+    },
+    "matches": {
+      "liam_cruz": {
+        "name": "利亚姆·克鲁兹",
+        "lastMessage": "我在你楼下",
+        "messages": {
+          "message1": {
+            "text": "你醒着吗？",
+            "time": "03:00",
+            "incoming": true
+          },
+          "message2": { "text": "嗯", "time": "03:01", "incoming": false },
+          "message3": {
+            "text": "我在你楼下",
+            "time": "03:10",
+            "incoming": false
+          }
+        }
+      },
+      "noah_reyes": {
+        "name": "诺亚·雷耶斯",
+        "lastMessage": "她不知道我出去了",
+        "messages": {
+          "message1": {
+            "text": "那太刺激了",
+            "time": "02:10",
+            "incoming": true
+          },
+          "message2": {
+            "text": "我们成功了",
+            "time": "02:11",
+            "incoming": false
+          },
+          "message3": {
+            "text": "她不知道我出去了",
+            "time": "02:25",
+            "incoming": false
+          }
+        }
+      },
+      "ethan_park": {
+        "name": "伊森·帕克",
+        "lastMessage": "我今晚撒了谎",
+        "messages": {
+          "message1": {
+            "text": "她问我在哪儿",
+            "time": "22:45",
+            "incoming": true
+          },
+          "message2": {
+            "text": "你说了什么？",
+            "time": "22:46",
+            "incoming": false
+          },
+          "message3": {
+            "text": "跟你在一起",
+            "time": "22:47",
+            "incoming": true
+          },
+          "message4": {
+            "text": "我今晚撒了谎",
+            "time": "23:00",
+            "incoming": false
+          }
+        }
+      }
+    },
+    "call_logs": {
+      "liam_cruz": {
+        "name": "利亚姆·克鲁兹",
+        "type": "呼出",
+        "time": "2025-10-28 23:55",
+        "duration": "19:20"
+      },
+      "noah_reyes": {
+        "name": "诺亚·雷耶斯",
+        "type": "呼入",
+        "time": "2025-10-28 22:30",
+        "duration": "14:10"
+      },
+      "ethan_park": {
+        "name": "伊森·帕克",
+        "type": "未接",
+        "time": "2025-10-28 21:15"
+      }
+    }
   }
 }

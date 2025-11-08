@@ -4156,5 +4156,114 @@
         "message4": "너 때문에 거짓말했어"
       }
     }
+  },
+  "dmtinder": {
+    "header": { "title": "Tinder" },
+    "tabs": {
+      "chat": "매치",
+      "calls": "통화",
+      "aria_label": "Tinder 탐색 탭",
+      "chat_aria": "매치 보기",
+      "calls_aria": "통화 기록 보기"
+    },
+    "back_button_aria": "목록으로 돌아가기",
+    "chat": {
+      "list_aria": "매치 목록",
+      "item_aria": "{{name}}와의 매치",
+      "detail_aria": "{{name}}의 채팅 상세",
+      "phone_label": "전화",
+      "email_label": "이메일"
+    },
+    "call_log": {
+      "list_aria": "통화 기록 목록",
+      "item_aria": "{{name}}의 통화 기록",
+      "detail_aria": "{{name}}의 통화 상세",
+      "types": {
+        "outgoing": "발신",
+        "incoming": "수신",
+        "missed": "부재중"
+      }
+    },
+    "matches": {
+      "liam_cruz": {
+        "name": "리암 크루즈",
+        "lastMessage": "너희 건물 앞에 있어",
+        "messages": {
+          "message1": {
+            "text": "깨어있어?",
+            "time": "03:00",
+            "incoming": true
+          },
+          "message2": { "text": "응", "time": "03:01", "incoming": false },
+          "message3": {
+            "text": "너희 건물 앞에 있어",
+            "time": "03:10",
+            "incoming": false
+          }
+        }
+      },
+      "noah_reyes": {
+        "name": "노아 레예스",
+        "lastMessage": "그녀는 내가 나간 걸 몰라",
+        "messages": {
+          "message1": {
+            "text": "진짜 짜릿했어",
+            "time": "02:10",
+            "incoming": true
+          },
+          "message2": {
+            "text": "우리가 해냈지",
+            "time": "02:11",
+            "incoming": false
+          },
+          "message3": {
+            "text": "그녀는 내가 나간 걸 몰라",
+            "time": "02:25",
+            "incoming": false
+          }
+        }
+      },
+      "ethan_park": {
+        "name": "이든 박",
+        "lastMessage": "오늘 밤에 대해 거짓말했어",
+        "messages": {
+          "message1": {
+            "text": "그녀가 어디 있었냐고 물었어",
+            "time": "22:45",
+            "incoming": true
+          },
+          "message2": {
+            "text": "뭐라고 했어?",
+            "time": "22:46",
+            "incoming": false
+          },
+          "message3": { "text": "너랑", "time": "22:47", "incoming": true },
+          "message4": {
+            "text": "오늘 밤에 대해 거짓말했어",
+            "time": "23:00",
+            "incoming": false
+          }
+        }
+      }
+    },
+    "call_logs": {
+      "liam_cruz": {
+        "name": "리암 크루즈",
+        "type": "발신",
+        "time": "2025-10-28 23:55",
+        "duration": "19:20"
+      },
+      "noah_reyes": {
+        "name": "노아 레예스",
+        "type": "수신",
+        "time": "2025-10-28 22:30",
+        "duration": "14:10"
+      },
+      "ethan_park": {
+        "name": "이든 박",
+        "type": "부재중",
+        "time": "2025-10-28 21:15"
+      }
+    }
   }
 }

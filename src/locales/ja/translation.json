@@ -729,5 +729,79 @@
         "message4": "君のために嘘をついた"
       }
     }
-  }
+  },"dmtinder": {
+      "header": { "title": "Tinder" },
+      "tabs": {
+        "chat": "マッチ",
+        "calls": "通話",
+        "aria_label": "Tinderナビゲーションタブ",
+        "chat_aria": "マッチを表示",
+        "calls_aria": "通話履歴を表示"
+      },
+      "back_button_aria": "リストに戻る",
+      "chat": {
+        "list_aria": "マッチリスト",
+        "item_aria": "{{name}}とのマッチ",
+        "detail_aria": "{{name}}のチャット詳細"
+      },
+      "call_log": {
+        "list_aria": "通話履歴リスト",
+        "item_aria": "{{name}}の通話履歴",
+        "detail_aria": "{{name}}の通話詳細",
+        "types": {
+          "outgoing": "発信",
+          "incoming": "着信",
+          "missed": "不在"
+        }
+      },
+      "matches": {
+        "liam_cruz": {
+          "name": "リアム・クルーズ",
+          "lastMessage": "君のビルの前にいるよ",
+          "messages": {
+            "message1": { "text": "起きてる？", "time": "03:00", "incoming": true },
+            "message2": { "text": "うん", "time": "03:01", "incoming": false },
+            "message3": { "text": "君のビルの前にいるよ", "time": "03:10", "incoming": false }
+          }
+        },
+        "noah_reyes": {
+          "name": "ノア・レイエス",
+          "lastMessage": "彼女は俺が出かけたこと知らない",
+          "messages": {
+            "message1": { "text": "めっちゃ興奮したね", "time": "02:10", "incoming": true },
+            "message2": { "text": "うまくやったよ", "time": "02:11", "incoming": false },
+            "message3": { "text": "彼女は俺が出かけたこと知らない", "time": "02:25", "incoming": false }
+          }
+        },
+        "ethan_park": {
+          "name": "イーサン・パーク",
+          "lastMessage": "今夜のこと嘘ついた",
+          "messages": {
+            "message1": { "text": "彼女がどこにいたか聞いてきた", "time": "22:45", "incoming": true },
+            "message2": { "text": "なんて言った？", "time": "22:46", "incoming": false },
+            "message3": { "text": "君と", "time": "22:47", "incoming": true },
+            "message4": { "text": "今夜のこと嘘ついた", "time": "23:00", "incoming": false }
+          }
+        }
+      },
+      "call_logs": {
+        "liam_cruz": {
+          "name": "リアム・クルーズ",
+          "type": "発信",
+          "time": "2025-10-28 23:55",
+          "duration": "19:20"
+        },
+        "noah_reyes": {
+          "name": "ノア・レイエス",
+          "type": "着信",
+          "time": "2025-10-28 22:30",
+          "duration": "14:10"
+        },
+        "ethan_park": {
+          "name": "イーサン・パーク",
+          "type": "不在",
+          "time": "2025-10-28 21:15"
+        }
+      }
+    }
 }

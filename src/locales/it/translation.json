@@ -4184,5 +4184,112 @@
         "message4": "ho mentito per te"
       }
     }
+  },
+  "dmtinder": {
+    "header": { "title": "Tinder" },
+    "tabs": {
+      "chat": "Match",
+      "calls": "Chiamate",
+      "aria_label": "Schede di navigazione di Tinder",
+      "chat_aria": "Mostra i match",
+      "calls_aria": "Mostra il registro delle chiamate"
+    },
+    "back_button_aria": "Torna alla lista",
+    "chat": {
+      "list_aria": "Elenco dei match",
+      "item_aria": "Match con {{name}}",
+      "detail_aria": "Dettagli della chat per {{name}}"
+    },
+    "call_log": {
+      "list_aria": "Elenco del registro delle chiamate",
+      "item_aria": "Registro delle chiamate per {{name}}",
+      "detail_aria": "Dettagli della chiamata per {{name}}",
+      "types": {
+        "outgoing": "In uscita",
+        "incoming": "In entrata",
+        "missed": "Persa"
+      }
+    },
+    "matches": {
+      "liam_cruz": {
+        "name": "Liam Cruz",
+        "lastMessage": "Sono fuori dal tuo palazzo",
+        "messages": {
+          "message1": {
+            "text": "Sei sveglio?",
+            "time": "03:00",
+            "incoming": true
+          },
+          "message2": { "text": "Sì", "time": "03:01", "incoming": false },
+          "message3": {
+            "text": "Sono fuori dal tuo palazzo",
+            "time": "03:10",
+            "incoming": false
+          }
+        }
+      },
+      "noah_reyes": {
+        "name": "Noah Reyes",
+        "lastMessage": "Non sa che sono uscito",
+        "messages": {
+          "message1": {
+            "text": "È stato intenso",
+            "time": "02:10",
+            "incoming": true
+          },
+          "message2": {
+            "text": "Ce l’abbiamo fatta",
+            "time": "02:11",
+            "incoming": false
+          },
+          "message3": {
+            "text": "Non sa che sono uscito",
+            "time": "02:25",
+            "incoming": false
+          }
+        }
+      },
+      "ethan_park": {
+        "name": "Ethan Park",
+        "lastMessage": "Ho mentito riguardo a stasera",
+        "messages": {
+          "message1": {
+            "text": "Mi ha chiesto dove fossi",
+            "time": "22:45",
+            "incoming": true
+          },
+          "message2": {
+            "text": "Cosa hai detto?",
+            "time": "22:46",
+            "incoming": false
+          },
+          "message3": { "text": "Con te", "time": "22:47", "incoming": true },
+          "message4": {
+            "text": "Ho mentito riguardo a stasera",
+            "time": "23:00",
+            "incoming": false
+          }
+        }
+      }
+    },
+    "call_logs": {
+      "liam_cruz": {
+        "name": "Liam Cruz",
+        "type": "In uscita",
+        "time": "2025-10-28 23:55",
+        "duration": "19:20"
+      },
+      "noah_reyes": {
+        "name": "Noah Reyes",
+        "type": "In entrata",
+        "time": "2025-10-28 22:30",
+        "duration": "14:10"
+      },
+      "ethan_park": {
+        "name": "Ethan Park",
+        "type": "Persa",
+        "time": "2025-10-28 21:15"
+      }
+    }
   }
 }

@@ -4198,5 +4198,116 @@
         "message4": "senin için yalan söyledim"
       }
     }
+  },
+  "dmtinder": {
+    "header": { "title": "Tinder" },
+    "tabs": {
+      "chat": "Eşleşmeler",
+      "calls": "Aramalar",
+      "aria_label": "Tinder gezinme sekmeleri",
+      "chat_aria": "Eşleşmeleri göster",
+      "calls_aria": "Arama geçmişini göster"
+    },
+    "back_button_aria": "Listeye geri dön",
+    "chat": {
+      "list_aria": "Eşleşme listesi",
+      "item_aria": "{{name}} ile eşleşme",
+      "detail_aria": "{{name}} için sohbet detayları"
+    },
+    "call_log": {
+      "list_aria": "Arama geçmişi listesi",
+      "item_aria": "{{name}} için arama geçmişi",
+      "detail_aria": "{{name}} için arama detayları",
+      "types": {
+        "outgoing": "Giden",
+        "incoming": "Gelen",
+        "missed": "Cevapsız"
+      }
+    },
+    "matches": {
+      "liam_cruz": {
+        "name": "Liam Cruz",
+        "lastMessage": "Binanın önünde",
+        "messages": {
+          "message1": {
+            "text": "Uyanık mısın?",
+            "time": "03:00",
+            "incoming": true
+          },
+          "message2": { "text": "Evet", "time": "03:01", "incoming": false },
+          "message3": {
+            "text": "Binanın önünde",
+            "time": "03:10",
+            "incoming": false
+          }
+        }
+      },
+      "noah_reyes": {
+        "name": "Noah Reyes",
+        "lastMessage": "Onun haberi yok",
+        "messages": {
+          "message1": {
+            "text": "Bu çok heyecanlıydı",
+            "time": "02:10",
+            "incoming": true
+          },
+          "message2": {
+            "text": "Başardık",
+            "time": "02:11",
+            "incoming": false
+          },
+          "message3": {
+            "text": "Onun haberi yok",
+            "time": "02:25",
+            "incoming": false
+          }
+        }
+      },
+      "ethan_park": {
+        "name": "Ethan Park",
+        "lastMessage": "Bu gece hakkında yalan söyledim",
+        "messages": {
+          "message1": {
+            "text": "Nerede olduğunu sordu",
+            "time": "22:45",
+            "incoming": true
+          },
+          "message2": {
+            "text": "Ne dedin?",
+            "time": "22:46",
+            "incoming": false
+          },
+          "message3": {
+            "text": "Seninle",
+            "time": "22:47",
+            "incoming": true
+          },
+          "message4": {
+            "text": "Bu gece hakkında yalan söyledim",
+            "time": "23:00",
+            "incoming": false
+          }
+        }
+      }
+    },
+    "call_logs": {
+      "liam_cruz": {
+        "name": "Liam Cruz",
+        "type": "Giden",
+        "time": "2025-10-28 23:55",
+        "duration": "19:20"
+      },
+      "noah_reyes": {
+        "name": "Noah Reyes",
+        "type": "Gelen",
+        "time": "2025-10-28 22:30",
+        "duration": "14:10"
+      },
+      "ethan_park": {
+        "name": "Ethan Park",
+        "type": "Cevapsız",
+        "time": "2025-10-28 21:15"
+      }
+    }
   }
 }
