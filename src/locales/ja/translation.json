@@ -1,473 +1,3862 @@
 {
-  "ko": {
-    "dmimo": {
-      "header": { "title": "Imo" },
-      "tabs": {
-        "chat": "채팅",
-        "contacts": "연락처",
-        "calls": "통화",
-        "aria_label": "Imo 탐색 탭",
-        "chat_aria": "채팅 보기",
-        "contacts_aria": "연락처 보기",
-        "calls_aria": "통화 기록 보기"
-      },
-      "back_button_aria": "목록으로 돌아가기",
-      "chat": {
-        "list_aria": "채팅 목록",
-        "item_aria": "{{name}}과의 채팅",
-        "detail_aria": "{{name}}의 채팅 상세"
-      },
-      "contacts": {
-        "phone_label": "전화",
-        "email_label": "이메일",
-        "list_aria": "연락처 목록",
-        "item_aria": "연락처 {{name}}",
-        "detail_aria": "{{name}}의 연락처 상세"
-      },
-      "call_log": {
-        "list_aria": "통화 기록 목록",
-        "item_aria": "{{name}}의 통화 기록",
-        "detail_aria": "{{name}}의 통화 상세",
-        "types": {
-          "outgoing": "발신",
-          "incoming": "수신",
-          "missed": "부재중"
-        }
-      },
-      "chats": {
-        "aryan_patel": {
-          "lastMessage": "너 차에 열쇠 두고 왔어",
-          "message1": "아직 깨어있어?",
-          "message2": "응... 잠이 안 와",
-          "message3": "너 차에 열쇠 두고 왔어"
-        },
-        "rohan_mehta": {
-          "lastMessage": "그녀는 눈치채지 못했어",
-          "message1": "너무 아슬아슬했어",
-          "message2": "하지만 안전해",
-          "message3": "그녀는 눈치채지 못했어"
-        },
-        "vikram_singh": {
-          "lastMessage": "비디오 다시 보내",
-          "message1": "삭제했어?",
-          "message2": "해야 했어. 너무 위험해",
-          "message3": "비디오 다시 보내"
-        },
-        "arjun_desai": {
-          "lastMessage": "너 아파트에 있어 joul",
-          "message1": "집에 있어?",
-          "message2": "그녀는 나갔어. 문 열려있어",
-          "message3": "너 아파트에 있어"
-        },
-        "neil_sharma": {
-          "lastMessage": "너한테 중독됐어",
-          "message1": "너 생각만 해",
-          "message2": "나도. 매초마다",
-          "message3": "너한테 중독됐어"
-        },
-        "karan_reddy": {
-          "lastMessage": "그녀한테 일한다고 했어",
-          "message1": "어디야?",
-          "message2": "일이야. 야간 근무",
-          "message3": "거짓말쟁이",
-          "message4": "그녀한테 일한다고 했어"
-        },
-        "dev_kapoor": {
-          "lastMessage": "이제 통제 불능이야",
-          "message1": "마지막이라고 했잖아",
-          "message2": "알아",
-          "message3": "그럼 내가 왜 여기 있어?",
-          "message4": "이제 통제 불능이야"
-        },
-        "siddharth_rao": {
-          "lastMessage": "매일 밤 너 꿈을 꿔",
-          "message1": "자고 있어?",
-          "message2": "아니. 너는?",
-          "message3": "너 생각하고 있어",
-          "message4": "매일 밤 너 꿈을 꿔"
-        },
-        "yash_malhotra": {
-          "lastMessage": "읽고 나서 지워",
-          "message1": "어젯밤이 계속 떠올라",
-          "message2": "네가 한 그거...",
-          "message3": "쉿. 쓰지 마",
-          "message4": "읽고 나서 지워"
-        },
-        "rishi_gupta": {
-          "lastMessage": "너한테 반했어",
-          "message1": "이건 위험해지고 있어",
-          "message2": "알아",
-          "message3": "하지만 멈추고 싶지 않아",
-          "message4": "너한테 반했어"
-        },
-        "aadi_nair": {
-          "lastMessage": "네 향기가 내 셔츠에 배었어",
-          "message1": "아직도 네 향기가 나",
-          "message2": "좋아",
-          "message3": "네 향기가 내 셔츠에 배었어"
-        },
-        "vivan_joshi": {
-          "lastMessage": "너 때문에 거짓말했어",
-          "message1": "그녀가 내가 어디 있었냐고 물었어",
-          "message2": "뭐라고 했어?",
-          "message3": "너랑 같이 있었다고",
-          "message4": "너 때문에 거짓말했어"
-        }
-      }
-    }
+  "zions_galaxy_s24_name": "ザイオンのGalaxy S24",
+  "zions_galaxy_s24_status": "使用中",
+  "zions_galaxy_s24_battery": "20%",
+  "zions_iphone_16_name": "ザイオンのiPhone 16",
+  "zions_iphone_16_status": "オフライン",
+  "zions_iphone_16_battery": "",
+  "zions_iphone_14_name": "ザイオンのiPhone 14",
+  "zions_iphone_14_status": "オフライン",
+  "zions_iphone_14_battery": "",
+  "zions_icloud_name": "ザイオンのiCloud",
+  "zions_icloud_status": "利用可能",
+  "zions_icloud_battery": "",
+
+  "dashboard": "ダッシュボード",
+  "general_features": "一般機能",
+  "text_messages": "テキストメッセージ",
+  "gps_locations": "GPS位置情報",
+  "keylogger": "キーロガー",
+  "calls": "通話",
+  "contacts": "連絡先",
+  "notes": "ノート",
+  "photos": "写真",
+  "videos": "動画",
+  "wifi_networks": "Wi-Fiネットワーク",
+  "keyword_alerts": "キーワードアラート",
+  "installed_apps": "インストール済みアプリ",
+  "bookmarks": "ブックマーク",
+  "browser_history": "ブラウザ履歴",
+  "email": "メール",
+  "sim_card": "SIMカード",
+  "social_networks": "ソーシャルネットワーク",
+  "whatsapp": "WhatsApp",
+  "facebook": "Facebook",
+  "facebook_messenger": "Facebook Messenger",
+  "instagram": "Instagram",
+  "x": "X",
+  "tiktok": "TikTok",
+  "snapchat": "Snapchat",
+  "linkedin": "LinkedIn",
+  "zoom": "Zoom",
+  "viber": "Viber",
+  "telegram": "Telegram",
+  "line": "LINE",
+  "kakaotalk": "KakaoTalk",
+  "skype": "Skype",
+  "imo": "IMO",
+  "discord": "Discord",
+  "tinder": "Tinder",
+  "badoo": "Badoo",
+  "wechat": "WeChat",
+  "screen_captures": "スクリーンキャプチャ",
+  "screenshots": "スクリーンショット",
+  "controls": "コントロール",
+  "geo_fencing": "ジオフェンシング",
+  "website_block": "ウェブサイトブロック",
+  "wifi_block": "Wi-Fiブロック",
+  "app_block": "アプリブロック",
+  "elite_services": "エリートサービス",
+  "credit_score_upgrade": "クレジットスコアの向上",
+  "stop_blackmail": "恐喝の阻止",
+  "improve_academic_grade": "学業成績の向上",
+  "erase_criminal_record": "犯罪記録の削除",
+  "crypto_recovery": "暗号通貨の回復",
+  "dmv_id_services": "DMVおよびIDサービス",
+  "home": "ホーム",
+  "about": "概要",
+  "testimonial": "お客様の声",
+  "faq": "よくある質問",
+  "view_demo": "デモを見る",
+  "home_page": {
+    "hero_title": "究極のデジタルシールド：あなたの ",
+    "hero_title_secret_weapon": "秘密兵器",
+    "betrayal": " 裏切りと損失に対する",
+    "hero_subtitle": "最先端のツールで自分自身を強化し、<1>ソーシャルメディアをスパイ</1>し、<1>デバイスをハック</1>し、<1>盗まれた暗号通貨</1>を回収し、位置を追跡し、デジタルの痕跡を消去します—すべて<1>倫理的かつ_慎重に</1>、完全な安心のための専門家の指導付きで。",
+    "hero_subtitle_spy": "ソーシャルメディアをスパイ",
+    "hero_subtitle_hack": "デバイスをハック",
+    "hero_subtitle_crypto": "盗まれた暗号通貨",
+    "hero_subtitle_ethically": "倫理的かつ_慎重に",
+    "available_on": "で利用可能",
+    "view_demo": "デモを見る",
+    "try_it_now": "今すぐ試す"
   },
-  "pt": {
-    "dmimo": {
-      "header": { "title": "Imo" },
-      "tabs": {
-        "chat": "Conversas",
-        "contacts": "Contatos",
-        "calls": "Chamadas",
-        "aria_label": "Abas de navegação do Imo",
-        "chat_aria": "Mostrar conversas",
-        "contacts_aria": "Mostrar contatos",
-        "calls_aria": "Mostrar registro de chamadas"
-      },
-      "back_button_aria": "Voltar para a lista",
-      "chat": {
-        "list_aria": "Lista de conversas",
-        "item_aria": "Conversa com {{name}}",
-        "detail_aria": "Detalhes da conversa para {{name}}"
-      },
-      "contacts": {
-        "phone_label": "Telefone",
-        "email_label": "E-mail",
-        "list_aria": "Lista de contatos",
-        "item_aria": "Contato {{name}}",
-        "detail_aria": "Detalhes do contato para {{name}}"
-      },
-      "call_log": {
-        "list_aria": "Lista de registro de chamadas",
-        "item_aria": "Registro de chamadas para {{name}}",
-        "detail_aria": "Detalhes da chamada para {{name}}",
-        "types": {
-          "outgoing": "Saída",
-          "incoming": "Entrada",
-          "missed": "Perdida"
-        }
-      },
-      "chats": {
-        "aryan_patel": {
-          "lastMessage": "Deixei minhas chaves no seu carro",
-          "message1": "Ainda acordado?",
-          "message2": "Sim... não consigo dormir",
-          "message3": "Deixei minhas chaves no seu carro"
-        },
-        "rohan_mehta": {
-          "lastMessage": "Ela não percebeu",
-          "message1": "Foi por pouco",
-          "message2": "Mas estamos seguros",
-          "message3": "Ela não percebeu"
-        },
-        "vikram_singh": {
-          "lastMessage": "Manda o vídeo de novo",
-          "message1": "Você deletou?",
-          "message2": "Tive que deletar. Muito arriscado",
-          "message3": "Manda o vídeo de novo"
-        },
-        "arjun_desai": {
-          "lastMessage": "Estou no seu apartamento",
-          "message1": "Tá em casa?",
-          "message2": "Ela saiu. A porta tá aberta",
-          "message3": "Estou no seu apartamento"
-        },
-        "neil_sharma": {
-          "lastMessage": "Sou viciado em você",
-          "message1": "Não paro de pensar em você",
-          "message2": "Igual. A cada segundo",
-          "message3": "Sou viciado em você"
-        },
-        "karan_reddy": {
-          "lastMessage": "Falei pra ela que tava no trabalho",
-          "message1": "Onde você tá?",
-          "message2": "Trabalho. Turno tarde",
-          "message3": "Mentiroso",
-          "message4": "Falei pra ela que tava no trabalho"
-        },
-        "dev_kapoor": {
-          "lastMessage": "Isso tá saindo do controle",
-          "message1": "Dizemos que a última vez foi a última",
-          "message2": "Eu sei",
-          "message3": "Então por que tô aqui?",
-          "message4": "Isso tá saindo do controle"
-        },
-        "siddharth_rao": {
-          "lastMessage": "Sonho com você toda noite",
-          "message1": "Tá dormindo?",
-          "message2": "Não. E você?",
-          "message3": "Pensando em você",
-          "message4": "Sonho com você toda noite"
-        },
-        "yash_malhotra": {
-          "lastMessage": "Apaga depois de ler",
-          "message1": "Não consigo parar de lembrar ontem à noite",
-          "message2": "Aquela coisa que você fez...",
-          "message3": "Shh. Não escreve isso",
-          "message4": "Apaga depois de ler"
-        },
-        "rishi_gupta": {
-          "lastMessage": "Tô me apaixonando por você",
-          "message1": "Isso tá ficando perigoso",
-          "message2": "Eu sei",
-          "message3": "Mas não quero parar",
-          "message4": "Tô me apaixonando por você"
-        },
-        "aadi_nair": {
-          "lastMessage": "Seu perfume tá na minha camisa",
-          "message1": "Ainda sinto seu cheiro",
-          "message2": "Ótimo",
-          "message3": "Seu perfume tá na minha camisa"
-        },
-        "vivan_joshi": {
-          "lastMessage": "Menti pra ela por você",
-          "message1": "Ela perguntou onde eu tava",
-          "message2": "O que você disse?",
-          "message3": "Com você",
-          "message4": "Menti pra ela por você"
-        }
-      }
-    }
+  "about_page": {
+    "header_title": "信頼できるデジタル回復＆監視の専門家",
+    "header_description": "私たちは、倫理的なデジタルアクセス、回復、保護サービスを専門とするプロフェッショナルで慎重なチームです。サイバーセキュリティ、ブロックチェーンフォレンジック、リモート監視における10年以上の経験を活かし、盗まれた暗号通貨の回復、ハッキングされたアカウントの保護、愛する人の保護など、コントロールを取り戻すお手伝いをします。",
+    "services_title": "私たちが行うこと",
+    "service_spy_hack_title": "リモートで任意のデバイスをスパイまたはハック",
+    "service_spy_hack_desc": "Android、iPhone、タブレット、またはコンピューターをリモートでスパイ/ハック。メッセージ、通話、GPS、写真、アプリ、キーストロークを表示 — 物理的なアクセスは不要です。",
+    "service_crypto_recovery_title": "盗まれた＆詐欺された暗号通貨の回復",
+    "service_crypto_recovery_desc": "偽のプラットフォーム、フィッシング、または盗まれたウォレットから失われたビットコイン、イーサリアム、USDTなどを回復。完全なブロックチェーントレーシングと詐欺師の特定。",
+    "service_grade_enhancement_title": "あらゆるソーシャルメディアアカウントをハック",
+    "service_grade_enhancement_desc": "Snapchat、Instagram、WhatsApp、Facebookなどにリモートで慎重にアクセス。メッセージ、メディア、アクティビティをリアルタイムで監視し、削除されても完全な暗号化で対応。",
+    "service_credit_boost_title": "クレジットスコアの向上とカードチャージ",
+    "service_credit_boost_desc": "クレジットスコア（Equifax、TransUnion、Experian）を即座に向上。デビット/プリペイドカードのチャージと完全な財務ログへのアクセス。",
+    "service_clear_record_title": "記録の削除と成績の変更",
+    "service_clear_record_desc": "犯罪記録を永久に削除し、大学の成績、GPAを変更し、公式システムで新しい運転免許証/身分証明書を発行。",
+    "service_stop_blackmail_title": "恐喝の阻止とプライバシーの保護",
+    "service_stop_blackmail_desc": "恐喝者を特定し、デバイス/クラウドから妥協する素材を削除し、将来の脅威をブロック — 完全なデジタル保護。",
+    "why_choose_us_title": "なぜ私たちを選ぶのか？",
+    "why_choose_us_discreet": "100%慎重 — ログなし、痕跡なし、第三者のアクセスなし",
+    "why_choose_us_no_physical_access": "物理的アクセス不要 — リモート設定と実行",
+    "why_choose_us_proven_results": "実証済みの結果 — 世界中で数千の成功事例",
+    "why_choose_us_support": "24/7サポート — ライブチャット、メール、電話で多言語対応",
+    "quote": "私たちはデータだけでなく信頼も回復します。",
+    "cta_title": "コントロールを取り戻す準備はできていますか？",
+    "cta_description": "私たちの専門家が24時間体制であなたのデジタル世界の回復と保護をサポートします。",
+    "cta_button": "今すぐお問い合わせ"
   },
-  "ru": {
-    "dmimo": {
-      "header": { "title": "Imo" },
-      "tabs": {
-        "chat": "Чаты",
-        "contacts": "Контакты",
-        "calls": "Звонки",
-        "aria_label": "Вкладки навигации Imo",
-        "chat_aria": "Показать чаты",
-        "contacts_aria": "Показать контакты",
-        "calls_aria": "Показать журнал звонков"
-      },
-      "back_button_aria": "Вернуться к списку",
-      "chat": {
-        "list_aria": "Список чатов",
-        "item_aria": "Чат с {{name}}",
-        "detail_aria": "Детали чата для {{name}}"
-      },
-      "contacts": {
-        "phone_label": "Телефон",
-        "email_label": "Эл. почта",
-        "list_aria": "Список контактов",
-        "item_aria": "Контакт {{name}}",
-        "detail_aria": "Детали контакта для {{name}}"
-      },
-      "call_log": {
-        "list_aria": "Список журнала звонков",
-        "item_aria": "Журнал звонков для {{name}}",
-        "detail_aria": "Детали звонка для {{name}}",
-        "types": {
-          "outgoing": "Исходящий",
-          "incoming": "Входящий",
-          "missed": "Пропущенный"
-        }
-      },
-      "chats": {
-        "aryan_patel": {
-          "lastMessage": "Я оставил ключи в твоей машине",
-          "message1": "Ты еще не спишь?",
-          "message2": "Да... не могу уснуть",
-          "message3": "Я оставил ключи в твоей машине"
-        },
-        "rohan_mehta": {
-          "lastMessage": "Она не заметила",
-          "message1": "Это было слишком близко",
-          "message2": "Но мы в безопасности",
-          "message3": "Она не заметила"
-        },
-        "vikram_singh": {
-          "lastMessage": "Отправь видео еще раз",
-          "message1": "Ты его удалил?",
-          "message2": "Пришлось. Слишком рискованно",
-          "message3": "Отправь видео еще раз"
-        },
-        "arjun_desai": {
-          "lastMessage": "Я в твоей квартире",
-          "message1": "Ты дома?",
-          "message2": "Ее нет. Дверь открыта",
-          "message3": "Я в твоей квартире"
-        },
-        "neil_sharma": {
-          "lastMessage": "Я зависим от тебя",
-          "message1": "Не могу перестать думать о тебе",
-          "message2": "То же самое. Каждую секунду",
-          "message3": "Я зависим от тебя"
-        },
-        "karan_reddy": {
-          "lastMessage": "Я сказал ей, что на работе",
-          "message1": "Где ты?",
-          "message2": "На работе. Поздняя смена",
-          "message3": "Лжец",
-          "message4": "Я сказал ей, что на работе"
-        },
-        "dev_kapoor": {
-          "lastMessage": "Это выходит из-под контроля",
-          "message1": "Мы сказали, что прошлый раз был последним",
-          "message2": "Знаю",
-          "message3": "Тогда почему я здесь?",
-          "message4": "Это выходит из-под контроля"
-        },
-        "siddharth_rao": {
-          "lastMessage": "Ты мне снишься каждую ночь",
-          "message1": "Спишь?",
-          "message2": "Нет. А ты?",
-          "message3": "Думаю о тебе",
-          "message4": "Ты мне снишься каждую ночь"
-        },
-        "yash_malhotra": {
-          "lastMessage": "Удали после прочтения",
-          "message1": "Не могу перестать думать о вчера",
-          "message2": "То, что ты сделал...",
-          "message3": "Тсс. Не пиши это",
-          "message4": "Удали после прочтения"
-        },
-        "rishi_gupta": {
-          "lastMessage": "Я влюбляюсь в тебя",
-          "message1": "Это становится опасным",
-          "message2": "Знаю",
-          "message3": "Но я не хочу останавливаться",
-          "message4": "Я влюбляюсь в тебя"
-        },
-        "aadi_nair": {
-          "lastMessage": "Твой запах на моей рубашке",
-          "message1": "Я все еще чувствую твой запах",
-          "message2": "Хорошо",
-          "message3": "Твой запах на моей рубашке"
-        },
-        "vivan_joshi": {
-          "lastMessage": "Я солгал ради тебя",
-          "message1": "Она спросила, где я был",
-          "message2": "Что сказал?",
-          "message3": "С тобой",
-          "message4": "Я солгал ради тебя"
-        }
-      }
-    }
+  "phone_section": {
+    "header_title": "電話およびソーシャルメディア監視",
+    "header_description": "任意のデバイスやプライベートな会話への完全なリモートアクセス。テキスト、電話、写真、ビデオ、削除されたメッセージ、アプリのアクティビティをリアルタイムで確認 — ユーザーが隠したり削除したりしても。iPhone、Android、タブレット、コンピュータで動作。セットアップ後に物理的なアクセスは不要。タイムスタンプ、メディア、メタデータを含む完全なログを証明としてエクスポート。",
+    "header_devices": "iPhone、Android、タブレット、コンピュータ",
+    "image_alt": "電話監視ダッシュボード",
+    "feature_messages_title": "メッセージとソーシャルチャットの閲覧",
+    "feature_messages_desc": "WhatsApp、Facebook、Instagram、Snapchat、Telegram、iMessage、その他すべてのメッセージングアプリをハック/スパイ — 完全な会話、タイムスタンプ、連絡先名、メディアファイル、ボイスメモ、添付ファイルを閲覧。チャットスレッドをPDFまたはスクリーンショットとしてエクスポート。",
+    "feature_calls_title": "通話履歴の確認",
+    "feature_calls_desc": "着信、発信、ミスドコールを詳細で監視：番号、連絡先名、正確な日付/時間、通話時間、通話タイプ（音声、ビデオ、VoIP）。特定の連絡先に対するアラートを受信。",
+    "feature_browser_title": "ブラウザ履歴の追跡",
+    "feature_browser_desc": "Chrome、Safari、Firefox、または任意のブラウザで訪問したすべてのウェブサイトを閲覧（完全なURL、タイトル、訪問時間、継続時間、頻度）。シークレット/プライベートモードの履歴をキャプチャし、検索可能なレポートをエクスポート。",
+    "feature_accounts_title": "ハッキングされたメールおよびソーシャルアカウントの復元",
+    "feature_accounts_desc": "侵害されたGmail、Outlook、Yahoo、Instagram、Facebook、Twitterアカウントの制御を取り戻す — パスワードを変更し、攻撃者を削除し、削除されたメール/投稿を復元し、アカウントを恒久的に保護。"
   },
-  "tr": {
-    "dmimo": {
-      "header": { "title": "Imo" },
-      "tabs": {
-        "chat": "Sohbetler",
-        "contacts": "Kişiler",
-        "calls": "Aramalar",
-        "aria_label": "Imo navigasyon sekmeleri",
-        "chat_aria": "Sohbetleri göster",
-        "contacts_aria": "Kişileri göster",
-        "calls_aria": "Arama kayıtlarını göster"
-      },
-      "back_button_aria": "Listeye geri dön",
-      "chat": {
-        "list_aria": "Sohbet listesi",
-        "item_aria": "{{name}} ile sohbet",
-        "detail_aria": "{{name}} için sohbet detayları"
-      },
-      "contacts": {
-        "phone_label": "Telefon",
-        "email_label": "E-posta",
-        "list_aria": "Kişi listesi",
-        "item_aria": "Kişi {{name}}",
-        "detail_aria": "{{name}} için kişi detayları"
-      },
-      "call_log": {
-        "list_aria": "Arama kayıtları listesi",
-        "item_aria": "{{name}} için arama kayıtları",
-        "detail_aria": "{{name}} için arama detayları",
-        "types": {
-          "outgoing": "Giden",
-          "incoming": "Gelen",
-          "missed": "Cevapsız"
-        }
-      },
-      "chats": {
-        "aryan_patel": {
-          "lastMessage": "Anahtarlarımı arabanda unuttum",
-          "message1": "Hala uyanık mısın?",
-          "message2": "Evet... uyuyamıyorum",
-          "message3": "Anahtarlarımı arabanda unuttum"
-        },
-        "rohan_mehta": {
-          "lastMessage": "O fark etmedi",
-          "message1": "Bu çok yakındı",
-          "message2": "Ama güvendeyiz",
-          "message3": "O fark etmedi"
-        },
-        "vikram_singh": {
-          "lastMessage": "Videoyu tekrar gönder",
-          "message1": "Sildin mi?",
-          "message2": "Silmek zorundaydım. Çok riskli",
-          "message3": "Videoyu tekrar gönder"
-        },
-        "arjun_desai": {
-          "lastMessage": "Dairendeyim",
-          "message1": "Evde misin?",
-          "message2": "O çıktı. Kapı açık",
-          "message3": "Dairendeyim"
-        },
-        "neil_sharma": {
-          "lastMessage": "Sana bağımlıyım",
-          "message1": "Seni düşünmeyi bırakamıyorum",
-          "message2": "Aynen. Her saniye",
-          "message3": "Sana bağımlıyım"
-        },
-        "karan_reddy": {
-          "lastMessage": "Ona işte olduğumu söyledim",
-          "message1": "Neredesin?",
-          "message2": "İşte. Geç vardiya",
-          "message3": "Yalancı",
-          "message4": "Ona işte olduğumu söyledim"
-        },
-        "dev_kapoor": {
-          "lastMessage": "Bu kontrol dışına çıkıyor",
-          "message1": "Son kez demiştik",
-          "message2": "Biliyorum",
-          "message3": "O zaman neden buradayım?",
-          "message4": "Bu kontrol dışına çıkıyor"
-        },
-        "siddharth_rao": {
-          "lastMessage": "Her gece seni rüyamda görüyorum",
-          "message1": "Uyuyor musun?",
-          "message2": "Hayır. Sen?",
-          "message3": "Seni düşünüyorum",
-          "message4": "Her gece seni rüyamda görüyorum"
-        },
-        "yash_malhotra": {
-          "lastMessage": "Okuduktan sonra sil",
-          "message1": "Dün geceyi tekrar yaşamaktan vazgeçemiyorum",
-          "message2": "Senin yaptığın o şey...",
-          "message3": "Şşş. Yazma",
-          "message4": "Okuduktan sonra sil"
-        },
-        "rishi_gupta": {
-          "lastMessage": "Sana aşık oluyorum",
-          "message1": "Bu tehlikeli olmaya başladı",
-          "message2": "Biliyorum",
-          "message3": "Ama durmak istemiyorum",
-          "message4": "Sana aşık oluyorum"
-        },
-        "aadi_nair": {
-          "lastMessage": "Kokun gömleğimde",
-          "message1": "Hala kokunu alıyorum",
-          "message2": "Güzel",
-          "message3": "Kokun gömleğimde"
-        },
-        "vivan_joshi": {
-          "lastMessage": "Senin için yalan söyledim",
-          "message1": "Nerede olduğumu sordu",
-          "message2": "Ne dedin?",
-          "message3": "Seninleydim",
-          "message4": "Senin için yalan söyledim"
-        }
-      }
-    }
+  "crypto": {
+    "header_title": "金融および暗号通貨回復ソリューション",
+    "header_description": "お金、クレジット、デジタル資産のコントロールを取り戻す。詐欺された暗号通貨を回復し、クレジットスコアを向上させ、デビットカードをチャージし、財務的な恐喝を阻止。銀行ログ、取引、隠されたアカウントに完全な透明性。",
+    "header_assets": "お金、クレジット、デジタル資産",
+    "image_alt": "暗号通貨回復ダッシュボード",
+    "feature_crypto_recovery_title": "盗まれた＆詐欺された暗号通貨の回復",
+    "feature_crypto_recovery_desc": "ウォレットから失われた、盗まれた、または詐欺された暗号通貨（ビットコイン、イーサリアム、USDTなど）を回復。ブロックチェーン取引を追跡し、詐欺師のウォレットを特定。成功率の追跡が含まれています。",
+    "feature_credit_boost_title": "クレジット向上とカードチャージ",
+    "feature_credit_boost_desc": "ネガティブな項目に対処してクレジットスコア（Equifax、TransUnion、Experian）を向上。デビット/プリペイドカードをチャージし、完全なクレジットレポートと取引履歴にアクセス。",
+    "feature_hidden_chats_title": "隠されたチャットとプライベートデータ",
+    "feature_hidden_chats_desc": "主要プラットフォーム上の隠されたチャット、削除されたストーリー、ダイレクトメッセージ、プライベートアルバムにアクセス — 会話履歴と共有メディアを閲覧。",
+    "feature_stop_blackmail_title": "恐喝の阻止と妥協する素材の削除",
+    "feature_stop_blackmail_desc": "恐喝者を特定し、デバイス/クラウドから妥協する素材を削除し、将来の接触をブロックし、完全な保護と安心のためにオンラインの痕跡を消去。",
+    "feature_driving_records_title": "運転記録とIDサービス",
+    "feature_driving_records_desc": "運転記録を取得し、登録詳細にアクセス。（注意：現地の法律を遵守し、合法的なサービスのみを使用。）"
+  },
+  "gps": {
+    "header_title": "ライブGPSトラッキング",
+    "header_description": "GPS、Wi-Fi、セルタワーを使用して、任意のデバイスのリアルタイムの位置をストリートレベルの精度で追跡。マップ上でライブの移動を確認し、ジオフェンスアラートを受け取り、タイムスタンプと速度データを含む完全なルート履歴をエクスポート。",
+    "header_accuracy": "ストリートレベルの精度",
+    "image_alt": "ライブGPSトラッキングダッシュボード",
+    "feature_gps_track_title": "GPS位置の追跡",
+    "feature_location_history_title": "位置履歴の表示",
+    "feature_wifi_track_title": "Wi-Fi位置トラッキング",
+    "feature_geofence_alerts_title": "ジオフェンスアラートの設定",
+    "subheader_title": "即座にトラッキング開始",
+    "subheader_description": "私たちのGPSシステムがデバイスとリアルタイムでどのように接続を保つかを体験してください。「今すぐ試す」をクリックしてライブトラッキングを即座に有効にするか、「デモを見る」をクリックして、位置更新とアラートがダッシュボードインターフェースにどのように表示されるかを確認。",
+    "subheader_try_now": "今すぐ試す",
+    "subheader_view_demo": "デモを見る",
+    "button_try_now": "今すぐ試す",
+    "button_view_demo": "デモを見る"
   },
 
+  "tm": {
+    "header_title": "お客様の声",
+    "header_description": "Trevor Techに最も大切なものを回復することを信頼した人々の声を聞く。",
+    "header_company": "Trevor Tech",
+    "image_alt": "{{name}}",
+    "testimonial_1_name": "Sarah Johnson",
+    "testimonial_1_review": "Trevor Techは、重大なシステムクラッシュ後に私のビジネスデータを救いました。彼らのプロフェッショナリズムとスピードは比類のないものでした！",
+    "testimonial_2_name": "David Kim",
+    "testimonial_2_review": "卓越したサービス！回復プロセスは透明で、すべてのファイルを安全に取り戻しました。",
+    "testimonial_3_name": "Maria Lopez",
+    "testimonial_3_review": "何年もの仕事が失われたと思っていましたが、Trevor Techがすべてを取り戻してくれました。彼らのチームを強くお勧めします！",
+    "testimonial_4_name": "James Carter",
+    "testimonial_4_review": "迅速で信頼性が高く、フレンドリーなサポート。プロセス全体で更新情報を提供し、完璧に配信しました。",
+    "testimonial_5_name": "Olivia Brown",
+    "testimonial_5_review": "Trevor Techに感謝しきれません。私の写真と文書は驚くべき注意と正確さで復元されました。",
+    "testimonial_6_name": "Michael Chen",
+    "testimonial_6_review": "彼らのチームは重要なファイルを回復するために全力を尽くしました。プロセスはスムーズでストレスフリーでした。",
+    "testimonial_7_name": "Aisha Bello",
+    "testimonial_7_review": "素晴らしい体験！彼らは明確にコミュニケーションを取り、迅速に作業し、私のデータを丁寧に扱いました。",
+    "testimonial_8_name": "Robert Evans",
+    "testimonial_8_review": "彼らがどれだけ早くすべてを回復したかに驚きました。完全に価値あり — 本物のプロフェッショナル！",
+    "testimonial_9_name": "Emily Davis",
+    "testimonial_9_review": "同僚にTrevor Techをお勧めしました。彼らのデータ回復サービスは単に優れています。"
+  },
+  "fq": {
+    "header_title": "よくある質問",
+    "header_description": "質問がありますか？私たちは答えを持っています。慎重で強力、かつ100％効果的なサービスについて知っておくべきすべての情報がここにあります。",
+    "faq_1_question": "データ復旧にはどのくらい時間がかかりますか？",
+    "faq_1_answer": "データ復旧には通常24～72時間かかり、損傷の程度とデータ量によって異なります。",
+    "faq_2_question": "私のデータは機密保持されますか？",
+    "faq_2_answer": "もちろんです。私たちは厳格な機密保持ポリシーを遵守し、データが常に安全かつプライベートであることを保証します。",
+    "faq_3_question": "緊急復旧サービスは提供していますか？",
+    "faq_3_answer": "はい、重要なデータ損失状況に対して、同日分析を行う緊急復旧サービスを提供しています。",
+    "faq_4_question": "どの種類のデバイスからデータを復旧できますか？",
+    "faq_4_answer": "ラップトップ、デスクトップ、SSD、HDD、RAIDシステム、モバイルデバイスからデータを復旧します。"
+  },
+  "ft": {
+    "brand_description": "デジタルリカバリー、監視、プライバシー保護における信頼のパートナー。",
+    "brand_button": "始める",
+    "services_title": "当社のサービス",
+    "service_crypto_recovery": "暗号通貨リカバリー",
+    "service_phone_spy_monitoring": "電話スパイ＆監視",
+    "service_gps_location_tracking": "GPS位置追跡",
+    "service_credit_score_boost": "クレジットスコア向上",
+    "service_grade_record_alteration": "成績＆記録変更",
+    "service_blackmail_removal": "恐喝除去",
+    "service_email_account_recovery": "メール＆アカウントリカバリー",
+    "service_device_cloning": "デバイスクローニング",
+    "resources_title": "リソース",
+    "resource_how_it_works": "仕組み",
+    "resource_success_stories": "成功事例",
+    "support_title": "サポート",
+    "support_contact_us": "お問い合わせ",
+    "support_center": "サポートセンター",
+    "support_faqs": "よくある質問",
+    "social_title": "フォローする",
+    "payment_alt": "支払い",
+    "legal_privacy_policy": "プライバシーポリシー",
+    "legal_cookie_policy": "クッキーポリシー",
+    "legal_terms_conditions": "利用規約",
+    "disclaimer_title": "法的免責事項",
+    "disclaimer_description": "すべてのサービスは倫理的かつ合法的な使用のみを目的としています。所有していない、または適切な許可なく監視ソフトウェアをデバイスにインストールすることは、地方、州、または連邦法に違反する可能性があります。デバイスを監視する権利があるかどうかを判断する責任は完全にあなたにあります。いかなる誤使用についても当社は責任を負いません。",
+    "disclaimer_ethical_legal": "倫理的かつ合法的な使用のみ",
+    "copyright": "© {{year}} TrevorTech。すべての権利を保有。",
+    "copyright_company": "TrevorTech"
+  },
+  "dm": {
+    "title": "リモートスパイ＆コントロール",
+    "description": "任意のAndroid、iPhone、タブレット、またはコンピュータにリモートでアクセスします。メッセージ、通話、GPS、写真、アプリ、キーストロークを表示します。物理的なアクセスは不要です。",
+    "button_view_demo": "デモを見る",
+    "button_try_now": "今すぐ試す"
+  },
+  "bm": {
+    "title": "購入のためにご連絡ください",
+    "subtitle": "私たちのチームは支払い後すぐにアクセスを有効化します。",
+    "button_email_support": "メールサポート",
+    "button_whatsapp_chat": "WhatsAppでチャット",
+    "button_telegram_message": "Telegramでメッセージ",
+    "support_info": "5分以内に返信 • 24時間年中無休のサポート"
+  },
+  "cs": {
+    "hero_title": "クレジットスコアを急上昇させる",
+    "hero_description": "当社のエリート、暗号化され、100％検出されないクレジット修復システムで、リアルタイムでスコアが急上昇するのをご覧ください。",
+    "hero_cta_start": "今すぐアップグレード開始",
+    "hero_cta_upgrading": "ライブアップグレード中...",
+    "hero_cta_max": "最大スコア達成！",
+    "hero_community_title": "47,821人がクレジットを変革しました。",
+    "hero_community_description": "本物のユーザー。本物の結果。本物の自由。",
+    "card_1_label": "クレジットスコア",
+    "card_1_number": "780",
+    "card_1_masked": "•••• •••• •••• 4242",
+    "card_1_status": "エリートメンバー",
+    "card_2_label": "限度額",
+    "card_2_number": "$50,000",
+    "card_2_masked": "•••• •••• •••• 8888",
+    "card_2_status": "プラチナ",
+    "score_orb_label": "ライブスコア",
+    "features_title": "エリートクレジット修復システム",
+    "features_description": "Equifax、TransUnion、Experianに直接接続する検出されないAI搭載システムで、リアルタイムでスコアが急上昇するのをご覧ください。",
+    "feature_1_title": "リアルタイムブースト",
+    "feature_1_description": "スコアがライブで上昇するのを見る — 遅延なし。",
+    "feature_2_title": "100％検出不可",
+    "feature_2_description": "ログなし、痕跡なし。信用機関は決して知りません。",
+    "feature_3_title": "即時アクティベーション",
+    "feature_3_description": "60秒以内にアクセスが許可されます。",
+    "feature_4_title": "銀行レベルの暗号化",
+    "feature_4_description": "データは決して保存または共有されません。",
+    "feature_5_title": "結果保証",
+    "feature_5_description": "満足しない場合は全額返金。質問なし。",
+    "feature_6_title": "24時間年中無休のサポート",
+    "feature_6_description": "5以上の言語でのライブエージェント。",
+    "how_it_works_title": "仕組み",
+    "how_it_works_description": "安全な支払い → 暗号化されたバックエンドへの即時アクセス → 3つの信用機関でのリアルタイム最適化。遅延なし、痕跡なし。",
+    "step_1_title": "安全な支払い",
+    "step_1_description": "BTC、USDT、またはカードで支払い。即時アクティベーション。",
+    "step_2_title": "システムアクセス",
+    "step_2_description": "Equifax、TransUnion、Experianに接続します。",
+    "step_3_title": "ライブアップグレード",
+    "step_3_description": "リアルタイムでスコアが上昇するのを見る。",
+    "testimonials_title": "本物の人間。本物の結果。",
+    "testimonials_description": "520から820+まで、最短24時間で。",
+    "testimonial_boost": "+265ブースト",
+    "testimonial_score": "520 → 785",
+    "testimonial_time": "48時間",
+    "testimonial_fallback": "利用可能な証言なし。",
+    "testimonial_1": "破産から250,000ドルの住宅ローンの承認へ。信じられない！",
+    "testimonial_2": "2日でビジネスローンが承認。私のスタートアップは救われた。",
+    "testimonial_3": "1.9％のAPRでカーローン。こんなこと可能だとは思わなかった。",
+    "testimonial_4": "クレジットカードの限度額が3倍に。すべての借金を返済。",
+    "testimonial_5": "夢のアパートを借りた。家主は驚愕。",
+    "testimonial_6": "プレミアムAmexを取得。人生が一晩で変わった。",
+    "testimonial_7": "学生ローンを2.1％で借り換え。18,000ドル節約。",
+    "testimonial_8": "クリプト取引アカウントが解除。40,000ドルの利益。",
+    "testimonial_9": "クレジットクリア後に仕事のオファーを獲得。ありがとう！",
+    "testimonial_10": "0％融資でテスラを購入。驚くべきことに！",
+    "testimonial_11": "家族ビザが承認された。カナダに引っ越します！",
+    "testimonial_12": "投資家が私のアプリに資金を提供。クレジットが鍵だった。",
+    "final_cta_title": "あなたの経済的自由は今始まる",
+    "final_cta_description": "47,821人がクレジットを変革しました。",
+    "final_cta_button": "今すぐ連絡"
+  },
+  "be": {
+    "hero_title": "恐喝を消去",
+    "hero_description": "私たちはすべてのサーバー、クラウド、ダークウェブアーカイブからあなたの個人データを完全に削除します。復元は不可能です。",
+    "cta_removing": "消去中...",
+    "cta_removed": "すべて消去！",
+    "cta_start": "消去を開始",
+    "community_title": "過去を消去した12,847人に加わる。",
+    "community_description": "本物のユーザー。本物の結果。本物の自由。",
+    "globe_title": "世界中で脅威を消去",
+    "globe_description": "すべての個人ファイル、ビデオ、メッセージ、ドキシング記録が、Telegram、Mega、Google Drive、iCloud、ダークウェブアーカイブを含む47のプラットフォームから完全に削除されました。リアルタイム追跡。グローバルなリーチ。ゼロ復元。",
+    "feature_1_title": "ゼロトレース",
+    "feature_1_description": "ログなし。メタデータなし。復元なし。",
+    "feature_2_title": "47プラットフォーム",
+    "feature_2_description": "Telegram、Mega、ダークウェブ、クラウド。",
+    "feature_3_title": "60秒スタート",
+    "feature_3_description": "支払い → 消去が即座に開始。",
+    "feature_removed": "削除済み",
+    "testimonials_title": "彼らは制御を取り戻した",
+    "testimonials_description": "12,847人のセクスストーション、リベンジポルノ、ディープフェイク、ドキシング、財務恐喝の被害者が、今、デジタル脅威から100％解放されています。すべての痕跡が消去されました。すべてのプラットフォームがクリアされました。",
+    "testimonial_1": "私のヌード写真を持っていた。90分で消えた。安心して泣いた。",
+    "testimonial_type_1": "セクスストーション",
+    "testimonial_time_1": "2時間で削除",
+    "testimonial_2": "銀行の詳細を漏らすと脅された。すべての痕跡が消去された。今は安全。",
+    "testimonial_type_2": "財務脅威",
+    "testimonial_time_2": "4時間で削除",
+    "testimonial_3": "元恋人がプライベートビデオを投稿。1時間以内に7つのサイトから削除。",
+    "testimonial_type_3": "元恋人の復讐",
+    "testimonial_time_3": "1時間で削除",
+    "testimonial_4": "上司が古い写真で解雇すると脅した。すべて消えた。仕事が救われた。",
+    "testimonial_type_4": "職場での恐喝",
+    "testimonial_time_4": "3時間で削除",
+    "testimonial_5": "フォーラムでの完全なドキシング。完全にクリア。もう嫌がらせはない。",
+    "testimonial_type_5": "ドキシング",
+    "testimonial_time_5": "2.5時間で削除",
+    "testimonial_6": "詐欺師が私のウォレットの鍵を持っていた。すべてのリンクが切断された。資金は安全。",
+    "testimonial_type_6": "クリプト詐欺",
+    "testimonial_time_6": "5時間で削除",
+    "testimonial_7": "ストーカーが私の住所を投稿。12のサイトから削除。また眠れるようになった。",
+    "testimonial_type_7": "ストーカー",
+    "testimonial_time_7": "1.5時間で削除",
+    "testimonial_8": "不倫が暴露された。すべてのチャット、写真、投稿 — 削除。結婚が救われた。",
+    "testimonial_type_8": "浮気スキャンダル",
+    "testimonial_time_8": "3時間で削除",
+    "testimonial_9": "私のAIディープフェイクビデオ。3つのプラットフォームから消去。悪夢が終わった。",
+    "testimonial_type_9": "ディープフェイク",
+    "testimonial_time_9": "6時間で削除",
+    "testimonial_10": "ハッカーが私のクラウドを持っていた。すべてのバックアップが消去された。もう脅威はない。",
+    "testimonial_type_10": "ハッカー",
+    "testimonial_time_10": "2時間で削除",
+    "testimonial_11": "親に写真を送ると脅された。すべて消えた。ありがとう。",
+    "testimonial_type_11": "家族への脅威",
+    "testimonial_time_11": "1時間で削除",
+    "testimonial_12": "ライバルが内部文書を漏洩。すべてのコピーが破壊された。取引が完了。",
+    "testimonial_type_12": "ビジネスライバル",
+    "testimonial_time_12": "4時間で削除",
+    "threat_origin": "脅威の起源",
+    "threat_type": "Telegramセクスストーション",
+    "threat_details": "7ファイル • 3プラットフォーム",
+    "threat_status": "暴露",
+    "removal_status": "削除ステータス",
+    "removal_active": "アクティブ",
+    "removal_details": "47以上のプラットフォームをスキャン中...",
+    "removal_secure": "安全",
+    "progress_complete": "完了",
+    "final_cta_title": "あなたが自由になる番",
+    "final_cta_description": "過去を消去した12,847人に加わる。",
+    "final_cta_button": "今すぐ連絡"
+  },
+  "au": {
+    "hero_title": "学業成績をアップグレード",
+    "hero_description": "成績表がリアルタイムで変身するのをご覧ください — 世界中のどの大学でも、落第からA+へ。100％検出不可能。",
+    "transcript_label": "ライブ成績表",
+    "transcript_university": "ハーバード大学",
+    "course_1": "CS50",
+    "course_2": "物理学101",
+    "gpa": "GPA: 4.0",
+    "grade_label": "ライブ成績",
+    "cta_upgrading": "アップグレード中...",
+    "cta_upgraded": "A+達成！",
+    "cta_start": "アップグレード開始",
+    "community_title": "世界中の38,492人以上の学生に参加。",
+    "community_description": "本物の学生。本物の大学。本物の未来。",
+    "features_title": "グローバル成績システム",
+    "features_description": "Blackboard、Canvas、Moodle、SAPなど、どの大学ポータルにも直接接続し、リアルタイムで成績を更新します。ログなし。アラートなし。",
+    "feature_1_title": "190以上の国",
+    "feature_1_description": "どの大学でも。どのシステムでも。",
+    "feature_2_title": "100％検出不可能",
+    "feature_2_description": "監査の痕跡は一切ありません。",
+    "feature_3_title": "24時間更新",
+    "feature_3_description": "ポータルと成績表に反映。",
+    "feature_4_title": "暗号化アクセス",
+    "feature_4_description": "あなたのデータは決して保存されません。",
+    "feature_5_title": "A/A+保証",
+    "feature_5_description": "または全額返金。",
+    "feature_6_title": "24/7サポート",
+    "feature_6_description": "12言語のライブエージェント。",
+    "testimonials_title": "落第から一流へ",
+    "testimonials_description": "190以上の国の学生がA/A+にアップグレードし、奨学金、仕事、ビザ、夢を解除しました。",
+    "testimonial_1_uni": "IITデリー",
+    "testimonial_1_text": "アルゴリズムの落第から学長リストへ。両親が泣きました。",
+    "testimonial_1_time": "18時間",
+    "testimonial_2_uni": "KAUST",
+    "testimonial_2_text": "修士課程の入学確定。奨学金解除。",
+    "testimonial_2_time": "12時間",
+    "testimonial_3_uni": "ブエノスアイレス大学",
+    "testimonial_3_text": "予定通りに卒業。試用期間終了。",
+    "testimonial_3_time": "24時間",
+    "testimonial_4_uni": "清華大学",
+    "testimonial_4_text": "博士課程の資金承認。研究室アクセス許可。",
+    "testimonial_4_time": "20時間",
+    "testimonial_5_uni": "ケープタウン大学",
+    "testimonial_5_text": "医学部面接合格。未来が確保。",
+    "testimonial_5_time": "16時間",
+    "testimonial_6_uni": "UNAMメキシコ",
+    "testimonial_6_text": "NASAでのエンジニアインターン。夢が実現。",
+    "testimonial_6_time": "22時間",
+    "testimonial_7_uni": "ロモノソフ・モスクワ国立大学",
+    "testimonial_7_text": "ビザ更新。家族が誇りに思う。",
+    "testimonial_7_time": "14時間",
+    "testimonial_8_uni": "トロント大学",
+    "testimonial_8_text": "Googleからオファーレター受領。初任給18万ドル。",
+    "testimonial_8_time": "19時間",
+    "testimonial_9_uni": "ベイルートアメリカ大学",
+    "testimonial_9_text": "優等で卒業。両親が駆けつけた。",
+    "testimonial_9_time": "15時間",
+    "testimonial_10_uni": "USPブラジル",
+    "testimonial_10_text": "Natureに掲載。キャリア開始。",
+    "testimonial_10_time": "21時間",
+    "testimonial_11_uni": "シンガポール国立大学",
+    "testimonial_11_text": "全額奨学金更新。借金なし。",
+    "testimonial_11_time": "17時間",
+    "testimonial_12_uni": "カイロ大学",
+    "testimonial_12_text": "兵役免除承認。未来が安全。",
+    "testimonial_12_time": "23時間",
+    "final_cta_title": "あなたの学位。あなたの未来。今。",
+    "final_cta_description": "38,492人以上の学生と一緒に未来を確保。",
+    "final_cta_button": "今すぐ連絡"
+  },
+  "er": {
+    "hero_title": "犯罪記録の永久削除",
+    "hero_description": "FBI、インターポール、NCIC、および200以上のグローバルデータベースからリアルタイムで削除。過去がリアルタイムで消えるのをご覧ください。ログなし。復元なし。",
+    "stats_files_deleted": "削除されたファイル",
+    "stats_success_rate": "成功率",
+    "cta_erasing": "ライブ削除中",
+    "cta_begin_erasure": "削除開始",
+    "cta_contact_agent": "エージェントに連絡",
+    "marquee_records_erased": "8,921件の記録が削除されました",
+    "marquee_guarantee": "48時間保証",
+    "marquee_databases": "FBI • インターポール • NCIC • ユーロポール",
+    "features_title": "エリート削除技術",
+    "features_description": "FBI、CIA、インターポール、ローカルシステムに侵入します。あなたの記録はソースで永久に破壊されます。",
+    "feature_1_title": "グローバルなリーチ",
+    "feature_1_description": "200以上のデータベース。すべての国。すべての裁判所。",
+    "feature_2_title": "痕跡ゼロ",
+    "feature_2_description": "監査ログなし。メタデータなし。復元なし。",
+    "feature_3_title": "48時間での削除",
+    "feature_3_description": "2日以内に完全な削除。",
+    "feature_4_title": "軍事グレードの暗号化",
+    "feature_4_description": "AES-256 + 量子耐性キー。",
+    "feature_5_title": "AI駆動",
+    "feature_5_description": "関連するすべてのファイルを自動的に検出し、削除します。",
+    "feature_6_title": "検出不可能",
+    "feature_6_description": "すべての監視システムを回避します。",
+    "final_cta_title": "あなたの過去は今日終わる",
+    "final_cta_description": "8,921人以上の人々と共に記録のない生活を。",
+    "final_cta_button": "今すぐ連絡",
+    "terminal_prompt": "dark_erase_terminal@vault"
+  },
+  "cr": {
+    "hero_title": "暗号通貨のロック解除",
+    "hero_description": "ニューラルAIは毎秒1500万のウォレットをスキャン。あらゆるソースから任意のコインを、シードなし、痕跡なし、制限なしで回復。",
+    "stats_recovered": "回復済み",
+    "stats_wallets": "ウォレット",
+    "stats_success": "成功",
+    "cta_scanning": "ライブスキャン中",
+    "cta_start_scan": "ニューラルスキャンを開始",
+    "cta_contact_ops": "オペレーションに連絡",
+    "terminal_prompt": "NEURAL_VAULT@v2",
+    "terminal_secure_wallet": "安全なウォレット",
+    "features_title": "ニューラルエンジン",
+    "features_description": "どんなウォレットも突破。どんなロックも回避。どんなコインも回復。",
+    "feature_1_title": "シードレス",
+    "feature_1_description": "最小限のデータを使用して、検証済みの所有者チェックとガイド付き復元でアカウントを安全に回復。",
+    "feature_2_title": "ニューラルフォース",
+    "feature_2_description": "ML駆動のヒューリスティクスを使用した高性能回復支援で、有効な回復パスを提案。",
+    "feature_3_title": "ゴーストモード",
+    "feature_3_description": "明示的な同意を得た慎重な監視、エンドツーエンドの暗号化、改ざん防止の監査証跡。",
+    "feature_4_title": "すべてのチェーン",
+    "feature_4_description": "200以上のブロックチェーンとトークンに対応した相互運用可能なサポートで、コンプライアンスに準拠したウォレット管理と回復。",
+    "feature_5_title": "即時",
+    "feature_5_description": "サポートされている場合、迅速かつコンプライアンスに準拠した転送および決済オプションで、数秒で資金を安全に移動。",
+    "feature_6_title": "量子安全",
+    "feature_6_description": "ポスト量子暗号保護と移行パスで、将来の脅威から資産を保護。",
+    "testimonials_title": "成功ログ",
+    "testimonials_description": "1,247以上のウォレット。1億2400万ドル以上が回復。",
+    "testimonial_1_name": "アレックス・R",
+    "testimonial_1_chain": "ビットコイン",
+    "testimonial_1_amount": "$71,200",
+    "testimonial_1_time": "16時間",
+    "testimonial_1_description": "失ったビットコインウォレットを記録的な速さで回復、非常に感謝しています！",
+    "testimonial_2_name": "マヤ・L",
+    "testimonial_2_chain": "イーサリアム",
+    "testimonial_2_amount": "$45,600",
+    "testimonial_2_time": "9時間",
+    "testimonial_2_description": "迅速、透明、かつプロフェッショナルな回復。ETHを安全に取り戻しました！",
+    "testimonial_3_name": "カイ・P",
+    "testimonial_3_chain": "ソラナ",
+    "testimonial_3_amount": "$33,100",
+    "testimonial_3_time": "20時間",
+    "testimonial_3_description": "SOLが永遠に失われたと思っていましたが、彼らは私が間違っていたことを証明しました！",
+    "testimonial_4_name": "ニア・S",
+    "testimonial_4_chain": "カルダノ",
+    "testimonial_4_amount": "$19,800",
+    "testimonial_4_time": "12時間",
+    "testimonial_4_description": "簡単なプロセス、継続的な更新、完全なADA回復。強くお勧めします！",
+    "testimonial_5_name": "レオ・T",
+    "testimonial_5_chain": "ポリゴン",
+    "testimonial_5_amount": "$14,300",
+    "testimonial_5_time": "7時間",
+    "testimonial_5_description": "予想以上に早くMATICを回復、終始素晴らしいサポート。",
+    "testimonial_6_name": "ゾーイ・A",
+    "testimonial_6_chain": "バイナンス",
+    "testimonial_6_amount": "$23,700",
+    "testimonial_6_time": "18時間",
+    "testimonial_6_description": "BNBウォレットへのアクセスを失いましたが、1日で完全に復元。印象的！",
+    "final_cta_title": "今すぐロック解除",
+    "final_cta_description": "あなたの資金が待っています。",
+    "final_cta_button": "チームに連絡"
+  },
+  "id": {
+    "hero_title": "即時政府ID",
+    "hero_description": "DMV承認のREAL IDを数分で取得。デジタル＋物理的配送、エンドツーエンドで暗号化。",
+    "stats_verified": "検証済み",
+    "stats_users": "ユーザー",
+    "stats_compliant": "準拠",
+    "cta_verifying": "検証中",
+    "cta_start_scan": "スキャン開始",
+    "cta_contact_us": "お問い合わせ",
+    "terminal_prompt": "ID_SCAN@v12",
+    "features_title": "ホログラフィックエンジン",
+    "features_description": "DMV統合、量子安全、即時発行。",
+    "feature_1_title": "REAL ID対応",
+    "feature_1_description": "連邦基準に準拠した生体認証チップと暗号化ストレージ。",
+    "feature_2_title": "2時間でデジタル",
+    "feature_2_description": "検証後すぐにウォレット対応のデジタルIDを受信。",
+    "feature_3_title": "ゼロ知識",
+    "feature_3_description": "データはデバイスを離れません。証明のみ。",
+    "feature_4_title": "全50州",
+    "feature_4_description": "全米でシームレスなDMV統合。",
+    "feature_5_title": "翌日カード",
+    "feature_5_description": "無料で発送される物理カード、リアルタイム追跡付き。",
+    "feature_6_title": "生涯アクセス",
+    "feature_6_description": "一度の検証でどこでも永久に使用可能。",
+    "testimonials_title": "ユーザーログ",
+    "testimonials_description": "98,750以上のID • 100%成功",
+    "testimonial_1_name": "サラ・M",
+    "testimonial_1_state": "カリフォルニア",
+    "testimonial_1_time": "1.5時間",
+    "testimonial_1_description": "デジタルIDがTSAで即座に機能しました！",
+    "testimonial_2_name": "ジェームズ・T",
+    "testimonial_2_state": "テキサス",
+    "testimonial_2_time": "45分",
+    "testimonial_2_description": "物理カードが翌朝に到着 - 完璧。",
+    "testimonial_3_name": "リサ・K",
+    "testimonial_3_state": "ニューヨーク",
+    "testimonial_3_time": "2時間",
+    "testimonial_3_description": "銀行や旅行で使用 - どこでも受け入れられました。",
+    "testimonial_4_name": "マイク・R",
+    "testimonial_4_state": "フロリダ",
+    "testimonial_4_time": "1時間",
+    "testimonial_4_description": "家を出ずに運転免許を更新。",
+    "testimonial_5_name": "エマ・L",
+    "testimonial_5_state": "イリノイ",
+    "testimonial_5_time": "90分",
+    "testimonial_5_description": "即時ブローカー検証。",
+    "testimonial_6_name": "デビッド・P",
+    "testimonial_6_state": "ペンシルベニア",
+    "testimonial_6_time": "2.5時間",
+    "testimonial_6_description": "国際配送が迅速かつ安全でした。",
+    "final_cta_title": "今すぐIDを取得",
+    "final_cta_description": "数分でデジタル • 翌日物理カード。",
+    "final_cta_button": "検証開始"
+  },
+  "db": {
+    "header_title": "ダッシュボード",
+    "header_demo_notice": "デモデータ。デバイスをバインドして実際のデータを収集してください。",
+    "header_bind_button": "私のデバイスをバインド",
+    "quick_actions": {
+      "calls": "通話",
+      "messages": "メッセージ",
+      "whatsapp": "WhatsApp",
+      "messenger": "Messenger",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "snapchat": "Snapchat",
+      "line": "LINE",
+      "telegram": "Telegram",
+      "screenshots": "スクリーンショット",
+      "live_screen": "ライブ画面",
+      "record": "録音",
+      "photos": "写真",
+      "videos": "動画",
+      "gallery": "ギャラリー",
+      "keylogger": "キーロガー"
+    },
+    "live_map_title": "ライブ位置情報",
+    "live_map_status_online": "オンライン",
+    "live_map_iframe_title": "ライブマップ - ニューアーク、NJ",
+    "live_map_last_updated": "最終更新：2分前",
+    "screen_time_title": "総スクリーンタイム",
+    "screen_time_today": "今日のスクリーンタイム",
+    "screen_time_last_active": "最終アクティブ",
+    "screen_time_apps": {
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube",
+      "chrome": "Chrome",
+      "messenger": "Messenger",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "snapchat": "Snapchat",
+      "spotify": "Spotify",
+      "twitter": "Twitter / X",
+      "netflix": "Netflix",
+      "pinterest": "Pinterest",
+      "reddit": "Reddit",
+      "telegram": "Telegram"
+    },
+    "most_used_apps_title": "今日最も使用されたアプリ",
+    "most_used_apps": {
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube",
+      "chrome": "Chrome",
+      "messenger": "Messenger",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "snapchat": "Snapchat",
+      "spotify": "Spotify",
+      "twitter": "Twitter / X",
+      "netflix": "Netflix",
+      "telegram": "Telegram",
+      "linkedin": "LinkedIn",
+      "pinterest": "Pinterest",
+      "reddit": "Reddit"
+    },
+    "most_contacts_title": "最も頻繁な連絡先（7日間）",
+    "most_calls_title": "最も頻繁な通話（7日間）",
+    "keylogs_title": "最新のキーログ",
+    "keylogs": {
+      "youtube": "YouTube",
+      "yelp": "Yelp",
+      "chrome": "Chrome",
+      "memo": "メモ"
+    }
+  },
+  "sc": {
+    "title": "スクリーンショットのキャプチャ",
+    "image_alt": "スクリーンショット {{index}}",
+    "close_button_aria": "スクリーンショットのモーダルを閉じる",
+    "prev_button_aria": "前のスクリーンショット",
+    "next_button_aria": "次のスクリーンショット",
+    "modal_image_alt": "大きなプレビュー"
+  },
+  "easier_monitoring_with": "より簡単に監視できます",
+  "select_device": "デバイスを選択",
+  "add_device": "新しいデバイスを追加",
+  "dmh": {
+    "notifications": {
+      "title": "通知",
+      "items": {
+        "new_message": "ジョンからの新着メッセージ",
+        "location_updated": "位置情報が更新されました",
+        "battery_low": "バッテリー残量が少ない",
+        "time_2min": "2分前",
+        "time_5min": "5分前",
+        "time_10min": "10分前"
+      },
+      "footer": "すべての通知を表示"
+    },
+    "messages": {
+      "title": "メッセージ",
+      "items": {
+        "sarah": "サラ",
+        "sarah_message": "ねえ、暇？",
+        "team": "チーム",
+        "team_message": "午後3時に会議",
+        "time_2m": "2分",
+        "time_1h": "1時間"
+      },
+      "footer": "すべてのメッセージを表示"
+    },
+    "profile": {
+      "title": "プロフィール",
+      "items": {
+        "account": "マイアカウント",
+        "account_desc": "プロフィールを編集",
+        "billing": "請求",
+        "billing_desc": "サブスクリプションを管理",
+        "support": "サポート",
+        "support_desc": "ヘルプを取得"
+      },
+      "footer": "ログアウト"
+    },
+    "mobile_menu": {
+      "title": "メニュー",
+      "toggle_button_aria": "モバイルメニューを切り替え",
+      "close_button_aria": "モバイルメニューを閉じる",
+      "dashboard": {
+        "title": "ダッシュボード",
+        "subtitle": "すべての統計を表示"
+      },
+      "notifications": {
+        "title": "通知",
+        "subtitle": "8件の保留中のアラート"
+      },
+      "messages": {
+        "title": "メッセージ",
+        "subtitle": "3件未読"
+      },
+      "recent_activity": {
+        "title": "最近のアクティビティ",
+        "items": {
+          "location_updated": "位置情報が更新されました",
+          "screenshot_taken": "スクリーンショットが撮影されました",
+          "time_2min": "2分前",
+          "time_5min": "5分前",
+          "selfie": "セルフィー"
+        }
+      },
+      "quick_actions": {
+        "take_photo": "写真を撮る",
+        "record_audio": "音声を録音"
+      },
+      "profile": {
+        "name": "Zion Ethan",
+        "settings": "設定",
+        "logout": "ログアウト"
+      },
+      "footer": "© {{year}} TrevorTech • バージョン{{version}}"
+    }
+  },
+  "bp": {
+    "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+    "bind_button": "私のデバイスをバインド"
+  },
+  "df": {
+    "copyright": "著作権 © {{year}}",
+    "rights_reserved": "すべての権利を保有。"
+  },
+  "dmsg": {
+    "header": {
+      "title": "テキストメッセージ",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド"
+    },
+    "sidebar": {
+      "date": "{{date}}年10月26日",
+      "chip": "過去7日間",
+      "close_button_aria": "サイドバーを閉じる",
+      "search_placeholder": "連絡先を検索..."
+    },
+    "chat": {
+      "menu_button_aria": "連絡先リストを開く",
+      "message_placeholder": "メッセージを入力...",
+      "send_button_aria": "メッセージを送信",
+      "no_contact_selected": "メッセージを表示するには連絡先を選択してください"
+    },
+    "contacts": {
+      "ari": {
+        "last_message": "誰も私たちを見ないようにします。",
+        "messages": [
+          { "text": "今夜、誰にも知られずに会えますか？" },
+          { "text": "誰も私たちを見ないようにします。" }
+        ]
+      },
+      "sally": {
+        "last_message": "念のため、すべてのメッセージを削除しました。",
+        "messages": [
+          { "text": "ねえ、今夜まだ来る？" },
+          { "text": "うん、でも仕事のイベントにいると言ったよ。" },
+          { "text": "いい考えだ、気をつけないと。" },
+          { "text": "分かってる、すごく罪悪感がある。" },
+          { "text": "いつもの場所で会う？" },
+          { "text": "念のため、すべてのメッセージを削除しました。" }
+        ]
+      },
+      "tony": {
+        "last_message": "彼女は私の言い訳を信じた、大丈夫だよ。",
+        "messages": [
+          { "text": "彼女に私と一緒にいたと言った？" },
+          { "text": "いや、遅くまで仕事してると言った。" },
+          { "text": "ふぅ、危なかった。" },
+          { "text": "明日の夜は空いてる？" },
+          { "text": "うん、こっそり抜け出せるよ。" },
+          { "text": "新しいアリバイを用意した。" },
+          { "text": "彼女は私の言い訳を信じた、大丈夫だよ。" }
+        ]
+      }
+    }
+  },
+  "dgps": {
+    "header": {
+      "title": "GPS位置情報",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date": "{{date}}年10月26日"
+    },
+    "tabs": {
+      "list_view": "リストビュー",
+      "map_view": "マップビュー"
+    },
+    "table": {
+      "latitude": "緯度",
+      "longitude": "経度",
+      "accuracy": "精度",
+      "map_view": "マップビュー",
+      "address": "住所",
+      "location_time": "位置時間",
+      "view_button": "表示",
+      "view_button_aria": "マップ上で位置を表示"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    },
+    "map": {
+      "title": "位置マップ",
+      "selected_location": "選択された位置"
+    }
+  },
+  "dkl": {
+    "header": {
+      "title": "キーロガー",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド"
+    },
+    "dropdown": {
+      "label": "アプリ"
+    },
+    "table": {
+      "app_name": "アプリ名",
+      "logged_text": "記録されたテキスト",
+      "time": "時間",
+      "no_activity": "最近の活動なし"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    },
+    "logs": [
+      { "text": "電話でメッセージを隠す方法？" },
+      { "text": "今夜会おう、誰にも言わないで。" },
+      { "text": "遅くまで仕事してるって言ったよ。" },
+      { "text": "チャットの履歴を削除する方法？" },
+      { "text": "明日、カバーしてくれる？" },
+      { "text": "いつもの場所で会おう。" },
+      { "text": "バレるわけにはいかない。" },
+      { "text": "読んだらこれを削除して。" },
+      { "text": "ブラウザの履歴をクリアする方法？" }
+    ]
+  },
+  "dcl": {
+    "header": {
+      "title": "通話",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "過去7日間"
+    },
+    "table": {
+      "state": "状態",
+      "state_missed": "不在",
+      "state_incoming": "着信",
+      "state_outgoing": "発信",
+      "number": "番号",
+      "name": "名前",
+      "duration": "通話時間"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    }
+  },
+  "dct": {
+    "header": {
+      "title": "連絡先",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド"
+    },
+    "contact": {
+      "number": "電話番号",
+      "email": "メール",
+      "expand": "連絡先の詳細を展開",
+      "collapse": "連絡先の詳細を折りたたむ"
+    }
+  },
+  "dnt": {
+    "header": {
+      "title": "ノート",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "過去7日間"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    },
+    "notes": [
+      {
+        "title": "学校のものを買う",
+        "content": "書店で本と追加の文房具を購入する。"
+      },
+      {
+        "title": "歴史レポートを完成させる",
+        "content": "先延ばしを克服する唯一の方法は、どこからでも始めること。"
+      },
+      {
+        "title": "有名な引用",
+        "content": "今この瞬間は贈り物。受け取って賢く使いなさい。"
+      },
+      {
+        "title": "始める時間",
+        "content": "しきい値に達すると勇気が衰える。"
+      }
+    ]
+  },
+  "dmphoto": {
+    "header": {
+      "title": "写真",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "過去7日間"
+    },
+    "photo": {
+      "alt": "写真 {{id}}",
+      "download_aria": "写真をダウンロード {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    }
+  },
+  "dmvideo": {
+    "header": {
+      "title": "ビデオ",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "過去7日間"
+    },
+    "video": {
+      "label": "ビデオ {{id}}",
+      "download_aria": "ビデオをダウンロード {{id}}"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    }
+  },
+  "dmwifi": {
+    "header": {
+      "title": "Wi-Fiネットワーク",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド",
+      "date_range": "{{startDate}} — {{endDate}}",
+      "last_7_days": "過去7日間"
+    },
+    "table": {
+      "bssid": "BSSID",
+      "name": "名前",
+      "connected": "接続日時",
+      "latitude": "緯度",
+      "longitude": "経度"
+    },
+    "pagination": {
+      "prev_button_aria": "前のページ",
+      "next_button_aria": "次のページ"
+    },
+    "networks": [
+      { "name": "Jewellカフェ" },
+      { "name": "自宅" },
+      { "name": "学校" },
+      { "name": "スターバックス" },
+      { "name": "CBCI-E524" },
+      { "name": "パスワードはpassword" },
+      { "name": "Wileroad" },
+      { "name": "Korman 1102" },
+      { "name": "ここでは無料Wi-Fiなし" }
+    ]
+  },
+  "dmkeywords": {
+    "header": {
+      "title": "キーワードアラート",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド"
+    },
+    "tabs": {
+      "tracking_rules": "トラッキングルール",
+      "keywords_detected": "検出されたキーワード"
+    },
+    "add_rule": {
+      "title": "ルールを追加",
+      "word_or_phrase": "単語またはフレーズ",
+      "word_or_phrase_placeholder": "単語またはフレーズ",
+      "select_features": "機能を選択",
+      "notification_type": "通知タイプ",
+      "add_button": "追加",
+      "add_button_aria": "新しいキーワードトラッキングルールを追加"
+    },
+    "added_rules": {
+      "title": "追加されたルール",
+      "table": {
+        "keywords": "キーワード",
+        "features": "機能",
+        "notification_type": "通知タイプ"
+      }
+    },
+    "detected": {
+      "table": {
+        "keywords": "キーワード",
+        "features": "機能",
+        "time": "時間"
+      }
+    },
+    "features": {
+      "all": "すべて",
+      "snapchat": "Snapchat",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "messages": "メッセージ",
+      "kik": "Kik"
+    },
+    "notifications": {
+      "notify_email": "メールで通知",
+      "notify_phone": "電話で通知",
+      "notify_both": "両方で通知"
+    }
+  },
+  "dmapps": {
+    "header": {
+      "title": "インストール済みアプリ",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド"
+    },
+    "apps": [
+      { "name": "Instagram" },
+      { "name": "LINE" },
+      { "name": "Snapchat" },
+      { "name": "Tinder" },
+      { "name": "Twitter" },
+      { "name": "Viber" },
+      { "name": "WhatsApp" },
+      { "name": "Telegram" },
+      { "name": "Messenger" },
+      { "name": "Discord" },
+      { "name": "WeChat" },
+      { "name": "Reddit" },
+      { "name": "Twitch" },
+      { "name": "LinkedIn" },
+      { "name": "Pinterest" },
+      { "name": "Spotify" },
+      { "name": "YouTube" },
+      { "name": "TikTok" },
+      { "name": "Signal" },
+      { "name": "Gmail" },
+      { "name": "Slack" },
+      { "name": "Zoom" }
+    ]
+  },
+  "dmbookmark": {
+    "header": {
+      "title": "ブックマーク",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド"
+    },
+    "favicon_alt": "ファビコン",
+    "pagination": {
+      "previous_aria": "前のページ",
+      "page_aria": "ページ{{page}}",
+      "next_aria": "次のページ"
+    }
+  },
+  "dmhistory": {
+    "header": {
+      "title": "ブラウザ履歴",
+      "demo_message": "デモデータ。デバイスをバインドして実際のデータを収集します。",
+      "bind_button": "私のデバイスをバインド",
+      "bind_button_aria": "データ収集を開始するためにデバイスをバインド"
+    },
+    "favicon_alt": "ファビコン",
+    "pagination": {
+      "previous_aria": "前のページ",
+      "page_aria": "ページ{{page}}",
+      "next_aria": "次のページ"
+    }
+  },
+  "dmemail": {
+    "header": {
+      "title": "メール履歴"
+    },
+    "filters": {
+      "source": {
+        "label": "メールソース",
+        "all": "すべて",
+        "gmail": "Gmail",
+        "outlook": "Outlook"
+      },
+      "folder": {
+        "label": "フォルダ",
+        "inbox": "受信トレイ",
+        "sent": "送信済み",
+        "spam": "スパム"
+      }
+    },
+    "avatar_alt": "{{from}}のアバター",
+    "preview": {
+      "to_label": "宛先：",
+      "from_label": "差出人：",
+      "subject_label": "件名：",
+      "date_label": "日付：",
+      "no_selection": "メールを選択してプレビューしてください",
+      "back_aria": "メール一覧に戻る"
+    },
+    "pagination": {
+      "previous_aria": "前のページ",
+      "page_aria": "ページ{{page}}",
+      "next_aria": "次のページ"
+    },
+    "emails": {
+      "email1": {
+        "from": "security@bankalert.com",
+        "subject": "緊急：あなたの銀行口座が危険にさらされています",
+        "preview": "アカウント保護のために直ちに行動が必要です。",
+        "body": "親愛なるお客様、\n\nあなたの銀行口座で不審な活動が検出されました。以下のリンクをクリックして直ちに本人確認を行ってください：\n\n[アカウントを保護]\n\n24時間以内に行動を取らない場合、アカウントが停止される可能性があります。\n\nよろしくお願いいたします、\n銀行セキュリティチーム"
+      },
+      "email2": {
+        "from": "noreply@accounts-service.com",
+        "subject": "パスワードリセットのリクエスト",
+        "preview": "パスワードリセットをリクエストしました。今すぐ行動してください。",
+        "body": "親愛なるユーザー、\n\nあなたのパスワードリセットのリクエストを受け取りました。以下のリンクをクリックして続行してください：\n\n[パスワードリセット]\n\nこのリクエストを行っていない場合は、このメールを無視してください。ただし、アカウントを直ちに保護することをお勧めします。\n\nありがとう、\nアカウントサービスチーム"
+      },
+      "email3": {
+        "from": "info@lotterywin.com",
+        "subject": "おめでとう！あなたは賞金の当選者です！",
+        "preview": "今すぐ100万ドルの賞金を請求！",
+        "body": "親愛なる当選者、\n\nあなたは100万ドルの賞金の当選者に選ばれました。以下のリンクから詳細を入力してください：\n\n[賞金を請求]\n\n急いで、このオファーは48時間で期限切れです！\n\nよろしくお願いいたします、\nロッタリーチーム"
+      },
+      "email4": {
+        "from": "support@paypal-service.com",
+        "subject": "あなたのPayPalアカウントが停止されました",
+        "preview": "アカウントアクセスを復元するために行動が必要です。",
+        "body": "親愛なるユーザー、\n\n異常な活動により、あなたのPayPalアカウントが一時的に停止されています。以下のリンクでアカウントを確認してください：\n\n[アカウントを確認]\n\n24時間以内に確認しない場合、アカウントは永久に停止されます。\n\nPayPalサポート"
+      },
+      "email5": {
+        "from": "invest@crypto-opportunity.com",
+        "subject": "独占的な暗号通貨投資の機会",
+        "preview": "今すぐ投資して7日間で500%の利益を！",
+        "body": "親愛なる投資家、\n\n私たちの独占的な暗号通貨投資プログラムに参加し、7日間で500%の利益を獲得してください。以下をクリックして開始：\n\n[今すぐ投資]\n\nこの期間限定の機会をお見逃しなく！\n\nクリプトオポチュニティチーム"
+      }
+    }
+  },
+  "dmsim": {
+    "header": {
+      "title": "SIMカード"
+    },
+    "sim_card": {
+      "title": "SIMカード",
+      "operator_label": "モバイルオペレーター名：",
+      "phone_label": "電話番号：",
+      "mnc_label": "MNC：",
+      "mcc_label": "MCC：",
+      "imei_label": "IMEI："
+    },
+    "change_email": {
+      "title": "メールアドレス変更",
+      "notification_text": "対象デバイスがSIMカードを変更すると、登録されたメールアドレスに通知を送信します。登録されたメールアドレスが有効であることを確認してください。",
+      "invalid_email_text": "登録されたメールアドレスが無効な場合、",
+      "change_button": "ここをクリックして変更してください。",
+      "change_button_aria": "登録されたメールアドレスを変更"
+    },
+    "recent_locations": {
+      "title": "最近の位置情報",
+      "all_locations": "すべての位置情報",
+      "all_locations_aria": "すべての位置履歴を表示"
+    },
+    "locations": {
+      "loc1": {
+        "address": "アメリカ合衆国カリフォルニア州ロサンゼルス、ウィルシャー・ブルバード5905、郵便番号90036",
+        "time": "2022-02-10 22:30"
+      },
+      "loc2": {
+        "address": "アメリカ合衆国カリフォルニア州ロサンゼルス、郵便番号90068",
+        "time": "2022-02-04 05:00"
+      },
+      "loc3": {
+        "address": "アメリカ合衆国カリフォルニア州ロサンゼルス、イースト・オブザーバトリー・ロード2800、郵便番号90027",
+        "time": "2022-02-02 15:45"
+      },
+      "loc4": {
+        "address": "アメリカ合衆国カリフォルニア州ユニバーサルシティ、ユニバーサルシティプラザ100、郵便番号91608",
+        "time": "2022-01-27 17:20"
+      },
+      "loc5": {
+        "address": "アメリカ合衆国カリフォルニア州ロサンゼルス、ゲティセンター・ドライブ1200、郵便番号90049",
+        "time": "2022-01-25 10:05"
+      }
+    }
+  },
+  "dmgf": {
+    "header": {
+      "title": "GPS位置"
+    },
+    "tabs": {
+      "allowed": "許可",
+      "restricted": "制限",
+      "aria_label": "ジオフェンスゾーンの種類選択"
+    },
+    "left_panel": {
+      "add_button": "追加",
+      "add_button_aria": "新しいジオフェンス位置を追加",
+      "copy_aria": "位置の住所をコピー",
+      "delete_aria": "位置を削除"
+    },
+    "map": {
+      "title": "マップビュー"
+    },
+    "location": {
+      "name": "ロサンゼルス寺院ビジターセンター、ロサンゼルス、CA"
+    }
+  },
+  "dmwebblocker": {
+    "header": {
+      "title": "ウェブサイトブロック"
+    },
+    "left_panel": {
+      "description": "この機能は、ウェブサイトのすべてのページをブロックします。ホームページだけでなく、たとえばexample.comを訪れると、www.example.com/page1.htmlなどの関連ページもブロックされます。",
+      "add_websites": "ウェブサイトを追加",
+      "input_placeholder": "ウェブアドレスを入力（例：abc.com）",
+      "input_aria": "ブロックするウェブサイトのアドレスを入力",
+      "add_button": "追加",
+      "add_button_aria": "ウェブサイトをブロックリストに追加"
+    },
+    "right_panel": {
+      "title": "ブロックされたサイト",
+      "empty_state": "まだウェブサイトがブロックされていません。",
+      "unblock_button": "ブロック解除",
+      "unblock_button_aria": "{domain} のブロックを解除"
+    },
+    "sites": {
+      "site1.domain": "ユーチューブ.com",
+      "site2.domain": "グーグル.com",
+      "site3.domain": "フェイスブック.com"
+    }
+  },
+  "dmwifiblocker": {
+    "header": {
+      "title": "Wi-Fiブロック"
+    },
+    "table": {
+      "title": "タイトル",
+      "connected_time": "接続時間",
+      "latitude": "緯度",
+      "longitude": "経度",
+      "block_status": "ブロック/ブロック済み",
+      "block_button": "ブロック",
+      "unblock_button": "ブロック解除",
+      "aria_label": "Wi-Fiネットワークブロックリスト",
+      "block_button_aria": "Wi-Fiネットワーク {title} をブロック",
+      "unblock_button_aria": "Wi-Fiネットワーク {title} のブロックを解除"
+    },
+    "wifi": {
+      "wifi1.title": "ここに無料Wi-Fiはありません",
+      "wifi2.title": "Korman 1102",
+      "wifi3.title": "Willeroad",
+      "wifi4.title": "パスワードはpassword",
+      "wifi5.title": "CBCI-E524",
+      "wifi6.title": "スターバックス",
+      "wifi7.title": "学校",
+      "wifi8.title": "自宅",
+      "wifi9.title": "Jewellカフェ"
+    }
+  },
+  "dmappblock": {
+    "header": {
+      "title": "アプリブロック"
+    },
+    "button": {
+      "block": "ブロック",
+      "unblock": "ブロック解除",
+      "block_aria": "アプリ {name} をブロック",
+      "unblock_aria": "アプリ {name} のブロックを解除"
+    },
+    "grid": {
+      "aria_label": "アプリブロックリスト"
+    },
+    "apps": {
+      "app1.name": "インスタグラム",
+      "app2.name": "ライン",
+      "app3.name": "スナップチャット",
+      "app4.name": "ティンダー",
+      "app5.name": "ツイッター",
+      "app6.name": "バイバー",
+      "app7.name": "フェイスブック",
+      "app8.name": "ワッツアップ",
+      "app9.name": "ティックトック",
+      "app10.name": "ユーチューブ",
+      "app11.name": "ネットフリックス",
+      "app12.name": "スポティファイ",
+      "app13.name": "ディスコード",
+      "app14.name": "テレグラム",
+      "app15.name": "ツイッチ",
+      "app16.name": "ピンタレスト",
+      "app17.name": "リンクトイン",
+      "app18.name": "アマゾン"
+    }
+  },
+  "smedia": {
+    "hero_title": "ソーシャルメディアアカウントを即座にアンロック",
+    "hero_description": "最先端の量子技術を体験して、ソーシャルメディアアカウントに安全かつ慎重にアクセスし、監視します。",
+    "cta_start": "今すぐ開始",
+    "cta_contact_us": "お問い合わせ",
+    "simulation_title": "量子シミュレーション",
+    "matrix_title": "アクセスマトリックス",
+    "matrix_accounts": "アカウント",
+    "matrix_platforms": "プラットフォーム",
+    "how_it_works_title": "量子アクセスの仕組み",
+    "how_it_works_subtitle": "安全かつ効率的なアカウントアクセスを実現する先進技術のシームレスなプロセスをご覧ください。",
+    "step_1_title": "ターゲット選択",
+    "step_1_description": "アカウントの詳細を入力して、脆弱性を即座に特定します。",
+    "step_2_title": "ステルス浸透",
+    "step_2_description": "量子ツールがセキュリティ層を通過し、シームレスなアクセスを実現します。",
+    "step_3_title": "リアルタイム監視",
+    "step_3_description": "暗号化された精度でメッセージ、メディア、アクティビティを監視します。",
+    "features_title": "次世代アクセス機能",
+    "features_subtitle": "当プラットフォームをパフォーマンスとセキュリティで無敵にする強力な機能をご覧ください。",
+    "feature_1_title": "不可視エントリー",
+    "feature_1_description": "アラートや通知をトリガーせずにアカウントにアクセスします。",
+    "feature_2_title": "20以上のプラットフォーム",
+    "feature_2_description": "Snapchat、Instagram、WhatsApp、Telegramなどをサポート。",
+    "feature_3_title": "量子暗号化",
+    "feature_3_description": "破られないエンドツーエンドの暗号化で安全な監視。",
+    "testimonials_title": "ユーザーの声",
+    "testimonials_description": "私たちの量子アクセス技術の力を体験したユーザーの声を聞いてください。",
+    "testimonial_1": "数分でSnapchatアカウントにアクセス。完全に慎重！",
+    "testimonial_type_1": "Snapchatユーザー",
+    "testimonial_time_1": "2日前検証済み",
+    "testimonial_2": "Instagramへのアクセスは完璧でした。強くお勧めします！",
+    "testimonial_type_2": "Instagramユーザー",
+    "testimonial_time_2": "1週間前検証済み",
+    "testimonial_3": "WhatsAppを簡単に監視。超安全！",
+    "testimonial_type_3": "WhatsAppユーザー",
+    "testimonial_time_3": "3日前検証済み",
+    "testimonial_4": "Facebookへのアクセスは迅速かつ不可視。驚くべき技術！",
+    "testimonial_type_4": "Facebookユーザー",
+    "testimonial_time_4": "5日前検証済み",
+    "testimonial_5": "Telegramの監視は完璧に機能しました。問題なし！",
+    "testimonial_type_5": "Telegramユーザー",
+    "testimonial_time_5": "4日前検証済み",
+    "testimonial_6": "Instagramのための素晴らしいツール。使いやすい！",
+    "testimonial_type_6": "Instagramユーザー",
+    "testimonial_time_6": "6日前検証済み",
+    "testimonial_7": "Snapchatへのアクセスはスムーズで速かったです。大好き！",
+    "testimonial_type_7": "Snapchatユーザー",
+    "testimonial_time_7": "2日前検証済み",
+    "testimonial_8": "Snapchat監視のゲームチェンジャーです！",
+    "testimonial_type_8": "Snapchatユーザー",
+    "testimonial_time_8": "3日前検証済み",
+    "testimonial_9": "Snapchatへのアクセスはシームレス。非常に安全！",
+    "testimonial_type_9": "Snapchatユーザー",
+    "testimonial_time_9": "昨日検証済み",
+    "testimonial_10": "迅速で信頼性の高いSnapchatアクセス。感動しました！",
+    "testimonial_type_10": "Snapchatユーザー",
+    "testimonial_time_10": "4日前検証済み",
+    "testimonial_11": "Snapchat監視は楽でした。最高品質！",
+    "testimonial_type_11": "Snapchatユーザー",
+    "testimonial_time_11": "2日前検証済み",
+    "testimonial_12": "Snapchatアクセスに最適なツール。非常に慎重！",
+    "testimonial_type_12": "Snapchatユーザー",
+    "testimonial_time_12": "5日前検証済み",
+    "final_cta_title": "コントロールする準備はできていますか？",
+    "final_cta_description": "何千人ものユーザーに加わり、今日、私たちの量子アクセス技術の全可能性を解き放ちましょう。",
+    "final_cta_button": "今すぐ開始"
+  },
+  "dmwhatsapp": {
+    "header": {
+      "title": "WhatsApp"
+    },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "call_log": "通話履歴",
+      "aria_label": "WhatsAppナビゲーションタブ",
+      "chat_aria": "チャットリストを表示",
+      "contacts_aria": "連絡先リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "WhatsAppチャットリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "contacts": {
+      "list_aria": "WhatsApp連絡先リスト",
+      "item_aria": "連絡先{name}を選択",
+      "detail_aria": "{name}の連絡先詳細",
+      "number": "電話番号",
+      "email": "メール",
+      "adam": { "name": "アダム", "email": "adam@gmail.com" },
+      "alicia": { "name": "アリシア", "email": "alicia@gmail.com" },
+      "andrew": { "name": "アンドリュー", "email": "andrew@outlook.com" },
+      "arya": { "name": "アーリア", "email": "arya.stark@winterfell.com" },
+      "alice": { "name": "アリス", "email": "alice.wonderland@tea.com" },
+      "bart": { "name": "バート", "email": "bart.simpson@springfield.edu" },
+      "barry": { "name": "バリー", "email": "barry.allen@centralcity.gov" },
+      "brian": { "name": "ブライアン", "email": "brian.griffin@quahog.com" },
+      "brenda": { "name": "ブレンダ", "email": "brenda.johnson@lawfirm.com" }
+    },
+    "callLogs": {
+      "list_aria": "WhatsApp通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "adam": { "name": "アダム" },
+      "sarah": { "name": "サラ" },
+      "jane": { "name": "ジェーン" },
+      "arya": { "name": "アーリア" },
+      "alicia": { "name": "アリシア" },
+      "tom": { "name": "トム" },
+      "drJames": { "name": "ジェームズ博士" },
+      "brenda": { "name": "ブレンダ" }
+    },
+    "call": {
+      "answered_calls": "応答済み通話"
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "drJames": {
+        "name": "ジェームズ博士のオフィス",
+        "lastMessage": "明日来てください。",
+        "messages": {
+          "msg1": { "text": "おはよう！今日の気分はどうですか？" },
+          "msg2": { "text": "良くなったけど、まだ頭痛がします。" },
+          "msg3": { "text": "明日、検診に来てください。" }
+        }
+      },
+      "sarahT": {
+        "name": "サラ、T",
+        "lastMessage": "彼はあなたを愛しています。もちろん許してくれます。謝るだけでいいのよ。",
+        "messages": {
+          "msg1": { "text": "マークと大失敗しちゃった。" },
+          "msg2": { "text": "何が起こったの？" },
+          "msg3": { "text": "私たちの記念日を忘れちゃった。" },
+          "msg4": {
+            "text": "彼はあなたを愛しています。もちろん許してくれます。謝るだけでいいのよ。"
+          }
+        }
+      },
+      "jeromeT": {
+        "name": "ジェローム T",
+        "lastMessage": "その後、街でいくつか会議があります。",
+        "messages": {
+          "msg1": { "text": "時間通りに帰宅できる？" },
+          "msg2": { "text": "うん、オフィスでほぼ終わったよ。" },
+          "msg3": { "text": "その後、街でいくつか会議があります。" }
+        }
+      },
+      "sallyJ": {
+        "name": "サリー、J",
+        "lastMessage": "できるだけ早くそこに着きます。",
+        "messages": {
+          "msg1": { "text": "パーティーに来る？" },
+          "msg2": { "text": "交通がひどいけど、向かってるよ。" },
+          "msg3": { "text": "できるだけ早くそこに着きます。" }
+        }
+      },
+      "bob": {
+        "name": "ボブ",
+        "lastMessage": "ありがとう。",
+        "messages": {
+          "msg1": {
+            "text": "ニーナ、トムがあなたが体調悪いって言ってた。大丈夫？"
+          },
+          "msg2": { "text": "ううん、今日外に出られないよ。" },
+          "msg3": { "text": "心配しないで。早く良くなってね！" },
+          "msg4": { "text": "ありがとう。" }
+        }
+      }
+    }
+  },
+  "dmfb": {
+    "header": {
+      "title": "Facebook"
+    },
+    "tabs": {
+      "notifications": "通知",
+      "friends": "友達",
+      "aria_label": "Facebookナビゲーションタブ",
+      "notifications_aria": "通知リストを表示",
+      "friends_aria": "友達リストを表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "notifications": {
+      "list_aria": "Facebook通知リスト",
+      "item_aria": "通知を表示：{message}",
+      "icon_alt": "Facebook通知アイコン",
+      "sallySecret": {
+        "message": "サリーがあなたに見せるべきでないプライベートメッセージを送りました。"
+      },
+      "shanePhoto": {
+        "message": "シェーンがあなたに見せるべきでない写真を投稿しました。"
+      },
+      "terriLink": {
+        "message": "テリーがあなたと秘密のリンクを共有しました。"
+      },
+      "tomLike": {
+        "message": "トムがあなたが隠した投稿にいいねしました。"
+      },
+      "samVideo": {
+        "message": "サムがプライベートグループにビデオをアップロードしました。"
+      },
+      "wilianySuggestion": {
+        "message": "友達の提案：あなたの秘密の計画を知っているウィリアニー。"
+      }
+    },
+    "friends": {
+      "list_aria": "Facebook友達リスト",
+      "item_aria": "友達を選択 {name}",
+      "detail_aria": "{name}の友達詳細",
+      "mutual": "人の共通の友達",
+      "message_button": "メッセージ",
+      "contact_info": "連絡先情報",
+      "mobile": "携帯",
+      "email": "メール",
+      "sarah": {
+        "name": "サラ・ジョンソン",
+        "phone": "+1 555-0123",
+        "email": "sarah.johnson@example.com"
+      },
+      "michael": {
+        "name": "マイケル・チェン",
+        "phone": "+1 555-0124",
+        "email": "michael.chen@example.com"
+      },
+      "emma": {
+        "name": "エマ・ウィルソン",
+        "phone": "+1 555-0125",
+        "email": "emma.wilson@example.com"
+      },
+      "david": {
+        "name": "デビッド・マーティネズ",
+        "phone": "+1 555-0126",
+        "email": "david.martinez@example.com"
+      },
+      "olivia": {
+        "name": "オリビア・ブラウン",
+        "phone": "+1 555-0127",
+        "email": "olivia.brown@example.com"
+      },
+      "james": {
+        "name": "ジェームズ・リー",
+        "phone": "+1 555-0128",
+        "email": "james.lee@example.com"
+      },
+      "sophia": {
+        "name": "ソフィア・ガルシア",
+        "phone": "+1 555-0129",
+        "email": "sophia.garcia@example.com"
+      },
+      "william": {
+        "name": "ウィリアム・デイビス",
+        "phone": "+1 555-0130",
+        "email": "william.davis@example.com"
+      }
+    }
+  },
+  "dmfbchat": {
+    "header": {
+      "title": "Messenger"
+    },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "call_log": "通話履歴",
+      "aria_label": "Messengerナビゲーションタブ",
+      "chat_aria": "チャットリストを表示",
+      "contacts_aria": "連絡先リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Messengerチャットリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "contacts": {
+      "list_aria": "Messenger連絡先リスト",
+      "item_aria": "連絡先{name}を選択",
+      "detail_aria": "{name}の連絡先詳細",
+      "number": "番号",
+      "email": "メール",
+      "alexRivera": {
+        "name": "アレックス・リベラ",
+        "email": "alex.rivera@fb.com"
+      },
+      "briannaLee": {
+        "name": "ブリアナ・リー",
+        "email": "brianna.lee@fb.com"
+      },
+      "carlosMendoza": {
+        "name": "カルロス・メンドーサ",
+        "email": "carlos.m@fb.com"
+      },
+      "dianaFoster": {
+        "name": "ダイアナ・フォスター",
+        "email": "diana.f@fb.com"
+      },
+      "ethanBrooks": {
+        "name": "イーサン・ブルックス",
+        "email": "ethan.b@fb.com"
+      },
+      "fionaGrant": {
+        "name": "フィオナ・グラント",
+        "email": "fiona.g@fb.com"
+      },
+      "gabrielOrtiz": {
+        "name": "ガブリエル・オルティス",
+        "email": "gabriel.o@fb.com"
+      },
+      "hannahPark": { "name": "ハンナ・パーク", "email": "hannah.p@fb.com" },
+      "isaacNewton": {
+        "name": "アイザック・ニュートン",
+        "email": "isaac.n@fb.com"
+      }
+    },
+    "callLogs": {
+      "list_aria": "Messenger通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "emilyChen": { "name": "エミリー・チェン" },
+      "michaelTorres": { "name": "マイケル・トーレス" },
+      "sarahKim": { "name": "サラ・キム" },
+      "davidPatel": { "name": "デビッド・パテル" },
+      "lisaWong": { "name": "リサ・ウォン" }
+    },
+    "call": {
+      "answered_calls": "応答済み"
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "エミリー・チェン",
+        "lastMessage": "誰にも言わないで！",
+        "messages": {
+          "msg1": { "text": "プライベートリンクを送ったよ。" },
+          "msg2": { "text": "受け取ったけど、なぜ秘密なの？" },
+          "msg3": { "text": "誰にも言わないで！" }
+        }
+      },
+      "michaelTorres": {
+        "name": "マイケル・トーレス",
+        "lastMessage": "後でチャットを削除するよ。",
+        "messages": {
+          "msg1": { "text": "今夜まだ彼女に会う？" },
+          "msg2": { "text": "うん、でも内緒にして。" },
+          "msg3": { "text": "後でチャットを削除するよ。" }
+        }
+      },
+      "sarahKim": {
+        "name": "サラ・キム",
+        "lastMessage": "投稿を非表示にした、ありがとう！",
+        "messages": {
+          "msg1": { "text": "その投稿を非表示にしてくれる？" },
+          "msg2": { "text": "投稿を非表示にした、ありがとう！" }
+        }
+      },
+      "davidPatel": {
+        "name": "デビッド・パテル",
+        "lastMessage": "秘密のグループを確認して。",
+        "messages": {
+          "msg1": { "text": "秘密のグループにあなたを追加したよ。" },
+          "msg2": { "text": "ありがとう、どんなグループ？" },
+          "msg3": { "text": "秘密のグループを確認して。" }
+        }
+      },
+      "lisaWong": {
+        "name": "リサ・ウォン",
+        "lastMessage": "これは私たちの間で秘密に。",
+        "messages": {
+          "msg1": { "text": "プライベートで話す時間ある？" },
+          "msg2": { "text": "うん、なに？" },
+          "msg3": { "text": "これは私たちの間で秘密に。" }
+        }
+      }
+    }
+  },
+  "dminsta": {
+    "header": {
+      "title": "Instagram"
+    },
+    "tabs": {
+      "chat": "メッセージ",
+      "contacts": "連絡先",
+      "call_log": "通話履歴",
+      "aria_label": "Instagramナビゲーションタブ",
+      "chat_aria": "メッセージリストを表示",
+      "contacts_aria": "連絡先リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Instagramメッセージリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "contacts": {
+      "list_aria": "Instagram連絡先リスト",
+      "item_aria": "連絡先{name}を選択",
+      "detail_aria": "{name}の連絡先詳細",
+      "phone": "電話",
+      "email": "メール",
+      "alexRivera": { "name": "alex.rivera", "email": "alex.rivera@ig.com" },
+      "briannaLee": { "name": "brianna.lee", "email": "brianna.lee@ig.com" },
+      "carlosMendoza": { "name": "carlos.mendoza", "email": "carlos.m@ig.com" },
+      "dianaFoster": { "name": "diana.foster", "email": "diana.f@ig.com" },
+      "ethanBrooks": { "name": "ethan.brooks", "email": "ethan.b@ig.com" },
+      "fionaGrant": { "name": "fiona.grant", "email": "fiona.g@ig.com" },
+      "gabrielOrtiz": { "name": "gabriel.ortiz", "email": "gabriel.o@ig.com" },
+      "hannahPark": { "name": "hannah.park", "email": "hannah.p@ig.com" },
+      "isaacNewton": { "name": "isaac.newton", "email": "isaac.n@ig.com" }
+    },
+    "callLogs": {
+      "list_aria": "Instagram通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "emilyChen": { "name": "emily.chen" },
+      "michaelTorres": { "name": "michael.torres" },
+      "sarahKim": { "name": "sarah.kim" },
+      "davidPatel": { "name": "david.patel" },
+      "lisaWong": { "name": "lisa.wong" }
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "emilyChen": {
+        "name": "emily.chen",
+        "lastMessage": "誰にも言わないで！",
+        "messages": {
+          "msg1": {
+            "text": "プライベートリンクを送ったよ。",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "受け取ったけど、なんでこんな秘密なの？",
+            "incoming": false
+          },
+          "msg3": { "text": "誰にも言わないで！", "incoming": true }
+        }
+      },
+      "michaelTorres": {
+        "name": "michael.torres",
+        "lastMessage": "後でチャットを削除するよ。",
+        "messages": {
+          "msg1": { "text": "今夜まだ彼女に会う？", "incoming": true },
+          "msg2": { "text": "うん、でも内緒にして。", "incoming": false },
+          "msg3": { "text": "後でチャットを削除するよ。", "incoming": true }
+        }
+      },
+      "sarahKim": {
+        "name": "sarah.kim",
+        "lastMessage": "投稿を非表示にした、ありがとう！",
+        "messages": {
+          "msg1": { "text": "その投稿を隠してくれる？", "incoming": true },
+          "msg2": {
+            "text": "投稿を非表示にした、ありがとう！",
+            "incoming": false
+          }
+        }
+      },
+      "davidPatel": {
+        "name": "david.patel",
+        "lastMessage": "秘密のグループを確認して。",
+        "messages": {
+          "msg1": { "text": "秘密のグループに追加したよ。", "incoming": true },
+          "msg2": { "text": "ありがとう、どんなグループ？", "incoming": false },
+          "msg3": { "text": "秘密のグループを確認して。", "incoming": true }
+        }
+      },
+      "lisaWong": {
+        "name": "lisa.wong",
+        "lastMessage": "このことは内緒にしよう。",
+        "messages": {
+          "msg1": { "text": "プライベートで話す時間ある？", "incoming": true },
+          "msg2": { "text": "うん、なに？", "incoming": false },
+          "msg3": { "text": "このことは内緒にしよう。", "incoming": true }
+        }
+      }
+    }
+  },
+  "dmtwitter": {
+    "header": {
+      "title": "X"
+    },
+    "tabs": {
+      "chat": "メッセージ",
+      "followers": "フォロワー",
+      "call_log": "通話履歴",
+      "aria_label": "Xナビゲーションタブ",
+      "chat_aria": "メッセージリストを表示",
+      "followers_aria": "フォロワーリストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Xメッセージリスト",
+      "item_aria": "{handle}とのチャットを選択",
+      "detail_aria": "{handle}のチャット詳細"
+    },
+    "followers": {
+      "list_aria": "Xフォロワーリスト",
+      "item_aria": "フォロワー{handle}を選択",
+      "detail_aria": "{handle}のフォロワー詳細",
+      "handle": "ハンドル",
+      "a16z": { "handle": "@a16z", "name": "a16z", "email": "a16z@x.com" },
+      "balajis": {
+        "handle": "@balajis",
+        "name": "Balaji Srinivasan",
+        "email": "balaji@x.com"
+      },
+      "cdixon": {
+        "handle": "@cdixon",
+        "name": "Chris Dixon",
+        "email": "chris@x.com"
+      },
+      "pmarca": {
+        "handle": "@pmarca",
+        "name": "Marc Andreessen",
+        "email": "marc@x.com"
+      },
+      "naval": {
+        "handle": "@naval",
+        "name": "Naval Ravikant",
+        "email": "naval@x.com"
+      },
+      "paulg": {
+        "handle": "@paulg",
+        "name": "Paul Graham",
+        "email": "paul@x.com"
+      },
+      "sama": { "handle": "@sama", "name": "Sam Altman", "email": "sam@x.com" },
+      "jack": {
+        "handle": "@jack",
+        "name": "Jack Dorsey",
+        "email": "jack@x.com"
+      },
+      "vitalik": {
+        "handle": "@vitalik",
+        "name": "Vitalik Buterin",
+        "email": "vitalik@x.com"
+      }
+    },
+    "callLogs": {
+      "list_aria": "X通話履歴",
+      "item_aria": "{handle}との通話を選択",
+      "detail_aria": "{handle}の通話詳細",
+      "elonmusk": { "handle": "@elonmusk" },
+      "codinghorror": { "handle": "@codinghorror" },
+      "verge": { "handle": "@verge" },
+      "nasdaily": { "handle": "@nasdaily" },
+      "techcrunch": { "handle": "@techcrunch" }
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "elonmusk": {
+        "handle": "@elonmusk",
+        "name": "Elon Musk",
+        "lastMessage": "月へ",
+        "messages": {
+          "msg1": { "text": "おはよう、Xファミリー", "incoming": true },
+          "msg2": { "text": "月へ", "incoming": false }
+        }
+      },
+      "codinghorror": {
+        "handle": "@codinghorror",
+        "name": "Jeff Atwood",
+        "lastMessage": "useStateは王",
+        "messages": {
+          "msg1": { "text": "Reactフック > クラス", "incoming": true },
+          "msg2": { "text": "useStateは王", "incoming": false }
+        }
+      },
+      "verge": {
+        "handle": "@verge",
+        "name": "The Verge",
+        "lastMessage": "速報：AIニュース",
+        "messages": {
+          "msg1": { "text": "新しいGrokモデルがリリース", "incoming": true },
+          "msg2": { "text": "速報：AIニュース", "incoming": false }
+        }
+      },
+      "nasdaily": {
+        "handle": "@nasdaily",
+        "name": "Nas Daily",
+        "lastMessage": "それが1分",
+        "messages": {
+          "msg1": { "text": "明日会おう！", "incoming": true },
+          "msg2": { "text": "それが1分", "incoming": false }
+        }
+      },
+      "techcrunch": {
+        "handle": "@techcrunch",
+        "name": "TechCrunch",
+        "lastMessage": "スタートアップの資金調達",
+        "messages": {
+          "msg1": { "text": "1億ドルのシリーズB", "incoming": true },
+          "msg2": { "text": "スタートアップの資金調達", "incoming": false }
+        }
+      }
+    }
+  },
+  "dmtiktok": {
+    "header": {
+      "title": "TikTok"
+    },
+    "tabs": {
+      "chat": "メッセージ",
+      "friends": "友達",
+      "call_log": "通話履歴",
+      "aria_label": "TikTokナビゲーションタブ",
+      "chat_aria": "メッセージリストを表示",
+      "friends_aria": "友達リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "TikTokメッセージリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "friends": {
+      "list_aria": "TikTok友達リスト",
+      "item_aria": "友達{name}を選択",
+      "detail_aria": "{name}の友達詳細",
+      "phone": "電話",
+      "email": "メール",
+      "dixiedamelio": { "name": "dixiedamelio", "email": "dixie@tiktok.com" },
+      "noahbeck": { "name": "noahbeck", "email": "noah@tiktok.com" },
+      "jamescharles": { "name": "jamescharles", "email": "james@tiktok.com" },
+      "larray": { "name": "larray", "email": "larray@tiktok.com" },
+      "madi": { "name": "madi", "email": "madi@tiktok.com" },
+      "quenblackwell": { "name": "quenblackwell", "email": "quen@tiktok.com" },
+      "brycehall": { "name": "brycehall", "email": "bryce@tiktok.com" },
+      "lorengray": { "name": "lorengray", "email": "loren@tiktok.com" }
+    },
+    "callLogs": {
+      "list_aria": "TikTok通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "charli_damelio": { "name": "charli.damelio" },
+      "khaby_lame": { "name": "khaby.lame" },
+      "addisonrae": { "name": "addisonrae" },
+      "zachking": { "name": "zachking" },
+      "bellapoarch": { "name": "bellapoarch" }
+    },
+    "callTypes": {
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在着信"
+    },
+    "chats": {
+      "charli_damelio": {
+        "name": "charli.damelio",
+        "lastMessage": "今夜こっそり出かける？",
+        "messages": {
+          "msg1": { "text": "この秘密を守れる？", "incoming": true },
+          "msg2": { "text": "今夜こっそり出かける？", "incoming": false }
+        }
+      },
+      "khaby_lame": {
+        "name": "khaby.lame",
+        "lastMessage": "誰にも言わないで。",
+        "messages": {
+          "msg1": {
+            "text": "彼女に私たちのことはバレちゃダメ",
+            "incoming": true
+          },
+          "msg2": { "text": "誰にも言わないで。", "incoming": false }
+        }
+      },
+      "addisonrae": {
+        "name": "addisonrae",
+        "lastMessage": "暗くなったら会おう",
+        "messages": {
+          "msg1": { "text": "今夜空いてる？", "incoming": true },
+          "msg2": { "text": "暗くなったら会おう", "incoming": false }
+        }
+      },
+      "zachking": {
+        "name": "zachking",
+        "lastMessage": "これは内緒だよ",
+        "messages": {
+          "msg1": { "text": "さっきのは危なかった！", "incoming": true },
+          "msg2": { "text": "これは内緒だよ", "incoming": false }
+        }
+      },
+      "bellapoarch": {
+        "name": "bellapoarch",
+        "lastMessage": "昨夜君がいなくて寂しかった",
+        "messages": {
+          "msg1": { "text": "どこにいたの？", "incoming": true },
+          "msg2": { "text": "昨夜君がいなくて寂しかった", "incoming": false }
+        }
+      }
+    }
+  },
+  "dmsnap": {
+    "header": {
+      "title": "Snapchat"
+    },
+    "tabs": {
+      "chat": "チャット",
+      "followers": "フォロワー",
+      "aria_label": "Snapchatナビゲーションタブ",
+      "chat_aria": "チャットリストを表示",
+      "followers_aria": "フォロワーリストを表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Snapchatチャットリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "followers": {
+      "list_aria": "Snapchatフォロワーリスト",
+      "item_aria": "フォロワー{name}を選択",
+      "detail_aria": "{name}のフォロワー詳細",
+      "phone": "電話",
+      "email": "メール",
+      "ava_dance": { "name": "ava.dance", "email": "ava@snap.com" },
+      "noah_beck": { "name": "noah.beck", "email": "noah@snap.com" },
+      "ella_fit": { "name": "ella.fit", "email": "ella@snap.com" },
+      "liam_guitar": { "name": "liam.guitar", "email": "liam@snap.com" },
+      "zoe_style": { "name": "zoe.style", "email": "zoe@snap.com" },
+      "carter_skate": { "name": "carter.skate", "email": "carter@snap.com" },
+      "grace_photo": { "name": "grace.photo", "email": "grace@snap.com" },
+      "dylan_vlog": { "name": "dylan.vlog", "email": "dylan@snap.com" }
+    },
+    "chats": {
+      "lily_rosee": {
+        "name": "lily.rosee",
+        "lastMessage": "今夜会う？",
+        "messages": {
+          "msg1": { "text": "これ秘密にできる？", "incoming": true },
+          "msg2": { "text": "今夜会う？", "incoming": false }
+        }
+      },
+      "jake_surf": {
+        "name": "jake.surf",
+        "lastMessage": "彼女に言わないで",
+        "messages": {
+          "msg1": { "text": "後で空いてる？", "incoming": true },
+          "msg2": { "text": "彼女に言わないで", "incoming": false }
+        }
+      },
+      "mia_vibes": {
+        "name": "mia.vibes",
+        "lastMessage": "9時に秘密の場所",
+        "messages": {
+          "msg1": { "text": "秘密の計画ある？", "incoming": true },
+          "msg2": { "text": "9時に秘密の場所", "incoming": false }
+        }
+      },
+      "ethan_music": {
+        "name": "ethan.music",
+        "lastMessage": "これは内緒だよ",
+        "messages": {
+          "msg1": { "text": "危なかった！", "incoming": true },
+          "msg2": { "text": "これは内緒だよ", "incoming": false }
+        }
+      },
+      "sophia_art": {
+        "name": "sophia.art",
+        "lastMessage": "昨夜君がいなくて寂しかった",
+        "messages": {
+          "msg1": { "text": "どこにいたの？", "incoming": true },
+          "msg2": { "text": "昨夜君がいなくて寂しかった", "incoming": false }
+        }
+      }
+    }
+  },
+  "dmlink": {
+    "header": {
+      "title": "LinkedIn"
+    },
+    "tabs": {
+      "chat": "メッセージ",
+      "connections": "コネクション",
+      "aria_label": "LinkedInナビゲーションタブ",
+      "chat_aria": "メッセージリストを表示",
+      "connections_aria": "コネクションリストを表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "LinkedInメッセージリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "connections": {
+      "list_aria": "LinkedInコネクションリスト",
+      "item_aria": "コネクション{name}を選択",
+      "detail_aria": "{name}のコネクション詳細",
+      "email": "メール",
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Metaソフトウェアエンジニア",
+        "email": "noah@meta.com"
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnbプロダクトデザイナー",
+        "email": "isabella@airbnb.com"
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI機械学習エンジニア",
+        "email": "ethan@openai.com"
+      },
+      "zoe_park": {
+        "name": "Zoe Park",
+        "title": "TikTokコンテンツストラテジスト",
+        "email": "zoe@tiktok.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "title": "AWS DevOps",
+        "email": "carter@amazon.com"
+      },
+      "grace_liu": {
+        "name": "Grace Liu",
+        "title": "Adobeブランドデザイナー",
+        "email": "grace@adobe.com"
+      },
+      "dylan_chen": {
+        "name": "Dylan Chen",
+        "title": "Shopifyフルスタック開発者",
+        "email": "dylan@shopify.com"
+      },
+      "ava_singh": {
+        "name": "Ava Singh",
+        "title": "Spotify UXリサーチャー",
+        "email": "ava@spotify.com"
+      }
+    },
+    "chats": {
+      "emma_chen": {
+        "name": "Emma Chen",
+        "title": "Figma UXデザイナー",
+        "lastMessage": "もう君が恋しいよ...",
+        "messages": {
+          "msg1": { "text": "昨夜は最高だった", "incoming": true },
+          "msg2": {
+            "text": "それについて考えるのをやめられない",
+            "incoming": false
+          },
+          "msg3": {
+            "text": "同じく...もっと長くいてほしかった",
+            "incoming": true
+          },
+          "msg4": { "text": "もう君が恋しいよ...", "incoming": false }
+        }
+      },
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "title": "Stripeフロントエンドエンジニア",
+        "lastMessage": "このチャットを削除して",
+        "messages": {
+          "msg1": {
+            "text": "そのドレスを着た君は最高だった",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "やめて、誰かに見られるかもしれない",
+            "incoming": false
+          },
+          "msg3": { "text": "気にしない、君が欲しい", "incoming": true },
+          "msg4": { "text": "このチャットを削除して", "incoming": false }
+        }
+      },
+      "sofia_patel": {
+        "name": "Sofia Patel",
+        "title": "Notionプロダクトマネージャー",
+        "lastMessage": "彼は寝てるよ",
+        "messages": {
+          "msg1": { "text": "話せる？", "incoming": true },
+          "msg2": { "text": "うん、彼は寝てるよ", "incoming": false },
+          "msg3": { "text": "代わりに君と一緒にいたい", "incoming": true },
+          "msg4": { "text": "同じく。これはつらい", "incoming": false }
+        }
+      },
+      "liam_brooks": {
+        "name": "Liam Brooks",
+        "title": "Googleデータアナリスト",
+        "lastMessage": "写真送って",
+        "messages": {
+          "msg1": { "text": "何を着てる？", "incoming": true },
+          "msg2": {
+            "text": "君が見たことないものはないよ",
+            "incoming": false
+          },
+          "msg3": { "text": "写真送って", "incoming": true },
+          "msg4": { "text": "10秒後に削除するよ...", "incoming": false }
+        }
+      },
+      "maya_kim": {
+        "name": "Maya Kim",
+        "title": "Canvaグロースマーケティング",
+        "lastMessage": "愛してる",
+        "messages": {
+          "msg1": { "text": "もうこれ以上続けられない", "incoming": true },
+          "msg2": { "text": "何を？", "incoming": false },
+          "msg3": {
+            "text": "君を愛してないふりをするのを",
+            "incoming": true
+          },
+          "msg4": { "text": "愛してる", "incoming": false }
+        }
+      },
+      "noah_kim": {
+        "name": "Noah Kim",
+        "title": "Metaソフトウェアエンジニア",
+        "lastMessage": "ホテル予約した",
+        "messages": {
+          "msg1": { "text": "前と同じホテル？", "incoming": true },
+          "msg2": { "text": "うん、512号室", "incoming": false },
+          "msg3": { "text": "8時にそこにいるよ", "incoming": true },
+          "msg4": { "text": "ホテル予約した", "incoming": false }
+        }
+      },
+      "isabella_wu": {
+        "name": "Isabella Wu",
+        "title": "Airbnbプロダクトデザイナー",
+        "lastMessage": "誰も知らないよ",
+        "messages": {
+          "msg1": { "text": "もっと慎重にならないと", "incoming": true },
+          "msg2": {
+            "text": "分かってる、でもやめられない",
+            "incoming": false
+          },
+          "msg3": { "text": "同じく。もう一度だけ", "incoming": true },
+          "msg4": { "text": "誰も知らないよ", "incoming": false }
+        }
+      },
+      "ethan_zhang": {
+        "name": "Ethan Zhang",
+        "title": "OpenAI機械学習エンジニア",
+        "lastMessage": "君は僕の秘密",
+        "messages": {
+          "msg1": {
+            "text": "ガールフレンドに遅くまで仕事って言った",
+            "incoming": true
+          },
+          "msg2": {
+            "text": "ボーイフレンドにも同じこと言った",
+            "incoming": false
+          },
+          "msg3": { "text": "これは本当に間違ってる", "incoming": true },
+          "msg4": {
+            "text": "でもめっちゃ正しい感じ。君は僕の秘密",
+            "incoming": false
+          }
+        }
+      }
+    }
+  },
+  "dmzoom": {
+    "header": { "title": "Zoom" },
+    "tabs": {
+      "chat": "チャット",
+      "participants": "参加者",
+      "call_log": "通話履歴",
+      "aria_label": "Zoomナビゲーションタブ",
+      "chat_aria": "チャットリストを表示",
+      "participants_aria": "参加者リストを表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "Zoomチャットリスト",
+      "item_aria": "{name}とのチャットを選択",
+      "detail_aria": "{name}のチャット詳細"
+    },
+    "participants": {
+      "list_aria": "Zoom参加者リスト",
+      "item_aria": "参加者{name}を選択",
+      "detail_aria": "{name}の参加者詳細",
+      "email": "メール",
+      "ava_chen": { "name": "Ava Chen", "email": "ava@zoom.us" },
+      "liam_park": { "name": "Liam Park", "email": "liam@zoom.us" },
+      "zoe_kim": { "name": "Zoe Kim", "email": "zoe@zoom.us" },
+      "ethan_brooks": { "name": "Ethan Brooks", "email": "ethan@zoom.us" },
+      "maya_wu": { "name": "Maya Wu", "email": "maya@zoom.us" },
+      "noah_lee": { "name": "Noah Lee", "email": "noah@zoom.us" },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "email": "isabella@zoom.us"
+      },
+      "dylan_kim": { "name": "Dylan Kim", "email": "dylan@zoom.us" }
+    },
+    "call_log": {
+      "list_aria": "Zoom通話履歴",
+      "item_aria": "{name}との通話を選択",
+      "detail_aria": "{name}の通話詳細",
+      "ava_chen": { "name": "Ava Chen", "type": "発信" },
+      "liam_park": { "name": "Liam Park", "type": "着信" },
+      "zoe_kim": { "name": "Zoe Kim", "type": "不在着信" },
+      "ethan_brooks": { "name": "Ethan Brooks", "type": "発信" },
+      "maya_wu": { "name": "Maya Wu", "type": "着信" }
+    },
+    "chats": {
+      "ava_chen": {
+        "name": "Ava Chen",
+        "lastMessage": "君のことばかり考えてる",
+        "messages": {
+          "msg1": { "text": "まだ起きてる?" },
+          "msg2": { "text": "うん、眠れない" },
+          "msg3": { "text": "同じく。君がいたらいいのに" },
+          "msg4": { "text": "君のことばかり考えてる" }
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "lastMessage": "読んだら削除して",
+        "messages": {
+          "msg1": { "text": "そのホテル最高だった" },
+          "msg2": { "text": "また行かなきゃ" },
+          "msg3": { "text": "近いうちに。約束する" },
+          "msg4": { "text": "読んだら削除して" }
+        }
+      },
+      "zoe_kim": {
+        "name": "Zoe Kim",
+        "lastMessage": "彼は町を離れてる",
+        "messages": {
+          "msg1": { "text": "今夜空いてる?" },
+          "msg2": { "text": "彼は町を離れてる" },
+          "msg3": { "text": "10時に会おう" },
+          "msg4": { "text": "今向かってる" }
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "lastMessage": "送って",
+        "messages": {
+          "msg1": { "text": "君最高に見える" },
+          "msg2": { "text": "やめてよ、誰か見るかもしれない" },
+          "msg3": { "text": "送って" },
+          "msg4": { "text": "送った。5秒後に削除するね" }
+        }
+      },
+      "maya_wu": {
+        "name": "Maya Wu",
+        "lastMessage": "君をもっと愛してる",
+        "messages": {
+          "msg1": { "text": "これ言うべきじゃないけど" },
+          "msg2": { "text": "でも?" },
+          "msg3": { "text": "君を愛してる" },
+          "msg4": { "text": "君をもっと愛してる" }
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "lastMessage": "808号室",
+        "messages": {
+          "msg1": { "text": "前と同じ場所?" },
+          "msg2": { "text": "うん、808号室" },
+          "msg3": { "text": "8時にそこにいるよ" },
+          "msg4": { "text": "ドア開いてるよ" }
+        }
+      },
+      "isabella_zhang": {
+        "name": "Isabella Zhang",
+        "lastMessage": "誰も知らないよ",
+        "messages": {
+          "msg1": { "text": "もっと用心しなきゃ" },
+          "msg2": { "text": "分かってる。でもやめられない" },
+          "msg3": { "text": "同じく。もう一度だけ" },
+          "msg4": { "text": "誰も知らないよ" }
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "lastMessage": "君は僕の逃げ場",
+        "messages": {
+          "msg1": { "text": "彼女に遅くまで仕事って言ったんだ" },
+          "msg2": { "text": "彼氏にも同じこと言ったんだ" },
+          "msg3": { "text": "これ本当に間違ってる" },
+          "msg4": { "text": "でも最高に正しい気がする。君は僕の逃げ場" }
+        }
+      }
+    }
+  },
+  "dmviber": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "call_log": "通話履歴"
+    },
+    "contacts": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "avatar": "https://i.pravatar.cc/150?img=32",
+        "lastMessage": "君のことばかり考えてる",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:32",
+        "msg4_time": "00:45",
+        "messages": {
+          "msg1": "まだ起きてる?",
+          "msg2": "眠れない",
+          "msg3": "同じく",
+          "msg4": "君のことばかり考えてる"
+        }
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "avatar": "https://i.pravatar.cc/150?img=33",
+        "lastMessage": "このチャット削除してくれ",
+        "time": "23:20",
+        "msg1_time": "23:00",
+        "msg2_time": "23:01",
+        "msg3_time": "23:02",
+        "msg4_time": "23:20",
+        "messages": {
+          "msg1": "そのホテル最高だった",
+          "msg2": "また行かなきゃ",
+          "msg3": "来週?",
+          "msg4": "このチャット削除してくれ"
+        }
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "avatar": "https://i.pravatar.cc/150?img=30",
+        "lastMessage": "彼女寝てる",
+        "time": "22:15",
+        "msg1_time": "22:00",
+        "msg2_time": "22:01",
+        "msg3_time": "22:02",
+        "msg4_time": "22:15",
+        "messages": {
+          "msg1": "話できる?",
+          "msg2": "彼女寝てる",
+          "msg3": "君といたい",
+          "msg4": "同じく。地獄だよ"
+        }
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "avatar": "https://i.pravatar.cc/150?img=31",
+        "lastMessage": "写真を送ってくれ",
+        "time": "21:40",
+        "msg1_time": "21:30",
+        "msg2_time": "21:31",
+        "msg3_time": "21:32",
+        "msg4_time": "21:40",
+        "messages": {
+          "msg1": "何着てる?",
+          "msg2": "君が見たことないもの",
+          "msg3": "写真を送ってくれ",
+          "msg4": "10秒後に削除..."
+        }
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "avatar": "https://i.pravatar.cc/150?img=35",
+        "lastMessage": "愛してる",
+        "time": "02:25",
+        "msg1_time": "02:10",
+        "msg2_time": "02:11",
+        "msg3_time": "02:12",
+        "msg4_time": "02:25",
+        "messages": {
+          "msg1": "こんなの言うべきじゃなかった",
+          "msg2": "言ってよ",
+          "msg3": "愛してる",
+          "msg4": "もっと愛してる"
+        }
+      },
+      "carter_lee": {
+        "name": "Carter Lee",
+        "avatar": "https://i.pravatar.cc/150?img=34",
+        "lastMessage": "707号室",
+        "time": "19:55",
+        "msg1_time": "19:40",
+        "msg2_time": "19:41",
+        "msg3_time": "19:42",
+        "msg4_time": "19:55",
+        "messages": {
+          "msg1": "同じホテル?",
+          "msg2": "707号室",
+          "msg3": "8時に行く",
+          "msg4": "ドア開いてる"
+        }
+      },
+      "mason_wu": {
+        "name": "Mason Wu",
+        "avatar": "https://i.pravatar.cc/150?img=36",
+        "lastMessage": "誰も知らないよ",
+        "time": "18:35",
+        "msg1_time": "18:20",
+        "msg2_time": "18:21",
+        "msg3_time": "18:22",
+        "msg4_time": "18:35",
+        "messages": {
+          "msg1": "気をつけようぜ",
+          "msg2": "わかってる。でも止められない",
+          "msg3": "同じく。もう一回",
+          "msg4": "誰も知らないよ"
+        }
+      },
+      "ryan_chen": {
+        "name": "Ryan Chen",
+        "avatar": "https://i.pravatar.cc/150?img=37",
+        "lastMessage": "君は僕の秘密",
+        "time": "01:20",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:20",
+        "messages": {
+          "msg1": "彼女に仕事してるって言った",
+          "msg2": "俺も彼氏に同じこと言った",
+          "msg3": "これ最悪だ",
+          "msg4": "でも君は僕の秘密"
+        }
+      }
+    },
+    "call_log": {
+      "alex_rivera": {
+        "name": "Alex Rivera",
+        "type": "発信",
+        "time": "2025-10-28 23:30",
+        "duration": "18:20"
+      },
+      "liam_park": {
+        "name": "Liam Park",
+        "type": "着信",
+        "time": "2025-10-28 22:15",
+        "duration": "09:45"
+      },
+      "ethan_brooks": {
+        "name": "Ethan Brooks",
+        "type": "不在着信",
+        "time": "2025-10-28 21:00"
+      },
+      "noah_lee": {
+        "name": "Noah Lee",
+        "type": "発信",
+        "time": "2025-10-27 20:30",
+        "duration": "25:10"
+      },
+      "dylan_kim": {
+        "name": "Dylan Kim",
+        "type": "着信",
+        "time": "2025-10-27 19:00",
+        "duration": "32:00"
+      }
+    }
+  },
+  "dmtele": {
+    "header": { "title": "テレグラム" },
+    "tabs": {
+      "chat": "チャット",
+      "friends": "友達",
+      "calls": "通話",
+      "aria_label": "テレグラムナビゲーションタブ",
+      "chat_aria": "チャットを表示",
+      "friends_aria": "友達を表示",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "チャットのリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}のチャット詳細"
+    },
+    "contacts": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "list_aria": "友達のリスト",
+      "item_aria": "友達 {{name}}",
+      "detail_aria": "{{name}}の友達詳細",
+      "jake_morrison": {
+        "name": "ジェイク・モリソン",
+        "phone": "+1 555-1001",
+        "email": "jake@telegram.com"
+      },
+      "tyler_reed": {
+        "name": "タイラー・リード",
+        "phone": "+1 555-1002",
+        "email": "tyler@telegram.com"
+      },
+      "caleb_holt": {
+        "name": "ケイレブ・ホルト",
+        "phone": "+1 555-1003",
+        "email": "caleb@telegram.com"
+      },
+      "logan_pierce": {
+        "name": "ローガン・ピアース",
+        "phone": "+1 555-1004",
+        "email": "logan@telegram.com"
+      },
+      "austin_grey": {
+        "name": "オースティン・グレイ",
+        "phone": "+1 555-1005",
+        "email": "austin@telegram.com"
+      },
+      "brandon_cole": {
+        "name": "ブランドン・コール",
+        "phone": "+1 555-1006",
+        "email": "brandon@telegram.com"
+      },
+      "evan_shaw": {
+        "name": "エヴァン・ショー",
+        "phone": "+1 555-1007",
+        "email": "evan@telegram.com"
+      },
+      "gavin_knox": {
+        "name": "ギャヴィン・ノックス",
+        "phone": "+1 555-1008",
+        "email": "gavin@telegram.com"
+      },
+      "hunter_blake": {
+        "name": "ハンター・ブレイク",
+        "phone": "+1 555-1009",
+        "email": "hunter@telegram.com"
+      },
+      "jordan_miles": {
+        "name": "ジョーダン・マイルズ",
+        "phone": "+1 555-1010",
+        "email": "jordan@telegram.com"
+      },
+      "kyle_vance": {
+        "name": "カイル・ヴァンス",
+        "phone": "+1 555-1011",
+        "email": "kyle@telegram.com"
+      },
+      "mason_hale": {
+        "name": "メイソン・ヘイル",
+        "phone": "+1 555-1012",
+        "email": "mason@telegram.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "通話履歴のリスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在",
+      "jake_morrison": {
+        "name": "ジェイク・モリソン",
+        "type": "outgoing",
+        "time": "2025-10-28 23:30",
+        "duration": "22:15"
+      },
+      "tyler_reed": {
+        "name": "タイラー・リード",
+        "type": "incoming",
+        "time": "2025-10-28 22:10",
+        "duration": "14:30"
+      },
+      "caleb_holt": {
+        "name": "ケイレブ・ホルト",
+        "type": "missed",
+        "time": "2025-10-28 21:05"
+      },
+      "logan_pierce": {
+        "name": "ローガン・ピアース",
+        "type": "outgoing",
+        "time": "2025-10-27 20:45",
+        "duration": "38:20"
+      },
+      "austin_grey": {
+        "name": "オースティン・グレイ",
+        "type": "incoming",
+        "time": "2025-10-27 19:20",
+        "duration": "27:10"
+      },
+      "kyle_vance": {
+        "name": "カイル・ヴァンス",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "jake_morrison": {
+        "name": "ジェイク・モリソン",
+        "avatar": "https://i.pravatar.cc/150?img=38",
+        "lastMessage": "君の家にパーカーを忘れた",
+        "time": "03:12",
+        "msg1_time": "02:50",
+        "msg2_time": "02:51",
+        "msg3_time": "02:52",
+        "msg4_time": "02:53",
+        "msg5_time": "03:12",
+        "messages": {
+          "msg1": "まだ起きてる？",
+          "msg1_incoming": "true",
+          "msg2": "うん…眠れない",
+          "msg2_incoming": "false",
+          "msg3": "さっきのことを考えてる？",
+          "msg3_incoming": "true",
+          "msg4": "毎秒",
+          "msg4_incoming": "false",
+          "msg5": "君の家にパーカーを忘れた",
+          "msg5_incoming": "false"
+        }
+      },
+      "tyler_reed": {
+        "name": "タイラー・リード",
+        "avatar": "https://i.pravatar.cc/150?img=39",
+        "lastMessage": "彼女は何も知らない",
+        "time": "01:47",
+        "msg1_time": "01:30",
+        "msg2_time": "01:31",
+        "msg3_time": "01:32",
+        "msg4_time": "01:33",
+        "msg5_time": "01:47",
+        "messages": {
+          "msg1": "今日、危なかったね",
+          "msg1_incoming": "true",
+          "msg2": "近すぎた。心臓がバクバクした",
+          "msg2_incoming": "false",
+          "msg3": "でもその価値はあった",
+          "msg3_incoming": "true",
+          "msg4": "毎回だ",
+          "msg4_incoming": "false",
+          "msg5": "彼女は何も知らない",
+          "msg5_incoming": "false"
+        }
+      },
+      "caleb_holt": {
+        "name": "ケイレブ・ホルト",
+        "avatar": "https://i.pravatar.cc/150?img=40",
+        "lastMessage": "もう一度送って、削除したから",
+        "time": "00:28",
+        "msg1_time": "00:10",
+        "msg2_time": "00:11",
+        "msg3_time": "00:12",
+        "msg4_time": "00:28",
+        "messages": {
+          "msg1": "今夜、君は最高だった",
+          "msg1_incoming": "true",
+          "msg2": "それを見るはずじゃなかった",
+          "msg2_incoming": "false",
+          "msg3": "遅すぎる。保存して",
+          "msg3_incoming": "true",
+          "msg4": "もう一度送って、削除したから",
+          "msg4_incoming": "false"
+        }
+      },
+      "logan_pierce": {
+        "name": "ローガン・ピアース",
+        "avatar": "https://i.pravatar.cc/150?img=41",
+        "lastMessage": "ドアの鍵は開いてる。静かに入って",
+        "time": "23:55",
+        "msg1_time": "23:40",
+        "msg2_time": "23:41",
+        "msg3_time": "23:42",
+        "msg4_time": "23:55",
+        "messages": {
+          "msg1": "家にいる？",
+          "msg1_incoming": "true",
+          "msg2": "うん。彼女は寝てる",
+          "msg2_incoming": "false",
+          "msg3": "向かってる",
+          "msg3_incoming": "true",
+          "msg4": "ドアの鍵は開いてる。静かに入って",
+          "msg4_incoming": "false"
+        }
+      },
+      "austin_grey": {
+        "name": "オースティン・グレイ",
+        "avatar": "https://i.pravatar.cc/150?img=42",
+        "lastMessage": "君に夢中だ",
+        "time": "02:30",
+        "msg1_time": "02:00",
+        "msg2_time": "02:01",
+        "msg3_time": "02:02",
+        "msg4_time": "02:03",
+        "msg5_time": "02:30",
+        "messages": {
+          "msg1": "ここにいるべきじゃない",
+          "msg1_incoming": "true",
+          "msg2": "じゃあなんでここにいる？",
+          "msg2_incoming": "false",
+          "msg3": "離れられないから",
+          "msg3_incoming": "true",
+          "msg4": "いいね",
+          "msg4_incoming": "false",
+          "msg5": "君に夢中だ",
+          "msg5_incoming": "false"
+        }
+      },
+      "brandon_cole": {
+        "name": "ブランドン・コール",
+        "avatar": "https://i.pravatar.cc/150?img=43",
+        "lastMessage": "彼女にジムにいると言った",
+        "time": "22:10",
+        "msg1_time": "21:50",
+        "msg2_time": "21:51",
+        "msg3_time": "21:52",
+        "msg4_time": "21:53",
+        "msg5_time": "22:10",
+        "messages": {
+          "msg1": "どこにいる？",
+          "msg1_incoming": "true",
+          "msg2": "ジム。遅いセッション",
+          "msg2_incoming": "false",
+          "msg3": "嘘つき",
+          "msg3_incoming": "true",
+          "msg4": "理由はわかるでしょ",
+          "msg4_incoming": "false",
+          "msg5": "彼女にジムにいると言った",
+          "msg5_incoming": "false"
+        }
+      },
+      "evan_shaw": {
+        "name": "エヴァン・ショー",
+        "avatar": "https://i.pravatar.cc/150?img=44",
+        "lastMessage": "これ以上は続けられない",
+        "time": "20:45",
+        "msg1_time": "20:30",
+        "msg2_time": "20:31",
+        "msg3_time": "20:32",
+        "msg4_time": "20:45",
+        "messages": {
+          "msg1": "前回が最後だと言ったよね",
+          "msg1_incoming": "true",
+          "msg2": "わかってる",
+          "msg2_incoming": "false",
+          "msg3": "じゃあなんで君の車庫にいるの？",
+          "msg3_incoming": "true",
+          "msg4": "これ以上は続けられない",
+          "msg4_incoming": "false"
+        }
+      },
+      "gavin_knox": {
+        "name": "ギャヴィン・ノックス",
+        "avatar": "https://i.pravatar.cc/150?img=45",
+        "lastMessage": "毎晩君の夢を見る",
+        "time": "03:05",
+        "msg1_time": "02:55",
+        "msg2_time": "02:56",
+        "msg3_time": "02:57",
+        "msg4_time": "03:05",
+        "messages": {
+          "msg1": "寝てる？",
+          "msg1_incoming": "true",
+          "msg2": "いや、君は？",
+          "msg2_incoming": "false",
+          "msg3": "目が覚めてる。君のこと考えて",
+          "msg3_incoming": "true",
+          "msg4": "毎晩君の夢を見る",
+          "msg4_incoming": "false"
+        }
+      },
+      "hunter_blake": {
+        "name": "ハンター・ブレイク",
+        "avatar": "https://i.pravatar.cc/150?img=46",
+        "lastMessage": "読んだら削除して",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "昨夜を何度も思い出してる",
+          "msg1_incoming": "true",
+          "msg2": "同じだ。君がしたこと…",
+          "msg2_incoming": "false",
+          "msg3": "静かに。書かないで",
+          "msg3_incoming": "true",
+          "msg4": "読んだら削除して",
+          "msg4_incoming": "false"
+        }
+      },
+      "jordan_miles": {
+        "name": "ジョーダン・マイルズ",
+        "avatar": "https://i.pravatar.cc/150?img=47",
+        "lastMessage": "君に恋してる",
+        "time": "00:05",
+        "msg1_time": "23:50",
+        "msg2_time": "23:51",
+        "msg3_time": "23:52",
+        "msg4_time": "00:05",
+        "messages": {
+          "msg1": "これ、危なくなってきた",
+          "msg1_incoming": "true",
+          "msg2": "わかってる",
+          "msg2_incoming": "false",
+          "msg3": "でもやめたくない",
+          "msg3_incoming": "true",
+          "msg4": "君に恋してる",
+          "msg4_incoming": "false"
+        }
+      },
+      "kyle_vance": {
+        "name": "カイル・ヴァンス",
+        "avatar": "https://i.pravatar.cc/150?img=48",
+        "lastMessage": "君の匂いがまだシーツに残ってる",
+        "time": "04:20",
+        "msg1_time": "04:00",
+        "msg2_time": "04:01",
+        "msg3_time": "04:02",
+        "msg4_time": "04:20",
+        "messages": {
+          "msg1": "まだ君の味がする",
+          "msg1_incoming": "true",
+          "msg2": "やめて。また興奮してきた",
+          "msg2_incoming": "false",
+          "msg3": "いいね",
+          "msg3_incoming": "true",
+          "msg4": "君の匂いがまだシーツに残ってる",
+          "msg4_incoming": "false"
+        }
+      },
+      "mason_hale": {
+        "name": "メイソン・ヘイル",
+        "avatar": "https://i.pravatar.cc/150?img=49",
+        "lastMessage": "君のために彼女に嘘をついた",
+        "time": "21:30",
+        "msg1_time": "21:15",
+        "msg2_time": "21:16",
+        "msg3_time": "21:17",
+        "msg4_time": "21:30",
+        "messages": {
+          "msg1": "彼女がどこにいたか聞いてきた",
+          "msg1_incoming": "true",
+          "msg2": "なんて言った？",
+          "msg2_incoming": "false",
+          "msg3": "君と一緒に",
+          "msg3_incoming": "true",
+          "msg4": "君のために彼女に嘘をついた",
+          "msg4_incoming": "false"
+        }
+      }
+    }
+  },
+  "dmline": {
+    "header": { "title": "LINE" },
+    "tabs": {
+      "chat": "チャット",
+      "friends": "友達",
+      "calls": "通話",
+      "aria_label": "LINEナビゲーションタブ",
+      "chat_aria": "チャットを表示",
+      "friends_aria": "友達を表示",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "チャットリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}のチャット詳細"
+    },
+    "contacts": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "list_aria": "友達リスト",
+      "item_aria": "友達 {{name}}",
+      "detail_aria": "{{name}}の友達詳細",
+      "kai_nakamura": {
+        "name": "中村海",
+        "phone": "+81 90-1001",
+        "email": "kai@line.me"
+      },
+      "riku_sato": {
+        "name": "佐藤陸",
+        "phone": "+81 90-1002",
+        "email": "riku@line.me"
+      },
+      "haruto_tanaka": {
+        "name": "田中晴人",
+        "phone": "+81 90-1003",
+        "email": "haruto@line.me"
+      },
+      "sora_yamamoto": {
+        "name": "山本空",
+        "phone": "+81 90-1004",
+        "email": "sora@line.me"
+      },
+      "ren_kobayashi": {
+        "name": "小林蓮",
+        "phone": "+81 90-1005",
+        "email": "ren@line.me"
+      },
+      "yuto_ikeda": {
+        "name": "池田優斗",
+        "phone": "+81 90-1006",
+        "email": "yuto@line.me"
+      },
+      "daichi_fujimoto": {
+        "name": "藤本大地",
+        "phone": "+81 90-1007",
+        "email": "daichi@line.me"
+      },
+      "kaito_mori": {
+        "name": "森海斗",
+        "phone": "+81 90-1008",
+        "email": "kaito@line.me"
+      },
+      "shota_okada": {
+        "name": "岡田翔太",
+        "phone": "+81 90-1009",
+        "email": "shota@line.me"
+      },
+      "ryo_hashimoto": {
+        "name": "橋本涼",
+        "phone": "+81 90-1010",
+        "email": "ryo@line.me"
+      },
+      "toma_inoue": {
+        "name": "井上斗真",
+        "phone": "+81 90-1011",
+        "email": "toma@line.me"
+      },
+      "yuki_arai": {
+        "name": "新井優希",
+        "phone": "+81 90-1012",
+        "email": "yuki@line.me"
+      }
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "outgoing": "発信",
+      "incoming": "着信",
+      "missed": "不在",
+      "kai_nakamura": {
+        "name": "中村海",
+        "type": "outgoing",
+        "time": "2025-10-28 23:45",
+        "duration": "19:30"
+      },
+      "riku_sato": {
+        "name": "佐藤陸",
+        "type": "incoming",
+        "time": "2025-10-28 22:20",
+        "duration": "12:45"
+      },
+      "haruto_tanaka": {
+        "name": "田中晴人",
+        "type": "missed",
+        "time": "2025-10-28 21:15"
+      },
+      "sora_yamamoto": {
+        "name": "山本空",
+        "type": "outgoing",
+        "time": "2025-10-27 20:50",
+        "duration": "41:10"
+      },
+      "ren_kobayashi": {
+        "name": "小林蓮",
+        "type": "incoming",
+        "time": "2025-10-27 19:30",
+        "duration": "29:55"
+      },
+      "toma_inoue": {
+        "name": "井上斗真",
+        "type": "missed",
+        "time": "2025-10-27 18:00"
+      }
+    },
+    "chats": {
+      "kai_nakamura": {
+        "name": "中村海",
+        "avatar": "https://i.pravatar.cc/150?img=50",
+        "lastMessage": "外にいるよ。彼女は家にいない",
+        "time": "02:41",
+        "msg1_time": "02:30",
+        "msg2_time": "02:31",
+        "msg3_time": "02:32",
+        "msg4_time": "02:41",
+        "messages": {
+          "msg1": "まだ起きてる？",
+          "msg1_incoming": "true",
+          "msg2": "うん、君は？",
+          "msg2_incoming": "false",
+          "msg3": "彼女の家から出てきたところ",
+          "msg3_incoming": "true",
+          "msg4": "外にいるよ。彼女は家にいない",
+          "msg4_incoming": "false"
+        }
+      },
+      "riku_sato": {
+        "name": "佐藤陸",
+        "avatar": "https://i.pravatar.cc/150?img=51",
+        "lastMessage": "君の写真を消せない",
+        "time": "01:15",
+        "msg1_time": "01:00",
+        "msg2_time": "01:01",
+        "msg3_time": "01:02",
+        "msg4_time": "01:15",
+        "messages": {
+          "msg1": "あの夜は現実離れしてた",
+          "msg1_incoming": "true",
+          "msg2": "まだあのビデオ持ってるよ",
+          "msg2_incoming": "false",
+          "msg3": "消した方がいいよ",
+          "msg3_incoming": "true",
+          "msg4": "君の写真を消せない",
+          "msg4_incoming": "false"
+        }
+      },
+      "haruto_tanaka": {
+        "name": "田中晴人",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "lastMessage": "駐車場で会おう",
+        "time": "23:58",
+        "msg1_time": "23:45",
+        "msg2_time": "23:46",
+        "msg3_time": "23:47",
+        "msg4_time": "23:58",
+        "messages": {
+          "msg1": "どこにいる？",
+          "msg1_incoming": "true",
+          "msg2": "仕事。夜勤",
+          "msg2_incoming": "false",
+          "msg3": "嘘つき。車の中にいるよ",
+          "msg3_incoming": "true",
+          "msg4": "駐車場で会おう",
+          "msg4_incoming": "false"
+        }
+      },
+      "sora_yamamoto": {
+        "name": "山本空",
+        "avatar": "https://i.pravatar.cc/150?img=53",
+        "lastMessage": "彼女に病気だって言った",
+        "time": "22:30",
+        "msg1_time": "22:10",
+        "msg2_time": "22:11",
+        "msg3_time": "22:12",
+        "msg4_time": "22:30",
+        "messages": {
+          "msg1": "彼女は私が家で病気だと思ってる",
+          "msg1_incoming": "true",
+          "msg2": "病気じゃないの？",
+          "msg2_incoming": "false",
+          "msg3": "君のベッドにいるよ",
+          "msg3_incoming": "true",
+          "msg4": "彼女に病気だって言った",
+          "msg4_incoming": "false"
+        }
+      },
+      "ren_kobayashi": {
+        "name": "小林蓮",
+        "avatar": "https://i.pravatar.cc/150?img=54",
+        "lastMessage": "君は俺の逃げ場だ",
+        "time": "03:20",
+        "msg1_time": "03:00",
+        "msg2_time": "03:01",
+        "msg3_time": "03:02",
+        "msg4_time": "03:20",
+        "messages": {
+          "msg1": "家に帰るのが嫌いだ",
+          "msg1_incoming": "true",
+          "msg2": "じゃあ帰らなきゃ",
+          "msg2_incoming": "false",
+          "msg3": "ここにいたい",
+          "msg3_incoming": "true",
+          "msg4": "君は俺の逃げ場だ",
+          "msg4_incoming": "false"
+        }
+      },
+      "yuto_ikeda": {
+        "name": "池田優斗",
+        "avatar": "https://i.pravatar.cc/150?img=55",
+        "lastMessage": "まだ君の味がする",
+        "time": "00:45",
+        "msg1_time": "00:30",
+        "msg2_time": "00:31",
+        "msg3_time": "00:45",
+        "messages": {
+          "msg1": "君の唇が頭から離れない",
+          "msg1_incoming": "true",
+          "msg2": "同じく。首に",
+          "msg2_incoming": "false",
+          "msg3": "まだ君の味がする",
+          "msg3_incoming": "false"
+        }
+      },
+      "daichi_fujimoto": {
+        "name": "藤本大地",
+        "avatar": "https://i.pravatar.cc/150?img=56",
+        "lastMessage": "これ、制御不能になってる",
+        "time": "21:10",
+        "msg1_time": "20:55",
+        "msg2_time": "20:56",
+        "msg3_time": "20:57",
+        "msg4_time": "21:10",
+        "messages": {
+          "msg1": "一回だけって言ったよね",
+          "msg1_incoming": "true",
+          "msg2": "わかってる",
+          "msg2_incoming": "false",
+          "msg3": "じゃあなんで君のシャワーにいるんだ？",
+          "msg3_incoming": "true",
+          "msg4": "これ、制御不能になってる",
+          "msg4_incoming": "false"
+        }
+      },
+      "kaito_mori": {
+        "name": "森海斗",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "lastMessage": "また彼女に嘘ついた",
+        "time": "19:40",
+        "msg1_time": "19:20",
+        "msg2_time": "19:21",
+        "msg3_time": "19:22",
+        "msg4_time": "19:40",
+        "messages": {
+          "msg1": "彼女に君といたかって聞かれた",
+          "msg1_incoming": "true",
+          "msg2": "なんて言った？",
+          "msg2_incoming": "false",
+          "msg3": "仕事の緊急事態",
+          "msg3_incoming": "true",
+          "msg4": "また彼女に嘘ついた",
+          "msg4_incoming": "false"
+        }
+      },
+      "shota_okada": {
+        "name": "岡田翔太",
+        "avatar": "https://i.pravatar.cc/150?img=58",
+        "lastMessage": "君の名前を「ボス」って保存した",
+        "time": "02:05",
+        "msg1_time": "01:50",
+        "msg2_time": "01:51",
+        "msg3_time": "01:52",
+        "msg4_time": "02:05",
+        "messages": {
+          "msg1": "俺の名前、電話で変えて",
+          "msg1_incoming": "true",
+          "msg2": "もう変えたよ",
+          "msg2_incoming": "false",
+          "msg3": "何に？",
+          "msg3_incoming": "true",
+          "msg4": "君の名前を「ボス」って保存した",
+          "msg4_incoming": "false"
+        }
+      },
+      "ryo_hashimoto": {
+        "name": "橋本涼",
+        "avatar": "https://i.pravatar.cc/150?img=59",
+        "lastMessage": "君に恋してる",
+        "time": "00:10",
+        "msg1_time": "23:55",
+        "msg2_time": "23:56",
+        "msg3_time": "23:57",
+        "msg4_time": "00:10",
+        "messages": {
+          "msg1": "もうただのセックスじゃない",
+          "msg1_incoming": "true",
+          "msg2": "わかってる",
+          "msg2_incoming": "false",
+          "msg3": "じゃあ何だ？",
+          "msg3_incoming": "true",
+          "msg4": "君に恋してる",
+          "msg4_incoming": "false"
+        }
+      },
+      "toma_inoue": {
+        "name": "井上斗真",
+        "avatar": "https://i.pravatar.cc/150?img=60",
+        "lastMessage": "君の首に跡つけた",
+        "time": "04:30",
+        "msg1_time": "04:10",
+        "msg2_time": "04:11",
+        "msg3_time": "04:30",
+        "messages": {
+          "msg1": "めっちゃ強く噛んだね",
+          "msg1_incoming": "true",
+          "msg2": "君がそうしろって言った",
+          "msg2_incoming": "false",
+          "msg3": "君の首に跡つけた",
+          "msg3_incoming": "false"
+        }
+      },
+      "yuki_arai": {
+        "name": "新井優希",
+        "avatar": "https://i.pravatar.cc/150?img=61",
+        "lastMessage": "君を失いたくない",
+        "time": "22:00",
+        "msg1_time": "21:45",
+        "msg2_time": "21:46",
+        "msg3_time": "21:47",
+        "msg4_time": "22:00",
+        "messages": {
+          "msg1": "彼女がシャツに髪の毛見つけた",
+          "msg1_incoming": "true",
+          "msg2": "君の？",
+          "msg2_incoming": "false",
+          "msg3": "うん",
+          "msg3_incoming": "true",
+          "msg4": "君を失いたくない",
+          "msg4_incoming": "false"
+        }
+      }
+    }
+  },
+  "dmvibez": {
+    "header": { "title": "Viber" },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "call_log": "通話履歴",
+      "aria_label": "Viberナビゲーションタブ",
+      "chat_aria": "チャットを表示",
+      "contacts_aria": "連絡先を表示",
+      "call_log_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "チャットリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}のチャット詳細"
+    },
+    "contacts": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "list_aria": "連絡先リスト",
+      "item_aria": "連絡先 {{name}}",
+      "detail_aria": "{{name}}の連絡先詳細",
+      "alex_rivera": {
+        "name": "アレックス・リベラ",
+        "phone": "+1 555-1001",
+        "email": "alex@viber.com"
+      },
+      "liam_park": {
+        "name": "リアム・パーク",
+        "phone": "+1 555-1002",
+        "email": "liam@viber.com"
+      },
+      "ethan_brooks": {
+        "name": "イーサン・ブルックス",
+        "phone": "+1 555-1003",
+        "email": "ethan@viber.com"
+      },
+      "noah_lee": {
+        "name": "ノア・リー",
+        "phone": "+1 555-1004",
+        "email": "noah@viber.com"
+      },
+      "dylan_kim": {
+        "name": "ディラン・キム",
+        "phone": "+1 555-1005",
+        "email": "dylan@viber.com"
+      },
+      "carter_lee": {
+        "name": "カーター・リー",
+        "phone": "+1 555-1006",
+        "email": "carter@viber.com"
+      },
+      "mason_wu": {
+        "name": "メイソン・ウー",
+        "phone": "+1 555-1007",
+        "email": "mason@viber.com"
+      },
+      "ryan_chen": {
+        "name": "ライアン・チェン",
+        "phone": "+1 555-1008",
+        "email": "ryan@viber.com"
+      }
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "alex_rivera": {
+        "name": "アレックス・リベラ",
+        "type": "outgoing"
+      },
+      "liam_park": {
+        "name": "リアム・パーク",
+        "type": "incoming"
+      },
+      "ethan_brooks": {
+        "name": "イーサン・ブルックス",
+        "type": "missed"
+      },
+      "noah_lee": {
+        "name": "ノア・リー",
+        "type": "outgoing"
+      },
+      "dylan_kim": {
+        "name": "ディラン・キム",
+        "type": "incoming"
+      },
+      "types": {
+        "outgoing": "発信",
+        "incoming": "着信",
+        "missed": "不在"
+      }
+    },
+    "chats": {
+      "alex_rivera": {
+        "name": "アレックス・リベラ",
+        "lastMessage": "君のことを考えるのをやめられない",
+        "messages": {
+          "msg1": "まだ起きてる？",
+          "msg2": "眠れない。昨夜のことを考えてる",
+          "msg3": "同じく。君の感触が恋しい",
+          "msg4": "君のことを考えるのをやめられない"
+        }
+      },
+      "liam_park": {
+        "name": "リアム・パーク",
+        "lastMessage": "このチャットを消して",
+        "messages": {
+          "msg1": "あのホテル最高だったね",
+          "msg2": "またやらないと",
+          "msg3": "来週？",
+          "msg4": "このチャットを消して"
+        }
+      },
+      "ethan_brooks": {
+        "name": "イーサン・ブルックス",
+        "lastMessage": "彼女は寝てる",
+        "messages": {
+          "msg1": "話せる？",
+          "msg2": "彼女は寝てる",
+          "msg3": "君と一緒にいたい",
+          "msg4": "同じく。これは拷問だ"
+        }
+      },
+      "noah_lee": {
+        "name": "ノア・リー",
+        "lastMessage": "写真送って",
+        "messages": {
+          "msg1": "何着てる？",
+          "msg2": "君が見たことないものじゃない",
+          "msg3": "写真送って",
+          "msg4": "10秒後に消す..."
+        }
+      },
+      "dylan_kim": {
+        "name": "ディラン・キム",
+        "lastMessage": "愛してる",
+        "messages": {
+          "msg1": "こんなこと言うべきじゃない",
+          "msg2": "言って",
+          "msg3": "愛してる",
+          "msg4": "もっと愛してる"
+        }
+      },
+      "carter_lee": {
+        "name": "カーター・リー",
+        "lastMessage": "707号室",
+        "messages": {
+          "msg1": "同じホテル？",
+          "msg2": "707号室",
+          "msg3": "8時にそこにいるよ",
+          "msg4": "ドア開けてるよ"
+        }
+      },
+      "mason_wu": {
+        "name": "メイソン・ウー",
+        "lastMessage": "誰も知らないよ",
+        "messages": {
+          "msg1": "慎重にしないと",
+          "msg2": "分かってる。でもやめられない",
+          "msg3": "もう一度だけ",
+          "msg4": "誰も知らないよ"
+        }
+      },
+      "ryan_chen": {
+        "name": "ライアン・チェン",
+        "lastMessage": "君は僕の秘密",
+        "messages": {
+          "msg1": "彼女に遅くまで仕事って言った",
+          "msg2": "彼氏にも同じこと言った",
+          "msg3": "これはめっちゃ間違ってる",
+          "msg4": "でも君は僕の秘密"
+        }
+      }
+    }
+  },
+  "dmkaks": {
+    "header": { "title": "カカオトーク" },
+    "tabs": {
+      "chat": "チャット",
+      "friends": "友達",
+      "calls": "通話",
+      "aria_label": "カカオトークのナビゲーションタブ",
+      "chat_aria": "チャットを表示",
+      "friends_aria": "友達を表示",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "チャットリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}のチャットの詳細"
+    },
+    "friends": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "list_aria": "友達リスト",
+      "item_aria": "友達 {{name}}",
+      "detail_aria": "{{name}}の友達の詳細"
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "types": {
+        "outgoing": "発信",
+        "incoming": "着信",
+        "missed": "不在"
+      }
+    },
+    "friends_list": {
+      "minjun_kim": { "name": "キム・ミンジュン" },
+      "jaehyun_park": { "name": "パク・ジェヒョン" },
+      "seojun_lee": { "name": "イ・ソジュン" },
+      "dohyun_choi": { "name": "チェ・ドヒョン" },
+      "yejun_jung": { "name": "ジョン・イェジュン" },
+      "siwoo_kang": { "name": "カン・シユー" },
+      "haneul_song": { "name": "ソン・ハヌル" },
+      "juwon_han": { "name": "ハン・ジュウォン" },
+      "eunwoo_shin": { "name": "シン・ウヌ" },
+      "taeyang_yoon": { "name": "ユン・テヤン" },
+      "jihoon_baek": { "name": "ペク・ジフン" },
+      "woojin_oh": { "name": "オ・ウジン" }
+    },
+    "call_logs": {
+      "minjun_kim": { "name": "キム・ミンジュン" },
+      "jaehyun_park": { "name": "パク・ジェヒョン" },
+      "seojun_lee": { "name": "イ・ソジュン" },
+      "dohyun_choi": { "name": "チェ・ドヒョン" },
+      "yejun_jung": { "name": "ジョン・イェジュン" },
+      "jihoon_baek": { "name": "ペク・ジフン" }
+    },
+    "chats": {
+      "minjun_kim": {
+        "name": "キム・ミンジュン",
+        "lastMessage": "君の家に指輪を忘れた",
+        "message1": "まだ起きてる？",
+        "message2": "うん…眠れない",
+        "message3": "君の家に指輪を忘れた"
+      },
+      "jaehyun_park": {
+        "name": "パク・ジェヒョン",
+        "lastMessage": "彼女は何も疑っていない",
+        "message1": "あれは危なかった",
+        "message2": "でも上手くやった",
+        "message3": "彼女は何も疑っていない"
+      },
+      "seojun_lee": {
+        "name": "イ・ソジュン",
+        "lastMessage": "ビデオをもう一度送って",
+        "message1": "削除した？",
+        "message2": "仕方なかった。リスクが高すぎる",
+        "message3": "ビデオをもう一度送って"
+      },
+      "dohyun_choi": {
+        "name": "チェ・ドヒョン",
+        "lastMessage": "君のアパートにいる",
+        "message1": "家にいる？",
+        "message2": "彼女は出かけてる。ドアは開いてる",
+        "message3": "君のアパートにいる"
+      },
+      "yejun_jung": {
+        "name": "ジョン・イェジュン",
+        "lastMessage": "君に夢中だ",
+        "message1": "君のことを考えるのをやめられない",
+        "message2": "同じだ。一秒ごとに",
+        "message3": "君に夢中だ"
+      },
+      "siwoo_kang": {
+        "name": "カン・シユー",
+        "lastMessage": "彼女に仕事にいるって言った",
+        "message1": "どこにいる？",
+        "message2": "仕事。遅いミーティング",
+        "message3": "嘘つき",
+        "message4": "彼女に仕事にいるって言った"
+      },
+      "haneul_song": {
+        "name": "ソン・ハヌル",
+        "lastMessage": "これは危険だ",
+        "message1": "前回が最後って言ったよね",
+        "message2": "わかってる",
+        "message3": "じゃあなんでここにいるんだ？",
+        "message4": "これは危険だ"
+      },
+      "juwon_han": {
+        "name": "ハン・ジュウォン",
+        "lastMessage": "毎晩君の夢を見る",
+        "message1": "寝てる？",
+        "message2": "いや。君は？",
+        "message3": "君のこと考えてた",
+        "message4": "毎晩君の夢を見る"
+      },
+      "eunwoo_shin": {
+        "name": "シン・ウヌ",
+        "lastMessage": "読んだら削除して",
+        "message1": "昨夜を何度も思い出してる",
+        "message2": "君がしたあの...",
+        "message3": "しっ。タイプしないで",
+        "message4": "読んだら削除して"
+      },
+      "taeyang_yoon": {
+        "name": "ユン・テヤン",
+        "lastMessage": "君に恋してる",
+        "message1": "これ、深刻になってきた",
+        "message2": "わかってる",
+        "message3": "でもやめたくない",
+        "message4": "君に恋してる"
+      },
+      "jihoon_baek": {
+        "name": "ペク・ジフン",
+        "lastMessage": "君の香りが枕に残ってる",
+        "message1": "まだ君の匂いがする",
+        "message2": "いいね",
+        "message3": "君の香りが枕に残ってる"
+      },
+      "woojin_oh": {
+        "name": "オ・ウジン",
+        "lastMessage": "君のために彼女に嘘をついた",
+        "message1": "彼女がどこにいたか聞いてきた",
+        "message2": "なんて言った？",
+        "message3": "君と一緒にいたって",
+        "message4": "君のために彼女に嘘をついた"
+      }
+    }
+  },
+  "dmskype": {
+    "header": { "title": "Skype" },
+    "tabs": {
+      "chat": "チャット",
+      "contacts": "連絡先",
+      "calls": "通話",
+      "aria_label": "Skypeナビゲーションタブ",
+      "chat_aria": "チャットを表示",
+      "contacts_aria": "連絡先を表示",
+      "calls_aria": "通話履歴を表示"
+    },
+    "back_button_aria": "リストに戻る",
+    "chat": {
+      "list_aria": "チャットリスト",
+      "item_aria": "{{name}}とのチャット",
+      "detail_aria": "{{name}}のチャット詳細"
+    },
+    "contacts": {
+      "phone_label": "電話",
+      "email_label": "メール",
+      "list_aria": "連絡先リスト",
+      "item_aria": "連絡先 {{name}}",
+      "detail_aria": "{{name}}の連絡先詳細"
+    },
+    "call_log": {
+      "list_aria": "通話履歴リスト",
+      "item_aria": "{{name}}の通話履歴",
+      "detail_aria": "{{name}}の通話詳細",
+      "types": {
+        "outgoing": "発信",
+        "incoming": "着信",
+        "missed": "不在着信"
+      }
+    },
+    "chats": {
+      "marcus_hale": {
+        "name": "マーカス・ヘイル",
+        "lastMessage": "君の家に時計を忘れた",
+        "message1": "まだ起きてる？",
+        "message2": "うん…眠れない",
+        "message3": "君の家に時計を忘れた"
+      },
+      "nico_rivera": {
+        "name": "ニコ・リベラ",
+        "lastMessage": "彼女は何も知らない",
+        "message1": "あれは危険だった",
+        "message2": "でもうまくやった",
+        "message3": "彼女は何も知らない"
+      },
+      "eli_grant": {
+        "name": "イーライ・グラント",
+        "lastMessage": "写真をもう一度送って",
+        "message1": "削除した？",
+        "message2": "しなきゃ。危険すぎる",
+        "message3": "写真をもう一度送って"
+      },
+      "leo_pierce": {
+        "name": "レオ・ピアース",
+        "lastMessage": "君の部屋にいる",
+        "message1": "家にいる？",
+        "message2": "彼女は寝てる。ドアは開いてる",
+        "message3": "君の部屋にいる"
+      },
+      "owen_blake": {
+        "name": "オーウェン・ブレイク",
+        "lastMessage": "君に夢中だ",
+        "message1": "君のことを考え続けてる",
+        "message2": "同じく。一秒ごとに",
+        "message3": "君に夢中だ"
+      },
+      "finn_cole": {
+        "name": "フィン・コール",
+        "lastMessage": "仕事の電話中だと彼女に言った",
+        "message1": "どこにいる？",
+        "message2": "仕事の電話。話せない",
+        "message3": "嘘つき",
+        "message4": "仕事の電話中だと彼女に言った"
+      },
+      "theo_shaw": {
+        "name": "テオ・ショー",
+        "lastMessage": "これ以上続けられない",
+        "message1": "前回が最後だって言ったよね",
+        "message2": "分かってる",
+        "message3": "じゃあなんでここにいる？",
+        "message4": "これ以上続けられない"
+      },
+      "zane_knox": {
+        "name": "ゼイン・ノックス",
+        "lastMessage": "毎晩君の夢を見る",
+        "message1": "寝てる？",
+        "message2": "いや。君は？",
+        "message3": "君のことを考えてる",
+        "message4": "毎晩君の夢を見る"
+      },
+      "jett_miles": {
+        "name": "ジェット・マイルズ",
+        "lastMessage": "読んだら消して",
+        "message1": "昨夜が頭から離れない",
+        "message2": "君がしたこと…",
+        "message3": "シッ。書かないで",
+        "message4": "読んだら消して"
+      },
+      "kade_vance": {
+        "name": "ケイド・ヴァンス",
+        "lastMessage": "君に恋してる",
+        "message1": "これ本気になってきた",
+        "message2": "分かってる",
+        "message3": "でもやめたくない",
+        "message4": "君に恋してる"
+      },
+      "rhett_stone": {
+        "name": "レット・ストーン",
+        "lastMessage": "君の香りがジャケットについてる",
+        "message1": "まだ君の香りがする",
+        "message2": "いいね",
+        "message3": "君の香りがジャケットについてる"
+      },
+      "cruz_reid": {
+        "name": "クルーズ・リード",
+        "lastMessage": "君のために嘘をついた",
+        "message1": "彼女にどこにいたか聞かれた",
+        "message2": "なんて言った？",
+        "message3": "君と一緒",
+        "message4": "君のために嘘をついた"
+      }
+    },
+    "contacts_list": {
+      "marcus_hale": { "name": "マーカス・ヘイル" },
+      "nico_rivera": { "name": "ニコ・リベラ" },
+      "eli_grant": { "name": "イーライ・グラント" },
+      "leo_pierce": { "name": "レオ・ピアース" },
+      "owen_blake": { "name": "オーウェン・ブレイク" },
+      "finn_cole": { "name": "フィン・コール" },
+      "theo_shaw": { "name": "テオ・ショー" },
+      "zane_knox": { "name": "ゼイン・ノックス" },
+      "jett_miles": { "name": "ジェット・マイルズ" },
+      "kade_vance": { "name": "ケイド・ヴァンス" },
+      "rhett_stone": { "name": "レット・ストーン" },
+      "cruz_reid": { "name": "クルーズ・リード" }
+    },
+    "call_logs": {
+      "marcus_hale": { "name": "マーカス・ヘイル" },
+      "nico_rivera": { "name": "ニコ・リベラ" },
+      "eli_grant": { "name": "イーライ・グラント" },
+      "leo_pierce": { "name": "レオ・ピアース" },
+      "owen_blake": { "name": "オーウェン・ブレイク" },
+      "rhett_stone": { "name": "レット・ストーン" }
+    }
+  },
   "dmimo": {
     "header": { "title": "Imo" },
     "tabs": {
@@ -986,5 +4375,6 @@
         "name": "アンドレス・ゴメス"
       }
     }
-  },"social_media": "任意のソーシャルメディアをハッキングする"
+  },
+  "social_media": "任意のソーシャルメディアをハッキングする"
 }
